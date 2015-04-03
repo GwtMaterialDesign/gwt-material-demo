@@ -133,12 +133,12 @@
                     <!-- <excludes>**/*GwtTest.java</excludes> -->
                     <includes>**/*GwtTest.java</includes>
 
-                    <extraJvmArgs>-Xmx1g -XX:MaxPermSize=256M</extraJvmArgs>
+                    <extraJvmArgs>-Xmx1g</extraJvmArgs>
                     <logLevel>INFO</logLevel>
                     <style>${gwt.style}</style>
 
                     <runTarget>Gwt_material_design_demo.html</runTarget>
-
+                    <module>gwt.material.design.demo.Gwt_material_design_demo</module>
                     <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
                     <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
                 </configuration>
