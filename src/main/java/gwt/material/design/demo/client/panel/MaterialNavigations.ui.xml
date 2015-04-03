@@ -1,0 +1,106 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		 
+		<m:MaterialTitle title="Default" description="You can make your navbar fixed by adding: type='fixed'"/>
+		<m:MaterialNavBar align="right" name="myNavBar1"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+			<m:nav><m:MaterialLink  text="About" textColor="blue"  /></m:nav>
+			<m:nav><m:MaterialLink  text="Buttons" textColor="blue"/></m:nav>
+			<m:nav><m:MaterialLink  text="Forms" textColor="blue"/></m:nav>
+			
+			
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar align="right"  color="white" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  text="About" textColor="blue"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Buttons" textColor="blue"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Forms" textColor="blue"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Left Aligned Links" description="You can easily align your navbar by adding: type='right' or type='left'"/>
+		<m:MaterialNavBar align="left" name="myNavBar2" color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+			<m:nav><m:MaterialLink  text="About" textColor="blue"  /></m:nav>
+			<m:nav><m:MaterialLink  text="Buttons" textColor="blue"/></m:nav>
+			<m:nav><m:MaterialLink  text="Forms" textColor="blue"/></m:nav>
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar align="left" color="white" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  text="About" textColor="blue"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Buttons" textColor="blue"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Forms" textColor="blue"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Icon Text Links" description=""/>
+		<m:MaterialNavBar align="right" name="myNavBar3"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+			<m:nav><m:MaterialLink  text="Style" icon="mdi-action-dashboard" iconPosition="left" textColor="blue"  /></m:nav>
+			<m:nav><m:MaterialLink  text="Delete" icon="mdi-action-delete" iconPosition="left" textColor="blue" /></m:nav>
+			<m:nav><m:MaterialLink  text="Code" icon="mdi-action-settings-ethernet" iconPosition="left" textColor="blue"/></m:nav>
+			<m:nav><m:MaterialLink  text="Others" icon="mdi-navigation-more-vert" iconPosition="left" textColor="blue"/></m:nav>
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar  color="white" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  text="Style" icon="mdi-action-dashboard" iconPosition="left" textColor="blue"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Delete" icon="mdi-action-delete" iconPosition="left" textColor="blue" />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Code" icon="mdi-action-settings-ethernet" iconPosition="left" textColor="blue"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  text="Others" icon="mdi-navigation-more-vert" iconPosition="left" textColor="blue"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Icon Links" description=""/>
+		<m:MaterialNavBar align="right" name="myNavBar4"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down"> 
+			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="blue"  /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="blue" /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="blue"/></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="blue"/></m:nav>
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar  color="white" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-action-dashboard" textColor="blue"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-delete"  textColor="blue" />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="blue"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="blue"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Custom Color" description=""/>
+		<m:MaterialNavBar align="right" name="myNavBar5"  color="blue darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="white" /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="white"/></m:nav>
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar  color="blue darken-4" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-delete"  textColor="white" />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="white"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Waves" description=""/>
+		<m:MaterialNavBar align="right" name="myNavBar5" wave="purple"  color="purple darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="white" /></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/></m:nav>
+			<m:nav><m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="white"/></m:nav>
+		</m:MaterialNavBar>
+		<pre>
+		&lt;m:MaterialNavBar wave="purple"  color="purple darken-4" logoResource="{res.ic_gwt_logo}">
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-delete"  textColor="white" />&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="white"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

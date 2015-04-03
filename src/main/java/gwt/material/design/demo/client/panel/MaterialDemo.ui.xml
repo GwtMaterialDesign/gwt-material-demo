@@ -1,0 +1,105 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:p="urn:import:gwt.material.design.demo.client.panel">
+	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+	<ui:style>
+		body{
+			background: #e7e7e7;
+		}
+		.button{
+			vertical-align: top;
+			margin-left: 20px;
+		}
+		.panel{
+			padding-left: 5%;
+			width: 100%;
+			margin-top: -150px;
+			padding: 10px 50px 150px 50px;
+			background: #FFF;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+		.pointer{
+			cursor: pointer;
+		}
+		header, main, footer {
+		    padding-left: 239px;
+		}
+		.footer{
+			margin-top: -50px !important;
+		}
+		.logo{
+			padding: 10px;
+			border-bottom: 1px solid #E9E9E9;
+		}
+	</ui:style>	
+	<g:HTMLPanel >
+			<main>
+				<m:MaterialNavBar wave="blue" ui:field="navBar" name="myNavBar"  sideBar="fixed" color="blue darken-1"  align="right" >
+					<m:sidebaritem><m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnAbout" text="About" textColor="blue"  /></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnButtons" text="Buttons" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnForms" text="Forms" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnDialogs" text="Dialogs" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnLoaders" text="Loaders" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnMedia" text="Media" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnCards" text="Cards" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnNavigations" text="NavBar" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnCollapsibles" text="Collapsible" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialDropDowns" text="Dropdown" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialFooter" text="Footer" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialTabs" text="Tabs" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnCollections" text="Collections" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnBadges" text="Badges" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink ui:field="btnGrid" text="Grid" textColor="blue"/></m:sidebaritem>
+				</m:MaterialNavBar>
+				<m:MaterialTopNav ui:field="topNav"  color="blue" textColor="white">
+					<m:child>
+						<m:MaterialButton ui:field="btnGettingStarted" text="Get Started" size="large" color="blue lighten-2" />
+					</m:child>
+						
+				</m:MaterialTopNav>
+				
+				
+				
+				<g:HTMLPanel ui:field="contentPanel" addStyleNames="{style.panel} container z-depth-2">
+					<p:MaterialGettingStarted ui:field="materialGettingStarted"/>
+					<p:MaterialHome ui:field="materialHome"/>
+					<p:MaterialStyle ui:field="materialStyle"/>
+					<p:MaterialButtonPanel ui:field="materialButtons"/>
+					<p:MaterialForms ui:field="materialForms"/>
+					<p:MaterialDialogs ui:field="materialDialogs"/>
+					<p:MaterialLoaders ui:field="materialLoaders"/>
+					<p:MaterialMedia ui:field="materialMedia"/>
+					<p:MaterialCard ui:field="materialCards"/>
+					<p:MaterialNavigations ui:field="materialNavigations"/>
+					<p:MaterialCollapsibles ui:field="materialCollapsibles"/>
+					<p:MaterialDropDowns ui:field="materialDropDowns"/>
+					<p:MaterialFooterPanel ui:field="materialFooters"/>
+					<p:MaterialTabsPanel ui:field="materialTabs"/>
+					<p:MaterialCollectionPanel ui:field="materialCollections"/>
+					<p:MaterialBadges ui:field="materialBadges" />
+					<p:MaterialGrid ui:field="materialGrid" />
+					<!-- <p:Team /> -->
+				</g:HTMLPanel>
+			</main>	
+			<m:MaterialFooter color="blue" copyright="© 2015 Copyright GWT Material" addStyleNames="{style.footer}">
+				<m:content>
+					<m:MaterialRow>
+						<m:MaterialColumn grid="s12 m6 l6">
+							<m:MaterialTitle fontSize="0.7" color="white" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+							<m:MaterialButton ui:field="btnChat" text="CHAT" color="blue lighten-2" waves="light"/>
+						</m:MaterialColumn>
+						<m:MaterialColumn grid="s12 m6 l6">
+							<m:MaterialTitle fontSize="0.7" color="white" title="GWT Phonegap" description="Phonegap Integration with GWT Material Wrapper is now available. Feel free to download the Android Release and give us feedback."/>
+							<m:MaterialButton ui:field="btnDownloadPhonegap" text="Download APK" color="blue lighten-2" waves="light"/>
+						</m:MaterialColumn>
+					</m:MaterialRow>
+				</m:content>
+			</m:MaterialFooter>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

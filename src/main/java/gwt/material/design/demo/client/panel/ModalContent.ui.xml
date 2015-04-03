@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+		.btn{
+			width: 200px;
+		}
+	</ui:style>
+	<m:MaterialPanel>
+		<m:MaterialModalContent>
+			<m:MaterialTitle title="Modal Header" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+		</m:MaterialModalContent>
+		
+		<m:MaterialModalFooter align="right">
+			<m:MaterialButton ui:field="btnAgree" waves="green" type="flat" text="Agree" addStyleNames="{style.btn}" />
+			<m:MaterialButton ui:field="btnDisagree" waves="red" type="flat" text="Disagree" addStyleNames="{style.btn}" />
+		</m:MaterialModalFooter>
+	
+	</m:MaterialPanel>
+</ui:UiBinder> 

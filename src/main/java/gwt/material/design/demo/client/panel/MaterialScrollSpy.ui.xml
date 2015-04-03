@@ -1,0 +1,78 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="row">
+		    <div class="col s12 m9 l10">
+		      <div id="introduction" class="section scrollspy">
+		        <p>Content </p>
+		      </div>
+			<pre>
+			&lt;div class="row">
+		    &lt;div class="col s12 m9 l10">
+		      &lt;div id="introduction" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		
+		      &lt;div id="structure" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		
+		      &lt;div id="initialization" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		    &lt;/div>
+		    &lt;div class="col hide-on-small-only m3 l2">
+		      &lt;ul class="section table-of-contents">
+		        &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+		        &lt;li>&lt;a href="#structure">Structure&lt;/a>&lt;/li>
+		        &lt;li>&lt;a href="#initialization">Intialization&lt;/a>&lt;/li>
+		      &lt;/ul>
+		    &lt;/div>
+		  &lt;/div>
+			</pre>
+		      <div id="structure" class="section scrollspy">
+		        <p>Content </p>
+		      </div>
+		<pre>
+			&lt;div class="row">
+		    &lt;div class="col s12 m9 l10">
+		      &lt;div id="introduction" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		
+		      &lt;div id="structure" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		
+		      &lt;div id="initialization" class="section scrollspy">
+		        &lt;p>Content &lt;/p>
+		      &lt;/div>
+		    &lt;/div>
+		    &lt;div class="col hide-on-small-only m3 l2">
+		      &lt;ul class="section table-of-contents">
+		        &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+		        &lt;li>&lt;a href="#structure">Structure&lt;/a>&lt;/li>
+		        &lt;li>&lt;a href="#initialization">Intialization&lt;/a>&lt;/li>
+		      &lt;/ul>
+		    &lt;/div>
+		  &lt;/div>
+			</pre>
+		      <div id="initialization" class="section scrollspy">
+		        <p>Content </p>
+		      </div>
+		    </div>
+		    
+		    <div class="col hide-on-small-only m3 l2">
+		      <ul class="section table-of-contents">
+		        <li><a href="#introduction">Introduction</a></li>
+		        <li><a href="#structure">Structure</a></li>
+		        <li><a href="#initialization">Intialization</a></li>
+		      </ul>
+		    </div>
+		  </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

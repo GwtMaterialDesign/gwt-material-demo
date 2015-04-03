@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.btn{
+			width: 200px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	
+		<m:MaterialTitle title="Circular" />
+		<m:MaterialButton text="Show Loader" ui:field="btnShowLoader" color="blue" addStyleNames="{style.btn}"/>
+		
+		<pre>
+MaterialLoader.showLoading(<span class="tag">true</span>);
+		</pre>
+		
+		<m:MaterialTitle title="Linear" />
+		<m:MaterialButton text="Show Progress" ui:field="btnShowProgress" color="blue" addStyleNames="{style.btn}"/>
+		
+		<pre>
+MaterialLoader.showProgress(<span class="tag">true</span>);
+		</pre>
+	</g:HTMLPanel>
+</ui:UiBinder> 

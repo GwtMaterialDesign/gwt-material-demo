@@ -1,0 +1,131 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+	<ui:style>
+		.grid{
+			  border: 1px solid #eee;
+			  margin: 7px 0;
+			  text-align: center;
+			  line-height: 50px;
+			  font-size: 28px;
+			  background-color: tomato;
+			  color: white;
+			  padding: 0px;
+		}
+	</ui:style>
+	<m:MaterialPanel>
+		<m:MaterialTitle title="12 Columns" description="Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width."/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 1 </span>  </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 2 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 3 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 4 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 5 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 6 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 7 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 8 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 9 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 10 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 11 </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><span class="flow-text"> 12 </span> </m:MaterialColumn>
+		</m:MaterialRow>
+		<m:MaterialLabel text="To get a feel of how the grid is used in HTML. Take a look at this code below which will produce a similar result as the one above."/>
+		
+		<pre>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s1" > 1 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 2 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 3 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 4 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 5 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 6 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 7 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 8 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 9 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 10 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 11 &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s1" > 12 &lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		</pre>
+		
+		<m:MaterialLabel text="Note: For now, just know that the s1 stands for small-1 which in plain English means '1 column on small screens'."/>
+	
+		<m:MaterialTitle title="Columns live inside Rows" description="Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns"/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <span class="flow-text"> This div is 12-columns wide on all screen sizes </span> </m:MaterialColumn>
+		</m:MaterialRow>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <span class="flow-text"> 6-columns (one-half) </span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <span class="flow-text"> 6-columns (one-half) </span> </m:MaterialColumn>
+		</m:MaterialRow>
+		<pre>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> &lt;span class="flow-text"> This div is 12-columns wide on all screen sizes &lt;/span> &lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> &lt;span class="flow-text"> 6-columns (one-half) &lt;/span> &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> &lt;span class="flow-text"> 6-columns (one-half) &lt;/span> &lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		</pre>
+		
+		<m:MaterialTitle title="Offsets" description="To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by."/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <span class="flow-text">This div is 12-columns wide on all screen sizes</span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s6" offset="s6" addStyleNames="{style.grid}"> <span class="flow-text">6-columns (offset-by-6)</span> </m:MaterialColumn>
+		</m:MaterialRow>
+		
+		<pre>
+		&lt;m:MaterialTitle title="Offsets" description="To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by."/>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> &lt;span class="flow-text">This div is 12-columns wide on all screen sizes&lt;/span> &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s6" offset="s6" addStyleNames="{style.grid}"> &lt;span class="flow-text">6-columns (offset-by-6)&lt;/span> &lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		</pre>
+		
+		<m:MaterialTitle title="Adding Responsiveness" description="In the previous examples, we only defined the size for small screens using 'col s12'. This is fine if we want a fixed layout since the rules propogate upwards. By just saying s12, we are essentially saying 'col s12 m12 l12'. But by explicitly defining the size we can make our website more responsive." />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12" addStyleNames="{style.grid} teal lighten-2"> <span class="flow-text">I am always full-width (col s12)</span> </m:MaterialColumn>
+			<m:MaterialColumn grid="s12 m6" addStyleNames="{style.grid} teal lighten-2"> <span class="flow-text">I am full-width on mobile (col s12 m6)</span> </m:MaterialColumn>
+		</m:MaterialRow>
+		
+		<pre>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s12" addStyleNames="{style.grid} teal lighten-2"> &lt;span class="flow-text">I am always full-width (col s12)&lt;/span> &lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s12 m6"  addStyleNames="{style.grid} teal lighten-2"> &lt;span class="flow-text">I am full-width on mobile (col s12 m6)&lt;/span> &lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		</pre>
+		
+		<m:MaterialTitle title="Example Promotion Table" description="If we want 3 divs that are equal size, we define the divs with a width of 4-columns, 4+4+4 = 12, which nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example."/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12 m4">
+				<m:MaterialImage resource="{res.ic_metaphor}"/>
+				<m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s12 m4">
+				<m:MaterialImage resource="{res.ic_bold}"/>
+				<m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s12 m4">
+				<m:MaterialImage resource="{res.ic_motion}"/>
+				<m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/>
+			</m:MaterialColumn>
+		</m:MaterialRow>
+		
+		<pre>
+		&lt;m:MaterialRow>
+			&lt;m:MaterialColumn grid="s12 m4">
+				&lt;!-- Promo Content 1 goes here -->
+			&lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s12 m4">
+				&lt;!-- Promo Content 2 goes here -->
+			&lt;/m:MaterialColumn>
+			&lt;m:MaterialColumn grid="s12 m4">
+				&lt;!-- Promo Content 3 goes here -->
+			&lt;/m:MaterialColumn>
+		&lt;/m:MaterialRow>
+		</pre>
+		
+	</m:MaterialPanel>
+</ui:UiBinder> 

@@ -1,0 +1,81 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel ui:field="panel">
+		
+		<m:MaterialTitle title="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page."/>
+		<m:MaterialButton text="Button" waves="light" color="blue" />
+		<m:MaterialButton text="Button" waves="light" color="blue" icon="mdi-action-account-circle" iconPosition="left"/>
+		<m:MaterialButton text="Button" waves="light" color="blue" icon="mdi-action-account-circle" iconPosition="right"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves</span>="light" <span class="attr">color</span>="blue" <span class="attr">/></span>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves</span>="light" <span class="attr">color</span>="blue" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left"<span class="tag">/></span>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves</span>="light" <span class="attr">color</span>="blue" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="right"<span class="tag">/></span>
+		</pre>
+			
+		<m:MaterialTitle  title="Floating" description="The floating circular action button is meant for very important functions."/>
+		<m:MaterialButton type="floating" waves="light" size="large" color="blue" icon="mdi-content-add" />
+		<m:MaterialButton type="floating" waves="light" size="large" color="blue"  icon="mdi-action-account-circle"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">size</span>="large" <span class="attr">color</span>="blue" <span class="attr">icon</span>="mdi-content-add" <span class="tag">/></span>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">size</span>="large" c<span class="attr">olor</span>="blue"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="tag">/></span>
+		</pre>
+			
+		<m:MaterialTitle title="Flat" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
+		<m:MaterialButton text="Button" type="flat" waves="gray"   />
+		
+ 		<pre>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">type</span>="flat" <span class="attr">waves</span>="gray" />
+		</pre> 
+	
+		<m:MaterialTitle title="Large" description="This button has a larger height for buttons that need more attention."/>
+		<m:MaterialButton text="Button" waves="light" color="blue" size="large"/>
+		<m:MaterialButton text="Button" waves="light" color="blue" icon="mdi-action-account-circle" iconPosition="left" size="large"/>
+		<m:MaterialButton text="Button" waves="light" color="blue" icon="mdi-action-account-circle" iconPosition="right" size="large"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves="light"</span> <span class="attr">color</span>="blue" <span class="attr">size</span>="large"/>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves="light"</span> <span class="attr">color</span>="blue" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left" <span class="attr">size</span>="large"<span class="tag">/></span>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">waves="light"</span> <span class="attr">color</span>="blue" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="right" <span class="attr">size</span>="large"<span class="tag">/></span>
+		</pre>
+			
+		<m:MaterialTitle title="Large" description="This button has a larger height for buttons that need more attention."/>
+		<m:MaterialButton text="Button" icon="mdi-action-account-circle" iconPosition="left" size="large" disable="true"/>
+		<m:MaterialButton text="Button" icon="mdi-action-account-circle" iconPosition="left" disable="true"/>
+		<m:MaterialButton text="Button" type="flat" disable="true"/>
+		<m:MaterialButton type="floating"  icon="mdi-action-account-circle" disable="true"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left" <span class="attr">size</span>="large" <span class="attr">disable</span>="true"<span class="tag">/></span>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left" <span class="attr">disable</span>="true"/>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">type</span>="flat" <span class="attr">disable</span>="true"/>
+<span class="tag">&lt;m:MaterialButton</span> <span class="attr">type</span>="floating"  <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">disable</span>="true"/>
+		</pre>
+		
+		<m:MaterialTitle title="Fixed Action Button" description="If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page."/>
+		<m:MaterialFloatingContainer>
+			<m:initial><m:MaterialButton type="floating" waves="light" size="large" color="blue"  icon="mdi-action-account-circle"/></m:initial>
+			<m:item><m:MaterialButton type="floating" waves="light" color="green"  icon="mdi-action-account-circle"/></m:item>
+			<m:item><m:MaterialButton type="floating" waves="light" color="red"  icon="mdi-action-account-circle"/></m:item>
+			<m:item><m:MaterialButton type="floating" waves="light" color="orange"  icon="mdi-action-account-circle"/></m:item>
+			<m:item><m:MaterialButton type="floating" waves="light" color="blue"  icon="mdi-action-account-circle"/></m:item>
+		</m:MaterialFloatingContainer>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialFloatingContainer></span>
+	<span class="tag">&lt;m:initial>&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">size</span>="large" <span class="attr">color</span>="blue"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="attr">/>&lt;/m:initial></span>
+	<span class="tag">&lt;m:item>&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">color</span>="green"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="attr">/>&lt;/m:item></span>
+	<span class="tag">&lt;m:item>&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">color</span>="red"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="attr">/>&lt;/m:item></span>
+	<span class="tag">&lt;m:item>&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">color</span>="orange"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="attr">/>&lt;/m:item></span>
+	<span class="tag">&lt;m:item>&lt;m:MaterialButton</span> <span class="attr">type</span>="floating" <span class="attr">waves</span>="light" <span class="attr">color</span>="blue"  <span class="attr">icon</span>="mdi-action-account-circle"<span class="attr">/>&lt;/m:item></span>
+<span class="tag">&lt;/m:MaterialFloatingContainer></span>
+		</pre>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

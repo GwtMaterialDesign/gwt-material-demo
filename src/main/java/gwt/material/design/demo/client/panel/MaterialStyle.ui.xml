@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+		.shadowDemo{
+			background-color: #26A69A;
+			width: 125px;
+			height: 125px;
+			margin: 20px auto;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialRow >
+			<m:MaterialColumn grid="col s12 m4 l2">
+				<p class="{style.shadowDemo}"></p>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="col s12 m4 l2">
+				<p class="{style.shadowDemo}"></p>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="col s12 m4 l2">
+				<p class="{style.shadowDemo}"></p>
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="col s12 m4 l2">
+				<p class="{style.shadowDemo}"></p>
+			</m:MaterialColumn>
+		</m:MaterialRow>
+	</g:HTMLPanel>
+</ui:UiBinder> 

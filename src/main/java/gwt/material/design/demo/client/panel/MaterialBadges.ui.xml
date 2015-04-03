@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialTitle title="Collections"/>
+		<m:MaterialCollection>
+			<m:item>
+				<m:MaterialPanel>
+					<m:MaterialLabel text="Sample 1" />
+					<m:MaterialBadge text="1" />
+				</m:MaterialPanel>
+			</m:item>
+			<m:item>
+				<m:MaterialPanel>
+					<m:MaterialLabel text="Sample 1" />
+					<m:MaterialBadge text="1" type="new" color="blue"/>
+				</m:MaterialPanel>
+			</m:item>
+			<m:item><m:MaterialLabel text="Sample 3" /></m:item>
+			<m:item><m:MaterialLabel text="Sample 4" /></m:item>
+		</m:MaterialCollection>
+		
+		<pre>
+		&lt;m:MaterialCollection>
+			&lt;m:item>
+				&lt;m:MaterialPanel>
+					&lt;m:MaterialLabel text="Sample 1" />
+					&lt;m:MaterialBadge text="1" />
+				&lt;/m:MaterialPanel>
+			&lt;/m:item>
+			&lt;m:item>
+				&lt;m:MaterialPanel>
+					&lt;m:MaterialLabel text="Sample 1" />
+					&lt;m:MaterialBadge text="1" type="new" color="blue"/>
+				&lt;/m:MaterialPanel>
+			&lt;/m:item>
+			&lt;m:item>&lt;m:MaterialLabel text="Sample 3" />&lt;/m:item>
+			&lt;m:item>&lt;m:MaterialLabel text="Sample 4" />&lt;/m:item>
+		&lt;/m:MaterialCollection>
+		</pre>
+		
+		<m:MaterialTitle title="Badges in Dropdown"/>
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s12 m12 l4"> 
+				<m:MaterialDropDown text="Selection" color="blue" activates="myDropDown">
+					<m:item><m:MaterialLink text="First" /></m:item>
+					<m:item><m:MaterialLink text="Second"/></m:item>
+					<m:item>
+						<m:MaterialPanel>
+							<m:MaterialLink text="Sample 1" />
+							<m:MaterialBadge text="1" type="new" color="blue"/>
+						</m:MaterialPanel>
+					</m:item>
+			</m:MaterialDropDown>
+			</m:MaterialColumn>
+		</m:MaterialRow>
+		
+		
+		<pre>
+		&lt;m:MaterialDropDown text="Selection" color="blue" activates="myDropDown">
+				&lt;m:item>&lt;m:MaterialLink text="First" />&lt;/m:item>
+				&lt;m:item>&lt;m:MaterialLink text="Second"/>&lt;/m:item>
+				&lt;m:item>
+					&lt;m:MaterialPanel>
+						&lt;m:MaterialLink text="Sample 1" />
+						&lt;m:MaterialBadge text="1" type="new" color="blue"/>
+					&lt;/m:MaterialPanel>
+				&lt;/m:item>
+		&lt;/m:MaterialDropDown>
+		</pre>
+	</g:HTMLPanel>
+</ui:UiBinder> 

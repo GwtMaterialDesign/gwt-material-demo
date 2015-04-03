@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	
+	<ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+		
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel>
+		
+		<m:MaterialTitle title="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key."/>
+		<m:MaterialImage resource="{res.image}"  type="materialboxed"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialImage</span> <span class="attr">resource</span>="{res.image}" <span class="attr">type</span>="materialboxed" <span class="tag">/></span>
+		</pre>
+		
+		<m:MaterialTitle title="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute."/>
+		<m:MaterialImage resource="{res.image}"  type="materialboxed" caption="I love Material Design"/>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialImage</span> <span class="attr">resource</span>="{res.image}" <span class="attr">type</span>="materialboxed" <span class="attr">caption</span>="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute." <span class="tag">/></span>
+		</pre>
+		
+		<m:MaterialTitle title="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively."/>
+		<m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+	
+		<pre>
+<span class="tag">&lt;m:MaterialVideo</span> <span class="attr">url</span>="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" <span class="tag">/></span>
+		</pre>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 
