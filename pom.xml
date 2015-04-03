@@ -137,6 +137,8 @@
                     <logLevel>INFO</logLevel>
                     <style>${gwt.style}</style>
 
+                    <runTarget>Gwt_material_design_demo.html</runTarget>
+
                     <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
                     <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
                 </configuration>
