@@ -40,21 +40,21 @@
 			<main>
 				<m:MaterialNavBar wave="blue" ui:field="navBar" name="myNavBar"  sideBar="fixed" color="blue darken-1"  align="right" >
 					<m:sidebaritem><m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnAbout" text="About" textColor="blue"  /></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnButtons" text="Buttons" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnForms" text="Forms" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnDialogs" text="Dialogs" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnLoaders" text="Loaders" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnMedia" text="Media" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnCards" text="Cards" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnNavigations" text="NavBar" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnCollapsibles" text="Collapsible" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialDropDowns" text="Dropdown" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialFooter" text="Footer" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnMaterialTabs" text="Tabs" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnCollections" text="Collections" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnBadges" text="Badges" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink ui:field="btnGrid" text="Grid" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#about"        text="About" textColor="blue"  /></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#buttons"      text="Buttons" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#forms"        text="Forms" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#dialogs"      text="Dialogs" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#loaders"      text="Loaders" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#media"        text="Media" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#cards"        text="Cards" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#navigations"  text="NavBar" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#collapsibles" text="Collapsible" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#dropdowns"    text="Dropdown" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#footer"       text="Footer" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#tabs"         text="Tabs" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#collections"  text="Collections" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#badges"       text="Badges" textColor="blue"/></m:sidebaritem>
+					<m:sidebaritem><m:MaterialLink href="#grid"         text="Grid" textColor="blue"/></m:sidebaritem>
 				</m:MaterialNavBar>
 				<m:MaterialTopNav ui:field="topNav"  color="blue" textColor="white">
 					<m:child>
