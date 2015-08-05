@@ -131,11 +131,12 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
                 <version>${gwt.version}</version>
+
                 <configuration>
                     <strict>true</strict>
-
                     <testTimeOut>180</testTimeOut>
                     <mode>htmlunit</mode>
+
                     <!-- Switch to a suite to run tests faster -->
                     <!-- <includes>**/*GwtTestSuite.java</includes> -->
                     <!-- <excludes>**/*GwtTest.java</excludes> -->
@@ -146,9 +147,13 @@
                     <style>${gwt.style}</style>
 
                     <runTarget>Gwt_material_design_demo.html</runTarget>
-                    <module>gwt.material.design.demo.Gwt_material_design_demo</module>
+                    <modules>
+                        <module>gwt.material.design.demo.Gwt_material_design_demo</module>
+                    </modules>
+
                     <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
                     <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
+
                 </configuration>
 
                 <executions>
@@ -161,6 +166,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+
         </plugins>
     </build>
 
@@ -174,33 +181,33 @@
         </dependency>
 
         <!-- App Engine -->
-        <!--<dependency>-->
-        <!--<groupId>com.google.appengine</groupId>-->
-        <!--<artifactId>appengine-api-1.0-sdk</artifactId>-->
-        <!--<version>${appengine.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>com.google.appengine</groupId>-->
-        <!--<artifactId>appengine-endpoints</artifactId>-->
-        <!--<version>${appengine.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>com.google.appengine</groupId>-->
-        <!--<artifactId>appengine-api-labs</artifactId>-->
-        <!--<version>${appengine.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-1.0-sdk</artifactId>
+            <version>${appengine.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-endpoints</artifactId>
+            <version>${appengine.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-labs</artifactId>
+            <version>${appengine.version}</version>
+        </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>javax.servlet</groupId>-->
-        <!--<artifactId>servlet-api</artifactId>-->
-        <!--<version>2.5</version>-->
-        <!--<scope>provided</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>javax.inject</groupId>-->
-        <!--<artifactId>javax.inject</artifactId>-->
-        <!--<version>1</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
 
 
         <!-- GWT -->
@@ -235,18 +242,18 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>com.google.appengine</groupId>-->
-        <!--<artifactId>appengine-testing</artifactId>-->
-        <!--<version>${appengine.version}</version>-->
-        <!--<scope>test</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>com.google.appengine</groupId>-->
-        <!--<artifactId>appengine-api-stubs</artifactId>-->
-        <!--<version>${appengine.version}</version>-->
-        <!--<scope>test</scope>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-testing</artifactId>
+            <version>${appengine.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-stubs</artifactId>
+            <version>${appengine.version}</version>
+            <scope>test</scope>
+        </dependency>
 
 
         <!-- GWTP Components -->

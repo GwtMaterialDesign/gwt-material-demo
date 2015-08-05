@@ -1,6 +1,5 @@
 package gwt.material.design.demo.client.panel;
 
-
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
@@ -27,8 +26,10 @@ public class MaterialDemo extends Composite {
 
     @UiField
     HTMLPanel contentPanel;
+
     @UiField
     MaterialNavBar navBar;
+
     @UiField
     MaterialTopNav topNav;
 
@@ -57,10 +58,10 @@ public class MaterialDemo extends Composite {
         Window.open(IMaterialConstants.LINK_GITTER_CHAT, "", "");
     }
 
-//    @UiHandler("btnGithub")
-//    void onGithub(ClickEvent e) {
-//        Window.open(IMaterialConstants.GITHUB_LINK, "", "");
-//}
+    @UiHandler("btnGithub")
+    void onGithub(ClickEvent e) {
+        Window.open(IMaterialConstants.GITHUB_LINK, "", "");
+    }
 
     @UiHandler("gettingStartedPanel")
     void onGettingStarted(ClickEvent e) {
