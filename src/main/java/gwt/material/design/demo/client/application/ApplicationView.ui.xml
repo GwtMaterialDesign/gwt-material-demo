@@ -1,0 +1,308 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources'/>
+
+    <ui:style>
+        .button {
+            vertical-align: top;
+            margin-left: 20px;
+        }
+
+        .panel {
+            padding-left: 5%;
+            width: 100%;
+            margin-top: -150px;
+            padding: 10px 50px 150px 50px;
+            background: #FFF;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .pointer {
+            cursor: pointer;
+        }
+
+        main, footer {
+            padding-left: 250px;
+        }
+
+        .footer {
+            margin-top: -50px !important;
+        }
+
+        .logo {
+            padding: 10px;
+            border-bottom: 1px solid #E9E9E9;
+        }
+
+        .btnGettingStarted {
+            font-size: 0.3em !important;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <m:MaterialNavBar ui:field="navBar" wave="default" sideBar="fixed" sideBarWidth="250" color="blue darken-1"
+                          align="right" text="GWT Material">
+            <m:sidebaritem>
+                <m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/>
+            </m:sidebaritem>
+            <m:sidebaritem>
+                <m:MaterialLink href="#about" iconPosition="left" icon="mdi-action-info-outline" text="About"
+                                textColor="blue"/>
+            </m:sidebaritem>
+            <m:sidebaritem>
+                <m:MaterialLink href="#gettingStarted" iconPosition="left" icon="mdi-file-cloud-download"
+                                text="Getting Started" textColor="blue">
+                    <m:badge>
+                        <m:MaterialBadge text="1.3.3" color="blue"/>
+                    </m:badge>
+                </m:MaterialLink>
+            </m:sidebaritem>
+            <m:sidebaritem>
+                <m:MaterialCollapsible>
+                    <m:item>
+                        <m:MaterialCollapsibleItem>
+                            <m:header>
+                                <m:MaterialLink text="Components" icon="mdi-action-view-quilt" textColor="blue"/>
+                            </m:header>
+                            <m:content>
+                                <m:UnorderedList>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#badges" text="Badges" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#buttons" text="Buttons" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#cards" text="Cards" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#chips" text="Chips" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge text="New" color="green"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#collapsibles" text="Collapsible" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#collections" text="Collections" textColor="blue"/>
+                                    </m:ListItem>
+
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#datagrid" text="Datagrid" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge text="New" color="green"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#dialogs" text="Dialogs" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge text="Update" color="blue"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#dropdowns" text="Dropdown" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#forms" text="Forms" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge color="blue" text="Update"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#footer" text="Footer" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#loaders" text="Loaders" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge color="blue" text="Update"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#media" text="Media" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge text="Update" color="blue"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#navigations" text="NavBar" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#scrollspy" text="Scrollspy" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#tabs" text="Tabs" textColor="blue">
+                                            <m:badge>
+                                                <m:MaterialBadge text="Update" color="blue"/>
+                                            </m:badge>
+                                        </m:MaterialLink>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#transition" text="Transitions" textColor="blue"/>
+                                    </m:ListItem>
+                                </m:UnorderedList>
+                            </m:content>
+                        </m:MaterialCollapsibleItem>
+                    </m:item>
+                    <m:item>
+                        <m:MaterialCollapsibleItem>
+                            <m:header>
+                                <m:MaterialLink text="Style and Layout" icon="mdi-image-color-lens" textColor="blue"/>
+                            </m:header>
+                            <m:content>
+                                <m:UnorderedList>
+
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#colors" text="Colors" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#grid" text="Grid" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#helper" text="Helper" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#icons" text="Icons" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#shadow" text="Shadow" textColor="blue"/>
+                                    </m:ListItem>
+                                    <m:ListItem>
+                                        <m:MaterialLink href="#theme" text="Theming" textColor="blue"/>
+                                    </m:ListItem>
+                                </m:UnorderedList>
+                            </m:content>
+                        </m:MaterialCollapsibleItem>
+                    </m:item>
+                </m:MaterialCollapsible>
+            </m:sidebaritem>
+
+
+            <m:sidebaritem>
+                <m:MaterialLink href="#showcase" iconPosition="left" icon="mdi-action-polymer" text="Showcase"
+                                textColor="blue">
+                    <m:badge>
+                        <m:MaterialBadge color="blue" text="Update"/>
+                    </m:badge>
+                </m:MaterialLink>
+            </m:sidebaritem>
+            <m:sidebaritem>
+                <m:MaterialLink href="#templates" iconPosition="left" icon="mdi-navigation-apps" text="Templates"
+                                textColor="blue">
+                    <m:badge>
+                        <m:MaterialBadge color="green" text="New"/>
+                    </m:badge>
+                </m:MaterialLink>
+            </m:sidebaritem>
+            <m:sidebaritem>
+                <m:MaterialLink href="#charts" iconPosition="left" icon="mdi-editor-insert-chart" text="Material Charts"
+                                textColor="blue">
+                    <m:badge>
+                        <m:MaterialBadge color="green" text="New"/>
+                    </m:badge>
+                </m:MaterialLink>
+            </m:sidebaritem>
+        </m:MaterialNavBar>
+        <m:MaterialContainer>
+            <m:MaterialTopNav ui:field="topNav" color="blue" textColor="white">
+                <m:child>
+
+                    <m:MaterialPanel>
+
+                        <p style="font-size: 1em; color: white">GWT Material</p>
+
+                        <p style="font-size: 0.6em; color: white">A Material Design look and feel for GWT Apps plus
+                            Phonegap.
+                        </p>
+
+                        <!--<m:MaterialTitle fontSize="0.7" color="white" title="GWT Material"-->
+                        <!--description="A Material Design look and feel for GWT Apps plus Phonegap."/>-->
+
+                        <m:MaterialButton ui:field="gettingStartedPanel" text="Get Started" size="large"
+                                          color="blue lighten-2" addStyleNames="{style.btnGettingStarted}"/>
+                    </m:MaterialPanel>
+                </m:child>
+
+            </m:MaterialTopNav>
+
+            <g:HTMLPanel ui:field="contentPanel" addStyleNames="{style.panel} container z-depth-2">
+
+                <!--CHILD PRESENTERS GO IN THIS PANEL (see setInSlot() of ApplicationView.java)-->
+                <g:SimplePanel ui:field="main"/>
+
+            </g:HTMLPanel>
+
+            <!--<g:HTMLPanel ui:field="contentPanel" addStyleNames="{style.panel} container z-depth-2">-->
+            <!--<p:MaterialGettingStarted ui:field="materialGettingStarted"/>-->
+            <!--<p:MaterialHome ui:field="materialHome"/>-->
+            <!--<p:MaterialStyle ui:field="materialStyle"/>-->
+            <!--<p:MaterialButtonPanel ui:field="materialButtons"/>-->
+            <!--<p:MaterialForms ui:field="materialForms"/>-->
+            <!--<p:MaterialDialogs ui:field="materialDialogs"/>-->
+            <!--<p:MaterialLoaders ui:field="materialLoaders"/>-->
+            <!--<p:MaterialMedia ui:field="materialMedia"/>-->
+            <!--<p:MaterialCard ui:field="materialCards"/>-->
+            <!--<p:MaterialNavigations ui:field="materialNavigations"/>-->
+            <!--<p:MaterialCollapsibles ui:field="materialCollapsibles"/>-->
+            <!--<p:MaterialDropDowns ui:field="materialDropDowns"/>-->
+            <!--<p:MaterialFooterPanel ui:field="materialFooters"/>-->
+            <!--<p:MaterialTabsPanel ui:field="materialTabs"/>-->
+            <!--<p:MaterialCollectionPanel ui:field="materialCollections"/>-->
+            <!--<p:MaterialBadges ui:field="materialBadges" />-->
+            <!--<p:MaterialGrid ui:field="materialGrid" />-->
+            <!--<p:MaterialShowcase ui:field="materialShowcase"/>-->
+            <!--<p:MaterialTransitions ui:field="materialTransitions"/>-->
+            <!--&lt;!&ndash; <p:Team /> &ndash;&gt;-->
+            <!--</g:HTMLPanel>-->
+
+
+        </m:MaterialContainer>
+        <m:MaterialFooter color="blue" copyright="© 2015 Copyright GWT Material" addStyleNames="{style.footer}">
+            <m:content>
+                <m:MaterialRow>
+                    <m:MaterialColumn grid="s12 m4 m4">
+                        <m:MaterialTitle fontSize="0.7" color="white" title="Support Us"
+                                         description="Any amount would help support and continue development on this project and is greatly appreciated."/>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick"/>
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+							"/>
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                                   name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                 height="1"/>
+                        </form>
+                        <m:MaterialLabel textColor="white" text="For bug bounties:"/>
+                        <m:MaterialButton ui:field="btnBounty" text="Bountysource" color="green" waves="light"/>
+
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12 m4 l4">
+                        <m:MaterialTitle fontSize="0.7" color="white" title="Join The Discussion"
+                                         description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+                        <m:MaterialButton ui:field="btnChat" text="CHAT" color="blue lighten-2" waves="light"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12 m4 l4">
+                        <m:MaterialTitle fontSize="0.7" color="white" title="Github"
+                                         description="Download, fork, pull, file issues, and more at the official GWT Material repo on Github."/>
+                        <m:MaterialButton ui:field="btnGithub" text="Github" color="blue lighten-2" waves="light"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+            </m:content>
+        </m:MaterialFooter>
+
+    </g:HTMLPanel>
+
+
+</ui:UiBinder>

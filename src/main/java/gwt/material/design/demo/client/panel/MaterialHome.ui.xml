@@ -6,6 +6,7 @@
 	<ui:style>
 	
 	</ui:style>
+
 	<g:HTMLPanel addStyleNames="center-align">
 		
 		<m:MaterialRow>

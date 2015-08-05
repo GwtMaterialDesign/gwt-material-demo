@@ -11,7 +11,7 @@
     <description>GWT Material Design - Demo</description>
 
     <prerequisites>
-        <maven>3.1.0</maven>
+        <maven>3.2.3</maven>
     </prerequisites>
     <properties>
 
@@ -35,12 +35,14 @@
         <!-- Maven -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <appengine.version>1.9.18</appengine.version>
+        <appengine.version>1.9.24</appengine.version>
         <junit.version>4.12</junit.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
 
         <gwt-material.version>1.3.4-SNAPSHOT</gwt-material.version>
+
+        <!--<gae.home>${settings.localRepository}/com/google/appengine/appengine-java-sdk/${appengine.version}</gae.home>-->
 
     </properties>
 
@@ -54,62 +56,62 @@
         </resources>
 
         <plugins>
-            <!--<plugin>-->
-            <!--<groupId>org.codehaus.mojo</groupId>-->
-            <!--<artifactId>versions-maven-plugin</artifactId>-->
-            <!--<version>2.1</version>-->
-            <!--<executions>-->
-            <!--<execution>-->
-            <!--<phase>validate</phase>-->
-            <!--<goals>-->
-            <!--<goal>display-dependency-updates</goal>-->
-            <!--<goal>display-plugin-updates</goal>-->
-            <!--</goals>-->
-            <!--</execution>-->
-            <!--</executions>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-            <!--<groupId>org.apache.maven.plugins</groupId>-->
-            <!--<version>${maven-compiler-plugin.version}</version>-->
-            <!--<artifactId>maven-compiler-plugin</artifactId>-->
-            <!--<configuration>-->
-            <!--<source>${maven.compiler.source}</source>-->
-            <!--<target>${maven.compiler.target}</target>-->
-            <!--</configuration>-->
-            <!--<dependencies>-->
-            <!--&lt;!&ndash; Run RequestFactory validation tool. &ndash;&gt;-->
-            <!--<dependency>-->
-            <!--<groupId>com.google.web.bindery</groupId>-->
-            <!--<artifactId>requestfactory-apt</artifactId>-->
-            <!--<version>${gwt.version}</version>-->
-            <!--</dependency>-->
-            <!--</dependencies>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.2</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>display-dependency-updates</goal>
+                            <goal>display-plugin-updates</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <version>${maven-compiler-plugin.version}</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+                <dependencies>
+                    <!-- Run RequestFactory validation tool. -->
+                    <dependency>
+                        <groupId>com.google.web.bindery</groupId>
+                        <artifactId>requestfactory-apt</artifactId>
+                        <version>${gwt.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
 
 
-            <!--<plugin>-->
-            <!--<groupId>com.google.appengine</groupId>-->
-            <!--<artifactId>appengine-maven-plugin</artifactId>-->
-            <!--<version>${appengine.version}</version>-->
-            <!--<configuration>-->
-            <!--<enableJarClasses>false</enableJarClasses>-->
-            <!--&lt;!&ndash; Comment in the below snippet to bind to all IPs instead of just localhost &ndash;&gt;-->
-            <!--&lt;!&ndash; address>0.0.0.0</address>-->
-            <!--<port>8080</port &ndash;&gt;-->
-            <!--&lt;!&ndash; Comment in the below snippet to enable local debugging with a remove debugger-->
-            <!--like those included with Eclipse or IntelliJ &ndash;&gt;-->
-            <!--&lt;!&ndash; jvmFlags>-->
-            <!--<jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>-->
-            <!--</jvmFlags &ndash;&gt;-->
-            <!--</configuration>-->
-            <!--<executions>-->
-            <!--<execution>-->
-            <!--<goals>-->
-            <!--<goal>endpoints_get_discovery_doc</goal>-->
-            <!--</goals>-->
-            <!--</execution>-->
-            <!--</executions>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>${appengine.version}</version>
+                <configuration>
+                    <enableJarClasses>false</enableJarClasses>
+                    <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
+                    <!-- address>0.0.0.0</address>
+                    <port>8080</port -->
+                    <!-- Comment in the below snippet to enable local debugging with a remove debugger
+                    like those included with Eclipse or IntelliJ -->
+                    <!-- jvmFlags>
+                    <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
+                    </jvmFlags -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>endpoints_get_discovery_doc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
             <!-- Skips the GWTTestCases during Junit Testing -->
             <plugin>
@@ -142,6 +144,19 @@
                     <!-- <excludes>**/*GwtTest.java</excludes> -->
                     <includes>**/*GwtTest.java</includes>
 
+                    <copyWebapp>true</copyWebapp>
+                    <hostedWebapp>${webappDirectory}</hostedWebapp>
+
+
+                    <!--Might be needed later for appengine-->
+                    <!--<server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>-->
+                    <!--<appEngineVersion>${appengine.version}</appEngineVersion>-->
+                    <!--<appEngineHome>${gae.home}</appEngineHome>-->
+                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.home}</extraJvmArgs>-->
+                    <!--<extraJvmArgs>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=20</extraJvmArgs>-->
+                    <!--<port>8888</port>-->
+
+
                     <extraJvmArgs>-Xmx1g</extraJvmArgs>
                     <logLevel>INFO</logLevel>
                     <style>${gwt.style}</style>
@@ -156,15 +171,28 @@
 
                 </configuration>
 
+
+                <!--Replaced the existing executions block-->
                 <executions>
                     <execution>
-                        <phase>compile</phase>
                         <goals>
-                            <goal>clean</goal>
                             <goal>compile</goal>
+                            <goal>test</goal>
                         </goals>
                     </execution>
                 </executions>
+
+                <!--<executions>-->
+                <!--<execution>-->
+                <!--<phase>compile</phase>-->
+                <!--<goals>-->
+                <!--<goal>clean</goal>-->
+                <!--<goal>compile</goal>-->
+                <!--</goals>-->
+                <!--</execution>-->
+                <!--</executions>-->
+
+
             </plugin>
 
 
@@ -191,16 +219,31 @@
             <artifactId>appengine-endpoints</artifactId>
             <version>${appengine.version}</version>
         </dependency>
+
+        <!-- Testing -->
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-labs</artifactId>
             <version>${appengine.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-api-stubs</artifactId>
+            <version>${appengine.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.appengine</groupId>
+            <artifactId>appengine-testing</artifactId>
+            <version>${appengine.version}</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
+            <version>3.0-alpha-1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -233,26 +276,6 @@
             <artifactId>gwt-dev</artifactId>
             <version>${gwt.version}</version>
             <scope>provided</scope>
-        </dependency>
-
-        <!-- Test Dependencies -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-testing</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
         </dependency>
 
 
