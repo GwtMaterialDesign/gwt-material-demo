@@ -9,7 +9,7 @@
 	<g:HTMLPanel>
 		 
 		<m:MaterialTitle title="Default" description="You can make your navbar fixed by adding: type='fixed'"/>
-		<m:MaterialNavBar align="right" name="myNavBar1"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+		<m:MaterialNavBar align="right" color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
 			<m:nav><m:MaterialLink  text="About" textColor="blue"  /></m:nav>
 			<m:nav><m:MaterialLink  text="Buttons" textColor="blue"/></m:nav>
 			<m:nav><m:MaterialLink  text="Forms" textColor="blue"/></m:nav>
@@ -25,7 +25,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="Left Aligned Links" description="You can easily align your navbar by adding: type='right' or type='left'"/>
-		<m:MaterialNavBar align="left" name="myNavBar2" color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+		<m:MaterialNavBar align="left" color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
 			<m:nav><m:MaterialLink  text="About" textColor="blue"  /></m:nav>
 			<m:nav><m:MaterialLink  text="Buttons" textColor="blue"/></m:nav>
 			<m:nav><m:MaterialLink  text="Forms" textColor="blue"/></m:nav>
@@ -39,7 +39,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="Icon Text Links" description=""/>
-		<m:MaterialNavBar align="right" name="myNavBar3"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+		<m:MaterialNavBar align="right"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
 			<m:nav><m:MaterialLink  text="Style" icon="mdi-action-dashboard" iconPosition="left" textColor="blue"  /></m:nav>
 			<m:nav><m:MaterialLink  text="Delete" icon="mdi-action-delete" iconPosition="left" textColor="blue" /></m:nav>
 			<m:nav><m:MaterialLink  text="Code" icon="mdi-action-settings-ethernet" iconPosition="left" textColor="blue"/></m:nav>
@@ -55,7 +55,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="Icon Links" description=""/>
-		<m:MaterialNavBar align="right" name="myNavBar4"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down"> 
+		<m:MaterialNavBar align="right"  color="white" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down"> 
 			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="blue"  /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="blue" /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="blue"/></m:nav>
@@ -71,7 +71,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="Custom Color" description=""/>
-		<m:MaterialNavBar align="right" name="myNavBar5"  color="blue darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+		<m:MaterialNavBar align="right"   color="blue darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
 			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="white" /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/></m:nav>
@@ -87,7 +87,7 @@
 		</pre>
 		
 		<m:MaterialTitle title="Waves" description=""/>
-		<m:MaterialNavBar align="right" name="myNavBar5" wave="purple"  color="purple darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
+		<m:MaterialNavBar align="right" wave="purple"  color="purple darken-4" logoResource="{res.ic_gwt_logo}" sideBar="hide-on-med-and-down">
 			<m:nav><m:MaterialLink  icon="mdi-action-dashboard" textColor="white"  /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-delete"  textColor="white" /></m:nav>
 			<m:nav><m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/></m:nav>
@@ -99,6 +99,49 @@
 			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-delete"  textColor="white" />&lt;/m:nav>
 			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-action-settings-ethernet" textColor="white"/>&lt;/m:nav>
 			&lt;m:nav>&lt;m:MaterialLink   icon="mdi-navigation-more-vert"  textColor="white"/>&lt;/m:nav>
+		&lt;/m:MaterialNavBar>
+		</pre>
+		
+		<m:MaterialTitle title="Advance Nav Bar with Sidebar" description="Below is a code snippet where you can define your sidebar with collapsible items or submenus plus a badge."/>
+		
+		<pre>
+		&lt;m:MaterialNavBar wave="light" align="right" color="blue" text="Starter" sideBarWidth="300">
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-social-whatshot" textColor="white"  tooltip="Starter"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-navigation-apps" textColor="white"  tooltip="Apps"/>&lt;/m:nav>
+			&lt;m:nav>&lt;m:MaterialLink  icon="mdi-social-notifications" textColor="white"  tooltip="Notification"/>&lt;/m:nav>
+			&lt;m:sidebaritem>
+				&lt;m:MaterialTopNav profileName="GWT Material" profileImageUrl="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" url="http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png" ui:field="topNav" textColor="white" type="sidebar" >
+					&lt;m:child>
+						&lt;m:MaterialLink text="gwt-material@gmail.com" textColor="white" fontSize="0.8" icon="mdi-navigation-arrow-drop-down" iconPosition="right"/>
+					&lt;/m:child>
+				&lt;/m:MaterialTopNav>
+			&lt;/m:sidebaritem>
+			&lt;m:sidebaritem>&lt;m:MaterialLink icon="mdi-social-whatshot" iconPosition="left" text="Starter" textColor="blue"  />&lt;/m:sidebaritem>
+			&lt;m:sidebaritem>&lt;m:MaterialLink icon="mdi-navigation-apps" iconPosition="left" text="Apps" textColor="blue"/>&lt;/m:sidebaritem>
+			&lt;m:sidebaritem>&lt;m:MaterialLink icon="mdi-social-notifications"  iconPosition="left" text="Notifications" textColor="blue" separator="true"/>&lt;/m:sidebaritem>
+			&lt;m:sidebaritem>&lt;m:MaterialLink icon="mdi-action-explore" iconPosition="left" text="Navigation" textColor="blue"  />&lt;/m:sidebaritem>
+			&lt;m:sidebaritem>
+				&lt;m:MaterialCollapsible>
+						&lt;m:item>
+							&lt;m:MaterialCollapsibleItem>
+								&lt;m:header>&lt;m:MaterialLink  text="Components" icon="mdi-action-view-quilt" textColor="blue"/>&lt;/m:header>
+								&lt;m:content>
+									&lt;m:UnorderedList>
+										&lt;m:ListItem>
+											&lt;m:MaterialLink href="#badges" text="Badges" textColor="blue">
+												&lt;m:badge>&lt;m:MaterialBadge text="Update" color="blue"/>&lt;/m:badge>
+											&lt;/m:MaterialLink>
+										&lt;/m:ListItem>
+										&lt;m:ListItem>&lt;m:MaterialLink href="#buttons" text="Buttons" textColor="blue"/>&lt;/m:ListItem>
+										&lt;m:ListItem>&lt;m:MaterialLink href="#cards" text="Cards" textColor="blue"/>&lt;/m:ListItem>
+										&lt;m:ListItem>&lt;m:MaterialLink href="#collapsibles" text="Collapsible" textColor="blue"/>&lt;/m:ListItem>
+										&lt;m:ListItem>&lt;m:MaterialLink href="#collections" text="Collections" textColor="blue"/>&lt;/m:ListItem>
+									&lt;/m:UnorderedList>
+								&lt;/m:content>
+							&lt;/m:MaterialCollapsibleItem>
+						&lt;/m:item>
+					&lt;/m:MaterialCollapsible>
+			&lt;/m:sidebaritem>
 		&lt;/m:MaterialNavBar>
 		</pre>
 		

@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+	    
+	    <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
+	    <m:MaterialRow>
+	       	<m:MaterialChip text="Apple" />
+		    <m:MaterialChip text="Banana" />
+		    <m:MaterialChip text="Mango" /> 	
+	    </m:MaterialRow>
+	    <pre>
+	   	&lt;m:MaterialChip text="Apple" />
+		&lt;m:MaterialChip text="Banana" />
+		&lt;m:MaterialChip text="Mango" /> 
+	    </pre>
+	    
+	    <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contact’s name, sees the contact’s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
+	    <m:MaterialRow>
+	        <m:MaterialChip imageUrl="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" />
+		    <m:MaterialChip imageUrl="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" />
+		    <m:MaterialChip imageUrl="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" />
+	    </m:MaterialRow>
+	    <pre>
+	    &lt;m:MaterialChip imageUrl="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" />
+		&lt;m:MaterialChip imageUrl="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" />
+		&lt;m:MaterialChip imageUrl="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" />
+	    </pre>
+	    
+	    <m:MaterialTitle title="Close Button Style and Behaviour" description="You can override the close button style by calling chip.getBtnClose() and set the following desired styles."/>
+	    <m:MaterialChip ui:field="chip" imageUrl="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" />
+	    
+	    <pre>
+	    chip.getBtnClose().setIcon("mdi-navigation-cancel");
+		
+		chip.getBtnClose().addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				MaterialToast.alert(chip.getText());
+			}
+		});
+	    </pre>
+	    
+	</g:HTMLPanel>
+</ui:UiBinder> 

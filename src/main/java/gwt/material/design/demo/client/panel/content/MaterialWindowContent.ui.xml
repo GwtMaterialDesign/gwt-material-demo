@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+		>
+	<ui:style>
+		.window{
+			height: 60vh;
+		}
+	</ui:style>
+	<m:MaterialPanel addStyleNames="{style.window}">
+		<m:MaterialNavBar wave="light" align="right" color="blue" text="Demo"  sideBarWidth="0" >
+			<m:nav><m:MaterialLink  icon="mdi-social-whatshot" textColor="white"  tooltip="Starter"/></m:nav>
+			<m:nav><m:MaterialLink  icon="mdi-navigation-apps" textColor="white"  tooltip="Apps"/></m:nav>
+			<m:nav><m:MaterialLink  icon="mdi-social-notifications" textColor="white"  tooltip="Notification"/></m:nav>
+		</m:MaterialNavBar>
+		<m:MaterialContainer>
+			<m:MaterialTabs color="blue" textColor="white" indicatorColor="white" waves="yellow" >
+				<m:tab><m:MaterialLabel text="Tab 1" /></m:tab>
+				<m:tab><m:MaterialLabel text="Tab 2" /></m:tab>
+				<m:tab><m:MaterialLabel text="Tab 3" /></m:tab>
+				<m:tab><m:MaterialLabel text="Tab 4" /></m:tab>
+				<m:content>
+					<m:MaterialTopNav fontSize="2" padding="5" title="Sample 1" description="This is sample 1" color="white" textColor="black lighten-1" />
+				</m:content>
+				<m:content>
+					<m:MaterialTopNav fontSize="2" padding="5" title="Sample 2" description="This is sample 2" color="white" textColor="black lighten-1" />
+				</m:content>
+				<m:content>
+					<m:MaterialTopNav fontSize="2" padding="5"  title="Sample 3" description="This is sample 3"  color="white" textColor="black lighten-1" />
+				</m:content>
+				<m:content>
+					<m:MaterialTopNav fontSize="2" padding="5"  title="Sample 3" description="This is sample 3"  color="white" textColor="black lighten-1" />
+				</m:content>
+			</m:MaterialTabs>
+		</m:MaterialContainer>
+	</m:MaterialPanel>
+</ui:UiBinder> 

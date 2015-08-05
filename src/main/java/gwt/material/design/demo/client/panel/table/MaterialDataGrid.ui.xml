@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	
+		
+	<ui:style>
+		
+		.table{
+			width: 100%;
+		}
+		.panelPager{
+			display: inline-block;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	    <m:MaterialTitle title="Usage" description="Using GWT Widget Datagrid , we have updated the look and feel of the grid to make it more responsive. You can set any Material DataGrid types by: dataGrid.addStyleName('type [striped, bordered, responsive-table]')"/>
+		
+		<m:MaterialRow>
+		    <m:MaterialRadioButton ui:field="rbDefault" value="true" name="type" text="Default" />
+			<m:MaterialRadioButton ui:field="rbBordered" name="type" text="Bordered" />
+			<m:MaterialRadioButton ui:field="rbStriped" name="type" text="Striped" />
+			<m:MaterialRadioButton ui:field="rbHoverable" name="type" text="Hoverable" />
+		</m:MaterialRow>
+		<m:MaterialRow>
+		    <m:MaterialButton ui:field="btnSource" text="Source"  color="blue" waves="light"/>
+		</m:MaterialRow>
+		<g:SimplePanel ui:field="gridPanel"/>
+		<g:SimplePanel ui:field="pagerPanel" addStyleNames="{style.panelPager}"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

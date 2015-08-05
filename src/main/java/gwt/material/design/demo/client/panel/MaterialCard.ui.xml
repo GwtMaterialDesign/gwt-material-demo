@@ -24,7 +24,7 @@
 		<pre>
 <span class="tag">&lt;m:MaterialCard</span> <span class="attr">type</span>="basic" <span class="attr">title</span>="Card Title" <span class="attr">description</span>="Here is some more information about this product that is only revealed once clicked on."  <span class="tag">></span>
 	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Share" <span class="tag">icon</span>="mdi-social-share"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
-	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">text</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
+	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">icon</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
 <span class="tag">&lt;/m:MaterialCard</span><span class="tag">></span>
 		</pre>
 		
@@ -41,7 +41,7 @@
 		<pre>
 <span class="tag">&lt;m:MaterialCard</span> <span class="attr">type</span>="image" <span class="attr">title</span>="Card Title" <span class="attr">description</span>="Here is some more information about this product that is only revealed once clicked on."  <span class="tag">></span>
 	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Share" <span class="tag">icon</span>="mdi-social-share"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
-	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">text</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
+	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">icon</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
 <span class="tag">&lt;/m:MaterialCard</span><span class="tag">></span>
 		</pre>
 		
@@ -58,7 +58,7 @@
 		<pre>
 <span class="tag">&lt;m:MaterialCard</span> <span class="attr">type</span>="reveal" <span class="attr">title</span>="Card Title" <span class="attr">description</span>="Here is some more information about this product that is only revealed once clicked on."  <span class="tag">></span>
 	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Share" <span class="tag">icon</span>="mdi-social-share"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
-	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">text</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
+	<span class="tag">&lt;m:link></span><span class="tag">&lt;m:MaterialLink</span> <span class="tag">text</span>="Download" <span class="tag">icon</span>="mdi-file-file-download"  <span class="tag">/></span><span class="tag">&lt;/m:link></span>
 <span class="tag">&lt;/m:MaterialCard</span><span class="tag">></span>
 		</pre>
 		

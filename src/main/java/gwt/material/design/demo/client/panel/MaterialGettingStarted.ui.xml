@@ -1,7 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui"
-	xmlns:m="urn:import:gwt.material.design.client.ui">
+			 xmlns:m="urn:import:gwt.material.design.client.ui">
 	
 	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 	
@@ -10,33 +9,57 @@
 			width: 300px;
 		}
 	</ui:style>
-	<g:HTMLPanel>
+	<m:MaterialPanel>
+				<m:MaterialPanel >
+					<m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
+					<m:MaterialLink ui:field="btnMaven"  text="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material." icon="mdi-content-link" textColor="blue"/>
+					<pre>
+			<!-- &lt;dependency>
+				&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId>
+				&lt;artifactId>gwt-material&lt;/artifactId>
+				&lt;version>1.3-SNAPSHOT&lt;/version>
+			&lt;/dependency> -->
+					Ongoing release
+					</pre>
+				</m:MaterialPanel>
+				<m:MaterialPanel >
+					<m:MaterialTitle title="Download the JAR (Alternative)" description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
+					<m:MaterialButton ui:field="btnDownloadGWTMaterial" color="blue" waves="light" icon="mdi-file-file-download" iconPosition="right" text="Download 1.3.3"/>
+				</m:MaterialPanel>
+				<m:MaterialPanel scrollspy="Configuring Your Module">
+					<m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
+					<pre>
+			<span class="tag">&lt;inherits</span> <span class="attr">name</span>="gwt.material.design.GwtMaterialDesign" <span class="tag">/></span>
+					</pre>
+				</m:MaterialPanel>
+				
+				<m:MaterialPanel>
+				    <m:MaterialTitle title="Responsive Design" description="Add meta tag for responsive design on Mobile devices in your gwt-app.html" />
+				    <pre>
+				    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+				    </pre>
+				</m:MaterialPanel>
+				
+				<m:MaterialPanel >
+					<m:MaterialTitle title="UiBinder usage" description="Assuming that you're using UIBinder, add the following namespace to the &lt;ui:UIBinder> element:"/>
+					<pre>
+			<span class="tag">xmlns:m</span>="urn:import:gwt.material.design.client.ui" 
+					</pre>
+					<m:MaterialTitle  description="Then you can easily use the m namespace in your widget design, like MaterialButton:"/>
+					<pre>
+			<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">color</span>="blue" <span class=".attr">display</span>="inline-block" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left" <span class="tag">/></span>
+					</pre>
+				</m:MaterialPanel>
+				<m:MaterialPanel >
+					<m:MaterialRow>
+						<m:MaterialColumn grid="s12 m6 l6">
+							<m:MaterialTitle title="Starter Template"  description="You can copy and paste the UI Binder Code of this starter template into your app to know how GWT Material works with basic Nav Bar, Side Bar, Fixed Footer, and Container works."/>
+							<m:MaterialImage resource="{res.starter}"  type="materialboxed"/>
+							<m:MaterialButton ui:field="btnDemoStarter" text="Demo" icon="mdi-action-search" iconPosition="right"/>
+							<m:MaterialButton ui:field="btnSourceStarter" text="Source" icon="mdi-file-file-download" iconPosition="right"/>
+						</m:MaterialColumn>
+					</m:MaterialRow>
+				</m:MaterialPanel>
 		
-		<m:MaterialRow>
-			<m:MaterialColumn grid="s12 m12">
-				<m:MaterialTitle title="Get the jar" description="Download the jar by hand and put it in you app classpath"/>
-				<m:MaterialButton ui:field="btnDownloadJar" text="Download" color="blue" icon="mdi-file-file-download right" addStyleNames="{style.btn}" />
-			</m:MaterialColumn>
-			<m:MaterialColumn grid="s12 m12">
-				<m:MaterialTitle title="Get the Asset Files" description="Download the Materialize Asset files including CSS and Javascripts or you can get the latest assets here (http://materializecss.com/getting-started.html). Also add meta viewport tag to optimize your web app on mobile devices. Dont forget to add the Materilize (JS and CSS) and Jquery on GWT_APP.html"/>
-				<m:MaterialButton ui:field="btnDownloadAsset" text="Materialize" color="blue" icon="mdi-file-file-download right" addStyleNames="{style.btn}" />
-				<m:MaterialImage type="materialboxed" resource="{res.ic_getting_started}"/>
-			</m:MaterialColumn>
-		</m:MaterialRow>
-	
-		<m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
-		<pre>
-<span class="tag">&lt;inherits</span> <span class="attr">name</span>="gwt.material.design.Gwt_material_design" <span class="tag">/></span>
-		</pre>
-		
-		<m:MaterialTitle title="UiBinder usage" description="Assuming that you're using UIBinder, add the following namespace to the &lt;ui:UIBinder> element:"/>
-		<pre>
-<span class="tag">xmlns:m</span>="urn:import:gwt.material.design.client.ui" 
-		</pre>
-		
-		<m:MaterialTitle  description="Then you can easily use the m namespace in your widget design, like MaterialButton:"/>
-		<pre>
-<span class="tag">&lt;m:MaterialButton</span> <span class="attr">text</span>="Button" <span class="attr">color</span>="blue" <span class=".attr">display</span>="inline-block" <span class="attr">icon</span>="mdi-action-account-circle" <span class="attr">iconPosition</span>="left" <span class="tag">/></span>
-		</pre>
-	</g:HTMLPanel>
+	</m:MaterialPanel>
 </ui:UiBinder> 

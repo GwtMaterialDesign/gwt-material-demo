@@ -12,8 +12,9 @@ public class MaterialMedia extends Composite {
 	interface MaterialMediaUiBinder extends UiBinder<Widget, MaterialMedia> {
 	}
 
+	
 	public MaterialMedia() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
+	
 }

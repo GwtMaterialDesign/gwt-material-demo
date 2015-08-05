@@ -5,6 +5,7 @@
 	<ui:style>
 		.btn{
 			width: 200px;
+			margin-bottom: 10px;
 		}
 	</ui:style>
 	<g:HTMLPanel>
@@ -21,6 +22,31 @@ MaterialLoader.showLoading(<span class="tag">true</span>);
 		
 		<pre>
 MaterialLoader.showProgress(<span class="tag">true</span>);
+		</pre>
+		
+		<m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
+		<m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialNavBar ui:field="navBar" align="right"  color="blue"  text="Logo">
+			<m:nav><m:MaterialLink  text="About" textColor="white"  /></m:nav>
+			<m:nav><m:MaterialLink  text="Buttons" textColor="white"/></m:nav>
+			<m:nav><m:MaterialLink  text="Forms" textColor="white"/></m:nav>
+		</m:MaterialNavBar>
+		
+		<pre>
+		@UiField MaterialNavBar navBar;
+		
+		@UiHandler("btnShowNavBarProgress")
+		void onShowNavBarProgress(ClickEvent e){
+			navBar.showProgress(true);
+			Timer t = new Timer() {
+				
+				@Override
+				public void run() {
+					navBar.showProgress(false);
+				}
+			};
+			t.schedule(3000);
+		}
 		</pre>
 	</g:HTMLPanel>
 </ui:UiBinder> 

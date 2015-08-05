@@ -1,15 +1,15 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui"
-	xmlns:m="urn:import:gwt.material.design.client.ui"
-	xmlns:p="urn:import:gwt.material.design.demo.client.panel">
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui"
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+		>
 	<ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
 	<ui:style>
 	
 	</ui:style>
 	<g:HTMLPanel>
 		<m:MaterialTitle title="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)"/>
-		<m:MaterialTabs color="blue" textColor="white" indicatorColor="yellow" waves="yellow">
+		<m:MaterialTabs ui:field="tab" color="blue" textColor="white" indicatorColor="yellow" waves="yellow">
 			<m:tab><g:Label text="sample"/></m:tab>
 			<m:tab><g:Label text="sample"/></m:tab>
 			<m:tab><g:Label text="sample"/></m:tab>
@@ -40,5 +40,30 @@
 	<span class="tag">&lt;/m:content></span>
 <span class="tag">&lt;/m:MaterialTabs></span>
 		</pre>
+		
+		<m:MaterialTitle title="Set Tab Index Method" description="By calling this method, you can easily preselect a tab index. Note the index will start at 1."/>
+		<m:MaterialTabs ui:field="tab2" color="blue" textColor="white" indicatorColor="yellow" waves="yellow">
+			<m:tab><g:Label text="sample"/></m:tab>
+			<m:tab><g:Label text="sample"/></m:tab>
+			<m:tab><g:Label text="sample"/></m:tab>
+			<m:content>
+				<m:MaterialTopNav padding="5" title="Sample 1" description="This is sample 1" color="blue darken-1" textColor="white" />
+			</m:content>
+			<m:content>
+				<m:MaterialTopNav padding="5" title="Sample 2" description="This is sample 2" color="blue darken-1" textColor="white" />
+			</m:content>
+			<m:content>
+				<m:MaterialTopNav padding="5" title="Sample 3" description="This is sample 3"  color="blue darken-1" textColor="white" />
+			</m:content>
+		</m:MaterialTabs>
+		<pre>
+		@UiField MaterialTabs tab;
+	
+		public MaterialTabsPanel() {
+			initWidget(uiBinder.createAndBindUi(this));
+			tab.setTabIndex(2);
+		}
+		</pre>
+		
 	</g:HTMLPanel>
 </ui:UiBinder> 

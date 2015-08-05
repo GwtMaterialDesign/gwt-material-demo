@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+		>
+	<ui:style>
+	
+	</ui:style>
+	<m:MaterialCard ui:field="card" grid="s12 m6 l3" type="reveal" >
+		<m:link><m:MaterialLink ui:field="btnDemo" text="Demo"  /></m:link>
+		<m:link><m:MaterialLink ui:field="btnSource" text="Source"  /></m:link>
+	</m:MaterialCard>
+</ui:UiBinder> 

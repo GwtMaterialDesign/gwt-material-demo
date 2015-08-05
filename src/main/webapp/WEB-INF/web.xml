@@ -5,20 +5,10 @@
          version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee">
 
-  <!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>gwt.material.design.demo.server.GreetingServiceImpl</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/gwt_material_design_demo/greet</url-pattern>
-  </servlet-mapping>
-  
-  <!-- Default page to serve -->
-  <welcome-file-list>
-    <welcome-file>Gwt_material_design_demo.html</welcome-file>
-  </welcome-file-list>
+
+    <!-- Default page to serve -->
+    <welcome-file-list>
+        <welcome-file>Gwt_material_design_demo.html</welcome-file>
+    </welcome-file-list>
 
 </web-app>

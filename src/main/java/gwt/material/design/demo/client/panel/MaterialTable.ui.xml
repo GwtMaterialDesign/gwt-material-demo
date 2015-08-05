@@ -1,0 +1,213 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialTitle title="Borderless Table" description="Tables are borderless by default." />
+		<table>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+		<pre>
+&lt;table>
+  &lt;thead>
+    &lt;tr>
+      &lt;th data-field="id">Name&lt;/th>
+	  &lt;th data-field="name">Item Name&lt;/th>
+	  &lt;th data-field="price">Item Price&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+
+  &lt;tbody>
+      &lt;tr>
+	  &lt;td>Alvin&lt;/td>
+	  &lt;td>Eclair&lt;/td>
+	  &lt;td>$0.87&lt;/td>
+	&lt;/tr>
+	&lt;tr>
+	  &lt;td>Alan&lt;/td>
+	  &lt;td>Jellybean&lt;/td>
+	  &lt;td>$3.76&lt;/td>
+	&lt;/tr>
+	&lt;tr>
+	  &lt;td>Jonathan&lt;/td>
+	  &lt;td>Lollipop&lt;/td>
+	  &lt;td>$7.00&lt;/td>
+	&lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+		</pre>
+
+		<m:MaterialTitle title="Bordered Table" description="Add class='bordered' to the table tag for a bordered table" />
+		<table class='bordered'>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<m:MaterialTitle title="Striped Table" description="Add class='striped' to the table tag for a striped table" />
+		<table class='striped'>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<m:MaterialTitle title="Hoverable Table" description="Add class='hoverable' to the table tag for a hoverable table" />
+		<table class='hoverable'>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<m:MaterialTitle title="Centered Table" description="Add class='centered' to the table tag to center align all the text in the table" />
+		<table class='centered'>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<m:MaterialTitle title="Responsive Table" description="Add class='responsive-table' to the table tag to make the table horizontally scrollable on smaller screen widths." />
+		<table class='responsive-table'>
+			<thead>
+				<tr>
+					<th data-field="id">Name</th>
+					<th data-field="name">Item Name</th>
+					<th data-field="price">Item Price</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Alvin</td>
+					<td>Eclair</td>
+					<td>$0.87</td>
+				</tr>
+				<tr>
+					<td>Alan</td>
+					<td>Jellybean</td>
+					<td>$3.76</td>
+				</tr>
+				<tr>
+					<td>Jonathan</td>
+					<td>Lollipop</td>
+					<td>$7.00</td>
+				</tr>
+			</tbody>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

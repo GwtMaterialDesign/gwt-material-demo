@@ -1,7 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui"
-	xmlns:m="urn:import:gwt.material.design.client.ui">
+			 xmlns:m="urn:import:gwt.material.design.client.ui">
 	
 	<ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
 	
@@ -86,6 +85,44 @@
 				
 			</m:MaterialCollapsible>
 			
+			<m:MaterialTitle title="Popout" description="You can set the popout type by adding an attribute type='popout'"/>
+			<m:MaterialCollapsible type="popout" wave="light">
+			
+				<m:item>
+					<m:MaterialCollapsibleItem>
+						<m:header><m:MaterialLink text="Paragraph" icon="mdi-editor-attach-file" textColor="black"/></m:header>
+						<m:content><m:MaterialTitle  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/></m:content>
+					</m:MaterialCollapsibleItem>
+				</m:item>
+				
+				<m:item>
+					<m:MaterialCollapsibleItem>
+						<m:header><m:MaterialLink text="Card" icon="mdi-editor-border-all" textColor="black"/></m:header>
+						<m:content><m:MaterialCard title="Card Title" description="Im a card inside the collapsible panel" resource="{res.image}" type="reveal">
+							<m:link><m:MaterialLink text="Second" icon="mdi-maps-place" textColor="orange"/></m:link>
+							<m:link><m:MaterialLink text="Second" icon="mdi-maps-place" textColor="orange"/></m:link>
+						</m:MaterialCard></m:content>	
+					</m:MaterialCollapsibleItem>
+				</m:item>
+				
+				<m:item>
+					<m:MaterialCollapsibleItem>
+						<m:header><m:MaterialLink text="Form" icon="mdi-action-view-list" textColor="black"/></m:header>
+						<m:content>
+							<m:MaterialPanel>
+								<m:MaterialTextBox placeholder="First Name"/>
+								<m:MaterialTextBox placeholder="Last Name"/>
+								<m:MaterialSwitch />
+								<m:MaterialDatePicker />
+								<m:MaterialRange />
+								<m:MaterialButton text="Submit" icon="mdi-action-verified-user" iconPosition="right"/>
+							</m:MaterialPanel>
+						</m:content>
+					</m:MaterialCollapsibleItem>
+				</m:item>
+				
+			</m:MaterialCollapsible>
+			
 		</m:MaterialColumn>
 		
 		<m:MaterialColumn grid="s12 m12 l12">
@@ -102,6 +139,8 @@
 	
 		</pre>
 		</m:MaterialColumn>
+		
+		
 		
 	</m:MaterialRow>
 </ui:UiBinder> 

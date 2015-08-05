@@ -2,38 +2,48 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui"
 	xmlns:m="urn:import:gwt.material.design.client.ui">
-
+	<ui:style>
+	
+	</ui:style>
 	<g:HTMLPanel>
 		<m:MaterialTitle title="Collections"/>
 		<m:MaterialCollection>
 			<m:item>
 				<m:MaterialPanel>
-					<m:MaterialLabel text="Sample 1" />
+					<m:MaterialLink text="Sample 1" >
+						<m:badge><m:MaterialBadge text="1 new" color="blue"/></m:badge>
+					</m:MaterialLink>
 					<m:MaterialBadge text="1" />
 				</m:MaterialPanel>
 			</m:item>
 			<m:item>
 				<m:MaterialPanel>
-					<m:MaterialLabel text="Sample 1" />
-					<m:MaterialBadge text="1" type="new" color="blue"/>
+					<m:MaterialLink text="Sample 1" >
+						<m:badge><m:MaterialBadge text="1 new" color="blue"/></m:badge>
+					</m:MaterialLink>
+					
 				</m:MaterialPanel>
 			</m:item>
-			<m:item><m:MaterialLabel text="Sample 3" /></m:item>
-			<m:item><m:MaterialLabel text="Sample 4" /></m:item>
+			<m:item><m:MaterialLink text="Sample 3" /></m:item>
+			<m:item><m:MaterialLink text="Sample 4" /></m:item>
 		</m:MaterialCollection>
 		
 		<pre>
 		&lt;m:MaterialCollection>
 			&lt;m:item>
 				&lt;m:MaterialPanel>
-					&lt;m:MaterialLabel text="Sample 1" />
+					&lt;m:MaterialLink text="Sample 1" >
+						&lt;m:badge>&lt;m:MaterialBadge text="1 new" color="blue"/>&lt;/m:badge>
+					&lt;/m:MaterialLink>
 					&lt;m:MaterialBadge text="1" />
 				&lt;/m:MaterialPanel>
 			&lt;/m:item>
 			&lt;m:item>
 				&lt;m:MaterialPanel>
-					&lt;m:MaterialLabel text="Sample 1" />
-					&lt;m:MaterialBadge text="1" type="new" color="blue"/>
+					&lt;m:MaterialLink text="Sample 1" >
+						&lt;m:badge>&lt;m:MaterialBadge text="1 new" color="blue"/>&lt;/m:badge>
+					&lt;/m:MaterialLink>
+					
 				&lt;/m:MaterialPanel>
 			&lt;/m:item>
 			&lt;m:item>&lt;m:MaterialLabel text="Sample 3" />&lt;/m:item>
@@ -49,8 +59,9 @@
 					<m:item><m:MaterialLink text="Second"/></m:item>
 					<m:item>
 						<m:MaterialPanel>
-							<m:MaterialLink text="Sample 1" />
-							<m:MaterialBadge text="1" type="new" color="blue"/>
+							<m:MaterialLink text="Sample 1" >
+								<m:badge><m:MaterialBadge text="1 new" color="blue"/></m:badge>
+							</m:MaterialLink>
 						</m:MaterialPanel>
 					</m:item>
 			</m:MaterialDropDown>
@@ -64,8 +75,9 @@
 				&lt;m:item>&lt;m:MaterialLink text="Second"/>&lt;/m:item>
 				&lt;m:item>
 					&lt;m:MaterialPanel>
-						&lt;m:MaterialLink text="Sample 1" />
-						&lt;m:MaterialBadge text="1" type="new" color="blue"/>
+						&lt;m:MaterialLink text="Sample 1" >
+							&lt;m:badge>&lt;m:MaterialBadge text="1 new" color="blue"/>&lt;/m:badge>
+						&lt;/m:MaterialLink>
 					&lt;/m:MaterialPanel>
 				&lt;/m:item>
 		&lt;/m:MaterialDropDown>

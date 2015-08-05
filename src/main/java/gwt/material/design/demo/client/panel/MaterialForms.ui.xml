@@ -9,7 +9,6 @@
 		}
 	</ui:style>
 	<g:HTMLPanel>
-		
 		<m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
 		<m:MaterialTextBox placeholder="First Name" />
 		<m:MaterialTextBox placeholder="Email" icon="mdi-action-account-circle" />
@@ -28,17 +27,25 @@
 		</pre>
 		
 		<m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-		<m:MaterialListBox >
+		<m:MaterialListBox ui:field="lstOptions">
 			<item>Option 1</item>
 			<item>Option 2</item>
 			<item>Option 3</item>
 		</m:MaterialListBox>
 		<pre>
 <span class="tag">&lt;m:MaterialListBox</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;/item</span><span class="tag">></span>
 <span class="tag">&lt;/m:MaterialListBox</span><span class="tag">></span>
+		</pre>
+		
+		<m:MaterialTitle title="ChangeHandler" description="Add the code below to trigger any events on listbox"/>
+		<pre>
+	@UiHandler("lstOptions")
+	void onChangeListBox(ChangeEvent e){
+		MaterialToast.alert("Selected Index: " + lstOptions.getSelectedIndex());
+	}
 		</pre>
 		
 		<m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
@@ -49,9 +56,9 @@
 		</m:MaterialListBox>
 		<pre>
 <span class="tag">&lt;m:MaterialListBox</span> <span class="attr">old</span>="true" <span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;/item</span><span class="tag">></span>
 <span class="tag">&lt;/m:MaterialListBox</span><span class="tag">></span>
 		</pre>
 		
@@ -68,27 +75,27 @@
 		</m:MaterialListBox>
 		<pre>
 <span class="tag">&lt;m:MaterialListBox</span>  <span class="attr">disabled</span>="true" <span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;/item</span><span class="tag">></span>
 <span class="tag">&lt;/m:MaterialListBox</span><span class="tag">></span>
 <span class="tag">&lt;m:MaterialListBox</span> <span class="attr">old</span>="true"  <span class="attr">disabled</span>="true" <span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;item</span><span class="tag">></span>
-	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 1<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 2<span class="tag">&lt;/item</span><span class="tag">></span>
+	<span class="tag">&lt;item</span><span class="tag">></span>Option 3<span class="tag">&lt;/item</span><span class="tag">></span>
 <span class="tag">&lt;/m:MaterialListBox</span><span class="tag">></span>
 		</pre>
 
 
 		<m:MaterialTitle title="Radio Button" description="Radio Buttons are used when the user must make only one selection out of a group of items"/>
 		<m:MaterialRadioButton name="color" text="Red" addStyleNames="{style.block}"/>
-		<m:MaterialRadioButton name="color" text="Yellow" addStyleNames="{style.block}"/>
+		<m:MaterialRadioButton name="color" text="Yellow" type="gap" addStyleNames="{style.block}"/>
 		<m:MaterialRadioButton name="color" text="Green" addStyleNames="{style.block}"/>
 		<m:MaterialRadioButton name="color" text="Brown" disabled="true" addStyleNames="{style.block}"/>
 		
 		<pre>
 <span class="tag">&lt;m:MaterialRadioButton</span> <span class="attr">name</span>="color" <span class="attr">text</span>="Red"<span class="tag">/></span>
-<span class="tag">&lt;m:MaterialRadioButton</span> <span class="attr">name</span>="color" <span class="attr">text</span>="Yellow"<span class="tag">/></span>
+<span class="tag">&lt;m:MaterialRadioButton</span> <span class="attr">name</span>="color" <span class="attr">type</span>="gap" <span class="attr">text</span>="Yellow"<span class="tag">/></span>
 <span class="tag">&lt;m:MaterialRadioButton</span> <span class="attr">name</span>="color" <span class="attr">text</span>="Green"<span class="tag">/></span>
 <span class="tag">&lt;m:MaterialRadioButton</span> <span class="attr">name</span>="color" <span class="attr">text</span>="Brown" <span class="attr">disabled</span>="true"<span class="tag">/></span>
 		</pre>
@@ -96,12 +103,14 @@
 		<m:MaterialTitle title="Check Box" description="Checkboxes"/>
 		<m:MaterialCheckBox text="Blue" value="true" addStyleNames="{style.block}"/>
 		<m:MaterialCheckBox text="Red" addStyleNames="{style.block}"/>
+		<m:MaterialCheckBox text="Cyan" value="true" type="filled" addStyleNames="{style.block}"/>
 		<m:MaterialCheckBox text="Green" value="true" addStyleNames="{style.block}" disabled="true"/>
 		<m:MaterialCheckBox text="Brown" addStyleNames="{style.block}" disabled="true"/>
 		
 		<pre>
 <span class="tag">&lt;m:MaterialCheckBox </span> <span class="attr">text</span>="Blue" <span class="attr">value</span>="true" <span class="tag">/></span>
 <span class="tag">&lt;m:MaterialCheckBox </span> <span class="attr">text</span>="Red" <span class="tag">/></span>
+<span class="tag">&lt;m:MaterialCheckBox </span> <span class="attr">text</span>="Cyan" <span class="attr">type</span>="filled" <span class="attr">value</span>="true" <span class="tag">/></span>
 <span class="tag">&lt;m:MaterialCheckBox </span> <span class="attr">text</span>="Green" <span class="attr">value</span>="true" <span class="attr">disabled</span>="true" <span class="tag">/></span>
 <span class="tag">&lt;m:MaterialCheckBox </span> <span class="attr">text</span>="Brown" <span class="attr">disabled</span>="true" <span class="tag">/></span>
 		</pre>
@@ -124,11 +133,19 @@
 		
 		
 		<m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
-		<m:MaterialDatePicker placeholder="Date"/>
+		<m:MaterialDatePicker ui:field="dp" placeholder="Date" />
 		
 		<pre>
 <span class="tag">&lt;m:MaterialDatePicker placeholder="Date"</span> <span class="tag">/></span>
 		</pre>
+		
+		<m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
+		<m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+		<pre>
+<span class="tag">&lt;m:MaterialDatePicker placeholder="Date" selectionType="YEAR"</span> <span class="tag">/></span>
+		</pre>
+		
+		
 		
 	</g:HTMLPanel>
 </ui:UiBinder> 

@@ -9,23 +9,66 @@
 		
 	</ui:style>
 	<g:HTMLPanel>
-		<m:MaterialTitle title="Toast" description="Materialize provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes."/>
-		<m:MaterialButton text="Toast Me" ui:field="btnToast" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialTitle title="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes."/>
+		<m:MaterialButton text="Toast Me" waves="light" ui:field="btnToast" color="blue" addStyleNames="{style.btn}"/>
 		<pre>
-MaterialToast.alert(<span class="tag">"I Love Material Design"</span>);
+MaterialToast.alert("I Love Material Design");
+		</pre>
+		
+		<m:MaterialTitle title="Toast with Action" description="rovides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied."/>
+		<m:MaterialButton text="Toast Me" waves="light" ui:field="btnToastAction" color="blue" addStyleNames="{style.btn}"/>
+		<pre>
+MaterialLink link = new MaterialLink("UNDO", "yellow");
+link.addClickHandler(new ClickHandler() {
+			
+	@Override
+	public void onClick(ClickEvent event) {
+		MaterialToast.alert("UNDO DONE");
+	}
+});
+MaterialToast.alert("Item Deleted", link);
+		</pre>
+		
+		<m:MaterialTitle title="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below."/>
+		<m:MaterialButton text="Toast Me" waves="light" ui:field="btnToastRounded" color="blue" addStyleNames="{style.btn}"/>
+		<pre>
+MaterialToast.alert("I Love Material Design", "rounded");
 		</pre>
 		
 		<m:MaterialTitle title="Modal" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. "/>
-		<m:MaterialButton text="Show Modal" ui:field="btnModal" color="blue" addStyleNames="{style.btn}"/>
-		<m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" color="blue" />
+		<m:MaterialButton text="Show Modal" ui:field="btnModal" color="blue" waves="light"/>
+		<m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" color="blue" waves="light"/>
+		<m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" color="blue" waves="light"/>
+		<m:MaterialButton text="Modal Window" ui:field="btnWindow" color="blue" waves="light"/>
 		<pre>
-MaterialModal.showModal(<span class="tag">true</span>, <span class="tag">new</span> ModalContent());
+MaterialModal.showModal(<span class="tag">new</span> ModalContent(), TYPE.DEFAULT);
+		</pre>
+		<pre>
+MaterialModal.showModal(<span class="tag">new</span> ModalContent(), TYPE.FIXED_FOOTER);
+		</pre>
+		<pre>
+MaterialModal.showModal(<span class="tag">new</span> ModalContent(), TYPE.BOTTOM_SHEET);
+		</pre>
+		<pre>
+MaterialModal.showModal(<span class="tag">new</span> ModalContent(), TYPE.WINDOW, "Window Title");
+		</pre>
+		
+		<m:MaterialTitle title="Modal Content" description="In order to set the content of your modal we provide a sample Composite with right mockups composing of MaterialModalContent and MaterialModalFooter see below the structure of UI Binder."/>
+		<pre>
+&lt;m:MaterialModalContent>
+	&lt;m:MaterialTitle title="Modal Header" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/>
+&lt;/m:MaterialModalContent>
+		
+&lt;m:MaterialModalFooter align="right">
+	&lt;m:MaterialButton ui:field="btnAgree" waves="green" type="flat" text="Agree" addStyleNames="{style.btn}" />
+	&lt;m:MaterialButton ui:field="btnDisagree" waves="red" type="flat" text="Disagree" addStyleNames="{style.btn}" />
+&lt;/m:MaterialModalFooter>
 		</pre>
 	
 		<m:MaterialTitle title="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function."/>
-		<m:MaterialButton text="Bottom" tooltip="I am tooltip" tooltipLocation="bottom" color="blue" addStyleNames="{style.btn}"/>
-		<m:MaterialButton text="Top" tooltip="I am tooltip" tooltipLocation="top" color="blue" addStyleNames="{style.btn}"/>
-		<m:MaterialButton text="Left" tooltip="I am tooltip" tooltipLocation="left" color="blue" addStyleNames="{style.btn}"/>
-		<m:MaterialButton text="Right" tooltip="I am tooltip" tooltipLocation="right" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Bottom" waves="light" tooltip="I am tooltip" tooltipLocation="bottom" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Top" waves="light" tooltip="I am tooltip" tooltipLocation="top" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Left" waves="light" tooltip="I am tooltip" tooltipLocation="left" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Right" waves="light" tooltip="I am tooltip" tooltipLocation="right" color="blue" addStyleNames="{style.btn}"/>
 	</g:HTMLPanel>
 </ui:UiBinder> 

@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+		>
+	<ui:style>
+	
+	</ui:style>
+	<m:MaterialSlide ui:field="sliderPanel" fullScreen="true">
+			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="left" url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="right" url="http://mayastepien.nl/googlecalendar/google-skiing.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+		</m:MaterialSlide>
+</ui:UiBinder> 

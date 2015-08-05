@@ -1,0 +1,3384 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<m:MaterialPanel>
+		<m:MaterialTitle title="Usage"
+			description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon." />
+		<m:MaterialIcon icon="mdi-action-3d-rotation" />
+		<pre>
+			&lt;m:MaterialIcon icon="mdi-action-3d-rotation" />
+		</pre>
+
+		<m:MaterialTitle title="Sizes"
+			description="To control the size of the icon, just set size attribute in your MaterialIcon widget." />
+		<m:MaterialRow addStyleNames="valign-wrapper">
+			<m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-polymer" size="tiny" />
+				<m:MaterialLabel text="Tiny" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-polymer" size="small" />
+				<m:MaterialLabel text="Small" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-polymer" size="medium" />
+				<m:MaterialLabel text="Medium" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-polymer" size="large" />
+				<m:MaterialLabel text="Large" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<pre>
+			&lt;m:MaterialIcon icon="mdi-action-polymer" size="tiny"/>
+			&lt;m:MaterialIcon icon="mdi-action-polymer" size="small"/>
+			&lt;m:MaterialIcon icon="mdi-action-polymer" size="medium"/>
+			&lt;m:MaterialIcon icon="mdi-action-polymer" size="large"/>
+		</pre>
+
+		<m:MaterialTitle title="Icon inside MaterialLink"
+			description="You can add in your material link an icon instance by adding icon attribute" />
+		<m:MaterialLink fontSize="2" text="I love Material Design"
+			textColor="red" icon="mdi-action-favorite" iconPosition="left" />
+
+		<pre>
+			&lt;m:MaterialLink fontSize="2" text="I love Material Design" textColor="red"
+			icon="mdi-action-favorite" iconPosition="left"/>
+		</pre>
+
+		<m:MaterialTitle title="Action" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-3d-rotation" size="medium" />
+				<m:MaterialLabel text="mdi-action-3d-rotation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-accessibility" size="medium" />
+				<m:MaterialLabel text="mdi-action-accessibility" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-balance"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-balance" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-balance-wallet"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-balance-wallet" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-box" size="medium" />
+				<m:MaterialLabel text="mdi-action-account-box" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-child" size="medium" />
+				<m:MaterialLabel text="mdi-action-account-child" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-circle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-add-shopping-cart"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-add-shopping-cart" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Action" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-3d-rotation" size="medium" />
+				<m:MaterialLabel text="mdi-action-3d-rotation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-accessibility" size="medium" />
+				<m:MaterialLabel text="mdi-action-accessibility" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-balance"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-balance" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-balance-wallet"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-balance-wallet" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-box" size="medium" />
+				<m:MaterialLabel text="mdi-action-account-box" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-child" size="medium" />
+				<m:MaterialLabel text="mdi-action-account-child" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-account-circle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-account-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-add-shopping-cart"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-add-shopping-cart" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-alarm" size="medium" />
+				<m:MaterialLabel text="mdi-action-alarm" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-alarm-add" size="medium" />
+				<m:MaterialLabel text="mdi-action-alarm-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-alarm-off" size="medium" />
+				<m:MaterialLabel text="mdi-action-alarm-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-alarm-on" size="medium" />
+				<m:MaterialLabel text="mdi-action-alarm-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-android" size="medium" />
+				<m:MaterialLabel text="mdi-action-android" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-announcement" size="medium" />
+				<m:MaterialLabel text="mdi-action-announcement" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-aspect-ratio" size="medium" />
+				<m:MaterialLabel text="mdi-action-aspect-ratio" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assessment" size="medium" />
+				<m:MaterialLabel text="mdi-action-assessment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment" size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment-ind"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment-ind" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment-late"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment-late" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment-return"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment-return" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment-returned"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment-returned" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-assignment-turned-in"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-assignment-turned-in" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-autorenew" size="medium" />
+				<m:MaterialLabel text="mdi-action-autorenew" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-backup" size="medium" />
+				<m:MaterialLabel text="mdi-action-backup" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-book" size="medium" />
+				<m:MaterialLabel text="mdi-action-book" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-bookmark" size="medium" />
+				<m:MaterialLabel text="mdi-action-bookmark" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-bookmark-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-bookmark-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-bug-report" size="medium" />
+				<m:MaterialLabel text="mdi-action-bug-report" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-cached" size="medium" />
+				<m:MaterialLabel text="mdi-action-cached" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-class" size="medium" />
+				<m:MaterialLabel text="mdi-action-class" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-credit-card" size="medium" />
+				<m:MaterialLabel text="mdi-action-credit-card" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-dashboard" size="medium" />
+				<m:MaterialLabel text="mdi-action-dashboard" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-delete" size="medium" />
+				<m:MaterialLabel text="mdi-action-delete" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-description" size="medium" />
+				<m:MaterialLabel text="mdi-action-description" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-dns" size="medium" />
+				<m:MaterialLabel text="mdi-action-dns" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-done" size="medium" />
+				<m:MaterialLabel text="mdi-action-done" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-done-all" size="medium" />
+				<m:MaterialLabel text="mdi-action-done-all" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-event" size="medium" />
+				<m:MaterialLabel text="mdi-action-event" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-exit-to-app" size="medium" />
+				<m:MaterialLabel text="mdi-action-exit-to-app" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-explore" size="medium" />
+				<m:MaterialLabel text="mdi-action-explore" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-extension" size="medium" />
+				<m:MaterialLabel text="mdi-action-extension" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-face-unlock" size="medium" />
+				<m:MaterialLabel text="mdi-action-face-unlock" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-favorite" size="medium" />
+				<m:MaterialLabel text="mdi-action-favorite" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-favorite-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-favorite-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-find-in-page" size="medium" />
+				<m:MaterialLabel text="mdi-action-find-in-page" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-find-replace" size="medium" />
+				<m:MaterialLabel text="mdi-action-find-replace" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-flip-to-back" size="medium" />
+				<m:MaterialLabel text="mdi-action-flip-to-back" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-flip-to-front" size="medium" />
+				<m:MaterialLabel text="mdi-action-flip-to-front" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-get-app" size="medium" />
+				<m:MaterialLabel text="mdi-action-get-app" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-grade" size="medium" />
+				<m:MaterialLabel text="mdi-action-grade" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-group-work" size="medium" />
+				<m:MaterialLabel text="mdi-action-group-work" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-help" size="medium" />
+				<m:MaterialLabel text="mdi-action-help" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-highlight-remove"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-highlight-remove" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-history" size="medium" />
+				<m:MaterialLabel text="mdi-action-history" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-home" size="medium" />
+				<m:MaterialLabel text="mdi-action-home" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-https" size="medium" />
+				<m:MaterialLabel text="mdi-action-https" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-info" size="medium" />
+				<m:MaterialLabel text="mdi-action-info" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-info-outline" size="medium" />
+				<m:MaterialLabel text="mdi-action-info-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-input" size="medium" />
+				<m:MaterialLabel text="mdi-action-input" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-invert-colors" size="medium" />
+				<m:MaterialLabel text="mdi-action-invert-colors" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-label" size="medium" />
+				<m:MaterialLabel text="mdi-action-label" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-label-outline" size="medium" />
+				<m:MaterialLabel text="mdi-action-label-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-language" size="medium" />
+				<m:MaterialLabel text="mdi-action-language" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-launch" size="medium" />
+				<m:MaterialLabel text="mdi-action-launch" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-list" size="medium" />
+				<m:MaterialLabel text="mdi-action-list" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-lock" size="medium" />
+				<m:MaterialLabel text="mdi-action-lock" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-lock-open" size="medium" />
+				<m:MaterialLabel text="mdi-action-lock-open" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-lock-outline" size="medium" />
+				<m:MaterialLabel text="mdi-action-lock-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-loyalty" size="medium" />
+				<m:MaterialLabel text="mdi-action-loyalty" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-markunread-mailbox"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-markunread-mailbox" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-note-add" size="medium" />
+				<m:MaterialLabel text="mdi-action-note-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-open-in-browser"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-open-in-browser" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-open-in-new" size="medium" />
+				<m:MaterialLabel text="mdi-action-open-in-new" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-open-with" size="medium" />
+				<m:MaterialLabel text="mdi-action-open-with" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-pageview" size="medium" />
+				<m:MaterialLabel text="mdi-action-pageview" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-payment" size="medium" />
+				<m:MaterialLabel text="mdi-action-payment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-camera-mic"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-camera-mic" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-contact-cal"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-contact-cal" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-data-setting"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-data-setting" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-device-info"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-device-info" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-identity" size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-identity" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-media" size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-media" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-phone-msg"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-phone-msg" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-perm-scan-wifi"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-perm-scan-wifi" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-picture-in-picture"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-picture-in-picture" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-polymer" size="medium" />
+				<m:MaterialLabel text="mdi-action-polymer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-print" size="medium" />
+				<m:MaterialLabel text="mdi-action-print" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-query-builder" size="medium" />
+				<m:MaterialLabel text="mdi-action-query-builder" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-question-answer"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-question-answer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-receipt" size="medium" />
+				<m:MaterialLabel text="mdi-action-receipt" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-redeem" size="medium" />
+				<m:MaterialLabel text="mdi-action-redeem" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-report-problem"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-report-problem" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-restore" size="medium" />
+				<m:MaterialLabel text="mdi-action-restore" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-room" size="medium" />
+				<m:MaterialLabel text="mdi-action-room" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-schedule" size="medium" />
+				<m:MaterialLabel text="mdi-action-schedule" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-search" size="medium" />
+				<m:MaterialLabel text="mdi-action-search" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings" size="medium" />
+				<m:MaterialLabel text="mdi-action-settings" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-applications"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-applications" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-backup-restore"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-backup-restore" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-bluetooth"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-bluetooth" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-cell" size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-cell" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-display"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-display" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-ethernet"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-ethernet" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-input-antenna"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-input-antenna" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-input-component"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-input-component" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-input-composite"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-input-composite" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-input-hdmi"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-input-hdmi" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-input-svideo"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-input-svideo" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-overscan"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-overscan" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-phone"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-phone" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-power"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-power" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-remote"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-remote" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-settings-voice"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-settings-voice" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-shop" size="medium" />
+				<m:MaterialLabel text="mdi-action-shop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-shop-two" size="medium" />
+				<m:MaterialLabel text="mdi-action-shop-two" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-shopping-basket"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-shopping-basket" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-shopping-cart" size="medium" />
+				<m:MaterialLabel text="mdi-action-shopping-cart" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-speaker-notes" size="medium" />
+				<m:MaterialLabel text="mdi-action-speaker-notes" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-spellcheck" size="medium" />
+				<m:MaterialLabel text="mdi-action-spellcheck" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-star-rate" size="medium" />
+				<m:MaterialLabel text="mdi-action-star-rate" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-stars" size="medium" />
+				<m:MaterialLabel text="mdi-action-stars" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-store" size="medium" />
+				<m:MaterialLabel text="mdi-action-store" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-subject" size="medium" />
+				<m:MaterialLabel text="mdi-action-subject" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-swap-horiz" size="medium" />
+				<m:MaterialLabel text="mdi-action-swap-horiz" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-swap-vert" size="medium" />
+				<m:MaterialLabel text="mdi-action-swap-vert" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-swap-vert-circle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-swap-vert-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-system-update-tv"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-system-update-tv" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-tab" size="medium" />
+				<m:MaterialLabel text="mdi-action-tab" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-tab-unselected"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-tab-unselected" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-theaters" size="medium" />
+				<m:MaterialLabel text="mdi-action-theaters" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-thumb-down" size="medium" />
+				<m:MaterialLabel text="mdi-action-thumb-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-thumb-up" size="medium" />
+				<m:MaterialLabel text="mdi-action-thumb-up" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-thumbs-up-down"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-thumbs-up-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-toc" size="medium" />
+				<m:MaterialLabel text="mdi-action-toc" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-today" size="medium" />
+				<m:MaterialLabel text="mdi-action-today" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-track-changes" size="medium" />
+				<m:MaterialLabel text="mdi-action-track-changes" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-translate" size="medium" />
+				<m:MaterialLabel text="mdi-action-translate" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-trending-down" size="medium" />
+				<m:MaterialLabel text="mdi-action-trending-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-trending-neutral"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-trending-neutral" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-trending-up" size="medium" />
+				<m:MaterialLabel text="mdi-action-trending-up" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-turned-in" size="medium" />
+				<m:MaterialLabel text="mdi-action-turned-in" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-turned-in-not" size="medium" />
+				<m:MaterialLabel text="mdi-action-turned-in-not" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-verified-user" size="medium" />
+				<m:MaterialLabel text="mdi-action-verified-user" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-agenda" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-agenda" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-array" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-array" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-carousel" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-carousel" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-column" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-column" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-day" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-day" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-headline" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-headline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-list" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-list" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-module" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-module" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-quilt" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-quilt" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-stream" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-stream" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-view-week" size="medium" />
+				<m:MaterialLabel text="mdi-action-view-week" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-visibility" size="medium" />
+				<m:MaterialLabel text="mdi-action-visibility" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-visibility-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-visibility-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-wallet-giftcard"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-wallet-giftcard" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-wallet-membership"
+					size="medium" />
+				<m:MaterialLabel text="mdi-action-wallet-membership" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-wallet-travel" size="medium" />
+				<m:MaterialLabel text="mdi-action-wallet-travel" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-action-work" size="medium" />
+				<m:MaterialLabel text="mdi-action-work" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Alert" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-alert-error" size="medium" />
+				<m:MaterialLabel text="mdi-alert-error" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-alert-warning" size="medium" />
+				<m:MaterialLabel text="mdi-alert-warning" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="AV" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-album" size="medium" />
+				<m:MaterialLabel text="mdi-av-album" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-timer" size="medium" />
+				<m:MaterialLabel text="mdi-av-timer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-closed-caption" size="medium" />
+				<m:MaterialLabel text="mdi-av-closed-caption" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-equalizer" size="medium" />
+				<m:MaterialLabel text="mdi-av-equalizer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-explicit" size="medium" />
+				<m:MaterialLabel text="mdi-av-explicit" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-fast-forward" size="medium" />
+				<m:MaterialLabel text="mdi-av-fast-forward" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-fast-rewind" size="medium" />
+				<m:MaterialLabel text="mdi-av-fast-rewind" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-games" size="medium" />
+				<m:MaterialLabel text="mdi-av-games" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-hearing" size="medium" />
+				<m:MaterialLabel text="mdi-av-hearing" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-high-quality" size="medium" />
+				<m:MaterialLabel text="mdi-av-high-quality" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-loop" size="medium" />
+				<m:MaterialLabel text="mdi-av-loop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-mic" size="medium" />
+				<m:MaterialLabel text="mdi-av-mic" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-mic-none" size="medium" />
+				<m:MaterialLabel text="mdi-av-mic-none" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-mic-off" size="medium" />
+				<m:MaterialLabel text="mdi-av-mic-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-movie" size="medium" />
+				<m:MaterialLabel text="mdi-av-movie" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-my-library-add" size="medium" />
+				<m:MaterialLabel text="mdi-av-my-library-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-my-library-books" size="medium" />
+				<m:MaterialLabel text="mdi-av-my-library-books" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-my-library-music" size="medium" />
+				<m:MaterialLabel text="mdi-av-my-library-music" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-new-releases" size="medium" />
+				<m:MaterialLabel text="mdi-av-new-releases" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-not-interested" size="medium" />
+				<m:MaterialLabel text="mdi-av-not-interested" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-pause" size="medium" />
+				<m:MaterialLabel text="mdi-av-pause" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-pause-circle-fill" size="medium" />
+				<m:MaterialLabel text="mdi-av-pause-circle-fill" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-pause-circle-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-av-pause-circle-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-play-arrow" size="medium" />
+				<m:MaterialLabel text="mdi-av-play-arrow" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-play-circle-fill" size="medium" />
+				<m:MaterialLabel text="mdi-av-play-circle-fill" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-play-circle-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-av-play-circle-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-play-shopping-bag" size="medium" />
+				<m:MaterialLabel text="mdi-av-play-shopping-bag" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-playlist-add" size="medium" />
+				<m:MaterialLabel text="mdi-av-playlist-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-queue" size="medium" />
+				<m:MaterialLabel text="mdi-av-queue" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-queue-music" size="medium" />
+				<m:MaterialLabel text="mdi-av-queue-music" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-radio" size="medium" />
+				<m:MaterialLabel text="mdi-av-radio" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-recent-actors" size="medium" />
+				<m:MaterialLabel text="mdi-av-recent-actors" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-repeat" size="medium" />
+				<m:MaterialLabel text="mdi-av-repeat" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-repeat-one" size="medium" />
+				<m:MaterialLabel text="mdi-av-repeat-one" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-replay" size="medium" />
+				<m:MaterialLabel text="mdi-av-replay" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-shuffle" size="medium" />
+				<m:MaterialLabel text="mdi-av-shuffle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-skip-next" size="medium" />
+				<m:MaterialLabel text="mdi-av-skip-next" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-skip-previous" size="medium" />
+				<m:MaterialLabel text="mdi-av-skip-previous" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-snooze" size="medium" />
+				<m:MaterialLabel text="mdi-av-snooze" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-stop" size="medium" />
+				<m:MaterialLabel text="mdi-av-stop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-subtitles" size="medium" />
+				<m:MaterialLabel text="mdi-av-subtitles" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-surround-sound" size="medium" />
+				<m:MaterialLabel text="mdi-av-surround-sound" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-video-collection" size="medium" />
+				<m:MaterialLabel text="mdi-av-video-collection" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-videocam" size="medium" />
+				<m:MaterialLabel text="mdi-av-videocam" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-videocam-off" size="medium" />
+				<m:MaterialLabel text="mdi-av-videocam-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-volume-down" size="medium" />
+				<m:MaterialLabel text="mdi-av-volume-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-volume-mute" size="medium" />
+				<m:MaterialLabel text="mdi-av-volume-mute" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-volume-off" size="medium" />
+				<m:MaterialLabel text="mdi-av-volume-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-volume-up" size="medium" />
+				<m:MaterialLabel text="mdi-av-volume-up" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-av-web" size="medium" />
+				<m:MaterialLabel text="mdi-av-web" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Communication" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-business"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-business" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call" size="medium" />
+				<m:MaterialLabel text="mdi-communication-call" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-end"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-end" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-made"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-made" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-merge"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-merge" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-missed"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-missed" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-received"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-received" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-call-split"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-call-split" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-chat" size="medium" />
+				<m:MaterialLabel text="mdi-communication-chat" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-clear-all"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-clear-all" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-comment"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-comment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-contacts"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-contacts" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-dialer-sip"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-dialer-sip" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-dialpad"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-dialpad" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-dnd-on" size="medium" />
+				<m:MaterialLabel text="mdi-communication-dnd-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-email" size="medium" />
+				<m:MaterialLabel text="mdi-communication-email" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-forum" size="medium" />
+				<m:MaterialLabel text="mdi-communication-forum" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-import-export"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-import-export" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-invert-colors-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-invert-colors-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-invert-colors-on"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-invert-colors-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-live-help"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-live-help" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-location-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-location-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-location-on"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-location-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-message"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-message" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-messenger"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-messenger" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-no-sim" size="medium" />
+				<m:MaterialLabel text="mdi-communication-no-sim" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-phone" size="medium" />
+				<m:MaterialLabel text="mdi-communication-phone" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-portable-wifi-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-portable-wifi-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-quick-contacts-dialer"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-quick-contacts-dialer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-quick-contacts-mail"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-quick-contacts-mail" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-ring-volume"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-ring-volume" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-stay-current-landscape"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-stay-current-landscape" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-stay-current-portrait"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-stay-current-portrait" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-stay-primary-landscape"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-stay-primary-landscape" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-stay-primary-portrait"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-stay-primary-portrait" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-swap-calls"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-swap-calls" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-textsms"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-textsms" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-voicemail"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-voicemail" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-communication-vpn-key"
+					size="medium" />
+				<m:MaterialLabel text="mdi-communication-vpn-key" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Content" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-add" size="medium" />
+				<m:MaterialLabel text="mdi-content-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-add-box" size="medium" />
+				<m:MaterialLabel text="mdi-content-add-box" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-add-circle" size="medium" />
+				<m:MaterialLabel text="mdi-content-add-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-add-circle-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-content-add-circle-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-archive" size="medium" />
+				<m:MaterialLabel text="mdi-content-archive" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-backspace" size="medium" />
+				<m:MaterialLabel text="mdi-content-backspace" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-block" size="medium" />
+				<m:MaterialLabel text="mdi-content-block" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-clear" size="medium" />
+				<m:MaterialLabel text="mdi-content-clear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-content-copy" size="medium" />
+				<m:MaterialLabel text="mdi-content-content-copy" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-content-cut" size="medium" />
+				<m:MaterialLabel text="mdi-content-content-cut" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-content-paste"
+					size="medium" />
+				<m:MaterialLabel text="mdi-content-content-paste" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-create" size="medium" />
+				<m:MaterialLabel text="mdi-content-create" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-drafts" size="medium" />
+				<m:MaterialLabel text="mdi-content-drafts" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-filter-list" size="medium" />
+				<m:MaterialLabel text="mdi-content-filter-list" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-flag" size="medium" />
+				<m:MaterialLabel text="mdi-content-flag" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-forward" size="medium" />
+				<m:MaterialLabel text="mdi-content-forward" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-gesture" size="medium" />
+				<m:MaterialLabel text="mdi-content-gesture" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-inbox" size="medium" />
+				<m:MaterialLabel text="mdi-content-inbox" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-link" size="medium" />
+				<m:MaterialLabel text="mdi-content-link" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-mail" size="medium" />
+				<m:MaterialLabel text="mdi-content-mail" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-markunread" size="medium" />
+				<m:MaterialLabel text="mdi-content-markunread" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-redo" size="medium" />
+				<m:MaterialLabel text="mdi-content-redo" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-remove" size="medium" />
+				<m:MaterialLabel text="mdi-content-remove" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-remove-circle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-content-remove-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-remove-circle-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-content-remove-circle-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-reply" size="medium" />
+				<m:MaterialLabel text="mdi-content-reply" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-reply-all" size="medium" />
+				<m:MaterialLabel text="mdi-content-reply-all" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-report" size="medium" />
+				<m:MaterialLabel text="mdi-content-report" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-save" size="medium" />
+				<m:MaterialLabel text="mdi-content-save" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-select-all" size="medium" />
+				<m:MaterialLabel text="mdi-content-select-all" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-send" size="medium" />
+				<m:MaterialLabel text="mdi-content-send" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-sort" size="medium" />
+				<m:MaterialLabel text="mdi-content-sort" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-text-format" size="medium" />
+				<m:MaterialLabel text="mdi-content-text-format" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-content-undo" size="medium" />
+				<m:MaterialLabel text="mdi-content-undo" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Device" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-access-alarm" size="medium" />
+				<m:MaterialLabel text="mdi-device-access-alarm" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-access-alarms" size="medium" />
+				<m:MaterialLabel text="mdi-device-access-alarms" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-access-time" size="medium" />
+				<m:MaterialLabel text="mdi-device-access-time" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-add-alarm" size="medium" />
+				<m:MaterialLabel text="mdi-device-add-alarm" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-airplanemode-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-airplanemode-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-airplanemode-on"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-airplanemode-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-20" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-20" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-30" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-30" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-50" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-50" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-60" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-60" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-80" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-80" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-90" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-90" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-alert" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-alert" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-20"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-20" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-30"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-30" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-50"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-50" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-60"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-60" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-80"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-80" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-90"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-90" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-charging-full"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-charging-full" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-full" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-full" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-std" size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-std" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-battery-unknown"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-battery-unknown" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-bluetooth" size="medium" />
+				<m:MaterialLabel text="mdi-device-bluetooth" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-bluetooth-connected"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-bluetooth-connected" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-bluetooth-disabled"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-bluetooth-disabled" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-bluetooth-searching"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-bluetooth-searching" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-brightness-auto"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-brightness-auto" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-brightness-high"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-brightness-high" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-brightness-low"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-brightness-low" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-brightness-medium"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-brightness-medium" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-data-usage" size="medium" />
+				<m:MaterialLabel text="mdi-device-data-usage" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-developer-mode"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-developer-mode" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-devices" size="medium" />
+				<m:MaterialLabel text="mdi-device-devices" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-dvr" size="medium" />
+				<m:MaterialLabel text="mdi-device-dvr" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-gps-fixed" size="medium" />
+				<m:MaterialLabel text="mdi-device-gps-fixed" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-gps-not-fixed" size="medium" />
+				<m:MaterialLabel text="mdi-device-gps-not-fixed" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-gps-off" size="medium" />
+				<m:MaterialLabel text="mdi-device-gps-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-location-disabled"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-location-disabled" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-location-searching"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-location-searching" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-multitrack-audio"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-multitrack-audio" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-network-cell" size="medium" />
+				<m:MaterialLabel text="mdi-device-network-cell" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-network-wifi" size="medium" />
+				<m:MaterialLabel text="mdi-device-network-wifi" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-nfc" size="medium" />
+				<m:MaterialLabel text="mdi-device-nfc" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-now-wallpaper" size="medium" />
+				<m:MaterialLabel text="mdi-device-now-wallpaper" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-now-widgets" size="medium" />
+				<m:MaterialLabel text="mdi-device-now-widgets" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-screen-lock-landscape"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-screen-lock-landscape" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-screen-lock-portrait"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-screen-lock-portrait" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-screen-lock-rotation"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-screen-lock-rotation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-screen-rotation"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-screen-rotation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-sd-storage" size="medium" />
+				<m:MaterialLabel text="mdi-device-sd-storage" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-settings-system-daydream"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-settings-system-daydream" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-0-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-0-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-1-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-1-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-2-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-2-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-3-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-3-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-4-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-4-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon
+					icon="mdi-device-signal-cellular-connected-no-internet-0-bar" size="medium" />
+				<m:MaterialLabel
+					text="mdi-device-signal-cellular-connected-no-internet-0-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon
+					icon="mdi-device-signal-cellular-connected-no-internet-1-bar" size="medium" />
+				<m:MaterialLabel
+					text="mdi-device-signal-cellular-connected-no-internet-1-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon
+					icon="mdi-device-signal-cellular-connected-no-internet-2-bar" size="medium" />
+				<m:MaterialLabel
+					text="mdi-device-signal-cellular-connected-no-internet-2-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon
+					icon="mdi-device-signal-cellular-connected-no-internet-3-bar" size="medium" />
+				<m:MaterialLabel
+					text="mdi-device-signal-cellular-connected-no-internet-3-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon
+					icon="mdi-device-signal-cellular-connected-no-internet-4-bar" size="medium" />
+				<m:MaterialLabel
+					text="mdi-device-signal-cellular-connected-no-internet-4-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-no-sim"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-no-sim" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-null"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-null" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-cellular-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-cellular-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-0-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-0-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-1-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-1-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-2-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-2-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-3-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-3-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-4-bar"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-4-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-signal-wifi-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-signal-wifi-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-storage" size="medium" />
+				<m:MaterialLabel text="mdi-device-storage" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-usb" size="medium" />
+				<m:MaterialLabel text="mdi-device-usb" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-wifi-lock" size="medium" />
+				<m:MaterialLabel text="mdi-device-wifi-lock" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-device-wifi-tethering"
+					size="medium" />
+				<m:MaterialLabel text="mdi-device-wifi-tethering" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Editor" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-attach-file" size="medium" />
+				<m:MaterialLabel text="mdi-editor-attach-file" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-attach-money" size="medium" />
+				<m:MaterialLabel text="mdi-editor-attach-money" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-all" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-all" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-bottom" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-bottom" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-clear" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-clear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-color" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-color" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-horizontal"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-horizontal" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-inner" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-inner" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-left" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-left" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-outer" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-outer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-right" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-right" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-style" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-style" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-top" size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-top" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-border-vertical"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-border-vertical" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-align-center"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-align-center" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-align-justify"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-align-justify" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-align-left"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-align-left" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-align-right"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-align-right" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-bold" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-bold" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-clear" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-clear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-color-fill"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-color-fill" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-color-reset"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-color-reset" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-color-text"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-color-text" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-indent-decrease"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-indent-decrease" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-indent-increase"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-indent-increase" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-italic" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-italic" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-line-spacing"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-line-spacing" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-list-bulleted"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-list-bulleted" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-list-numbered"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-list-numbered" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-paint" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-paint" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-quote" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-quote" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-size" size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-size" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-strikethrough"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-strikethrough" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-textdirection-l-to-r"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-textdirection-l-to-r" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-textdirection-r-to-l"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-textdirection-r-to-l" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-format-underline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-format-underline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-functions" size="medium" />
+				<m:MaterialLabel text="mdi-editor-functions" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-chart" size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-chart" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-comment"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-comment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-drive-file"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-drive-file" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-emoticon"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-emoticon" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-invitation"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-invitation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-link" size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-link" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-insert-photo" size="medium" />
+				<m:MaterialLabel text="mdi-editor-insert-photo" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-merge-type" size="medium" />
+				<m:MaterialLabel text="mdi-editor-merge-type" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-mode-comment" size="medium" />
+				<m:MaterialLabel text="mdi-editor-mode-comment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-mode-edit" size="medium" />
+				<m:MaterialLabel text="mdi-editor-mode-edit" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-publish" size="medium" />
+				<m:MaterialLabel text="mdi-editor-publish" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-vertical-align-bottom"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-vertical-align-bottom" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-vertical-align-center"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-vertical-align-center" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-vertical-align-top"
+					size="medium" />
+				<m:MaterialLabel text="mdi-editor-vertical-align-top" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-editor-wrap-text" size="medium" />
+				<m:MaterialLabel text="mdi-editor-wrap-text" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="File" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-attachment" size="medium" />
+				<m:MaterialLabel text="mdi-file-attachment" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-circle" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-done" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-done" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-download" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-download" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-off" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-queue" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-queue" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-cloud-upload" size="medium" />
+				<m:MaterialLabel text="mdi-file-cloud-upload" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-file-download" size="medium" />
+				<m:MaterialLabel text="mdi-file-file-download" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-file-upload" size="medium" />
+				<m:MaterialLabel text="mdi-file-file-upload" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-folder" size="medium" />
+				<m:MaterialLabel text="mdi-file-folder" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-folder-open" size="medium" />
+				<m:MaterialLabel text="mdi-file-folder-open" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-file-folder-shared" size="medium" />
+				<m:MaterialLabel text="mdi-file-folder-shared" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Hardware" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-cast" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-cast" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-cast-connected"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-cast-connected" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-computer" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-computer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-desktop-mac" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-desktop-mac" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-desktop-windows"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-desktop-windows" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-dock" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-dock" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-gamepad" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-gamepad" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-headset" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-headset" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-headset-mic" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-headset-mic" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-alt"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-alt" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-arrow-down"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-arrow-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-arrow-left"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-arrow-left" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-arrow-right"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-arrow-right" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-arrow-up"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-arrow-up" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-backspace"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-backspace" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-capslock"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-capslock" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-control"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-control" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-hide"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-hide" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-return"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-return" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-tab"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-tab" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-keyboard-voice"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-keyboard-voice" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-laptop" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-laptop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-laptop-chromebook"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-laptop-chromebook" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-laptop-mac" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-laptop-mac" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-laptop-windows"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-laptop-windows" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-memory" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-memory" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-mouse" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-mouse" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-phone-android"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-phone-android" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-phone-iphone"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-phone-iphone" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-phonelink" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-phonelink" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-phonelink-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-phonelink-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-security" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-security" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-sim-card" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-sim-card" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-smartphone" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-smartphone" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-speaker" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-speaker" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-tablet" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-tablet" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-tablet-android"
+					size="medium" />
+				<m:MaterialLabel text="mdi-hardware-tablet-android" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-tablet-mac" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-tablet-mac" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-tv" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-tv" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-hardware-watch" size="medium" />
+				<m:MaterialLabel text="mdi-hardware-watch" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Image" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-add-to-photos" size="medium" />
+				<m:MaterialLabel text="mdi-image-add-to-photos" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-adjust" size="medium" />
+				<m:MaterialLabel text="mdi-image-adjust" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-assistant-photo"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-assistant-photo" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-audiotrack" size="medium" />
+				<m:MaterialLabel text="mdi-image-audiotrack" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-blur-circular" size="medium" />
+				<m:MaterialLabel text="mdi-image-blur-circular" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-blur-linear" size="medium" />
+				<m:MaterialLabel text="mdi-image-blur-linear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-blur-off" size="medium" />
+				<m:MaterialLabel text="mdi-image-blur-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-blur-on" size="medium" />
+				<m:MaterialLabel text="mdi-image-blur-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-1" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-1" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-2" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-2" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-3" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-3" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-4" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-4" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-5" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-5" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-6" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-6" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brightness-7" size="medium" />
+				<m:MaterialLabel text="mdi-image-brightness-7" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-brush" size="medium" />
+				<m:MaterialLabel text="mdi-image-brush" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-camera" size="medium" />
+				<m:MaterialLabel text="mdi-image-camera" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-camera-alt" size="medium" />
+				<m:MaterialLabel text="mdi-image-camera-alt" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-camera-front" size="medium" />
+				<m:MaterialLabel text="mdi-image-camera-front" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-camera-rear" size="medium" />
+				<m:MaterialLabel text="mdi-image-camera-rear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-camera-roll" size="medium" />
+				<m:MaterialLabel text="mdi-image-camera-roll" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-center-focus-strong"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-center-focus-strong" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-center-focus-weak"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-center-focus-weak" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-collections" size="medium" />
+				<m:MaterialLabel text="mdi-image-collections" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-color-lens" size="medium" />
+				<m:MaterialLabel text="mdi-image-color-lens" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-colorize" size="medium" />
+				<m:MaterialLabel text="mdi-image-colorize" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-compare" size="medium" />
+				<m:MaterialLabel text="mdi-image-compare" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-control-point" size="medium" />
+				<m:MaterialLabel text="mdi-image-control-point" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-control-point-duplicate"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-control-point-duplicate" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-16-9" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-16-9" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-3-2" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-3-2" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-5-4" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-5-4" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-7-5" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-7-5" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-din" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-din" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-free" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-free" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-landscape" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-landscape" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-original" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-original" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-portrait" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-portrait" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-crop-square" size="medium" />
+				<m:MaterialLabel text="mdi-image-crop-square" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-dehaze" size="medium" />
+				<m:MaterialLabel text="mdi-image-dehaze" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-details" size="medium" />
+				<m:MaterialLabel text="mdi-image-details" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-edit" size="medium" />
+				<m:MaterialLabel text="mdi-image-edit" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure" size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure-minus-1"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure-minus-1" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure-minus-2"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure-minus-2" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure-plus-1"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure-plus-1" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure-plus-2"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure-plus-2" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-exposure-zero" size="medium" />
+				<m:MaterialLabel text="mdi-image-exposure-zero" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-1" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-1" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-2" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-2" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-3" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-3" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-4" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-4" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-5" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-5" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-6" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-6" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-7" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-7" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-8" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-8" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-9" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-9" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-9-plus" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-9-plus" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-b-and-w" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-b-and-w" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-center-focus"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-center-focus" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-drama" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-drama" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-frames" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-frames" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-hdr" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-hdr" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-none" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-none" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-tilt-shift"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-tilt-shift" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-filter-vintage" size="medium" />
+				<m:MaterialLabel text="mdi-image-filter-vintage" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-flare" size="medium" />
+				<m:MaterialLabel text="mdi-image-flare" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-flash-auto" size="medium" />
+				<m:MaterialLabel text="mdi-image-flash-auto" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-flash-off" size="medium" />
+				<m:MaterialLabel text="mdi-image-flash-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-flash-on" size="medium" />
+				<m:MaterialLabel text="mdi-image-flash-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-flip" size="medium" />
+				<m:MaterialLabel text="mdi-image-flip" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-gradient" size="medium" />
+				<m:MaterialLabel text="mdi-image-gradient" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-grain" size="medium" />
+				<m:MaterialLabel text="mdi-image-grain" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-grid-off" size="medium" />
+				<m:MaterialLabel text="mdi-image-grid-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-grid-on" size="medium" />
+				<m:MaterialLabel text="mdi-image-grid-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-hdr-off" size="medium" />
+				<m:MaterialLabel text="mdi-image-hdr-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-hdr-on" size="medium" />
+				<m:MaterialLabel text="mdi-image-hdr-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-hdr-strong" size="medium" />
+				<m:MaterialLabel text="mdi-image-hdr-strong" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-hdr-weak" size="medium" />
+				<m:MaterialLabel text="mdi-image-hdr-weak" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-healing" size="medium" />
+				<m:MaterialLabel text="mdi-image-healing" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-image" size="medium" />
+				<m:MaterialLabel text="mdi-image-image" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-image-aspect-ratio"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-image-aspect-ratio" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-iso" size="medium" />
+				<m:MaterialLabel text="mdi-image-iso" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-landscape" size="medium" />
+				<m:MaterialLabel text="mdi-image-landscape" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-leak-add" size="medium" />
+				<m:MaterialLabel text="mdi-image-leak-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-leak-remove" size="medium" />
+				<m:MaterialLabel text="mdi-image-leak-remove" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-lens" size="medium" />
+				<m:MaterialLabel text="mdi-image-lens" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-3" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-3" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-4" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-4" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-5" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-5" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-6" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-6" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-one" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-one" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-looks-two" size="medium" />
+				<m:MaterialLabel text="mdi-image-looks-two" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-loupe" size="medium" />
+				<m:MaterialLabel text="mdi-image-loupe" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-movie-creation" size="medium" />
+				<m:MaterialLabel text="mdi-image-movie-creation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-nature" size="medium" />
+				<m:MaterialLabel text="mdi-image-nature" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-nature-people" size="medium" />
+				<m:MaterialLabel text="mdi-image-nature-people" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-navigate-before"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-navigate-before" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-navigate-next" size="medium" />
+				<m:MaterialLabel text="mdi-image-navigate-next" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-palette" size="medium" />
+				<m:MaterialLabel text="mdi-image-palette" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-panorama" size="medium" />
+				<m:MaterialLabel text="mdi-image-panorama" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-panorama-fisheye"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-panorama-fisheye" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-panorama-horizontal"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-panorama-horizontal" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-panorama-vertical"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-panorama-vertical" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-panorama-wide-angle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-panorama-wide-angle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-photo" size="medium" />
+				<m:MaterialLabel text="mdi-image-photo" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-photo-album" size="medium" />
+				<m:MaterialLabel text="mdi-image-photo-album" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-photo-camera" size="medium" />
+				<m:MaterialLabel text="mdi-image-photo-camera" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-photo-library" size="medium" />
+				<m:MaterialLabel text="mdi-image-photo-library" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-portrait" size="medium" />
+				<m:MaterialLabel text="mdi-image-portrait" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-remove-red-eye" size="medium" />
+				<m:MaterialLabel text="mdi-image-remove-red-eye" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-rotate-left" size="medium" />
+				<m:MaterialLabel text="mdi-image-rotate-left" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-rotate-right" size="medium" />
+				<m:MaterialLabel text="mdi-image-rotate-right" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-slideshow" size="medium" />
+				<m:MaterialLabel text="mdi-image-slideshow" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-straighten" size="medium" />
+				<m:MaterialLabel text="mdi-image-straighten" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-style" size="medium" />
+				<m:MaterialLabel text="mdi-image-style" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-switch-camera" size="medium" />
+				<m:MaterialLabel text="mdi-image-switch-camera" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-switch-video" size="medium" />
+				<m:MaterialLabel text="mdi-image-switch-video" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-tag-faces" size="medium" />
+				<m:MaterialLabel text="mdi-image-tag-faces" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-texture" size="medium" />
+				<m:MaterialLabel text="mdi-image-texture" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timelapse" size="medium" />
+				<m:MaterialLabel text="mdi-image-timelapse" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timer-10" size="medium" />
+				<m:MaterialLabel text="mdi-image-timer-10" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timer" size="medium" />
+				<m:MaterialLabel text="mdi-image-timer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timer-3" size="medium" />
+				<m:MaterialLabel text="mdi-image-timer-3" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timer-auto" size="medium" />
+				<m:MaterialLabel text="mdi-image-timer-auto" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-timer-off" size="medium" />
+				<m:MaterialLabel text="mdi-image-timer-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-tonality" size="medium" />
+				<m:MaterialLabel text="mdi-image-tonality" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-transform" size="medium" />
+				<m:MaterialLabel text="mdi-image-transform" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-tune" size="medium" />
+				<m:MaterialLabel text="mdi-image-tune" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-wb-auto" size="medium" />
+				<m:MaterialLabel text="mdi-image-wb-auto" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-wb-cloudy" size="medium" />
+				<m:MaterialLabel text="mdi-image-wb-cloudy" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-wb-incandescent"
+					size="medium" />
+				<m:MaterialLabel text="mdi-image-wb-incandescent" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-wb-irradescent" size="medium" />
+				<m:MaterialLabel text="mdi-image-wb-irradescent" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-image-wb-sunny" size="medium" />
+				<m:MaterialLabel text="mdi-image-wb-sunny" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Maps" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-beenhere" size="medium" />
+				<m:MaterialLabel text="mdi-maps-beenhere" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions" size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-bike" size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-bike" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-bus" size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-bus" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-car" size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-car" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-ferry"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-ferry" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-subway"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-subway" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-train"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-train" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-transit"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-transit" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-directions-walk" size="medium" />
+				<m:MaterialLabel text="mdi-maps-directions-walk" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-flight" size="medium" />
+				<m:MaterialLabel text="mdi-maps-flight" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-hotel" size="medium" />
+				<m:MaterialLabel text="mdi-maps-hotel" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-layers" size="medium" />
+				<m:MaterialLabel text="mdi-maps-layers" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-layers-clear" size="medium" />
+				<m:MaterialLabel text="mdi-maps-layers-clear" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-airport" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-airport" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-atm" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-atm" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-attraction"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-attraction" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-bar" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-bar" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-cafe" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-cafe" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-car-wash" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-car-wash" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-convenience-store"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-convenience-store" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-drink" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-drink" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-florist" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-florist" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-gas-station"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-gas-station" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-grocery-store"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-grocery-store" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-hospital" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-hospital" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-hotel" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-hotel" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-laundry-service"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-laundry-service" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-library" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-library" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-mall" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-mall" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-movies" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-movies" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-offer" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-offer" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-parking" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-parking" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-pharmacy" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-pharmacy" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-phone" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-phone" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-pizza" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-pizza" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-play" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-play" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-post-office"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-post-office" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-print-shop"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-print-shop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-restaurant"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-restaurant" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-see" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-see" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-shipping" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-shipping" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-local-taxi" size="medium" />
+				<m:MaterialLabel text="mdi-maps-local-taxi" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-location-history"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-location-history" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-map" size="medium" />
+				<m:MaterialLabel text="mdi-maps-map" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-my-location" size="medium" />
+				<m:MaterialLabel text="mdi-maps-my-location" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-navigation" size="medium" />
+				<m:MaterialLabel text="mdi-maps-navigation" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-pin-drop" size="medium" />
+				<m:MaterialLabel text="mdi-maps-pin-drop" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-place" size="medium" />
+				<m:MaterialLabel text="mdi-maps-place" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-rate-review" size="medium" />
+				<m:MaterialLabel text="mdi-maps-rate-review" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-restaurant-menu" size="medium" />
+				<m:MaterialLabel text="mdi-maps-restaurant-menu" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-satellite" size="medium" />
+				<m:MaterialLabel text="mdi-maps-satellite" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-store-mall-directory"
+					size="medium" />
+				<m:MaterialLabel text="mdi-maps-store-mall-directory" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-terrain" size="medium" />
+				<m:MaterialLabel text="mdi-maps-terrain" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-maps-traffic" size="medium" />
+				<m:MaterialLabel text="mdi-maps-traffic" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Navigation" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-apps" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-apps" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-arrow-back"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-arrow-back" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-arrow-drop-down"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-arrow-drop-down" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-arrow-drop-down-circle"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-arrow-drop-down-circle" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-arrow-drop-up"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-arrow-drop-up" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-arrow-forward"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-arrow-forward" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-cancel" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-cancel" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-check" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-check" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-chevron-left"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-chevron-left" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-chevron-right"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-chevron-right" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-close" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-close" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-expand-less"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-expand-less" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-expand-more"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-expand-more" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-fullscreen"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-fullscreen" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-fullscreen-exit"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-fullscreen-exit" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-menu" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-menu" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-more-horiz"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-more-horiz" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-more-vert" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-more-vert" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-refresh" size="medium" />
+				<m:MaterialLabel text="mdi-navigation-refresh" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-unfold-less"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-unfold-less" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-navigation-unfold-more"
+					size="medium" />
+				<m:MaterialLabel text="mdi-navigation-unfold-more" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Notifications" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-adb" size="medium" />
+				<m:MaterialLabel text="mdi-notification-adb" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-bluetooth-audio"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-bluetooth-audio" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-disc-full"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-disc-full" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-dnd-forwardslash"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-dnd-forwardslash" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-do-not-disturb"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-do-not-disturb" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-drive-eta"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-drive-eta" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-event-available"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-event-available" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-event-busy"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-event-busy" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-event-note"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-event-note" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-folder-special"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-folder-special" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-mms" size="medium" />
+				<m:MaterialLabel text="mdi-notification-mms" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-more" size="medium" />
+				<m:MaterialLabel text="mdi-notification-more" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-network-locked"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-network-locked" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-bluetooth-speaker"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-bluetooth-speaker" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-forwarded"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-forwarded" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-in-talk"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-in-talk" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-locked"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-locked" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-missed"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-missed" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-phone-paused"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-phone-paused" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-play-download"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-play-download" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-play-install"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-play-install" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sd-card" size="medium" />
+				<m:MaterialLabel text="mdi-notification-sd-card" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sim-card-alert"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-sim-card-alert" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sms" size="medium" />
+				<m:MaterialLabel text="mdi-notification-sms" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sms-failed"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-sms-failed" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sync" size="medium" />
+				<m:MaterialLabel text="mdi-notification-sync" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sync-disabled"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-sync-disabled" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-sync-problem"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-sync-problem" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-system-update"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-system-update" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-tap-and-play"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-tap-and-play" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-time-to-leave"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-time-to-leave" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-vibration"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-vibration" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-voice-chat"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-voice-chat" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-notification-vpn-lock"
+					size="medium" />
+				<m:MaterialLabel text="mdi-notification-vpn-lock" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Social" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-cake" size="medium" />
+				<m:MaterialLabel text="mdi-social-cake" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-domain" size="medium" />
+				<m:MaterialLabel text="mdi-social-domain" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-group" size="medium" />
+				<m:MaterialLabel text="mdi-social-group" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-group-add" size="medium" />
+				<m:MaterialLabel text="mdi-social-group-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-location-city" size="medium" />
+				<m:MaterialLabel text="mdi-social-location-city" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-mood" size="medium" />
+				<m:MaterialLabel text="mdi-social-mood" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-notifications" size="medium" />
+				<m:MaterialLabel text="mdi-social-notifications" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-notifications-none"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-notifications-none" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-notifications-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-notifications-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-notifications-on"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-notifications-on" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-notifications-paused"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-notifications-paused" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-pages" size="medium" />
+				<m:MaterialLabel text="mdi-social-pages" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-party-mode" size="medium" />
+				<m:MaterialLabel text="mdi-social-party-mode" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-people" size="medium" />
+				<m:MaterialLabel text="mdi-social-people" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-people-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-people-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-person" size="medium" />
+				<m:MaterialLabel text="mdi-social-person" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-person-add" size="medium" />
+				<m:MaterialLabel text="mdi-social-person-add" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-person-outline"
+					size="medium" />
+				<m:MaterialLabel text="mdi-social-person-outline" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-plus-one" size="medium" />
+				<m:MaterialLabel text="mdi-social-plus-one" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-poll" size="medium" />
+				<m:MaterialLabel text="mdi-social-poll" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-public" size="medium" />
+				<m:MaterialLabel text="mdi-social-public" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-school" size="medium" />
+				<m:MaterialLabel text="mdi-social-school" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-share" size="medium" />
+				<m:MaterialLabel text="mdi-social-share" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-social-whatshot" size="medium" />
+				<m:MaterialLabel text="mdi-social-whatshot" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+		<m:MaterialTitle title="Toggle" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-toggle-check-box" size="medium" />
+				<m:MaterialLabel text="mdi-toggle-check-box" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-toggle-check-box-outline-blank"
+					size="medium" />
+				<m:MaterialLabel text="mdi-toggle-check-box-outline-blank" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-toggle-radio-button-off"
+					size="medium" />
+				<m:MaterialLabel text="mdi-toggle-radio-button-off" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="s6 m3" addStyleNames="center-align">
+				<m:MaterialIcon icon="mdi-toggle-radio-button-on"
+					size="medium" />
+				<m:MaterialLabel text="mdi-toggle-radio-button-on" />
+			</m:MaterialColumn>
+		</m:MaterialRow>
+
+	</m:MaterialPanel>
+</ui:UiBinder> 

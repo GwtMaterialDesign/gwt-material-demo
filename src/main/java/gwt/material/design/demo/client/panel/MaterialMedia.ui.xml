@@ -30,6 +30,35 @@
 		<pre>
 <span class="tag">&lt;m:MaterialVideo</span> <span class="attr">url</span>="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0" <span class="tag">/></span>
 		</pre>
+		
+		<m:MaterialTitle title="Material Slider" description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider."/>
+		
+		<m:MaterialSlide ui:field="sliderPanel" fullScreen="false">
+			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="left" url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="right" url="http://mayastepien.nl/googlecalendar/google-skiing.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
+		</m:MaterialSlide>
+		
+		<pre>
+		&lt;m:MaterialSlide fullScreen="false">
+			&lt;m:slide>&lt;m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="left" url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="right" url="http://mayastepien.nl/googlecalendar/google-skiing.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+		&lt;/m:MaterialSlide>
+		</pre>
+	
+		<m:MaterialTitle title="Material Slider Fullscreen" description="Just add fullscreen='true' on MaterialSlide to make the slider fullscreen"/>
+
+		<pre>
+		&lt;m:MaterialSlide fullScreen="true">
+			&lt;m:slide>&lt;m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="left" url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="right" url="http://mayastepien.nl/googlecalendar/google-skiing.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+			&lt;m:slide>&lt;m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" title="This is our big TagLine" description="Here's our small slogan."/>&lt;/m:slide>
+		&lt;/m:MaterialSlide>
+		</pre>
 	
 	</g:HTMLPanel>
 </ui:UiBinder> 

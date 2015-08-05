@@ -5,7 +5,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 
-public class MaterialNavigations extends Composite  {
+public class MaterialNavigations extends Composite {
 
 	private static MaterialNavigationsUiBinder uiBinder = GWT
 			.create(MaterialNavigationsUiBinder.class);
