@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialModalContent >
+			<m:MaterialNavBar ui:field="navBar" sideBar="fixed" sideBarWidth="230" color="blue darken-1"  align="right" >
+				<m:sidebaritem><m:MaterialLink href="#about" iconPosition="left" icon="mdi-action-info-outline" text="About" textColor="blue"  /></m:sidebaritem>
+				<m:sidebaritem><m:MaterialLink href="#gettingStarted" iconPosition="left" icon="mdi-file-cloud-download" text="Getting Started" textColor="blue"  /></m:sidebaritem>
+				<m:sidebaritem>
+					<m:MaterialCollapsible>
+						<m:item>
+							<m:MaterialCollapsibleItem>
+								<m:header><m:MaterialLink  text="Components" icon="mdi-action-view-quilt" textColor="blue"/></m:header>
+								<m:content>
+									<m:MaterialPanel>
+										<m:MaterialLink href="#badges" text="Badges" textColor="blue"/>
+										<m:MaterialLink href="#buttons" text="Buttons" textColor="blue"/>
+										<m:MaterialLink href="#cards" text="Cards" textColor="blue"/>
+										<m:MaterialLink href="#collapsibles" text="Collapsible" textColor="blue"/>
+										<m:MaterialLink href="#collections" text="Collections" textColor="blue"/>
+										<m:MaterialLink href="#dialogs" text="Dialogs" textColor="blue"/>
+										<m:MaterialLink href="#dropdowns" text="Dropdown" textColor="blue"/>
+										<m:MaterialLink href="#forms" text="Forms" textColor="blue"/>
+										<m:MaterialLink href="#footer" text="Footer" textColor="blue"/>
+										<m:MaterialLink href="#loaders" text="Loaders" textColor="blue"/>
+										<m:MaterialLink href="#media" text="Media" textColor="blue"/>
+										<m:MaterialLink href="#navigations" text="NavBar" textColor="blue"/>
+										<m:MaterialLink href="#tabs" text="Tabs" textColor="blue"/>
+										<m:MaterialLink href="#transition" text="Transitions" textColor="blue"/>
+									</m:MaterialPanel>
+								</m:content>
+							</m:MaterialCollapsibleItem>
+						</m:item>
+						<m:item>
+							<m:MaterialCollapsibleItem>
+								<m:header><m:MaterialLink text="Style and Layout" icon="mdi-image-color-lens" textColor="blue"/></m:header>
+								<m:content>
+									<m:MaterialPanel>
+										<m:MaterialLink href="#grid" text="Grid" textColor="blue"/>
+										<m:MaterialLink href="#helper" text="Helper" textColor="blue"/>
+										<m:MaterialLink href="#shadow" text="Shadow" textColor="blue"/>
+										<m:MaterialLink href="#table" text="Table" textColor="blue"/>
+										<m:MaterialLink href="#theme" text="Theming" textColor="blue"/>
+									</m:MaterialPanel>
+								</m:content>
+							</m:MaterialCollapsibleItem>
+						</m:item>
+					</m:MaterialCollapsible>
+				</m:sidebaritem>
+				
+				
+				<m:sidebaritem><m:MaterialLink href="#showcase" iconPosition="left" icon="mdi-action-polymer" text="Showcase" textColor="blue"/></m:sidebaritem>
+				
+				
+				
+			</m:MaterialNavBar>
+		</m:MaterialModalContent>
+	</g:HTMLPanel>
+</ui:UiBinder> 

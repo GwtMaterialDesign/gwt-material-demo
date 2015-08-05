@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+			 xmlns:m="urn:import:gwt.material.design.client.ui">
+	
+	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+	
+	<ui:style>
+		body{
+			background: #fff;
+		}
+		.panel{
+			background: url("http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");
+			background-size: 100%;
+			padding: 0px !important;
+			  padding-top: 40% !important;
+		}
+		.fieldPanel{
+			background: white;
+			  padding: 6%;
+		}
+		.imgProfile{
+			  margin-top: -120px;
+			  width: 40%;
+			  margin-left: 30%;
+			  border: 5px solid #fff;
+		}
+		.rowAction{
+			margin-top: 20px;
+		}
+	</ui:style>
+	<m:MaterialRow>
+		
+		<m:MaterialColumn grid="s12 m4 l4" offset="l4" >
+				<m:MaterialTitle title="Login" description="Please provide your account credentials."/>
+				<m:MaterialPanel padding="5" shadow="1" addStyleNames="{style.panel}">
+					<m:MaterialPanel addStyleNames="{style.fieldPanel}">
+						<m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="circle" addStyleNames="{style.imgProfile} z-depth-1"/>
+						<m:MaterialTextBox type="email" placeholder="Email"/>
+						<m:MaterialTextBox type="password" placeholder="Password" />
+						<m:MaterialButton ui:field="btnLogin" color="blue" waves="light" text="Log In" width="100%"/>
+						
+						<m:MaterialRow addStyleNames="{style.rowAction}">
+							<m:MaterialColumn grid="s12 m12 l6">
+								<m:MaterialCheckBox text="Keep me logged in"/>
+							</m:MaterialColumn>
+						</m:MaterialRow>
+						
+					</m:MaterialPanel>
+				</m:MaterialPanel >
+		</m:MaterialColumn>
+		
+	</m:MaterialRow>
+</ui:UiBinder> 

@@ -15,4 +15,15 @@ public interface MaterialResources extends ClientBundle {
 	ImageResource ic_getting_started();
 	ImageResource bg_top_nav();
 	ImageResource yuna();
+	ImageResource parallax1();
+	ImageResource parallax2();
+	ImageResource parallax3();
+	ImageResource ic_theme();
+	ImageResource starter();
+	ImageResource ic_splash();
+	
+	ImageResource template_login();
+	ImageResource template_parallax();
+	ImageResource template_starter();
+	ImageResource template_wrenx();
 }
