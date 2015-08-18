@@ -3,18 +3,8 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui"
 	xmlns:m="urn:import:gwt.material.design.client.ui"
 	xmlns:p="urn:import:gwt.material.design.demo.client.panel">
-<<<<<<< Updated upstream
 	<ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 	<ui:style>
-		body{
-			background: #e7e7e7;
-		}
-=======
-
-    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
-
-    <ui:style>
->>>>>>> Stashed changes
 		.button{
 			vertical-align: top;
 			margin-left: 20px;
@@ -42,35 +32,7 @@
 			padding: 10px;
 			border-bottom: 1px solid #E9E9E9;
 		}
-<<<<<<< Updated upstream
 	</ui:style>	
-	<g:HTMLPanel >
-			<main>
-				<m:MaterialNavBar wave="blue" ui:field="navBar" name="myNavBar"  sideBar="fixed" color="blue darken-1"  align="right" >
-					<m:sidebaritem><m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#about"        text="About" textColor="blue"  /></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#buttons"      text="Buttons" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#forms"        text="Forms" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#dialogs"      text="Dialogs" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#loaders"      text="Loaders" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#media"        text="Media" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#cards"        text="Cards" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#navigations"  text="NavBar" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#collapsibles" text="Collapsible" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#dropdowns"    text="Dropdown" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#footer"       text="Footer" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#tabs"         text="Tabs" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#collections"  text="Collections" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#badges"       text="Badges" textColor="blue"/></m:sidebaritem>
-					<m:sidebaritem><m:MaterialLink href="#grid"         text="Grid" textColor="blue"/></m:sidebaritem>
-				</m:MaterialNavBar>
-=======
-		.btnGettingStarted{
-			font-size: 0.3em !important;
-		}
-	</ui:style>
-
-
 
 	<g:HTMLPanel>
 			<m:MaterialNavBar ui:field="navBar" wave="default" sideBar="fixed" sideBarWidth="250" color="blue darken-1"  align="right" >
@@ -190,7 +152,6 @@
 				</m:sidebaritem>
 			</m:MaterialNavBar>
 			<m:MaterialContainer>
->>>>>>> Stashed changes
 				<m:MaterialTopNav ui:field="topNav"  color="blue" textColor="white">
 					<m:child>
 						<m:MaterialButton ui:field="btnGettingStarted" text="Get Started" size="large" color="blue lighten-2" />
@@ -220,7 +181,7 @@
 					<p:MaterialGrid ui:field="materialGrid" />
 					<!-- <p:Team /> -->
 				</g:HTMLPanel>
-			</main>	
+			</m:MaterialContainer>
 			<m:MaterialFooter color="blue" copyright="© 2015 Copyright GWT Material" addStyleNames="{style.footer}">
 				<m:content>
 					<m:MaterialRow>
@@ -237,8 +198,5 @@
 			</m:MaterialFooter>
 
 	</g:HTMLPanel>
-<<<<<<< Updated upstream
-</ui:UiBinder> 
-=======
+
 </ui:UiBinder>
->>>>>>> Stashed changes
