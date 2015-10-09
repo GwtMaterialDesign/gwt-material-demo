@@ -27,7 +27,7 @@
 
         <!-- GWT -->
         <gwt.version>2.7.0</gwt.version>
-        <gwtp.version>1.5</gwtp.version>
+        <gwtp.version>1.4</gwtp.version>
         <gin.version>2.1.2</gin.version>
 
         <gwt.style>PRETTY</gwt.style>
@@ -42,7 +42,8 @@
 
         <gwt-material.version>1.3.4-SNAPSHOT</gwt-material.version>
 
-        <!--<gae.about>${settings.localRepository}/com/google/appengine/appengine-java-sdk/${appengine.version}</gae.about>-->
+
+        <!--<gae.home>${settings.localRepository}/com/google/appengine/appengine-java-sdk/${appengine.version}</gae.home>-->
 
     </properties>
 
@@ -151,8 +152,8 @@
                     <!--Might be needed later for appengine-->
                     <!--<server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>-->
                     <!--<appEngineVersion>${appengine.version}</appEngineVersion>-->
-                    <!--<appEngineHome>${gae.about}</appEngineHome>-->
-                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.about}</extraJvmArgs>-->
+                    <!--<appEngineHome>${gae.home}</appEngineHome>-->
+                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.home}</extraJvmArgs>-->
                     <!--<extraJvmArgs>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=20</extraJvmArgs>-->
                     <!--<port>8888</port>-->
 
