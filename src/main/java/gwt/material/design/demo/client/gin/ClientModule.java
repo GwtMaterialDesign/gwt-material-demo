@@ -1,5 +1,6 @@
 package gwt.material.design.demo.client.gin;
 
+import com.gwtplatform.dispatch.rpc.client.gin.RpcDispatchAsyncModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
@@ -18,12 +19,13 @@ public class ClientModule extends AbstractPresenterModule
     @Override
     protected void configure()
     {
-        install(new DefaultModule(DefaultPlaceManager.class));
+        install(new DefaultModule());
+        install(new RpcDispatchAsyncModule.Builder().build());
         install(new ApplicationModule());
 
         // DefaultPlaceManager Places
-        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);
-        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.home);
-        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.home);
+        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.about);
+        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.about);
+        bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.about);
     }
 }

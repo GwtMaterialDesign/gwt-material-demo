@@ -216,56 +216,16 @@
             </m:sidebaritem>
         </m:MaterialNavBar>
         <m:MaterialContainer>
-            <m:MaterialTopNav ui:field="topNav" color="blue" textColor="white">
-                <m:child>
 
-                    <m:MaterialPanel>
+            <!--THIS PANEL CONTAINS THE HEADER PRESENTER THAT SHOWS THE TITLE AND DESCRIPTION-->
+            <g:SimplePanel ui:field="header"/>
 
-                        <p style="font-size: 1em; color: white">GWT Material</p>
+            <g:HTMLPanel addStyleNames="{style.panel} container z-depth-2">
 
-                        <p style="font-size: 0.6em; color: white">A Material Design look and feel for GWT Apps plus
-                            Phonegap.
-                        </p>
-
-                        <!--<m:MaterialTitle fontSize="0.7" color="white" title="GWT Material"-->
-                        <!--description="A Material Design look and feel for GWT Apps plus Phonegap."/>-->
-
-                        <m:MaterialButton ui:field="gettingStartedPanel" text="Get Started" size="large"
-                                          color="blue lighten-2" addStyleNames="{style.btnGettingStarted}"/>
-                    </m:MaterialPanel>
-                </m:child>
-
-            </m:MaterialTopNav>
-
-            <g:HTMLPanel ui:field="contentPanel" addStyleNames="{style.panel} container z-depth-2">
-
-                <!--CHILD PRESENTERS GO IN THIS PANEL (see setInSlot() of ApplicationView.java)-->
+                <!--CHILD PRESENTERS GO IN THIS PANEL (see bindSlot() in ApplicationView.java)-->
                 <g:SimplePanel ui:field="main"/>
 
             </g:HTMLPanel>
-
-            <!--<g:HTMLPanel ui:field="contentPanel" addStyleNames="{style.panel} container z-depth-2">-->
-            <!--<p:MaterialGettingStarted ui:field="materialGettingStarted"/>-->
-            <!--<p:MaterialHome ui:field="materialHome"/>-->
-            <!--<p:MaterialStyle ui:field="materialStyle"/>-->
-            <!--<p:MaterialButtonPanel ui:field="materialButtons"/>-->
-            <!--<p:MaterialForms ui:field="materialForms"/>-->
-            <!--<p:MaterialDialogs ui:field="materialDialogs"/>-->
-            <!--<p:MaterialLoaders ui:field="materialLoaders"/>-->
-            <!--<p:MaterialMedia ui:field="materialMedia"/>-->
-            <!--<p:MaterialCard ui:field="materialCards"/>-->
-            <!--<p:MaterialNavigations ui:field="materialNavigations"/>-->
-            <!--<p:MaterialCollapsibles ui:field="materialCollapsibles"/>-->
-            <!--<p:MaterialDropDowns ui:field="materialDropDowns"/>-->
-            <!--<p:MaterialFooterPanel ui:field="materialFooters"/>-->
-            <!--<p:MaterialTabsPanel ui:field="materialTabs"/>-->
-            <!--<p:MaterialCollectionPanel ui:field="materialCollections"/>-->
-            <!--<p:MaterialBadges ui:field="materialBadges" />-->
-            <!--<p:MaterialGrid ui:field="materialGrid" />-->
-            <!--<p:MaterialShowcase ui:field="materialShowcase"/>-->
-            <!--<p:MaterialTransitions ui:field="materialTransitions"/>-->
-            <!--&lt;!&ndash; <p:Team /> &ndash;&gt;-->
-            <!--</g:HTMLPanel>-->
 
 
         </m:MaterialContainer>
