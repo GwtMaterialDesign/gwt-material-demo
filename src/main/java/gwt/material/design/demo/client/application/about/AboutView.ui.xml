@@ -3,9 +3,7 @@
              xmlns:p="urn:import:gwt.material.design.demo.client.panel">
 
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
-
         <g:HTMLPanel addStyleNames="center-align">
-
             <m:MaterialRow>
                 <m:MaterialImage resource="{res.ic_front}"/>
                 <m:MaterialTitle title="What is Material Design?" description="Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform." />
@@ -25,6 +23,4 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
         </g:HTMLPanel>
-
-
 </ui:UiBinder>

@@ -5,15 +5,12 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class AboutView extends ViewImpl implements AboutPresenter.MyView
-{
-    public interface Binder extends UiBinder<Widget, AboutView>
-    {
+public class AboutView extends ViewImpl implements AboutPresenter.MyView {
+    public interface Binder extends UiBinder<Widget, AboutView> {
     }
 
     @Inject
-    AboutView(Binder uiBinder)
-    {
+    AboutView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

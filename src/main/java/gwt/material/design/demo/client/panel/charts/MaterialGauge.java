@@ -20,8 +20,7 @@ public class MaterialGauge extends Composite {
 	interface MaterialGaugeUiBinder extends UiBinder<Widget, MaterialGauge> {
 	}
 
-	@UiField
-	MaterialCard chartCard;
+	@UiField MaterialCard chartCard;
 	private Gauge gauge;
 
 	public MaterialGauge() {
@@ -37,14 +36,13 @@ public class MaterialGauge extends Composite {
 			public void run() {
 				// Create and attach the chart
 				gauge = new Gauge();
-				chartCard.getCardContentPanel().add(gauge);
+				chartCard.add(gauge);
 				draw();
 			}
 		});
 	}
 
 	private void draw() {
-
 		// Prepare the data
 		DataTable dataTable = DataTable.create();
 		dataTable.addColumn(ColumnType.STRING, "LabelStyle");

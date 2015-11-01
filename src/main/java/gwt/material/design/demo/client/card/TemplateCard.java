@@ -10,6 +10,10 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.ui.MaterialCard;
+import gwt.material.design.client.ui.MaterialCardContent;
+import gwt.material.design.client.ui.MaterialCardImage;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.demo.client.showcase.MaterialLogin;
 import gwt.material.design.demo.client.showcase.MaterialParallax;
 import gwt.material.design.demo.shared.TemplateDTO;
@@ -17,43 +21,45 @@ import gwt.material.design.demo.shared.TemplateDTO;
 public class TemplateCard extends Composite {
 
 	private static TemplateCardUiBinder uiBinder = GWT
-			.create(TemplateCardUiBinder.class);
+		.create(TemplateCardUiBinder.class);
 
 	interface TemplateCardUiBinder extends UiBinder<Widget, TemplateCard> {
 	}
 	
-	@UiField
-	MaterialCard card;
+	@UiField MaterialCard card;
+	@UiField MaterialCardImage cardImage;
+	@UiField MaterialImage image;
+	@UiField MaterialCardContent content;
+	@UiField MaterialLabel description;
+
 	private TemplateDTO template;
 
 	public TemplateCard(TemplateDTO template) {
 		initWidget(uiBinder.createAndBindUi(this));
 		setTemplate(template);
 		card.setTitle(template.getName());
-		card.setDescription(template.getDescription());
-		card.setResource(template.getImg());
+		description.setText(template.getDescription());
+		image.setResource(template.getImg());
 	}
 
 	@UiHandler("btnDemo")
-	void onDemo(ClickEvent e){
-		if("Parallax Template".equals(getTemplate().getName())){
+	void onDemo(ClickEvent e) {
+		if("Parallax Template".equals(getTemplate().getName())) {
 			RootPanel.get().clear();
 			RootPanel.get().add(new MaterialParallax());
-		}else if("Login Template".equals(getTemplate().getName())){
+		} else if("Login Template".equals(getTemplate().getName())) {
 			RootPanel.get().clear();
 			RootPanel.get().add(new MaterialLogin());
-		}else{
+		} else {
 			Window.open(getTemplate().getDemoLink(), "", "_blank");
 		}
-		
 	}
 	
 	@UiHandler("btnSource")
 	void onSource(ClickEvent e){
 		Window.open(getTemplate().getSourceLink(), "", "_blank");
 	}
-	
-	
+
 	/**
 	 * @return the template
 	 */
@@ -67,5 +73,4 @@ public class TemplateCard extends Composite {
 	public void setTemplate(TemplateDTO template) {
 		this.template = template;
 	}
-
 }

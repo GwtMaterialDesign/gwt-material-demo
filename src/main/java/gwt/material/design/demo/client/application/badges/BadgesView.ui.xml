@@ -6,32 +6,28 @@
     <g:HTMLPanel>
         <m:MaterialTitle title="Collections"/>
         <m:MaterialCollection>
-            <m:item>
+            <m:MaterialCollectionItem>
                 <m:MaterialPanel>
                     <m:MaterialLink text="Sample 1">
-                        <m:badge>
-                            <m:MaterialBadge text="1 new" color="blue"/>
-                        </m:badge>
+                        <m:MaterialBadge text="1 new" backgroundColor="blue"/>
                     </m:MaterialLink>
                     <m:MaterialBadge text="1"/>
                 </m:MaterialPanel>
-            </m:item>
-            <m:item>
+            </m:MaterialCollectionItem>
+            <m:MaterialCollectionItem>
                 <m:MaterialPanel>
                     <m:MaterialLink text="Sample 1">
-                        <m:badge>
-                            <m:MaterialBadge text="1 new" color="blue"/>
-                        </m:badge>
+                        <m:MaterialBadge text="1 new" backgroundColor="blue"/>
                     </m:MaterialLink>
 
                 </m:MaterialPanel>
-            </m:item>
-            <m:item>
+            </m:MaterialCollectionItem>
+            <m:MaterialCollectionItem>
                 <m:MaterialLink text="Sample 3"/>
-            </m:item>
-            <m:item>
+            </m:MaterialCollectionItem>
+            <m:MaterialCollectionItem>
                 <m:MaterialLink text="Sample 4"/>
-            </m:item>
+            </m:MaterialCollectionItem>
         </m:MaterialCollection>
 
         <pre>
@@ -60,22 +56,14 @@
         <m:MaterialTitle title="Badges in Dropdown"/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l4">
-                <m:MaterialDropDown text="Selection" color="blue" activates="myDropDown">
-                    <m:item>
-                        <m:MaterialLink text="First"/>
-                    </m:item>
-                    <m:item>
-                        <m:MaterialLink text="Second"/>
-                    </m:item>
-                    <m:item>
-                        <m:MaterialPanel>
-                            <m:MaterialLink text="Sample 1">
-                                <m:badge>
-                                    <m:MaterialBadge text="1 new" color="blue"/>
-                                </m:badge>
-                            </m:MaterialLink>
-                        </m:MaterialPanel>
-                    </m:item>
+                <m:MaterialDropDown belowOrigin="true" constraintWidth="true" name="Selection" addStyleNames="blue">
+                    <m:MaterialLink text="First"/>
+                    <m:MaterialLink text="Second"/>
+                    <m:MaterialPanel>
+                        <m:MaterialLink text="Sample 1">
+                            <m:MaterialBadge text="1 new" backgroundColor="blue"/>
+                        </m:MaterialLink>
+                    </m:MaterialPanel>
                 </m:MaterialDropDown>
             </m:MaterialColumn>
         </m:MaterialRow>

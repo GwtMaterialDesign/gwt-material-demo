@@ -16,5 +16,4 @@ public class CardsView extends ViewWithUiHandlers<CardsUiHandlers> implements Ca
     CardsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
-
 }

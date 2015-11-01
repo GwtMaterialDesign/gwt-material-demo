@@ -5,8 +5,21 @@
 	<ui:style>
 	
 	</ui:style>
-	<m:MaterialCard ui:field="card" grid="s12 m6 l3" type="reveal" >
-		<m:link><m:MaterialLink ui:field="btnDemo" text="Demo"  /></m:link>
-		<m:link><m:MaterialLink ui:field="btnSource" text="Source"  /></m:link>
+	<m:MaterialCard ui:field="card" grid="s12 m6 l3">
+		<m:MaterialCardImage ui:field="cardImage" waves="light">
+			<m:MaterialImage ui:field="image" url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+		</m:MaterialCardImage>
+
+		<m:MaterialCardContent ui:field="content" textColor="black"/>
+
+		<m:MaterialCardReveal>
+			<m:MaterialCardTitle ui:field="title" text="Sample" icon="close" iconPosition="right" textColor="black"/>
+			<m:MaterialLabel ui:field="description" />
+		</m:MaterialCardReveal>
+
+		<m:MaterialCardAction>
+			<m:MaterialLink ui:field="btnDemo" text="Demo"/>
+			<m:MaterialLink ui:field="btnSource" text="Source"/>
+		</m:MaterialCardAction>
 	</m:MaterialCard>
 </ui:UiBinder> 

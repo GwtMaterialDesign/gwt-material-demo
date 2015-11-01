@@ -17,5 +17,4 @@ public class MaterialWindowContent extends Composite {
 	public MaterialWindowContent() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-
 }

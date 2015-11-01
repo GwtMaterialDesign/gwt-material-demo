@@ -6,19 +6,27 @@
     <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
 
     <g:HTMLPanel>
-
         <m:MaterialTitle title="Basic Card"/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l4">
-                <m:MaterialCard type="basic" title="Card Title"
-                                description="Here is some more information about this product that is only revealed once clicked on."
-                                resource="{res.image}">
-                    <m:link>
+                <m:MaterialCard>
+                    <m:MaterialCardImage waves="light">
+                        <m:MaterialImage resource="{res.image}"/>
+                    </m:MaterialCardImage>
+
+                    <m:MaterialCardContent textColor="black">
+                        <m:MaterialCardTitle text="Card Title" icon="more_vert" iconPosition="right" textColor="black"/>
+                    </m:MaterialCardContent>
+
+                    <m:MaterialCardReveal>
+                        <m:MaterialCardTitle text="Card Title" icon="close" iconPosition="right" textColor="black"/>
+                        <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                    </m:MaterialCardReveal>
+
+                    <m:MaterialCardAction>
                         <m:MaterialLink text="Share" icon="mdi-social-share"/>
-                    </m:link>
-                    <m:link>
                         <m:MaterialLink text="Download" icon="mdi-file-file-download"/>
-                    </m:link>
+                    </m:MaterialCardAction>
                 </m:MaterialCard>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -46,15 +54,24 @@
         <m:MaterialTitle title="Card Image"/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l4">
-                <m:MaterialCard type="image" title="Card Title"
-                                description="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively."
-                                resource="{res.image}">
-                    <m:link>
+                <m:MaterialCard>
+                    <m:MaterialCardImage waves="light">
+                        <m:MaterialImage resource="{res.image}"/>
+                    </m:MaterialCardImage>
+
+                    <m:MaterialCardContent textColor="black">
+                        <m:MaterialCardTitle text="Card Title" icon="more_vert" iconPosition="right" textColor="black"/>
+                    </m:MaterialCardContent>
+
+                    <m:MaterialCardReveal>
+                        <m:MaterialCardTitle text="Card Title" icon="close" iconPosition="right" textColor="black"/>
+                        <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                    </m:MaterialCardReveal>
+
+                    <m:MaterialCardAction>
                         <m:MaterialLink text="Share" icon="mdi-social-share"/>
-                    </m:link>
-                    <m:link>
                         <m:MaterialLink text="Download" icon="mdi-file-file-download"/>
-                    </m:link>
+                    </m:MaterialCardAction>
                 </m:MaterialCard>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -81,15 +98,24 @@
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l4">
                 <m:MaterialTitle title="Card Reveal"/>
-                <m:MaterialCard type="reveal" title="Card Title"
-                                description="Here is some more information about this product that is only revealed once clicked on."
-                                resource="{res.image}">
-                    <m:link>
+                <m:MaterialCard>
+                    <m:MaterialCardImage waves="light">
+                        <m:MaterialImage resource="{res.image}"/>
+                    </m:MaterialCardImage>
+
+                    <m:MaterialCardContent textColor="black">
+                        <m:MaterialCardTitle text="Card Title" icon="more_vert" iconPosition="right" textColor="black"/>
+                    </m:MaterialCardContent>
+
+                    <m:MaterialCardReveal>
+                        <m:MaterialCardTitle text="Card Title" icon="close" iconPosition="right" textColor="black"/>
+                        <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+                    </m:MaterialCardReveal>
+
+                    <m:MaterialCardAction>
                         <m:MaterialLink text="Share" icon="mdi-social-share"/>
-                    </m:link>
-                    <m:link>
                         <m:MaterialLink text="Download" icon="mdi-file-file-download"/>
-                    </m:link>
+                    </m:MaterialCardAction>
                 </m:MaterialCard>
             </m:MaterialColumn>
         </m:MaterialRow>

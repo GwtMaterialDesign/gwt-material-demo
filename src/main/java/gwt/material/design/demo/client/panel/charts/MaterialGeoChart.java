@@ -22,8 +22,7 @@ public class MaterialGeoChart extends Composite {
 	interface MaterialGeoChartUiBinder extends UiBinder<Widget, MaterialGeoChart> {
 	}
 	
-	@UiField
-	MaterialCard chartCard;
+	@UiField MaterialCard chartCard;
 	private GeoChart geoChart;
 	
 	public MaterialGeoChart() {
@@ -39,7 +38,7 @@ public class MaterialGeoChart extends Composite {
 			public void run() {
 				// Create and attach the chart
 				geoChart = new GeoChart();
-				chartCard.getCardContentPanel().add(geoChart);
+				chartCard.add(geoChart);
 				draw();
 			}
 		});
@@ -80,5 +79,4 @@ public class MaterialGeoChart extends Composite {
 	private native JsArrayString getNativeArray() /*-{
 		return ["0d47a1", "1565c0", "1976d2", "1e88e5", "2196f3", "42a5f5"];
 	}-*/;
-	
 }
