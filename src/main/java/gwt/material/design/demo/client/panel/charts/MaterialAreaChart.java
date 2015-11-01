@@ -20,8 +20,7 @@ public class MaterialAreaChart extends Composite {
 
 	private static MaterialAreaChartUiBinder uiBinder = GWT.create(MaterialAreaChartUiBinder.class);
 
-	interface MaterialAreaChartUiBinder extends UiBinder<Widget, MaterialAreaChart> {
-	}
+	interface MaterialAreaChartUiBinder extends UiBinder<Widget, MaterialAreaChart> {}
 
 	@UiField
 	MaterialCard chartCard;
@@ -46,40 +45,35 @@ public class MaterialAreaChart extends Composite {
 			@Override
 			public void run() {
 				chart = new AreaChart();
-				chartCard.getCardContentPanel().add(chart);
-				chartCard.getCardContentPanel().getElement().getStyle().setPadding(0, Unit.PX);
-				chartCard.getCardContentPanel().getElement().getStyle().setPaddingTop(20, Unit.PX);
+				chartCard.add(chart);
+				chartCard.getElement().getStyle().setPadding(0, Unit.PX);
+				chartCard.getElement().getStyle().setPaddingTop(20, Unit.PX);
 				// Prepare the data with loop inside to populate the initial data 
 				setLoop();
-				
-				
 			}
 		});
 	}
 
 	private void setLoop(){
-		
 		Timer timer = new Timer() {
-			
-		      public void run() {
-		    	  if(isLoop){
-		    		  drawChart(values);
-		    		  isLoop = false;
-		    	  }else{
-		    		  drawChart(valuesInitial);
-		    		  isLoop = true;
-		    	  }
-		    	 
-		      }
-		    };
+			public void run() {
+				if(isLoop) {
+					drawChart(values);
+					isLoop = false;
+				} else {
+					drawChart(valuesInitial);
+					isLoop = true;
+				}
+			}
+		};
 		timer.scheduleRepeating(1000);
 	}
 	
 	private void drawChart(int[][] values){
 		DataTable dataTable = DataTable.create();
 		dataTable.addColumn(ColumnType.STRING, "Year");
-		for (int i = 0; i < countries.length; i++) {
-			dataTable.addColumn(ColumnType.NUMBER, countries[i]);
+		for (String country : countries) {
+			dataTable.addColumn(ColumnType.NUMBER, country);
 		}
 		dataTable.addRows(months.length);
 		for (int i = 0; i < months.length; i++) {
@@ -119,8 +113,7 @@ public class MaterialAreaChart extends Composite {
 		options.setHAxis(hAxis);
 		options.setLegend(legend);
 		options.setColors("2196f3", "42a5f5", "64b5f6", "90caf9", "bbdefb");
-		
-		
+
 		ChartArea area = ChartArea.create();
 		area.setTop(0);
 		area.setLeft(0);

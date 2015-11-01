@@ -45,7 +45,7 @@ public class MaterialBarChart extends Composite {
 			public void run() {
 				// Create and attach the chart
 				chart = new BarChart();
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				
 				// Prepare the data with loop inside to populate the initial data
 				setLoop();
@@ -77,8 +77,8 @@ public class MaterialBarChart extends Composite {
 		// Prepare the data
 		DataTable dataTable = DataTable.create();
 		dataTable.addColumn(ColumnType.STRING, "Year");
-		for (int i = 0; i < countries.length; i++) {
-			dataTable.addColumn(ColumnType.NUMBER, countries[i]);
+		for (String country : countries) {
+			dataTable.addColumn(ColumnType.NUMBER, country);
 		}
 		dataTable.addRows(years.length);
 		for (int i = 0; i < years.length; i++) {

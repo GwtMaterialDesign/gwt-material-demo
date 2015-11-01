@@ -25,8 +25,7 @@ public class MaterialCandleStick extends Composite {
 	interface MaterialCandleStickUiBinder extends UiBinder<Widget, MaterialCandleStick> {
 	}
 
-	@UiField
-	MaterialCard chartCard;
+	@UiField MaterialCard chartCard;
 	
 	private CandlestickChart chart;
 
@@ -43,14 +42,15 @@ public class MaterialCandleStick extends Composite {
 			public void run() {
 				// Create and attach the chart
 				chart = new CandlestickChart();
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				draw();
 			}
 		});
 	}
 
 	private void draw() {
-		JsArrayMixed dataArray = JsonUtils.unsafeEval("[['Mon',20,28,38,45],['Tue',31,38,55,66],['Wed',50,55,77,80],['Thu',77,77,66,50],['Fri',68,66,22,15]]");
+		JsArrayMixed dataArray = JsonUtils.unsafeEval(
+			"[['Mon',20,28,38,45],['Tue',31,38,55,66],['Wed',50,55,77,80],['Thu',77,77,66,50],['Fri',68,66,22,15]]");
 
 		// Prepare the data
 		DataTable dataTable = ChartHelper.arrayToDataTable(dataArray, true);
@@ -61,9 +61,7 @@ public class MaterialCandleStick extends Composite {
 		bgColor.setStroke("#2196f3");
 		bgColor.setFill("#90caf9");
 		bgColor.setStrokeWidth(2);
-		
-		
-		
+
 		options.setLegend(Legend.create(LegendPosition.NONE));
 		options.setFallingColor(bgColor);
 		options.setRisingColor(bgColor);
@@ -71,5 +69,4 @@ public class MaterialCandleStick extends Composite {
 		// Draw the chart
 		chart.draw(dataTable, options);
 	}
-
 }

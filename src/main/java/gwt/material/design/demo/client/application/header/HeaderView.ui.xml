@@ -21,24 +21,18 @@
     </ui:style>
 
     <g:HTMLPanel>
-
         <m:MaterialTopNav ui:field="topNav" color="blue" textColor="white">
             <m:child>
-
                 <m:MaterialPanel>
-
                     <g:Label ui:field="title" addStyleNames="{local.titleLabel}"/>
 
                     <g:Label ui:field="description" addStyleNames="{local.descriptionLabel}"/>
 
                 <m:MaterialButton ui:field="gettingStartedPanel" text="Get Started" size="large"
-                                  color="blue lighten-2" addStyleNames="{local.btnGettingStarted}"/>
-
+                                  backgroundColor="blue lighten-2" addStyleNames="{local.btnGettingStarted}"/>
             </m:MaterialPanel>
         </m:child>
-
     </m:MaterialTopNav>
-
 </g:HTMLPanel>
 
 

@@ -29,25 +29,20 @@ public class MaterialColoredLineChart extends Composite {
 	public MaterialColoredLineChart() {
 		initWidget(uiBinder.createAndBindUi(this));
 	}
-	
-	
 
 	@Override
 	protected void onAttach() {
 		initialize();
 	}
 
-
-
 	private void initialize() {
 		ChartLoader chartLoader = new ChartLoader(ChartPackage.CORECHART);
 		chartLoader.loadApi(new Runnable() {
-
 			@Override
 			public void run() {
 				// Create and attach the chart
 				chart = new LineChart();
-				chartCard.addContent(chart);
+				chartCard.add(chart);
 				draw();
 				Timer timer = new Timer() {
 				      public void run() {
@@ -60,7 +55,6 @@ public class MaterialColoredLineChart extends Composite {
 	}
 
 	private void draw() {
-
 		String[] countries = new String[] { "Austria", "Bulgaria", "Denmark", "Greece" };
 		int[] years = new int[] { 2003, 2004, 2005, 2006, 2007, 2008 };
 		int[][] values = new int[][] { { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0 } };
@@ -68,10 +62,11 @@ public class MaterialColoredLineChart extends Composite {
 		// Prepare the data
 		DataTable dataTable = DataTable.create();
 		dataTable.addColumn(ColumnType.STRING, "Year");
-		for (int i = 0; i < countries.length; i++) {
-			dataTable.addColumn(ColumnType.NUMBER, countries[i]);
+		for (String country : countries) {
+			dataTable.addColumn(ColumnType.NUMBER, country);
 		}
 		dataTable.addRows(years.length);
+
 		for (int i = 0; i < years.length; i++) {
 			dataTable.setValue(i, 0, String.valueOf(years[i]));
 		}
@@ -85,16 +80,20 @@ public class MaterialColoredLineChart extends Composite {
 	}
 
 	private void draw2() {
-
 		String[] countries = new String[] { "Austria", "Bulgaria", "Denmark", "Greece" };
 		int[] years = new int[] { 2003, 2004, 2005, 2006, 2007, 2008 };
-		int[][] values = new int[][] { { 1336060, 1538156, 1576579, 1600652, 1968113, 1901067 }, { 400361, 366849, 440514, 434552, 393032, 517206 }, { 1001582, 1119450, 993360, 1004163, 979198, 916965 }, { 997974, 941795, 930593, 897127, 1080887, 1056036 } };
+		int[][] values = new int[][] {
+			{ 1336060, 1538156, 1576579, 1600652, 1968113, 1901067 },
+			{ 400361, 366849, 440514, 434552, 393032, 517206 },
+			{ 1001582, 1119450, 993360, 1004163, 979198, 916965 },
+			{ 997974, 941795, 930593, 897127, 1080887, 1056036 }
+		};
 
 		// Prepare the data
 		DataTable dataTable = DataTable.create();
 		dataTable.addColumn(ColumnType.STRING, "Year");
-		for (int i = 0; i < countries.length; i++) {
-			dataTable.addColumn(ColumnType.NUMBER, countries[i]);
+		for (String country : countries) {
+			dataTable.addColumn(ColumnType.NUMBER, country);
 		}
 		dataTable.addRows(years.length);
 		for (int i = 0; i < years.length; i++) {

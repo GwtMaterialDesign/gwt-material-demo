@@ -39,7 +39,7 @@ public class MaterialBubbleChart extends Composite {
 			public void run() {
 				// Create and attach the chart
 				chart = new BubbleChart();
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				draw();
 			}
 		});

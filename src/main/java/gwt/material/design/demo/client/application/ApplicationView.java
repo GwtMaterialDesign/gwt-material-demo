@@ -22,7 +22,5 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
         bindSlot(ApplicationPresenter.SLOT_HeaderContent, header);
         bindSlot(ApplicationPresenter.SLOT_MainContent, main);
-
     }
-
 }

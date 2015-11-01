@@ -6,9 +6,20 @@
 	
 	</ui:style>
 	<m:MaterialColumn grid="s12 m6 l3">
-		<m:MaterialCard type="chart"  ui:field="chartCard" title="Bar Chart"  description="Here is some more information about this product that is only revealed once clicked on." >
-			<m:link><m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/gwt.material.design.demo/src/gwt/material/design/demo/client/panel/charts/MaterialBarChart.ui.xml" text="UI Binder" iconPosition="left" textColor="blue" icon="mdi-action-open-in-new" /></m:link>
-			<m:link><m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/gwt.material.design.demo/src/gwt/material/design/demo/client/panel/charts/MaterialBarChart.java" text="Java" iconPosition="left" textColor="blue"  icon="mdi-action-open-in-new"/></m:link>
+		<m:MaterialCard ui:field="chartCard">
+			<m:MaterialCardContent textColor="black">
+				<m:MaterialCardTitle text="Bar Chart" icon="more_vert" iconPosition="right" textColor="black"/>
+			</m:MaterialCardContent>
+
+			<m:MaterialCardReveal>
+				<m:MaterialCardTitle text="Bar Chart" icon="close" iconPosition="right" textColor="black"/>
+				<m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
+			</m:MaterialCardReveal>
+
+			<m:MaterialCardAction>
+				<m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/gwt.material.design.demo/src/gwt/material/design/demo/client/panel/charts/MaterialBarChart.ui.xml" text="UI Binder" iconPosition="left" textColor="blue" icon="mdi-action-open-in-new" />
+				<m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/gwt.material.design.demo/src/gwt/material/design/demo/client/panel/charts/MaterialBarChart.java" text="Java" iconPosition="left" textColor="blue"  icon="mdi-action-open-in-new"/>
+			</m:MaterialCardAction>
 		</m:MaterialCard>
 	</m:MaterialColumn>
 </ui:UiBinder> 

@@ -7,14 +7,25 @@
 			height: 60vh;
 		}
 	</ui:style>
+
 	<m:MaterialPanel addStyleNames="{style.window}">
-		<m:MaterialNavBar wave="light" align="right" color="blue" text="Demo"  sideBarWidth="0" >
-			<m:nav><m:MaterialLink  icon="mdi-social-whatshot" textColor="white"  tooltip="Starter"/></m:nav>
-			<m:nav><m:MaterialLink  icon="mdi-navigation-apps" textColor="white"  tooltip="Apps"/></m:nav>
-			<m:nav><m:MaterialLink  icon="mdi-social-notifications" textColor="white"  tooltip="Notification"/></m:nav>
+		<m:MaterialNavBar backgroundColor="blue">
+			<m:MaterialSideNav closeOnClick="false" name="Demo" type="OPEN" width="0">
+				<m:MaterialNavSection align="right">
+					<m:MaterialLink icon="mdi-social-whatshot" textColor="white" tooltip="Starter"/>
+				</m:MaterialNavSection>
+				<m:MaterialNavSection align="right">
+					<m:MaterialLink icon="mdi-navigation-apps" textColor="white" tooltip="Apps"/>
+				</m:MaterialNavSection>
+				<m:MaterialNavSection align="right">
+					<m:MaterialLink icon="mdi-social-notifications" textColor="white" tooltip="Notification"/>
+				</m:MaterialNavSection>
+			</m:MaterialSideNav>
 		</m:MaterialNavBar>
+
 		<m:MaterialContainer>
-			<m:MaterialTabs color="blue" textColor="white" indicatorColor="white" waves="yellow" >
+			<m:MaterialTab backgroundColor="blue" textColor="white" indicatorColor="white" waves="white" >
+				<m:MaterialTabItem textColor="white"  />
 				<m:tab><m:MaterialLabel text="Tab 1" /></m:tab>
 				<m:tab><m:MaterialLabel text="Tab 2" /></m:tab>
 				<m:tab><m:MaterialLabel text="Tab 3" /></m:tab>
@@ -31,7 +42,7 @@
 				<m:content>
 					<m:MaterialTopNav fontSize="2" padding="5"  title="Sample 3" description="This is sample 3"  color="white" textColor="black lighten-1" />
 				</m:content>
-			</m:MaterialTabs>
+			</m:MaterialTab>
 		</m:MaterialContainer>
 	</m:MaterialPanel>
 </ui:UiBinder> 

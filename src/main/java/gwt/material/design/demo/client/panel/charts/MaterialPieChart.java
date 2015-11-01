@@ -23,8 +23,7 @@ public class MaterialPieChart extends Composite {
 	interface MaterialPieChartUiBinder extends UiBinder<Widget, MaterialPieChart> {
 	}
 
-	@UiField
-	MaterialCard chartCard;
+	@UiField MaterialCard chartCard;
 
 	public MaterialPieChart() {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -42,7 +41,7 @@ public class MaterialPieChart extends Composite {
 				PieChart chart = new PieChart();
 				chart.setWidth("100%");
 				chart.setHeight("100%");
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				DataTable dataTable = DataTable.create();
 				dataTable.addColumn(ColumnType.STRING, "Task");
 				dataTable.addColumn(ColumnType.NUMBER, "Hours per Day");
@@ -76,7 +75,7 @@ public class MaterialPieChart extends Composite {
 				PieChart chart = new PieChart();
 				chart.setWidth("100%");
 				chart.setHeight("100%");
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				DataTable dataTable = DataTable.create();
 				dataTable.addColumn(ColumnType.STRING, "Task");
 				dataTable.addColumn(ColumnType.NUMBER, "Hours per Day");
@@ -110,7 +109,7 @@ public class MaterialPieChart extends Composite {
 				PieChart chart = new PieChart();
 				chart.setWidth("100%");
 				chart.setHeight("100%");
-				chartCard.getCardContentPanel().add(chart);
+				chartCard.add(chart);
 				DataTable dataTable = DataTable.create();
 				dataTable.addColumn(ColumnType.STRING, "Task");
 				dataTable.addColumn(ColumnType.NUMBER, "Hours per Day");
@@ -240,5 +239,4 @@ public class MaterialPieChart extends Composite {
 			chartOptions.pieHole = d;
 		}-*/;
 	}
-
 }

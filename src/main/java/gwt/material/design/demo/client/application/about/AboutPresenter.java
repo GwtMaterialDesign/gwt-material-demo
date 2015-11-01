@@ -11,21 +11,17 @@ import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class AboutPresenter extends Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy>
-{
-    public interface MyView extends View
-    {
+public class AboutPresenter extends Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
+    public interface MyView extends View {
     }
 
     @ProxyStandard
     @NameToken(NameTokens.about)
-    public interface MyProxy extends ProxyPlace<AboutPresenter>
-    {
+    public interface MyProxy extends ProxyPlace<AboutPresenter> {
     }
 
     @Inject
-    AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy)
-    {
+    AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
     }
 

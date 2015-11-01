@@ -11,25 +11,26 @@
 	<g:HTMLPanel>
 	
 		<m:MaterialTitle title="Circular" />
-		<m:MaterialButton text="Show Loader" ui:field="btnShowLoader" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Show Loader" ui:field="btnShowLoader" backgroundColor="blue" addStyleNames="{style.btn}"/>
 		
 		<pre>
 MaterialLoader.showLoading(<span class="tag">true</span>);
 		</pre>
 		
 		<m:MaterialTitle title="Linear" />
-		<m:MaterialButton text="Show Progress" ui:field="btnShowProgress" color="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialButton text="Show Progress" ui:field="btnShowProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
 		
 		<pre>
-MaterialLoader.showProgress(<span class="tag">true</span>);
+MaterialLoader.showLoader();
 		</pre>
 		
 		<m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
-		<m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" color="blue" addStyleNames="{style.btn}"/>
-		<m:MaterialNavBar ui:field="navBar" align="right"  color="blue"  text="Logo">
-			<m:nav><m:MaterialLink  text="About" textColor="white"  /></m:nav>
-			<m:nav><m:MaterialLink  text="Buttons" textColor="white"/></m:nav>
-			<m:nav><m:MaterialLink  text="Forms" textColor="white"/></m:nav>
+		<m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" textColor="blue" addStyleNames="{style.btn}"/>
+		<m:MaterialNavBar ui:field="navBar">
+			<m:MaterialNavBrand text="Logo" align="left" />
+			<m:MaterialLink  text="About" textColor="white"  />
+			<m:MaterialLink  text="Buttons" textColor="white"/>
+			<m:MaterialLink  text="Forms" textColor="white"/>
 		</m:MaterialNavBar>
 		
 		<pre>
@@ -37,12 +38,11 @@ MaterialLoader.showProgress(<span class="tag">true</span>);
 		
 		@UiHandler("btnShowNavBarProgress")
 		void onShowNavBarProgress(ClickEvent e){
-			navBar.showProgress(true);
+			navBar.showLoader();
 			Timer t = new Timer() {
-				
 				@Override
 				public void run() {
-					navBar.showProgress(false);
+					navBar.hideLoader();
 				}
 			};
 			t.schedule(3000);

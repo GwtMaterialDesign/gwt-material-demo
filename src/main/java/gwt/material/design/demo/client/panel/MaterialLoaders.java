@@ -53,12 +53,12 @@ public class MaterialLoaders extends Composite {
 	
 	@UiHandler("btnShowNavBarProgress")
 	void onShowNavBarProgress(ClickEvent e){
-		navBar.showProgress(true);
+		navBar.showLoader();
 		Timer t = new Timer() {
 			
 			@Override
 			public void run() {
-				navBar.showProgress(false);
+				navBar.hideLoader();
 			}
 		};
 		t.schedule(3000);

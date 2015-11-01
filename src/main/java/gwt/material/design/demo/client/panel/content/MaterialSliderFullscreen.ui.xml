@@ -6,9 +6,31 @@
 	
 	</ui:style>
 	<m:MaterialSlide ui:field="sliderPanel" fullScreen="true">
-			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
-			<m:slide><m:MaterialSlideItem align="left" url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
-			<m:slide><m:MaterialSlideItem align="right" url="http://mayastepien.nl/googlecalendar/google-skiing.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
-			<m:slide><m:MaterialSlideItem align="center" url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" title="This is our big TagLine" description="Here's our small slogan."/></m:slide>
-		</m:MaterialSlide>
+		<m:MaterialSlideItem>
+			<m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg" />
+
+			<m:MaterialSlideCaption align="center">
+				<m:MaterialLabel text="This is our big TagLine" />
+				<m:MaterialLabel text="Here's our small slogan." />
+			</m:MaterialSlideCaption>
+		</m:MaterialSlideItem>
+
+		<m:MaterialSlideItem>
+			<m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg" />
+
+			<m:MaterialSlideCaption align="center">
+				<m:MaterialLabel text="This is our big TagLine" />
+				<m:MaterialLabel text="Here's our small slogan." />
+			</m:MaterialSlideCaption>
+		</m:MaterialSlideItem>
+
+		<m:MaterialSlideItem>
+			<m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg" />
+
+			<m:MaterialSlideCaption align="center">
+				<m:MaterialLabel text="This is our big TagLine" />
+				<m:MaterialLabel text="Here's our small slogan." />
+			</m:MaterialSlideCaption>
+		</m:MaterialSlideItem>
+	</m:MaterialSlide>
 </ui:UiBinder> 
