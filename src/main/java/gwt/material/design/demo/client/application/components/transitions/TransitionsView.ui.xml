@@ -1,0 +1,232 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+
+  <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+
+  <ui:style>
+    .block{
+      display: block;
+    }
+  </ui:style>
+  <m:MaterialPanel>
+    <g:HTMLPanel>
+      <m:MaterialTitle title="Show Grid" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items."/>
+      <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="white" textColor="black" waves="LIGHT"/>
+      <m:MaterialRow ui:field="gridPanel">
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+
+        <m:MaterialCard backgroundColor="blue-grey darken-1" grid="l2">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+            <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialRow>
+
+      <m:MaterialTitle title="Show Staggered List" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items."/>
+      <m:MaterialButton ui:field="btnStaggered" text="Click Me" backgroundColor="blue" waves="LIGHT"/>
+      <pre>
+        &lt;m:UnorderedList ui:field="listContainer">
+        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+        &lt;m.html:ListItem opacity="0">&lt;m:MaterialTitle title="List Item" description="List Item"/>&lt;/m.html:ListItem>
+        &lt;/m:UnorderedList>
+      </pre>
+
+      <pre>
+        MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
+      </pre>
+
+      <m.html:UnorderedList ui:field="listContainer">
+        <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+        <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+        <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+        <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+      </m.html:UnorderedList>
+
+
+      <m:MaterialTitle title="Fade in Image" description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect."/>
+      <m:MaterialButton ui:field="btnFade" text="Click Me" backgroundColor="blue" waves="LIGHT" />
+      <pre>
+        &lt;m:MaterialImage opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+      </pre>
+      <pre>
+        MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
+      </pre>
+      <m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+
+    </g:HTMLPanel>
+  </m:MaterialPanel>
+</ui:UiBinder>

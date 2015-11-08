@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+  <ui:style>
+    .btn{
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .navBar{
+      padding-left: 0 !important;
+    }
+  </ui:style>
+  <g:HTMLPanel>
+
+    <m:MaterialTitle title="Circular" />
+    <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" backgroundColor="blue" addStyleNames="{style.btn}"/>
+
+    <pre>
+      MaterialLoader.showLoading(<span class="tag">true</span>);
+    </pre>
+
+    <m:MaterialTitle title="Linear" />
+    <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
+
+    <pre>
+      MaterialLoader.showProgress(<span class="tag">true</span>);
+    </pre>
+
+    <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
+    <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
+    <m:MaterialNavBar ui:field="navBar" backgroundColor="blue" addStyleNames="{style.navBar}">
+      <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
+      <m:MaterialNavSection float="RIGHT">
+        <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
+        <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/>
+        <m:MaterialTooltip text ="Menu">
+          <m:MaterialLink iconType="SEARCH" textColor="white" waves="LIGHT"/>
+        </m:MaterialTooltip>
+        <m:MaterialTooltip text ="Starter">
+          <m:MaterialLink iconType="MORE_VERT" textColor="white" waves="LIGHT"/>
+        </m:MaterialTooltip>
+      </m:MaterialNavSection>
+    </m:MaterialNavBar>
+
+    <pre>
+      @UiField MaterialNavBar navBar;
+
+      @UiHandler("btnShowNavBarProgress")
+      void onShowNavBarProgress(ClickEvent e) {
+      navBar.showLoader();
+      Timer t = new Timer() {
+
+      @Override
+      public void run() {
+      navBar.hideLoader();
+      }
+      };
+      t.schedule(3000);
+      }
+    </pre>
+  </g:HTMLPanel>
+</ui:UiBinder>
