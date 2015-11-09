@@ -6,7 +6,7 @@
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.3.4-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <name>GwtMaterial - Demo</name>
     <description>GWT Material Design - Demo</description>
 
@@ -29,7 +29,7 @@
         <gwt.version>2.7.0</gwt.version>
         <gwtp.version>1.5.1</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.3.4-SNAPSHOT</gwt-material.version>
+        <gwt-material.version>1.4-SNAPSHOT</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
