@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+  <ui:style>
+    .customFooter{
+      padding-left: 0 !important;
+      margin-bottom: 20px;
+    }
+  </ui:style>
+
+  <g:HTMLPanel>
+    <m:MaterialTitle title="Introduction" description="We use flexbox to structure our html so that the footer is always on the bottom of the page."/>
+    <m:MaterialFooter backgroundColor="blue" addStyleNames="{style.customFooter}">
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12 m6 l6">
+          <m:MaterialTitle textColor="white" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+          <m:MaterialButton ui:field="btnChat" text="CHAT" backgroundColor="blue lighten-2" waves="LIGHT"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l6">
+          <m:MaterialTitle textColor="white" title="GWT Phonegap" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+          <m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" backgroundColor="blue lighten-2" waves="LIGHT"/>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+
+      <m:MaterialFooterCopyright>
+        <m:MaterialLabel text="© 2015 Copyright GWT Material" />
+      </m:MaterialFooterCopyright>
+    </m:MaterialFooter>
+
+    <pre>
+      &lt;m:MaterialFooter backgroundColor="blue" copyright="Â© 2015 Copyright GWT Material" addStyleNames="{style.customFooter}">
+      &lt;m:MaterialRow>
+      &lt;m:MaterialColumn grid="s12 m6 l6">
+      &lt;m:MaterialTitle fontSize="0.7em" color="white" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+      &lt;m:MaterialButton ui:field="btnChat" text="CHAT" color="blue lighten-2" waves="LIGHT"/>
+      &lt;/m:MaterialColumn>
+      &lt;m:MaterialColumn grid="s12 m6 l6">
+      &lt;m:MaterialTitle fontSize="0.7em" color="white" title="GWT Phonegap" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
+      &lt;m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" color="blue lighten-2" waves="LIGHT"/>
+      &lt;/m:MaterialColumn>
+      &lt;/m:MaterialRow>
+      &lt;/m:MaterialFooter>
+    </pre>
+  </g:HTMLPanel>
+</ui:UiBinder>

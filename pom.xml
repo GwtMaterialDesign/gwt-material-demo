@@ -6,7 +6,7 @@
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.3.4-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
     <name>GwtMaterial - Demo</name>
     <description>GWT Material Design - Demo</description>
 
@@ -27,8 +27,9 @@
 
         <!-- GWT -->
         <gwt.version>2.7.0</gwt.version>
-        <gwtp.version>1.5</gwtp.version>
+        <gwtp.version>1.5.1</gwtp.version>
         <gin.version>2.1.2</gin.version>
+        <gwt-material.version>1.4-SNAPSHOT</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
@@ -39,9 +40,6 @@
         <junit.version>4.12</junit.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
-
-        <gwt-material.version>1.3.4-SNAPSHOT</gwt-material.version>
-        <!--<gae.home>${settings.localRepository}/com/google/appengine/appengine-java-sdk/${appengine.version}</gae.home>-->
     </properties>
 
     <build>
@@ -68,6 +66,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -84,30 +83,6 @@
                         <version>${gwt.version}</version>
                     </dependency>
                 </dependencies>
-            </plugin>
-
-            <plugin>
-                <groupId>com.google.appengine</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <version>${appengine.version}</version>
-                <configuration>
-                    <enableJarClasses>false</enableJarClasses>
-                    <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
-                    <!-- address>0.0.0.0</address>
-                    <port>8080</port -->
-                    <!-- Comment in the below snippet to enable local debugging with a remove debugger
-                    like those included with Eclipse or IntelliJ -->
-                    <!-- jvmFlags>
-                    <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
-                    </jvmFlags -->
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>endpoints_get_discovery_doc</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
             <!-- Skips the GWTTestCases during Junit Testing -->
@@ -156,14 +131,13 @@
                     <logLevel>INFO</logLevel>
                     <style>${gwt.style}</style>
 
-                    <runTarget>Gwt_material_design_demo.html</runTarget>
+                    <runTarget>index.html</runTarget>
                     <modules>
-                        <module>gwt.material.design.demo.Gwt_material_design_demo</module>
+                        <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
                     </modules>
 
                     <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
                     <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
-
                 </configuration>
 
                 <!--Replaced the existing executions block-->
@@ -194,6 +168,11 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material</artifactId>
+            <version>${gwt-material.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.gwtmaterialdesign</groupId>
+            <artifactId>gwt-material-themes</artifactId>
             <version>${gwt-material.version}</version>
         </dependency>
 
@@ -297,4 +276,37 @@
         </dependency>
 
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.google.appengine</groupId>
+                        <artifactId>appengine-maven-plugin</artifactId>
+                        <version>${appengine.version}</version>
+                        <configuration>
+                            <enableJarClasses>false</enableJarClasses>
+                            <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
+                            <!-- address>0.0.0.0</address>
+                            <port>8080</port -->
+                            <!-- Comment in the below snippet to enable local debugging with a remove debugger
+                            like those included with Eclipse or IntelliJ -->
+                            <!-- jvmFlags>
+                            <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
+                            </jvmFlags -->
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>endpoints_get_discovery_doc</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

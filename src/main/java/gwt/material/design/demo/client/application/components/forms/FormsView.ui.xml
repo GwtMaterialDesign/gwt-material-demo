@@ -1,0 +1,102 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+  <ui:style>
+    .block{
+      display: block;
+      margin-bottom: 10px;
+    }
+  </ui:style>
+
+  <g:HTMLPanel>
+    <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
+    <m:MaterialTextBox placeholder="First Name" />
+    <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" />
+
+    <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
+    <m:MaterialTextArea placeholder="Content" />
+    <m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/>
+
+    <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
+    <m:MaterialListBox ui:field="lstOptions">
+      <item>Option 1</item>
+      <item>Option 2</item>
+      <item>Option 3</item>
+    </m:MaterialListBox>
+
+    <m:MaterialTitle title="ChangeHandler" description="Add the code below to trigger any events on listbox"/>
+
+    <m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
+    <m:MaterialListBox old="true">
+      <item>Option 1</item>
+      <item>Option 2</item>
+      <item>Option 3</item>
+    </m:MaterialListBox>
+
+    <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
+    <m:MaterialListBox  enabled="false">
+      <item>Option 1</item>
+      <item>Option 2</item>
+      <item>Option 3</item>
+    </m:MaterialListBox>
+    <m:MaterialListBox  old="true" enabled="false">
+      <item>Option 1</item>
+      <item>Option 2</item>
+      <item>Option 3</item>
+    </m:MaterialListBox>
+
+    <m:MaterialTitle title="Radio Button" description="Radio Buttons are used when the user must make only one selection out of a group of items"/>
+    <m:MaterialRadioButton name="color" text="Red" addStyleNames="{style.block}"/>
+    <m:MaterialRadioButton name="color" text="Yellow" addStyleNames="{style.block}"/>
+    <m:MaterialRadioButton name="color" text="Green" addStyleNames="{style.block}"/>
+    <m:MaterialRadioButton name="color" text="Brown" enabled="false" addStyleNames="{style.block}"/>
+
+    <m:MaterialTitle title="Check Box" description="Checkboxes"/>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l2">
+        <m:MaterialCheckBox text="Blue" value="true" />
+        <m:MaterialCheckBox text="Red" />
+        <m:MaterialCheckBox text="Cyan" value="true" type="FILLED"/>
+        <m:MaterialCheckBox text="Green" value="true" enabled="false"/>
+        <m:MaterialCheckBox text="Brown" enabled="false"/>
+        <m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l2">
+        <m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED"/>
+        <m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" />
+        <m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED"/>
+        <m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED"/>
+        <m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED"/>
+        <m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <m:MaterialTitle title="Switches" />
+    <m:MaterialRow>
+      <m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/>
+      <m:MaterialLabel ui:field="lblSwitch1" text="Switch: true"/>
+    </m:MaterialRow>
+
+    <m:MaterialRow>
+      <m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/>
+      <m:MaterialLabel ui:field="lblSwitch2" text="Switch: false"/>
+    </m:MaterialRow>
+
+    <m:MaterialRow>
+      <m:MaterialSwitch enabled="false" value="true" grid="l0"/>
+      <m:MaterialLabel text="Switch: disabled"/>
+    </m:MaterialRow>
+
+    <m:MaterialRow>
+      <m:MaterialSwitch enabled="false" grid="l0"/>
+      <m:MaterialLabel text="Switch: disabled"/>
+    </m:MaterialRow>
+
+    <m:MaterialTitle title="Range" />
+    <m:MaterialRange ui:field="range" max="50"/>
+    <m:MaterialLabel text="Min: 10"/>
+    <m:MaterialLabel text="Min: 50"/>
+    <m:MaterialLabel ui:field="lblRange" text="Value: 25"/>
+  </g:HTMLPanel>
+</ui:UiBinder>

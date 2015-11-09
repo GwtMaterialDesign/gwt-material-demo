@@ -1,0 +1,89 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+  <g:HTMLPanel>
+    <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
+    <pre>
+      txtBox.setError("Please provide your name");
+      txtBox.setError("Your username is available");
+    </pre>
+    <m:MaterialLabel fontSize="1.5em" text="Supported widgets"/>
+    <blockquote >
+      <p>Autocomplete</p>
+      <p>Date Picker</p>
+      <p>Text Area</p>
+      <p>Text Box</p>
+      <p>Time Picker</p>
+    </blockquote>
+    <!-- Autocomplete -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Autocomplete"/>
+      <m:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccess" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Date Picker -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Date Picker"/>
+      <m:MaterialDatePicker ui:field="dp" placeholder="States" grid="s12 m12 l5"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorDp" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessDp" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Time Picker -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Time Picker" />
+      <m:MaterialTimePicker ui:field="tp"  grid="s12 m12 l5" />
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTime" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Range -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Range" />
+      <m:MaterialRange ui:field="range" grid="s12 m12 l5" />
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessRange" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Switch -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Switch" />
+      <m:MaterialSwitch ui:field="sw" grid="s12 m12 l5" />
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorSwitch" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessSwitch" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Text Area -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Text Area" />
+      <m:MaterialTextArea ui:field="txtArea" placeholder="About You" grid="s12 m12 l5" text="I Love Material Design"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtArea" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+
+    <!-- Text Box -->
+    <m:MaterialRow>
+      <m:MaterialTitle title="Text Box" />
+      <m:MaterialTextBox ui:field="txtBox" placeholder="First Name" grid="s12 m12 l5" text="Marjorie Matias"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="green" waves="LIGHT"/>
+    </m:MaterialRow>
+  </g:HTMLPanel>
+</ui:UiBinder>

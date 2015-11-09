@@ -1,4 +1,4 @@
-# gwt-material-demo
+# gwt-material-demo [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo)
 Demo application to show the features of the library
 
 #### THIS DEMO DOES NOT REPRESENT THE SITE AT http://gwt-material.appspot.com/
