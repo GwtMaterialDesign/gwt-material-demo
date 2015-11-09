@@ -15,7 +15,7 @@
       <!-- Activator -->
       <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-2"/>
       <!-- My Drop Down -->
-      <m:MaterialDropDown activator="dp-2" belowOrigin="false" constrainWidth="true">
+      <m:MaterialDropDown activator="dp-2" constrainWidth="true">
         <m:MaterialLink text="First" />
         <m:MaterialLink text="Second" />
         <m:MaterialLink text="Third" />
@@ -29,7 +29,7 @@
       <!-- Activator -->
       <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-3"/>
       <!-- My Drop Down -->
-      <m:MaterialDropDown activator="dp-3" belowOrigin="false" constrainWidth="true">
+      <m:MaterialDropDown activator="dp-3" constrainWidth="true">
         <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
         <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
         <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>

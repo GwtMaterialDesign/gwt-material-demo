@@ -1,6 +1,3 @@
-
-
-
 package gwt.material.design.demo.client.application.components.badges;
 
 import com.google.inject.Inject;

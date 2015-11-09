@@ -167,7 +167,6 @@ public class DatagridView extends ViewImpl implements DatagridPresenter.MyView {
                 mb.setWaves(WavesType.LIGHT);
                 mb.setIconType(IconType.POLYMER);
                 mb.setIconPosition(IconPosition.LEFT);
-                mb.getElement().getStyle().setProperty("display", "inline-flex");
                 return mb;
             }
         };
