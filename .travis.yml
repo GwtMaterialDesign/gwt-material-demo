@@ -11,6 +11,11 @@ before_install:
 - cd gwt-material
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
+# install the gwtmaterial themes library
+- git clone -b release_1.4 https://github.com/GwtMaterialDesign/gwt-material-themes.git
+- cd gwt-material-themes
+- mvn install -DskipTests=true -DdryRun=true
+- cd ..
 install: true
 before_script:
  - chmod +x .utility/*
