@@ -14,7 +14,7 @@
 
     <m:MaterialTitle title="Material Slider" description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider."/>
 
-    <m:MaterialSlider ui:field="slider" fullScreen="false">
+    <m:MaterialSlider ui:field="slider" fullscreen="false">
       <m:MaterialSlideItem>
         <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
         <m:MaterialSlideCaption textAlign="CENTER">
@@ -46,6 +46,6 @@
 
     <m:MaterialTitle title="Material Slider Fullscreen"
                      description="Just add fullscreen='true' on MaterialSlide to make the slider fullscreen"/>
-    <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" />
+    <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN" />
   </g:HTMLPanel>
 </ui:UiBinder>
