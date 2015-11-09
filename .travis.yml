@@ -1,0 +1,20 @@
+sudo: false
+language: java
+jdk:
+- oraclejdk7
+cache:
+  directories:
+  - $HOME/.m2
+before_install:
+# install the gwtmaterial library before we build the demo
+- git clone -b release_1.4 https://github.com/GwtMaterialDesign/gwt-material.git
+- cd gwt-material
+- mvn install -DskipTests=true -DdryRun=true
+- cd ..
+install: true
+before_script:
+ - chmod +x .utility/*
+script:
+  - mvn clean install -DdryRun=true -Dlicense.failOnMissingHeader=true -Dlicense.failOnNotUptodateHeader=true
+after_success:
+  - .utility/update_demo_site.sh

@@ -5,7 +5,7 @@
 -->
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
         "http://google-web-toolkit.googlecode.com/svn/tags/2.7.0/distro-source/core/src/gwt-module.dtd">
-<module rename-to='gwt_material_design_demo'>
+<module rename-to='gwtmaterialdemo'>
     <!-- Inherit the core Web Toolkit stuff.                        -->
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.inject.Inject'/>
@@ -26,7 +26,8 @@
     <source path='client'/>
     <source path='shared'/>
 
-    <set-configuration-property name="gin.ginjector.modules" value="gwt.material.design.demo.client.gin.ClientModule"/>
+    <set-configuration-property name="gin.ginjector.modules"
+                                value="gwt.material.design.demo.client.gin.ClientModule"/>
 
     <!-- allow Super Dev Mode -->
     <add-linker name="xsiframe"/>
