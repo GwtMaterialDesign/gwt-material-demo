@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie10'], '1FC03254BC11F3E3E98BF9393768F170');
-      unflattenKeylistIntoAnswers(['ie9'], '39A9412F152AE52C0806CB3F4EAC1763');
-      unflattenKeylistIntoAnswers(['safari'], '547DDD279E6D9A8875CA76C3330528E1');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'D06822AF94FC96FA71FADE2A72A858D1');
-      unflattenKeylistIntoAnswers(['ie8'], 'FDD254DDFC438722DACAEDE53AB9D857');
+      unflattenKeylistIntoAnswers(['ie9'], '070B281520347A4B126BA809482AC734');
+      unflattenKeylistIntoAnswers(['ie10'], '0C897C667D01AB9A3F537C6E5D5C8616');
+      unflattenKeylistIntoAnswers(['ie8'], '8CF5E72D1593941C44856F991A1294AD');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'AEFB4891DFC06188A5CD7670B6A8A73C');
+      unflattenKeylistIntoAnswers(['safari'], 'EE8B50CA732AB41E7780D0682436FED5');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -414,6 +414,8 @@ function gwtmaterialdemo(){
     installOneStylesheet('https://fonts.googleapis.com/icon?family=Material+Icons');
     installOneStylesheet('css/materialize.blue.css');
     installOneStylesheet('css/overridecss.blue.css');
+    installOneStylesheet('css/demo.css');
+    installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
   }
 
