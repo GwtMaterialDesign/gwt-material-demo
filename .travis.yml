@@ -6,12 +6,12 @@ cache:
   directories:
   - $HOME/.m2
 before_install:
-# install the gwtmaterial library before we build the demo
+# install the gwt-material library before we build the demo
 - git clone -b release_1.4 https://github.com/GwtMaterialDesign/gwt-material.git
 - cd gwt-material
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
-# install the gwtmaterial themes library
+# install the gwt-material-themes library
 - git clone -b release_1.4 https://github.com/GwtMaterialDesign/gwt-material-themes.git
 - cd gwt-material-themes
 - mvn install -DskipTests=true -DdryRun=true

@@ -20,7 +20,7 @@ git config --global user.name "travis-ci"
 # clone the gh-pages branch.
 cd $HOME
 rm -rf gh-pages
-git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/BenDol/gwt-material-demo gh-pages > /dev/null
+git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesign/gwt-material-demo gh-pages > /dev/null
 cd gh-pages
 
 # remove the GwtMaterialDemo directories from git.
