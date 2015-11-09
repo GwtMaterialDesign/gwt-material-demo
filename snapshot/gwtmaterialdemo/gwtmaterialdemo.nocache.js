@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie9'], '02AB1EA74566805B73E5F2709BB8700A');
-      unflattenKeylistIntoAnswers(['ie8'], '5E2D22702A66061D1B9E2ED6DE87AB5E');
-      unflattenKeylistIntoAnswers(['gecko1_8'], '8B503523D8D2C3217CA8AF2888ABE260');
-      unflattenKeylistIntoAnswers(['safari'], '90475FB6D9B589625B00EAC851476479');
-      unflattenKeylistIntoAnswers(['ie10'], 'ADA984A4EC0CF495CA479893D49E67EA');
+      unflattenKeylistIntoAnswers(['ie10'], '1FC03254BC11F3E3E98BF9393768F170');
+      unflattenKeylistIntoAnswers(['ie9'], '39A9412F152AE52C0806CB3F4EAC1763');
+      unflattenKeylistIntoAnswers(['safari'], '547DDD279E6D9A8875CA76C3330528E1');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'D06822AF94FC96FA71FADE2A72A858D1');
+      unflattenKeylistIntoAnswers(['ie8'], 'FDD254DDFC438722DACAEDE53AB9D857');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -412,7 +412,6 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/timepicker.css');
     installOneStylesheet('css/animation.css');
     installOneStylesheet('https://fonts.googleapis.com/icon?family=Material+Icons');
-    installOneStylesheet('css/materialize.min.css');
     installOneStylesheet('css/materialize.blue.css');
     installOneStylesheet('css/overridecss.blue.css');
     sendStats('loadExternalRefs', 'end');
