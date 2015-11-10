@@ -9,6 +9,7 @@ import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
 public class ColorsPresenter extends Presenter<ColorsPresenter.MyView, ColorsPresenter.MyProxy> {
@@ -27,5 +28,13 @@ public class ColorsPresenter extends Presenter<ColorsPresenter.MyView, ColorsPre
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
 
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        SetPageTitleEvent.fire("Colors",
+                "Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights. Material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.", this);
     }
 }

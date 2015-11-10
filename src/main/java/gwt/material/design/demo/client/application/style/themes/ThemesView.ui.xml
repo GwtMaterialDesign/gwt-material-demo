@@ -1,13 +1,22 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Customization" description="Make sure you have checkout the development plugin (GWT Material) in github or in Maven to be able to modify the theme of your GWT App by editing inside gwt/material/design/public/GwtMaterialDesign.gwt.xml. See screenshot for more details and applications"/>
-    <m:MaterialTitle description="You can pick the built-in colors (blue, green, orange, red, yellow). Also if you want to learn more about Material Integration with SASS you can read this link http://materializecss.com/sass.html."/>
-    <m:MaterialImage resource="{res.ic_theme}" type="MATERIALBOXED"/>
+    <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
+    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="blue"/>
+    <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
+    </demo:PrettyPre>
+
+    <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

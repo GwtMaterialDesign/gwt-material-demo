@@ -8,6 +8,7 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
 public class GridPresenter extends Presenter<GridPresenter.MyView, GridPresenter.MyProxy> {
@@ -25,5 +26,13 @@ public class GridPresenter extends Presenter<GridPresenter.MyView, GridPresenter
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        SetPageTitleEvent.fire("Grid",
+                "We are using a standard 12 column fluid responsive grid system.The grid helps you layout your page in an ordered, easy fashion", this);
     }
 }
