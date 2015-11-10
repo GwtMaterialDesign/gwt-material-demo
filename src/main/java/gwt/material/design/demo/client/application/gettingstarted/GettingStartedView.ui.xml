@@ -2,7 +2,8 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
@@ -10,13 +11,13 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
       <m:MaterialLink ui:field="btnMaven"  text="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material." iconType="LINK" iconPosition="LEFT" textColor="blue"/>
-      <m.html:Pre>
-        &lt;dependency><br/>
-        &lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
-        &lt;artifactId>gwt-material&lt;/artifactId><br/>
-        &lt;version>1.4.0&lt;/version><br/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;dependency><br/>
+        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+        &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
+        &emsp;&lt;version>1.4.0&lt;/version><br/>
         &lt;/dependency>
-      </m.html:Pre>
+      </demo:PrettyPre>
     </m:MaterialPanel>
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
@@ -25,27 +26,50 @@
     </m:MaterialPanel>
     <m:MaterialPanel scrollspy="Configuring Your Module">
       <m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
-      <m.html:Pre>
-        &lt;inherits name="gwt.material.design.GwtMaterialDesign" /&gt;
-      </m.html:Pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &lt;inherits name="gwt.material.design.GwtMaterialWithJQuery" /&gt;
+      </demo:PrettyPre>
+      <m:MaterialTitle description="Here are the available modules for 1.4 release"/>
+      <demo:PrettyPre addStyleNames="lang-yaml z-depth-1">
+        &emsp;- GwtMaterialDesign # Standard use with all resources (but will not load jQuery for you).<br/>
+        - GwtMaterialDesignDebug # Same as above but will load non-minified js and Source URL included for Chrome debugging<br/>
+        - GwtMaterialWithJQuery # Standard use with all resources and will also include loading jQuery<br/>
+        - GwtMaterialWithJQueryDebug # Same as but will load non-minified js and Source URL included for Chrome debugging<br/>
+        - GwtMaterialDesignBasic # Use without materialize.css file (but will not load jQuery for you).<br/>
+        - GwtMaterialBasicWithJQuery # Same as above but will also include loading jQuery<br/>
+        - GwtMaterialBasicWithJQueryDebug # Same as above but with non-minified js and Source URL included for Chrome debugging.<br/>
+      </demo:PrettyPre>
     </m:MaterialPanel>
+
+
+    <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
+    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="blue"/>
+    <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
+    </demo:PrettyPre>
+
+    <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+    </demo:PrettyPre>
 
     <m:MaterialPanel>
       <m:MaterialTitle title="Responsive Design" description="Add meta tag for responsive design on Mobile devices in your gwt-app.html" />
-      <m.html:Pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-      </m.html:Pre>
+      </demo:PrettyPre>
     </m:MaterialPanel>
 
     <m:MaterialPanel>
       <m:MaterialTitle title="UiBinder usage" description="Assuming that you're using UIBinder, add the following namespace to the &lt;ui:UIBinder> element:"/>
-      <m.html:Pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         xmlns:m="urn:import:gwt.material.design.client.ui"
-      </m.html:Pre>
+      </demo:PrettyPre>
       <m:MaterialTitle  description="Then you can easily use the m namespace in your widget design, like MaterialButton:"/>
-      <m.html:Pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/>
-      </m.html:Pre>
+      </demo:PrettyPre>
     </m:MaterialPanel>
     <m:MaterialPanel>
       <m:MaterialRow>

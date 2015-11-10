@@ -134,11 +134,10 @@
     <m:MaterialContainer>
       <m:MaterialTopNav ui:field="topNav" backgroundColor="blue" textColor="white" addStyleNames="{style.topPanel}">
         <m:MaterialRow>
-          <m:MaterialColumn grid="s12 m6 l8">
+          <m:MaterialColumn grid="l12">
             <m:MaterialLabel ui:field="title"/>
             <m:MaterialLabel ui:field="description" fontSize="0.3em" />
           </m:MaterialColumn>
-          <m:MaterialColumn ui:field="menuPanel" grid="s12 m6 l4" />
         </m:MaterialRow>
         <m:MaterialPanel>
           <m:MaterialAnchorButton ui:field="gettingStartedPanel" targetHistoryToken="{tokens.getGettingstarted}"
