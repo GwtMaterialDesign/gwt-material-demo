@@ -22,7 +22,7 @@
     </m:MaterialCollection>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialCollection><br/><br/>
+      &emsp;&lt;m:MaterialCollection><br/><br/>
 
       &emsp;&lt;m:MaterialCollectionItem><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Sample 1" ><br/>
@@ -56,9 +56,9 @@
     </m:MaterialDropDown>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      <!-- Activator --><br/>
+      &emsp;&lt;!-- Activator --><br/>
       &lt;m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/><br/>
-      <!-- My Drop Down --><br/>
+      &lt;!-- My Drop Down --><br/>
       &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px"><br/>
       &emsp;&lt;m:MaterialLink text="First" /><br/>
       &emsp;&lt;m:MaterialLink text="Second" ><br/>

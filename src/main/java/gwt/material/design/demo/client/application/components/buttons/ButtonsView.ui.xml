@@ -14,7 +14,7 @@
     <m:MaterialButton text="Icon Color" waves="RED" backgroundColor="white" textColor="black" iconType="POLYMER" iconPosition="RIGHT" iconColor="red"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/><br/>
+      &emsp;&lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/><br/>
       &lt;m:MaterialButton text="Primary" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
       &lt;m:MaterialButton text="Disabled" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
       &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="red" textColor="white" iconType="POLYMER" iconPosition="RIGHT"/><br/>
@@ -30,7 +30,7 @@
     <m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" />
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="cake" /><br/>
+      &emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="cake" /><br/>
       &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="android" /><br/>
       &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="message" enabled="false"/><br/>
       &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="group" /><br/>
@@ -45,7 +45,7 @@
     <m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" />
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" /><br/>
+      &emsp;&lt;m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" /><br/>
       &lt;m:MaterialButton text="Primary (No Waves)" textColor="blue" type="FLAT" /><br/>
       &lt;m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" /><br/>
       &lt;m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" /><br/>
@@ -57,7 +57,7 @@
     <m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/><br/>
+      &emsp;&lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/><br/>
       &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/><br/>
       &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/><br/>
     </demo:PrettyPre>
@@ -68,7 +68,7 @@
     <m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialIcon iconType="menu" iconColor="blue" waves="DEFAULT"/><br/>
+      &emsp;&lt;m:MaterialIcon iconType="menu" iconColor="blue" waves="DEFAULT"/><br/>
       &lt;m:MaterialIcon iconType="favorite" iconColor="red" waves="DEFAULT" enabled="false"/><br/>
       &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/><br/>
     </demo:PrettyPre>
@@ -80,7 +80,7 @@
     <m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/><br/>
+      &emsp;&lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/><br/>
       &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/><br/>
       &lt;m:MaterialButton text="Button" type="FLAT" enabled="false"/><br/>
       &lt;m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/><br/>
@@ -92,7 +92,7 @@
     <m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
+      &emsp;&lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
       &lt;m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
       &lt;m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
     </demo:PrettyPre>
@@ -110,13 +110,16 @@
     </m:MaterialFAB>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialFloatingContainer>
-      &lt;m:initial>&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>&lt;/m:initial><br/>
-      &lt;m:item>&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>&lt;/m:item><br/>
-      &lt;m:item>&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>&lt;/m:item><br/>
-      &lt;m:item>&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>&lt;/m:item><br/>
-      &lt;m:item>&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>&lt;/m:item><br/>
-      &lt;/m:MaterialFloatingContainer>
+      &emsp;&emsp;&lt;m:MaterialFAB>
+      &emsp;&lt;m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+      &emsp;&lt;m:MaterialFABList>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
+      &emsp;&lt;/m:MaterialFABList>
+      &lt;/m:MaterialFAB>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Links" description="Using Material Link you can easily add href functionality into your app for navigation"/>
@@ -127,7 +130,7 @@
     </m:MaterialRow>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
+      &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
       &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
       &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red" grid=" "/><br/>
     </demo:PrettyPre>

@@ -38,25 +38,25 @@
       </m:MaterialRow>
 
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"><br/>
-          &lt;m:MaterialCardContent textColor="white"><br/>
-            &lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/><br/>
-            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
-          &lt;/m:MaterialCardContent><br/>
-          &lt;m:MaterialCardAction><br/>
-            &lt;m:MaterialLink text="Link 1"/><br/>
-            &lt;m:MaterialLink text="Link 1"/><br/>
-          &lt;/m:MaterialCardAction><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"><br/>
+        &emsp;&lt;m:MaterialCardContent textColor="white"><br/>
+        &emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+        &emsp;&lt;/m:MaterialCardContent><br/>
+        &emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1"/><br/>
+        &emsp;&lt;/m:MaterialCardAction><br/>
         &lt;/m:MaterialCard><br/><br/>
         &lt;m:MaterialCard backgroundColor="white" grid="l4"><br/>
-          &lt;m:MaterialCardContent textColor="black"><br/>
-            &lt;m:MaterialCardTitle  textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/><br/>
-            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
-          &lt;/m:MaterialCardContent><br/>
-          &lt;m:MaterialCardAction><br/>
-            &lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
-            &lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
-          &lt;/m:MaterialCardAction><br/>
+        &emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&lt;m:MaterialCardTitle  textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+        &emsp;&lt;/m:MaterialCardContent><br/>
+        &emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
+        &emsp;&lt;/m:MaterialCardAction><br/>
         &lt;/m:MaterialCard><br/>
       </demo:PrettyPre>
 
@@ -65,7 +65,7 @@
         <m:MaterialCard backgroundColor="white" grid="l3">
         <m:MaterialCardImage waves="LIGHT">
           <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
-          <m:MaterialCardTitle text="Sample" iconPosition="RIGHT"/>
+          <m:MaterialCardTitle text="Sample"/>
         </m:MaterialCardImage>
 
         <m:MaterialCardContent textColor="black">
@@ -73,15 +73,15 @@
         </m:MaterialCardContent>
 
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1" />
+          <m:MaterialLink text="Link 1" />
         </m:MaterialCardAction>
         </m:MaterialCard>
 
         <m:MaterialCard backgroundColor="white" grid="l3">
         <m:MaterialCardImage waves="LIGHT">
           <m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
-          <m:MaterialCardTitle text="Sample" iconPosition="RIGHT"/>
+          <m:MaterialCardTitle text="Sample" />
         </m:MaterialCardImage>
 
         <m:MaterialCardContent textColor="black">
@@ -89,11 +89,43 @@
         </m:MaterialCardContent>
 
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1"/>
+          <m:MaterialLink text="Link 1"/>
         </m:MaterialCardAction>
         </m:MaterialCard>
       </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialCard backgroundColor="white" grid="l3"><br/><br/>
+        &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
+        &emsp;&emsp;&lt;m:MaterialCardTitle text="Sample"/><br/>
+        &emsp;&lt;/m:MaterialCardImage><br/>
+        &emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+        &emsp;&lt;/m:MaterialCardContent><br/>
+        &emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
+        &emsp;&lt;/m:MaterialCardAction><br/><br/>
+        &lt;/m:MaterialCard><br/><br/>
+
+        &lt;m:MaterialCard backgroundColor="white" grid="l3"><br/><br/>
+        &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
+        &emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" /><br/>
+        &emsp;&lt;/m:MaterialCardImage><br/>
+
+        &emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+        &emsp;&lt;/m:MaterialCardContent><br/>
+
+        &emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1"/><br/>
+        &emsp;&lt;/m:MaterialCardAction><br/><br/>
+        &lt;/m:MaterialCard><br/>
+      </demo:PrettyPre>
 
       <m:MaterialRow>
         <m:MaterialTitle title="Card Reveal" />
@@ -112,8 +144,8 @@
         </m:MaterialCardReveal>
 
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1" textColor="blue" />
+          <m:MaterialLink text="Link 1" textColor="blue" />
         </m:MaterialCardAction>
         </m:MaterialCard>
 
@@ -132,8 +164,8 @@
         </m:MaterialCardReveal>
 
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
         </m:MaterialCardAction>
         </m:MaterialCard>
 
@@ -152,8 +184,8 @@
         </m:MaterialCardReveal>
 
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
         </m:MaterialCardAction>
         </m:MaterialCard>
       </m:MaterialRow>
@@ -361,5 +393,18 @@
         </m:MaterialCardAction>
         </m:MaterialCard>
       </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        @UiField MaterialRow rowCards;
+        MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
+      </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialRow ui:field="rowCards"><br/>
+      &lt;m:MaterialCard backgroundColor="white" grid="l3"><br/>
+        &lt;!--Content here --><br/>
+      &lt;/m:MaterialCard><br/>
+      
+      &lt;!--OTher cards --><br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
     <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
     <m:MaterialRow>
@@ -11,9 +12,13 @@
       <m:MaterialChip text="Banana" backgroundColor="amber" textColor="white" iconType="CLOSE"/>
       <m:MaterialChip text="Mango" backgroundColor="green" textColor="white" iconType="CLOSE"/>
     </m:MaterialRow>
-    <pre>
-      CODE
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialChip text="Default" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Apple" backgroundColor="red" textColor="white" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Orange" backgroundColor="orange" textColor="white"  iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Banana" backgroundColor="amber" textColor="white" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Mango" backgroundColor="green" textColor="white" iconType="CLOSE"/><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>
     <m:MaterialRow>
@@ -21,9 +26,11 @@
       <m:MaterialChip text="Banana" />
       <m:MaterialChip text="Mango" />
     </m:MaterialRow>
-    <pre>
-      CODE
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialChip text="Apple" /><br/>
+      &lt;m:MaterialChip text="Banana" /><br/>
+      &lt;m:MaterialChip text="Mango" /><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contactâ€™s name, sees the contactâ€™s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
     <m:MaterialRow>
@@ -31,16 +38,35 @@
       <m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
       <m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
     </m:MaterialRow>
-    <pre>
-      CODE
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
     <m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
     <m:MaterialChip ui:field="chipClick" text="Click Me" />
 
-    <pre>
-      CODE
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;@UiField MaterialChip chip;<br/><br/>
+
+      chip.getIcon().addClickHandler(new ClickHandler() {<br/>
+      @Override<br/>
+      &emsp;public void onClick(ClickEvent event) {<br/>
+      &emsp;&emsp;MaterialToast.fireToast(chip.getText());<br/>
+      &emsp;}<br/>
+      });<br/><br/>
+
+      @UiHandler("chipClick")<br/>
+      void onClickChip(ClickEvent e) {<br/>
+      &emsp;MaterialToast.fireToast("You clicked me");<br/>
+      }
+
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
