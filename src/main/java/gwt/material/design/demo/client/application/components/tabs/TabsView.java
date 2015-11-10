@@ -5,6 +5,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialTab;
+import gwt.material.design.client.ui.MaterialTabItem;
 
 import javax.inject.Inject;
 

@@ -22,6 +22,8 @@
     <inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/>
     <inherits name="com.googlecode.gwt.charts.Charts"/>
 
+    <inherits name="gwt.material.design.demo.client.Resources"/>
+
     <!-- Specify the paths for translatable code-->
     <source path='client'/>
     <source path='shared'/>
