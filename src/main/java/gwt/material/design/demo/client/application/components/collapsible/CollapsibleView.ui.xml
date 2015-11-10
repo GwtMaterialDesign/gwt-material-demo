@@ -36,6 +36,22 @@
       </m:MaterialCollapsibleItem>
     </m:MaterialCollapsible>
 
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCollapsible type="ACCORDION" grid="s12 m6 l8"><br/>
+      &emsp;&lt;!-- ITEM 1 --><br/>
+      &emsp;&lt;m:MaterialCollapsibleItem><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+      &emsp;&lt;!-- Other Collapsible items here --><br/>
+
+      &lt;/m:MaterialCollapsible><br/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="Expandable" description="You can set the accordion type by adding an attribute type='EXPANDABLE'"/>
     <m:MaterialCollapsible type="EXPANDABLE">
       <!-- ITEM 1 -->
@@ -67,8 +83,19 @@
       </m:MaterialCollapsibleItem>
     </m:MaterialCollapsible>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1 ">
+      &emsp;&lt;m:MaterialCollapsible type="EXPANDABLE"><br/>
+      &emsp;&lt;!-- ITEM 1 --><br/>
+      &emsp;&lt;m:MaterialCollapsibleItem><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+      &emsp;&lt;!-- Other Collapsible items here --><br/>
+      &lt;/m:MaterialCollapsible><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Popout" description="You can set the popout type by adding an attribute type='POPOUT'"/>
@@ -102,6 +129,21 @@
       </m:MaterialCollapsibleItem>
     </m:MaterialCollapsible>
 
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
+      &emsp;&lt;!-- ITEM 1 --><br/>
+      &emsp;&lt;m:MaterialCollapsibleItem><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+      &emsp;&lt;!-- Other Collapsible items here --><br/>
+      &lt;/m:MaterialCollapsible><br/>
+    </demo:PrettyPre>
+    
     <m:MaterialTitle title="Style" description="You can define easily the style of your collapsible"/>
     <m:MaterialCollapsible type="POPOUT">
       <!-- ITEM 1 -->
@@ -114,6 +156,20 @@
         </m:MaterialCollapsibleBody>
       </m:MaterialCollapsibleItem>
     </m:MaterialCollapsible>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
+      &emsp;&lt;!-- ITEM 1 -->&lt;br/>
+      &emsp;&lt;m:MaterialCollapsibleItem><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader backgroundColor="grey" waves="DEFAULT"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="white"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+      &emsp;&emsp;&lt;m:MaterialCollapsibleBody backgroundColor="grey darken-1"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="white" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+      &lt;/m:MaterialCollapsible><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Preselected Section" description="If you want a collapsible with a preopened section just add active='1' the parameter is the index of the collapsible item."/>
     <m:MaterialCollapsible type="POPOUT" active="1">
@@ -145,6 +201,20 @@
         </m:MaterialCollapsibleBody>
       </m:MaterialCollapsibleItem>
     </m:MaterialCollapsible>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+        &lt;!-- ITEM 1 --><br/>
+        &lt;m:MaterialCollapsibleItem><br/>
+          &lt;m:MaterialCollapsibleHeader><br/>
+            &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
+          &lt;/m:MaterialCollapsibleHeader><br/>
+          &lt;m:MaterialCollapsibleBody><br/>
+            &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+          &lt;/m:MaterialCollapsibleBody><br/>
+        &lt;/m:MaterialCollapsibleItem><br/>
+        &lt;!-- Other collapsible items here --><br/>
+    </demo:PrettyPre>
 
   </m:MaterialPanel>
 </ui:UiBinder>

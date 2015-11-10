@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
      xmlns:g="urn:import:com.google.gwt.user.client.ui"
      xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+     xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <g:HTMLPanel ui:field="panel">
 
@@ -30,12 +30,12 @@
     <m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" />
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="cake" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="android" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="message" enabled="false"/><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="group" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="" backgroundColor="red" iconType="cake" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="" backgroundColor="white" iconColor="green" iconType="android" /><br/>
+      &emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /><br/>
+      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="ANDROID" /><br/>
+      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="MESSAGE" enabled="false"/><br/>
+      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="GROUP" /><br/>
+      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /><br/>
+      &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" /><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
@@ -68,8 +68,8 @@
     <m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialIcon iconType="menu" iconColor="blue" waves="DEFAULT"/><br/>
-      &lt;m:MaterialIcon iconType="favorite" iconColor="red" waves="DEFAULT" enabled="false"/><br/>
+      &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT"/><br/>
+      &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false"/><br/>
       &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/><br/>
     </demo:PrettyPre>
 
@@ -110,16 +110,16 @@
     </m:MaterialFAB>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&emsp;&lt;m:MaterialFAB>
-      &emsp;&lt;m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
-      &emsp;&lt;m:MaterialFABList>
-      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
-      &emsp;&lt;/m:MaterialFABList>
-      &lt;/m:MaterialFAB>
+      &emsp;&lt;m:MaterialFAB><br/>
+      &emsp;&lt;m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/><br/>
+      &emsp;&lt;m:MaterialFABList><br/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/><br/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/><br/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/><br/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/><br/>
+      &emsp;&emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/><br/>
+      &emsp;&lt;/m:MaterialFABList><br/>
+      &lt;/m:MaterialFAB><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Links" description="Using Material Link you can easily add href functionality into your app for navigation"/>
@@ -130,9 +130,9 @@
     </m:MaterialRow>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
-      &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/><br/>
-      &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red" grid=" "/><br/>
+      &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT"/><br/>
+      &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT"/><br/>
+      &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red"/><br/>
     </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

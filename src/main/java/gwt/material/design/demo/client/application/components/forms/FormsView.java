@@ -24,7 +24,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown;
 
     @UiField MaterialSwitch switch1, switch2;
-    @UiField MaterialLabel lblSwitch1, lblSwitch2, lblRange;
+    @UiField MaterialLabel lblRange;
     @UiField MaterialRange range;
 
     @Inject
@@ -60,24 +60,6 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             cbCyan.setValue(false);
             cbGreen.setValue(false);
             cbBrown.setValue(false);
-        }
-    }
-
-    @UiHandler("switch1")
-    void onSwitch1(ClickEvent e) {
-        if(switch1.getValue()) {
-            lblSwitch1.setText("Switch: true");
-        } else {
-            lblSwitch1.setText("Switch: false");
-        }
-    }
-
-    @UiHandler("switch2")
-    void onSwitch2(ClickEvent e) {
-        if(switch2.getValue()) {
-            lblSwitch2.setText("Switch: true");
-        } else {
-            lblSwitch2.setText("Switch: false");
         }
     }
 

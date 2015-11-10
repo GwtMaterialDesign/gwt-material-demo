@@ -31,21 +31,21 @@
     </demo:PrettyPre>
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      @UiField MaterialAutoComplete acList;<br/><br/>
+      &emsp;@UiField MaterialAutoComplete acList;<br/><br/>
 
-      MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
-      suggestions.add("Alabama");<br/>
-      suggestions.add("Alaska");<br/>
-      suggestions.add("Arizona");<br/>
-      suggestions.add("Arkansas");<br/>
-      suggestions.add("California");<br/>
-      suggestions.add("Colorado");<br/>
-      suggestions.add("Connecticut");<br/>
-      suggestions.add("Delaware");<br/>
-      suggestions.add("Florida");<br/>
-      suggestions.add("Georgia");<br/><br/>
+      &emsp;MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
+      &emsp;suggestions.add("Alabama");<br/>
+      &emsp;suggestions.add("Alaska");<br/>
+      &emsp;suggestions.add("Arizona");<br/>
+      &emsp;suggestions.add("Arkansas");<br/>
+      &emsp;suggestions.add("California");<br/>
+      &emsp;suggestions.add("Colorado");<br/>
+      &emsp;suggestions.add("Connecticut");<br/>
+      &emsp;suggestions.add("Delaware");<br/>
+      &emsp;suggestions.add("Florida");<br/>
+      &emsp;suggestions.add("Georgia");<br/><br/>
 
-      acList.setSuggestions(suggestions);
+      &emsp;acList.setSuggestions(suggestions);
     </demo:PrettyPre>
 
 
@@ -74,19 +74,19 @@
     </m:MaterialRow>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialAutoComplete ui:field="acWithImage" placeholder="Contacts" />
+      &emsp;&lt;m:MaterialAutoComplete ui:field="acWithImage" placeholder="Contacts" />
     </demo:PrettyPre>
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      @UiField MaterialAutoComplete acWithImage;<br/><br/>
+      &emsp;@UiField MaterialAutoComplete acWithImage;<br/><br/>
 
-      MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
-      suggestions.add("Yunalis Mat Zara'ai", new Image("http://b.vimeocdn.com/ps/339/488/3394886_300.jpg"));<br/>
-      suggestions.add("Marjorie Matias", new Image("http://lorempixel.com/50/50/people?1"));<br/>
-      suggestions.add("Zenaida Ringor", new Image("http://lorempixel.com/50/50/people?8"));<br/>
-      suggestions.add("Hanna Matias", new Image("http://lorempixel.com/50/50/people?2"));<br/><br/>
+      &emsp;MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
+      &emsp;suggestions.add("Yunalis Mat Zara'ai", new Image("http://b.vimeocdn.com/ps/339/488/3394886_300.jpg"));<br/>
+      &emsp;suggestions.add("Marjorie Matias", new Image("http://lorempixel.com/50/50/people?1"));<br/>
+      &emsp;suggestions.add("Zenaida Ringor", new Image("http://lorempixel.com/50/50/people?8"));<br/>
+      &emsp;suggestions.add("Hanna Matias", new Image("http://lorempixel.com/50/50/people?2"));<br/><br/>
 
-      acWithImage.setSuggestions(suggestions);
+      &emsp;acWithImage.setSuggestions(suggestions);
     </demo:PrettyPre>
 
     <m:MaterialRow>

@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
     <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
     <m:MaterialNavBar backgroundColor="blue" >
@@ -18,6 +19,22 @@
       </m:MaterialNavSection>
     </m:MaterialNavBar>
 
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" ><br/><br/>
+      &emsp;&lt;m:MaterialNavBrand href="#Test" float="LEFT">App Title&lt;/m:MaterialNavBrand><br/><br/>
+      &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
+      &emsp;&emsp;&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/><br/>
+      &emsp;&emsp;&lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/><br/>
+      &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="white" waves="LIGHT"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+      &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="white" waves="LIGHT"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+      &emsp;&lt;/m:MaterialNavSection><br/><br/>
+      &lt;/m:MaterialNavBar><br/>
+    </demo:PrettyPre>
+    
     <m:MaterialTitle title="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section"/>
     <m:MaterialNavBar backgroundColor="blue" >
       <m:MaterialNavBrand href="#Test" float="RIGHT">App Title</m:MaterialNavBrand>
@@ -31,15 +48,31 @@
       </m:MaterialNavSection>
     </m:MaterialNavBar>
 
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" ><br/><br/>
+      &emsp;&lt;m:MaterialNavBrand href="#Test" float="RIGHT">App Title&lt;/m:MaterialNavBrand><br/><br/>
+      &emsp;&lt;m:MaterialNavSection float="LEFT"><br/>
+      &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="white"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+      &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="white"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+      &emsp;&lt;/m:MaterialNavSection><br/><br/>
+      &lt;/m:MaterialNavBar><br/>
+    </demo:PrettyPre>
+    
     <m:MaterialTitle title="Fixed Type" description="You can make your navbar fixed by adding: type='FIXED'"/>
 
     <m:MaterialRow>
       <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072886/d4bb530e-6279-11e5-93ae-e3d8622a1236.gif"/>
       <m:MaterialColumn grid="s12 m12 l8">
         <g:HTMLPanel>
-          <pre>
-            CODE
-          </pre>
+          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="FIXED"><br/>
+            &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+            &lt;/m:MaterialNavBar><br/>
+          </demo:PrettyPre>
         </g:HTMLPanel>
       </m:MaterialColumn>
     </m:MaterialRow>
@@ -50,9 +83,11 @@
       <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072883/d2121638-6279-11e5-8e84-5fbcec8148f5.PNG"/>
       <m:MaterialColumn grid="s12 m12 l8">
         <g:HTMLPanel>
-          <pre>
-            CODE
-          </pre>
+          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="TALL"><br/>
+            &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+            &lt;/m:MaterialNavBar><br/>
+          </demo:PrettyPre>
         </g:HTMLPanel>
       </m:MaterialColumn>
     </m:MaterialRow>

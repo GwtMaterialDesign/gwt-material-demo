@@ -191,6 +191,18 @@
       </m:MaterialRow>
 
       <m:MaterialTitle title="Grid Card Animation" />
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        &emsp;@UiField MaterialRow rowCards;
+        MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
+      </demo:PrettyPre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialRow ui:field="rowCards"><br/>
+        &lt;m:MaterialCard backgroundColor="white" grid="l3"><br/>
+        &lt;!--Content here --><br/>
+        &lt;/m:MaterialCard><br/>
+
+        &lt;!--OTher cards --><br/>
+      </demo:PrettyPre>
       <m:MaterialButton ui:field="btnShow" text="Show Cards" backgroundColor="white" textColor="black"/>
       <m:MaterialRow ui:field="rowCards" addStyleNames="{style.rowCards}">
         <m:MaterialCard backgroundColor="white" grid="l3">
@@ -394,17 +406,5 @@
         </m:MaterialCard>
       </m:MaterialRow>
 
-      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-        @UiField MaterialRow rowCards;
-        MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
-      </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialRow ui:field="rowCards"><br/>
-      &lt;m:MaterialCard backgroundColor="white" grid="l3"><br/>
-        &lt;!--Content here --><br/>
-      &lt;/m:MaterialCard><br/>
-      
-      &lt;!--OTher cards --><br/>
-    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

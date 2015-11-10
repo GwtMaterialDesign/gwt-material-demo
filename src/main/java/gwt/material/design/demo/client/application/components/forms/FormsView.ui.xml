@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <ui:style>
     .block{
       display: block;
@@ -13,10 +14,20 @@
     <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
     <m:MaterialTextBox placeholder="First Name" />
     <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" />
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTextBox placeholder="First Name" /><br/>
+      &lt;m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" /><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
     <m:MaterialTextArea placeholder="Content" />
     <m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTextArea placeholder="Content" /><br/>
+      &lt;m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
     <m:MaterialListBox ui:field="lstOptions">
@@ -24,8 +35,22 @@
       <item>Option 2</item>
       <item>Option 3</item>
     </m:MaterialListBox>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialListBox ui:field="lstOptions"><br/>
+      &emsp;&lt;item>Option 1&lt;/item><br/>
+      &emsp;&lt;item>Option 2&lt;/item><br/>
+      &emsp;&lt;item>Option 3&lt;/item><br/>
+      &lt;/m:MaterialListBox><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="ChangeHandler" description="Add the code below to trigger any events on listbox"/>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;@UiHandler("lstOptions")<br/>
+      void onChangeListBox(ChangeEvent e) {<br/>
+      &emsp;&emsp;MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());<br/>
+      }
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
     <m:MaterialListBox old="true">
@@ -33,6 +58,14 @@
       <item>Option 2</item>
       <item>Option 3</item>
     </m:MaterialListBox>
+    
+    <demo:PrettyPre addStyleNames="lang-xml java">
+      &emsp;&lt;m:MaterialListBox old="true"><br/>
+      &emsp;&lt;item>Option 1&lt;/item><br/>
+      &emsp;&lt;item>Option 2&lt;/item><br/>
+      &emsp;&lt;item>Option 3&lt;/item><br/>
+      &lt;/m:MaterialListBox><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
     <m:MaterialListBox  enabled="false">
@@ -45,12 +78,31 @@
       <item>Option 2</item>
       <item>Option 3</item>
     </m:MaterialListBox>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialListBox  enabled="false"><br/>
+      &emsp;&lt;item>Option 1&lt;/item><br/>
+      &emsp;&lt;item>Option 2&lt;/item><br/>
+      &emsp;&lt;item>Option 3&lt;/item><br/>
+      &lt;/m:MaterialListBox><br/><br/>
+      &lt;m:MaterialListBox  old="true" enabled="false"><br/>
+      &emsp;&lt;item>Option 1&lt;/item><br/>
+      &emsp;&lt;item>Option 2&lt;/item><br/>
+      &emsp;&lt;item>Option 3&lt;/item><br/>
+      &lt;/m:MaterialListBox>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Radio Button" description="Radio Buttons are used when the user must make only one selection out of a group of items"/>
     <m:MaterialRadioButton name="color" text="Red" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Yellow" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Green" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Brown" enabled="false" addStyleNames="{style.block}"/>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialRadioButton name="color" text="Red" /><br/>
+      &lt;m:MaterialRadioButton name="color" text="Yellow" /><br/>
+      &lt;m:MaterialRadioButton name="color" text="Green" /><br/>
+      &lt;m:MaterialRadioButton name="color" text="Brown" enabled="false" /><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Check Box" description="Checkboxes"/>
     <m:MaterialRow>
@@ -71,32 +123,54 @@
         <m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/>
       </m:MaterialColumn>
     </m:MaterialRow>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCheckBox text="Blue" value="true" /><br/>
+      &lt;m:MaterialCheckBox text="Red" /><br/>
+      &lt;m:MaterialCheckBox text="Cyan" value="true" type="FILLED"/><br/>
+      &lt;m:MaterialCheckBox text="Green" value="true" enabled="false"/><br/>
+      &lt;m:MaterialCheckBox text="Brown" enabled="false"/><br/>
+      &lt;m:MaterialCheckBox ui:field="cbBox" text="CheckBox 1: true" value="true" type="FILLED"/><br/>
+    </demo:PrettyPre>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCheckBox ui:field="cbBoxAll" text="Check all" type="FILLED"/><br/>
+      &lt;m:MaterialCheckBox ui:field="cbBlue" text="Blue" type="FILLED" /><br/>
+      &lt;m:MaterialCheckBox ui:field="cbRed" text="Red" type="FILLED"/><br/>
+      &lt;m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED"/><br/>
+      &lt;m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED"/><br/>
+      &lt;m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Switches" />
-    <m:MaterialRow>
-      <m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/>
-      <m:MaterialLabel ui:field="lblSwitch1" text="Switch: true"/>
-    </m:MaterialRow>
-
-    <m:MaterialRow>
-      <m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/>
-      <m:MaterialLabel ui:field="lblSwitch2" text="Switch: false"/>
-    </m:MaterialRow>
-
-    <m:MaterialRow>
-      <m:MaterialSwitch enabled="false" value="true" grid="l0"/>
-      <m:MaterialLabel text="Switch: disabled"/>
-    </m:MaterialRow>
-
-    <m:MaterialRow>
-      <m:MaterialSwitch enabled="false" grid="l0"/>
-      <m:MaterialLabel text="Switch: disabled"/>
-    </m:MaterialRow>
+   
+    <m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/>
+    <m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/>
+    <m:MaterialSwitch enabled="false" value="true" grid="l0"/>
+    <m:MaterialSwitch enabled="false" grid="l0"/>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/><br/>
+      &lt;m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/><br/>
+      &lt;m:MaterialSwitch enabled="false" value="true" grid="l0"/><br/>
+      &lt;m:MaterialSwitch enabled="false" grid="l0"/><br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Range" />
-    <m:MaterialRange ui:field="range" max="50"/>
+    <m:MaterialRange ui:field="range" min="10" max="50" value="25"/>
     <m:MaterialLabel text="Min: 10"/>
     <m:MaterialLabel text="Min: 50"/>
     <m:MaterialLabel ui:field="lblRange" text="Value: 25"/>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialRange ui:field="range" min="10" max="50" value="25"/><br/>
+    </demo:PrettyPre>
+
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;@UiHandler("range")<br/>
+      void onRange(ChangeEvent e) {<br/>
+      &emsp;&emsp;lblRange.setText("Value: " + String.valueOf(range.getValue()));<br/>
+      }
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

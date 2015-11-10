@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
     <g:HTMLPanel>
       <m:MaterialTitle title="Dropdown Properties"/>
@@ -21,9 +22,17 @@
         <m:MaterialLink text="Third" />
       </m:MaterialDropDown>
 
-      <pre>
-        Code
-      </pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialTitle title="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu."/><br/>
+        &lt;!-- Activator --><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-2"/><br/>
+        &lt;!-- My Drop Down --><br/>
+        &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true"><br/>
+        &emsp;&lt;m:MaterialLink text="First" /><br/>
+        &emsp;&lt;m:MaterialLink text="Second" /><br/>
+        &emsp;&lt;m:MaterialLink text="Third" /><br/>
+        &lt;/m:MaterialDropDown><br/>
+      </demo:PrettyPre>
 
       <m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/>
       <!-- Activator -->
@@ -35,9 +44,17 @@
         <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
       </m:MaterialDropDown>
 
-      <pre>
-        Code
-      </pre>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/><br/>
+        &lt;!-- Activator --><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-3"/><br/>
+        &lt;!-- My Drop Down --><br/>
+        &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true"><br/>
+        &emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink text="Second" iconType="POLYMER" iconPosition="RIGHT" separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink text="Third" iconType="POLYMER" iconPosition="RIGHT" separator="true"/><br/>
+        &lt;/m:MaterialDropDown><br/>
+      </demo:PrettyPre>
 
       <m:MaterialTitle title="Icon Dropdown" />
       <m:MaterialIcon iconType="PHONE" iconColor="black" activates="dp-4" waves="DEFAULT" grid="l2"/>
@@ -47,6 +64,17 @@
         <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="black" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
         <m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
       </m:MaterialDropDown>
+      
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;!-- Activator --><br/>
+        &lt;m:MaterialIcon iconType="PHONE" iconColor="black" activates="dp-4" waves="DEFAULT" grid="l2"/><br/>
+        &lt;!-- My Drop Down --><br/>
+        &lt;m:MaterialDropDown activator="dp-4" constrainWidth="false"><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="DIALPAD" iconPosition="LEFT" text="Redial" /><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="black" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" /><br/>
+        &lt;/m:MaterialDropDown><br/>
+      </demo:PrettyPre>
     </g:HTMLPanel>
   </m:MaterialPanel>
 </ui:UiBinder>

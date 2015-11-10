@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <ui:style>
     .btn{
       width: 200px;
@@ -16,16 +17,23 @@
     <m:MaterialTitle title="Circular" />
     <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" backgroundColor="blue" addStyleNames="{style.btn}"/>
 
-    <pre>
-      MaterialLoader.showLoading(<span class="tag">true</span>);
-    </pre>
-
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      // Show Loader<br/>
+      MaterialLoader.showLoading(true);<br/><br/>
+      // Hide Loader<br/>
+      MaterialLoader.showLoading(false);<br/>
+    </demo:PrettyPre>
+    
     <m:MaterialTitle title="Linear" />
     <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
 
-    <pre>
-      MaterialLoader.showProgress(<span class="tag">true</span>);
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      // Show Progress<br/>
+      MaterialLoader.showProgress(true);<br/><br/>
+
+      // Hide Progress<br/>
+      MaterialLoader.showProgress(false);<br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
     <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
@@ -43,22 +51,12 @@
       </m:MaterialNavSection>
     </m:MaterialNavBar>
 
-    <pre>
-      @UiField MaterialNavBar navBar;
-
-      @UiHandler("btnShowNavBarProgress")
-      void onShowNavBarProgress(ClickEvent e) {
-      navBar.showLoader();
-      Timer t = new Timer() {
-
-      @Override
-      public void run() {
-      navBar.hideLoader();
-      }
-      };
-      t.schedule(3000);
-      }
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      // Show NavBar Loader<br/>
+      navBar.showLoader();<br/><br/>
+      // Hide NavBar Loader<br/>
+      navBar.hideLoader();<br/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Stand alone Loaders" description="Standalone loaders can be added to any place of your app using UiBinder(inside a dialog, a page or everywhere depends on your UI UX)."/>
     <m:MaterialRow>
@@ -79,19 +77,11 @@
       </m:MaterialColumn>
     </m:MaterialRow>
 
-    <pre>
-      &lt;m:MaterialPreLoader size="BIG">
-       &lt;m:MaterialSpinner color="blue-only" />
-      &lt;/m:MaterialPreLoader>
-
-      &lt;m:MaterialPreLoader>
-        &lt;m:MaterialSpinner color="red-only" />
-      &lt;/m:MaterialPreLoader>
-
-      &lt;m:MaterialPreLoader size="SMALL">
-        &lt;m:MaterialSpinner color="yellow-only" />
-      &lt;/m:MaterialPreLoader>
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;&lt;m:MaterialPreLoader size="BIG"><br/>
+      &emsp;&lt;m:MaterialSpinner color="blue-only" /><br/>
+      &lt;/m:MaterialPreLoader><br/>
+    </demo:PrettyPre>
 
   </g:HTMLPanel>
 </ui:UiBinder>
