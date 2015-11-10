@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <g:HTMLPanel>
     <m:MaterialTitle title="Collections"/>
@@ -21,22 +21,25 @@
       <m:MaterialCollectionItem><m:MaterialLink text="Collecton 4"/></m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <m.html:Pre>
-      &lt;m:MaterialCollection&gt;\n
-      \s\s&lt;m:MaterialCollectionItem&gt;\n
-        \s\s&lt;m:MaterialLink text="Sample 1"&gt;\n
-        \s\s&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;\n
-        \s\s&lt;/m:MaterialLink&gt;\n
-        \s\s&lt;/m:MaterialCollectionItem&gt;\n
-        \s\s&lt;m:MaterialCollectionItem&gt;\n
-        \s\s\s\s&lt;m:MaterialLink text="Sample 2"&gt;\n
-        \s\s\s\s\s\s&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;\n
-        \s\s\s\s&lt;/m:MaterialLink&gt;\n
-        \s\s&lt;/m:MaterialCollectionItem&gt;\n
-        \s\s&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 3"/&gt;&lt;/m:MaterialCollectionItem&gt;\n
-        \s\s&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 4"/&gt;&lt;/m:MaterialCollectionItem&gt;\n
-      &lt;/m:MaterialCollection&gt;
-    </m.html:Pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialCollection><br/><br/>
+
+      &emsp;&lt;m:MaterialCollectionItem><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Sample 1" ><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialLink><br/>
+      &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+
+      &emsp;&lt;m:MaterialCollectionItem><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Sample 2" ><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialLink><br/>
+      &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+
+      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
+      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
+      &lt;/m:MaterialCollection>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Badges in Dropdown"/>
 
@@ -52,20 +55,19 @@
       <m:MaterialLink text="Third" />
     </m:MaterialDropDown>
 
-    <pre>
-      &lt;!-- Activator -->
-      &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-4"/>
-      &lt;!-- My Drop Down -->
-      &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
-      &lt;m:item>&lt;m:MaterialLink text="First" />&lt;/m:item>
-      &lt;m:item>
-      &lt;m:MaterialLink text="Second" >
-      &lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/>
-      &lt;/m:MaterialLink>
-      &lt;/m:item>
-      &lt;m:item>&lt;m:MaterialLink text="Third" />&lt;/m:item>
-      &lt;/m:MaterialDropDown>
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <!-- Activator --><br/>
+      &lt;m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/><br/>
+      <!-- My Drop Down --><br/>
+      &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px"><br/>
+      &emsp;&lt;m:MaterialLink text="First" /><br/>
+      &emsp;&lt;m:MaterialLink text="Second" ><br/>
+      &emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/><br/>
+      &emsp;&lt;/m:MaterialLink><br/>
+      &emsp;&lt;m:MaterialLink text="Third" /><br/>
+      &lt;/m:MaterialDropDown><br/>
+    </demo:PrettyPre>
+
   </g:HTMLPanel>
 
 </ui:UiBinder>

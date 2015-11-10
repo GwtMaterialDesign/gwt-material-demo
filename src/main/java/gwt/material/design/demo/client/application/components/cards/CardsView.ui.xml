@@ -1,7 +1,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
      xmlns:g="urn:import:com.google.gwt.user.client.ui"
-     xmlns:m="urn:import:gwt.material.design.client.ui">
+     xmlns:m="urn:import:gwt.material.design.client.ui"
+     xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
 
@@ -20,8 +21,8 @@
           <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
         </m:MaterialCardContent>
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1"/>
+          <m:MaterialLink text="Link 1"/>
         </m:MaterialCardAction>
         </m:MaterialCard>
         <m:MaterialCard backgroundColor="white" grid="l4">
@@ -30,11 +31,34 @@
           <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
         </m:MaterialCardContent>
         <m:MaterialCardAction>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-          <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
+          <m:MaterialLink text="Link 1" textColor="blue"/>
         </m:MaterialCardAction>
         </m:MaterialCard>
       </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"><br/>
+          &lt;m:MaterialCardContent textColor="white"><br/>
+            &lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/><br/>
+            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+          &lt;/m:MaterialCardContent><br/>
+          &lt;m:MaterialCardAction><br/>
+            &lt;m:MaterialLink text="Link 1"/><br/>
+            &lt;m:MaterialLink text="Link 1"/><br/>
+          &lt;/m:MaterialCardAction><br/>
+        &lt;/m:MaterialCard><br/><br/>
+        &lt;m:MaterialCard backgroundColor="white" grid="l4"><br/>
+          &lt;m:MaterialCardContent textColor="black"><br/>
+            &lt;m:MaterialCardTitle  textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/><br/>
+            &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
+          &lt;/m:MaterialCardContent><br/>
+          &lt;m:MaterialCardAction><br/>
+            &lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
+            &lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
+          &lt;/m:MaterialCardAction><br/>
+        &lt;/m:MaterialCard><br/>
+      </demo:PrettyPre>
 
       <m:MaterialRow>
         <m:MaterialTitle title="Card Image" />
