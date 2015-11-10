@@ -59,5 +59,39 @@
       t.schedule(3000);
       }
     </pre>
+
+    <m:MaterialTitle title="Stand alone Loaders" description="Standalone loaders can be added to any place of your app using UiBinder(inside a dialog, a page or everywhere depends on your UI UX)."/>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l4">
+        <m:MaterialPreLoader size="big">
+          <m:MaterialSpinner color="blue-only" />
+        </m:MaterialPreLoader>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l4">
+        <m:MaterialPreLoader>
+          <m:MaterialSpinner color="red-only" />
+        </m:MaterialPreLoader>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l4">
+        <m:MaterialPreLoader size="small">
+          <m:MaterialSpinner color="yellow-only" />
+        </m:MaterialPreLoader>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <pre>
+      &lt;m:MaterialPreLoader size="big">
+       &lt;m:MaterialSpinner color="blue-only" />
+      &lt;/m:MaterialPreLoader>
+
+      &lt;m:MaterialPreLoader>
+        &lt;m:MaterialSpinner color="red-only" />
+      &lt;/m:MaterialPreLoader>
+
+      &lt;m:MaterialPreLoader size="small">
+        &lt;m:MaterialSpinner color="yellow-only" />
+      &lt;/m:MaterialPreLoader>
+    </pre>
+
   </g:HTMLPanel>
 </ui:UiBinder>
