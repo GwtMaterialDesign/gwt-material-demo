@@ -12,14 +12,9 @@ import javax.inject.Inject;
 public class TemplatesView extends ViewImpl implements TemplatesPresenter.MyView {
     interface Binder extends UiBinder<Widget, TemplatesView> {
     }
-
-    @UiField
-    SimplePanel main;
-
     @Inject
     TemplatesView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
-        bindSlot(TemplatesPresenter.SLOT_TEMPLATES, main);
     }
+
 }

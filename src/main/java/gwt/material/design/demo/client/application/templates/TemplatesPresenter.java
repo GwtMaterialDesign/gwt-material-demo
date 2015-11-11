@@ -9,6 +9,7 @@ import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
 public class TemplatesPresenter extends Presenter<TemplatesPresenter.MyView, TemplatesPresenter.MyProxy> {
@@ -29,6 +30,12 @@ public class TemplatesPresenter extends Presenter<TemplatesPresenter.MyView, Tem
         MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
 
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+        SetPageTitleEvent.fire("Templates", "Inspiring templates before starting designing / developing your GWT Apps with Material Design look and feel.", this);
     }
 
 }
