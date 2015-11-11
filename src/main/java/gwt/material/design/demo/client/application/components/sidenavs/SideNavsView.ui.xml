@@ -1,0 +1,220 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <m:MaterialPanel>
+        <g:HTMLPanel>
+            <!-- PREREQUISITES -->
+            <m:MaterialTitle title="Prerequisite" description="Set first your MaterialNavBar sidebar attribute e.g sidebar='your_sidebar_name' then on MaterialSideNav add your sideBar name e.g sideBar='your_sidebar_name'."/>
+            <demo:PrettyPre>
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;-- NavBar content here --><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+            </demo:PrettyPre>
+
+            <!-- SIDENAV PROPERTIES -->
+            <m:MaterialTitle title="SideNav Properties"/>
+            <blockquote>
+                <p>width - The width of your desired sidenav</p>
+                <p>name - The name of your sidenav needed by navbar to activate it.</p>
+                <p>type - There are 4 Permanent Types (No Nav Menu) [open, float, card, clip] and 2 Persistent Types (With Nav Menu) [close, mini].</p>
+                <p>closeOnClick - If clicked on the sidemenu items it will be automatically closed if set to true.</p>
+            </blockquote>
+
+            <!-- OPEN Permanent -->
+            <m:MaterialTitle title="Open Permanent" description="The sidebar will be visible by default on large screen devices."/>
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10042710/e988f530-61a1-11e5-8e25-71ab5adf9d12.png"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="OPEN" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey"  text="Drafts" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey"  text="All Mail" /><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+
+            <!-- FLOAT PERMANENT -->
+            <m:MaterialTitle title="Float Permanent" />
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10065329/1b8c34ec-6239-11e5-9979-18d17224e1aa.png"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="FLOAT" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey"  text="Drafts" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey"  text="All Mail" /><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+            <!-- CARD PERMANENT -->
+            <m:MaterialTitle title="Card Permanent" />
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10065493/bba5e930-623b-11e5-87c8-79dccfdad431.png"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="CARD" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey"  text="Drafts" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey"  text="All Mail" /><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+
+            <!-- Clip Permanent -->
+            <m:MaterialTitle title="Clip Permanent" />
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10043407/ad5f3cbc-61a7-11e5-9d73-90a5bc176c58.png"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="CLIP" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey"  text="Drafts" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey"  text="All Mail" /><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+
+            <!-- MINI Persistent -->
+            <m:MaterialTitle title="Mini Variant Persistent" />
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10043841/edc85e3e-61aa-11e5-8f78-0ab2e257befd.gif"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="OPEN" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialIcon iconType="INBOX" iconColor="blue"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="STARS" iconColor="blue"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="SEND" iconColor="blue"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="DRAFTS" iconColor="blue"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="MARKUNREAD" iconColor="blue"/><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+
+            <!-- Close Persistent -->
+            <m:MaterialTitle title="Close Persistent" />
+            <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10043075/f0355e0c-61a4-11e5-8a1c-367a682a8bec.gif"/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &emsp;&lt;m:MaterialNavSection textAlign="RIGHT"><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink  iconType="WHATSHOT" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &lt;/m:MaterialNavBar><br/><br/>
+
+                &lt;m:MaterialSideNav width="300" m:id="mysidebar"  type="CLOSE" closeOnClick="false"><br/>
+                &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey"  text="Drafts" /><br/>
+                &emsp;&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey"  text="All Mail" /><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+
+            <!-- Close Persistent -->
+            <m:MaterialTitle title="Collapsible SideNav" description="Using collapsible component you can add easily a sub menu into your sidenav."/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &emsp;&lt;m:MaterialSideNav ui:field="sideNav" m:id="sideBar" width="250" type="OPEN" closeOnClick="false"><br/><br/>
+                &emsp;&lt;m:MaterialCollapsible><br/><br/>
+                &emsp;&emsp;&lt;m:MaterialCollapsibleItem><br/>
+                &emsp;&emsp;&lt;m:MaterialCollapsibleHeader waves="DEFAULT"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="Style and Layout" iconType="STYLE" textColor="blue"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+                &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+                &emsp;&emsp;&emsp;&lt;m.html:UnorderedList><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getColors}" text="Colors" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getGrid}" text="Grid" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getHelper}" text="Helper" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" textColor="blue" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m.html:UnorderedList><br/>
+                &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+                &emsp;&emsp;&lt;/m:MaterialCollapsibleItem><br/><br/>
+                &emsp;&lt;/m:MaterialCollapsible><br/><br/>
+                &lt;/m:MaterialSideNav><br/>
+            </demo:PrettyPre>
+        </g:HTMLPanel>
+    </m:MaterialPanel>
+
+
+</ui:UiBinder>
