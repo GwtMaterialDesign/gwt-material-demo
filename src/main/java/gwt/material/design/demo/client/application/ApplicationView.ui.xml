@@ -172,12 +172,12 @@
         <m:MaterialColumn grid="s12 m4 l4">
           <m:MaterialTitle textColor="white" title="Join The Discussion"
                            description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
-          <m:MaterialButton ui:field="btnChat" text="CHAT" backgroundColor="blue lighten-2" waves="LIGHT"/>
+          <m:MaterialAnchorButton href="https://gitter.im/GwtMaterialDesign/gwt-material" target="_blank" text="CHAT" backgroundColor="blue lighten-2" waves="LIGHT" textColor="white"/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m4 l4">
           <m:MaterialTitle textColor="white" title="Github"
                            description="Download, fork, pull, file issues, and more at the official GWT Material repo on Github."/>
-          <m:MaterialButton ui:field="btnGithub" text="Github" backgroundColor="blue lighten-2" waves="LIGHT"/>
+          <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material/" target="_blank" text="Github" backgroundColor="blue lighten-2" waves="LIGHT" textColor="white"/>
         </m:MaterialColumn>
       </m:MaterialRow>
 
