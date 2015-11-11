@@ -8,6 +8,7 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
 public class ShowcasePresenter extends Presenter<ShowcasePresenter.MyView, ShowcasePresenter.MyProxy> {
@@ -25,5 +26,11 @@ public class ShowcasePresenter extends Presenter<ShowcasePresenter.MyView, Showc
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+        SetPageTitleEvent.fire("Showcase", "Great Example showcases about the implementation of Material Design in GWT", this);
     }
 }

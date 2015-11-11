@@ -25,15 +25,5 @@
       &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
     </demo:PrettyPre>
 
-
-    <m:MaterialTitle title="Picker Orientations"  description="You can easily change the orientation by: picker.setOrientation(Orientation.LANDSCAPE) for Java or orientation='LANDSCAPE' for UIBinder. Default is PORTRAIT."/>
-    <m:MaterialDatePicker ui:field="dpLandscape" placeholder="Date Landscape" orientation="LANDSCAPE" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialDatePicker ui:field="dpLandscape" placeholder="Date Landscape" orientation="LANDSCAPE" />
-    </demo:PrettyPre>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialTimePicker ui:field="tpLandscape" placeholder="Snooze Time Landscape" orientation="LANDSCAPE" />
-    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

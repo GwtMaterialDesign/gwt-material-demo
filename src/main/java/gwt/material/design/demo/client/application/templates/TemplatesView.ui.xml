@@ -6,12 +6,15 @@
     <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources" />
 
     <m:MaterialRow>
-        <m:MaterialColumn grid="l3">
+        <m:MaterialColumn grid="l4">
             <m:MaterialCard backgroundColor="white" >
                 <m:MaterialCardImage waves="LIGHT">
                     <m:MaterialImage resource="{res.template_starter}"/>
-                    <m:MaterialCardTitle text="Starter Template"/>
                 </m:MaterialCardImage>
+
+                <m:MaterialCardContent>
+                    <m:MaterialCardTitle text="Starter Template" textColor="black"/>
+                </m:MaterialCardContent>
 
                 <m:MaterialCardAction>
                     <m:MaterialLink text="Demo" href="http://gwt-material-starter.appspot.com/" target="_blank"/>
@@ -19,12 +22,15 @@
             </m:MaterialCard>
         </m:MaterialColumn>
 
-        <m:MaterialColumn grid="l3">
+        <m:MaterialColumn grid="l4">
             <m:MaterialCard backgroundColor="white" >
                 <m:MaterialCardImage waves="LIGHT">
                     <m:MaterialImage resource="{res.template_wrenx}"/>
-                    <m:MaterialCardTitle text="Map Template"/>
                 </m:MaterialCardImage>
+
+                <m:MaterialCardContent>
+                    <m:MaterialCardTitle text="Map Template" textColor="black"/>
+                </m:MaterialCardContent>
 
                 <m:MaterialCardAction>
                     <m:MaterialLink text="Demo" href="http://wrenx2015.appspot.com/" target="_blank"/>
@@ -32,30 +38,5 @@
             </m:MaterialCard>
         </m:MaterialColumn>
 
-        <m:MaterialColumn grid="l3">
-            <m:MaterialCard backgroundColor="white" >
-                <m:MaterialCardImage waves="LIGHT">
-                    <m:MaterialImage resource="{res.template_parallax}"/>
-                    <m:MaterialCardTitle text="Parallax Template"/>
-                </m:MaterialCardImage>
-
-                <m:MaterialCardAction>
-                    <m:MaterialLink text="Demo" href="http://gwt-material-starter.appspot.com/" target="_blank"/>
-                </m:MaterialCardAction>
-            </m:MaterialCard>
-        </m:MaterialColumn>
-
-        <m:MaterialColumn grid="l3">
-            <m:MaterialCard backgroundColor="white" >
-                <m:MaterialCardImage waves="LIGHT">
-                    <m:MaterialImage resource="{res.template_login}"/>
-                    <m:MaterialCardTitle text="Login Template"/>
-                </m:MaterialCardImage>
-
-                <m:MaterialCardAction>
-                    <m:MaterialLink text="Demo" href="http://gwt-material-starter.appspot.com/" target="_blank"/>
-                </m:MaterialCardAction>
-            </m:MaterialCard>
-        </m:MaterialColumn>
     </m:MaterialRow>
 </ui:UiBinder>

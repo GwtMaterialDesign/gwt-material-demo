@@ -1,21 +1,74 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m="urn:import:gwt.material.design.client.ui">
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+  <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
+  <ui:style>
+    .parallax_demo{
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+      background: #fff;
+    }
+    .panel{
+      background: url("http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");
+      background-size: 100%;
+      padding: 0px !important;
+      padding-top: 40% !important;
+    }
+    .fieldPanel{
+      background: white;
+      padding: 6%;
+    }
+    .imgProfile{
+      margin-top: -120px;
+      width: 40%;
+      margin-left: 30%;
+      border: 5px solid #fff;
+    }
+    .rowAction{
+      margin-top: 20px;
+    }
+    .login_demo{
+      padding: 5%;
+    }
+  </ui:style>
   <g:HTMLPanel>
+
+    <m:MaterialTopNav>
+      <m:MaterialImage/>
+      <m:MaterialLabel />
+      <m:MaterialLink />
+    </m:MaterialTopNav>
+
+    <m:MaterialSplashScreen ui:field="splash" backgroundColor="blue" textColor="white" textAlign="CENTER">
+      <m:MaterialImage resource="{res.ic_splash}" width="300px"/>
+      <m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" />
+    </m:MaterialSplashScreen>
+
     <m:MaterialTitle title="SplashScreen" />
     <m:MaterialButton ui:field="btnSplashScreen" backgroundColor="blue" waves="LIGHT" text="Demo" />
-    <pre>
-      MaterialSplashScreen splash = new MaterialSplashScreen();
-      splash.setSplashTime(1000);
-      splash.setMain(new MaterialDemo());
-      splash.setLogo(MaterialResources.INSTANCE.ic_splash());
-      splash.setAppName("gwt-material");
-      splash.setAppDescription("Material Design Look and Feel for GWT Apps");
-      splash.setColor("blue");
-      splash.setTextColor("white");
-      splash.show();
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialSplashScreen ui:field="splash" backgroundColor="blue" textColor="white" textAlign="CENTER"><br/>
+      &emsp;&lt;m:MaterialImage resource="{res.ic_splash}" width="300px"/><br/>
+      &emsp;&lt;m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" /><br/>
+      &lt;/m:MaterialSplashScreen><br/>
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;splash.show();<br/>
+      Timer t = new Timer() {<br/>
+      &emsp;@Override<br/>
+      &emsp;&emsp;public void run() {<br/>
+      &emsp;&emsp;&emsp;splash.hide();<br/>
+      &emsp;&emsp;}<br/>
+      &emsp;};<br/>
+      t.schedule(3000);
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup.'"/>
     <m:MaterialRow>
@@ -24,24 +77,114 @@
       </m:MaterialColumn>
     </m:MaterialRow>
 
-    <pre>
-      &lt;m:MaterialRow>
-      &lt;m:MaterialColumn grid="s12 m6 l6">
-      &lt;m:MaterialWeather location="Makati, Philippines" backgroundColor="blue"/>
-      &lt;/m:MaterialColumn>
-      &lt;/m:MaterialRow>
-    </pre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialWeather location="Makati, Philippines" color="blue"/>
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Parallax" description="Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling. Check out the demo to get a better idea of it.'"/>
-    <m:MaterialButton href="#parallax_demo" ui:field="btnParallax" backgroundColor="blue" waves="LIGHT"  text="Open Demo"/>
-    <m:MaterialButton ui:field="btnParallaxSource" backgroundColor="blue" waves="LIGHT"  text="Source"/>
+
+    <m:MaterialPanel addStyleNames="{style.parallax_demo}" m:id="parallax_demo">
+      <m:MaterialParallax height="300px">
+        <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+      </m:MaterialParallax>
+
+      <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+
+      <m:MaterialParallax height="300px">
+        <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+      </m:MaterialParallax>
+
+      <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
+
+      <m:MaterialParallax height="300px">
+        <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+      </m:MaterialParallax>
+
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &lt;m:MaterialParallax height="300px"><br/>
+          &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+        &lt;/m:MaterialParallax><br/><br/>
+
+        &lt;m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "/><br/><br/>
+
+        &lt;m:MaterialParallax height="300px"><br/>
+          &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+        &lt;/m:MaterialParallax><br/><br/>
+
+        &lt;m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        "/><br/><br/>
+
+        &lt;m:MaterialParallax height="300px"><br/>
+          &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+        &lt;/m:MaterialParallax><br/>
+      </demo:PrettyPre>
+    </m:MaterialPanel>
 
     <m:MaterialTitle title="Login UI" description="Here is an example of GWT Material Design UI with card base interface'"/>
-    <m:MaterialButton href="#login_demo"  backgroundColor="blue" waves="LIGHT"  text="Open Demo"/>
-    <m:MaterialButton ui:field="btnLoginSource" backgroundColor="blue" waves="LIGHT"  text="Source"/>
+    <m:MaterialRow backgroundColor="grey lighten-4" addStyleNames="{style.login_demo}">
+      <m:MaterialColumn grid="s12 m8 l6" offset="l4" >
+        <m:MaterialPanel shadow="1" addStyleNames="{style.panel}">
+          <m:MaterialPanel addStyleNames="{style.fieldPanel}">
+            <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
+            <m:MaterialTextBox type="EMAIL" placeholder="Email"/>
+            <m:MaterialTextBox type="PASSWORD" placeholder="Password" />
+            <m:MaterialButton ui:field="btnLogin" backgroundColor="blue" waves="LIGHT" text="Log In" width="100%"/>
 
+            <m:MaterialRow addStyleNames="{style.rowAction}">
+              <m:MaterialColumn grid="s12 m12 l6">
+                <m:MaterialCheckBox text="Keep me logged in"/>
+              </m:MaterialColumn>
+            </m:MaterialRow>
+          </m:MaterialPanel>
+        </m:MaterialPanel>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <demo:PrettyPre addStyleNames="lang-css z-depth-1">
+      &emsp;.panel{<br/>
+      &emsp;&emsp;background: url("http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");<br/>
+      &emsp;&emsp;background-size: 100%;<br/>
+      &emsp;&emsp;padding: 0px !important;<br/>
+      &emsp;&emsp;padding-top: 40% !important;<br/>
+      }<br/>
+      .fieldPanel{<br/>
+      &emsp;&emsp;background: white;<br/>
+      &emsp;&emsp;padding: 6%;<br/>
+      }<br/>
+      .imgProfile{<br/>
+      &emsp;&emsp;margin-top: -120px;<br/>
+      &emsp;&emsp;width: 40%;<br/>
+      &emsp;&emsp;margin-left: 30%;<br/>
+      &emsp;&emsp;border: 5px solid #fff;<br/>
+      }<br/>
+      .rowAction{<br/>
+      &emsp;&emsp;margin-top: 20px;<br/>
+      }<br/>
+      .login_demo{<br/>
+      &emsp;&emsp;padding: 5%;<br/>
+      }
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">&emsp;&lt;m:MaterialRow backgroundColor="grey lighten-4" addStyleNames="{style.login_demo}"><br/>
+      &emsp;&lt;m:MaterialColumn grid="s12 m8 l6" offset="l4" ><br/>
+      &emsp;&emsp;&lt;m:MaterialPanel shadow="1" addStyleNames="{style.panel}"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialPanel addStyleNames="{style.fieldPanel}"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="EMAIL" placeholder="Email"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="PASSWORD" placeholder="Password" /><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnLogin" backgroundColor="blue" waves="LIGHT" text="Log In" width="100%"/><br/>
+
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow addStyleNames="{style.rowAction}"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialColumn grid="s12 m12 l6"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Keep me logged in"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialColumn><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
+      &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+      &emsp;&lt;/m:MaterialColumn><br/>
+      &lt;/m:MaterialRow><br/>
+    </demo:PrettyPre>
     <m:MaterialTitle title="GWT Material Phonegap" description="Phonegap Integration with GWT Material Wrapper is now available. Feel free to download the Android Release and give us feedback."/>
-    <m:MaterialButton ui:field="btnPhoneGap" backgroundColor="blue" waves="LIGHT"  text="Download APK File"/>
-    <m:MaterialButton ui:field="btnPhonegapSource" backgroundColor="blue" waves="LIGHT"  text="Source"/>
+    <m:MaterialAnchorButton href="http://gwt-material.appspot.com/bin/gwtmaterial.apk" target="_blank" textColor="white" backgroundColor="blue" waves="LIGHT"  text="Download APK File"/>
+    <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material-phonegap" target="_blank" textColor="white" backgroundColor="blue" waves="LIGHT"  text="Source"/>
   </g:HTMLPanel>
 </ui:UiBinder>

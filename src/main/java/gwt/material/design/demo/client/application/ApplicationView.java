@@ -2,9 +2,11 @@ package gwt.material.design.demo.client.application;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.cellview.client.SafeHtmlHeader;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.constants.ShowOn;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialSideNav;
@@ -33,5 +35,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     public void setPageTitle(String title, String description) {
         this.title.setText(title);
         this.description.setText(description);
+        sideNav.hide(sideNav.getElement());
     }
 }

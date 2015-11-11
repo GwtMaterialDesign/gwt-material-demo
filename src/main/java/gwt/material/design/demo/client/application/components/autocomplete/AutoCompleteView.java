@@ -18,13 +18,14 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     interface Binder extends UiBinder<Widget, AutoCompleteView> {
     }
 
-    @UiField MaterialAutoComplete acList, acWithImage;
+    @UiField MaterialAutoComplete acList, acWithImage, acListLimit;
 
     @Inject
     AutoCompleteView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         acList.setSuggestions(getSimpleSuggestions());
+        acListLimit.setSuggestions(getSimpleSuggestions());
         acWithImage.setSuggestions(getWithImageSuggestions());
     }
 

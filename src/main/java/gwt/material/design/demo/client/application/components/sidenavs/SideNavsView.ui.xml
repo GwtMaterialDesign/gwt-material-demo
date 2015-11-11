@@ -8,7 +8,7 @@
         <g:HTMLPanel>
             <!-- PREREQUISITES -->
             <m:MaterialTitle title="Prerequisite" description="Set first your MaterialNavBar sidebar attribute e.g sidebar='your_sidebar_name' then on MaterialSideNav add your sideBar name e.g sideBar='your_sidebar_name'."/>
-            <demo:PrettyPre>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
                 &emsp;&lt;-- NavBar content here --><br/>
                 &lt;/m:MaterialNavBar><br/><br/>

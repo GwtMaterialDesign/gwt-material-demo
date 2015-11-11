@@ -75,6 +75,40 @@
         &emsp;&lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" /><br/>
         &lt;/m:MaterialDropDown><br/>
       </demo:PrettyPre>
+
+      <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
+      <m:MaterialNavBar backgroundColor="blue">
+        <m:MaterialNavBrand>App Name</m:MaterialNavBrand>
+        <m:MaterialNavSection position="RIGHT">
+          <!--Activator -->
+          <m:MaterialLink text="Dropdown" activates="dp-5" textColor="white" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+        </m:MaterialNavSection>
+      </m:MaterialNavBar>
+
+      <!-- My Dropdown -->
+      <m:MaterialDropDown activator="dp-5" constrainWidth="true">
+        <m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 1" />
+        <m:MaterialLink waves="DEFAULT" enabled="false" textColor="black" text="Drop 2"  separator="true"/>
+        <m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 3" />
+      </m:MaterialDropDown>
+      
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialNavBar backgroundColor="blue"><br/>
+        &emsp;&lt;m:MaterialNavBrand><br/>App Name&lt;/m:MaterialNavBrand><br/>
+        &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
+        &emsp;&emsp;&lt;!--Activator --><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="white" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/><br/>
+        &emsp;&lt;/m:MaterialNavSection><br/>
+        &lt;/m:MaterialNavBar><br/><br/>
+
+        &lt;!-- My Dropdown --><br/>
+        &lt;m:MaterialDropDown activator="dp-5" constrainWidth="true"><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 1" /><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="black" text="Drop 2"  separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 3" /><br/>
+        &lt;/m:MaterialDropDown><br/>
+      </demo:PrettyPre>
+
     </g:HTMLPanel>
   </m:MaterialPanel>
 </ui:UiBinder>

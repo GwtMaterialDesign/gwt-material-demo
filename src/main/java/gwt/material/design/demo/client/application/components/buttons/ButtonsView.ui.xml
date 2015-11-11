@@ -63,14 +63,14 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Icon Button" description="Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities"/>
-    <m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT"/>
-    <m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false"/>
-    <m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/>
+    <m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"/>
+    <m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"/>
+    <m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT"/><br/>
-      &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false"/><br/>
-      &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT"/><br/>
+      &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"//><br/>
+      &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"//><br/>
+      &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"//><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Disabled" description="When you set disabled='true' All events will be disabled."/>

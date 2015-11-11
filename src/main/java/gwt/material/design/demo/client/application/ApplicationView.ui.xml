@@ -49,12 +49,13 @@
       .footer {
           margin-top: -50px !important;
       }
+      .logo {
           padding: 10px;
           border-bottom: 1px solid #E9E9E9;
       }
       .btnGettingStarted {
           font-size: 0.3em !important;
-      }      .logo {
+      }
 
   </ui:style>
 
