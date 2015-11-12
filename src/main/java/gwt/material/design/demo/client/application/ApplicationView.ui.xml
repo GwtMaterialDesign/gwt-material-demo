@@ -7,7 +7,7 @@
   <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
   <ui:style>
-      @external .sidebar;
+      @external .sidebar, .nav-wrapper;
       .sidebar {
           padding: 10% !important;
           font-size: 1em;
@@ -32,6 +32,9 @@
 
       nav {
           box-shadow: none;
+      }
+      .nav-wrapper{
+          width: 100% !important;
       }
       .panel {
           padding-left: 5%;
