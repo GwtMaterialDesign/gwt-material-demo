@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package gwt.material.design.client.ui;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * GwtMaterial<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Copyright (C) 2015 GwtMaterialDesign<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * %%<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * you may not use this file except in compliance with the License.<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * You may obtain a copy of the License at<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * <a name="line.14"></a>
+<span class="sourceLineNo">015</span> * Unless required by applicable law or agreed to in writing, software<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * See the License for the specific language governing permissions and<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * limitations under the License.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
+<span class="sourceLineNo">021</span> */<a name="line.21"></a>
+<span class="sourceLineNo">022</span><a name="line.22"></a>
+<span class="sourceLineNo">023</span>import gwt.material.design.client.ui.html.UnorderedList;<a name="line.23"></a>
+<span class="sourceLineNo">024</span><a name="line.24"></a>
+<span class="sourceLineNo">025</span>//@formatter:off<a name="line.25"></a>
+<span class="sourceLineNo">026</span>/**<a name="line.26"></a>
+<span class="sourceLineNo">027</span>* Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element.<a name="line.27"></a>
+<span class="sourceLineNo">028</span>*<a name="line.28"></a>
+<span class="sourceLineNo">029</span>* &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>* &lt;pre&gt;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>*{@code<a name="line.31"></a>
+<span class="sourceLineNo">032</span>*&lt;m:MaterialRow&gt;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>    &lt;m:MaterialColumn grid="l10"&gt;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>        &lt;m:MaterialPanel scrollspy="topic1"&gt;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>            &lt;m:MaterialTitle title="Topic 1" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"/&gt;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>        &lt;/m:MaterialPanel&gt;<a name="line.36"></a>
+<span class="sourceLineNo">037</span><a name="line.37"></a>
+<span class="sourceLineNo">038</span>        &lt;m:MaterialPanel scrollspy="topic2"&gt;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>            &lt;m:MaterialTitle title="Topic 2" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"/&gt;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>        &lt;/m:MaterialPanel&gt;<a name="line.40"></a>
+<span class="sourceLineNo">041</span><a name="line.41"></a>
+<span class="sourceLineNo">042</span>        &lt;m:MaterialPanel scrollspy="topci3"&gt;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>            &lt;m:MaterialTitle title="Topic 3" description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"/&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>        &lt;/m:MaterialPanel&gt;<a name="line.44"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>        &lt;m:MaterialPanel scrollspy="code"&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>            &lt;m:MaterialTitle title="Code" description=""/&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>        &lt;/m:MaterialPanel&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    &lt;/m:MaterialColumn&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span>    &lt;m:MaterialColumn grid="l2" addStyleNames="hide-on-small-only"&gt;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>        &lt;m:MaterialScrollspy addStyleNames="pinned" color="green"&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span>            &lt;m:MaterialLink href="#topic1" text="Topic 1"/&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span>            &lt;m:MaterialLink href="#topic2" text="Topic 2"/&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>            &lt;m:MaterialLink href="#topic3" text="Topic 3"/&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span>            &lt;m:MaterialLink href="#code" text="Code"/&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span>        &lt;/m:MaterialScrollspy&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    &lt;/m:MaterialColumn&gt;<a name="line.57"></a>
+<span class="sourceLineNo">058</span>&lt;/m:MaterialRow&gt;<a name="line.58"></a>
+<span class="sourceLineNo">059</span><a name="line.59"></a>
+<span class="sourceLineNo">060</span>*}<a name="line.60"></a>
+<span class="sourceLineNo">061</span>* &lt;/pre&gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span>*<a name="line.62"></a>
+<span class="sourceLineNo">063</span>* @author kevzlou7979<a name="line.63"></a>
+<span class="sourceLineNo">064</span>* @author Ben Dol<a name="line.64"></a>
+<span class="sourceLineNo">065</span>* @see &lt;a href="http://gwt-material-demo.herokuapp.com/#forms"&gt;Material Range&lt;/a&gt;<a name="line.65"></a>
+<span class="sourceLineNo">066</span>*/<a name="line.66"></a>
+<span class="sourceLineNo">067</span>//@formatter:on<a name="line.67"></a>
+<span class="sourceLineNo">068</span>public class MaterialScrollspy extends UnorderedList {<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>    public MaterialScrollspy() {<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        setStyleName("section table-of-contents");<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    }<a name="line.72"></a>
+<span class="sourceLineNo">073</span><a name="line.73"></a>
+<span class="sourceLineNo">074</span>    @Override<a name="line.74"></a>
+<span class="sourceLineNo">075</span>    protected void onLoad() {<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        super.onLoad();<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        initScrollspy();<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
+<span class="sourceLineNo">079</span><a name="line.79"></a>
+<span class="sourceLineNo">080</span>    static native void initScrollspy()/*-{<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        $wnd.jQuery(".scrollspy").scrollSpy();<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    }-*/;<a name="line.82"></a>
+<span class="sourceLineNo">083</span>}<a name="line.83"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

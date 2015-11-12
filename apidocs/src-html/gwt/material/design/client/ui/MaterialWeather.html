@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package gwt.material.design.client.ui;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * GwtMaterial<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Copyright (C) 2015 GwtMaterialDesign<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * %%<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * you may not use this file except in compliance with the License.<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * You may obtain a copy of the License at<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * <a name="line.14"></a>
+<span class="sourceLineNo">015</span> * Unless required by applicable law or agreed to in writing, software<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * See the License for the specific language governing permissions and<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * limitations under the License.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
+<span class="sourceLineNo">021</span> */<a name="line.21"></a>
+<span class="sourceLineNo">022</span><a name="line.22"></a>
+<span class="sourceLineNo">023</span>//@formatter:off<a name="line.23"></a>
+<span class="sourceLineNo">024</span>/**<a name="line.24"></a>
+<span class="sourceLineNo">025</span>* Material Weather - used OpenWeatherAPI to get results about location based  weather<a name="line.25"></a>
+<span class="sourceLineNo">026</span>*<a name="line.26"></a>
+<span class="sourceLineNo">027</span>* &lt;p&gt;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>* &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>* &lt;pre&gt;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>* {@code<a name="line.30"></a>
+<span class="sourceLineNo">031</span>*     &lt;m:MaterialWeather location="Makati, Philippines" /&gt;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>* }<a name="line.32"></a>
+<span class="sourceLineNo">033</span>* &lt;/pre&gt;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>* &lt;/p&gt;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>*<a name="line.35"></a>
+<span class="sourceLineNo">036</span>* @author kevzlou7979<a name="line.36"></a>
+<span class="sourceLineNo">037</span>* @author Ben Dol<a name="line.37"></a>
+<span class="sourceLineNo">038</span>*/<a name="line.38"></a>
+<span class="sourceLineNo">039</span>//@formatter:on<a name="line.39"></a>
+<span class="sourceLineNo">040</span>public class MaterialWeather extends MaterialPanel {<a name="line.40"></a>
+<span class="sourceLineNo">041</span><a name="line.41"></a>
+<span class="sourceLineNo">042</span>    public MaterialWeather() {}<a name="line.42"></a>
+<span class="sourceLineNo">043</span><a name="line.43"></a>
+<span class="sourceLineNo">044</span>    private String location;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    private String color;<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">047</span>    @Override<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    protected void onLoad() {<a name="line.48"></a>
+<span class="sourceLineNo">049</span>        super.onLoad();<a name="line.49"></a>
+<span class="sourceLineNo">050</span><a name="line.50"></a>
+<span class="sourceLineNo">051</span>        String name = "weatherContainer";<a name="line.51"></a>
+<span class="sourceLineNo">052</span>        this.addStyleName(name);<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        this.getElement().setId("weatherContainer");<a name="line.53"></a>
+<span class="sourceLineNo">054</span>        showWeather(location, name, color);<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    }<a name="line.55"></a>
+<span class="sourceLineNo">056</span><a name="line.56"></a>
+<span class="sourceLineNo">057</span>    public String getLocation() {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>        return location;<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    }<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public void setLocation(String location) {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        this.location = location;<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    }<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>    public String getColor() {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        return color;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    }<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>    public void setColor(String color) {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        this.color = color;<a name="line.70"></a>
+<span class="sourceLineNo">071</span>    }<a name="line.71"></a>
+<span class="sourceLineNo">072</span><a name="line.72"></a>
+<span class="sourceLineNo">073</span>    public static native void showWeather(String location, String div, String color)/*-{<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        $wnd.jQuery.getJSON( "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&amp;APPID=53455a3a8a8a46135396f0272314f49d", function( data ) {<a name="line.74"></a>
+<span class="sourceLineNo">075</span> <a name="line.75"></a>
+<span class="sourceLineNo">076</span>          var items = [];<a name="line.76"></a>
+<span class="sourceLineNo">077</span>          var location = data.sys.country + ", " + data.name;<a name="line.77"></a>
+<span class="sourceLineNo">078</span>          var icon = "http://gwt-material.appspot.com/bin/weather/" +data.weather[0].icon + ".png";<a name="line.78"></a>
+<span class="sourceLineNo">079</span>          var temp = Math.round((data.main.temp - 273.15)* 10 ) / 10;<a name="line.79"></a>
+<span class="sourceLineNo">080</span><a name="line.80"></a>
+<span class="sourceLineNo">081</span>          var main = data.weather[0].main;<a name="line.81"></a>
+<span class="sourceLineNo">082</span>          var desc = data.weather[0].description;<a name="line.82"></a>
+<span class="sourceLineNo">083</span>          var humidity = data.main.humidity;<a name="line.83"></a>
+<span class="sourceLineNo">084</span>          var pressure = data.main.pressure;<a name="line.84"></a>
+<span class="sourceLineNo">085</span>          var d = new Date();<a name="line.85"></a>
+<span class="sourceLineNo">086</span>          var weekday = new Array(7);<a name="line.86"></a>
+<span class="sourceLineNo">087</span>          weekday[0]=  "Sunday";<a name="line.87"></a>
+<span class="sourceLineNo">088</span>          weekday[1] = "Monday";<a name="line.88"></a>
+<span class="sourceLineNo">089</span>          weekday[2] = "Tuesday";<a name="line.89"></a>
+<span class="sourceLineNo">090</span>          weekday[3] = "Wednesday";<a name="line.90"></a>
+<span class="sourceLineNo">091</span>          weekday[4] = "Thursday";<a name="line.91"></a>
+<span class="sourceLineNo">092</span>          weekday[5] = "Friday";<a name="line.92"></a>
+<span class="sourceLineNo">093</span>          weekday[6] = "Saturday";<a name="line.93"></a>
+<span class="sourceLineNo">094</span><a name="line.94"></a>
+<span class="sourceLineNo">095</span>          var today = weekday[d.getDay()];<a name="line.95"></a>
+<span class="sourceLineNo">096</span><a name="line.96"></a>
+<span class="sourceLineNo">097</span>          items.push("&lt;div id='weatherPanel' class='center-align card white-text "+color+"'&gt; &lt;div class='row'&gt; &lt;ul id='weatherPanel' &gt; &lt;div class='col s12 m12 l6'&gt; &lt;li style='opacity: 0;'&gt; &lt;h5 &gt;"+main+"&lt;/h5&gt; &lt;p style='margin-top: -5px; font-weight: 100;text-transform: capitalize;'&gt;"+desc+"&lt;/p&gt; &lt;/li&gt; &lt;li style='opacity: 0;'&gt; &lt;div class='row'&gt; &lt;div class='col s12 m4 l4'&gt; &lt;img src='"+icon+"' style='margin-top: 20px;'&gt; &lt;/div&gt; &lt;div class='col s12 m8 l8'&gt; &lt;h2 style='font-weight: 100;'&gt;"+temp+"&lt;/h2&gt; &lt;/div&gt; &lt;/div&gt; &lt;/li&gt; &lt;/div&gt; &lt;div class='col s12 m12 l6'&gt; &lt;li style='opacity: 0;'&gt; &lt;h5&gt;"+location+"&lt;/h5&gt; &lt;p style='margin-top: -5px; font-weight: 100;'&gt;"+today+"&lt;/p&gt; &lt;/li&gt; &lt;div class='left-align'&gt; &lt;li style='opacity: 0;'&gt; &lt;span&gt;&lt;i class='mdi-communication-invert-colors-on'&gt; &lt;/i&gt; "+humidity+"%&lt;/span&gt;&lt;br&gt; &lt;/li&gt; &lt;li style='opacity: 0;'&gt; &lt;span&gt;&lt;i class='mdi-device-wifi-tethering'&gt; &lt;/i&gt;3.9  mph&lt;/span&gt;&lt;br&gt; &lt;/li&gt; &lt;li style='opacity: 0;'&gt; &lt;span&gt;&lt;i class='mdi-av-timer'&gt;&lt;/i&gt;"+pressure+"  hPa&lt;/span&gt; &lt;/li&gt; &lt;/div&gt; &lt;/div&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt;");<a name="line.97"></a>
+<span class="sourceLineNo">098</span>          $wnd.document.getElementById('weatherContainer').innerHTML = '';<a name="line.98"></a>
+<span class="sourceLineNo">099</span>          $wnd.jQuery( "&lt;ul/&gt;", { "class": "my-new-list",  html: items.join( "" ) }).appendTo( "." + div );<a name="line.99"></a>
+<span class="sourceLineNo">100</span><a name="line.100"></a>
+<span class="sourceLineNo">101</span>          $wnd.Materialize.showStaggeredList('#weatherPanel');<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        });<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    }-*/;<a name="line.103"></a>
+<span class="sourceLineNo">104</span>}<a name="line.104"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
