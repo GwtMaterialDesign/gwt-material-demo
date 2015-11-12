@@ -1,5 +1,5 @@
 # gwt-material-demo [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo)
-Demo application to show the features of the library
+Demo application to show the features of the [gwt-material](https://github.com/GwtMaterialDesign/gwt-material) library.
 
 ### Release 1.4 Demo
 [http://gwtmaterialdesign.github.io/gwt-material-demo](http://gwtmaterialdesign.github.io/gwt-material-demo)
