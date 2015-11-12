@@ -61,7 +61,7 @@
   <g:HTMLPanel>
     <m.html:Header ui:field="header">
       <m:MaterialNavBar ui:field="navBar" backgroundColor="blue darken-1" activates="sideBar">
-        <m:MaterialLink iconType="MENU" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER"/>
+        <m:MaterialLink iconType="MENU" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
       </m:MaterialNavBar>
 
       <m:MaterialSideNav ui:field="sideNav" m:id="sideBar" type="OPEN" closeOnClick="false">
