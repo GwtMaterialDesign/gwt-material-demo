@@ -133,10 +133,6 @@
                     <compileReport>true</compileReport>
                     <compilerMetrics>true</compilerMetrics>
 
-                    <optimizationLevel>9</optimizationLevel>
-                    <disableCastChecking>true</disableCastChecking>
-                    <disableClassMetadata>true</disableClassMetadata>
-
                     <runTarget>index.html</runTarget>
                     <modules>
                         <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
