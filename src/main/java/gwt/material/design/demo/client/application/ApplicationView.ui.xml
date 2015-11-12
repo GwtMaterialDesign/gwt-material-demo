@@ -44,26 +44,27 @@
           -moz-box-sizing: border-box;
       }
       main, header, footer{
-          padding-left: 250px;
+          padding-left: 240px;
       }
       .footer {
           margin-top: -50px !important;
       }
       .logo {
-          padding: 10px;
-          border-bottom: 1px solid #E9E9E9;
+        padding: 10px;
+        border-bottom: 1px solid #E9E9E9;
       }
       .btnGettingStarted {
           font-size: 0.3em !important;
       }
-
   </ui:style>
 
   <g:HTMLPanel>
     <m.html:Header ui:field="header">
-      <m:MaterialNavBar ui:field="navBar" backgroundColor="blue darken-1" activates="sideBar" />
+      <m:MaterialNavBar ui:field="navBar" backgroundColor="blue darken-1" activates="sideBar">
+        <m:MaterialLink iconType="MENU" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER"/>
+      </m:MaterialNavBar>
 
-      <m:MaterialSideNav ui:field="sideNav" m:id="sideBar" width="250" type="OPEN" closeOnClick="false">
+      <m:MaterialSideNav ui:field="sideNav" m:id="sideBar" type="OPEN" closeOnClick="false">
         <m.html:ListItem waves="DEFAULT" paddingBottom="22">
           <m:MaterialImage resource="{res.ic_gwt_logo}" addStyleNames="{style.logo}"/>
         </m.html:ListItem>
@@ -131,6 +132,13 @@
         <m:MaterialLink targetHistoryToken="{tokens.getTemplates}" iconPosition="LEFT" iconType="DASHBOARD" text="Templates" textColor="blue" waves="DEFAULT" />
         <!-- CHARTS -->
         <m:MaterialLink targetHistoryToken="{tokens.getCharts}" iconPosition="LEFT" iconType="INSERT_CHART" text="Material Charts" textColor="blue" waves="DEFAULT" />
+      </m:MaterialSideNav>
+
+      <m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" fixed="false">
+        <m:MaterialLink><m:MaterialIcon iconType="POLYMER" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
+        <m:MaterialLink><m:MaterialIcon iconType="ADD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
+        <m:MaterialLink><m:MaterialIcon iconType="ADJUST" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
+        <m:MaterialLink><m:MaterialIcon iconType="BATTERY_STD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
       </m:MaterialSideNav>
     </m.html:Header>
 

@@ -130,6 +130,12 @@
                     <extraJvmArgs>-Xmx1g</extraJvmArgs>
                     <logLevel>INFO</logLevel>
                     <style>${gwt.style}</style>
+                    <compileReport>true</compileReport>
+                    <compilerMetrics>true</compilerMetrics>
+
+                    <optimizationLevel>9</optimizationLevel>
+                    <disableCastChecking>true</disableCastChecking>
+                    <disableClassMetadata>true</disableClassMetadata>
 
                     <runTarget>index.html</runTarget>
                     <modules>
@@ -304,6 +310,27 @@
                                 </goals>
                             </execution>
                         </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>gwt-maven-plugin</artifactId>
+                        <version>${gwt.version}</version>
+                        <configuration>
+                            <modules>
+                                <module>gwt.material.design.demo.GwtMaterialDesignDemoDev</module>
+                            </modules>
+                            <draftCompile combine.self="override">true</draftCompile>
+                            <optimizationLevel combine.self="override">0</optimizationLevel>
+                            <disableCastChecking combine.self="override">false</disableCastChecking>
+                            <disableClassMetadata combine.self="override">false</disableClassMetadata>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
