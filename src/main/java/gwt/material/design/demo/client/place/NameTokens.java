@@ -35,6 +35,7 @@ public class NameTokens {
     public static final String transitions = "!transitions";
     public static final String sidenavs = "!sidenavs";
     public static final String subheaders = "subheaders";
+    public static final String fabs = "fabs";
 
     public static String getAbout() {
         return about;
@@ -170,5 +171,9 @@ public class NameTokens {
 
     public static String getSubheaders() {
         return subheaders;
+    }
+
+    public static String getFabs() {
+        return fabs;
     }
 }

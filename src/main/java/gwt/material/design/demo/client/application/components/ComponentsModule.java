@@ -12,6 +12,7 @@ import gwt.material.design.demo.client.application.components.datagrid.DatagridM
 import gwt.material.design.demo.client.application.components.dialogs.DialogsModule;
 import gwt.material.design.demo.client.application.components.dropdown.DropdownModule;
 import gwt.material.design.demo.client.application.components.errors.ErrorsModule;
+import gwt.material.design.demo.client.application.components.fabs.FABModule;
 import gwt.material.design.demo.client.application.components.footer.FooterModule;
 import gwt.material.design.demo.client.application.components.forms.FormsModule;
 import gwt.material.design.demo.client.application.components.loader.LoaderModule;
@@ -50,5 +51,6 @@ public class ComponentsModule extends AbstractGinModule {
         install(new TransitionsModule());
         install(new SideNavsModule());
         install(new SubHeadersModule());
+        install(new FABModule());
     }
 }

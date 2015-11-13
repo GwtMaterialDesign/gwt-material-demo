@@ -99,6 +99,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getErrors}" text="Errors" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getForms}" text="Forms" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getFabs}" text="FAB" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getFooter}" text="Footer" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" textColor="blue" waves="DEFAULT" />
