@@ -21,8 +21,6 @@ public class FABPresenter extends Presenter<FABPresenter.MyView, FABPresenter.My
     interface MyProxy extends ProxyPlace<FABPresenter> {
     }
 
-    public static final NestedSlot SLOT_FAB = new NestedSlot();
-
     @Inject
     FABPresenter(
             EventBus eventBus,

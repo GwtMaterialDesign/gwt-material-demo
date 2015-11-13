@@ -41,7 +41,7 @@
         <m:MaterialButton text="Open" ui:field="btnOpen" backgroundColor="blue" />
         <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="white" textColor="black"/>
         <div style="position: relative">
-            <m:MaterialFAB type="HORIZONTAL" addStyleNames="{style.fabHorizontal}" ui:field="fab">
+            <m:MaterialFAB axis="HORIZONTAL" addStyleNames="{style.fabHorizontal}" ui:field="fab">
                 <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
                 <m:MaterialFABList>
                     <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
@@ -62,7 +62,7 @@
 
         <m:MaterialTitle title="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add type='HORIZONTAL'."/>
         <div style="position: relative">
-            <m:MaterialFAB type="HORIZONTAL" addStyleNames="{style.fabHorizontal}">
+            <m:MaterialFAB axis="HORIZONTAL" addStyleNames="{style.fabHorizontal}">
                 <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
                 <m:MaterialFABList>
                     <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
@@ -75,7 +75,7 @@
         </div>
 
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialFAB type="HORIZONTAL"><br/>
+            &emsp;&lt;m:MaterialFAB axis="HORIZONTAL"><br/>
             &emsp;&lt;-- Content here --><br/>
             &lt;/m:MaterialFAB><br/>
         </demo:PrettyPre>
