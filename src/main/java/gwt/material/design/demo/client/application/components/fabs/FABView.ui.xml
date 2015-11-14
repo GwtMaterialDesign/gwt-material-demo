@@ -60,7 +60,7 @@
             fab.closeFAB();<br/>
         </demo:PrettyPre>
 
-        <m:MaterialTitle title="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add type='HORIZONTAL'."/>
+        <m:MaterialTitle title="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'."/>
         <div style="position: relative">
             <m:MaterialFAB axis="HORIZONTAL" addStyleNames="{style.fabHorizontal}">
                 <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>

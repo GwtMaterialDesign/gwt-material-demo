@@ -5,7 +5,7 @@
   -moz-box-sizing: border-box !important;
   -webkit-box-sizing: border-box !important;
 }
-pre{
+pre {
 	padding-top: 20px;
 	white-space: pre;
 	background: #F3FBFF;
@@ -28,7 +28,7 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   color: #777777;
-  margin: 40px 0px 70px;
+  margin: 40px 0 70px;
   text-align: center;
 }
 
