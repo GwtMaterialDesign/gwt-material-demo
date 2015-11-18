@@ -29,6 +29,14 @@
       &lt;m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/><br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Character Counter" description="Use a character counter in fields where a character restriction is in place."/>
+    <m:MaterialTextBox placeholder="Input Text" length="10"/>
+    <m:MaterialTextArea placeholder="Text Area" length="120"/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTextBox placeholder="Input Text" length="10"/><br/>
+      &lt;m:MaterialTextArea placeholder="Text Area" length="120"/><br/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
     <m:MaterialListBox ui:field="lstOptions">
       <item>Option 1</item>
