@@ -78,6 +78,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         acList.setSuccess("This is a success message for autocomplete");
     }
 
+    @UiHandler("btnClear")
+    void onClear(ClickEvent e) {
+        acList.clearErrorOrSuccess();
+    }
+
     @UiHandler("btnErrorDp")
     void onErrorDp(ClickEvent e) {
         dp.setError("This is an error message for date picker.");
@@ -86,6 +91,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessDp")
     void onSuccessDp(ClickEvent e) {
         dp.setSuccess("This is a success message for date picker.");
+    }
+
+    @UiHandler("btnClearDp")
+    void onClearDp(ClickEvent e) {
+        dp.clearErrorOrSuccess();
     }
 
     @UiHandler("btnErrorRange")
@@ -98,6 +108,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         range.setSuccess("This is a success message for range.");
     }
 
+    @UiHandler("btnClearRange")
+    void onClearRange(ClickEvent e) {
+        range.clearErrorOrSuccess();
+    }
+
     @UiHandler("btnErrorSwitch")
     void onErrorSwitch(ClickEvent e) {
         sw.setError("This is an error message for switch.");
@@ -106,6 +121,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessSwitch")
     void onSuccessSwitch(ClickEvent e) {
         sw.setSuccess("This is a success message for switch.");
+    }
+
+    @UiHandler("btnClearSwitch")
+    void onClearSwitch(ClickEvent e) {
+        sw.clearErrorOrSuccess();
     }
 
     @UiHandler("btnErrorTxtArea")
@@ -118,6 +138,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         txtArea.setSuccess("This is a success message text area.");
     }
 
+    @UiHandler("btnClearTxtArea")
+    void onClearTxtArea(ClickEvent e) {
+        txtArea.clearErrorOrSuccess();
+    }
+
     @UiHandler("btnErrorTxtBox")
     void onErrorTxtBox(ClickEvent e) {
         txtBox.setError("This is an error message for text box.");
@@ -128,6 +153,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         txtBox.setSuccess("This is a success message for text box.");
     }
 
+    @UiHandler("btnClearTxtBox")
+    void onClearTxtBox(ClickEvent e) {
+        txtBox.clearErrorOrSuccess();
+    }
+
     @UiHandler("btnErrorTime")
     void onErrorTime(ClickEvent e) {
         tp.setError("This is an error message for time picker.");
@@ -136,5 +166,10 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessTime")
     void onSuccessTime(ClickEvent e) {
         tp.setSuccess("This is a success message for time picker.");
+    }
+
+    @UiHandler("btnClearTime")
+    void onClearTime(ClickEvent e) {
+        tp.clearErrorOrSuccess();
     }
 }

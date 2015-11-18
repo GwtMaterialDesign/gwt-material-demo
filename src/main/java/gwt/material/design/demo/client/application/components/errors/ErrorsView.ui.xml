@@ -26,6 +26,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccess" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClear" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Date Picker -->
@@ -36,6 +37,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorDp" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessDp" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearDp" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Time Picker -->
@@ -46,6 +48,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessTime" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTime" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Range -->
@@ -56,6 +59,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessRange" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearRange" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Switch -->
@@ -66,6 +70,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorSwitch" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessSwitch" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearSwitch" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Text Area -->
@@ -76,6 +81,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessTxtArea" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Text Box -->
@@ -86,6 +92,7 @@
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>
