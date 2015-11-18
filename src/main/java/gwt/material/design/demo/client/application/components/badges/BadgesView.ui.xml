@@ -68,6 +68,27 @@
       &lt;/m:MaterialDropDown><br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Badges in NavBar"/>
+    <m:MaterialNavBar backgroundColor="blue">
+      <m:MaterialNavSection float="RIGHT">
+        <m:MaterialLink text="Link 1" />
+        <m:MaterialLink text="Link 2">
+          <m:MaterialBadge text="1 new" backgroundColor="red"/>
+        </m:MaterialLink>
+        <m:MaterialLink text="Link 3" />
+      </m:MaterialNavSection>
+    </m:MaterialNavBar>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue"><br/>
+      &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Link 2"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="red"/><br/>
+      &emsp;&emsp;&lt;/m:MaterialLink><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Link 3" /><br/>
+      &emsp;&lt;/m:MaterialNavSection><br/>
+      &lt;/m:MaterialNavBar><br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 
 </ui:UiBinder>
