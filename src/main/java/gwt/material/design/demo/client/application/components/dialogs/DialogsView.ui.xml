@@ -68,11 +68,11 @@
       &lt;/m:MaterialModal><br/>  
     </demo:PrettyPre>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;@UiField MaterialModal modal;
-      //Opening Modal
-      modal.openModal();
-      //Closing Modal
-      modal.closeModal();
+      &emsp;@UiField MaterialModal modal;<br/>
+      //Opening Modal<br/>
+      modal.openModal();<br/>
+      //Closing Modal<br/>
+      modal.closeModal();<br/>
     </demo:PrettyPre>
     
     <!-- Fixed Footer Modal -->
@@ -87,7 +87,7 @@
     <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" backgroundColor="blue" waves="LIGHT"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here -->
+      &emsp;&emsp; &lt;-- Content Here --><br/>
       &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
 
@@ -104,7 +104,7 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here -->
+      &emsp;&emsp; &lt;-- Content Here --><br/>
       &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
 
@@ -121,7 +121,7 @@
     <m:MaterialButton text="Closable Modal" ui:field="btnClosable" backgroundColor="blue" waves="LIGHT"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here -->
+      &emsp;&emsp; &lt;-- Content Here --><br/>
       &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
 
