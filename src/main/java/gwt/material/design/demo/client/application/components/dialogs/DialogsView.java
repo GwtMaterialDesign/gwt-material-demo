@@ -3,21 +3,22 @@ package gwt.material.design.demo.client.application.components.dialogs;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.constants.ModalType;
-import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
-import gwt.material.design.demo.client.ui.ModalContent;
 
 import javax.inject.Inject;
 
 public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     interface Binder extends UiBinder<Widget, DialogsView> {
     }
+
+    @UiField
+    MaterialModal modal, modalFixed, modalBottomSheet, modalClosable;
 
     @Inject
     DialogsView(Binder uiBinder) {
@@ -58,26 +59,42 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
     @UiHandler("btnModal")
     void onModal(ClickEvent e) {
-        MaterialModal.showModal(new ModalContent(), ModalType.DEFAULT, false);
+        modal.openModal();
     }
 
     @UiHandler("btnMoadalBottomSheets")
     void onModalBottom(ClickEvent e) {
-        MaterialModal.showModal(new ModalContent(), ModalType.BOTTOM_SHEET, false);
+       modalBottomSheet.openModal();
     }
 
     @UiHandler("btnModalFixFooter")
     void onModalFix(ClickEvent e) {
-        MaterialModal.showModal(new ModalContent(), ModalType.FIXED_FOOTER, false);
-    }
-
-    @UiHandler("btnWindow")
-    void onWindowModal(ClickEvent e) {
-        MaterialModal.showWindow(new ModalContent(), ModalType.WINDOW, "Window Title", "blue", false);
+        modalFixed.openModal();
     }
 
     @UiHandler("btnClosable")
     void onClosable(ClickEvent e) {
-        MaterialModal.showModal(new ModalContent(), ModalType.FIXED_FOOTER,  true);
+        modalClosable.openModal();
     }
+
+    @UiHandler("btnCloseModal")
+    void onCloseModal(ClickEvent e){
+        modal.closeModal();
+    }
+
+    @UiHandler("btnCloseFixedModal")
+    void onCloseFixedModal(ClickEvent e) {
+        modalFixed.closeModal();
+    }
+
+    @UiHandler("btnCloseBottomSheetModal")
+    void onCloseBottomModal(ClickEvent e) {
+        modalBottomSheet.closeModal();
+    }
+
+    @UiHandler("btnCloseModalDismiss")
+    void onCloseModalDismiss(ClickEvent e) {
+        modalClosable.closeModal();
+    }
+
 }

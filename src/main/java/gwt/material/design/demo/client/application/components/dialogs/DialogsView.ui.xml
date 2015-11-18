@@ -46,40 +46,83 @@
       }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);<br/>
     </demo:PrettyPre>
 
-    <m:MaterialTitle title="Modal" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. "/>
+    <m:MaterialTitle title="Modals" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>
+    <!-- Default Modal -->
+    <m:MaterialModal ui:field="modal" type="DEFAULT" dismissable="false" inDuration="500" outDuration="500">
+      <m:MaterialModalContent>
+        <m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+      </m:MaterialModalContent>
+      <m:MaterialModalFooter>
+        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModal"/>
+      </m:MaterialModalFooter>
+    </m:MaterialModal>
     <m:MaterialButton text="Show Modal" ui:field="btnModal" backgroundColor="blue" waves="LIGHT"/>
-    <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" backgroundColor="blue" waves="LIGHT"/>
-    <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" backgroundColor="blue" waves="LIGHT"/>
-    <m:MaterialButton text="Modal Window" ui:field="btnWindow" backgroundColor="blue" waves="LIGHT"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialModal.showModal(new ModalContent(), ModalType.DEFAULT, false);
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialModal.showModal(new ModalContent(), ModalType.BOTTOM_SHEET, false);
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialModal.showModal(new ModalContent(), ModalType.FIXED_FOOTER, false);
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialModal.showWindow(new ModalContent(), ModalType.WINDOW, "Window Title", "blue", false);
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Modal Content" description="In order to set the content of your modal we provide a sample Composite with right mockups composing of MaterialModalContent and MaterialModalFooter see below the structure of UI Binder."/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialModal type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
       &emsp;&lt;m:MaterialModalContent><br/>
-      &emsp;&lt;m:MaterialTitle title="Modal Header" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"/><br/>
-      &lt;/m:MaterialModalContent><br/><br/>
+      &emsp;&emsp;&lt;m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" /><br/>
+      &emsp;&lt;/m:MaterialModalContent><br/>
+      &emsp;&lt;m:MaterialModalFooter><br/>
+      &emsp;&emsp;&lt;m:MaterialButton text="Close Modal" type="FLAT"/><br/>
+      &emsp;&lt;/m:MaterialModalFooter><br/>
+      &lt;/m:MaterialModal><br/>  
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;@UiField MaterialModal modal;
+      //Opening Modal
+      modal.openModal();
+      //Closing Modal
+      modal.closeModal();
+    </demo:PrettyPre>
+    
+    <!-- Fixed Footer Modal -->
+    <m:MaterialModal ui:field="modalFixed" type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500">
+      <m:MaterialModalContent>
+        <m:MaterialTitle title="Fixed Footer Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+      </m:MaterialModalContent>
+      <m:MaterialModalFooter>
+        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseFixedModal"/>
+      </m:MaterialModalFooter>
+    </m:MaterialModal>
+    <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" backgroundColor="blue" waves="LIGHT"/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
+      &emsp;&emsp; &lt;-- Content Here -->
+      &lt;/m:MaterialModal><br/>
+    </demo:PrettyPre>
 
-      &lt;m:MaterialModalFooter textAlign="RIGHT"><br/>
-      &emsp;&lt;m:MaterialButton ui:field="btnAgree" waves="GREEN" type="FLAT" text="Agree" addStyleNames="{style.btn}" /><br/>
-      &emsp;&lt;m:MaterialButton ui:field="btnDisagree" waves="RED" type="FLAT" text="Disagree" addStyleNames="{style.btn}" /><br/>
-      &lt;/m:MaterialModalFooter><br/>
+    <!-- Bottom Sheet Modal -->
+    <m:MaterialModal ui:field="modalBottomSheet" type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500">
+      <m:MaterialModalContent>
+        <m:MaterialTitle title="Bottom Sheet Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+      </m:MaterialModalContent>
+      <m:MaterialModalFooter>
+        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseBottomSheetModal"/>
+      </m:MaterialModalFooter>
+    </m:MaterialModal>
+    <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" backgroundColor="blue" waves="LIGHT"/>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
+      &emsp;&emsp; &lt;-- Content Here -->
+      &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Auto Hide Modals" description="Just set the boolean parameter on the method showModal. If TRUE == you can click outside and the modal will be close."/>
+    <!-- Fixed Footer Modal -->
+    <m:MaterialModal ui:field="modalClosable" type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500">
+      <m:MaterialModalContent>
+        <m:MaterialTitle title="Closable Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+      </m:MaterialModalContent>
+      <m:MaterialModalFooter>
+        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalDismiss"/>
+      </m:MaterialModalFooter>
+    </m:MaterialModal>
     <m:MaterialButton text="Closable Modal" ui:field="btnClosable" backgroundColor="blue" waves="LIGHT"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialModal.showModal(new ModalContent(), ModalType.FIXED_FOOTER,  true);
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
+      &emsp;&emsp; &lt;-- Content Here -->
+      &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function."/>
