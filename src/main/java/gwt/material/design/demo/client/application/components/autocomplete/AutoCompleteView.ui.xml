@@ -47,6 +47,10 @@
       &emsp;acList.setSuggestions(suggestions);
     </demo:PrettyPre>
 
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;// to clear your autocomplete list<br/>
+      acList.clear();
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="With Image" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
     <m:MaterialRow>
