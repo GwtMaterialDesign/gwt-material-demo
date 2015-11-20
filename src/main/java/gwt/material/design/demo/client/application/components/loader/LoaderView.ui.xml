@@ -35,6 +35,18 @@
       MaterialLoader.showProgress(false);<br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Determinate Type"/>
+    <m:MaterialProgress type="DETERMINATE" percent="30"/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialProgress type="DETERMINATE" percent="30"/>
+    </demo:PrettyPre>
+
+    <m:MaterialTitle title="Indeterminate Type"/>
+    <m:MaterialProgress type="INDETERMINATE" />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialProgress type="INDETERMINATE"/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
     <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
     <m:MaterialNavBar ui:field="navBar" backgroundColor="blue" addStyleNames="{style.navBar}">
@@ -82,6 +94,5 @@
       &emsp;&lt;m:MaterialSpinner color="blue-only" /><br/>
       &lt;/m:MaterialPreLoader><br/>
     </demo:PrettyPre>
-
   </g:HTMLPanel>
 </ui:UiBinder>

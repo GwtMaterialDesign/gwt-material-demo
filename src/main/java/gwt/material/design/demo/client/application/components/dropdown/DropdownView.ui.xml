@@ -16,7 +16,7 @@
       <!-- Activator -->
       <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-2"/>
       <!-- My Drop Down -->
-      <m:MaterialDropDown activator="dp-2" constrainWidth="true">
+        <m:MaterialDropDown activator="dp-2" constrainWidth="true">
         <m:MaterialLink text="First" />
         <m:MaterialLink text="Second" />
         <m:MaterialLink text="Third" />
