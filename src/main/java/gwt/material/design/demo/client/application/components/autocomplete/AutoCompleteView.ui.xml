@@ -23,6 +23,7 @@
     </blockquote>
 
     <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="blue"/>
+    <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="black" backgroundColor="white"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;m:MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
@@ -88,6 +89,7 @@
     </demo:PrettyPre>
 
     <m:MaterialButton ui:field="btnGetAllContacts" text="Get All Contacts" waves="LIGHT" backgroundColor="blue"/>
+    <m:MaterialButton ui:field="btnClearWithImage" text="Clear" waves="DEFAULT" textColor="black" backgroundColor="white"/>
 
     <m:MaterialTitle title="Limit items" description="You can specify the number of items on the autocomplete by adding an attribute limit='1'"/>
 

@@ -85,4 +85,14 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
             MaterialToast.fireToast(item);
         }
     }
+
+    @UiHandler("btnClear")
+    void onClear(ClickEvent e){
+        acList.clear();
+    }
+
+    @UiHandler("btnClearWithImage")
+    void onClearWithImage(ClickEvent e){
+        acWithImage.clear();
+    }
 }
