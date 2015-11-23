@@ -91,5 +91,14 @@
         </g:HTMLPanel>
       </m:MaterialColumn>
     </m:MaterialRow>
+
+    <m:MaterialTitle title="MaterialHeader Usage" description="If you are using an open sidenav you are required to use MaterialHeader to contain your navBar component for padding-left usage. And add into your style this : header, main, footer { padding-left: 200px } wherein 200px is the width of your sidenav."/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialHeader><br/>
+      &emsp;&lt;m:MaterialNavBar><br/>
+      &emsp;&emsp;&lt;-- Navbar content goes here --><br/>
+      &emsp;&lt;/m:MaterialHeader><br/>
+      &lt;/m:MaterialHeader><br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
