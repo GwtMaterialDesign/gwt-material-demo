@@ -155,7 +155,17 @@
       &emsp;t.schedule(3000);<br/>
       }<br/>
     </demo:PrettyPre>
-    
 
+    <m:MaterialTitle title="Autocomplete Integration" />
+    <m:MaterialAutoComplete ui:field="acList" placeholder="Your State"/>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      @UiField MaterialAutoComplete acList;<br/><br/>
+
+      // Show Progress<br/>
+      acList.showProgress(true);<br/><br/>
+
+      // Hide Progress<br/>
+      acList.showProgress(false);<br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

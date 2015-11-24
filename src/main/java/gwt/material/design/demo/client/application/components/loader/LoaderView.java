@@ -1,19 +1,24 @@
 package gwt.material.design.demo.client.application.components.loader;
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Image;
+import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.base.MaterialSuggestionOracle;
 import gwt.material.design.client.constants.ProgressType;
-import gwt.material.design.client.ui.MaterialCollapsibleItem;
-import gwt.material.design.client.ui.MaterialLoader;
-import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.*;
+import gwt.material.design.demo.client.shared.User;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     interface Binder extends UiBinder<Widget, LoaderView> {
@@ -25,9 +30,13 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     @UiField
     MaterialCollapsibleItem collapseItemOne, collapseItemTwo, collapseItemThree;
 
+    @UiField
+    MaterialAutoComplete acList;
+
     @Inject
     LoaderView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        acList.setSuggestions(getSimpleSuggestions());
     }
 
     @UiHandler("btnShowLoader")
@@ -102,4 +111,47 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
         t.schedule(3000);
     }
 
+    private MaterialSuggestionOracle getSimpleSuggestions() {
+        MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();
+        suggestions.add("Alabama");
+        suggestions.add("Alaska");
+        suggestions.add("Arizona");
+        suggestions.add("Arkansas");
+        suggestions.add("California");
+        suggestions.add("Colorado");
+        suggestions.add("Connecticut");
+        suggestions.add("Delaware");
+        suggestions.add("Florida");
+        suggestions.add("Georgia");
+        suggestions.add("Hawaii");
+        suggestions.add("Idaho");
+        suggestions.add("Illinois");
+        suggestions.add("Indiana");
+        suggestions.add("Iowa");
+        suggestions.add("Kansas");
+        suggestions.add("Kentucky");
+        suggestions.add("Louisiana");
+        suggestions.add("Maine");
+        suggestions.add("Maryland");
+        suggestions.add("Massachusetts");
+        suggestions.add("Michigan");
+        suggestions.add("Minnesota");
+        suggestions.add("Mississippi");
+        suggestions.add("Missouri");
+        suggestions.add("Montana");
+        suggestions.add("Louisiana");
+        return suggestions;
+    }
+
+    @UiHandler("acList")
+    void onKeyUp(KeyUpEvent e){
+        acList.showProgress(ProgressType.INDETERMINATE);
+        Timer t = new Timer() {
+            @Override
+            public void run() {
+                acList.hideProgress();
+            }
+        };
+        t.schedule(1000);
+    }
 }
