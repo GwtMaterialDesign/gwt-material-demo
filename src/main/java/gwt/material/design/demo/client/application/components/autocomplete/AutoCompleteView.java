@@ -5,9 +5,11 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Image;
+import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.MaterialSuggestionOracle;
+import gwt.material.design.client.base.Suggestion;
 import gwt.material.design.client.ui.MaterialAutoComplete;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -18,7 +20,8 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     interface Binder extends UiBinder<Widget, AutoCompleteView> {
     }
 
-    @UiField MaterialAutoComplete acList, acWithImage, acListLimit;
+    @UiField
+    MaterialAutoComplete acList, acWithImage, acListLimit, acText;
 
     @Inject
     AutoCompleteView(Binder uiBinder) {
@@ -27,6 +30,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         acList.setSuggestions(getSimpleSuggestions());
         acListLimit.setSuggestions(getSimpleSuggestions());
         acWithImage.setSuggestions(getWithImageSuggestions());
+        acText.setSuggestions(getSimpleSuggestions());
     }
 
     private MaterialSuggestionOracle getSimpleSuggestions() {

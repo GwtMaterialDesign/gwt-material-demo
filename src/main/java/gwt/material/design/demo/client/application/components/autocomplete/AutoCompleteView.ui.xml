@@ -106,5 +106,8 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;m:MaterialAutoComplete ui:field="acListLimit" placeholder="States" limit="1"/>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Autocomplete Types" description="The default type of Material Autocomplete is CHIP while the other one is TEXT type which only act as a textBox component"/>
+    <m:MaterialAutoComplete ui:field="acText" type="TEXT" placeholder="Choose only one State"/>
   </g:HTMLPanel>
 </ui:UiBinder>
