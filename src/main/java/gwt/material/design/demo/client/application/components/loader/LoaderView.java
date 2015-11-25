@@ -2,23 +2,20 @@ package gwt.material.design.demo.client.application.components.loader;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.KeyUpEvent;
-import com.google.gwt.event.dom.client.KeyUpHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Timer;
-import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.MaterialSuggestionOracle;
 import gwt.material.design.client.constants.ProgressType;
-import gwt.material.design.client.ui.*;
-import gwt.material.design.demo.client.shared.User;
+import gwt.material.design.client.ui.MaterialAutoComplete;
+import gwt.material.design.client.ui.MaterialCollapsibleItem;
+import gwt.material.design.client.ui.MaterialLoader;
+import gwt.material.design.client.ui.MaterialNavBar;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.List;
 
 public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     interface Binder extends UiBinder<Widget, LoaderView> {
