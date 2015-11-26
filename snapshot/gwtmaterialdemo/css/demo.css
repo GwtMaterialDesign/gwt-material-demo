@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden !important;
+}
+
 body {
     padding-top: 70px;
 }
