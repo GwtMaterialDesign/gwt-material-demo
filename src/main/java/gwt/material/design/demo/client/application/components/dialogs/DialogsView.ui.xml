@@ -148,5 +148,36 @@
       &emsp;&lt;m:MaterialButton text="Right" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/><br/>
       &lt;/m:MaterialTooltip><br/>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Material Cut Out" description="The MaterialCutOut is an excellent component to show users about new features and important components (buttons, labels and so) on the UI."/>
+    <m:MaterialIcon iconType="POLYMER" ui:field="btnCutOut"/>
+
+    <!-- Material CutOut -->
+    <m:MaterialCutOut ui:field="cutout" backgroundColor="blue" circle="true" opacity="0.8" textAlign="CENTER">
+      <m:MaterialTitle title="New Feature" description="Description of your new Feature" textColor="white"/>
+      <m:MaterialButton text="Close" ui:field="btnCutOutClose" textColor="blue" backgroundColor="white"/>
+    </m:MaterialCutOut>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt; -- Target Element -->
+      &lt;m:MaterialIcon iconType="POLYMER" ui:field="btnCutOut"/><br/>
+
+      &lt;m:MaterialCutOut ui:field="cutout" backgroundColor="blue" circle="true" opacity="0.8" textAlign="CENTER"><br/>
+      &emsp;&lt;m:MaterialTitle title="New Feature" description="Description of your new Feature" textColor="white"/><br/>
+      &emsp;&lt;m:MaterialButton text="Close" ui:field="btnCutOutClose" textColor="blue" backgroundColor="white"/><br/>
+      &lt;/m:MaterialCutOut><br/>  
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;@UiField MaterialCutOut cutout;<br/><br/>
+
+      &lt;-- Target Element --><br/>
+      @UiField MaterialIcon btnCutOut; <br/><br/>
+
+      @UiHandler("btnCutOut")<br/>
+      void onCutOut(ClickEvent e){<br/>
+      &emsp;cutout.setTarget(btnCutOut);<br/>
+      &emsp;cutout.openCutOut();<br/>
+      }
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

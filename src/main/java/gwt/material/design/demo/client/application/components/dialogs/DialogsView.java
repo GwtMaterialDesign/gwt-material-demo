@@ -7,9 +7,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialModal;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -19,6 +17,12 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
     @UiField
     MaterialModal modal, modalFixed, modalBottomSheet, modalClosable;
+
+    @UiField
+    MaterialCutOut cutout;
+
+    @UiField
+    MaterialIcon btnCutOut;
 
     @Inject
     DialogsView(Binder uiBinder) {
@@ -97,4 +101,14 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
         modalClosable.closeModal();
     }
 
+    @UiHandler("btnCutOut")
+    void onCutOut(ClickEvent e){
+        cutout.setTarget(btnCutOut);
+        cutout.openCutOut();
+    }
+
+    @UiHandler("btnCutOutClose")
+    void onClose(ClickEvent e){
+        cutout.closeCutOut();
+    }
 }
