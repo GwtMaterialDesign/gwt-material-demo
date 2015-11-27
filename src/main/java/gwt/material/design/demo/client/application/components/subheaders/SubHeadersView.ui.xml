@@ -8,6 +8,10 @@
     </ui:style>
 
     <m:MaterialPanel m:id="subheader-con">
+        <m:MaterialTitle title="Usage"/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialSubHeader text="Unread Messages" textColor="purple"/>
+        </demo:PrettyPre>
         <m:MaterialSubHeader text="Unread Messages" textColor="purple"/>
         <m:MaterialCollection>
             <m:MaterialCollectionItem type="AVATAR" dismissable="true">
