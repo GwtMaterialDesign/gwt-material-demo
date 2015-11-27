@@ -100,5 +100,47 @@
       }<br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Tabs with Icons">
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12">
+          <m:MaterialTab shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
+            <m:MaterialTabItem waves="YELLOW" grid="s4">
+              <m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/>
+            </m:MaterialTabItem>
+            <m:MaterialTabItem waves="YELLOW" grid="s4">
+              <m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab32" textColor="white"/>
+            </m:MaterialTabItem>
+            <m:MaterialTabItem waves="YELLOW" grid="s4">
+              <m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab33" textColor="white"/>
+            </m:MaterialTabItem>
+          </m:MaterialTab>
+        </m:MaterialColumn>
+
+        <m:MaterialColumn m:id="tab31" grid="s12">
+          <m:MaterialLabel text="Tab 1 Content"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn m:id="tab32" grid="s12">
+          <m:MaterialLabel text="Tab 2 Content"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn m:id="tab33" grid="s12">
+          <m:MaterialLabel text="Tab 3 Content"/>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+    </m:MaterialTitle>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTab shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW"><br/>
+      &emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&lt;m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/><br/>
+      &emsp;&lt;/m:MaterialTabItem><br/>
+      &emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&lt;m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab32" textColor="white"/><br/>
+      &emsp;&lt;/m:MaterialTabItem><br/>
+      &emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&lt;m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab33" textColor="white"/><br/>
+      &emsp;&lt;/m:MaterialTabItem><br/>
+      &lt;/m:MaterialTab><br/>
+    </demo:PrettyPre>
+
   </g:HTMLPanel>
 </ui:UiBinder>
