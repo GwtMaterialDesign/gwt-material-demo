@@ -19,8 +19,8 @@
 			</m:MaterialCardReveal>
 				
 			<m:MaterialCardAction>
-				<m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/nz.co.doltech/src/gwt/material/design/demo/client/panel/charts/MaterialColoredLineChart.ui.xml" text="UI Binder" textColor="white" />
-				<m:MaterialLink target="_blank" href="https://github.com/kevzlou7979/GWTMaterialDesign/blob/master/nz.co.doltech/src/gwt/material/design/demo/client/panel/charts/MaterialColoredLineChart.java" text="Java" textColor="white" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.ui.xml" text="UI Binder" textColor="white" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.java" text="Java" textColor="white" />
 			</m:MaterialCardAction>
 		</m:MaterialCard>
 	</m:MaterialColumn>
