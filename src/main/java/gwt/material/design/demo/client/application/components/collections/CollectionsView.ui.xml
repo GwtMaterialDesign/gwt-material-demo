@@ -58,7 +58,7 @@
     <m:MaterialTitle title="Secondary Content"/>
     <m:MaterialCollection header="Header Title" >
       <m:MaterialCollectionItem>
-        <m:MaterialLink text="Collecton 1"/>
+        <m:MaterialLabel text="Collecton 1"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
         </m:MaterialCollectionSecondary>
@@ -72,14 +72,14 @@
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem>
-        <m:MaterialLink text="Collecton 3"/>
+        <m:MaterialLabel text="Collecton 3"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem>
-        <m:MaterialLink text="Collecton 4"/>
+        <m:MaterialLabel text="Collecton 4"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialIcon iconType="POLYMER" iconPosition="RIGHT" waves="DEFAULT"/>
         </m:MaterialCollectionSecondary>
