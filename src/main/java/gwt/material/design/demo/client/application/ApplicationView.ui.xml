@@ -105,8 +105,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Pickers" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheaders" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" textColor="blue" waves="DEFAULT"/>
@@ -121,12 +120,9 @@
             </m:MaterialCollapsibleHeader>
             <m:MaterialCollapsibleBody>
               <m.html:UnorderedList>
-                <m:MaterialLink text="Autocomplete" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink text="CutOut" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink text="Steppers" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink text="Time Picker" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink text="Window Modal" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" textColor="blue" waves="DEFAULT"/>
               </m.html:UnorderedList>
             </m:MaterialCollapsibleBody>
           </m:MaterialCollapsibleItem>

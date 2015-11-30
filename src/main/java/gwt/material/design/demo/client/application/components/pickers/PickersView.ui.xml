@@ -17,13 +17,5 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
     </demo:PrettyPre>
-
-    <m:MaterialTitle title="Time Picker"  description="Tap between the hour and minute label in the title bar to switch between the hour or minute view. Additionally, tap on the AM/PM label in the title bar to switch between AM or PM (in 12-hour clock mode)."/>
-    <m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
-    </demo:PrettyPre>
-
   </g:HTMLPanel>
 </ui:UiBinder>

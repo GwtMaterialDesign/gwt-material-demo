@@ -18,12 +18,6 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     @UiField
     MaterialModal modal, modalFixed, modalBottomSheet, modalClosable;
 
-    @UiField
-    MaterialCutOut cutout;
-
-    @UiField
-    MaterialIcon btnCutOut;
-
     @Inject
     DialogsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -99,16 +93,5 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     @UiHandler("btnCloseModalDismiss")
     void onCloseModalDismiss(ClickEvent e) {
         modalClosable.closeModal();
-    }
-
-    @UiHandler("btnCutOut")
-    void onCutOut(ClickEvent e){
-        cutout.setTarget(btnCutOut);
-        cutout.openCutOut();
-    }
-
-    @UiHandler("btnCutOutClose")
-    void onClose(ClickEvent e){
-        cutout.closeCutOut();
     }
 }

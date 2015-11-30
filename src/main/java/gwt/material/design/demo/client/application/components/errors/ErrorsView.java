@@ -6,6 +6,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.ui.MaterialTimePicker;
 import gwt.material.design.client.base.MaterialSuggestionOracle;
 import gwt.material.design.client.ui.MaterialAutoComplete;
 import gwt.material.design.client.ui.MaterialDatePicker;
@@ -13,7 +14,6 @@ import gwt.material.design.client.ui.MaterialRange;
 import gwt.material.design.client.ui.MaterialSwitch;
 import gwt.material.design.client.ui.MaterialTextArea;
 import gwt.material.design.client.ui.MaterialTextBox;
-import gwt.material.design.client.ui.MaterialTimePicker;
 
 import javax.inject.Inject;
 

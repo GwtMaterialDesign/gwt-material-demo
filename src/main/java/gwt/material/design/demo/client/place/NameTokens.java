@@ -36,6 +36,8 @@ public class NameTokens {
     public static final String sidenavs = "!sidenavs";
     public static final String fabs = "fabs";
     public static final String subheaders = "subheaders";
+    public static final String cutouts = "cutouts";
+    public static final String timepickers = "timepickers";
 
     public static String getAbout() {
         return about;
@@ -175,5 +177,13 @@ public class NameTokens {
 
     public static String getSubheaders() {
         return subheaders;
+    }
+
+    public static String getCutouts() {
+        return cutouts;
+    }
+
+    public static String getTimepickers() {
+        return timepickers;
     }
 }
