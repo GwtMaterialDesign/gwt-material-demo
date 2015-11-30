@@ -132,3 +132,8 @@ ul.side-nav.fixed li:hover,ul.side-nav.fixed li.active {
 .side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+/** Collections **/
+ul.collection .collection-item .gwt-Label{
+    display: inline;
+}
