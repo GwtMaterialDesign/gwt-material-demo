@@ -34,8 +34,8 @@ public class NameTokens {
     public static final String templates = "!templates";
     public static final String transitions = "!transitions";
     public static final String sidenavs = "!sidenavs";
-    public static final String subheaders = "subheaders";
     public static final String fabs = "fabs";
+    public static final String subheaders = "subheaders";
 
     public static String getAbout() {
         return about;
@@ -169,11 +169,11 @@ public class NameTokens {
         return sidenavs;
     }
 
-    public static String getSubheaders() {
-        return subheaders;
-    }
-
     public static String getFabs() {
         return fabs;
+    }
+
+    public static String getSubheaders() {
+        return subheaders;
     }
 }

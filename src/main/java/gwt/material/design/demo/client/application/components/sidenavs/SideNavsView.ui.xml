@@ -7,24 +7,27 @@
     <m:MaterialPanel>
         <g:HTMLPanel>
             <!-- PREREQUISITES -->
-            <m:MaterialTitle title="Prerequisite" description="Set first your MaterialNavBar sidebar attribute e.g sidebar='your_sidebar_name' then on MaterialSideNav add your sideBar name e.g sideBar='your_sidebar_name'."/>
+            <m:MaterialTitle title="Definition" description="First, Define your sidenav inside the navbar component by adding activates='SIDENAV_ID' then on SideNav you will need to set the id : m:id='SIDENAV_ID'."/>
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>
+                &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidenav"><br/>
                 &emsp;&lt;-- NavBar content here --><br/>
                 &lt;/m:MaterialNavBar><br/><br/>
+                &lt;m:MaterialSideNav m:id="mysidenav" type="OPEN" width="200" closeOnClick="false"><br/>
+                &emsp;&lt;!-- SideNav Links here --><br/>
+                &lt;/m:MaterialSideNav><br/>
             </demo:PrettyPre>
 
             <!-- SIDENAV PROPERTIES -->
             <m:MaterialTitle title="SideNav Properties"/>
             <blockquote>
                 <p>width - The width of your desired sidenav</p>
-                <p>name - The name of your sidenav needed by navbar to activate it.</p>
+                <p>m:id - The Id of your sidenav, required by material navbar component.</p>
                 <p>type - There are 4 Permanent Types (No Nav Menu) [open, float, card, clip] and 2 Persistent Types (With Nav Menu) [close, mini].</p>
                 <p>closeOnClick - If clicked on the sidemenu items it will be automatically closed if set to true.</p>
             </blockquote>
 
             <!-- OPEN Permanent -->
-            <m:MaterialTitle title="Open Permanent" description="The sidebar will be visible by default on large screen devices."/>
+            <m:MaterialTitle title="Open Permanent" description="The sidebar will be visible by default on large screen devices. You may require to set your padding-left of your MaterialHeader, MaterialMain and MaterialFooter components based on your SideNav Width "/>
             <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10042710/e988f530-61a1-11e5-8e25-71ab5adf9d12.png"/>
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"><br/>

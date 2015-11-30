@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.subheaders;
+package gwt.material.design.demo.client.application.addins.subheaders;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 

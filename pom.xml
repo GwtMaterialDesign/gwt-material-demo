@@ -177,6 +177,11 @@
             <artifactId>gwt-material-themes</artifactId>
             <version>${gwt-material.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.gwtmaterialdesign</groupId>
+            <artifactId>gwt-material-addins</artifactId>
+            <version>${gwt-material.version}</version>
+        </dependency>
 
         <!-- App Engine -->
         <dependency>
