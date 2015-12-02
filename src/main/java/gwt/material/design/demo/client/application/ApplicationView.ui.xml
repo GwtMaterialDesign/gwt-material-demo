@@ -122,6 +122,7 @@
               <m.html:UnorderedList>
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" textColor="blue" waves="DEFAULT"/>
               </m.html:UnorderedList>
             </m:MaterialCollapsibleBody>
