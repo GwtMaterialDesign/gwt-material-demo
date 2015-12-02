@@ -5,7 +5,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialTab;
-import gwt.material.design.client.ui.MaterialTabItem;
 
 import javax.inject.Inject;
 
@@ -13,7 +12,8 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     interface Binder extends UiBinder<Widget, TabsView> {
     }
 
-    @UiField MaterialTab tab2;
+    @UiField
+    MaterialTab tab2;
 
     @Inject
     TabsView(Binder uiBinder) {

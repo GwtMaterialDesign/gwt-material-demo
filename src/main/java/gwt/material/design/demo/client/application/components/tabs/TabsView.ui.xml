@@ -142,5 +142,36 @@
       &lt;/m:MaterialTab><br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Changing Indicator Color"/>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="s12">
+        <m:MaterialTab shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink iconType="PHONE" text="Recents" href="#tab41" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab42" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab43" textColor="white"/>
+          </m:MaterialTabItem>
+        </m:MaterialTab>
+      </m:MaterialColumn>
+
+      <m:MaterialColumn m:id="tab41" grid="s12">
+        <m:MaterialLabel text="Tab 1 Content"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn m:id="tab42" grid="s12">
+        <m:MaterialLabel text="Tab 2 Content"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn m:id="tab43" grid="s12">
+        <m:MaterialLabel text="Tab 3 Content"/>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialTab shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+    </demo:PrettyPre>
+
   </g:HTMLPanel>
 </ui:UiBinder>
