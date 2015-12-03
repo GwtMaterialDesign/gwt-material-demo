@@ -17,7 +17,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper;
+    MaterialStepper stepper, stepperCard;
 
     @Inject
     SteppersView(Binder uiBinder) {
@@ -38,5 +38,21 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     void onFinish(ClickEvent e){
         MaterialToast.fireToast("All done.");
         stepper.goToStep(1);
+    }
+
+    @UiHandler({"btnContinue11", "btnContinue21", "btnContinue31"})
+    void onNextStep1(ClickEvent e){
+        stepperCard.nextStep();
+    }
+
+    @UiHandler({"btnPrev11", "btnPrev21", "btnPrev31"})
+    void onPrevStep1(ClickEvent e){
+        stepperCard.prevStep();
+    }
+
+    @UiHandler("btnContinue31")
+    void onFinish1(ClickEvent e){
+        MaterialToast.fireToast("All done.");
+        stepperCard.goToStep(1);
     }
 }
