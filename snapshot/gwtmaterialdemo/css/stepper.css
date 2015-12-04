@@ -75,9 +75,11 @@
 .stepper.horizontal .step .title {
     margin-left: 8px;
 }
+.stepper.horizontal .step .description{
+    margin-left: 40px;
+}
 .stepper.horizontal .step .body {
     line-height: initial;
-    margin-right: 50px;
 }
 .stepper.horizontal .step > div:last-child {
     position: absolute;
@@ -86,6 +88,7 @@
     margin-left: 0px;
     padding-left: 0px;
     margin: auto;
+    left: 0px;
 }
 .stepper .step.inactive .title{
     color: #C9C9C9;
@@ -96,4 +99,20 @@
 }
 .stepper .step.inactive .circle{
     background-color: #9e9e9e;
+}
+.stepper.horizontal .step > div:first-child i {
+    font-size: 36px;
+    vertical-align: middle;
+}
+.stepper .step.success > div:first-child i,.stepper .step.success .title, .stepper .step.success .description {
+    color: #2196f3;
+}
+.stepper .step.error > div:first-child i,.stepper .step.error .title, .stepper .step.error .description {
+    color: #f44336;
+}
+.stepper .step.success > div:first-child .description, .stepper .step.error > div:first-child .description {
+    margin-left: 44px;
+}
+.stepper .step.success .title, .stepper .step.error .title{
+    font-weight: 600;
 }
