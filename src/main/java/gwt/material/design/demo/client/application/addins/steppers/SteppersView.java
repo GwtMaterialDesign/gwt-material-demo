@@ -7,6 +7,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.ui.MaterialStepper;
+import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -18,7 +20,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal, stepperHori;
+    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperError;
 
     @UiField
     MaterialModal modalStepper;
@@ -41,7 +43,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @UiHandler("btnContinue3")
     void onFinish(ClickEvent e){
         MaterialToast.fireToast("All done.");
-        stepper.goToStep(1);
+        stepper.reset();
     }
 
     @UiHandler({"btnContinue01", "btnContinue02", "btnContinue03"})
@@ -57,7 +59,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @UiHandler("btnContinue03")
     void onFinish0(ClickEvent e){
         MaterialToast.fireToast("All done.");
-        stepperHori.goToStep(1);
+        stepperHori.reset();
     }
 
     @UiHandler({"btnContinue11", "btnContinue12", "btnContinue13"})
@@ -73,7 +75,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @UiHandler("btnContinue13")
     void onFinish1(ClickEvent e){
         MaterialToast.fireToast("All done.");
-        stepperCard.goToStep(1);
+        stepperCard.reset();
     }
 
     @UiHandler("btnModal")
@@ -94,6 +96,23 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @UiHandler("btnContinue33")
     void onFinish3(ClickEvent e){
         MaterialToast.fireToast("All done.");
+        stepperModal.reset();
         modalStepper.closeModal();
+    }
+
+    @UiHandler({"btnError", "btnError1", "btnError2"})
+    void onError(ClickEvent e){
+        stepperError.setError("Alert Error");
+    }
+
+    @UiHandler({"btnSuccess", "btnSuccess1", "btnSuccess2"})
+    void onSuccess(ClickEvent e){
+        stepperError.nextStep();
+    }
+
+    @UiHandler("btnSuccess2")
+    void onSucess2(ClickEvent e){
+        MaterialToast.fireToast("All done.");
+        stepperError.reset();
     }
 }

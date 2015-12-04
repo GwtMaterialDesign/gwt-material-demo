@@ -60,6 +60,7 @@
           @UiHandler("btnContinue3")<br/>
           void onFinish(ClickEvent e){<br/>
           &emsp;MaterialToast.fireToast("All done.");<br/>
+          stepper.reset();<br/>
           }<br/>
         </demo:PrettyPre>
 
@@ -151,5 +152,30 @@
           &emsp;&lt;/m:MaterialModalContent><br/>
           &lt;/m:MaterialModal><br/>
         </demo:PrettyPre>
+
+      <m:MaterialTitle hideOn="HIDE_ON_SMALL" title="Error on Steppers" description="You can specify a global stepper error by : setError('Error Message'); " />
+      <m:MaterialPanel hideOn="HIDE_ON_SMALL" height="500px" width="100%">
+        <m.addins:MaterialStepper ui:field="stepperError" axis="HORIZONTAL" shadow="1">
+          <m.addins:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+            <m:MaterialButton ui:field="btnError" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+            <m:MaterialButton ui:field="btnSuccess" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+          <m.addins:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+            <m:MaterialButton ui:field="btnError1" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+            <m:MaterialButton ui:field="btnSuccess1" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+          <m.addins:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+            <m:MaterialButton ui:field="btnError2" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+            <m:MaterialButton ui:field="btnSuccess2" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+        </m.addins:MaterialStepper>
+      </m:MaterialPanel>
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        &emsp;// Setting error message<br/>
+        stepper.setError("Sample error message");
+      </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
