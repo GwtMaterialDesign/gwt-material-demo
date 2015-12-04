@@ -18,7 +18,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal;
+    MaterialStepper stepper, stepperCard, stepperModal, stepperHori;
 
     @UiField
     MaterialModal modalStepper;
@@ -42,6 +42,22 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     void onFinish(ClickEvent e){
         MaterialToast.fireToast("All done.");
         stepper.goToStep(1);
+    }
+
+    @UiHandler({"btnContinue01", "btnContinue02", "btnContinue03"})
+    void onNextStep0(ClickEvent e){
+        stepperHori.nextStep();
+    }
+
+    @UiHandler({"btnPrev01", "btnPrev02", "btnPrev03"})
+    void onPrevStep0(ClickEvent e){
+        stepperHori.prevStep();
+    }
+
+    @UiHandler("btnContinue03")
+    void onFinish0(ClickEvent e){
+        MaterialToast.fireToast("All done.");
+        stepperHori.goToStep(1);
     }
 
     @UiHandler({"btnContinue11", "btnContinue12", "btnContinue13"})
