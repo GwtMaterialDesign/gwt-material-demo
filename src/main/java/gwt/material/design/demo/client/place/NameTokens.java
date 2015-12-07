@@ -39,6 +39,7 @@ public class NameTokens {
     public static final String cutouts = "cutouts";
     public static final String timepickers = "timepickers";
     public static final String steppers = "steppers";
+    public static final String pathAnimator = "pathAnimator";
 
     public static String getAbout() {
         return about;
@@ -190,5 +191,9 @@ public class NameTokens {
 
     public static String getSteppers() {
         return steppers;
+    }
+
+    public static String getPathAnimator() {
+        return pathAnimator;
     }
 }
