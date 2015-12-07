@@ -1,18 +1,15 @@
 package gwt.material.design.demo.client.application.addins.pathanimator;
 
-import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.ui.MaterialPathAnimator;
 import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialColumn;
 import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialPathAnimator;
 
 import javax.inject.Inject;
 
