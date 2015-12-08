@@ -24,12 +24,95 @@
       }
     </ui:style>
     <g:HTMLPanel>
-      <m:MaterialTitle title="Usage"/>
-      <m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
+      <m:MaterialTitle title="Markup Definition" description="FIRST , Set your source and target components."/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;!-- Source Component --><br/>
+        &lt;m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" /><br/><br/>
 
-      <m:MaterialPanel ui:field="panelTarget" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}">
+        &lt;!-- Target Component --><br/>
+        .overlayPanel{<br/>
+        &emsp;width: 100%;<br/>
+        &emsp;height: 100%;<br/>
+        &emsp;top: 0;<br/>
+        &emsp;left: 0;<br/>
+        &emsp;right: 0;<br/>
+        &emsp;bottom: 0;<br/>
+        &emsp;position: fixed;<br/>
+        &emsp;z-index: 1000;<br/>
+        &emsp;opacity: 0;<br/>
+        &emsp;visibility: hidden;<br/>
+        }<br/><br/>
+
+        &lt;m:MaterialPanel ui:field="panelTarget" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}"><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/><br/>
+        &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" /><br/>
+        &lt;/m:MaterialPanel><br/>
+      </demo:PrettyPre>
+
+      <m:MaterialTitle title="Source Logic" description="SECOND , Add an event into your source component and inside that method you need to call MaterialPathAnimator.animate() method and include the callback method for your target component."/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;@UiHandler("btnSource")<br/>
+        void onSource(ClickEvent e) {<br/>
+        &emsp;Runnable callback = new Runnable() {<br/>
+        &emsp;&emsp;@Override<br/>
+        &emsp;&emsp;&emsp;public void run() {<br/>
+        &emsp;&emsp;&emsp;panelTarget.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);<br/>
+        &emsp;&emsp;&emsp;panelTarget.setOpacity(1);<br/>
+        &emsp;&emsp;}<br/>
+        &emsp;};<br/>
+        &emsp;MaterialPathAnimator.animate(btnSource.getElement(), panelTarget.getElement(), callback);<br/>
+        }
+      </demo:PrettyPre>
+
+      <m:MaterialTitle title="Target Logic" description="THIRD , In order to go to the original position of Source component from Target component. You need to set the resting styles of target component and call MaterialPathAnimator.animate() method to apply the deslightful animation."/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;@UiHandler("btnClose")<br/>
+        void onClose(ClickEvent e) {<br/>
+        &emsp;panelTarget.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);<br/>
+        &emsp;panelTarget.setOpacity(0);<br/>
+        &emsp;MaterialPathAnimator.animate(panelTarget.getElement(), btnSource.getElement());<br/>
+        }
+      </demo:PrettyPre>
+
+      <m:MaterialTitle title="1. Button to Overlay Panel" description="Source Component : MaterialButton and Target Component : MaterialPanel"/>
+      <m:MaterialButton ui:field="btnSource1" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
+
+      <m:MaterialTitle title="2. Card to Overlay Panel" description="Source Component : Card and Target Component : Material Panel"/>
+      <m:MaterialRow>
+        <m:MaterialCard ui:field="card" backgroundColor="pink darken-1" grid="l4">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink ui:field="btnSource2" text="Turn to overlay panel" iconType="POLYMER"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialRow>
+
+      <m:MaterialTitle title="3. Button to Card" description="Source Component : MaterialButton and Target Component : Material Card"/>
+      <m:MaterialButton ui:field="btnSource3" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
+
+      <m:MaterialRow>
+        <m:MaterialCard ui:field="panelTarget3" backgroundColor="pink darken-1" grid="l4" opacity="0">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink ui:field="btnClose3" text="Turn it back" iconType="POLYMER"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialRow>
+
+      <m:MaterialPanel ui:field="panelTarget1" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}">
         <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
-        <m:MaterialButton ui:field="btnClose" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+        <m:MaterialButton ui:field="btnClose1" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTarget2" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnClose2" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
       </m:MaterialPanel>
     </g:HTMLPanel>
 </ui:UiBinder>

@@ -38,7 +38,7 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-    <m:MaterialListBox ui:field="lstOptions" placeholder="Choose an option">
+    <m:MaterialListBox ui:field="lstOptions">
       <item>Option 1</item>
       <item>Option 2</item>
       <item>Option 3</item>
