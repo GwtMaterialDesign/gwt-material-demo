@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.transitions;
+package gwt.material.design.demo.client.application.animations.meaningful;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -14,18 +14,23 @@ import gwt.material.design.client.ui.html.UnorderedList;
 
 import javax.inject.Inject;
 
-public class TransitionsView extends ViewImpl implements TransitionsPresenter.MyView {
-    interface Binder extends UiBinder<Widget, TransitionsView> {
+
+public class MeaningfulAnimationsView extends ViewImpl implements MeaningfulAnimationsPresenter.MyView {
+    interface Binder extends UiBinder<Widget, MeaningfulAnimationsView> {
     }
 
-    @UiField UnorderedList listContainer;
-    @UiField MaterialImage image;
-    @UiField MaterialRow gridPanel;
+    @UiField
+    UnorderedList listContainer;
+
+    @UiField
+    MaterialImage image;
+
+    @UiField
+    MaterialRow gridPanel;
 
     @Inject
-    TransitionsView(Binder uiBinder) {
+    MeaningfulAnimationsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
         gridPanel.getElement().getStyle().setOpacity(0);
     }
 
@@ -48,4 +53,5 @@ public class TransitionsView extends ViewImpl implements TransitionsPresenter.My
     void onFade(ClickEvent e) {
         MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
     }
+
 }

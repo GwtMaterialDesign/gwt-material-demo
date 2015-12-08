@@ -24,7 +24,7 @@
       }
     </ui:style>
     <g:HTMLPanel>
-      <m:MaterialTitle title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+      <m:MaterialTitle title="Usage"/>
       <m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
 
       <m:MaterialPanel ui:field="panelTarget" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}">

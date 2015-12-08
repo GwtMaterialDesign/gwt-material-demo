@@ -22,7 +22,6 @@ import gwt.material.design.demo.client.application.components.pickers.PickersMod
 import gwt.material.design.demo.client.application.components.scrollspy.ScrollspyModule;
 import gwt.material.design.demo.client.application.components.sidenavs.SideNavsModule;
 import gwt.material.design.demo.client.application.components.tabs.TabsModule;
-import gwt.material.design.demo.client.application.components.transitions.TransitionsModule;
 
 public class ComponentsModule extends AbstractGinModule {
 
@@ -47,7 +46,6 @@ public class ComponentsModule extends AbstractGinModule {
         install(new PickersModule());
         install(new ScrollspyModule());
         install(new TabsModule());
-        install(new TransitionsModule());
         install(new SideNavsModule());
         install(new FABModule());
     }

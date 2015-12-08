@@ -4,6 +4,7 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import gwt.material.design.demo.client.application.about.AboutModule;
 import gwt.material.design.demo.client.application.addins.AddinsModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
+import gwt.material.design.demo.client.application.animations.AnimationsModule;
 import gwt.material.design.demo.client.application.charts.ChartsModule;
 import gwt.material.design.demo.client.application.components.ComponentsModule;
 import gwt.material.design.demo.client.application.gettingstarted.GettingStartedModule;
@@ -22,6 +23,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new GettingStartedModule());
         install(new AddinsModule());
         install(new AboutModule());
+        install(new AnimationsModule());
         install(new ComponentsModule());
         install(new StyleModule());
         install(new ChartsModule());

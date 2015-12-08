@@ -40,6 +40,8 @@ public class NameTokens {
     public static final String timepickers = "timepickers";
     public static final String steppers = "steppers";
     public static final String pathAnimator = "pathAnimator";
+    public static final String coreAnimations = "coreAnimations";
+    public static final String meaningful = "meaningful";
 
     public static String getAbout() {
         return about;
@@ -195,5 +197,13 @@ public class NameTokens {
 
     public static String getPathAnimator() {
         return pathAnimator;
+    }
+
+    public static String getCoreAnimations() {
+        return coreAnimations;
+    }
+
+    public static String getMeaningful() {
+        return meaningful;
     }
 }

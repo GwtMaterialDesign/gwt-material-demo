@@ -113,6 +113,18 @@
               </m.html:UnorderedList>
             </m:MaterialCollapsibleBody>
           </m:MaterialCollapsibleItem>
+          <!-- ANIMATIONS -->
+          <m:MaterialCollapsibleItem>
+            <m:MaterialCollapsibleHeader waves="DEFAULT">
+              <m:MaterialLink text="Animations" iconType="PLAY_CIRCLE_OUTLINE" textColor="blue"/>
+            </m:MaterialCollapsibleHeader>
+            <m:MaterialCollapsibleBody>
+              <m.html:UnorderedList>
+                <m:MaterialLink targetHistoryToken="{tokens.getCoreAnimations}" text="Core" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getMeaningful}" text="Meaningful" textColor="blue" waves="DEFAULT"/>
+              </m.html:UnorderedList>
+            </m:MaterialCollapsibleBody>
+          </m:MaterialCollapsibleItem>
           <!-- ADDINS -->
           <m:MaterialCollapsibleItem>
             <m:MaterialCollapsibleHeader waves="DEFAULT">
