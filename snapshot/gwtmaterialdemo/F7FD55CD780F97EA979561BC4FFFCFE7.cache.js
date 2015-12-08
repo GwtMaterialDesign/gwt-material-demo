@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'E4C7934ACC4C6687168FE4744B8FD36D';
+var $strongName = 'F7FD55CD780F97EA979561BC4FFFCFE7';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {8:1, 73:1, 45:1, 49:1}, $intern_3 = {80:1, 8:1}, $intern_4 = {8:1, 11:1}, $intern_5 = {8:1, 28:1, 11:1}, $intern_6 = {65:1, 32:1, 8:1, 27:1, 18:1}, $intern_7 = {67:1, 32:1, 8:1, 27:1, 18:1}, $intern_8 = {161:1, 32:1, 8:1, 27:1, 18:1}, $intern_9 = {32:1, 136:1, 8:1, 27:1, 18:1}, $intern_10 = {32:1, 137:1, 8:1, 27:1, 18:1}, $intern_11 = {32:1, 138:1, 8:1, 27:1, 18:1}, $intern_12 = {88:1, 8:1, 27:1, 18:1}, $intern_13 = {32:1, 195:1, 8:1, 27:1, 18:1}, $intern_14 = 1448, $intern_15 = {10:1}, $intern_16 = {193:1, 8:1, 73:1, 45:1, 49:1}, $intern_17 = 4194303, $intern_18 = 1048575, $intern_19 = 17592186044416, $intern_20 = 4194304, $intern_21 = 524288, $intern_22 = {238:1, 8:1}, $intern_23 = {23:1, 22:1}, $intern_24 = {25:1, 10:1, 24:1, 23:1, 13:1, 22:1, 17:1}, $intern_25 = 1459, $intern_26 = {25:1, 10:1, 24:1, 23:1, 119:1, 13:1, 22:1, 17:1}, $intern_27 = 32768, $intern_28 = 16384, $intern_29 = {25:1, 10:1, 24:1, 23:1, 29:1, 13:1, 22:1, 17:1}, $intern_30 = {25:1, 10:1, 24:1, 23:1, 29:1, 266:1, 13:1, 22:1, 17:1}, $intern_31 = {25:1, 10:1, 24:1, 34:1, 23:1, 13:1, 22:1, 17:1}, $intern_32 = {25:1, 10:1, 24:1, 23:1, 29:1, 13:1, 91:1, 22:1, 17:1}, $intern_33 = {90:1}, $intern_34 = {317:1, 21:1}, $intern_35 = {25:1, 10:1, 24:1, 23:1, 29:1, 266:1, 13:1, 218:1, 22:1, 17:1}, $intern_36 = {8:1, 175:1, 49:1}, $intern_37 = {25:1, 10:1, 24:1, 23:1, 13:1, 91:1, 22:1, 17:1}, $intern_38 = {123:1}, $intern_39 = {10:1, 13:1, 47:1}, $intern_40 = {13:1}, $intern_41 = {315:1, 21:1}, $intern_42 = {237:1}, $intern_43 = {316:1, 21:1, 10:1, 1418:1}, $intern_44 = 1451, $intern_45 = {10:1, 62:1, 58:1}, $intern_46 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1}, $intern_47 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 159:1, 39:1, 35:1}, $intern_48 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 159:1, 39:1, 35:1, 26:1}, $intern_49 = {31:1, 21:1}, $intern_50 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 84:1}, $intern_51 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 41:1}, $intern_52 = {10:1, 38:1}, $intern_53 = {10:1, 38:1, 62:1, 58:1}, $intern_54 = {69:1}, $intern_55 = {318:1, 21:1}, $intern_56 = 4000, $intern_57 = {8:1, 73:1, 85:1, 45:1, 49:1}, $intern_58 = {8:1, 135:1, 73:1, 45:1, 49:1}, $intern_59 = {90:1, 158:1}, $intern_60 = 1445, $intern_61 = {90:1, 97:1}, $intern_62 = {79:1}, $intern_63 = {8:1, 90:1, 97:1}, $intern_64 = {8:1, 90:1, 158:1}, $intern_65 = {265:1}, $intern_66 = {8:1, 157:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {8:1, 73:1, 45:1, 49:1}, $intern_3 = {82:1, 8:1}, $intern_4 = {8:1, 11:1}, $intern_5 = {8:1, 28:1, 11:1}, $intern_6 = {65:1, 32:1, 8:1, 27:1, 18:1}, $intern_7 = {67:1, 32:1, 8:1, 27:1, 18:1}, $intern_8 = {161:1, 32:1, 8:1, 27:1, 18:1}, $intern_9 = {32:1, 136:1, 8:1, 27:1, 18:1}, $intern_10 = {32:1, 137:1, 8:1, 27:1, 18:1}, $intern_11 = {32:1, 138:1, 8:1, 27:1, 18:1}, $intern_12 = {88:1, 8:1, 27:1, 18:1}, $intern_13 = {32:1, 195:1, 8:1, 27:1, 18:1}, $intern_14 = 1446, $intern_15 = {10:1}, $intern_16 = {193:1, 8:1, 73:1, 45:1, 49:1}, $intern_17 = 4194303, $intern_18 = 1048575, $intern_19 = 17592186044416, $intern_20 = 4194304, $intern_21 = 524288, $intern_22 = {238:1, 8:1}, $intern_23 = {23:1, 22:1}, $intern_24 = {25:1, 10:1, 24:1, 23:1, 13:1, 22:1, 17:1}, $intern_25 = 1457, $intern_26 = {25:1, 10:1, 24:1, 23:1, 119:1, 13:1, 22:1, 17:1}, $intern_27 = 16384, $intern_28 = 1048576, $intern_29 = 16777216, $intern_30 = 33554432, $intern_31 = 67108864, $intern_32 = {25:1, 10:1, 24:1, 23:1, 29:1, 13:1, 22:1, 17:1}, $intern_33 = {25:1, 10:1, 24:1, 23:1, 29:1, 266:1, 13:1, 22:1, 17:1}, $intern_34 = {25:1, 10:1, 24:1, 34:1, 23:1, 13:1, 22:1, 17:1}, $intern_35 = {25:1, 10:1, 24:1, 23:1, 29:1, 13:1, 91:1, 22:1, 17:1}, $intern_36 = {90:1}, $intern_37 = {317:1, 21:1}, $intern_38 = {25:1, 10:1, 24:1, 23:1, 29:1, 266:1, 13:1, 218:1, 22:1, 17:1}, $intern_39 = {8:1, 175:1, 49:1}, $intern_40 = {25:1, 10:1, 24:1, 23:1, 13:1, 91:1, 22:1, 17:1}, $intern_41 = {122:1}, $intern_42 = {10:1, 13:1, 47:1}, $intern_43 = {13:1}, $intern_44 = {315:1, 21:1}, $intern_45 = {237:1}, $intern_46 = {316:1, 21:1, 10:1, 1416:1}, $intern_47 = 1449, $intern_48 = {10:1, 62:1, 58:1}, $intern_49 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1}, $intern_50 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 159:1, 39:1, 35:1}, $intern_51 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 159:1, 39:1, 35:1, 26:1}, $intern_52 = {31:1, 21:1}, $intern_53 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 84:1}, $intern_54 = {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 41:1}, $intern_55 = {10:1, 38:1}, $intern_56 = {10:1, 38:1, 62:1, 58:1}, $intern_57 = {69:1}, $intern_58 = {318:1, 21:1}, $intern_59 = 4000, $intern_60 = {8:1, 73:1, 85:1, 45:1, 49:1}, $intern_61 = {8:1, 135:1, 73:1, 45:1, 49:1}, $intern_62 = {90:1, 158:1}, $intern_63 = 1443, $intern_64 = {90:1, 97:1}, $intern_65 = {79:1}, $intern_66 = {8:1, 90:1, 97:1}, $intern_67 = {8:1, 90:1, 158:1}, $intern_68 = {265:1}, $intern_69 = {8:1, 157:1};
 var _, initFnList_0, prototypesByTypeId_0 = {}, permutationId = -1;
 function typeMarkerFn(){
 }
@@ -153,7 +153,7 @@ _.toString = function(){
   return this.toString$();
 }
 ;
-stringCastMap = {8:1, 1473:1, 27:1, 2:1};
+stringCastMap = {8:1, 1470:1, 27:1, 2:1};
 modernizeBrowser();
 function toStringSimple(obj){
   return obj.toString?obj.toString():'[JavaScriptObject]';
@@ -479,15 +479,15 @@ function Animation$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1081, 1, {}, Animation$1);
+defineClass(1076, 1, {}, Animation$1);
 _.execute = function execute(timestamp){
   $execute(this, timestamp);
 }
 ;
-var Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 1081);
-defineClass(1461, 1, {});
+var Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 1076);
+defineClass(1459, 1, {});
 var instance_0;
-var Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 1461);
+var Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 1459);
 defineClass(289, 1, {289:1});
 var Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationHandle', 289);
 function AnimationSchedulerImplStandard(){
@@ -507,24 +507,24 @@ function requestImpl(cb, element){
   return {id:handle};
 }
 
-defineClass(1378, 1461, {}, AnimationSchedulerImplStandard);
+defineClass(1376, 1459, {}, AnimationSchedulerImplStandard);
 _.requestAnimationFrame_0 = function requestAnimationFrame(callback, element){
   var handle;
   handle = requestImpl(callback, element);
   return new AnimationSchedulerImplStandard$1(handle);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 1378);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 1376);
 function AnimationSchedulerImplStandard$1(val$handle){
   this.val$handle2 = val$handle;
 }
 
-defineClass(1379, 289, {289:1}, AnimationSchedulerImplStandard$1);
+defineClass(1377, 289, {289:1}, AnimationSchedulerImplStandard$1);
 _.cancel = function cancel(){
   cancelImpl(this.val$handle2);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 1379);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 1377);
 function $cancelAnimationFrame(this$static, requestId){
   $remove_12(this$static.animationRequests, requestId);
   this$static.animationRequests.array.length == 0 && $cancel_0(this$static.timer);
@@ -532,8 +532,8 @@ function $cancelAnimationFrame(this$static, requestId){
 
 function $updateAnimations(this$static){
   var curAnimations, duration, requestId, requestId$index, requestId$max;
-  curAnimations = initDim(Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit, {1501:1, 8:1, 11:1}, 313, this$static.animationRequests.array.length, 0, 1);
-  curAnimations = dynamicCast($toArray_0(this$static.animationRequests, curAnimations), 1501);
+  curAnimations = initDim(Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$AnimationHandleImpl_2_classLit, {1498:1, 8:1, 11:1}, 313, this$static.animationRequests.array.length, 0, 1);
+  curAnimations = dynamicCast($toArray_0(this$static.animationRequests, curAnimations), 1498);
   duration = new Duration;
   for (requestId$index = 0 , requestId$max = curAnimations.length; requestId$index < requestId$max; ++requestId$index) {
     requestId = curAnimations[requestId$index];
@@ -548,16 +548,16 @@ function AnimationSchedulerImplTimer(){
   this.timer = new AnimationSchedulerImplTimer$1(this);
 }
 
-defineClass(1380, 1461, {}, AnimationSchedulerImplTimer);
+defineClass(1378, 1459, {}, AnimationSchedulerImplTimer);
 _.requestAnimationFrame_0 = function requestAnimationFrame_0(callback, element){
   var requestId;
   requestId = new AnimationSchedulerImplTimer$AnimationHandleImpl(this, callback);
-  $add_31(this.animationRequests, requestId);
+  $add_32(this.animationRequests, requestId);
   this.animationRequests.array.length == 1 && $schedule(this.timer, 16);
   return requestId;
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 1380);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 1378);
 function $cancel_0(this$static){
   if (!this$static.timerId) {
     return;
@@ -608,7 +608,7 @@ function setTimeout_0(func, time){
   return $wnd.setTimeout(func, time);
 }
 
-defineClass(127, 1, {});
+defineClass(126, 1, {});
 _.fire = function fire(scheduleCancelCounter){
   if (scheduleCancelCounter != this.cancelCounter) {
     return;
@@ -620,18 +620,18 @@ _.fire = function fire(scheduleCancelCounter){
 _.cancelCounter = 0;
 _.isRepeating = false;
 _.timerId = null;
-var Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 127);
+var Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 126);
 function AnimationSchedulerImplTimer$1(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(1381, 127, {}, AnimationSchedulerImplTimer$1);
+defineClass(1379, 126, {}, AnimationSchedulerImplTimer$1);
 _.run = function run(){
   $updateAnimations(this.this$01);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 1381);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 1379);
 function AnimationSchedulerImplTimer$AnimationHandleImpl(this$0, callback){
   this.this$01 = this$0;
   this.callback_0 = callback;
@@ -669,7 +669,7 @@ function AriaValueAttribute(name_0){
 
 defineClass(102, 419, {}, AriaValueAttribute);
 _.getSingleValue = function getSingleValue(value_0){
-  return dynamicCast(value_0, 1499).getAriaValue();
+  return dynamicCast(value_0, 1496).getAriaValue();
 }
 ;
 var Lcom_google_gwt_aria_client_AriaValueAttribute_2_classLit = createForClass('com.google.gwt.aria.client', 'AriaValueAttribute', 102);
@@ -740,8 +740,8 @@ function CodeDownloadException(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(1449, 45, $intern_2, CodeDownloadException);
-var Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 1449);
+defineClass(1447, 45, $intern_2, CodeDownloadException);
+var Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 1447);
 function Duration(){
   this.start_0 = now_1();
 }
@@ -890,8 +890,8 @@ function unsafeEval(json){
 
 var escapeTable_0;
 var Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback');
-defineClass(1429, 1, {});
-var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 1429);
+defineClass(1427, 1, {});
+var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 1427);
 function $clinit_ScriptInjector(){
   $clinit_ScriptInjector = emptyMethod;
   TOP_WINDOW = $wnd;
@@ -1605,7 +1605,7 @@ function scheduleFixedDelayImpl(cmd, delayMs){
   $wnd.setTimeout(callback, delayMs);
 }
 
-defineClass(464, 1429, {}, SchedulerImpl);
+defineClass(464, 1427, {}, SchedulerImpl);
 _.flushRunning = false;
 _.shouldBeRunning = false;
 var INSTANCE;
@@ -1709,12 +1709,12 @@ function extractFunctionName(fnName){
 }
 
 var collector;
-defineClass(1440, 1, {});
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 1440);
+defineClass(1438, 1, {});
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 1438);
 function StackTraceCreator$CollectorLegacy(){
 }
 
-defineClass(436, 1440, {}, StackTraceCreator$CollectorLegacy);
+defineClass(436, 1438, {}, StackTraceCreator$CollectorLegacy);
 _.collect = function collect(t, thrownIgnored){
   var seen = {}, name_1;
   t.fnStack = [];
@@ -1743,7 +1743,7 @@ function $clinit_StackTraceCreator$CollectorModern(){
   Error.stackTraceLimit = 64;
 }
 
-defineClass(1441, 1440, {});
+defineClass(1439, 1438, {});
 _.collect = function collect_0(t, jsThrown){
   function fixIE(e){
     if (!('stack' in e)) {
@@ -1761,12 +1761,12 @@ _.collect = function collect_0(t, jsThrown){
   t.__gwt$backingJsError = backingJsError;
 }
 ;
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 1441);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 1439);
 function StackTraceCreator$CollectorModernNoSourceMap(){
   $clinit_StackTraceCreator$CollectorModern();
 }
 
-defineClass(437, 1441, {}, StackTraceCreator$CollectorModernNoSourceMap);
+defineClass(437, 1439, {}, StackTraceCreator$CollectorModernNoSourceMap);
 var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 437);
 function checkArrayType(expression, errorMessage){
   if (!expression) {
@@ -1985,22 +1985,20 @@ function trimClassName(className){
   return className;
 }
 
-function $createScriptElement(doc, source){
-  var elem;
-  elem = $createElement(doc, 'script');
-  elem.text = source;
-  return elem;
+function $createElement(doc, tag){
+  return doc.createElement(tag);
 }
 
 function $cssSetOpacity(style, value_0){
   style.opacity = value_0;
 }
 
-function $getFirstChildElement(elem){
-  var child = elem.firstChild;
-  while (child && child.nodeType != 1)
-    child = child.nextSibling;
-  return child;
+function $eventStopPropagation(evt){
+  evt.stopPropagation();
+}
+
+function $getAttribute(elem, name_0){
+  return elem.getAttribute(name_0) || '';
 }
 
 function $getNextSiblingElement(elem){
@@ -2016,89 +2014,40 @@ function $getParentElement(node){
   return parent_0;
 }
 
-function $createElement(doc, tagName){
-  var container, elem;
-  if (tagName.indexOf(':') != -1) {
-    container = (!doc.__gwt_container && (doc.__gwt_container = doc.createElement('div')) , doc.__gwt_container);
-    $setInnerHTML(container, '<' + tagName + '/>');
-    elem = $getFirstChildElement(container);
-    container.removeChild(elem);
-    return elem;
-  }
-  return doc.createElement(tagName);
+function $selectAdd(select, option, before){
+  select.add(option, before);
 }
 
-function $createHtmlEvent(doc, type_0){
-  var evt = doc.createEventObject();
-  evt.type = type_0;
+function $createHtmlEvent(doc, type_0, canBubble, cancelable){
+  var evt = doc.createEvent('HTMLEvents');
+  evt.initEvent(type_0, canBubble, cancelable);
   return evt;
 }
 
 function $dispatchEvent(target, evt){
-  target.fireEvent('on' + evt.type, evt);
+  target.dispatchEvent(evt);
 }
 
 function $eventPreventDefault(evt){
-  evt.returnValue = false;
+  evt.preventDefault();
 }
 
-function $eventStopPropagation(evt){
-  evt.cancelBubble = true;
-}
-
-function $getAttribute(elem, name_0){
-  var attr = elem.getAttribute(name_0);
-  return attr == null?'':attr + '';
-}
-
-function $selectAdd(select, option, before){
-  before?select.add(option, before.index):select.add(option);
+function $isOrHasChild(parent_0, child){
+  return parent_0.contains(child);
 }
 
 function $setInnerText(elem, text_0){
-  elem.innerText = text_0 || '';
+  elem.textContent = text_0 || '';
 }
 
-function isOrHasChildImpl(parent_0, child){
-  if (parent_0.nodeType != 1 && parent_0.nodeType != 9) {
-    return parent_0 == child;
-  }
-  if (child.nodeType != 1) {
-    child = child.parentNode;
-    if (!child) {
-      return false;
-    }
-  }
-  if (parent_0.nodeType == 9) {
-    return parent_0 === child || parent_0.body && parent_0.body.contains(child);
-  }
-   else {
-    return parent_0 === child || parent_0.contains(child);
-  }
+function $eventGetCurrentTarget(event_0){
+  return event_0.currentTarget || $wnd;
 }
 
-var currentEventTarget;
-function $cssSetOpacityImpl(style, value_0){
-  style.filter = 'alpha(opacity=' + value_0 * 100 + ')';
+function $getTabIndex(elem){
+  return typeof elem.tabIndex != 'undefined'?elem.tabIndex:-1;
 }
 
-function isIE8_0(){
-  if (!isIE8Detected) {
-    isIE8 = isIE8Impl();
-    isIE8Detected = true;
-  }
-  return isIE8;
-}
-
-function isIE8Impl(){
-  var ua = navigator.userAgent.toLowerCase();
-  if (ua.indexOf('msie') != -1 && $doc.documentMode == 8) {
-    return true;
-  }
-  return false;
-}
-
-var isIE8 = false, isIE8Detected = false;
 function $createUniqueId(this$static){
   !this$static.gwt_uid && (this$static.gwt_uid = 1);
   return 'gwt-uid-' + this$static.gwt_uid++;
@@ -2126,10 +2075,6 @@ function $setSrc_0(this$static, src_0){
 
 function $setWidth(this$static, width_0){
   this$static.width = width_0;
-}
-
-function $setOpacity(this$static, value_0){
-  isIE8_0()?$cssSetOpacityImpl(this$static, value_0):$cssSetOpacity(this$static, value_0);
 }
 
 function $setPropertyImpl(this$static, name_0, value_0){
@@ -2220,182 +2165,182 @@ function Style$Cursor$1(){
   Style$Cursor.call(this, 'DEFAULT', 0);
 }
 
-defineClass(792, 65, $intern_6, Style$Cursor$1);
+defineClass(788, 65, $intern_6, Style$Cursor$1);
 _.getCssName = function getCssName(){
   return 'default';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/1', 792, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/1', 788, null);
 function Style$Cursor$10(){
   Style$Cursor.call(this, 'SE_RESIZE', 9);
 }
 
-defineClass(801, 65, $intern_6, Style$Cursor$10);
+defineClass(797, 65, $intern_6, Style$Cursor$10);
 _.getCssName = function getCssName_0(){
   return 'se-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/10', 801, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/10', 797, null);
 function Style$Cursor$11(){
   Style$Cursor.call(this, 'SW_RESIZE', 10);
 }
 
-defineClass(802, 65, $intern_6, Style$Cursor$11);
+defineClass(798, 65, $intern_6, Style$Cursor$11);
 _.getCssName = function getCssName_1(){
   return 'sw-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/11', 802, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/11', 798, null);
 function Style$Cursor$12(){
   Style$Cursor.call(this, 'S_RESIZE', 11);
 }
 
-defineClass(803, 65, $intern_6, Style$Cursor$12);
+defineClass(799, 65, $intern_6, Style$Cursor$12);
 _.getCssName = function getCssName_2(){
   return 's-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/12', 803, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/12', 799, null);
 function Style$Cursor$13(){
   Style$Cursor.call(this, 'W_RESIZE', 12);
 }
 
-defineClass(804, 65, $intern_6, Style$Cursor$13);
+defineClass(800, 65, $intern_6, Style$Cursor$13);
 _.getCssName = function getCssName_3(){
   return 'w-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/13', 804, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/13', 800, null);
 function Style$Cursor$14(){
   Style$Cursor.call(this, 'TEXT', 13);
 }
 
-defineClass(805, 65, $intern_6, Style$Cursor$14);
+defineClass(801, 65, $intern_6, Style$Cursor$14);
 _.getCssName = function getCssName_4(){
   return 'text';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/14', 805, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/14', 801, null);
 function Style$Cursor$15(){
   Style$Cursor.call(this, 'WAIT', 14);
 }
 
-defineClass(806, 65, $intern_6, Style$Cursor$15);
+defineClass(802, 65, $intern_6, Style$Cursor$15);
 _.getCssName = function getCssName_5(){
   return 'wait';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/15', 806, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/15', 802, null);
 function Style$Cursor$16(){
   Style$Cursor.call(this, 'HELP', 15);
 }
 
-defineClass(807, 65, $intern_6, Style$Cursor$16);
+defineClass(803, 65, $intern_6, Style$Cursor$16);
 _.getCssName = function getCssName_6(){
   return 'help';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/16', 807, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/16', 803, null);
 function Style$Cursor$17(){
   Style$Cursor.call(this, 'COL_RESIZE', 16);
 }
 
-defineClass(808, 65, $intern_6, Style$Cursor$17);
+defineClass(804, 65, $intern_6, Style$Cursor$17);
 _.getCssName = function getCssName_7(){
   return 'col-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/17', 808, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/17', 804, null);
 function Style$Cursor$18(){
   Style$Cursor.call(this, 'ROW_RESIZE', 17);
 }
 
-defineClass(809, 65, $intern_6, Style$Cursor$18);
+defineClass(805, 65, $intern_6, Style$Cursor$18);
 _.getCssName = function getCssName_8(){
   return 'row-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$18_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/18', 809, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$18_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/18', 805, null);
 function Style$Cursor$2(){
   Style$Cursor.call(this, 'AUTO', 1);
 }
 
-defineClass(793, 65, $intern_6, Style$Cursor$2);
+defineClass(789, 65, $intern_6, Style$Cursor$2);
 _.getCssName = function getCssName_9(){
   return 'auto';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/2', 793, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/2', 789, null);
 function Style$Cursor$3(){
   Style$Cursor.call(this, 'CROSSHAIR', 2);
 }
 
-defineClass(794, 65, $intern_6, Style$Cursor$3);
+defineClass(790, 65, $intern_6, Style$Cursor$3);
 _.getCssName = function getCssName_10(){
   return 'crosshair';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/3', 794, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/3', 790, null);
 function Style$Cursor$4(){
   Style$Cursor.call(this, 'POINTER', 3);
 }
 
-defineClass(795, 65, $intern_6, Style$Cursor$4);
+defineClass(791, 65, $intern_6, Style$Cursor$4);
 _.getCssName = function getCssName_11(){
   return 'pointer';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/4', 795, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/4', 791, null);
 function Style$Cursor$5(){
   Style$Cursor.call(this, 'MOVE', 4);
 }
 
-defineClass(796, 65, $intern_6, Style$Cursor$5);
+defineClass(792, 65, $intern_6, Style$Cursor$5);
 _.getCssName = function getCssName_12(){
   return 'move';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/5', 796, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/5', 792, null);
 function Style$Cursor$6(){
   Style$Cursor.call(this, 'E_RESIZE', 5);
 }
 
-defineClass(797, 65, $intern_6, Style$Cursor$6);
+defineClass(793, 65, $intern_6, Style$Cursor$6);
 _.getCssName = function getCssName_13(){
   return 'e-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/6', 797, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/6', 793, null);
 function Style$Cursor$7(){
   Style$Cursor.call(this, 'NE_RESIZE', 6);
 }
 
-defineClass(798, 65, $intern_6, Style$Cursor$7);
+defineClass(794, 65, $intern_6, Style$Cursor$7);
 _.getCssName = function getCssName_14(){
   return 'ne-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/7', 798, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/7', 794, null);
 function Style$Cursor$8(){
   Style$Cursor.call(this, 'NW_RESIZE', 7);
 }
 
-defineClass(799, 65, $intern_6, Style$Cursor$8);
+defineClass(795, 65, $intern_6, Style$Cursor$8);
 _.getCssName = function getCssName_15(){
   return 'nw-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/8', 799, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/8', 795, null);
 function Style$Cursor$9(){
   Style$Cursor.call(this, 'N_RESIZE', 8);
 }
 
-defineClass(800, 65, $intern_6, Style$Cursor$9);
+defineClass(796, 65, $intern_6, Style$Cursor$9);
 _.getCssName = function getCssName_16(){
   return 'n-resize';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Cursor$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/9', 800, null);
+var Lcom_google_gwt_dom_client_Style$Cursor$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor/9', 796, null);
 function $clinit_Style$Display(){
   $clinit_Style$Display = emptyMethod;
   NONE = new Style$Display$1;
@@ -2433,172 +2378,172 @@ function Style$Display$1(){
   Style$Display.call(this, 'NONE', 0);
 }
 
-defineClass(810, 67, $intern_7, Style$Display$1);
+defineClass(806, 67, $intern_7, Style$Display$1);
 _.getCssName = function getCssName_17(){
   return 'none';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/1', 810, null);
+var Lcom_google_gwt_dom_client_Style$Display$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/1', 806, null);
 function Style$Display$10(){
   Style$Display.call(this, 'TABLE_COLUMN_GROUP', 9);
 }
 
-defineClass(819, 67, $intern_7, Style$Display$10);
+defineClass(815, 67, $intern_7, Style$Display$10);
 _.getCssName = function getCssName_18(){
   return 'table-column-group';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/10', 819, null);
+var Lcom_google_gwt_dom_client_Style$Display$10_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/10', 815, null);
 function Style$Display$11(){
   Style$Display.call(this, 'TABLE_HEADER_GROUP', 10);
 }
 
-defineClass(820, 67, $intern_7, Style$Display$11);
+defineClass(816, 67, $intern_7, Style$Display$11);
 _.getCssName = function getCssName_19(){
   return 'table-header-group';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/11', 820, null);
+var Lcom_google_gwt_dom_client_Style$Display$11_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/11', 816, null);
 function Style$Display$12(){
   Style$Display.call(this, 'TABLE_FOOTER_GROUP', 11);
 }
 
-defineClass(821, 67, $intern_7, Style$Display$12);
+defineClass(817, 67, $intern_7, Style$Display$12);
 _.getCssName = function getCssName_20(){
   return 'table-footer-group';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/12', 821, null);
+var Lcom_google_gwt_dom_client_Style$Display$12_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/12', 817, null);
 function Style$Display$13(){
   Style$Display.call(this, 'TABLE_ROW_GROUP', 12);
 }
 
-defineClass(822, 67, $intern_7, Style$Display$13);
+defineClass(818, 67, $intern_7, Style$Display$13);
 _.getCssName = function getCssName_21(){
   return 'table-row-group';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/13', 822, null);
+var Lcom_google_gwt_dom_client_Style$Display$13_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/13', 818, null);
 function Style$Display$14(){
   Style$Display.call(this, 'TABLE_CELL', 13);
 }
 
-defineClass(823, 67, $intern_7, Style$Display$14);
+defineClass(819, 67, $intern_7, Style$Display$14);
 _.getCssName = function getCssName_22(){
   return 'table-cell';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/14', 823, null);
+var Lcom_google_gwt_dom_client_Style$Display$14_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/14', 819, null);
 function Style$Display$15(){
   Style$Display.call(this, 'TABLE_COLUMN', 14);
 }
 
-defineClass(824, 67, $intern_7, Style$Display$15);
+defineClass(820, 67, $intern_7, Style$Display$15);
 _.getCssName = function getCssName_23(){
   return 'table-column';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/15', 824, null);
+var Lcom_google_gwt_dom_client_Style$Display$15_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/15', 820, null);
 function Style$Display$16(){
   Style$Display.call(this, 'TABLE_ROW', 15);
 }
 
-defineClass(825, 67, $intern_7, Style$Display$16);
+defineClass(821, 67, $intern_7, Style$Display$16);
 _.getCssName = function getCssName_24(){
   return 'table-row';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/16', 825, null);
+var Lcom_google_gwt_dom_client_Style$Display$16_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/16', 821, null);
 function Style$Display$17(){
   Style$Display.call(this, 'INITIAL', 16);
 }
 
-defineClass(826, 67, $intern_7, Style$Display$17);
+defineClass(822, 67, $intern_7, Style$Display$17);
 _.getCssName = function getCssName_25(){
   return 'initial';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/17', 826, null);
+var Lcom_google_gwt_dom_client_Style$Display$17_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/17', 822, null);
 function Style$Display$2(){
   Style$Display.call(this, 'BLOCK', 1);
 }
 
-defineClass(811, 67, $intern_7, Style$Display$2);
+defineClass(807, 67, $intern_7, Style$Display$2);
 _.getCssName = function getCssName_26(){
   return 'block';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/2', 811, null);
+var Lcom_google_gwt_dom_client_Style$Display$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/2', 807, null);
 function Style$Display$3(){
   Style$Display.call(this, 'INLINE', 2);
 }
 
-defineClass(812, 67, $intern_7, Style$Display$3);
+defineClass(808, 67, $intern_7, Style$Display$3);
 _.getCssName = function getCssName_27(){
   return 'inline';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/3', 812, null);
+var Lcom_google_gwt_dom_client_Style$Display$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/3', 808, null);
 function Style$Display$4(){
   Style$Display.call(this, 'INLINE_BLOCK', 3);
 }
 
-defineClass(813, 67, $intern_7, Style$Display$4);
+defineClass(809, 67, $intern_7, Style$Display$4);
 _.getCssName = function getCssName_28(){
   return 'inline-block';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/4', 813, null);
+var Lcom_google_gwt_dom_client_Style$Display$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/4', 809, null);
 function Style$Display$5(){
   Style$Display.call(this, 'INLINE_TABLE', 4);
 }
 
-defineClass(814, 67, $intern_7, Style$Display$5);
+defineClass(810, 67, $intern_7, Style$Display$5);
 _.getCssName = function getCssName_29(){
   return 'inline-table';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/5', 814, null);
+var Lcom_google_gwt_dom_client_Style$Display$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/5', 810, null);
 function Style$Display$6(){
   Style$Display.call(this, 'LIST_ITEM', 5);
 }
 
-defineClass(815, 67, $intern_7, Style$Display$6);
+defineClass(811, 67, $intern_7, Style$Display$6);
 _.getCssName = function getCssName_30(){
   return 'list-item';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/6', 815, null);
+var Lcom_google_gwt_dom_client_Style$Display$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/6', 811, null);
 function Style$Display$7(){
   Style$Display.call(this, 'RUN_IN', 6);
 }
 
-defineClass(816, 67, $intern_7, Style$Display$7);
+defineClass(812, 67, $intern_7, Style$Display$7);
 _.getCssName = function getCssName_31(){
   return 'run-in';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/7', 816, null);
+var Lcom_google_gwt_dom_client_Style$Display$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/7', 812, null);
 function Style$Display$8(){
   Style$Display.call(this, 'TABLE', 7);
 }
 
-defineClass(817, 67, $intern_7, Style$Display$8);
+defineClass(813, 67, $intern_7, Style$Display$8);
 _.getCssName = function getCssName_32(){
   return 'table';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/8', 817, null);
+var Lcom_google_gwt_dom_client_Style$Display$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/8', 813, null);
 function Style$Display$9(){
   Style$Display.call(this, 'TABLE_CAPTION', 8);
 }
 
-defineClass(818, 67, $intern_7, Style$Display$9);
+defineClass(814, 67, $intern_7, Style$Display$9);
 _.getCssName = function getCssName_33(){
   return 'table-caption';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Display$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/9', 818, null);
+var Lcom_google_gwt_dom_client_Style$Display$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Display/9', 814, null);
 function $clinit_Style$Float(){
   $clinit_Style$Float = emptyMethod;
   LEFT = new Style$Float$1;
@@ -2622,32 +2567,32 @@ function Style$Float$1(){
   Style$Float.call(this, 'LEFT', 0);
 }
 
-defineClass(827, 161, $intern_8, Style$Float$1);
+defineClass(823, 161, $intern_8, Style$Float$1);
 _.getCssName = function getCssName_34(){
   return 'left';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Float$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/1', 827, null);
+var Lcom_google_gwt_dom_client_Style$Float$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/1', 823, null);
 function Style$Float$2(){
   Style$Float.call(this, 'RIGHT', 1);
 }
 
-defineClass(828, 161, $intern_8, Style$Float$2);
+defineClass(824, 161, $intern_8, Style$Float$2);
 _.getCssName = function getCssName_35(){
   return 'right';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Float$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/2', 828, null);
+var Lcom_google_gwt_dom_client_Style$Float$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/2', 824, null);
 function Style$Float$3(){
   Style$Float.call(this, 'NONE', 2);
 }
 
-defineClass(829, 161, $intern_8, Style$Float$3);
+defineClass(825, 161, $intern_8, Style$Float$3);
 _.getCssName = function getCssName_36(){
   return 'none';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Float$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/3', 829, null);
+var Lcom_google_gwt_dom_client_Style$Float$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Float/3', 825, null);
 function $clinit_Style$Overflow(){
   $clinit_Style$Overflow = emptyMethod;
   VISIBLE = new Style$Overflow$1;
@@ -2672,42 +2617,42 @@ function Style$Overflow$1(){
   Style$Overflow.call(this, 'VISIBLE', 0);
 }
 
-defineClass(839, 136, $intern_9, Style$Overflow$1);
+defineClass(835, 136, $intern_9, Style$Overflow$1);
 _.getCssName = function getCssName_46(){
   return 'visible';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Overflow$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/1', 839, null);
+var Lcom_google_gwt_dom_client_Style$Overflow$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/1', 835, null);
 function Style$Overflow$2(){
   Style$Overflow.call(this, 'HIDDEN', 1);
 }
 
-defineClass(840, 136, $intern_9, Style$Overflow$2);
+defineClass(836, 136, $intern_9, Style$Overflow$2);
 _.getCssName = function getCssName_47(){
   return 'hidden';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Overflow$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/2', 840, null);
+var Lcom_google_gwt_dom_client_Style$Overflow$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/2', 836, null);
 function Style$Overflow$3(){
   Style$Overflow.call(this, 'SCROLL', 2);
 }
 
-defineClass(841, 136, $intern_9, Style$Overflow$3);
+defineClass(837, 136, $intern_9, Style$Overflow$3);
 _.getCssName = function getCssName_48(){
   return 'scroll';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Overflow$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/3', 841, null);
+var Lcom_google_gwt_dom_client_Style$Overflow$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/3', 837, null);
 function Style$Overflow$4(){
   Style$Overflow.call(this, 'AUTO', 3);
 }
 
-defineClass(842, 136, $intern_9, Style$Overflow$4);
+defineClass(838, 136, $intern_9, Style$Overflow$4);
 _.getCssName = function getCssName_49(){
   return 'auto';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Overflow$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/4', 842, null);
+var Lcom_google_gwt_dom_client_Style$Overflow$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow/4', 838, null);
 function $clinit_Style$Position(){
   $clinit_Style$Position = emptyMethod;
   STATIC = new Style$Position$1;
@@ -2732,42 +2677,42 @@ function Style$Position$1(){
   Style$Position.call(this, 'STATIC', 0);
 }
 
-defineClass(843, 137, $intern_10, Style$Position$1);
+defineClass(839, 137, $intern_10, Style$Position$1);
 _.getCssName = function getCssName_50(){
   return 'static';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Position$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/1', 843, null);
+var Lcom_google_gwt_dom_client_Style$Position$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/1', 839, null);
 function Style$Position$2(){
   Style$Position.call(this, 'RELATIVE', 1);
 }
 
-defineClass(844, 137, $intern_10, Style$Position$2);
+defineClass(840, 137, $intern_10, Style$Position$2);
 _.getCssName = function getCssName_51(){
   return 'relative';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Position$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/2', 844, null);
+var Lcom_google_gwt_dom_client_Style$Position$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/2', 840, null);
 function Style$Position$3(){
   Style$Position.call(this, 'ABSOLUTE', 2);
 }
 
-defineClass(845, 137, $intern_10, Style$Position$3);
+defineClass(841, 137, $intern_10, Style$Position$3);
 _.getCssName = function getCssName_52(){
   return 'absolute';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Position$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/3', 845, null);
+var Lcom_google_gwt_dom_client_Style$Position$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/3', 841, null);
 function Style$Position$4(){
   Style$Position.call(this, 'FIXED', 3);
 }
 
-defineClass(846, 137, $intern_10, Style$Position$4);
+defineClass(842, 137, $intern_10, Style$Position$4);
 _.getCssName = function getCssName_53(){
   return 'fixed';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Position$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/4', 846, null);
+var Lcom_google_gwt_dom_client_Style$Position$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position/4', 842, null);
 function $clinit_Style$TextAlign(){
   $clinit_Style$TextAlign = emptyMethod;
   CENTER = new Style$TextAlign$1;
@@ -2792,42 +2737,42 @@ function Style$TextAlign$1(){
   Style$TextAlign.call(this, 'CENTER', 0);
 }
 
-defineClass(849, 138, $intern_11, Style$TextAlign$1);
+defineClass(845, 138, $intern_11, Style$TextAlign$1);
 _.getCssName = function getCssName_56(){
   return 'center';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$TextAlign$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/1', 849, null);
+var Lcom_google_gwt_dom_client_Style$TextAlign$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/1', 845, null);
 function Style$TextAlign$2(){
   Style$TextAlign.call(this, 'JUSTIFY', 1);
 }
 
-defineClass(850, 138, $intern_11, Style$TextAlign$2);
+defineClass(846, 138, $intern_11, Style$TextAlign$2);
 _.getCssName = function getCssName_57(){
   return 'justify';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$TextAlign$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/2', 850, null);
+var Lcom_google_gwt_dom_client_Style$TextAlign$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/2', 846, null);
 function Style$TextAlign$3(){
   Style$TextAlign.call(this, 'LEFT', 2);
 }
 
-defineClass(851, 138, $intern_11, Style$TextAlign$3);
+defineClass(847, 138, $intern_11, Style$TextAlign$3);
 _.getCssName = function getCssName_58(){
   return 'left';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$TextAlign$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/3', 851, null);
+var Lcom_google_gwt_dom_client_Style$TextAlign$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/3', 847, null);
 function Style$TextAlign$4(){
   Style$TextAlign.call(this, 'RIGHT', 3);
 }
 
-defineClass(852, 138, $intern_11, Style$TextAlign$4);
+defineClass(848, 138, $intern_11, Style$TextAlign$4);
 _.getCssName = function getCssName_59(){
   return 'right';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$TextAlign$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/4', 852, null);
+var Lcom_google_gwt_dom_client_Style$TextAlign$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/TextAlign/4', 848, null);
 function $clinit_Style$Unit(){
   $clinit_Style$Unit = emptyMethod;
   PX = new Style$Unit$1;
@@ -2862,92 +2807,92 @@ function Style$Unit$1(){
   Style$Unit.call(this, 'PX', 0);
 }
 
-defineClass(783, 88, $intern_12, Style$Unit$1);
+defineClass(779, 88, $intern_12, Style$Unit$1);
 _.getType = function getType(){
   return 'px';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/1', 783, null);
+var Lcom_google_gwt_dom_client_Style$Unit$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/1', 779, null);
 function Style$Unit$2(){
   Style$Unit.call(this, 'PCT', 1);
 }
 
-defineClass(784, 88, $intern_12, Style$Unit$2);
+defineClass(780, 88, $intern_12, Style$Unit$2);
 _.getType = function getType_0(){
   return '%';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/2', 784, null);
+var Lcom_google_gwt_dom_client_Style$Unit$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/2', 780, null);
 function Style$Unit$3(){
   Style$Unit.call(this, 'EM', 2);
 }
 
-defineClass(785, 88, $intern_12, Style$Unit$3);
+defineClass(781, 88, $intern_12, Style$Unit$3);
 _.getType = function getType_1(){
   return 'em';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/3', 785, null);
+var Lcom_google_gwt_dom_client_Style$Unit$3_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/3', 781, null);
 function Style$Unit$4(){
   Style$Unit.call(this, 'EX', 3);
 }
 
-defineClass(786, 88, $intern_12, Style$Unit$4);
+defineClass(782, 88, $intern_12, Style$Unit$4);
 _.getType = function getType_2(){
   return 'ex';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/4', 786, null);
+var Lcom_google_gwt_dom_client_Style$Unit$4_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/4', 782, null);
 function Style$Unit$5(){
   Style$Unit.call(this, 'PT', 4);
 }
 
-defineClass(787, 88, $intern_12, Style$Unit$5);
+defineClass(783, 88, $intern_12, Style$Unit$5);
 _.getType = function getType_3(){
   return 'pt';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/5', 787, null);
+var Lcom_google_gwt_dom_client_Style$Unit$5_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/5', 783, null);
 function Style$Unit$6(){
   Style$Unit.call(this, 'PC', 5);
 }
 
-defineClass(788, 88, $intern_12, Style$Unit$6);
+defineClass(784, 88, $intern_12, Style$Unit$6);
 _.getType = function getType_4(){
   return 'pc';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/6', 788, null);
+var Lcom_google_gwt_dom_client_Style$Unit$6_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/6', 784, null);
 function Style$Unit$7(){
   Style$Unit.call(this, 'IN', 6);
 }
 
-defineClass(789, 88, $intern_12, Style$Unit$7);
+defineClass(785, 88, $intern_12, Style$Unit$7);
 _.getType = function getType_5(){
   return 'in';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/7', 789, null);
+var Lcom_google_gwt_dom_client_Style$Unit$7_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/7', 785, null);
 function Style$Unit$8(){
   Style$Unit.call(this, 'CM', 7);
 }
 
-defineClass(790, 88, $intern_12, Style$Unit$8);
+defineClass(786, 88, $intern_12, Style$Unit$8);
 _.getType = function getType_6(){
   return 'cm';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/8', 790, null);
+var Lcom_google_gwt_dom_client_Style$Unit$8_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/8', 786, null);
 function Style$Unit$9(){
   Style$Unit.call(this, 'MM', 8);
 }
 
-defineClass(791, 88, $intern_12, Style$Unit$9);
+defineClass(787, 88, $intern_12, Style$Unit$9);
 _.getType = function getType_7(){
   return 'mm';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Unit$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/9', 791, null);
+var Lcom_google_gwt_dom_client_Style$Unit$9_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Unit/9', 787, null);
 function $clinit_Style$Unit$Map(){
   $clinit_Style$Unit$Map = emptyMethod;
   $MAP = createValueOfMap(($clinit_Style$Unit() , initValues(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Unit_2_classLit, 1), $intern_5, 88, 0, [PX, PCT, EM, EX, PT, PC, IN, CM, MM])));
@@ -2976,22 +2921,22 @@ function Style$Visibility$1(){
   Style$Visibility.call(this, 'VISIBLE', 0);
 }
 
-defineClass(853, 195, $intern_13, Style$Visibility$1);
+defineClass(849, 195, $intern_13, Style$Visibility$1);
 _.getCssName = function getCssName_60(){
   return 'visible';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Visibility$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Visibility/1', 853, null);
+var Lcom_google_gwt_dom_client_Style$Visibility$1_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Visibility/1', 849, null);
 function Style$Visibility$2(){
   Style$Visibility.call(this, 'HIDDEN', 1);
 }
 
-defineClass(854, 195, $intern_13, Style$Visibility$2);
+defineClass(850, 195, $intern_13, Style$Visibility$2);
 _.getCssName = function getCssName_61(){
   return 'hidden';
 }
 ;
-var Lcom_google_gwt_dom_client_Style$Visibility$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Visibility/2', 854, null);
+var Lcom_google_gwt_dom_client_Style$Visibility$2_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Visibility/2', 850, null);
 function $clinit_StyleInjector(){
   $clinit_StyleInjector = emptyMethod;
   toInject = [];
@@ -3006,19 +2951,19 @@ function flush(){
   toReturn = null;
   if (toInjectAtStart.length != 0) {
     css = toInjectAtStart.join('');
-    maybeReturn = $injectStyleSheetAtStart(($clinit_StyleInjector$StyleInjectorImpl() , css));
+    maybeReturn = $injectStyleSheetAtStart(($clinit_StyleInjector$StyleInjectorImpl() , IMPL), css);
     !toInjectAtStart && (toReturn = maybeReturn);
     $setLength(toInjectAtStart, 0);
   }
   if (toInject.length != 0) {
     css = toInject.join('');
-    maybeReturn = $injectStyleSheet(($clinit_StyleInjector$StyleInjectorImpl() , css));
+    maybeReturn = $injectStyleSheet(($clinit_StyleInjector$StyleInjectorImpl() , IMPL), css);
     !toInject && (toReturn = maybeReturn);
     $setLength(toInject, 0);
   }
   if (toInjectAtEnd.length != 0) {
     css = toInjectAtEnd.join('');
-    maybeReturn = $injectStyleSheetAtEnd(($clinit_StyleInjector$StyleInjectorImpl() , css));
+    maybeReturn = $injectStyleSheet(($clinit_StyleInjector$StyleInjectorImpl() , IMPL), css);
     !toInjectAtEnd && (toReturn = maybeReturn);
     $setLength(toInjectAtEnd, 0);
   }
@@ -3044,91 +2989,65 @@ var flusher, needsInjection = false, toInject, toInjectAtEnd, toInjectAtStart;
 function StyleInjector$1(){
 }
 
-defineClass(1348, 1, {}, StyleInjector$1);
+defineClass(1346, 1, {}, StyleInjector$1);
 _.execute_1 = function execute_4(){
   ($clinit_StyleInjector() , needsInjection) && flush();
 }
 ;
-var Lcom_google_gwt_dom_client_StyleInjector$1_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/1', 1348);
+var Lcom_google_gwt_dom_client_StyleInjector$1_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/1', 1346);
 function $clinit_StyleInjector$StyleInjectorImpl(){
   $clinit_StyleInjector$StyleInjectorImpl = emptyMethod;
-  $clinit_StyleInjector$StyleInjectorImplIE();
+  IMPL = new StyleInjector$StyleInjectorImpl;
 }
 
-function $clinit_StyleInjector$StyleInjectorImplIE(){
-  $clinit_StyleInjector$StyleInjectorImplIE = emptyMethod;
-  $clinit_StyleInjector$StyleInjectorImpl();
-  styleSheetLengths = initDim(I_classLit, $intern_3, 0, 31, 7, 1);
-}
-
-function $appendToStyleSheet(idx, contents, append){
+function $createElement_0(contents){
   var style;
-  style = $doc.styleSheets[idx];
-  append?(style.cssText += contents , undefined):(style.cssText = contents + style.cssText , undefined);
+  style = $doc.createElement('style');
+  $setPropertyString(style, 'language', 'text/css');
+  $setInnerText(style, contents);
   return style;
 }
 
-function $createNewStyleSheet(contents){
+function $getHead(this$static){
+  var elt;
+  if (!this$static.head_0) {
+    elt = $doc.getElementsByTagName('head')[0];
+    this$static.head_0 = elt;
+  }
+  return this$static.head_0;
+}
+
+function $injectStyleSheet(this$static, contents){
   var style;
-  style = $doc.createStyleSheet();
-  style.cssText = contents;
+  style = $createElement_0(contents);
+  $appendChild($getHead(this$static), style);
   return style;
 }
 
-function $injectStyleSheet(contents){
-  var i, len, numStyles, shortestIdx, shortestLen;
-  numStyles = getDocumentStyleCount();
-  if (numStyles < 31) {
-    return $createNewStyleSheet(contents);
-  }
-   else {
-    shortestLen = $intern_0;
-    shortestIdx = -1;
-    for (i = 0; i < 31; i++) {
-      len = styleSheetLengths[i];
-      len == 0 && (len = styleSheetLengths[i] = $doc.styleSheets[i].cssText.length);
-      if (len <= shortestLen) {
-        shortestLen = len;
-        shortestIdx = i;
-      }
-    }
-    styleSheetLengths[shortestIdx] += contents.length;
-    return $appendToStyleSheet(shortestIdx, contents, true);
-  }
+function $injectStyleSheetAtStart(this$static, contents){
+  var style;
+  style = $createElement_0(contents);
+  $insertBefore($getHead(this$static), style, this$static.head_0.firstChild);
+  return style;
 }
 
-function $injectStyleSheetAtEnd(contents){
-  var documentStyleCount;
-  documentStyleCount = getDocumentStyleCount();
-  if (documentStyleCount == 0) {
-    return $createNewStyleSheet(contents);
-  }
-  return $appendToStyleSheet(documentStyleCount - 1, contents, true);
+function StyleInjector$StyleInjectorImpl(){
 }
 
-function $injectStyleSheetAtStart(contents){
-  if (getDocumentStyleCount() == 0) {
-    return $createNewStyleSheet(contents);
-  }
-  return $appendToStyleSheet(0, contents, false);
-}
-
-function getDocumentStyleCount(){
-  return $doc.styleSheets.length;
-}
-
-var styleSheetLengths;
-defineClass(1447, 1, {});
+defineClass(1345, 1, {}, StyleInjector$StyleInjectorImpl);
+var IMPL;
+var Lcom_google_gwt_dom_client_StyleInjector$StyleInjectorImpl_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/StyleInjectorImpl', 1345);
+defineClass(1445, 1, {});
 _.toString$ = function toString_3(){
   return 'An event type';
 }
 ;
-var Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 1447);
+var Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 1445);
 function $overrideSource(this$static, source){
   this$static.source = source;
 }
 
-defineClass($intern_14, 1447, {});
+defineClass($intern_14, 1445, {});
 _.revive = function revive(){
   this.dead = false;
   this.source = null;
@@ -3163,13 +3082,13 @@ function fireNativeEvent(nativeEvent, handlerSource, relativeElem){
   }
 }
 
-defineClass(1456, $intern_14, {});
+defineClass(1454, $intern_14, {});
 _.getAssociatedType = function getAssociatedType(){
   return this.getAssociatedType_0();
 }
 ;
 var registered;
-var Lcom_google_gwt_event_dom_client_DomEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DomEvent', 1456);
+var Lcom_google_gwt_event_dom_client_DomEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DomEvent', 1454);
 function $clinit_ChangeEvent(){
   $clinit_ChangeEvent = emptyMethod;
   TYPE_0 = new DomEvent$Type('change', new ChangeEvent);
@@ -3178,7 +3097,7 @@ function $clinit_ChangeEvent(){
 function ChangeEvent(){
 }
 
-defineClass(1289, 1456, {}, ChangeEvent);
+defineClass(1287, 1454, {}, ChangeEvent);
 _.dispatch = function dispatch_0(handler){
   dynamicCast(handler, 318).onChange(this);
 }
@@ -3188,11 +3107,11 @@ _.getAssociatedType_0 = function getAssociatedType_1(){
 }
 ;
 var TYPE_0;
-var Lcom_google_gwt_event_dom_client_ChangeEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ChangeEvent', 1289);
-defineClass(1457, 1456, {});
-var Lcom_google_gwt_event_dom_client_HumanInputEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'HumanInputEvent', 1457);
-defineClass(1458, 1457, {});
-var Lcom_google_gwt_event_dom_client_MouseEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseEvent', 1458);
+var Lcom_google_gwt_event_dom_client_ChangeEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ChangeEvent', 1287);
+defineClass(1455, 1454, {});
+var Lcom_google_gwt_event_dom_client_HumanInputEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'HumanInputEvent', 1455);
+defineClass(1456, 1455, {});
+var Lcom_google_gwt_event_dom_client_MouseEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseEvent', 1456);
 function $clinit_ClickEvent(){
   $clinit_ClickEvent = emptyMethod;
   TYPE_1 = new DomEvent$Type('click', new ClickEvent);
@@ -3201,7 +3120,7 @@ function $clinit_ClickEvent(){
 function ClickEvent(){
 }
 
-defineClass(1049, 1458, {}, ClickEvent);
+defineClass(1045, 1456, {}, ClickEvent);
 _.dispatch = function dispatch_1(handler){
   dynamicCast(handler, 31).onClick(this);
 }
@@ -3211,7 +3130,7 @@ _.getAssociatedType_0 = function getAssociatedType_2(){
 }
 ;
 var TYPE_1;
-var Lcom_google_gwt_event_dom_client_ClickEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ClickEvent', 1049);
+var Lcom_google_gwt_event_dom_client_ClickEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ClickEvent', 1045);
 defineClass(553, 1, {});
 _.hashCode$ = function hashCode_2(){
   return this.index_0;
@@ -3254,9 +3173,9 @@ function $clinit_DoubleClickEvent(){
 function DoubleClickEvent(){
 }
 
-defineClass(1286, 1458, {}, DoubleClickEvent);
+defineClass(1284, 1456, {}, DoubleClickEvent);
 _.dispatch = function dispatch_2(handler){
-  $onDoubleClick(dynamicCast(handler, 1488).this$11.owner);
+  $onDoubleClick(dynamicCast(handler, 1485).this$11.owner);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_3(){
@@ -3264,7 +3183,7 @@ _.getAssociatedType_0 = function getAssociatedType_3(){
 }
 ;
 var TYPE_2;
-var Lcom_google_gwt_event_dom_client_DoubleClickEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DoubleClickEvent', 1286);
+var Lcom_google_gwt_event_dom_client_DoubleClickEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DoubleClickEvent', 1284);
 function $clinit_MouseOverEvent(){
   $clinit_MouseOverEvent = emptyMethod;
   TYPE_8 = new DomEvent$Type('mouseover', new MouseOverEvent);
@@ -3273,9 +3192,9 @@ function $clinit_MouseOverEvent(){
 function MouseOverEvent(){
 }
 
-defineClass(1285, 1458, {}, MouseOverEvent);
+defineClass(1283, 1456, {}, MouseOverEvent);
 _.dispatch = function dispatch_8(handler){
-  $onHover(dynamicCast(handler, 1487).this$11.owner);
+  $onHover(dynamicCast(handler, 1484).this$11.owner);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_9(){
@@ -3283,7 +3202,7 @@ _.getAssociatedType_0 = function getAssociatedType_9(){
 }
 ;
 var TYPE_8;
-var Lcom_google_gwt_event_dom_client_MouseOverEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseOverEvent', 1285);
+var Lcom_google_gwt_event_dom_client_MouseOverEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseOverEvent', 1283);
 function $unsafeGet(this$static, key){
   return this$static.map_0[key];
 }
@@ -3296,8 +3215,8 @@ function PrivateMap(){
   this.map_0 = {};
 }
 
-defineClass(1112, 1, {}, PrivateMap);
-var Lcom_google_gwt_event_dom_client_PrivateMap_2_classLit = createForClass('com.google.gwt.event.dom.client', 'PrivateMap', 1112);
+defineClass(1107, 1, {}, PrivateMap);
+var Lcom_google_gwt_event_dom_client_PrivateMap_2_classLit = createForClass('com.google.gwt.event.dom.client', 'PrivateMap', 1107);
 function AttachEvent(attached){
   this.attached = attached;
 }
@@ -3329,13 +3248,13 @@ function fire_1(source){
   var event_0;
   if (TYPE_16) {
     event_0 = new CloseEvent_0;
-    source.fireEvent_0(event_0);
+    source.fireEvent(event_0);
   }
 }
 
-defineClass(782, $intern_14, {}, CloseEvent_0);
+defineClass(778, $intern_14, {}, CloseEvent_0);
 _.dispatch = function dispatch_16(handler){
-  dynamicCast(handler, 1486);
+  dynamicCast(handler, 1483);
   detachWidgets();
 }
 ;
@@ -3344,7 +3263,7 @@ _.getAssociatedType = function getAssociatedType_17(){
 }
 ;
 var TYPE_16;
-var Lcom_google_gwt_event_logical_shared_CloseEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'CloseEvent', 782);
+var Lcom_google_gwt_event_logical_shared_CloseEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'CloseEvent', 778);
 function ResizeEvent(){
 }
 
@@ -3356,7 +3275,7 @@ function fire_2(source){
   }
 }
 
-defineClass(1322, $intern_14, {}, ResizeEvent);
+defineClass(1321, $intern_14, {}, ResizeEvent);
 _.dispatch = function dispatch_17(handler){
   dynamicCast(handler, 317).onResize(this);
 }
@@ -3366,7 +3285,7 @@ _.getAssociatedType = function getAssociatedType_18(){
 }
 ;
 var TYPE_17;
-var Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 1322);
+var Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 1321);
 function ValueChangeEvent(value_0){
   this.value_0 = value_0;
 }
@@ -3375,7 +3294,7 @@ function fire_4(source, value_0){
   var event_0;
   if (TYPE_19) {
     event_0 = new ValueChangeEvent(value_0);
-    source.fireEvent_0(event_0);
+    source.fireEvent(event_0);
   }
 }
 
@@ -3430,16 +3349,16 @@ function HandlerManager_0(source, fireInReverseOrder){
 }
 
 defineClass(179, 1, $intern_15, HandlerManager, HandlerManager_0);
-_.fireEvent_0 = function fireEvent(event_0){
+_.fireEvent = function fireEvent(event_0){
   $fireEvent(this, event_0);
 }
 ;
 var Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 179);
-defineClass(1450, 1, {});
-var Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 1450);
+defineClass(1448, 1, {});
+var Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 1448);
 function $defer(this$static, command){
   !this$static.deferredDeltas && (this$static.deferredDeltas = new ArrayList);
-  $add_31(this$static.deferredDeltas, command);
+  $add_32(this$static.deferredDeltas, command);
 }
 
 function $doAdd(this$static, type_0, handler){
@@ -3480,7 +3399,7 @@ function $doFire(this$static, event_0, source){
         if (instanceOf($e0, 49)) {
           e = $e0;
           !causes && (causes = new HashSet);
-          $add_32(causes, e);
+          $add_33(causes, e);
         }
          else 
           throw unwrap($e0);
@@ -3548,7 +3467,7 @@ function $handleQueuedAddsAndRemoves(this$static){
   if (this$static.deferredDeltas) {
     try {
       for (c$iterator = new AbstractList$IteratorImpl(this$static.deferredDeltas); c$iterator.i < c$iterator.this$01_0.size_1();) {
-        c = (checkCriticalElement(c$iterator.i < c$iterator.this$01_0.size_1()) , dynamicCast(c$iterator.this$01_0.get_1(c$iterator.last = c$iterator.i++), 1419));
+        c = (checkCriticalElement(c$iterator.i < c$iterator.this$01_0.size_1()) , dynamicCast(c$iterator.this$01_0.get_1(c$iterator.last = c$iterator.i++), 1417));
         c.execute_1();
       }
     }
@@ -3571,7 +3490,7 @@ function SimpleEventBus_0(fireInReverseOrder){
   this.isReverseOrder = fireInReverseOrder;
 }
 
-defineClass(277, 1450, {}, SimpleEventBus);
+defineClass(277, 1448, {}, SimpleEventBus);
 _.addHandler = function addHandler(type_0, handler){
   return $doAdd(this, type_0, handler);
 }
@@ -3580,7 +3499,7 @@ _.doRemove = function doRemove(type_0, source, handler){
   this.firingDepth > 0?$defer(this, new SimpleEventBus$3(this, type_0, source, handler)):$doRemoveNow(this, type_0, source, handler);
 }
 ;
-_.fireEvent_1 = function fireEvent_0(event_0){
+_.fireEvent_0 = function fireEvent_0(event_0){
   $doFire(this, event_0, null);
 }
 ;
@@ -3605,12 +3524,12 @@ function LegacyHandlerWrapper(real){
   this.real = real;
 }
 
-defineClass(781, 1, {1485:1, 1417:1}, LegacyHandlerWrapper);
+defineClass(777, 1, {1482:1, 1415:1}, LegacyHandlerWrapper);
 _.removeHandler = function removeHandler(){
   $removeHandler(this.real);
 }
 ;
-var Lcom_google_gwt_event_shared_LegacyHandlerWrapper_2_classLit = createForClass('com.google.gwt.event.shared', 'LegacyHandlerWrapper', 781);
+var Lcom_google_gwt_event_shared_LegacyHandlerWrapper_2_classLit = createForClass('com.google.gwt.event.shared', 'LegacyHandlerWrapper', 777);
 function UmbrellaException(causes){
   RuntimeException_1.call(this, makeMessage(causes), makeCause(causes));
   this.causes = causes;
@@ -3717,9 +3636,9 @@ function $clinit_LocaleInfo(){
 function LocaleInfo(){
 }
 
-defineClass(1122, 1, {}, LocaleInfo);
+defineClass(1118, 1, {}, LocaleInfo);
 var instance_2;
-var Lcom_google_gwt_i18n_client_LocaleInfo_2_classLit = createForClass('com.google.gwt.i18n.client', 'LocaleInfo', 1122);
+var Lcom_google_gwt_i18n_client_LocaleInfo_2_classLit = createForClass('com.google.gwt.i18n.client', 'LocaleInfo', 1118);
 function cloneSubrange(array, toIndex){
   var result;
   result = array.slice(0, toIndex);
@@ -3937,7 +3856,7 @@ function fromInt(value_0){
   var rebase, result;
   if (value_0 > -129 && value_0 < 128) {
     rebase = value_0 + 128;
-    boxedValues == null && (boxedValues = initDim(Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit, $intern_4, 1508, 256, 0, 1));
+    boxedValues == null && (boxedValues = initDim(Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit, $intern_4, 1505, 256, 0, 1));
     result = boxedValues[rebase];
     !result && (result = boxedValues[rebase] = create(value_0));
     return result;
@@ -4086,7 +4005,7 @@ function $attachChild(this$static, child, userObject){
   var container, layer;
   container = $attachChild_0(this$static.parentElem, child);
   layer = new Layout$Layer(container, child, userObject);
-  $add_31(this$static.layers, layer);
+  $add_32(this$static.layers, layer);
   return layer;
 }
 
@@ -4118,7 +4037,7 @@ function $layout(this$static, duration, callback){
       l.bottomUnit = l.targetBottomUnit;
       l.widthUnit = l.targetWidthUnit;
       l.heightUnit = l.targetHeightUnit;
-      $layout_0(this$static.impl, l);
+      $layout_0(l);
     }
     return;
   }
@@ -4139,7 +4058,7 @@ function $removeChild_0(this$static, layer){
 }
 
 function Layout(parent_0){
-  this.impl = new LayoutImplIE8;
+  this.impl = new LayoutImpl;
   this.layers = new ArrayList;
   this.parentElem = parent_0;
   $initParent(this.impl, parent_0);
@@ -4153,7 +4072,7 @@ function Layout$1(this$0, val$callback){
   Animation.call(this);
 }
 
-defineClass(1307, 288, {}, Layout$1);
+defineClass(1305, 288, {}, Layout$1);
 _.onCancel = function onCancel_0(){
   this.this$01.animation_0 = null;
   $layout(this.this$01, 0, null);
@@ -4174,12 +4093,12 @@ _.onUpdate = function onUpdate(progress){
     l.setTargetBottom && (l.bottom_0 = l.sourceBottom + (l.targetBottom - l.sourceBottom) * progress);
     l.setTargetWidth && (l.width_0 = l.sourceWidth + (l.targetWidth - l.sourceWidth) * progress);
     l.setTargetHeight && (l.height_0 = l.sourceHeight + (l.targetHeight - l.sourceHeight) * progress);
-    $layout_0(this.this$01.impl, l);
+    $layout_0(l);
     !!this.val$callback2 && (child = l.userObject , instanceOf(child, 91) && dynamicCast(child, 91).onResize_0() , undefined);
   }
 }
 ;
-var Lcom_google_gwt_layout_client_Layout$1_2_classLit = createForClass('com.google.gwt.layout.client', 'Layout/1', 1307);
+var Lcom_google_gwt_layout_client_Layout$1_2_classLit = createForClass('com.google.gwt.layout.client', 'Layout/1', 1305);
 function Layout$Layer(container, child, userObject){
   this.targetLeftUnit = ($clinit_Style$Unit() , PX);
   this.targetTopUnit = PX;
@@ -4231,7 +4150,7 @@ function $clinit_LayoutImpl(){
 
 function $attachChild_0(parent_0, child){
   var container;
-  container = $createElement($doc, 'div');
+  container = $doc.createElement('div');
   container.appendChild(child);
   $setPropertyImpl(container.style, 'position', ($clinit_Style$Position() , 'absolute'));
   $setPropertyImpl(container.style, 'overflow', ($clinit_Style$Overflow() , 'hidden'));
@@ -4281,54 +4200,16 @@ function $initParent(this$static, parent_0){
   $appendChild(parent_0, this$static.relativeRuler = createRuler(($clinit_Style$Unit() , EM), EX));
 }
 
-function $removeChild_1(container, child){
+function $layout_0(layer){
   var style;
-  $removeFromParent(container);
-  $getParentElement(child) == container && $removeFromParent(child);
-  style = child.style;
-  $setPropertyImpl(style, 'position', '');
-  $setPropertyImpl(style, 'left', '');
-  $setPropertyImpl(style, 'top', '');
-  $setPropertyImpl(style, 'width', '');
-  $setPropertyImpl(style, 'height', '');
-}
-
-function createRuler(widthUnit, heightUnit){
-  var ruler, style;
-  ruler = $createElement($doc, 'div');
-  $setInnerHTML(ruler, '&nbsp;');
-  style = ruler.style;
-  $setPropertyImpl(style, 'position', ($clinit_Style$Position() , 'absolute'));
-  $setPropertyImpl(style, 'zIndex', '-32767');
-  $setPropertyImpl(style, 'top', -20 + heightUnit.getType());
-  $setPropertyImpl(style, 'width', 10 + widthUnit.getType());
-  $setPropertyImpl(style, 'height', 10 + heightUnit.getType());
-  $setPropertyImpl(style, 'visibility', ($clinit_Style$Visibility() , 'hidden'));
-  $set_0(($clinit_State() , HIDDEN), ruler, initValues(getClassLiteralForArray(Ljava_lang_Boolean_2_classLit, 1), $intern_4, 111, 0, [($clinit_Boolean() , $clinit_Boolean() , TRUE)]));
-  return ruler;
-}
-
-defineClass(1467, 1, {});
-var fixedRuler;
-var Lcom_google_gwt_layout_client_LayoutImpl_2_classLit = createForClass('com.google.gwt.layout.client', 'LayoutImpl', 1467);
-function $layout_0(this$static, layer){
-  var oldDisplay, style;
   style = layer.container.style;
-  setLayer(layer.container, layer);
-  if (layer.visible) {
-    oldDisplay = style['display'];
-    $setPropertyImpl(style, 'display', '');
-    oldDisplay.length > 0 && $updateVisibility(this$static, layer.container);
-  }
-   else {
-    $setPropertyImpl(style, 'display', ($clinit_Style$Display() , 'none'));
-  }
-  layer.setLeft?$setValue(this$static, layer, 'left', layer.left_0, layer.leftUnit, false, false):$setPropertyImpl(style, 'left', '');
-  layer.setRight?$setValue(this$static, layer, 'right', layer.right_0, layer.rightUnit, false, false):$setPropertyImpl(style, 'right', '');
-  layer.setTop?$setValue(this$static, layer, 'top', layer.top_0, layer.topUnit, true, false):$setPropertyImpl(style, 'top', '');
-  layer.setBottom?$setValue(this$static, layer, 'bottom', layer.bottom_0, layer.bottomUnit, true, false):$setPropertyImpl(style, 'bottom', '');
-  layer.setWidth?$setValue(this$static, layer, 'width', layer.width_0, layer.widthUnit, false, true):$setPropertyImpl(style, 'width', '');
-  layer.setHeight?$setValue(this$static, layer, 'height', layer.height_0, layer.heightUnit, true, true):$setPropertyImpl(style, 'height', '');
+  layer.visible?$setPropertyImpl(style, 'display', ''):$setPropertyImpl(style, 'display', ($clinit_Style$Display() , 'none'));
+  style['left'] = layer.setLeft?layer.left_0 + 'px':'';
+  style['top'] = layer.setTop?layer.top_0 + 'px':'';
+  style['right'] = layer.setRight?layer.right_0 + 'px':'';
+  style['bottom'] = layer.setBottom?layer.bottom_0 + 'px':'';
+  style['width'] = layer.setWidth?layer.width_0 + 'px':'';
+  style['height'] = layer.setHeight?layer.height_0 + 'px':'';
   style = layer.child.style;
   switch (2) {
     case 2:
@@ -4342,47 +4223,40 @@ function $layout_0(this$static, layer){
   }
 }
 
-function $removeLayerRefs(parent_0){
-  for (var i = 0; i < parent_0.childNodes.length; ++i) {
-    var container = parent_0.childNodes[i];
-    container.__layer && (container.__layer = null);
-  }
+function $removeChild_1(container, child){
+  var style;
+  $removeFromParent(container);
+  $getParentElement(child) == container && $removeFromParent(child);
+  style = child.style;
+  $setPropertyImpl(style, 'position', '');
+  $setPropertyImpl(style, 'left', '');
+  $setPropertyImpl(style, 'top', '');
+  $setPropertyImpl(style, 'width', '');
+  $setPropertyImpl(style, 'height', '');
 }
 
-function $setValue(this$static, layer, prop, value_0, unit, vertical, noNegative){
-  switch (unit.ordinal) {
-    case 0:
-    case 1:
-      break;
-    default:value_0 = value_0 * $getUnitSizeInPixels(this$static, layer.container, unit, vertical);
-      value_0 = round_int(value_0 + 0.5);
-      $clinit_Style$Unit();
-  }
-  noNegative && value_0 < 0 && (value_0 = 0);
-  $setPropertyImpl(layer.container.style, prop, value_0 + 'px');
-}
-
-function $updateVisibility(this$static, container){
-  var i, layer, node, nodes;
-  layer = container.__layer;
-  !!layer && $layout_0(this$static, layer);
-  nodes = container.childNodes;
-  for (i = 0; i < nodes.length; ++i) {
-    node = nodes[i];
-    node.nodeType == 1 && $updateVisibility(this$static, node);
-  }
-}
-
-function LayoutImplIE8(){
+function LayoutImpl(){
   $clinit_LayoutImpl();
 }
 
-function setLayer(container, layer){
-  container.__layer = layer;
+function createRuler(widthUnit, heightUnit){
+  var ruler, style;
+  ruler = $doc.createElement('div');
+  $setInnerHTML(ruler, '&nbsp;');
+  style = ruler.style;
+  $setPropertyImpl(style, 'position', ($clinit_Style$Position() , 'absolute'));
+  $setPropertyImpl(style, 'zIndex', '-32767');
+  $setPropertyImpl(style, 'top', -20 + heightUnit.getType());
+  $setPropertyImpl(style, 'width', 10 + widthUnit.getType());
+  $setPropertyImpl(style, 'height', 10 + heightUnit.getType());
+  $setPropertyImpl(style, 'visibility', ($clinit_Style$Visibility() , 'hidden'));
+  $set_0(($clinit_State() , HIDDEN), ruler, initValues(getClassLiteralForArray(Ljava_lang_Boolean_2_classLit, 1), $intern_4, 111, 0, [($clinit_Boolean() , $clinit_Boolean() , TRUE)]));
+  return ruler;
 }
 
-defineClass(1333, 1467, {}, LayoutImplIE8);
-var Lcom_google_gwt_layout_client_LayoutImplIE8_2_classLit = createForClass('com.google.gwt.layout.client', 'LayoutImplIE8', 1333);
+defineClass(1318, 1, {}, LayoutImpl);
+var fixedRuler;
+var Lcom_google_gwt_layout_client_LayoutImpl_2_classLit = createForClass('com.google.gwt.layout.client', 'LayoutImpl', 1318);
 function PlaceHistoryHandler$DefaultHistorian(){
 }
 
@@ -4453,7 +4327,7 @@ function SafeHtmlString(html){
   this.html = html;
 }
 
-defineClass(120, 1, $intern_22, SafeHtmlString);
+defineClass(128, 1, $intern_22, SafeHtmlString);
 _.asString = function asString_0(){
   return this.html;
 }
@@ -4473,7 +4347,7 @@ _.toString$ = function toString_6(){
   return 'safe: "' + this.html + '"';
 }
 ;
-var Lcom_google_gwt_safehtml_shared_SafeHtmlString_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'SafeHtmlString', 120);
+var Lcom_google_gwt_safehtml_shared_SafeHtmlString_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'SafeHtmlString', 128);
 function $clinit_SafeHtmlUtils(){
   $clinit_SafeHtmlUtils = emptyMethod;
   EMPTY_SAFE_HTML = new SafeHtmlString('');
@@ -4502,12 +4376,12 @@ function SafeUriString(uri_0){
   this.uri_0 = uri_0;
 }
 
-defineClass(33, 1, {1423:1, 33:1}, SafeUriString);
+defineClass(33, 1, {1421:1, 33:1}, SafeUriString);
 _.equals$ = function equals_4(obj){
-  if (!instanceOf(obj, 1423)) {
+  if (!instanceOf(obj, 1421)) {
     return false;
   }
-  return $equals_0(this.uri_0, dynamicCast(dynamicCast(obj, 1423), 33).uri_0);
+  return $equals_0(this.uri_0, dynamicCast(dynamicCast(obj, 1421), 33).uri_0);
 }
 ;
 _.hashCode$ = function hashCode_6(){
@@ -4549,7 +4423,7 @@ function attachToDom(element){
 
 function ensureHiddenDiv(){
   if (!hiddenDiv) {
-    hiddenDiv = $createElement($doc, 'div');
+    hiddenDiv = $doc.createElement('div');
     setVisible(hiddenDiv, false);
     $appendChild(getBodyElement(), hiddenDiv);
   }
@@ -4566,10 +4440,14 @@ function UiBinderUtil$TempAttachment(origParent, origSibling, element){
   this.element = element;
 }
 
-defineClass(1113, 1, {}, UiBinderUtil$TempAttachment);
-var Lcom_google_gwt_uibinder_client_UiBinderUtil$TempAttachment_2_classLit = createForClass('com.google.gwt.uibinder.client', 'UiBinderUtil/TempAttachment', 1113);
+defineClass(1108, 1, {}, UiBinderUtil$TempAttachment);
+var Lcom_google_gwt_uibinder_client_UiBinderUtil$TempAttachment_2_classLit = createForClass('com.google.gwt.uibinder.client', 'UiBinderUtil/TempAttachment', 1108);
 function $addStyleName(this$static, style){
   setStyleName(this$static.getStyleElement(), style, true);
+}
+
+function $getElement(this$static){
+  return $clinit_DOM() , this$static.element;
 }
 
 function $removeStyleName(this$static, style){
@@ -4586,6 +4464,10 @@ function $replaceNode(node, newNode){
 }
 
 function $setElement(this$static, elem){
+  $setElement_0(this$static, ($clinit_DOM() , elem));
+}
+
+function $setElement_0(this$static, elem){
   this$static.element = elem;
 }
 
@@ -4598,14 +4480,19 @@ function $setStyleName_0(this$static, style, add_0){
 }
 
 function $setWidth_0(this$static, width_0){
-  $setPropertyImpl(this$static.element.style, 'width', width_0);
+  ($clinit_DOM() , this$static.element).style['width'] = width_0;
+}
+
+function $sinkBitlessEvent(this$static, eventTypeName){
+  $clinit_DOM();
+  $sinkBitlessEvent_0(this$static.element, eventTypeName);
 }
 
 function $toString_0(this$static){
   if (!this$static.element) {
     return '(null handle)';
   }
-  return this$static.element.outerHTML;
+  return ($clinit_DOM() , this$static.element).outerHTML;
 }
 
 function setStyleName(elem, style, add_0){
@@ -4626,7 +4513,7 @@ function setVisible(elem, visible){
 
 defineClass(22, 1, $intern_23);
 _.getStyleElement = function getStyleElement(){
-  return this.element;
+  return $clinit_DOM() , this.element;
 }
 ;
 _.resolvePotentialElement = function resolvePotentialElement(){
@@ -4640,8 +4527,8 @@ _.toString$ = function toString_8(){
 var Lcom_google_gwt_user_client_ui_UIObject_2_classLit = createForClass('com.google.gwt.user.client.ui', 'UIObject', 22);
 function $addDomHandler(this$static, handler, type_0){
   var typeInt;
-  typeInt = $eventGetTypeInt(type_0.name_0);
-  typeInt == -1?this$static.element:this$static.sinkEvents(typeInt);
+  typeInt = getTypeInt(type_0.name_0);
+  typeInt == -1?$sinkBitlessEvent(this$static, type_0.name_0):this$static.sinkEvents(typeInt);
   return $addHandler(!this$static.handlerManager?(this$static.handlerManager = new HandlerManager(this$static)):this$static.handlerManager, type_0, handler);
 }
 
@@ -4659,7 +4546,8 @@ function $onAttach(this$static){
     throw new IllegalStateException_0("Should only call onAttach when the widget is detached from the browser's document");
   }
   this$static.attached = true;
-  setEventListener(this$static.element, this$static);
+  $clinit_DOM();
+  setEventListener_0(this$static.element, this$static);
   bitsToAdd = this$static.eventsToSink;
   this$static.eventsToSink = -1;
   bitsToAdd > 0 && this$static.sinkEvents(bitsToAdd);
@@ -4670,11 +4558,11 @@ function $onAttach(this$static){
 
 function $onBrowserEvent_0(this$static, event_0){
   var related;
-  switch ($eventGetTypeInt(event_0.type)) {
+  switch ($clinit_DOM() , $eventGetTypeInt(event_0.type)) {
     case 16:
     case 32:
-      related = event_0.relatedTarget || (event_0.type == 'mouseout'?event_0.toElement:event_0.fromElement);
-      if (!!related && isOrHasChildImpl(this$static.element, related)) {
+      related = event_0.relatedTarget;
+      if (!!related && $isOrHasChild(this$static.element, related)) {
         return;
       }
 
@@ -4695,7 +4583,8 @@ function $onDetach(this$static){
       this$static.doDetachChildren();
     }
      finally {
-      setEventListener(this$static.element, null);
+      $clinit_DOM();
+      setEventListener_0(this$static.element, null);
       this$static.attached = false;
     }
   }
@@ -4715,10 +4604,10 @@ function $removeFromParent_0(this$static){
 }
 
 function $replaceElement(this$static, elem){
-  this$static.attached && setEventListener(this$static.element, null);
+  this$static.attached && ($clinit_DOM() , setEventListener_0(this$static.element, null));
   !!this$static.element && $replaceNode(this$static.element, elem);
   this$static.element = elem;
-  this$static.attached && setEventListener(this$static.element, this$static);
+  this$static.attached && ($clinit_DOM() , setEventListener_0(this$static.element, this$static));
 }
 
 function $setParent(this$static, parent_0){
@@ -4748,7 +4637,7 @@ _.doAttachChildren = function doAttachChildren(){
 _.doDetachChildren = function doDetachChildren(){
 }
 ;
-_.fireEvent_0 = function fireEvent_1(event_0){
+_.fireEvent = function fireEvent_1(event_0){
   $fireEvent_0(this, event_0);
 }
 ;
@@ -4775,7 +4664,7 @@ _.onUnload = function onUnload(){
 }
 ;
 _.sinkEvents = function sinkEvents(eventBitsToAdd){
-  this.eventsToSink == -1?$sinkEvents_0(this.element, eventBitsToAdd | $getEventsSunk(this.element)):(this.eventsToSink |= eventBitsToAdd);
+  this.eventsToSink == -1?($clinit_DOM() , $sinkEvents_0(this.element, eventBitsToAdd | (this.element.__eventBits || 0))):(this.eventsToSink |= eventBitsToAdd);
 }
 ;
 _.attached = false;
@@ -4797,8 +4686,8 @@ function $initWidget(this$static, widget){
   }
   instanceOf(widget, 119) && dynamicCast(widget, 119);
   $removeFromParent_0(widget);
-  elem = widget.element;
-  this$static.element = elem;
+  elem = ($clinit_DOM() , widget.element);
+  $setElement_0(this$static, elem);
   ($clinit_PotentialElement() , isPotential(elem)) && $setResolver(elem, this$static);
   this$static.widget = widget;
   $setParent(widget, this$static);
@@ -4823,7 +4712,8 @@ _.onAttach = function onAttach_0(){
     this.eventsToSink = -1;
   }
   this.widget.onAttach();
-  setEventListener(this.element, this);
+  $clinit_DOM();
+  setEventListener_0(this.element, this);
   fire_0(this, true);
 }
 ;
@@ -4844,7 +4734,7 @@ _.onDetach = function onDetach_0(){
 ;
 _.resolvePotentialElement = function resolvePotentialElement_0(){
   $setElement(this, this.widget.resolvePotentialElement());
-  return this.element;
+  return $clinit_DOM() , this.element;
 }
 ;
 var Lcom_google_gwt_user_client_ui_Composite_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Composite', $intern_25);
@@ -4857,20 +4747,25 @@ function $changeState(this$static, newState){
   this$static.state = newState;
 }
 
+function $onBrowserEvent_1(this$static, event_0){
+  $clinit_DOM();
+  $eventGetTypeInt(event_0.type) == 32768 && !!this$static.state && $setPropertyString(this$static.element, '__gwtLastUnhandledEvent', '');
+  $onBrowserEvent_0(this$static, event_0);
+}
+
 function $setResource(this$static, resource){
-  $setUrl_2(this$static, resource.url_0, resource.width_0, resource.height_0);
+  $setUrl_3(this$static, resource.url_0, resource.width_0, resource.height_0);
 }
 
 function Image_0(){
   $clinit_Image();
   $changeState(this, new Image$UnclippedState(this));
-  $setClassName(this.element, 'gwt-Image');
+  $setClassName(($clinit_DOM() , this.element), 'gwt-Image');
 }
 
 defineClass(151, 17, $intern_24, Image_0);
 _.onBrowserEvent_0 = function onBrowserEvent_3(event_0){
-  $eventGetTypeInt(event_0.type) == $intern_27 && !!this.state && $setPropertyString(this.element, '__gwtLastUnhandledEvent', '');
-  $onBrowserEvent_0(this, event_0);
+  $onBrowserEvent_1(this, event_0);
 }
 ;
 _.onLoad = function onLoad_2(){
@@ -4878,7 +4773,13 @@ _.onLoad = function onLoad_2(){
 }
 ;
 var Lcom_google_gwt_user_client_ui_Image_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image', 151);
-function dispatchEvent_1(evt, elem, listener){
+function $clinit_DOM(){
+  $clinit_DOM = emptyMethod;
+  $clinit_DOMImplStandard();
+}
+
+function dispatchEvent_0(evt, elem, listener){
+  $clinit_DOM();
   var prevCurrentEvent;
   prevCurrentEvent = currentEvent;
   currentEvent = evt;
@@ -4888,10 +4789,12 @@ function dispatchEvent_1(evt, elem, listener){
 }
 
 function insertChild(parent_0, child, index_0){
+  $clinit_DOM();
   $insertChild(parent_0, resolve(child), index_0);
 }
 
 function isPotential(o){
+  $clinit_DOM();
   try {
     return !!o && !!o.__gwt_resolve;
   }
@@ -4901,6 +4804,7 @@ function isPotential(o){
 }
 
 function previewEvent_0(evt){
+  $clinit_DOM();
   var ret;
   ret = fire_6(handlers_0, evt);
   if (!ret && !!evt) {
@@ -4911,10 +4815,12 @@ function previewEvent_0(evt){
 }
 
 function resolve(maybePotential){
+  $clinit_DOM();
   return maybePotential.__gwt_resolve?maybePotential.__gwt_resolve():maybePotential;
 }
 
 function sinkEvents_0(elem, eventBits){
+  $clinit_DOM();
   $maybeInitializeEventSystem();
   $sinkEventsImpl(elem, eventBits);
 }
@@ -4932,7 +4838,12 @@ function $onModuleLoad(){
   allowedModes.length == 1 && $equals_0('CSS1Compat', allowedModes[0]) && $equals_0('BackCompat', currentMode)?"GWT no longer supports Quirks Mode (document.compatMode=' BackCompat').<br>Make sure your application's host HTML page has a Standards Mode (document.compatMode=' CSS1Compat') doctype,<br>e.g. by using &lt;!doctype html&gt; at the start of your application's HTML page.<br><br>To continue using this unsupported rendering mode and risk layout problems, suppress this message by adding<br>the following line to your*.gwt.xml module file:<br>&nbsp;&nbsp;&lt;extend-configuration-property name=\"document.compatMode\" value=\"" + currentMode + '"/&gt;':"Your *.gwt.xml module configuration prohibits the use of the current document rendering mode (document.compatMode=' " + currentMode + "').<br>Modify your application's host HTML page doctype, or update your custom " + "'document.compatMode' configuration property settings.";
 }
 
+function getTypeInt(typeName){
+  return $eventGetTypeInt(($clinit_DOM() , typeName));
+}
+
 function sinkEvents_1(elem, eventBits){
+  $clinit_DOM();
   $maybeInitializeEventSystem();
   $sinkEventsImpl(elem, eventBits);
 }
@@ -4961,14 +4872,14 @@ function fire_6(handlers, nativeEvent){
 var TYPE_23, singleton;
 function $clinit_History(){
   $clinit_History = emptyMethod;
-  new History$HistoryImplIE8;
+  new History$HistoryImpl;
   historyEventSource = new History$HistoryEventSource;
   token = getDecodedHash();
 }
 
 function getDecodedHash(){
-  var hashToken, href_0, hashLoc;
-  hashToken = (href_0 = $wnd.location.href , hashLoc = href_0.indexOf('#') , hashLoc > 0?href_0.substring(hashLoc):'');
+  var hashToken;
+  hashToken = $wnd.location.hash;
   if (hashToken == null || !hashToken.length) {
     return '';
   }
@@ -5006,7 +4917,7 @@ function History$HistoryEventSource(){
 }
 
 defineClass(775, 1, $intern_15, History$HistoryEventSource);
-_.fireEvent_0 = function fireEvent_3(event_0){
+_.fireEvent = function fireEvent_3(event_0){
   $fireEvent(this.handlers, event_0);
 }
 ;
@@ -5019,45 +4930,14 @@ function $encodeHistoryToken(historyToken){
   return $wnd.encodeURI(historyToken).replace('#', '%23');
 }
 
-defineClass(776, 1, {});
-_.attachListener = function attachListener(){
-  var handler = $entry(onHashChanged);
+function History$HistoryImpl(){
+  var handler;
+  handler = $entry(onHashChanged);
   $wnd.addEventListener('hashchange', handler, false);
 }
-;
-var Lcom_google_gwt_user_client_History$HistoryImpl_2_classLit = createForClass('com.google.gwt.user.client', 'History/HistoryImpl', 776);
-function History$HistoryImplIE8(){
-  this.attachListener();
-}
 
-defineClass(777, 776, {}, History$HistoryImplIE8);
-_.attachListener = function attachListener_0(){
-  var handler = $entry(onHashChanged);
-  var oldHandler = $wnd.onhashchange;
-  $wnd.onhashchange = function(){
-    var ex;
-    try {
-      handler();
-    }
-     catch (e) {
-      ex = e;
-    }
-    if (oldHandler != null) {
-      try {
-        oldHandler();
-      }
-       catch (e) {
-        ex = ex || e;
-      }
-    }
-    if (ex != null) {
-      throw ex;
-    }
-  }
-  ;
-}
-;
-var Lcom_google_gwt_user_client_History$HistoryImplIE8_2_classLit = createForClass('com.google.gwt.user.client', 'History/HistoryImplIE8', 777);
+defineClass(776, 1, {}, History$HistoryImpl);
+var Lcom_google_gwt_user_client_History$HistoryImpl_2_classLit = createForClass('com.google.gwt.user.client', 'History/HistoryImpl', 776);
 function addCloseHandler(handler){
   maybeInitializeCloseHandlers();
   return addHandler_0(TYPE_16?TYPE_16:(TYPE_16 = new GwtEvent$Type), handler);
@@ -5075,20 +4955,16 @@ function addResizeHandler(handler){
 
 function maybeInitializeCloseHandlers(){
   if (!closeHandlersInitialized) {
-    $initHandler('function __gwt_initWindowCloseHandler(beforeunload, unload) {\n  var wnd = window\n  , oldOnBeforeUnload = wnd.onbeforeunload\n  , oldOnUnload = wnd.onunload;\n  \n  wnd.onbeforeunload = function(evt) {\n    var ret, oldRet;\n    try {\n      ret = beforeunload();\n    } finally {\n      oldRet = oldOnBeforeUnload && oldOnBeforeUnload(evt);\n    }\n    // Avoid returning null as IE6 will coerce it into a string.\n    // Ensure that "" gets returned properly.\n    if (ret != null) {\n      return ret;\n    }\n    if (oldRet != null) {\n      return oldRet;\n    }\n    // returns undefined.\n  };\n  \n  wnd.onunload = function(evt) {\n    try {\n      unload();\n    } finally {\n      oldOnUnload && oldOnUnload(evt);\n      wnd.onresize = null;\n      wnd.onscroll = null;\n      wnd.onbeforeunload = null;\n      wnd.onunload = null;\n    }\n  };\n  \n  // Remove the reference once we\'ve initialize the handler\n  wnd.__gwt_initWindowCloseHandler = undefined;\n}\n', new WindowImplIE$1);
+    $initWindowCloseHandler();
     closeHandlersInitialized = true;
   }
 }
 
 function maybeInitializeResizeHandlers(){
   if (!resizeHandlersInitialized) {
-    $initHandler("function __gwt_initWindowResizeHandler(resize) {\n  var wnd = window, oldOnResize = wnd.onresize;\n  \n  wnd.onresize = function(evt) {\n    try {\n      resize();\n    } finally {\n      oldOnResize && oldOnResize(evt);\n    }\n  };\n  \n  // Remove the reference once we've initialize the handler\n  wnd.__gwt_initWindowResizeHandler = undefined;\n}\n", new WindowImplIE$2);
+    $initWindowResizeHandler();
     resizeHandlersInitialized = true;
   }
-}
-
-function onClosed(){
-  closeHandlersInitialized && fire_1((!handlers_1 && (handlers_1 = new Window$WindowHandlers) , handlers_1));
 }
 
 function onClosing(){
@@ -5130,7 +5006,7 @@ function Window$ClosingEvent(){
 
 defineClass(691, $intern_14, {}, Window$ClosingEvent);
 _.dispatch = function dispatch_24(handler){
-  $setMessage(this, dynamicCast(handler, 1418).onLeaveQuestion);
+  $setMessage(this, dynamicCast(handler, 1416).onLeaveQuestion);
 }
 ;
 _.getAssociatedType = function getAssociatedType_25(){
@@ -5165,7 +5041,7 @@ function $eventGetTypeInt(eventType){
     case 'keyup':
       return 512;
     case 'load':
-      return $intern_27;
+      return 32768;
     case 'losecapture':
       return 8192;
     case 'mousedown':
@@ -5179,7 +5055,7 @@ function $eventGetTypeInt(eventType){
     case 'mouseup':
       return 8;
     case 'scroll':
-      return $intern_28;
+      return $intern_27;
     case 'error':
       return 65536;
     case 'DOMMouseScroll':
@@ -5190,7 +5066,7 @@ function $eventGetTypeInt(eventType){
     case 'paste':
       return $intern_21;
     case 'touchstart':
-      return 1048576;
+      return $intern_28;
     case 'touchmove':
       return 2097152;
     case 'touchend':
@@ -5198,110 +5074,82 @@ function $eventGetTypeInt(eventType){
     case 'touchcancel':
       return 8388608;
     case 'gesturestart':
-      return 16777216;
+      return $intern_29;
     case 'gesturechange':
-      return 33554432;
+      return $intern_30;
     case 'gestureend':
-      return 67108864;
+      return $intern_31;
     default:return -1;
   }
 }
 
-function $getEventsSunk(elem){
-  return elem.__eventBits || 0;
-}
-
 function $maybeInitializeEventSystem(){
   if (!eventSystemIsInitialized) {
-    $initEventSystem();
+    $initEventSystem_0();
     eventSystemIsInitialized = true;
   }
 }
 
-function getEventListener_0(elem){
+function getEventListener(elem){
   var maybeListener = elem.__listener;
   return !instanceOfJso(maybeListener) && instanceOf(maybeListener, 24)?maybeListener:null;
 }
 
-function setEventListener(elem, listener){
+function setEventListener_0(elem, listener){
   elem.__listener = listener;
 }
 
 var eventSystemIsInitialized = false;
-function $initEventSystem(){
-  $wnd.__gwt_globalEventArray == null && ($wnd.__gwt_globalEventArray = new Array);
-  $wnd.__gwt_globalEventArray[$wnd.__gwt_globalEventArray.length] = $entry(function(){
-    return previewEvent_0($wnd.event);
-  }
-  );
-  var dispatchEvent_0 = $entry(function(){
-    var oldEventTarget = currentEventTarget;
-    currentEventTarget = this;
-    if ($wnd.event.returnValue == null) {
-      $wnd.event.returnValue = true;
-      if (!previewEventImpl()) {
-        currentEventTarget = oldEventTarget;
-        return;
-      }
-    }
-    var getEventListener = getEventListener_0;
-    var listener, curElem = this;
-    while (curElem && !(listener = getEventListener(curElem))) {
-      curElem = curElem.parentElement;
-    }
-    listener && dispatchEvent_1($wnd.event, curElem, listener);
-    currentEventTarget = oldEventTarget;
-  }
-  );
-  var dispatchDblClickEvent = $entry(function(){
-    var newEvent = $doc.createEventObject();
-    $wnd.event.returnValue == null && $wnd.event.srcElement.fireEvent && $wnd.event.srcElement.fireEvent('onclick', newEvent);
-    if (this.__eventBits & 2) {
-      dispatchEvent_0.call(this);
-    }
-     else if ($wnd.event.returnValue == null) {
-      $wnd.event.returnValue = true;
-      previewEventImpl();
-    }
-  }
-  );
-  var dispatchUnhandledEvent = $entry(function(){
-    this.__gwtLastUnhandledEvent = $wnd.event.type;
-    dispatchEvent_0.call(this);
-  }
-  );
-  var moduleName = $moduleName.replace(/\./g, '_');
-  $wnd['__gwt_dispatchEvent_' + moduleName] = dispatchEvent_0;
-  callDispatchEvent = (new Function('w', 'return function() { w.__gwt_dispatchEvent_' + moduleName + '.call(this) }'))($wnd);
-  $wnd['__gwt_dispatchDblClickEvent_' + moduleName] = dispatchDblClickEvent;
-  callDispatchDblClickEvent = (new Function('w', 'return function() { w.__gwt_dispatchDblClickEvent_' + moduleName + '.call(this)}'))($wnd);
-  $wnd['__gwt_dispatchUnhandledEvent_' + moduleName] = dispatchUnhandledEvent;
-  callDispatchUnhandledEvent = (new Function('w', 'return function() { w.__gwt_dispatchUnhandledEvent_' + moduleName + '.call(this)}'))($wnd);
-  callDispatchOnLoadEvent = (new Function('w', 'return function() { w.__gwt_dispatchUnhandledEvent_' + moduleName + '.call(w.event.srcElement)}'))($wnd);
-  var bodyDispatcher = $entry(function(){
-    dispatchEvent_0.call($doc.body);
-  }
-  );
-  var bodyDblClickDispatcher = $entry(function(){
-    dispatchDblClickEvent.call($doc.body);
-  }
-  );
-  $doc.body.attachEvent('onclick', bodyDispatcher);
-  $doc.body.attachEvent('onmousedown', bodyDispatcher);
-  $doc.body.attachEvent('onmouseup', bodyDispatcher);
-  $doc.body.attachEvent('onmousemove', bodyDispatcher);
-  $doc.body.attachEvent('onmousewheel', bodyDispatcher);
-  $doc.body.attachEvent('onkeydown', bodyDispatcher);
-  $doc.body.attachEvent('onkeypress', bodyDispatcher);
-  $doc.body.attachEvent('onkeyup', bodyDispatcher);
-  $doc.body.attachEvent('onfocus', bodyDispatcher);
-  $doc.body.attachEvent('onblur', bodyDispatcher);
-  $doc.body.attachEvent('ondblclick', bodyDblClickDispatcher);
-  $doc.body.attachEvent('oncontextmenu', bodyDispatcher);
+function $clinit_DOMImplStandard(){
+  $clinit_DOMImplStandard = emptyMethod;
+  bitlessEventDispatchers = {_default_:dispatchEvent_2, dragenter:dispatchDragEvent, dragover:dispatchDragEvent};
+  captureEventDispatchers = {click:dispatchCapturedMouseEvent, dblclick:dispatchCapturedMouseEvent, mousedown:dispatchCapturedMouseEvent, mouseup:dispatchCapturedMouseEvent, mousemove:dispatchCapturedMouseEvent, mouseover:dispatchCapturedMouseEvent, mouseout:dispatchCapturedMouseEvent, mousewheel:dispatchCapturedMouseEvent, keydown:dispatchCapturedEvent, keyup:dispatchCapturedEvent, keypress:dispatchCapturedEvent, touchstart:dispatchCapturedMouseEvent, touchend:dispatchCapturedMouseEvent, touchmove:dispatchCapturedMouseEvent, touchcancel:dispatchCapturedMouseEvent, gesturestart:dispatchCapturedMouseEvent, gestureend:dispatchCapturedMouseEvent, gesturechange:dispatchCapturedMouseEvent};
 }
 
-function $insertChild(parent_0, child, index_0){
-  index_0 >= parent_0.children.length?parent_0.appendChild(child):parent_0.insertBefore(child, parent_0.children[index_0]);
+function $initEventSystem_0(){
+  dispatchEvent_1 = $entry(dispatchEvent_2);
+  dispatchUnhandledEvent = $entry(dispatchUnhandledEvent_0);
+  var foreach = foreach_0;
+  var bitlessEvents = bitlessEventDispatchers;
+  foreach(bitlessEvents, function(e, fn){
+    bitlessEvents[e] = $entry(fn);
+  }
+  );
+  var captureEvents_0 = captureEventDispatchers;
+  foreach(captureEvents_0, function(e, fn){
+    captureEvents_0[e] = $entry(fn);
+  }
+  );
+  foreach(captureEvents_0, function(e, fn){
+    $wnd.addEventListener(e, fn, true);
+  }
+  );
+}
+
+function $insertChild(parent_0, toAdd, index_0){
+  var count = 0, child = parent_0.firstChild, before = null;
+  while (child) {
+    if (child.nodeType == 1) {
+      if (count == index_0) {
+        before = child;
+        break;
+      }
+      ++count;
+    }
+    child = child.nextSibling;
+  }
+  parent_0.insertBefore(toAdd, before);
+}
+
+function $sinkBitlessEvent_0(elem, eventTypeName){
+  $maybeInitializeEventSystem();
+  $sinkBitlessEventImpl(elem, eventTypeName);
+}
+
+function $sinkBitlessEventImpl(elem, eventTypeName){
+  var dispatchMap = bitlessEventDispatchers;
+  var dispatcher = dispatchMap[eventTypeName] || dispatchMap['_default_'];
+  elem.addEventListener(eventTypeName, dispatcher, false);
 }
 
 function $sinkEvents_0(elem, bits){
@@ -5314,63 +5162,128 @@ function $sinkEventsImpl(elem, bits){
   elem.__eventBits = bits;
   if (!chMask)
     return;
-  chMask & 1 && (elem.onclick = bits & 1?callDispatchEvent:null);
-  chMask & 3 && (elem.ondblclick = bits & 3?callDispatchDblClickEvent:null);
-  chMask & 4 && (elem.onmousedown = bits & 4?callDispatchEvent:null);
-  chMask & 8 && (elem.onmouseup = bits & 8?callDispatchEvent:null);
-  chMask & 16 && (elem.onmouseover = bits & 16?callDispatchEvent:null);
-  chMask & 32 && (elem.onmouseout = bits & 32?callDispatchEvent:null);
-  chMask & 64 && (elem.onmousemove = bits & 64?callDispatchEvent:null);
-  chMask & 128 && (elem.onkeydown = bits & 128?callDispatchEvent:null);
-  chMask & 256 && (elem.onkeypress = bits & 256?callDispatchEvent:null);
-  chMask & 512 && (elem.onkeyup = bits & 512?callDispatchEvent:null);
-  chMask & 1024 && (elem.onchange = bits & 1024?callDispatchEvent:null);
-  chMask & 2048 && (elem.onfocus = bits & 2048?callDispatchEvent:null);
-  chMask & 4096 && (elem.onblur = bits & 4096?callDispatchEvent:null);
-  chMask & 8192 && (elem.onlosecapture = bits & 8192?callDispatchEvent:null);
-  chMask & $intern_28 && (elem.onscroll = bits & $intern_28?callDispatchEvent:null);
-  chMask & $intern_27 && (elem.nodeName == 'IFRAME'?bits & $intern_27?elem.attachEvent('onload', callDispatchOnLoadEvent):elem.detachEvent('onload', callDispatchOnLoadEvent):(elem.onload = bits & $intern_27?callDispatchUnhandledEvent:null));
-  chMask & 65536 && (elem.onerror = bits & 65536?callDispatchEvent:null);
-  chMask & 131072 && (elem.onmousewheel = bits & 131072?callDispatchEvent:null);
-  chMask & 262144 && (elem.oncontextmenu = bits & 262144?callDispatchEvent:null);
-  chMask & $intern_21 && (elem.onpaste = bits & $intern_21?callDispatchEvent:null);
+  chMask & 1 && (elem.onclick = bits & 1?dispatchEvent_1:null);
+  chMask & 2 && (elem.ondblclick = bits & 2?dispatchEvent_1:null);
+  chMask & 4 && (elem.onmousedown = bits & 4?dispatchEvent_1:null);
+  chMask & 8 && (elem.onmouseup = bits & 8?dispatchEvent_1:null);
+  chMask & 16 && (elem.onmouseover = bits & 16?dispatchEvent_1:null);
+  chMask & 32 && (elem.onmouseout = bits & 32?dispatchEvent_1:null);
+  chMask & 64 && (elem.onmousemove = bits & 64?dispatchEvent_1:null);
+  chMask & 128 && (elem.onkeydown = bits & 128?dispatchEvent_1:null);
+  chMask & 256 && (elem.onkeypress = bits & 256?dispatchEvent_1:null);
+  chMask & 512 && (elem.onkeyup = bits & 512?dispatchEvent_1:null);
+  chMask & 1024 && (elem.onchange = bits & 1024?dispatchEvent_1:null);
+  chMask & 2048 && (elem.onfocus = bits & 2048?dispatchEvent_1:null);
+  chMask & 4096 && (elem.onblur = bits & 4096?dispatchEvent_1:null);
+  chMask & 8192 && (elem.onlosecapture = bits & 8192?dispatchEvent_1:null);
+  chMask & $intern_27 && (elem.onscroll = bits & $intern_27?dispatchEvent_1:null);
+  chMask & 32768 && (elem.onload = bits & 32768?dispatchUnhandledEvent:null);
+  chMask & 65536 && (elem.onerror = bits & 65536?dispatchEvent_1:null);
+  chMask & 131072 && (elem.onmousewheel = bits & 131072?dispatchEvent_1:null);
+  chMask & 262144 && (elem.oncontextmenu = bits & 262144?dispatchEvent_1:null);
+  chMask & $intern_21 && (elem.onpaste = bits & $intern_21?dispatchEvent_1:null);
+  chMask & $intern_28 && (elem.ontouchstart = bits & $intern_28?dispatchEvent_1:null);
+  chMask & 2097152 && (elem.ontouchmove = bits & 2097152?dispatchEvent_1:null);
+  chMask & $intern_20 && (elem.ontouchend = bits & $intern_20?dispatchEvent_1:null);
+  chMask & 8388608 && (elem.ontouchcancel = bits & 8388608?dispatchEvent_1:null);
+  chMask & $intern_29 && (elem.ongesturestart = bits & $intern_29?dispatchEvent_1:null);
+  chMask & $intern_30 && (elem.ongesturechange = bits & $intern_30?dispatchEvent_1:null);
+  chMask & $intern_31 && (elem.ongestureend = bits & $intern_31?dispatchEvent_1:null);
 }
 
-function previewEventImpl(){
-  var isCancelled = false;
-  for (var i = 0; i < $wnd.__gwt_globalEventArray.length; i++) {
-    !$wnd.__gwt_globalEventArray[i]() && (isCancelled = true);
+function dispatchCapturedEvent(evt){
+  previewEvent_0(evt);
+}
+
+function dispatchCapturedMouseEvent(evt){
+  !previewEvent_0(evt);
+  return;
+}
+
+function dispatchDragEvent(evt){
+  $eventPreventDefault(evt);
+  dispatchEvent_2(evt);
+}
+
+function dispatchEvent_2(evt){
+  var element;
+  element = getFirstAncestorWithListener(evt);
+  if (!element) {
+    return;
   }
-  return !isCancelled;
+  dispatchEvent_0(evt, element.nodeType != 1?null:element, getEventListener(element));
 }
 
-var callDispatchDblClickEvent, callDispatchEvent, callDispatchOnLoadEvent, callDispatchUnhandledEvent;
-function $initHandler(initFunc, cmd){
-  var scriptElem;
-  scriptElem = $createScriptElement($doc, initFunc);
-  $appendChild($doc.body, scriptElem);
-  cmd.execute_1();
-  $removeChild($doc.body, scriptElem);
+function dispatchUnhandledEvent_0(evt){
+  var element;
+  element = $eventGetCurrentTarget(evt);
+  $setPropertyString(element, '__gwtLastUnhandledEvent', evt.type);
+  dispatchEvent_2(evt);
 }
 
-function WindowImplIE$1(){
+function getFirstAncestorWithListener(evt){
+  var curElem;
+  curElem = $eventGetCurrentTarget(evt);
+  while (!!curElem && !getEventListener(curElem)) {
+    curElem = curElem.parentNode;
+  }
+  return curElem;
 }
 
-defineClass(778, 1, {}, WindowImplIE$1);
-_.execute_1 = function execute_12(){
-  $wnd.__gwt_initWindowCloseHandler($entry(onClosing), $entry(onClosed));
-}
-;
-var Lcom_google_gwt_user_client_impl_WindowImplIE$1_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/1', 778);
-function WindowImplIE$2(){
+var bitlessEventDispatchers, captureEventDispatchers, dispatchEvent_1, dispatchUnhandledEvent;
+function foreach_0(map_0, fn){
+  for (var e in map_0) {
+    map_0.hasOwnProperty(e) && fn(e, map_0[e]);
+  }
 }
 
-defineClass(779, 1, {}, WindowImplIE$2);
-_.execute_1 = function execute_13(){
-  $wnd.__gwt_initWindowResizeHandler($entry(onResize_1));
+function $initWindowCloseHandler(){
+  var oldOnBeforeUnload = $wnd.onbeforeunload;
+  var oldOnUnload = $wnd.onunload;
+  $wnd.onbeforeunload = function(evt){
+    var ret, oldRet;
+    try {
+      ret = $entry(onClosing)();
+    }
+     finally {
+      oldRet = oldOnBeforeUnload && oldOnBeforeUnload(evt);
+    }
+    if (ret != null) {
+      return ret;
+    }
+    if (oldRet != null) {
+      return oldRet;
+    }
+  }
+  ;
+  $wnd.onunload = $entry(function(evt){
+    try {
+      closeHandlersInitialized && fire_1((!handlers_1 && (handlers_1 = new Window$WindowHandlers) , handlers_1));
+    }
+     finally {
+      oldOnUnload && oldOnUnload(evt);
+      $wnd.onresize = null;
+      $wnd.onscroll = null;
+      $wnd.onbeforeunload = null;
+      $wnd.onunload = null;
+    }
+  }
+  );
 }
-;
-var Lcom_google_gwt_user_client_impl_WindowImplIE$2_2_classLit = createForClass('com.google.gwt.user.client.impl', 'WindowImplIE/2', 779);
+
+function $initWindowResizeHandler(){
+  var oldOnResize = $wnd.onresize;
+  $wnd.onresize = $entry(function(evt){
+    try {
+      onResize_1();
+    }
+     finally {
+      oldOnResize && oldOnResize(evt);
+    }
+  }
+  );
+}
+
 function $clear_1(this$static){
   var it;
   it = this$static.iterator();
@@ -5380,7 +5293,7 @@ function $clear_1(this$static){
   }
 }
 
-defineClass(1454, 17, $intern_29);
+defineClass(1452, 17, $intern_32);
 _.add_0 = function add_1(child){
   throw new UnsupportedOperationException_0('This panel does not support no-arg add()');
 }
@@ -5397,10 +5310,15 @@ _.doDetachChildren = function doDetachChildren_0(){
   tryCommand_0(this, ($clinit_AttachDetachException() , detachCommand));
 }
 ;
-var Lcom_google_gwt_user_client_ui_Panel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Panel', 1454);
+var Lcom_google_gwt_user_client_ui_Panel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Panel', 1452);
 function $add_0(this$static, child, container){
+  $add_1(this$static, child, ($clinit_DOM() , container));
+}
+
+function $add_1(this$static, child, container){
   $removeFromParent_0(child);
-  $add_11(this$static.children_0, child);
+  $add_12(this$static.children, child);
+  $clinit_DOM();
   $appendChild(container, resolve(child.element));
   $setParent(child, this$static);
 }
@@ -5409,23 +5327,27 @@ function $adjustIndex(this$static, child, beforeIndex){
   var idx;
   $checkIndexBoundsForInsertion(this$static, beforeIndex);
   if (child.parent_1 == this$static) {
-    idx = $indexOf(this$static.children_0, child);
+    idx = $indexOf(this$static.children, child);
     idx < beforeIndex && --beforeIndex;
   }
   return beforeIndex;
 }
 
 function $checkIndexBoundsForInsertion(this$static, index_0){
-  if (index_0 < 0 || index_0 > this$static.children_0.size_0) {
+  if (index_0 < 0 || index_0 > this$static.children.size_0) {
     throw new IndexOutOfBoundsException;
   }
 }
 
-function $insert_0(this$static, child, container, beforeIndex, domInsert){
+function $insert_0(this$static, child, container, beforeIndex){
+  $insert_1(this$static, child, ($clinit_DOM() , container), beforeIndex, true);
+}
+
+function $insert_1(this$static, child, container, beforeIndex, domInsert){
   beforeIndex = $adjustIndex(this$static, child, beforeIndex);
   $removeFromParent_0(child);
-  $insert_2(this$static.children_0, child, beforeIndex);
-  domInsert?insertChild(container, child.element, beforeIndex):$appendChild(container, resolve(child.element));
+  $insert_3(this$static.children, child, beforeIndex);
+  domInsert?insertChild(container, ($clinit_DOM() , child.element), beforeIndex):($clinit_DOM() , $appendChild(container, resolve(child.element)));
   $setParent(child, this$static);
 }
 
@@ -5438,20 +5360,20 @@ function $remove_0(this$static, w){
     $setParent(w, null);
   }
    finally {
-    elem = w.element;
-    $removeChild($getParentElement(elem), elem);
-    $remove_7(this$static.children_0, w);
+    elem = ($clinit_DOM() , w.element);
+    $removeChild((null , $getParentElement(elem)), elem);
+    $remove_7(this$static.children, w);
   }
   return true;
 }
 
 function ComplexPanel(){
-  this.children_0 = new WidgetCollection(this);
+  this.children = new WidgetCollection(this);
 }
 
-defineClass(182, 1454, $intern_29);
+defineClass(182, 1452, $intern_32);
 _.iterator = function iterator_0(){
-  return new WidgetCollection$WidgetIterator(this.children_0);
+  return new WidgetCollection$WidgetIterator(this.children);
 }
 ;
 _.remove = function remove_0(w){
@@ -5459,14 +5381,14 @@ _.remove = function remove_0(w){
 }
 ;
 var Lcom_google_gwt_user_client_ui_ComplexPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'ComplexPanel', 182);
-function $add_1(this$static, w){
-  $add_0(this$static, w, this$static.element);
+function $add_2(this$static, w){
+  $add_1(this$static, w, ($clinit_DOM() , this$static.element));
 }
 
 function $remove_1(this$static, w){
   var removed;
   removed = $remove_0(this$static, w);
-  removed && changeToStaticPositioning(w.element);
+  removed && changeToStaticPositioning(($clinit_DOM() , w.element));
   return removed;
 }
 
@@ -5476,20 +5398,20 @@ function changeToStaticPositioning(elem){
   $setPropertyImpl(elem.style, 'position', '');
 }
 
-defineClass(1108, 182, $intern_30);
+defineClass(1103, 182, $intern_33);
 _.add_0 = function add_2(w){
-  $add_1(this, w);
+  $add_2(this, w);
 }
 ;
 _.insert = function insert(w, beforeIndex){
-  $insert_0(this, w, this.element, beforeIndex, true);
+  $insert_1(this, w, ($clinit_DOM() , this.element), beforeIndex, true);
 }
 ;
 _.remove = function remove_1(w){
   return $remove_1(this, w);
 }
 ;
-var Lcom_google_gwt_user_client_ui_AbsolutePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AbsolutePanel', 1108);
+var Lcom_google_gwt_user_client_ui_AbsolutePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AbsolutePanel', 1103);
 function $clinit_AttachDetachException(){
   $clinit_AttachDetachException = emptyMethod;
   attachCommand = new AttachDetachException$1;
@@ -5514,7 +5436,7 @@ function tryCommand_0(hasWidgets, c){
       if (instanceOf($e0, 49)) {
         e = $e0;
         !caught && (caught = new HashSet);
-        $add_32(caught, e);
+        $add_33(caught, e);
       }
        else 
         throw unwrap($e0);
@@ -5531,21 +5453,30 @@ var Lcom_google_gwt_user_client_ui_AttachDetachException_2_classLit = createForC
 function AttachDetachException$1(){
 }
 
-defineClass(1038, 1, {}, AttachDetachException$1);
-_.execute_2 = function execute_15(w){
+defineClass(1034, 1, {}, AttachDetachException$1);
+_.execute_2 = function execute_11(w){
   w.onAttach();
 }
 ;
-var Lcom_google_gwt_user_client_ui_AttachDetachException$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AttachDetachException/1', 1038);
+var Lcom_google_gwt_user_client_ui_AttachDetachException$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AttachDetachException/1', 1034);
 function AttachDetachException$2(){
 }
 
-defineClass(1039, 1, {}, AttachDetachException$2);
-_.execute_2 = function execute_16(w){
+defineClass(1035, 1, {}, AttachDetachException$2);
+_.execute_2 = function execute_12(w){
   w.onDetach();
 }
 ;
-var Lcom_google_gwt_user_client_ui_AttachDetachException$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AttachDetachException/2', 1039);
+var Lcom_google_gwt_user_client_ui_AttachDetachException$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AttachDetachException/2', 1035);
+function $clinit_FocusWidget(){
+  $clinit_FocusWidget = emptyMethod;
+  impl_1 = ($clinit_FocusImpl() , $clinit_FocusImpl() , implWidget);
+}
+
+function $isEnabled(this$static){
+  return !($clinit_DOM() , this$static.element)['disabled'];
+}
+
 function $onAttach_0(this$static){
   var tabIndex;
   $onAttach(this$static);
@@ -5554,16 +5485,16 @@ function $onAttach_0(this$static){
 }
 
 function FocusWidget(elem){
-  $setElement(this, elem);
+  $setElement_0(this, ($clinit_DOM() , elem));
 }
 
-defineClass(290, 17, $intern_31);
+defineClass(290, 17, $intern_34);
 _.getTabIndex = function getTabIndex(){
-  return this.element.tabIndex;
+  return $getTabIndex(($clinit_DOM() , this.element));
 }
 ;
 _.isEnabled = function isEnabled(){
-  return !this.element['disabled'];
+  return $isEnabled(this);
 }
 ;
 _.onAttach = function onAttach_2(){
@@ -5571,9 +5502,10 @@ _.onAttach = function onAttach_2(){
 }
 ;
 _.setTabIndex = function setTabIndex(index_0){
-  $setTabIndex(this.element, index_0);
+  $setTabIndex(($clinit_DOM() , this.element), index_0);
 }
 ;
+var impl_1;
 var Lcom_google_gwt_user_client_ui_FocusWidget_2_classLit = createForClass('com.google.gwt.user.client.ui', 'FocusWidget', 290);
 function $setTextOrHtml(this$static, content_0){
   $setInnerText(this$static.element, content_0);
@@ -5592,7 +5524,7 @@ function DirectionalTextHelper(element){
 defineClass(411, 1, {}, DirectionalTextHelper);
 var Lcom_google_gwt_user_client_ui_DirectionalTextHelper_2_classLit = createForClass('com.google.gwt.user.client.ui', 'DirectionalTextHelper', 411);
 function LabelBase(element){
-  $setElement(this, element);
+  $setElement_0(this, ($clinit_DOM() , element));
   this.directionalTextHelper = new DirectionalTextHelper(this.element);
 }
 
@@ -5604,21 +5536,21 @@ function $setText_0(this$static, text_0){
 
 defineClass(398, 245, $intern_24);
 var Lcom_google_gwt_user_client_ui_Label_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Label', 398);
-function $add_5(this$static, widget){
-  $add_0(this$static, widget, this$static.element);
+function $add_6(this$static, widget){
+  $add_1(this$static, widget, ($clinit_DOM() , this$static.element));
 }
 
-function $addAndReplaceElement_0(this$static, widget, toReplace){
+function $addAndReplaceElement_1(this$static, widget, toReplace){
   var children, next, toRemove;
-  if (toReplace == widget.element) {
+  if (toReplace == ($clinit_DOM() , widget.element)) {
     return;
   }
   $removeFromParent_0(widget);
   toRemove = null;
-  children = new WidgetCollection$WidgetIterator(this$static.children_0);
+  children = new WidgetCollection$WidgetIterator(this$static.children);
   while (children.index_0 < children.this$01.size_0) {
     next = $next_3(children);
-    if (isOrHasChildImpl(toReplace, next.element)) {
+    if ($isOrHasChild(toReplace, next.element)) {
       if (next.element == toReplace) {
         toRemove = next;
         break;
@@ -5626,7 +5558,7 @@ function $addAndReplaceElement_0(this$static, widget, toReplace){
       $remove_8(children);
     }
   }
-  $add_11(this$static.children_0, widget);
+  $add_12(this$static.children, widget);
   if (!toRemove) {
     $replaceChild(toReplace.parentNode, widget.element, toReplace);
   }
@@ -5639,13 +5571,13 @@ function $addAndReplaceElement_0(this$static, widget, toReplace){
 
 function HTMLPanel(html){
   ComplexPanel.call(this);
-  $setElement(this, $createElement($doc, 'div'));
+  $setElement_0(this, ($clinit_DOM() , $doc.createElement('div')));
   $setInnerHTML(this.element, html);
 }
 
-defineClass(53, 182, $intern_29, HTMLPanel);
+defineClass(53, 182, $intern_32, HTMLPanel);
 _.add_0 = function add_5(widget){
-  $add_5(this, widget);
+  $add_6(this, widget);
 }
 ;
 var Lcom_google_gwt_user_client_ui_HTMLPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HTMLPanel', 53);
@@ -5660,63 +5592,67 @@ function $clinit_HasHorizontalAlignment(){
 }
 
 var ALIGN_DEFAULT, ALIGN_LEFT, ALIGN_LOCALE_START;
-defineClass(1452, 1, {});
-var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$AutoHorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/AutoHorizontalAlignmentConstant', 1452);
+defineClass(1450, 1, {});
+var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$AutoHorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/AutoHorizontalAlignmentConstant', 1450);
 function HasHorizontalAlignment$HorizontalAlignmentConstant(textAlignString){
   this.textAlignString = textAlignString;
 }
 
-defineClass(241, 1452, {}, HasHorizontalAlignment$HorizontalAlignmentConstant);
+defineClass(241, 1450, {}, HasHorizontalAlignment$HorizontalAlignmentConstant);
 var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$HorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/HorizontalAlignmentConstant', 241);
 function $onLoad(this$static, image){
   var unhandledEvent;
-  unhandledEvent = $getPropertyString(image.element, '__gwtLastUnhandledEvent');
+  unhandledEvent = $getPropertyString(($clinit_DOM() , image.element), '__gwtLastUnhandledEvent');
   $equals_0('load', unhandledEvent) && (this$static.syntheticEventCommand = new Image$State$1(this$static, image) , $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), this$static.syntheticEventCommand));
 }
 
-defineClass(1047, 1, {});
+defineClass(1043, 1, {});
 _.syntheticEventCommand = null;
-var Lcom_google_gwt_user_client_ui_Image$State_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State', 1047);
+var Lcom_google_gwt_user_client_ui_Image$State_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State', 1043);
 function Image$State$1(this$1, val$image){
   this.this$11 = this$1;
   this.val$image2 = val$image;
 }
 
-defineClass(1048, 1, {}, Image$State$1);
-_.execute_1 = function execute_20(){
+defineClass(1044, 1, {}, Image$State$1);
+_.execute_1 = function execute_16(){
   var evt;
   if (this.val$image2.state != this.this$11 || this != this.this$11.syntheticEventCommand) {
     return;
   }
   this.this$11.syntheticEventCommand = null;
   if (!this.val$image2.attached) {
-    $setPropertyString(this.val$image2.element, '__gwtLastUnhandledEvent', 'load');
+    $setPropertyString($getImageElement(this.val$image2), '__gwtLastUnhandledEvent', 'load');
     return;
   }
-  evt = $createHtmlEvent($doc, 'load');
-  $dispatchEvent(this.val$image2.element, evt);
+  evt = $createHtmlEvent($doc, 'load', false, false);
+  $dispatchEvent($getImageElement(this.val$image2), evt);
 }
 ;
-var Lcom_google_gwt_user_client_ui_Image$State$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State/1', 1048);
-function $setUrl_1(image, url_0){
-  !!image.state && $setPropertyString(image.element, '__gwtLastUnhandledEvent', '');
-  $setSrc_0(image.element, url_0.uri_0);
+var Lcom_google_gwt_user_client_ui_Image$State$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State/1', 1044);
+function $getImageElement(image){
+  return $clinit_DOM() , image.element;
 }
 
-function $setUrl_2(image, url_0, width_0, height){
-  !!image.state && $setPropertyString(image.element, '__gwtLastUnhandledEvent', '');
-  $setSrc_0(image.element, url_0.uri_0);
+function $setUrl_2(image, url_0){
+  !!image.state && $setPropertyString(($clinit_DOM() , image.element), '__gwtLastUnhandledEvent', '');
+  $setSrc_0(($clinit_DOM() , image.element), url_0.uri_0);
+}
+
+function $setUrl_3(image, url_0, width_0, height){
+  !!image.state && $setPropertyString(($clinit_DOM() , image.element), '__gwtLastUnhandledEvent', '');
+  $setSrc_0(($clinit_DOM() , image.element), url_0.uri_0);
   $setWidth(image.element, width_0);
   $setHeight(image.element, height);
 }
 
 function Image$UnclippedState(image){
-  $replaceElement(image, $createElement($doc, 'img'));
-  sinkEvents_1(image.element, $intern_27);
-  image.eventsToSink == -1?sinkEvents_0(image.element, 133398655 | $getEventsSunk(image.element)):(image.eventsToSink |= 133398655);
+  $replaceElement(image, $doc.createElement('img'));
+  sinkEvents_1(($clinit_DOM() , image.element), 32768);
+  image.eventsToSink == -1?sinkEvents_0(image.element, 133398655 | (image.element.__eventBits || 0)):(image.eventsToSink |= 133398655);
 }
 
-defineClass(212, 1047, {}, Image$UnclippedState);
+defineClass(212, 1043, {}, Image$UnclippedState);
 var Lcom_google_gwt_user_client_ui_Image$UnclippedState_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/UnclippedState', 212);
 var Lcom_google_gwt_user_client_ui_IsWidget_2_classLit = createForInterface('com.google.gwt.user.client.ui', 'IsWidget');
 function $schedule_0(this$static){
@@ -5732,8 +5668,8 @@ function LayoutCommand(layout){
   this.layout = layout;
 }
 
-defineClass(1359, 1, {}, LayoutCommand);
-_.execute_1 = function execute_21(){
+defineClass(1357, 1, {}, LayoutCommand);
+_.execute_1 = function execute_17(){
   this.scheduled = false;
   if (this.canceled) {
     return;
@@ -5744,21 +5680,21 @@ _.execute_1 = function execute_21(){
 _.canceled = false;
 _.duration_0 = 0;
 _.scheduled = false;
-var Lcom_google_gwt_user_client_ui_LayoutCommand_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand', 1359);
+var Lcom_google_gwt_user_client_ui_LayoutCommand_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand', 1357);
 function LayoutCommand$1(){
 }
 
-defineClass(1360, 1, {}, LayoutCommand$1);
-var Lcom_google_gwt_user_client_ui_LayoutCommand$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand/1', 1360);
-function $add_8(this$static, widget){
-  $insert_1(this$static, widget, this$static.children_0.size_0);
+defineClass(1358, 1, {}, LayoutCommand$1);
+var Lcom_google_gwt_user_client_ui_LayoutCommand$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand/1', 1358);
+function $add_9(this$static, widget){
+  $insert_2(this$static, widget, this$static.children.size_0);
 }
 
-function $insert_1(this$static, widget, beforeIndex){
+function $insert_2(this$static, widget, beforeIndex){
   var layer;
   $removeFromParent_0(widget);
-  $insert_2(this$static.children_0, widget, beforeIndex);
-  layer = $attachChild(this$static.layout, widget.element, widget);
+  $insert_3(this$static.children, widget, beforeIndex);
+  layer = $attachChild(this$static.layout, ($clinit_DOM() , widget.element), widget);
   widget.layoutData = layer;
   $setParent(widget, this$static);
   $schedule_0(this$static.layoutCmd);
@@ -5766,15 +5702,15 @@ function $insert_1(this$static, widget, beforeIndex){
 
 function $onResize_0(this$static){
   var child, child$iterator;
-  for (child$iterator = new WidgetCollection$WidgetIterator(this$static.children_0); child$iterator.index_0 < child$iterator.this$01.size_0;) {
+  for (child$iterator = new WidgetCollection$WidgetIterator(this$static.children); child$iterator.index_0 < child$iterator.this$01.size_0;) {
     child = $next_3(child$iterator);
     instanceOf(child, 91) && dynamicCast(child, 91).onResize_0();
   }
 }
 
-defineClass(1315, 182, $intern_32);
+defineClass(1313, 182, $intern_35);
 _.add_0 = function add_8(widget){
-  $add_8(this, widget);
+  $add_9(this, widget);
 }
 ;
 _.onAttach = function onAttach_6(){
@@ -5783,7 +5719,6 @@ _.onAttach = function onAttach_6(){
 ;
 _.onDetach = function onDetach_5(){
   $onDetach(this);
-  $removeLayerRefs(this.layout.parentElem);
 }
 ;
 _.onResize_0 = function onResize_7(){
@@ -5797,23 +5732,23 @@ _.remove = function remove_10(w){
   return removed;
 }
 ;
-var Lcom_google_gwt_user_client_ui_LayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutPanel', 1315);
+var Lcom_google_gwt_user_client_ui_LayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutPanel', 1313);
 function $checkIndex(this$static, index_0){
-  if (index_0 < 0 || index_0 >= this$static.element.options.length) {
+  if (index_0 < 0 || index_0 >= ($clinit_DOM() , this$static.element).options.length) {
     throw new IndexOutOfBoundsException;
   }
 }
 
 function $getSelectedValue(this$static){
   var index_0;
-  index_0 = this$static.element.selectedIndex;
+  index_0 = ($clinit_DOM() , this$static.element).selectedIndex;
   return index_0 == -1?null:($checkIndex(this$static, index_0) , this$static.element.options[index_0].value);
 }
 
 function $insertItem(this$static, item_0, value_0, index_0){
   var before, itemCount, option, select;
-  select = this$static.element;
-  option = $createElement($doc, 'option');
+  select = ($clinit_DOM() , this$static.element);
+  option = $doc.createElement('option');
   option.text = item_0;
   $removeAttribute(option, 'bidiwrapped');
   option.value = value_0;
@@ -5828,8 +5763,8 @@ function $insertItem(this$static, item_0, value_0, index_0){
   }
 }
 
-defineClass(1130, 290, $intern_31);
-var Lcom_google_gwt_user_client_ui_ListBox_2_classLit = createForClass('com.google.gwt.user.client.ui', 'ListBox', 1130);
+defineClass(1126, 290, $intern_34);
+var Lcom_google_gwt_user_client_ui_ListBox_2_classLit = createForClass('com.google.gwt.user.client.ui', 'ListBox', 1126);
 function $clinit_PotentialElement(){
   $clinit_PotentialElement = emptyMethod;
   declareShim();
@@ -5917,7 +5852,7 @@ function $toString_1(this$static){
   return sb.string;
 }
 
-defineClass(1443, 1, $intern_33);
+defineClass(1441, 1, $intern_36);
 _.add_1 = function add_9(o){
   throw new UnsupportedOperationException_0('Add not supported on this collection');
 }
@@ -5954,11 +5889,11 @@ _.toString$ = function toString_9(){
   return $toString_1(this);
 }
 ;
-var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 1443);
+var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 1441);
 function RootLayoutPanel(){
   ComplexPanel.call(this);
-  $setElement(this, $createElement($doc, 'div'));
-  this.layout = new Layout(this.element);
+  $setElement(this, $doc.createElement('div'));
+  this.layout = new Layout(($clinit_DOM() , this.element));
   this.layoutCmd = new LayoutCommand(this.layout);
   addResizeHandler(new RootLayoutPanel$1(this));
 }
@@ -5966,28 +5901,28 @@ function RootLayoutPanel(){
 function get_0(){
   if (!singleton_0) {
     singleton_0 = new RootLayoutPanel;
-    $add_1(($clinit_RootPanel() , get_1(null)), singleton_0);
+    $add_2(($clinit_RootPanel() , get_1(null)), singleton_0);
   }
   return singleton_0;
 }
 
-defineClass(1316, 1315, $intern_32, RootLayoutPanel);
+defineClass(1314, 1313, $intern_35, RootLayoutPanel);
 _.onLoad = function onLoad_5(){
   $fillParent(this.layout.parentElem);
 }
 ;
 var singleton_0;
-var Lcom_google_gwt_user_client_ui_RootLayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel', 1316);
+var Lcom_google_gwt_user_client_ui_RootLayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel', 1314);
 function RootLayoutPanel$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1317, 1, $intern_34, RootLayoutPanel$1);
+defineClass(1315, 1, $intern_37, RootLayoutPanel$1);
 _.onResize = function onResize_9(event_0){
   $onResize_0(this.this$01);
 }
 ;
-var Lcom_google_gwt_user_client_ui_RootLayoutPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel/1', 1317);
+var Lcom_google_gwt_user_client_ui_RootLayoutPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel/1', 1315);
 function $clinit_RootPanel(){
   $clinit_RootPanel = emptyMethod;
   maybeDetachCommand = new RootPanel$1;
@@ -5997,7 +5932,7 @@ function $clinit_RootPanel(){
 
 function RootPanel(elem){
   ComplexPanel.call(this);
-  $setElement(this, elem);
+  $setElement_0(this, ($clinit_DOM() , elem));
   $onAttach(this);
 }
 
@@ -6033,7 +5968,7 @@ function get_1(id_0){
     }
   }
   if (rp) {
-    if (!elem || rp.element == elem) {
+    if (!elem || ($clinit_DOM() , rp.element == elem)) {
       return rp;
     }
   }
@@ -6043,7 +5978,7 @@ function get_1(id_0){
   }
   !elem?(rp = new RootPanel$DefaultRootPanel):(rp = new RootPanel(elem));
   rootPanels.put(id_0, rp);
-  $add_32(widgetsToDetach, rp);
+  $add_33(widgetsToDetach, rp);
   return rp;
 }
 
@@ -6052,31 +5987,31 @@ function getBodyElement(){
   return $doc.body;
 }
 
-defineClass(218, 1108, $intern_35, RootPanel);
+defineClass(218, 1103, $intern_38, RootPanel);
 var maybeDetachCommand, rootPanels, widgetsToDetach;
 var Lcom_google_gwt_user_client_ui_RootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel', 218);
 function RootPanel$1(){
 }
 
-defineClass(1110, 1, {}, RootPanel$1);
-_.execute_2 = function execute_23(w){
+defineClass(1105, 1, {}, RootPanel$1);
+_.execute_2 = function execute_20(w){
   w.isAttached_0() && w.onDetach();
 }
 ;
-var Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 1110);
+var Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 1105);
 function RootPanel$2(){
 }
 
-defineClass(1111, 1, {1486:1, 21:1}, RootPanel$2);
-var Lcom_google_gwt_user_client_ui_RootPanel$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/2', 1111);
+defineClass(1106, 1, {1483:1, 21:1}, RootPanel$2);
+var Lcom_google_gwt_user_client_ui_RootPanel$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/2', 1106);
 function RootPanel$DefaultRootPanel(){
   RootPanel.call(this, getBodyElement());
 }
 
-defineClass(1109, 218, $intern_35, RootPanel$DefaultRootPanel);
-var Lcom_google_gwt_user_client_ui_RootPanel$DefaultRootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/DefaultRootPanel', 1109);
-function $add_11(this$static, w){
-  $insert_2(this$static, w, this$static.size_0);
+defineClass(1104, 218, $intern_38, RootPanel$DefaultRootPanel);
+var Lcom_google_gwt_user_client_ui_RootPanel$DefaultRootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/DefaultRootPanel', 1104);
+function $add_12(this$static, w){
+  $insert_3(this$static, w, this$static.size_0);
 }
 
 function $indexOf(this$static, w){
@@ -6089,7 +6024,7 @@ function $indexOf(this$static, w){
   return -1;
 }
 
-function $insert_2(this$static, w, beforeIndex){
+function $insert_3(this$static, w, beforeIndex){
   var i, i0, newArray;
   if (beforeIndex < 0 || beforeIndex > this$static.size_0) {
     throw new IndexOutOfBoundsException;
@@ -6163,7 +6098,7 @@ function WidgetCollection$WidgetIterator(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(121, 1, {}, WidgetCollection$WidgetIterator);
+defineClass(120, 1, {}, WidgetCollection$WidgetIterator);
 _.hasNext = function hasNext_3(){
   return this.index_0 < this.this$01.size_0;
 }
@@ -6177,11 +6112,30 @@ _.remove_0 = function remove_14(){
 }
 ;
 _.index_0 = 0;
-var Lcom_google_gwt_user_client_ui_WidgetCollection$WidgetIterator_2_classLit = createForClass('com.google.gwt.user.client.ui', 'WidgetCollection/WidgetIterator', 121);
+var Lcom_google_gwt_user_client_ui_WidgetCollection$WidgetIterator_2_classLit = createForClass('com.google.gwt.user.client.ui', 'WidgetCollection/WidgetIterator', 120);
+function $clinit_FocusImpl(){
+  $clinit_FocusImpl = emptyMethod;
+  implPanel = new FocusImplSafari;
+  implWidget = implPanel?new FocusImpl:implPanel;
+}
+
+function FocusImpl(){
+}
+
+defineClass(1117, 1, {}, FocusImpl);
+var implPanel, implWidget;
+var Lcom_google_gwt_user_client_ui_impl_FocusImpl_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImpl', 1117);
+defineClass(1463, 1117, {});
+var Lcom_google_gwt_user_client_ui_impl_FocusImplStandard_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImplStandard', 1463);
+function FocusImplSafari(){
+}
+
+defineClass(1196, 1463, {}, FocusImplSafari);
+var Lcom_google_gwt_user_client_ui_impl_FocusImplSafari_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImplSafari', 1196);
 function assertCompileTimeUserAgent(){
   var runtimeValue;
   runtimeValue = $getRuntimeValue();
-  if (!$equals_0('ie8', runtimeValue)) {
+  if (!$equals_0('safari', runtimeValue)) {
     throw new UserAgentAsserter$UserAgentAssertionError(runtimeValue);
   }
 }
@@ -6190,15 +6144,15 @@ function Error_0(message){
   Throwable.call(this, message);
 }
 
-defineClass(175, 49, $intern_36);
+defineClass(175, 49, $intern_39);
 var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 175);
-defineClass(115, 175, $intern_36);
-var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 115);
+defineClass(114, 175, $intern_39);
+var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 114);
 function UserAgentAsserter$UserAgentAssertionError(runtimeValue){
-  Error_0.call(this, '' + ('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (ie8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (ie8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 49)?dynamicCast('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (ie8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 49):null);
+  Error_0.call(this, '' + ('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 49)?dynamicCast('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 49):null);
 }
 
-defineClass(434, 115, $intern_36, UserAgentAsserter$UserAgentAssertionError);
+defineClass(434, 114, $intern_39, UserAgentAsserter$UserAgentAssertionError);
 var Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 434);
 function $getRuntimeValue(){
   var ua = navigator.userAgent.toLowerCase();
@@ -6242,7 +6196,7 @@ function SimpleEventBus$1(this$0, val$type, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(694, 1, {1417:1}, SimpleEventBus$1);
+defineClass(694, 1, {1415:1}, SimpleEventBus$1);
 _.removeHandler = function removeHandler_0(){
   $removeHandler(this);
 }
@@ -6255,8 +6209,8 @@ function SimpleEventBus$2(this$0, val$type, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(695, 1, {1419:1}, SimpleEventBus$2);
-_.execute_1 = function execute_27(){
+defineClass(695, 1, {1417:1}, SimpleEventBus$2);
+_.execute_1 = function execute_24(){
   $doAddNow(this.this$01, this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
@@ -6268,8 +6222,8 @@ function SimpleEventBus$3(this$0, val$type, val$source, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(377, 1, {1419:1}, SimpleEventBus$3);
-_.execute_1 = function execute_28(){
+defineClass(377, 1, {1417:1}, SimpleEventBus$3);
+_.execute_1 = function execute_25(){
   $doRemoveNow(this.this$01, this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
@@ -6357,7 +6311,7 @@ function $draw_0(this$static, data_0, options){
 
 function $recreate(this$static){
   var eventHandler, eventHandler$iterator;
-  this$static.chartObject = this$static.createChartObject(this$static.element);
+  this$static.chartObject = this$static.createChartObject(($clinit_DOM() , this$static.element));
   for (eventHandler$iterator = $iterator_0(new AbstractMap$2(this$static.eventMap)); eventHandler$iterator.val$outerIter2.hasNext();) {
     eventHandler = throwClassCastExceptionUnlessNull($next_6(eventHandler$iterator));
     $addListener(this$static.chartObject, null.nullMethod(), eventHandler);
@@ -6379,13 +6333,13 @@ function $redrawNow(this$static){
 
 function ChartWidget(){
   var chartDiv;
-  chartDiv = $createElement($doc, 'div');
+  chartDiv = ($clinit_DOM() , $doc.createElement('div'));
   this.chartObject = this.createChartObject(chartDiv);
-  this.element = chartDiv;
+  $setElement_0(this, chartDiv);
   this.eventMap = new HashMap;
 }
 
-defineClass(309, 17, $intern_37);
+defineClass(309, 17, $intern_40);
 _.onLoad = function onLoad_7(){
   if (!this.unloaded) {
     return;
@@ -6396,7 +6350,7 @@ _.onLoad = function onLoad_7(){
 }
 ;
 _.onResize_0 = function onResize_10(){
-  this.element.style.display != 'none' && $getPropertyInt(this.element, 'offsetHeight') != 0 && $getPropertyInt(this.element, 'offsetWidth') != 0 && this.redraw();
+  ($clinit_DOM() , this.element).style.display != 'none' && $getPropertyInt(this.element, 'offsetHeight') != 0 && $getPropertyInt(this.element, 'offsetWidth') != 0 && this.redraw();
 }
 ;
 _.onUnload = function onUnload_3(){
@@ -6418,22 +6372,22 @@ function ChartWidget$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1368, 1, {}, ChartWidget$1);
-_.execute_1 = function execute_29(){
+defineClass(1366, 1, {}, ChartWidget$1);
+_.execute_1 = function execute_26(){
   $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), new ChartWidget$1$1(this));
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ChartWidget$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1', 1368);
+var Lcom_googlecode_gwt_charts_client_ChartWidget$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1', 1366);
 function ChartWidget$1$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(1369, 1, {}, ChartWidget$1$1);
-_.execute_1 = function execute_30(){
+defineClass(1367, 1, {}, ChartWidget$1$1);
+_.execute_1 = function execute_27(){
   $redrawNow(this.this$11.this$01);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ChartWidget$1$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1/1', 1369);
+var Lcom_googlecode_gwt_charts_client_ChartWidget$1$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1/1', 1367);
 function $clinit_ColumnType(){
   $clinit_ColumnType = emptyMethod;
   STRING = new ColumnType('STRING', 0, 'string');
@@ -6469,11 +6423,11 @@ function $addRows(this$static, number){
   return this$static.addRows(number);
 }
 
-function $setValue_2(this$static, rowIndex, columnIndex, value_0){
+function $setValue_1(this$static, rowIndex, columnIndex, value_0){
   this$static.setValue(rowIndex, columnIndex, value_0);
 }
 
-function $setValue_3(this$static, rowIndex, columnIndex, value_0){
+function $setValue_2(this$static, rowIndex, columnIndex, value_0){
   this$static.setValue(rowIndex, columnIndex, value_0);
 }
 
@@ -6498,8 +6452,8 @@ function AjaxKeyConstants_(){
   this.cache = new HashMap;
 }
 
-defineClass(1388, 1, {}, AjaxKeyConstants_);
-var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxKeyConstants_1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxKeyConstants_', 1388);
+defineClass(1386, 1, {}, AjaxKeyConstants_);
+var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxKeyConstants_1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxKeyConstants_', 1386);
 function $clinit_AjaxKeyRepository(){
   $clinit_AjaxKeyRepository = emptyMethod;
   keys_1 = new AjaxKeyConstants_;
@@ -6543,7 +6497,7 @@ function injectJsapi(apiKey, hostname){
   key = apiKey == null?'':'key=' + apiKey + '&';
   hostname = hostname == null?'www.google.com':hostname;
   src_0 = getProtocol() + '//' + hostname + '/jsapi?' + key + 'callback=__gwt_AjaxLoader_onLoad';
-  script = $createElement(doc, 'script');
+  script = doc.createElement('script');
   script.src = src_0;
   script.type = 'text/javascript';
   $appendChild(doc.body, script);
@@ -6557,7 +6511,7 @@ function loadApi(version, onLoad, settings){
   !settings && (settings = {});
   $setCallback_0(settings, onLoad);
   apiLoad = new AjaxLoader$1(version, settings);
-  loaded?nativeLoadApi(apiLoad.val$api1, apiLoad.val$version2, apiLoad.val$copyOfSettings3):$add_33(queuedApiLoads, apiLoad);
+  loaded?nativeLoadApi(apiLoad.val$api1, apiLoad.val$version2, apiLoad.val$copyOfSettings3):$add_34(queuedApiLoads, apiLoad);
 }
 
 function nativeCreateCallback(){
@@ -6580,7 +6534,7 @@ function onLoadCallback(){
   var r, r$iterator;
   loaded = true;
   for (r$iterator = new AbstractList$IteratorImpl(queuedApiLoads.arrayList); r$iterator.i < r$iterator.this$01_0.size_1();) {
-    r = (checkCriticalElement(r$iterator.i < r$iterator.this$01_0.size_1()) , dynamicCast(r$iterator.this$01_0.get_1(r$iterator.last = r$iterator.i++), 123));
+    r = (checkCriticalElement(r$iterator.i < r$iterator.this$01_0.size_1()) , dynamicCast(r$iterator.this$01_0.get_1(r$iterator.last = r$iterator.i++), 122));
     r.run();
   }
   queuedApiLoads.arrayList.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
@@ -6593,12 +6547,12 @@ function AjaxLoader$1(val$version, val$copyOfSettings){
   this.val$copyOfSettings3 = val$copyOfSettings;
 }
 
-defineClass(1365, 1, $intern_38, AjaxLoader$1);
+defineClass(1363, 1, $intern_41, AjaxLoader$1);
 _.run = function run_0(){
   nativeLoadApi(this.val$api1, this.val$version2, this.val$copyOfSettings3);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxLoader$1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxLoader/1', 1365);
+var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxLoader$1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxLoader/1', 1363);
 function $setCallback_0(this$static, onLoad){
   this$static.callback = function(){
     onLoad.run();
@@ -6614,7 +6568,7 @@ function CoreChartWidget(){
   ChartWidget.call(this);
 }
 
-defineClass(234, 309, $intern_37);
+defineClass(234, 309, $intern_40);
 _.recreate = function recreate_0(){
   $recreate(this);
 }
@@ -6624,12 +6578,12 @@ function AreaChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1372, 234, $intern_37, AreaChart);
+defineClass(1370, 234, $intern_40, AreaChart);
 _.createChartObject = function createChartObject(container){
   return new $wnd.google.visualization.AreaChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_AreaChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'AreaChart', 1372);
+var Lcom_googlecode_gwt_charts_client_corechart_AreaChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'AreaChart', 1370);
 function $setAnimation(this$static, animation){
   this$static.animation = animation;
 }
@@ -6654,37 +6608,37 @@ function BarChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1373, 234, $intern_37, BarChart);
+defineClass(1371, 234, $intern_40, BarChart);
 _.createChartObject = function createChartObject_0(container){
   return new $wnd.google.visualization.BarChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_BarChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BarChart', 1373);
+var Lcom_googlecode_gwt_charts_client_corechart_BarChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BarChart', 1371);
 function BubbleChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1374, 234, $intern_37, BubbleChart);
+defineClass(1372, 234, $intern_40, BubbleChart);
 _.createChartObject = function createChartObject_1(container){
   return new $wnd.google.visualization.BubbleChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_BubbleChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BubbleChart', 1374);
+var Lcom_googlecode_gwt_charts_client_corechart_BubbleChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BubbleChart', 1372);
 function CandlestickChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1375, 234, $intern_37, CandlestickChart);
+defineClass(1373, 234, $intern_40, CandlestickChart);
 _.createChartObject = function createChartObject_2(container){
   return new $wnd.google.visualization.CandlestickChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_CandlestickChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'CandlestickChart', 1375);
+var Lcom_googlecode_gwt_charts_client_corechart_CandlestickChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'CandlestickChart', 1373);
 function PieChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(310, 234, $intern_37, PieChart);
+defineClass(310, 234, $intern_40, PieChart);
 _.createChartObject = function createChartObject_3(container){
   return new $wnd.google.visualization.PieChart(container);
 }
@@ -6698,17 +6652,17 @@ function Gauge(){
   ChartWidget.call(this);
 }
 
-defineClass(1376, 309, $intern_37, Gauge);
+defineClass(1374, 309, $intern_40, Gauge);
 _.createChartObject = function createChartObject_4(container){
   return new $wnd.google.visualization.Gauge(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_gauge_Gauge_2_classLit = createForClass('com.googlecode.gwt.charts.client.gauge', 'Gauge', 1376);
+var Lcom_googlecode_gwt_charts_client_gauge_Gauge_2_classLit = createForClass('com.googlecode.gwt.charts.client.gauge', 'Gauge', 1374);
 function GeoChart(){
   ChartWidget.call(this);
 }
 
-defineClass(1371, 309, $intern_37, GeoChart);
+defineClass(1369, 309, $intern_40, GeoChart);
 _.createChartObject = function createChartObject_5(container){
   return new $wnd.google.visualization.GeoChart(container);
 }
@@ -6718,7 +6672,7 @@ _.redraw = function redraw_0(){
   $redraw(this);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_geochart_GeoChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.geochart', 'GeoChart', 1371);
+var Lcom_googlecode_gwt_charts_client_geochart_GeoChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.geochart', 'GeoChart', 1369);
 function $setColors_1(this$static, colors){
   this$static.colors = colors;
 }
@@ -6980,7 +6934,7 @@ function $bind(this$static){
 }
 
 function $registerHandler(this$static, handlerRegistration){
-  $add_31(this$static.handlerRegistrations, handlerRegistration);
+  $add_32(this$static.handlerRegistrations, handlerRegistration);
 }
 
 function HandlerContainerImpl(){
@@ -7037,10 +6991,10 @@ function $adoptChild(this$static, slot, child){
       if (!child.slot_0.isRemovable()) {
         throw new IllegalArgumentException('Cannot move a child of a permanent slot to another slot');
       }
-      $remove_13(child.parent_0.children_0, child);
+      $remove_13(child.parent_0.children, child);
     }
     child.parent_0 = this$static;
-    $add_32(this$static.children_0, child);
+    $add_33(this$static.children, child);
   }
   child.slot_0 = slot;
 }
@@ -7056,7 +7010,7 @@ function $fireEvent_1(this$static, event_0){
 
 function $internalClearSlot(this$static, slot, dontRemove){
   var child, child$iterator;
-  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children_0)).map_0)); child$iterator.val$outerIter2.hasNext();) {
+  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children)).map_0)); child$iterator.val$outerIter2.hasNext();) {
     child = dynamicCast($next_5(child$iterator), 47);
     child.slot_0 == slot && child != dontRemove && $orphan(child);
   }
@@ -7067,7 +7021,7 @@ function $internalHide(this$static){
   if (!this$static.visible) {
     return;
   }
-  for (child$iterator = $iterator(new AbstractMap$1(this$static.children_0.map_0)); child$iterator.val$outerIter2.hasNext();) {
+  for (child$iterator = $iterator(new AbstractMap$1(this$static.children.map_0)); child$iterator.val$outerIter2.hasNext();) {
     child = dynamicCast($next_5(child$iterator), 47);
     $internalHide(child);
   }
@@ -7084,7 +7038,7 @@ function $internalReset(this$static){
   if (!this$static.visible) {
     return;
   }
-  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children_0)).map_0)); child$iterator.val$outerIter2.hasNext();) {
+  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children)).map_0)); child$iterator.val$outerIter2.hasNext();) {
     child = dynamicCast($next_5(child$iterator), 47);
     $internalReset(child);
   }
@@ -7098,7 +7052,7 @@ function $internalReveal(this$static){
   }
   this$static.onReveal();
   this$static.visible = true;
-  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children_0)).map_0)); child$iterator.val$outerIter2.hasNext();) {
+  for (child$iterator = $iterator(new AbstractMap$1((new HashSet_0(this$static.children)).map_0)); child$iterator.val$outerIter2.hasNext();) {
     child = dynamicCast($next_5(child$iterator), 47);
     $internalReveal(child);
   }
@@ -7119,7 +7073,7 @@ function $orphan(this$static){
   }
   if (this$static.parent_0) {
     $internalHide(this$static);
-    $remove_13(this$static.parent_0.children_0, this$static);
+    $remove_13(this$static.parent_0.children, this$static);
     this$static.parent_0 = null;
   }
   this$static.slot_0 = null;
@@ -7131,7 +7085,7 @@ function $registerVisibleHandlers(this$static){
     checkCriticalElement(handlerInformation$iterator.i < handlerInformation$iterator.this$01_0.size_1());
     throwClassCastExceptionUnlessNull(handlerInformation$iterator.this$01_0.get_1(handlerInformation$iterator.last = handlerInformation$iterator.i++));
     handlerRegistration = $addHandler_2(this$static, null.nullField, null.nullField);
-    $add_31(this$static.visibleHandlerRegistrations, handlerRegistration);
+    $add_32(this$static.visibleHandlerRegistrations, handlerRegistration);
   }
 }
 
@@ -7157,7 +7111,7 @@ function $setInSlot_0(this$static, slot, content_0){
 function $unregisterVisibleHandlers(this$static){
   var handlerRegistration, handlerRegistration$iterator;
   for (handlerRegistration$iterator = new AbstractList$IteratorImpl(this$static.visibleHandlerRegistrations); handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1();) {
-    handlerRegistration = (checkCriticalElement(handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1()) , dynamicCast(handlerRegistration$iterator.this$01_0.get_1(handlerRegistration$iterator.last = handlerRegistration$iterator.i++), 1417));
+    handlerRegistration = (checkCriticalElement(handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1()) , dynamicCast(handlerRegistration$iterator.this$01_0.get_1(handlerRegistration$iterator.last = handlerRegistration$iterator.i++), 1415));
     handlerRegistration.removeHandler();
   }
   this$static.visibleHandlerRegistrations.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
@@ -7168,17 +7122,17 @@ function PresenterWidget(eventBus, view){
   HandlerContainerImpl.call(this);
   this.visibleHandlers = new ArrayList;
   this.visibleHandlerRegistrations = new ArrayList;
-  this.children_0 = new HashSet;
+  this.children = new HashSet;
   this.eventBus = eventBus;
   this.view = view;
 }
 
-defineClass(47, 275, $intern_39);
+defineClass(47, 275, $intern_42);
 _.equals$ = function equals_10(obj){
   return this === obj;
 }
 ;
-_.fireEvent_0 = function fireEvent_6(event_0){
+_.fireEvent = function fireEvent_6(event_0){
   $fireEvent_1(this, event_0);
 }
 ;
@@ -7237,7 +7191,7 @@ function Presenter_1(eventBus, view, proxy, revealType, slot){
   this.slot = slot;
 }
 
-defineClass(55, 47, $intern_39);
+defineClass(55, 47, $intern_42);
 _.bind_0 = function bind_2(){
   $bind(this);
   instanceOf(this.proxy, 62) && $bind_2(dynamicCast(this.proxy, 62).getHandlerContainer());
@@ -7283,7 +7237,7 @@ function RootPresenter(eventBus, view){
   this.visible = true;
 }
 
-defineClass(549, 47, {21:1, 10:1, 13:1, 47:1, 1478:1, 1474:1, 1475:1, 1476:1, 1477:1}, RootPresenter);
+defineClass(549, 47, {21:1, 10:1, 13:1, 47:1, 1475:1, 1471:1, 1472:1, 1473:1, 1474:1}, RootPresenter);
 _.onBind = function onBind_0(){
   $addRegisteredHandler(this, ($clinit_ResetPresentersEvent() , $clinit_ResetPresentersEvent() , type_1), this);
   $addRegisteredHandler(this, ($clinit_RevealRootContentEvent() , $clinit_RevealRootContentEvent() , TYPE_36), this);
@@ -7336,7 +7290,7 @@ function ViewImpl(){
   this.orderedSlots = new HashMap;
 }
 
-defineClass(60, 1, $intern_40);
+defineClass(60, 1, $intern_43);
 _.asWidget = function asWidget_1(){
   if (!this.widget) {
     throw new NullPointerException_0('widget cannot be null, you should call ViewImpl.initWidget() before.');
@@ -7365,7 +7319,7 @@ var Lcom_gwtplatform_mvp_client_ViewImpl_2_classLit = createForClass('com.gwtpla
 function $ensureGlass(this$static){
   var style;
   if (!this$static.glass) {
-    this$static.glass = $createElement($doc, 'div');
+    this$static.glass = $doc.createElement('div');
     style = this$static.glass.style;
     $setPropertyImpl(style, 'position', ($clinit_Style$Position() , 'absolute'));
     $setPropertyImpl(style, 'left', ($clinit_Style$Unit() , '0.0px'));
@@ -7374,7 +7328,7 @@ function $ensureGlass(this$static){
     $setPropertyImpl(style, 'bottom', '0.0px');
     $setPropertyImpl(style, 'zIndex', '2147483647');
     $setPropertyImpl(style, 'backgroundColor', '#FFFFFF');
-    isIE8_0()?$cssSetOpacityImpl(style, 0):$cssSetOpacity(style, 0);
+    $cssSetOpacity(style, 0);
   }
 }
 
@@ -7405,14 +7359,14 @@ _.setInSlot = function setInSlot_0(slot, content_0){
     $clinit_RootPanel();
     $clear_1(get_1(null));
     $clear_1(get_0());
-    $add_1(get_1(null), get_0());
-    !!content_0 && $add_8(get_0(), !content_0?null:content_0.view.asWidget());
+    $add_2(get_1(null), get_0());
+    !!content_0 && $add_9(get_0(), !content_0?null:content_0.view.asWidget());
   }
    else {
     $clear_1(get_0());
     $clinit_RootPanel();
     $clear_1(get_1(null));
-    !!content_0 && $add_1(get_1(null), !content_0?null:content_0.view.asWidget());
+    !!content_0 && $add_2(get_1(null), !content_0?null:content_0.view.asWidget());
   }
 }
 ;
@@ -7422,7 +7376,7 @@ function ViewImpl$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(551, 1, $intern_41, ViewImpl$1);
+defineClass(551, 1, $intern_44, ViewImpl$1);
 _.onAttachOrDetach = function onAttachOrDetach_0(event_0){
   event_0.attached?this.this$01.onAttach():undefined;
 }
@@ -7814,7 +7768,7 @@ defineClass(335, 1, {}, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinje
 _.singleton_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$ = null;
 _.singleton_Key$type$com$gwtplatform$mvp$client$RootPresenter$_annotation$$none$$ = null;
 var Lcom_gwtplatform_mvp_client_com_1gwtplatform_1mvp_1client_1DesktopGinjector_1DesktopGinjectorGinjector_1fragment_2_classLit = createForClass('com.gwtplatform.mvp.client', 'com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment', 335);
-defineClass(1453, 1, $intern_42);
+defineClass(1451, 1, $intern_45);
 _.getRawSlot = function getRawSlot(){
   return this;
 }
@@ -7827,14 +7781,14 @@ _.isRemovable = function isRemovable(){
   return true;
 }
 ;
-var Lcom_gwtplatform_mvp_client_presenter_slots_MultiSlot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'MultiSlot', 1453);
-defineClass(1471, 1453, $intern_42);
-var Lcom_gwtplatform_mvp_client_presenter_slots_Slot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'Slot', 1471);
+var Lcom_gwtplatform_mvp_client_presenter_slots_MultiSlot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'MultiSlot', 1451);
+defineClass(1468, 1451, $intern_45);
+var Lcom_gwtplatform_mvp_client_presenter_slots_Slot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'Slot', 1468);
 function LegacySlot(rawSlot){
   this.rawSlot = rawSlot;
 }
 
-defineClass(308, 1471, {308:1, 237:1}, LegacySlot);
+defineClass(308, 1468, {308:1, 237:1}, LegacySlot);
 _.getRawSlot = function getRawSlot_0(){
   return this.rawSlot;
 }
@@ -7855,14 +7809,14 @@ function LegacySlotConvertor(){
   this.legacySlotMap = new HashMap;
 }
 
-defineClass(1361, 1, {}, LegacySlotConvertor);
+defineClass(1359, 1, {}, LegacySlotConvertor);
 var INSTANCE_2;
-var Lcom_gwtplatform_mvp_client_presenter_slots_LegacySlotConvertor_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'LegacySlotConvertor', 1361);
+var Lcom_gwtplatform_mvp_client_presenter_slots_LegacySlotConvertor_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'LegacySlotConvertor', 1359);
 function NestedSlot(){
   GwtEvent$Type.call(this);
 }
 
-defineClass(149, 66, $intern_42, NestedSlot);
+defineClass(149, 66, $intern_45, NestedSlot);
 _.getRawSlot = function getRawSlot_1(){
   return this;
 }
@@ -7879,7 +7833,7 @@ var Lcom_gwtplatform_mvp_client_presenter_slots_NestedSlot_2_classLit = createFo
 function PopupSlot(){
 }
 
-defineClass(768, 1453, $intern_42, PopupSlot);
+defineClass(768, 1451, $intern_45, PopupSlot);
 _.isPopup = function isPopup_1(){
   return true;
 }
@@ -7888,7 +7842,7 @@ var Lcom_gwtplatform_mvp_client_presenter_slots_PopupSlot_2_classLit = createFor
 function SingleSlot(){
 }
 
-defineClass(769, 1, $intern_42, SingleSlot);
+defineClass(769, 1, $intern_45, SingleSlot);
 _.getRawSlot = function getRawSlot_2(){
   return this;
 }
@@ -7911,7 +7865,7 @@ function AsyncCallFailEvent(){
   $clinit_AsyncCallFailEvent();
 }
 
-defineClass(855, $intern_14, {}, AsyncCallFailEvent);
+defineClass(851, $intern_14, {}, AsyncCallFailEvent);
 _.dispatch = function dispatch_29(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -7922,7 +7876,7 @@ _.getAssociatedType = function getAssociatedType_30(){
 }
 ;
 var TYPE_29;
-var Lcom_gwtplatform_mvp_client_proxy_AsyncCallFailEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallFailEvent', 855);
+var Lcom_gwtplatform_mvp_client_proxy_AsyncCallFailEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallFailEvent', 851);
 function $clinit_AsyncCallStartEvent(){
   $clinit_AsyncCallStartEvent = emptyMethod;
   TYPE_30 = new GwtEvent$Type;
@@ -7932,7 +7886,7 @@ function AsyncCallStartEvent(){
   $clinit_AsyncCallStartEvent();
 }
 
-defineClass(857, $intern_14, {}, AsyncCallStartEvent);
+defineClass(853, $intern_14, {}, AsyncCallStartEvent);
 _.dispatch = function dispatch_30(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -7943,7 +7897,7 @@ _.getAssociatedType = function getAssociatedType_31(){
 }
 ;
 var TYPE_30;
-var Lcom_gwtplatform_mvp_client_proxy_AsyncCallStartEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallStartEvent', 857);
+var Lcom_gwtplatform_mvp_client_proxy_AsyncCallStartEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallStartEvent', 853);
 function $clinit_AsyncCallSucceedEvent(){
   $clinit_AsyncCallSucceedEvent = emptyMethod;
   TYPE_31 = new GwtEvent$Type;
@@ -7953,7 +7907,7 @@ function AsyncCallSucceedEvent(){
   $clinit_AsyncCallSucceedEvent();
 }
 
-defineClass(856, $intern_14, {}, AsyncCallSucceedEvent);
+defineClass(852, $intern_14, {}, AsyncCallSucceedEvent);
 _.dispatch = function dispatch_31(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -7964,7 +7918,7 @@ _.getAssociatedType = function getAssociatedType_32(){
 }
 ;
 var TYPE_31;
-var Lcom_gwtplatform_mvp_client_proxy_AsyncCallSucceedEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallSucceedEvent', 856);
+var Lcom_gwtplatform_mvp_client_proxy_AsyncCallSucceedEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'AsyncCallSucceedEvent', 852);
 function $doRevealPlace(this$static, request, updateBrowserUrl){
   var requestEvent;
   requestEvent = new PlaceRequestInternalEvent(request, updateBrowserUrl);
@@ -8056,7 +8010,7 @@ function $revealPlace(this$static, request, updateBrowserUrl){
     return;
   }
   this$static.placeHierarchy.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
-  $add_31(this$static.placeHierarchy, request);
+  $add_32(this$static.placeHierarchy, request);
   $doRevealPlace(this$static, request, updateBrowserUrl);
 }
 
@@ -8097,8 +8051,8 @@ function $updateHistory(this$static, request, updateBrowserUrl){
   }
 }
 
-defineClass(687, 1, $intern_43);
-_.fireEvent_0 = function fireEvent_7(event_0){
+defineClass(687, 1, $intern_46);
+_.fireEvent = function fireEvent_7(event_0){
   $fireEvent_2(this, event_0);
 }
 ;
@@ -8120,7 +8074,7 @@ function DefaultPlaceManager(eventBus, tokenFormatter, defaultPlaceNameToken, er
   this.unauthorizedPlaceRequest = $build($nameToken(new PlaceRequest$Builder, unauthorizedPlaceNameToken));
 }
 
-defineClass(688, 687, $intern_43, DefaultPlaceManager);
+defineClass(688, 687, $intern_46, DefaultPlaceManager);
 var Lcom_gwtplatform_mvp_client_proxy_DefaultPlaceManager_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'DefaultPlaceManager', 688);
 var TYPE_32;
 function $dispatch_8(this$static, handler){
@@ -8133,7 +8087,7 @@ function LockInteractionEvent(lock){
 
 defineClass(380, $intern_14, {}, LockInteractionEvent);
 _.dispatch = function dispatch_32(handler){
-  $dispatch_8(this, dynamicCast(handler, 1478));
+  $dispatch_8(this, dynamicCast(handler, 1475));
 }
 ;
 _.getAssociatedType = function getAssociatedType_33(){
@@ -8154,7 +8108,7 @@ function NavigationEvent(){
 
 defineClass(381, $intern_14, {}, NavigationEvent);
 _.dispatch = function dispatch_33(handler){
-  dynamicCast(handler, 1481);
+  dynamicCast(handler, 1478);
   $wnd.scrollTo(0, 0);
 }
 ;
@@ -8167,7 +8121,7 @@ var Lcom_gwtplatform_mvp_client_proxy_NavigationEvent_2_classLit = createForClas
 function $checkLoading(this$static){
   if (this$static.state == ($clinit_NotifyingAsyncCallback$State() , INITIALIZED)) {
     ++counter;
-    counter == 1 && ($clinit_AsyncCallStartEvent() , this$static.eventBus.fireEvent_1(new AsyncCallStartEvent));
+    counter == 1 && ($clinit_AsyncCallStartEvent() , this$static.eventBus.fireEvent_0(new AsyncCallStartEvent));
     this$static.state = LOADING_0;
   }
 }
@@ -8175,7 +8129,7 @@ function $checkLoading(this$static){
 function $onFailure_0(this$static, caught){
   if (this$static.state == ($clinit_NotifyingAsyncCallback$State() , LOADING_0)) {
     --counter;
-    counter == 0 && ($clinit_AsyncCallFailEvent() , this$static.eventBus.fireEvent_1(new AsyncCallFailEvent));
+    counter == 0 && ($clinit_AsyncCallFailEvent() , this$static.eventBus.fireEvent_0(new AsyncCallFailEvent));
   }
   this$static.state = FAILED;
   this$static.failure(caught);
@@ -8184,7 +8138,7 @@ function $onFailure_0(this$static, caught){
 function $onSuccess_0(this$static, result){
   if (this$static.state == ($clinit_NotifyingAsyncCallback$State() , LOADING_0)) {
     --counter;
-    counter == 0 && ($clinit_AsyncCallSucceedEvent() , this$static.eventBus.fireEvent_1(new AsyncCallSucceedEvent));
+    counter == 0 && ($clinit_AsyncCallSucceedEvent() , this$static.eventBus.fireEvent_0(new AsyncCallSucceedEvent));
   }
   this$static.state = SUCCEEDED;
   this$static.success(result);
@@ -8280,7 +8234,7 @@ function PlaceManagerImpl$1(this$0, val$historyToken){
 }
 
 defineClass(689, 1, {}, PlaceManagerImpl$1);
-_.execute_1 = function execute_31(){
+_.execute_1 = function execute_28(){
   $handleTokenChange(this.this$01, this.val$historyToken2);
 }
 ;
@@ -8292,7 +8246,7 @@ function PlaceManagerImpl$2(this$0, val$request, val$updateBrowserUrl){
 }
 
 defineClass(690, 1, {}, PlaceManagerImpl$2);
-_.execute_1 = function execute_32(){
+_.execute_1 = function execute_29(){
   $revealPlace(this.this$01, this.val$request2, this.val$updateBrowserUrl3);
 }
 ;
@@ -8309,7 +8263,7 @@ function PlaceRequestInternalEvent(request, updateBrowserHistory){
 
 defineClass(770, $intern_14, {}, PlaceRequestInternalEvent);
 _.dispatch = function dispatch_34(handler){
-  $dispatch_9(this, dynamicCast(handler, 1483));
+  $dispatch_9(this, dynamicCast(handler, 1480));
 }
 ;
 _.getAssociatedType = function getAssociatedType_35(){
@@ -8331,12 +8285,12 @@ function $getPresenter(this$static, callback){
   $checkLoading(callback);
 }
 
-defineClass($intern_44, 1, $intern_15);
-_.fireEvent_0 = function fireEvent_8(event_0){
+defineClass($intern_47, 1, $intern_15);
+_.fireEvent = function fireEvent_8(event_0){
   $doFire(this.eventBus, event_0, this);
 }
 ;
-var Lcom_gwtplatform_mvp_client_proxy_ProxyImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyImpl', $intern_44);
+var Lcom_gwtplatform_mvp_client_proxy_ProxyImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyImpl', $intern_47);
 function $addDeferredCommand(command){
   $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), command);
 }
@@ -8375,12 +8329,12 @@ function $setPlace(this$static, place){
   this$static.place = place;
 }
 
-defineClass(602, 1, $intern_45);
+defineClass(602, 1, $intern_48);
 _.equals$ = function equals_12(o){
   return $equals(this.place, o);
 }
 ;
-_.fireEvent_0 = function fireEvent_9(event_0){
+_.fireEvent = function fireEvent_9(event_0){
   $fireEvent_3(this, event_0);
 }
 ;
@@ -8417,7 +8371,7 @@ function ProxyPlaceAbstract$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(606, 1, {21:1, 1483:1}, ProxyPlaceAbstract$1);
+defineClass(606, 1, {21:1, 1480:1}, ProxyPlaceAbstract$1);
 var Lcom_gwtplatform_mvp_client_proxy_ProxyPlaceAbstract$1_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyPlaceAbstract/1', 606);
 function ProxyPlaceAbstract$2(){
 }
@@ -8450,7 +8404,7 @@ function ProxyPlaceAbstract$3$1(this$1, val$presenter, val$request, val$updateBr
 }
 
 defineClass(609, 1, {}, ProxyPlaceAbstract$3$1);
-_.execute_1 = function execute_33(){
+_.execute_1 = function execute_30(){
   var originalRequest;
   originalRequest = $getCurrentPlaceRequest(this.this$11.this$01.placeManager);
   originalRequest == $getCurrentPlaceRequest(this.this$11.this$01.placeManager) && $updateHistory(this.this$11.this$01.placeManager, this.val$request3, this.val$updateBrowserUrl4);
@@ -8469,7 +8423,7 @@ function $bind_2(this$static){
 }
 
 function $registerHandler_0(this$static, handlerRegistration){
-  $add_31(this$static.handlerRegistrations, handlerRegistration);
+  $add_32(this$static.handlerRegistrations, handlerRegistration);
   this$static.wasBound = true;
 }
 
@@ -8489,7 +8443,7 @@ function ProxyPlaceImpl(){
   this.handlerContainer = new ProxyPlaceAbstract$ProxyHandlerContainer(this);
 }
 
-defineClass(64, 602, $intern_45);
+defineClass(64, 602, $intern_48);
 var Lcom_gwtplatform_mvp_client_proxy_ProxyPlaceImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyPlaceImpl', 64);
 function $clinit_ResetPresentersEvent(){
   $clinit_ResetPresentersEvent = emptyMethod;
@@ -8502,7 +8456,7 @@ function ResetPresentersEvent(){
 
 defineClass(379, $intern_14, {}, ResetPresentersEvent);
 _.dispatch = function dispatch_35(handler){
-  $onResetPresenters(dynamicCast(handler, 1474));
+  $onResetPresenters(dynamicCast(handler, 1471));
 }
 ;
 _.getAssociatedType = function getAssociatedType_36(){
@@ -8520,7 +8474,7 @@ function RevealContentEvent(type_0, content_0){
   this.content_0 = content_0;
 }
 
-defineClass(1036, $intern_14, {}, RevealContentEvent);
+defineClass(1032, $intern_14, {}, RevealContentEvent);
 _.dispatch = function dispatch_36(handler){
   $dispatch_10(this, dynamicCast(handler, 130));
 }
@@ -8529,7 +8483,7 @@ _.getAssociatedType = function getAssociatedType_37(){
   return this.type_0;
 }
 ;
-var Lcom_gwtplatform_mvp_client_proxy_RevealContentEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'RevealContentEvent', 1036);
+var Lcom_gwtplatform_mvp_client_proxy_RevealContentEvent_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'RevealContentEvent', 1032);
 function RevealContentHandler(eventBus, proxy){
   this.eventBus = eventBus;
   this.proxy = proxy;
@@ -8554,7 +8508,7 @@ function RevealContentHandler$1$1(val$presenter, val$revealContentEvent){
 }
 
 defineClass(767, 1, {}, RevealContentHandler$1$1);
-_.execute_1 = function execute_34(){
+_.execute_1 = function execute_31(){
   $forceReveal(this.val$presenter2);
   this.val$revealContentEvent3.type_0?$setInSlot(this.val$presenter2, this.val$revealContentEvent3.type_0, this.val$revealContentEvent3.content_0):$setInSlot_0(this.val$presenter2, this.val$revealContentEvent3.type_0, this.val$revealContentEvent3.content_0);
 }
@@ -8577,7 +8531,7 @@ function RevealRootContentEvent(content_0){
 
 defineClass(772, $intern_14, {}, RevealRootContentEvent);
 _.dispatch = function dispatch_37(handler){
-  $dispatch_11(this, dynamicCast(handler, 1475));
+  $dispatch_11(this, dynamicCast(handler, 1472));
 }
 ;
 _.getAssociatedType = function getAssociatedType_38(){
@@ -8603,7 +8557,7 @@ function RevealRootLayoutContentEvent(content_0){
 
 defineClass(773, $intern_14, {}, RevealRootLayoutContentEvent);
 _.dispatch = function dispatch_38(handler){
-  $dispatch_12(this, dynamicCast(handler, 1476));
+  $dispatch_12(this, dynamicCast(handler, 1473));
 }
 ;
 _.getAssociatedType = function getAssociatedType_39(){
@@ -8628,7 +8582,7 @@ function RevealRootPopupContentEvent(content_0){
 
 defineClass(774, $intern_14, {}, RevealRootPopupContentEvent);
 _.dispatch = function dispatch_39(handler){
-  $dispatch_13(this, dynamicCast(handler, 1477));
+  $dispatch_13(this, dynamicCast(handler, 1474));
 }
 ;
 _.getAssociatedType = function getAssociatedType_40(){
@@ -8724,7 +8678,7 @@ function $toPlaceRequestHierarchy(this$static, historyToken){
   split_0 = $indexOf_0(unescapedHistoryToken, this$static.hierarchySeparator);
   result = new ArrayList;
   if (split_0 == -1) {
-    $add_31(result, $unescapedStringToPlaceRequest(this$static, unescapedHistoryToken));
+    $add_32(result, $unescapedStringToPlaceRequest(this$static, unescapedHistoryToken));
   }
    else {
     unescapedPlaceTokens = $split(unescapedHistoryToken, this$static.hierarchySeparator, 0);
@@ -8736,7 +8690,7 @@ function $toPlaceRequestHierarchy(this$static, historyToken){
       if (!unescapedPlaceToken.length) {
         throw new TokenFormatException("Bad parameter: Successive place tokens require a single '" + this$static.hierarchySeparator + "' between them.");
       }
-      $add_31(result, $unescapedStringToPlaceRequest(this$static, unescapedPlaceToken));
+      $add_32(result, $unescapedStringToPlaceRequest(this$static, unescapedPlaceToken));
     }
   }
   return result;
@@ -8883,7 +8837,7 @@ _.getName = function getName_8(){
 }
 ;
 _.getText = function getText(){
-  return ";(function () {\n\n    // Only support chrome for now.\n    var isSupportedBrowser = (function () {\n        // Firefox doesn't have `ontransitionend` on window. Hence we check for `transition`\n        // key in style object to check for unprefixed transition support.\n        return window.ontransitionend !== undefined || document.documentElement.style.transition !== undefined;\n    })();\n\n    // Credits to angular-animate for the nice animation duration detection code.\n    // Detect proper transitionend/animationend event names.\n    var TRANSITION_PROP, ANIMATION_PROP;\n    var DURATION_KEY = 'Duration';\n    var PROPERTY_KEY = 'Property';\n    var DELAY_KEY = 'Delay';\n    var ANIMATION_ITERATION_COUNT_KEY = 'IterationCount';\n    var ONE_SECOND = 1000;\n\n    if (window.ontransitionend === undefined && window.onwebkittransitionend !== undefined) {\n        TRANSITION_PROP = 'WebkitTransition';\n    } else {\n        TRANSITION_PROP = 'transition';\n    }\n\n    if (window.onanimationend === undefined && window.onwebkitanimationend !== undefined) {\n        ANIMATION_PROP = 'WebkitAnimation';\n    } else {\n        ANIMATION_PROP = 'animation';\n    }\n\n    function parseMaxTime(str) {\n        var maxValue = 0, value;\n        var values = typeof(str) === 'string' ?\n            str.split(/\\s*,\\s*/) :\n            [];\n        for (var i = values.length; i--;) {\n            value = values[i];\n            maxValue = Math.max(parseFloat(value) || 0, maxValue);\n        }\n        return maxValue;\n    }\n\n    function getAnimationTime(element) {\n        var transitionDuration = 0;\n        var transitionDelay = 0;\n        var animationDuration = 0;\n        var animationDelay = 0;\n        var elementStyles = window.getComputedStyle(element) || {};\n\n        var transitionDurationStyle = elementStyles[TRANSITION_PROP + DURATION_KEY];\n        transitionDuration = Math.max(parseMaxTime(transitionDurationStyle), transitionDuration);\n\n        var transitionDelayStyle = elementStyles[TRANSITION_PROP + DELAY_KEY];\n        transitionDelay  = Math.max(parseMaxTime(transitionDelayStyle), transitionDelay);\n\n        var animationDelayStyle = elementStyles[ANIMATION_PROP + DELAY_KEY];\n        animationDelay   = Math.max(parseMaxTime(elementStyles[ANIMATION_PROP + DELAY_KEY]), animationDelay);\n\n        var aDuration  = parseMaxTime(elementStyles[ANIMATION_PROP + DURATION_KEY]);\n\n        if (aDuration > 0) {\n            aDuration *= parseInt(elementStyles[ANIMATION_PROP + ANIMATION_ITERATION_COUNT_KEY], 10) || 1;\n        }\n        animationDuration = Math.max(aDuration, animationDuration);\n\n        return animationDuration || transitionDuration;\n    }\n\n    function getBackgroundStyle(element) {\n        var computedStyle = window.getComputedStyle(element);\n        // Need to fallback to `backgroundColor` as `background` return nothing in Firefox.\n        return computedStyle.background || computedStyle.backgroundColor;\n    }\n\n    var defaults = {\n        duration: 0.3, // Duration for the animation to happen (seconds)\n\n        // Duration in which the target will become visible, (seconds)\n        targetShowDuration: 0,\n\n        // Extra time just to ensure continuity between dummy element and target (seconds)\n        extraTransitionDuration: 1,\n\n        // Whether to position the dummy animating element relative to window (fixed positioned) or not.\n        relativeToWindow: false\n    };\n\n    function cta(trigger, target, options, callback) {\n        // Support optional arguments\n        if (typeof options === 'function') {\n            callback = options;\n            options = {};\n        }\n\n        if (!isSupportedBrowser) {\n            if (callback) {\n                callback(target);\n            }\n            return;\n        }\n\n        var targetBackground,\n            triggerBackground,\n            targetBounds,\n            triggerBounds,\n            dummy;\n\n        options = options || {};\n        options.duration = options.duration || defaults.duration;\n        options.targetShowDuration = options.targetShowDuration || getAnimationTime(target) || defaults.targetShowDuration;\n        options.relativeToWindow = options.relativeToWindow || defaults.relativeToWindow;\n        options.extraTransitionDuration = options.extraTransitionDuration || defaults.extraTransitionDuration;\n\n        // Set some properties to make the target visible so we can get its dimensions.\n        // Set `display` to `block` only when its already hidden. Otherwise changing an already visible\n        // element's `display` property can lead to its position getting changed.\n        if (window.getComputedStyle(target).display === 'none') {\n            target.style.setProperty('display', 'block', 'important');\n        }\n\n        // Calculate some property differences to animate.\n        targetBackground = getBackgroundStyle(target);\n        triggerBackground = getBackgroundStyle(trigger);\n        targetBounds = target.getBoundingClientRect();\n        triggerBounds = trigger.getBoundingClientRect();\n        scaleXRatio = triggerBounds.width / targetBounds.width;\n        scaleYRatio = triggerBounds.height / targetBounds.height;\n        diffX = triggerBounds.left - targetBounds.left;\n        diffY = triggerBounds.top - targetBounds.top;\n\n        // Remove the props we put earlier.\n        target.style.removeProperty('display');\n\n        // Create a dummy element for transition.\n        dummy = document.createElement('div');\n        dummy.style.setProperty('pointer-events', 'none', 'important');\n        dummy.style.setProperty('position', (options.relativeToWindow ? 'fixed' : 'absolute'), 'important');\n        dummy.style.setProperty('-webkit-transform-origin', 'top left', 'important');\n        dummy.style.setProperty('transform-origin', 'top left', 'important');\n        dummy.style.setProperty('transition', options.duration + 's ease');\n\n        // Set dummy element's dimensions to final state.\n        dummy.style.setProperty('width', targetBounds.width + 'px', 'important');\n        dummy.style.setProperty('height', targetBounds.height + 'px', 'important');\n        dummy.style.setProperty('left', (targetBounds.left + (options.relativeToWindow ? 0 : window.pageXOffset)) + 'px', 'important');\n        dummy.style.setProperty('top', (targetBounds.top + (options.relativeToWindow ? 0 : window.pageYOffset)) + 'px', 'important');\n        dummy.style.setProperty('background', triggerBackground, 'important');\n\n        // Apply a reverse transform to bring back dummy element to the dimensions of the trigger/starting element.\n        // Credits: This technique is inspired by Paul Lewis: http://aerotwist.com/blog/flip-your-animations/ He is amazing!\n        dummy.style.setProperty('-webkit-transform', 'translate(' + diffX + 'px, ' + diffY + 'px) scale(' + scaleXRatio + ', ' + scaleYRatio + ')', 'important');\n        dummy.style.setProperty('transform', 'translate(' + diffX + 'px, ' + diffY + 'px) scale(' + scaleXRatio + ', ' + scaleYRatio + ')', 'important');\n        document.body.appendChild(dummy);\n\n        // Trigger a layout to let styles apply.\n        var justReadIt = dummy.offsetTop;\n\n        // Change properties to let things animate.\n        dummy.style.setProperty('background', targetBackground, 'important');\n\n        // Remove the reverse transforms to get the dummy transition back to its normal/final state.\n        dummy.style.removeProperty('-webkit-transform');\n        dummy.style.removeProperty('transform');\n\n        dummy.addEventListener('transitionend', function transitionEndCallback() {\n            dummy.removeEventListener('transitionend', transitionEndCallback);\n\n            if (callback) {\n                callback(target);\n            }\n            // Animate the dummy element to zero opacity while the target is getting rendered.\n            dummy.style.transitionDuration = (options.targetShowDuration + options.extraTransitionDuration) + 's';\n            dummy.style.opacity = 0;\n            setTimeout(function () {\n                dummy.parentNode.removeChild(dummy);\n            }, (options.targetShowDuration + options.extraTransitionDuration) * 1000);\n        });\n\n        // Return a reverse animation function for the called animation.\n        return function (options, callback) {\n            cta(target, trigger, options, callback);\n        };\n    }\n\n    cta.isSupported = isSupportedBrowser;\n\n    // open to the world.\n    // commonjs\n    if( typeof exports === 'object' )  {\n        module.exports = cta;\n    }\n    // AMD module\n    else if( typeof define === 'function' && define.amd ) {\n        define(function () {\n            return cta;\n        });\n    }\n    // Browser global\n    else {\n        window.cta = cta;\n    }\n})();\n";
+  return ";(function () {\n\n    // Only support chrome for now.\n    var isSupportedBrowser = (function () {\n        // Firefox doesn't have `ontransitionend` on window. Hence we check for `transition`\n        // key in style object to check for unprefixed transition support.\n        return window.ontransitionend !== undefined || document.documentElement.style.transition !== undefined;\n    })();\n\n    // Credits to angular-animate for the nice animation duration detection code.\n    // Detect proper transitionend/animationend event names.\n    var TRANSITION_PROP, ANIMATION_PROP;\n    var DURATION_KEY = 'Duration';\n    var PROPERTY_KEY = 'Property';\n    var DELAY_KEY = 'Delay';\n    var ANIMATION_ITERATION_COUNT_KEY = 'IterationCount';\n    var ONE_SECOND = 1000;\n\n    if (window.ontransitionend === undefined && window.onwebkittransitionend !== undefined) {\n        TRANSITION_PROP = 'WebkitTransition';\n    } else {\n        TRANSITION_PROP = 'transition';\n    }\n\n    if (window.onanimationend === undefined && window.onwebkitanimationend !== undefined) {\n        ANIMATION_PROP = 'WebkitAnimation';\n    } else {\n        ANIMATION_PROP = 'animation';\n    }\n\n    function parseMaxTime(str) {\n        var maxValue = 0, value;\n        var values = typeof(str) === 'string' ?\n            str.split(/\\s*,\\s*/) :\n            [];\n        for (var i = values.length; i--;) {\n            value = values[i];\n            maxValue = Math.max(parseFloat(value) || 0, maxValue);\n        }\n        return maxValue;\n    }\n\n    function getAnimationTime(element) {\n        var transitionDuration = 0;\n        var transitionDelay = 0;\n        var animationDuration = 0;\n        var animationDelay = 0;\n        var elementStyles = window.getComputedStyle(element) || {};\n\n        var transitionDurationStyle = elementStyles[TRANSITION_PROP + DURATION_KEY];\n        transitionDuration = Math.max(parseMaxTime(transitionDurationStyle), transitionDuration);\n\n        var transitionDelayStyle = elementStyles[TRANSITION_PROP + DELAY_KEY];\n        transitionDelay  = Math.max(parseMaxTime(transitionDelayStyle), transitionDelay);\n\n        var animationDelayStyle = elementStyles[ANIMATION_PROP + DELAY_KEY];\n        animationDelay   = Math.max(parseMaxTime(elementStyles[ANIMATION_PROP + DELAY_KEY]), animationDelay);\n\n        var aDuration  = parseMaxTime(elementStyles[ANIMATION_PROP + DURATION_KEY]);\n\n        if (aDuration > 0) {\n            aDuration *= parseInt(elementStyles[ANIMATION_PROP + ANIMATION_ITERATION_COUNT_KEY], 10) || 1;\n        }\n        animationDuration = Math.max(aDuration, animationDuration);\n\n        return animationDuration || transitionDuration;\n    }\n\n    function getBackgroundStyle(element) {\n        var computedStyle = window.getComputedStyle(element);\n        // Need to fallback to `backgroundColor` as `background` return nothing in Firefox.\n        return computedStyle.background || computedStyle.backgroundColor;\n    }\n\n    var defaults = {\n        duration: 0.3, // Duration for the animation to happen (seconds)\n\n        // Duration in which the target will become visible, (seconds)\n        targetShowDuration: 0,\n\n        // Extra time just to ensure continuity between dummy element and target (seconds)\n        extraTransitionDuration: 1,\n\n        // Whether to position the dummy animating element relative to window (fixed positioned) or not.\n        relativeToWindow: false\n    };\n\n    function cta(trigger, target, options, callback) {\n        // Support optional arguments\n        if (typeof options === 'function') {\n            callback = options;\n            options = {};\n        }\n\n        if (!isSupportedBrowser) {\n            if (callback) {\n                callback(target);\n            }\n            return;\n        }\n\n        var targetBackground,\n            triggerBackground,\n            targetBounds,\n            triggerBounds,\n            dummy;\n\n        options = options || {};\n        options.duration = options.duration || defaults.duration;\n        options.targetShowDuration = options.targetShowDuration || getAnimationTime(target) || defaults.targetShowDuration;\n        options.relativeToWindow = options.relativeToWindow || defaults.relativeToWindow;\n        options.extraTransitionDuration = options.extraTransitionDuration || defaults.extraTransitionDuration;\n\n        // Set some properties to make the target visible so we can get its dimensions.\n        // Set `display` to `block` only when its already hidden. Otherwise changing an already visible\n        // element's `display` property can lead to its position getting changed.\n        if (window.getComputedStyle(target).display === 'none') {\n            target.style.setProperty('display', 'block', 'important');\n        }\n\n        // Calculate some property differences to animate.\n        targetBackground = getBackgroundStyle(target);\n        triggerBackground = getBackgroundStyle(trigger);\n        targetBounds = target.getBoundingClientRect();\n        triggerBounds = trigger.getBoundingClientRect();\n        scaleXRatio = triggerBounds.width / targetBounds.width;\n        scaleYRatio = triggerBounds.height / targetBounds.height;\n        diffX = triggerBounds.left - targetBounds.left;\n        diffY = triggerBounds.top - targetBounds.top;\n\n        // Remove the props we put earlier.\n        target.style.removeProperty('display');\n\n        // Create a dummy element for transition.\n        dummy = document.createElement('div');\n        dummy.style.setProperty('z-index', '999', 'important');\n        dummy.style.setProperty('pointer-events', 'none', 'important');\n        dummy.style.setProperty('position', (options.relativeToWindow ? 'fixed' : 'absolute'), 'important');\n        dummy.style.setProperty('-webkit-transform-origin', 'top left', 'important');\n        dummy.style.setProperty('transform-origin', 'top left', 'important');\n        dummy.style.setProperty('transition', options.duration + 's ease');\n\n        // Set dummy element's dimensions to final state.\n        dummy.style.setProperty('width', targetBounds.width + 'px', 'important');\n        dummy.style.setProperty('height', targetBounds.height + 'px', 'important');\n        dummy.style.setProperty('left', (targetBounds.left + (options.relativeToWindow ? 0 : window.pageXOffset)) + 'px', 'important');\n        dummy.style.setProperty('top', (targetBounds.top + (options.relativeToWindow ? 0 : window.pageYOffset)) + 'px', 'important');\n        dummy.style.setProperty('background', triggerBackground, 'important');\n\n        // Apply a reverse transform to bring back dummy element to the dimensions of the trigger/starting element.\n        // Credits: This technique is inspired by Paul Lewis: http://aerotwist.com/blog/flip-your-animations/ He is amazing!\n        dummy.style.setProperty('-webkit-transform', 'translate(' + diffX + 'px, ' + diffY + 'px) scale(' + scaleXRatio + ', ' + scaleYRatio + ')', 'important');\n        dummy.style.setProperty('transform', 'translate(' + diffX + 'px, ' + diffY + 'px) scale(' + scaleXRatio + ', ' + scaleYRatio + ')', 'important');\n        document.body.appendChild(dummy);\n\n        // Trigger a layout to let styles apply.\n        var justReadIt = dummy.offsetTop;\n\n        // Change properties to let things animate.\n        dummy.style.setProperty('background', targetBackground, 'important');\n\n        // Remove the reverse transforms to get the dummy transition back to its normal/final state.\n        dummy.style.removeProperty('-webkit-transform');\n        dummy.style.removeProperty('transform');\n\n        dummy.addEventListener('transitionend', function transitionEndCallback() {\n            dummy.removeEventListener('transitionend', transitionEndCallback);\n\n            if (callback) {\n                callback(target);\n            }\n            // Animate the dummy element to zero opacity while the target is getting rendered.\n            dummy.style.transitionDuration = (options.targetShowDuration + options.extraTransitionDuration) + 's';\n            dummy.style.opacity = 0;\n            setTimeout(function () {\n                dummy.parentNode.removeChild(dummy);\n            }, (options.targetShowDuration + options.extraTransitionDuration) * 1000);\n        });\n\n        // Return a reverse animation function for the called animation.\n        return function (options, callback) {\n            cta(target, trigger, options, callback);\n        };\n    }\n\n    cta.isSupported = isSupportedBrowser;\n\n    // open to the world.\n    // commonjs\n    if( typeof exports === 'object' )  {\n        module.exports = cta;\n    }\n    // AMD module\n    else if( typeof define === 'function' && define.amd ) {\n        define(function () {\n            return cta;\n        });\n    }\n    // Browser global\n    else {\n        window.cta = cta;\n    }\n})();\n";
 }
 ;
 var Lgwt_material_design_addins_client_resources_MaterialAddinsResources_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.addins.client.resources', 'MaterialAddinsResources_default_InlineClientBundleGenerator/1', 470);
@@ -8928,15 +8882,15 @@ function $clinit_MaterialAddinsResources_default_InlineClientBundleGenerator$tim
   timepickerJs = new MaterialAddinsResources_default_InlineClientBundleGenerator$3;
 }
 
-function $add_12(this$static, child){
-  $add_0(this$static, child, this$static.element);
+function $add_13(this$static, child){
+  $add_0(this$static, child, ($clinit_DOM() , this$static.element));
 }
 
-function $insert_3(this$static, child, beforeIndex){
-  $insert_0(this$static, child, this$static.element, beforeIndex, true);
+function $insert_4(this$static, child, beforeIndex){
+  $insert_0(this$static, child, ($clinit_DOM() , this$static.element), beforeIndex);
 }
 
-function $isEnabled(this$static){
+function $isEnabled_0(this$static){
   return !containsStyle((!this$static.enabledMixin && (this$static.enabledMixin = new EnabledMixin(this$static)) , this$static.enabledMixin).uiObject.getStyleElement().className || '', 'disabled');
 }
 
@@ -8945,7 +8899,7 @@ function $setCircle(this$static){
 }
 
 function $setDisplay_1(this$static, display){
-  $setPropertyImpl(this$static.element.style, 'display', display.getCssName());
+  ($clinit_DOM() , this$static.element).style['display'] = display.getCssName();
 }
 
 function $setFloat(this$static, floatAlign){
@@ -8953,7 +8907,7 @@ function $setFloat(this$static, floatAlign){
 }
 
 function $setFontSize(this$static){
-  (!this$static.fontSizeMixin && (this$static.fontSizeMixin = new FontSizeMixin(this$static)) , this$static.fontSizeMixin).uiObject.element.style['fontSize'] = '2.7em';
+  $getElement((!this$static.fontSizeMixin && (this$static.fontSizeMixin = new FontSizeMixin(this$static)) , this$static.fontSizeMixin).uiObject).style['fontSize'] = '2.7em';
 }
 
 function $setHideOn(this$static, hideOn){
@@ -8974,12 +8928,12 @@ function ComplexWidget(){
 
 function ComplexWidget_0(element){
   ComplexPanel.call(this);
-  $setElement(this, element);
+  $setElement_0(this, ($clinit_DOM() , element));
 }
 
-defineClass(46, 182, $intern_46, ComplexWidget_0);
+defineClass(46, 182, $intern_49, ComplexWidget_0);
 _.add_0 = function add_13(child){
-  $add_12(this, child);
+  $add_13(this, child);
 }
 ;
 _.getWaves = function getWaves(){
@@ -8987,7 +8941,7 @@ _.getWaves = function getWaves(){
 }
 ;
 _.isEnabled = function isEnabled_3(){
-  return $isEnabled(this);
+  return $isEnabled_0(this);
 }
 ;
 _.setWaves = function setWaves(waves){
@@ -8996,11 +8950,11 @@ _.setWaves = function setWaves(waves){
 ;
 var Lgwt_material_design_client_base_ComplexWidget_2_classLit = createForClass('gwt.material.design.client.base', 'ComplexWidget', 46);
 function Div(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
+  ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(81, 46, $intern_46, Div);
-var Lgwt_material_design_client_ui_html_Div_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Div', 81);
+defineClass(80, 46, $intern_49, Div);
+var Lgwt_material_design_client_ui_html_Div_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Div', 80);
 function $inject_3(resource, removeTag, sourceUrl){
   var text_0;
   text_0 = resource.getText() + (sourceUrl?'//# sourceURL=' + resource.getName() + '.js':'');
@@ -9010,11 +8964,11 @@ function $inject_3(resource, removeTag, sourceUrl){
 function $setActivates(this$static, activates){
   $removeStyleName(this$static, $getActivates(this$static.activatesMixin) + ' dropdown-button');
   $setAttribute_0(this$static.activatesMixin, activates);
-  setStyleName(this$static.element, activates + ' dropdown-button', true);
+  setStyleName(($clinit_DOM() , this$static.element), activates + ' dropdown-button', true);
 }
 
 function $setHref(this$static, href_0){
-  $setAttribute(this$static.element, 'href', href_0);
+  $setAttribute(($clinit_DOM() , this$static.element), 'href', href_0);
 }
 
 function $setSize(this$static, size_0){
@@ -9025,7 +8979,7 @@ function $setSize(this$static, size_0){
 
 function $setText_3(this$static, text_0){
   this$static.span_0.setText(text_0);
-  $add_12(this$static, this$static.span_0);
+  $add_13(this$static, this$static.span_0);
 }
 
 function $setType_0(this$static, type_0){
@@ -9038,7 +8992,7 @@ function AbstractButton(){
   this.cssTypeMixin = new CssTypeMixin(this);
   this.span_0 = new Span;
   $setElement(this, this.createElement_0());
-  this.element.style['cursor'] = ($clinit_Style$Cursor() , 'pointer');
+  ($clinit_DOM() , this.element).style['cursor'] = ($clinit_Style$Cursor() , 'pointer');
 }
 
 function AbstractButton_0(type_0){
@@ -9046,7 +9000,7 @@ function AbstractButton_0(type_0){
   $setType_1(this.cssTypeMixin, type_0);
 }
 
-defineClass(183, 46, $intern_47);
+defineClass(183, 46, $intern_50);
 var Lgwt_material_design_client_base_AbstractButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractButton', 183);
 function $$init_0(this$static){
   this$static.icon_0 = new MaterialIcon;
@@ -9058,7 +9012,7 @@ function $setIconPosition(this$static, position){
 
 function $setIconType(this$static, iconType){
   $setIconType_2(this$static.icon_0, iconType);
-  $insert_3(this$static, this$static.icon_0, 0);
+  $insert_4(this$static, this$static.icon_0, 0);
 }
 
 function AbstractIconButton(type_0){
@@ -9067,20 +9021,20 @@ function AbstractIconButton(type_0){
   $setIconPosition(this, ($clinit_IconPosition() , LEFT_4));
 }
 
-defineClass(196, 183, $intern_47);
+defineClass(196, 183, $intern_50);
 var Lgwt_material_design_client_base_AbstractIconButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractIconButton', 196);
 function $setHTML(this$static, html){
-  $setInnerHTML(this$static.element, html);
+  $setInnerHTML(($clinit_DOM() , this$static.element), html);
 }
 
 function AbstractTextWidget(element){
   this.idMixin = new IdMixin(this);
   new FontSizeMixin(this);
-  $setElement(this, element);
+  $setElement_0(this, ($clinit_DOM() , element));
 }
 
-defineClass(1116, 17, $intern_24);
-var Lgwt_material_design_client_base_AbstractTextWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractTextWidget', 1116);
+defineClass(1111, 17, $intern_24);
+var Lgwt_material_design_client_base_AbstractTextWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractTextWidget', 1111);
 function $addObservedHandler(this$static, handler){
   return $addHandler_0(this$static.widget, handler, ($clinit_ObservedEvent() , TYPE_40));
 }
@@ -9111,8 +9065,8 @@ function getObserver(func){
   return new MutationObserver(func);
 }
 
-defineClass(1362, 1, $intern_15);
-_.fireEvent_0 = function fireEvent_10(event_0){
+defineClass(1360, 1, $intern_15);
+_.fireEvent = function fireEvent_10(event_0){
   $fireEvent_4(this, event_0);
 }
 ;
@@ -9121,14 +9075,14 @@ _.fireObserved = function fireObserved(old, newValue){
   $fireEvent_4(this, new ObservedEvent(newValue));
 }
 ;
-var Lgwt_material_design_client_base_AttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'AttributeObserver', 1362);
+var Lgwt_material_design_client_base_AttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'AttributeObserver', 1360);
 function StyleAttributeObserver(widget){
   this.widget = widget;
   this.style_0 = 'left';
 }
 
-defineClass(1363, 1362, $intern_15, StyleAttributeObserver);
-var Lgwt_material_design_client_base_StyleAttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'StyleAttributeObserver', 1363);
+defineClass(1361, 1360, $intern_15, StyleAttributeObserver);
+var Lgwt_material_design_client_base_StyleAttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'StyleAttributeObserver', 1361);
 function detectAndApply(){
   $wnd.Waves.displayEffect();
 }
@@ -9140,12 +9094,12 @@ function detectAndApply_0(widget){
 function Waves$1(){
 }
 
-defineClass(1139, 1, $intern_41, Waves$1);
+defineClass(1135, 1, $intern_44, Waves$1);
 _.onAttachOrDetach = function onAttachOrDetach_1(event_0){
   event_0.attached && detectAndApply();
 }
 ;
-var Lgwt_material_design_client_base_Waves$1_2_classLit = createForClass('gwt.material.design.client.base', 'Waves/1', 1139);
+var Lgwt_material_design_client_base_Waves$1_2_classLit = createForClass('gwt.material.design.client.base', 'Waves/1', 1135);
 function getElementByAttribute(elems, value_0){
   var child, i;
   if (elems) {
@@ -9226,20 +9180,20 @@ function AbstractMixin(uiObject){
   this.uiObject = uiObject;
 }
 
-defineClass(113, 1, {});
-var Lgwt_material_design_client_base_mixin_AbstractMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'AbstractMixin', 113);
+defineClass(112, 1, {});
+var Lgwt_material_design_client_base_mixin_AbstractMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'AbstractMixin', 112);
 function $setAttribute_0(this$static, value_0){
-  $setAttribute(this$static.uiObject.element, this$static.attribute, value_0);
+  $setAttribute($getElement(this$static.uiObject), this$static.attribute, value_0);
 }
 
-defineClass(1284, 113, {});
-var Lgwt_material_design_client_base_mixin_AttributeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'AttributeMixin', 1284);
+defineClass(1282, 112, {});
+var Lgwt_material_design_client_base_mixin_AttributeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'AttributeMixin', 1282);
 function $getActivates(this$static){
-  return $getAttribute(this$static.uiObject.element, this$static.attribute);
+  return $getAttribute($getElement(this$static.uiObject), this$static.attribute);
 }
 
 function $setActivates_0(this$static){
-  $setAttribute(this$static.uiObject.element, this$static.attribute, 'sideBar');
+  $setAttribute($getElement(this$static.uiObject), this$static.attribute, 'sideBar');
 }
 
 function ActivatesMixin(widget){
@@ -9247,7 +9201,7 @@ function ActivatesMixin(widget){
   this.attribute = 'data-activates';
 }
 
-defineClass(414, 1284, {}, ActivatesMixin);
+defineClass(414, 1282, {}, ActivatesMixin);
 var Lgwt_material_design_client_base_mixin_ActivatesMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ActivatesMixin', 414);
 function $ensureTextColorFormat(textColor){
   var formatted, mainColor, style, style$array, style$index, style$max;
@@ -9283,7 +9237,7 @@ function ColorsMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(4, 113, {}, ColorsMixin);
+defineClass(4, 112, {}, ColorsMixin);
 _.bgColor = '';
 _.textColor = '';
 var Lgwt_material_design_client_base_mixin_ColorsMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ColorsMixin', 4);
@@ -9293,8 +9247,8 @@ function $setStyle(this$static, style){
   style != null && !!style.length && $addStyleName(this$static.uiObject, style);
 }
 
-defineClass(1287, 113, {});
-var Lgwt_material_design_client_base_mixin_StyleMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'StyleMixin', 1287);
+defineClass(1285, 112, {});
+var Lgwt_material_design_client_base_mixin_StyleMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'StyleMixin', 1285);
 function $setCssName(this$static, style){
   this$static.style_0 = style;
   $setStyle(this$static, style.getCssName());
@@ -9304,7 +9258,7 @@ function CssNameMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(134, 1287, {}, CssNameMixin);
+defineClass(134, 1285, {}, CssNameMixin);
 var Lgwt_material_design_client_base_mixin_CssNameMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssNameMixin', 134);
 function $setType_1(this$static, type_0){
   !!this$static.type_0 && !!this$static.type_0.getCssName().length && $removeStyleName(this$static.uiObject, this$static.type_0.getCssName());
@@ -9316,14 +9270,14 @@ function CssTypeMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(154, 113, {}, CssTypeMixin);
+defineClass(154, 112, {}, CssTypeMixin);
 var Lgwt_material_design_client_base_mixin_CssTypeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssTypeMixin', 154);
 function $setEnabled_1(this$static, obj, enabled){
   var widget, widget$iterator;
   if (enabled) {
     setStyleName(obj.getStyleElement(), 'disabled', false);
     setStyleName(obj.getStyleElement(), 'grey lighten-2', false);
-    $removeAttribute(obj.element, 'disabled');
+    $removeAttribute(($clinit_DOM() , obj.element), 'disabled');
     if (instanceOf(this$static.uiObject, 35)) {
       if (!dynamicCast(this$static.uiObject, 35).getWaves()) {
         $addStyleName(this$static.uiObject, 'waves-effect');
@@ -9334,7 +9288,7 @@ function $setEnabled_1(this$static, obj, enabled){
    else {
     setStyleName(obj.getStyleElement(), 'disabled', true);
     setStyleName(obj.getStyleElement(), 'grey lighten-2', true);
-    $setAttribute(obj.element, 'disabled', '');
+    $setAttribute(($clinit_DOM() , obj.element), 'disabled', '');
     instanceOf(this$static.uiObject, 35) && $removeStyleName(this$static.uiObject, 'waves-effect');
   }
   if (instanceOf(obj, 29)) {
@@ -9353,24 +9307,24 @@ function EnabledMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(122, 113, {}, EnabledMixin);
+defineClass(121, 112, {}, EnabledMixin);
 _.isEnabled = function isEnabled_4(){
   return !containsStyle(this.uiObject.getStyleElement().className || '', 'disabled');
 }
 ;
-var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 122);
+var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 121);
 function $setFontSize_0(this$static, fontSize){
   var unit, value_0;
   value_0 = getMeasurementValue(fontSize).value_0;
   unit = getMeasurementUnit(fontSize);
-  this$static.uiObject.element.style['fontSize'] = value_0 + unit.getType();
+  $getElement(this$static.uiObject).style['fontSize'] = value_0 + unit.getType();
 }
 
 function FontSizeMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(144, 113, {}, FontSizeMixin);
+defineClass(144, 112, {}, FontSizeMixin);
 var Lgwt_material_design_client_base_mixin_FontSizeMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'FontSizeMixin', 144);
 function $setGrid(this$static, grid){
   !!this$static.grid.length && $removeStyleName(this$static.uiObject, 'col ' + this$static.grid);
@@ -9382,32 +9336,32 @@ function GridMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(19, 113, {}, GridMixin);
+defineClass(19, 112, {}, GridMixin);
 _.grid = '';
 _.offset = '';
 var Lgwt_material_design_client_base_mixin_GridMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'GridMixin', 19);
 function $setId_0(this$static, id_0){
-  $setId(this$static.uiObject.element, id_0);
+  $setId($getElement(this$static.uiObject), id_0);
 }
 
 function IdMixin(uiObject){
   AbstractMixin.call(this, uiObject);
 }
 
-defineClass(86, 113, {}, IdMixin);
+defineClass(86, 112, {}, IdMixin);
 var Lgwt_material_design_client_base_mixin_IdMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'IdMixin', 86);
 function ProgressMixin(uiObject){
   AbstractMixin.call(this, uiObject);
   this.progress = new MaterialProgress;
 }
 
-defineClass(307, 113, {}, ProgressMixin);
+defineClass(307, 112, {}, ProgressMixin);
 var Lgwt_material_design_client_base_mixin_ProgressMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ProgressMixin', 307);
 function SeparatorMixin(uiObject){
   AbstractMixin.call(this, uiObject);
 }
 
-defineClass(205, 113, {}, SeparatorMixin);
+defineClass(205, 112, {}, SeparatorMixin);
 var Lgwt_material_design_client_base_mixin_SeparatorMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'SeparatorMixin', 205);
 function $isOn(this$static){
   return containsStyle(this$static.uiObject.getStyleElement().className || '', this$static.style_0);
@@ -9423,7 +9377,7 @@ function ToggleStyleMixin(widget, style){
   this.style_0 = style;
 }
 
-defineClass(78, 113, {}, ToggleStyleMixin);
+defineClass(78, 112, {}, ToggleStyleMixin);
 var Lgwt_material_design_client_base_mixin_ToggleStyleMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ToggleStyleMixin', 78);
 function $setWaves_0(this$static, waves){
   var enabled;
@@ -9442,7 +9396,7 @@ function WavesMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(295, 113, {}, WavesMixin);
+defineClass(295, 112, {}, WavesMixin);
 _.getWaves = function getWaves_0(){
   return this.waves;
 }
@@ -9518,7 +9472,7 @@ function values_27(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_constants_ButtonType_2_classLit, 1), $intern_5, 201, 0, [LINK_0, RAISED, FLAT, FLOATING]);
 }
 
-defineClass(201, 18, {32:1, 201:1, 124:1, 103:1, 8:1, 27:1, 18:1}, ButtonType);
+defineClass(201, 18, {32:1, 201:1, 123:1, 103:1, 8:1, 27:1, 18:1}, ButtonType);
 _.getCssName = function getCssName_67(){
   return this.cssClass;
 }
@@ -9591,7 +9545,7 @@ function values_34(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_constants_HideOn_2_classLit, 1), $intern_5, 166, 0, [HIDE_ON_SMALL, HIDE_ON_SMALL_DOWN, HIDE_ON_MED, HIDE_ON_MED_DOWN, HIDE_ON_MED_UP, HIDE_ON_LARGE]);
 }
 
-defineClass(166, 18, {32:1, 124:1, 166:1, 103:1, 8:1, 27:1, 18:1}, HideOn);
+defineClass(166, 18, {32:1, 123:1, 166:1, 103:1, 8:1, 27:1, 18:1}, HideOn);
 _.getCssName = function getCssName_73(){
   return this.cssClass;
 }
@@ -10494,7 +10448,7 @@ function values_37(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_constants_IconType_2_classLit, 1), $intern_5, 3, 0, [DEFAULT_2, ROTATION_3D, ACCESSIBILITY, ACCOUNT_BALANCE_WALLET, ACCOUNT_BALANCE, ACCOUNT_BOX, ACCOUNT_CHILD, ACCOUNT_CIRCLE, ADD_SHOPPING_CART, ALARM_ADD, ALARM_OFF, ALARM_ON, ALARM, ANDROID, ANNOUNCEMENT, ASPECT_RATIO, ASSESSMENT, ASSIGNMENT_IND, ASSIGNMENT_LATE, ASSIGNMENT_RETURN, ASSIGNMENT_RETURNED, ASSIGNMENT_TURNED_IN, ASSIGNMENT, AUTORENEW, BACKUP, BOOK, BOOKMARK_OUTLINE, BOOKMARK, BUG_REPORT, CACHED, CHECK_CIRCLE, CLASS, CREDIT_CARD, DASHBOARD, DELETE, DESCRIPTION, DNS, DONE_ALL, DONE, EVENT, EXIT_TO_APP, EXPLORE, EXTENSION, FACE, UNLOCK, FAVORITE_OUTLINE, FAVORITE, FIND_IN_PAGE, FIND_REPLACE, FLIP_TO_BACK, FLIP_TO_FRONT, GET_APP, GRADE, GROUP_WORK, HELP_0, HIGHLIGHT_REMOVE, HISTORY, HOME, HTTPS, INFO_OUTLINE, INFO, INPUT, INVERT_COLORS, LABEL_OUTLINE, LABEL_0, LANGUAGE, LAUNCH, LIST_0, LOCK_OPEN, LOCK_OUTLINE, LOCK, LOYALTY, MARKUNREAD_MAILBOX, NOTE_ADD, OPEN_IN_BROWSER, OPEN_IN_NEW, OPEN_WITH, PAGEVIEW, PAYMENT, PERM_CAMERA_MIC, PERM_CONTACT_CAL, PERM_DATA_SETTING, PERM_DEVICE_INFO, PERM_IDENTITY, PERM_MEDIA, PERM_PHONE_MSG, PERM_SCAN_WIFI, PICTURE_IN_PICTURE, POLYMER, PRINT, QUERY_BUILDER, QUESTION_ANSWER, RECEIPT, REDEEM, REORDER, REPORT_PROBLEM, RESTORE, ROOM, SCHEDULE, SEARCH_0, SETTINGS_APPLICATIONS, SETTINGS_BACKUP_RESTORE, SETTINGS_BLUETOOTH, SETTINGS_CELL, SETTINGS_DISPLAY, SETTINGS_ETHERNET, SETTINGS_INPUT_ANTENNA, SETTINGS_INPUT_COMPONENT, SETTINGS_INPUT_COMPOSITE, SETTINGS_INPUT_HDMI, SETTINGS_INPUT_SVIDEO, SETTINGS_OVERSCAN, SETTINGS_PHONE, SETTINGS_POWER, SETTINGS_REMOTE, SETTINGS_VOICE, SETTINGS, SHOP_TWO, SHOP, SHOPPING_BASKET, SHOPPING_CART, SPEAKER_NOTES, SPELLCHECK, STAR_RATE, STARS, STORE, SUBJECT, SUPERVISOR_ACCOUNT, SWAP_HORIZ, SWAP_VERT_CIRCLE, SWAP_VERT, SYSTEM_UPDATE_TV, TAB_UNSELECTED, TAB_0, THEATERS, THUMB_DOWN, THUMB_UP, THUMBS_UP_DOWN, TOC, TODAY, TRACK_CHANGES, TRANSLATE, TRENDING_DOWN, TRENDING_NEUTRAL, TRENDING_UP, TURNED_IN_NOT, TURNED_IN, VERIFIED_USER, VIEW_AGENDA, VIEW_ARRAY, VIEW_CAROUSEL, VIEW_COLUMN, VIEW_DAY, VIEW_HEADLINE, VIEW_LIST, VIEW_MODULE, VIEW_QUILT, VIEW_STREAM, VIEW_WEEK, VISIBILITY_OFF, VISIBILITY, WALLET_GIFTCARD, WALLET_MEMBERSHIP, WALLET_TRAVEL, WORK, ERROR, WARNING, ALBUM, CLOSED_CAPTION, EQUALIZER, EXPLICIT, FAST_FORWARD, FAST_REWIND, GAMES, HEARING, HIGH_QUALITY, LOOP, MIC_NONE, MIC_OFF, MIC, MOVIE, MY_LIBRARY_ADD, MY_LIBRARY_BOOKS, MY_LIBRARY_MUSIC, NEW_RELEASES, NOT_INTERESTED, PAUSE_CIRCLE_FILL, PAUSE_CIRCLE_OUTLINE, PAUSE, PLAY_ARROW, PLAY_CIRCLE_FILL, PLAY_CIRCLE_OUTLINE, PLAY_SHOPPING_BAG, PLAYLIST_ADD, QUEUE_MUSIC, QUEUE, RADIO_0, RECENT_ACTORS, REPEAT_ONE, REPEAT, REPLAY, SHUFFLE, SKIP_NEXT, SKIP_PREVIOUS, SNOOZE, STOP, SUBTITLES, SURROUND_SOUND, VIDEO_COLLECTION, VIDEOCAM_OFF, VIDEOCAM, VOLUME_DOWN, VOLUME_MUTE, VOLUME_OFF, VOLUME_UP, WEB, BUSINESS, CALL_END, CALL_MADE, CALL_MERGE, CALL_MISSED, CALL_RECEIVED, CALL_SPLIT, CALL, CHAT, CLEAR_ALL, COMMENT, CONTACTS, DIALER_SIP, DIALPAD, DND_ON, EMAIL, FORUM, IMPORT_EXPORT, INVERT_COLORS_OFF, INVERT_COLORS_ON, LIVE_HELP, LOCATION_OFF, LOCATION_ON, MESSAGE, MESSENGER, NO_SIM, PHONE, PORTABLE_WIFI_OFF, QUICK_CONTACTS_DIALER, QUICK_CONTACTS_MAIL, RING_VOLUME, STAY_CURRENT_LANDSCAPE, STAY_CURRENT_PORTRAIT, STAY_PRIMARY_LANDSCAPE, STAY_PRIMARY_PORTRAIT, SWAP_CALLS, TEXTSMS, VOICEMAIL, VPN_KEY, ADD_BOX, ADD_CIRCLE_OUTLINE, ADD_CIRCLE, ADD, ARCHIVE, BACKSPACE, BLOCK_0, CLEAR, CONTENT_COPY, CONTENT_CUT, CONTENT_PASTE, CREATE, DRAFTS, FILTER_LIST, FLAG, FORWARD, GESTURE, INBOX, LINK_1, MAIL, MARKUNREAD, REDO, REMOVE_CIRCLE_OUTLINE, REMOVE_CIRCLE, REMOVE, REPLY_ALL, REPLY, REPORT, SAVE, SELECT_ALL, SEND, SORT, TEXT_FORMAT, UNDO, ATTACH_FILE, ATTACH_MONEY, BORDER_ALL, BORDER_BOTTOM, BORDER_CLEAR, BORDER_COLOR, BORDER_HORIZONTAL, BORDER_INNER, BORDER_LEFT, BORDER_OUTER, BORDER_RIGHT, BORDER_STYLE, BORDER_TOP, BORDER_VERTICAL, FORMAT_ALIGN_CENTER, FORMAT_ALIGN_JUSTIFY, FORMAT_ALIGN_LEFT, FORMAT_ALIGN_RIGHT, FORMAT_BOLD, FORMAT_CLEAR, FORMAT_COLOR_FILL, FORMAT_COLOR_RESET, FORMAT_COLOR_TEXT, FORMAT_INDENT_DECREASE, FORMAT_INDENT_INCREASE, FORMAT_ITALIC, FORMAT_LINE_SPACING, FORMAT_LIST_BULLETED, FORMAT_LIST_NUMBERED, FORMAT_PAINT, FORMAT_QUOTE, FORMAT_SIZE, FORMAT_STRIKETHROUGH, FORMAT_TEXTDIRECTION_L_TO_R, FORMAT_TEXTDIRECTION_R_TO_L, FORMAT_UNDERLINE, FUNCTIONS, INSERT_CHART, INSERT_COMMENT, INSERT_DRIVE_FILE, INSERT_EMOTICON, INSERT_INVITATION, INSERT_LINK, INSERT_PHOTO, MERGE_TYPE, MODE_COMMENT, MODE_EDIT, PUBLISH, VERTICAL_ALIGN_BOTTOM, VERTICAL_ALIGN_CENTER, VERTICAL_ALIGN_TOP, WRAP_TEXT, ATTACHMENT, CLOUD_CIRCLE, CLOUD_DONE, CLOUD_DOWNLOAD, CLOUD_OFF, CLOUD_QUEUE, CLOUD_UPLOAD, CLOUD, FILE_DOWNLOAD, FILE_UPLOAD, FOLDER_OPEN, FOLDER_SHARED, FOLDER, ACCESS_ALARM, ACCESS_ALARMS, ACCESS_TIME, ADD_ALARM, AIRPLANEMODE_OFF, AIRPLANEMODE_ON, BATTERY_20, BATTERY_30, BATTERY_50, BATTERY_60, BATTERY_80, BATTERY_90, BATTERY_ALERT, BATTERY_CHARGING_20, BATTERY_CHARGING_30, BATTERY_CHARGING_50, BATTERY_CHARGING_60, BATTERY_CHARGING_80, BATTERY_CHARGING_90, BATTERY_CHARGING_FULL, BATTERY_FULL, BATTERY_STD, BATTERY_UNKNOWN, BLUETOOTH_CONNECTED, BLUETOOTH_DISABLED, BLUETOOTH_SEARCHING, BLUETOOTH, BRIGHTNESS_AUTO, BRIGHTNESS_HIGH, BRIGHTNESS_LOW, BRIGHTNESS_MEDIUM, DATA_USAGE, DEVELOPER_MODE, DEVICES, DVR, GPS_FIXED, GPS_NOT_FIXED, GPS_OFF, LOCATION_DISABLED, LOCATION_SEARCHING, MULTITRACK_AUDIO, NETWORK_CELL, NETWORK_WIFI, NFC, NOW_WALLPAPER, NOW_WIDGETS, SCREEN_LOCK_LANDSCAPE, SCREEN_LOCK_PORTRAIT, SCREEN_LOCK_ROTATION, SCREEN_ROTATION, SD_STORAGE, SETTINGS_SYSTEM_DAYDREAM, SIGNAL_CELLULAR_0_BAR, SIGNAL_CELLULAR_1_BAR, SIGNAL_CELLULAR_2_BAR, SIGNAL_CELLULAR_3_BAR, SIGNAL_CELLULAR_4_BAR, WIFI_STATUSBAR_CONNECTED_NO_INTERNET_AFTER, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_0_BAR, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_1_BAR, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_2_BAR, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_3_BAR, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_4_BAR, SIGNAL_CELLULAR_NO_SIM, SIGNAL_CELLULAR_NULL, SIGNAL_CELLULAR_OFF, SIGNAL_WIFI_0_BAR, SIGNAL_WIFI_1_BAR, SIGNAL_WIFI_2_BAR, SIGNAL_WIFI_3_BAR, SIGNAL_WIFI_4_BAR, SIGNAL_WIFI_OFF, SIGNAL_WIFI_STATUSBAR_1_BAR, SIGNAL_WIFI_STATUSBAR_2_BAR, SIGNAL_WIFI_STATUSBAR_3_BAR, SIGNAL_WIFI_STATUSBAR_4_BAR, SIGNAL_WIFI_STATUSBAR_CONNECTED_NO_INTERNET_, SIGNAL_WIFI_STATUSBAR_CONNECTED_NO_INTERNET, SIGNAL_WIFI_STATUSBAR_CONNECTED_NO_INTERNET_2, SIGNAL_WIFI_STATUSBAR_CONNECTED_NO_INTERNET_3, SIGNAL_WIFI_STATUSBAR_CONNECTED_NO_INTERNET_4, WIFI_STATUSBAR_NOT_CONNECTED_AFTER, SIGNAL_WIFI_STATUSBAR_NOT_CONNECTED, SIGNAL_WIFI_STATUSBAR_NULL, STORAGE, USB, WIFI_LOCK, WIFI_TETHERING, CAST_CONNECTED, CAST, COMPUTER, DESKTOP_MAC, DESKTOP_WINDOWS, DOCK, GAMEPAD, HEADSET_MIC, HEADSET, KEYBOARD_ALT, KEYBOARD_ARROW_DOWN, KEYBOARD_ARROW_LEFT, KEYBOARD_ARROW_RIGHT, KEYBOARD_ARROW_UP, KEYBOARD_BACKSPACE, KEYBOARD_CAPSLOCK, KEYBOARD_CONTROL, KEYBOARD_HIDE, KEYBOARD_RETURN, KEYBOARD_TAB, KEYBOARD_VOICE, KEYBOARD, LAPTOP_CHROMEBOOK, LAPTOP_MAC, LAPTOP_WINDOWS, LAPTOP, MEMORY, MOUSE, PHONE_ANDROID, PHONE_IPHONE, PHONELINK_OFF, PHONELINK, SECURITY, SIM_CARD, SMARTPHONE, SPEAKER, TABLET_ANDROID, TABLET_MAC, TABLET, TV, WATCH, ADD_TO_PHOTOS, ADJUST, ASSISTANT_PHOTO, AUDIOTRACK, BLUR_CIRCULAR, BLUR_LINEAR, BLUR_OFF, BLUR_ON, BRIGHTNESS_1, BRIGHTNESS_2, BRIGHTNESS_3, BRIGHTNESS_4, BRIGHTNESS_5, BRIGHTNESS_6, BRIGHTNESS_7, BRUSH, CAMERA_ALT, CAMERA_FRONT, CAMERA_REAR, CAMERA_ROLL, CAMERA, CENTER_FOCUS_STRONG, CENTER_FOCUS_WEAK, COLLECTIONS, COLOR_LENS, COLORIZE, COMPARE, CONTROL_POINT_DUPLICATE, CONTROL_POINT, CROP_3_2, CROP_5_4, CROP_7_5, CROP_16_9, CROP_DIN, CROP_FREE, CROP_LANDSCAPE, CROP_ORIGINAL, CROP_PORTRAIT, CROP_SQUARE, CROP, DEHAZE, DETAILS, EDIT, EXPOSURE_MINUS_1, EXPOSURE_MINUS_2, EXPOSURE_PLUS_1, EXPOSURE_PLUS_2, EXPOSURE_ZERO, EXPOSURE, FILTER_1, FILTER_2, FILTER_3, FILTER_4, FILTER_5, FILTER_6, FILTER_7, FILTER_8, FILTER_9_PLUS, FILTER_9, FILTER_B_AND_W, FILTER_CENTER_FOCUS, FILTER_DRAMA, FILTER_FRAMES, FILTER_HDR, FILTER_NONE, FILTER_TILT_SHIFT, FILTER_VINTAGE, FILTER, FLARE, FLASH_AUTO, FLASH_OFF, FLASH_ON, FLIP, GRADIENT, GRAIN, GRID_OFF, GRID_ON, HDR_OFF, HDR_ON, HDR_STRONG, HDR_WEAK, HEALING, IMAGE_ASPECT_RATIO, IMAGE, ISO, LANDSCAPE, LEAK_ADD, LEAK_REMOVE, LENS, LOOKS_3, LOOKS_4, LOOKS_5, LOOKS_6, LOOKS_ONE, LOOKS_TWO, LOOKS, LOUPE, MOVIE_CREATION, NATURE_PEOPLE, NATURE, NAVIGATE_BEFORE, NAVIGATE_NEXT, PALETTE, PANORAMA_FISHEYE, PANORAMA_HORIZONTAL, PANORAMA_VERTICAL, PANORAMA_WIDE_ANGLE, PANORAMA, PHOTO_ALBUM, PHOTO_CAMERA, PHOTO_LIBRARY, PHOTO, PORTRAIT, REMOVE_RED_EYE, ROTATE_LEFT, ROTATE_RIGHT, SLIDESHOW, STRAIGHTEN, STYLE, SWITCH_CAMERA, SWITCH_VIDEO, TAG_FACES, TEXTURE, TIMELAPSE, TIMER_3, TIMER_10, TIMER_AUTO, TIMER_OFF, TIMER_0, TONALITY, TRANSFORM, TUNE, WB_AUTO, WB_CLOUDY, WB_INCANDESCENT, WB_IRRADESCENT, WB_SUNNY, BEENHERE, DIRECTIONS_BIKE, DIRECTIONS_BUS, DIRECTIONS_CAR, DIRECTIONS_FERRY, DIRECTIONS_SUBWAY, DIRECTIONS_TRAIN, DIRECTIONS_TRANSIT, DIRECTIONS_WALK, DIRECTIONS, FLIGHT, HOTEL, LAYERS_CLEAR, LAYERS, LOCAL_AIRPORT, LOCAL_ATM, LOCAL_ATTRACTION, LOCAL_BAR, LOCAL_CAFE, LOCAL_CAR_WASH, LOCAL_CONVENIENCE_STORE, LOCAL_DRINK, LOCAL_FLORIST, LOCAL_GAS_STATION, LOCAL_GROCERY_STORE, LOCAL_HOSPITAL, LOCAL_HOTEL, LOCAL_LAUNDRY_SERVICE, LOCAL_LIBRARY, LOCAL_MALL, LOCAL_MOVIES, LOCAL_OFFER, LOCAL_PARKING, LOCAL_PHARMACY, LOCAL_PHONE, LOCAL_PIZZA, LOCAL_PLAY, LOCAL_POST_OFFICE, LOCAL_PRINT_SHOP, LOCAL_RESTAURANT, LOCAL_SEE, LOCAL_SHIPPING, LOCAL_TAXI, LOCATION_HISTORY, MAP, MY_LOCATION, NAVIGATION_0, PIN_DROP, PLACE, RATE_REVIEW, RESTAURANT_MENU, SATELLITE, STORE_MALL_DIRECTORY, TERRAIN, TRAFFIC, APPS, ARROW_BACK, ARROW_DROP_DOWN_CIRCLE, ARROW_DROP_DOWN, ARROW_DROP_UP, ARROW_FORWARD, CANCEL, CHECK, CHEVRON_LEFT, CHEVRON_RIGHT, CLOSE, EXPAND_LESS, EXPAND_MORE, FULLSCREEN_EXIT, FULLSCREEN, MENU_0, MORE_HORIZ, MORE_VERT, REFRESH, UNFOLD_LESS, UNFOLD_MORE, ADB, BLUETOOTH_AUDIO, DISC_FULL, DND_FORWARDSLASH, DO_NOT_DISTURB, DRIVE_ETA, EVENT_AVAILABLE, EVENT_BUSY, EVENT_NOTE, FOLDER_SPECIAL, MMS, MORE, NETWORK_LOCKED, PHONE_BLUETOOTH_SPEAKER, PHONE_FORWARDED, PHONE_IN_TALK, PHONE_LOCKED, PHONE_MISSED, PHONE_PAUSED, PLAY_DOWNLOAD, PLAY_INSTALL, SD_CARD, SIM_CARD_ALERT, SMS_FAILED, SMS, SYNC_DISABLED, SYNC_PROBLEM, SYNC, SYSTEM_UPDATE, TAP_AND_PLAY, TIME_TO_LEAVE, VIBRATION, VOICE_CHAT, VPN_LOCK, CAKE, DOMAIN, GROUP_ADD, GROUP_0, LOCATION_CITY, MOOD, NOTIFICATIONS_NONE, NOTIFICATIONS_OFF, NOTIFICATIONS_ON, NOTIFICATIONS_PAUSED, NOTIFICATIONS, PAGES, PARTY_MODE, PEOPLE_OUTLINE, PEOPLE, PERSON_ADD, PERSON_OUTLINE, PERSON, PLUS_ONE, POLL, PUBLIC, SCHOOL, SHARE, WHATSHOT, CHECK_BOX_OUTLINE_BLANK, CHECK_BOX, RADIO_BUTTON_OFF, RADIO_BUTTON_ON, STAR_HALF, STAR_OUTLINE, STAR, ACCESSIBLE, ALL_OUT, CODE, COMPARE_ARROWS, COPYRIGHT, DATE_RANGE, DONUT_LARGE, DONUT_SMALL, FINGERPRINT, GAVEL, IMPORTANT_DEVICES, LIGHTBULB_OUTLINE, LINE_STYLE, LINE_WEIGHT, MOTORCYCLE, OPACITY, PAN_TOOL, PETS, PICTURE_IN_PICTURE_ALT, PREGNANT_WOMAN, RECORD_VOICE_OVER, ROUNDED_CORNER, ROWING, TIMELINE, TOUCH_APP, UPDATE, WATCH_LATER, ADD_TO_QUEUE, ART_TRACK, FIBER_DVR, FIBER_MANUAL_RECORD, FIBER_NEW, FIBER_PIN, FIBER_SMART_RECORD, MUSIC_VIDEO, PLAYLIST_ADD_CHECK, PLAYLIST_PLAY, QUEUE_PLAY_NEXT, REMOVE_FROM_QUEUE, SLOW_MOTION_VIDEO, SUBSCRIPTIONS, WEB_ASSET, CALL_MISSED_OUTGOING, CONTACT_MAIL, IMPORT_CONTACTS, MAIL_OUTLINE, SCREEN_SHARE, STOP_SCREEN_SHARE, MOVE_TO_INBOX, NEXT_WEEK, UNARCHIVE, WEEKEND, DRAG_HANDLE, FORMAT_SHAPES, HIGHLIGHT, LINEAR_SCALE, SHORT_TEXT, TEXT_FIELDS, CREATE_NEW_FOLDER, DEVICES_OTHER, VIDEOGAME_ASSET, ADD_A_PHOTO, CROP_ROTATE, LINKED_CAMERA, MOVIE_FILTER, PHOTO_FILTER, ADD_LOCATION, EDIT_LOCATION, NEAR_ME, PERSON_PIN_CIRCLE, ZOOM_OUT_MAP, ARROW_DOWNWARD, ARROW_UPWARD, SUBDIRECTORY_ARROW_LEFT, SUBDIRECTORY_ARROW_RIGHT, ENHANCED_ENCRYPTION, NETWORK_CHECK, NO_ENCRYPTION, AC_UNIT, AIRPORT_SHUTTLE, AIR_INCLUSIVE, BEACH_ACCESS, BUSINESS_CENTER, CASINO, CHILD_CARE, CHILD_FRIENDLY, FITNESS_CENTER, FREE_BREAKFAST, GOLF_COURSE, HOT_TUB, KITCHEN, POOL, ROOM_SERVICE, RV_HOOKUP, SMOKE_FREE, SMOKING_ROOMS, SPA]);
 }
 
-defineClass(3, 18, {32:1, 124:1, 3:1, 103:1, 8:1, 27:1, 18:1}, IconType);
+defineClass(3, 18, {32:1, 123:1, 3:1, 103:1, 8:1, 27:1, 18:1}, IconType);
 _.getCssName = function getCssName_76(){
   return this.cssClass;
 }
@@ -10517,7 +10471,7 @@ function values_44(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_constants_ProgressType_2_classLit, 1), $intern_5, 255, 0, [INDETERMINATE, DETERMINATE]);
 }
 
-defineClass(255, 18, {32:1, 124:1, 255:1, 103:1, 8:1, 27:1, 18:1}, ProgressType);
+defineClass(255, 18, {32:1, 123:1, 255:1, 103:1, 8:1, 27:1, 18:1}, ProgressType);
 _.getCssName = function getCssName_82(){
   return this.cssClass;
 }
@@ -10543,7 +10497,7 @@ function values_46(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_constants_SideNavType_2_classLit, 1), $intern_5, 168, 0, [OPEN, MINI, CLIP, FLOAT, CARD]);
 }
 
-defineClass(168, 18, {32:1, 124:1, 168:1, 103:1, 8:1, 27:1, 18:1}, SideNavType);
+defineClass(168, 18, {32:1, 123:1, 168:1, 103:1, 8:1, 27:1, 18:1}, SideNavType);
 _.getCssName = function getCssName_84(){
   return this.cssClass;
 }
@@ -10615,7 +10569,7 @@ function ClearActiveEvent(){
 
 defineClass(301, $intern_14, {}, ClearActiveEvent);
 _.dispatch = function dispatch_40(handler){
-  $clearActive_1(dynamicCast(handler, 1494).this$01);
+  $clearActive_1(dynamicCast(handler, 1491).this$01);
 }
 ;
 _.getAssociatedType = function getAssociatedType_41(){
@@ -10638,9 +10592,9 @@ function ObservedEvent(value_0){
   this.value_0 = value_0;
 }
 
-defineClass(1165, $intern_14, {}, ObservedEvent);
+defineClass(1162, $intern_14, {}, ObservedEvent);
 _.dispatch = function dispatch_41(handler){
-  $dispatch_14(this, dynamicCast(handler, 1495));
+  $dispatch_14(this, dynamicCast(handler, 1492));
 }
 ;
 _.getAssociatedType = function getAssociatedType_42(){
@@ -10648,7 +10602,7 @@ _.getAssociatedType = function getAssociatedType_42(){
 }
 ;
 var TYPE_40;
-var Lgwt_material_design_client_events_ObservedEvent_2_classLit = createForClass('gwt.material.design.client.events', 'ObservedEvent', 1165);
+var Lgwt_material_design_client_events_ObservedEvent_2_classLit = createForClass('gwt.material.design.client.events', 'ObservedEvent', 1162);
 function $clinit_SideNavHiddenEvent(){
   $clinit_SideNavHiddenEvent = emptyMethod;
   TYPE_41 = new GwtEvent$Type;
@@ -10658,7 +10612,7 @@ function SideNavHiddenEvent(){
   $clinit_SideNavHiddenEvent();
 }
 
-defineClass(1416, $intern_14, {}, SideNavHiddenEvent);
+defineClass(1414, $intern_14, {}, SideNavHiddenEvent);
 _.dispatch = function dispatch_42(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -10669,7 +10623,7 @@ _.getAssociatedType = function getAssociatedType_43(){
 }
 ;
 var TYPE_41;
-var Lgwt_material_design_client_events_SideNavHiddenEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavHiddenEvent', 1416);
+var Lgwt_material_design_client_events_SideNavHiddenEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavHiddenEvent', 1414);
 function $clinit_SideNavShownEvent(){
   $clinit_SideNavShownEvent = emptyMethod;
   TYPE_42 = new GwtEvent$Type;
@@ -10679,7 +10633,7 @@ function SideNavShownEvent(){
   $clinit_SideNavShownEvent();
 }
 
-defineClass(1415, $intern_14, {}, SideNavShownEvent);
+defineClass(1413, $intern_14, {}, SideNavShownEvent);
 _.dispatch = function dispatch_43(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -10690,7 +10644,7 @@ _.getAssociatedType = function getAssociatedType_44(){
 }
 ;
 var TYPE_42;
-var Lgwt_material_design_client_events_SideNavShownEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavShownEvent', 1415);
+var Lgwt_material_design_client_events_SideNavShownEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavShownEvent', 1413);
 var materializeJsDebug;
 function MaterialDebugResources_default_InlineClientBundleGenerator$1(){
 }
@@ -10853,31 +10807,31 @@ function MaterialAnchorButton(){
   AbstractIconButton.call(this, ($clinit_ButtonType() , RAISED));
 }
 
-defineClass(82, 196, $intern_47, MaterialAnchorButton);
+defineClass(81, 196, $intern_50, MaterialAnchorButton);
 _.createElement_0 = function createElement(){
-  return $createElement($doc, 'a');
+  return $doc.createElement('a');
 }
 ;
-var Lgwt_material_design_client_ui_MaterialAnchorButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialAnchorButton', 82);
+var Lgwt_material_design_client_ui_MaterialAnchorButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialAnchorButton', 81);
 function Span(){
-  ComplexWidget_0.call(this, $createElement($doc, 'span'));
+  ComplexWidget_0.call(this, $doc.createElement('span'));
 }
 
-defineClass(77, 46, $intern_46, Span);
+defineClass(77, 46, $intern_49, Span);
 _.setText = function setText(text_0){
   this.text_0 = text_0;
-  $setInnerHTML(this.element, text_0);
+  $setInnerHTML(($clinit_DOM() , this.element), text_0);
 }
 ;
 var Lgwt_material_design_client_ui_html_Span_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Span', 77);
 function MaterialBadge(){
   Span.call(this);
-  $setClassName(this.element, 'badge sideBarBadge');
+  $setClassName(($clinit_DOM() , this.element), 'badge sideBarBadge');
 }
 
-defineClass(231, 77, $intern_46, MaterialBadge);
+defineClass(231, 77, $intern_49, MaterialBadge);
 _.setText = function setText_0(text_0){
-  $setInnerHTML(this.element, text_0);
+  $setInnerHTML(($clinit_DOM() , this.element), text_0);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialBadge_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialBadge', 231);
@@ -10885,83 +10839,84 @@ function MaterialButton(){
   AbstractIconButton.call(this, ($clinit_ButtonType() , RAISED));
 }
 
-defineClass(26, 196, $intern_48, MaterialButton);
+defineClass(26, 196, $intern_51, MaterialButton);
 _.createElement_0 = function createElement_0(){
-  return $doc.createElement("<BUTTON type='button'><\/BUTTON>");
+  var e;
+  return e = $doc.createElement('BUTTON') , e.setAttribute('type', 'button') , e;
 }
 ;
 var Lgwt_material_design_client_ui_MaterialButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialButton', 26);
 function $setGrid_0(this$static, grid){
   $setGrid((!this$static.gridMixin && (this$static.gridMixin = new GridMixin(this$static)) , this$static.gridMixin), grid);
-  setStyleName(this$static.element, 'no-padding', false);
+  setStyleName(($clinit_DOM() , this$static.element), 'no-padding', false);
   setStyleName(this$static.element, 'no-padding', true);
   this$static.element.style['margin'] = ($clinit_Style$Unit() , '10.0px');
 }
 
 function MaterialCard(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'card');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'card');
 }
 
-defineClass(50, 46, $intern_46, MaterialCard);
+defineClass(50, 46, $intern_49, MaterialCard);
 var Lgwt_material_design_client_ui_MaterialCard_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCard', 50);
 function MaterialCardAction(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'card-action');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'card-action');
 }
 
-defineClass(52, 46, $intern_46, MaterialCardAction);
+defineClass(52, 46, $intern_49, MaterialCardAction);
 var Lgwt_material_design_client_ui_MaterialCardAction_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardAction', 52);
 function MaterialCardContent(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'card-content');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'card-content');
 }
 
-defineClass(51, 46, $intern_46, MaterialCardContent);
+defineClass(51, 46, $intern_49, MaterialCardContent);
 var Lgwt_material_design_client_ui_MaterialCardContent_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardContent', 51);
-function $add_15(this$static, child){
+function $add_16(this$static, child){
   instanceOf(child, 37) && setStyleName(child.getStyleElement(), 'activator', true);
-  $add_0(this$static, child, this$static.element);
+  $add_0(this$static, child, ($clinit_DOM() , this$static.element));
 }
 
 function MaterialCardImage(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
+  ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(108, 46, $intern_46, MaterialCardImage);
+defineClass(108, 46, $intern_49, MaterialCardImage);
 _.add_0 = function add_15(child){
-  $add_15(this, child);
+  $add_16(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialCardImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardImage', 108);
 function MaterialCardReveal(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'card-reveal');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'card-reveal');
 }
 
-defineClass(94, 46, $intern_46, MaterialCardReveal);
-var Lgwt_material_design_client_ui_MaterialCardReveal_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardReveal', 94);
+defineClass(93, 46, $intern_49, MaterialCardReveal);
+var Lgwt_material_design_client_ui_MaterialCardReveal_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardReveal', 93);
 function $setIconPosition_0(this$static, position){
   $setIconPosition_1(this$static.icon_0, position);
 }
 
 function $setIconType_0(this$static, iconType){
   $setIconType_2(this$static.icon_0, iconType);
-  $add_12(this$static, this$static.icon_0);
+  $add_13(this$static, this$static.icon_0);
 }
 
 function MaterialCardTitle(){
-  ComplexWidget_0.call(this, $createElement($doc, 'span'));
+  ComplexWidget_0.call(this, $doc.createElement('span'));
   this.icon_0 = new MaterialIcon;
   this.span_0 = new Span;
-  $setClassName(this.element, 'card-title activator');
+  $setClassName(($clinit_DOM() , this.element), 'card-title activator');
 }
 
-defineClass(42, 46, $intern_46, MaterialCardTitle);
+defineClass(42, 46, $intern_49, MaterialCardTitle);
 var Lgwt_material_design_client_ui_MaterialCardTitle_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardTitle', 42);
-function $add_16(this$static, child){
+function $add_17(this$static, child){
   instanceOf(child, 48) && $setParent_0(dynamicCast(child, 48), this$static);
-  $onInitCollapsible(this$static.element);
+  $onInitCollapsible(($clinit_DOM() , this$static.element));
   $add_0(this$static, child, this$static.element);
 }
 
@@ -10975,7 +10930,7 @@ function $clearActive_0(this$static, widget){
   var child, child$iterator, element;
   for (child$iterator = widget.iterator(); child$iterator.hasNext();) {
     child = dynamicCast(child$iterator.next_0(), 17);
-    element = child.element;
+    element = ($clinit_DOM() , child.element);
     containsStyle($getClassName(element), 'active') && $removeClassName(element, 'active');
     instanceOf(child, 29) && $clearActive_0(this$static, dynamicCast(child, 29));
   }
@@ -10989,17 +10944,17 @@ function $onInitCollapsible(e){
 }
 
 function MaterialCollapsible(){
-  ComplexWidget_0.call(this, $createElement($doc, 'ul'));
-  $setClassName(this.element, 'collapsible');
+  ComplexWidget_0.call(this, $doc.createElement('ul'));
+  $setClassName(($clinit_DOM() , this.element), 'collapsible');
 }
 
 defineClass(106, 46, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 106:1}, MaterialCollapsible);
 _.add_0 = function add_16(child){
-  $add_16(this, child);
+  $add_17(this, child);
 }
 ;
 _.onLoad = function onLoad_12(){
-  $onInitCollapsible(this.element);
+  $onInitCollapsible(($clinit_DOM() , this.element));
 }
 ;
 _.remove = function remove_18(w){
@@ -11009,27 +10964,27 @@ _.remove = function remove_18(w){
 }
 ;
 var Lgwt_material_design_client_ui_MaterialCollapsible_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsible', 106);
-function $add_17(this$static, child){
+function $add_18(this$static, child){
   var w, w$iterator;
   if (instanceOf(child, 84)) {
-    for (w$iterator = new WidgetCollection$WidgetIterator(dynamicCast(child, 84).children_0); w$iterator.index_0 < w$iterator.this$01.size_0;) {
+    for (w$iterator = new WidgetCollection$WidgetIterator(dynamicCast(child, 84).children); w$iterator.index_0 < w$iterator.this$01.size_0;) {
       w = $next_3(w$iterator);
       if (instanceOf(w, 41)) {
-        w.element.style['display'] = ($clinit_Style$Display() , 'block');
+        ($clinit_DOM() , w.element).style['display'] = ($clinit_Style$Display() , 'block');
         $addDomHandler(w, new MaterialCollapsibleBody$1(this$static, w), ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1));
       }
     }
   }
    else if (instanceOf(child, 41)) {
-    child.element.style['display'] = ($clinit_Style$Display() , 'block');
+    ($clinit_DOM() , child.element).style['display'] = ($clinit_Style$Display() , 'block');
     $addDomHandler(child, new MaterialCollapsibleBody$1(this$static, child), ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1));
   }
-  $add_0(this$static, child, this$static.element);
+  $add_0(this$static, child, ($clinit_DOM() , this$static.element));
 }
 
 function $checkActiveState(this$static, child){
   var href_0, li, location_0, url_0, w, w$iterator, location_1;
-  href_0 = $getAttribute(child.element, 'href');
+  href_0 = $getAttribute(($clinit_DOM() , child.element), 'href');
   url_0 = $wnd.location.href;
   location_0 = $substring_0(url_0, url_0.indexOf('#'), url_0.length);
   if (!!href_0.length && $equals_0(__substr(location_0, 0, href_0.length), href_0)) {
@@ -11067,13 +11022,13 @@ function $makeActive(this$static, child){
 }
 
 function MaterialCollapsibleBody(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'collapsible-body');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'collapsible-body');
 }
 
 defineClass(57, 46, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 174:1, 57:1}, MaterialCollapsibleBody);
 _.add_0 = function add_17(child){
-  $add_17(this, child);
+  $add_18(this, child);
 }
 ;
 _.remove = function remove_19(w){
@@ -11084,7 +11039,7 @@ _.remove = function remove_19(w){
 _.setParent = function setParent(parent_0){
   var child, child$iterator;
   this.parent_0 = parent_0;
-  for (child$iterator = new WidgetCollection$WidgetIterator(this.children_0); child$iterator.index_0 < child$iterator.this$01.size_0;) {
+  for (child$iterator = new WidgetCollection$WidgetIterator(this.children); child$iterator.index_0 < child$iterator.this$01.size_0;) {
     child = $next_3(child$iterator);
     $checkActiveState(this, child);
     instanceOf(child, 174) && dynamicCast(child, 174).setParent(parent_0);
@@ -11097,39 +11052,39 @@ function MaterialCollapsibleBody$1(this$0, val$child){
   this.val$child2 = val$child;
 }
 
-defineClass(418, 1, $intern_49, MaterialCollapsibleBody$1);
+defineClass(418, 1, $intern_52, MaterialCollapsibleBody$1);
 _.onClick = function onClick_6(event_0){
   $makeActive(this.this$01, this.val$child2);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialCollapsibleBody$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsibleBody/1', 418);
-function $add_18(this$static, child){
+function $add_19(this$static, child){
   var w, w$iterator;
   if (instanceOf(child, 84)) {
-    for (w$iterator = new WidgetCollection$WidgetIterator(dynamicCast(child, 84).children_0); w$iterator.index_0 < w$iterator.this$01.size_0;) {
+    for (w$iterator = new WidgetCollection$WidgetIterator(dynamicCast(child, 84).children); w$iterator.index_0 < w$iterator.this$01.size_0;) {
       w = $next_3(w$iterator);
-      instanceOf(w, 41) && (w.element.style['display'] = ($clinit_Style$Display() , 'block') , undefined);
+      instanceOf(w, 41) && (($clinit_DOM() , w.element).style['display'] = ($clinit_Style$Display() , 'block') , undefined);
     }
   }
    else 
-    instanceOf(child, 41) && (child.element.style['display'] = ($clinit_Style$Display() , 'block') , undefined);
-  $add_0(this$static, child, this$static.element);
+    instanceOf(child, 41) && (($clinit_DOM() , child.element).style['display'] = ($clinit_Style$Display() , 'block') , undefined);
+  $add_0(this$static, child, ($clinit_DOM() , this$static.element));
 }
 
 function MaterialCollapsibleHeader(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'collapsible-header');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'collapsible-header');
 }
 
 defineClass(61, 46, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 61:1}, MaterialCollapsibleHeader);
 _.add_0 = function add_18(child){
-  $add_18(this, child);
+  $add_19(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialCollapsibleHeader_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsibleHeader', 61);
-function $add_19(this$static, child){
+function $add_20(this$static, child){
   instanceOf(child, 57)?(this$static.body_0 = dynamicCast(child, 57)):instanceOf(child, 61) && (this$static.header = dynamicCast(child, 61));
-  $add_0(this$static, child, this$static.element);
+  $add_0(this$static, child, ($clinit_DOM() , this$static.element));
 }
 
 function $expand(this$static){
@@ -11140,7 +11095,7 @@ function $expand(this$static){
 }
 
 function $setActive_2(this$static){
-  setStyleName(this$static.element, 'active', false);
+  setStyleName(($clinit_DOM() , this$static.element), 'active', false);
   $clearActive(this$static.parent_0);
   setStyleName(this$static.element, 'active', true);
   if (this$static.header) {
@@ -11152,7 +11107,7 @@ function $setActive_2(this$static){
 function $setParent_0(this$static, parent_0){
   var child, child$iterator;
   this$static.parent_0 = parent_0;
-  for (child$iterator = new WidgetCollection$WidgetIterator(this$static.children_0); child$iterator.index_0 < child$iterator.this$01.size_0;) {
+  for (child$iterator = new WidgetCollection$WidgetIterator(this$static.children); child$iterator.index_0 < child$iterator.this$01.size_0;) {
     child = $next_3(child$iterator);
     instanceOf(child, 174) && dynamicCast(child, 174).setParent(parent_0);
   }
@@ -11165,11 +11120,11 @@ function MaterialCollapsibleItem(){
 
 defineClass(48, 183, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 159:1, 39:1, 35:1, 174:1, 48:1}, MaterialCollapsibleItem);
 _.add_0 = function add_19(child){
-  $add_19(this, child);
+  $add_20(this, child);
 }
 ;
 _.createElement_0 = function createElement_1(){
-  return $createElement($doc, 'li');
+  return $doc.createElement('li');
 }
 ;
 _.remove = function remove_20(w){
@@ -11189,40 +11144,40 @@ _.setWaves = function setWaves_1(waves){
 ;
 var Lgwt_material_design_client_ui_MaterialCollapsibleItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsibleItem', 48);
 function MaterialCollection(){
-  ComplexWidget_0.call(this, $createElement($doc, 'ul'));
+  ComplexWidget_0.call(this, $doc.createElement('ul'));
   this.span_0 = new Heading(($clinit_HeadingSize() , H4));
-  $setClassName(this.element, 'collection');
+  $setClassName(($clinit_DOM() , this.element), 'collection');
 }
 
-defineClass(105, 46, $intern_46, MaterialCollection);
+defineClass(105, 46, $intern_49, MaterialCollection);
 _.index_0 = 0;
 var Lgwt_material_design_client_ui_MaterialCollection_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollection', 105);
 function MaterialCollectionItem(){
-  ComplexWidget_0.call(this, $createElement($doc, 'li'));
+  ComplexWidget_0.call(this, $doc.createElement('li'));
   this.avatarMixin = new ToggleStyleMixin(this, 'avatar');
   this.dismissableMixin = new ToggleStyleMixin(this, 'dismissable');
-  $setClassName(this.element, 'collection-item');
+  $setClassName(($clinit_DOM() , this.element), 'collection-item');
 }
 
-defineClass(43, 46, $intern_46, MaterialCollectionItem);
+defineClass(43, 46, $intern_49, MaterialCollectionItem);
 var Lgwt_material_design_client_ui_MaterialCollectionItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollectionItem', 43);
 function MaterialColumn(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'col');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'col');
 }
 
-defineClass(30, 46, $intern_46, MaterialColumn);
+defineClass(30, 46, $intern_49, MaterialColumn);
 var Lgwt_material_design_client_ui_MaterialColumn_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialColumn', 30);
 function MaterialContainer(){
-  ComplexWidget_0.call(this, $createElement($doc, 'main'));
+  ComplexWidget_0.call(this, $doc.createElement('main'));
 }
 
-defineClass(1115, 46, $intern_46, MaterialContainer);
-var Lgwt_material_design_client_ui_MaterialContainer_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialContainer', 1115);
-function $add_20(this$static, child){
+defineClass(1110, 46, $intern_49, MaterialContainer);
+var Lgwt_material_design_client_ui_MaterialContainer_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialContainer', 1110);
+function $add_21(this$static, child){
   var li;
   if (instanceOf(child, 41)) {
-    $add_0(this$static, child, this$static.element);
+    $add_0(this$static, child, ($clinit_DOM() , this$static.element));
   }
    else {
     li = new ListItem_0(child);
@@ -11230,24 +11185,24 @@ function $add_20(this$static, child){
       $setWaves(li, dynamicCast(child, 35).getWaves());
       dynamicCast(child, 35).setWaves(null);
     }
-    $add_0(this$static, li, this$static.element);
+    $add_0(this$static, li, ($clinit_DOM() , this$static.element));
   }
 }
 
 function UnorderedList(){
-  ComplexWidget_0.call(this, $createElement($doc, 'ul'));
+  ComplexWidget_0.call(this, $doc.createElement('ul'));
 }
 
-defineClass(84, 46, $intern_50, UnorderedList);
+defineClass(84, 46, $intern_53, UnorderedList);
 _.add_0 = function add_20(child){
-  $add_20(this, child);
+  $add_21(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_html_UnorderedList_2_classLit = createForClass('gwt.material.design.client.ui.html', 'UnorderedList', 84);
-function $add_21(this$static, child){
+function $add_22(this$static, child){
   var li;
   if (instanceOf(child, 41)) {
-    child.element.style['display'] = ($clinit_Style$Display() , 'block');
+    ($clinit_DOM() , child.element).style['display'] = ($clinit_Style$Display() , 'block');
     $add_0(this$static, child, this$static.element);
   }
    else {
@@ -11256,21 +11211,21 @@ function $add_21(this$static, child){
       $setWaves(li, dynamicCast(child, 35).getWaves());
       dynamicCast(child, 35).setWaves(null);
     }
-    li.element.style['display'] = ($clinit_Style$Display() , 'block');
+    ($clinit_DOM() , li.element).style['display'] = ($clinit_Style$Display() , 'block');
     $add_0(this$static, li, this$static.element);
   }
 }
 
-function $initialize_2(this$static){
+function $initialize_1(this$static){
   var activatorElem;
   activatorElem = getElementByAttribute_0(this$static.activator);
   if (!activatorElem) {
     throw new IllegalStateException_0("There is no activator element with id: '" + this$static.activator + "' in the DOM, cannot instantiate MaterialDropDown without an activator.");
   }
-  $initialize_3(this$static, activatorElem);
+  $initialize_2(this$static, activatorElem);
 }
 
-function $initialize_3(this$static, activator){
+function $initialize_2(this$static, activator){
   var that = this$static;
   $wnd.jQuery(document).ready(function(){
     $wnd.jQuery(activator).dropdown({inDuration:that.inDuration, outDuration:that.outDuration, constrain_width:that.constrainWidth, hover:that.hover, gutter:that.gutter, belowOrigin:that.belowOrigin, alignment:that.alignment_0});
@@ -11285,18 +11240,18 @@ function MaterialDropDown(activator){
   this.constrainWidth = true;
   this.belowOrigin = false;
   this.alignment_0 = ($clinit_Alignment() , LEFT_2).cssClass;
-  $setClassName(this.element, 'dropdown-content');
+  $setClassName(($clinit_DOM() , this.element), 'dropdown-content');
   this.activator = activator;
   $setId(this.element, this.activator);
 }
 
-defineClass(197, 84, $intern_50, MaterialDropDown);
+defineClass(197, 84, $intern_53, MaterialDropDown);
 _.add_0 = function add_21(child){
-  $add_21(this, child);
+  $add_22(this, child);
 }
 ;
 _.onLoad = function onLoad_13(){
-  $initialize_2(this);
+  $initialize_1(this);
 }
 ;
 _.belowOrigin = false;
@@ -11306,44 +11261,44 @@ _.hover = false;
 _.inDuration = 0;
 _.outDuration = 0;
 var Lgwt_material_design_client_ui_MaterialDropDown_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialDropDown', 197);
-function $add_22(this$static, child){
-  $getClassName(child.element).indexOf('footer-copyright') != -1?$add_0(this$static, child, this$static.element):$add_12(this$static.container, child);
+function $add_23(this$static, child){
+  (($clinit_DOM() , child.element).className || '').indexOf('footer-copyright') != -1?$add_0(this$static, child, this$static.element):$add_13(this$static.container, child);
 }
 
 function MaterialFooter(){
-  ComplexWidget_0.call(this, $createElement($doc, 'footer'));
+  ComplexWidget_0.call(this, $doc.createElement('footer'));
   this.container = new Div;
-  $setClassName(this.element, 'page-footer');
+  $setClassName(($clinit_DOM() , this.element), 'page-footer');
   $setStyleName(this.container, 'container');
-  $add_12(this, this.container);
+  $add_13(this, this.container);
 }
 
-defineClass(401, 46, $intern_46, MaterialFooter);
+defineClass(401, 46, $intern_49, MaterialFooter);
 _.add_0 = function add_23(child){
-  $add_22(this, child);
+  $add_23(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialFooter_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialFooter', 401);
-function $add_23(this$static, child){
-  $add_12(this$static.container, child);
+function $add_24(this$static, child){
+  $add_13(this$static.container, child);
 }
 
 function MaterialFooterCopyright(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
+  ComplexWidget_0.call(this, $doc.createElement('div'));
   this.container = new Div;
-  $setClassName(this.element, 'footer-copyright');
+  $setClassName(($clinit_DOM() , this.element), 'footer-copyright');
   $setStyleName(this.container, 'container');
-  $add_12(this, this.container);
+  $add_13(this, this.container);
 }
 
-defineClass(409, 46, $intern_46, MaterialFooterCopyright);
+defineClass(409, 46, $intern_49, MaterialFooterCopyright);
 _.add_0 = function add_24(child){
-  $add_23(this, child);
+  $add_24(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialFooterCopyright_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialFooterCopyright', 409);
 function $setIconColor(this$static, iconColor){
-  $setPropertyImpl(this$static.element.style, 'color', iconColor);
+  ($clinit_DOM() , this$static.element).style['color'] = iconColor;
 }
 
 function $setIconPosition_1(this$static, position){
@@ -11351,7 +11306,7 @@ function $setIconPosition_1(this$static, position){
 }
 
 function $setIconType_2(this$static, icon){
-  $setInnerText(this$static.element, icon.cssClass);
+  $setInnerText(($clinit_DOM() , this$static.element), icon.cssClass);
 }
 
 function MaterialIcon(){
@@ -11359,12 +11314,12 @@ function MaterialIcon(){
   this.posMixin = new CssNameMixin(this);
   this.sizeMixin = new CssNameMixin(this);
   this.prefixMixin = new ToggleStyleMixin(this, 'prefix');
-  setStyleName(this.element, 'material-icons', true);
+  setStyleName(($clinit_DOM() , this.element), 'material-icons', true);
 }
 
-defineClass(54, 183, $intern_47, MaterialIcon);
+defineClass(54, 183, $intern_50, MaterialIcon);
 _.createElement_0 = function createElement_2(){
-  return $createElement($doc, 'i');
+  return $doc.createElement('i');
 }
 ;
 var Lgwt_material_design_client_ui_MaterialIcon_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialIcon', 54);
@@ -11385,7 +11340,7 @@ function MaterialImage(){
 defineClass(37, 151, {25:1, 10:1, 24:1, 23:1, 13:1, 22:1, 17:1, 37:1}, MaterialImage);
 _.onLoad = function onLoad_14(){
   $onLoad(this.state, this);
-  setStyleName(this.element, 'responsive-img', true);
+  setStyleName(($clinit_DOM() , this.element), 'responsive-img', true);
   $onInitMaterialDesign();
 }
 ;
@@ -11394,8 +11349,8 @@ _.onUnload = function onUnload_4(){
 ;
 var Lgwt_material_design_client_ui_MaterialImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialImage', 37);
 function MaterialLabel(){
-  LabelBase.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'gwt-Label');
+  LabelBase.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'gwt-Label');
   this.colorsMixin = new ColorsMixin(this);
   new GridMixin(this);
   new SeparatorMixin(this);
@@ -11412,13 +11367,13 @@ function MaterialLink_0(iconType){
   AbstractButton.call(this);
   $$init_0(this);
   $setIconType_2(this.icon_0, iconType);
-  $insert_3(this, this.icon_0, 0);
+  $insert_4(this, this.icon_0, 0);
   $setIconPosition(this, ($clinit_IconPosition() , LEFT_4));
 }
 
-defineClass(14, 196, $intern_47, MaterialLink, MaterialLink_0);
+defineClass(14, 196, $intern_50, MaterialLink, MaterialLink_0);
 _.createElement_0 = function createElement_3(){
-  return $createElement($doc, 'a');
+  return $clinit_DOM() , $doc.createElement('a');
 }
 ;
 var Lgwt_material_design_client_ui_MaterialLink_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialLink', 14);
@@ -11443,8 +11398,9 @@ function $setId_1(this$static, id_0){
 }
 
 function MaterialListBox(){
-  FocusWidget.call(this, $createElement($doc, 'select'));
-  $setClassName(this.element, 'gwt-ListBox');
+  $clinit_FocusWidget();
+  FocusWidget.call(this, $doc.createElement('select'));
+  $setClassName(($clinit_DOM() , this.element), 'gwt-ListBox');
   this.idMixin = new IdMixin(this);
   new GridMixin(this);
   new ColorsMixin(this);
@@ -11452,31 +11408,31 @@ function MaterialListBox(){
   $setId_1(this, $createUniqueId($doc));
 }
 
-defineClass(221, 1130, $intern_31, MaterialListBox);
+defineClass(221, 1126, $intern_34, MaterialListBox);
 _.onChangeInternal = function onChangeInternal(){
-  $createHtmlEvent($doc, 'change');
+  $createHtmlEvent($doc, 'change', false, true);
 }
 ;
 _.onLoad = function onLoad_15(){
-  $isOn(this.oldMixin) || $createInternalChangeHandler(this, this.idMixin.uiObject.element.id);
-  $initializeMaterial(this.idMixin.uiObject.element.id);
+  $isOn(this.oldMixin) || $createInternalChangeHandler(this, $getElement(this.idMixin.uiObject).id);
+  $initializeMaterial($getElement(this.idMixin.uiObject).id);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialListBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialListBox', 221);
 function MaterialPanel(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
+  ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(9, 46, $intern_46, MaterialPanel);
+defineClass(9, 46, $intern_49, MaterialPanel);
 var Lgwt_material_design_client_ui_MaterialPanel_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialPanel', 9);
-defineClass(1118, 46, $intern_46);
-var Lgwt_material_design_client_ui_html_Nav_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Nav', 1118);
-function $add_24(this$static, child){
-  $add_12(this$static.div, child);
+defineClass(1113, 46, $intern_49);
+var Lgwt_material_design_client_ui_html_Nav_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Nav', 1113);
+function $add_25(this$static, child){
+  $add_13(this$static.div, child);
 }
 
 function MaterialNavBar(){
-  ComplexWidget_0.call(this, $createElement($doc, 'nav'));
+  ComplexWidget_0.call(this, $doc.createElement('nav'));
   this.div = new Div;
   this.navMenu = new MaterialLink_0(($clinit_IconType() , MENU_0));
   new MaterialProgress;
@@ -11484,8 +11440,8 @@ function MaterialNavBar(){
   this.activatesMixin = new ActivatesMixin(this.navMenu);
   this.progressMixin = new ProgressMixin(this);
   $setStyleName(this.div, 'nav-wrapper container');
-  $add_12(this.div, this.navMenu);
-  $add_12(this, this.div);
+  $add_13(this.div, this.navMenu);
+  $add_13(this, this.div);
   $setFontSize(this.navMenu, $clinit_Style$Unit());
   $addStyleName(this.navMenu, 'button-collapse');
   $setHideOn(this.navMenu, ($clinit_HideOn() , HIDE_ON_LARGE));
@@ -11496,9 +11452,9 @@ function MaterialNavBar(){
   $setIconPosition(this.navMenu, ($clinit_IconPosition() , NONE_4));
 }
 
-defineClass(152, 1118, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 152:1}, MaterialNavBar);
+defineClass(152, 1113, {25:1, 10:1, 24:1, 34:1, 23:1, 29:1, 13:1, 22:1, 17:1, 39:1, 35:1, 152:1}, MaterialNavBar);
 _.add_0 = function add_25(child){
-  $add_24(this, child);
+  $add_25(this, child);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialNavBar_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialNavBar', 152);
@@ -11508,9 +11464,9 @@ function MaterialNavSection(){
   $setHideOn(this, ($clinit_HideOn() , HIDE_ON_MED_DOWN));
 }
 
-defineClass(223, 84, $intern_50, MaterialNavSection);
+defineClass(223, 84, $intern_53, MaterialNavSection);
 _.add_0 = function add_26(child){
-  $add_20(this, new ListItem_0(child));
+  $add_21(this, new ListItem_0(child));
 }
 ;
 var Lgwt_material_design_client_ui_MaterialNavSection_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialNavSection', 223);
@@ -11521,38 +11477,38 @@ function $setType_10(this$static, type_0){
 function MaterialProgress(){
   Div.call(this);
   this.div = new Div;
-  $setClassName(this.element, 'progress');
+  $setClassName(($clinit_DOM() , this.element), 'progress');
   this.element.style['margin'] = ($clinit_Style$Unit() , '0.0px');
-  $add_12(this, this.div);
+  $add_13(this, this.div);
   $setType_10(this, ($clinit_ProgressType() , INDETERMINATE));
 }
 
-defineClass(198, 81, $intern_46, MaterialProgress);
+defineClass(198, 80, $intern_49, MaterialProgress);
 var Lgwt_material_design_client_ui_MaterialProgress_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialProgress', 198);
 function MaterialRow(){
-  ComplexWidget_0.call(this, $createElement($doc, 'div'));
-  $setClassName(this.element, 'row');
+  ComplexWidget_0.call(this, $doc.createElement('div'));
+  $setClassName(($clinit_DOM() , this.element), 'row');
 }
 
-defineClass(40, 46, $intern_46, MaterialRow);
+defineClass(40, 46, $intern_49, MaterialRow);
 var Lgwt_material_design_client_ui_MaterialRow_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialRow', 40);
-function $add_26(this$static, child){
+function $add_27(this$static, child){
   var collapsible, listItem;
   collapsible = instanceOf(child, 106);
   collapsible && $addHandler_0(dynamicCast(child, 106), new MaterialSideNav$1(this$static), ($clinit_ClearActiveEvent() , TYPE_39));
   if (!instanceOf(child, 41)) {
     listItem = new ListItem;
-    instanceOf(child, 106) && $setPropertyImpl(listItem.element.style, 'backgroundColor', 'transparent');
+    instanceOf(child, 106) && (($clinit_DOM() , listItem.element).style['backgroundColor'] = 'transparent' , undefined);
     if (instanceOf(child, 35)) {
       $setWaves(listItem, dynamicCast(child, 35).getWaves());
       dynamicCast(child, 35).setWaves(null);
     }
-    $add_0(listItem, child, listItem.element);
+    $add_0(listItem, child, ($clinit_DOM() , listItem.element));
     child = listItem;
   }
   collapsible || $addDomHandler(child, new MaterialSideNav$2(this$static, child), ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1));
-  child.element.style['display'] = ($clinit_Style$Display() , 'block');
-  $add_20(this$static, child);
+  ($clinit_DOM() , child.element).style['display'] = ($clinit_Style$Display() , 'block');
+  $add_21(this$static, child);
 }
 
 function $clearActive_1(this$static){
@@ -11565,7 +11521,7 @@ function $clearActive_2(this$static, widget){
   var child, child$iterator, element;
   for (child$iterator = widget.iterator(); child$iterator.hasNext();) {
     child = dynamicCast(child$iterator.next_0(), 17);
-    element = child.element;
+    element = ($clinit_DOM() , child.element);
     containsStyle($getClassName(element), 'active') && $removeClassName(element, 'active');
     instanceOf(child, 29) && $clearActive_2(this$static, dynamicCast(child, 29));
   }
@@ -11575,16 +11531,16 @@ function $hide_0(e){
   $wnd.jQuery(e).sideNav('hide');
 }
 
-function $initialize_4(this$static){
+function $initialize_3(this$static){
   var style, type_0;
   if (!this$static.activator) {
-    this$static.activator = getElementByAttribute_0((!this$static.idMixin && (this$static.idMixin = new IdMixin(this$static)) , this$static.idMixin).uiObject.element.id);
+    this$static.activator = getElementByAttribute_0($getElement((!this$static.idMixin && (this$static.idMixin = new IdMixin(this$static)) , this$static.idMixin).uiObject).id);
     if (!!this$static.activator && $getClassName(this$static.activator).indexOf('button-collapse') != -1) {
       type_0 = dynamicCast(this$static.typeMixin.type_0, 168);
-      !!this$static.activator && !!type_0 && type_0.ordinal == 1 && (this$static.width_0 = 64 , this$static.element.style['width'] = ($clinit_Style$Unit() , '64.0px') , undefined);
+      !!this$static.activator && !!type_0 && type_0.ordinal == 1 && (this$static.width_0 = 64 , ($clinit_DOM() , this$static.element).style['width'] = ($clinit_Style$Unit() , '64.0px') , undefined);
       !!this$static.observedHandler && $removeHandler(this$static.observedHandler.real);
       this$static.observedHandler = $addObservedHandler(this$static.observer, new MaterialSideNav$3(this$static));
-      $observe(this$static.observer, this$static.element);
+      $observe(this$static.observer, ($clinit_DOM() , this$static.element));
       initialize(this$static.activator, this$static.width_0, this$static.closeOnClick, this$static.edge.cssClass);
       if (!$isOn(this$static.fixedMixin)) {
         style = $getAttribute(this$static.activator, 'style');
@@ -11609,7 +11565,7 @@ function MaterialSideNav(type_0){
   this.observer = new StyleAttributeObserver(this);
   this.typeMixin = new CssTypeMixin(this);
   this.fixedMixin = new ToggleStyleMixin(this, 'fixed');
-  $setClassName(this.element, 'side-nav');
+  $setClassName(($clinit_DOM() , this.element), 'side-nav');
   $setId_0((!this.idMixin && (this.idMixin = new IdMixin(this)) , this.idMixin), 'nav-mobile');
   $setType_1(this.typeMixin, type_0);
 }
@@ -11621,13 +11577,13 @@ function initialize(e, width_0, closeOnClick, edge){
   );
 }
 
-defineClass(300, 84, $intern_50, MaterialSideNav);
+defineClass(300, 84, $intern_53, MaterialSideNav);
 _.add_0 = function add_28(child){
-  $add_26(this, child);
+  $add_27(this, child);
 }
 ;
 _.onLoad = function onLoad_18(){
-  $initialize_4(this);
+  $initialize_3(this);
 }
 ;
 _.closeOnClick = false;
@@ -11637,60 +11593,60 @@ function MaterialSideNav$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1162, 1, {21:1, 1494:1}, MaterialSideNav$1);
-var Lgwt_material_design_client_ui_MaterialSideNav$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/1', 1162);
+defineClass(1159, 1, {21:1, 1491:1}, MaterialSideNav$1);
+var Lgwt_material_design_client_ui_MaterialSideNav$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/1', 1159);
 function MaterialSideNav$2(this$0, val$finalChild){
   this.this$01 = this$0;
   this.val$finalChild2 = val$finalChild;
 }
 
-defineClass(1163, 1, $intern_49, MaterialSideNav$2);
+defineClass(1160, 1, $intern_52, MaterialSideNav$2);
 _.onClick = function onClick_8(event_0){
   $clearActive_1(this.this$01);
   $addStyleName(this.val$finalChild2, 'active');
 }
 ;
-var Lgwt_material_design_client_ui_MaterialSideNav$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/2', 1163);
+var Lgwt_material_design_client_ui_MaterialSideNav$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/2', 1160);
 function MaterialSideNav$3(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1164, 1, {21:1, 1495:1}, MaterialSideNav$3);
-var Lgwt_material_design_client_ui_MaterialSideNav$3_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/3', 1164);
+defineClass(1161, 1, {21:1, 1492:1}, MaterialSideNav$3);
+var Lgwt_material_design_client_ui_MaterialSideNav$3_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/3', 1161);
 function ListItem(){
   ComplexWidget.call(this);
-  $setElement(this, $createElement($doc, 'li'));
+  $setElement(this, ($clinit_DOM() , $doc.createElement('li')));
 }
 
 function ListItem_0(item_0){
   ListItem.call(this);
-  $add_0(this, item_0, this.element);
+  $add_0(this, item_0, ($clinit_DOM() , this.element));
 }
 
-defineClass(41, 46, $intern_51, ListItem, ListItem_0);
+defineClass(41, 46, $intern_54, ListItem, ListItem_0);
 var Lgwt_material_design_client_ui_html_ListItem_2_classLit = createForClass('gwt.material.design.client.ui.html', 'ListItem', 41);
 function MaterialTitle(){
   Div.call(this);
   this.header = new Heading(($clinit_HeadingSize() , H4));
   this.paragraph = new Paragraph;
-  $setPropertyImpl(this.header.element.style, 'fontWeight', '300');
-  this.header.element.style['marginTop'] = ($clinit_Style$Unit() , '60.0px');
-  $add_12(this, this.header);
-  $add_12(this, this.paragraph);
+  $setFontWeight(this.header);
+  $getElement(this.header).style['marginTop'] = ($clinit_Style$Unit() , '60.0px');
+  $add_13(this, this.header);
+  $add_13(this, this.paragraph);
 }
 
-defineClass(16, 81, $intern_46, MaterialTitle);
+defineClass(16, 80, $intern_49, MaterialTitle);
 var Lgwt_material_design_client_ui_MaterialTitle_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTitle', 16);
 function $toast(this$static, msg, lifeMillis, className){
   var genId, widget, widget$array, widget$index, widget$max;
-  genId = $createUniqueId($doc);
+  genId = ($clinit_DOM() , $createUniqueId($doc));
   className == null && (className = genId);
   toast(msg, lifeMillis, genId, className, this$static.callback_0);
   if (this$static.widgets != null) {
     for (widget$array = this$static.widgets , widget$index = 0 , widget$max = widget$array.length; widget$index < widget$max; ++widget$index) {
       widget = widget$array[widget$index];
       widget.element.style['paddingLeft'] = ($clinit_Style$Unit() , '30.0px');
-      $add_1(get_1(genId), widget);
+      $add_2(get_1(genId), widget);
     }
   }
 }
@@ -11713,25 +11669,25 @@ function MaterialTopNav(){
   Div.call(this);
 }
 
-defineClass(406, 81, $intern_46, MaterialTopNav);
+defineClass(406, 80, $intern_49, MaterialTopNav);
 var Lgwt_material_design_client_ui_MaterialTopNav_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTopNav', 406);
 function animate_1(transition, w, delayMillis){
   var li, li$iterator, name_0, ul;
-  name_0 = '' + $createUniqueId($doc);
+  name_0 = ($clinit_DOM() , '' + $createUniqueId($doc));
   $setId(w.element, name_0);
   switch (transition.ordinal) {
     case 0:
       if (instanceOf(w, 84)) {
         ul = dynamicCast(w, 84);
-        for (li$iterator = new WidgetCollection$WidgetIterator(ul.children_0); li$iterator.index_0 < li$iterator.this$01.size_0;) {
+        for (li$iterator = new WidgetCollection$WidgetIterator(ul.children); li$iterator.index_0 < li$iterator.this$01.size_0;) {
           li = $next_3(li$iterator);
-          instanceOf(li, 41) && $setOpacity(li.element.style, 0);
+          instanceOf(li, 41) && $cssSetOpacity(li.element.style, 0);
         }
       }
 
       break;
     case 2:
-      $setOpacity(w.element.style, 0);
+      $cssSetOpacity(w.element.style, 0);
       break;
     default:$addStyleName(w, 'animated ' + transition.cssClass);
       animationFinishedCallback(name_0, 'animated ' + transition.cssClass);
@@ -11770,7 +11726,7 @@ function MaterialAnimator$1(val$transition, val$name, val$w){
   Timer.call(this);
 }
 
-defineClass(1290, 127, {}, MaterialAnimator$1);
+defineClass(1288, 126, {}, MaterialAnimator$1);
 _.run = function run_1(){
   switch (this.val$transition1.ordinal) {
     case 0:
@@ -11789,7 +11745,7 @@ _.run = function run_1(){
   }
 }
 ;
-var Lgwt_material_design_client_ui_animate_MaterialAnimator$1_2_classLit = createForClass('gwt.material.design.client.ui.animate', 'MaterialAnimator/1', 1290);
+var Lgwt_material_design_client_ui_animate_MaterialAnimator$1_2_classLit = createForClass('gwt.material.design.client.ui.animate', 'MaterialAnimator/1', 1288);
 function $clinit_Transition(){
   $clinit_Transition = emptyMethod;
   SHOW_STAGGERED_LIST = new Transition('SHOW_STAGGERED_LIST', 0, 'staggered_list');
@@ -11883,7 +11839,7 @@ function values_50(){
   return initValues(getClassLiteralForArray(Lgwt_material_design_client_ui_animate_Transition_2_classLit, 1), $intern_5, 36, 0, [SHOW_STAGGERED_LIST, FADE_IN_IMAGE, SHOW_GRID, CLOSE_GRID, BOUNCE, FLASH, PULSE, RUBBERBAND, SHAKE, HEADSHAKE, SWING, TADA, WOBBLE, JELLO, BOUNCEIN, BOUNCEINDOWN, BOUNCEINLEFT, BOUNCEINRIGHT, BOUNCEINUP, BOUNCEOUT, BOUNCEOUTDOWN, BOUNCEOUTLEFT, BOUNCEOUTRIGHT, BOUNCEOUTUP, FADEIN, FADEINDOWN, FADEINDOWNBIG, FADEINLEFT, FADEINLEFTBIG, FADEINRIGHT, FADEINRIGHTBIG, FADEINUP, FADEINUPBIG, FADEOUT, FADEOUTDOWN, FADEOUTDOWNBIG, FADEOUTLEFT, FADEOUTLEFTBIG, FADEOUTRIGHT, FADEOUTRIGHTBIG, FADEOUTUP, FADEOUTUPBIG, FLIPINX, FLIPINY, FLIPOUTX, FLIPOUTY, LIGHTSPEEDIN, LIGHTSPEEDOUT, ROTATEIN, ROTATEINDOWNLEFT, ROTATEINDOWNRIGHT, ROTATEINUPLEFT, ROTATEINUPRIGHT, ROTATEOUT, ROTATEOUTDOWNLEFT, ROTATEOUTDOWNRIGHT, ROTATEOUTUPLEFT, ROTATEOUTUPRIGHT, HINGE, ROLLIN, ROLLOUT, ZOOMIN, ZOOMINDOWN, ZOOMINLEFT, ZOOMINRIGHT, ZOOMINUP, ZOOMOUT, ZOOMOUTDOWN, ZOOMOUTLEFT, ZOOMOUTRIGHT, ZOOMOUTUP, SLIDEINDOWN, SLIDEINLEFT, SLIDEINRIGHT, SLIDEINUP, SLIDEOUTDOWN, SLIDEOUTLEFT, SLIDEOUTRIGHT, SLIDEOUTUP]);
 }
 
-defineClass(36, 18, {32:1, 124:1, 103:1, 36:1, 8:1, 27:1, 18:1}, Transition);
+defineClass(36, 18, {32:1, 123:1, 103:1, 36:1, 8:1, 27:1, 18:1}, Transition);
 _.getCssName = function getCssName_87(){
   return this.cssClass;
 }
@@ -11891,29 +11847,33 @@ _.getCssName = function getCssName_87(){
 var BOUNCE, BOUNCEIN, BOUNCEINDOWN, BOUNCEINLEFT, BOUNCEINRIGHT, BOUNCEINUP, BOUNCEOUT, BOUNCEOUTDOWN, BOUNCEOUTLEFT, BOUNCEOUTRIGHT, BOUNCEOUTUP, CLOSE_GRID, FADEIN, FADEINDOWN, FADEINDOWNBIG, FADEINLEFT, FADEINLEFTBIG, FADEINRIGHT, FADEINRIGHTBIG, FADEINUP, FADEINUPBIG, FADEOUT, FADEOUTDOWN, FADEOUTDOWNBIG, FADEOUTLEFT, FADEOUTLEFTBIG, FADEOUTRIGHT, FADEOUTRIGHTBIG, FADEOUTUP, FADEOUTUPBIG, FADE_IN_IMAGE, FLASH, FLIPINX, FLIPINY, FLIPOUTX, FLIPOUTY, HEADSHAKE, HINGE, JELLO, LIGHTSPEEDIN, LIGHTSPEEDOUT, PULSE, ROLLIN, ROLLOUT, ROTATEIN, ROTATEINDOWNLEFT, ROTATEINDOWNRIGHT, ROTATEINUPLEFT, ROTATEINUPRIGHT, ROTATEOUT, ROTATEOUTDOWNLEFT, ROTATEOUTDOWNRIGHT, ROTATEOUTUPLEFT, ROTATEOUTUPRIGHT, RUBBERBAND, SHAKE, SHOW_GRID, SHOW_STAGGERED_LIST, SLIDEINDOWN, SLIDEINLEFT, SLIDEINRIGHT, SLIDEINUP, SLIDEOUTDOWN, SLIDEOUTLEFT, SLIDEOUTRIGHT, SLIDEOUTUP, SWING, TADA, WOBBLE, ZOOMIN, ZOOMINDOWN, ZOOMINLEFT, ZOOMINRIGHT, ZOOMINUP, ZOOMOUT, ZOOMOUTDOWN, ZOOMOUTLEFT, ZOOMOUTRIGHT, ZOOMOUTUP;
 var Lgwt_material_design_client_ui_animate_Transition_2_classLit = createForEnum('gwt.material.design.client.ui.animate', 'Transition', 36, values_50);
 function Header_0(){
-  ComplexWidget_0.call(this, $createElement($doc, 'header'));
+  ComplexWidget_0.call(this, $doc.createElement('header'));
 }
 
-defineClass(1114, 46, $intern_46, Header_0);
-var Lgwt_material_design_client_ui_html_Header_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Header', 1114);
+defineClass(1109, 46, $intern_49, Header_0);
+var Lgwt_material_design_client_ui_html_Header_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Header', 1109);
+function $setFontWeight(this$static){
+  ($clinit_DOM() , this$static.element).style['fontWeight'] = '300';
+}
+
 function Heading(size_0){
   ComplexWidget_0.call(this, $createElement($doc, size_0.size_0));
 }
 
-defineClass(413, 46, $intern_46, Heading);
+defineClass(413, 46, $intern_49, Heading);
 var Lgwt_material_design_client_ui_html_Heading_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Heading', 413);
 function $setText_4(this$static, text_0){
-  $setInnerText(this$static.element, text_0);
+  $setInnerText(($clinit_DOM() , this$static.element), text_0);
 }
 
 function Paragraph(){
-  ComplexWidget_0.call(this, $createElement($doc, 'p'));
+  ComplexWidget_0.call(this, $doc.createElement('p'));
 }
 
-defineClass(167, 46, $intern_46, Paragraph);
+defineClass(167, 46, $intern_49, Paragraph);
 var Lgwt_material_design_client_ui_html_Paragraph_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Paragraph', 167);
-defineClass(1117, 1116, $intern_24);
-var Lgwt_material_design_client_ui_html_Pre_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Pre', 1117);
+defineClass(1112, 1111, $intern_24);
+var Lgwt_material_design_client_ui_html_Pre_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Pre', 1112);
 function $clinit_ApplicationPresenter(){
   $clinit_ApplicationPresenter = emptyMethod;
   $clinit_PresenterWidget();
@@ -11925,7 +11885,7 @@ function ApplicationPresenter(eventBus, view, proxy){
   Presenter_0.call(this, eventBus, view, proxy, ($clinit_Presenter$RevealType() , Root));
 }
 
-defineClass(554, 55, {21:1, 10:1, 13:1, 47:1, 1481:1, 1480:1}, ApplicationPresenter);
+defineClass(554, 55, {21:1, 10:1, 13:1, 47:1, 1478:1, 1477:1}, ApplicationPresenter);
 _.onBind = function onBind_1(){
   $addRegisteredHandler(this, ($clinit_SetPageTitleEvent() , TYPE_43), this);
   $addRegisteredHandler(this, ($clinit_NavigationEvent() , $clinit_NavigationEvent() , TYPE_34), this);
@@ -11938,10 +11898,10 @@ var SLOT_MainContent;
 var Lgwt_material_design_demo_client_application_ApplicationPresenter_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationPresenter', 554);
 function ApplicationPresenterMyProxyImpl(){
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(601, $intern_44, $intern_52, ApplicationPresenterMyProxyImpl);
+defineClass(601, $intern_47, $intern_55, ApplicationPresenterMyProxyImpl);
 _.delayedBind = function delayedBind(baseGinjector){
   var revealContentHandler;
   this.ginjector = baseGinjector;
@@ -11955,7 +11915,7 @@ var Lgwt_material_design_demo_client_application_ApplicationPresenterMyProxyImpl
 function $setPageTitle(this$static, title_0, description){
   $setText_0(this$static.title_0, title_0);
   $setText_0(this$static.description_0, description);
-  $hide_0(this$static.sideNav_0.element);
+  $hide_0(($clinit_DOM() , this$static.sideNav_0.element));
 }
 
 function ApplicationView(){
@@ -11964,52 +11924,52 @@ function ApplicationView(){
   $internalBindSlot(this, ($clinit_ApplicationPresenter() , SLOT_MainContent), this.main_0);
 }
 
-defineClass(697, 60, {13:1, 1479:1}, ApplicationView);
+defineClass(697, 60, {13:1, 1476:1}, ApplicationView);
 var Lgwt_material_design_demo_client_application_ApplicationView_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView', 697);
 function ApplicationView_BinderImpl(){
 }
 
-defineClass(858, 1, {}, ApplicationView_BinderImpl);
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl', 858);
+defineClass(854, 1, {}, ApplicationView_BinderImpl);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl', 854);
 function $build_f_HTMLPanel1(this$static){
   var __attachRecord__, f_HTMLPanel1, header, f_MaterialContainer77, f_MaterialFooter83, navBar, f_MaterialLink2, sideNav, f_ListItem3, f_MaterialImage4, f_ListItem5, f_MaterialLink6, f_ListItem7, f_MaterialLink8, f_MaterialCollapsible10, f_MaterialCollapsibleItem11, f_MaterialCollapsibleItem38, f_MaterialCollapsibleItem45, f_MaterialCollapsibleItem55, f_MaterialLink66, f_MaterialLink67, f_MaterialLink68, rightSideNav, f_MaterialLink69, f_MaterialIcon70, f_MaterialLink71, f_MaterialIcon72, f_MaterialLink73, f_MaterialIcon74, f_MaterialLink75, f_MaterialIcon76, topNav, f_MaterialRow78, f_MaterialColumn79, title_0, description, f_MaterialPanel80, gettingStartedPanel, main, sb, f_MaterialPanel81, sb_0, f_MaterialRow84, f_MaterialColumn85, f_HTMLPanel86, __attachRecord___0, f_MaterialTitle87, f_MaterialColumn88, f_MaterialTitle89, f_MaterialAnchorButton90, f_MaterialColumn91, f_MaterialTitle92, f_MaterialAnchorButton93, f_MaterialFooterCopyright94, f_MaterialLabel95, f_MaterialBadge9, f_MaterialCollapsibleHeader12, f_MaterialLink13, f_MaterialCollapsibleBody14, f_MaterialCollapsibleHeader39, f_MaterialLink40, f_MaterialCollapsibleBody41, f_UnorderedList42, f_MaterialLink43, f_MaterialLink44, f_MaterialCollapsibleHeader46, f_MaterialLink47, f_MaterialCollapsibleBody48, f_UnorderedList49, f_MaterialLink50, f_MaterialLink51, f_MaterialLink52, f_MaterialLink53, f_MaterialLink54, f_MaterialCollapsibleHeader56, f_MaterialLink57, f_MaterialCollapsibleBody58, f_UnorderedList59, f_MaterialLink60, f_MaterialLink61, f_MaterialLink62, f_MaterialLink63, f_MaterialLink64, f_MaterialLink65;
   f_HTMLPanel1 = new HTMLPanel($html4(this$static.domId0, this$static.domId1, this$static.domId2).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel1.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel1.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel1, (header = new Header_0 , $add_12(header, (navBar = new MaterialNavBar , $add_24(navBar, (f_MaterialLink2 = new MaterialLink , setStyleName(f_MaterialLink2.element, 'button-collapse', true) , $setIconPosition(f_MaterialLink2, ($clinit_IconPosition() , NONE_4)) , $setActivates(f_MaterialLink2, 'rightSideBar') , $setWaves(f_MaterialLink2, ($clinit_WavesType() , LIGHT)) , $setPropertyImpl(f_MaterialLink2.element.style, 'width', '64px') , $setTextAlign(f_MaterialLink2, ($clinit_TextAlign() , CENTER_4)) , $setOn((!f_MaterialLink2.circleMixin && (f_MaterialLink2.circleMixin = new ToggleStyleMixin(f_MaterialLink2, 'circle')) , f_MaterialLink2.circleMixin), true) , $setFloat(f_MaterialLink2, ($clinit_Style$Float() , RIGHT)) , $setIconType(f_MaterialLink2, ($clinit_IconType() , MENU_0)) , f_MaterialLink2)) , $setActivates_0(navBar.activatesMixin) , $setBackgroundColor((!navBar.colorsMixin && (navBar.colorsMixin = new ColorsMixin(navBar)) , navBar.colorsMixin), 'blue darken-1') , navBar)) , $add_12(header, (sideNav = new MaterialSideNav(($clinit_SideNavType() , OPEN)) , $add_26(sideNav, (f_ListItem3 = new ListItem , $add_12(f_ListItem3, (f_MaterialImage4 = new MaterialImage , setStyleName(f_MaterialImage4.element, 'HPBM1FC-c-c', true) , $setResource(f_MaterialImage4, (new MaterialResources_default_InlineClientBundleGenerator_0 , $clinit_MaterialResources_default_InlineClientBundleGenerator$ic_gwt_logoInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator_0() , ic_gwt_logo)) , f_MaterialImage4)) , $setWaves(f_ListItem3, DEFAULT_6) , f_ListItem3.element.style['paddingBottom'] = ($clinit_Style$Unit() , '22.0px') , f_ListItem3)) , $add_26(sideNav, (f_ListItem5 = new ListItem , $add_12(f_ListItem5, (f_MaterialLink6 = new MaterialLink , $setHref(f_MaterialLink6, ($clinit_History() , '#' + $encodeHistoryToken('!about'))) , $setIconPosition(f_MaterialLink6, LEFT_4) , f_MaterialLink6.span_0.setText('About') , $add_12(f_MaterialLink6, f_MaterialLink6.span_0) , $setTextColor((!f_MaterialLink6.colorsMixin && (f_MaterialLink6.colorsMixin = new ColorsMixin(f_MaterialLink6)) , f_MaterialLink6.colorsMixin), 'blue') , $setIconType(f_MaterialLink6, INFO_OUTLINE) , f_MaterialLink6)) , $setWaves(f_ListItem5, DEFAULT_6) , f_ListItem5)) , $add_26(sideNav, (f_ListItem7 = new ListItem , $add_12(f_ListItem7, (f_MaterialLink8 = new MaterialLink , $add_12(f_MaterialLink8, (f_MaterialBadge9 = new MaterialBadge , $setInnerHTML(f_MaterialBadge9.element, '1.4.0') , $setTextColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'blue') , f_MaterialBadge9)) , $setHref(f_MaterialLink8, '#' + $encodeHistoryToken('!gettingstarted')) , $setIconPosition(f_MaterialLink8, LEFT_4) , f_MaterialLink8.span_0.setText('Getting Started') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setIconType(f_MaterialLink8, CLOUD_DOWNLOAD) , f_MaterialLink8)) , $setWaves(f_ListItem7, DEFAULT_6) , f_ListItem7)) , $add_26(sideNav, (f_MaterialCollapsible10 = new MaterialCollapsible , $add_16(f_MaterialCollapsible10, (f_MaterialCollapsibleItem11 = new MaterialCollapsibleItem , $add_19(f_MaterialCollapsibleItem11, (f_MaterialCollapsibleHeader12 = new MaterialCollapsibleHeader , $add_18(f_MaterialCollapsibleHeader12, (f_MaterialLink13 = new MaterialLink , f_MaterialLink13.span_0.setText('Components') , $add_12(f_MaterialLink13, f_MaterialLink13.span_0) , $setTextColor((!f_MaterialLink13.colorsMixin && (f_MaterialLink13.colorsMixin = new ColorsMixin(f_MaterialLink13)) , f_MaterialLink13.colorsMixin), 'blue') , $setIconType(f_MaterialLink13, POLYMER) , f_MaterialLink13)) , $setWaves(f_MaterialCollapsibleHeader12, DEFAULT_6) , f_MaterialCollapsibleHeader12)) , $add_19(f_MaterialCollapsibleItem11, (f_MaterialCollapsibleBody14 = new MaterialCollapsibleBody , $add_17(f_MaterialCollapsibleBody14, $build_f_UnorderedList15()) , f_MaterialCollapsibleBody14)) , f_MaterialCollapsibleItem11)) , $add_16(f_MaterialCollapsible10, (f_MaterialCollapsibleItem38 = new MaterialCollapsibleItem , $add_19(f_MaterialCollapsibleItem38, (f_MaterialCollapsibleHeader39 = new MaterialCollapsibleHeader , $add_18(f_MaterialCollapsibleHeader39, (f_MaterialLink40 = new MaterialLink , f_MaterialLink40.span_0.setText('Animations') , $add_12(f_MaterialLink40, f_MaterialLink40.span_0) , $setTextColor((!f_MaterialLink40.colorsMixin && (f_MaterialLink40.colorsMixin = new ColorsMixin(f_MaterialLink40)) , f_MaterialLink40.colorsMixin), 'blue') , $setIconType(f_MaterialLink40, PLAY_CIRCLE_OUTLINE) , f_MaterialLink40)) , $setWaves(f_MaterialCollapsibleHeader39, DEFAULT_6) , f_MaterialCollapsibleHeader39)) , $add_19(f_MaterialCollapsibleItem38, (f_MaterialCollapsibleBody41 = new MaterialCollapsibleBody , $add_17(f_MaterialCollapsibleBody41, (f_UnorderedList42 = new UnorderedList , f_UnorderedList42.add_0((f_MaterialLink43 = new MaterialLink , $setHref(f_MaterialLink43, '#' + $encodeHistoryToken('coreAnimations')) , f_MaterialLink43.span_0.setText('Core') , $add_12(f_MaterialLink43, f_MaterialLink43.span_0) , $setTextColor((!f_MaterialLink43.colorsMixin && (f_MaterialLink43.colorsMixin = new ColorsMixin(f_MaterialLink43)) , f_MaterialLink43.colorsMixin), 'blue') , $setWaves(f_MaterialLink43, DEFAULT_6) , f_MaterialLink43)) , f_UnorderedList42.add_0((f_MaterialLink44 = new MaterialLink , $setHref(f_MaterialLink44, '#' + $encodeHistoryToken('meaningful')) , f_MaterialLink44.span_0.setText('Meaningful') , $add_12(f_MaterialLink44, f_MaterialLink44.span_0) , $setTextColor((!f_MaterialLink44.colorsMixin && (f_MaterialLink44.colorsMixin = new ColorsMixin(f_MaterialLink44)) , f_MaterialLink44.colorsMixin), 'blue') , $setWaves(f_MaterialLink44, DEFAULT_6) , f_MaterialLink44)) , f_UnorderedList42)) , f_MaterialCollapsibleBody41)) , f_MaterialCollapsibleItem38)) , $add_16(f_MaterialCollapsible10, (f_MaterialCollapsibleItem45 = new MaterialCollapsibleItem , $add_19(f_MaterialCollapsibleItem45, (f_MaterialCollapsibleHeader46 = new MaterialCollapsibleHeader , $add_18(f_MaterialCollapsibleHeader46, (f_MaterialLink47 = new MaterialLink , f_MaterialLink47.span_0.setText('Addins') , $add_12(f_MaterialLink47, f_MaterialLink47.span_0) , $setTextColor((!f_MaterialLink47.colorsMixin && (f_MaterialLink47.colorsMixin = new ColorsMixin(f_MaterialLink47)) , f_MaterialLink47.colorsMixin), 'blue') , $setIconType(f_MaterialLink47, EXTENSION) , f_MaterialLink47)) , $setWaves(f_MaterialCollapsibleHeader46, DEFAULT_6) , f_MaterialCollapsibleHeader46)) , $add_19(f_MaterialCollapsibleItem45, (f_MaterialCollapsibleBody48 = new MaterialCollapsibleBody , $add_17(f_MaterialCollapsibleBody48, (f_UnorderedList49 = new UnorderedList , f_UnorderedList49.add_0((f_MaterialLink50 = new MaterialLink , $setHref(f_MaterialLink50, '#' + $encodeHistoryToken('cutouts')) , f_MaterialLink50.span_0.setText('CutOut') , $add_12(f_MaterialLink50, f_MaterialLink50.span_0) , $setTextColor((!f_MaterialLink50.colorsMixin && (f_MaterialLink50.colorsMixin = new ColorsMixin(f_MaterialLink50)) , f_MaterialLink50.colorsMixin), 'blue') , $setWaves(f_MaterialLink50, DEFAULT_6) , f_MaterialLink50)) , f_UnorderedList49.add_0((f_MaterialLink51 = new MaterialLink , $setHref(f_MaterialLink51, '#' + $encodeHistoryToken('pathAnimator')) , f_MaterialLink51.span_0.setText('Path Animator') , $add_12(f_MaterialLink51, f_MaterialLink51.span_0) , $setTextColor((!f_MaterialLink51.colorsMixin && (f_MaterialLink51.colorsMixin = new ColorsMixin(f_MaterialLink51)) , f_MaterialLink51.colorsMixin), 'blue') , $setWaves(f_MaterialLink51, DEFAULT_6) , f_MaterialLink51)) , f_UnorderedList49.add_0((f_MaterialLink52 = new MaterialLink , $setHref(f_MaterialLink52, '#' + $encodeHistoryToken('subheaders')) , f_MaterialLink52.span_0.setText('Subheader') , $add_12(f_MaterialLink52, f_MaterialLink52.span_0) , $setTextColor((!f_MaterialLink52.colorsMixin && (f_MaterialLink52.colorsMixin = new ColorsMixin(f_MaterialLink52)) , f_MaterialLink52.colorsMixin), 'blue') , $setWaves(f_MaterialLink52, DEFAULT_6) , f_MaterialLink52)) , f_UnorderedList49.add_0((f_MaterialLink53 = new MaterialLink , $setHref(f_MaterialLink53, '#' + $encodeHistoryToken('steppers')) , f_MaterialLink53.span_0.setText('Steppers') , $add_12(f_MaterialLink53, f_MaterialLink53.span_0) , $setTextColor((!f_MaterialLink53.colorsMixin && (f_MaterialLink53.colorsMixin = new ColorsMixin(f_MaterialLink53)) , f_MaterialLink53.colorsMixin), 'blue') , $setWaves(f_MaterialLink53, DEFAULT_6) , f_MaterialLink53)) , f_UnorderedList49.add_0((f_MaterialLink54 = new MaterialLink , $setHref(f_MaterialLink54, '#' + $encodeHistoryToken('timepickers')) , f_MaterialLink54.span_0.setText('Time Picker') , $add_12(f_MaterialLink54, f_MaterialLink54.span_0) , $setTextColor((!f_MaterialLink54.colorsMixin && (f_MaterialLink54.colorsMixin = new ColorsMixin(f_MaterialLink54)) , f_MaterialLink54.colorsMixin), 'blue') , $setWaves(f_MaterialLink54, DEFAULT_6) , f_MaterialLink54)) , f_UnorderedList49)) , f_MaterialCollapsibleBody48)) , f_MaterialCollapsibleItem45)) , $add_16(f_MaterialCollapsible10, (f_MaterialCollapsibleItem55 = new MaterialCollapsibleItem , $add_19(f_MaterialCollapsibleItem55, (f_MaterialCollapsibleHeader56 = new MaterialCollapsibleHeader , $add_18(f_MaterialCollapsibleHeader56, (f_MaterialLink57 = new MaterialLink , f_MaterialLink57.span_0.setText('Style and Layout') , $add_12(f_MaterialLink57, f_MaterialLink57.span_0) , $setTextColor((!f_MaterialLink57.colorsMixin && (f_MaterialLink57.colorsMixin = new ColorsMixin(f_MaterialLink57)) , f_MaterialLink57.colorsMixin), 'blue') , $setIconType(f_MaterialLink57, STYLE) , f_MaterialLink57)) , $setWaves(f_MaterialCollapsibleHeader56, DEFAULT_6) , f_MaterialCollapsibleHeader56)) , $add_19(f_MaterialCollapsibleItem55, (f_MaterialCollapsibleBody58 = new MaterialCollapsibleBody , $add_17(f_MaterialCollapsibleBody58, (f_UnorderedList59 = new UnorderedList , f_UnorderedList59.add_0((f_MaterialLink60 = new MaterialLink , $setHref(f_MaterialLink60, '#' + $encodeHistoryToken('!colors')) , f_MaterialLink60.span_0.setText('Colors') , $add_12(f_MaterialLink60, f_MaterialLink60.span_0) , $setTextColor((!f_MaterialLink60.colorsMixin && (f_MaterialLink60.colorsMixin = new ColorsMixin(f_MaterialLink60)) , f_MaterialLink60.colorsMixin), 'blue') , $setWaves(f_MaterialLink60, DEFAULT_6) , f_MaterialLink60)) , f_UnorderedList59.add_0((f_MaterialLink61 = new MaterialLink , $setHref(f_MaterialLink61, '#' + $encodeHistoryToken('!grid')) , f_MaterialLink61.span_0.setText('Grid') , $add_12(f_MaterialLink61, f_MaterialLink61.span_0) , $setTextColor((!f_MaterialLink61.colorsMixin && (f_MaterialLink61.colorsMixin = new ColorsMixin(f_MaterialLink61)) , f_MaterialLink61.colorsMixin), 'blue') , $setWaves(f_MaterialLink61, DEFAULT_6) , f_MaterialLink61)) , f_UnorderedList59.add_0((f_MaterialLink62 = new MaterialLink , $setHref(f_MaterialLink62, '#' + $encodeHistoryToken('!helper')) , f_MaterialLink62.span_0.setText('Helper') , $add_12(f_MaterialLink62, f_MaterialLink62.span_0) , $setTextColor((!f_MaterialLink62.colorsMixin && (f_MaterialLink62.colorsMixin = new ColorsMixin(f_MaterialLink62)) , f_MaterialLink62.colorsMixin), 'blue') , $setWaves(f_MaterialLink62, DEFAULT_6) , f_MaterialLink62)) , f_UnorderedList59.add_0((f_MaterialLink63 = new MaterialLink , $setHref(f_MaterialLink63, '#' + $encodeHistoryToken('!icons')) , f_MaterialLink63.span_0.setText('Icons') , $add_12(f_MaterialLink63, f_MaterialLink63.span_0) , $setTextColor((!f_MaterialLink63.colorsMixin && (f_MaterialLink63.colorsMixin = new ColorsMixin(f_MaterialLink63)) , f_MaterialLink63.colorsMixin), 'blue') , $setWaves(f_MaterialLink63, DEFAULT_6) , f_MaterialLink63)) , f_UnorderedList59.add_0((f_MaterialLink64 = new MaterialLink , $setHref(f_MaterialLink64, '#' + $encodeHistoryToken('!shadow')) , f_MaterialLink64.span_0.setText('Shadow') , $add_12(f_MaterialLink64, f_MaterialLink64.span_0) , $setTextColor((!f_MaterialLink64.colorsMixin && (f_MaterialLink64.colorsMixin = new ColorsMixin(f_MaterialLink64)) , f_MaterialLink64.colorsMixin), 'blue') , $setWaves(f_MaterialLink64, DEFAULT_6) , f_MaterialLink64)) , f_UnorderedList59.add_0((f_MaterialLink65 = new MaterialLink , $setHref(f_MaterialLink65, '#' + $encodeHistoryToken('!themes')) , f_MaterialLink65.span_0.setText('Theming') , $add_12(f_MaterialLink65, f_MaterialLink65.span_0) , $setTextColor((!f_MaterialLink65.colorsMixin && (f_MaterialLink65.colorsMixin = new ColorsMixin(f_MaterialLink65)) , f_MaterialLink65.colorsMixin), 'blue') , $setWaves(f_MaterialLink65, DEFAULT_6) , f_MaterialLink65)) , f_UnorderedList59)) , f_MaterialCollapsibleBody58)) , f_MaterialCollapsibleItem55)) , f_MaterialCollapsible10)) , $add_26(sideNav, (f_MaterialLink66 = new MaterialLink , $setHref(f_MaterialLink66, '#' + $encodeHistoryToken('!showcase')) , $setIconPosition(f_MaterialLink66, LEFT_4) , f_MaterialLink66.span_0.setText('Showcase') , $add_12(f_MaterialLink66, f_MaterialLink66.span_0) , $setTextColor((!f_MaterialLink66.colorsMixin && (f_MaterialLink66.colorsMixin = new ColorsMixin(f_MaterialLink66)) , f_MaterialLink66.colorsMixin), 'blue') , $setWaves(f_MaterialLink66, DEFAULT_6) , $setIconType(f_MaterialLink66, WEB) , f_MaterialLink66)) , $add_26(sideNav, (f_MaterialLink67 = new MaterialLink , $setHref(f_MaterialLink67, '#' + $encodeHistoryToken('!templates')) , $setIconPosition(f_MaterialLink67, LEFT_4) , f_MaterialLink67.span_0.setText('Templates') , $add_12(f_MaterialLink67, f_MaterialLink67.span_0) , $setTextColor((!f_MaterialLink67.colorsMixin && (f_MaterialLink67.colorsMixin = new ColorsMixin(f_MaterialLink67)) , f_MaterialLink67.colorsMixin), 'blue') , $setWaves(f_MaterialLink67, DEFAULT_6) , $setIconType(f_MaterialLink67, DASHBOARD) , f_MaterialLink67)) , $add_26(sideNav, (f_MaterialLink68 = new MaterialLink , $setHref(f_MaterialLink68, '#' + $encodeHistoryToken('!charts')) , $setIconPosition(f_MaterialLink68, LEFT_4) , f_MaterialLink68.span_0.setText('Material Charts') , $add_12(f_MaterialLink68, f_MaterialLink68.span_0) , $setTextColor((!f_MaterialLink68.colorsMixin && (f_MaterialLink68.colorsMixin = new ColorsMixin(f_MaterialLink68)) , f_MaterialLink68.colorsMixin), 'blue') , $setWaves(f_MaterialLink68, DEFAULT_6) , $setIconType(f_MaterialLink68, INSERT_CHART) , f_MaterialLink68)) , $setId_0((!sideNav.idMixin && (sideNav.idMixin = new IdMixin(sideNav)) , sideNav.idMixin), 'sideBar') , sideNav.closeOnClick = false , this$static.owner.sideNav_0 = sideNav , sideNav)) , $add_12(header, (rightSideNav = new MaterialSideNav(MINI) , $add_26(rightSideNav, (f_MaterialLink69 = new MaterialLink , $add_12(f_MaterialLink69, (f_MaterialIcon70 = new MaterialIcon , $setWaves(f_MaterialIcon70, LIGHT) , $setOn((!f_MaterialIcon70.circleMixin && (f_MaterialIcon70.circleMixin = new ToggleStyleMixin(f_MaterialIcon70, 'circle')) , f_MaterialIcon70.circleMixin), true) , f_MaterialIcon70.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon70, POLYMER) , f_MaterialIcon70)) , f_MaterialLink69)) , $add_26(rightSideNav, (f_MaterialLink71 = new MaterialLink , $add_12(f_MaterialLink71, (f_MaterialIcon72 = new MaterialIcon , $setWaves(f_MaterialIcon72, LIGHT) , $setOn((!f_MaterialIcon72.circleMixin && (f_MaterialIcon72.circleMixin = new ToggleStyleMixin(f_MaterialIcon72, 'circle')) , f_MaterialIcon72.circleMixin), true) , f_MaterialIcon72.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon72, ADD) , f_MaterialIcon72)) , f_MaterialLink71)) , $add_26(rightSideNav, (f_MaterialLink73 = new MaterialLink , $add_12(f_MaterialLink73, (f_MaterialIcon74 = new MaterialIcon , $setWaves(f_MaterialIcon74, LIGHT) , $setOn((!f_MaterialIcon74.circleMixin && (f_MaterialIcon74.circleMixin = new ToggleStyleMixin(f_MaterialIcon74, 'circle')) , f_MaterialIcon74.circleMixin), true) , f_MaterialIcon74.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon74, ADJUST) , f_MaterialIcon74)) , f_MaterialLink73)) , $add_26(rightSideNav, (f_MaterialLink75 = new MaterialLink , $add_12(f_MaterialLink75, (f_MaterialIcon76 = new MaterialIcon , $setWaves(f_MaterialIcon76, LIGHT) , $setOn((!f_MaterialIcon76.circleMixin && (f_MaterialIcon76.circleMixin = new ToggleStyleMixin(f_MaterialIcon76, 'circle')) , f_MaterialIcon76.circleMixin), true) , f_MaterialIcon76.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon76, BATTERY_STD) , f_MaterialIcon76)) , f_MaterialLink75)) , $setId_0((!rightSideNav.idMixin && (rightSideNav.idMixin = new IdMixin(rightSideNav)) , rightSideNav.idMixin), 'rightSideBar') , $setEdge(rightSideNav, ($clinit_Edge() , RIGHT_4)) , rightSideNav.closeOnClick = true , $setOn(rightSideNav.fixedMixin, false) , rightSideNav)) , header), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialContainer77 = new MaterialContainer , $add_12(f_MaterialContainer77, (topNav = new MaterialTopNav , $add_12(topNav, (f_MaterialRow78 = new MaterialRow , $add_12(f_MaterialRow78, (f_MaterialColumn79 = new MaterialColumn , $add_12(f_MaterialColumn79, (title_0 = new MaterialLabel , this$static.owner.title_0 = title_0 , title_0)) , $add_12(f_MaterialColumn79, (description = new MaterialLabel , $setFontSize_0(description.fontSizeMixin, '0.3em') , this$static.owner.description_0 = description , description)) , $setGrid((!f_MaterialColumn79.gridMixin && (f_MaterialColumn79.gridMixin = new GridMixin(f_MaterialColumn79)) , f_MaterialColumn79.gridMixin), 'l12') , f_MaterialColumn79)) , f_MaterialRow78)) , $add_12(topNav, (f_MaterialPanel80 = new MaterialPanel , $add_12(f_MaterialPanel80, (gettingStartedPanel = new MaterialAnchorButton , setStyleName(gettingStartedPanel.element, 'HPBM1FC-c-a', true) , $setHref(gettingStartedPanel, '#' + $encodeHistoryToken('!gettingstarted')) , gettingStartedPanel.span_0.setText('Get Started') , $add_12(gettingStartedPanel, gettingStartedPanel.span_0) , $setTextColor((!gettingStartedPanel.colorsMixin && (gettingStartedPanel.colorsMixin = new ColorsMixin(gettingStartedPanel)) , gettingStartedPanel.colorsMixin), 'white') , $setBackgroundColor((!gettingStartedPanel.colorsMixin && (gettingStartedPanel.colorsMixin = new ColorsMixin(gettingStartedPanel)) , gettingStartedPanel.colorsMixin), 'blue lighten-2') , $setSize(gettingStartedPanel, ($clinit_ButtonSize() , LARGE)) , gettingStartedPanel)) , f_MaterialPanel80)) , setStyleName(topNav.element, 'HPBM1FC-c-g', true) , $setTextColor((!topNav.colorsMixin && (topNav.colorsMixin = new ColorsMixin(topNav)) , topNav.colorsMixin), 'white') , $setBackgroundColor((!topNav.colorsMixin && (topNav.colorsMixin = new ColorsMixin(topNav)) , topNav.colorsMixin), 'blue') , topNav)) , $add_12(f_MaterialContainer77, (main = new HTMLPanel((sb = new StringBuilder , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(main.element, 'HPBM1FC-c-e', true) , setStyleName(main.element, 'container', true) , setStyleName(main.element, 'z-depth-2', true) , this$static.owner.main_0 = main , main)) , $add_12(f_MaterialContainer77, (f_MaterialPanel81 = new MaterialPanel , $add_12(f_MaterialPanel81, new HTMLPanel((sb_0 = new StringBuilder , sb_0.string += "<input name='IL_IN_TAG' type='hidden' value='1'>" , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html)) , f_MaterialPanel81)) , f_MaterialContainer77), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialFooter83 = new MaterialFooter , $add_22(f_MaterialFooter83, (f_MaterialRow84 = new MaterialRow , $add_12(f_MaterialRow84, (f_MaterialColumn85 = new MaterialColumn , $add_12(f_MaterialColumn85, (f_HTMLPanel86 = new HTMLPanel($html3(this$static.domId3).html) , __attachRecord___0 = attachToDom(f_HTMLPanel86.element) , $get_0(this$static.domId3Element) , __attachRecord___0.origParent?$insertBefore(__attachRecord___0.origParent, __attachRecord___0.element, __attachRecord___0.origSibling):orphan(__attachRecord___0.element) , $addAndReplaceElement_0(f_HTMLPanel86, (f_MaterialTitle87 = new MaterialTitle , $setTextColor((!f_MaterialTitle87.colorsMixin && (f_MaterialTitle87.colorsMixin = new ColorsMixin(f_MaterialTitle87)) , f_MaterialTitle87.colorsMixin), 'white') , $setInnerHTML(f_MaterialTitle87.header.element, 'Support Us') , $setText_4(f_MaterialTitle87.paragraph, 'Any amount would help support and continue development on this project and is greatly appreciated.') , f_MaterialTitle87), $get_0(this$static.domId3Element)) , f_HTMLPanel86)) , $setGrid((!f_MaterialColumn85.gridMixin && (f_MaterialColumn85.gridMixin = new GridMixin(f_MaterialColumn85)) , f_MaterialColumn85.gridMixin), 's12 m4 m4') , f_MaterialColumn85)) , $add_12(f_MaterialRow84, (f_MaterialColumn88 = new MaterialColumn , $add_12(f_MaterialColumn88, (f_MaterialTitle89 = new MaterialTitle , $setTextColor((!f_MaterialTitle89.colorsMixin && (f_MaterialTitle89.colorsMixin = new ColorsMixin(f_MaterialTitle89)) , f_MaterialTitle89.colorsMixin), 'white') , $setInnerHTML(f_MaterialTitle89.header.element, 'Join The Discussion') , $setText_4(f_MaterialTitle89.paragraph, 'We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration.') , f_MaterialTitle89)) , $add_12(f_MaterialColumn88, (f_MaterialAnchorButton90 = new MaterialAnchorButton , f_MaterialAnchorButton90.span_0.setText('CHAT') , $add_12(f_MaterialAnchorButton90, f_MaterialAnchorButton90.span_0) , $setTextColor((!f_MaterialAnchorButton90.colorsMixin && (f_MaterialAnchorButton90.colorsMixin = new ColorsMixin(f_MaterialAnchorButton90)) , f_MaterialAnchorButton90.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialAnchorButton90.colorsMixin && (f_MaterialAnchorButton90.colorsMixin = new ColorsMixin(f_MaterialAnchorButton90)) , f_MaterialAnchorButton90.colorsMixin), 'blue lighten-2') , $setWaves(f_MaterialAnchorButton90, LIGHT) , $setAttribute(f_MaterialAnchorButton90.element, 'target', '_blank') , $setAttribute(f_MaterialAnchorButton90.element, 'href', 'https://gitter.im/GwtMaterialDesign/gwt-material') , f_MaterialAnchorButton90)) , $setGrid((!f_MaterialColumn88.gridMixin && (f_MaterialColumn88.gridMixin = new GridMixin(f_MaterialColumn88)) , f_MaterialColumn88.gridMixin), 's12 m4 l4') , f_MaterialColumn88)) , $add_12(f_MaterialRow84, (f_MaterialColumn91 = new MaterialColumn , $add_12(f_MaterialColumn91, (f_MaterialTitle92 = new MaterialTitle , $setTextColor((!f_MaterialTitle92.colorsMixin && (f_MaterialTitle92.colorsMixin = new ColorsMixin(f_MaterialTitle92)) , f_MaterialTitle92.colorsMixin), 'white') , $setInnerHTML(f_MaterialTitle92.header.element, 'Github') , $setText_4(f_MaterialTitle92.paragraph, 'Download, fork, pull, file issues, and more at the official GWT Material repo on Github.') , f_MaterialTitle92)) , $add_12(f_MaterialColumn91, (f_MaterialAnchorButton93 = new MaterialAnchorButton , f_MaterialAnchorButton93.span_0.setText('Github') , $add_12(f_MaterialAnchorButton93, f_MaterialAnchorButton93.span_0) , $setTextColor((!f_MaterialAnchorButton93.colorsMixin && (f_MaterialAnchorButton93.colorsMixin = new ColorsMixin(f_MaterialAnchorButton93)) , f_MaterialAnchorButton93.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialAnchorButton93.colorsMixin && (f_MaterialAnchorButton93.colorsMixin = new ColorsMixin(f_MaterialAnchorButton93)) , f_MaterialAnchorButton93.colorsMixin), 'blue lighten-2') , $setWaves(f_MaterialAnchorButton93, LIGHT) , $setAttribute(f_MaterialAnchorButton93.element, 'target', '_blank') , $setAttribute(f_MaterialAnchorButton93.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material/') , f_MaterialAnchorButton93)) , $setGrid((!f_MaterialColumn91.gridMixin && (f_MaterialColumn91.gridMixin = new GridMixin(f_MaterialColumn91)) , f_MaterialColumn91.gridMixin), 's12 m4 l4') , f_MaterialColumn91)) , f_MaterialRow84)) , $add_22(f_MaterialFooter83, (f_MaterialFooterCopyright94 = new MaterialFooterCopyright , $add_23(f_MaterialFooterCopyright94, (f_MaterialLabel95 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel95.directionalTextHelper, '\xA9 2015 Copyright GWT Material') , f_MaterialLabel95)) , f_MaterialFooterCopyright94)) , setStyleName(f_MaterialFooter83.element, 'HPBM1FC-c-b', true) , $setBackgroundColor((!f_MaterialFooter83.colorsMixin && (f_MaterialFooter83.colorsMixin = new ColorsMixin(f_MaterialFooter83)) , f_MaterialFooter83.colorsMixin), 'blue') , f_MaterialFooter83), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (header = new Header_0 , $add_13(header, (navBar = new MaterialNavBar , $add_25(navBar, (f_MaterialLink2 = new MaterialLink , setStyleName(f_MaterialLink2.element, 'button-collapse', true) , $setIconPosition(f_MaterialLink2, ($clinit_IconPosition() , NONE_4)) , $setActivates(f_MaterialLink2, 'rightSideBar') , $setWaves(f_MaterialLink2, ($clinit_WavesType() , LIGHT)) , f_MaterialLink2.element.style['width'] = '64px' , $setTextAlign(f_MaterialLink2, ($clinit_TextAlign() , CENTER_4)) , $setOn((!f_MaterialLink2.circleMixin && (f_MaterialLink2.circleMixin = new ToggleStyleMixin(f_MaterialLink2, 'circle')) , f_MaterialLink2.circleMixin), true) , $setFloat(f_MaterialLink2, ($clinit_Style$Float() , RIGHT)) , $setIconType(f_MaterialLink2, ($clinit_IconType() , MENU_0)) , f_MaterialLink2)) , $setActivates_0(navBar.activatesMixin) , $setBackgroundColor((!navBar.colorsMixin && (navBar.colorsMixin = new ColorsMixin(navBar)) , navBar.colorsMixin), 'blue darken-1') , navBar)) , $add_13(header, (sideNav = new MaterialSideNav(($clinit_SideNavType() , OPEN)) , $add_27(sideNav, (f_ListItem3 = new ListItem , $add_13(f_ListItem3, (f_MaterialImage4 = new MaterialImage , setStyleName(f_MaterialImage4.element, 'HPBM1FC-c-c', true) , $setResource(f_MaterialImage4, (new MaterialResources_default_InlineClientBundleGenerator_0 , $clinit_MaterialResources_default_InlineClientBundleGenerator$ic_gwt_logoInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator_0() , ic_gwt_logo)) , f_MaterialImage4)) , $setWaves(f_ListItem3, DEFAULT_6) , f_ListItem3.element.style['paddingBottom'] = ($clinit_Style$Unit() , '22.0px') , f_ListItem3)) , $add_27(sideNav, (f_ListItem5 = new ListItem , $add_13(f_ListItem5, (f_MaterialLink6 = new MaterialLink , $setHref(f_MaterialLink6, ($clinit_History() , '#' + $encodeHistoryToken('!about'))) , $setIconPosition(f_MaterialLink6, LEFT_4) , f_MaterialLink6.span_0.setText('About') , $add_13(f_MaterialLink6, f_MaterialLink6.span_0) , $setTextColor((!f_MaterialLink6.colorsMixin && (f_MaterialLink6.colorsMixin = new ColorsMixin(f_MaterialLink6)) , f_MaterialLink6.colorsMixin), 'blue') , $setIconType(f_MaterialLink6, INFO_OUTLINE) , f_MaterialLink6)) , $setWaves(f_ListItem5, DEFAULT_6) , f_ListItem5)) , $add_27(sideNav, (f_ListItem7 = new ListItem , $add_13(f_ListItem7, (f_MaterialLink8 = new MaterialLink , $add_13(f_MaterialLink8, (f_MaterialBadge9 = new MaterialBadge , $setInnerHTML(f_MaterialBadge9.element, '1.4.0') , $setTextColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'blue') , f_MaterialBadge9)) , $setHref(f_MaterialLink8, '#' + $encodeHistoryToken('!gettingstarted')) , $setIconPosition(f_MaterialLink8, LEFT_4) , f_MaterialLink8.span_0.setText('Getting Started') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setIconType(f_MaterialLink8, CLOUD_DOWNLOAD) , f_MaterialLink8)) , $setWaves(f_ListItem7, DEFAULT_6) , f_ListItem7)) , $add_27(sideNav, (f_MaterialCollapsible10 = new MaterialCollapsible , $add_17(f_MaterialCollapsible10, (f_MaterialCollapsibleItem11 = new MaterialCollapsibleItem , $add_20(f_MaterialCollapsibleItem11, (f_MaterialCollapsibleHeader12 = new MaterialCollapsibleHeader , $add_19(f_MaterialCollapsibleHeader12, (f_MaterialLink13 = new MaterialLink , f_MaterialLink13.span_0.setText('Components') , $add_13(f_MaterialLink13, f_MaterialLink13.span_0) , $setTextColor((!f_MaterialLink13.colorsMixin && (f_MaterialLink13.colorsMixin = new ColorsMixin(f_MaterialLink13)) , f_MaterialLink13.colorsMixin), 'blue') , $setIconType(f_MaterialLink13, POLYMER) , f_MaterialLink13)) , $setWaves(f_MaterialCollapsibleHeader12, DEFAULT_6) , f_MaterialCollapsibleHeader12)) , $add_20(f_MaterialCollapsibleItem11, (f_MaterialCollapsibleBody14 = new MaterialCollapsibleBody , $add_18(f_MaterialCollapsibleBody14, $build_f_UnorderedList15()) , f_MaterialCollapsibleBody14)) , f_MaterialCollapsibleItem11)) , $add_17(f_MaterialCollapsible10, (f_MaterialCollapsibleItem38 = new MaterialCollapsibleItem , $add_20(f_MaterialCollapsibleItem38, (f_MaterialCollapsibleHeader39 = new MaterialCollapsibleHeader , $add_19(f_MaterialCollapsibleHeader39, (f_MaterialLink40 = new MaterialLink , f_MaterialLink40.span_0.setText('Animations') , $add_13(f_MaterialLink40, f_MaterialLink40.span_0) , $setTextColor((!f_MaterialLink40.colorsMixin && (f_MaterialLink40.colorsMixin = new ColorsMixin(f_MaterialLink40)) , f_MaterialLink40.colorsMixin), 'blue') , $setIconType(f_MaterialLink40, PLAY_CIRCLE_OUTLINE) , f_MaterialLink40)) , $setWaves(f_MaterialCollapsibleHeader39, DEFAULT_6) , f_MaterialCollapsibleHeader39)) , $add_20(f_MaterialCollapsibleItem38, (f_MaterialCollapsibleBody41 = new MaterialCollapsibleBody , $add_18(f_MaterialCollapsibleBody41, (f_UnorderedList42 = new UnorderedList , f_UnorderedList42.add_0((f_MaterialLink43 = new MaterialLink , $setHref(f_MaterialLink43, '#' + $encodeHistoryToken('coreAnimations')) , f_MaterialLink43.span_0.setText('Core') , $add_13(f_MaterialLink43, f_MaterialLink43.span_0) , $setTextColor((!f_MaterialLink43.colorsMixin && (f_MaterialLink43.colorsMixin = new ColorsMixin(f_MaterialLink43)) , f_MaterialLink43.colorsMixin), 'blue') , $setWaves(f_MaterialLink43, DEFAULT_6) , f_MaterialLink43)) , f_UnorderedList42.add_0((f_MaterialLink44 = new MaterialLink , $setHref(f_MaterialLink44, '#' + $encodeHistoryToken('meaningful')) , f_MaterialLink44.span_0.setText('Meaningful') , $add_13(f_MaterialLink44, f_MaterialLink44.span_0) , $setTextColor((!f_MaterialLink44.colorsMixin && (f_MaterialLink44.colorsMixin = new ColorsMixin(f_MaterialLink44)) , f_MaterialLink44.colorsMixin), 'blue') , $setWaves(f_MaterialLink44, DEFAULT_6) , f_MaterialLink44)) , f_UnorderedList42)) , f_MaterialCollapsibleBody41)) , f_MaterialCollapsibleItem38)) , $add_17(f_MaterialCollapsible10, (f_MaterialCollapsibleItem45 = new MaterialCollapsibleItem , $add_20(f_MaterialCollapsibleItem45, (f_MaterialCollapsibleHeader46 = new MaterialCollapsibleHeader , $add_19(f_MaterialCollapsibleHeader46, (f_MaterialLink47 = new MaterialLink , f_MaterialLink47.span_0.setText('Addins') , $add_13(f_MaterialLink47, f_MaterialLink47.span_0) , $setTextColor((!f_MaterialLink47.colorsMixin && (f_MaterialLink47.colorsMixin = new ColorsMixin(f_MaterialLink47)) , f_MaterialLink47.colorsMixin), 'blue') , $setIconType(f_MaterialLink47, EXTENSION) , f_MaterialLink47)) , $setWaves(f_MaterialCollapsibleHeader46, DEFAULT_6) , f_MaterialCollapsibleHeader46)) , $add_20(f_MaterialCollapsibleItem45, (f_MaterialCollapsibleBody48 = new MaterialCollapsibleBody , $add_18(f_MaterialCollapsibleBody48, (f_UnorderedList49 = new UnorderedList , f_UnorderedList49.add_0((f_MaterialLink50 = new MaterialLink , $setHref(f_MaterialLink50, '#' + $encodeHistoryToken('cutouts')) , f_MaterialLink50.span_0.setText('CutOut') , $add_13(f_MaterialLink50, f_MaterialLink50.span_0) , $setTextColor((!f_MaterialLink50.colorsMixin && (f_MaterialLink50.colorsMixin = new ColorsMixin(f_MaterialLink50)) , f_MaterialLink50.colorsMixin), 'blue') , $setWaves(f_MaterialLink50, DEFAULT_6) , f_MaterialLink50)) , f_UnorderedList49.add_0((f_MaterialLink51 = new MaterialLink , $setHref(f_MaterialLink51, '#' + $encodeHistoryToken('pathAnimator')) , f_MaterialLink51.span_0.setText('Path Animator') , $add_13(f_MaterialLink51, f_MaterialLink51.span_0) , $setTextColor((!f_MaterialLink51.colorsMixin && (f_MaterialLink51.colorsMixin = new ColorsMixin(f_MaterialLink51)) , f_MaterialLink51.colorsMixin), 'blue') , $setWaves(f_MaterialLink51, DEFAULT_6) , f_MaterialLink51)) , f_UnorderedList49.add_0((f_MaterialLink52 = new MaterialLink , $setHref(f_MaterialLink52, '#' + $encodeHistoryToken('subheaders')) , f_MaterialLink52.span_0.setText('Subheader') , $add_13(f_MaterialLink52, f_MaterialLink52.span_0) , $setTextColor((!f_MaterialLink52.colorsMixin && (f_MaterialLink52.colorsMixin = new ColorsMixin(f_MaterialLink52)) , f_MaterialLink52.colorsMixin), 'blue') , $setWaves(f_MaterialLink52, DEFAULT_6) , f_MaterialLink52)) , f_UnorderedList49.add_0((f_MaterialLink53 = new MaterialLink , $setHref(f_MaterialLink53, '#' + $encodeHistoryToken('steppers')) , f_MaterialLink53.span_0.setText('Steppers') , $add_13(f_MaterialLink53, f_MaterialLink53.span_0) , $setTextColor((!f_MaterialLink53.colorsMixin && (f_MaterialLink53.colorsMixin = new ColorsMixin(f_MaterialLink53)) , f_MaterialLink53.colorsMixin), 'blue') , $setWaves(f_MaterialLink53, DEFAULT_6) , f_MaterialLink53)) , f_UnorderedList49.add_0((f_MaterialLink54 = new MaterialLink , $setHref(f_MaterialLink54, '#' + $encodeHistoryToken('timepickers')) , f_MaterialLink54.span_0.setText('Time Picker') , $add_13(f_MaterialLink54, f_MaterialLink54.span_0) , $setTextColor((!f_MaterialLink54.colorsMixin && (f_MaterialLink54.colorsMixin = new ColorsMixin(f_MaterialLink54)) , f_MaterialLink54.colorsMixin), 'blue') , $setWaves(f_MaterialLink54, DEFAULT_6) , f_MaterialLink54)) , f_UnorderedList49)) , f_MaterialCollapsibleBody48)) , f_MaterialCollapsibleItem45)) , $add_17(f_MaterialCollapsible10, (f_MaterialCollapsibleItem55 = new MaterialCollapsibleItem , $add_20(f_MaterialCollapsibleItem55, (f_MaterialCollapsibleHeader56 = new MaterialCollapsibleHeader , $add_19(f_MaterialCollapsibleHeader56, (f_MaterialLink57 = new MaterialLink , f_MaterialLink57.span_0.setText('Style and Layout') , $add_13(f_MaterialLink57, f_MaterialLink57.span_0) , $setTextColor((!f_MaterialLink57.colorsMixin && (f_MaterialLink57.colorsMixin = new ColorsMixin(f_MaterialLink57)) , f_MaterialLink57.colorsMixin), 'blue') , $setIconType(f_MaterialLink57, STYLE) , f_MaterialLink57)) , $setWaves(f_MaterialCollapsibleHeader56, DEFAULT_6) , f_MaterialCollapsibleHeader56)) , $add_20(f_MaterialCollapsibleItem55, (f_MaterialCollapsibleBody58 = new MaterialCollapsibleBody , $add_18(f_MaterialCollapsibleBody58, (f_UnorderedList59 = new UnorderedList , f_UnorderedList59.add_0((f_MaterialLink60 = new MaterialLink , $setHref(f_MaterialLink60, '#' + $encodeHistoryToken('!colors')) , f_MaterialLink60.span_0.setText('Colors') , $add_13(f_MaterialLink60, f_MaterialLink60.span_0) , $setTextColor((!f_MaterialLink60.colorsMixin && (f_MaterialLink60.colorsMixin = new ColorsMixin(f_MaterialLink60)) , f_MaterialLink60.colorsMixin), 'blue') , $setWaves(f_MaterialLink60, DEFAULT_6) , f_MaterialLink60)) , f_UnorderedList59.add_0((f_MaterialLink61 = new MaterialLink , $setHref(f_MaterialLink61, '#' + $encodeHistoryToken('!grid')) , f_MaterialLink61.span_0.setText('Grid') , $add_13(f_MaterialLink61, f_MaterialLink61.span_0) , $setTextColor((!f_MaterialLink61.colorsMixin && (f_MaterialLink61.colorsMixin = new ColorsMixin(f_MaterialLink61)) , f_MaterialLink61.colorsMixin), 'blue') , $setWaves(f_MaterialLink61, DEFAULT_6) , f_MaterialLink61)) , f_UnorderedList59.add_0((f_MaterialLink62 = new MaterialLink , $setHref(f_MaterialLink62, '#' + $encodeHistoryToken('!helper')) , f_MaterialLink62.span_0.setText('Helper') , $add_13(f_MaterialLink62, f_MaterialLink62.span_0) , $setTextColor((!f_MaterialLink62.colorsMixin && (f_MaterialLink62.colorsMixin = new ColorsMixin(f_MaterialLink62)) , f_MaterialLink62.colorsMixin), 'blue') , $setWaves(f_MaterialLink62, DEFAULT_6) , f_MaterialLink62)) , f_UnorderedList59.add_0((f_MaterialLink63 = new MaterialLink , $setHref(f_MaterialLink63, '#' + $encodeHistoryToken('!icons')) , f_MaterialLink63.span_0.setText('Icons') , $add_13(f_MaterialLink63, f_MaterialLink63.span_0) , $setTextColor((!f_MaterialLink63.colorsMixin && (f_MaterialLink63.colorsMixin = new ColorsMixin(f_MaterialLink63)) , f_MaterialLink63.colorsMixin), 'blue') , $setWaves(f_MaterialLink63, DEFAULT_6) , f_MaterialLink63)) , f_UnorderedList59.add_0((f_MaterialLink64 = new MaterialLink , $setHref(f_MaterialLink64, '#' + $encodeHistoryToken('!shadow')) , f_MaterialLink64.span_0.setText('Shadow') , $add_13(f_MaterialLink64, f_MaterialLink64.span_0) , $setTextColor((!f_MaterialLink64.colorsMixin && (f_MaterialLink64.colorsMixin = new ColorsMixin(f_MaterialLink64)) , f_MaterialLink64.colorsMixin), 'blue') , $setWaves(f_MaterialLink64, DEFAULT_6) , f_MaterialLink64)) , f_UnorderedList59.add_0((f_MaterialLink65 = new MaterialLink , $setHref(f_MaterialLink65, '#' + $encodeHistoryToken('!themes')) , f_MaterialLink65.span_0.setText('Theming') , $add_13(f_MaterialLink65, f_MaterialLink65.span_0) , $setTextColor((!f_MaterialLink65.colorsMixin && (f_MaterialLink65.colorsMixin = new ColorsMixin(f_MaterialLink65)) , f_MaterialLink65.colorsMixin), 'blue') , $setWaves(f_MaterialLink65, DEFAULT_6) , f_MaterialLink65)) , f_UnorderedList59)) , f_MaterialCollapsibleBody58)) , f_MaterialCollapsibleItem55)) , f_MaterialCollapsible10)) , $add_27(sideNav, (f_MaterialLink66 = new MaterialLink , $setHref(f_MaterialLink66, '#' + $encodeHistoryToken('!showcase')) , $setIconPosition(f_MaterialLink66, LEFT_4) , f_MaterialLink66.span_0.setText('Showcase') , $add_13(f_MaterialLink66, f_MaterialLink66.span_0) , $setTextColor((!f_MaterialLink66.colorsMixin && (f_MaterialLink66.colorsMixin = new ColorsMixin(f_MaterialLink66)) , f_MaterialLink66.colorsMixin), 'blue') , $setWaves(f_MaterialLink66, DEFAULT_6) , $setIconType(f_MaterialLink66, WEB) , f_MaterialLink66)) , $add_27(sideNav, (f_MaterialLink67 = new MaterialLink , $setHref(f_MaterialLink67, '#' + $encodeHistoryToken('!templates')) , $setIconPosition(f_MaterialLink67, LEFT_4) , f_MaterialLink67.span_0.setText('Templates') , $add_13(f_MaterialLink67, f_MaterialLink67.span_0) , $setTextColor((!f_MaterialLink67.colorsMixin && (f_MaterialLink67.colorsMixin = new ColorsMixin(f_MaterialLink67)) , f_MaterialLink67.colorsMixin), 'blue') , $setWaves(f_MaterialLink67, DEFAULT_6) , $setIconType(f_MaterialLink67, DASHBOARD) , f_MaterialLink67)) , $add_27(sideNav, (f_MaterialLink68 = new MaterialLink , $setHref(f_MaterialLink68, '#' + $encodeHistoryToken('!charts')) , $setIconPosition(f_MaterialLink68, LEFT_4) , f_MaterialLink68.span_0.setText('Material Charts') , $add_13(f_MaterialLink68, f_MaterialLink68.span_0) , $setTextColor((!f_MaterialLink68.colorsMixin && (f_MaterialLink68.colorsMixin = new ColorsMixin(f_MaterialLink68)) , f_MaterialLink68.colorsMixin), 'blue') , $setWaves(f_MaterialLink68, DEFAULT_6) , $setIconType(f_MaterialLink68, INSERT_CHART) , f_MaterialLink68)) , $setId_0((!sideNav.idMixin && (sideNav.idMixin = new IdMixin(sideNav)) , sideNav.idMixin), 'sideBar') , sideNav.closeOnClick = false , this$static.owner.sideNav_0 = sideNav , sideNav)) , $add_13(header, (rightSideNav = new MaterialSideNav(MINI) , $add_27(rightSideNav, (f_MaterialLink69 = new MaterialLink , $add_13(f_MaterialLink69, (f_MaterialIcon70 = new MaterialIcon , $setWaves(f_MaterialIcon70, LIGHT) , $setOn((!f_MaterialIcon70.circleMixin && (f_MaterialIcon70.circleMixin = new ToggleStyleMixin(f_MaterialIcon70, 'circle')) , f_MaterialIcon70.circleMixin), true) , f_MaterialIcon70.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon70, POLYMER) , f_MaterialIcon70)) , f_MaterialLink69)) , $add_27(rightSideNav, (f_MaterialLink71 = new MaterialLink , $add_13(f_MaterialLink71, (f_MaterialIcon72 = new MaterialIcon , $setWaves(f_MaterialIcon72, LIGHT) , $setOn((!f_MaterialIcon72.circleMixin && (f_MaterialIcon72.circleMixin = new ToggleStyleMixin(f_MaterialIcon72, 'circle')) , f_MaterialIcon72.circleMixin), true) , f_MaterialIcon72.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon72, ADD) , f_MaterialIcon72)) , f_MaterialLink71)) , $add_27(rightSideNav, (f_MaterialLink73 = new MaterialLink , $add_13(f_MaterialLink73, (f_MaterialIcon74 = new MaterialIcon , $setWaves(f_MaterialIcon74, LIGHT) , $setOn((!f_MaterialIcon74.circleMixin && (f_MaterialIcon74.circleMixin = new ToggleStyleMixin(f_MaterialIcon74, 'circle')) , f_MaterialIcon74.circleMixin), true) , f_MaterialIcon74.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon74, ADJUST) , f_MaterialIcon74)) , f_MaterialLink73)) , $add_27(rightSideNav, (f_MaterialLink75 = new MaterialLink , $add_13(f_MaterialLink75, (f_MaterialIcon76 = new MaterialIcon , $setWaves(f_MaterialIcon76, LIGHT) , $setOn((!f_MaterialIcon76.circleMixin && (f_MaterialIcon76.circleMixin = new ToggleStyleMixin(f_MaterialIcon76, 'circle')) , f_MaterialIcon76.circleMixin), true) , f_MaterialIcon76.element.style['padding'] = '0.0px' , $setIconType_2(f_MaterialIcon76, BATTERY_STD) , f_MaterialIcon76)) , f_MaterialLink75)) , $setId_0((!rightSideNav.idMixin && (rightSideNav.idMixin = new IdMixin(rightSideNav)) , rightSideNav.idMixin), 'rightSideBar') , $setEdge(rightSideNav, ($clinit_Edge() , RIGHT_4)) , rightSideNav.closeOnClick = true , $setOn(rightSideNav.fixedMixin, false) , rightSideNav)) , header), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialContainer77 = new MaterialContainer , $add_13(f_MaterialContainer77, (topNav = new MaterialTopNav , $add_13(topNav, (f_MaterialRow78 = new MaterialRow , $add_13(f_MaterialRow78, (f_MaterialColumn79 = new MaterialColumn , $add_13(f_MaterialColumn79, (title_0 = new MaterialLabel , this$static.owner.title_0 = title_0 , title_0)) , $add_13(f_MaterialColumn79, (description = new MaterialLabel , $setFontSize_0(description.fontSizeMixin, '0.3em') , this$static.owner.description_0 = description , description)) , $setGrid((!f_MaterialColumn79.gridMixin && (f_MaterialColumn79.gridMixin = new GridMixin(f_MaterialColumn79)) , f_MaterialColumn79.gridMixin), 'l12') , f_MaterialColumn79)) , f_MaterialRow78)) , $add_13(topNav, (f_MaterialPanel80 = new MaterialPanel , $add_13(f_MaterialPanel80, (gettingStartedPanel = new MaterialAnchorButton , setStyleName(gettingStartedPanel.element, 'HPBM1FC-c-a', true) , $setHref(gettingStartedPanel, '#' + $encodeHistoryToken('!gettingstarted')) , gettingStartedPanel.span_0.setText('Get Started') , $add_13(gettingStartedPanel, gettingStartedPanel.span_0) , $setTextColor((!gettingStartedPanel.colorsMixin && (gettingStartedPanel.colorsMixin = new ColorsMixin(gettingStartedPanel)) , gettingStartedPanel.colorsMixin), 'white') , $setBackgroundColor((!gettingStartedPanel.colorsMixin && (gettingStartedPanel.colorsMixin = new ColorsMixin(gettingStartedPanel)) , gettingStartedPanel.colorsMixin), 'blue lighten-2') , $setSize(gettingStartedPanel, ($clinit_ButtonSize() , LARGE)) , gettingStartedPanel)) , f_MaterialPanel80)) , setStyleName(topNav.element, 'HPBM1FC-c-g', true) , $setTextColor((!topNav.colorsMixin && (topNav.colorsMixin = new ColorsMixin(topNav)) , topNav.colorsMixin), 'white') , $setBackgroundColor((!topNav.colorsMixin && (topNav.colorsMixin = new ColorsMixin(topNav)) , topNav.colorsMixin), 'blue') , topNav)) , $add_13(f_MaterialContainer77, (main = new HTMLPanel((sb = new StringBuilder , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(main.element, 'HPBM1FC-c-e', true) , setStyleName(main.element, 'container', true) , setStyleName(main.element, 'z-depth-2', true) , this$static.owner.main_0 = main , main)) , $add_13(f_MaterialContainer77, (f_MaterialPanel81 = new MaterialPanel , $add_13(f_MaterialPanel81, new HTMLPanel((sb_0 = new StringBuilder , sb_0.string += "<input name='IL_IN_TAG' type='hidden' value='1'>" , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html)) , f_MaterialPanel81)) , f_MaterialContainer77), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialFooter83 = new MaterialFooter , $add_23(f_MaterialFooter83, (f_MaterialRow84 = new MaterialRow , $add_13(f_MaterialRow84, (f_MaterialColumn85 = new MaterialColumn , $add_13(f_MaterialColumn85, (f_HTMLPanel86 = new HTMLPanel($html3(this$static.domId3).html) , __attachRecord___0 = attachToDom(f_HTMLPanel86.element) , $get_0(this$static.domId3Element) , __attachRecord___0.origParent?$insertBefore(__attachRecord___0.origParent, __attachRecord___0.element, __attachRecord___0.origSibling):orphan(__attachRecord___0.element) , $addAndReplaceElement_1(f_HTMLPanel86, (f_MaterialTitle87 = new MaterialTitle , $setTextColor((!f_MaterialTitle87.colorsMixin && (f_MaterialTitle87.colorsMixin = new ColorsMixin(f_MaterialTitle87)) , f_MaterialTitle87.colorsMixin), 'white') , $setInnerHTML($getElement(f_MaterialTitle87.header), 'Support Us') , $setText_4(f_MaterialTitle87.paragraph, 'Any amount would help support and continue development on this project and is greatly appreciated.') , f_MaterialTitle87), $get_0(this$static.domId3Element)) , f_HTMLPanel86)) , $setGrid((!f_MaterialColumn85.gridMixin && (f_MaterialColumn85.gridMixin = new GridMixin(f_MaterialColumn85)) , f_MaterialColumn85.gridMixin), 's12 m4 m4') , f_MaterialColumn85)) , $add_13(f_MaterialRow84, (f_MaterialColumn88 = new MaterialColumn , $add_13(f_MaterialColumn88, (f_MaterialTitle89 = new MaterialTitle , $setTextColor((!f_MaterialTitle89.colorsMixin && (f_MaterialTitle89.colorsMixin = new ColorsMixin(f_MaterialTitle89)) , f_MaterialTitle89.colorsMixin), 'white') , $setInnerHTML($getElement(f_MaterialTitle89.header), 'Join The Discussion') , $setText_4(f_MaterialTitle89.paragraph, 'We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration.') , f_MaterialTitle89)) , $add_13(f_MaterialColumn88, (f_MaterialAnchorButton90 = new MaterialAnchorButton , f_MaterialAnchorButton90.span_0.setText('CHAT') , $add_13(f_MaterialAnchorButton90, f_MaterialAnchorButton90.span_0) , $setTextColor((!f_MaterialAnchorButton90.colorsMixin && (f_MaterialAnchorButton90.colorsMixin = new ColorsMixin(f_MaterialAnchorButton90)) , f_MaterialAnchorButton90.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialAnchorButton90.colorsMixin && (f_MaterialAnchorButton90.colorsMixin = new ColorsMixin(f_MaterialAnchorButton90)) , f_MaterialAnchorButton90.colorsMixin), 'blue lighten-2') , $setWaves(f_MaterialAnchorButton90, LIGHT) , $setAttribute(f_MaterialAnchorButton90.element, 'target', '_blank') , $setAttribute(f_MaterialAnchorButton90.element, 'href', 'https://gitter.im/GwtMaterialDesign/gwt-material') , f_MaterialAnchorButton90)) , $setGrid((!f_MaterialColumn88.gridMixin && (f_MaterialColumn88.gridMixin = new GridMixin(f_MaterialColumn88)) , f_MaterialColumn88.gridMixin), 's12 m4 l4') , f_MaterialColumn88)) , $add_13(f_MaterialRow84, (f_MaterialColumn91 = new MaterialColumn , $add_13(f_MaterialColumn91, (f_MaterialTitle92 = new MaterialTitle , $setTextColor((!f_MaterialTitle92.colorsMixin && (f_MaterialTitle92.colorsMixin = new ColorsMixin(f_MaterialTitle92)) , f_MaterialTitle92.colorsMixin), 'white') , $setInnerHTML($getElement(f_MaterialTitle92.header), 'Github') , $setText_4(f_MaterialTitle92.paragraph, 'Download, fork, pull, file issues, and more at the official GWT Material repo on Github.') , f_MaterialTitle92)) , $add_13(f_MaterialColumn91, (f_MaterialAnchorButton93 = new MaterialAnchorButton , f_MaterialAnchorButton93.span_0.setText('Github') , $add_13(f_MaterialAnchorButton93, f_MaterialAnchorButton93.span_0) , $setTextColor((!f_MaterialAnchorButton93.colorsMixin && (f_MaterialAnchorButton93.colorsMixin = new ColorsMixin(f_MaterialAnchorButton93)) , f_MaterialAnchorButton93.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialAnchorButton93.colorsMixin && (f_MaterialAnchorButton93.colorsMixin = new ColorsMixin(f_MaterialAnchorButton93)) , f_MaterialAnchorButton93.colorsMixin), 'blue lighten-2') , $setWaves(f_MaterialAnchorButton93, LIGHT) , $setAttribute(f_MaterialAnchorButton93.element, 'target', '_blank') , $setAttribute(f_MaterialAnchorButton93.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material/') , f_MaterialAnchorButton93)) , $setGrid((!f_MaterialColumn91.gridMixin && (f_MaterialColumn91.gridMixin = new GridMixin(f_MaterialColumn91)) , f_MaterialColumn91.gridMixin), 's12 m4 l4') , f_MaterialColumn91)) , f_MaterialRow84)) , $add_23(f_MaterialFooter83, (f_MaterialFooterCopyright94 = new MaterialFooterCopyright , $add_24(f_MaterialFooterCopyright94, (f_MaterialLabel95 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel95.directionalTextHelper, '\xA9 2015 Copyright GWT Material') , f_MaterialLabel95)) , f_MaterialFooterCopyright94)) , setStyleName(f_MaterialFooter83.element, 'HPBM1FC-c-b', true) , $setBackgroundColor((!f_MaterialFooter83.colorsMixin && (f_MaterialFooter83.colorsMixin = new ColorsMixin(f_MaterialFooter83)) , f_MaterialFooter83.colorsMixin), 'blue') , f_MaterialFooter83), $get_0(this$static.domId2Element));
   return f_HTMLPanel1;
 }
 
 function $build_f_UnorderedList15(){
   var f_UnorderedList15, f_MaterialLink16, f_MaterialLink17, f_MaterialLink18, f_MaterialLink19, f_MaterialLink20, f_MaterialLink21, f_MaterialLink22, f_MaterialLink23, f_MaterialLink24, f_MaterialLink25, f_MaterialLink26, f_MaterialLink27, f_MaterialLink28, f_MaterialLink29, f_MaterialLink30, f_MaterialLink31, f_MaterialLink32, f_MaterialLink33, f_MaterialLink34, f_MaterialLink35, f_MaterialLink36, f_MaterialLink37;
   f_UnorderedList15 = new UnorderedList;
-  f_UnorderedList15.add_0((f_MaterialLink16 = new MaterialLink , $setHref(f_MaterialLink16, ($clinit_History() , '#' + $encodeHistoryToken('!autocomplete'))) , f_MaterialLink16.span_0.setText('Autocomplete') , $add_12(f_MaterialLink16, f_MaterialLink16.span_0) , $setTextColor((!f_MaterialLink16.colorsMixin && (f_MaterialLink16.colorsMixin = new ColorsMixin(f_MaterialLink16)) , f_MaterialLink16.colorsMixin), 'blue') , $setWaves(f_MaterialLink16, ($clinit_WavesType() , DEFAULT_6)) , f_MaterialLink16));
-  f_UnorderedList15.add_0((f_MaterialLink17 = new MaterialLink , $setHref(f_MaterialLink17, '#' + $encodeHistoryToken('!badges')) , f_MaterialLink17.span_0.setText('Badges') , $add_12(f_MaterialLink17, f_MaterialLink17.span_0) , $setTextColor((!f_MaterialLink17.colorsMixin && (f_MaterialLink17.colorsMixin = new ColorsMixin(f_MaterialLink17)) , f_MaterialLink17.colorsMixin), 'blue') , $setWaves(f_MaterialLink17, DEFAULT_6) , f_MaterialLink17));
-  f_UnorderedList15.add_0((f_MaterialLink18 = new MaterialLink , $setHref(f_MaterialLink18, '#' + $encodeHistoryToken('!buttons')) , f_MaterialLink18.span_0.setText('Buttons') , $add_12(f_MaterialLink18, f_MaterialLink18.span_0) , $setTextColor((!f_MaterialLink18.colorsMixin && (f_MaterialLink18.colorsMixin = new ColorsMixin(f_MaterialLink18)) , f_MaterialLink18.colorsMixin), 'blue') , $setWaves(f_MaterialLink18, DEFAULT_6) , f_MaterialLink18));
-  f_UnorderedList15.add_0((f_MaterialLink19 = new MaterialLink , $setHref(f_MaterialLink19, '#' + $encodeHistoryToken('!cards')) , f_MaterialLink19.span_0.setText('Cards') , $add_12(f_MaterialLink19, f_MaterialLink19.span_0) , $setTextColor((!f_MaterialLink19.colorsMixin && (f_MaterialLink19.colorsMixin = new ColorsMixin(f_MaterialLink19)) , f_MaterialLink19.colorsMixin), 'blue') , $setWaves(f_MaterialLink19, DEFAULT_6) , f_MaterialLink19));
-  f_UnorderedList15.add_0((f_MaterialLink20 = new MaterialLink , $setHref(f_MaterialLink20, '#' + $encodeHistoryToken('!chips')) , f_MaterialLink20.span_0.setText('Chips') , $add_12(f_MaterialLink20, f_MaterialLink20.span_0) , $setTextColor((!f_MaterialLink20.colorsMixin && (f_MaterialLink20.colorsMixin = new ColorsMixin(f_MaterialLink20)) , f_MaterialLink20.colorsMixin), 'blue') , $setWaves(f_MaterialLink20, DEFAULT_6) , f_MaterialLink20));
-  f_UnorderedList15.add_0((f_MaterialLink21 = new MaterialLink , $setHref(f_MaterialLink21, '#' + $encodeHistoryToken('!collapsible')) , f_MaterialLink21.span_0.setText('Collapsible') , $add_12(f_MaterialLink21, f_MaterialLink21.span_0) , $setTextColor((!f_MaterialLink21.colorsMixin && (f_MaterialLink21.colorsMixin = new ColorsMixin(f_MaterialLink21)) , f_MaterialLink21.colorsMixin), 'blue') , $setWaves(f_MaterialLink21, DEFAULT_6) , f_MaterialLink21));
-  f_UnorderedList15.add_0((f_MaterialLink22 = new MaterialLink , $setHref(f_MaterialLink22, '#' + $encodeHistoryToken('!collections')) , f_MaterialLink22.span_0.setText('Collections') , $add_12(f_MaterialLink22, f_MaterialLink22.span_0) , $setTextColor((!f_MaterialLink22.colorsMixin && (f_MaterialLink22.colorsMixin = new ColorsMixin(f_MaterialLink22)) , f_MaterialLink22.colorsMixin), 'blue') , $setWaves(f_MaterialLink22, DEFAULT_6) , f_MaterialLink22));
-  f_UnorderedList15.add_0((f_MaterialLink23 = new MaterialLink , $setHref(f_MaterialLink23, '#' + $encodeHistoryToken('!datagrid')) , f_MaterialLink23.span_0.setText('Datagrid') , $add_12(f_MaterialLink23, f_MaterialLink23.span_0) , $setTextColor((!f_MaterialLink23.colorsMixin && (f_MaterialLink23.colorsMixin = new ColorsMixin(f_MaterialLink23)) , f_MaterialLink23.colorsMixin), 'blue') , $setWaves(f_MaterialLink23, DEFAULT_6) , f_MaterialLink23));
-  f_UnorderedList15.add_0((f_MaterialLink24 = new MaterialLink , $setHref(f_MaterialLink24, '#' + $encodeHistoryToken('!dialogs')) , f_MaterialLink24.span_0.setText('Dialogs') , $add_12(f_MaterialLink24, f_MaterialLink24.span_0) , $setTextColor((!f_MaterialLink24.colorsMixin && (f_MaterialLink24.colorsMixin = new ColorsMixin(f_MaterialLink24)) , f_MaterialLink24.colorsMixin), 'blue') , $setWaves(f_MaterialLink24, DEFAULT_6) , f_MaterialLink24));
-  f_UnorderedList15.add_0((f_MaterialLink25 = new MaterialLink , $setHref(f_MaterialLink25, '#' + $encodeHistoryToken('!dropdown')) , f_MaterialLink25.span_0.setText('Dropdown') , $add_12(f_MaterialLink25, f_MaterialLink25.span_0) , $setTextColor((!f_MaterialLink25.colorsMixin && (f_MaterialLink25.colorsMixin = new ColorsMixin(f_MaterialLink25)) , f_MaterialLink25.colorsMixin), 'blue') , $setWaves(f_MaterialLink25, DEFAULT_6) , f_MaterialLink25));
-  f_UnorderedList15.add_0((f_MaterialLink26 = new MaterialLink , $setHref(f_MaterialLink26, '#' + $encodeHistoryToken('!errors')) , f_MaterialLink26.span_0.setText('Errors') , $add_12(f_MaterialLink26, f_MaterialLink26.span_0) , $setTextColor((!f_MaterialLink26.colorsMixin && (f_MaterialLink26.colorsMixin = new ColorsMixin(f_MaterialLink26)) , f_MaterialLink26.colorsMixin), 'blue') , $setWaves(f_MaterialLink26, DEFAULT_6) , f_MaterialLink26));
-  f_UnorderedList15.add_0((f_MaterialLink27 = new MaterialLink , $setHref(f_MaterialLink27, '#' + $encodeHistoryToken('!forms')) , f_MaterialLink27.span_0.setText('Forms') , $add_12(f_MaterialLink27, f_MaterialLink27.span_0) , $setTextColor((!f_MaterialLink27.colorsMixin && (f_MaterialLink27.colorsMixin = new ColorsMixin(f_MaterialLink27)) , f_MaterialLink27.colorsMixin), 'blue') , $setWaves(f_MaterialLink27, DEFAULT_6) , f_MaterialLink27));
-  f_UnorderedList15.add_0((f_MaterialLink28 = new MaterialLink , $setHref(f_MaterialLink28, '#' + $encodeHistoryToken('fabs')) , f_MaterialLink28.span_0.setText('FAB') , $add_12(f_MaterialLink28, f_MaterialLink28.span_0) , $setTextColor((!f_MaterialLink28.colorsMixin && (f_MaterialLink28.colorsMixin = new ColorsMixin(f_MaterialLink28)) , f_MaterialLink28.colorsMixin), 'blue') , $setWaves(f_MaterialLink28, DEFAULT_6) , f_MaterialLink28));
-  f_UnorderedList15.add_0((f_MaterialLink29 = new MaterialLink , $setHref(f_MaterialLink29, '#' + $encodeHistoryToken('!footer')) , f_MaterialLink29.span_0.setText('Footer') , $add_12(f_MaterialLink29, f_MaterialLink29.span_0) , $setTextColor((!f_MaterialLink29.colorsMixin && (f_MaterialLink29.colorsMixin = new ColorsMixin(f_MaterialLink29)) , f_MaterialLink29.colorsMixin), 'blue') , $setWaves(f_MaterialLink29, DEFAULT_6) , f_MaterialLink29));
-  f_UnorderedList15.add_0((f_MaterialLink30 = new MaterialLink , $setHref(f_MaterialLink30, '#' + $encodeHistoryToken('!loader')) , f_MaterialLink30.span_0.setText('Loaders') , $add_12(f_MaterialLink30, f_MaterialLink30.span_0) , $setTextColor((!f_MaterialLink30.colorsMixin && (f_MaterialLink30.colorsMixin = new ColorsMixin(f_MaterialLink30)) , f_MaterialLink30.colorsMixin), 'blue') , $setWaves(f_MaterialLink30, DEFAULT_6) , f_MaterialLink30));
-  f_UnorderedList15.add_0((f_MaterialLink31 = new MaterialLink , $setHref(f_MaterialLink31, '#' + $encodeHistoryToken('!media')) , f_MaterialLink31.span_0.setText('Media') , $add_12(f_MaterialLink31, f_MaterialLink31.span_0) , $setTextColor((!f_MaterialLink31.colorsMixin && (f_MaterialLink31.colorsMixin = new ColorsMixin(f_MaterialLink31)) , f_MaterialLink31.colorsMixin), 'blue') , $setWaves(f_MaterialLink31, DEFAULT_6) , f_MaterialLink31));
-  f_UnorderedList15.add_0((f_MaterialLink32 = new MaterialLink , $setHref(f_MaterialLink32, '#' + $encodeHistoryToken('!navbar')) , f_MaterialLink32.span_0.setText('NavBar') , $add_12(f_MaterialLink32, f_MaterialLink32.span_0) , $setTextColor((!f_MaterialLink32.colorsMixin && (f_MaterialLink32.colorsMixin = new ColorsMixin(f_MaterialLink32)) , f_MaterialLink32.colorsMixin), 'blue') , $setWaves(f_MaterialLink32, DEFAULT_6) , f_MaterialLink32));
-  f_UnorderedList15.add_0((f_MaterialLink33 = new MaterialLink , $setHref(f_MaterialLink33, '#' + $encodeHistoryToken('!pickers')) , f_MaterialLink33.span_0.setText('Date Picker') , $add_12(f_MaterialLink33, f_MaterialLink33.span_0) , $setTextColor((!f_MaterialLink33.colorsMixin && (f_MaterialLink33.colorsMixin = new ColorsMixin(f_MaterialLink33)) , f_MaterialLink33.colorsMixin), 'blue') , $setWaves(f_MaterialLink33, DEFAULT_6) , f_MaterialLink33));
-  f_UnorderedList15.add_0((f_MaterialLink34 = new MaterialLink , $setHref(f_MaterialLink34, '#' + $encodeHistoryToken('!sidenavs')) , f_MaterialLink34.span_0.setText('SideNavs') , $add_12(f_MaterialLink34, f_MaterialLink34.span_0) , $setTextColor((!f_MaterialLink34.colorsMixin && (f_MaterialLink34.colorsMixin = new ColorsMixin(f_MaterialLink34)) , f_MaterialLink34.colorsMixin), 'blue') , $setWaves(f_MaterialLink34, DEFAULT_6) , f_MaterialLink34));
-  f_UnorderedList15.add_0((f_MaterialLink35 = new MaterialLink , $setHref(f_MaterialLink35, '#' + $encodeHistoryToken('!scrollspy')) , f_MaterialLink35.span_0.setText('Scrollspy') , $add_12(f_MaterialLink35, f_MaterialLink35.span_0) , $setTextColor((!f_MaterialLink35.colorsMixin && (f_MaterialLink35.colorsMixin = new ColorsMixin(f_MaterialLink35)) , f_MaterialLink35.colorsMixin), 'blue') , $setWaves(f_MaterialLink35, DEFAULT_6) , f_MaterialLink35));
-  f_UnorderedList15.add_0((f_MaterialLink36 = new MaterialLink , $setHref(f_MaterialLink36, '#' + $encodeHistoryToken('!tabs')) , f_MaterialLink36.span_0.setText('Tabs') , $add_12(f_MaterialLink36, f_MaterialLink36.span_0) , $setTextColor((!f_MaterialLink36.colorsMixin && (f_MaterialLink36.colorsMixin = new ColorsMixin(f_MaterialLink36)) , f_MaterialLink36.colorsMixin), 'blue') , $setWaves(f_MaterialLink36, DEFAULT_6) , f_MaterialLink36));
-  f_UnorderedList15.add_0((f_MaterialLink37 = new MaterialLink , $setHref(f_MaterialLink37, '#' + $encodeHistoryToken('!transitions')) , f_MaterialLink37.span_0.setText('Transitions') , $add_12(f_MaterialLink37, f_MaterialLink37.span_0) , $setTextColor((!f_MaterialLink37.colorsMixin && (f_MaterialLink37.colorsMixin = new ColorsMixin(f_MaterialLink37)) , f_MaterialLink37.colorsMixin), 'blue') , $setWaves(f_MaterialLink37, DEFAULT_6) , f_MaterialLink37));
+  f_UnorderedList15.add_0((f_MaterialLink16 = new MaterialLink , $setHref(f_MaterialLink16, ($clinit_History() , '#' + $encodeHistoryToken('!autocomplete'))) , f_MaterialLink16.span_0.setText('Autocomplete') , $add_13(f_MaterialLink16, f_MaterialLink16.span_0) , $setTextColor((!f_MaterialLink16.colorsMixin && (f_MaterialLink16.colorsMixin = new ColorsMixin(f_MaterialLink16)) , f_MaterialLink16.colorsMixin), 'blue') , $setWaves(f_MaterialLink16, ($clinit_WavesType() , DEFAULT_6)) , f_MaterialLink16));
+  f_UnorderedList15.add_0((f_MaterialLink17 = new MaterialLink , $setHref(f_MaterialLink17, '#' + $encodeHistoryToken('!badges')) , f_MaterialLink17.span_0.setText('Badges') , $add_13(f_MaterialLink17, f_MaterialLink17.span_0) , $setTextColor((!f_MaterialLink17.colorsMixin && (f_MaterialLink17.colorsMixin = new ColorsMixin(f_MaterialLink17)) , f_MaterialLink17.colorsMixin), 'blue') , $setWaves(f_MaterialLink17, DEFAULT_6) , f_MaterialLink17));
+  f_UnorderedList15.add_0((f_MaterialLink18 = new MaterialLink , $setHref(f_MaterialLink18, '#' + $encodeHistoryToken('!buttons')) , f_MaterialLink18.span_0.setText('Buttons') , $add_13(f_MaterialLink18, f_MaterialLink18.span_0) , $setTextColor((!f_MaterialLink18.colorsMixin && (f_MaterialLink18.colorsMixin = new ColorsMixin(f_MaterialLink18)) , f_MaterialLink18.colorsMixin), 'blue') , $setWaves(f_MaterialLink18, DEFAULT_6) , f_MaterialLink18));
+  f_UnorderedList15.add_0((f_MaterialLink19 = new MaterialLink , $setHref(f_MaterialLink19, '#' + $encodeHistoryToken('!cards')) , f_MaterialLink19.span_0.setText('Cards') , $add_13(f_MaterialLink19, f_MaterialLink19.span_0) , $setTextColor((!f_MaterialLink19.colorsMixin && (f_MaterialLink19.colorsMixin = new ColorsMixin(f_MaterialLink19)) , f_MaterialLink19.colorsMixin), 'blue') , $setWaves(f_MaterialLink19, DEFAULT_6) , f_MaterialLink19));
+  f_UnorderedList15.add_0((f_MaterialLink20 = new MaterialLink , $setHref(f_MaterialLink20, '#' + $encodeHistoryToken('!chips')) , f_MaterialLink20.span_0.setText('Chips') , $add_13(f_MaterialLink20, f_MaterialLink20.span_0) , $setTextColor((!f_MaterialLink20.colorsMixin && (f_MaterialLink20.colorsMixin = new ColorsMixin(f_MaterialLink20)) , f_MaterialLink20.colorsMixin), 'blue') , $setWaves(f_MaterialLink20, DEFAULT_6) , f_MaterialLink20));
+  f_UnorderedList15.add_0((f_MaterialLink21 = new MaterialLink , $setHref(f_MaterialLink21, '#' + $encodeHistoryToken('!collapsible')) , f_MaterialLink21.span_0.setText('Collapsible') , $add_13(f_MaterialLink21, f_MaterialLink21.span_0) , $setTextColor((!f_MaterialLink21.colorsMixin && (f_MaterialLink21.colorsMixin = new ColorsMixin(f_MaterialLink21)) , f_MaterialLink21.colorsMixin), 'blue') , $setWaves(f_MaterialLink21, DEFAULT_6) , f_MaterialLink21));
+  f_UnorderedList15.add_0((f_MaterialLink22 = new MaterialLink , $setHref(f_MaterialLink22, '#' + $encodeHistoryToken('!collections')) , f_MaterialLink22.span_0.setText('Collections') , $add_13(f_MaterialLink22, f_MaterialLink22.span_0) , $setTextColor((!f_MaterialLink22.colorsMixin && (f_MaterialLink22.colorsMixin = new ColorsMixin(f_MaterialLink22)) , f_MaterialLink22.colorsMixin), 'blue') , $setWaves(f_MaterialLink22, DEFAULT_6) , f_MaterialLink22));
+  f_UnorderedList15.add_0((f_MaterialLink23 = new MaterialLink , $setHref(f_MaterialLink23, '#' + $encodeHistoryToken('!datagrid')) , f_MaterialLink23.span_0.setText('Datagrid') , $add_13(f_MaterialLink23, f_MaterialLink23.span_0) , $setTextColor((!f_MaterialLink23.colorsMixin && (f_MaterialLink23.colorsMixin = new ColorsMixin(f_MaterialLink23)) , f_MaterialLink23.colorsMixin), 'blue') , $setWaves(f_MaterialLink23, DEFAULT_6) , f_MaterialLink23));
+  f_UnorderedList15.add_0((f_MaterialLink24 = new MaterialLink , $setHref(f_MaterialLink24, '#' + $encodeHistoryToken('!dialogs')) , f_MaterialLink24.span_0.setText('Dialogs') , $add_13(f_MaterialLink24, f_MaterialLink24.span_0) , $setTextColor((!f_MaterialLink24.colorsMixin && (f_MaterialLink24.colorsMixin = new ColorsMixin(f_MaterialLink24)) , f_MaterialLink24.colorsMixin), 'blue') , $setWaves(f_MaterialLink24, DEFAULT_6) , f_MaterialLink24));
+  f_UnorderedList15.add_0((f_MaterialLink25 = new MaterialLink , $setHref(f_MaterialLink25, '#' + $encodeHistoryToken('!dropdown')) , f_MaterialLink25.span_0.setText('Dropdown') , $add_13(f_MaterialLink25, f_MaterialLink25.span_0) , $setTextColor((!f_MaterialLink25.colorsMixin && (f_MaterialLink25.colorsMixin = new ColorsMixin(f_MaterialLink25)) , f_MaterialLink25.colorsMixin), 'blue') , $setWaves(f_MaterialLink25, DEFAULT_6) , f_MaterialLink25));
+  f_UnorderedList15.add_0((f_MaterialLink26 = new MaterialLink , $setHref(f_MaterialLink26, '#' + $encodeHistoryToken('!errors')) , f_MaterialLink26.span_0.setText('Errors') , $add_13(f_MaterialLink26, f_MaterialLink26.span_0) , $setTextColor((!f_MaterialLink26.colorsMixin && (f_MaterialLink26.colorsMixin = new ColorsMixin(f_MaterialLink26)) , f_MaterialLink26.colorsMixin), 'blue') , $setWaves(f_MaterialLink26, DEFAULT_6) , f_MaterialLink26));
+  f_UnorderedList15.add_0((f_MaterialLink27 = new MaterialLink , $setHref(f_MaterialLink27, '#' + $encodeHistoryToken('!forms')) , f_MaterialLink27.span_0.setText('Forms') , $add_13(f_MaterialLink27, f_MaterialLink27.span_0) , $setTextColor((!f_MaterialLink27.colorsMixin && (f_MaterialLink27.colorsMixin = new ColorsMixin(f_MaterialLink27)) , f_MaterialLink27.colorsMixin), 'blue') , $setWaves(f_MaterialLink27, DEFAULT_6) , f_MaterialLink27));
+  f_UnorderedList15.add_0((f_MaterialLink28 = new MaterialLink , $setHref(f_MaterialLink28, '#' + $encodeHistoryToken('fabs')) , f_MaterialLink28.span_0.setText('FAB') , $add_13(f_MaterialLink28, f_MaterialLink28.span_0) , $setTextColor((!f_MaterialLink28.colorsMixin && (f_MaterialLink28.colorsMixin = new ColorsMixin(f_MaterialLink28)) , f_MaterialLink28.colorsMixin), 'blue') , $setWaves(f_MaterialLink28, DEFAULT_6) , f_MaterialLink28));
+  f_UnorderedList15.add_0((f_MaterialLink29 = new MaterialLink , $setHref(f_MaterialLink29, '#' + $encodeHistoryToken('!footer')) , f_MaterialLink29.span_0.setText('Footer') , $add_13(f_MaterialLink29, f_MaterialLink29.span_0) , $setTextColor((!f_MaterialLink29.colorsMixin && (f_MaterialLink29.colorsMixin = new ColorsMixin(f_MaterialLink29)) , f_MaterialLink29.colorsMixin), 'blue') , $setWaves(f_MaterialLink29, DEFAULT_6) , f_MaterialLink29));
+  f_UnorderedList15.add_0((f_MaterialLink30 = new MaterialLink , $setHref(f_MaterialLink30, '#' + $encodeHistoryToken('!loader')) , f_MaterialLink30.span_0.setText('Loaders') , $add_13(f_MaterialLink30, f_MaterialLink30.span_0) , $setTextColor((!f_MaterialLink30.colorsMixin && (f_MaterialLink30.colorsMixin = new ColorsMixin(f_MaterialLink30)) , f_MaterialLink30.colorsMixin), 'blue') , $setWaves(f_MaterialLink30, DEFAULT_6) , f_MaterialLink30));
+  f_UnorderedList15.add_0((f_MaterialLink31 = new MaterialLink , $setHref(f_MaterialLink31, '#' + $encodeHistoryToken('!media')) , f_MaterialLink31.span_0.setText('Media') , $add_13(f_MaterialLink31, f_MaterialLink31.span_0) , $setTextColor((!f_MaterialLink31.colorsMixin && (f_MaterialLink31.colorsMixin = new ColorsMixin(f_MaterialLink31)) , f_MaterialLink31.colorsMixin), 'blue') , $setWaves(f_MaterialLink31, DEFAULT_6) , f_MaterialLink31));
+  f_UnorderedList15.add_0((f_MaterialLink32 = new MaterialLink , $setHref(f_MaterialLink32, '#' + $encodeHistoryToken('!navbar')) , f_MaterialLink32.span_0.setText('NavBar') , $add_13(f_MaterialLink32, f_MaterialLink32.span_0) , $setTextColor((!f_MaterialLink32.colorsMixin && (f_MaterialLink32.colorsMixin = new ColorsMixin(f_MaterialLink32)) , f_MaterialLink32.colorsMixin), 'blue') , $setWaves(f_MaterialLink32, DEFAULT_6) , f_MaterialLink32));
+  f_UnorderedList15.add_0((f_MaterialLink33 = new MaterialLink , $setHref(f_MaterialLink33, '#' + $encodeHistoryToken('!pickers')) , f_MaterialLink33.span_0.setText('Date Picker') , $add_13(f_MaterialLink33, f_MaterialLink33.span_0) , $setTextColor((!f_MaterialLink33.colorsMixin && (f_MaterialLink33.colorsMixin = new ColorsMixin(f_MaterialLink33)) , f_MaterialLink33.colorsMixin), 'blue') , $setWaves(f_MaterialLink33, DEFAULT_6) , f_MaterialLink33));
+  f_UnorderedList15.add_0((f_MaterialLink34 = new MaterialLink , $setHref(f_MaterialLink34, '#' + $encodeHistoryToken('!sidenavs')) , f_MaterialLink34.span_0.setText('SideNavs') , $add_13(f_MaterialLink34, f_MaterialLink34.span_0) , $setTextColor((!f_MaterialLink34.colorsMixin && (f_MaterialLink34.colorsMixin = new ColorsMixin(f_MaterialLink34)) , f_MaterialLink34.colorsMixin), 'blue') , $setWaves(f_MaterialLink34, DEFAULT_6) , f_MaterialLink34));
+  f_UnorderedList15.add_0((f_MaterialLink35 = new MaterialLink , $setHref(f_MaterialLink35, '#' + $encodeHistoryToken('!scrollspy')) , f_MaterialLink35.span_0.setText('Scrollspy') , $add_13(f_MaterialLink35, f_MaterialLink35.span_0) , $setTextColor((!f_MaterialLink35.colorsMixin && (f_MaterialLink35.colorsMixin = new ColorsMixin(f_MaterialLink35)) , f_MaterialLink35.colorsMixin), 'blue') , $setWaves(f_MaterialLink35, DEFAULT_6) , f_MaterialLink35));
+  f_UnorderedList15.add_0((f_MaterialLink36 = new MaterialLink , $setHref(f_MaterialLink36, '#' + $encodeHistoryToken('!tabs')) , f_MaterialLink36.span_0.setText('Tabs') , $add_13(f_MaterialLink36, f_MaterialLink36.span_0) , $setTextColor((!f_MaterialLink36.colorsMixin && (f_MaterialLink36.colorsMixin = new ColorsMixin(f_MaterialLink36)) , f_MaterialLink36.colorsMixin), 'blue') , $setWaves(f_MaterialLink36, DEFAULT_6) , f_MaterialLink36));
+  f_UnorderedList15.add_0((f_MaterialLink37 = new MaterialLink , $setHref(f_MaterialLink37, '#' + $encodeHistoryToken('!transitions')) , f_MaterialLink37.span_0.setText('Transitions') , $add_13(f_MaterialLink37, f_MaterialLink37.span_0) , $setTextColor((!f_MaterialLink37.colorsMixin && (f_MaterialLink37.colorsMixin = new ColorsMixin(f_MaterialLink37)) , f_MaterialLink37.colorsMixin), 'blue') , $setWaves(f_MaterialLink37, DEFAULT_6) , f_MaterialLink37));
   return f_UnorderedList15;
 }
 
@@ -12027,14 +11987,14 @@ function ApplicationView_BinderImpl$Widgets(owner){
   this.domId2Element = new LazyDomElement(this.domId2);
 }
 
-defineClass(859, 1, {}, ApplicationView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl/Widgets', 859);
+defineClass(855, 1, {}, ApplicationView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl/Widgets', 855);
 function ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1160, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1157, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_2;
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1160);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1157);
 function $ensureInjected_7(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -12048,13 +12008,13 @@ function $ensureInjected_7(this$static){
 function ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1161, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1158, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_15(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1161);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1158);
 function $clinit_ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_2 = new ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -12087,7 +12047,7 @@ function AboutPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(555, 55, $intern_39, AboutPresenter);
+defineClass(555, 55, $intern_42, AboutPresenter);
 _.onReveal = function onReveal_1(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('GWT Material', 'A Material Design look and feel for GWT Apps plus Phonegap.'));
@@ -12097,10 +12057,10 @@ var Lgwt_material_design_demo_client_application_about_AboutPresenter_2_classLit
 function AboutPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(603, 64, $intern_53, AboutPresenterMyProxyImpl);
+defineClass(603, 64, $intern_56, AboutPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_0(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12122,7 +12082,7 @@ function $delayedBind(this$static, baseGinjector){
 function AboutPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(604, $intern_44, $intern_52, AboutPresenterMyProxyImpl$WrappedProxy);
+defineClass(604, $intern_47, $intern_55, AboutPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_1(baseGinjector){
   $delayedBind(this, baseGinjector);
 }
@@ -12133,23 +12093,23 @@ function AboutView(){
   $initWidget_0(this, $build_f_HTMLPanel1_0(new AboutView_BinderImpl$Widgets));
 }
 
-defineClass(698, 60, $intern_40, AboutView);
+defineClass(698, 60, $intern_43, AboutView);
 var Lgwt_material_design_demo_client_application_about_AboutView_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView', 698);
 function AboutView_BinderImpl(){
 }
 
-defineClass(860, 1, {}, AboutView_BinderImpl);
-var Lgwt_material_design_demo_client_application_about_AboutView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView_BinderImpl', 860);
+defineClass(856, 1, {}, AboutView_BinderImpl);
+var Lgwt_material_design_demo_client_application_about_AboutView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView_BinderImpl', 856);
 function $build_f_HTMLPanel1_0(this$static){
   var __attachRecord__, f_HTMLPanel1, f_MaterialRow2, f_MaterialRow5, f_MaterialImage3, f_MaterialTitle4, f_MaterialColumn6, f_MaterialImage7, f_MaterialTitle8, f_MaterialColumn9, f_MaterialImage10, f_MaterialTitle11, f_MaterialColumn12, f_MaterialImage13, f_MaterialTitle14;
   f_HTMLPanel1 = new HTMLPanel($html1_1(this$static.domId0, this$static.domId1).html);
-  setStyleName(f_HTMLPanel1.element, 'center-align', true);
+  setStyleName(($clinit_DOM() , f_HTMLPanel1.element), 'center-align', true);
   __attachRecord__ = attachToDom(f_HTMLPanel1.element);
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow2 = new MaterialRow , $add_12(f_MaterialRow2, (f_MaterialImage3 = new MaterialImage , $setResource(f_MaterialImage3, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_frontInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator_0() , ic_front)) , f_MaterialImage3)) , $add_12(f_MaterialRow2, (f_MaterialTitle4 = new MaterialTitle , $setInnerHTML(f_MaterialTitle4.header.element, 'What is Material Design?') , $setText_4(f_MaterialTitle4.paragraph, "Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.") , f_MaterialTitle4)) , f_MaterialRow2), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow5 = new MaterialRow , $add_12(f_MaterialRow5, (f_MaterialColumn6 = new MaterialColumn , $add_12(f_MaterialColumn6, (f_MaterialImage7 = new MaterialImage , $setResource(f_MaterialImage7, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_metaphorInitializer() , ic_metaphor)) , f_MaterialImage7)) , $add_12(f_MaterialColumn6, (f_MaterialTitle8 = new MaterialTitle , $setInnerHTML(f_MaterialTitle8.header.element, 'Material is the metaphor') , $setText_4(f_MaterialTitle8.paragraph, 'The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.') , f_MaterialTitle8)) , $setGrid((!f_MaterialColumn6.gridMixin && (f_MaterialColumn6.gridMixin = new GridMixin(f_MaterialColumn6)) , f_MaterialColumn6.gridMixin), 's12 m4') , f_MaterialColumn6)) , $add_12(f_MaterialRow5, (f_MaterialColumn9 = new MaterialColumn , $add_12(f_MaterialColumn9, (f_MaterialImage10 = new MaterialImage , $setResource(f_MaterialImage10, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_boldInitializer() , ic_bold)) , f_MaterialImage10)) , $add_12(f_MaterialColumn9, (f_MaterialTitle11 = new MaterialTitle , $setInnerHTML(f_MaterialTitle11.header.element, 'Bold, graphic, intentional') , $setText_4(f_MaterialTitle11.paragraph, 'Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.') , f_MaterialTitle11)) , $setGrid((!f_MaterialColumn9.gridMixin && (f_MaterialColumn9.gridMixin = new GridMixin(f_MaterialColumn9)) , f_MaterialColumn9.gridMixin), 's12 m4') , f_MaterialColumn9)) , $add_12(f_MaterialRow5, (f_MaterialColumn12 = new MaterialColumn , $add_12(f_MaterialColumn12, (f_MaterialImage13 = new MaterialImage , $setResource(f_MaterialImage13, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_motionInitializer() , ic_motion)) , f_MaterialImage13)) , $add_12(f_MaterialColumn12, (f_MaterialTitle14 = new MaterialTitle , $setInnerHTML(f_MaterialTitle14.header.element, 'Motion provides meaning') , $setText_4(f_MaterialTitle14.paragraph, 'Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.') , f_MaterialTitle14)) , $setGrid((!f_MaterialColumn12.gridMixin && (f_MaterialColumn12.gridMixin = new GridMixin(f_MaterialColumn12)) , f_MaterialColumn12.gridMixin), 's12 m4') , f_MaterialColumn12)) , f_MaterialRow5), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow2 = new MaterialRow , $add_13(f_MaterialRow2, (f_MaterialImage3 = new MaterialImage , $setResource(f_MaterialImage3, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_frontInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator_0() , ic_front)) , f_MaterialImage3)) , $add_13(f_MaterialRow2, (f_MaterialTitle4 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle4.header), 'What is Material Design?') , $setText_4(f_MaterialTitle4.paragraph, "Created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.") , f_MaterialTitle4)) , f_MaterialRow2), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow5 = new MaterialRow , $add_13(f_MaterialRow5, (f_MaterialColumn6 = new MaterialColumn , $add_13(f_MaterialColumn6, (f_MaterialImage7 = new MaterialImage , $setResource(f_MaterialImage7, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_metaphorInitializer() , ic_metaphor)) , f_MaterialImage7)) , $add_13(f_MaterialColumn6, (f_MaterialTitle8 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle8.header), 'Material is the metaphor') , $setText_4(f_MaterialTitle8.paragraph, 'The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.') , f_MaterialTitle8)) , $setGrid((!f_MaterialColumn6.gridMixin && (f_MaterialColumn6.gridMixin = new GridMixin(f_MaterialColumn6)) , f_MaterialColumn6.gridMixin), 's12 m4') , f_MaterialColumn6)) , $add_13(f_MaterialRow5, (f_MaterialColumn9 = new MaterialColumn , $add_13(f_MaterialColumn9, (f_MaterialImage10 = new MaterialImage , $setResource(f_MaterialImage10, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_boldInitializer() , ic_bold)) , f_MaterialImage10)) , $add_13(f_MaterialColumn9, (f_MaterialTitle11 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle11.header), 'Bold, graphic, intentional') , $setText_4(f_MaterialTitle11.paragraph, 'Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.') , f_MaterialTitle11)) , $setGrid((!f_MaterialColumn9.gridMixin && (f_MaterialColumn9.gridMixin = new GridMixin(f_MaterialColumn9)) , f_MaterialColumn9.gridMixin), 's12 m4') , f_MaterialColumn9)) , $add_13(f_MaterialRow5, (f_MaterialColumn12 = new MaterialColumn , $add_13(f_MaterialColumn12, (f_MaterialImage13 = new MaterialImage , $setResource(f_MaterialImage13, ($clinit_MaterialResources_default_InlineClientBundleGenerator$ic_motionInitializer() , ic_motion)) , f_MaterialImage13)) , $add_13(f_MaterialColumn12, (f_MaterialTitle14 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle14.header), 'Motion provides meaning') , $setText_4(f_MaterialTitle14.paragraph, 'Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.') , f_MaterialTitle14)) , $setGrid((!f_MaterialColumn12.gridMixin && (f_MaterialColumn12.gridMixin = new GridMixin(f_MaterialColumn12)) , f_MaterialColumn12.gridMixin), 's12 m4') , f_MaterialColumn12)) , f_MaterialRow5), $get_0(this$static.domId1Element));
   return f_HTMLPanel1;
 }
 
@@ -12161,8 +12121,8 @@ function AboutView_BinderImpl$Widgets(){
   this.domId1Element = new LazyDomElement(this.domId1);
 }
 
-defineClass(861, 1, {}, AboutView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_about_AboutView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView_BinderImpl/Widgets', 861);
+defineClass(857, 1, {}, AboutView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_about_AboutView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView_BinderImpl/Widgets', 857);
 function $html1_1(arg0, arg1){
   var sb;
   sb = new StringBuilder;
@@ -12237,10 +12197,10 @@ var SLOT_CUTOUTS;
 function CutOutsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(610, 64, $intern_53, CutOutsPresenterMyProxyImpl);
+defineClass(610, 64, $intern_56, CutOutsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_2(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12265,7 +12225,7 @@ function $delayedBind_0(this$static, baseGinjector){
 function CutOutsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(611, $intern_44, $intern_52, CutOutsPresenterMyProxyImpl$WrappedProxy);
+defineClass(611, $intern_47, $intern_55, CutOutsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_3(baseGinjector){
   $delayedBind_0(this, baseGinjector);
 }
@@ -12310,7 +12270,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(479, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1);
+defineClass(479, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1);
 _.onFailure_0 = function onFailure_0(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12326,10 +12286,10 @@ var SLOT_PATHANIMATOR;
 function PathAnimatorPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(612, 64, $intern_53, PathAnimatorPresenterMyProxyImpl);
+defineClass(612, 64, $intern_56, PathAnimatorPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_4(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12354,7 +12314,7 @@ function $delayedBind_1(this$static, baseGinjector){
 function PathAnimatorPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(613, $intern_44, $intern_52, PathAnimatorPresenterMyProxyImpl$WrappedProxy);
+defineClass(613, $intern_47, $intern_55, PathAnimatorPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_5(baseGinjector){
   $delayedBind_1(this, baseGinjector);
 }
@@ -12399,7 +12359,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(481, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_0);
+defineClass(481, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_0);
 _.onFailure_0 = function onFailure_1(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12415,10 +12375,10 @@ var SLOT_STEPPERS;
 function SteppersPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(614, 64, $intern_53, SteppersPresenterMyProxyImpl);
+defineClass(614, 64, $intern_56, SteppersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_6(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12443,7 +12403,7 @@ function $delayedBind_2(this$static, baseGinjector){
 function SteppersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(615, $intern_44, $intern_52, SteppersPresenterMyProxyImpl$WrappedProxy);
+defineClass(615, $intern_47, $intern_55, SteppersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_7(baseGinjector){
   $delayedBind_2(this, baseGinjector);
 }
@@ -12488,7 +12448,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(483, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_1);
+defineClass(483, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_1);
 _.onFailure_0 = function onFailure_2(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12504,10 +12464,10 @@ var SLOT_SUBHEADERS;
 function SubHeadersPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(616, 64, $intern_53, SubHeadersPresenterMyProxyImpl);
+defineClass(616, 64, $intern_56, SubHeadersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_8(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12532,7 +12492,7 @@ function $delayedBind_3(this$static, baseGinjector){
 function SubHeadersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(617, $intern_44, $intern_52, SubHeadersPresenterMyProxyImpl$WrappedProxy);
+defineClass(617, $intern_47, $intern_55, SubHeadersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_9(baseGinjector){
   $delayedBind_3(this, baseGinjector);
 }
@@ -12577,7 +12537,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(485, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_2);
+defineClass(485, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_2);
 _.onFailure_0 = function onFailure_3(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12593,10 +12553,10 @@ var SLOT_TIMEPICKERS;
 function TimePickersPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(618, 64, $intern_53, TimePickersPresenterMyProxyImpl);
+defineClass(618, 64, $intern_56, TimePickersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_10(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12621,7 +12581,7 @@ function $delayedBind_4(this$static, baseGinjector){
 function TimePickersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(619, $intern_44, $intern_52, TimePickersPresenterMyProxyImpl$WrappedProxy);
+defineClass(619, $intern_47, $intern_55, TimePickersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_11(baseGinjector){
   $delayedBind_4(this, baseGinjector);
 }
@@ -12666,7 +12626,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(487, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_3);
+defineClass(487, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_3);
 _.onFailure_0 = function onFailure_4(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12677,7 +12637,7 @@ function CoreAnimationsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(561, 55, $intern_39, CoreAnimationsPresenter);
+defineClass(561, 55, $intern_42, CoreAnimationsPresenter);
 _.onReveal = function onReveal_7(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Core Animations', 'We used AnimateCSS to built our core animations.'));
@@ -12687,10 +12647,10 @@ var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsP
 function CoreAnimationsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(620, 64, $intern_53, CoreAnimationsPresenterMyProxyImpl);
+defineClass(620, 64, $intern_56, CoreAnimationsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_12(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12712,7 +12672,7 @@ function $delayedBind_5(this$static, baseGinjector){
 function CoreAnimationsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(621, $intern_44, $intern_52, CoreAnimationsPresenterMyProxyImpl$WrappedProxy);
+defineClass(621, $intern_47, $intern_55, CoreAnimationsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_13(baseGinjector){
   $delayedBind_5(this, baseGinjector);
 }
@@ -12730,18 +12690,18 @@ function CoreAnimationsView(){
   $initWidget_0(this, $build_f_MaterialPanel1_2(new CoreAnimationsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(707, 60, $intern_40, CoreAnimationsView);
+defineClass(707, 60, $intern_43, CoreAnimationsView);
 var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView', 707);
 function CoreAnimationsView_BinderImpl(){
 }
 
-defineClass(862, 1, {}, CoreAnimationsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl', 862);
+defineClass(858, 1, {}, CoreAnimationsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl', 858);
 function $build_f_MaterialPanel1_2(this$static){
   var f_MaterialPanel1, f_MaterialTitle2, f_MaterialRow3, f_MaterialColumn4, f_PrettyPre5, sb, card, f_MaterialCardContent6, f_MaterialCardTitle7, f_MaterialLabel8, f_MaterialCardAction9, f_MaterialLink10, f_MaterialLink11, btnAnimate;
   f_MaterialPanel1 = new MaterialPanel;
-  $add_12(f_MaterialPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML(f_MaterialTitle2.header.element, 'Usage') , $setText_4(f_MaterialTitle2.paragraph, 'You can easily apply animation by calling MaterialAnimator.animate(Transition, Widget, Delay);') , f_MaterialTitle2));
-  $add_12(f_MaterialPanel1, (f_MaterialRow3 = new MaterialRow , $add_12(f_MaterialRow3, (f_MaterialColumn4 = new MaterialColumn , $add_12(f_MaterialColumn4, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb = new StringBuilder , sb.string += 'MaterialAnimator.animate(Transition.BOUNCE, card, 300);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-java', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5)) , $add_12(f_MaterialColumn4, (card = new MaterialCard , $add_12(card, (f_MaterialCardContent6 = new MaterialCardContent , $add_12(f_MaterialCardContent6, (f_MaterialCardTitle7 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle7, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle7.span_0.setText('Sample') , $add_12(f_MaterialCardTitle7, f_MaterialCardTitle7.span_0) , $setIconType_0(f_MaterialCardTitle7, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle7)) , $add_12(f_MaterialCardContent6, (f_MaterialLabel8 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel8.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel8)) , $setTextColor((!f_MaterialCardContent6.colorsMixin && (f_MaterialCardContent6.colorsMixin = new ColorsMixin(f_MaterialCardContent6)) , f_MaterialCardContent6.colorsMixin), 'white') , f_MaterialCardContent6)) , $add_12(card, (f_MaterialCardAction9 = new MaterialCardAction , $add_12(f_MaterialCardAction9, (f_MaterialLink10 = new MaterialLink , f_MaterialLink10.span_0.setText('Link 1') , $add_12(f_MaterialLink10, f_MaterialLink10.span_0) , f_MaterialLink10)) , $add_12(f_MaterialCardAction9, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Link 1') , $add_12(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , f_MaterialCardAction9)) , $setBackgroundColor((!card.colorsMixin && (card.colorsMixin = new ColorsMixin(card)) , card.colorsMixin), 'blue') , this$static.owner.card = card , card)) , $add_12(f_MaterialColumn4, $build_lstAnimations(this$static)) , $add_12(f_MaterialColumn4, (btnAnimate = new MaterialButton , btnAnimate.span_0.setText('Animate') , $add_12(btnAnimate, btnAnimate.span_0) , $setTextColor((!btnAnimate.colorsMixin && (btnAnimate.colorsMixin = new ColorsMixin(btnAnimate)) , btnAnimate.colorsMixin), 'white') , $setBackgroundColor((!btnAnimate.colorsMixin && (btnAnimate.colorsMixin = new ColorsMixin(btnAnimate)) , btnAnimate.colorsMixin), 'blue') , $addDomHandler(btnAnimate, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnAnimate)) , $setGrid((!f_MaterialColumn4.gridMixin && (f_MaterialColumn4.gridMixin = new GridMixin(f_MaterialColumn4)) , f_MaterialColumn4.gridMixin), 's12 l6') , f_MaterialColumn4)) , f_MaterialRow3));
+  $add_13(f_MaterialPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle2.header), 'Usage') , $setText_4(f_MaterialTitle2.paragraph, 'You can easily apply animation by calling MaterialAnimator.animate(Transition, Widget, Delay);') , f_MaterialTitle2));
+  $add_13(f_MaterialPanel1, (f_MaterialRow3 = new MaterialRow , $add_13(f_MaterialRow3, (f_MaterialColumn4 = new MaterialColumn , $add_13(f_MaterialColumn4, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb = new StringBuilder , sb.string += 'MaterialAnimator.animate(Transition.BOUNCE, card, 300);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(($clinit_DOM() , f_PrettyPre5.element), 'lang-java', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5)) , $add_13(f_MaterialColumn4, (card = new MaterialCard , $add_13(card, (f_MaterialCardContent6 = new MaterialCardContent , $add_13(f_MaterialCardContent6, (f_MaterialCardTitle7 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle7, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle7.span_0.setText('Sample') , $add_13(f_MaterialCardTitle7, f_MaterialCardTitle7.span_0) , $setIconType_0(f_MaterialCardTitle7, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle7)) , $add_13(f_MaterialCardContent6, (f_MaterialLabel8 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel8.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel8)) , $setTextColor((!f_MaterialCardContent6.colorsMixin && (f_MaterialCardContent6.colorsMixin = new ColorsMixin(f_MaterialCardContent6)) , f_MaterialCardContent6.colorsMixin), 'white') , f_MaterialCardContent6)) , $add_13(card, (f_MaterialCardAction9 = new MaterialCardAction , $add_13(f_MaterialCardAction9, (f_MaterialLink10 = new MaterialLink , f_MaterialLink10.span_0.setText('Link 1') , $add_13(f_MaterialLink10, f_MaterialLink10.span_0) , f_MaterialLink10)) , $add_13(f_MaterialCardAction9, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Link 1') , $add_13(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , f_MaterialCardAction9)) , $setBackgroundColor((!card.colorsMixin && (card.colorsMixin = new ColorsMixin(card)) , card.colorsMixin), 'blue') , this$static.owner.card = card , card)) , $add_13(f_MaterialColumn4, $build_lstAnimations(this$static)) , $add_13(f_MaterialColumn4, (btnAnimate = new MaterialButton , btnAnimate.span_0.setText('Animate') , $add_13(btnAnimate, btnAnimate.span_0) , $setTextColor((!btnAnimate.colorsMixin && (btnAnimate.colorsMixin = new ColorsMixin(btnAnimate)) , btnAnimate.colorsMixin), 'white') , $setBackgroundColor((!btnAnimate.colorsMixin && (btnAnimate.colorsMixin = new ColorsMixin(btnAnimate)) , btnAnimate.colorsMixin), 'blue') , $addDomHandler(btnAnimate, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnAnimate)) , $setGrid((!f_MaterialColumn4.gridMixin && (f_MaterialColumn4.gridMixin = new GridMixin(f_MaterialColumn4)) , f_MaterialColumn4.gridMixin), 's12 l6') , f_MaterialColumn4)) , f_MaterialRow3));
   return f_MaterialPanel1;
 }
 
@@ -12749,305 +12709,305 @@ function $build_lstAnimations(this$static){
   var lstAnimations;
   lstAnimations = new MaterialListBox;
   $insertItem(lstAnimations, 'bounce', 'bounce', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'flash', 'flash', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'pulse', 'pulse', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rubberBand', 'rubberBand', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'shake', 'shake', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'headShake', 'headShake', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'swing', 'swing', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'tada', 'tada', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'wobble', 'wobble', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'jello', 'jello', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceIn', 'bounceIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceInDown', 'bounceInDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceInLeft', 'bounceInLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceInRight', 'bounceInRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceInUp', 'bounceInUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceOut', 'bounceOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceOutDown', 'bounceOutDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceOutLeft', 'bounceOutLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceOutRight', 'bounceOutRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'bounceOutUp', 'bounceOutUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeIn', 'fadeIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInDown', 'fadeInDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInDownBig', 'fadeInDownBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInLeft', 'fadeInLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInLeftBig', 'fadeInLeftBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInRight', 'fadeInRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInRightBig', 'fadeInRightBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInUp', 'fadeInUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeInUpBig', 'fadeInUpBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOut', 'fadeOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutDown', 'fadeOutDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutDownBig', 'fadeOutDownBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutLeft', 'fadeOutLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutLeftBig', 'fadeOutLeftBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutRight', 'fadeOutRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutRightBig', 'fadeOutRightBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutUp', 'fadeOutUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'fadeOutUpBig', 'fadeOutUpBig', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'flipInX', 'flipInX', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'flipInY', 'flipInY', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'flipOutX', 'flipOutX', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'flipOutY', 'flipOutY', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'lightSpeedIn', 'lightSpeedIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'lightSpeedOut', 'lightSpeedOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateIn', 'rotateIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateInDownLeft', 'rotateInDownLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateInDownRight', 'rotateInDownRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateInUpLeft', 'rotateInUpLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateInUpRight', 'rotateInUpRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateOut', 'rotateOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateOutDownLeft', 'rotateOutDownLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateOutDownRight', 'rotateOutDownRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateOutUpLeft', 'rotateOutUpLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rotateOutUpRight', 'rotateOutUpRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'hinge', 'hinge', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rollIn', 'rollIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'rollOut', 'rollOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomIn', 'zoomIn', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomInDown', 'zoomInDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomInLeft', 'zoomInLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomInRight', 'zoomInRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomInUp', 'zoomInUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomOut', 'zoomOut', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomOutDown', 'zoomOutDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomOutLeft', 'zoomOutLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomOutRight', 'zoomOutRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'zoomOutUp', 'zoomOutUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideInDown', 'slideInDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideInLeft', 'slideInLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideInRight', 'slideInRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideInUp', 'slideInUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideOutDown', 'slideOutDown', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideOutLeft', 'slideOutLeft', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideOutRight', 'slideOutRight', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $insertItem(lstAnimations, 'slideOutUp', 'slideOutUp', -1);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
-  $initializeMaterial(lstAnimations.idMixin.uiObject.element.id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
+  $initializeMaterial($getElement(lstAnimations.idMixin.uiObject).id);
   $setOn(lstAnimations.oldMixin, true);
   $addDomHandler(lstAnimations, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_ChangeEvent() , $clinit_ChangeEvent() , TYPE_0));
   this$static.owner.lstAnimations = lstAnimations;
@@ -13063,34 +13023,34 @@ function CoreAnimationsView_BinderImpl$Widgets(owner){
   $ensureInjected_10(style);
 }
 
-defineClass(863, 1, {}, CoreAnimationsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets', 863);
+defineClass(859, 1, {}, CoreAnimationsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets', 859);
 function CoreAnimationsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(864, 1, $intern_49, CoreAnimationsView_BinderImpl$Widgets$1);
+defineClass(860, 1, $intern_52, CoreAnimationsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_35(event_0){
   $animate(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets/1', 864);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets/1', 860);
 function CoreAnimationsView_BinderImpl$Widgets$2(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(865, 1, $intern_55, CoreAnimationsView_BinderImpl$Widgets$2);
+defineClass(861, 1, $intern_58, CoreAnimationsView_BinderImpl$Widgets$2);
 _.onChange = function onChange_0(event_0){
   $animate(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets/2', 865);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl/Widgets/2', 861);
 function CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1166, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1163, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_5;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1166);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1163);
 function $ensureInjected_10(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -13105,13 +13065,13 @@ function $ensureInjected_10(this$static){
 function CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1167, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1164, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_18(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1167);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1164);
 function $clinit_CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_5 = new CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -13175,7 +13135,7 @@ function MeaningfulAnimationsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(562, 55, $intern_39, MeaningfulAnimationsPresenter);
+defineClass(562, 55, $intern_42, MeaningfulAnimationsPresenter);
 _.onReveal = function onReveal_8(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Meaningful Animations', 'Motion design can effectively guide the user\u2019s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy.'));
@@ -13185,10 +13145,10 @@ var Lgwt_material_design_demo_client_application_animations_meaningful_Meaningfu
 function MeaningfulAnimationsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(622, 64, $intern_53, MeaningfulAnimationsPresenterMyProxyImpl);
+defineClass(622, 64, $intern_56, MeaningfulAnimationsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_14(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13210,7 +13170,7 @@ function $delayedBind_6(this$static, baseGinjector){
 function MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(623, $intern_44, $intern_52, MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy);
+defineClass(623, $intern_47, $intern_55, MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_15(baseGinjector){
   $delayedBind_6(this, baseGinjector);
 }
@@ -13235,20 +13195,20 @@ function $onStaggered(this$static){
 function MeaningfulAnimationsView(){
   ViewImpl.call(this);
   $initWidget_0(this, $build_f_MaterialPanel1_3(new MeaningfulAnimationsView_BinderImpl$Widgets(this)));
-  $setOpacity(this.gridPanel.element.style, 0);
+  ($clinit_DOM() , this.gridPanel.element).style.opacity = 0;
 }
 
-defineClass(708, 60, $intern_40, MeaningfulAnimationsView);
+defineClass(708, 60, $intern_43, MeaningfulAnimationsView);
 var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView', 708);
 function MeaningfulAnimationsView_BinderImpl(){
 }
 
-defineClass(866, 1, {}, MeaningfulAnimationsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl', 866);
+defineClass(862, 1, {}, MeaningfulAnimationsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl', 862);
 function $build_f_HTMLPanel2(this$static){
   var __attachRecord__, f_HTMLPanel2, f_MaterialTitle3, f_PrettyPre4, f_PrettyPre5, btnShowGrid, btnCloseGrid, gridPanel, f_MaterialTitle118, btnStaggered, f_PrettyPre119, f_PrettyPre120, listContainer, f_MaterialTitle129, btnFade, f_PrettyPre130, f_PrettyPre131, image, sb, sb_0, f_MaterialCard6, f_MaterialCardContent7, f_MaterialCardAction10, f_MaterialCard13, f_MaterialCardContent14, f_MaterialCardAction17, f_MaterialCard20, f_MaterialCardContent21, f_MaterialCardAction24, f_MaterialCard27, f_MaterialCardContent28, f_MaterialCardAction31, f_MaterialCard34, f_MaterialCardContent35, f_MaterialCardAction38, f_MaterialCard41, f_MaterialCardContent42, f_MaterialCardAction45, f_MaterialCard48, f_MaterialCardContent49, f_MaterialCardAction52, f_MaterialCard55, f_MaterialCardContent56, f_MaterialCardAction59, f_MaterialCard62, f_MaterialCardContent63, f_MaterialCardAction66, f_MaterialCard69, f_MaterialCardContent70, f_MaterialCardAction73, f_MaterialCard76, f_MaterialCardContent77, f_MaterialCardAction80, f_MaterialCard83, f_MaterialCardContent84, f_MaterialCardAction87, f_MaterialCard90, f_MaterialCardContent91, f_MaterialCardAction94, f_MaterialCard97, f_MaterialCardContent98, f_MaterialCardAction101, f_MaterialCard104, f_MaterialCardContent105, f_MaterialCardAction108, f_MaterialCard111, f_MaterialCardContent112, f_MaterialCardAction115, sb_1, sb_2, f_ListItem121, f_MaterialTitle122, f_ListItem123, f_MaterialTitle124, f_ListItem125, f_MaterialTitle126, f_ListItem127, f_MaterialTitle128, sb_3, sb_4, f_MaterialCardTitle8, f_MaterialLabel9, f_MaterialLink11, f_MaterialLink12, f_MaterialCardTitle15, f_MaterialLabel16, f_MaterialLink18, f_MaterialLink19, f_MaterialCardTitle22, f_MaterialLabel23, f_MaterialLink25, f_MaterialLink26, f_MaterialCardTitle29, f_MaterialLabel30, f_MaterialLink32, f_MaterialLink33, f_MaterialCardTitle36, f_MaterialLabel37, f_MaterialLink39, f_MaterialLink40, f_MaterialCardTitle43, f_MaterialLabel44, f_MaterialLink46, f_MaterialLink47, f_MaterialCardTitle50, f_MaterialLabel51, f_MaterialLink53, f_MaterialLink54, f_MaterialCardTitle57, f_MaterialLabel58, f_MaterialLink60, f_MaterialLink61, f_MaterialCardTitle64, f_MaterialLabel65, f_MaterialLink67, f_MaterialLink68, f_MaterialCardTitle71, f_MaterialLabel72, f_MaterialLink74, f_MaterialLink75, f_MaterialCardTitle78, f_MaterialLabel79, f_MaterialLink81, f_MaterialLink82, f_MaterialCardTitle85, f_MaterialLabel86, f_MaterialLink88, f_MaterialLink89, f_MaterialCardTitle92, f_MaterialLabel93, f_MaterialLink95, f_MaterialLink96, f_MaterialCardTitle99, f_MaterialLabel100, f_MaterialLink102, f_MaterialLink103, f_MaterialCardTitle106, f_MaterialLabel107, f_MaterialLink109, f_MaterialLink110, f_MaterialCardTitle113, f_MaterialLabel114, f_MaterialLink116, f_MaterialLink117;
   f_HTMLPanel2 = new HTMLPanel($html7(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7, this$static.domId8, this$static.domId9, this$static.domId10, this$static.domId11, this$static.domId12, this$static.domId13, this$static.domId14, this$static.domId15).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel2.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel2.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -13266,29 +13226,29 @@ function $build_f_HTMLPanel2(this$static){
   $get_0(this$static.domId14Element);
   $get_0(this$static.domId15Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML(f_MaterialTitle3.header.element, 'Show Grid') , $setText_4(f_MaterialTitle3.paragraph, 'You can add a transition staggered reveal effect for any Unordered List material widget with List Items.') , f_MaterialTitle3), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre4 = new PrettyPre , $setHTML(f_PrettyPre4, (sb = new StringBuilder , sb.string += '\u2003@UiField MaterialRow rowCards;<br> MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre4.element, 'lang-java', true) , setStyleName(f_PrettyPre4.element, 'z-depth-1', true) , f_PrettyPre4), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (btnShowGrid = new MaterialButton , btnShowGrid.span_0.setText('Show Grid') , $add_12(btnShowGrid, btnShowGrid.span_0) , $setBackgroundColor((!btnShowGrid.colorsMixin && (btnShowGrid.colorsMixin = new ColorsMixin(btnShowGrid)) , btnShowGrid.colorsMixin), 'blue') , $setWaves(btnShowGrid, ($clinit_WavesType() , LIGHT)) , $addDomHandler(btnShowGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShowGrid), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (btnCloseGrid = new MaterialButton , btnCloseGrid.span_0.setText('Close Grid') , $add_12(btnCloseGrid, btnCloseGrid.span_0) , $setTextColor((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'black') , $setBackgroundColor((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'white') , $setWaves(btnCloseGrid, LIGHT) , $addDomHandler(btnCloseGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, (null , TYPE_1)) , btnCloseGrid), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (gridPanel = new MaterialRow , $add_12(gridPanel, (f_MaterialCard6 = new MaterialCard , $add_12(f_MaterialCard6, (f_MaterialCardContent7 = new MaterialCardContent , $add_12(f_MaterialCardContent7, (f_MaterialCardTitle8 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle8, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle8.span_0.setText('Sample') , $add_12(f_MaterialCardTitle8, f_MaterialCardTitle8.span_0) , $setIconType_0(f_MaterialCardTitle8, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle8)) , $add_12(f_MaterialCardContent7, (f_MaterialLabel9 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel9.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel9)) , $setTextColor((!f_MaterialCardContent7.colorsMixin && (f_MaterialCardContent7.colorsMixin = new ColorsMixin(f_MaterialCardContent7)) , f_MaterialCardContent7.colorsMixin), 'white') , f_MaterialCardContent7)) , $add_12(f_MaterialCard6, (f_MaterialCardAction10 = new MaterialCardAction , $add_12(f_MaterialCardAction10, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Link 1') , $add_12(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , $add_12(f_MaterialCardAction10, (f_MaterialLink12 = new MaterialLink , f_MaterialLink12.span_0.setText('Link 1') , $add_12(f_MaterialLink12, f_MaterialLink12.span_0) , f_MaterialLink12)) , f_MaterialCardAction10)) , $setBackgroundColor((!f_MaterialCard6.colorsMixin && (f_MaterialCard6.colorsMixin = new ColorsMixin(f_MaterialCard6)) , f_MaterialCard6.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard6, 'l2') , f_MaterialCard6)) , $add_12(gridPanel, (f_MaterialCard13 = new MaterialCard , $add_12(f_MaterialCard13, (f_MaterialCardContent14 = new MaterialCardContent , $add_12(f_MaterialCardContent14, (f_MaterialCardTitle15 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle15, RIGHT_5) , f_MaterialCardTitle15.span_0.setText('Sample') , $add_12(f_MaterialCardTitle15, f_MaterialCardTitle15.span_0) , $setIconType_0(f_MaterialCardTitle15, POLYMER) , f_MaterialCardTitle15)) , $add_12(f_MaterialCardContent14, (f_MaterialLabel16 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel16.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel16)) , $setTextColor((!f_MaterialCardContent14.colorsMixin && (f_MaterialCardContent14.colorsMixin = new ColorsMixin(f_MaterialCardContent14)) , f_MaterialCardContent14.colorsMixin), 'white') , f_MaterialCardContent14)) , $add_12(f_MaterialCard13, (f_MaterialCardAction17 = new MaterialCardAction , $add_12(f_MaterialCardAction17, (f_MaterialLink18 = new MaterialLink , f_MaterialLink18.span_0.setText('Link 1') , $add_12(f_MaterialLink18, f_MaterialLink18.span_0) , f_MaterialLink18)) , $add_12(f_MaterialCardAction17, (f_MaterialLink19 = new MaterialLink , f_MaterialLink19.span_0.setText('Link 1') , $add_12(f_MaterialLink19, f_MaterialLink19.span_0) , f_MaterialLink19)) , f_MaterialCardAction17)) , $setBackgroundColor((!f_MaterialCard13.colorsMixin && (f_MaterialCard13.colorsMixin = new ColorsMixin(f_MaterialCard13)) , f_MaterialCard13.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard13, 'l2') , f_MaterialCard13)) , $add_12(gridPanel, (f_MaterialCard20 = new MaterialCard , $add_12(f_MaterialCard20, (f_MaterialCardContent21 = new MaterialCardContent , $add_12(f_MaterialCardContent21, (f_MaterialCardTitle22 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle22, RIGHT_5) , f_MaterialCardTitle22.span_0.setText('Sample') , $add_12(f_MaterialCardTitle22, f_MaterialCardTitle22.span_0) , $setIconType_0(f_MaterialCardTitle22, POLYMER) , f_MaterialCardTitle22)) , $add_12(f_MaterialCardContent21, (f_MaterialLabel23 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel23.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel23)) , $setTextColor((!f_MaterialCardContent21.colorsMixin && (f_MaterialCardContent21.colorsMixin = new ColorsMixin(f_MaterialCardContent21)) , f_MaterialCardContent21.colorsMixin), 'white') , f_MaterialCardContent21)) , $add_12(f_MaterialCard20, (f_MaterialCardAction24 = new MaterialCardAction , $add_12(f_MaterialCardAction24, (f_MaterialLink25 = new MaterialLink , f_MaterialLink25.span_0.setText('Link 1') , $add_12(f_MaterialLink25, f_MaterialLink25.span_0) , f_MaterialLink25)) , $add_12(f_MaterialCardAction24, (f_MaterialLink26 = new MaterialLink , f_MaterialLink26.span_0.setText('Link 1') , $add_12(f_MaterialLink26, f_MaterialLink26.span_0) , f_MaterialLink26)) , f_MaterialCardAction24)) , $setBackgroundColor((!f_MaterialCard20.colorsMixin && (f_MaterialCard20.colorsMixin = new ColorsMixin(f_MaterialCard20)) , f_MaterialCard20.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard20, 'l2') , f_MaterialCard20)) , $add_12(gridPanel, (f_MaterialCard27 = new MaterialCard , $add_12(f_MaterialCard27, (f_MaterialCardContent28 = new MaterialCardContent , $add_12(f_MaterialCardContent28, (f_MaterialCardTitle29 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle29, RIGHT_5) , f_MaterialCardTitle29.span_0.setText('Sample') , $add_12(f_MaterialCardTitle29, f_MaterialCardTitle29.span_0) , $setIconType_0(f_MaterialCardTitle29, POLYMER) , f_MaterialCardTitle29)) , $add_12(f_MaterialCardContent28, (f_MaterialLabel30 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel30.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel30)) , $setTextColor((!f_MaterialCardContent28.colorsMixin && (f_MaterialCardContent28.colorsMixin = new ColorsMixin(f_MaterialCardContent28)) , f_MaterialCardContent28.colorsMixin), 'white') , f_MaterialCardContent28)) , $add_12(f_MaterialCard27, (f_MaterialCardAction31 = new MaterialCardAction , $add_12(f_MaterialCardAction31, (f_MaterialLink32 = new MaterialLink , f_MaterialLink32.span_0.setText('Link 1') , $add_12(f_MaterialLink32, f_MaterialLink32.span_0) , f_MaterialLink32)) , $add_12(f_MaterialCardAction31, (f_MaterialLink33 = new MaterialLink , f_MaterialLink33.span_0.setText('Link 1') , $add_12(f_MaterialLink33, f_MaterialLink33.span_0) , f_MaterialLink33)) , f_MaterialCardAction31)) , $setBackgroundColor((!f_MaterialCard27.colorsMixin && (f_MaterialCard27.colorsMixin = new ColorsMixin(f_MaterialCard27)) , f_MaterialCard27.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard27, 'l2') , f_MaterialCard27)) , $add_12(gridPanel, (f_MaterialCard34 = new MaterialCard , $add_12(f_MaterialCard34, (f_MaterialCardContent35 = new MaterialCardContent , $add_12(f_MaterialCardContent35, (f_MaterialCardTitle36 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle36, RIGHT_5) , f_MaterialCardTitle36.span_0.setText('Sample') , $add_12(f_MaterialCardTitle36, f_MaterialCardTitle36.span_0) , $setIconType_0(f_MaterialCardTitle36, POLYMER) , f_MaterialCardTitle36)) , $add_12(f_MaterialCardContent35, (f_MaterialLabel37 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel37.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel37)) , $setTextColor((!f_MaterialCardContent35.colorsMixin && (f_MaterialCardContent35.colorsMixin = new ColorsMixin(f_MaterialCardContent35)) , f_MaterialCardContent35.colorsMixin), 'white') , f_MaterialCardContent35)) , $add_12(f_MaterialCard34, (f_MaterialCardAction38 = new MaterialCardAction , $add_12(f_MaterialCardAction38, (f_MaterialLink39 = new MaterialLink , f_MaterialLink39.span_0.setText('Link 1') , $add_12(f_MaterialLink39, f_MaterialLink39.span_0) , f_MaterialLink39)) , $add_12(f_MaterialCardAction38, (f_MaterialLink40 = new MaterialLink , f_MaterialLink40.span_0.setText('Link 1') , $add_12(f_MaterialLink40, f_MaterialLink40.span_0) , f_MaterialLink40)) , f_MaterialCardAction38)) , $setBackgroundColor((!f_MaterialCard34.colorsMixin && (f_MaterialCard34.colorsMixin = new ColorsMixin(f_MaterialCard34)) , f_MaterialCard34.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard34, 'l2') , f_MaterialCard34)) , $add_12(gridPanel, (f_MaterialCard41 = new MaterialCard , $add_12(f_MaterialCard41, (f_MaterialCardContent42 = new MaterialCardContent , $add_12(f_MaterialCardContent42, (f_MaterialCardTitle43 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle43, RIGHT_5) , f_MaterialCardTitle43.span_0.setText('Sample') , $add_12(f_MaterialCardTitle43, f_MaterialCardTitle43.span_0) , $setIconType_0(f_MaterialCardTitle43, POLYMER) , f_MaterialCardTitle43)) , $add_12(f_MaterialCardContent42, (f_MaterialLabel44 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel44.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel44)) , $setTextColor((!f_MaterialCardContent42.colorsMixin && (f_MaterialCardContent42.colorsMixin = new ColorsMixin(f_MaterialCardContent42)) , f_MaterialCardContent42.colorsMixin), 'white') , f_MaterialCardContent42)) , $add_12(f_MaterialCard41, (f_MaterialCardAction45 = new MaterialCardAction , $add_12(f_MaterialCardAction45, (f_MaterialLink46 = new MaterialLink , f_MaterialLink46.span_0.setText('Link 1') , $add_12(f_MaterialLink46, f_MaterialLink46.span_0) , f_MaterialLink46)) , $add_12(f_MaterialCardAction45, (f_MaterialLink47 = new MaterialLink , f_MaterialLink47.span_0.setText('Link 1') , $add_12(f_MaterialLink47, f_MaterialLink47.span_0) , f_MaterialLink47)) , f_MaterialCardAction45)) , $setBackgroundColor((!f_MaterialCard41.colorsMixin && (f_MaterialCard41.colorsMixin = new ColorsMixin(f_MaterialCard41)) , f_MaterialCard41.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard41, 'l2') , f_MaterialCard41)) , $add_12(gridPanel, (f_MaterialCard48 = new MaterialCard , $add_12(f_MaterialCard48, (f_MaterialCardContent49 = new MaterialCardContent , $add_12(f_MaterialCardContent49, (f_MaterialCardTitle50 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle50, RIGHT_5) , f_MaterialCardTitle50.span_0.setText('Sample') , $add_12(f_MaterialCardTitle50, f_MaterialCardTitle50.span_0) , $setIconType_0(f_MaterialCardTitle50, POLYMER) , f_MaterialCardTitle50)) , $add_12(f_MaterialCardContent49, (f_MaterialLabel51 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel51.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel51)) , $setTextColor((!f_MaterialCardContent49.colorsMixin && (f_MaterialCardContent49.colorsMixin = new ColorsMixin(f_MaterialCardContent49)) , f_MaterialCardContent49.colorsMixin), 'white') , f_MaterialCardContent49)) , $add_12(f_MaterialCard48, (f_MaterialCardAction52 = new MaterialCardAction , $add_12(f_MaterialCardAction52, (f_MaterialLink53 = new MaterialLink , f_MaterialLink53.span_0.setText('Link 1') , $add_12(f_MaterialLink53, f_MaterialLink53.span_0) , f_MaterialLink53)) , $add_12(f_MaterialCardAction52, (f_MaterialLink54 = new MaterialLink , f_MaterialLink54.span_0.setText('Link 1') , $add_12(f_MaterialLink54, f_MaterialLink54.span_0) , f_MaterialLink54)) , f_MaterialCardAction52)) , $setBackgroundColor((!f_MaterialCard48.colorsMixin && (f_MaterialCard48.colorsMixin = new ColorsMixin(f_MaterialCard48)) , f_MaterialCard48.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard48, 'l2') , f_MaterialCard48)) , $add_12(gridPanel, (f_MaterialCard55 = new MaterialCard , $add_12(f_MaterialCard55, (f_MaterialCardContent56 = new MaterialCardContent , $add_12(f_MaterialCardContent56, (f_MaterialCardTitle57 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle57, RIGHT_5) , f_MaterialCardTitle57.span_0.setText('Sample') , $add_12(f_MaterialCardTitle57, f_MaterialCardTitle57.span_0) , $setIconType_0(f_MaterialCardTitle57, POLYMER) , f_MaterialCardTitle57)) , $add_12(f_MaterialCardContent56, (f_MaterialLabel58 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel58.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel58)) , $setTextColor((!f_MaterialCardContent56.colorsMixin && (f_MaterialCardContent56.colorsMixin = new ColorsMixin(f_MaterialCardContent56)) , f_MaterialCardContent56.colorsMixin), 'white') , f_MaterialCardContent56)) , $add_12(f_MaterialCard55, (f_MaterialCardAction59 = new MaterialCardAction , $add_12(f_MaterialCardAction59, (f_MaterialLink60 = new MaterialLink , f_MaterialLink60.span_0.setText('Link 1') , $add_12(f_MaterialLink60, f_MaterialLink60.span_0) , f_MaterialLink60)) , $add_12(f_MaterialCardAction59, (f_MaterialLink61 = new MaterialLink , f_MaterialLink61.span_0.setText('Link 1') , $add_12(f_MaterialLink61, f_MaterialLink61.span_0) , f_MaterialLink61)) , f_MaterialCardAction59)) , $setBackgroundColor((!f_MaterialCard55.colorsMixin && (f_MaterialCard55.colorsMixin = new ColorsMixin(f_MaterialCard55)) , f_MaterialCard55.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard55, 'l2') , f_MaterialCard55)) , $add_12(gridPanel, (f_MaterialCard62 = new MaterialCard , $add_12(f_MaterialCard62, (f_MaterialCardContent63 = new MaterialCardContent , $add_12(f_MaterialCardContent63, (f_MaterialCardTitle64 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle64, RIGHT_5) , f_MaterialCardTitle64.span_0.setText('Sample') , $add_12(f_MaterialCardTitle64, f_MaterialCardTitle64.span_0) , $setIconType_0(f_MaterialCardTitle64, POLYMER) , f_MaterialCardTitle64)) , $add_12(f_MaterialCardContent63, (f_MaterialLabel65 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel65.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel65)) , $setTextColor((!f_MaterialCardContent63.colorsMixin && (f_MaterialCardContent63.colorsMixin = new ColorsMixin(f_MaterialCardContent63)) , f_MaterialCardContent63.colorsMixin), 'white') , f_MaterialCardContent63)) , $add_12(f_MaterialCard62, (f_MaterialCardAction66 = new MaterialCardAction , $add_12(f_MaterialCardAction66, (f_MaterialLink67 = new MaterialLink , f_MaterialLink67.span_0.setText('Link 1') , $add_12(f_MaterialLink67, f_MaterialLink67.span_0) , f_MaterialLink67)) , $add_12(f_MaterialCardAction66, (f_MaterialLink68 = new MaterialLink , f_MaterialLink68.span_0.setText('Link 1') , $add_12(f_MaterialLink68, f_MaterialLink68.span_0) , f_MaterialLink68)) , f_MaterialCardAction66)) , $setBackgroundColor((!f_MaterialCard62.colorsMixin && (f_MaterialCard62.colorsMixin = new ColorsMixin(f_MaterialCard62)) , f_MaterialCard62.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard62, 'l2') , f_MaterialCard62)) , $add_12(gridPanel, (f_MaterialCard69 = new MaterialCard , $add_12(f_MaterialCard69, (f_MaterialCardContent70 = new MaterialCardContent , $add_12(f_MaterialCardContent70, (f_MaterialCardTitle71 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle71, RIGHT_5) , f_MaterialCardTitle71.span_0.setText('Sample') , $add_12(f_MaterialCardTitle71, f_MaterialCardTitle71.span_0) , $setIconType_0(f_MaterialCardTitle71, POLYMER) , f_MaterialCardTitle71)) , $add_12(f_MaterialCardContent70, (f_MaterialLabel72 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel72.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel72)) , $setTextColor((!f_MaterialCardContent70.colorsMixin && (f_MaterialCardContent70.colorsMixin = new ColorsMixin(f_MaterialCardContent70)) , f_MaterialCardContent70.colorsMixin), 'white') , f_MaterialCardContent70)) , $add_12(f_MaterialCard69, (f_MaterialCardAction73 = new MaterialCardAction , $add_12(f_MaterialCardAction73, (f_MaterialLink74 = new MaterialLink , f_MaterialLink74.span_0.setText('Link 1') , $add_12(f_MaterialLink74, f_MaterialLink74.span_0) , f_MaterialLink74)) , $add_12(f_MaterialCardAction73, (f_MaterialLink75 = new MaterialLink , f_MaterialLink75.span_0.setText('Link 1') , $add_12(f_MaterialLink75, f_MaterialLink75.span_0) , f_MaterialLink75)) , f_MaterialCardAction73)) , $setBackgroundColor((!f_MaterialCard69.colorsMixin && (f_MaterialCard69.colorsMixin = new ColorsMixin(f_MaterialCard69)) , f_MaterialCard69.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard69, 'l2') , f_MaterialCard69)) , $add_12(gridPanel, (f_MaterialCard76 = new MaterialCard , $add_12(f_MaterialCard76, (f_MaterialCardContent77 = new MaterialCardContent , $add_12(f_MaterialCardContent77, (f_MaterialCardTitle78 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle78, RIGHT_5) , f_MaterialCardTitle78.span_0.setText('Sample') , $add_12(f_MaterialCardTitle78, f_MaterialCardTitle78.span_0) , $setIconType_0(f_MaterialCardTitle78, POLYMER) , f_MaterialCardTitle78)) , $add_12(f_MaterialCardContent77, (f_MaterialLabel79 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel79.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel79)) , $setTextColor((!f_MaterialCardContent77.colorsMixin && (f_MaterialCardContent77.colorsMixin = new ColorsMixin(f_MaterialCardContent77)) , f_MaterialCardContent77.colorsMixin), 'white') , f_MaterialCardContent77)) , $add_12(f_MaterialCard76, (f_MaterialCardAction80 = new MaterialCardAction , $add_12(f_MaterialCardAction80, (f_MaterialLink81 = new MaterialLink , f_MaterialLink81.span_0.setText('Link 1') , $add_12(f_MaterialLink81, f_MaterialLink81.span_0) , f_MaterialLink81)) , $add_12(f_MaterialCardAction80, (f_MaterialLink82 = new MaterialLink , f_MaterialLink82.span_0.setText('Link 1') , $add_12(f_MaterialLink82, f_MaterialLink82.span_0) , f_MaterialLink82)) , f_MaterialCardAction80)) , $setBackgroundColor((!f_MaterialCard76.colorsMixin && (f_MaterialCard76.colorsMixin = new ColorsMixin(f_MaterialCard76)) , f_MaterialCard76.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard76, 'l2') , f_MaterialCard76)) , $add_12(gridPanel, (f_MaterialCard83 = new MaterialCard , $add_12(f_MaterialCard83, (f_MaterialCardContent84 = new MaterialCardContent , $add_12(f_MaterialCardContent84, (f_MaterialCardTitle85 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle85, RIGHT_5) , f_MaterialCardTitle85.span_0.setText('Sample') , $add_12(f_MaterialCardTitle85, f_MaterialCardTitle85.span_0) , $setIconType_0(f_MaterialCardTitle85, POLYMER) , f_MaterialCardTitle85)) , $add_12(f_MaterialCardContent84, (f_MaterialLabel86 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel86.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel86)) , $setTextColor((!f_MaterialCardContent84.colorsMixin && (f_MaterialCardContent84.colorsMixin = new ColorsMixin(f_MaterialCardContent84)) , f_MaterialCardContent84.colorsMixin), 'white') , f_MaterialCardContent84)) , $add_12(f_MaterialCard83, (f_MaterialCardAction87 = new MaterialCardAction , $add_12(f_MaterialCardAction87, (f_MaterialLink88 = new MaterialLink , f_MaterialLink88.span_0.setText('Link 1') , $add_12(f_MaterialLink88, f_MaterialLink88.span_0) , f_MaterialLink88)) , $add_12(f_MaterialCardAction87, (f_MaterialLink89 = new MaterialLink , f_MaterialLink89.span_0.setText('Link 1') , $add_12(f_MaterialLink89, f_MaterialLink89.span_0) , f_MaterialLink89)) , f_MaterialCardAction87)) , $setBackgroundColor((!f_MaterialCard83.colorsMixin && (f_MaterialCard83.colorsMixin = new ColorsMixin(f_MaterialCard83)) , f_MaterialCard83.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard83, 'l2') , f_MaterialCard83)) , $add_12(gridPanel, (f_MaterialCard90 = new MaterialCard , $add_12(f_MaterialCard90, (f_MaterialCardContent91 = new MaterialCardContent , $add_12(f_MaterialCardContent91, (f_MaterialCardTitle92 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle92, RIGHT_5) , f_MaterialCardTitle92.span_0.setText('Sample') , $add_12(f_MaterialCardTitle92, f_MaterialCardTitle92.span_0) , $setIconType_0(f_MaterialCardTitle92, POLYMER) , f_MaterialCardTitle92)) , $add_12(f_MaterialCardContent91, (f_MaterialLabel93 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel93.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel93)) , $setTextColor((!f_MaterialCardContent91.colorsMixin && (f_MaterialCardContent91.colorsMixin = new ColorsMixin(f_MaterialCardContent91)) , f_MaterialCardContent91.colorsMixin), 'white') , f_MaterialCardContent91)) , $add_12(f_MaterialCard90, (f_MaterialCardAction94 = new MaterialCardAction , $add_12(f_MaterialCardAction94, (f_MaterialLink95 = new MaterialLink , f_MaterialLink95.span_0.setText('Link 1') , $add_12(f_MaterialLink95, f_MaterialLink95.span_0) , f_MaterialLink95)) , $add_12(f_MaterialCardAction94, (f_MaterialLink96 = new MaterialLink , f_MaterialLink96.span_0.setText('Link 1') , $add_12(f_MaterialLink96, f_MaterialLink96.span_0) , f_MaterialLink96)) , f_MaterialCardAction94)) , $setBackgroundColor((!f_MaterialCard90.colorsMixin && (f_MaterialCard90.colorsMixin = new ColorsMixin(f_MaterialCard90)) , f_MaterialCard90.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard90, 'l2') , f_MaterialCard90)) , $add_12(gridPanel, (f_MaterialCard97 = new MaterialCard , $add_12(f_MaterialCard97, (f_MaterialCardContent98 = new MaterialCardContent , $add_12(f_MaterialCardContent98, (f_MaterialCardTitle99 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle99, RIGHT_5) , f_MaterialCardTitle99.span_0.setText('Sample') , $add_12(f_MaterialCardTitle99, f_MaterialCardTitle99.span_0) , $setIconType_0(f_MaterialCardTitle99, POLYMER) , f_MaterialCardTitle99)) , $add_12(f_MaterialCardContent98, (f_MaterialLabel100 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel100.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel100)) , $setTextColor((!f_MaterialCardContent98.colorsMixin && (f_MaterialCardContent98.colorsMixin = new ColorsMixin(f_MaterialCardContent98)) , f_MaterialCardContent98.colorsMixin), 'white') , f_MaterialCardContent98)) , $add_12(f_MaterialCard97, (f_MaterialCardAction101 = new MaterialCardAction , $add_12(f_MaterialCardAction101, (f_MaterialLink102 = new MaterialLink , f_MaterialLink102.span_0.setText('Link 1') , $add_12(f_MaterialLink102, f_MaterialLink102.span_0) , f_MaterialLink102)) , $add_12(f_MaterialCardAction101, (f_MaterialLink103 = new MaterialLink , f_MaterialLink103.span_0.setText('Link 1') , $add_12(f_MaterialLink103, f_MaterialLink103.span_0) , f_MaterialLink103)) , f_MaterialCardAction101)) , $setBackgroundColor((!f_MaterialCard97.colorsMixin && (f_MaterialCard97.colorsMixin = new ColorsMixin(f_MaterialCard97)) , f_MaterialCard97.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard97, 'l2') , f_MaterialCard97)) , $add_12(gridPanel, (f_MaterialCard104 = new MaterialCard , $add_12(f_MaterialCard104, (f_MaterialCardContent105 = new MaterialCardContent , $add_12(f_MaterialCardContent105, (f_MaterialCardTitle106 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle106, RIGHT_5) , f_MaterialCardTitle106.span_0.setText('Sample') , $add_12(f_MaterialCardTitle106, f_MaterialCardTitle106.span_0) , $setIconType_0(f_MaterialCardTitle106, POLYMER) , f_MaterialCardTitle106)) , $add_12(f_MaterialCardContent105, (f_MaterialLabel107 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel107.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel107)) , $setTextColor((!f_MaterialCardContent105.colorsMixin && (f_MaterialCardContent105.colorsMixin = new ColorsMixin(f_MaterialCardContent105)) , f_MaterialCardContent105.colorsMixin), 'white') , f_MaterialCardContent105)) , $add_12(f_MaterialCard104, (f_MaterialCardAction108 = new MaterialCardAction , $add_12(f_MaterialCardAction108, (f_MaterialLink109 = new MaterialLink , f_MaterialLink109.span_0.setText('Link 1') , $add_12(f_MaterialLink109, f_MaterialLink109.span_0) , f_MaterialLink109)) , $add_12(f_MaterialCardAction108, (f_MaterialLink110 = new MaterialLink , f_MaterialLink110.span_0.setText('Link 1') , $add_12(f_MaterialLink110, f_MaterialLink110.span_0) , f_MaterialLink110)) , f_MaterialCardAction108)) , $setBackgroundColor((!f_MaterialCard104.colorsMixin && (f_MaterialCard104.colorsMixin = new ColorsMixin(f_MaterialCard104)) , f_MaterialCard104.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard104, 'l2') , f_MaterialCard104)) , $add_12(gridPanel, (f_MaterialCard111 = new MaterialCard , $add_12(f_MaterialCard111, (f_MaterialCardContent112 = new MaterialCardContent , $add_12(f_MaterialCardContent112, (f_MaterialCardTitle113 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle113, RIGHT_5) , f_MaterialCardTitle113.span_0.setText('Sample') , $add_12(f_MaterialCardTitle113, f_MaterialCardTitle113.span_0) , $setIconType_0(f_MaterialCardTitle113, POLYMER) , f_MaterialCardTitle113)) , $add_12(f_MaterialCardContent112, (f_MaterialLabel114 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel114.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel114)) , $setTextColor((!f_MaterialCardContent112.colorsMixin && (f_MaterialCardContent112.colorsMixin = new ColorsMixin(f_MaterialCardContent112)) , f_MaterialCardContent112.colorsMixin), 'white') , f_MaterialCardContent112)) , $add_12(f_MaterialCard111, (f_MaterialCardAction115 = new MaterialCardAction , $add_12(f_MaterialCardAction115, (f_MaterialLink116 = new MaterialLink , f_MaterialLink116.span_0.setText('Link 1') , $add_12(f_MaterialLink116, f_MaterialLink116.span_0) , f_MaterialLink116)) , $add_12(f_MaterialCardAction115, (f_MaterialLink117 = new MaterialLink , f_MaterialLink117.span_0.setText('Link 1') , $add_12(f_MaterialLink117, f_MaterialLink117.span_0) , f_MaterialLink117)) , f_MaterialCardAction115)) , $setBackgroundColor((!f_MaterialCard111.colorsMixin && (f_MaterialCard111.colorsMixin = new ColorsMixin(f_MaterialCard111)) , f_MaterialCard111.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard111, 'l2') , f_MaterialCard111)) , this$static.owner.gridPanel = gridPanel , gridPanel), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle118 = new MaterialTitle , $setInnerHTML(f_MaterialTitle118.header.element, 'Show Staggered List') , $setText_4(f_MaterialTitle118.paragraph, 'You can add a transition staggered reveal effect for any Unordered List material widget with List Items.') , f_MaterialTitle118), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (btnStaggered = new MaterialButton , btnStaggered.span_0.setText('Click Me') , $add_12(btnStaggered, btnStaggered.span_0) , $setBackgroundColor((!btnStaggered.colorsMixin && (btnStaggered.colorsMixin = new ColorsMixin(btnStaggered)) , btnStaggered.colorsMixin), 'blue') , $setWaves(btnStaggered, LIGHT) , $addDomHandler(btnStaggered, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames3, (null , TYPE_1)) , btnStaggered), $get_0(this$static.domId7Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre119 = new PrettyPre , $setHTML(f_PrettyPre119, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m.html:UnorderedList ui:field="listContainer"&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> &lt;/m.html:UnorderedList&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre119.element, 'lang-xml', true) , setStyleName(f_PrettyPre119.element, 'z-depth-1', true) , f_PrettyPre119), $get_0(this$static.domId8Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre120 = new PrettyPre , $setHTML(f_PrettyPre120, (sb_2 = new StringBuilder , sb_2.string += 'MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre120.element, 'lang-java', true) , setStyleName(f_PrettyPre120.element, 'z-depth-1', true) , f_PrettyPre120), $get_0(this$static.domId9Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (listContainer = new UnorderedList , listContainer.add_0((f_ListItem121 = new ListItem , $add_12(f_ListItem121, (f_MaterialTitle122 = new MaterialTitle , $setInnerHTML(f_MaterialTitle122.header.element, 'List Item') , $setText_4(f_MaterialTitle122.paragraph, 'List Item') , f_MaterialTitle122)) , $setOpacity(f_ListItem121.element.style, 0) , f_ListItem121)) , listContainer.add_0((f_ListItem123 = new ListItem , $add_12(f_ListItem123, (f_MaterialTitle124 = new MaterialTitle , $setInnerHTML(f_MaterialTitle124.header.element, 'List Item') , $setText_4(f_MaterialTitle124.paragraph, 'List Item') , f_MaterialTitle124)) , $setOpacity(f_ListItem123.element.style, 0) , f_ListItem123)) , listContainer.add_0((f_ListItem125 = new ListItem , $add_12(f_ListItem125, (f_MaterialTitle126 = new MaterialTitle , $setInnerHTML(f_MaterialTitle126.header.element, 'List Item') , $setText_4(f_MaterialTitle126.paragraph, 'List Item') , f_MaterialTitle126)) , $setOpacity(f_ListItem125.element.style, 0) , f_ListItem125)) , listContainer.add_0((f_ListItem127 = new ListItem , $add_12(f_ListItem127, (f_MaterialTitle128 = new MaterialTitle , $setInnerHTML(f_MaterialTitle128.header.element, 'List Item') , $setText_4(f_MaterialTitle128.paragraph, 'List Item') , f_MaterialTitle128)) , $setOpacity(f_ListItem127.element.style, 0) , f_ListItem127)) , this$static.owner.listContainer = listContainer , listContainer), $get_0(this$static.domId10Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle129 = new MaterialTitle , $setInnerHTML(f_MaterialTitle129.header.element, 'Fade in Image') , $setText_4(f_MaterialTitle129.paragraph, 'Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.') , f_MaterialTitle129), $get_0(this$static.domId11Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (btnFade = new MaterialButton , btnFade.span_0.setText('Click Me') , $add_12(btnFade, btnFade.span_0) , $setBackgroundColor((!btnFade.colorsMixin && (btnFade.colorsMixin = new ColorsMixin(btnFade)) , btnFade.colorsMixin), 'blue') , $setWaves(btnFade, LIGHT) , $addDomHandler(btnFade, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames4, (null , TYPE_1)) , btnFade), $get_0(this$static.domId12Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre130 = new PrettyPre , $setHTML(f_PrettyPre130, (sb_3 = new StringBuilder , sb_3.string += '\u2003&lt;m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}" caption="I love Material Design"/&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre130.element, 'lang-xml', true) , setStyleName(f_PrettyPre130.element, 'z-depth-1', true) , f_PrettyPre130), $get_0(this$static.domId13Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre131 = new PrettyPre , $setHTML(f_PrettyPre131, (sb_4 = new StringBuilder , sb_4.string += 'MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre131.element, 'lang-java', true) , setStyleName(f_PrettyPre131.element, 'z-depth-1', true) , f_PrettyPre131), $get_0(this$static.domId14Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (image = new MaterialImage , $setStyleName_0(image, ($build_style() , 'HPBM1FC-e-a'), true) , $setOpacity(image.element.style, 0) , $setResource(image, (new MaterialResources_default_InlineClientBundleGenerator , $clinit_MaterialResources_default_InlineClientBundleGenerator$imageInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator() , image_0)) , $setAttribute(image.element, 'data-caption', 'I love Material Design') , this$static.owner.image = image , image), $get_0(this$static.domId15Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle3.header), 'Show Grid') , $setText_4(f_MaterialTitle3.paragraph, 'You can add a transition staggered reveal effect for any Unordered List material widget with List Items.') , f_MaterialTitle3), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre4 = new PrettyPre , $setHTML(f_PrettyPre4, (sb = new StringBuilder , sb.string += '\u2003@UiField MaterialRow rowCards;<br> MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre4.element, 'lang-java', true) , setStyleName(f_PrettyPre4.element, 'z-depth-1', true) , f_PrettyPre4), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (btnShowGrid = new MaterialButton , btnShowGrid.span_0.setText('Show Grid') , $add_13(btnShowGrid, btnShowGrid.span_0) , $setBackgroundColor((!btnShowGrid.colorsMixin && (btnShowGrid.colorsMixin = new ColorsMixin(btnShowGrid)) , btnShowGrid.colorsMixin), 'blue') , $setWaves(btnShowGrid, ($clinit_WavesType() , LIGHT)) , $addDomHandler(btnShowGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShowGrid), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (btnCloseGrid = new MaterialButton , btnCloseGrid.span_0.setText('Close Grid') , $add_13(btnCloseGrid, btnCloseGrid.span_0) , $setTextColor((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'black') , $setBackgroundColor((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'white') , $setWaves(btnCloseGrid, LIGHT) , $addDomHandler(btnCloseGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, (null , TYPE_1)) , btnCloseGrid), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (gridPanel = new MaterialRow , $add_13(gridPanel, (f_MaterialCard6 = new MaterialCard , $add_13(f_MaterialCard6, (f_MaterialCardContent7 = new MaterialCardContent , $add_13(f_MaterialCardContent7, (f_MaterialCardTitle8 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle8, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle8.span_0.setText('Sample') , $add_13(f_MaterialCardTitle8, f_MaterialCardTitle8.span_0) , $setIconType_0(f_MaterialCardTitle8, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle8)) , $add_13(f_MaterialCardContent7, (f_MaterialLabel9 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel9.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel9)) , $setTextColor((!f_MaterialCardContent7.colorsMixin && (f_MaterialCardContent7.colorsMixin = new ColorsMixin(f_MaterialCardContent7)) , f_MaterialCardContent7.colorsMixin), 'white') , f_MaterialCardContent7)) , $add_13(f_MaterialCard6, (f_MaterialCardAction10 = new MaterialCardAction , $add_13(f_MaterialCardAction10, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Link 1') , $add_13(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , $add_13(f_MaterialCardAction10, (f_MaterialLink12 = new MaterialLink , f_MaterialLink12.span_0.setText('Link 1') , $add_13(f_MaterialLink12, f_MaterialLink12.span_0) , f_MaterialLink12)) , f_MaterialCardAction10)) , $setBackgroundColor((!f_MaterialCard6.colorsMixin && (f_MaterialCard6.colorsMixin = new ColorsMixin(f_MaterialCard6)) , f_MaterialCard6.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard6, 'l2') , f_MaterialCard6)) , $add_13(gridPanel, (f_MaterialCard13 = new MaterialCard , $add_13(f_MaterialCard13, (f_MaterialCardContent14 = new MaterialCardContent , $add_13(f_MaterialCardContent14, (f_MaterialCardTitle15 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle15, RIGHT_5) , f_MaterialCardTitle15.span_0.setText('Sample') , $add_13(f_MaterialCardTitle15, f_MaterialCardTitle15.span_0) , $setIconType_0(f_MaterialCardTitle15, POLYMER) , f_MaterialCardTitle15)) , $add_13(f_MaterialCardContent14, (f_MaterialLabel16 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel16.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel16)) , $setTextColor((!f_MaterialCardContent14.colorsMixin && (f_MaterialCardContent14.colorsMixin = new ColorsMixin(f_MaterialCardContent14)) , f_MaterialCardContent14.colorsMixin), 'white') , f_MaterialCardContent14)) , $add_13(f_MaterialCard13, (f_MaterialCardAction17 = new MaterialCardAction , $add_13(f_MaterialCardAction17, (f_MaterialLink18 = new MaterialLink , f_MaterialLink18.span_0.setText('Link 1') , $add_13(f_MaterialLink18, f_MaterialLink18.span_0) , f_MaterialLink18)) , $add_13(f_MaterialCardAction17, (f_MaterialLink19 = new MaterialLink , f_MaterialLink19.span_0.setText('Link 1') , $add_13(f_MaterialLink19, f_MaterialLink19.span_0) , f_MaterialLink19)) , f_MaterialCardAction17)) , $setBackgroundColor((!f_MaterialCard13.colorsMixin && (f_MaterialCard13.colorsMixin = new ColorsMixin(f_MaterialCard13)) , f_MaterialCard13.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard13, 'l2') , f_MaterialCard13)) , $add_13(gridPanel, (f_MaterialCard20 = new MaterialCard , $add_13(f_MaterialCard20, (f_MaterialCardContent21 = new MaterialCardContent , $add_13(f_MaterialCardContent21, (f_MaterialCardTitle22 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle22, RIGHT_5) , f_MaterialCardTitle22.span_0.setText('Sample') , $add_13(f_MaterialCardTitle22, f_MaterialCardTitle22.span_0) , $setIconType_0(f_MaterialCardTitle22, POLYMER) , f_MaterialCardTitle22)) , $add_13(f_MaterialCardContent21, (f_MaterialLabel23 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel23.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel23)) , $setTextColor((!f_MaterialCardContent21.colorsMixin && (f_MaterialCardContent21.colorsMixin = new ColorsMixin(f_MaterialCardContent21)) , f_MaterialCardContent21.colorsMixin), 'white') , f_MaterialCardContent21)) , $add_13(f_MaterialCard20, (f_MaterialCardAction24 = new MaterialCardAction , $add_13(f_MaterialCardAction24, (f_MaterialLink25 = new MaterialLink , f_MaterialLink25.span_0.setText('Link 1') , $add_13(f_MaterialLink25, f_MaterialLink25.span_0) , f_MaterialLink25)) , $add_13(f_MaterialCardAction24, (f_MaterialLink26 = new MaterialLink , f_MaterialLink26.span_0.setText('Link 1') , $add_13(f_MaterialLink26, f_MaterialLink26.span_0) , f_MaterialLink26)) , f_MaterialCardAction24)) , $setBackgroundColor((!f_MaterialCard20.colorsMixin && (f_MaterialCard20.colorsMixin = new ColorsMixin(f_MaterialCard20)) , f_MaterialCard20.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard20, 'l2') , f_MaterialCard20)) , $add_13(gridPanel, (f_MaterialCard27 = new MaterialCard , $add_13(f_MaterialCard27, (f_MaterialCardContent28 = new MaterialCardContent , $add_13(f_MaterialCardContent28, (f_MaterialCardTitle29 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle29, RIGHT_5) , f_MaterialCardTitle29.span_0.setText('Sample') , $add_13(f_MaterialCardTitle29, f_MaterialCardTitle29.span_0) , $setIconType_0(f_MaterialCardTitle29, POLYMER) , f_MaterialCardTitle29)) , $add_13(f_MaterialCardContent28, (f_MaterialLabel30 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel30.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel30)) , $setTextColor((!f_MaterialCardContent28.colorsMixin && (f_MaterialCardContent28.colorsMixin = new ColorsMixin(f_MaterialCardContent28)) , f_MaterialCardContent28.colorsMixin), 'white') , f_MaterialCardContent28)) , $add_13(f_MaterialCard27, (f_MaterialCardAction31 = new MaterialCardAction , $add_13(f_MaterialCardAction31, (f_MaterialLink32 = new MaterialLink , f_MaterialLink32.span_0.setText('Link 1') , $add_13(f_MaterialLink32, f_MaterialLink32.span_0) , f_MaterialLink32)) , $add_13(f_MaterialCardAction31, (f_MaterialLink33 = new MaterialLink , f_MaterialLink33.span_0.setText('Link 1') , $add_13(f_MaterialLink33, f_MaterialLink33.span_0) , f_MaterialLink33)) , f_MaterialCardAction31)) , $setBackgroundColor((!f_MaterialCard27.colorsMixin && (f_MaterialCard27.colorsMixin = new ColorsMixin(f_MaterialCard27)) , f_MaterialCard27.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard27, 'l2') , f_MaterialCard27)) , $add_13(gridPanel, (f_MaterialCard34 = new MaterialCard , $add_13(f_MaterialCard34, (f_MaterialCardContent35 = new MaterialCardContent , $add_13(f_MaterialCardContent35, (f_MaterialCardTitle36 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle36, RIGHT_5) , f_MaterialCardTitle36.span_0.setText('Sample') , $add_13(f_MaterialCardTitle36, f_MaterialCardTitle36.span_0) , $setIconType_0(f_MaterialCardTitle36, POLYMER) , f_MaterialCardTitle36)) , $add_13(f_MaterialCardContent35, (f_MaterialLabel37 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel37.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel37)) , $setTextColor((!f_MaterialCardContent35.colorsMixin && (f_MaterialCardContent35.colorsMixin = new ColorsMixin(f_MaterialCardContent35)) , f_MaterialCardContent35.colorsMixin), 'white') , f_MaterialCardContent35)) , $add_13(f_MaterialCard34, (f_MaterialCardAction38 = new MaterialCardAction , $add_13(f_MaterialCardAction38, (f_MaterialLink39 = new MaterialLink , f_MaterialLink39.span_0.setText('Link 1') , $add_13(f_MaterialLink39, f_MaterialLink39.span_0) , f_MaterialLink39)) , $add_13(f_MaterialCardAction38, (f_MaterialLink40 = new MaterialLink , f_MaterialLink40.span_0.setText('Link 1') , $add_13(f_MaterialLink40, f_MaterialLink40.span_0) , f_MaterialLink40)) , f_MaterialCardAction38)) , $setBackgroundColor((!f_MaterialCard34.colorsMixin && (f_MaterialCard34.colorsMixin = new ColorsMixin(f_MaterialCard34)) , f_MaterialCard34.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard34, 'l2') , f_MaterialCard34)) , $add_13(gridPanel, (f_MaterialCard41 = new MaterialCard , $add_13(f_MaterialCard41, (f_MaterialCardContent42 = new MaterialCardContent , $add_13(f_MaterialCardContent42, (f_MaterialCardTitle43 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle43, RIGHT_5) , f_MaterialCardTitle43.span_0.setText('Sample') , $add_13(f_MaterialCardTitle43, f_MaterialCardTitle43.span_0) , $setIconType_0(f_MaterialCardTitle43, POLYMER) , f_MaterialCardTitle43)) , $add_13(f_MaterialCardContent42, (f_MaterialLabel44 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel44.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel44)) , $setTextColor((!f_MaterialCardContent42.colorsMixin && (f_MaterialCardContent42.colorsMixin = new ColorsMixin(f_MaterialCardContent42)) , f_MaterialCardContent42.colorsMixin), 'white') , f_MaterialCardContent42)) , $add_13(f_MaterialCard41, (f_MaterialCardAction45 = new MaterialCardAction , $add_13(f_MaterialCardAction45, (f_MaterialLink46 = new MaterialLink , f_MaterialLink46.span_0.setText('Link 1') , $add_13(f_MaterialLink46, f_MaterialLink46.span_0) , f_MaterialLink46)) , $add_13(f_MaterialCardAction45, (f_MaterialLink47 = new MaterialLink , f_MaterialLink47.span_0.setText('Link 1') , $add_13(f_MaterialLink47, f_MaterialLink47.span_0) , f_MaterialLink47)) , f_MaterialCardAction45)) , $setBackgroundColor((!f_MaterialCard41.colorsMixin && (f_MaterialCard41.colorsMixin = new ColorsMixin(f_MaterialCard41)) , f_MaterialCard41.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard41, 'l2') , f_MaterialCard41)) , $add_13(gridPanel, (f_MaterialCard48 = new MaterialCard , $add_13(f_MaterialCard48, (f_MaterialCardContent49 = new MaterialCardContent , $add_13(f_MaterialCardContent49, (f_MaterialCardTitle50 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle50, RIGHT_5) , f_MaterialCardTitle50.span_0.setText('Sample') , $add_13(f_MaterialCardTitle50, f_MaterialCardTitle50.span_0) , $setIconType_0(f_MaterialCardTitle50, POLYMER) , f_MaterialCardTitle50)) , $add_13(f_MaterialCardContent49, (f_MaterialLabel51 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel51.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel51)) , $setTextColor((!f_MaterialCardContent49.colorsMixin && (f_MaterialCardContent49.colorsMixin = new ColorsMixin(f_MaterialCardContent49)) , f_MaterialCardContent49.colorsMixin), 'white') , f_MaterialCardContent49)) , $add_13(f_MaterialCard48, (f_MaterialCardAction52 = new MaterialCardAction , $add_13(f_MaterialCardAction52, (f_MaterialLink53 = new MaterialLink , f_MaterialLink53.span_0.setText('Link 1') , $add_13(f_MaterialLink53, f_MaterialLink53.span_0) , f_MaterialLink53)) , $add_13(f_MaterialCardAction52, (f_MaterialLink54 = new MaterialLink , f_MaterialLink54.span_0.setText('Link 1') , $add_13(f_MaterialLink54, f_MaterialLink54.span_0) , f_MaterialLink54)) , f_MaterialCardAction52)) , $setBackgroundColor((!f_MaterialCard48.colorsMixin && (f_MaterialCard48.colorsMixin = new ColorsMixin(f_MaterialCard48)) , f_MaterialCard48.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard48, 'l2') , f_MaterialCard48)) , $add_13(gridPanel, (f_MaterialCard55 = new MaterialCard , $add_13(f_MaterialCard55, (f_MaterialCardContent56 = new MaterialCardContent , $add_13(f_MaterialCardContent56, (f_MaterialCardTitle57 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle57, RIGHT_5) , f_MaterialCardTitle57.span_0.setText('Sample') , $add_13(f_MaterialCardTitle57, f_MaterialCardTitle57.span_0) , $setIconType_0(f_MaterialCardTitle57, POLYMER) , f_MaterialCardTitle57)) , $add_13(f_MaterialCardContent56, (f_MaterialLabel58 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel58.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel58)) , $setTextColor((!f_MaterialCardContent56.colorsMixin && (f_MaterialCardContent56.colorsMixin = new ColorsMixin(f_MaterialCardContent56)) , f_MaterialCardContent56.colorsMixin), 'white') , f_MaterialCardContent56)) , $add_13(f_MaterialCard55, (f_MaterialCardAction59 = new MaterialCardAction , $add_13(f_MaterialCardAction59, (f_MaterialLink60 = new MaterialLink , f_MaterialLink60.span_0.setText('Link 1') , $add_13(f_MaterialLink60, f_MaterialLink60.span_0) , f_MaterialLink60)) , $add_13(f_MaterialCardAction59, (f_MaterialLink61 = new MaterialLink , f_MaterialLink61.span_0.setText('Link 1') , $add_13(f_MaterialLink61, f_MaterialLink61.span_0) , f_MaterialLink61)) , f_MaterialCardAction59)) , $setBackgroundColor((!f_MaterialCard55.colorsMixin && (f_MaterialCard55.colorsMixin = new ColorsMixin(f_MaterialCard55)) , f_MaterialCard55.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard55, 'l2') , f_MaterialCard55)) , $add_13(gridPanel, (f_MaterialCard62 = new MaterialCard , $add_13(f_MaterialCard62, (f_MaterialCardContent63 = new MaterialCardContent , $add_13(f_MaterialCardContent63, (f_MaterialCardTitle64 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle64, RIGHT_5) , f_MaterialCardTitle64.span_0.setText('Sample') , $add_13(f_MaterialCardTitle64, f_MaterialCardTitle64.span_0) , $setIconType_0(f_MaterialCardTitle64, POLYMER) , f_MaterialCardTitle64)) , $add_13(f_MaterialCardContent63, (f_MaterialLabel65 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel65.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel65)) , $setTextColor((!f_MaterialCardContent63.colorsMixin && (f_MaterialCardContent63.colorsMixin = new ColorsMixin(f_MaterialCardContent63)) , f_MaterialCardContent63.colorsMixin), 'white') , f_MaterialCardContent63)) , $add_13(f_MaterialCard62, (f_MaterialCardAction66 = new MaterialCardAction , $add_13(f_MaterialCardAction66, (f_MaterialLink67 = new MaterialLink , f_MaterialLink67.span_0.setText('Link 1') , $add_13(f_MaterialLink67, f_MaterialLink67.span_0) , f_MaterialLink67)) , $add_13(f_MaterialCardAction66, (f_MaterialLink68 = new MaterialLink , f_MaterialLink68.span_0.setText('Link 1') , $add_13(f_MaterialLink68, f_MaterialLink68.span_0) , f_MaterialLink68)) , f_MaterialCardAction66)) , $setBackgroundColor((!f_MaterialCard62.colorsMixin && (f_MaterialCard62.colorsMixin = new ColorsMixin(f_MaterialCard62)) , f_MaterialCard62.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard62, 'l2') , f_MaterialCard62)) , $add_13(gridPanel, (f_MaterialCard69 = new MaterialCard , $add_13(f_MaterialCard69, (f_MaterialCardContent70 = new MaterialCardContent , $add_13(f_MaterialCardContent70, (f_MaterialCardTitle71 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle71, RIGHT_5) , f_MaterialCardTitle71.span_0.setText('Sample') , $add_13(f_MaterialCardTitle71, f_MaterialCardTitle71.span_0) , $setIconType_0(f_MaterialCardTitle71, POLYMER) , f_MaterialCardTitle71)) , $add_13(f_MaterialCardContent70, (f_MaterialLabel72 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel72.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel72)) , $setTextColor((!f_MaterialCardContent70.colorsMixin && (f_MaterialCardContent70.colorsMixin = new ColorsMixin(f_MaterialCardContent70)) , f_MaterialCardContent70.colorsMixin), 'white') , f_MaterialCardContent70)) , $add_13(f_MaterialCard69, (f_MaterialCardAction73 = new MaterialCardAction , $add_13(f_MaterialCardAction73, (f_MaterialLink74 = new MaterialLink , f_MaterialLink74.span_0.setText('Link 1') , $add_13(f_MaterialLink74, f_MaterialLink74.span_0) , f_MaterialLink74)) , $add_13(f_MaterialCardAction73, (f_MaterialLink75 = new MaterialLink , f_MaterialLink75.span_0.setText('Link 1') , $add_13(f_MaterialLink75, f_MaterialLink75.span_0) , f_MaterialLink75)) , f_MaterialCardAction73)) , $setBackgroundColor((!f_MaterialCard69.colorsMixin && (f_MaterialCard69.colorsMixin = new ColorsMixin(f_MaterialCard69)) , f_MaterialCard69.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard69, 'l2') , f_MaterialCard69)) , $add_13(gridPanel, (f_MaterialCard76 = new MaterialCard , $add_13(f_MaterialCard76, (f_MaterialCardContent77 = new MaterialCardContent , $add_13(f_MaterialCardContent77, (f_MaterialCardTitle78 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle78, RIGHT_5) , f_MaterialCardTitle78.span_0.setText('Sample') , $add_13(f_MaterialCardTitle78, f_MaterialCardTitle78.span_0) , $setIconType_0(f_MaterialCardTitle78, POLYMER) , f_MaterialCardTitle78)) , $add_13(f_MaterialCardContent77, (f_MaterialLabel79 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel79.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel79)) , $setTextColor((!f_MaterialCardContent77.colorsMixin && (f_MaterialCardContent77.colorsMixin = new ColorsMixin(f_MaterialCardContent77)) , f_MaterialCardContent77.colorsMixin), 'white') , f_MaterialCardContent77)) , $add_13(f_MaterialCard76, (f_MaterialCardAction80 = new MaterialCardAction , $add_13(f_MaterialCardAction80, (f_MaterialLink81 = new MaterialLink , f_MaterialLink81.span_0.setText('Link 1') , $add_13(f_MaterialLink81, f_MaterialLink81.span_0) , f_MaterialLink81)) , $add_13(f_MaterialCardAction80, (f_MaterialLink82 = new MaterialLink , f_MaterialLink82.span_0.setText('Link 1') , $add_13(f_MaterialLink82, f_MaterialLink82.span_0) , f_MaterialLink82)) , f_MaterialCardAction80)) , $setBackgroundColor((!f_MaterialCard76.colorsMixin && (f_MaterialCard76.colorsMixin = new ColorsMixin(f_MaterialCard76)) , f_MaterialCard76.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard76, 'l2') , f_MaterialCard76)) , $add_13(gridPanel, (f_MaterialCard83 = new MaterialCard , $add_13(f_MaterialCard83, (f_MaterialCardContent84 = new MaterialCardContent , $add_13(f_MaterialCardContent84, (f_MaterialCardTitle85 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle85, RIGHT_5) , f_MaterialCardTitle85.span_0.setText('Sample') , $add_13(f_MaterialCardTitle85, f_MaterialCardTitle85.span_0) , $setIconType_0(f_MaterialCardTitle85, POLYMER) , f_MaterialCardTitle85)) , $add_13(f_MaterialCardContent84, (f_MaterialLabel86 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel86.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel86)) , $setTextColor((!f_MaterialCardContent84.colorsMixin && (f_MaterialCardContent84.colorsMixin = new ColorsMixin(f_MaterialCardContent84)) , f_MaterialCardContent84.colorsMixin), 'white') , f_MaterialCardContent84)) , $add_13(f_MaterialCard83, (f_MaterialCardAction87 = new MaterialCardAction , $add_13(f_MaterialCardAction87, (f_MaterialLink88 = new MaterialLink , f_MaterialLink88.span_0.setText('Link 1') , $add_13(f_MaterialLink88, f_MaterialLink88.span_0) , f_MaterialLink88)) , $add_13(f_MaterialCardAction87, (f_MaterialLink89 = new MaterialLink , f_MaterialLink89.span_0.setText('Link 1') , $add_13(f_MaterialLink89, f_MaterialLink89.span_0) , f_MaterialLink89)) , f_MaterialCardAction87)) , $setBackgroundColor((!f_MaterialCard83.colorsMixin && (f_MaterialCard83.colorsMixin = new ColorsMixin(f_MaterialCard83)) , f_MaterialCard83.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard83, 'l2') , f_MaterialCard83)) , $add_13(gridPanel, (f_MaterialCard90 = new MaterialCard , $add_13(f_MaterialCard90, (f_MaterialCardContent91 = new MaterialCardContent , $add_13(f_MaterialCardContent91, (f_MaterialCardTitle92 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle92, RIGHT_5) , f_MaterialCardTitle92.span_0.setText('Sample') , $add_13(f_MaterialCardTitle92, f_MaterialCardTitle92.span_0) , $setIconType_0(f_MaterialCardTitle92, POLYMER) , f_MaterialCardTitle92)) , $add_13(f_MaterialCardContent91, (f_MaterialLabel93 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel93.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel93)) , $setTextColor((!f_MaterialCardContent91.colorsMixin && (f_MaterialCardContent91.colorsMixin = new ColorsMixin(f_MaterialCardContent91)) , f_MaterialCardContent91.colorsMixin), 'white') , f_MaterialCardContent91)) , $add_13(f_MaterialCard90, (f_MaterialCardAction94 = new MaterialCardAction , $add_13(f_MaterialCardAction94, (f_MaterialLink95 = new MaterialLink , f_MaterialLink95.span_0.setText('Link 1') , $add_13(f_MaterialLink95, f_MaterialLink95.span_0) , f_MaterialLink95)) , $add_13(f_MaterialCardAction94, (f_MaterialLink96 = new MaterialLink , f_MaterialLink96.span_0.setText('Link 1') , $add_13(f_MaterialLink96, f_MaterialLink96.span_0) , f_MaterialLink96)) , f_MaterialCardAction94)) , $setBackgroundColor((!f_MaterialCard90.colorsMixin && (f_MaterialCard90.colorsMixin = new ColorsMixin(f_MaterialCard90)) , f_MaterialCard90.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard90, 'l2') , f_MaterialCard90)) , $add_13(gridPanel, (f_MaterialCard97 = new MaterialCard , $add_13(f_MaterialCard97, (f_MaterialCardContent98 = new MaterialCardContent , $add_13(f_MaterialCardContent98, (f_MaterialCardTitle99 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle99, RIGHT_5) , f_MaterialCardTitle99.span_0.setText('Sample') , $add_13(f_MaterialCardTitle99, f_MaterialCardTitle99.span_0) , $setIconType_0(f_MaterialCardTitle99, POLYMER) , f_MaterialCardTitle99)) , $add_13(f_MaterialCardContent98, (f_MaterialLabel100 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel100.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel100)) , $setTextColor((!f_MaterialCardContent98.colorsMixin && (f_MaterialCardContent98.colorsMixin = new ColorsMixin(f_MaterialCardContent98)) , f_MaterialCardContent98.colorsMixin), 'white') , f_MaterialCardContent98)) , $add_13(f_MaterialCard97, (f_MaterialCardAction101 = new MaterialCardAction , $add_13(f_MaterialCardAction101, (f_MaterialLink102 = new MaterialLink , f_MaterialLink102.span_0.setText('Link 1') , $add_13(f_MaterialLink102, f_MaterialLink102.span_0) , f_MaterialLink102)) , $add_13(f_MaterialCardAction101, (f_MaterialLink103 = new MaterialLink , f_MaterialLink103.span_0.setText('Link 1') , $add_13(f_MaterialLink103, f_MaterialLink103.span_0) , f_MaterialLink103)) , f_MaterialCardAction101)) , $setBackgroundColor((!f_MaterialCard97.colorsMixin && (f_MaterialCard97.colorsMixin = new ColorsMixin(f_MaterialCard97)) , f_MaterialCard97.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard97, 'l2') , f_MaterialCard97)) , $add_13(gridPanel, (f_MaterialCard104 = new MaterialCard , $add_13(f_MaterialCard104, (f_MaterialCardContent105 = new MaterialCardContent , $add_13(f_MaterialCardContent105, (f_MaterialCardTitle106 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle106, RIGHT_5) , f_MaterialCardTitle106.span_0.setText('Sample') , $add_13(f_MaterialCardTitle106, f_MaterialCardTitle106.span_0) , $setIconType_0(f_MaterialCardTitle106, POLYMER) , f_MaterialCardTitle106)) , $add_13(f_MaterialCardContent105, (f_MaterialLabel107 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel107.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel107)) , $setTextColor((!f_MaterialCardContent105.colorsMixin && (f_MaterialCardContent105.colorsMixin = new ColorsMixin(f_MaterialCardContent105)) , f_MaterialCardContent105.colorsMixin), 'white') , f_MaterialCardContent105)) , $add_13(f_MaterialCard104, (f_MaterialCardAction108 = new MaterialCardAction , $add_13(f_MaterialCardAction108, (f_MaterialLink109 = new MaterialLink , f_MaterialLink109.span_0.setText('Link 1') , $add_13(f_MaterialLink109, f_MaterialLink109.span_0) , f_MaterialLink109)) , $add_13(f_MaterialCardAction108, (f_MaterialLink110 = new MaterialLink , f_MaterialLink110.span_0.setText('Link 1') , $add_13(f_MaterialLink110, f_MaterialLink110.span_0) , f_MaterialLink110)) , f_MaterialCardAction108)) , $setBackgroundColor((!f_MaterialCard104.colorsMixin && (f_MaterialCard104.colorsMixin = new ColorsMixin(f_MaterialCard104)) , f_MaterialCard104.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard104, 'l2') , f_MaterialCard104)) , $add_13(gridPanel, (f_MaterialCard111 = new MaterialCard , $add_13(f_MaterialCard111, (f_MaterialCardContent112 = new MaterialCardContent , $add_13(f_MaterialCardContent112, (f_MaterialCardTitle113 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle113, RIGHT_5) , f_MaterialCardTitle113.span_0.setText('Sample') , $add_13(f_MaterialCardTitle113, f_MaterialCardTitle113.span_0) , $setIconType_0(f_MaterialCardTitle113, POLYMER) , f_MaterialCardTitle113)) , $add_13(f_MaterialCardContent112, (f_MaterialLabel114 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel114.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel114)) , $setTextColor((!f_MaterialCardContent112.colorsMixin && (f_MaterialCardContent112.colorsMixin = new ColorsMixin(f_MaterialCardContent112)) , f_MaterialCardContent112.colorsMixin), 'white') , f_MaterialCardContent112)) , $add_13(f_MaterialCard111, (f_MaterialCardAction115 = new MaterialCardAction , $add_13(f_MaterialCardAction115, (f_MaterialLink116 = new MaterialLink , f_MaterialLink116.span_0.setText('Link 1') , $add_13(f_MaterialLink116, f_MaterialLink116.span_0) , f_MaterialLink116)) , $add_13(f_MaterialCardAction115, (f_MaterialLink117 = new MaterialLink , f_MaterialLink117.span_0.setText('Link 1') , $add_13(f_MaterialLink117, f_MaterialLink117.span_0) , f_MaterialLink117)) , f_MaterialCardAction115)) , $setBackgroundColor((!f_MaterialCard111.colorsMixin && (f_MaterialCard111.colorsMixin = new ColorsMixin(f_MaterialCard111)) , f_MaterialCard111.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard111, 'l2') , f_MaterialCard111)) , this$static.owner.gridPanel = gridPanel , gridPanel), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle118 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle118.header), 'Show Staggered List') , $setText_4(f_MaterialTitle118.paragraph, 'You can add a transition staggered reveal effect for any Unordered List material widget with List Items.') , f_MaterialTitle118), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (btnStaggered = new MaterialButton , btnStaggered.span_0.setText('Click Me') , $add_13(btnStaggered, btnStaggered.span_0) , $setBackgroundColor((!btnStaggered.colorsMixin && (btnStaggered.colorsMixin = new ColorsMixin(btnStaggered)) , btnStaggered.colorsMixin), 'blue') , $setWaves(btnStaggered, LIGHT) , $addDomHandler(btnStaggered, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames3, (null , TYPE_1)) , btnStaggered), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre119 = new PrettyPre , $setHTML(f_PrettyPre119, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m.html:UnorderedList ui:field="listContainer"&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> \u2003&lt;m.html:ListItem opacity="0"&gt;&lt;m:MaterialTitle title="List Item" description="List Item"/&gt;&lt;/m.html:ListItem&gt;<br> &lt;/m.html:UnorderedList&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre119.element, 'lang-xml', true) , setStyleName(f_PrettyPre119.element, 'z-depth-1', true) , f_PrettyPre119), $get_0(this$static.domId8Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre120 = new PrettyPre , $setHTML(f_PrettyPre120, (sb_2 = new StringBuilder , sb_2.string += 'MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre120.element, 'lang-java', true) , setStyleName(f_PrettyPre120.element, 'z-depth-1', true) , f_PrettyPre120), $get_0(this$static.domId9Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (listContainer = new UnorderedList , listContainer.add_0((f_ListItem121 = new ListItem , $add_13(f_ListItem121, (f_MaterialTitle122 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle122.header), 'List Item') , $setText_4(f_MaterialTitle122.paragraph, 'List Item') , f_MaterialTitle122)) , $cssSetOpacity(f_ListItem121.element.style, 0) , f_ListItem121)) , listContainer.add_0((f_ListItem123 = new ListItem , $add_13(f_ListItem123, (f_MaterialTitle124 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle124.header), 'List Item') , $setText_4(f_MaterialTitle124.paragraph, 'List Item') , f_MaterialTitle124)) , $cssSetOpacity(f_ListItem123.element.style, 0) , f_ListItem123)) , listContainer.add_0((f_ListItem125 = new ListItem , $add_13(f_ListItem125, (f_MaterialTitle126 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle126.header), 'List Item') , $setText_4(f_MaterialTitle126.paragraph, 'List Item') , f_MaterialTitle126)) , $cssSetOpacity(f_ListItem125.element.style, 0) , f_ListItem125)) , listContainer.add_0((f_ListItem127 = new ListItem , $add_13(f_ListItem127, (f_MaterialTitle128 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle128.header), 'List Item') , $setText_4(f_MaterialTitle128.paragraph, 'List Item') , f_MaterialTitle128)) , $cssSetOpacity(f_ListItem127.element.style, 0) , f_ListItem127)) , this$static.owner.listContainer = listContainer , listContainer), $get_0(this$static.domId10Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle129 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle129.header), 'Fade in Image') , $setText_4(f_MaterialTitle129.paragraph, 'Use this to fade in images. It also animates grayscale and brightness to give it a unique effect.') , f_MaterialTitle129), $get_0(this$static.domId11Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (btnFade = new MaterialButton , btnFade.span_0.setText('Click Me') , $add_13(btnFade, btnFade.span_0) , $setBackgroundColor((!btnFade.colorsMixin && (btnFade.colorsMixin = new ColorsMixin(btnFade)) , btnFade.colorsMixin), 'blue') , $setWaves(btnFade, LIGHT) , $addDomHandler(btnFade, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames4, (null , TYPE_1)) , btnFade), $get_0(this$static.domId12Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre130 = new PrettyPre , $setHTML(f_PrettyPre130, (sb_3 = new StringBuilder , sb_3.string += '\u2003&lt;m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}" caption="I love Material Design"/&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre130.element, 'lang-xml', true) , setStyleName(f_PrettyPre130.element, 'z-depth-1', true) , f_PrettyPre130), $get_0(this$static.domId13Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre131 = new PrettyPre , $setHTML(f_PrettyPre131, (sb_4 = new StringBuilder , sb_4.string += 'MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre131.element, 'lang-java', true) , setStyleName(f_PrettyPre131.element, 'z-depth-1', true) , f_PrettyPre131), $get_0(this$static.domId14Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (image = new MaterialImage , $setStyleName_0(image, ($build_style() , 'HPBM1FC-e-a'), true) , $cssSetOpacity(image.element.style, 0) , $setResource(image, (new MaterialResources_default_InlineClientBundleGenerator , $clinit_MaterialResources_default_InlineClientBundleGenerator$imageInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator() , image_0)) , $setAttribute(image.element, 'data-caption', 'I love Material Design') , this$static.owner.image = image , image), $get_0(this$static.domId15Element));
   return f_HTMLPanel2;
 }
 
 function $build_f_MaterialPanel1_3(this$static){
   var f_MaterialPanel1;
   f_MaterialPanel1 = new MaterialPanel;
-  $add_12(f_MaterialPanel1, $build_f_HTMLPanel2(this$static));
+  $add_13(f_MaterialPanel1, $build_f_HTMLPanel2(this$static));
   return f_MaterialPanel1;
 }
 
@@ -13340,54 +13300,54 @@ function MeaningfulAnimationsView_BinderImpl$Widgets(owner){
   this.domId15Element = new LazyDomElement(this.domId15);
 }
 
-defineClass(867, 1, {}, MeaningfulAnimationsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets', 867);
+defineClass(863, 1, {}, MeaningfulAnimationsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets', 863);
 function MeaningfulAnimationsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(868, 1, $intern_49, MeaningfulAnimationsView_BinderImpl$Widgets$1);
+defineClass(864, 1, $intern_52, MeaningfulAnimationsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_36(event_0){
   $onCloseGrid(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/1', 868);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/1', 864);
 function MeaningfulAnimationsView_BinderImpl$Widgets$2(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(869, 1, $intern_49, MeaningfulAnimationsView_BinderImpl$Widgets$2);
+defineClass(865, 1, $intern_52, MeaningfulAnimationsView_BinderImpl$Widgets$2);
 _.onClick = function onClick_37(event_0){
   $onShowGrid(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/2', 869);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/2', 865);
 function MeaningfulAnimationsView_BinderImpl$Widgets$3(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(870, 1, $intern_49, MeaningfulAnimationsView_BinderImpl$Widgets$3);
+defineClass(866, 1, $intern_52, MeaningfulAnimationsView_BinderImpl$Widgets$3);
 _.onClick = function onClick_38(event_0){
   $onStaggered(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$3_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/3', 870);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$3_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/3', 866);
 function MeaningfulAnimationsView_BinderImpl$Widgets$4(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(871, 1, $intern_49, MeaningfulAnimationsView_BinderImpl$Widgets$4);
+defineClass(867, 1, $intern_52, MeaningfulAnimationsView_BinderImpl$Widgets$4);
 _.onClick = function onClick_39(event_0){
   $onFade(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$4_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/4', 871);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl$Widgets$4_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl/Widgets/4', 867);
 function MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1168, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1165, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_6;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1168);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1165);
 function $ensureInjected_11(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -13402,13 +13362,13 @@ function $ensureInjected_11(this$static){
 function MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1169, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1166, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_19(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1169);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1166);
 function $clinit_MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_6 = new MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -13517,7 +13477,7 @@ function ChartsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(563, 55, $intern_39, ChartsPresenter);
+defineClass(563, 55, $intern_42, ChartsPresenter);
 _.onReveal = function onReveal_9(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Material Charts', 'Using GWT Charts Library , we tried to do couple of Material Design Charts based on Design Options on each respective chart libraries.'));
@@ -13528,10 +13488,10 @@ var Lgwt_material_design_demo_client_application_charts_ChartsPresenter_2_classL
 function ChartsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(624, 64, $intern_53, ChartsPresenterMyProxyImpl);
+defineClass(624, 64, $intern_56, ChartsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_16(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13556,7 +13516,7 @@ function $delayedBind_7(this$static, baseGinjector){
 function ChartsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(625, $intern_44, $intern_52, ChartsPresenterMyProxyImpl$WrappedProxy);
+defineClass(625, $intern_47, $intern_55, ChartsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_17(baseGinjector){
   $delayedBind_7(this, baseGinjector);
 }
@@ -13567,17 +13527,17 @@ function ChartsView(){
   $initWidget_0(this, $build_f_HTMLPanel1_2(new ChartsView_BinderImpl$Widgets));
 }
 
-defineClass(709, 60, $intern_40, ChartsView);
+defineClass(709, 60, $intern_43, ChartsView);
 var Lgwt_material_design_demo_client_application_charts_ChartsView_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView', 709);
 function ChartsView_BinderImpl(){
 }
 
-defineClass(872, 1, {}, ChartsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_charts_ChartsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView_BinderImpl', 872);
+defineClass(868, 1, {}, ChartsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_charts_ChartsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView_BinderImpl', 868);
 function $build_f_HTMLPanel1_2(this$static){
   var __attachRecord__, f_HTMLPanel1, f_MaterialTitle2, f_MaterialLink3, f_MaterialTitle4, f_PrettyPre5, f_MaterialTitle6, rowCharts, f_MaterialRow9, f_MaterialRow13, sb;
   f_HTMLPanel1 = new HTMLPanel($html2(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel1.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel1.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -13587,14 +13547,14 @@ function $build_f_HTMLPanel1_2(this$static){
   $get_0(this$static.domId6Element);
   $get_0(this$static.domId7Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML(f_MaterialTitle2.header.element, 'Pre-requisites') , $setText_4(f_MaterialTitle2.paragraph, 'First of all, you must download the gwt-charts 0.9.9.jar for the integration to GWT Material') , f_MaterialTitle2), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialLink3 = new MaterialLink , f_MaterialLink3.span_0.setText('Download gwt-charts.jar here') , $add_12(f_MaterialLink3, f_MaterialLink3.span_0) , $setTextColor((!f_MaterialLink3.colorsMixin && (f_MaterialLink3.colorsMixin = new ColorsMixin(f_MaterialLink3)) , f_MaterialLink3.colorsMixin), 'blue') , $setAttribute(f_MaterialLink3.element, 'href', 'http://gwt-charts.googlecode.com/svn/download/gwt-charts-0.9.9.jar') , f_MaterialLink3), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle4 = new MaterialTitle , $setInnerHTML(f_MaterialTitle4.header.element, 'Setup') , $setText_4(f_MaterialTitle4.paragraph, 'After downloading the jar, You will have to configure your App.gwt.xml file to inherit the Gwt Charts library. You can do it like this:') , f_MaterialTitle4), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb = new StringBuilder , sb.string += '&lt;inherits name="com.googlecode.gwt.charts.Charts" /&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle6 = new MaterialTitle , $setInnerHTML(f_MaterialTitle6.header.element, 'Chart Gallery') , $setText_4(f_MaterialTitle6.paragraph, 'Thats it, you can now download the Java or UI Binder files on each chart you want to add it in your dashboard.') , f_MaterialTitle6), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (rowCharts = new MaterialRow , $add_12(rowCharts, new MaterialPieChart) , $add_12(rowCharts, new MaterialGeoChart) , rowCharts), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow9 = new MaterialRow , $add_12(f_MaterialRow9, new MaterialAreaChart) , $add_12(f_MaterialRow9, new MaterialBarChart) , $add_12(f_MaterialRow9, new MaterialBubbleChart) , f_MaterialRow9), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow13 = new MaterialRow , $add_12(f_MaterialRow13, new MaterialCandleStick) , $add_12(f_MaterialRow13, new MaterialGauge) , f_MaterialRow13), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle2.header), 'Pre-requisites') , $setText_4(f_MaterialTitle2.paragraph, 'First of all, you must download the gwt-charts 0.9.9.jar for the integration to GWT Material') , f_MaterialTitle2), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialLink3 = new MaterialLink , f_MaterialLink3.span_0.setText('Download gwt-charts.jar here') , $add_13(f_MaterialLink3, f_MaterialLink3.span_0) , $setTextColor((!f_MaterialLink3.colorsMixin && (f_MaterialLink3.colorsMixin = new ColorsMixin(f_MaterialLink3)) , f_MaterialLink3.colorsMixin), 'blue') , $setAttribute(f_MaterialLink3.element, 'href', 'http://gwt-charts.googlecode.com/svn/download/gwt-charts-0.9.9.jar') , f_MaterialLink3), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle4 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle4.header), 'Setup') , $setText_4(f_MaterialTitle4.paragraph, 'After downloading the jar, You will have to configure your App.gwt.xml file to inherit the Gwt Charts library. You can do it like this:') , f_MaterialTitle4), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb = new StringBuilder , sb.string += '&lt;inherits name="com.googlecode.gwt.charts.Charts" /&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle6 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle6.header), 'Chart Gallery') , $setText_4(f_MaterialTitle6.paragraph, 'Thats it, you can now download the Java or UI Binder files on each chart you want to add it in your dashboard.') , f_MaterialTitle6), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (rowCharts = new MaterialRow , $add_13(rowCharts, new MaterialPieChart) , $add_13(rowCharts, new MaterialGeoChart) , rowCharts), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow9 = new MaterialRow , $add_13(f_MaterialRow9, new MaterialAreaChart) , $add_13(f_MaterialRow9, new MaterialBarChart) , $add_13(f_MaterialRow9, new MaterialBubbleChart) , f_MaterialRow9), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow13 = new MaterialRow , $add_13(f_MaterialRow13, new MaterialCandleStick) , $add_13(f_MaterialRow13, new MaterialGauge) , f_MaterialRow13), $get_0(this$static.domId7Element));
   return f_HTMLPanel1;
 }
 
@@ -13617,8 +13577,8 @@ function ChartsView_BinderImpl$Widgets(){
   this.domId7Element = new LazyDomElement(this.domId7);
 }
 
-defineClass(873, 1, {}, ChartsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_charts_ChartsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView_BinderImpl/Widgets', 873);
+defineClass(869, 1, {}, ChartsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_charts_ChartsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView_BinderImpl/Widgets', 869);
 function $html2(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7){
   var sb;
   sb = new StringBuilder;
@@ -13751,10 +13711,10 @@ var Lgwt_material_design_demo_client_application_com_1gwtplatform_1mvp_1client_1
 function AutoCompletePresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(626, 64, $intern_53, AutoCompletePresenterMyProxyImpl);
+defineClass(626, 64, $intern_56, AutoCompletePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_18(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13776,7 +13736,7 @@ function $delayedBind_8(this$static, baseGinjector){
 function AutoCompletePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(627, $intern_44, $intern_52, AutoCompletePresenterMyProxyImpl$WrappedProxy);
+defineClass(627, $intern_47, $intern_55, AutoCompletePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_19(baseGinjector){
   $delayedBind_8(this, baseGinjector);
 }
@@ -13821,7 +13781,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(492, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_4);
+defineClass(492, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_4);
 _.onFailure_0 = function onFailure_5(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -13832,7 +13792,7 @@ function BadgesPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(565, 55, $intern_39, BadgesPresenter);
+defineClass(565, 55, $intern_42, BadgesPresenter);
 _.onReveal = function onReveal_11(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Badges', 'Badges can notify you that there are new or unread messages or notifications. Add the new class to the badge to give it the background.'));
@@ -13842,10 +13802,10 @@ var Lgwt_material_design_demo_client_application_components_badges_BadgesPresent
 function BadgesPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(628, 64, $intern_53, BadgesPresenterMyProxyImpl);
+defineClass(628, 64, $intern_56, BadgesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_20(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13867,7 +13827,7 @@ function $delayedBind_9(this$static, baseGinjector){
 function BadgesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(629, $intern_44, $intern_52, BadgesPresenterMyProxyImpl$WrappedProxy);
+defineClass(629, $intern_47, $intern_55, BadgesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_21(baseGinjector){
   $delayedBind_9(this, baseGinjector);
 }
@@ -13878,17 +13838,17 @@ function BadgesView(){
   $initWidget_0(this, $build_f_HTMLPanel1_4(new BadgesView_BinderImpl$Widgets));
 }
 
-defineClass(711, 60, $intern_40, BadgesView);
+defineClass(711, 60, $intern_43, BadgesView);
 var Lgwt_material_design_demo_client_application_components_badges_BadgesView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView', 711);
 function BadgesView_BinderImpl(){
 }
 
-defineClass(874, 1, {}, BadgesView_BinderImpl);
-var Lgwt_material_design_demo_client_application_components_badges_BadgesView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView_BinderImpl', 874);
+defineClass(870, 1, {}, BadgesView_BinderImpl);
+var Lgwt_material_design_demo_client_application_components_badges_BadgesView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView_BinderImpl', 870);
 function $build_f_HTMLPanel1_4(this$static){
   var __attachRecord__, f_HTMLPanel1, f_MaterialTitle2, f_MaterialCollection3, f_PrettyPre14, f_MaterialTitle15, f_MaterialButton16, f_MaterialDropDown17, f_PrettyPre22, f_MaterialTitle23, f_MaterialNavBar24, f_PrettyPre30, f_MaterialCollectionItem4, f_MaterialLink5, f_MaterialCollectionItem7, f_MaterialLink8, f_MaterialCollectionItem10, f_MaterialLink11, f_MaterialCollectionItem12, f_MaterialLink13, sb, f_MaterialLink18, f_MaterialLink19, f_MaterialBadge20, f_MaterialLink21, sb_0, f_MaterialNavSection25, f_MaterialLink26, f_MaterialLink27, f_MaterialBadge28, f_MaterialLink29, sb_1, f_MaterialBadge6, f_MaterialBadge9;
   f_HTMLPanel1 = new HTMLPanel($html4_1(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7, this$static.domId8, this$static.domId9).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel1.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel1.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -13900,16 +13860,16 @@ function $build_f_HTMLPanel1_4(this$static){
   $get_0(this$static.domId8Element);
   $get_0(this$static.domId9Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML(f_MaterialTitle2.header.element, 'Collections') , f_MaterialTitle2), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialCollection3 = new MaterialCollection , $add_12(f_MaterialCollection3, (f_MaterialCollectionItem4 = new MaterialCollectionItem , $add_12(f_MaterialCollectionItem4, (f_MaterialLink5 = new MaterialLink , $add_12(f_MaterialLink5, (f_MaterialBadge6 = new MaterialBadge , $setInnerHTML(f_MaterialBadge6.element, '1 new') , $setTextColor((!f_MaterialBadge6.colorsMixin && (f_MaterialBadge6.colorsMixin = new ColorsMixin(f_MaterialBadge6)) , f_MaterialBadge6.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge6.colorsMixin && (f_MaterialBadge6.colorsMixin = new ColorsMixin(f_MaterialBadge6)) , f_MaterialBadge6.colorsMixin), 'blue') , f_MaterialBadge6)) , f_MaterialLink5.span_0.setText('Sample 1') , $add_12(f_MaterialLink5, f_MaterialLink5.span_0) , f_MaterialLink5)) , f_MaterialCollectionItem4)) , $add_12(f_MaterialCollection3, (f_MaterialCollectionItem7 = new MaterialCollectionItem , $add_12(f_MaterialCollectionItem7, (f_MaterialLink8 = new MaterialLink , $add_12(f_MaterialLink8, (f_MaterialBadge9 = new MaterialBadge , $setInnerHTML(f_MaterialBadge9.element, '1 new') , $setTextColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'blue') , f_MaterialBadge9)) , f_MaterialLink8.span_0.setText('Sample 2') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , f_MaterialLink8)) , f_MaterialCollectionItem7)) , $add_12(f_MaterialCollection3, (f_MaterialCollectionItem10 = new MaterialCollectionItem , $add_12(f_MaterialCollectionItem10, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Collecton 3') , $add_12(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , f_MaterialCollectionItem10)) , $add_12(f_MaterialCollection3, (f_MaterialCollectionItem12 = new MaterialCollectionItem , $add_12(f_MaterialCollectionItem12, (f_MaterialLink13 = new MaterialLink , f_MaterialLink13.span_0.setText('Collecton 4') , $add_12(f_MaterialLink13, f_MaterialLink13.span_0) , f_MaterialLink13)) , f_MaterialCollectionItem12)) , f_MaterialCollection3), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre14 = new PrettyPre , $setHTML(f_PrettyPre14, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialCollection&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Sample 1" &gt;<br> \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;/m:MaterialCollectionItem&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Sample 2" &gt;<br> \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;/m:MaterialCollectionItem&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 3"/&gt;&lt;/m:MaterialCollectionItem&gt;<br> \u2003&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 4"/&gt;&lt;/m:MaterialCollectionItem&gt;<br> &lt;/m:MaterialCollection&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre14.element, 'lang-xml', true) , setStyleName(f_PrettyPre14.element, 'z-depth-1', true) , f_PrettyPre14), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle15 = new MaterialTitle , $setInnerHTML(f_MaterialTitle15.header.element, 'Badges in Dropdown') , f_MaterialTitle15), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialButton16 = new MaterialButton , $setIconPosition(f_MaterialButton16, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialButton16.span_0.setText('Dropdown') , $add_12(f_MaterialButton16, f_MaterialButton16.span_0) , $setTextColor((!f_MaterialButton16.colorsMixin && (f_MaterialButton16.colorsMixin = new ColorsMixin(f_MaterialButton16)) , f_MaterialButton16.colorsMixin), 'white') , $setActivates(f_MaterialButton16, 'dp-4') , $setBackgroundColor((!f_MaterialButton16.colorsMixin && (f_MaterialButton16.colorsMixin = new ColorsMixin(f_MaterialButton16)) , f_MaterialButton16.colorsMixin), 'blue') , $setPropertyImpl(f_MaterialButton16.element.style, 'width', '400px') , $setIconType(f_MaterialButton16, ($clinit_IconType() , ARROW_DROP_DOWN)) , f_MaterialButton16), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialDropDown17 = new MaterialDropDown('dp-4') , $add_21(f_MaterialDropDown17, (f_MaterialLink18 = new MaterialLink , f_MaterialLink18.span_0.setText('First') , $add_12(f_MaterialLink18, f_MaterialLink18.span_0) , f_MaterialLink18)) , $add_21(f_MaterialDropDown17, (f_MaterialLink19 = new MaterialLink , $add_12(f_MaterialLink19, (f_MaterialBadge20 = new MaterialBadge , $setInnerHTML(f_MaterialBadge20.element, '1 new') , $setTextColor((!f_MaterialBadge20.colorsMixin && (f_MaterialBadge20.colorsMixin = new ColorsMixin(f_MaterialBadge20)) , f_MaterialBadge20.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge20.colorsMixin && (f_MaterialBadge20.colorsMixin = new ColorsMixin(f_MaterialBadge20)) , f_MaterialBadge20.colorsMixin), 'blue') , f_MaterialBadge20)) , f_MaterialLink19.span_0.setText('Second') , $add_12(f_MaterialLink19, f_MaterialLink19.span_0) , f_MaterialLink19)) , $add_21(f_MaterialDropDown17, (f_MaterialLink21 = new MaterialLink , f_MaterialLink21.span_0.setText('Third') , $add_12(f_MaterialLink21, f_MaterialLink21.span_0) , f_MaterialLink21)) , f_MaterialDropDown17.belowOrigin = false , $setPropertyImpl(f_MaterialDropDown17.element.style, 'width', '400px') , f_MaterialDropDown17.constrainWidth = false , f_MaterialDropDown17), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre22 = new PrettyPre , $setHTML(f_PrettyPre22, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;!-- Activator --&gt;<br> &lt;m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/&gt;<br> &lt;!-- My Drop Down --&gt;<br> &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px"&gt;<br> \u2003&lt;m:MaterialLink text="First" /&gt;<br> \u2003&lt;m:MaterialLink text="Second" &gt;<br> \u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;m:MaterialLink text="Third" /&gt;<br> &lt;/m:MaterialDropDown&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre22.element, 'lang-xml', true) , setStyleName(f_PrettyPre22.element, 'z-depth-1', true) , f_PrettyPre22), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle23 = new MaterialTitle , $setInnerHTML(f_MaterialTitle23.header.element, 'Badges in NavBar') , f_MaterialTitle23), $get_0(this$static.domId7Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialNavBar24 = new MaterialNavBar , $add_24(f_MaterialNavBar24, (f_MaterialNavSection25 = new MaterialNavSection , $add_20(f_MaterialNavSection25, new ListItem_0((f_MaterialLink26 = new MaterialLink , f_MaterialLink26.span_0.setText('Link 1') , $add_12(f_MaterialLink26, f_MaterialLink26.span_0) , f_MaterialLink26))) , $add_20(f_MaterialNavSection25, new ListItem_0((f_MaterialLink27 = new MaterialLink , $add_12(f_MaterialLink27, (f_MaterialBadge28 = new MaterialBadge , $setInnerHTML(f_MaterialBadge28.element, '1 new') , $setBackgroundColor((!f_MaterialBadge28.colorsMixin && (f_MaterialBadge28.colorsMixin = new ColorsMixin(f_MaterialBadge28)) , f_MaterialBadge28.colorsMixin), 'red') , f_MaterialBadge28)) , f_MaterialLink27.span_0.setText('Link 2') , $add_12(f_MaterialLink27, f_MaterialLink27.span_0) , f_MaterialLink27))) , $add_20(f_MaterialNavSection25, new ListItem_0((f_MaterialLink29 = new MaterialLink , f_MaterialLink29.span_0.setText('Link 3') , $add_12(f_MaterialLink29, f_MaterialLink29.span_0) , f_MaterialLink29))) , $setFloat(f_MaterialNavSection25, ($clinit_Style$Float() , RIGHT)) , f_MaterialNavSection25)) , $setBackgroundColor((!f_MaterialNavBar24.colorsMixin && (f_MaterialNavBar24.colorsMixin = new ColorsMixin(f_MaterialNavBar24)) , f_MaterialNavBar24.colorsMixin), 'blue') , f_MaterialNavBar24), $get_0(this$static.domId8Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre30 = new PrettyPre , $setHTML(f_PrettyPre30, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m:MaterialNavBar backgroundColor="blue"&gt;<br> \u2003&lt;m:MaterialNavSection float="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 2"&gt;<br>  \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="red"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 3" /&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre30.element, 'lang-xml', true) , setStyleName(f_PrettyPre30.element, 'z-depth-1', true) , f_PrettyPre30), $get_0(this$static.domId9Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle2 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle2.header), 'Collections') , f_MaterialTitle2), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialCollection3 = new MaterialCollection , $add_13(f_MaterialCollection3, (f_MaterialCollectionItem4 = new MaterialCollectionItem , $add_13(f_MaterialCollectionItem4, (f_MaterialLink5 = new MaterialLink , $add_13(f_MaterialLink5, (f_MaterialBadge6 = new MaterialBadge , $setInnerHTML(f_MaterialBadge6.element, '1 new') , $setTextColor((!f_MaterialBadge6.colorsMixin && (f_MaterialBadge6.colorsMixin = new ColorsMixin(f_MaterialBadge6)) , f_MaterialBadge6.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge6.colorsMixin && (f_MaterialBadge6.colorsMixin = new ColorsMixin(f_MaterialBadge6)) , f_MaterialBadge6.colorsMixin), 'blue') , f_MaterialBadge6)) , f_MaterialLink5.span_0.setText('Sample 1') , $add_13(f_MaterialLink5, f_MaterialLink5.span_0) , f_MaterialLink5)) , f_MaterialCollectionItem4)) , $add_13(f_MaterialCollection3, (f_MaterialCollectionItem7 = new MaterialCollectionItem , $add_13(f_MaterialCollectionItem7, (f_MaterialLink8 = new MaterialLink , $add_13(f_MaterialLink8, (f_MaterialBadge9 = new MaterialBadge , $setInnerHTML(f_MaterialBadge9.element, '1 new') , $setTextColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge9.colorsMixin && (f_MaterialBadge9.colorsMixin = new ColorsMixin(f_MaterialBadge9)) , f_MaterialBadge9.colorsMixin), 'blue') , f_MaterialBadge9)) , f_MaterialLink8.span_0.setText('Sample 2') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , f_MaterialLink8)) , f_MaterialCollectionItem7)) , $add_13(f_MaterialCollection3, (f_MaterialCollectionItem10 = new MaterialCollectionItem , $add_13(f_MaterialCollectionItem10, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Collecton 3') , $add_13(f_MaterialLink11, f_MaterialLink11.span_0) , f_MaterialLink11)) , f_MaterialCollectionItem10)) , $add_13(f_MaterialCollection3, (f_MaterialCollectionItem12 = new MaterialCollectionItem , $add_13(f_MaterialCollectionItem12, (f_MaterialLink13 = new MaterialLink , f_MaterialLink13.span_0.setText('Collecton 4') , $add_13(f_MaterialLink13, f_MaterialLink13.span_0) , f_MaterialLink13)) , f_MaterialCollectionItem12)) , f_MaterialCollection3), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre14 = new PrettyPre , $setHTML(f_PrettyPre14, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialCollection&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Sample 1" &gt;<br> \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;/m:MaterialCollectionItem&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Sample 2" &gt;<br> \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;/m:MaterialCollectionItem&gt;<br><br> \u2003&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 3"/&gt;&lt;/m:MaterialCollectionItem&gt;<br> \u2003&lt;m:MaterialCollectionItem&gt;&lt;m:MaterialLink text="Collecton 4"/&gt;&lt;/m:MaterialCollectionItem&gt;<br> &lt;/m:MaterialCollection&gt;' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre14.element, 'lang-xml', true) , setStyleName(f_PrettyPre14.element, 'z-depth-1', true) , f_PrettyPre14), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle15 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle15.header), 'Badges in Dropdown') , f_MaterialTitle15), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialButton16 = new MaterialButton , $setIconPosition(f_MaterialButton16, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialButton16.span_0.setText('Dropdown') , $add_13(f_MaterialButton16, f_MaterialButton16.span_0) , $setTextColor((!f_MaterialButton16.colorsMixin && (f_MaterialButton16.colorsMixin = new ColorsMixin(f_MaterialButton16)) , f_MaterialButton16.colorsMixin), 'white') , $setActivates(f_MaterialButton16, 'dp-4') , $setBackgroundColor((!f_MaterialButton16.colorsMixin && (f_MaterialButton16.colorsMixin = new ColorsMixin(f_MaterialButton16)) , f_MaterialButton16.colorsMixin), 'blue') , f_MaterialButton16.element.style['width'] = '400px' , undefined , $setIconType(f_MaterialButton16, ($clinit_IconType() , ARROW_DROP_DOWN)) , f_MaterialButton16), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialDropDown17 = new MaterialDropDown('dp-4') , $add_22(f_MaterialDropDown17, (f_MaterialLink18 = new MaterialLink , f_MaterialLink18.span_0.setText('First') , $add_13(f_MaterialLink18, f_MaterialLink18.span_0) , f_MaterialLink18)) , $add_22(f_MaterialDropDown17, (f_MaterialLink19 = new MaterialLink , $add_13(f_MaterialLink19, (f_MaterialBadge20 = new MaterialBadge , $setInnerHTML(f_MaterialBadge20.element, '1 new') , $setTextColor((!f_MaterialBadge20.colorsMixin && (f_MaterialBadge20.colorsMixin = new ColorsMixin(f_MaterialBadge20)) , f_MaterialBadge20.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialBadge20.colorsMixin && (f_MaterialBadge20.colorsMixin = new ColorsMixin(f_MaterialBadge20)) , f_MaterialBadge20.colorsMixin), 'blue') , f_MaterialBadge20)) , f_MaterialLink19.span_0.setText('Second') , $add_13(f_MaterialLink19, f_MaterialLink19.span_0) , f_MaterialLink19)) , $add_22(f_MaterialDropDown17, (f_MaterialLink21 = new MaterialLink , f_MaterialLink21.span_0.setText('Third') , $add_13(f_MaterialLink21, f_MaterialLink21.span_0) , f_MaterialLink21)) , f_MaterialDropDown17.belowOrigin = false , f_MaterialDropDown17.element.style['width'] = '400px' , undefined , f_MaterialDropDown17.constrainWidth = false , f_MaterialDropDown17), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre22 = new PrettyPre , $setHTML(f_PrettyPre22, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;!-- Activator --&gt;<br> &lt;m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/&gt;<br> &lt;!-- My Drop Down --&gt;<br> &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px"&gt;<br> \u2003&lt;m:MaterialLink text="First" /&gt;<br> \u2003&lt;m:MaterialLink text="Second" &gt;<br> \u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/&gt;<br> \u2003&lt;/m:MaterialLink&gt;<br> \u2003&lt;m:MaterialLink text="Third" /&gt;<br> &lt;/m:MaterialDropDown&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre22.element, 'lang-xml', true) , setStyleName(f_PrettyPre22.element, 'z-depth-1', true) , f_PrettyPre22), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle23 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle23.header), 'Badges in NavBar') , f_MaterialTitle23), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialNavBar24 = new MaterialNavBar , $add_25(f_MaterialNavBar24, (f_MaterialNavSection25 = new MaterialNavSection , $add_21(f_MaterialNavSection25, new ListItem_0((f_MaterialLink26 = new MaterialLink , f_MaterialLink26.span_0.setText('Link 1') , $add_13(f_MaterialLink26, f_MaterialLink26.span_0) , f_MaterialLink26))) , $add_21(f_MaterialNavSection25, new ListItem_0((f_MaterialLink27 = new MaterialLink , $add_13(f_MaterialLink27, (f_MaterialBadge28 = new MaterialBadge , $setInnerHTML(f_MaterialBadge28.element, '1 new') , $setBackgroundColor((!f_MaterialBadge28.colorsMixin && (f_MaterialBadge28.colorsMixin = new ColorsMixin(f_MaterialBadge28)) , f_MaterialBadge28.colorsMixin), 'red') , f_MaterialBadge28)) , f_MaterialLink27.span_0.setText('Link 2') , $add_13(f_MaterialLink27, f_MaterialLink27.span_0) , f_MaterialLink27))) , $add_21(f_MaterialNavSection25, new ListItem_0((f_MaterialLink29 = new MaterialLink , f_MaterialLink29.span_0.setText('Link 3') , $add_13(f_MaterialLink29, f_MaterialLink29.span_0) , f_MaterialLink29))) , $setFloat(f_MaterialNavSection25, ($clinit_Style$Float() , RIGHT)) , f_MaterialNavSection25)) , $setBackgroundColor((!f_MaterialNavBar24.colorsMixin && (f_MaterialNavBar24.colorsMixin = new ColorsMixin(f_MaterialNavBar24)) , f_MaterialNavBar24.colorsMixin), 'blue') , f_MaterialNavBar24), $get_0(this$static.domId8Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre30 = new PrettyPre , $setHTML(f_PrettyPre30, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m:MaterialNavBar backgroundColor="blue"&gt;<br> \u2003&lt;m:MaterialNavSection float="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 2"&gt;<br>  \u2003\u2003\u2003&lt;m:MaterialBadge text="1 new" backgroundColor="red"/&gt;<br> \u2003\u2003&lt;/m:MaterialLink&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 3" /&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre30.element, 'lang-xml', true) , setStyleName(f_PrettyPre30.element, 'z-depth-1', true) , f_PrettyPre30), $get_0(this$static.domId9Element));
   return f_HTMLPanel1;
 }
 
@@ -13936,8 +13896,8 @@ function BadgesView_BinderImpl$Widgets(){
   this.domId9Element = new LazyDomElement(this.domId9);
 }
 
-defineClass(875, 1, {}, BadgesView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_components_badges_BadgesView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView_BinderImpl/Widgets', 875);
+defineClass(871, 1, {}, BadgesView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_components_badges_BadgesView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView_BinderImpl/Widgets', 871);
 function $html4_1(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9){
   var sb;
   sb = new StringBuilder;
@@ -14023,7 +13983,7 @@ function ButtonsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(566, 55, $intern_39, ButtonsPresenter);
+defineClass(566, 55, $intern_42, ButtonsPresenter);
 _.onReveal = function onReveal_12(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Buttons', 'There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.'));
@@ -14033,10 +13993,10 @@ var Lgwt_material_design_demo_client_application_components_buttons_ButtonsPrese
 function ButtonsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(630, 64, $intern_53, ButtonsPresenterMyProxyImpl);
+defineClass(630, 64, $intern_56, ButtonsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_22(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14058,24 +14018,24 @@ function $delayedBind_10(this$static, baseGinjector){
 function ButtonsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(631, $intern_44, $intern_52, ButtonsPresenterMyProxyImpl$WrappedProxy);
+defineClass(631, $intern_47, $intern_55, ButtonsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_23(baseGinjector){
   $delayedBind_10(this, baseGinjector);
 }
 ;
 var Lgwt_material_design_demo_client_application_components_buttons_ButtonsPresenterMyProxyImpl$WrappedProxy_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsPresenterMyProxyImpl/WrappedProxy', 631);
 function $onClick_0(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Click Triggered', $intern_56, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Click Triggered', $intern_59, null);
   $setText_3(this$static.btnClick, 'Clicked');
 }
 
 function $onDoubleClick(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Double Click Triggered', $intern_56, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Double Click Triggered', $intern_59, null);
   $setText_3(this$static.btnDoubleClick, 'Double Clicked');
 }
 
 function $onHover(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Hover Triggered', $intern_56, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 17, 0, [])), 'Hover Triggered', $intern_59, null);
   $setText_3(this$static.btnHover, 'Hovered');
 }
 
@@ -14084,17 +14044,17 @@ function ButtonsView(){
   $initWidget_0(this, $build_panel(new ButtonsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(712, 60, $intern_40, ButtonsView);
+defineClass(712, 60, $intern_43, ButtonsView);
 var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView', 712);
 function ButtonsView_BinderImpl(){
 }
 
-defineClass(876, 1, {}, ButtonsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl', 876);
+defineClass(872, 1, {}, ButtonsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl', 872);
 function $build_panel(this$static){
   var __attachRecord__, panel, f_MaterialTitle1, f_MaterialButton2, f_MaterialButton3, f_MaterialButton4, f_MaterialButton5, f_MaterialButton6, f_PrettyPre7, sb, f_MaterialTitle8, f_MaterialButton9, f_MaterialButton10, f_MaterialButton11, f_MaterialButton12, f_MaterialButton13, f_MaterialButton14, f_PrettyPre15, sb_0, f_MaterialTitle16, f_MaterialButton17, f_MaterialButton18, f_MaterialButton19, f_MaterialButton20, f_PrettyPre21, sb_1, f_MaterialTitle22, f_MaterialButton23, f_MaterialButton24, f_MaterialButton25, f_PrettyPre26, sb_2, f_MaterialTitle27, f_MaterialIcon28, f_MaterialIcon29, f_MaterialIcon30, f_PrettyPre31, sb_3, f_MaterialTitle32, f_MaterialButton33, f_MaterialButton34, f_MaterialButton35, f_MaterialButton36, f_PrettyPre37, sb_4, f_MaterialTitle38, btnClick, btnHover, btnDoubleClick, f_PrettyPre39, sb_5, f_MaterialTitle40, f_MaterialRow41, f_MaterialLink42, f_MaterialLink43, f_MaterialLink44, f_PrettyPre45, sb_6;
   panel = new HTMLPanel($html9(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7, this$static.domId8, this$static.domId9, this$static.domId10, this$static.domId11, this$static.domId12, this$static.domId13, this$static.domId14, this$static.domId15, this$static.domId16, this$static.domId17, this$static.domId18, this$static.domId19, this$static.domId20, this$static.domId21, this$static.domId22, this$static.domId23, this$static.domId24, this$static.domId25, this$static.domId26, this$static.domId27, this$static.domId28, this$static.domId29, this$static.domId30, this$static.domId31, this$static.domId32, this$static.domId33, this$static.domId34, this$static.domId35, this$static.domId36, this$static.domId37, this$static.domId38, this$static.domId39, this$static.domId40, this$static.domId41, this$static.domId42, this$static.domId43, this$static.domId44).html);
-  __attachRecord__ = attachToDom(panel.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , panel.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -14141,51 +14101,51 @@ function $build_panel(this$static){
   $get_0(this$static.domId43Element);
   $get_0(this$static.domId44Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(panel, (f_MaterialTitle1 = new MaterialTitle , $setInnerHTML(f_MaterialTitle1.header.element, 'Raised') , $setText_4(f_MaterialTitle1.paragraph, 'The raised button is a standard button that signify actions and seek to give depth to a mostly flat page.') , f_MaterialTitle1), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton2 = new MaterialButton , f_MaterialButton2.span_0.setText('Button') , $add_12(f_MaterialButton2, f_MaterialButton2.span_0) , $setTextColor((!f_MaterialButton2.colorsMixin && (f_MaterialButton2.colorsMixin = new ColorsMixin(f_MaterialButton2)) , f_MaterialButton2.colorsMixin), 'black') , $setBackgroundColor((!f_MaterialButton2.colorsMixin && (f_MaterialButton2.colorsMixin = new ColorsMixin(f_MaterialButton2)) , f_MaterialButton2.colorsMixin), 'white') , $setWaves(f_MaterialButton2, ($clinit_WavesType() , DEFAULT_6)) , f_MaterialButton2), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton3 = new MaterialButton , $setIconPosition(f_MaterialButton3, ($clinit_IconPosition() , LEFT_4)) , f_MaterialButton3.span_0.setText('Primary') , $add_12(f_MaterialButton3, f_MaterialButton3.span_0) , $setTextColor((!f_MaterialButton3.colorsMixin && (f_MaterialButton3.colorsMixin = new ColorsMixin(f_MaterialButton3)) , f_MaterialButton3.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialButton3.colorsMixin && (f_MaterialButton3.colorsMixin = new ColorsMixin(f_MaterialButton3)) , f_MaterialButton3.colorsMixin), 'blue') , $setWaves(f_MaterialButton3, LIGHT) , $setIconType(f_MaterialButton3, ($clinit_IconType() , POLYMER)) , f_MaterialButton3), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton4 = new MaterialButton , $setEnabled_2((!f_MaterialButton4.enabledMixin && (f_MaterialButton4.enabledMixin = new EnabledMixin(f_MaterialButton4)) , f_MaterialButton4.enabledMixin)) , $setIconPosition(f_MaterialButton4, RIGHT_5) , f_MaterialButton4.span_0.setText('Disabled') , $add_12(f_MaterialButton4, f_MaterialButton4.span_0) , $setBackgroundColor((!f_MaterialButton4.colorsMixin && (f_MaterialButton4.colorsMixin = new ColorsMixin(f_MaterialButton4)) , f_MaterialButton4.colorsMixin), 'blue') , $setWaves(f_MaterialButton4, LIGHT) , $setIconType(f_MaterialButton4, POLYMER) , f_MaterialButton4), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton5 = new MaterialButton , $setIconPosition(f_MaterialButton5, RIGHT_5) , f_MaterialButton5.span_0.setText('Warn') , $add_12(f_MaterialButton5, f_MaterialButton5.span_0) , $setTextColor((!f_MaterialButton5.colorsMixin && (f_MaterialButton5.colorsMixin = new ColorsMixin(f_MaterialButton5)) , f_MaterialButton5.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialButton5.colorsMixin && (f_MaterialButton5.colorsMixin = new ColorsMixin(f_MaterialButton5)) , f_MaterialButton5.colorsMixin), 'red') , $setWaves(f_MaterialButton5, LIGHT) , $setIconType(f_MaterialButton5, POLYMER) , f_MaterialButton5), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton6 = new MaterialButton , $setIconPosition(f_MaterialButton6, RIGHT_5) , f_MaterialButton6.span_0.setText('Icon Color') , $add_12(f_MaterialButton6, f_MaterialButton6.span_0) , $setTextColor((!f_MaterialButton6.colorsMixin && (f_MaterialButton6.colorsMixin = new ColorsMixin(f_MaterialButton6)) , f_MaterialButton6.colorsMixin), 'black') , $setBackgroundColor((!f_MaterialButton6.colorsMixin && (f_MaterialButton6.colorsMixin = new ColorsMixin(f_MaterialButton6)) , f_MaterialButton6.colorsMixin), 'white') , $setWaves(f_MaterialButton6, RED) , $setIconColor(f_MaterialButton6.icon_0, 'red') , $setIconType(f_MaterialButton6, POLYMER) , f_MaterialButton6), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre7 = new PrettyPre , $setHTML(f_PrettyPre7, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white" textColor="black"/&gt;<br> &lt;m:MaterialButton text="Primary" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton text="Disabled" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="red" textColor="white" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="white" textColor="black" iconType="POLYMER" iconPosition="RIGHT" iconColor="red"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre7.element, 'lang-xml', true) , setStyleName(f_PrettyPre7.element, 'z-depth-1', true) , f_PrettyPre7), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle8 = new MaterialTitle , $setInnerHTML(f_MaterialTitle8.header.element, 'Floating') , $setText_4(f_MaterialTitle8.paragraph, 'The floating circular action button is meant for very important functions.') , f_MaterialTitle8), $get_0(this$static.domId7Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton9 = new MaterialButton , $setBackgroundColor((!f_MaterialButton9.colorsMixin && (f_MaterialButton9.colorsMixin = new ColorsMixin(f_MaterialButton9)) , f_MaterialButton9.colorsMixin), 'red') , $setWaves(f_MaterialButton9, LIGHT) , $setType_0(f_MaterialButton9, ($clinit_ButtonType() , FLOATING)) , $setIconType(f_MaterialButton9, CAKE) , $setSize(f_MaterialButton9, ($clinit_ButtonSize() , LARGE)) , f_MaterialButton9), $get_0(this$static.domId8Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton10 = new MaterialButton , $setBackgroundColor((!f_MaterialButton10.colorsMixin && (f_MaterialButton10.colorsMixin = new ColorsMixin(f_MaterialButton10)) , f_MaterialButton10.colorsMixin), 'blue') , $setWaves(f_MaterialButton10, LIGHT) , $setType_0(f_MaterialButton10, FLOATING) , $setIconType(f_MaterialButton10, ANDROID) , $setSize(f_MaterialButton10, LARGE) , f_MaterialButton10), $get_0(this$static.domId9Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton11 = new MaterialButton , $setEnabled_2((!f_MaterialButton11.enabledMixin && (f_MaterialButton11.enabledMixin = new EnabledMixin(f_MaterialButton11)) , f_MaterialButton11.enabledMixin)) , $setBackgroundColor((!f_MaterialButton11.colorsMixin && (f_MaterialButton11.colorsMixin = new ColorsMixin(f_MaterialButton11)) , f_MaterialButton11.colorsMixin), 'blue') , $setWaves(f_MaterialButton11, LIGHT) , $setType_0(f_MaterialButton11, FLOATING) , $setIconType(f_MaterialButton11, MESSAGE) , $setSize(f_MaterialButton11, LARGE) , f_MaterialButton11), $get_0(this$static.domId10Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton12 = new MaterialButton , $setBackgroundColor((!f_MaterialButton12.colorsMixin && (f_MaterialButton12.colorsMixin = new ColorsMixin(f_MaterialButton12)) , f_MaterialButton12.colorsMixin), 'blue') , $setWaves(f_MaterialButton12, LIGHT) , $setType_0(f_MaterialButton12, FLOATING) , $setIconType(f_MaterialButton12, GROUP_0) , $setSize(f_MaterialButton12, LARGE) , f_MaterialButton12), $get_0(this$static.domId11Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton13 = new MaterialButton , $setBackgroundColor((!f_MaterialButton13.colorsMixin && (f_MaterialButton13.colorsMixin = new ColorsMixin(f_MaterialButton13)) , f_MaterialButton13.colorsMixin), 'red') , $setWaves(f_MaterialButton13, LIGHT) , $setType_0(f_MaterialButton13, FLOATING) , $setIconType(f_MaterialButton13, CAKE) , $setSize(f_MaterialButton13, LARGE) , f_MaterialButton13), $get_0(this$static.domId12Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton14 = new MaterialButton , $setBackgroundColor((!f_MaterialButton14.colorsMixin && (f_MaterialButton14.colorsMixin = new ColorsMixin(f_MaterialButton14)) , f_MaterialButton14.colorsMixin), 'white') , $setWaves(f_MaterialButton14, DEFAULT_6) , $setIconColor(f_MaterialButton14.icon_0, 'green') , $setType_0(f_MaterialButton14, FLOATING) , $setIconType(f_MaterialButton14, ANDROID) , $setSize(f_MaterialButton14, LARGE) , f_MaterialButton14), $get_0(this$static.domId13Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre15 = new PrettyPre , $setHTML(f_PrettyPre15, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="ANDROID" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="MESSAGE" enabled="false"/&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="GROUP" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" /&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre15.element, 'lang-xml', true) , setStyleName(f_PrettyPre15.element, 'z-depth-1', true) , f_PrettyPre15), $get_0(this$static.domId14Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle16 = new MaterialTitle , $setInnerHTML(f_MaterialTitle16.header.element, 'FLAT') , $setText_4(f_MaterialTitle16.paragraph, 'Flat buttons are usually used within elements that already have depth like cards or modals.') , f_MaterialTitle16), $get_0(this$static.domId15Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton17 = new MaterialButton , f_MaterialButton17.span_0.setText('Button') , $add_12(f_MaterialButton17, f_MaterialButton17.span_0) , $setTextColor((!f_MaterialButton17.colorsMixin && (f_MaterialButton17.colorsMixin = new ColorsMixin(f_MaterialButton17)) , f_MaterialButton17.colorsMixin), 'black') , $setWaves(f_MaterialButton17, DEFAULT_6) , $setType_0(f_MaterialButton17, FLAT) , f_MaterialButton17), $get_0(this$static.domId16Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton18 = new MaterialButton , f_MaterialButton18.span_0.setText('Primary (No Waves)') , $add_12(f_MaterialButton18, f_MaterialButton18.span_0) , $setTextColor((!f_MaterialButton18.colorsMixin && (f_MaterialButton18.colorsMixin = new ColorsMixin(f_MaterialButton18)) , f_MaterialButton18.colorsMixin), 'blue') , $setType_0(f_MaterialButton18, FLAT) , f_MaterialButton18), $get_0(this$static.domId17Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton19 = new MaterialButton , $setEnabled_2((!f_MaterialButton19.enabledMixin && (f_MaterialButton19.enabledMixin = new EnabledMixin(f_MaterialButton19)) , f_MaterialButton19.enabledMixin)) , f_MaterialButton19.span_0.setText('Disabled') , $add_12(f_MaterialButton19, f_MaterialButton19.span_0) , $setWaves(f_MaterialButton19, DEFAULT_6) , $setType_0(f_MaterialButton19, FLAT) , f_MaterialButton19), $get_0(this$static.domId18Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton20 = new MaterialButton , f_MaterialButton20.span_0.setText('Warn') , $add_12(f_MaterialButton20, f_MaterialButton20.span_0) , $setTextColor((!f_MaterialButton20.colorsMixin && (f_MaterialButton20.colorsMixin = new ColorsMixin(f_MaterialButton20)) , f_MaterialButton20.colorsMixin), 'red') , $setWaves(f_MaterialButton20, RED) , $setType_0(f_MaterialButton20, FLAT) , f_MaterialButton20), $get_0(this$static.domId19Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre21 = new PrettyPre , $setHTML(f_PrettyPre21, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" /&gt;<br> &lt;m:MaterialButton text="Primary (No Waves)" textColor="blue" type="FLAT" /&gt;<br> &lt;m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT" enabled="false" /&gt;<br> &lt;m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" /&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre21.element, 'lang-xml', true) , setStyleName(f_PrettyPre21.element, 'z-depth-1', true) , f_PrettyPre21), $get_0(this$static.domId20Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle22 = new MaterialTitle , $setInnerHTML(f_MaterialTitle22.header.element, 'Large') , $setText_4(f_MaterialTitle22.paragraph, 'This button has a larger height for buttons that need more attention.') , f_MaterialTitle22), $get_0(this$static.domId21Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton23 = new MaterialButton , f_MaterialButton23.span_0.setText('Button') , $add_12(f_MaterialButton23, f_MaterialButton23.span_0) , $setBackgroundColor((!f_MaterialButton23.colorsMixin && (f_MaterialButton23.colorsMixin = new ColorsMixin(f_MaterialButton23)) , f_MaterialButton23.colorsMixin), 'blue') , $setWaves(f_MaterialButton23, LIGHT) , $setSize(f_MaterialButton23, LARGE) , f_MaterialButton23), $get_0(this$static.domId22Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton24 = new MaterialButton , $setIconPosition(f_MaterialButton24, LEFT_4) , f_MaterialButton24.span_0.setText('Button') , $add_12(f_MaterialButton24, f_MaterialButton24.span_0) , $setBackgroundColor((!f_MaterialButton24.colorsMixin && (f_MaterialButton24.colorsMixin = new ColorsMixin(f_MaterialButton24)) , f_MaterialButton24.colorsMixin), 'blue') , $setWaves(f_MaterialButton24, LIGHT) , $setIconType(f_MaterialButton24, POLYMER) , $setSize(f_MaterialButton24, LARGE) , f_MaterialButton24), $get_0(this$static.domId23Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton25 = new MaterialButton , $setIconPosition(f_MaterialButton25, RIGHT_5) , f_MaterialButton25.span_0.setText('Button') , $add_12(f_MaterialButton25, f_MaterialButton25.span_0) , $setBackgroundColor((!f_MaterialButton25.colorsMixin && (f_MaterialButton25.colorsMixin = new ColorsMixin(f_MaterialButton25)) , f_MaterialButton25.colorsMixin), 'blue') , $setWaves(f_MaterialButton25, LIGHT) , $setIconType(f_MaterialButton25, POLYMER) , $setSize(f_MaterialButton25, LARGE) , f_MaterialButton25), $get_0(this$static.domId24Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre26 = new PrettyPre , $setHTML(f_PrettyPre26, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/&gt;<br> &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/&gt;<br> &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre26.element, 'lang-xml', true) , setStyleName(f_PrettyPre26.element, 'z-depth-1', true) , f_PrettyPre26), $get_0(this$static.domId25Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle27 = new MaterialTitle , $setInnerHTML(f_MaterialTitle27.header.element, 'Icon Button') , $setText_4(f_MaterialTitle27.paragraph, 'Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities') , f_MaterialTitle27), $get_0(this$static.domId26Element));
-  $addAndReplaceElement_0(panel, (f_MaterialIcon28 = new MaterialIcon , $setWaves(f_MaterialIcon28, DEFAULT_6) , $setPropertyImpl(f_MaterialIcon28.element.style, 'color', 'blue') , $setOn((!f_MaterialIcon28.circleMixin && (f_MaterialIcon28.circleMixin = new ToggleStyleMixin(f_MaterialIcon28, 'circle')) , f_MaterialIcon28.circleMixin), true) , $setIconType_2(f_MaterialIcon28, MENU_0) , f_MaterialIcon28), $get_0(this$static.domId27Element));
-  $addAndReplaceElement_0(panel, (f_MaterialIcon29 = new MaterialIcon , $setEnabled_2((!f_MaterialIcon29.enabledMixin && (f_MaterialIcon29.enabledMixin = new EnabledMixin(f_MaterialIcon29)) , f_MaterialIcon29.enabledMixin)) , $setWaves(f_MaterialIcon29, DEFAULT_6) , $setPropertyImpl(f_MaterialIcon29.element.style, 'color', 'red') , $setOn((!f_MaterialIcon29.circleMixin && (f_MaterialIcon29.circleMixin = new ToggleStyleMixin(f_MaterialIcon29, 'circle')) , f_MaterialIcon29.circleMixin), true) , $setIconType_2(f_MaterialIcon29, FAVORITE) , f_MaterialIcon29), $get_0(this$static.domId28Element));
-  $addAndReplaceElement_0(panel, (f_MaterialIcon30 = new MaterialIcon , $setWaves(f_MaterialIcon30, DEFAULT_6) , $setPropertyImpl(f_MaterialIcon30.element.style, 'color', 'grey') , $setOn((!f_MaterialIcon30.circleMixin && (f_MaterialIcon30.circleMixin = new ToggleStyleMixin(f_MaterialIcon30, 'circle')) , f_MaterialIcon30.circleMixin), true) , $setIconType_2(f_MaterialIcon30, MORE_VERT) , f_MaterialIcon30), $get_0(this$static.domId29Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre31 = new PrettyPre , $setHTML(f_PrettyPre31, (sb_3 = new StringBuilder , sb_3.string += '\u2003&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"//&gt;<br> &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"//&gt;<br> &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"//&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre31.element, 'lang-xml', true) , setStyleName(f_PrettyPre31.element, 'z-depth-1', true) , f_PrettyPre31), $get_0(this$static.domId30Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle32 = new MaterialTitle , $setInnerHTML(f_MaterialTitle32.header.element, 'Disabled') , $setText_4(f_MaterialTitle32.paragraph, "When you set disabled='true' All events will be disabled.") , f_MaterialTitle32), $get_0(this$static.domId31Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton33 = new MaterialButton , $setEnabled_2((!f_MaterialButton33.enabledMixin && (f_MaterialButton33.enabledMixin = new EnabledMixin(f_MaterialButton33)) , f_MaterialButton33.enabledMixin)) , $setIconPosition(f_MaterialButton33, LEFT_4) , f_MaterialButton33.span_0.setText('Button') , $add_12(f_MaterialButton33, f_MaterialButton33.span_0) , $setIconType(f_MaterialButton33, POLYMER) , $setSize(f_MaterialButton33, LARGE) , f_MaterialButton33), $get_0(this$static.domId32Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton34 = new MaterialButton , $setEnabled_2((!f_MaterialButton34.enabledMixin && (f_MaterialButton34.enabledMixin = new EnabledMixin(f_MaterialButton34)) , f_MaterialButton34.enabledMixin)) , $setIconPosition(f_MaterialButton34, LEFT_4) , f_MaterialButton34.span_0.setText('Button') , $add_12(f_MaterialButton34, f_MaterialButton34.span_0) , $setIconType(f_MaterialButton34, POLYMER) , f_MaterialButton34), $get_0(this$static.domId33Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton35 = new MaterialButton , $setEnabled_2((!f_MaterialButton35.enabledMixin && (f_MaterialButton35.enabledMixin = new EnabledMixin(f_MaterialButton35)) , f_MaterialButton35.enabledMixin)) , f_MaterialButton35.span_0.setText('Button') , $add_12(f_MaterialButton35, f_MaterialButton35.span_0) , $setType_0(f_MaterialButton35, FLAT) , f_MaterialButton35), $get_0(this$static.domId34Element));
-  $addAndReplaceElement_0(panel, (f_MaterialButton36 = new MaterialButton , $setEnabled_2((!f_MaterialButton36.enabledMixin && (f_MaterialButton36.enabledMixin = new EnabledMixin(f_MaterialButton36)) , f_MaterialButton36.enabledMixin)) , $setType_0(f_MaterialButton36, FLOATING) , $setIconType(f_MaterialButton36, POLYMER) , f_MaterialButton36), $get_0(this$static.domId35Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre37 = new PrettyPre , $setHTML(f_PrettyPre37, (sb_4 = new StringBuilder , sb_4.string += '\u2003&lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Button" type="FLAT" enabled="false"/&gt;<br> &lt;m:MaterialButton type="FLOATING" iconType="POLYMER" enabled="false"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre37.element, 'lang-xml', true) , setStyleName(f_PrettyPre37.element, 'z-depth-1', true) , f_PrettyPre37), $get_0(this$static.domId36Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle38 = new MaterialTitle , $setInnerHTML(f_MaterialTitle38.header.element, 'Events') , $setText_4(f_MaterialTitle38.paragraph, 'MaterialButtons , MaterialIcons and MaterialLinks extends ButtonBase which implements all Mouse Handlers, Click Handlers and other events.') , f_MaterialTitle38), $get_0(this$static.domId37Element));
-  $addAndReplaceElement_0(panel, (btnClick = new MaterialButton , $setIconPosition(btnClick, LEFT_4) , btnClick.span_0.setText('Click Me') , $add_12(btnClick, btnClick.span_0) , $setTextColor((!btnClick.colorsMixin && (btnClick.colorsMixin = new ColorsMixin(btnClick)) , btnClick.colorsMixin), 'white') , $setBackgroundColor((!btnClick.colorsMixin && (btnClick.colorsMixin = new ColorsMixin(btnClick)) , btnClick.colorsMixin), 'blue') , $setWaves(btnClick, LIGHT) , $setIconType(btnClick, POLYMER) , $addDomHandler(btnClick, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , this$static.owner.btnClick = btnClick , btnClick), $get_0(this$static.domId38Element));
-  $addAndReplaceElement_0(panel, (btnHover = new MaterialButton , $setIconPosition(btnHover, LEFT_4) , btnHover.span_0.setText('Hover Me') , $add_12(btnHover, btnHover.span_0) , $setTextColor((!btnHover.colorsMixin && (btnHover.colorsMixin = new ColorsMixin(btnHover)) , btnHover.colorsMixin), 'white') , $setBackgroundColor((!btnHover.colorsMixin && (btnHover.colorsMixin = new ColorsMixin(btnHover)) , btnHover.colorsMixin), 'blue') , $setWaves(btnHover, LIGHT) , $setIconType(btnHover, POLYMER) , $addDomHandler(btnHover, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_MouseOverEvent() , $clinit_MouseOverEvent() , TYPE_8)) , this$static.owner.btnHover = btnHover , btnHover), $get_0(this$static.domId39Element));
-  $addAndReplaceElement_0(panel, (btnDoubleClick = new MaterialButton , $setIconPosition(btnDoubleClick, LEFT_4) , btnDoubleClick.span_0.setText('Double Click Me') , $add_12(btnDoubleClick, btnDoubleClick.span_0) , $setTextColor((!btnDoubleClick.colorsMixin && (btnDoubleClick.colorsMixin = new ColorsMixin(btnDoubleClick)) , btnDoubleClick.colorsMixin), 'white') , $setBackgroundColor((!btnDoubleClick.colorsMixin && (btnDoubleClick.colorsMixin = new ColorsMixin(btnDoubleClick)) , btnDoubleClick.colorsMixin), 'blue') , $setWaves(btnDoubleClick, LIGHT) , $setIconType(btnDoubleClick, POLYMER) , $addDomHandler(btnDoubleClick, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames3, ($clinit_DoubleClickEvent() , $clinit_DoubleClickEvent() , TYPE_2)) , this$static.owner.btnDoubleClick = btnDoubleClick , btnDoubleClick), $get_0(this$static.domId40Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre39 = new PrettyPre , $setHTML(f_PrettyPre39, (sb_5 = new StringBuilder , sb_5.string += '\u2003&lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_5.string)).html) , setStyleName(f_PrettyPre39.element, 'lang-xml', true) , setStyleName(f_PrettyPre39.element, 'z-depth-1', true) , f_PrettyPre39), $get_0(this$static.domId41Element));
-  $addAndReplaceElement_0(panel, (f_MaterialTitle40 = new MaterialTitle , $setInnerHTML(f_MaterialTitle40.header.element, 'Links') , $setText_4(f_MaterialTitle40.paragraph, 'Using Material Link you can easily add href functionality into your app for navigation') , f_MaterialTitle40), $get_0(this$static.domId42Element));
-  $addAndReplaceElement_0(panel, (f_MaterialRow41 = new MaterialRow , $add_12(f_MaterialRow41, (f_MaterialLink42 = new MaterialLink , $setIconPosition(f_MaterialLink42, LEFT_4) , f_MaterialLink42.span_0.setText('Normal Link') , $add_12(f_MaterialLink42, f_MaterialLink42.span_0) , $setTextColor((!f_MaterialLink42.colorsMixin && (f_MaterialLink42.colorsMixin = new ColorsMixin(f_MaterialLink42)) , f_MaterialLink42.colorsMixin), 'red') , $setGrid((!f_MaterialLink42.gridMixin && (f_MaterialLink42.gridMixin = new GridMixin(f_MaterialLink42)) , f_MaterialLink42.gridMixin), '') , $setAttribute(f_MaterialLink42.element, 'href', '#normal') , $setIconType(f_MaterialLink42, POLYMER) , f_MaterialLink42)) , $add_12(f_MaterialRow41, (f_MaterialLink43 = new MaterialLink , $setIconPosition(f_MaterialLink43, LEFT_4) , f_MaterialLink43.span_0.setText('Link with Href') , $add_12(f_MaterialLink43, f_MaterialLink43.span_0) , $setTextColor((!f_MaterialLink43.colorsMixin && (f_MaterialLink43.colorsMixin = new ColorsMixin(f_MaterialLink43)) , f_MaterialLink43.colorsMixin), 'red') , $setGrid((!f_MaterialLink43.gridMixin && (f_MaterialLink43.gridMixin = new GridMixin(f_MaterialLink43)) , f_MaterialLink43.gridMixin), '') , $setAttribute(f_MaterialLink43.element, 'href', '#material') , $setIconType(f_MaterialLink43, POLYMER) , f_MaterialLink43)) , $add_12(f_MaterialRow41, (f_MaterialLink44 = new MaterialLink , $setIconPosition(f_MaterialLink44, LEFT_4) , f_MaterialLink44.span_0.setText('Link with Different Icon color') , $add_12(f_MaterialLink44, f_MaterialLink44.span_0) , $setTextColor((!f_MaterialLink44.colorsMixin && (f_MaterialLink44.colorsMixin = new ColorsMixin(f_MaterialLink44)) , f_MaterialLink44.colorsMixin), 'black') , $setGrid((!f_MaterialLink44.gridMixin && (f_MaterialLink44.gridMixin = new GridMixin(f_MaterialLink44)) , f_MaterialLink44.gridMixin), '') , $setIconColor(f_MaterialLink44.icon_0, 'red') , $setAttribute(f_MaterialLink44.element, 'href', '#design') , $setIconType(f_MaterialLink44, POLYMER) , f_MaterialLink44)) , f_MaterialRow41), $get_0(this$static.domId43Element));
-  $addAndReplaceElement_0(panel, (f_PrettyPre45 = new PrettyPre , $setHTML(f_PrettyPre45, (sb_6 = new StringBuilder , sb_6.string += '\u2003&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_6.string)).html) , setStyleName(f_PrettyPre45.element, 'lang-xml', true) , setStyleName(f_PrettyPre45.element, 'z-depth-1', true) , f_PrettyPre45), $get_0(this$static.domId44Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle1 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle1.header), 'Raised') , $setText_4(f_MaterialTitle1.paragraph, 'The raised button is a standard button that signify actions and seek to give depth to a mostly flat page.') , f_MaterialTitle1), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton2 = new MaterialButton , f_MaterialButton2.span_0.setText('Button') , $add_13(f_MaterialButton2, f_MaterialButton2.span_0) , $setTextColor((!f_MaterialButton2.colorsMixin && (f_MaterialButton2.colorsMixin = new ColorsMixin(f_MaterialButton2)) , f_MaterialButton2.colorsMixin), 'black') , $setBackgroundColor((!f_MaterialButton2.colorsMixin && (f_MaterialButton2.colorsMixin = new ColorsMixin(f_MaterialButton2)) , f_MaterialButton2.colorsMixin), 'white') , $setWaves(f_MaterialButton2, ($clinit_WavesType() , DEFAULT_6)) , f_MaterialButton2), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton3 = new MaterialButton , $setIconPosition(f_MaterialButton3, ($clinit_IconPosition() , LEFT_4)) , f_MaterialButton3.span_0.setText('Primary') , $add_13(f_MaterialButton3, f_MaterialButton3.span_0) , $setTextColor((!f_MaterialButton3.colorsMixin && (f_MaterialButton3.colorsMixin = new ColorsMixin(f_MaterialButton3)) , f_MaterialButton3.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialButton3.colorsMixin && (f_MaterialButton3.colorsMixin = new ColorsMixin(f_MaterialButton3)) , f_MaterialButton3.colorsMixin), 'blue') , $setWaves(f_MaterialButton3, LIGHT) , $setIconType(f_MaterialButton3, ($clinit_IconType() , POLYMER)) , f_MaterialButton3), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton4 = new MaterialButton , $setEnabled_2((!f_MaterialButton4.enabledMixin && (f_MaterialButton4.enabledMixin = new EnabledMixin(f_MaterialButton4)) , f_MaterialButton4.enabledMixin)) , $setIconPosition(f_MaterialButton4, RIGHT_5) , f_MaterialButton4.span_0.setText('Disabled') , $add_13(f_MaterialButton4, f_MaterialButton4.span_0) , $setBackgroundColor((!f_MaterialButton4.colorsMixin && (f_MaterialButton4.colorsMixin = new ColorsMixin(f_MaterialButton4)) , f_MaterialButton4.colorsMixin), 'blue') , $setWaves(f_MaterialButton4, LIGHT) , $setIconType(f_MaterialButton4, POLYMER) , f_MaterialButton4), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton5 = new MaterialButton , $setIconPosition(f_MaterialButton5, RIGHT_5) , f_MaterialButton5.span_0.setText('Warn') , $add_13(f_MaterialButton5, f_MaterialButton5.span_0) , $setTextColor((!f_MaterialButton5.colorsMixin && (f_MaterialButton5.colorsMixin = new ColorsMixin(f_MaterialButton5)) , f_MaterialButton5.colorsMixin), 'white') , $setBackgroundColor((!f_MaterialButton5.colorsMixin && (f_MaterialButton5.colorsMixin = new ColorsMixin(f_MaterialButton5)) , f_MaterialButton5.colorsMixin), 'red') , $setWaves(f_MaterialButton5, LIGHT) , $setIconType(f_MaterialButton5, POLYMER) , f_MaterialButton5), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton6 = new MaterialButton , $setIconPosition(f_MaterialButton6, RIGHT_5) , f_MaterialButton6.span_0.setText('Icon Color') , $add_13(f_MaterialButton6, f_MaterialButton6.span_0) , $setTextColor((!f_MaterialButton6.colorsMixin && (f_MaterialButton6.colorsMixin = new ColorsMixin(f_MaterialButton6)) , f_MaterialButton6.colorsMixin), 'black') , $setBackgroundColor((!f_MaterialButton6.colorsMixin && (f_MaterialButton6.colorsMixin = new ColorsMixin(f_MaterialButton6)) , f_MaterialButton6.colorsMixin), 'white') , $setWaves(f_MaterialButton6, RED) , $setIconColor(f_MaterialButton6.icon_0, 'red') , $setIconType(f_MaterialButton6, POLYMER) , f_MaterialButton6), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre7 = new PrettyPre , $setHTML(f_PrettyPre7, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white" textColor="black"/&gt;<br> &lt;m:MaterialButton text="Primary" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton text="Disabled" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="red" textColor="white" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="white" textColor="black" iconType="POLYMER" iconPosition="RIGHT" iconColor="red"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre7.element, 'lang-xml', true) , setStyleName(f_PrettyPre7.element, 'z-depth-1', true) , f_PrettyPre7), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle8 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle8.header), 'Floating') , $setText_4(f_MaterialTitle8.paragraph, 'The floating circular action button is meant for very important functions.') , f_MaterialTitle8), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton9 = new MaterialButton , $setBackgroundColor((!f_MaterialButton9.colorsMixin && (f_MaterialButton9.colorsMixin = new ColorsMixin(f_MaterialButton9)) , f_MaterialButton9.colorsMixin), 'red') , $setWaves(f_MaterialButton9, LIGHT) , $setType_0(f_MaterialButton9, ($clinit_ButtonType() , FLOATING)) , $setIconType(f_MaterialButton9, CAKE) , $setSize(f_MaterialButton9, ($clinit_ButtonSize() , LARGE)) , f_MaterialButton9), $get_0(this$static.domId8Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton10 = new MaterialButton , $setBackgroundColor((!f_MaterialButton10.colorsMixin && (f_MaterialButton10.colorsMixin = new ColorsMixin(f_MaterialButton10)) , f_MaterialButton10.colorsMixin), 'blue') , $setWaves(f_MaterialButton10, LIGHT) , $setType_0(f_MaterialButton10, FLOATING) , $setIconType(f_MaterialButton10, ANDROID) , $setSize(f_MaterialButton10, LARGE) , f_MaterialButton10), $get_0(this$static.domId9Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton11 = new MaterialButton , $setEnabled_2((!f_MaterialButton11.enabledMixin && (f_MaterialButton11.enabledMixin = new EnabledMixin(f_MaterialButton11)) , f_MaterialButton11.enabledMixin)) , $setBackgroundColor((!f_MaterialButton11.colorsMixin && (f_MaterialButton11.colorsMixin = new ColorsMixin(f_MaterialButton11)) , f_MaterialButton11.colorsMixin), 'blue') , $setWaves(f_MaterialButton11, LIGHT) , $setType_0(f_MaterialButton11, FLOATING) , $setIconType(f_MaterialButton11, MESSAGE) , $setSize(f_MaterialButton11, LARGE) , f_MaterialButton11), $get_0(this$static.domId10Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton12 = new MaterialButton , $setBackgroundColor((!f_MaterialButton12.colorsMixin && (f_MaterialButton12.colorsMixin = new ColorsMixin(f_MaterialButton12)) , f_MaterialButton12.colorsMixin), 'blue') , $setWaves(f_MaterialButton12, LIGHT) , $setType_0(f_MaterialButton12, FLOATING) , $setIconType(f_MaterialButton12, GROUP_0) , $setSize(f_MaterialButton12, LARGE) , f_MaterialButton12), $get_0(this$static.domId11Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton13 = new MaterialButton , $setBackgroundColor((!f_MaterialButton13.colorsMixin && (f_MaterialButton13.colorsMixin = new ColorsMixin(f_MaterialButton13)) , f_MaterialButton13.colorsMixin), 'red') , $setWaves(f_MaterialButton13, LIGHT) , $setType_0(f_MaterialButton13, FLOATING) , $setIconType(f_MaterialButton13, CAKE) , $setSize(f_MaterialButton13, LARGE) , f_MaterialButton13), $get_0(this$static.domId12Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton14 = new MaterialButton , $setBackgroundColor((!f_MaterialButton14.colorsMixin && (f_MaterialButton14.colorsMixin = new ColorsMixin(f_MaterialButton14)) , f_MaterialButton14.colorsMixin), 'white') , $setWaves(f_MaterialButton14, DEFAULT_6) , $setIconColor(f_MaterialButton14.icon_0, 'green') , $setType_0(f_MaterialButton14, FLOATING) , $setIconType(f_MaterialButton14, ANDROID) , $setSize(f_MaterialButton14, LARGE) , f_MaterialButton14), $get_0(this$static.domId13Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre15 = new PrettyPre , $setHTML(f_PrettyPre15, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="ANDROID" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="MESSAGE" enabled="false"/&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="GROUP" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /&gt;<br> &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" /&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre15.element, 'lang-xml', true) , setStyleName(f_PrettyPre15.element, 'z-depth-1', true) , f_PrettyPre15), $get_0(this$static.domId14Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle16 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle16.header), 'FLAT') , $setText_4(f_MaterialTitle16.paragraph, 'Flat buttons are usually used within elements that already have depth like cards or modals.') , f_MaterialTitle16), $get_0(this$static.domId15Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton17 = new MaterialButton , f_MaterialButton17.span_0.setText('Button') , $add_13(f_MaterialButton17, f_MaterialButton17.span_0) , $setTextColor((!f_MaterialButton17.colorsMixin && (f_MaterialButton17.colorsMixin = new ColorsMixin(f_MaterialButton17)) , f_MaterialButton17.colorsMixin), 'black') , $setWaves(f_MaterialButton17, DEFAULT_6) , $setType_0(f_MaterialButton17, FLAT) , f_MaterialButton17), $get_0(this$static.domId16Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton18 = new MaterialButton , f_MaterialButton18.span_0.setText('Primary (No Waves)') , $add_13(f_MaterialButton18, f_MaterialButton18.span_0) , $setTextColor((!f_MaterialButton18.colorsMixin && (f_MaterialButton18.colorsMixin = new ColorsMixin(f_MaterialButton18)) , f_MaterialButton18.colorsMixin), 'blue') , $setType_0(f_MaterialButton18, FLAT) , f_MaterialButton18), $get_0(this$static.domId17Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton19 = new MaterialButton , $setEnabled_2((!f_MaterialButton19.enabledMixin && (f_MaterialButton19.enabledMixin = new EnabledMixin(f_MaterialButton19)) , f_MaterialButton19.enabledMixin)) , f_MaterialButton19.span_0.setText('Disabled') , $add_13(f_MaterialButton19, f_MaterialButton19.span_0) , $setWaves(f_MaterialButton19, DEFAULT_6) , $setType_0(f_MaterialButton19, FLAT) , f_MaterialButton19), $get_0(this$static.domId18Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton20 = new MaterialButton , f_MaterialButton20.span_0.setText('Warn') , $add_13(f_MaterialButton20, f_MaterialButton20.span_0) , $setTextColor((!f_MaterialButton20.colorsMixin && (f_MaterialButton20.colorsMixin = new ColorsMixin(f_MaterialButton20)) , f_MaterialButton20.colorsMixin), 'red') , $setWaves(f_MaterialButton20, RED) , $setType_0(f_MaterialButton20, FLAT) , f_MaterialButton20), $get_0(this$static.domId19Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre21 = new PrettyPre , $setHTML(f_PrettyPre21, (sb_1 = new StringBuilder , sb_1.string += '\u2003&lt;m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" /&gt;<br> &lt;m:MaterialButton text="Primary (No Waves)" textColor="blue" type="FLAT" /&gt;<br> &lt;m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT" enabled="false" /&gt;<br> &lt;m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" /&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre21.element, 'lang-xml', true) , setStyleName(f_PrettyPre21.element, 'z-depth-1', true) , f_PrettyPre21), $get_0(this$static.domId20Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle22 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle22.header), 'Large') , $setText_4(f_MaterialTitle22.paragraph, 'This button has a larger height for buttons that need more attention.') , f_MaterialTitle22), $get_0(this$static.domId21Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton23 = new MaterialButton , f_MaterialButton23.span_0.setText('Button') , $add_13(f_MaterialButton23, f_MaterialButton23.span_0) , $setBackgroundColor((!f_MaterialButton23.colorsMixin && (f_MaterialButton23.colorsMixin = new ColorsMixin(f_MaterialButton23)) , f_MaterialButton23.colorsMixin), 'blue') , $setWaves(f_MaterialButton23, LIGHT) , $setSize(f_MaterialButton23, LARGE) , f_MaterialButton23), $get_0(this$static.domId22Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton24 = new MaterialButton , $setIconPosition(f_MaterialButton24, LEFT_4) , f_MaterialButton24.span_0.setText('Button') , $add_13(f_MaterialButton24, f_MaterialButton24.span_0) , $setBackgroundColor((!f_MaterialButton24.colorsMixin && (f_MaterialButton24.colorsMixin = new ColorsMixin(f_MaterialButton24)) , f_MaterialButton24.colorsMixin), 'blue') , $setWaves(f_MaterialButton24, LIGHT) , $setIconType(f_MaterialButton24, POLYMER) , $setSize(f_MaterialButton24, LARGE) , f_MaterialButton24), $get_0(this$static.domId23Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton25 = new MaterialButton , $setIconPosition(f_MaterialButton25, RIGHT_5) , f_MaterialButton25.span_0.setText('Button') , $add_13(f_MaterialButton25, f_MaterialButton25.span_0) , $setBackgroundColor((!f_MaterialButton25.colorsMixin && (f_MaterialButton25.colorsMixin = new ColorsMixin(f_MaterialButton25)) , f_MaterialButton25.colorsMixin), 'blue') , $setWaves(f_MaterialButton25, LIGHT) , $setIconType(f_MaterialButton25, POLYMER) , $setSize(f_MaterialButton25, LARGE) , f_MaterialButton25), $get_0(this$static.domId24Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre26 = new PrettyPre , $setHTML(f_PrettyPre26, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/&gt;<br> &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/&gt;<br> &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre26.element, 'lang-xml', true) , setStyleName(f_PrettyPre26.element, 'z-depth-1', true) , f_PrettyPre26), $get_0(this$static.domId25Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle27 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle27.header), 'Icon Button') , $setText_4(f_MaterialTitle27.paragraph, 'Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities') , f_MaterialTitle27), $get_0(this$static.domId26Element));
+  $addAndReplaceElement_1(panel, (f_MaterialIcon28 = new MaterialIcon , $setWaves(f_MaterialIcon28, DEFAULT_6) , f_MaterialIcon28.element.style['color'] = 'blue' , $setOn((!f_MaterialIcon28.circleMixin && (f_MaterialIcon28.circleMixin = new ToggleStyleMixin(f_MaterialIcon28, 'circle')) , f_MaterialIcon28.circleMixin), true) , $setIconType_2(f_MaterialIcon28, MENU_0) , f_MaterialIcon28), $get_0(this$static.domId27Element));
+  $addAndReplaceElement_1(panel, (f_MaterialIcon29 = new MaterialIcon , $setEnabled_2((!f_MaterialIcon29.enabledMixin && (f_MaterialIcon29.enabledMixin = new EnabledMixin(f_MaterialIcon29)) , f_MaterialIcon29.enabledMixin)) , $setWaves(f_MaterialIcon29, DEFAULT_6) , f_MaterialIcon29.element.style['color'] = 'red' , $setOn((!f_MaterialIcon29.circleMixin && (f_MaterialIcon29.circleMixin = new ToggleStyleMixin(f_MaterialIcon29, 'circle')) , f_MaterialIcon29.circleMixin), true) , $setIconType_2(f_MaterialIcon29, FAVORITE) , f_MaterialIcon29), $get_0(this$static.domId28Element));
+  $addAndReplaceElement_1(panel, (f_MaterialIcon30 = new MaterialIcon , $setWaves(f_MaterialIcon30, DEFAULT_6) , f_MaterialIcon30.element.style['color'] = 'grey' , $setOn((!f_MaterialIcon30.circleMixin && (f_MaterialIcon30.circleMixin = new ToggleStyleMixin(f_MaterialIcon30, 'circle')) , f_MaterialIcon30.circleMixin), true) , $setIconType_2(f_MaterialIcon30, MORE_VERT) , f_MaterialIcon30), $get_0(this$static.domId29Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre31 = new PrettyPre , $setHTML(f_PrettyPre31, (sb_3 = new StringBuilder , sb_3.string += '\u2003&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"//&gt;<br> &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"//&gt;<br> &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"//&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre31.element, 'lang-xml', true) , setStyleName(f_PrettyPre31.element, 'z-depth-1', true) , f_PrettyPre31), $get_0(this$static.domId30Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle32 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle32.header), 'Disabled') , $setText_4(f_MaterialTitle32.paragraph, "When you set disabled='true' All events will be disabled.") , f_MaterialTitle32), $get_0(this$static.domId31Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton33 = new MaterialButton , $setEnabled_2((!f_MaterialButton33.enabledMixin && (f_MaterialButton33.enabledMixin = new EnabledMixin(f_MaterialButton33)) , f_MaterialButton33.enabledMixin)) , $setIconPosition(f_MaterialButton33, LEFT_4) , f_MaterialButton33.span_0.setText('Button') , $add_13(f_MaterialButton33, f_MaterialButton33.span_0) , $setIconType(f_MaterialButton33, POLYMER) , $setSize(f_MaterialButton33, LARGE) , f_MaterialButton33), $get_0(this$static.domId32Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton34 = new MaterialButton , $setEnabled_2((!f_MaterialButton34.enabledMixin && (f_MaterialButton34.enabledMixin = new EnabledMixin(f_MaterialButton34)) , f_MaterialButton34.enabledMixin)) , $setIconPosition(f_MaterialButton34, LEFT_4) , f_MaterialButton34.span_0.setText('Button') , $add_13(f_MaterialButton34, f_MaterialButton34.span_0) , $setIconType(f_MaterialButton34, POLYMER) , f_MaterialButton34), $get_0(this$static.domId33Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton35 = new MaterialButton , $setEnabled_2((!f_MaterialButton35.enabledMixin && (f_MaterialButton35.enabledMixin = new EnabledMixin(f_MaterialButton35)) , f_MaterialButton35.enabledMixin)) , f_MaterialButton35.span_0.setText('Button') , $add_13(f_MaterialButton35, f_MaterialButton35.span_0) , $setType_0(f_MaterialButton35, FLAT) , f_MaterialButton35), $get_0(this$static.domId34Element));
+  $addAndReplaceElement_1(panel, (f_MaterialButton36 = new MaterialButton , $setEnabled_2((!f_MaterialButton36.enabledMixin && (f_MaterialButton36.enabledMixin = new EnabledMixin(f_MaterialButton36)) , f_MaterialButton36.enabledMixin)) , $setType_0(f_MaterialButton36, FLOATING) , $setIconType(f_MaterialButton36, POLYMER) , f_MaterialButton36), $get_0(this$static.domId35Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre37 = new PrettyPre , $setHTML(f_PrettyPre37, (sb_4 = new StringBuilder , sb_4.string += '\u2003&lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/&gt;<br> &lt;m:MaterialButton text="Button" type="FLAT" enabled="false"/&gt;<br> &lt;m:MaterialButton type="FLOATING" iconType="POLYMER" enabled="false"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre37.element, 'lang-xml', true) , setStyleName(f_PrettyPre37.element, 'z-depth-1', true) , f_PrettyPre37), $get_0(this$static.domId36Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle38 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle38.header), 'Events') , $setText_4(f_MaterialTitle38.paragraph, 'MaterialButtons , MaterialIcons and MaterialLinks extends ButtonBase which implements all Mouse Handlers, Click Handlers and other events.') , f_MaterialTitle38), $get_0(this$static.domId37Element));
+  $addAndReplaceElement_1(panel, (btnClick = new MaterialButton , $setIconPosition(btnClick, LEFT_4) , btnClick.span_0.setText('Click Me') , $add_13(btnClick, btnClick.span_0) , $setTextColor((!btnClick.colorsMixin && (btnClick.colorsMixin = new ColorsMixin(btnClick)) , btnClick.colorsMixin), 'white') , $setBackgroundColor((!btnClick.colorsMixin && (btnClick.colorsMixin = new ColorsMixin(btnClick)) , btnClick.colorsMixin), 'blue') , $setWaves(btnClick, LIGHT) , $setIconType(btnClick, POLYMER) , $addDomHandler(btnClick, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , this$static.owner.btnClick = btnClick , btnClick), $get_0(this$static.domId38Element));
+  $addAndReplaceElement_1(panel, (btnHover = new MaterialButton , $setIconPosition(btnHover, LEFT_4) , btnHover.span_0.setText('Hover Me') , $add_13(btnHover, btnHover.span_0) , $setTextColor((!btnHover.colorsMixin && (btnHover.colorsMixin = new ColorsMixin(btnHover)) , btnHover.colorsMixin), 'white') , $setBackgroundColor((!btnHover.colorsMixin && (btnHover.colorsMixin = new ColorsMixin(btnHover)) , btnHover.colorsMixin), 'blue') , $setWaves(btnHover, LIGHT) , $setIconType(btnHover, POLYMER) , $addDomHandler(btnHover, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_MouseOverEvent() , $clinit_MouseOverEvent() , TYPE_8)) , this$static.owner.btnHover = btnHover , btnHover), $get_0(this$static.domId39Element));
+  $addAndReplaceElement_1(panel, (btnDoubleClick = new MaterialButton , $setIconPosition(btnDoubleClick, LEFT_4) , btnDoubleClick.span_0.setText('Double Click Me') , $add_13(btnDoubleClick, btnDoubleClick.span_0) , $setTextColor((!btnDoubleClick.colorsMixin && (btnDoubleClick.colorsMixin = new ColorsMixin(btnDoubleClick)) , btnDoubleClick.colorsMixin), 'white') , $setBackgroundColor((!btnDoubleClick.colorsMixin && (btnDoubleClick.colorsMixin = new ColorsMixin(btnDoubleClick)) , btnDoubleClick.colorsMixin), 'blue') , $setWaves(btnDoubleClick, LIGHT) , $setIconType(btnDoubleClick, POLYMER) , $addDomHandler(btnDoubleClick, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames3, ($clinit_DoubleClickEvent() , $clinit_DoubleClickEvent() , TYPE_2)) , this$static.owner.btnDoubleClick = btnDoubleClick , btnDoubleClick), $get_0(this$static.domId40Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre39 = new PrettyPre , $setHTML(f_PrettyPre39, (sb_5 = new StringBuilder , sb_5.string += '\u2003&lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_5.string)).html) , setStyleName(f_PrettyPre39.element, 'lang-xml', true) , setStyleName(f_PrettyPre39.element, 'z-depth-1', true) , f_PrettyPre39), $get_0(this$static.domId41Element));
+  $addAndReplaceElement_1(panel, (f_MaterialTitle40 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle40.header), 'Links') , $setText_4(f_MaterialTitle40.paragraph, 'Using Material Link you can easily add href functionality into your app for navigation') , f_MaterialTitle40), $get_0(this$static.domId42Element));
+  $addAndReplaceElement_1(panel, (f_MaterialRow41 = new MaterialRow , $add_13(f_MaterialRow41, (f_MaterialLink42 = new MaterialLink , $setIconPosition(f_MaterialLink42, LEFT_4) , f_MaterialLink42.span_0.setText('Normal Link') , $add_13(f_MaterialLink42, f_MaterialLink42.span_0) , $setTextColor((!f_MaterialLink42.colorsMixin && (f_MaterialLink42.colorsMixin = new ColorsMixin(f_MaterialLink42)) , f_MaterialLink42.colorsMixin), 'red') , $setGrid((!f_MaterialLink42.gridMixin && (f_MaterialLink42.gridMixin = new GridMixin(f_MaterialLink42)) , f_MaterialLink42.gridMixin), '') , $setAttribute(f_MaterialLink42.element, 'href', '#normal') , $setIconType(f_MaterialLink42, POLYMER) , f_MaterialLink42)) , $add_13(f_MaterialRow41, (f_MaterialLink43 = new MaterialLink , $setIconPosition(f_MaterialLink43, LEFT_4) , f_MaterialLink43.span_0.setText('Link with Href') , $add_13(f_MaterialLink43, f_MaterialLink43.span_0) , $setTextColor((!f_MaterialLink43.colorsMixin && (f_MaterialLink43.colorsMixin = new ColorsMixin(f_MaterialLink43)) , f_MaterialLink43.colorsMixin), 'red') , $setGrid((!f_MaterialLink43.gridMixin && (f_MaterialLink43.gridMixin = new GridMixin(f_MaterialLink43)) , f_MaterialLink43.gridMixin), '') , $setAttribute(f_MaterialLink43.element, 'href', '#material') , $setIconType(f_MaterialLink43, POLYMER) , f_MaterialLink43)) , $add_13(f_MaterialRow41, (f_MaterialLink44 = new MaterialLink , $setIconPosition(f_MaterialLink44, LEFT_4) , f_MaterialLink44.span_0.setText('Link with Different Icon color') , $add_13(f_MaterialLink44, f_MaterialLink44.span_0) , $setTextColor((!f_MaterialLink44.colorsMixin && (f_MaterialLink44.colorsMixin = new ColorsMixin(f_MaterialLink44)) , f_MaterialLink44.colorsMixin), 'black') , $setGrid((!f_MaterialLink44.gridMixin && (f_MaterialLink44.gridMixin = new GridMixin(f_MaterialLink44)) , f_MaterialLink44.gridMixin), '') , $setIconColor(f_MaterialLink44.icon_0, 'red') , $setAttribute(f_MaterialLink44.element, 'href', '#design') , $setIconType(f_MaterialLink44, POLYMER) , f_MaterialLink44)) , f_MaterialRow41), $get_0(this$static.domId43Element));
+  $addAndReplaceElement_1(panel, (f_PrettyPre45 = new PrettyPre , $setHTML(f_PrettyPre45, (sb_6 = new StringBuilder , sb_6.string += '\u2003&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT"/&gt;<br> &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red"/&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_6.string)).html) , setStyleName(f_PrettyPre45.element, 'lang-xml', true) , setStyleName(f_PrettyPre45.element, 'z-depth-1', true) , f_PrettyPre45), $get_0(this$static.domId44Element));
   return panel;
 }
 
@@ -14289,36 +14249,36 @@ function ButtonsView_BinderImpl$Widgets(owner){
   this.domId44Element = new LazyDomElement(this.domId44);
 }
 
-defineClass(877, 1, {}, ButtonsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets', 877);
+defineClass(873, 1, {}, ButtonsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets', 873);
 function ButtonsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(878, 1, $intern_49, ButtonsView_BinderImpl$Widgets$1);
+defineClass(874, 1, $intern_52, ButtonsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_44(event_0){
   $onClick_0(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/1', 878);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/1', 874);
 function ButtonsView_BinderImpl$Widgets$2(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(879, 1, {1487:1, 21:1}, ButtonsView_BinderImpl$Widgets$2);
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/2', 879);
+defineClass(875, 1, {1484:1, 21:1}, ButtonsView_BinderImpl$Widgets$2);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$2_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/2', 875);
 function ButtonsView_BinderImpl$Widgets$3(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(880, 1, {1488:1, 21:1}, ButtonsView_BinderImpl$Widgets$3);
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$3_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/3', 880);
+defineClass(876, 1, {1485:1, 21:1}, ButtonsView_BinderImpl$Widgets$3);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl$Widgets$3_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl/Widgets/3', 876);
 function ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1189, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1186, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_7;
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1189);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1186);
 function $ensureInjected_12(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -14333,13 +14293,13 @@ function $ensureInjected_12(this$static){
 function ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1190, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1187, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_20(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1190);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1187);
 function $clinit_ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_7 = new ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -14500,7 +14460,7 @@ function CardsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(567, 55, $intern_39, CardsPresenter);
+defineClass(567, 55, $intern_42, CardsPresenter);
 _.onReveal = function onReveal_13(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Cards', 'Cards are a convenient means of displaying content composed of different types of objects. They are also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.'));
@@ -14510,10 +14470,10 @@ var Lgwt_material_design_demo_client_application_components_cards_CardsPresenter
 function CardsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(632, 64, $intern_53, CardsPresenterMyProxyImpl);
+defineClass(632, 64, $intern_56, CardsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_24(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14535,7 +14495,7 @@ function $delayedBind_11(this$static, baseGinjector){
 function CardsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(633, $intern_44, $intern_52, CardsPresenterMyProxyImpl$WrappedProxy);
+defineClass(633, $intern_47, $intern_55, CardsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_25(baseGinjector){
   $delayedBind_11(this, baseGinjector);
 }
@@ -14550,17 +14510,17 @@ function CardsView(){
   $initWidget_0(this, $build_f_HTMLPanel1_5(new CardsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(713, 60, $intern_40, CardsView);
+defineClass(713, 60, $intern_43, CardsView);
 var Lgwt_material_design_demo_client_application_components_cards_CardsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView', 713);
 function CardsView_BinderImpl(){
 }
 
-defineClass(881, 1, {}, CardsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl', 881);
+defineClass(877, 1, {}, CardsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl', 877);
 function $build_f_HTMLPanel1_5(this$static){
   var __attachRecord__, f_HTMLPanel1, f_MaterialRow2, f_PrettyPre18, f_MaterialRow19, f_PrettyPre39, f_MaterialRow40, f_MaterialTitle75, f_PrettyPre76, f_PrettyPre77, btnShow, rowCards, f_MaterialTitle3, f_MaterialCard4, f_MaterialCardContent5, f_MaterialCardAction8, f_MaterialCard11, f_MaterialCardContent12, f_MaterialCardAction15, sb, f_MaterialTitle20, f_MaterialCard21, f_MaterialCardImage22, f_MaterialCardContent25, f_MaterialCardAction27, f_MaterialCard30, f_MaterialCardImage31, f_MaterialCardContent34, f_MaterialCardAction36, sb_0, f_MaterialTitle41, f_MaterialCard42, f_MaterialCardImage43, f_MaterialCardContent45, f_MaterialCardReveal47, f_MaterialCardAction50, f_MaterialCard53, f_MaterialCardImage54, f_MaterialCardContent56, f_MaterialCardReveal58, f_MaterialCardAction61, f_MaterialCard64, f_MaterialCardImage65, f_MaterialCardContent67, f_MaterialCardReveal69, f_MaterialCardAction72, sb_1, sb_2, f_MaterialCard78, f_MaterialCardImage79, f_MaterialCardContent81, f_MaterialCardReveal83, f_MaterialCardAction86, f_MaterialCard89, f_MaterialCardImage90, f_MaterialCardContent92, f_MaterialCardReveal94, f_MaterialCardAction97, f_MaterialCard100, f_MaterialCardImage101, f_MaterialCardContent103, f_MaterialCardReveal105, f_MaterialCardAction108, f_MaterialCard111, f_MaterialCardImage112, f_MaterialCardContent114, f_MaterialCardReveal116, f_MaterialCardAction119, f_MaterialCard122, f_MaterialCardImage123, f_MaterialCardContent125, f_MaterialCardReveal127, f_MaterialCardAction130, f_MaterialCard133, f_MaterialCardImage134, f_MaterialCardContent136, f_MaterialCardReveal138, f_MaterialCardAction141, f_MaterialCard144, f_MaterialCardImage145, f_MaterialCardContent147, f_MaterialCardReveal149, f_MaterialCardAction152, f_MaterialCard155, f_MaterialCardImage156, f_MaterialCardContent158, f_MaterialCardReveal160, f_MaterialCardAction163, f_MaterialCard166, f_MaterialCardImage167, f_MaterialCardContent169, f_MaterialCardReveal171, f_MaterialCardAction174, f_MaterialCard177, f_MaterialCardImage178, f_MaterialCardContent180, f_MaterialCardReveal182, f_MaterialCardAction185, f_MaterialCardTitle6, f_MaterialLabel7, f_MaterialLink9, f_MaterialLink10, f_MaterialCardTitle13, f_MaterialLabel14, f_MaterialLink16, f_MaterialLink17, f_MaterialImage23, f_MaterialCardTitle24, f_MaterialLabel26, f_MaterialLink28, f_MaterialLink29, f_MaterialImage32, f_MaterialCardTitle33, f_MaterialLabel35, f_MaterialLink37, f_MaterialLink38, f_MaterialImage44, f_MaterialCardTitle46, f_MaterialCardTitle48, f_MaterialLabel49, f_MaterialLink51, f_MaterialLink52, f_MaterialImage55, f_MaterialCardTitle57, f_MaterialCardTitle59, f_MaterialLabel60, f_MaterialLink62, f_MaterialLink63, f_MaterialImage66, f_MaterialCardTitle68, f_MaterialCardTitle70, f_MaterialLabel71, f_MaterialLink73, f_MaterialLink74, f_MaterialImage80, f_MaterialCardTitle82, f_MaterialCardTitle84, f_MaterialLabel85, f_MaterialLink87, f_MaterialLink88, f_MaterialImage91, f_MaterialCardTitle93, f_MaterialCardTitle95, f_MaterialLabel96, f_MaterialLink98, f_MaterialLink99, f_MaterialImage102, f_MaterialCardTitle104, f_MaterialCardTitle106, f_MaterialLabel107, f_MaterialLink109, f_MaterialLink110, f_MaterialImage113, f_MaterialCardTitle115, f_MaterialCardTitle117, f_MaterialLabel118, f_MaterialLink120, f_MaterialLink121, f_MaterialImage124, f_MaterialCardTitle126, f_MaterialCardTitle128, f_MaterialLabel129, f_MaterialLink131, f_MaterialLink132, f_MaterialImage135, f_MaterialCardTitle137, f_MaterialCardTitle139, f_MaterialLabel140, f_MaterialLink142, f_MaterialLink143, f_MaterialImage146, f_MaterialCardTitle148, f_MaterialCardTitle150, f_MaterialLabel151, f_MaterialLink153, f_MaterialLink154, f_MaterialImage157, f_MaterialCardTitle159, f_MaterialCardTitle161, f_MaterialLabel162, f_MaterialLink164, f_MaterialLink165, f_MaterialImage168, f_MaterialCardTitle170, f_MaterialCardTitle172, f_MaterialLabel173, f_MaterialLink175, f_MaterialLink176, f_MaterialImage179, f_MaterialCardTitle181, f_MaterialCardTitle183, f_MaterialLabel184, f_MaterialLink186, f_MaterialLink187;
   f_HTMLPanel1 = new HTMLPanel($html5(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7, this$static.domId8, this$static.domId9).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel1.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel1.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -14572,16 +14532,16 @@ function $build_f_HTMLPanel1_5(this$static){
   $get_0(this$static.domId8Element);
   $get_0(this$static.domId9Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow2 = new MaterialRow , $add_12(f_MaterialRow2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML(f_MaterialTitle3.header.element, 'Basic Card') , f_MaterialTitle3)) , $add_12(f_MaterialRow2, (f_MaterialCard4 = new MaterialCard , $add_12(f_MaterialCard4, (f_MaterialCardContent5 = new MaterialCardContent , $add_12(f_MaterialCardContent5, (f_MaterialCardTitle6 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle6, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle6.span_0.setText('Sample') , $add_12(f_MaterialCardTitle6, f_MaterialCardTitle6.span_0) , $setIconType_0(f_MaterialCardTitle6, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle6)) , $add_12(f_MaterialCardContent5, (f_MaterialLabel7 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel7.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel7)) , $setTextColor((!f_MaterialCardContent5.colorsMixin && (f_MaterialCardContent5.colorsMixin = new ColorsMixin(f_MaterialCardContent5)) , f_MaterialCardContent5.colorsMixin), 'white') , f_MaterialCardContent5)) , $add_12(f_MaterialCard4, (f_MaterialCardAction8 = new MaterialCardAction , $add_12(f_MaterialCardAction8, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Link 1') , $add_12(f_MaterialLink9, f_MaterialLink9.span_0) , $setIconType(f_MaterialLink9, POLYMER) , f_MaterialLink9)) , $add_12(f_MaterialCardAction8, (f_MaterialLink10 = new MaterialLink , f_MaterialLink10.span_0.setText('Link 1') , $add_12(f_MaterialLink10, f_MaterialLink10.span_0) , $setIconType(f_MaterialLink10, POLYMER) , f_MaterialLink10)) , f_MaterialCardAction8)) , $setBackgroundColor((!f_MaterialCard4.colorsMixin && (f_MaterialCard4.colorsMixin = new ColorsMixin(f_MaterialCard4)) , f_MaterialCard4.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard4, 'l4') , f_MaterialCard4)) , $add_12(f_MaterialRow2, (f_MaterialCard11 = new MaterialCard , $add_12(f_MaterialCard11, (f_MaterialCardContent12 = new MaterialCardContent , $add_12(f_MaterialCardContent12, (f_MaterialCardTitle13 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle13, RIGHT_5) , f_MaterialCardTitle13.span_0.setText('Sample') , $add_12(f_MaterialCardTitle13, f_MaterialCardTitle13.span_0) , $setTextColor((!f_MaterialCardTitle13.colorsMixin && (f_MaterialCardTitle13.colorsMixin = new ColorsMixin(f_MaterialCardTitle13)) , f_MaterialCardTitle13.colorsMixin), 'black') , $setIconColor(f_MaterialCardTitle13.icon_0, 'red') , $setIconType_0(f_MaterialCardTitle13, FAVORITE) , f_MaterialCardTitle13)) , $add_12(f_MaterialCardContent12, (f_MaterialLabel14 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel14.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel14)) , $setTextColor((!f_MaterialCardContent12.colorsMixin && (f_MaterialCardContent12.colorsMixin = new ColorsMixin(f_MaterialCardContent12)) , f_MaterialCardContent12.colorsMixin), 'black') , f_MaterialCardContent12)) , $add_12(f_MaterialCard11, (f_MaterialCardAction15 = new MaterialCardAction , $add_12(f_MaterialCardAction15, (f_MaterialLink16 = new MaterialLink , f_MaterialLink16.span_0.setText('Link 1') , $add_12(f_MaterialLink16, f_MaterialLink16.span_0) , $setTextColor((!f_MaterialLink16.colorsMixin && (f_MaterialLink16.colorsMixin = new ColorsMixin(f_MaterialLink16)) , f_MaterialLink16.colorsMixin), 'blue') , f_MaterialLink16)) , $add_12(f_MaterialCardAction15, (f_MaterialLink17 = new MaterialLink , f_MaterialLink17.span_0.setText('Link 1') , $add_12(f_MaterialLink17, f_MaterialLink17.span_0) , $setTextColor((!f_MaterialLink17.colorsMixin && (f_MaterialLink17.colorsMixin = new ColorsMixin(f_MaterialLink17)) , f_MaterialLink17.colorsMixin), 'blue') , f_MaterialLink17)) , f_MaterialCardAction15)) , $setBackgroundColor((!f_MaterialCard11.colorsMixin && (f_MaterialCard11.colorsMixin = new ColorsMixin(f_MaterialCard11)) , f_MaterialCard11.colorsMixin), 'white') , $setGrid_0(f_MaterialCard11, 'l4') , f_MaterialCard11)) , f_MaterialRow2), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre18 = new PrettyPre , $setHTML(f_PrettyPre18, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="white"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre18.element, 'lang-xml', true) , setStyleName(f_PrettyPre18.element, 'z-depth-1', true) , f_PrettyPre18), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow19 = new MaterialRow , $add_12(f_MaterialRow19, (f_MaterialTitle20 = new MaterialTitle , $setInnerHTML(f_MaterialTitle20.header.element, 'Card Image') , f_MaterialTitle20)) , $add_12(f_MaterialRow19, (f_MaterialCard21 = new MaterialCard , $add_12(f_MaterialCard21, (f_MaterialCardImage22 = new MaterialCardImage , $add_15(f_MaterialCardImage22, (f_MaterialImage23 = new MaterialImage , $setUrl_1(f_MaterialImage23, ($clinit_UriUtils() , new SafeUriString('http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png'))) , f_MaterialImage23)) , $add_15(f_MaterialCardImage22, (f_MaterialCardTitle24 = new MaterialCardTitle , f_MaterialCardTitle24.span_0.setText('Sample') , $add_12(f_MaterialCardTitle24, f_MaterialCardTitle24.span_0) , f_MaterialCardTitle24)) , $setWaves(f_MaterialCardImage22, ($clinit_WavesType() , LIGHT)) , f_MaterialCardImage22)) , $add_12(f_MaterialCard21, (f_MaterialCardContent25 = new MaterialCardContent , $add_12(f_MaterialCardContent25, (f_MaterialLabel26 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel26.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel26)) , $setTextColor((!f_MaterialCardContent25.colorsMixin && (f_MaterialCardContent25.colorsMixin = new ColorsMixin(f_MaterialCardContent25)) , f_MaterialCardContent25.colorsMixin), 'black') , f_MaterialCardContent25)) , $add_12(f_MaterialCard21, (f_MaterialCardAction27 = new MaterialCardAction , $add_12(f_MaterialCardAction27, (f_MaterialLink28 = new MaterialLink , f_MaterialLink28.span_0.setText('Link 1') , $add_12(f_MaterialLink28, f_MaterialLink28.span_0) , f_MaterialLink28)) , $add_12(f_MaterialCardAction27, (f_MaterialLink29 = new MaterialLink , f_MaterialLink29.span_0.setText('Link 1') , $add_12(f_MaterialLink29, f_MaterialLink29.span_0) , f_MaterialLink29)) , f_MaterialCardAction27)) , $setBackgroundColor((!f_MaterialCard21.colorsMixin && (f_MaterialCard21.colorsMixin = new ColorsMixin(f_MaterialCard21)) , f_MaterialCard21.colorsMixin), 'white') , $setGrid_0(f_MaterialCard21, 'l3') , f_MaterialCard21)) , $add_12(f_MaterialRow19, (f_MaterialCard30 = new MaterialCard , $add_12(f_MaterialCard30, (f_MaterialCardImage31 = new MaterialCardImage , $add_15(f_MaterialCardImage31, (f_MaterialImage32 = new MaterialImage , $setUrl_1(f_MaterialImage32, new SafeUriString('http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb')) , f_MaterialImage32)) , $add_15(f_MaterialCardImage31, (f_MaterialCardTitle33 = new MaterialCardTitle , f_MaterialCardTitle33.span_0.setText('Sample') , $add_12(f_MaterialCardTitle33, f_MaterialCardTitle33.span_0) , f_MaterialCardTitle33)) , $setWaves(f_MaterialCardImage31, LIGHT) , f_MaterialCardImage31)) , $add_12(f_MaterialCard30, (f_MaterialCardContent34 = new MaterialCardContent , $add_12(f_MaterialCardContent34, (f_MaterialLabel35 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel35.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel35)) , $setTextColor((!f_MaterialCardContent34.colorsMixin && (f_MaterialCardContent34.colorsMixin = new ColorsMixin(f_MaterialCardContent34)) , f_MaterialCardContent34.colorsMixin), 'black') , f_MaterialCardContent34)) , $add_12(f_MaterialCard30, (f_MaterialCardAction36 = new MaterialCardAction , $add_12(f_MaterialCardAction36, (f_MaterialLink37 = new MaterialLink , f_MaterialLink37.span_0.setText('Link 1') , $add_12(f_MaterialLink37, f_MaterialLink37.span_0) , f_MaterialLink37)) , $add_12(f_MaterialCardAction36, (f_MaterialLink38 = new MaterialLink , f_MaterialLink38.span_0.setText('Link 1') , $add_12(f_MaterialLink38, f_MaterialLink38.span_0) , f_MaterialLink38)) , f_MaterialCardAction36)) , $setBackgroundColor((!f_MaterialCard30.colorsMixin && (f_MaterialCard30.colorsMixin = new ColorsMixin(f_MaterialCard30)) , f_MaterialCard30.colorsMixin), 'white') , $setGrid_0(f_MaterialCard30, 'l3') , f_MaterialCard30)) , f_MaterialRow19), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre39 = new PrettyPre , $setHTML(f_PrettyPre39, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample"/&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" /&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre39.element, 'lang-xml', true) , setStyleName(f_PrettyPre39.element, 'z-depth-1', true) , f_PrettyPre39), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialRow40 = new MaterialRow , $add_12(f_MaterialRow40, (f_MaterialTitle41 = new MaterialTitle , $setInnerHTML(f_MaterialTitle41.header.element, 'Card Reveal') , f_MaterialTitle41)) , $add_12(f_MaterialRow40, (f_MaterialCard42 = new MaterialCard , $add_12(f_MaterialCard42, (f_MaterialCardImage43 = new MaterialCardImage , $add_15(f_MaterialCardImage43, (f_MaterialImage44 = new MaterialImage , $setUrl_1(f_MaterialImage44, new SafeUriString('http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif')) , f_MaterialImage44)) , $setWaves(f_MaterialCardImage43, LIGHT) , f_MaterialCardImage43)) , $add_12(f_MaterialCard42, (f_MaterialCardContent45 = new MaterialCardContent , $add_12(f_MaterialCardContent45, (f_MaterialCardTitle46 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle46, RIGHT_5) , f_MaterialCardTitle46.span_0.setText('Sample') , $add_12(f_MaterialCardTitle46, f_MaterialCardTitle46.span_0) , $setTextColor((!f_MaterialCardTitle46.colorsMixin && (f_MaterialCardTitle46.colorsMixin = new ColorsMixin(f_MaterialCardTitle46)) , f_MaterialCardTitle46.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle46, MORE_VERT) , f_MaterialCardTitle46)) , $setTextColor((!f_MaterialCardContent45.colorsMixin && (f_MaterialCardContent45.colorsMixin = new ColorsMixin(f_MaterialCardContent45)) , f_MaterialCardContent45.colorsMixin), 'black') , f_MaterialCardContent45)) , $add_12(f_MaterialCard42, (f_MaterialCardReveal47 = new MaterialCardReveal , $add_12(f_MaterialCardReveal47, (f_MaterialCardTitle48 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle48, RIGHT_5) , f_MaterialCardTitle48.span_0.setText('Sample') , $add_12(f_MaterialCardTitle48, f_MaterialCardTitle48.span_0) , $setTextColor((!f_MaterialCardTitle48.colorsMixin && (f_MaterialCardTitle48.colorsMixin = new ColorsMixin(f_MaterialCardTitle48)) , f_MaterialCardTitle48.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle48, CLOSE) , f_MaterialCardTitle48)) , $add_12(f_MaterialCardReveal47, (f_MaterialLabel49 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel49.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel49)) , f_MaterialCardReveal47)) , $add_12(f_MaterialCard42, (f_MaterialCardAction50 = new MaterialCardAction , $add_12(f_MaterialCardAction50, (f_MaterialLink51 = new MaterialLink , f_MaterialLink51.span_0.setText('Link 1') , $add_12(f_MaterialLink51, f_MaterialLink51.span_0) , $setTextColor((!f_MaterialLink51.colorsMixin && (f_MaterialLink51.colorsMixin = new ColorsMixin(f_MaterialLink51)) , f_MaterialLink51.colorsMixin), 'blue') , f_MaterialLink51)) , $add_12(f_MaterialCardAction50, (f_MaterialLink52 = new MaterialLink , f_MaterialLink52.span_0.setText('Link 1') , $add_12(f_MaterialLink52, f_MaterialLink52.span_0) , $setTextColor((!f_MaterialLink52.colorsMixin && (f_MaterialLink52.colorsMixin = new ColorsMixin(f_MaterialLink52)) , f_MaterialLink52.colorsMixin), 'blue') , f_MaterialLink52)) , f_MaterialCardAction50)) , $setBackgroundColor((!f_MaterialCard42.colorsMixin && (f_MaterialCard42.colorsMixin = new ColorsMixin(f_MaterialCard42)) , f_MaterialCard42.colorsMixin), 'white') , $setGrid_0(f_MaterialCard42, 'l3') , f_MaterialCard42)) , $add_12(f_MaterialRow40, (f_MaterialCard53 = new MaterialCard , $add_12(f_MaterialCard53, (f_MaterialCardImage54 = new MaterialCardImage , $add_15(f_MaterialCardImage54, (f_MaterialImage55 = new MaterialImage , $setUrl_1(f_MaterialImage55, new SafeUriString('http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png')) , f_MaterialImage55)) , $setWaves(f_MaterialCardImage54, LIGHT) , f_MaterialCardImage54)) , $add_12(f_MaterialCard53, (f_MaterialCardContent56 = new MaterialCardContent , $add_12(f_MaterialCardContent56, (f_MaterialCardTitle57 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle57, RIGHT_5) , f_MaterialCardTitle57.span_0.setText('Sample') , $add_12(f_MaterialCardTitle57, f_MaterialCardTitle57.span_0) , $setTextColor((!f_MaterialCardTitle57.colorsMixin && (f_MaterialCardTitle57.colorsMixin = new ColorsMixin(f_MaterialCardTitle57)) , f_MaterialCardTitle57.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle57, MORE_VERT) , f_MaterialCardTitle57)) , $setTextColor((!f_MaterialCardContent56.colorsMixin && (f_MaterialCardContent56.colorsMixin = new ColorsMixin(f_MaterialCardContent56)) , f_MaterialCardContent56.colorsMixin), 'black') , f_MaterialCardContent56)) , $add_12(f_MaterialCard53, (f_MaterialCardReveal58 = new MaterialCardReveal , $add_12(f_MaterialCardReveal58, (f_MaterialCardTitle59 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle59, RIGHT_5) , f_MaterialCardTitle59.span_0.setText('Sample') , $add_12(f_MaterialCardTitle59, f_MaterialCardTitle59.span_0) , $setTextColor((!f_MaterialCardTitle59.colorsMixin && (f_MaterialCardTitle59.colorsMixin = new ColorsMixin(f_MaterialCardTitle59)) , f_MaterialCardTitle59.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle59, CLOSE) , f_MaterialCardTitle59)) , $add_12(f_MaterialCardReveal58, (f_MaterialLabel60 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel60.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel60)) , f_MaterialCardReveal58)) , $add_12(f_MaterialCard53, (f_MaterialCardAction61 = new MaterialCardAction , $add_12(f_MaterialCardAction61, (f_MaterialLink62 = new MaterialLink , f_MaterialLink62.span_0.setText('Link 1') , $add_12(f_MaterialLink62, f_MaterialLink62.span_0) , $setTextColor((!f_MaterialLink62.colorsMixin && (f_MaterialLink62.colorsMixin = new ColorsMixin(f_MaterialLink62)) , f_MaterialLink62.colorsMixin), 'blue') , f_MaterialLink62)) , $add_12(f_MaterialCardAction61, (f_MaterialLink63 = new MaterialLink , f_MaterialLink63.span_0.setText('Link 1') , $add_12(f_MaterialLink63, f_MaterialLink63.span_0) , $setTextColor((!f_MaterialLink63.colorsMixin && (f_MaterialLink63.colorsMixin = new ColorsMixin(f_MaterialLink63)) , f_MaterialLink63.colorsMixin), 'blue') , f_MaterialLink63)) , f_MaterialCardAction61)) , $setBackgroundColor((!f_MaterialCard53.colorsMixin && (f_MaterialCard53.colorsMixin = new ColorsMixin(f_MaterialCard53)) , f_MaterialCard53.colorsMixin), 'white') , $setGrid_0(f_MaterialCard53, 'l3') , f_MaterialCard53)) , $add_12(f_MaterialRow40, (f_MaterialCard64 = new MaterialCard , $add_12(f_MaterialCard64, (f_MaterialCardImage65 = new MaterialCardImage , $add_15(f_MaterialCardImage65, (f_MaterialImage66 = new MaterialImage , $setUrl_1(f_MaterialImage66, new SafeUriString('http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif')) , f_MaterialImage66)) , $setWaves(f_MaterialCardImage65, LIGHT) , f_MaterialCardImage65)) , $add_12(f_MaterialCard64, (f_MaterialCardContent67 = new MaterialCardContent , $add_12(f_MaterialCardContent67, (f_MaterialCardTitle68 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle68, RIGHT_5) , f_MaterialCardTitle68.span_0.setText('Sample') , $add_12(f_MaterialCardTitle68, f_MaterialCardTitle68.span_0) , $setTextColor((!f_MaterialCardTitle68.colorsMixin && (f_MaterialCardTitle68.colorsMixin = new ColorsMixin(f_MaterialCardTitle68)) , f_MaterialCardTitle68.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle68, MORE_VERT) , f_MaterialCardTitle68)) , $setTextColor((!f_MaterialCardContent67.colorsMixin && (f_MaterialCardContent67.colorsMixin = new ColorsMixin(f_MaterialCardContent67)) , f_MaterialCardContent67.colorsMixin), 'black') , f_MaterialCardContent67)) , $add_12(f_MaterialCard64, (f_MaterialCardReveal69 = new MaterialCardReveal , $add_12(f_MaterialCardReveal69, (f_MaterialCardTitle70 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle70, RIGHT_5) , f_MaterialCardTitle70.span_0.setText('Sample') , $add_12(f_MaterialCardTitle70, f_MaterialCardTitle70.span_0) , $setTextColor((!f_MaterialCardTitle70.colorsMixin && (f_MaterialCardTitle70.colorsMixin = new ColorsMixin(f_MaterialCardTitle70)) , f_MaterialCardTitle70.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle70, CLOSE) , f_MaterialCardTitle70)) , $add_12(f_MaterialCardReveal69, (f_MaterialLabel71 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel71.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel71)) , f_MaterialCardReveal69)) , $add_12(f_MaterialCard64, (f_MaterialCardAction72 = new MaterialCardAction , $add_12(f_MaterialCardAction72, (f_MaterialLink73 = new MaterialLink , f_MaterialLink73.span_0.setText('Link 1') , $add_12(f_MaterialLink73, f_MaterialLink73.span_0) , $setTextColor((!f_MaterialLink73.colorsMixin && (f_MaterialLink73.colorsMixin = new ColorsMixin(f_MaterialLink73)) , f_MaterialLink73.colorsMixin), 'blue') , f_MaterialLink73)) , $add_12(f_MaterialCardAction72, (f_MaterialLink74 = new MaterialLink , f_MaterialLink74.span_0.setText('Link 1') , $add_12(f_MaterialLink74, f_MaterialLink74.span_0) , $setTextColor((!f_MaterialLink74.colorsMixin && (f_MaterialLink74.colorsMixin = new ColorsMixin(f_MaterialLink74)) , f_MaterialLink74.colorsMixin), 'blue') , f_MaterialLink74)) , f_MaterialCardAction72)) , $setBackgroundColor((!f_MaterialCard64.colorsMixin && (f_MaterialCard64.colorsMixin = new ColorsMixin(f_MaterialCard64)) , f_MaterialCard64.colorsMixin), 'white') , $setGrid_0(f_MaterialCard64, 'l3') , f_MaterialCard64)) , f_MaterialRow40), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_MaterialTitle75 = new MaterialTitle , $setInnerHTML(f_MaterialTitle75.header.element, 'Grid Card Animation') , f_MaterialTitle75), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre76 = new PrettyPre , $setHTML(f_PrettyPre76, (sb_1 = new StringBuilder , sb_1.string += '\u2003@UiField MaterialRow rowCards; MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre76.element, 'lang-java', true) , setStyleName(f_PrettyPre76.element, 'z-depth-1', true) , f_PrettyPre76), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (f_PrettyPre77 = new PrettyPre , $setHTML(f_PrettyPre77, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre77.element, 'lang-xml', true) , setStyleName(f_PrettyPre77.element, 'z-depth-1', true) , f_PrettyPre77), $get_0(this$static.domId7Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (btnShow = new MaterialButton , btnShow.span_0.setText('Show Cards') , $add_12(btnShow, btnShow.span_0) , $setTextColor((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'black') , $setBackgroundColor((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'white') , $addDomHandler(btnShow, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShow), $get_0(this$static.domId8Element));
-  $addAndReplaceElement_0(f_HTMLPanel1, (rowCards = new MaterialRow , $add_12(rowCards, (f_MaterialCard78 = new MaterialCard , $add_12(f_MaterialCard78, (f_MaterialCardImage79 = new MaterialCardImage , $add_15(f_MaterialCardImage79, (f_MaterialImage80 = new MaterialImage , $setUrl_1(f_MaterialImage80, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage80)) , $setWaves(f_MaterialCardImage79, LIGHT) , f_MaterialCardImage79)) , $add_12(f_MaterialCard78, (f_MaterialCardContent81 = new MaterialCardContent , $add_12(f_MaterialCardContent81, (f_MaterialCardTitle82 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle82, RIGHT_5) , f_MaterialCardTitle82.span_0.setText('Sample') , $add_12(f_MaterialCardTitle82, f_MaterialCardTitle82.span_0) , $setTextColor((!f_MaterialCardTitle82.colorsMixin && (f_MaterialCardTitle82.colorsMixin = new ColorsMixin(f_MaterialCardTitle82)) , f_MaterialCardTitle82.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle82, MORE_VERT) , f_MaterialCardTitle82)) , $setTextColor((!f_MaterialCardContent81.colorsMixin && (f_MaterialCardContent81.colorsMixin = new ColorsMixin(f_MaterialCardContent81)) , f_MaterialCardContent81.colorsMixin), 'black') , f_MaterialCardContent81)) , $add_12(f_MaterialCard78, (f_MaterialCardReveal83 = new MaterialCardReveal , $add_12(f_MaterialCardReveal83, (f_MaterialCardTitle84 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle84, RIGHT_5) , f_MaterialCardTitle84.span_0.setText('Sample') , $add_12(f_MaterialCardTitle84, f_MaterialCardTitle84.span_0) , $setTextColor((!f_MaterialCardTitle84.colorsMixin && (f_MaterialCardTitle84.colorsMixin = new ColorsMixin(f_MaterialCardTitle84)) , f_MaterialCardTitle84.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle84, CLOSE) , f_MaterialCardTitle84)) , $add_12(f_MaterialCardReveal83, (f_MaterialLabel85 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel85.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel85)) , f_MaterialCardReveal83)) , $add_12(f_MaterialCard78, (f_MaterialCardAction86 = new MaterialCardAction , $add_12(f_MaterialCardAction86, (f_MaterialLink87 = new MaterialLink , $setIconPosition(f_MaterialLink87, LEFT_4) , f_MaterialLink87.span_0.setText('Link 1') , $add_12(f_MaterialLink87, f_MaterialLink87.span_0) , $setTextColor((!f_MaterialLink87.colorsMixin && (f_MaterialLink87.colorsMixin = new ColorsMixin(f_MaterialLink87)) , f_MaterialLink87.colorsMixin), 'blue') , $setIconType(f_MaterialLink87, POLYMER) , f_MaterialLink87)) , $add_12(f_MaterialCardAction86, (f_MaterialLink88 = new MaterialLink , $setIconPosition(f_MaterialLink88, LEFT_4) , f_MaterialLink88.span_0.setText('Link 1') , $add_12(f_MaterialLink88, f_MaterialLink88.span_0) , $setTextColor((!f_MaterialLink88.colorsMixin && (f_MaterialLink88.colorsMixin = new ColorsMixin(f_MaterialLink88)) , f_MaterialLink88.colorsMixin), 'blue') , $setIconType(f_MaterialLink88, POLYMER) , f_MaterialLink88)) , f_MaterialCardAction86)) , $setBackgroundColor((!f_MaterialCard78.colorsMixin && (f_MaterialCard78.colorsMixin = new ColorsMixin(f_MaterialCard78)) , f_MaterialCard78.colorsMixin), 'white') , $setGrid_0(f_MaterialCard78, 'l3') , f_MaterialCard78)) , $add_12(rowCards, (f_MaterialCard89 = new MaterialCard , $add_12(f_MaterialCard89, (f_MaterialCardImage90 = new MaterialCardImage , $add_15(f_MaterialCardImage90, (f_MaterialImage91 = new MaterialImage , $setUrl_1(f_MaterialImage91, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage91)) , $setWaves(f_MaterialCardImage90, LIGHT) , f_MaterialCardImage90)) , $add_12(f_MaterialCard89, (f_MaterialCardContent92 = new MaterialCardContent , $add_12(f_MaterialCardContent92, (f_MaterialCardTitle93 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle93, RIGHT_5) , f_MaterialCardTitle93.span_0.setText('Sample') , $add_12(f_MaterialCardTitle93, f_MaterialCardTitle93.span_0) , $setTextColor((!f_MaterialCardTitle93.colorsMixin && (f_MaterialCardTitle93.colorsMixin = new ColorsMixin(f_MaterialCardTitle93)) , f_MaterialCardTitle93.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle93, MORE_VERT) , f_MaterialCardTitle93)) , $setTextColor((!f_MaterialCardContent92.colorsMixin && (f_MaterialCardContent92.colorsMixin = new ColorsMixin(f_MaterialCardContent92)) , f_MaterialCardContent92.colorsMixin), 'black') , f_MaterialCardContent92)) , $add_12(f_MaterialCard89, (f_MaterialCardReveal94 = new MaterialCardReveal , $add_12(f_MaterialCardReveal94, (f_MaterialCardTitle95 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle95, RIGHT_5) , f_MaterialCardTitle95.span_0.setText('Sample') , $add_12(f_MaterialCardTitle95, f_MaterialCardTitle95.span_0) , $setTextColor((!f_MaterialCardTitle95.colorsMixin && (f_MaterialCardTitle95.colorsMixin = new ColorsMixin(f_MaterialCardTitle95)) , f_MaterialCardTitle95.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle95, CLOSE) , f_MaterialCardTitle95)) , $add_12(f_MaterialCardReveal94, (f_MaterialLabel96 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel96.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel96)) , f_MaterialCardReveal94)) , $add_12(f_MaterialCard89, (f_MaterialCardAction97 = new MaterialCardAction , $add_12(f_MaterialCardAction97, (f_MaterialLink98 = new MaterialLink , $setIconPosition(f_MaterialLink98, LEFT_4) , f_MaterialLink98.span_0.setText('Link 1') , $add_12(f_MaterialLink98, f_MaterialLink98.span_0) , $setTextColor((!f_MaterialLink98.colorsMixin && (f_MaterialLink98.colorsMixin = new ColorsMixin(f_MaterialLink98)) , f_MaterialLink98.colorsMixin), 'blue') , $setIconType(f_MaterialLink98, POLYMER) , f_MaterialLink98)) , $add_12(f_MaterialCardAction97, (f_MaterialLink99 = new MaterialLink , $setIconPosition(f_MaterialLink99, LEFT_4) , f_MaterialLink99.span_0.setText('Link 1') , $add_12(f_MaterialLink99, f_MaterialLink99.span_0) , $setTextColor((!f_MaterialLink99.colorsMixin && (f_MaterialLink99.colorsMixin = new ColorsMixin(f_MaterialLink99)) , f_MaterialLink99.colorsMixin), 'blue') , $setIconType(f_MaterialLink99, POLYMER) , f_MaterialLink99)) , f_MaterialCardAction97)) , $setBackgroundColor((!f_MaterialCard89.colorsMixin && (f_MaterialCard89.colorsMixin = new ColorsMixin(f_MaterialCard89)) , f_MaterialCard89.colorsMixin), 'white') , $setGrid_0(f_MaterialCard89, 'l3') , f_MaterialCard89)) , $add_12(rowCards, (f_MaterialCard100 = new MaterialCard , $add_12(f_MaterialCard100, (f_MaterialCardImage101 = new MaterialCardImage , $add_15(f_MaterialCardImage101, (f_MaterialImage102 = new MaterialImage , $setUrl_1(f_MaterialImage102, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage102)) , $setWaves(f_MaterialCardImage101, LIGHT) , f_MaterialCardImage101)) , $add_12(f_MaterialCard100, (f_MaterialCardContent103 = new MaterialCardContent , $add_12(f_MaterialCardContent103, (f_MaterialCardTitle104 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle104, RIGHT_5) , f_MaterialCardTitle104.span_0.setText('Sample') , $add_12(f_MaterialCardTitle104, f_MaterialCardTitle104.span_0) , $setTextColor((!f_MaterialCardTitle104.colorsMixin && (f_MaterialCardTitle104.colorsMixin = new ColorsMixin(f_MaterialCardTitle104)) , f_MaterialCardTitle104.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle104, MORE_VERT) , f_MaterialCardTitle104)) , $setTextColor((!f_MaterialCardContent103.colorsMixin && (f_MaterialCardContent103.colorsMixin = new ColorsMixin(f_MaterialCardContent103)) , f_MaterialCardContent103.colorsMixin), 'black') , f_MaterialCardContent103)) , $add_12(f_MaterialCard100, (f_MaterialCardReveal105 = new MaterialCardReveal , $add_12(f_MaterialCardReveal105, (f_MaterialCardTitle106 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle106, RIGHT_5) , f_MaterialCardTitle106.span_0.setText('Sample') , $add_12(f_MaterialCardTitle106, f_MaterialCardTitle106.span_0) , $setTextColor((!f_MaterialCardTitle106.colorsMixin && (f_MaterialCardTitle106.colorsMixin = new ColorsMixin(f_MaterialCardTitle106)) , f_MaterialCardTitle106.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle106, CLOSE) , f_MaterialCardTitle106)) , $add_12(f_MaterialCardReveal105, (f_MaterialLabel107 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel107.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel107)) , f_MaterialCardReveal105)) , $add_12(f_MaterialCard100, (f_MaterialCardAction108 = new MaterialCardAction , $add_12(f_MaterialCardAction108, (f_MaterialLink109 = new MaterialLink , $setIconPosition(f_MaterialLink109, LEFT_4) , f_MaterialLink109.span_0.setText('Link 1') , $add_12(f_MaterialLink109, f_MaterialLink109.span_0) , $setTextColor((!f_MaterialLink109.colorsMixin && (f_MaterialLink109.colorsMixin = new ColorsMixin(f_MaterialLink109)) , f_MaterialLink109.colorsMixin), 'blue') , $setIconType(f_MaterialLink109, POLYMER) , f_MaterialLink109)) , $add_12(f_MaterialCardAction108, (f_MaterialLink110 = new MaterialLink , $setIconPosition(f_MaterialLink110, LEFT_4) , f_MaterialLink110.span_0.setText('Link 1') , $add_12(f_MaterialLink110, f_MaterialLink110.span_0) , $setTextColor((!f_MaterialLink110.colorsMixin && (f_MaterialLink110.colorsMixin = new ColorsMixin(f_MaterialLink110)) , f_MaterialLink110.colorsMixin), 'blue') , $setIconType(f_MaterialLink110, POLYMER) , f_MaterialLink110)) , f_MaterialCardAction108)) , $setBackgroundColor((!f_MaterialCard100.colorsMixin && (f_MaterialCard100.colorsMixin = new ColorsMixin(f_MaterialCard100)) , f_MaterialCard100.colorsMixin), 'white') , $setGrid_0(f_MaterialCard100, 'l3') , f_MaterialCard100)) , $add_12(rowCards, (f_MaterialCard111 = new MaterialCard , $add_12(f_MaterialCard111, (f_MaterialCardImage112 = new MaterialCardImage , $add_15(f_MaterialCardImage112, (f_MaterialImage113 = new MaterialImage , $setUrl_1(f_MaterialImage113, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage113)) , $setWaves(f_MaterialCardImage112, LIGHT) , f_MaterialCardImage112)) , $add_12(f_MaterialCard111, (f_MaterialCardContent114 = new MaterialCardContent , $add_12(f_MaterialCardContent114, (f_MaterialCardTitle115 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle115, RIGHT_5) , f_MaterialCardTitle115.span_0.setText('Sample') , $add_12(f_MaterialCardTitle115, f_MaterialCardTitle115.span_0) , $setTextColor((!f_MaterialCardTitle115.colorsMixin && (f_MaterialCardTitle115.colorsMixin = new ColorsMixin(f_MaterialCardTitle115)) , f_MaterialCardTitle115.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle115, MORE_VERT) , f_MaterialCardTitle115)) , $setTextColor((!f_MaterialCardContent114.colorsMixin && (f_MaterialCardContent114.colorsMixin = new ColorsMixin(f_MaterialCardContent114)) , f_MaterialCardContent114.colorsMixin), 'black') , f_MaterialCardContent114)) , $add_12(f_MaterialCard111, (f_MaterialCardReveal116 = new MaterialCardReveal , $add_12(f_MaterialCardReveal116, (f_MaterialCardTitle117 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle117, RIGHT_5) , f_MaterialCardTitle117.span_0.setText('Sample') , $add_12(f_MaterialCardTitle117, f_MaterialCardTitle117.span_0) , $setTextColor((!f_MaterialCardTitle117.colorsMixin && (f_MaterialCardTitle117.colorsMixin = new ColorsMixin(f_MaterialCardTitle117)) , f_MaterialCardTitle117.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle117, CLOSE) , f_MaterialCardTitle117)) , $add_12(f_MaterialCardReveal116, (f_MaterialLabel118 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel118.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel118)) , f_MaterialCardReveal116)) , $add_12(f_MaterialCard111, (f_MaterialCardAction119 = new MaterialCardAction , $add_12(f_MaterialCardAction119, (f_MaterialLink120 = new MaterialLink , $setIconPosition(f_MaterialLink120, LEFT_4) , f_MaterialLink120.span_0.setText('Link 1') , $add_12(f_MaterialLink120, f_MaterialLink120.span_0) , $setTextColor((!f_MaterialLink120.colorsMixin && (f_MaterialLink120.colorsMixin = new ColorsMixin(f_MaterialLink120)) , f_MaterialLink120.colorsMixin), 'blue') , $setIconType(f_MaterialLink120, POLYMER) , f_MaterialLink120)) , $add_12(f_MaterialCardAction119, (f_MaterialLink121 = new MaterialLink , $setIconPosition(f_MaterialLink121, LEFT_4) , f_MaterialLink121.span_0.setText('Link 1') , $add_12(f_MaterialLink121, f_MaterialLink121.span_0) , $setTextColor((!f_MaterialLink121.colorsMixin && (f_MaterialLink121.colorsMixin = new ColorsMixin(f_MaterialLink121)) , f_MaterialLink121.colorsMixin), 'blue') , $setIconType(f_MaterialLink121, POLYMER) , f_MaterialLink121)) , f_MaterialCardAction119)) , $setBackgroundColor((!f_MaterialCard111.colorsMixin && (f_MaterialCard111.colorsMixin = new ColorsMixin(f_MaterialCard111)) , f_MaterialCard111.colorsMixin), 'white') , $setGrid_0(f_MaterialCard111, 'l3') , f_MaterialCard111)) , $add_12(rowCards, (f_MaterialCard122 = new MaterialCard , $add_12(f_MaterialCard122, (f_MaterialCardImage123 = new MaterialCardImage , $add_15(f_MaterialCardImage123, (f_MaterialImage124 = new MaterialImage , $setUrl_1(f_MaterialImage124, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage124)) , $setWaves(f_MaterialCardImage123, LIGHT) , f_MaterialCardImage123)) , $add_12(f_MaterialCard122, (f_MaterialCardContent125 = new MaterialCardContent , $add_12(f_MaterialCardContent125, (f_MaterialCardTitle126 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle126, RIGHT_5) , f_MaterialCardTitle126.span_0.setText('Sample') , $add_12(f_MaterialCardTitle126, f_MaterialCardTitle126.span_0) , $setTextColor((!f_MaterialCardTitle126.colorsMixin && (f_MaterialCardTitle126.colorsMixin = new ColorsMixin(f_MaterialCardTitle126)) , f_MaterialCardTitle126.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle126, MORE_VERT) , f_MaterialCardTitle126)) , $setTextColor((!f_MaterialCardContent125.colorsMixin && (f_MaterialCardContent125.colorsMixin = new ColorsMixin(f_MaterialCardContent125)) , f_MaterialCardContent125.colorsMixin), 'black') , f_MaterialCardContent125)) , $add_12(f_MaterialCard122, (f_MaterialCardReveal127 = new MaterialCardReveal , $add_12(f_MaterialCardReveal127, (f_MaterialCardTitle128 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle128, RIGHT_5) , f_MaterialCardTitle128.span_0.setText('Sample') , $add_12(f_MaterialCardTitle128, f_MaterialCardTitle128.span_0) , $setTextColor((!f_MaterialCardTitle128.colorsMixin && (f_MaterialCardTitle128.colorsMixin = new ColorsMixin(f_MaterialCardTitle128)) , f_MaterialCardTitle128.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle128, CLOSE) , f_MaterialCardTitle128)) , $add_12(f_MaterialCardReveal127, (f_MaterialLabel129 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel129.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel129)) , f_MaterialCardReveal127)) , $add_12(f_MaterialCard122, (f_MaterialCardAction130 = new MaterialCardAction , $add_12(f_MaterialCardAction130, (f_MaterialLink131 = new MaterialLink , $setIconPosition(f_MaterialLink131, LEFT_4) , f_MaterialLink131.span_0.setText('Link 1') , $add_12(f_MaterialLink131, f_MaterialLink131.span_0) , $setTextColor((!f_MaterialLink131.colorsMixin && (f_MaterialLink131.colorsMixin = new ColorsMixin(f_MaterialLink131)) , f_MaterialLink131.colorsMixin), 'blue') , $setIconType(f_MaterialLink131, POLYMER) , f_MaterialLink131)) , $add_12(f_MaterialCardAction130, (f_MaterialLink132 = new MaterialLink , $setIconPosition(f_MaterialLink132, LEFT_4) , f_MaterialLink132.span_0.setText('Link 1') , $add_12(f_MaterialLink132, f_MaterialLink132.span_0) , $setTextColor((!f_MaterialLink132.colorsMixin && (f_MaterialLink132.colorsMixin = new ColorsMixin(f_MaterialLink132)) , f_MaterialLink132.colorsMixin), 'blue') , $setIconType(f_MaterialLink132, POLYMER) , f_MaterialLink132)) , f_MaterialCardAction130)) , $setBackgroundColor((!f_MaterialCard122.colorsMixin && (f_MaterialCard122.colorsMixin = new ColorsMixin(f_MaterialCard122)) , f_MaterialCard122.colorsMixin), 'white') , $setGrid_0(f_MaterialCard122, 'l3') , f_MaterialCard122)) , $add_12(rowCards, (f_MaterialCard133 = new MaterialCard , $add_12(f_MaterialCard133, (f_MaterialCardImage134 = new MaterialCardImage , $add_15(f_MaterialCardImage134, (f_MaterialImage135 = new MaterialImage , $setUrl_1(f_MaterialImage135, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage135)) , $setWaves(f_MaterialCardImage134, LIGHT) , f_MaterialCardImage134)) , $add_12(f_MaterialCard133, (f_MaterialCardContent136 = new MaterialCardContent , $add_12(f_MaterialCardContent136, (f_MaterialCardTitle137 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle137, RIGHT_5) , f_MaterialCardTitle137.span_0.setText('Sample') , $add_12(f_MaterialCardTitle137, f_MaterialCardTitle137.span_0) , $setTextColor((!f_MaterialCardTitle137.colorsMixin && (f_MaterialCardTitle137.colorsMixin = new ColorsMixin(f_MaterialCardTitle137)) , f_MaterialCardTitle137.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle137, MORE_VERT) , f_MaterialCardTitle137)) , $setTextColor((!f_MaterialCardContent136.colorsMixin && (f_MaterialCardContent136.colorsMixin = new ColorsMixin(f_MaterialCardContent136)) , f_MaterialCardContent136.colorsMixin), 'black') , f_MaterialCardContent136)) , $add_12(f_MaterialCard133, (f_MaterialCardReveal138 = new MaterialCardReveal , $add_12(f_MaterialCardReveal138, (f_MaterialCardTitle139 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle139, RIGHT_5) , f_MaterialCardTitle139.span_0.setText('Sample') , $add_12(f_MaterialCardTitle139, f_MaterialCardTitle139.span_0) , $setTextColor((!f_MaterialCardTitle139.colorsMixin && (f_MaterialCardTitle139.colorsMixin = new ColorsMixin(f_MaterialCardTitle139)) , f_MaterialCardTitle139.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle139, CLOSE) , f_MaterialCardTitle139)) , $add_12(f_MaterialCardReveal138, (f_MaterialLabel140 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel140.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel140)) , f_MaterialCardReveal138)) , $add_12(f_MaterialCard133, (f_MaterialCardAction141 = new MaterialCardAction , $add_12(f_MaterialCardAction141, (f_MaterialLink142 = new MaterialLink , $setIconPosition(f_MaterialLink142, LEFT_4) , f_MaterialLink142.span_0.setText('Link 1') , $add_12(f_MaterialLink142, f_MaterialLink142.span_0) , $setTextColor((!f_MaterialLink142.colorsMixin && (f_MaterialLink142.colorsMixin = new ColorsMixin(f_MaterialLink142)) , f_MaterialLink142.colorsMixin), 'blue') , $setIconType(f_MaterialLink142, POLYMER) , f_MaterialLink142)) , $add_12(f_MaterialCardAction141, (f_MaterialLink143 = new MaterialLink , $setIconPosition(f_MaterialLink143, LEFT_4) , f_MaterialLink143.span_0.setText('Link 1') , $add_12(f_MaterialLink143, f_MaterialLink143.span_0) , $setTextColor((!f_MaterialLink143.colorsMixin && (f_MaterialLink143.colorsMixin = new ColorsMixin(f_MaterialLink143)) , f_MaterialLink143.colorsMixin), 'blue') , $setIconType(f_MaterialLink143, POLYMER) , f_MaterialLink143)) , f_MaterialCardAction141)) , $setBackgroundColor((!f_MaterialCard133.colorsMixin && (f_MaterialCard133.colorsMixin = new ColorsMixin(f_MaterialCard133)) , f_MaterialCard133.colorsMixin), 'white') , $setGrid_0(f_MaterialCard133, 'l3') , f_MaterialCard133)) , $add_12(rowCards, (f_MaterialCard144 = new MaterialCard , $add_12(f_MaterialCard144, (f_MaterialCardImage145 = new MaterialCardImage , $add_15(f_MaterialCardImage145, (f_MaterialImage146 = new MaterialImage , $setUrl_1(f_MaterialImage146, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage146)) , $setWaves(f_MaterialCardImage145, LIGHT) , f_MaterialCardImage145)) , $add_12(f_MaterialCard144, (f_MaterialCardContent147 = new MaterialCardContent , $add_12(f_MaterialCardContent147, (f_MaterialCardTitle148 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle148, RIGHT_5) , f_MaterialCardTitle148.span_0.setText('Sample') , $add_12(f_MaterialCardTitle148, f_MaterialCardTitle148.span_0) , $setTextColor((!f_MaterialCardTitle148.colorsMixin && (f_MaterialCardTitle148.colorsMixin = new ColorsMixin(f_MaterialCardTitle148)) , f_MaterialCardTitle148.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle148, MORE_VERT) , f_MaterialCardTitle148)) , $setTextColor((!f_MaterialCardContent147.colorsMixin && (f_MaterialCardContent147.colorsMixin = new ColorsMixin(f_MaterialCardContent147)) , f_MaterialCardContent147.colorsMixin), 'black') , f_MaterialCardContent147)) , $add_12(f_MaterialCard144, (f_MaterialCardReveal149 = new MaterialCardReveal , $add_12(f_MaterialCardReveal149, (f_MaterialCardTitle150 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle150, RIGHT_5) , f_MaterialCardTitle150.span_0.setText('Sample') , $add_12(f_MaterialCardTitle150, f_MaterialCardTitle150.span_0) , $setTextColor((!f_MaterialCardTitle150.colorsMixin && (f_MaterialCardTitle150.colorsMixin = new ColorsMixin(f_MaterialCardTitle150)) , f_MaterialCardTitle150.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle150, CLOSE) , f_MaterialCardTitle150)) , $add_12(f_MaterialCardReveal149, (f_MaterialLabel151 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel151.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel151)) , f_MaterialCardReveal149)) , $add_12(f_MaterialCard144, (f_MaterialCardAction152 = new MaterialCardAction , $add_12(f_MaterialCardAction152, (f_MaterialLink153 = new MaterialLink , $setIconPosition(f_MaterialLink153, LEFT_4) , f_MaterialLink153.span_0.setText('Link 1') , $add_12(f_MaterialLink153, f_MaterialLink153.span_0) , $setTextColor((!f_MaterialLink153.colorsMixin && (f_MaterialLink153.colorsMixin = new ColorsMixin(f_MaterialLink153)) , f_MaterialLink153.colorsMixin), 'blue') , $setIconType(f_MaterialLink153, POLYMER) , f_MaterialLink153)) , $add_12(f_MaterialCardAction152, (f_MaterialLink154 = new MaterialLink , $setIconPosition(f_MaterialLink154, LEFT_4) , f_MaterialLink154.span_0.setText('Link 1') , $add_12(f_MaterialLink154, f_MaterialLink154.span_0) , $setTextColor((!f_MaterialLink154.colorsMixin && (f_MaterialLink154.colorsMixin = new ColorsMixin(f_MaterialLink154)) , f_MaterialLink154.colorsMixin), 'blue') , $setIconType(f_MaterialLink154, POLYMER) , f_MaterialLink154)) , f_MaterialCardAction152)) , $setBackgroundColor((!f_MaterialCard144.colorsMixin && (f_MaterialCard144.colorsMixin = new ColorsMixin(f_MaterialCard144)) , f_MaterialCard144.colorsMixin), 'white') , $setGrid_0(f_MaterialCard144, 'l3') , f_MaterialCard144)) , $add_12(rowCards, (f_MaterialCard155 = new MaterialCard , $add_12(f_MaterialCard155, (f_MaterialCardImage156 = new MaterialCardImage , $add_15(f_MaterialCardImage156, (f_MaterialImage157 = new MaterialImage , $setUrl_1(f_MaterialImage157, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage157)) , $setWaves(f_MaterialCardImage156, LIGHT) , f_MaterialCardImage156)) , $add_12(f_MaterialCard155, (f_MaterialCardContent158 = new MaterialCardContent , $add_12(f_MaterialCardContent158, (f_MaterialCardTitle159 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle159, RIGHT_5) , f_MaterialCardTitle159.span_0.setText('Sample') , $add_12(f_MaterialCardTitle159, f_MaterialCardTitle159.span_0) , $setTextColor((!f_MaterialCardTitle159.colorsMixin && (f_MaterialCardTitle159.colorsMixin = new ColorsMixin(f_MaterialCardTitle159)) , f_MaterialCardTitle159.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle159, MORE_VERT) , f_MaterialCardTitle159)) , $setTextColor((!f_MaterialCardContent158.colorsMixin && (f_MaterialCardContent158.colorsMixin = new ColorsMixin(f_MaterialCardContent158)) , f_MaterialCardContent158.colorsMixin), 'black') , f_MaterialCardContent158)) , $add_12(f_MaterialCard155, (f_MaterialCardReveal160 = new MaterialCardReveal , $add_12(f_MaterialCardReveal160, (f_MaterialCardTitle161 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle161, RIGHT_5) , f_MaterialCardTitle161.span_0.setText('Sample') , $add_12(f_MaterialCardTitle161, f_MaterialCardTitle161.span_0) , $setTextColor((!f_MaterialCardTitle161.colorsMixin && (f_MaterialCardTitle161.colorsMixin = new ColorsMixin(f_MaterialCardTitle161)) , f_MaterialCardTitle161.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle161, CLOSE) , f_MaterialCardTitle161)) , $add_12(f_MaterialCardReveal160, (f_MaterialLabel162 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel162.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel162)) , f_MaterialCardReveal160)) , $add_12(f_MaterialCard155, (f_MaterialCardAction163 = new MaterialCardAction , $add_12(f_MaterialCardAction163, (f_MaterialLink164 = new MaterialLink , $setIconPosition(f_MaterialLink164, LEFT_4) , f_MaterialLink164.span_0.setText('Link 1') , $add_12(f_MaterialLink164, f_MaterialLink164.span_0) , $setTextColor((!f_MaterialLink164.colorsMixin && (f_MaterialLink164.colorsMixin = new ColorsMixin(f_MaterialLink164)) , f_MaterialLink164.colorsMixin), 'blue') , $setIconType(f_MaterialLink164, POLYMER) , f_MaterialLink164)) , $add_12(f_MaterialCardAction163, (f_MaterialLink165 = new MaterialLink , $setIconPosition(f_MaterialLink165, LEFT_4) , f_MaterialLink165.span_0.setText('Link 1') , $add_12(f_MaterialLink165, f_MaterialLink165.span_0) , $setTextColor((!f_MaterialLink165.colorsMixin && (f_MaterialLink165.colorsMixin = new ColorsMixin(f_MaterialLink165)) , f_MaterialLink165.colorsMixin), 'blue') , $setIconType(f_MaterialLink165, POLYMER) , f_MaterialLink165)) , f_MaterialCardAction163)) , $setBackgroundColor((!f_MaterialCard155.colorsMixin && (f_MaterialCard155.colorsMixin = new ColorsMixin(f_MaterialCard155)) , f_MaterialCard155.colorsMixin), 'white') , $setGrid_0(f_MaterialCard155, 'l3') , f_MaterialCard155)) , $add_12(rowCards, (f_MaterialCard166 = new MaterialCard , $add_12(f_MaterialCard166, (f_MaterialCardImage167 = new MaterialCardImage , $add_15(f_MaterialCardImage167, (f_MaterialImage168 = new MaterialImage , $setUrl_1(f_MaterialImage168, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage168)) , $setWaves(f_MaterialCardImage167, LIGHT) , f_MaterialCardImage167)) , $add_12(f_MaterialCard166, (f_MaterialCardContent169 = new MaterialCardContent , $add_12(f_MaterialCardContent169, (f_MaterialCardTitle170 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle170, RIGHT_5) , f_MaterialCardTitle170.span_0.setText('Sample') , $add_12(f_MaterialCardTitle170, f_MaterialCardTitle170.span_0) , $setTextColor((!f_MaterialCardTitle170.colorsMixin && (f_MaterialCardTitle170.colorsMixin = new ColorsMixin(f_MaterialCardTitle170)) , f_MaterialCardTitle170.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle170, MORE_VERT) , f_MaterialCardTitle170)) , $setTextColor((!f_MaterialCardContent169.colorsMixin && (f_MaterialCardContent169.colorsMixin = new ColorsMixin(f_MaterialCardContent169)) , f_MaterialCardContent169.colorsMixin), 'black') , f_MaterialCardContent169)) , $add_12(f_MaterialCard166, (f_MaterialCardReveal171 = new MaterialCardReveal , $add_12(f_MaterialCardReveal171, (f_MaterialCardTitle172 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle172, RIGHT_5) , f_MaterialCardTitle172.span_0.setText('Sample') , $add_12(f_MaterialCardTitle172, f_MaterialCardTitle172.span_0) , $setTextColor((!f_MaterialCardTitle172.colorsMixin && (f_MaterialCardTitle172.colorsMixin = new ColorsMixin(f_MaterialCardTitle172)) , f_MaterialCardTitle172.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle172, CLOSE) , f_MaterialCardTitle172)) , $add_12(f_MaterialCardReveal171, (f_MaterialLabel173 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel173.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel173)) , f_MaterialCardReveal171)) , $add_12(f_MaterialCard166, (f_MaterialCardAction174 = new MaterialCardAction , $add_12(f_MaterialCardAction174, (f_MaterialLink175 = new MaterialLink , $setIconPosition(f_MaterialLink175, LEFT_4) , f_MaterialLink175.span_0.setText('Link 1') , $add_12(f_MaterialLink175, f_MaterialLink175.span_0) , $setTextColor((!f_MaterialLink175.colorsMixin && (f_MaterialLink175.colorsMixin = new ColorsMixin(f_MaterialLink175)) , f_MaterialLink175.colorsMixin), 'blue') , $setIconType(f_MaterialLink175, POLYMER) , f_MaterialLink175)) , $add_12(f_MaterialCardAction174, (f_MaterialLink176 = new MaterialLink , $setIconPosition(f_MaterialLink176, LEFT_4) , f_MaterialLink176.span_0.setText('Link 1') , $add_12(f_MaterialLink176, f_MaterialLink176.span_0) , $setTextColor((!f_MaterialLink176.colorsMixin && (f_MaterialLink176.colorsMixin = new ColorsMixin(f_MaterialLink176)) , f_MaterialLink176.colorsMixin), 'blue') , $setIconType(f_MaterialLink176, POLYMER) , f_MaterialLink176)) , f_MaterialCardAction174)) , $setBackgroundColor((!f_MaterialCard166.colorsMixin && (f_MaterialCard166.colorsMixin = new ColorsMixin(f_MaterialCard166)) , f_MaterialCard166.colorsMixin), 'white') , $setGrid_0(f_MaterialCard166, 'l3') , f_MaterialCard166)) , $add_12(rowCards, (f_MaterialCard177 = new MaterialCard , $add_12(f_MaterialCard177, (f_MaterialCardImage178 = new MaterialCardImage , $add_15(f_MaterialCardImage178, (f_MaterialImage179 = new MaterialImage , $setUrl_1(f_MaterialImage179, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage179)) , $setWaves(f_MaterialCardImage178, LIGHT) , f_MaterialCardImage178)) , $add_12(f_MaterialCard177, (f_MaterialCardContent180 = new MaterialCardContent , $add_12(f_MaterialCardContent180, (f_MaterialCardTitle181 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle181, RIGHT_5) , f_MaterialCardTitle181.span_0.setText('Sample') , $add_12(f_MaterialCardTitle181, f_MaterialCardTitle181.span_0) , $setTextColor((!f_MaterialCardTitle181.colorsMixin && (f_MaterialCardTitle181.colorsMixin = new ColorsMixin(f_MaterialCardTitle181)) , f_MaterialCardTitle181.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle181, MORE_VERT) , f_MaterialCardTitle181)) , $setTextColor((!f_MaterialCardContent180.colorsMixin && (f_MaterialCardContent180.colorsMixin = new ColorsMixin(f_MaterialCardContent180)) , f_MaterialCardContent180.colorsMixin), 'black') , f_MaterialCardContent180)) , $add_12(f_MaterialCard177, (f_MaterialCardReveal182 = new MaterialCardReveal , $add_12(f_MaterialCardReveal182, (f_MaterialCardTitle183 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle183, RIGHT_5) , f_MaterialCardTitle183.span_0.setText('Sample') , $add_12(f_MaterialCardTitle183, f_MaterialCardTitle183.span_0) , $setTextColor((!f_MaterialCardTitle183.colorsMixin && (f_MaterialCardTitle183.colorsMixin = new ColorsMixin(f_MaterialCardTitle183)) , f_MaterialCardTitle183.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle183, CLOSE) , f_MaterialCardTitle183)) , $add_12(f_MaterialCardReveal182, (f_MaterialLabel184 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel184.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel184)) , f_MaterialCardReveal182)) , $add_12(f_MaterialCard177, (f_MaterialCardAction185 = new MaterialCardAction , $add_12(f_MaterialCardAction185, (f_MaterialLink186 = new MaterialLink , $setIconPosition(f_MaterialLink186, LEFT_4) , f_MaterialLink186.span_0.setText('Link 1') , $add_12(f_MaterialLink186, f_MaterialLink186.span_0) , $setTextColor((!f_MaterialLink186.colorsMixin && (f_MaterialLink186.colorsMixin = new ColorsMixin(f_MaterialLink186)) , f_MaterialLink186.colorsMixin), 'blue') , $setIconType(f_MaterialLink186, POLYMER) , f_MaterialLink186)) , $add_12(f_MaterialCardAction185, (f_MaterialLink187 = new MaterialLink , $setIconPosition(f_MaterialLink187, LEFT_4) , f_MaterialLink187.span_0.setText('Link 1') , $add_12(f_MaterialLink187, f_MaterialLink187.span_0) , $setTextColor((!f_MaterialLink187.colorsMixin && (f_MaterialLink187.colorsMixin = new ColorsMixin(f_MaterialLink187)) , f_MaterialLink187.colorsMixin), 'blue') , $setIconType(f_MaterialLink187, POLYMER) , f_MaterialLink187)) , f_MaterialCardAction185)) , $setBackgroundColor((!f_MaterialCard177.colorsMixin && (f_MaterialCard177.colorsMixin = new ColorsMixin(f_MaterialCard177)) , f_MaterialCard177.colorsMixin), 'white') , $setGrid_0(f_MaterialCard177, 'l3') , f_MaterialCard177)) , $setStyleName_0(rowCards, ($build_style_0() , 'HPBM1FC-g-a'), true) , this$static.owner.rowCards = rowCards , rowCards), $get_0(this$static.domId9Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow2 = new MaterialRow , $add_13(f_MaterialRow2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle3.header), 'Basic Card') , f_MaterialTitle3)) , $add_13(f_MaterialRow2, (f_MaterialCard4 = new MaterialCard , $add_13(f_MaterialCard4, (f_MaterialCardContent5 = new MaterialCardContent , $add_13(f_MaterialCardContent5, (f_MaterialCardTitle6 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle6, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle6.span_0.setText('Sample') , $add_13(f_MaterialCardTitle6, f_MaterialCardTitle6.span_0) , $setIconType_0(f_MaterialCardTitle6, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle6)) , $add_13(f_MaterialCardContent5, (f_MaterialLabel7 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel7.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel7)) , $setTextColor((!f_MaterialCardContent5.colorsMixin && (f_MaterialCardContent5.colorsMixin = new ColorsMixin(f_MaterialCardContent5)) , f_MaterialCardContent5.colorsMixin), 'white') , f_MaterialCardContent5)) , $add_13(f_MaterialCard4, (f_MaterialCardAction8 = new MaterialCardAction , $add_13(f_MaterialCardAction8, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Link 1') , $add_13(f_MaterialLink9, f_MaterialLink9.span_0) , $setIconType(f_MaterialLink9, POLYMER) , f_MaterialLink9)) , $add_13(f_MaterialCardAction8, (f_MaterialLink10 = new MaterialLink , f_MaterialLink10.span_0.setText('Link 1') , $add_13(f_MaterialLink10, f_MaterialLink10.span_0) , $setIconType(f_MaterialLink10, POLYMER) , f_MaterialLink10)) , f_MaterialCardAction8)) , $setBackgroundColor((!f_MaterialCard4.colorsMixin && (f_MaterialCard4.colorsMixin = new ColorsMixin(f_MaterialCard4)) , f_MaterialCard4.colorsMixin), 'blue-grey darken-1') , $setGrid_0(f_MaterialCard4, 'l4') , f_MaterialCard4)) , $add_13(f_MaterialRow2, (f_MaterialCard11 = new MaterialCard , $add_13(f_MaterialCard11, (f_MaterialCardContent12 = new MaterialCardContent , $add_13(f_MaterialCardContent12, (f_MaterialCardTitle13 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle13, RIGHT_5) , f_MaterialCardTitle13.span_0.setText('Sample') , $add_13(f_MaterialCardTitle13, f_MaterialCardTitle13.span_0) , $setTextColor((!f_MaterialCardTitle13.colorsMixin && (f_MaterialCardTitle13.colorsMixin = new ColorsMixin(f_MaterialCardTitle13)) , f_MaterialCardTitle13.colorsMixin), 'black') , $setIconColor(f_MaterialCardTitle13.icon_0, 'red') , $setIconType_0(f_MaterialCardTitle13, FAVORITE) , f_MaterialCardTitle13)) , $add_13(f_MaterialCardContent12, (f_MaterialLabel14 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel14.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel14)) , $setTextColor((!f_MaterialCardContent12.colorsMixin && (f_MaterialCardContent12.colorsMixin = new ColorsMixin(f_MaterialCardContent12)) , f_MaterialCardContent12.colorsMixin), 'black') , f_MaterialCardContent12)) , $add_13(f_MaterialCard11, (f_MaterialCardAction15 = new MaterialCardAction , $add_13(f_MaterialCardAction15, (f_MaterialLink16 = new MaterialLink , f_MaterialLink16.span_0.setText('Link 1') , $add_13(f_MaterialLink16, f_MaterialLink16.span_0) , $setTextColor((!f_MaterialLink16.colorsMixin && (f_MaterialLink16.colorsMixin = new ColorsMixin(f_MaterialLink16)) , f_MaterialLink16.colorsMixin), 'blue') , f_MaterialLink16)) , $add_13(f_MaterialCardAction15, (f_MaterialLink17 = new MaterialLink , f_MaterialLink17.span_0.setText('Link 1') , $add_13(f_MaterialLink17, f_MaterialLink17.span_0) , $setTextColor((!f_MaterialLink17.colorsMixin && (f_MaterialLink17.colorsMixin = new ColorsMixin(f_MaterialLink17)) , f_MaterialLink17.colorsMixin), 'blue') , f_MaterialLink17)) , f_MaterialCardAction15)) , $setBackgroundColor((!f_MaterialCard11.colorsMixin && (f_MaterialCard11.colorsMixin = new ColorsMixin(f_MaterialCard11)) , f_MaterialCard11.colorsMixin), 'white') , $setGrid_0(f_MaterialCard11, 'l4') , f_MaterialCard11)) , f_MaterialRow2), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre18 = new PrettyPre , $setHTML(f_PrettyPre18, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="white"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre18.element, 'lang-xml', true) , setStyleName(f_PrettyPre18.element, 'z-depth-1', true) , f_PrettyPre18), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow19 = new MaterialRow , $add_13(f_MaterialRow19, (f_MaterialTitle20 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle20.header), 'Card Image') , f_MaterialTitle20)) , $add_13(f_MaterialRow19, (f_MaterialCard21 = new MaterialCard , $add_13(f_MaterialCard21, (f_MaterialCardImage22 = new MaterialCardImage , $add_16(f_MaterialCardImage22, (f_MaterialImage23 = new MaterialImage , $setUrl_2(f_MaterialImage23, ($clinit_UriUtils() , new SafeUriString('http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png'))) , f_MaterialImage23)) , $add_16(f_MaterialCardImage22, (f_MaterialCardTitle24 = new MaterialCardTitle , f_MaterialCardTitle24.span_0.setText('Sample') , $add_13(f_MaterialCardTitle24, f_MaterialCardTitle24.span_0) , f_MaterialCardTitle24)) , $setWaves(f_MaterialCardImage22, ($clinit_WavesType() , LIGHT)) , f_MaterialCardImage22)) , $add_13(f_MaterialCard21, (f_MaterialCardContent25 = new MaterialCardContent , $add_13(f_MaterialCardContent25, (f_MaterialLabel26 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel26.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel26)) , $setTextColor((!f_MaterialCardContent25.colorsMixin && (f_MaterialCardContent25.colorsMixin = new ColorsMixin(f_MaterialCardContent25)) , f_MaterialCardContent25.colorsMixin), 'black') , f_MaterialCardContent25)) , $add_13(f_MaterialCard21, (f_MaterialCardAction27 = new MaterialCardAction , $add_13(f_MaterialCardAction27, (f_MaterialLink28 = new MaterialLink , f_MaterialLink28.span_0.setText('Link 1') , $add_13(f_MaterialLink28, f_MaterialLink28.span_0) , f_MaterialLink28)) , $add_13(f_MaterialCardAction27, (f_MaterialLink29 = new MaterialLink , f_MaterialLink29.span_0.setText('Link 1') , $add_13(f_MaterialLink29, f_MaterialLink29.span_0) , f_MaterialLink29)) , f_MaterialCardAction27)) , $setBackgroundColor((!f_MaterialCard21.colorsMixin && (f_MaterialCard21.colorsMixin = new ColorsMixin(f_MaterialCard21)) , f_MaterialCard21.colorsMixin), 'white') , $setGrid_0(f_MaterialCard21, 'l3') , f_MaterialCard21)) , $add_13(f_MaterialRow19, (f_MaterialCard30 = new MaterialCard , $add_13(f_MaterialCard30, (f_MaterialCardImage31 = new MaterialCardImage , $add_16(f_MaterialCardImage31, (f_MaterialImage32 = new MaterialImage , $setUrl_2(f_MaterialImage32, new SafeUriString('http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb')) , f_MaterialImage32)) , $add_16(f_MaterialCardImage31, (f_MaterialCardTitle33 = new MaterialCardTitle , f_MaterialCardTitle33.span_0.setText('Sample') , $add_13(f_MaterialCardTitle33, f_MaterialCardTitle33.span_0) , f_MaterialCardTitle33)) , $setWaves(f_MaterialCardImage31, LIGHT) , f_MaterialCardImage31)) , $add_13(f_MaterialCard30, (f_MaterialCardContent34 = new MaterialCardContent , $add_13(f_MaterialCardContent34, (f_MaterialLabel35 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel35.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel35)) , $setTextColor((!f_MaterialCardContent34.colorsMixin && (f_MaterialCardContent34.colorsMixin = new ColorsMixin(f_MaterialCardContent34)) , f_MaterialCardContent34.colorsMixin), 'black') , f_MaterialCardContent34)) , $add_13(f_MaterialCard30, (f_MaterialCardAction36 = new MaterialCardAction , $add_13(f_MaterialCardAction36, (f_MaterialLink37 = new MaterialLink , f_MaterialLink37.span_0.setText('Link 1') , $add_13(f_MaterialLink37, f_MaterialLink37.span_0) , f_MaterialLink37)) , $add_13(f_MaterialCardAction36, (f_MaterialLink38 = new MaterialLink , f_MaterialLink38.span_0.setText('Link 1') , $add_13(f_MaterialLink38, f_MaterialLink38.span_0) , f_MaterialLink38)) , f_MaterialCardAction36)) , $setBackgroundColor((!f_MaterialCard30.colorsMixin && (f_MaterialCard30.colorsMixin = new ColorsMixin(f_MaterialCard30)) , f_MaterialCard30.colorsMixin), 'white') , $setGrid_0(f_MaterialCard30, 'l3') , f_MaterialCard30)) , f_MaterialRow19), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre39 = new PrettyPre , $setHTML(f_PrettyPre39, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample"/&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" /&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre39.element, 'lang-xml', true) , setStyleName(f_PrettyPre39.element, 'z-depth-1', true) , f_PrettyPre39), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow40 = new MaterialRow , $add_13(f_MaterialRow40, (f_MaterialTitle41 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle41.header), 'Card Reveal') , f_MaterialTitle41)) , $add_13(f_MaterialRow40, (f_MaterialCard42 = new MaterialCard , $add_13(f_MaterialCard42, (f_MaterialCardImage43 = new MaterialCardImage , $add_16(f_MaterialCardImage43, (f_MaterialImage44 = new MaterialImage , $setUrl_2(f_MaterialImage44, new SafeUriString('http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif')) , f_MaterialImage44)) , $setWaves(f_MaterialCardImage43, LIGHT) , f_MaterialCardImage43)) , $add_13(f_MaterialCard42, (f_MaterialCardContent45 = new MaterialCardContent , $add_13(f_MaterialCardContent45, (f_MaterialCardTitle46 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle46, RIGHT_5) , f_MaterialCardTitle46.span_0.setText('Sample') , $add_13(f_MaterialCardTitle46, f_MaterialCardTitle46.span_0) , $setTextColor((!f_MaterialCardTitle46.colorsMixin && (f_MaterialCardTitle46.colorsMixin = new ColorsMixin(f_MaterialCardTitle46)) , f_MaterialCardTitle46.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle46, MORE_VERT) , f_MaterialCardTitle46)) , $setTextColor((!f_MaterialCardContent45.colorsMixin && (f_MaterialCardContent45.colorsMixin = new ColorsMixin(f_MaterialCardContent45)) , f_MaterialCardContent45.colorsMixin), 'black') , f_MaterialCardContent45)) , $add_13(f_MaterialCard42, (f_MaterialCardReveal47 = new MaterialCardReveal , $add_13(f_MaterialCardReveal47, (f_MaterialCardTitle48 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle48, RIGHT_5) , f_MaterialCardTitle48.span_0.setText('Sample') , $add_13(f_MaterialCardTitle48, f_MaterialCardTitle48.span_0) , $setTextColor((!f_MaterialCardTitle48.colorsMixin && (f_MaterialCardTitle48.colorsMixin = new ColorsMixin(f_MaterialCardTitle48)) , f_MaterialCardTitle48.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle48, CLOSE) , f_MaterialCardTitle48)) , $add_13(f_MaterialCardReveal47, (f_MaterialLabel49 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel49.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel49)) , f_MaterialCardReveal47)) , $add_13(f_MaterialCard42, (f_MaterialCardAction50 = new MaterialCardAction , $add_13(f_MaterialCardAction50, (f_MaterialLink51 = new MaterialLink , f_MaterialLink51.span_0.setText('Link 1') , $add_13(f_MaterialLink51, f_MaterialLink51.span_0) , $setTextColor((!f_MaterialLink51.colorsMixin && (f_MaterialLink51.colorsMixin = new ColorsMixin(f_MaterialLink51)) , f_MaterialLink51.colorsMixin), 'blue') , f_MaterialLink51)) , $add_13(f_MaterialCardAction50, (f_MaterialLink52 = new MaterialLink , f_MaterialLink52.span_0.setText('Link 1') , $add_13(f_MaterialLink52, f_MaterialLink52.span_0) , $setTextColor((!f_MaterialLink52.colorsMixin && (f_MaterialLink52.colorsMixin = new ColorsMixin(f_MaterialLink52)) , f_MaterialLink52.colorsMixin), 'blue') , f_MaterialLink52)) , f_MaterialCardAction50)) , $setBackgroundColor((!f_MaterialCard42.colorsMixin && (f_MaterialCard42.colorsMixin = new ColorsMixin(f_MaterialCard42)) , f_MaterialCard42.colorsMixin), 'white') , $setGrid_0(f_MaterialCard42, 'l3') , f_MaterialCard42)) , $add_13(f_MaterialRow40, (f_MaterialCard53 = new MaterialCard , $add_13(f_MaterialCard53, (f_MaterialCardImage54 = new MaterialCardImage , $add_16(f_MaterialCardImage54, (f_MaterialImage55 = new MaterialImage , $setUrl_2(f_MaterialImage55, new SafeUriString('http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png')) , f_MaterialImage55)) , $setWaves(f_MaterialCardImage54, LIGHT) , f_MaterialCardImage54)) , $add_13(f_MaterialCard53, (f_MaterialCardContent56 = new MaterialCardContent , $add_13(f_MaterialCardContent56, (f_MaterialCardTitle57 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle57, RIGHT_5) , f_MaterialCardTitle57.span_0.setText('Sample') , $add_13(f_MaterialCardTitle57, f_MaterialCardTitle57.span_0) , $setTextColor((!f_MaterialCardTitle57.colorsMixin && (f_MaterialCardTitle57.colorsMixin = new ColorsMixin(f_MaterialCardTitle57)) , f_MaterialCardTitle57.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle57, MORE_VERT) , f_MaterialCardTitle57)) , $setTextColor((!f_MaterialCardContent56.colorsMixin && (f_MaterialCardContent56.colorsMixin = new ColorsMixin(f_MaterialCardContent56)) , f_MaterialCardContent56.colorsMixin), 'black') , f_MaterialCardContent56)) , $add_13(f_MaterialCard53, (f_MaterialCardReveal58 = new MaterialCardReveal , $add_13(f_MaterialCardReveal58, (f_MaterialCardTitle59 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle59, RIGHT_5) , f_MaterialCardTitle59.span_0.setText('Sample') , $add_13(f_MaterialCardTitle59, f_MaterialCardTitle59.span_0) , $setTextColor((!f_MaterialCardTitle59.colorsMixin && (f_MaterialCardTitle59.colorsMixin = new ColorsMixin(f_MaterialCardTitle59)) , f_MaterialCardTitle59.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle59, CLOSE) , f_MaterialCardTitle59)) , $add_13(f_MaterialCardReveal58, (f_MaterialLabel60 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel60.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel60)) , f_MaterialCardReveal58)) , $add_13(f_MaterialCard53, (f_MaterialCardAction61 = new MaterialCardAction , $add_13(f_MaterialCardAction61, (f_MaterialLink62 = new MaterialLink , f_MaterialLink62.span_0.setText('Link 1') , $add_13(f_MaterialLink62, f_MaterialLink62.span_0) , $setTextColor((!f_MaterialLink62.colorsMixin && (f_MaterialLink62.colorsMixin = new ColorsMixin(f_MaterialLink62)) , f_MaterialLink62.colorsMixin), 'blue') , f_MaterialLink62)) , $add_13(f_MaterialCardAction61, (f_MaterialLink63 = new MaterialLink , f_MaterialLink63.span_0.setText('Link 1') , $add_13(f_MaterialLink63, f_MaterialLink63.span_0) , $setTextColor((!f_MaterialLink63.colorsMixin && (f_MaterialLink63.colorsMixin = new ColorsMixin(f_MaterialLink63)) , f_MaterialLink63.colorsMixin), 'blue') , f_MaterialLink63)) , f_MaterialCardAction61)) , $setBackgroundColor((!f_MaterialCard53.colorsMixin && (f_MaterialCard53.colorsMixin = new ColorsMixin(f_MaterialCard53)) , f_MaterialCard53.colorsMixin), 'white') , $setGrid_0(f_MaterialCard53, 'l3') , f_MaterialCard53)) , $add_13(f_MaterialRow40, (f_MaterialCard64 = new MaterialCard , $add_13(f_MaterialCard64, (f_MaterialCardImage65 = new MaterialCardImage , $add_16(f_MaterialCardImage65, (f_MaterialImage66 = new MaterialImage , $setUrl_2(f_MaterialImage66, new SafeUriString('http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif')) , f_MaterialImage66)) , $setWaves(f_MaterialCardImage65, LIGHT) , f_MaterialCardImage65)) , $add_13(f_MaterialCard64, (f_MaterialCardContent67 = new MaterialCardContent , $add_13(f_MaterialCardContent67, (f_MaterialCardTitle68 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle68, RIGHT_5) , f_MaterialCardTitle68.span_0.setText('Sample') , $add_13(f_MaterialCardTitle68, f_MaterialCardTitle68.span_0) , $setTextColor((!f_MaterialCardTitle68.colorsMixin && (f_MaterialCardTitle68.colorsMixin = new ColorsMixin(f_MaterialCardTitle68)) , f_MaterialCardTitle68.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle68, MORE_VERT) , f_MaterialCardTitle68)) , $setTextColor((!f_MaterialCardContent67.colorsMixin && (f_MaterialCardContent67.colorsMixin = new ColorsMixin(f_MaterialCardContent67)) , f_MaterialCardContent67.colorsMixin), 'black') , f_MaterialCardContent67)) , $add_13(f_MaterialCard64, (f_MaterialCardReveal69 = new MaterialCardReveal , $add_13(f_MaterialCardReveal69, (f_MaterialCardTitle70 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle70, RIGHT_5) , f_MaterialCardTitle70.span_0.setText('Sample') , $add_13(f_MaterialCardTitle70, f_MaterialCardTitle70.span_0) , $setTextColor((!f_MaterialCardTitle70.colorsMixin && (f_MaterialCardTitle70.colorsMixin = new ColorsMixin(f_MaterialCardTitle70)) , f_MaterialCardTitle70.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle70, CLOSE) , f_MaterialCardTitle70)) , $add_13(f_MaterialCardReveal69, (f_MaterialLabel71 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel71.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel71)) , f_MaterialCardReveal69)) , $add_13(f_MaterialCard64, (f_MaterialCardAction72 = new MaterialCardAction , $add_13(f_MaterialCardAction72, (f_MaterialLink73 = new MaterialLink , f_MaterialLink73.span_0.setText('Link 1') , $add_13(f_MaterialLink73, f_MaterialLink73.span_0) , $setTextColor((!f_MaterialLink73.colorsMixin && (f_MaterialLink73.colorsMixin = new ColorsMixin(f_MaterialLink73)) , f_MaterialLink73.colorsMixin), 'blue') , f_MaterialLink73)) , $add_13(f_MaterialCardAction72, (f_MaterialLink74 = new MaterialLink , f_MaterialLink74.span_0.setText('Link 1') , $add_13(f_MaterialLink74, f_MaterialLink74.span_0) , $setTextColor((!f_MaterialLink74.colorsMixin && (f_MaterialLink74.colorsMixin = new ColorsMixin(f_MaterialLink74)) , f_MaterialLink74.colorsMixin), 'blue') , f_MaterialLink74)) , f_MaterialCardAction72)) , $setBackgroundColor((!f_MaterialCard64.colorsMixin && (f_MaterialCard64.colorsMixin = new ColorsMixin(f_MaterialCard64)) , f_MaterialCard64.colorsMixin), 'white') , $setGrid_0(f_MaterialCard64, 'l3') , f_MaterialCard64)) , f_MaterialRow40), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle75 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle75.header), 'Grid Card Animation') , f_MaterialTitle75), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre76 = new PrettyPre , $setHTML(f_PrettyPre76, (sb_1 = new StringBuilder , sb_1.string += '\u2003@UiField MaterialRow rowCards; MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre76.element, 'lang-java', true) , setStyleName(f_PrettyPre76.element, 'z-depth-1', true) , f_PrettyPre76), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre77 = new PrettyPre , $setHTML(f_PrettyPre77, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre77.element, 'lang-xml', true) , setStyleName(f_PrettyPre77.element, 'z-depth-1', true) , f_PrettyPre77), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (btnShow = new MaterialButton , btnShow.span_0.setText('Show Cards') , $add_13(btnShow, btnShow.span_0) , $setTextColor((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'black') , $setBackgroundColor((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'white') , $addDomHandler(btnShow, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShow), $get_0(this$static.domId8Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (rowCards = new MaterialRow , $add_13(rowCards, (f_MaterialCard78 = new MaterialCard , $add_13(f_MaterialCard78, (f_MaterialCardImage79 = new MaterialCardImage , $add_16(f_MaterialCardImage79, (f_MaterialImage80 = new MaterialImage , $setUrl_2(f_MaterialImage80, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage80)) , $setWaves(f_MaterialCardImage79, LIGHT) , f_MaterialCardImage79)) , $add_13(f_MaterialCard78, (f_MaterialCardContent81 = new MaterialCardContent , $add_13(f_MaterialCardContent81, (f_MaterialCardTitle82 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle82, RIGHT_5) , f_MaterialCardTitle82.span_0.setText('Sample') , $add_13(f_MaterialCardTitle82, f_MaterialCardTitle82.span_0) , $setTextColor((!f_MaterialCardTitle82.colorsMixin && (f_MaterialCardTitle82.colorsMixin = new ColorsMixin(f_MaterialCardTitle82)) , f_MaterialCardTitle82.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle82, MORE_VERT) , f_MaterialCardTitle82)) , $setTextColor((!f_MaterialCardContent81.colorsMixin && (f_MaterialCardContent81.colorsMixin = new ColorsMixin(f_MaterialCardContent81)) , f_MaterialCardContent81.colorsMixin), 'black') , f_MaterialCardContent81)) , $add_13(f_MaterialCard78, (f_MaterialCardReveal83 = new MaterialCardReveal , $add_13(f_MaterialCardReveal83, (f_MaterialCardTitle84 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle84, RIGHT_5) , f_MaterialCardTitle84.span_0.setText('Sample') , $add_13(f_MaterialCardTitle84, f_MaterialCardTitle84.span_0) , $setTextColor((!f_MaterialCardTitle84.colorsMixin && (f_MaterialCardTitle84.colorsMixin = new ColorsMixin(f_MaterialCardTitle84)) , f_MaterialCardTitle84.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle84, CLOSE) , f_MaterialCardTitle84)) , $add_13(f_MaterialCardReveal83, (f_MaterialLabel85 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel85.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel85)) , f_MaterialCardReveal83)) , $add_13(f_MaterialCard78, (f_MaterialCardAction86 = new MaterialCardAction , $add_13(f_MaterialCardAction86, (f_MaterialLink87 = new MaterialLink , $setIconPosition(f_MaterialLink87, LEFT_4) , f_MaterialLink87.span_0.setText('Link 1') , $add_13(f_MaterialLink87, f_MaterialLink87.span_0) , $setTextColor((!f_MaterialLink87.colorsMixin && (f_MaterialLink87.colorsMixin = new ColorsMixin(f_MaterialLink87)) , f_MaterialLink87.colorsMixin), 'blue') , $setIconType(f_MaterialLink87, POLYMER) , f_MaterialLink87)) , $add_13(f_MaterialCardAction86, (f_MaterialLink88 = new MaterialLink , $setIconPosition(f_MaterialLink88, LEFT_4) , f_MaterialLink88.span_0.setText('Link 1') , $add_13(f_MaterialLink88, f_MaterialLink88.span_0) , $setTextColor((!f_MaterialLink88.colorsMixin && (f_MaterialLink88.colorsMixin = new ColorsMixin(f_MaterialLink88)) , f_MaterialLink88.colorsMixin), 'blue') , $setIconType(f_MaterialLink88, POLYMER) , f_MaterialLink88)) , f_MaterialCardAction86)) , $setBackgroundColor((!f_MaterialCard78.colorsMixin && (f_MaterialCard78.colorsMixin = new ColorsMixin(f_MaterialCard78)) , f_MaterialCard78.colorsMixin), 'white') , $setGrid_0(f_MaterialCard78, 'l3') , f_MaterialCard78)) , $add_13(rowCards, (f_MaterialCard89 = new MaterialCard , $add_13(f_MaterialCard89, (f_MaterialCardImage90 = new MaterialCardImage , $add_16(f_MaterialCardImage90, (f_MaterialImage91 = new MaterialImage , $setUrl_2(f_MaterialImage91, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage91)) , $setWaves(f_MaterialCardImage90, LIGHT) , f_MaterialCardImage90)) , $add_13(f_MaterialCard89, (f_MaterialCardContent92 = new MaterialCardContent , $add_13(f_MaterialCardContent92, (f_MaterialCardTitle93 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle93, RIGHT_5) , f_MaterialCardTitle93.span_0.setText('Sample') , $add_13(f_MaterialCardTitle93, f_MaterialCardTitle93.span_0) , $setTextColor((!f_MaterialCardTitle93.colorsMixin && (f_MaterialCardTitle93.colorsMixin = new ColorsMixin(f_MaterialCardTitle93)) , f_MaterialCardTitle93.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle93, MORE_VERT) , f_MaterialCardTitle93)) , $setTextColor((!f_MaterialCardContent92.colorsMixin && (f_MaterialCardContent92.colorsMixin = new ColorsMixin(f_MaterialCardContent92)) , f_MaterialCardContent92.colorsMixin), 'black') , f_MaterialCardContent92)) , $add_13(f_MaterialCard89, (f_MaterialCardReveal94 = new MaterialCardReveal , $add_13(f_MaterialCardReveal94, (f_MaterialCardTitle95 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle95, RIGHT_5) , f_MaterialCardTitle95.span_0.setText('Sample') , $add_13(f_MaterialCardTitle95, f_MaterialCardTitle95.span_0) , $setTextColor((!f_MaterialCardTitle95.colorsMixin && (f_MaterialCardTitle95.colorsMixin = new ColorsMixin(f_MaterialCardTitle95)) , f_MaterialCardTitle95.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle95, CLOSE) , f_MaterialCardTitle95)) , $add_13(f_MaterialCardReveal94, (f_MaterialLabel96 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel96.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel96)) , f_MaterialCardReveal94)) , $add_13(f_MaterialCard89, (f_MaterialCardAction97 = new MaterialCardAction , $add_13(f_MaterialCardAction97, (f_MaterialLink98 = new MaterialLink , $setIconPosition(f_MaterialLink98, LEFT_4) , f_MaterialLink98.span_0.setText('Link 1') , $add_13(f_MaterialLink98, f_MaterialLink98.span_0) , $setTextColor((!f_MaterialLink98.colorsMixin && (f_MaterialLink98.colorsMixin = new ColorsMixin(f_MaterialLink98)) , f_MaterialLink98.colorsMixin), 'blue') , $setIconType(f_MaterialLink98, POLYMER) , f_MaterialLink98)) , $add_13(f_MaterialCardAction97, (f_MaterialLink99 = new MaterialLink , $setIconPosition(f_MaterialLink99, LEFT_4) , f_MaterialLink99.span_0.setText('Link 1') , $add_13(f_MaterialLink99, f_MaterialLink99.span_0) , $setTextColor((!f_MaterialLink99.colorsMixin && (f_MaterialLink99.colorsMixin = new ColorsMixin(f_MaterialLink99)) , f_MaterialLink99.colorsMixin), 'blue') , $setIconType(f_MaterialLink99, POLYMER) , f_MaterialLink99)) , f_MaterialCardAction97)) , $setBackgroundColor((!f_MaterialCard89.colorsMixin && (f_MaterialCard89.colorsMixin = new ColorsMixin(f_MaterialCard89)) , f_MaterialCard89.colorsMixin), 'white') , $setGrid_0(f_MaterialCard89, 'l3') , f_MaterialCard89)) , $add_13(rowCards, (f_MaterialCard100 = new MaterialCard , $add_13(f_MaterialCard100, (f_MaterialCardImage101 = new MaterialCardImage , $add_16(f_MaterialCardImage101, (f_MaterialImage102 = new MaterialImage , $setUrl_2(f_MaterialImage102, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage102)) , $setWaves(f_MaterialCardImage101, LIGHT) , f_MaterialCardImage101)) , $add_13(f_MaterialCard100, (f_MaterialCardContent103 = new MaterialCardContent , $add_13(f_MaterialCardContent103, (f_MaterialCardTitle104 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle104, RIGHT_5) , f_MaterialCardTitle104.span_0.setText('Sample') , $add_13(f_MaterialCardTitle104, f_MaterialCardTitle104.span_0) , $setTextColor((!f_MaterialCardTitle104.colorsMixin && (f_MaterialCardTitle104.colorsMixin = new ColorsMixin(f_MaterialCardTitle104)) , f_MaterialCardTitle104.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle104, MORE_VERT) , f_MaterialCardTitle104)) , $setTextColor((!f_MaterialCardContent103.colorsMixin && (f_MaterialCardContent103.colorsMixin = new ColorsMixin(f_MaterialCardContent103)) , f_MaterialCardContent103.colorsMixin), 'black') , f_MaterialCardContent103)) , $add_13(f_MaterialCard100, (f_MaterialCardReveal105 = new MaterialCardReveal , $add_13(f_MaterialCardReveal105, (f_MaterialCardTitle106 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle106, RIGHT_5) , f_MaterialCardTitle106.span_0.setText('Sample') , $add_13(f_MaterialCardTitle106, f_MaterialCardTitle106.span_0) , $setTextColor((!f_MaterialCardTitle106.colorsMixin && (f_MaterialCardTitle106.colorsMixin = new ColorsMixin(f_MaterialCardTitle106)) , f_MaterialCardTitle106.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle106, CLOSE) , f_MaterialCardTitle106)) , $add_13(f_MaterialCardReveal105, (f_MaterialLabel107 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel107.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel107)) , f_MaterialCardReveal105)) , $add_13(f_MaterialCard100, (f_MaterialCardAction108 = new MaterialCardAction , $add_13(f_MaterialCardAction108, (f_MaterialLink109 = new MaterialLink , $setIconPosition(f_MaterialLink109, LEFT_4) , f_MaterialLink109.span_0.setText('Link 1') , $add_13(f_MaterialLink109, f_MaterialLink109.span_0) , $setTextColor((!f_MaterialLink109.colorsMixin && (f_MaterialLink109.colorsMixin = new ColorsMixin(f_MaterialLink109)) , f_MaterialLink109.colorsMixin), 'blue') , $setIconType(f_MaterialLink109, POLYMER) , f_MaterialLink109)) , $add_13(f_MaterialCardAction108, (f_MaterialLink110 = new MaterialLink , $setIconPosition(f_MaterialLink110, LEFT_4) , f_MaterialLink110.span_0.setText('Link 1') , $add_13(f_MaterialLink110, f_MaterialLink110.span_0) , $setTextColor((!f_MaterialLink110.colorsMixin && (f_MaterialLink110.colorsMixin = new ColorsMixin(f_MaterialLink110)) , f_MaterialLink110.colorsMixin), 'blue') , $setIconType(f_MaterialLink110, POLYMER) , f_MaterialLink110)) , f_MaterialCardAction108)) , $setBackgroundColor((!f_MaterialCard100.colorsMixin && (f_MaterialCard100.colorsMixin = new ColorsMixin(f_MaterialCard100)) , f_MaterialCard100.colorsMixin), 'white') , $setGrid_0(f_MaterialCard100, 'l3') , f_MaterialCard100)) , $add_13(rowCards, (f_MaterialCard111 = new MaterialCard , $add_13(f_MaterialCard111, (f_MaterialCardImage112 = new MaterialCardImage , $add_16(f_MaterialCardImage112, (f_MaterialImage113 = new MaterialImage , $setUrl_2(f_MaterialImage113, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage113)) , $setWaves(f_MaterialCardImage112, LIGHT) , f_MaterialCardImage112)) , $add_13(f_MaterialCard111, (f_MaterialCardContent114 = new MaterialCardContent , $add_13(f_MaterialCardContent114, (f_MaterialCardTitle115 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle115, RIGHT_5) , f_MaterialCardTitle115.span_0.setText('Sample') , $add_13(f_MaterialCardTitle115, f_MaterialCardTitle115.span_0) , $setTextColor((!f_MaterialCardTitle115.colorsMixin && (f_MaterialCardTitle115.colorsMixin = new ColorsMixin(f_MaterialCardTitle115)) , f_MaterialCardTitle115.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle115, MORE_VERT) , f_MaterialCardTitle115)) , $setTextColor((!f_MaterialCardContent114.colorsMixin && (f_MaterialCardContent114.colorsMixin = new ColorsMixin(f_MaterialCardContent114)) , f_MaterialCardContent114.colorsMixin), 'black') , f_MaterialCardContent114)) , $add_13(f_MaterialCard111, (f_MaterialCardReveal116 = new MaterialCardReveal , $add_13(f_MaterialCardReveal116, (f_MaterialCardTitle117 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle117, RIGHT_5) , f_MaterialCardTitle117.span_0.setText('Sample') , $add_13(f_MaterialCardTitle117, f_MaterialCardTitle117.span_0) , $setTextColor((!f_MaterialCardTitle117.colorsMixin && (f_MaterialCardTitle117.colorsMixin = new ColorsMixin(f_MaterialCardTitle117)) , f_MaterialCardTitle117.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle117, CLOSE) , f_MaterialCardTitle117)) , $add_13(f_MaterialCardReveal116, (f_MaterialLabel118 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel118.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel118)) , f_MaterialCardReveal116)) , $add_13(f_MaterialCard111, (f_MaterialCardAction119 = new MaterialCardAction , $add_13(f_MaterialCardAction119, (f_MaterialLink120 = new MaterialLink , $setIconPosition(f_MaterialLink120, LEFT_4) , f_MaterialLink120.span_0.setText('Link 1') , $add_13(f_MaterialLink120, f_MaterialLink120.span_0) , $setTextColor((!f_MaterialLink120.colorsMixin && (f_MaterialLink120.colorsMixin = new ColorsMixin(f_MaterialLink120)) , f_MaterialLink120.colorsMixin), 'blue') , $setIconType(f_MaterialLink120, POLYMER) , f_MaterialLink120)) , $add_13(f_MaterialCardAction119, (f_MaterialLink121 = new MaterialLink , $setIconPosition(f_MaterialLink121, LEFT_4) , f_MaterialLink121.span_0.setText('Link 1') , $add_13(f_MaterialLink121, f_MaterialLink121.span_0) , $setTextColor((!f_MaterialLink121.colorsMixin && (f_MaterialLink121.colorsMixin = new ColorsMixin(f_MaterialLink121)) , f_MaterialLink121.colorsMixin), 'blue') , $setIconType(f_MaterialLink121, POLYMER) , f_MaterialLink121)) , f_MaterialCardAction119)) , $setBackgroundColor((!f_MaterialCard111.colorsMixin && (f_MaterialCard111.colorsMixin = new ColorsMixin(f_MaterialCard111)) , f_MaterialCard111.colorsMixin), 'white') , $setGrid_0(f_MaterialCard111, 'l3') , f_MaterialCard111)) , $add_13(rowCards, (f_MaterialCard122 = new MaterialCard , $add_13(f_MaterialCard122, (f_MaterialCardImage123 = new MaterialCardImage , $add_16(f_MaterialCardImage123, (f_MaterialImage124 = new MaterialImage , $setUrl_2(f_MaterialImage124, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage124)) , $setWaves(f_MaterialCardImage123, LIGHT) , f_MaterialCardImage123)) , $add_13(f_MaterialCard122, (f_MaterialCardContent125 = new MaterialCardContent , $add_13(f_MaterialCardContent125, (f_MaterialCardTitle126 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle126, RIGHT_5) , f_MaterialCardTitle126.span_0.setText('Sample') , $add_13(f_MaterialCardTitle126, f_MaterialCardTitle126.span_0) , $setTextColor((!f_MaterialCardTitle126.colorsMixin && (f_MaterialCardTitle126.colorsMixin = new ColorsMixin(f_MaterialCardTitle126)) , f_MaterialCardTitle126.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle126, MORE_VERT) , f_MaterialCardTitle126)) , $setTextColor((!f_MaterialCardContent125.colorsMixin && (f_MaterialCardContent125.colorsMixin = new ColorsMixin(f_MaterialCardContent125)) , f_MaterialCardContent125.colorsMixin), 'black') , f_MaterialCardContent125)) , $add_13(f_MaterialCard122, (f_MaterialCardReveal127 = new MaterialCardReveal , $add_13(f_MaterialCardReveal127, (f_MaterialCardTitle128 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle128, RIGHT_5) , f_MaterialCardTitle128.span_0.setText('Sample') , $add_13(f_MaterialCardTitle128, f_MaterialCardTitle128.span_0) , $setTextColor((!f_MaterialCardTitle128.colorsMixin && (f_MaterialCardTitle128.colorsMixin = new ColorsMixin(f_MaterialCardTitle128)) , f_MaterialCardTitle128.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle128, CLOSE) , f_MaterialCardTitle128)) , $add_13(f_MaterialCardReveal127, (f_MaterialLabel129 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel129.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel129)) , f_MaterialCardReveal127)) , $add_13(f_MaterialCard122, (f_MaterialCardAction130 = new MaterialCardAction , $add_13(f_MaterialCardAction130, (f_MaterialLink131 = new MaterialLink , $setIconPosition(f_MaterialLink131, LEFT_4) , f_MaterialLink131.span_0.setText('Link 1') , $add_13(f_MaterialLink131, f_MaterialLink131.span_0) , $setTextColor((!f_MaterialLink131.colorsMixin && (f_MaterialLink131.colorsMixin = new ColorsMixin(f_MaterialLink131)) , f_MaterialLink131.colorsMixin), 'blue') , $setIconType(f_MaterialLink131, POLYMER) , f_MaterialLink131)) , $add_13(f_MaterialCardAction130, (f_MaterialLink132 = new MaterialLink , $setIconPosition(f_MaterialLink132, LEFT_4) , f_MaterialLink132.span_0.setText('Link 1') , $add_13(f_MaterialLink132, f_MaterialLink132.span_0) , $setTextColor((!f_MaterialLink132.colorsMixin && (f_MaterialLink132.colorsMixin = new ColorsMixin(f_MaterialLink132)) , f_MaterialLink132.colorsMixin), 'blue') , $setIconType(f_MaterialLink132, POLYMER) , f_MaterialLink132)) , f_MaterialCardAction130)) , $setBackgroundColor((!f_MaterialCard122.colorsMixin && (f_MaterialCard122.colorsMixin = new ColorsMixin(f_MaterialCard122)) , f_MaterialCard122.colorsMixin), 'white') , $setGrid_0(f_MaterialCard122, 'l3') , f_MaterialCard122)) , $add_13(rowCards, (f_MaterialCard133 = new MaterialCard , $add_13(f_MaterialCard133, (f_MaterialCardImage134 = new MaterialCardImage , $add_16(f_MaterialCardImage134, (f_MaterialImage135 = new MaterialImage , $setUrl_2(f_MaterialImage135, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage135)) , $setWaves(f_MaterialCardImage134, LIGHT) , f_MaterialCardImage134)) , $add_13(f_MaterialCard133, (f_MaterialCardContent136 = new MaterialCardContent , $add_13(f_MaterialCardContent136, (f_MaterialCardTitle137 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle137, RIGHT_5) , f_MaterialCardTitle137.span_0.setText('Sample') , $add_13(f_MaterialCardTitle137, f_MaterialCardTitle137.span_0) , $setTextColor((!f_MaterialCardTitle137.colorsMixin && (f_MaterialCardTitle137.colorsMixin = new ColorsMixin(f_MaterialCardTitle137)) , f_MaterialCardTitle137.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle137, MORE_VERT) , f_MaterialCardTitle137)) , $setTextColor((!f_MaterialCardContent136.colorsMixin && (f_MaterialCardContent136.colorsMixin = new ColorsMixin(f_MaterialCardContent136)) , f_MaterialCardContent136.colorsMixin), 'black') , f_MaterialCardContent136)) , $add_13(f_MaterialCard133, (f_MaterialCardReveal138 = new MaterialCardReveal , $add_13(f_MaterialCardReveal138, (f_MaterialCardTitle139 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle139, RIGHT_5) , f_MaterialCardTitle139.span_0.setText('Sample') , $add_13(f_MaterialCardTitle139, f_MaterialCardTitle139.span_0) , $setTextColor((!f_MaterialCardTitle139.colorsMixin && (f_MaterialCardTitle139.colorsMixin = new ColorsMixin(f_MaterialCardTitle139)) , f_MaterialCardTitle139.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle139, CLOSE) , f_MaterialCardTitle139)) , $add_13(f_MaterialCardReveal138, (f_MaterialLabel140 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel140.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel140)) , f_MaterialCardReveal138)) , $add_13(f_MaterialCard133, (f_MaterialCardAction141 = new MaterialCardAction , $add_13(f_MaterialCardAction141, (f_MaterialLink142 = new MaterialLink , $setIconPosition(f_MaterialLink142, LEFT_4) , f_MaterialLink142.span_0.setText('Link 1') , $add_13(f_MaterialLink142, f_MaterialLink142.span_0) , $setTextColor((!f_MaterialLink142.colorsMixin && (f_MaterialLink142.colorsMixin = new ColorsMixin(f_MaterialLink142)) , f_MaterialLink142.colorsMixin), 'blue') , $setIconType(f_MaterialLink142, POLYMER) , f_MaterialLink142)) , $add_13(f_MaterialCardAction141, (f_MaterialLink143 = new MaterialLink , $setIconPosition(f_MaterialLink143, LEFT_4) , f_MaterialLink143.span_0.setText('Link 1') , $add_13(f_MaterialLink143, f_MaterialLink143.span_0) , $setTextColor((!f_MaterialLink143.colorsMixin && (f_MaterialLink143.colorsMixin = new ColorsMixin(f_MaterialLink143)) , f_MaterialLink143.colorsMixin), 'blue') , $setIconType(f_MaterialLink143, POLYMER) , f_MaterialLink143)) , f_MaterialCardAction141)) , $setBackgroundColor((!f_MaterialCard133.colorsMixin && (f_MaterialCard133.colorsMixin = new ColorsMixin(f_MaterialCard133)) , f_MaterialCard133.colorsMixin), 'white') , $setGrid_0(f_MaterialCard133, 'l3') , f_MaterialCard133)) , $add_13(rowCards, (f_MaterialCard144 = new MaterialCard , $add_13(f_MaterialCard144, (f_MaterialCardImage145 = new MaterialCardImage , $add_16(f_MaterialCardImage145, (f_MaterialImage146 = new MaterialImage , $setUrl_2(f_MaterialImage146, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage146)) , $setWaves(f_MaterialCardImage145, LIGHT) , f_MaterialCardImage145)) , $add_13(f_MaterialCard144, (f_MaterialCardContent147 = new MaterialCardContent , $add_13(f_MaterialCardContent147, (f_MaterialCardTitle148 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle148, RIGHT_5) , f_MaterialCardTitle148.span_0.setText('Sample') , $add_13(f_MaterialCardTitle148, f_MaterialCardTitle148.span_0) , $setTextColor((!f_MaterialCardTitle148.colorsMixin && (f_MaterialCardTitle148.colorsMixin = new ColorsMixin(f_MaterialCardTitle148)) , f_MaterialCardTitle148.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle148, MORE_VERT) , f_MaterialCardTitle148)) , $setTextColor((!f_MaterialCardContent147.colorsMixin && (f_MaterialCardContent147.colorsMixin = new ColorsMixin(f_MaterialCardContent147)) , f_MaterialCardContent147.colorsMixin), 'black') , f_MaterialCardContent147)) , $add_13(f_MaterialCard144, (f_MaterialCardReveal149 = new MaterialCardReveal , $add_13(f_MaterialCardReveal149, (f_MaterialCardTitle150 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle150, RIGHT_5) , f_MaterialCardTitle150.span_0.setText('Sample') , $add_13(f_MaterialCardTitle150, f_MaterialCardTitle150.span_0) , $setTextColor((!f_MaterialCardTitle150.colorsMixin && (f_MaterialCardTitle150.colorsMixin = new ColorsMixin(f_MaterialCardTitle150)) , f_MaterialCardTitle150.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle150, CLOSE) , f_MaterialCardTitle150)) , $add_13(f_MaterialCardReveal149, (f_MaterialLabel151 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel151.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel151)) , f_MaterialCardReveal149)) , $add_13(f_MaterialCard144, (f_MaterialCardAction152 = new MaterialCardAction , $add_13(f_MaterialCardAction152, (f_MaterialLink153 = new MaterialLink , $setIconPosition(f_MaterialLink153, LEFT_4) , f_MaterialLink153.span_0.setText('Link 1') , $add_13(f_MaterialLink153, f_MaterialLink153.span_0) , $setTextColor((!f_MaterialLink153.colorsMixin && (f_MaterialLink153.colorsMixin = new ColorsMixin(f_MaterialLink153)) , f_MaterialLink153.colorsMixin), 'blue') , $setIconType(f_MaterialLink153, POLYMER) , f_MaterialLink153)) , $add_13(f_MaterialCardAction152, (f_MaterialLink154 = new MaterialLink , $setIconPosition(f_MaterialLink154, LEFT_4) , f_MaterialLink154.span_0.setText('Link 1') , $add_13(f_MaterialLink154, f_MaterialLink154.span_0) , $setTextColor((!f_MaterialLink154.colorsMixin && (f_MaterialLink154.colorsMixin = new ColorsMixin(f_MaterialLink154)) , f_MaterialLink154.colorsMixin), 'blue') , $setIconType(f_MaterialLink154, POLYMER) , f_MaterialLink154)) , f_MaterialCardAction152)) , $setBackgroundColor((!f_MaterialCard144.colorsMixin && (f_MaterialCard144.colorsMixin = new ColorsMixin(f_MaterialCard144)) , f_MaterialCard144.colorsMixin), 'white') , $setGrid_0(f_MaterialCard144, 'l3') , f_MaterialCard144)) , $add_13(rowCards, (f_MaterialCard155 = new MaterialCard , $add_13(f_MaterialCard155, (f_MaterialCardImage156 = new MaterialCardImage , $add_16(f_MaterialCardImage156, (f_MaterialImage157 = new MaterialImage , $setUrl_2(f_MaterialImage157, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage157)) , $setWaves(f_MaterialCardImage156, LIGHT) , f_MaterialCardImage156)) , $add_13(f_MaterialCard155, (f_MaterialCardContent158 = new MaterialCardContent , $add_13(f_MaterialCardContent158, (f_MaterialCardTitle159 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle159, RIGHT_5) , f_MaterialCardTitle159.span_0.setText('Sample') , $add_13(f_MaterialCardTitle159, f_MaterialCardTitle159.span_0) , $setTextColor((!f_MaterialCardTitle159.colorsMixin && (f_MaterialCardTitle159.colorsMixin = new ColorsMixin(f_MaterialCardTitle159)) , f_MaterialCardTitle159.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle159, MORE_VERT) , f_MaterialCardTitle159)) , $setTextColor((!f_MaterialCardContent158.colorsMixin && (f_MaterialCardContent158.colorsMixin = new ColorsMixin(f_MaterialCardContent158)) , f_MaterialCardContent158.colorsMixin), 'black') , f_MaterialCardContent158)) , $add_13(f_MaterialCard155, (f_MaterialCardReveal160 = new MaterialCardReveal , $add_13(f_MaterialCardReveal160, (f_MaterialCardTitle161 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle161, RIGHT_5) , f_MaterialCardTitle161.span_0.setText('Sample') , $add_13(f_MaterialCardTitle161, f_MaterialCardTitle161.span_0) , $setTextColor((!f_MaterialCardTitle161.colorsMixin && (f_MaterialCardTitle161.colorsMixin = new ColorsMixin(f_MaterialCardTitle161)) , f_MaterialCardTitle161.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle161, CLOSE) , f_MaterialCardTitle161)) , $add_13(f_MaterialCardReveal160, (f_MaterialLabel162 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel162.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel162)) , f_MaterialCardReveal160)) , $add_13(f_MaterialCard155, (f_MaterialCardAction163 = new MaterialCardAction , $add_13(f_MaterialCardAction163, (f_MaterialLink164 = new MaterialLink , $setIconPosition(f_MaterialLink164, LEFT_4) , f_MaterialLink164.span_0.setText('Link 1') , $add_13(f_MaterialLink164, f_MaterialLink164.span_0) , $setTextColor((!f_MaterialLink164.colorsMixin && (f_MaterialLink164.colorsMixin = new ColorsMixin(f_MaterialLink164)) , f_MaterialLink164.colorsMixin), 'blue') , $setIconType(f_MaterialLink164, POLYMER) , f_MaterialLink164)) , $add_13(f_MaterialCardAction163, (f_MaterialLink165 = new MaterialLink , $setIconPosition(f_MaterialLink165, LEFT_4) , f_MaterialLink165.span_0.setText('Link 1') , $add_13(f_MaterialLink165, f_MaterialLink165.span_0) , $setTextColor((!f_MaterialLink165.colorsMixin && (f_MaterialLink165.colorsMixin = new ColorsMixin(f_MaterialLink165)) , f_MaterialLink165.colorsMixin), 'blue') , $setIconType(f_MaterialLink165, POLYMER) , f_MaterialLink165)) , f_MaterialCardAction163)) , $setBackgroundColor((!f_MaterialCard155.colorsMixin && (f_MaterialCard155.colorsMixin = new ColorsMixin(f_MaterialCard155)) , f_MaterialCard155.colorsMixin), 'white') , $setGrid_0(f_MaterialCard155, 'l3') , f_MaterialCard155)) , $add_13(rowCards, (f_MaterialCard166 = new MaterialCard , $add_13(f_MaterialCard166, (f_MaterialCardImage167 = new MaterialCardImage , $add_16(f_MaterialCardImage167, (f_MaterialImage168 = new MaterialImage , $setUrl_2(f_MaterialImage168, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage168)) , $setWaves(f_MaterialCardImage167, LIGHT) , f_MaterialCardImage167)) , $add_13(f_MaterialCard166, (f_MaterialCardContent169 = new MaterialCardContent , $add_13(f_MaterialCardContent169, (f_MaterialCardTitle170 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle170, RIGHT_5) , f_MaterialCardTitle170.span_0.setText('Sample') , $add_13(f_MaterialCardTitle170, f_MaterialCardTitle170.span_0) , $setTextColor((!f_MaterialCardTitle170.colorsMixin && (f_MaterialCardTitle170.colorsMixin = new ColorsMixin(f_MaterialCardTitle170)) , f_MaterialCardTitle170.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle170, MORE_VERT) , f_MaterialCardTitle170)) , $setTextColor((!f_MaterialCardContent169.colorsMixin && (f_MaterialCardContent169.colorsMixin = new ColorsMixin(f_MaterialCardContent169)) , f_MaterialCardContent169.colorsMixin), 'black') , f_MaterialCardContent169)) , $add_13(f_MaterialCard166, (f_MaterialCardReveal171 = new MaterialCardReveal , $add_13(f_MaterialCardReveal171, (f_MaterialCardTitle172 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle172, RIGHT_5) , f_MaterialCardTitle172.span_0.setText('Sample') , $add_13(f_MaterialCardTitle172, f_MaterialCardTitle172.span_0) , $setTextColor((!f_MaterialCardTitle172.colorsMixin && (f_MaterialCardTitle172.colorsMixin = new ColorsMixin(f_MaterialCardTitle172)) , f_MaterialCardTitle172.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle172, CLOSE) , f_MaterialCardTitle172)) , $add_13(f_MaterialCardReveal171, (f_MaterialLabel173 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel173.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel173)) , f_MaterialCardReveal171)) , $add_13(f_MaterialCard166, (f_MaterialCardAction174 = new MaterialCardAction , $add_13(f_MaterialCardAction174, (f_MaterialLink175 = new MaterialLink , $setIconPosition(f_MaterialLink175, LEFT_4) , f_MaterialLink175.span_0.setText('Link 1') , $add_13(f_MaterialLink175, f_MaterialLink175.span_0) , $setTextColor((!f_MaterialLink175.colorsMixin && (f_MaterialLink175.colorsMixin = new ColorsMixin(f_MaterialLink175)) , f_MaterialLink175.colorsMixin), 'blue') , $setIconType(f_MaterialLink175, POLYMER) , f_MaterialLink175)) , $add_13(f_MaterialCardAction174, (f_MaterialLink176 = new MaterialLink , $setIconPosition(f_MaterialLink176, LEFT_4) , f_MaterialLink176.span_0.setText('Link 1') , $add_13(f_MaterialLink176, f_MaterialLink176.span_0) , $setTextColor((!f_MaterialLink176.colorsMixin && (f_MaterialLink176.colorsMixin = new ColorsMixin(f_MaterialLink176)) , f_MaterialLink176.colorsMixin), 'blue') , $setIconType(f_MaterialLink176, POLYMER) , f_MaterialLink176)) , f_MaterialCardAction174)) , $setBackgroundColor((!f_MaterialCard166.colorsMixin && (f_MaterialCard166.colorsMixin = new ColorsMixin(f_MaterialCard166)) , f_MaterialCard166.colorsMixin), 'white') , $setGrid_0(f_MaterialCard166, 'l3') , f_MaterialCard166)) , $add_13(rowCards, (f_MaterialCard177 = new MaterialCard , $add_13(f_MaterialCard177, (f_MaterialCardImage178 = new MaterialCardImage , $add_16(f_MaterialCardImage178, (f_MaterialImage179 = new MaterialImage , $setUrl_2(f_MaterialImage179, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage179)) , $setWaves(f_MaterialCardImage178, LIGHT) , f_MaterialCardImage178)) , $add_13(f_MaterialCard177, (f_MaterialCardContent180 = new MaterialCardContent , $add_13(f_MaterialCardContent180, (f_MaterialCardTitle181 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle181, RIGHT_5) , f_MaterialCardTitle181.span_0.setText('Sample') , $add_13(f_MaterialCardTitle181, f_MaterialCardTitle181.span_0) , $setTextColor((!f_MaterialCardTitle181.colorsMixin && (f_MaterialCardTitle181.colorsMixin = new ColorsMixin(f_MaterialCardTitle181)) , f_MaterialCardTitle181.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle181, MORE_VERT) , f_MaterialCardTitle181)) , $setTextColor((!f_MaterialCardContent180.colorsMixin && (f_MaterialCardContent180.colorsMixin = new ColorsMixin(f_MaterialCardContent180)) , f_MaterialCardContent180.colorsMixin), 'black') , f_MaterialCardContent180)) , $add_13(f_MaterialCard177, (f_MaterialCardReveal182 = new MaterialCardReveal , $add_13(f_MaterialCardReveal182, (f_MaterialCardTitle183 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle183, RIGHT_5) , f_MaterialCardTitle183.span_0.setText('Sample') , $add_13(f_MaterialCardTitle183, f_MaterialCardTitle183.span_0) , $setTextColor((!f_MaterialCardTitle183.colorsMixin && (f_MaterialCardTitle183.colorsMixin = new ColorsMixin(f_MaterialCardTitle183)) , f_MaterialCardTitle183.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle183, CLOSE) , f_MaterialCardTitle183)) , $add_13(f_MaterialCardReveal182, (f_MaterialLabel184 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel184.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel184)) , f_MaterialCardReveal182)) , $add_13(f_MaterialCard177, (f_MaterialCardAction185 = new MaterialCardAction , $add_13(f_MaterialCardAction185, (f_MaterialLink186 = new MaterialLink , $setIconPosition(f_MaterialLink186, LEFT_4) , f_MaterialLink186.span_0.setText('Link 1') , $add_13(f_MaterialLink186, f_MaterialLink186.span_0) , $setTextColor((!f_MaterialLink186.colorsMixin && (f_MaterialLink186.colorsMixin = new ColorsMixin(f_MaterialLink186)) , f_MaterialLink186.colorsMixin), 'blue') , $setIconType(f_MaterialLink186, POLYMER) , f_MaterialLink186)) , $add_13(f_MaterialCardAction185, (f_MaterialLink187 = new MaterialLink , $setIconPosition(f_MaterialLink187, LEFT_4) , f_MaterialLink187.span_0.setText('Link 1') , $add_13(f_MaterialLink187, f_MaterialLink187.span_0) , $setTextColor((!f_MaterialLink187.colorsMixin && (f_MaterialLink187.colorsMixin = new ColorsMixin(f_MaterialLink187)) , f_MaterialLink187.colorsMixin), 'blue') , $setIconType(f_MaterialLink187, POLYMER) , f_MaterialLink187)) , f_MaterialCardAction185)) , $setBackgroundColor((!f_MaterialCard177.colorsMixin && (f_MaterialCard177.colorsMixin = new ColorsMixin(f_MaterialCard177)) , f_MaterialCard177.colorsMixin), 'white') , $setGrid_0(f_MaterialCard177, 'l3') , f_MaterialCard177)) , $setStyleName_0(rowCards, ($build_style_0() , 'HPBM1FC-g-a'), true) , this$static.owner.rowCards = rowCards , rowCards), $get_0(this$static.domId9Element));
   return f_HTMLPanel1;
 }
 
@@ -14618,24 +14578,24 @@ function CardsView_BinderImpl$Widgets(owner){
   this.domId9Element = new LazyDomElement(this.domId9);
 }
 
-defineClass(882, 1, {}, CardsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl/Widgets', 882);
+defineClass(878, 1, {}, CardsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl/Widgets', 878);
 function CardsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(883, 1, $intern_49, CardsView_BinderImpl$Widgets$1);
+defineClass(879, 1, $intern_52, CardsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_45(event_0){
   $onShow(this.this$11.owner);
 }
 ;
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl/Widgets/1', 883);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl$Widgets$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl/Widgets/1', 879);
 function CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1191, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1188, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_8;
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1191);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1188);
 function $ensureInjected_13(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -14650,13 +14610,13 @@ function $ensureInjected_13(this$static){
 function CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1192, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1189, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_21(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1192);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1189);
 function $clinit_CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_8 = new CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -14745,10 +14705,10 @@ var Lgwt_material_design_demo_client_application_components_cards_com_1gwtplatfo
 function ChipsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(634, 64, $intern_53, ChipsPresenterMyProxyImpl);
+defineClass(634, 64, $intern_56, ChipsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_26(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14770,7 +14730,7 @@ function $delayedBind_12(this$static, baseGinjector){
 function ChipsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(635, $intern_44, $intern_52, ChipsPresenterMyProxyImpl$WrappedProxy);
+defineClass(635, $intern_47, $intern_55, ChipsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_27(baseGinjector){
   $delayedBind_12(this, baseGinjector);
 }
@@ -14815,7 +14775,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(497, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_5);
+defineClass(497, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_5);
 _.onFailure_0 = function onFailure_6(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -14824,10 +14784,10 @@ var Lgwt_material_design_demo_client_application_components_chips_com_1gwtplatfo
 function CollapsiblePresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(636, 64, $intern_53, CollapsiblePresenterMyProxyImpl);
+defineClass(636, 64, $intern_56, CollapsiblePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_28(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14849,7 +14809,7 @@ function $delayedBind_13(this$static, baseGinjector){
 function CollapsiblePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(637, $intern_44, $intern_52, CollapsiblePresenterMyProxyImpl$WrappedProxy);
+defineClass(637, $intern_47, $intern_55, CollapsiblePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_29(baseGinjector){
   $delayedBind_13(this, baseGinjector);
 }
@@ -14894,7 +14854,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(499, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_6);
+defineClass(499, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_6);
 _.onFailure_0 = function onFailure_7(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -14903,10 +14863,10 @@ var Lgwt_material_design_demo_client_application_components_collapsible_com_1gwt
 function CollectionsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(638, 64, $intern_53, CollectionsPresenterMyProxyImpl);
+defineClass(638, 64, $intern_56, CollectionsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_30(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14928,7 +14888,7 @@ function $delayedBind_14(this$static, baseGinjector){
 function CollectionsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(639, $intern_44, $intern_52, CollectionsPresenterMyProxyImpl$WrappedProxy);
+defineClass(639, $intern_47, $intern_55, CollectionsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_31(baseGinjector){
   $delayedBind_14(this, baseGinjector);
 }
@@ -14973,7 +14933,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(501, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_7);
+defineClass(501, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_7);
 _.onFailure_0 = function onFailure_8(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -14982,10 +14942,10 @@ var Lgwt_material_design_demo_client_application_components_collections_com_1gwt
 function DatagridPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(640, 64, $intern_53, DatagridPresenterMyProxyImpl);
+defineClass(640, 64, $intern_56, DatagridPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_32(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15007,7 +14967,7 @@ function $delayedBind_15(this$static, baseGinjector){
 function DatagridPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(641, $intern_44, $intern_52, DatagridPresenterMyProxyImpl$WrappedProxy);
+defineClass(641, $intern_47, $intern_55, DatagridPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_33(baseGinjector){
   $delayedBind_15(this, baseGinjector);
 }
@@ -15052,7 +15012,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(503, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_8);
+defineClass(503, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_8);
 _.onFailure_0 = function onFailure_9(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15061,10 +15021,10 @@ var Lgwt_material_design_demo_client_application_components_datagrid_com_1gwtpla
 function DialogsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(642, 64, $intern_53, DialogsPresenterMyProxyImpl);
+defineClass(642, 64, $intern_56, DialogsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_34(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15086,7 +15046,7 @@ function $delayedBind_16(this$static, baseGinjector){
 function DialogsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(643, $intern_44, $intern_52, DialogsPresenterMyProxyImpl$WrappedProxy);
+defineClass(643, $intern_47, $intern_55, DialogsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_35(baseGinjector){
   $delayedBind_16(this, baseGinjector);
 }
@@ -15131,7 +15091,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(505, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_9);
+defineClass(505, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_9);
 _.onFailure_0 = function onFailure_10(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15140,10 +15100,10 @@ var Lgwt_material_design_demo_client_application_components_dialogs_com_1gwtplat
 function DropdownPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(644, 64, $intern_53, DropdownPresenterMyProxyImpl);
+defineClass(644, 64, $intern_56, DropdownPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_36(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15165,7 +15125,7 @@ function $delayedBind_17(this$static, baseGinjector){
 function DropdownPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(645, $intern_44, $intern_52, DropdownPresenterMyProxyImpl$WrappedProxy);
+defineClass(645, $intern_47, $intern_55, DropdownPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_37(baseGinjector){
   $delayedBind_17(this, baseGinjector);
 }
@@ -15210,7 +15170,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(507, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_10);
+defineClass(507, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_10);
 _.onFailure_0 = function onFailure_11(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15219,10 +15179,10 @@ var Lgwt_material_design_demo_client_application_components_dropdown_com_1gwtpla
 function ErrorsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(646, 64, $intern_53, ErrorsPresenterMyProxyImpl);
+defineClass(646, 64, $intern_56, ErrorsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_38(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15244,7 +15204,7 @@ function $delayedBind_18(this$static, baseGinjector){
 function ErrorsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(647, $intern_44, $intern_52, ErrorsPresenterMyProxyImpl$WrappedProxy);
+defineClass(647, $intern_47, $intern_55, ErrorsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_39(baseGinjector){
   $delayedBind_18(this, baseGinjector);
 }
@@ -15289,7 +15249,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(509, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_11);
+defineClass(509, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_11);
 _.onFailure_0 = function onFailure_12(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15298,10 +15258,10 @@ var Lgwt_material_design_demo_client_application_components_errors_com_1gwtplatf
 function FABPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(648, 64, $intern_53, FABPresenterMyProxyImpl);
+defineClass(648, 64, $intern_56, FABPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_40(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15323,7 +15283,7 @@ function $delayedBind_19(this$static, baseGinjector){
 function FABPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(649, $intern_44, $intern_52, FABPresenterMyProxyImpl$WrappedProxy);
+defineClass(649, $intern_47, $intern_55, FABPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_41(baseGinjector){
   $delayedBind_19(this, baseGinjector);
 }
@@ -15368,7 +15328,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(511, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_12);
+defineClass(511, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_12);
 _.onFailure_0 = function onFailure_13(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15377,10 +15337,10 @@ var Lgwt_material_design_demo_client_application_components_fabs_com_1gwtplatfor
 function FooterPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(650, 64, $intern_53, FooterPresenterMyProxyImpl);
+defineClass(650, 64, $intern_56, FooterPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_42(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15402,7 +15362,7 @@ function $delayedBind_20(this$static, baseGinjector){
 function FooterPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(651, $intern_44, $intern_52, FooterPresenterMyProxyImpl$WrappedProxy);
+defineClass(651, $intern_47, $intern_55, FooterPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_43(baseGinjector){
   $delayedBind_20(this, baseGinjector);
 }
@@ -15447,7 +15407,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(513, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_13);
+defineClass(513, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_13);
 _.onFailure_0 = function onFailure_14(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15456,10 +15416,10 @@ var Lgwt_material_design_demo_client_application_components_footer_com_1gwtplatf
 function FormsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(652, 64, $intern_53, FormsPresenterMyProxyImpl);
+defineClass(652, 64, $intern_56, FormsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_44(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15481,7 +15441,7 @@ function $delayedBind_21(this$static, baseGinjector){
 function FormsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(653, $intern_44, $intern_52, FormsPresenterMyProxyImpl$WrappedProxy);
+defineClass(653, $intern_47, $intern_55, FormsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_45(baseGinjector){
   $delayedBind_21(this, baseGinjector);
 }
@@ -15526,7 +15486,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(515, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_14);
+defineClass(515, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_14);
 _.onFailure_0 = function onFailure_15(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15535,10 +15495,10 @@ var Lgwt_material_design_demo_client_application_components_forms_com_1gwtplatfo
 function LoaderPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(654, 64, $intern_53, LoaderPresenterMyProxyImpl);
+defineClass(654, 64, $intern_56, LoaderPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_46(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15560,7 +15520,7 @@ function $delayedBind_22(this$static, baseGinjector){
 function LoaderPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(655, $intern_44, $intern_52, LoaderPresenterMyProxyImpl$WrappedProxy);
+defineClass(655, $intern_47, $intern_55, LoaderPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_47(baseGinjector){
   $delayedBind_22(this, baseGinjector);
 }
@@ -15605,7 +15565,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(517, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_15);
+defineClass(517, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_15);
 _.onFailure_0 = function onFailure_16(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15614,10 +15574,10 @@ var Lgwt_material_design_demo_client_application_components_loader_com_1gwtplatf
 function MediaPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(656, 64, $intern_53, MediaPresenterMyProxyImpl);
+defineClass(656, 64, $intern_56, MediaPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_48(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15639,7 +15599,7 @@ function $delayedBind_23(this$static, baseGinjector){
 function MediaPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(657, $intern_44, $intern_52, MediaPresenterMyProxyImpl$WrappedProxy);
+defineClass(657, $intern_47, $intern_55, MediaPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_49(baseGinjector){
   $delayedBind_23(this, baseGinjector);
 }
@@ -15684,7 +15644,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(519, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_16);
+defineClass(519, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_16);
 _.onFailure_0 = function onFailure_17(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15693,10 +15653,10 @@ var Lgwt_material_design_demo_client_application_components_media_com_1gwtplatfo
 function NavBarPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(658, 64, $intern_53, NavBarPresenterMyProxyImpl);
+defineClass(658, 64, $intern_56, NavBarPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_50(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15718,7 +15678,7 @@ function $delayedBind_24(this$static, baseGinjector){
 function NavBarPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(659, $intern_44, $intern_52, NavBarPresenterMyProxyImpl$WrappedProxy);
+defineClass(659, $intern_47, $intern_55, NavBarPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_51(baseGinjector){
   $delayedBind_24(this, baseGinjector);
 }
@@ -15763,7 +15723,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(521, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_17);
+defineClass(521, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_17);
 _.onFailure_0 = function onFailure_18(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15772,10 +15732,10 @@ var Lgwt_material_design_demo_client_application_components_navbar_com_1gwtplatf
 function PickersPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(660, 64, $intern_53, PickersPresenterMyProxyImpl);
+defineClass(660, 64, $intern_56, PickersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_52(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15797,7 +15757,7 @@ function $delayedBind_25(this$static, baseGinjector){
 function PickersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(661, $intern_44, $intern_52, PickersPresenterMyProxyImpl$WrappedProxy);
+defineClass(661, $intern_47, $intern_55, PickersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_53(baseGinjector){
   $delayedBind_25(this, baseGinjector);
 }
@@ -15842,7 +15802,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(523, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_18);
+defineClass(523, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_18);
 _.onFailure_0 = function onFailure_19(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15851,10 +15811,10 @@ var Lgwt_material_design_demo_client_application_components_pickers_com_1gwtplat
 function ScrollspyPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(662, 64, $intern_53, ScrollspyPresenterMyProxyImpl);
+defineClass(662, 64, $intern_56, ScrollspyPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_54(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15876,7 +15836,7 @@ function $delayedBind_26(this$static, baseGinjector){
 function ScrollspyPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(663, $intern_44, $intern_52, ScrollspyPresenterMyProxyImpl$WrappedProxy);
+defineClass(663, $intern_47, $intern_55, ScrollspyPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_55(baseGinjector){
   $delayedBind_26(this, baseGinjector);
 }
@@ -15921,7 +15881,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(525, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_19);
+defineClass(525, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_19);
 _.onFailure_0 = function onFailure_20(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15938,7 +15898,7 @@ function SideNavsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(583, 55, $intern_39, SideNavsPresenter);
+defineClass(583, 55, $intern_42, SideNavsPresenter);
 _.onReveal = function onReveal_29(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('SideNavs', "Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element."));
@@ -15949,10 +15909,10 @@ var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsPre
 function SideNavsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(664, 64, $intern_53, SideNavsPresenterMyProxyImpl);
+defineClass(664, 64, $intern_56, SideNavsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_56(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15977,7 +15937,7 @@ function $delayedBind_27(this$static, baseGinjector){
 function SideNavsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(665, $intern_44, $intern_52, SideNavsPresenterMyProxyImpl$WrappedProxy);
+defineClass(665, $intern_47, $intern_55, SideNavsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_57(baseGinjector){
   $delayedBind_27(this, baseGinjector);
 }
@@ -15988,17 +15948,17 @@ function SideNavsView(){
   $initWidget_0(this, $build_f_MaterialPanel1_7(new SideNavsView_BinderImpl$Widgets));
 }
 
-defineClass(752, 60, $intern_40, SideNavsView);
+defineClass(752, 60, $intern_43, SideNavsView);
 var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView', 752);
 function SideNavsView_BinderImpl(){
 }
 
-defineClass(884, 1, {}, SideNavsView_BinderImpl);
-var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView_BinderImpl', 884);
+defineClass(880, 1, {}, SideNavsView_BinderImpl);
+var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_1BinderImpl_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView_BinderImpl', 880);
 function $build_f_HTMLPanel2_1(this$static){
   var __attachRecord__, f_HTMLPanel2, f_MaterialTitle3, f_PrettyPre4, f_MaterialTitle5, f_MaterialTitle6, f_MaterialImage7, f_PrettyPre8, f_MaterialTitle9, f_MaterialImage10, f_PrettyPre11, f_MaterialTitle12, f_MaterialImage13, f_PrettyPre14, f_MaterialTitle15, f_MaterialImage16, f_PrettyPre17, f_MaterialTitle18, f_MaterialImage19, f_PrettyPre20, f_MaterialTitle21, f_MaterialImage22, f_PrettyPre23, f_MaterialTitle24, f_PrettyPre25, f_MaterialTitle26, f_MaterialImage27, f_PrettyPre28, sb, sb_0, sb_1, sb_2, sb_3, sb_4, sb_5, sb_6, sb_7;
   f_HTMLPanel2 = new HTMLPanel($html10_0(this$static.domId0, this$static.domId1, this$static.domId2, this$static.domId3, this$static.domId4, this$static.domId5, this$static.domId6, this$static.domId7, this$static.domId8, this$static.domId9, this$static.domId10, this$static.domId11, this$static.domId12, this$static.domId13, this$static.domId14, this$static.domId15, this$static.domId16, this$static.domId17, this$static.domId18, this$static.domId19, this$static.domId20, this$static.domId21, this$static.domId22, this$static.domId23, this$static.domId24, this$static.domId25).html);
-  __attachRecord__ = attachToDom(f_HTMLPanel2.element);
+  __attachRecord__ = attachToDom(($clinit_DOM() , f_HTMLPanel2.element));
   $get_0(this$static.domId0Element);
   $get_0(this$static.domId1Element);
   $get_0(this$static.domId2Element);
@@ -16026,39 +15986,39 @@ function $build_f_HTMLPanel2_1(this$static){
   $get_0(this$static.domId24Element);
   $get_0(this$static.domId25Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML(f_MaterialTitle3.header.element, 'Definition') , $setText_4(f_MaterialTitle3.paragraph, "First, Define your sidenav inside the navbar component by adding activates='SIDENAV_ID' then on SideNav you will need to set the id : m:id='SIDENAV_ID'.") , f_MaterialTitle3), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre4 = new PrettyPre , $setHTML(f_PrettyPre4, (sb = new StringBuilder , sb.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidenav"&gt;<br> \u2003&lt;-- NavBar content here --&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav m:id="mysidenav" type="OPEN" width="200" closeOnClick="false"&gt;<br> \u2003&lt;!-- SideNav Links here --&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre4.element, 'lang-xml', true) , setStyleName(f_PrettyPre4.element, 'z-depth-1', true) , f_PrettyPre4), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle5 = new MaterialTitle , $setInnerHTML(f_MaterialTitle5.header.element, 'SideNav Properties') , f_MaterialTitle5), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle6 = new MaterialTitle , $setInnerHTML(f_MaterialTitle6.header.element, 'Open Permanent') , $setText_4(f_MaterialTitle6.paragraph, 'The sidebar will be visible by default on large screen devices. You may require to set your padding-left of your MaterialHeader, MaterialMain and MaterialFooter components based on your SideNav Width') , f_MaterialTitle6), $get_0(this$static.domId3Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage7 = new MaterialImage , setStyleName(f_MaterialImage7.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage7, ($clinit_UriUtils() , new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10042710/e988f530-61a1-11e5-8e25-71ab5adf9d12.png'))) , f_MaterialImage7), $get_0(this$static.domId4Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre8 = new PrettyPre , $setHTML(f_PrettyPre8, (sb_0 = new StringBuilder , sb_0.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="OPEN" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre8.element, 'lang-xml', true) , setStyleName(f_PrettyPre8.element, 'z-depth-1', true) , f_PrettyPre8), $get_0(this$static.domId5Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle9 = new MaterialTitle , $setInnerHTML(f_MaterialTitle9.header.element, 'Float Permanent') , f_MaterialTitle9), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage10 = new MaterialImage , setStyleName(f_MaterialImage10.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage10, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10065329/1b8c34ec-6239-11e5-9979-18d17224e1aa.png')) , f_MaterialImage10), $get_0(this$static.domId7Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre11 = new PrettyPre , $setHTML(f_PrettyPre11, (sb_1 = new StringBuilder , sb_1.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="FLOAT" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre11.element, 'lang-xml', true) , setStyleName(f_PrettyPre11.element, 'z-depth-1', true) , f_PrettyPre11), $get_0(this$static.domId8Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle12 = new MaterialTitle , $setInnerHTML(f_MaterialTitle12.header.element, 'Card Permanent') , f_MaterialTitle12), $get_0(this$static.domId9Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage13 = new MaterialImage , setStyleName(f_MaterialImage13.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage13, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10065493/bba5e930-623b-11e5-87c8-79dccfdad431.png')) , f_MaterialImage13), $get_0(this$static.domId10Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre14 = new PrettyPre , $setHTML(f_PrettyPre14, (sb_2 = new StringBuilder , sb_2.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CARD" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre14.element, 'lang-xml', true) , setStyleName(f_PrettyPre14.element, 'z-depth-1', true) , f_PrettyPre14), $get_0(this$static.domId11Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle15 = new MaterialTitle , $setInnerHTML(f_MaterialTitle15.header.element, 'Clip Permanent') , f_MaterialTitle15), $get_0(this$static.domId12Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage16 = new MaterialImage , setStyleName(f_MaterialImage16.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage16, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043407/ad5f3cbc-61a7-11e5-9d73-90a5bc176c58.png')) , f_MaterialImage16), $get_0(this$static.domId13Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre17 = new PrettyPre , $setHTML(f_PrettyPre17, (sb_3 = new StringBuilder , sb_3.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CLIP" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre17.element, 'lang-xml', true) , setStyleName(f_PrettyPre17.element, 'z-depth-1', true) , f_PrettyPre17), $get_0(this$static.domId14Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle18 = new MaterialTitle , $setInnerHTML(f_MaterialTitle18.header.element, 'Mini Variant Persistent') , f_MaterialTitle18), $get_0(this$static.domId15Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage19 = new MaterialImage , setStyleName(f_MaterialImage19.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage19, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043841/edc85e3e-61aa-11e5-8f78-0ab2e257befd.gif')) , f_MaterialImage19), $get_0(this$static.domId16Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre20 = new PrettyPre , $setHTML(f_PrettyPre20, (sb_4 = new StringBuilder , sb_4.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="OPEN" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialIcon iconType="INBOX" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="STARS" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="SEND" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="DRAFTS" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="MARKUNREAD" iconColor="blue"/&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre20.element, 'lang-xml', true) , setStyleName(f_PrettyPre20.element, 'z-depth-1', true) , f_PrettyPre20), $get_0(this$static.domId17Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle21 = new MaterialTitle , $setInnerHTML(f_MaterialTitle21.header.element, 'Close Persistent') , f_MaterialTitle21), $get_0(this$static.domId18Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage22 = new MaterialImage , setStyleName(f_MaterialImage22.element, 'z-depth-1', true) , $setUrl_1(f_MaterialImage22, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043075/f0355e0c-61a4-11e5-8a1c-367a682a8bec.gif')) , f_MaterialImage22), $get_0(this$static.domId19Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre23 = new PrettyPre , $setHTML(f_PrettyPre23, (sb_5 = new StringBuilder , sb_5.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CLOSE" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_5.string)).html) , setStyleName(f_PrettyPre23.element, 'lang-xml', true) , setStyleName(f_PrettyPre23.element, 'z-depth-1', true) , f_PrettyPre23), $get_0(this$static.domId20Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle24 = new MaterialTitle , $setInnerHTML(f_MaterialTitle24.header.element, 'Collapsible SideNav') , $setText_4(f_MaterialTitle24.paragraph, 'Using collapsible component you can add easily a sub menu into your sidenav.') , f_MaterialTitle24), $get_0(this$static.domId21Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre25 = new PrettyPre , $setHTML(f_PrettyPre25, (sb_6 = new StringBuilder , sb_6.string += '\u2003&lt;m:MaterialSideNav ui:field="sideNav" m:id="sideBar" width="250" type="OPEN" closeOnClick="false"&gt;<br><br> \u2003&lt;m:MaterialCollapsible&gt;<br><br> \u2003\u2003&lt;m:MaterialCollapsibleItem&gt;<br> \u2003\u2003&lt;m:MaterialCollapsibleHeader waves="DEFAULT"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink text="Style and Layout" iconType="STYLE" textColor="blue"/&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleHeader&gt;<br> \u2003\u2003&lt;m:MaterialCollapsibleBody&gt;<br> \u2003\u2003\u2003&lt;m.html:UnorderedList&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getColors}" text="Colors" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getGrid}" text="Grid" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getHelper}" text="Helper" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003&lt;/m.html:UnorderedList&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleBody&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleItem&gt;<br><br> \u2003&lt;/m:MaterialCollapsible&gt;<br><br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_6.string)).html) , setStyleName(f_PrettyPre25.element, 'lang-xml', true) , setStyleName(f_PrettyPre25.element, 'z-depth-1', true) , f_PrettyPre25), $get_0(this$static.domId22Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialTitle26 = new MaterialTitle , $setInnerHTML(f_MaterialTitle26.header.element, 'Profile SideNav') , $setText_4(f_MaterialTitle26.paragraph, 'Attach in sidenav to indicate the user profile information.') , f_MaterialTitle26), $get_0(this$static.domId23Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_MaterialImage27 = new MaterialImage , $setUrl_1(f_MaterialImage27, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/11274662/ccdb1e7c-8f14-11e5-821f-f88eb34ff438.png')) , f_MaterialImage27), $get_0(this$static.domId24Element));
-  $addAndReplaceElement_0(f_HTMLPanel2, (f_PrettyPre28 = new PrettyPre , $setHTML(f_PrettyPre28, (sb_7 = new StringBuilder , sb_7.string += '\u2003&lt;m:MaterialSideNav type="OPEN" m:id="sideNav" closeOnClick="false" width="280"&gt;<br> \u2003&lt;m:MaterialSideProfile url="http://static1.squarespace.com/static/51609147e4b0715db61d32b6/521b97cee4b05f031fd12dde/5519e33de4b06a1002802805/1431718693701/?format=1500w"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" /&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="GWT Material" textColor="white"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white"/&gt;<br> \u2003&lt;/m:MaterialSideProfile&gt;<br> &lt;/m:MaterialSideNav&gt;<br> &lt;!--Drop down --&gt;<br> &lt;m:MaterialDropDown activator="dropProfile"&gt;<br> \u2003&lt;m:MaterialLink text="First" iconType="POLYMER" fontSize="1em"/&gt;<br> \u2003&lt;m:MaterialLink text="Second" iconType="POLYMER" fontSize="1em"/&gt;<br> \u2003&lt;m:MaterialLink text="Third" iconType="POLYMER" fontSize="1em"/&gt;<br> &lt;/m:MaterialDropDown&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_7.string)).html) , setStyleName(f_PrettyPre28.element, 'lang-xml', true) , setStyleName(f_PrettyPre28.element, 'z-depth-1', true) , f_PrettyPre28), $get_0(this$static.domId25Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle3.header), 'Definition') , $setText_4(f_MaterialTitle3.paragraph, "First, Define your sidenav inside the navbar component by adding activates='SIDENAV_ID' then on SideNav you will need to set the id : m:id='SIDENAV_ID'.") , f_MaterialTitle3), $get_0(this$static.domId0Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre4 = new PrettyPre , $setHTML(f_PrettyPre4, (sb = new StringBuilder , sb.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidenav"&gt;<br> \u2003&lt;-- NavBar content here --&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav m:id="mysidenav" type="OPEN" width="200" closeOnClick="false"&gt;<br> \u2003&lt;!-- SideNav Links here --&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre4.element, 'lang-xml', true) , setStyleName(f_PrettyPre4.element, 'z-depth-1', true) , f_PrettyPre4), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle5 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle5.header), 'SideNav Properties') , f_MaterialTitle5), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle6 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle6.header), 'Open Permanent') , $setText_4(f_MaterialTitle6.paragraph, 'The sidebar will be visible by default on large screen devices. You may require to set your padding-left of your MaterialHeader, MaterialMain and MaterialFooter components based on your SideNav Width') , f_MaterialTitle6), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage7 = new MaterialImage , setStyleName(f_MaterialImage7.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage7, ($clinit_UriUtils() , new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10042710/e988f530-61a1-11e5-8e25-71ab5adf9d12.png'))) , f_MaterialImage7), $get_0(this$static.domId4Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre8 = new PrettyPre , $setHTML(f_PrettyPre8, (sb_0 = new StringBuilder , sb_0.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="OPEN" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre8.element, 'lang-xml', true) , setStyleName(f_PrettyPre8.element, 'z-depth-1', true) , f_PrettyPre8), $get_0(this$static.domId5Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle9 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle9.header), 'Float Permanent') , f_MaterialTitle9), $get_0(this$static.domId6Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage10 = new MaterialImage , setStyleName(f_MaterialImage10.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage10, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10065329/1b8c34ec-6239-11e5-9979-18d17224e1aa.png')) , f_MaterialImage10), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre11 = new PrettyPre , $setHTML(f_PrettyPre11, (sb_1 = new StringBuilder , sb_1.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="FLOAT" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre11.element, 'lang-xml', true) , setStyleName(f_PrettyPre11.element, 'z-depth-1', true) , f_PrettyPre11), $get_0(this$static.domId8Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle12 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle12.header), 'Card Permanent') , f_MaterialTitle12), $get_0(this$static.domId9Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage13 = new MaterialImage , setStyleName(f_MaterialImage13.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage13, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10065493/bba5e930-623b-11e5-87c8-79dccfdad431.png')) , f_MaterialImage13), $get_0(this$static.domId10Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre14 = new PrettyPre , $setHTML(f_PrettyPre14, (sb_2 = new StringBuilder , sb_2.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CARD" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre14.element, 'lang-xml', true) , setStyleName(f_PrettyPre14.element, 'z-depth-1', true) , f_PrettyPre14), $get_0(this$static.domId11Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle15 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle15.header), 'Clip Permanent') , f_MaterialTitle15), $get_0(this$static.domId12Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage16 = new MaterialImage , setStyleName(f_MaterialImage16.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage16, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043407/ad5f3cbc-61a7-11e5-9d73-90a5bc176c58.png')) , f_MaterialImage16), $get_0(this$static.domId13Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre17 = new PrettyPre , $setHTML(f_PrettyPre17, (sb_3 = new StringBuilder , sb_3.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CLIP" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_3.string)).html) , setStyleName(f_PrettyPre17.element, 'lang-xml', true) , setStyleName(f_PrettyPre17.element, 'z-depth-1', true) , f_PrettyPre17), $get_0(this$static.domId14Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle18 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle18.header), 'Mini Variant Persistent') , f_MaterialTitle18), $get_0(this$static.domId15Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage19 = new MaterialImage , setStyleName(f_MaterialImage19.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage19, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043841/edc85e3e-61aa-11e5-8f78-0ab2e257befd.gif')) , f_MaterialImage19), $get_0(this$static.domId16Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre20 = new PrettyPre , $setHTML(f_PrettyPre20, (sb_4 = new StringBuilder , sb_4.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="OPEN" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialIcon iconType="INBOX" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="STARS" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="SEND" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="DRAFTS" iconColor="blue"/&gt;<br> \u2003&lt;m:MaterialIcon iconType="MARKUNREAD" iconColor="blue"/&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_4.string)).html) , setStyleName(f_PrettyPre20.element, 'lang-xml', true) , setStyleName(f_PrettyPre20.element, 'z-depth-1', true) , f_PrettyPre20), $get_0(this$static.domId17Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle21 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle21.header), 'Close Persistent') , f_MaterialTitle21), $get_0(this$static.domId18Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage22 = new MaterialImage , setStyleName(f_MaterialImage22.element, 'z-depth-1', true) , $setUrl_2(f_MaterialImage22, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/10043075/f0355e0c-61a4-11e5-8a1c-367a682a8bec.gif')) , f_MaterialImage22), $get_0(this$static.domId19Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre23 = new PrettyPre , $setHTML(f_PrettyPre23, (sb_5 = new StringBuilder , sb_5.string += '&lt;m:MaterialNavBar backgroundColor="blue" activates="mysidebar"&gt;<br> \u2003&lt;m:MaterialNavSection textAlign="RIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003\u2003&lt;m:MaterialTooltip text="Starter"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink iconType="WHATSHOT" textColor="white"/&gt;<br> \u2003\u2003&lt;/m:MaterialTooltip&gt;<br> \u2003&lt;/m:MaterialNavSection&gt;<br> &lt;/m:MaterialNavBar&gt;<br><br> &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CLOSE" closeOnClick="false"&gt;<br> \u2003&lt;m:MaterialNavBrand href="#Test"&gt;Title&lt;/m:MaterialNavBrand&gt;<br> \u2003&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue" text="Inbox" /&gt;<br> \u2003&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey" text="Starred" /&gt;<br> \u2003&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey" text="Sent Mail" /&gt;<br> \u2003&lt;m:MaterialLink iconType="DRAFTS" iconPosition="LEFT" textColor="grey" text="Drafts" /&gt;<br> \u2003&lt;m:MaterialLink iconType="MARKUNREAD" iconPosition="LEFT" textColor="grey" text="All Mail" /&gt;<br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_5.string)).html) , setStyleName(f_PrettyPre23.element, 'lang-xml', true) , setStyleName(f_PrettyPre23.element, 'z-depth-1', true) , f_PrettyPre23), $get_0(this$static.domId20Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle24 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle24.header), 'Collapsible SideNav') , $setText_4(f_MaterialTitle24.paragraph, 'Using collapsible component you can add easily a sub menu into your sidenav.') , f_MaterialTitle24), $get_0(this$static.domId21Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre25 = new PrettyPre , $setHTML(f_PrettyPre25, (sb_6 = new StringBuilder , sb_6.string += '\u2003&lt;m:MaterialSideNav ui:field="sideNav" m:id="sideBar" width="250" type="OPEN" closeOnClick="false"&gt;<br><br> \u2003&lt;m:MaterialCollapsible&gt;<br><br> \u2003\u2003&lt;m:MaterialCollapsibleItem&gt;<br> \u2003\u2003&lt;m:MaterialCollapsibleHeader waves="DEFAULT"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialLink text="Style and Layout" iconType="STYLE" textColor="blue"/&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleHeader&gt;<br> \u2003\u2003&lt;m:MaterialCollapsibleBody&gt;<br> \u2003\u2003\u2003&lt;m.html:UnorderedList&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getColors}" text="Colors" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getGrid}" text="Grid" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getHelper}" text="Helper" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" textColor="blue" waves="DEFAULT"/&gt;<br> \u2003\u2003\u2003&lt;/m.html:UnorderedList&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleBody&gt;<br> \u2003\u2003&lt;/m:MaterialCollapsibleItem&gt;<br><br> \u2003&lt;/m:MaterialCollapsible&gt;<br><br> &lt;/m:MaterialSideNav&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_6.string)).html) , setStyleName(f_PrettyPre25.element, 'lang-xml', true) , setStyleName(f_PrettyPre25.element, 'z-depth-1', true) , f_PrettyPre25), $get_0(this$static.domId22Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle26 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle26.header), 'Profile SideNav') , $setText_4(f_MaterialTitle26.paragraph, 'Attach in sidenav to indicate the user profile information.') , f_MaterialTitle26), $get_0(this$static.domId23Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialImage27 = new MaterialImage , $setUrl_2(f_MaterialImage27, new SafeUriString('https://cloud.githubusercontent.com/assets/3138071/11274662/ccdb1e7c-8f14-11e5-821f-f88eb34ff438.png')) , f_MaterialImage27), $get_0(this$static.domId24Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre28 = new PrettyPre , $setHTML(f_PrettyPre28, (sb_7 = new StringBuilder , sb_7.string += '\u2003&lt;m:MaterialSideNav type="OPEN" m:id="sideNav" closeOnClick="false" width="280"&gt;<br> \u2003&lt;m:MaterialSideProfile url="http://static1.squarespace.com/static/51609147e4b0715db61d32b6/521b97cee4b05f031fd12dde/5519e33de4b06a1002802805/1431718693701/?format=1500w"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" /&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="GWT Material" textColor="white"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white"/&gt;<br> \u2003&lt;/m:MaterialSideProfile&gt;<br> &lt;/m:MaterialSideNav&gt;<br> &lt;!--Drop down --&gt;<br> &lt;m:MaterialDropDown activator="dropProfile"&gt;<br> \u2003&lt;m:MaterialLink text="First" iconType="POLYMER" fontSize="1em"/&gt;<br> \u2003&lt;m:MaterialLink text="Second" iconType="POLYMER" fontSize="1em"/&gt;<br> \u2003&lt;m:MaterialLink text="Third" iconType="POLYMER" fontSize="1em"/&gt;<br> &lt;/m:MaterialDropDown&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_7.string)).html) , setStyleName(f_PrettyPre28.element, 'lang-xml', true) , setStyleName(f_PrettyPre28.element, 'z-depth-1', true) , f_PrettyPre28), $get_0(this$static.domId25Element));
   return f_HTMLPanel2;
 }
 
 function $build_f_MaterialPanel1_7(this$static){
   var f_MaterialPanel1;
   f_MaterialPanel1 = new MaterialPanel;
-  $add_12(f_MaterialPanel1, $build_f_HTMLPanel2_1(this$static));
+  $add_13(f_MaterialPanel1, $build_f_HTMLPanel2_1(this$static));
   return f_MaterialPanel1;
 }
 
@@ -16117,8 +16077,8 @@ function SideNavsView_BinderImpl$Widgets(){
   this.domId25Element = new LazyDomElement(this.domId25);
 }
 
-defineClass(885, 1, {}, SideNavsView_BinderImpl$Widgets);
-var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView_BinderImpl/Widgets', 885);
+defineClass(881, 1, {}, SideNavsView_BinderImpl$Widgets);
+var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_1BinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView_BinderImpl/Widgets', 881);
 function $html10_0(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19, arg20, arg21, arg22, arg23, arg24, arg25){
   var sb;
   sb = new StringBuilder;
@@ -16234,10 +16194,10 @@ var Lgwt_material_design_demo_client_application_components_sidenavs_com_1gwtpla
 function TabsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(666, 64, $intern_53, TabsPresenterMyProxyImpl);
+defineClass(666, 64, $intern_56, TabsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_58(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16259,7 +16219,7 @@ function $delayedBind_28(this$static, baseGinjector){
 function TabsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(667, $intern_44, $intern_52, TabsPresenterMyProxyImpl$WrappedProxy);
+defineClass(667, $intern_47, $intern_55, TabsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_59(baseGinjector){
   $delayedBind_28(this, baseGinjector);
 }
@@ -16304,7 +16264,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(528, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_20);
+defineClass(528, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_20);
 _.onFailure_0 = function onFailure_21(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16313,10 +16273,10 @@ var Lgwt_material_design_demo_client_application_components_tabs_com_1gwtplatfor
 function GettingStartedPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(668, 64, $intern_53, GettingStartedPresenterMyProxyImpl);
+defineClass(668, 64, $intern_56, GettingStartedPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_60(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16338,7 +16298,7 @@ function $delayedBind_29(this$static, baseGinjector){
 function GettingStartedPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(669, $intern_44, $intern_52, GettingStartedPresenterMyProxyImpl$WrappedProxy);
+defineClass(669, $intern_47, $intern_55, GettingStartedPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_61(baseGinjector){
   $delayedBind_29(this, baseGinjector);
 }
@@ -16383,7 +16343,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(530, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_21);
+defineClass(530, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_21);
 _.onFailure_0 = function onFailure_22(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16392,10 +16352,10 @@ var Lgwt_material_design_demo_client_application_gettingstarted_com_1gwtplatform
 function ShowcasePresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(670, 64, $intern_53, ShowcasePresenterMyProxyImpl);
+defineClass(670, 64, $intern_56, ShowcasePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_62(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16417,7 +16377,7 @@ function $delayedBind_30(this$static, baseGinjector){
 function ShowcasePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(671, $intern_44, $intern_52, ShowcasePresenterMyProxyImpl$WrappedProxy);
+defineClass(671, $intern_47, $intern_55, ShowcasePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_63(baseGinjector){
   $delayedBind_30(this, baseGinjector);
 }
@@ -16462,7 +16422,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(532, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_22);
+defineClass(532, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_22);
 _.onFailure_0 = function onFailure_23(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16471,10 +16431,10 @@ var Lgwt_material_design_demo_client_application_showcase_com_1gwtplatform_1mvp_
 function ColorsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(672, 64, $intern_53, ColorsPresenterMyProxyImpl);
+defineClass(672, 64, $intern_56, ColorsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_64(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16496,7 +16456,7 @@ function $delayedBind_31(this$static, baseGinjector){
 function ColorsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(673, $intern_44, $intern_52, ColorsPresenterMyProxyImpl$WrappedProxy);
+defineClass(673, $intern_47, $intern_55, ColorsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_65(baseGinjector){
   $delayedBind_31(this, baseGinjector);
 }
@@ -16541,7 +16501,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(534, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_23);
+defineClass(534, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_23);
 _.onFailure_0 = function onFailure_24(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16550,10 +16510,10 @@ var Lgwt_material_design_demo_client_application_style_colors_com_1gwtplatform_1
 function GridPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(674, 64, $intern_53, GridPresenterMyProxyImpl);
+defineClass(674, 64, $intern_56, GridPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_66(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16575,7 +16535,7 @@ function $delayedBind_32(this$static, baseGinjector){
 function GridPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(675, $intern_44, $intern_52, GridPresenterMyProxyImpl$WrappedProxy);
+defineClass(675, $intern_47, $intern_55, GridPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_67(baseGinjector){
   $delayedBind_32(this, baseGinjector);
 }
@@ -16620,7 +16580,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(536, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_24);
+defineClass(536, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_24);
 _.onFailure_0 = function onFailure_25(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16629,10 +16589,10 @@ var Lgwt_material_design_demo_client_application_style_grid_com_1gwtplatform_1mv
 function HelperPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(676, 64, $intern_53, HelperPresenterMyProxyImpl);
+defineClass(676, 64, $intern_56, HelperPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_68(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16654,7 +16614,7 @@ function $delayedBind_33(this$static, baseGinjector){
 function HelperPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(677, $intern_44, $intern_52, HelperPresenterMyProxyImpl$WrappedProxy);
+defineClass(677, $intern_47, $intern_55, HelperPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_69(baseGinjector){
   $delayedBind_33(this, baseGinjector);
 }
@@ -16699,7 +16659,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(538, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_25);
+defineClass(538, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_25);
 _.onFailure_0 = function onFailure_26(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16708,10 +16668,10 @@ var Lgwt_material_design_demo_client_application_style_helper_com_1gwtplatform_1
 function IconsPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(678, 64, $intern_53, IconsPresenterMyProxyImpl);
+defineClass(678, 64, $intern_56, IconsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_70(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16733,7 +16693,7 @@ function $delayedBind_34(this$static, baseGinjector){
 function IconsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(679, $intern_44, $intern_52, IconsPresenterMyProxyImpl$WrappedProxy);
+defineClass(679, $intern_47, $intern_55, IconsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_71(baseGinjector){
   $delayedBind_34(this, baseGinjector);
 }
@@ -16778,7 +16738,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(540, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_26);
+defineClass(540, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_26);
 _.onFailure_0 = function onFailure_27(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16787,10 +16747,10 @@ var Lgwt_material_design_demo_client_application_style_icons_com_1gwtplatform_1m
 function ShadowPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(680, 64, $intern_53, ShadowPresenterMyProxyImpl);
+defineClass(680, 64, $intern_56, ShadowPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_72(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16812,7 +16772,7 @@ function $delayedBind_35(this$static, baseGinjector){
 function ShadowPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(681, $intern_44, $intern_52, ShadowPresenterMyProxyImpl$WrappedProxy);
+defineClass(681, $intern_47, $intern_55, ShadowPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_73(baseGinjector){
   $delayedBind_35(this, baseGinjector);
 }
@@ -16857,7 +16817,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(542, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_27);
+defineClass(542, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_27);
 _.onFailure_0 = function onFailure_28(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16866,10 +16826,10 @@ var Lgwt_material_design_demo_client_application_style_shadow_com_1gwtplatform_1
 function ThemesPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(682, 64, $intern_53, ThemesPresenterMyProxyImpl);
+defineClass(682, 64, $intern_56, ThemesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_74(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16891,7 +16851,7 @@ function $delayedBind_36(this$static, baseGinjector){
 function ThemesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(683, $intern_44, $intern_52, ThemesPresenterMyProxyImpl$WrappedProxy);
+defineClass(683, $intern_47, $intern_55, ThemesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_75(baseGinjector){
   $delayedBind_36(this, baseGinjector);
 }
@@ -16936,7 +16896,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(544, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_28);
+defineClass(544, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_28);
 _.onFailure_0 = function onFailure_29(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16952,10 +16912,10 @@ var SLOT_TEMPLATES;
 function TemplatesPresenterMyProxyImpl(){
   ProxyPlaceImpl.call(this);
   $clinit_DelayedBindRegistry();
-  $add_31(delayedBindObjects, this);
+  $add_32(delayedBindObjects, this);
 }
 
-defineClass(684, 64, $intern_53, TemplatesPresenterMyProxyImpl);
+defineClass(684, 64, $intern_56, TemplatesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_76(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16980,7 +16940,7 @@ function $delayedBind_37(this$static, baseGinjector){
 function TemplatesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(685, $intern_44, $intern_52, TemplatesPresenterMyProxyImpl$WrappedProxy);
+defineClass(685, $intern_47, $intern_55, TemplatesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_77(baseGinjector){
   $delayedBind_37(this, baseGinjector);
 }
@@ -17025,7 +16985,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(546, 1, $intern_54, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_29);
+defineClass(546, 1, $intern_57, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_29);
 _.onFailure_0 = function onFailure_30(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17037,7 +16997,7 @@ function $clinit_SetPageTitleEvent(){
 }
 
 function $dispatch_15(this$static, handler){
-  $setPageTitle(dynamicCast(handler.view, 1479), this$static.title_0, this$static.description_0);
+  $setPageTitle(dynamicCast(handler.view, 1476), this$static.title_0, this$static.description_0);
 }
 
 function SetPageTitleEvent(title_0, description){
@@ -17048,7 +17008,7 @@ function SetPageTitleEvent(title_0, description){
 
 defineClass(63, $intern_14, {}, SetPageTitleEvent);
 _.dispatch = function dispatch_44(handler){
-  $dispatch_15(this, dynamicCast(handler, 1480));
+  $dispatch_15(this, dynamicCast(handler, 1477));
 }
 ;
 _.getAssociatedType = function getAssociatedType_45(){
@@ -17107,11 +17067,11 @@ function $clinit_MaterialResources_default_InlineClientBundleGenerator$ic_motion
 }
 
 function PrettyPre(){
-  AbstractTextWidget.call(this, $createElement($doc, 'pre'));
-  setStyleName(this.element, 'prettyprint', true);
+  AbstractTextWidget.call(this, $doc.createElement('pre'));
+  setStyleName(($clinit_DOM() , this.element), 'prettyprint', true);
 }
 
-defineClass(20, 1117, $intern_24, PrettyPre);
+defineClass(20, 1112, $intern_24, PrettyPre);
 _.onLoad = function onLoad_26(){
   $wnd.prettyPrint();
 }
@@ -17126,7 +17086,7 @@ function $drawChart(this$static, values){
   }
   $addRows(dataTable, this$static.months.length);
   for (i = 0; i < this$static.months.length; i++) {
-    $setValue_3(dataTable, i, 0, this$static.months[i]);
+    $setValue_2(dataTable, i, 0, this$static.months[i]);
   }
   for (col = 0; col < values.length; col++) {
     for (row = 0; row < values[col].length; row++) {
@@ -17177,8 +17137,8 @@ function $setLoop(this$static){
 
 function MaterialAreaChart(){
   var chartLoader;
-  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 80, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [165, 135, 157, 139, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [938, 1120, 1167, 1110, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [998, 1268, 807, 968, 1026]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [450, 288, 397, 215, 366])]);
-  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 80, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1167, 1110, 938, 1120, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [135, 165, 165, 157, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [450, 288, 397, 215, 366]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [998, 1268, 807, 968, 1026])]);
+  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 82, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [165, 135, 157, 139, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [938, 1120, 1167, 1110, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [998, 1268, 807, 968, 1026]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [450, 288, 397, 215, 366])]);
+  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 82, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1167, 1110, 938, 1120, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [135, 165, 165, 157, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [450, 288, 397, 215, 366]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [998, 1268, 807, 968, 1026])]);
   this.countries = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['Bolivia', 'Ecuador', 'Madagascar', 'Papua Guinea', 'Rwanda']);
   this.months = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['2004/05', '2005/06', '2006/07', '2007/08', '2008/09']);
   $initWidget(this, $build_f_MaterialColumn1(new MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets(this)));
@@ -17186,27 +17146,27 @@ function MaterialAreaChart(){
   $loadApi(chartLoader, new MaterialAreaChart$1(this));
 }
 
-defineClass(1176, $intern_25, $intern_26, MaterialAreaChart);
+defineClass(1173, $intern_25, $intern_26, MaterialAreaChart);
 _.isLoop = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart', 1176);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart', 1173);
 function MaterialAreaChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1177, 1, $intern_38, MaterialAreaChart$1);
+defineClass(1174, 1, $intern_41, MaterialAreaChart$1);
 _.run = function run_14(){
   this.this$01.chart = new AreaChart;
-  $add_12(this.this$01.cardContent, this.this$01.chart);
+  $add_13(this.this$01.cardContent, this.this$01.chart);
   $setLoop(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/1', 1177);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/1', 1174);
 function MaterialAreaChart$2(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(1178, 127, {}, MaterialAreaChart$2);
+defineClass(1175, 126, {}, MaterialAreaChart$2);
 _.run = function run_15(){
   if (this.this$01.isLoop) {
     $drawChart(this.this$01, this.this$01.values);
@@ -17218,11 +17178,11 @@ _.run = function run_15(){
   }
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/2', 1178);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/2', 1175);
 function $build_f_MaterialColumn1(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_4() , 'HPBM1FC-C-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Area Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Area Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_12(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_12(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialAreaChart.ui.xml') , f_MaterialLink7)) , $add_12(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialAreaChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_4() , 'HPBM1FC-C-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Area Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Area Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_13(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_13(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialAreaChart.ui.xml') , f_MaterialLink7)) , $add_13(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialAreaChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l4');
   return f_MaterialColumn1;
 }
@@ -17239,14 +17199,14 @@ function MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets(owner){
   $build_style_4();
 }
 
-defineClass(1342, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl/Widgets', 1342);
+defineClass(1339, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl/Widgets', 1339);
 function MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1405, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1403, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_20;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1405);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1403);
 function $ensureInjected_25(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17261,13 +17221,13 @@ function $ensureInjected_25(this$static){
 function MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1406, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1404, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_33(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1406);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1404);
 function $clinit_MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_20 = new MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17282,7 +17242,7 @@ function $drawChart_0(this$static, values){
   }
   $addRows(dataTable, this$static.years.length);
   for (i = 0; i < this$static.years.length; i++) {
-    $setValue_3(dataTable, i, 0, '' + this$static.years[i]);
+    $setValue_2(dataTable, i, 0, '' + this$static.years[i]);
   }
   for (col = 0; col < values.length; col++) {
     for (row = 0; row < values[col].length; row++) {
@@ -17330,34 +17290,34 @@ function MaterialBarChart(){
   var chartLoader;
   this.countries = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['Austria', 'Bulgaria', 'Denmark', 'Greece']);
   this.years = initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [2003, 2004, 2005]);
-  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 80, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1336060, 1538156, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [400361, 366849, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1001582, 1119450, 993360]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [997974, 941795, 930593])]);
-  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 80, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1538156, 1336060, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [366849, 400361, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1001582, 993360, 1119450]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [941795, 997974, 930593])]);
+  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 82, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1336060, 1538156, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [400361, 366849, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1001582, 1119450, 993360]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [997974, 941795, 930593])]);
+  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_4, 82, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1538156, 1336060, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [366849, 400361, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [1001582, 993360, 1119450]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_3, 0, 7, [941795, 997974, 930593])]);
   $initWidget(this, $build_f_MaterialColumn1_0(new MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets(this)));
   chartLoader = new ChartLoader(initValues(getClassLiteralForArray(Lcom_googlecode_gwt_charts_client_ChartPackage_2_classLit, 1), $intern_5, 100, 0, [($clinit_ChartPackage() , CORECHART)]));
   $loadApi(chartLoader, new MaterialBarChart$1(this));
 }
 
-defineClass(1179, $intern_25, $intern_26, MaterialBarChart);
+defineClass(1176, $intern_25, $intern_26, MaterialBarChart);
 _.isLoop = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart', 1179);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart', 1176);
 function MaterialBarChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1180, 1, $intern_38, MaterialBarChart$1);
+defineClass(1177, 1, $intern_41, MaterialBarChart$1);
 _.run = function run_16(){
   this.this$01.chart = new BarChart;
-  $add_12(this.this$01.cardContent, this.this$01.chart);
+  $add_13(this.this$01.cardContent, this.this$01.chart);
   $setLoop_0(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/1', 1180);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/1', 1177);
 function MaterialBarChart$2(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(1181, 127, {}, MaterialBarChart$2);
+defineClass(1178, 126, {}, MaterialBarChart$2);
 _.run = function run_17(){
   if (this.this$01.isLoop) {
     $drawChart_0(this.this$01, this.this$01.values);
@@ -17369,11 +17329,11 @@ _.run = function run_17(){
   }
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/2', 1181);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/2', 1178);
 function $build_f_MaterialColumn1_0(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_5() , 'HPBM1FC-D-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Bar Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Bar Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_12(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_12(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBarChart.ui.xml') , f_MaterialLink8)) , $add_12(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_12(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBarChart.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_5() , 'HPBM1FC-D-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Bar Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Bar Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_13(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_13(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBarChart.ui.xml') , f_MaterialLink8)) , $add_13(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_13(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBarChart.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l3');
   return f_MaterialColumn1;
 }
@@ -17390,14 +17350,14 @@ function MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets(owner){
   $build_style_5();
 }
 
-defineClass(1343, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl/Widgets', 1343);
+defineClass(1340, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl/Widgets', 1340);
 function MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1407, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1405, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_21;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1407);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1405);
 function $ensureInjected_26(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17412,13 +17372,13 @@ function $ensureInjected_26(this$static){
 function MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1408, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1406, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_34(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1408);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1406);
 function $clinit_MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_21 = new MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17433,26 +17393,26 @@ function $draw_1(this$static){
   $addColumn_0(dataTable, STRING, 'Region');
   $addColumn_0(dataTable, NUMBER, 'Population');
   dataTable.addRows(4);
-  $setValue_3(dataTable, 0, 0, 'CAN');
-  $setValue_3(dataTable, 1, 0, 'DEU');
-  $setValue_3(dataTable, 2, 0, 'DNK');
-  $setValue_3(dataTable, 3, 0, 'EGY');
-  $setValue_2(dataTable, 0, 1, 80.66);
-  $setValue_2(dataTable, 1, 1, 79.84);
-  $setValue_2(dataTable, 2, 1, 78.6);
-  $setValue_2(dataTable, 3, 1, 72.73);
-  $setValue_2(dataTable, 0, 2, 1.67);
-  $setValue_2(dataTable, 1, 2, 1.36);
-  $setValue_2(dataTable, 2, 2, 1.84);
-  $setValue_2(dataTable, 3, 2, 2.78);
-  $setValue_3(dataTable, 0, 3, 'North America');
-  $setValue_3(dataTable, 1, 3, 'Europe');
-  $setValue_3(dataTable, 2, 3, 'Europe');
-  $setValue_3(dataTable, 3, 3, 'Africa');
-  $setValue_2(dataTable, 0, 4, 33739900);
-  $setValue_2(dataTable, 1, 4, 81902307);
-  $setValue_2(dataTable, 2, 4, 5523095);
-  $setValue_2(dataTable, 3, 4, 79716203);
+  $setValue_2(dataTable, 0, 0, 'CAN');
+  $setValue_2(dataTable, 1, 0, 'DEU');
+  $setValue_2(dataTable, 2, 0, 'DNK');
+  $setValue_2(dataTable, 3, 0, 'EGY');
+  $setValue_1(dataTable, 0, 1, 80.66);
+  $setValue_1(dataTable, 1, 1, 79.84);
+  $setValue_1(dataTable, 2, 1, 78.6);
+  $setValue_1(dataTable, 3, 1, 72.73);
+  $setValue_1(dataTable, 0, 2, 1.67);
+  $setValue_1(dataTable, 1, 2, 1.36);
+  $setValue_1(dataTable, 2, 2, 1.84);
+  $setValue_1(dataTable, 3, 2, 2.78);
+  $setValue_2(dataTable, 0, 3, 'North America');
+  $setValue_2(dataTable, 1, 3, 'Europe');
+  $setValue_2(dataTable, 2, 3, 'Europe');
+  $setValue_2(dataTable, 3, 3, 'Africa');
+  $setValue_1(dataTable, 0, 4, 33739900);
+  $setValue_1(dataTable, 1, 4, 81902307);
+  $setValue_1(dataTable, 2, 4, 5523095);
+  $setValue_1(dataTable, 3, 4, 79716203);
   $draw_0(this$static.chart, dataTable, (options = {} , $setColors(options, createArray(initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['2196f3', '42a5f5', '64b5f6']))) , legend = {} , $setPosition_1(legend, ($clinit_LegendPosition() , TOP).name_0) , $setLegend(options, legend) , options));
 }
 
@@ -17463,24 +17423,24 @@ function MaterialBubbleChart(){
   $loadApi(chartLoader, new MaterialBubbleChart$1(this));
 }
 
-defineClass(1182, $intern_25, $intern_26, MaterialBubbleChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart', 1182);
+defineClass(1179, $intern_25, $intern_26, MaterialBubbleChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart', 1179);
 function MaterialBubbleChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1183, 1, $intern_38, MaterialBubbleChart$1);
+defineClass(1180, 1, $intern_41, MaterialBubbleChart$1);
 _.run = function run_18(){
   this.this$01.chart = new BubbleChart;
-  $add_12(this.this$01.cardContent, this.this$01.chart);
+  $add_13(this.this$01.cardContent, this.this$01.chart);
   $draw_1(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart/1', 1183);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart/1', 1180);
 function $build_f_MaterialColumn1_1(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_6() , 'HPBM1FC-E-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Bubble Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Bubble Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_12(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_12(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBubbleChart.ui.xml') , f_MaterialLink8)) , $add_12(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_12(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBubbleChart.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_6() , 'HPBM1FC-E-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Bubble Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Bubble Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_13(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_13(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBubbleChart.ui.xml') , f_MaterialLink8)) , $add_13(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_13(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialBubbleChart.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l5');
   return f_MaterialColumn1;
 }
@@ -17497,14 +17457,14 @@ function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets(owner){
   $build_style_6();
 }
 
-defineClass(1344, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl/Widgets', 1344);
+defineClass(1341, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl/Widgets', 1341);
 function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1409, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1407, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_22;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1409);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1407);
 function $ensureInjected_27(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17519,13 +17479,13 @@ function $ensureInjected_27(this$static){
 function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1410, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1408, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_35(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1410);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1408);
 function $clinit_MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_22 = new MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17553,24 +17513,24 @@ function MaterialCandleStick(){
   $loadApi(chartLoader, new MaterialCandleStick$1(this));
 }
 
-defineClass(1184, $intern_25, $intern_26, MaterialCandleStick);
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick', 1184);
+defineClass(1181, $intern_25, $intern_26, MaterialCandleStick);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick', 1181);
 function MaterialCandleStick$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1185, 1, $intern_38, MaterialCandleStick$1);
+defineClass(1182, 1, $intern_41, MaterialCandleStick$1);
 _.run = function run_19(){
   this.this$01.chart = new CandlestickChart;
-  $add_12(this.this$01.cardContent, this.this$01.chart);
+  $add_13(this.this$01.cardContent, this.this$01.chart);
   $draw_2(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick/1', 1185);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick/1', 1182);
 function $build_f_MaterialColumn1_2(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_7() , 'HPBM1FC-F-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Candle Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Candle Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_12(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_12(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.ui.xml') , f_MaterialLink8)) , $add_12(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_12(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_7() , 'HPBM1FC-F-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Candle Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Candle Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , $add_13(f_MaterialCardReveal4, (f_MaterialLabel6 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel6.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel6)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction7 = new MaterialCardAction , $add_13(f_MaterialCardAction7, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('UI Binder') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.ui.xml') , f_MaterialLink8)) , $add_13(f_MaterialCardAction7, (f_MaterialLink9 = new MaterialLink , f_MaterialLink9.span_0.setText('Java') , $add_13(f_MaterialLink9, f_MaterialLink9.span_0) , $setTextColor((!f_MaterialLink9.colorsMixin && (f_MaterialLink9.colorsMixin = new ColorsMixin(f_MaterialLink9)) , f_MaterialLink9.colorsMixin), 'blue') , $setAttribute(f_MaterialLink9.element, 'target', '_blank') , $setAttribute(f_MaterialLink9.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.java') , f_MaterialLink9)) , f_MaterialCardAction7)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l9');
   return f_MaterialColumn1;
 }
@@ -17587,14 +17547,14 @@ function MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets(owner){
   $build_style_7();
 }
 
-defineClass(1345, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl/Widgets', 1345);
+defineClass(1342, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl/Widgets', 1342);
 function MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1411, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1409, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_23;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1411);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1409);
 function $ensureInjected_28(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17609,13 +17569,13 @@ function $ensureInjected_28(this$static){
 function MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1412, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1410, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_36(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1412);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1410);
 function $clinit_MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_23 = new MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17627,8 +17587,8 @@ function $draw_3(this$static){
   $addColumn_0(dataTable, ($clinit_ColumnType() , STRING), 'LabelStyle');
   $addColumn_0(dataTable, NUMBER, 'Value');
   dataTable.addRows(3);
-  $setValue_3(dataTable, 0, 0, 'Memory');
-  $setValue_2(dataTable, 0, 1, 80);
+  $setValue_2(dataTable, 0, 0, 'Memory');
+  $setValue_1(dataTable, 0, 1, 80);
   options = {};
   options.greenFrom = 0;
   options.greenTo = 40;
@@ -17646,24 +17606,24 @@ function MaterialGauge(){
   $loadApi(chartLoader, new MaterialGauge$1(this));
 }
 
-defineClass(1186, $intern_25, $intern_26, MaterialGauge);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge', 1186);
+defineClass(1183, $intern_25, $intern_26, MaterialGauge);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge', 1183);
 function MaterialGauge$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1187, 1, $intern_38, MaterialGauge$1);
+defineClass(1184, 1, $intern_41, MaterialGauge$1);
 _.run = function run_20(){
   this.this$01.gauge = new Gauge;
-  $add_12(this.this$01.cardContent, this.this$01.gauge);
+  $add_13(this.this$01.cardContent, this.this$01.gauge);
   $draw_3(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge/1', 1187);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge/1', 1184);
 function $build_f_MaterialColumn1_3(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_8() , 'HPBM1FC-G-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Gauge') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Gauge') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_12(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_12(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGauge.ui.xml') , f_MaterialLink7)) , $add_12(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGauge.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_8() , 'HPBM1FC-G-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Gauge') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Gauge') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_13(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_13(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGauge.ui.xml') , f_MaterialLink7)) , $add_13(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGauge.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l3');
   return f_MaterialColumn1;
 }
@@ -17680,14 +17640,14 @@ function MaterialGauge_MaterialGaugeUiBinderImpl$Widgets(owner){
   $build_style_8();
 }
 
-defineClass(1346, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl/Widgets', 1346);
+defineClass(1343, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl/Widgets', 1343);
 function MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1413, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1411, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_24;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1413);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1411);
 function $ensureInjected_29(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17702,13 +17662,13 @@ function $ensureInjected_29(this$static){
 function MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1414, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1412, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_37(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1414);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1412);
 function $clinit_MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_24 = new MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17720,18 +17680,18 @@ function $draw_4(this$static){
   $addColumn_0(dataTable, ($clinit_ColumnType() , STRING), 'Country');
   $addColumn_0(dataTable, NUMBER, 'Popularity');
   dataTable.addRows(6);
-  $setValue_3(dataTable, 0, 0, 'Germany');
-  $setValue_2(dataTable, 0, 1, 200);
-  $setValue_3(dataTable, 1, 0, 'United States');
-  $setValue_2(dataTable, 1, 1, 300);
-  $setValue_3(dataTable, 2, 0, 'Brazil');
-  $setValue_2(dataTable, 2, 1, 400);
-  $setValue_3(dataTable, 3, 0, 'Canada');
-  $setValue_2(dataTable, 3, 1, 500);
-  $setValue_3(dataTable, 4, 0, 'France');
-  $setValue_2(dataTable, 4, 1, 600);
-  $setValue_3(dataTable, 5, 0, 'RU');
-  $setValue_2(dataTable, 5, 1, 700);
+  $setValue_2(dataTable, 0, 0, 'Germany');
+  $setValue_1(dataTable, 0, 1, 200);
+  $setValue_2(dataTable, 1, 0, 'United States');
+  $setValue_1(dataTable, 1, 1, 300);
+  $setValue_2(dataTable, 2, 0, 'Brazil');
+  $setValue_1(dataTable, 2, 1, 400);
+  $setValue_2(dataTable, 3, 0, 'Canada');
+  $setValue_1(dataTable, 3, 1, 500);
+  $setValue_2(dataTable, 4, 0, 'France');
+  $setValue_1(dataTable, 4, 1, 600);
+  $setValue_2(dataTable, 5, 0, 'RU');
+  $setValue_1(dataTable, 5, 1, 700);
   options = {};
   geoChartColorAxis = {};
   $setColors_1(geoChartColorAxis, ['0d47a1', '1565c0', '1976d2', '1e88e5', '2196f3', '42a5f5']);
@@ -17747,24 +17707,24 @@ function MaterialGeoChart(){
   $loadApi(chartLoader, new MaterialGeoChart$1(this));
 }
 
-defineClass(1174, $intern_25, $intern_26, MaterialGeoChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart', 1174);
+defineClass(1171, $intern_25, $intern_26, MaterialGeoChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart', 1171);
 function MaterialGeoChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1175, 1, $intern_38, MaterialGeoChart$1);
+defineClass(1172, 1, $intern_41, MaterialGeoChart$1);
 _.run = function run_21(){
   this.this$01.geoChart = new GeoChart;
-  $add_12(this.this$01.cardContent, this.this$01.geoChart);
+  $add_13(this.this$01.cardContent, this.this$01.geoChart);
   $draw_4(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart/1', 1175);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart/1', 1172);
 function $build_f_MaterialColumn1_4(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_9() , 'HPBM1FC-B-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Geo Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Geo Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_12(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_12(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGeoChart.ui.xml') , f_MaterialLink7)) , $add_12(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGeoChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_9() , 'HPBM1FC-B-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Geo Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Geo Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_13(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_13(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGeoChart.ui.xml') , f_MaterialLink7)) , $add_13(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialGeoChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l8');
   return f_MaterialColumn1;
 }
@@ -17781,14 +17741,14 @@ function MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets(owner){
   $build_style_9();
 }
 
-defineClass(1341, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl/Widgets', 1341);
+defineClass(1338, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl/Widgets', 1338);
 function MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1403, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1401, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_25;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1403);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1401);
 function $ensureInjected_30(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17803,13 +17763,13 @@ function $ensureInjected_30(this$static){
 function MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1404, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1402, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_38(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1404);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1402);
 function $clinit_MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_25 = new MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17826,103 +17786,103 @@ function MaterialPieChart(){
   $loadApi(chartLoader_1, new MaterialPieChart$3(this));
 }
 
-defineClass(1170, $intern_25, $intern_26, MaterialPieChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart', 1170);
+defineClass(1167, $intern_25, $intern_26, MaterialPieChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart', 1167);
 function MaterialPieChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1171, 1, $intern_38, MaterialPieChart$1);
+defineClass(1168, 1, $intern_41, MaterialPieChart$1);
 _.run = function run_22(){
   var chart, dataTable, opt;
   chart = new PieChart;
-  $setPropertyImpl(chart.element.style, 'width', '100%');
-  $setPropertyImpl(chart.element.style, 'height', '100%');
-  $add_12(this.this$01.cardContent, chart);
+  ($clinit_DOM() , chart.element).style['width'] = '100%';
+  chart.element.style['height'] = '100%';
+  $add_13(this.this$01.cardContent, chart);
   dataTable = create_2();
   $addColumn_0(dataTable, ($clinit_ColumnType() , STRING), 'Task');
   $addColumn_0(dataTable, NUMBER, 'Hours per Day');
   dataTable.addRows(5);
-  $setValue_3(dataTable, 0, 0, 'Work');
-  $setValue_2(dataTable, 0, 1, 11);
-  $setValue_3(dataTable, 1, 0, 'Sleep');
-  $setValue_2(dataTable, 1, 1, 7);
-  $setValue_3(dataTable, 2, 0, 'Watch TV');
-  $setValue_2(dataTable, 2, 1, 3);
-  $setValue_3(dataTable, 3, 0, 'Eat');
-  $setValue_2(dataTable, 3, 1, 2);
-  $setValue_3(dataTable, 4, 0, 'Commute');
-  $setValue_2(dataTable, 4, 1, 1);
+  $setValue_2(dataTable, 0, 0, 'Work');
+  $setValue_1(dataTable, 0, 1, 11);
+  $setValue_2(dataTable, 1, 0, 'Sleep');
+  $setValue_1(dataTable, 1, 1, 7);
+  $setValue_2(dataTable, 2, 0, 'Watch TV');
+  $setValue_1(dataTable, 2, 1, 3);
+  $setValue_2(dataTable, 3, 0, 'Eat');
+  $setValue_1(dataTable, 3, 1, 2);
+  $setValue_2(dataTable, 4, 0, 'Commute');
+  $setValue_1(dataTable, 4, 1, 1);
   opt = new MaterialPieChart$PieOpt;
   $setColors_2(opt, initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['2196f3', '42a5f5', '64b5f6', '90caf9', 'bbdefb']));
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/1', 1171);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/1', 1168);
 function MaterialPieChart$2(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1172, 1, $intern_38, MaterialPieChart$2);
+defineClass(1169, 1, $intern_41, MaterialPieChart$2);
 _.run = function run_23(){
   var chart, dataTable, opt;
   chart = new PieChart;
-  $setPropertyImpl(chart.element.style, 'width', '100%');
-  $setPropertyImpl(chart.element.style, 'height', '100%');
-  $add_12(this.this$01.cardContent, chart);
+  ($clinit_DOM() , chart.element).style['width'] = '100%';
+  chart.element.style['height'] = '100%';
+  $add_13(this.this$01.cardContent, chart);
   dataTable = create_2();
   $addColumn_0(dataTable, ($clinit_ColumnType() , STRING), 'Task');
   $addColumn_0(dataTable, NUMBER, 'Hours per Day');
   dataTable.addRows(5);
-  $setValue_3(dataTable, 0, 0, 'Work');
-  $setValue_2(dataTable, 0, 1, 11);
-  $setValue_3(dataTable, 1, 0, 'Sleep');
-  $setValue_2(dataTable, 1, 1, 7);
-  $setValue_3(dataTable, 2, 0, 'Watch TV');
-  $setValue_2(dataTable, 2, 1, 3);
-  $setValue_3(dataTable, 3, 0, 'Eat');
-  $setValue_2(dataTable, 3, 1, 2);
-  $setValue_3(dataTable, 4, 0, 'Commute');
-  $setValue_2(dataTable, 4, 1, 1);
+  $setValue_2(dataTable, 0, 0, 'Work');
+  $setValue_1(dataTable, 0, 1, 11);
+  $setValue_2(dataTable, 1, 0, 'Sleep');
+  $setValue_1(dataTable, 1, 1, 7);
+  $setValue_2(dataTable, 2, 0, 'Watch TV');
+  $setValue_1(dataTable, 2, 1, 3);
+  $setValue_2(dataTable, 3, 0, 'Eat');
+  $setValue_1(dataTable, 3, 1, 2);
+  $setValue_2(dataTable, 4, 0, 'Commute');
+  $setValue_1(dataTable, 4, 1, 1);
   opt = new MaterialPieChart$PieOpt;
   $setColors_2(opt, initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['2196f3', '42a5f5', '64b5f6', '90caf9', 'bbdefb']));
   opt._this.pieHole = 0.8;
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/2', 1172);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/2', 1169);
 function MaterialPieChart$3(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1173, 1, $intern_38, MaterialPieChart$3);
+defineClass(1170, 1, $intern_41, MaterialPieChart$3);
 _.run = function run_24(){
   var chart, dataTable, opt;
   chart = new PieChart;
-  $setPropertyImpl(chart.element.style, 'width', '100%');
-  $setPropertyImpl(chart.element.style, 'height', '100%');
-  $add_12(this.this$01.cardContent, chart);
+  ($clinit_DOM() , chart.element).style['width'] = '100%';
+  chart.element.style['height'] = '100%';
+  $add_13(this.this$01.cardContent, chart);
   dataTable = create_2();
   $addColumn_0(dataTable, ($clinit_ColumnType() , STRING), 'Task');
   $addColumn_0(dataTable, NUMBER, 'Hours per Day');
   dataTable.addRows(5);
-  $setValue_3(dataTable, 0, 0, 'Work');
-  $setValue_2(dataTable, 0, 1, 11);
-  $setValue_3(dataTable, 1, 0, 'Sleep');
-  $setValue_2(dataTable, 1, 1, 7);
-  $setValue_3(dataTable, 2, 0, 'Watch TV');
-  $setValue_2(dataTable, 2, 1, 3);
-  $setValue_3(dataTable, 3, 0, 'Eat');
-  $setValue_2(dataTable, 3, 1, 2);
-  $setValue_3(dataTable, 4, 0, 'Commute');
-  $setValue_2(dataTable, 4, 1, 1);
+  $setValue_2(dataTable, 0, 0, 'Work');
+  $setValue_1(dataTable, 0, 1, 11);
+  $setValue_2(dataTable, 1, 0, 'Sleep');
+  $setValue_1(dataTable, 1, 1, 7);
+  $setValue_2(dataTable, 2, 0, 'Watch TV');
+  $setValue_1(dataTable, 2, 1, 3);
+  $setValue_2(dataTable, 3, 0, 'Eat');
+  $setValue_1(dataTable, 3, 1, 2);
+  $setValue_2(dataTable, 4, 0, 'Commute');
+  $setValue_1(dataTable, 4, 1, 1);
   opt = new MaterialPieChart$PieOpt;
   $setColors_2(opt, initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['2196f3', '42a5f5', '64b5f6', '90caf9', 'bbdefb']));
   opt._this.is3D = true;
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$3_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/3', 1173);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$3_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/3', 1170);
 function $setColors_2(this$static, colors){
   $setColors_0(this$static._this, createArray(colors));
 }
@@ -17936,7 +17896,7 @@ var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$PieOpt_2_classLi
 function $build_f_MaterialColumn1_5(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
-  $add_12(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_12(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_10() , 'HPBM1FC-A-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Pie Chart') , $add_12(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_12(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(cardContent.element, 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_12(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_12(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Pie Chart') , $add_12(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_12(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_12(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_12(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.ui.xml') , f_MaterialLink7)) , $add_12(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_12(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
+  $add_13(f_MaterialColumn1, (f_MaterialCard2 = new MaterialCard , $add_13(f_MaterialCard2, (f_MaterialCardTitle3 = new MaterialCardTitle , $addStyleName(f_MaterialCardTitle3, ($build_style_10() , 'HPBM1FC-A-a')) , $setIconPosition_0(f_MaterialCardTitle3, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle3.span_0.setText('Pie Chart') , $add_13(f_MaterialCardTitle3, f_MaterialCardTitle3.span_0) , $setTextColor((!f_MaterialCardTitle3.colorsMixin && (f_MaterialCardTitle3.colorsMixin = new ColorsMixin(f_MaterialCardTitle3)) , f_MaterialCardTitle3.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle3, ($clinit_IconType() , MORE_VERT)) , f_MaterialCardTitle3)) , $add_13(f_MaterialCard2, (cardContent = new MaterialCardContent , setStyleName(($clinit_DOM() , cardContent.element), 'no-padding', true) , this$static.owner.cardContent = cardContent , cardContent)) , $add_13(f_MaterialCard2, (f_MaterialCardReveal4 = new MaterialCardReveal , $add_13(f_MaterialCardReveal4, (f_MaterialCardTitle5 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle5, RIGHT_5) , f_MaterialCardTitle5.span_0.setText('Pie Chart') , $add_13(f_MaterialCardTitle5, f_MaterialCardTitle5.span_0) , $setTextColor((!f_MaterialCardTitle5.colorsMixin && (f_MaterialCardTitle5.colorsMixin = new ColorsMixin(f_MaterialCardTitle5)) , f_MaterialCardTitle5.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle5, CLOSE) , f_MaterialCardTitle5)) , f_MaterialCardReveal4)) , $add_13(f_MaterialCard2, (f_MaterialCardAction6 = new MaterialCardAction , $add_13(f_MaterialCardAction6, (f_MaterialLink7 = new MaterialLink , f_MaterialLink7.span_0.setText('UI Binder') , $add_13(f_MaterialLink7, f_MaterialLink7.span_0) , $setTextColor((!f_MaterialLink7.colorsMixin && (f_MaterialLink7.colorsMixin = new ColorsMixin(f_MaterialLink7)) , f_MaterialLink7.colorsMixin), 'blue') , $setAttribute(f_MaterialLink7.element, 'target', '_blank') , $setAttribute(f_MaterialLink7.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.ui.xml') , f_MaterialLink7)) , $add_13(f_MaterialCardAction6, (f_MaterialLink8 = new MaterialLink , f_MaterialLink8.span_0.setText('Java') , $add_13(f_MaterialLink8, f_MaterialLink8.span_0) , $setTextColor((!f_MaterialLink8.colorsMixin && (f_MaterialLink8.colorsMixin = new ColorsMixin(f_MaterialLink8)) , f_MaterialLink8.colorsMixin), 'blue') , $setAttribute(f_MaterialLink8.element, 'target', '_blank') , $setAttribute(f_MaterialLink8.element, 'href', 'https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.java') , f_MaterialLink8)) , f_MaterialCardAction6)) , f_MaterialCard2));
   $setGrid((!f_MaterialColumn1.gridMixin && (f_MaterialColumn1.gridMixin = new GridMixin(f_MaterialColumn1)) , f_MaterialColumn1.gridMixin), 's12 m6 l4');
   return f_MaterialColumn1;
 }
@@ -17953,14 +17913,14 @@ function MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets(owner){
   $build_style_10();
 }
 
-defineClass(1340, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl/Widgets', 1340);
+defineClass(1337, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl/Widgets', 1337);
 function MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1401, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1399, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_26;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1401);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1399);
 function $ensureInjected_31(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17975,13 +17935,13 @@ function $ensureInjected_31(this$static){
 function MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1402, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1400, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_39(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1402);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1400);
 function $clinit_MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_26 = new MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18005,13 +17965,13 @@ function IndexOutOfBoundsException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(85, 45, $intern_57, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
+defineClass(85, 45, $intern_60, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
 var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 85);
 function ArrayIndexOutOfBoundsException(){
   IndexOutOfBoundsException.call(this);
 }
 
-defineClass(422, 85, $intern_57, ArrayIndexOutOfBoundsException);
+defineClass(422, 85, $intern_60, ArrayIndexOutOfBoundsException);
 var Ljava_lang_ArrayIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'ArrayIndexOutOfBoundsException', 422);
 function ArrayStoreException(){
   RuntimeException.call(this);
@@ -18065,7 +18025,7 @@ function ClassCastException(){
   RuntimeException.call(this);
 }
 
-defineClass(135, 45, $intern_58, ClassCastException);
+defineClass(135, 45, $intern_61, ClassCastException);
 var Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 135);
 function __parseAndValidateDouble(s){
   var floatRegex;
@@ -18206,8 +18166,8 @@ function NullPointerException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(125, 45, $intern_2, NullPointerException, NullPointerException_0);
-var Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 125);
+defineClass(124, 45, $intern_2, NullPointerException, NullPointerException_0);
+var Ljava_lang_NullPointerException_2_classLit = createForClass('java.lang', 'NullPointerException', 124);
 function NumberFormatException(message){
   IllegalArgumentException.call(this, message);
 }
@@ -18396,7 +18356,7 @@ function StringBuilder_1(s){
   AbstractStringBuilder.call(this, s);
 }
 
-defineClass(12, 268, {1473:1}, StringBuilder, StringBuilder_0, StringBuilder_1);
+defineClass(12, 268, {1470:1}, StringBuilder, StringBuilder_0, StringBuilder_1);
 var Ljava_lang_StringBuilder_2_classLit = createForClass('java.lang', 'StringBuilder', 12);
 function arraycopy(src_0, srcOfs, dest, destOfs, len){
   var destComp, destEnd, destType, destlen, srcComp, srcType, srclen;
@@ -18500,7 +18460,7 @@ function getEntryValueOrNull(entry){
   return !entry?null:entry.getValue_0();
 }
 
-defineClass(1442, 1, {157:1});
+defineClass(1440, 1, {157:1});
 _.containsKey = function containsKey(key){
   return !!$implFindEntry(this, key, false);
 }
@@ -18548,7 +18508,7 @@ _.toString$ = function toString_21(){
   return sb.string;
 }
 ;
-var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 1442);
+var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 1440);
 function $elementAdded(this$static){
   ++this$static.size_0;
   structureChanged(this$static);
@@ -18569,7 +18529,7 @@ function $reset_0(this$static){
   structureChanged(this$static);
 }
 
-defineClass(269, 1442, {157:1});
+defineClass(269, 1440, {157:1});
 _.clear_0 = function clear_10(){
   $reset_0(this);
 }
@@ -18604,7 +18564,7 @@ _.size_1 = function size_4(){
 ;
 _.size_0 = 0;
 var Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 269);
-defineClass(1444, 1443, $intern_59);
+defineClass(1442, 1441, $intern_62);
 _.equals$ = function equals_20(o){
   var other;
   if (o === this) {
@@ -18624,7 +18584,7 @@ _.hashCode$ = function hashCode_22(){
   return hashCode_27(this);
 }
 ;
-var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 1444);
+var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 1442);
 function $contains_0(this$static, o){
   if (instanceOf(o, 79)) {
     return $containsEntry(this$static.this$01, dynamicCast(o, 79));
@@ -18636,7 +18596,7 @@ function AbstractHashMap$EntrySet(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(438, 1444, $intern_59, AbstractHashMap$EntrySet);
+defineClass(438, 1442, $intern_62, AbstractHashMap$EntrySet);
 _.contains_0 = function contains_2(o){
   return $contains_0(this, o);
 }
@@ -18719,7 +18679,7 @@ function $equals_2(this$static, o){
   return true;
 }
 
-defineClass($intern_60, 1443, $intern_61);
+defineClass($intern_63, 1441, $intern_64);
 _.add_3 = function add_32(index_0, element){
   throw new UnsupportedOperationException_0('Add not supported on this list');
 }
@@ -18770,7 +18730,7 @@ _.set_0 = function set_2(index_0, o){
   throw new UnsupportedOperationException_0('Set not supported on this list');
 }
 ;
-var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', $intern_60);
+var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', $intern_63);
 function AbstractList$IteratorImpl(this$0){
   this.this$01_0 = this$0;
 }
@@ -18822,7 +18782,7 @@ function AbstractMap$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(112, 1444, $intern_59, AbstractMap$1);
+defineClass(115, 1442, $intern_62, AbstractMap$1);
 _.contains_0 = function contains_3(key){
   return this.this$01.containsKey(key);
 }
@@ -18843,7 +18803,7 @@ _.size_1 = function size_7(){
   return this.this$01.size_1();
 }
 ;
-var Ljava_util_AbstractMap$1_2_classLit = createForClass('java.util', 'AbstractMap/1', 112);
+var Ljava_util_AbstractMap$1_2_classLit = createForClass('java.util', 'AbstractMap/1', 115);
 function $next_5(this$static){
   var entry;
   entry = dynamicCast(this$static.val$outerIter2.next_0(), 79);
@@ -18878,7 +18838,7 @@ function AbstractMap$2(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(271, 1443, $intern_33, AbstractMap$2);
+defineClass(271, 1441, $intern_36, AbstractMap$2);
 _.contains_0 = function contains_4(value_0){
   return this.this$01.containsValue(value_0);
 }
@@ -18916,14 +18876,14 @@ _.remove_0 = function remove_32(){
 }
 ;
 var Ljava_util_AbstractMap$2$1_2_classLit = createForClass('java.util', 'AbstractMap/2/1', 442);
-function $setValue_9(this$static, value_0){
+function $setValue_8(this$static, value_0){
   var oldValue;
   oldValue = this$static.value_0;
   this$static.value_0 = value_0;
   return oldValue;
 }
 
-defineClass(440, 1, $intern_62);
+defineClass(440, 1, $intern_65);
 _.equals$ = function equals_22(other){
   var entry;
   if (!instanceOf(other, 79)) {
@@ -18946,7 +18906,7 @@ _.hashCode$ = function hashCode_24(){
 }
 ;
 _.setValue_1 = function setValue_6(value_0){
-  return $setValue_9(this, value_0);
+  return $setValue_8(this, value_0);
 }
 ;
 _.toString$ = function toString_22(){
@@ -18959,9 +18919,9 @@ function AbstractMap$SimpleEntry(key, value_0){
   this.value_0 = value_0;
 }
 
-defineClass(270, 440, $intern_62, AbstractMap$SimpleEntry);
+defineClass(270, 440, $intern_65, AbstractMap$SimpleEntry);
 var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 270);
-defineClass(1446, 1, $intern_62);
+defineClass(1444, 1, $intern_65);
 _.equals$ = function equals_23(other){
   var entry;
   if (!instanceOf(other, 79)) {
@@ -18979,17 +18939,17 @@ _.toString$ = function toString_23(){
   return this.getKey() + '=' + this.getValue_0();
 }
 ;
-var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 1446);
+var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 1444);
 function $$init_1(this$static){
   this$static.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
 }
 
-function $add_30(this$static, index_0, o){
+function $add_31(this$static, index_0, o){
   checkPositionIndex(index_0, this$static.array.length);
   splice_0(this$static.array, index_0, 0, o);
 }
 
-function $add_31(this$static, o){
+function $add_32(this$static, o){
   setCheck(this$static.array, this$static.array.length, o);
   return true;
 }
@@ -19086,13 +19046,13 @@ function splice_0(array, index_0, deleteCount, value_0){
   array.splice(index_0, deleteCount, value_0);
 }
 
-defineClass(59, $intern_60, $intern_63, ArrayList, ArrayList_1);
+defineClass(59, $intern_63, $intern_66, ArrayList, ArrayList_1);
 _.add_3 = function add_35(index_0, o){
-  $add_30(this, index_0, o);
+  $add_31(this, index_0, o);
 }
 ;
 _.add_1 = function add_36(o){
-  return $add_31(this, o);
+  return $add_32(this, o);
 }
 ;
 _.clear_0 = function clear_12(){
@@ -19295,7 +19255,7 @@ var EMPTY_LIST, EMPTY_SET;
 function Collections$EmptyList(){
 }
 
-defineClass(446, $intern_60, $intern_63, Collections$EmptyList);
+defineClass(446, $intern_63, $intern_66, Collections$EmptyList);
 _.contains_0 = function contains_6(object){
   return false;
 }
@@ -19352,7 +19312,7 @@ var Ljava_util_Collections$EmptyListIterator_2_classLit = createForClass('java.u
 function Collections$EmptySet(){
 }
 
-defineClass(448, 1444, $intern_64, Collections$EmptySet);
+defineClass(448, 1442, $intern_67, Collections$EmptySet);
 _.contains_0 = function contains_7(object){
   return false;
 }
@@ -19370,7 +19330,7 @@ function Collections$UnmodifiableCollection(coll){
   this.coll = coll;
 }
 
-defineClass(324, 1, $intern_33);
+defineClass(324, 1, $intern_36);
 _.add_1 = function add_37(o){
   throw new UnsupportedOperationException;
 }
@@ -19465,7 +19425,7 @@ function Collections$UnmodifiableSet(set_0){
   Collections$UnmodifiableCollection.call(this, set_0);
 }
 
-defineClass(326, 324, $intern_59, Collections$UnmodifiableSet);
+defineClass(326, 324, $intern_62, Collections$UnmodifiableSet);
 _.equals$ = function equals_27(o){
   return this.coll.equals$(o);
 }
@@ -19486,7 +19446,7 @@ function Collections$UnmodifiableMap$UnmodifiableEntrySet(s){
   Collections$UnmodifiableSet.call(this, s);
 }
 
-defineClass(450, 326, $intern_59, Collections$UnmodifiableMap$UnmodifiableEntrySet);
+defineClass(450, 326, $intern_62, Collections$UnmodifiableMap$UnmodifiableEntrySet);
 _.iterator = function iterator_16(){
   var it;
   it = this.coll.iterator();
@@ -19523,7 +19483,7 @@ function Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(entr
   this.entry = entry;
 }
 
-defineClass(327, 1, $intern_62, Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry);
+defineClass(327, 1, $intern_65, Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry);
 _.equals$ = function equals_28(o){
   return this.entry.equals$(o);
 }
@@ -19564,12 +19524,12 @@ function $compare_2(o1, o2){
 function Comparators$1(){
 }
 
-defineClass(1339, 1, $intern_65, Comparators$1);
+defineClass(1336, 1, $intern_68, Comparators$1);
 _.compare = function compare_7(o1, o2){
   return $compare_2(o1, o2);
 }
 ;
-var Ljava_util_Comparators$1_2_classLit = createForClass('java.util', 'Comparators/1', 1339);
+var Ljava_util_Comparators$1_2_classLit = createForClass('java.util', 'Comparators/1', 1336);
 function checkStructuralChange(host, iterator){
   if (iterator._gwt_modCount != host._gwt_modCount) {
     throw new ConcurrentModificationException;
@@ -19606,7 +19566,7 @@ function HashMap_0(ignored){
   $reset_0(this);
 }
 
-defineClass(68, 269, $intern_66, HashMap, HashMap_0);
+defineClass(68, 269, $intern_69, HashMap, HashMap_0);
 _.equals = function equals_29(value1, value2){
   return maskUndefined(value1) === maskUndefined(value2) || value1 != null && equals_Ljava_lang_Object__Z__devirtual$(value1, value2);
 }
@@ -19618,7 +19578,7 @@ _.getHashCode = function getHashCode_1(key){
 }
 ;
 var Ljava_util_HashMap_2_classLit = createForClass('java.util', 'HashMap', 68);
-function $add_32(this$static, o){
+function $add_33(this$static, o){
   var old;
   old = this$static.map_0.put(o, this$static);
   return old == null;
@@ -19641,9 +19601,9 @@ function HashSet_0(c){
   $addAll(this, c);
 }
 
-defineClass(92, 1444, $intern_64, HashSet, HashSet_0);
+defineClass(94, 1442, $intern_67, HashSet, HashSet_0);
 _.add_1 = function add_38(o){
-  return $add_32(this, o);
+  return $add_33(this, o);
 }
 ;
 _.contains_0 = function contains_10(o){
@@ -19670,7 +19630,7 @@ _.toString$ = function toString_27(){
   return $toString_1(new AbstractMap$1(this.map_0));
 }
 ;
-var Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 92);
+var Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 94);
 function $ensureChain(this$static, hashCode){
   var map_0 = this$static.backingMap;
   return map_0[hashCode] || (map_0[hashCode] = []);
@@ -19849,7 +19809,7 @@ function InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1(this$1){
   ArrayList.call(this);
 }
 
-defineClass(462, 59, $intern_63, InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
+defineClass(462, 59, $intern_66, InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
 _.remove_2 = function remove_43(index_0){
   var removed;
   return removed = dynamicCast($remove_11(this, index_0), 79) , $remove_14(this.this$11, removed.getKey()) , removed;
@@ -20030,7 +19990,7 @@ function InternalJsStringMap$2(this$0, val$key){
   this.val$key2 = val$key;
 }
 
-defineClass(330, 1446, $intern_62, InternalJsStringMap$2);
+defineClass(330, 1444, $intern_65, InternalJsStringMap$2);
 _.getKey = function getKey_1(){
   return this.val$key2;
 }
@@ -20099,7 +20059,7 @@ function InternalJsStringMap$InternalJsStringMapLegacy$1(this$1){
   ArrayList.call(this);
 }
 
-defineClass(455, 59, $intern_63, InternalJsStringMap$InternalJsStringMapLegacy$1);
+defineClass(455, 59, $intern_66, InternalJsStringMap$InternalJsStringMapLegacy$1);
 _.remove_2 = function remove_47(index_0){
   var removed;
   return removed = dynamicCast($remove_11(this, index_0), 79) , $remove_15(this.this$11, ':' + dynamicCastToString(removed.getKey())) , removed;
@@ -20158,7 +20118,7 @@ function $put_3(this$static, key, value_0){
     return null;
   }
    else {
-    oldValue = $setValue_9(old, value_0);
+    oldValue = $setValue_8(old, value_0);
     $recordAccess(this$static, old);
     return oldValue;
   }
@@ -20189,7 +20149,7 @@ function LinkedHashMap(){
   this.head_0.next = this.head_0;
 }
 
-defineClass(383, 68, $intern_66, LinkedHashMap);
+defineClass(383, 68, $intern_69, LinkedHashMap);
 _.clear_0 = function clear_14(){
   $clear_4(this);
 }
@@ -20268,7 +20228,7 @@ function LinkedHashMap$EntrySet(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(242, 1444, $intern_59, LinkedHashMap$EntrySet);
+defineClass(242, 1442, $intern_62, LinkedHashMap$EntrySet);
 _.contains_0 = function contains_11(o){
   return $contains_2(this, o);
 }
@@ -20322,8 +20282,8 @@ function NoSuchElementException(){
   RuntimeException.call(this);
 }
 
-defineClass(126, 45, $intern_2, NoSuchElementException);
-var Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 126);
+defineClass(125, 45, $intern_2, NoSuchElementException);
+var Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 125);
 function equals_30(a, b){
   return maskUndefined(a) === maskUndefined(b) || a != null && equals_Ljava_lang_Object__Z__devirtual$(a, b);
 }
@@ -20332,8 +20292,8 @@ function hashCode_33(o){
   return o != null?hashCode__I__devirtual$(o):0;
 }
 
-function $add_33(this$static, o){
-  return $add_31(this$static.arrayList, o);
+function $add_34(this$static, o){
+  return $add_32(this$static.arrayList, o);
 }
 
 function Vector(){
@@ -20346,14 +20306,14 @@ function checkArrayElementIndex(index_0, size_0){
   }
 }
 
-defineClass(1370, $intern_60, $intern_63, Vector);
+defineClass(1368, $intern_63, $intern_66, Vector);
 _.add_3 = function add_39(index_0, o){
   checkArrayElementIndex(index_0, this.arrayList.array.length + 1);
-  $add_30(this.arrayList, index_0, o);
+  $add_31(this.arrayList, index_0, o);
 }
 ;
 _.add_1 = function add_40(o){
-  return $add_33(this, o);
+  return $add_34(this, o);
 }
 ;
 _.clear_0 = function clear_15(){
@@ -20407,12 +20367,12 @@ _.toString$ = function toString_28(){
   return $toString_1(this.arrayList);
 }
 ;
-var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 1370);
-var I_classLit = createForPrimitive('int', 'I'), Z_classLit = createForPrimitive('boolean', 'Z'), Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler'), Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback'), Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit = createForClass('com.google.gwt.lang', 'CollapsedPropertyHolder', 1431), Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit = createForClass('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 1433), Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', null), Lcom_google_gwt_lang_ModuleUtils_2_classLit = createForClass('com.google.gwt.lang', 'ModuleUtils', 1436), Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry'), Lcom_google_gwt_user_client_ui_IsWidget_2_classLit = createForInterface('com.google.gwt.user.client.ui', 'IsWidget');
+var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 1368);
+var I_classLit = createForPrimitive('int', 'I'), Z_classLit = createForPrimitive('boolean', 'Z'), Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler'), Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback'), Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit = createForClass('com.google.gwt.lang', 'CollapsedPropertyHolder', 1429), Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit = createForClass('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 1431), Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', null), Lcom_google_gwt_lang_ModuleUtils_2_classLit = createForClass('com.google.gwt.lang', 'ModuleUtils', 1434), Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry'), Lcom_google_gwt_user_client_ui_IsWidget_2_classLit = createForInterface('com.google.gwt.user.client.ui', 'IsWidget');
 var $entry = registerEntry();
 var gwtOnLoad = gwtOnLoad = gwtOnLoad_0;
 addInitFunctions(init);
-setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'ie8']]]);
+setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'safari']]]);
 $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
