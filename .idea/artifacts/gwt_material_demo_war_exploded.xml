@@ -9,6 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material:1.5-SNAPSHOT" />
           <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-themes:1.5-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-addins:1.5-SNAPSHOT" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.9.24" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-endpoints:1.9.24" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-labs:1.9.24" />

@@ -38,14 +38,14 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-    <m:MaterialListBox ui:field="lstOptions">
+    <m:MaterialListBox ui:field="lstOptions" placeholder="Choose an option">
       <item>Option 1</item>
       <item>Option 2</item>
       <item>Option 3</item>
     </m:MaterialListBox>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialListBox ui:field="lstOptions"><br/>
+      &emsp;&lt;m:MaterialListBox ui:field="lstOptions" placeholder="Choose an option"><br/>
       &emsp;&lt;item>Option 1&lt;/item><br/>
       &emsp;&lt;item>Option 2&lt;/item><br/>
       &emsp;&lt;item>Option 3&lt;/item><br/>
