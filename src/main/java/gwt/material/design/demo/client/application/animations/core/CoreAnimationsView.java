@@ -1,5 +1,6 @@
 package gwt.material.design.demo.client.application.animations.core;
 
+import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -8,6 +9,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialCard;
 import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialTitle;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 
@@ -31,9 +33,17 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
 
     @UiHandler("btnAnimate")
     void onAnimateCoreTransition(ClickEvent e){
+        animate();
+    }
+
+    @UiHandler("lstAnimations")
+    void onAnimateWithListBox(ChangeEvent e){
+        animate();
+    }
+
+    private void animate(){
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
         MaterialAnimator.animate(transition, card, 300);
     }
-
 }

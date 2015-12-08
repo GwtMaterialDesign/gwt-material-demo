@@ -14,11 +14,11 @@
     </ui:style>
     <m:MaterialPanel>
         <m:MaterialTitle title="Usage" description="You can easily apply animation by calling MaterialAnimator.animate(Transition, Widget, Delay);"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            MaterialAnimator.animate(Transition.BOUNCE, card, 300);
-        </demo:PrettyPre>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 l6">
+                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                    MaterialAnimator.animate(Transition.BOUNCE, card, 300);
+                </demo:PrettyPre>
                 <m:MaterialCard ui:field="card" backgroundColor="blue">
                     <m:MaterialCardContent textColor="white">
                         <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
@@ -30,8 +30,81 @@
                     </m:MaterialCardAction>
                 </m:MaterialCard>
                 <m:MaterialListBox ui:field="lstAnimations" old="true">
-                    <item value="bounce">Bounce</item>
-                    <item value="flash">Flash</item>
+                    <item value="bounce">bounce</item>
+                    <item value="flash">flash</item>
+                    <item value="pulse">pulse</item>
+                    <item value="rubberBand">rubberBand</item>
+                    <item value="shake">shake</item>
+                    <item value="headShake">headShake</item>
+                    <item value="swing">swing</item>
+                    <item value="tada">tada</item>
+                    <item value="wobble">wobble</item>
+                    <item value="jello">jello</item>
+                    <item value="bounceIn">bounceIn</item>
+                    <item value="bounceInDown">bounceInDown</item>
+                    <item value="bounceInLeft">bounceInLeft</item>
+                    <item value="bounceInRight">bounceInRight</item>
+                    <item value="bounceInUp">bounceInUp</item>
+                    <item value="bounceOut">bounceOut</item>
+                    <item value="bounceOutDown">bounceOutDown</item>
+                    <item value="bounceOutLeft">bounceOutLeft</item>
+                    <item value="bounceOutRight">bounceOutRight</item>
+                    <item value="bounceOutUp">bounceOutUp</item>
+                    <item value="fadeIn">fadeIn</item>
+                    <item value="fadeInDown">fadeInDown</item>
+                    <item value="fadeInDownBig">fadeInDownBig</item>
+                    <item value="fadeInLeft">fadeInLeft</item>
+                    <item value="fadeInLeftBig">fadeInLeftBig</item>
+                    <item value="fadeInRight">fadeInRight</item>
+                    <item value="fadeInRightBig">fadeInRightBig</item>
+                    <item value="fadeInUp">fadeInUp</item>
+                    <item value="fadeInUpBig">fadeInUpBig</item>
+                    <item value="fadeOut">fadeOut</item>
+                    <item value="fadeOutDown">fadeOutDown</item>
+                    <item value="fadeOutDownBig">fadeOutDownBig</item>
+                    <item value="fadeOutLeft">fadeOutLeft</item>
+                    <item value="fadeOutLeftBig">fadeOutLeftBig</item>
+                    <item value="fadeOutRight">fadeOutRight</item>
+                    <item value="fadeOutRightBig">fadeOutRightBig</item>
+                    <item value="fadeOutUp">fadeOutUp</item>
+                    <item value="fadeOutUpBig">fadeOutUpBig</item>
+                    <item value="flipInX">flipInX</item>
+                    <item value="flipInY">flipInY</item>
+                    <item value="flipOutX">flipOutX</item>
+                    <item value="flipOutY">flipOutY</item>
+                    <item value="lightSpeedIn">lightSpeedIn</item>
+                    <item value="lightSpeedOut">lightSpeedOut</item>
+                    <item value="rotateIn">rotateIn</item>
+                    <item value="rotateInDownLeft">rotateInDownLeft</item>
+                    <item value="rotateInDownRight">rotateInDownRight</item>
+                    <item value="rotateInUpLeft">rotateInUpLeft</item>
+                    <item value="rotateInUpRight">rotateInUpRight</item>
+                    <item value="rotateOut">rotateOut</item>
+                    <item value="rotateOutDownLeft">rotateOutDownLeft</item>
+                    <item value="rotateOutDownRight">rotateOutDownRight</item>
+                    <item value="rotateOutUpLeft">rotateOutUpLeft</item>
+                    <item value="rotateOutUpRight">rotateOutUpRight</item>
+                    <item value="hinge">hinge</item>
+                    <item value="rollIn">rollIn</item>
+                    <item value="rollOut">rollOut</item>
+                    <item value="zoomIn">zoomIn</item>
+                    <item value="zoomInDown">zoomInDown</item>
+                    <item value="zoomInLeft">zoomInLeft</item>
+                    <item value="zoomInRight">zoomInRight</item>
+                    <item value="zoomInUp">zoomInUp</item>
+                    <item value="zoomOut">zoomOut</item>
+                    <item value="zoomOutDown">zoomOutDown</item>
+                    <item value="zoomOutLeft">zoomOutLeft</item>
+                    <item value="zoomOutRight">zoomOutRight</item>
+                    <item value="zoomOutUp">zoomOutUp</item>
+                    <item value="slideInDown">slideInDown</item>
+                    <item value="slideInLeft">slideInLeft</item>
+                    <item value="slideInRight">slideInRight</item>
+                    <item value="slideInUp">slideInUp</item>
+                    <item value="slideOutDown">slideOutDown</item>
+                    <item value="slideOutLeft">slideOutLeft</item>
+                    <item value="slideOutRight">slideOutRight</item>
+                    <item value="slideOutUp">slideOutUp</item>
                 </m:MaterialListBox>
                 <m:MaterialButton ui:field="btnAnimate" text="Animate" backgroundColor="blue" textColor="white"/>
             </m:MaterialColumn>
