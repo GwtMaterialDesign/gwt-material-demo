@@ -8,10 +8,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.ui.MaterialPathAnimator;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialCard;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialPanel;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -30,7 +27,10 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     MaterialLink btnSource2;
 
     @UiField
-    MaterialPanel panelTarget1, panelTarget2;
+    MaterialPanel panelTarget1, panelTarget2, panelTargetCol1, panelTargetCol2, panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
+
+    @UiField
+    MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
 
     @Inject
     PathAnimatorView(Binder uiBinder) {
@@ -74,6 +74,90 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
         MaterialPathAnimator.animate(btnSource3.getElement(), panelTarget3.getElement(), callback);
     }
 
+    @UiHandler("col1")
+    void onCol1(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol1.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol1.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col1.getElement(), panelTargetCol1.getElement(), callback);
+    }
+
+    @UiHandler("col2")
+    void onCol2(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol2.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol2.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col2.getElement(), panelTargetCol2.getElement(), callback);
+    }
+
+    @UiHandler("col3")
+    void onCol3(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol3.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol3.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col3.getElement(), panelTargetCol3.getElement(), callback);
+    }
+
+    @UiHandler("col4")
+    void onCol4(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol4.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol4.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col4.getElement(), panelTargetCol4.getElement(), callback);
+    }
+
+    @UiHandler("col5")
+    void onCol5(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol5.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol5.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col5.getElement(), panelTargetCol5.getElement(), callback);
+    }
+
+    @UiHandler("col6")
+    void onCol6(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol6.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol6.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col6.getElement(), panelTargetCol6.getElement(), callback);
+    }
+
+    @UiHandler("col7")
+    void onCol7(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                panelTargetCol7.getElement().getStyle().setVisibility(Style.Visibility.VISIBLE);
+                panelTargetCol7.setOpacity(1);
+            }
+        };
+        MaterialPathAnimator.animate(col7.getElement(), panelTargetCol7.getElement(), callback);
+    }
+
     @UiHandler("btnClose1")
     void onClose(ClickEvent e) {
         panelTarget1.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
@@ -94,4 +178,55 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
         panelTarget3.setOpacity(0);
         MaterialPathAnimator.animate(panelTarget3.getElement(), btnSource3.getElement());
     }
+
+    @UiHandler("btnCloseCol1")
+    void onCloseCol1(ClickEvent e) {
+        panelTargetCol1.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol1.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol1.getElement(), col1.getElement());
+    }
+
+    @UiHandler("btnCloseCol2")
+    void onCloseCol2(ClickEvent e) {
+        panelTargetCol2.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol2.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol2.getElement(), col2.getElement());
+    }
+
+    @UiHandler("btnCloseCol3")
+    void onCloseCol3(ClickEvent e) {
+        panelTargetCol3.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol3.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol3.getElement(), col3.getElement());
+    }
+
+    @UiHandler("btnCloseCol4")
+    void onCloseCol4(ClickEvent e) {
+        panelTargetCol4.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol4.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol4.getElement(), col4.getElement());
+    }
+
+    @UiHandler("btnCloseCol5")
+    void onCloseCol5(ClickEvent e) {
+        panelTargetCol5.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol5.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol5.getElement(), col5.getElement());
+    }
+
+    @UiHandler("btnCloseCol6")
+    void onCloseCol6(ClickEvent e) {
+        panelTargetCol6.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol6.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol6.getElement(), col6.getElement());
+    }
+
+    @UiHandler("btnCloseCol7")
+    void onCloseCol7(ClickEvent e) {
+        panelTargetCol7.getElement().getStyle().setVisibility(Style.Visibility.HIDDEN);
+        panelTargetCol7.setOpacity(0);
+        MaterialPathAnimator.animate(panelTargetCol7.getElement(), col7.getElement());
+    }
+
+
 }

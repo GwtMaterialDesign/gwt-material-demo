@@ -93,6 +93,29 @@
       <m:MaterialTitle title="3. Button to Card" description="Source Component : MaterialButton and Target Component : Material Card"/>
       <m:MaterialButton ui:field="btnSource3" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
 
+      <m:MaterialTitle title="4. Grid to Overlay Panel"/>
+      <m:MaterialRow>
+        <m:MaterialColumn ui:field="col1" grid="s12 l4" backgroundColor="pink" height="200px"/>
+        <m:MaterialColumn ui:field="col2" grid="s12 l4" backgroundColor="blue" height="200px"/>
+        <m:MaterialColumn ui:field="col3" grid="s12 l4" backgroundColor="yellow" height="200px"/>
+      </m:MaterialRow>
+      <m:MaterialRow>
+        <m:MaterialColumn ui:field="col4" grid="s12 l4" backgroundColor="green" height="200px"/>
+        <m:MaterialColumn ui:field="col5" grid="s12 l2" backgroundColor="purple" height="200px"/>
+        <m:MaterialColumn ui:field="col6" grid="s12 l4" backgroundColor="green" height="200px"/>
+        <m:MaterialColumn ui:field="col7" grid="s12 l2" backgroundColor="pink" height="200px"/>
+      </m:MaterialRow>
+
+      <m:MaterialPanel ui:field="panelTarget1" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnClose1" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTarget2" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnClose2" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
       <m:MaterialRow>
         <m:MaterialCard ui:field="panelTarget3" backgroundColor="pink darken-1" grid="l4" opacity="0">
           <m:MaterialCardContent textColor="white">
@@ -105,14 +128,39 @@
         </m:MaterialCard>
       </m:MaterialRow>
 
-      <m:MaterialPanel ui:field="panelTarget1" textAlign="CENTER" backgroundColor="blue" addStyleNames="{style.overlayPanel}">
+      <m:MaterialPanel ui:field="panelTargetCol1" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
         <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
-        <m:MaterialButton ui:field="btnClose1" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+        <m:MaterialButton ui:field="btnCloseCol1" text="Back to Main Page" backgroundColor="pink lighten-2" textColor="white" size="LARGE" />
       </m:MaterialPanel>
 
-      <m:MaterialPanel ui:field="panelTarget2" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
+      <m:MaterialPanel ui:field="panelTargetCol2" textAlign="CENTER" backgroundColor="blue darken-1" addStyleNames="{style.overlayPanel}">
         <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
-        <m:MaterialButton ui:field="btnClose2" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+        <m:MaterialButton ui:field="btnCloseCol2" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTargetCol3" textAlign="CENTER" backgroundColor="yellow darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnCloseCol3" text="Back to Main Page" backgroundColor="yellow lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTargetCol4" textAlign="CENTER" backgroundColor="green darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnCloseCol4" text="Back to Main Page" backgroundColor="green lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTargetCol5" textAlign="CENTER" backgroundColor="purple darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnCloseCol5" text="Back to Main Page" backgroundColor="purple lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTargetCol6" textAlign="CENTER" backgroundColor="green darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnCloseCol6" text="Back to Main Page" backgroundColor="green lighten-2" textColor="white" size="LARGE" />
+      </m:MaterialPanel>
+
+      <m:MaterialPanel ui:field="panelTargetCol7" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
+        <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
+        <m:MaterialButton ui:field="btnCloseCol7" text="Back to Main Page" backgroundColor="pink lighten-2" textColor="white" size="LARGE" />
       </m:MaterialPanel>
     </g:HTMLPanel>
 </ui:UiBinder>
