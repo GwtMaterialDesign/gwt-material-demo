@@ -60,4 +60,7 @@ public interface MaterialResources extends ClientBundle {
 
 	@Source("img/template_wrenx.gif")
 	ImageResource template_wrenx();
+
+	@Source("img/gplus.png")
+	ImageResource gplus();
 }

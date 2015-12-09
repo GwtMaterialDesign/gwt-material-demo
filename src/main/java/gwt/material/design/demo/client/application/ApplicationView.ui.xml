@@ -60,6 +60,10 @@
       .btnGettingStarted {
           font-size: 0.3em !important;
       }
+      .gplus{
+        display: block;
+        margin-top: 20px;
+      }
   </ui:style>
 
   <g:HTMLPanel>
@@ -220,6 +224,9 @@
           <m:MaterialTitle textColor="white" title="Github"
                            description="Download, fork, pull, file issues, and more at the official GWT Material repo on Github."/>
           <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material/" target="_blank" text="Github" backgroundColor="blue lighten-2" waves="LIGHT" textColor="white"/>
+          <m:MaterialTooltip text="Visit our Community" position="RIGHT">
+            <m:MaterialImage ui:field="imgGPlus" resource="{res.gplus}" addStyleNames="{style.gplus}"/>
+          </m:MaterialTooltip>
         </m:MaterialColumn>
       </m:MaterialRow>
 
