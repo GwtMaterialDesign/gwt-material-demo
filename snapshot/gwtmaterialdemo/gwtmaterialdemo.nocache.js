@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie9'], '038AB53D4D05C08F097A626C4A9E18E9');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'A8DE1F18A5B5057F789F488FC97C7EEB');
-      unflattenKeylistIntoAnswers(['safari'], 'B41BCE82B0C6C05A4A5F9A3A937958CB');
-      unflattenKeylistIntoAnswers(['ie10'], 'E7E5C67E0D9825087237AAAA83CCDEBB');
-      unflattenKeylistIntoAnswers(['ie8'], 'FF72B7376B3E8E826F857433AB6EF970');
+      unflattenKeylistIntoAnswers(['ie9'], '04FF44243777935141BFF0D653A9E1E7');
+      unflattenKeylistIntoAnswers(['ie10'], 'A0376ED0F5D6EDFA19613E23417E4597');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'A3CE37CA2A14FE68B796796DB3322FE0');
+      unflattenKeylistIntoAnswers(['safari'], 'B95A7BE91C2632A2AC61E629D52F2C76');
+      unflattenKeylistIntoAnswers(['ie8'], 'C657C34C770E8C58EE3A083076CFE15B');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -418,6 +418,7 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/timepicker.css');
     installOneStylesheet('css/window.css');
     installOneStylesheet('css/stepper.css');
+    installOneStylesheet('css/morph.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
