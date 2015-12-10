@@ -177,5 +177,30 @@
         &emsp;// Setting error message<br/>
         stepper.setError("Sample error message");
       </demo:PrettyPre>
+
+      <m:MaterialTitle title="Feedback on Steppers" description="Steppers may display a transient feedback message after a step is saved. Stepper feedback should only be used if there is a long latency between steps"/>
+      <m:MaterialPanel hideOn="HIDE_ON_SMALL" height="500px" width="100%">
+        <m.addins:MaterialStepper ui:field="stepperFeedback" axis="HORIZONTAL" shadow="1">
+          <m.addins:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+            <m:MaterialButton ui:field="btnContinue41" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+          <m.addins:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+            <m:MaterialButton ui:field="btnContinue42" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+          <m.addins:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+            <m:MaterialPanel width="100%" height="300px" backgroundColor="grey lighten-2"/>
+              <m:MaterialButton ui:field="btnContinue43" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+          </m.addins:MaterialStep>
+        </m.addins:MaterialStepper>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+          &emsp;// show feedback<br/>
+          showFeedback("Feedback Message");<br/><br/>
+
+          // hiding feedback<br/>
+          hideFeedback();<br/>
+        </demo:PrettyPre>
+      </m:MaterialPanel>
     </m:MaterialPanel>
 </ui:UiBinder>

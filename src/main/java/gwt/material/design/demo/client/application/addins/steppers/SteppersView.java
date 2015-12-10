@@ -4,11 +4,10 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.ui.MaterialStepper;
-import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -20,7 +19,8 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperError;
+    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError;
+
 
     @UiField
     MaterialModal modalStepper;
@@ -114,5 +114,24 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     void onSucess2(ClickEvent e){
         MaterialToast.fireToast("All done.");
         stepperError.reset();
+    }
+
+    @UiHandler({"btnContinue41", "btnContinue42", "btnContinue43"})
+    void onFeedback(ClickEvent e){
+        stepperFeedback.showFeedback("Waiting for next step");
+        Timer t = new Timer() {
+            @Override
+            public void run() {
+                stepperFeedback.nextStep();
+                stepperFeedback.hideFeedback();
+            }
+        };
+        t.schedule(2000);
+    }
+
+    @UiHandler("btnContinue43")
+    void onFinishFeedback(ClickEvent e){
+        MaterialToast.fireToast("All done.");
+        stepperFeedback.reset();
     }
 }

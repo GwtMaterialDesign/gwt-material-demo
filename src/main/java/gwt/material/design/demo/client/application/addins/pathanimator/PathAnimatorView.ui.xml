@@ -93,6 +93,18 @@
       <m:MaterialTitle title="3. Button to Card" description="Source Component : MaterialButton and Target Component : Material Card"/>
       <m:MaterialButton ui:field="btnSource3" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" />
 
+      <m:MaterialRow>
+        <m:MaterialCard ui:field="panelTarget3" backgroundColor="pink darken-1" grid="l4" opacity="0">
+          <m:MaterialCardContent textColor="white">
+            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink ui:field="btnClose3" text="Turn it back" iconType="POLYMER"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialRow>
+
       <m:MaterialTitle title="4. Grid to Overlay Panel"/>
       <m:MaterialRow>
         <m:MaterialColumn ui:field="col1" grid="s12 l4" backgroundColor="pink" height="200px"/>
@@ -115,18 +127,6 @@
         <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
         <m:MaterialButton ui:field="btnClose2" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" />
       </m:MaterialPanel>
-
-      <m:MaterialRow>
-        <m:MaterialCard ui:field="panelTarget3" backgroundColor="pink darken-1" grid="l4" opacity="0">
-          <m:MaterialCardContent textColor="white">
-            <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-          </m:MaterialCardContent>
-          <m:MaterialCardAction>
-            <m:MaterialLink ui:field="btnClose3" text="Turn it back" iconType="POLYMER"/>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialRow>
 
       <m:MaterialPanel ui:field="panelTargetCol1" textAlign="CENTER" backgroundColor="pink darken-1" addStyleNames="{style.overlayPanel}">
         <m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
