@@ -137,6 +137,7 @@
             <m:MaterialCollapsibleBody>
               <m.html:UnorderedList>
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" textColor="blue" waves="DEFAULT"/>
