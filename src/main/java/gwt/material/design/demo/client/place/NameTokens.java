@@ -43,6 +43,7 @@ public class NameTokens {
     public static final String coreAnimations = "coreAnimations";
     public static final String meaningful = "meaningful";
     public static final String iconMorph = "iconMorph";
+    public static final String pushPin = "pushPin";
 
     public static String getAbout() {
         return about;
@@ -210,5 +211,9 @@ public class NameTokens {
 
     public static String getIconMorph() {
         return iconMorph;
+    }
+
+    public static String getPushPin() {
+        return pushPin;
     }
 }

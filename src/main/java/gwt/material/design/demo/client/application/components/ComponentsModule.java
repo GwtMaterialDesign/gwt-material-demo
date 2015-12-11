@@ -19,6 +19,7 @@ import gwt.material.design.demo.client.application.components.loader.LoaderModul
 import gwt.material.design.demo.client.application.components.media.MediaModule;
 import gwt.material.design.demo.client.application.components.navbar.NavBarModule;
 import gwt.material.design.demo.client.application.components.pickers.PickersModule;
+import gwt.material.design.demo.client.application.components.pushpin.PushPinModule;
 import gwt.material.design.demo.client.application.components.scrollspy.ScrollspyModule;
 import gwt.material.design.demo.client.application.components.sidenavs.SideNavsModule;
 import gwt.material.design.demo.client.application.components.tabs.TabsModule;
@@ -45,6 +46,7 @@ public class ComponentsModule extends AbstractGinModule {
         install(new NavBarModule());
         install(new PickersModule());
         install(new ScrollspyModule());
+        install(new PushPinModule());
         install(new TabsModule());
         install(new SideNavsModule());
         install(new FABModule());

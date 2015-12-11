@@ -28,7 +28,6 @@
       .topPanel {
           padding: 9%;
           font-size: 4em;
-          padding-bottom: 200px;
       }
 
       nav {
@@ -40,7 +39,6 @@
       .panel {
           padding-left: 5%;
           width: 100%;
-          margin-top: -150px;
           padding: 10px 50px 150px 50px;
           background: #FFF;
           box-sizing: border-box;
@@ -110,6 +108,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getPushPin}" text="Pushpin" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" textColor="blue" waves="DEFAULT"/>
@@ -180,7 +179,7 @@
 
     <m:MaterialContainer>
       <m:MaterialTopNav ui:field="topNav" backgroundColor="blue" textColor="white" addStyleNames="{style.topPanel}">
-        <m:MaterialRow>
+        <m:MaterialRow ui:field="topNavRow">
           <m:MaterialColumn grid="l12">
             <m:MaterialLabel ui:field="title"/>
             <m:MaterialLabel ui:field="description" fontSize="0.3em" />

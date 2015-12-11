@@ -10,9 +10,9 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.constants.ShowOn;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialNavBar;
-import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.client.ui.html.Header;
 
 import javax.inject.Inject;
@@ -26,6 +26,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField MaterialSideNav sideNav;
     @UiField HTMLPanel main;
     @UiField MaterialLabel title, description;
+    @UiField MaterialTopNav topNav;
+    @UiField MaterialRow topNavRow;
 
     @Inject
     ApplicationView(Binder uiBinder) {
@@ -39,6 +41,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         this.title.setText(title);
         this.description.setText(description);
         sideNav.hide(sideNav.getElement());
+        MaterialAnimator.animate(Transition.FADEINLEFT, topNavRow, 500);
+        MaterialAnimator.animate(Transition.FADEINUP, main, 500);
     }
 
     @UiHandler("imgGPlus")
