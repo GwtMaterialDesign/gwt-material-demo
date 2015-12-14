@@ -7,7 +7,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.client.ui.MaterialChip;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -17,7 +16,8 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
     interface Binder extends UiBinder<Widget, ChipsView> {
     }
 
-    @UiField MaterialChip chip;
+    @UiField
+    MaterialChip chip;
 
     @Inject
     ChipsView(Binder uiBinder) {
