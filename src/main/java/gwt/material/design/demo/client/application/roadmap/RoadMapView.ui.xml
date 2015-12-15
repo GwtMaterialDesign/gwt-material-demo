@@ -10,11 +10,35 @@
         }
     </ui:style>
     <m:MaterialRow>
+        <!-- 1.5 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="1.5.0" textColor="black"/>
+                <m:MaterialLabel textColor="grey" text="On Going"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" height="250px">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="CutOut" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="white" letterBackgroundColor="deep-orange" text="Icon Morph" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="deep-orange" text="Path Animator" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Subheader" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Steppers" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="deep-orange" text="Time Picker" margin="4"/>
+                    <m:MaterialChip letter="O" letterColor="white" letterBackgroundColor="deep-orange" text="Overlay Panel" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="deep-orange" text="Roadmap" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="Core Animations" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="deep-orange" text="Letter Chips" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="grey" text="Tree Item" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="grey" text="Window" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+
         <!-- 1.4.1 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="1.4.1" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="December 2015"/>
+                <m:MaterialLabel textColor="grey" text="On Going"/>
             </m:MaterialCardContent>
             <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" height="120px">
                 <m:MaterialPanel>
