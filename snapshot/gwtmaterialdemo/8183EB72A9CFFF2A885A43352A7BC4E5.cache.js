@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '8F30CCB2A4B3723B78D80F523C1FE25D';
+var $strongName = '8183EB72A9CFFF2A885A43352A7BC4E5';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {8:1, 75:1, 47:1, 54:1}, $intern_3 = {83:1, 8:1}, $intern_4 = {8:1, 11:1}, $intern_5 = {8:1, 31:1, 11:1}, $intern_6 = {66:1, 33:1, 8:1, 29:1, 19:1}, $intern_7 = {68:1, 33:1, 8:1, 29:1, 19:1}, $intern_8 = {163:1, 33:1, 8:1, 29:1, 19:1}, $intern_9 = {33:1, 139:1, 8:1, 29:1, 19:1}, $intern_10 = {33:1, 140:1, 8:1, 29:1, 19:1}, $intern_11 = {33:1, 141:1, 8:1, 29:1, 19:1}, $intern_12 = {90:1, 8:1, 29:1, 19:1}, $intern_13 = {33:1, 196:1, 8:1, 29:1, 19:1}, $intern_14 = 1496, $intern_15 = {10:1}, $intern_16 = {194:1, 8:1, 75:1, 47:1, 54:1}, $intern_17 = 4194303, $intern_18 = 1048575, $intern_19 = 17592186044416, $intern_20 = 4194304, $intern_21 = 524288, $intern_22 = {240:1, 8:1}, $intern_23 = {23:1, 22:1}, $intern_24 = {25:1, 10:1, 24:1, 23:1, 14:1, 22:1, 18:1}, $intern_25 = 1507, $intern_26 = {25:1, 10:1, 24:1, 23:1, 120:1, 14:1, 22:1, 18:1}, $intern_27 = 16384, $intern_28 = 1048576, $intern_29 = 16777216, $intern_30 = 33554432, $intern_31 = 67108864, $intern_32 = {25:1, 10:1, 24:1, 23:1, 32:1, 14:1, 22:1, 18:1}, $intern_33 = {25:1, 10:1, 24:1, 23:1, 32:1, 268:1, 14:1, 22:1, 18:1}, $intern_34 = {25:1, 10:1, 24:1, 34:1, 23:1, 14:1, 22:1, 18:1}, $intern_35 = {25:1, 10:1, 24:1, 23:1, 32:1, 14:1, 92:1, 22:1, 18:1}, $intern_36 = {91:1}, $intern_37 = {318:1, 20:1}, $intern_38 = {25:1, 10:1, 24:1, 23:1, 32:1, 268:1, 14:1, 197:1, 22:1, 18:1}, $intern_39 = {8:1, 176:1, 54:1}, $intern_40 = {25:1, 10:1, 24:1, 23:1, 14:1, 92:1, 22:1, 18:1}, $intern_41 = {132:1}, $intern_42 = {10:1, 14:1, 49:1}, $intern_43 = {14:1}, $intern_44 = {316:1, 20:1}, $intern_45 = {239:1}, $intern_46 = {317:1, 20:1, 10:1, 1466:1}, $intern_47 = 1499, $intern_48 = {10:1, 60:1, 58:1}, $intern_49 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1}, $intern_50 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1}, $intern_51 = {1473:1, 20:1}, $intern_52 = {1474:1, 20:1}, $intern_53 = {1475:1, 20:1}, $intern_54 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1, 27:1}, $intern_55 = {30:1, 20:1}, $intern_56 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 85:1}, $intern_57 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1, 48:1}, $intern_58 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 44:1}, $intern_59 = {174:1, 32:1, 14:1}, $intern_60 = {10:1, 37:1}, $intern_61 = {10:1, 37:1, 60:1, 58:1}, $intern_62 = {69:1}, $intern_63 = {319:1, 20:1}, $intern_64 = 4000, $intern_65 = {8:1, 75:1, 88:1, 47:1, 54:1}, $intern_66 = {8:1, 137:1, 75:1, 47:1, 54:1}, $intern_67 = {91:1, 160:1}, $intern_68 = 1493, $intern_69 = {91:1, 98:1}, $intern_70 = {81:1}, $intern_71 = {8:1, 91:1, 98:1}, $intern_72 = {8:1, 91:1, 160:1}, $intern_73 = {267:1}, $intern_74 = {8:1, 159:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = {8:1, 75:1, 47:1, 54:1}, $intern_3 = {83:1, 8:1}, $intern_4 = {8:1, 11:1}, $intern_5 = {8:1, 31:1, 11:1}, $intern_6 = {66:1, 33:1, 8:1, 29:1, 19:1}, $intern_7 = {68:1, 33:1, 8:1, 29:1, 19:1}, $intern_8 = {163:1, 33:1, 8:1, 29:1, 19:1}, $intern_9 = {33:1, 139:1, 8:1, 29:1, 19:1}, $intern_10 = {33:1, 140:1, 8:1, 29:1, 19:1}, $intern_11 = {33:1, 141:1, 8:1, 29:1, 19:1}, $intern_12 = {90:1, 8:1, 29:1, 19:1}, $intern_13 = {33:1, 196:1, 8:1, 29:1, 19:1}, $intern_14 = 1497, $intern_15 = {10:1}, $intern_16 = {194:1, 8:1, 75:1, 47:1, 54:1}, $intern_17 = 4194303, $intern_18 = 1048575, $intern_19 = 17592186044416, $intern_20 = 4194304, $intern_21 = 524288, $intern_22 = {240:1, 8:1}, $intern_23 = {23:1, 22:1}, $intern_24 = {25:1, 10:1, 24:1, 23:1, 14:1, 22:1, 18:1}, $intern_25 = 1508, $intern_26 = {25:1, 10:1, 24:1, 23:1, 120:1, 14:1, 22:1, 18:1}, $intern_27 = 16384, $intern_28 = 131072, $intern_29 = 1048576, $intern_30 = 16777216, $intern_31 = 33554432, $intern_32 = 67108864, $intern_33 = {25:1, 10:1, 24:1, 23:1, 32:1, 14:1, 22:1, 18:1}, $intern_34 = {25:1, 10:1, 24:1, 23:1, 32:1, 268:1, 14:1, 22:1, 18:1}, $intern_35 = {25:1, 10:1, 24:1, 34:1, 23:1, 14:1, 22:1, 18:1}, $intern_36 = {25:1, 10:1, 24:1, 23:1, 32:1, 14:1, 92:1, 22:1, 18:1}, $intern_37 = {91:1}, $intern_38 = {318:1, 20:1}, $intern_39 = {25:1, 10:1, 24:1, 23:1, 32:1, 268:1, 14:1, 197:1, 22:1, 18:1}, $intern_40 = {8:1, 176:1, 54:1}, $intern_41 = {25:1, 10:1, 24:1, 23:1, 14:1, 92:1, 22:1, 18:1}, $intern_42 = {132:1}, $intern_43 = {10:1, 14:1, 49:1}, $intern_44 = {14:1}, $intern_45 = {316:1, 20:1}, $intern_46 = {239:1}, $intern_47 = {317:1, 20:1, 10:1, 1467:1}, $intern_48 = 1500, $intern_49 = {10:1, 60:1, 58:1}, $intern_50 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1}, $intern_51 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1}, $intern_52 = {1474:1, 20:1}, $intern_53 = {1475:1, 20:1}, $intern_54 = {1476:1, 20:1}, $intern_55 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1, 27:1}, $intern_56 = {30:1, 20:1}, $intern_57 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 85:1}, $intern_58 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 161:1, 40:1, 36:1, 48:1}, $intern_59 = {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 44:1}, $intern_60 = {174:1, 32:1, 14:1}, $intern_61 = {10:1, 37:1}, $intern_62 = {10:1, 37:1, 60:1, 58:1}, $intern_63 = {69:1}, $intern_64 = {319:1, 20:1}, $intern_65 = 4000, $intern_66 = {8:1, 75:1, 88:1, 47:1, 54:1}, $intern_67 = {8:1, 137:1, 75:1, 47:1, 54:1}, $intern_68 = {91:1, 160:1}, $intern_69 = 1494, $intern_70 = {91:1, 98:1}, $intern_71 = {81:1}, $intern_72 = {8:1, 91:1, 98:1}, $intern_73 = {8:1, 91:1, 160:1}, $intern_74 = {267:1}, $intern_75 = {8:1, 159:1};
 var _, initFnList_0, prototypesByTypeId_0 = {}, permutationId = -1;
 function typeMarkerFn(){
 }
@@ -479,15 +479,15 @@ function Animation$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1120, 1, {}, Animation$1);
+defineClass(1121, 1, {}, Animation$1);
 _.execute = function execute(timestamp){
   $execute(this, timestamp);
 }
 ;
-var Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 1120);
-defineClass(1509, 1, {});
+var Lcom_google_gwt_animation_client_Animation$1_2_classLit = createForClass('com.google.gwt.animation.client', 'Animation/1', 1121);
+defineClass(1510, 1, {});
 var instance_0;
-var Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 1509);
+var Lcom_google_gwt_animation_client_AnimationScheduler_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler', 1510);
 defineClass(291, 1, {291:1});
 var Lcom_google_gwt_animation_client_AnimationScheduler$AnimationHandle_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationScheduler/AnimationHandle', 291);
 function AnimationSchedulerImplStandard(){
@@ -507,24 +507,24 @@ function requestImpl(cb, element){
   return {id:handle};
 }
 
-defineClass(1426, 1509, {}, AnimationSchedulerImplStandard);
+defineClass(1427, 1510, {}, AnimationSchedulerImplStandard);
 _.requestAnimationFrame_0 = function requestAnimationFrame(callback, element){
   var handle;
   handle = requestImpl(callback, element);
   return new AnimationSchedulerImplStandard$1(handle);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 1426);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard', 1427);
 function AnimationSchedulerImplStandard$1(val$handle){
   this.val$handle2 = val$handle;
 }
 
-defineClass(1427, 291, {291:1}, AnimationSchedulerImplStandard$1);
+defineClass(1428, 291, {291:1}, AnimationSchedulerImplStandard$1);
 _.cancel = function cancel(){
   cancelImpl(this.val$handle2);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 1427);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplStandard$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplStandard/1', 1428);
 function $cancelAnimationFrame(this$static, requestId){
   $remove_12(this$static.animationRequests, requestId);
   this$static.animationRequests.array.length == 0 && $cancel_0(this$static.timer);
@@ -548,7 +548,7 @@ function AnimationSchedulerImplTimer(){
   this.timer = new AnimationSchedulerImplTimer$1(this);
 }
 
-defineClass(1428, 1509, {}, AnimationSchedulerImplTimer);
+defineClass(1429, 1510, {}, AnimationSchedulerImplTimer);
 _.requestAnimationFrame_0 = function requestAnimationFrame_0(callback, element){
   var requestId;
   requestId = new AnimationSchedulerImplTimer$AnimationHandleImpl(this, callback);
@@ -557,7 +557,7 @@ _.requestAnimationFrame_0 = function requestAnimationFrame_0(callback, element){
   return requestId;
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 1428);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer', 1429);
 function $cancel_0(this$static){
   if (!this$static.timerId) {
     return;
@@ -626,12 +626,12 @@ function AnimationSchedulerImplTimer$1(this$0){
   Timer.call(this);
 }
 
-defineClass(1429, 121, {}, AnimationSchedulerImplTimer$1);
+defineClass(1430, 121, {}, AnimationSchedulerImplTimer$1);
 _.run = function run(){
   $updateAnimations(this.this$01);
 }
 ;
-var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 1429);
+var Lcom_google_gwt_animation_client_AnimationSchedulerImplTimer$1_2_classLit = createForClass('com.google.gwt.animation.client', 'AnimationSchedulerImplTimer/1', 1430);
 function AnimationSchedulerImplTimer$AnimationHandleImpl(this$0, callback){
   this.this$01 = this$0;
   this.callback_0 = callback;
@@ -740,8 +740,8 @@ function CodeDownloadException(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(1497, 47, $intern_2, CodeDownloadException);
-var Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 1497);
+defineClass(1498, 47, $intern_2, CodeDownloadException);
+var Lcom_google_gwt_core_client_CodeDownloadException_2_classLit = createForClass('com.google.gwt.core.client', 'CodeDownloadException', 1498);
 function Duration(){
   this.start_0 = now_1();
 }
@@ -890,8 +890,8 @@ function unsafeEval(json){
 
 var escapeTable_0;
 var Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback');
-defineClass(1477, 1, {});
-var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 1477);
+defineClass(1478, 1, {});
+var Lcom_google_gwt_core_client_Scheduler_2_classLit = createForClass('com.google.gwt.core.client', 'Scheduler', 1478);
 function $clinit_ScriptInjector(){
   $clinit_ScriptInjector = emptyMethod;
   TOP_WINDOW = $wnd;
@@ -1605,7 +1605,7 @@ function scheduleFixedDelayImpl(cmd, delayMs){
   $wnd.setTimeout(callback, delayMs);
 }
 
-defineClass(469, 1477, {}, SchedulerImpl);
+defineClass(469, 1478, {}, SchedulerImpl);
 _.flushRunning = false;
 _.shouldBeRunning = false;
 var INSTANCE;
@@ -1709,12 +1709,12 @@ function extractFunctionName(fnName){
 }
 
 var collector;
-defineClass(1488, 1, {});
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 1488);
+defineClass(1489, 1, {});
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$Collector_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/Collector', 1489);
 function StackTraceCreator$CollectorLegacy(){
 }
 
-defineClass(441, 1488, {}, StackTraceCreator$CollectorLegacy);
+defineClass(441, 1489, {}, StackTraceCreator$CollectorLegacy);
 _.collect = function collect(t, thrownIgnored){
   var seen = {}, name_1;
   t.fnStack = [];
@@ -1743,7 +1743,7 @@ function $clinit_StackTraceCreator$CollectorModern(){
   Error.stackTraceLimit = 64;
 }
 
-defineClass(1489, 1488, {});
+defineClass(1490, 1489, {});
 _.collect = function collect_0(t, jsThrown){
   function fixIE(e){
     if (!('stack' in e)) {
@@ -1761,12 +1761,12 @@ _.collect = function collect_0(t, jsThrown){
   t.__gwt$backingJsError = backingJsError;
 }
 ;
-var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 1489);
+var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModern_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModern', 1490);
 function StackTraceCreator$CollectorModernNoSourceMap(){
   $clinit_StackTraceCreator$CollectorModern();
 }
 
-defineClass(442, 1489, {}, StackTraceCreator$CollectorModernNoSourceMap);
+defineClass(442, 1490, {}, StackTraceCreator$CollectorModernNoSourceMap);
 var Lcom_google_gwt_core_client_impl_StackTraceCreator$CollectorModernNoSourceMap_2_classLit = createForClass('com.google.gwt.core.client.impl', 'StackTraceCreator/CollectorModernNoSourceMap', 442);
 function checkArrayType(expression, errorMessage){
   if (!expression) {
@@ -2032,20 +2032,36 @@ function $eventPreventDefault(evt){
   evt.preventDefault();
 }
 
-function $isOrHasChild(parent_0, child){
-  return parent_0.contains(child);
-}
-
 function $setInnerText(elem, text_0){
   elem.textContent = text_0 || '';
 }
 
-function $eventGetCurrentTarget(event_0){
-  return event_0.currentTarget || $wnd;
+function $eventGetRelatedTarget(evt){
+  var relatedTarget = evt.relatedTarget;
+  if (!relatedTarget) {
+    return null;
+  }
+  try {
+    var nodeName = relatedTarget.nodeName;
+    return relatedTarget;
+  }
+   catch (e) {
+    return null;
+  }
 }
 
-function $getTabIndex(elem){
-  return typeof elem.tabIndex != 'undefined'?elem.tabIndex:-1;
+function $isOrHasChild(parent_0, child){
+  return parent_0 === child || !!(parent_0.compareDocumentPosition(child) & 16);
+}
+
+function $toString_0(elem){
+  var doc = elem.ownerDocument;
+  var temp = elem.cloneNode(true);
+  var tempDiv = doc.createElement('DIV');
+  tempDiv.appendChild(temp);
+  outer = tempDiv.innerHTML;
+  temp.innerHTML = '';
+  return outer;
 }
 
 function $createUniqueId(this$static){
@@ -2989,12 +3005,12 @@ var flusher, needsInjection = false, toInject, toInjectAtEnd, toInjectAtStart;
 function StyleInjector$1(){
 }
 
-defineClass(1396, 1, {}, StyleInjector$1);
+defineClass(1397, 1, {}, StyleInjector$1);
 _.execute_1 = function execute_4(){
   ($clinit_StyleInjector() , needsInjection) && flush();
 }
 ;
-var Lcom_google_gwt_dom_client_StyleInjector$1_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/1', 1396);
+var Lcom_google_gwt_dom_client_StyleInjector$1_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/1', 1397);
 function $clinit_StyleInjector$StyleInjectorImpl(){
   $clinit_StyleInjector$StyleInjectorImpl = emptyMethod;
   IMPL = new StyleInjector$StyleInjectorImpl;
@@ -3034,20 +3050,20 @@ function $injectStyleSheetAtStart(this$static, contents){
 function StyleInjector$StyleInjectorImpl(){
 }
 
-defineClass(1395, 1, {}, StyleInjector$StyleInjectorImpl);
+defineClass(1396, 1, {}, StyleInjector$StyleInjectorImpl);
 var IMPL;
-var Lcom_google_gwt_dom_client_StyleInjector$StyleInjectorImpl_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/StyleInjectorImpl', 1395);
-defineClass(1495, 1, {});
+var Lcom_google_gwt_dom_client_StyleInjector$StyleInjectorImpl_2_classLit = createForClass('com.google.gwt.dom.client', 'StyleInjector/StyleInjectorImpl', 1396);
+defineClass(1496, 1, {});
 _.toString$ = function toString_3(){
   return 'An event type';
 }
 ;
-var Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 1495);
+var Lcom_google_web_bindery_event_shared_Event_2_classLit = createForClass('com.google.web.bindery.event.shared', 'Event', 1496);
 function $overrideSource(this$static, source){
   this$static.source = source;
 }
 
-defineClass($intern_14, 1495, {});
+defineClass($intern_14, 1496, {});
 _.revive = function revive(){
   this.dead = false;
   this.source = null;
@@ -3082,13 +3098,13 @@ function fireNativeEvent(nativeEvent, handlerSource, relativeElem){
   }
 }
 
-defineClass(1504, $intern_14, {});
+defineClass(1505, $intern_14, {});
 _.getAssociatedType = function getAssociatedType(){
   return this.getAssociatedType_0();
 }
 ;
 var registered;
-var Lcom_google_gwt_event_dom_client_DomEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DomEvent', 1504);
+var Lcom_google_gwt_event_dom_client_DomEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'DomEvent', 1505);
 function $clinit_ChangeEvent(){
   $clinit_ChangeEvent = emptyMethod;
   TYPE_0 = new DomEvent$Type('change', new ChangeEvent);
@@ -3097,7 +3113,7 @@ function $clinit_ChangeEvent(){
 function ChangeEvent(){
 }
 
-defineClass(1334, 1504, {}, ChangeEvent);
+defineClass(1335, 1505, {}, ChangeEvent);
 _.dispatch = function dispatch_0(handler){
   dynamicCast(handler, 319).onChange(this);
 }
@@ -3107,11 +3123,11 @@ _.getAssociatedType_0 = function getAssociatedType_1(){
 }
 ;
 var TYPE_0;
-var Lcom_google_gwt_event_dom_client_ChangeEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ChangeEvent', 1334);
-defineClass(1505, 1504, {});
-var Lcom_google_gwt_event_dom_client_HumanInputEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'HumanInputEvent', 1505);
+var Lcom_google_gwt_event_dom_client_ChangeEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'ChangeEvent', 1335);
 defineClass(1506, 1505, {});
-var Lcom_google_gwt_event_dom_client_MouseEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseEvent', 1506);
+var Lcom_google_gwt_event_dom_client_HumanInputEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'HumanInputEvent', 1506);
+defineClass(1507, 1506, {});
+var Lcom_google_gwt_event_dom_client_MouseEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseEvent', 1507);
 function $clinit_ClickEvent(){
   $clinit_ClickEvent = emptyMethod;
   TYPE_1 = new DomEvent$Type('click', new ClickEvent);
@@ -3120,7 +3136,7 @@ function $clinit_ClickEvent(){
 function ClickEvent(){
 }
 
-defineClass(1089, 1506, {}, ClickEvent);
+defineClass(1089, 1507, {}, ClickEvent);
 _.dispatch = function dispatch_1(handler){
   dynamicCast(handler, 30).onClick(this);
 }
@@ -3173,7 +3189,7 @@ function $clinit_DoubleClickEvent(){
 function DoubleClickEvent(){
 }
 
-defineClass(1331, 1506, {}, DoubleClickEvent);
+defineClass(1331, 1507, {}, DoubleClickEvent);
 _.dispatch = function dispatch_2(handler){
   $onDoubleClick(dynamicCast(handler, 1535).this$11.owner);
 }
@@ -3196,7 +3212,7 @@ function $dispatch_0(handler){
 function MouseDownEvent(){
 }
 
-defineClass(1374, 1506, {}, MouseDownEvent);
+defineClass(1375, 1507, {}, MouseDownEvent);
 _.dispatch = function dispatch_6(handler){
   $dispatch_0(dynamicCast(handler, 1543));
 }
@@ -3206,7 +3222,7 @@ _.getAssociatedType_0 = function getAssociatedType_7(){
 }
 ;
 var TYPE_6;
-var Lcom_google_gwt_event_dom_client_MouseDownEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseDownEvent', 1374);
+var Lcom_google_gwt_event_dom_client_MouseDownEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseDownEvent', 1375);
 function $clinit_MouseOutEvent(){
   $clinit_MouseOutEvent = emptyMethod;
   TYPE_7 = new DomEvent$Type('mouseout', new MouseOutEvent);
@@ -3219,7 +3235,7 @@ function $dispatch_1(handler){
 function MouseOutEvent(){
 }
 
-defineClass(1376, 1506, {}, MouseOutEvent);
+defineClass(1377, 1507, {}, MouseOutEvent);
 _.dispatch = function dispatch_7(handler){
   $dispatch_1(dynamicCast(handler, 1545));
 }
@@ -3229,7 +3245,7 @@ _.getAssociatedType_0 = function getAssociatedType_8(){
 }
 ;
 var TYPE_7;
-var Lcom_google_gwt_event_dom_client_MouseOutEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseOutEvent', 1376);
+var Lcom_google_gwt_event_dom_client_MouseOutEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseOutEvent', 1377);
 function $clinit_MouseOverEvent(){
   $clinit_MouseOverEvent = emptyMethod;
   TYPE_8 = new DomEvent$Type('mouseover', new MouseOverEvent);
@@ -3238,7 +3254,7 @@ function $clinit_MouseOverEvent(){
 function MouseOverEvent(){
 }
 
-defineClass(1330, 1506, {}, MouseOverEvent);
+defineClass(1330, 1507, {}, MouseOverEvent);
 _.dispatch = function dispatch_8(handler){
   $onHover(dynamicCast(handler, 1534).this$11.owner);
 }
@@ -3261,7 +3277,7 @@ function $dispatch_2(handler){
 function MouseUpEvent(){
 }
 
-defineClass(1375, 1506, {}, MouseUpEvent);
+defineClass(1376, 1507, {}, MouseUpEvent);
 _.dispatch = function dispatch_9(handler){
   $dispatch_2(dynamicCast(handler, 1544));
 }
@@ -3271,7 +3287,7 @@ _.getAssociatedType_0 = function getAssociatedType_10(){
 }
 ;
 var TYPE_9;
-var Lcom_google_gwt_event_dom_client_MouseUpEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseUpEvent', 1375);
+var Lcom_google_gwt_event_dom_client_MouseUpEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'MouseUpEvent', 1376);
 function $unsafeGet(this$static, key){
   return this$static.map_0[key];
 }
@@ -3284,9 +3300,9 @@ function PrivateMap(){
   this.map_0 = {};
 }
 
-defineClass(1151, 1, {}, PrivateMap);
-var Lcom_google_gwt_event_dom_client_PrivateMap_2_classLit = createForClass('com.google.gwt.event.dom.client', 'PrivateMap', 1151);
-defineClass(1517, 1505, {});
+defineClass(1152, 1, {}, PrivateMap);
+var Lcom_google_gwt_event_dom_client_PrivateMap_2_classLit = createForClass('com.google.gwt.event.dom.client', 'PrivateMap', 1152);
+defineClass(1517, 1506, {});
 var Lcom_google_gwt_event_dom_client_TouchEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchEvent', 1517);
 function $clinit_TouchCancelEvent(){
   $clinit_TouchCancelEvent = emptyMethod;
@@ -3296,9 +3312,9 @@ function $clinit_TouchCancelEvent(){
 function TouchCancelEvent(){
 }
 
-defineClass(1380, 1517, {}, TouchCancelEvent);
+defineClass(1381, 1517, {}, TouchCancelEvent);
 _.dispatch = function dispatch_11(handler){
-  dynamicCast(handler, 1475).onTouchCancel(this);
+  dynamicCast(handler, 1476).onTouchCancel(this);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_12(){
@@ -3306,7 +3322,7 @@ _.getAssociatedType_0 = function getAssociatedType_12(){
 }
 ;
 var TYPE_11;
-var Lcom_google_gwt_event_dom_client_TouchCancelEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchCancelEvent', 1380);
+var Lcom_google_gwt_event_dom_client_TouchCancelEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchCancelEvent', 1381);
 function $clinit_TouchEndEvent(){
   $clinit_TouchEndEvent = emptyMethod;
   TYPE_12 = new DomEvent$Type('touchend', new TouchEndEvent);
@@ -3315,9 +3331,9 @@ function $clinit_TouchEndEvent(){
 function TouchEndEvent(){
 }
 
-defineClass(1379, 1517, {}, TouchEndEvent);
+defineClass(1380, 1517, {}, TouchEndEvent);
 _.dispatch = function dispatch_12(handler){
-  dynamicCast(handler, 1474).onTouchEnd(this);
+  dynamicCast(handler, 1475).onTouchEnd(this);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_13(){
@@ -3325,7 +3341,7 @@ _.getAssociatedType_0 = function getAssociatedType_13(){
 }
 ;
 var TYPE_12;
-var Lcom_google_gwt_event_dom_client_TouchEndEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchEndEvent', 1379);
+var Lcom_google_gwt_event_dom_client_TouchEndEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchEndEvent', 1380);
 function $clinit_TouchStartEvent(){
   $clinit_TouchStartEvent = emptyMethod;
   TYPE_14 = new DomEvent$Type('touchstart', new TouchStartEvent);
@@ -3334,9 +3350,9 @@ function $clinit_TouchStartEvent(){
 function TouchStartEvent(){
 }
 
-defineClass(1377, 1517, {}, TouchStartEvent);
+defineClass(1378, 1517, {}, TouchStartEvent);
 _.dispatch = function dispatch_14(handler){
-  dynamicCast(handler, 1473).onTouchStart(this);
+  dynamicCast(handler, 1474).onTouchStart(this);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_15(){
@@ -3344,7 +3360,7 @@ _.getAssociatedType_0 = function getAssociatedType_15(){
 }
 ;
 var TYPE_14;
-var Lcom_google_gwt_event_dom_client_TouchStartEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchStartEvent', 1377);
+var Lcom_google_gwt_event_dom_client_TouchStartEvent_2_classLit = createForClass('com.google.gwt.event.dom.client', 'TouchStartEvent', 1378);
 function AttachEvent(attached){
   this.attached = attached;
 }
@@ -3403,7 +3419,7 @@ function fire_2(source){
   }
 }
 
-defineClass(1371, $intern_14, {}, ResizeEvent);
+defineClass(1372, $intern_14, {}, ResizeEvent);
 _.dispatch = function dispatch_17(handler){
   dynamicCast(handler, 318).onResize(this);
 }
@@ -3413,7 +3429,7 @@ _.getAssociatedType = function getAssociatedType_18(){
 }
 ;
 var TYPE_17;
-var Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 1371);
+var Lcom_google_gwt_event_logical_shared_ResizeEvent_2_classLit = createForClass('com.google.gwt.event.logical.shared', 'ResizeEvent', 1372);
 function ValueChangeEvent(value_0){
   this.value_0 = value_0;
 }
@@ -3482,8 +3498,8 @@ _.fireEvent = function fireEvent(event_0){
 }
 ;
 var Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 180);
-defineClass(1498, 1, {});
-var Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 1498);
+defineClass(1499, 1, {});
+var Lcom_google_web_bindery_event_shared_EventBus_2_classLit = createForClass('com.google.web.bindery.event.shared', 'EventBus', 1499);
 function $defer(this$static, command){
   !this$static.deferredDeltas && (this$static.deferredDeltas = new ArrayList);
   $add_32(this$static.deferredDeltas, command);
@@ -3595,7 +3611,7 @@ function $handleQueuedAddsAndRemoves(this$static){
   if (this$static.deferredDeltas) {
     try {
       for (c$iterator = new AbstractList$IteratorImpl(this$static.deferredDeltas); c$iterator.i < c$iterator.this$01_0.size_1();) {
-        c = (checkCriticalElement(c$iterator.i < c$iterator.this$01_0.size_1()) , dynamicCast(c$iterator.this$01_0.get_1(c$iterator.last = c$iterator.i++), 1467));
+        c = (checkCriticalElement(c$iterator.i < c$iterator.this$01_0.size_1()) , dynamicCast(c$iterator.this$01_0.get_1(c$iterator.last = c$iterator.i++), 1468));
         c.execute_1();
       }
     }
@@ -3618,7 +3634,7 @@ function SimpleEventBus_0(fireInReverseOrder){
   this.isReverseOrder = fireInReverseOrder;
 }
 
-defineClass(279, 1498, {}, SimpleEventBus);
+defineClass(279, 1499, {}, SimpleEventBus);
 _.addHandler = function addHandler(type_0, handler){
   return $doAdd(this, type_0, handler);
 }
@@ -3652,7 +3668,7 @@ function LegacyHandlerWrapper(real){
   this.real = real;
 }
 
-defineClass(797, 1, {1532:1, 1465:1}, LegacyHandlerWrapper);
+defineClass(797, 1, {1532:1, 1466:1}, LegacyHandlerWrapper);
 _.removeHandler = function removeHandler(){
   $removeHandler(this.real);
 }
@@ -3764,9 +3780,9 @@ function $clinit_LocaleInfo(){
 function LocaleInfo(){
 }
 
-defineClass(1162, 1, {}, LocaleInfo);
+defineClass(1163, 1, {}, LocaleInfo);
 var instance_2;
-var Lcom_google_gwt_i18n_client_LocaleInfo_2_classLit = createForClass('com.google.gwt.i18n.client', 'LocaleInfo', 1162);
+var Lcom_google_gwt_i18n_client_LocaleInfo_2_classLit = createForClass('com.google.gwt.i18n.client', 'LocaleInfo', 1163);
 function cloneSubrange(array, toIndex){
   var result;
   result = array.slice(0, toIndex);
@@ -4200,7 +4216,7 @@ function Layout$1(this$0, val$callback){
   Animation.call(this);
 }
 
-defineClass(1354, 290, {}, Layout$1);
+defineClass(1355, 290, {}, Layout$1);
 _.onCancel = function onCancel_0(){
   this.this$01.animation_0 = null;
   $layout(this.this$01, 0, null);
@@ -4226,7 +4242,7 @@ _.onUpdate = function onUpdate(progress){
   }
 }
 ;
-var Lcom_google_gwt_layout_client_Layout$1_2_classLit = createForClass('com.google.gwt.layout.client', 'Layout/1', 1354);
+var Lcom_google_gwt_layout_client_Layout$1_2_classLit = createForClass('com.google.gwt.layout.client', 'Layout/1', 1355);
 function Layout$Layer(container, child, userObject){
   this.targetLeftUnit = ($clinit_Style$Unit() , PX);
   this.targetTopUnit = PX;
@@ -4382,9 +4398,9 @@ function createRuler(widthUnit, heightUnit){
   return ruler;
 }
 
-defineClass(1368, 1, {}, LayoutImpl);
+defineClass(1369, 1, {}, LayoutImpl);
 var fixedRuler;
-var Lcom_google_gwt_layout_client_LayoutImpl_2_classLit = createForClass('com.google.gwt.layout.client', 'LayoutImpl', 1368);
+var Lcom_google_gwt_layout_client_LayoutImpl_2_classLit = createForClass('com.google.gwt.layout.client', 'LayoutImpl', 1369);
 function PlaceHistoryHandler$DefaultHistorian(){
 }
 
@@ -4504,12 +4520,12 @@ function SafeUriString(uri_0){
   this.uri_0 = uri_0;
 }
 
-defineClass(35, 1, {1471:1, 35:1}, SafeUriString);
+defineClass(35, 1, {1472:1, 35:1}, SafeUriString);
 _.equals$ = function equals_4(obj){
-  if (!instanceOf(obj, 1471)) {
+  if (!instanceOf(obj, 1472)) {
     return false;
   }
-  return $equals_0(this.uri_0, dynamicCast(dynamicCast(obj, 1471), 35).uri_0);
+  return $equals_0(this.uri_0, dynamicCast(dynamicCast(obj, 1472), 35).uri_0);
 }
 ;
 _.hashCode$ = function hashCode_6(){
@@ -4568,8 +4584,8 @@ function UiBinderUtil$TempAttachment(origParent, origSibling, element){
   this.element = element;
 }
 
-defineClass(1152, 1, {}, UiBinderUtil$TempAttachment);
-var Lcom_google_gwt_uibinder_client_UiBinderUtil$TempAttachment_2_classLit = createForClass('com.google.gwt.uibinder.client', 'UiBinderUtil/TempAttachment', 1152);
+defineClass(1153, 1, {}, UiBinderUtil$TempAttachment);
+var Lcom_google_gwt_uibinder_client_UiBinderUtil$TempAttachment_2_classLit = createForClass('com.google.gwt.uibinder.client', 'UiBinderUtil/TempAttachment', 1153);
 function $addStyleName(this$static, style){
   setStyleName(this$static.getStyleElement(), style, true);
 }
@@ -4616,11 +4632,11 @@ function $sinkBitlessEvent(this$static, eventTypeName){
   $sinkBitlessEvent_0(this$static.element, eventTypeName);
 }
 
-function $toString_0(this$static){
+function $toString_1(this$static){
   if (!this$static.element) {
     return '(null handle)';
   }
-  return ($clinit_DOM() , this$static.element).outerHTML;
+  return $toString_0(($clinit_DOM() , this$static.element));
 }
 
 function setStyleName(elem, style, add_0){
@@ -4649,7 +4665,7 @@ _.resolvePotentialElement = function resolvePotentialElement(){
 }
 ;
 _.toString$ = function toString_8(){
-  return $toString_0(this);
+  return $toString_1(this);
 }
 ;
 var Lcom_google_gwt_user_client_ui_UIObject_2_classLit = createForClass('com.google.gwt.user.client.ui', 'UIObject', 22);
@@ -4689,7 +4705,7 @@ function $onBrowserEvent_0(this$static, event_0){
   switch ($clinit_DOM() , $eventGetTypeInt(event_0.type)) {
     case 16:
     case 32:
-      related = event_0.relatedTarget;
+      related = $eventGetRelatedTarget(event_0);
       if (!!related && $isOrHasChild(this$static.element, related)) {
         return;
       }
@@ -4903,7 +4919,7 @@ _.onLoad = function onLoad_2(){
 var Lcom_google_gwt_user_client_ui_Image_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image', 151);
 function $clinit_DOM(){
   $clinit_DOM = emptyMethod;
-  $clinit_DOMImplStandard();
+  $clinit_DOMImplMozilla();
 }
 
 function dispatchEvent_0(evt, elem, listener){
@@ -4947,12 +4963,6 @@ function resolve(maybePotential){
   return maybePotential.__gwt_resolve?maybePotential.__gwt_resolve():maybePotential;
 }
 
-function sinkEvents_0(elem, eventBits){
-  $clinit_DOM();
-  $maybeInitializeEventSystem();
-  $sinkEventsImpl(elem, eventBits);
-}
-
 var currentEvent = null, sCaptureElem;
 function $onModuleLoad(){
   var allowedModes, currentMode, i;
@@ -4970,10 +4980,9 @@ function getTypeInt(typeName){
   return $eventGetTypeInt(($clinit_DOM() , typeName));
 }
 
-function sinkEvents_1(elem, eventBits){
+function sinkEvents_0(elem, eventBits){
   $clinit_DOM();
-  $maybeInitializeEventSystem();
-  $sinkEventsImpl(elem, eventBits);
+  $sinkEvents_0(elem, eventBits);
 }
 
 var handlers_0;
@@ -5006,8 +5015,8 @@ function $clinit_History(){
 }
 
 function getDecodedHash(){
-  var hashToken;
-  hashToken = $wnd.location.hash;
+  var hashToken, href_0, hashLoc;
+  hashToken = (href_0 = $wnd.location.href , hashLoc = href_0.indexOf('#') , hashLoc > 0?href_0.substring(hashLoc):'');
   if (hashToken == null || !hashToken.length) {
     return '';
   }
@@ -5138,7 +5147,7 @@ function Window$ClosingEvent(){
 
 defineClass(710, $intern_14, {}, Window$ClosingEvent);
 _.dispatch = function dispatch_24(handler){
-  $setMessage(this, dynamicCast(handler, 1466).onLeaveQuestion);
+  $setMessage(this, dynamicCast(handler, 1467).onLeaveQuestion);
 }
 ;
 _.getAssociatedType = function getAssociatedType_25(){
@@ -5192,13 +5201,13 @@ function $eventGetTypeInt(eventType){
       return 65536;
     case 'DOMMouseScroll':
     case 'mousewheel':
-      return 131072;
+      return $intern_28;
     case 'contextmenu':
       return 262144;
     case 'paste':
       return $intern_21;
     case 'touchstart':
-      return $intern_28;
+      return $intern_29;
     case 'touchmove':
       return 2097152;
     case 'touchend':
@@ -5206,11 +5215,11 @@ function $eventGetTypeInt(eventType){
     case 'touchcancel':
       return 8388608;
     case 'gesturestart':
-      return $intern_29;
-    case 'gesturechange':
       return $intern_30;
-    case 'gestureend':
+    case 'gesturechange':
       return $intern_31;
+    case 'gestureend':
+      return $intern_32;
     default:return -1;
   }
 }
@@ -5218,6 +5227,7 @@ function $eventGetTypeInt(eventType){
 function $maybeInitializeEventSystem(){
   if (!eventSystemIsInitialized) {
     $initEventSystem_0();
+    $initSyntheticMouseUpEvents();
     eventSystemIsInitialized = true;
   }
 }
@@ -5284,11 +5294,6 @@ function $sinkBitlessEventImpl(elem, eventTypeName){
   elem.addEventListener(eventTypeName, dispatcher, false);
 }
 
-function $sinkEvents_0(elem, bits){
-  $maybeInitializeEventSystem();
-  $sinkEventsImpl(elem, bits);
-}
-
 function $sinkEventsImpl(elem, bits){
   var chMask = (elem.__eventBits || 0) ^ bits;
   elem.__eventBits = bits;
@@ -5311,16 +5316,16 @@ function $sinkEventsImpl(elem, bits){
   chMask & $intern_27 && (elem.onscroll = bits & $intern_27?dispatchEvent_1:null);
   chMask & 32768 && (elem.onload = bits & 32768?dispatchUnhandledEvent:null);
   chMask & 65536 && (elem.onerror = bits & 65536?dispatchEvent_1:null);
-  chMask & 131072 && (elem.onmousewheel = bits & 131072?dispatchEvent_1:null);
+  chMask & $intern_28 && (elem.onmousewheel = bits & $intern_28?dispatchEvent_1:null);
   chMask & 262144 && (elem.oncontextmenu = bits & 262144?dispatchEvent_1:null);
   chMask & $intern_21 && (elem.onpaste = bits & $intern_21?dispatchEvent_1:null);
-  chMask & $intern_28 && (elem.ontouchstart = bits & $intern_28?dispatchEvent_1:null);
+  chMask & $intern_29 && (elem.ontouchstart = bits & $intern_29?dispatchEvent_1:null);
   chMask & 2097152 && (elem.ontouchmove = bits & 2097152?dispatchEvent_1:null);
   chMask & $intern_20 && (elem.ontouchend = bits & $intern_20?dispatchEvent_1:null);
   chMask & 8388608 && (elem.ontouchcancel = bits & 8388608?dispatchEvent_1:null);
-  chMask & $intern_29 && (elem.ongesturestart = bits & $intern_29?dispatchEvent_1:null);
-  chMask & $intern_30 && (elem.ongesturechange = bits & $intern_30?dispatchEvent_1:null);
-  chMask & $intern_31 && (elem.ongestureend = bits & $intern_31?dispatchEvent_1:null);
+  chMask & $intern_30 && (elem.ongesturestart = bits & $intern_30?dispatchEvent_1:null);
+  chMask & $intern_31 && (elem.ongesturechange = bits & $intern_31?dispatchEvent_1:null);
+  chMask & $intern_32 && (elem.ongestureend = bits & $intern_32?dispatchEvent_1:null);
 }
 
 function dispatchCapturedEvent(evt){
@@ -5328,6 +5333,7 @@ function dispatchCapturedEvent(evt){
 }
 
 function dispatchCapturedMouseEvent(evt){
+  $clinit_DOMImplStandard();
   !previewEvent_0(evt);
   return;
 }
@@ -5348,21 +5354,47 @@ function dispatchEvent_2(evt){
 
 function dispatchUnhandledEvent_0(evt){
   var element;
-  element = $eventGetCurrentTarget(evt);
+  element = evt.currentTarget;
   $setPropertyString(element, '__gwtLastUnhandledEvent', evt.type);
   dispatchEvent_2(evt);
 }
 
 function getFirstAncestorWithListener(evt){
   var curElem;
-  curElem = $eventGetCurrentTarget(evt);
+  curElem = evt.currentTarget;
   while (!!curElem && !getEventListener(curElem)) {
     curElem = curElem.parentNode;
   }
   return curElem;
 }
 
-var bitlessEventDispatchers, captureEventDispatchers, dispatchEvent_1, dispatchUnhandledEvent;
+var bitlessEventDispatchers, captureElem, captureEventDispatchers, dispatchEvent_1, dispatchUnhandledEvent;
+function $clinit_DOMImplMozilla(){
+  $clinit_DOMImplMozilla = emptyMethod;
+  $clinit_DOMImplStandard();
+  captureEventDispatchers['DOMMouseScroll'] = dispatchCapturedMouseEvent;
+}
+
+function $initSyntheticMouseUpEvents(){
+  $wnd.addEventListener('mouseout', $entry(function(evt){
+    var cap = ($clinit_DOMImplStandard() , captureElem);
+    if (cap && !evt.relatedTarget) {
+      if ('html' == evt.target.tagName.toLowerCase()) {
+        var muEvent = $doc.createEvent('MouseEvents');
+        muEvent.initMouseEvent('mouseup', true, true, $wnd, 0, evt.screenX, evt.screenY, evt.clientX, evt.clientY, evt.ctrlKey, evt.altKey, evt.shiftKey, evt.metaKey, evt.button, null);
+        cap.dispatchEvent(muEvent);
+      }
+    }
+  }
+  ), true);
+}
+
+function $sinkEvents_0(elem, bits){
+  $maybeInitializeEventSystem();
+  $sinkEventsImpl(elem, bits);
+  bits & $intern_28 && elem.addEventListener('DOMMouseScroll', ($clinit_DOMImplStandard() , dispatchEvent_1), false);
+}
+
 function foreach_0(map_0, fn){
   for (var e in map_0) {
     map_0.hasOwnProperty(e) && fn(e, map_0[e]);
@@ -5425,7 +5457,7 @@ function $clear_1(this$static){
   }
 }
 
-defineClass(1502, 18, $intern_32);
+defineClass(1503, 18, $intern_33);
 _.add_0 = function add_1(child){
   throw new UnsupportedOperationException_0('This panel does not support no-arg add()');
 }
@@ -5442,7 +5474,7 @@ _.doDetachChildren = function doDetachChildren_0(){
   tryCommand_0(this, ($clinit_AttachDetachException() , detachCommand));
 }
 ;
-var Lcom_google_gwt_user_client_ui_Panel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Panel', 1502);
+var Lcom_google_gwt_user_client_ui_Panel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Panel', 1503);
 function $add_0(this$static, child, container){
   $add_1(this$static, child, ($clinit_DOM() , container));
 }
@@ -5503,7 +5535,7 @@ function ComplexPanel(){
   this.children = new WidgetCollection(this);
 }
 
-defineClass(183, 1502, $intern_32);
+defineClass(183, 1503, $intern_33);
 _.iterator = function iterator_0(){
   return new WidgetCollection$WidgetIterator(this.children);
 }
@@ -5530,7 +5562,7 @@ function changeToStaticPositioning(elem){
   $setPropertyImpl(elem.style, 'position', '');
 }
 
-defineClass(1147, 183, $intern_33);
+defineClass(1148, 183, $intern_34);
 _.add_0 = function add_2(w){
   $add_2(this, w);
 }
@@ -5543,7 +5575,7 @@ _.remove = function remove_1(w){
   return $remove_1(this, w);
 }
 ;
-var Lcom_google_gwt_user_client_ui_AbsolutePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AbsolutePanel', 1147);
+var Lcom_google_gwt_user_client_ui_AbsolutePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AbsolutePanel', 1148);
 function $clinit_AttachDetachException(){
   $clinit_AttachDetachException = emptyMethod;
   attachCommand = new AttachDetachException$1;
@@ -5602,7 +5634,7 @@ _.execute_2 = function execute_12(w){
 var Lcom_google_gwt_user_client_ui_AttachDetachException$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'AttachDetachException/2', 1078);
 function $clinit_FocusWidget(){
   $clinit_FocusWidget = emptyMethod;
-  impl_1 = ($clinit_FocusImpl() , $clinit_FocusImpl() , implWidget);
+  $clinit_FocusImpl();
 }
 
 function $isEnabled(this$static){
@@ -5620,9 +5652,9 @@ function FocusWidget(elem){
   $setElement_0(this, ($clinit_DOM() , elem));
 }
 
-defineClass(292, 18, $intern_34);
+defineClass(292, 18, $intern_35);
 _.getTabIndex = function getTabIndex(){
-  return $getTabIndex(($clinit_DOM() , this.element));
+  return ($clinit_DOM() , this.element).tabIndex;
 }
 ;
 _.isEnabled = function isEnabled(){
@@ -5637,7 +5669,6 @@ _.setTabIndex = function setTabIndex(index_0){
   $setTabIndex(($clinit_DOM() , this.element), index_0);
 }
 ;
-var impl_1;
 var Lcom_google_gwt_user_client_ui_FocusWidget_2_classLit = createForClass('com.google.gwt.user.client.ui', 'FocusWidget', 292);
 function $setTextOrHtml(this$static, content_0){
   $setInnerText(this$static.element, content_0);
@@ -5707,7 +5738,7 @@ function HTMLPanel(html){
   $setInnerHTML(this.element, html);
 }
 
-defineClass(55, 183, $intern_32, HTMLPanel);
+defineClass(55, 183, $intern_33, HTMLPanel);
 _.add_0 = function add_5(widget){
   $add_6(this, widget);
 }
@@ -5724,13 +5755,13 @@ function $clinit_HasHorizontalAlignment(){
 }
 
 var ALIGN_DEFAULT, ALIGN_LEFT, ALIGN_LOCALE_START;
-defineClass(1500, 1, {});
-var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$AutoHorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/AutoHorizontalAlignmentConstant', 1500);
+defineClass(1501, 1, {});
+var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$AutoHorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/AutoHorizontalAlignmentConstant', 1501);
 function HasHorizontalAlignment$HorizontalAlignmentConstant(textAlignString){
   this.textAlignString = textAlignString;
 }
 
-defineClass(243, 1500, {}, HasHorizontalAlignment$HorizontalAlignmentConstant);
+defineClass(243, 1501, {}, HasHorizontalAlignment$HorizontalAlignmentConstant);
 var Lcom_google_gwt_user_client_ui_HasHorizontalAlignment$HorizontalAlignmentConstant_2_classLit = createForClass('com.google.gwt.user.client.ui', 'HasHorizontalAlignment/HorizontalAlignmentConstant', 243);
 function $onLoad(this$static, image){
   var unhandledEvent;
@@ -5780,8 +5811,8 @@ function $setUrl_3(image, url_0, width_0, height){
 
 function Image$UnclippedState(image){
   $replaceElement(image, $doc.createElement('img'));
-  sinkEvents_1(($clinit_DOM() , image.element), 32768);
-  image.eventsToSink == -1?sinkEvents_0(image.element, 133398655 | (image.element.__eventBits || 0)):(image.eventsToSink |= 133398655);
+  sinkEvents_0(($clinit_DOM() , image.element), 32768);
+  image.eventsToSink == -1?$sinkEvents_0(image.element, 133398655 | (image.element.__eventBits || 0)):(image.eventsToSink |= 133398655);
 }
 
 defineClass(214, 1087, {}, Image$UnclippedState);
@@ -5800,7 +5831,7 @@ function LayoutCommand(layout){
   this.layout = layout;
 }
 
-defineClass(1407, 1, {}, LayoutCommand);
+defineClass(1408, 1, {}, LayoutCommand);
 _.execute_1 = function execute_17(){
   this.scheduled = false;
   if (this.canceled) {
@@ -5812,12 +5843,12 @@ _.execute_1 = function execute_17(){
 _.canceled = false;
 _.duration_0 = 0;
 _.scheduled = false;
-var Lcom_google_gwt_user_client_ui_LayoutCommand_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand', 1407);
+var Lcom_google_gwt_user_client_ui_LayoutCommand_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand', 1408);
 function LayoutCommand$1(){
 }
 
-defineClass(1408, 1, {}, LayoutCommand$1);
-var Lcom_google_gwt_user_client_ui_LayoutCommand$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand/1', 1408);
+defineClass(1409, 1, {}, LayoutCommand$1);
+var Lcom_google_gwt_user_client_ui_LayoutCommand$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutCommand/1', 1409);
 function $add_9(this$static, widget){
   $insert_2(this$static, widget, this$static.children.size_0);
 }
@@ -5840,7 +5871,7 @@ function $onResize_0(this$static){
   }
 }
 
-defineClass(1362, 183, $intern_35);
+defineClass(1363, 183, $intern_36);
 _.add_0 = function add_8(widget){
   $add_9(this, widget);
 }
@@ -5864,7 +5895,7 @@ _.remove = function remove_10(w){
   return removed;
 }
 ;
-var Lcom_google_gwt_user_client_ui_LayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutPanel', 1362);
+var Lcom_google_gwt_user_client_ui_LayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'LayoutPanel', 1363);
 function $checkIndex(this$static, index_0){
   if (index_0 < 0 || index_0 >= ($clinit_DOM() , this$static.element).options.length) {
     throw new IndexOutOfBoundsException;
@@ -5895,8 +5926,8 @@ function $insertItem(this$static, item_0, value_0, index_0){
   }
 }
 
-defineClass(1170, 292, $intern_34);
-var Lcom_google_gwt_user_client_ui_ListBox_2_classLit = createForClass('com.google.gwt.user.client.ui', 'ListBox', 1170);
+defineClass(1171, 292, $intern_35);
+var Lcom_google_gwt_user_client_ui_ListBox_2_classLit = createForClass('com.google.gwt.user.client.ui', 'ListBox', 1171);
 function $clinit_PotentialElement(){
   $clinit_PotentialElement = emptyMethod;
   declareShim();
@@ -5964,14 +5995,14 @@ function $containsAll(this$static, c){
   checkNotNull(c);
   for (e$iterator = c.iterator(); e$iterator.hasNext();) {
     e = e$iterator.next_0();
-    if (!this$static.contains_0(e)) {
+    if (!this$static.contains(e)) {
       return false;
     }
   }
   return true;
 }
 
-function $toString_1(this$static){
+function $toString_2(this$static){
   var comma, e, e$iterator, sb;
   sb = new StringBuilder_1('[');
   comma = false;
@@ -5984,12 +6015,12 @@ function $toString_1(this$static){
   return sb.string;
 }
 
-defineClass(1491, 1, $intern_36);
+defineClass(1492, 1, $intern_37);
 _.add_1 = function add_9(o){
   throw new UnsupportedOperationException_0('Add not supported on this collection');
 }
 ;
-_.contains_0 = function contains(o){
+_.contains = function contains(o){
   return $advanceToFind(this, o, false);
 }
 ;
@@ -6018,10 +6049,10 @@ _.toArray_0 = function toArray_0(a){
 }
 ;
 _.toString$ = function toString_9(){
-  return $toString_1(this);
+  return $toString_2(this);
 }
 ;
-var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 1491);
+var Ljava_util_AbstractCollection_2_classLit = createForClass('java.util', 'AbstractCollection', 1492);
 function RootLayoutPanel(){
   ComplexPanel.call(this);
   $setElement(this, $doc.createElement('div'));
@@ -6038,23 +6069,23 @@ function get_0(){
   return singleton_0;
 }
 
-defineClass(1363, 1362, $intern_35, RootLayoutPanel);
+defineClass(1364, 1363, $intern_36, RootLayoutPanel);
 _.onLoad = function onLoad_5(){
   $fillParent(this.layout.parentElem);
 }
 ;
 var singleton_0;
-var Lcom_google_gwt_user_client_ui_RootLayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel', 1363);
+var Lcom_google_gwt_user_client_ui_RootLayoutPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel', 1364);
 function RootLayoutPanel$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1364, 1, $intern_37, RootLayoutPanel$1);
+defineClass(1365, 1, $intern_38, RootLayoutPanel$1);
 _.onResize = function onResize_9(event_0){
   $onResize_0(this.this$01);
 }
 ;
-var Lcom_google_gwt_user_client_ui_RootLayoutPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel/1', 1364);
+var Lcom_google_gwt_user_client_ui_RootLayoutPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootLayoutPanel/1', 1365);
 function $clinit_RootPanel(){
   $clinit_RootPanel = emptyMethod;
   maybeDetachCommand = new RootPanel$1;
@@ -6119,29 +6150,29 @@ function getBodyElement(){
   return $doc.body;
 }
 
-defineClass(197, 1147, $intern_38, RootPanel);
+defineClass(197, 1148, $intern_39, RootPanel);
 var maybeDetachCommand, rootPanels, widgetsToDetach;
 var Lcom_google_gwt_user_client_ui_RootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel', 197);
 function RootPanel$1(){
 }
 
-defineClass(1149, 1, {}, RootPanel$1);
+defineClass(1150, 1, {}, RootPanel$1);
 _.execute_2 = function execute_20(w){
   w.isAttached_0() && w.onDetach();
 }
 ;
-var Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 1149);
+var Lcom_google_gwt_user_client_ui_RootPanel$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/1', 1150);
 function RootPanel$2(){
 }
 
-defineClass(1150, 1, {1533:1, 20:1}, RootPanel$2);
-var Lcom_google_gwt_user_client_ui_RootPanel$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/2', 1150);
+defineClass(1151, 1, {1533:1, 20:1}, RootPanel$2);
+var Lcom_google_gwt_user_client_ui_RootPanel$2_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/2', 1151);
 function RootPanel$DefaultRootPanel(){
   RootPanel.call(this, getBodyElement());
 }
 
-defineClass(1148, 197, $intern_38, RootPanel$DefaultRootPanel);
-var Lcom_google_gwt_user_client_ui_RootPanel$DefaultRootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/DefaultRootPanel', 1148);
+defineClass(1149, 197, $intern_39, RootPanel$DefaultRootPanel);
+var Lcom_google_gwt_user_client_ui_RootPanel$DefaultRootPanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'RootPanel/DefaultRootPanel', 1149);
 function $add_12(this$static, w){
   $insert_3(this$static, w, this$static.size_0);
 }
@@ -6247,27 +6278,25 @@ _.index_0 = 0;
 var Lcom_google_gwt_user_client_ui_WidgetCollection$WidgetIterator_2_classLit = createForClass('com.google.gwt.user.client.ui', 'WidgetCollection/WidgetIterator', 122);
 function $clinit_FocusImpl(){
   $clinit_FocusImpl = emptyMethod;
-  implPanel = new FocusImplSafari;
+  implPanel = new FocusImplStandard;
   implWidget = implPanel?new FocusImpl:implPanel;
 }
 
 function FocusImpl(){
 }
 
-defineClass(1161, 1, {}, FocusImpl);
+defineClass(1162, 1, {}, FocusImpl);
 var implPanel, implWidget;
-var Lcom_google_gwt_user_client_ui_impl_FocusImpl_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImpl', 1161);
-defineClass(1513, 1161, {});
-var Lcom_google_gwt_user_client_ui_impl_FocusImplStandard_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImplStandard', 1513);
-function FocusImplSafari(){
+var Lcom_google_gwt_user_client_ui_impl_FocusImpl_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImpl', 1162);
+function FocusImplStandard(){
 }
 
-defineClass(1243, 1513, {}, FocusImplSafari);
-var Lcom_google_gwt_user_client_ui_impl_FocusImplSafari_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImplSafari', 1243);
+defineClass(1244, 1162, {}, FocusImplStandard);
+var Lcom_google_gwt_user_client_ui_impl_FocusImplStandard_2_classLit = createForClass('com.google.gwt.user.client.ui.impl', 'FocusImplStandard', 1244);
 function assertCompileTimeUserAgent(){
   var runtimeValue;
   runtimeValue = $getRuntimeValue();
-  if (!$equals_0('safari', runtimeValue)) {
+  if (!$equals_0('gecko1_8', runtimeValue)) {
     throw new UserAgentAsserter$UserAgentAssertionError(runtimeValue);
   }
 }
@@ -6276,15 +6305,15 @@ function Error_0(message){
   Throwable.call(this, message);
 }
 
-defineClass(176, 54, $intern_39);
+defineClass(176, 54, $intern_40);
 var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 176);
-defineClass(116, 176, $intern_39);
+defineClass(116, 176, $intern_40);
 var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 116);
 function UserAgentAsserter$UserAgentAssertionError(runtimeValue){
-  Error_0.call(this, '' + ('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 54)?dynamicCast('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 54):null);
+  Error_0.call(this, '' + ('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (gecko1_8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (gecko1_8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 54)?dynamicCast('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (gecko1_8) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 54):null);
 }
 
-defineClass(439, 116, $intern_39, UserAgentAsserter$UserAgentAssertionError);
+defineClass(439, 116, $intern_40, UserAgentAsserter$UserAgentAssertionError);
 var Lcom_google_gwt_useragent_client_UserAgentAsserter$UserAgentAssertionError_2_classLit = createForClass('com.google.gwt.useragent.client', 'UserAgentAsserter/UserAgentAssertionError', 439);
 function $getRuntimeValue(){
   var ua = navigator.userAgent.toLowerCase();
@@ -6328,7 +6357,7 @@ function SimpleEventBus$1(this$0, val$type, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(713, 1, {1465:1}, SimpleEventBus$1);
+defineClass(713, 1, {1466:1}, SimpleEventBus$1);
 _.removeHandler = function removeHandler_0(){
   $removeHandler(this);
 }
@@ -6341,8 +6370,8 @@ function SimpleEventBus$2(this$0, val$type, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(714, 1, {1467:1}, SimpleEventBus$2);
-_.execute_1 = function execute_24(){
+defineClass(714, 1, {1468:1}, SimpleEventBus$2);
+_.execute_1 = function execute_25(){
   $doAddNow(this.this$01, this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
@@ -6354,8 +6383,8 @@ function SimpleEventBus$3(this$0, val$type, val$source, val$handler){
   this.val$handler4 = val$handler;
 }
 
-defineClass(381, 1, {1467:1}, SimpleEventBus$3);
-_.execute_1 = function execute_25(){
+defineClass(381, 1, {1468:1}, SimpleEventBus$3);
+_.execute_1 = function execute_26(){
   $doRemoveNow(this.this$01, this.val$type2, this.val$source3, this.val$handler4);
 }
 ;
@@ -6471,7 +6500,7 @@ function ChartWidget(){
   this.eventMap = new HashMap;
 }
 
-defineClass(310, 18, $intern_40);
+defineClass(310, 18, $intern_41);
 _.onLoad = function onLoad_7(){
   if (!this.unloaded) {
     return;
@@ -6504,22 +6533,22 @@ function ChartWidget$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1416, 1, {}, ChartWidget$1);
-_.execute_1 = function execute_26(){
+defineClass(1417, 1, {}, ChartWidget$1);
+_.execute_1 = function execute_27(){
   $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), new ChartWidget$1$1(this));
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ChartWidget$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1', 1416);
+var Lcom_googlecode_gwt_charts_client_ChartWidget$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1', 1417);
 function ChartWidget$1$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(1417, 1, {}, ChartWidget$1$1);
-_.execute_1 = function execute_27(){
+defineClass(1418, 1, {}, ChartWidget$1$1);
+_.execute_1 = function execute_28(){
   $redrawNow(this.this$11.this$01);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ChartWidget$1$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1/1', 1417);
+var Lcom_googlecode_gwt_charts_client_ChartWidget$1$1_2_classLit = createForClass('com.googlecode.gwt.charts.client', 'ChartWidget/1/1', 1418);
 function $clinit_ColumnType(){
   $clinit_ColumnType = emptyMethod;
   STRING = new ColumnType('STRING', 0, 'string');
@@ -6584,8 +6613,8 @@ function AjaxKeyConstants_(){
   this.cache = new HashMap;
 }
 
-defineClass(1436, 1, {}, AjaxKeyConstants_);
-var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxKeyConstants_1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxKeyConstants_', 1436);
+defineClass(1437, 1, {}, AjaxKeyConstants_);
+var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxKeyConstants_1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxKeyConstants_', 1437);
 function $clinit_AjaxKeyRepository(){
   $clinit_AjaxKeyRepository = emptyMethod;
   keys_1 = new AjaxKeyConstants_;
@@ -6679,12 +6708,12 @@ function AjaxLoader$1(val$version, val$copyOfSettings){
   this.val$copyOfSettings3 = val$copyOfSettings;
 }
 
-defineClass(1413, 1, $intern_41, AjaxLoader$1);
+defineClass(1414, 1, $intern_42, AjaxLoader$1);
 _.run = function run_0(){
   nativeLoadApi(this.val$api1, this.val$version2, this.val$copyOfSettings3);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxLoader$1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxLoader/1', 1413);
+var Lcom_googlecode_gwt_charts_client_ajaxloader_AjaxLoader$1_2_classLit = createForClass('com.googlecode.gwt.charts.client.ajaxloader', 'AjaxLoader/1', 1414);
 function $setCallback_0(this$static, onLoad){
   this$static.callback = function(){
     onLoad.run();
@@ -6700,7 +6729,7 @@ function CoreChartWidget(){
   ChartWidget.call(this);
 }
 
-defineClass(236, 310, $intern_40);
+defineClass(236, 310, $intern_41);
 _.recreate = function recreate_0(){
   $recreate(this);
 }
@@ -6710,12 +6739,12 @@ function AreaChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1420, 236, $intern_40, AreaChart);
+defineClass(1421, 236, $intern_41, AreaChart);
 _.createChartObject = function createChartObject(container){
   return new $wnd.google.visualization.AreaChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_AreaChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'AreaChart', 1420);
+var Lcom_googlecode_gwt_charts_client_corechart_AreaChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'AreaChart', 1421);
 function $setAnimation(this$static, animation){
   this$static.animation = animation;
 }
@@ -6740,37 +6769,37 @@ function BarChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1421, 236, $intern_40, BarChart);
+defineClass(1422, 236, $intern_41, BarChart);
 _.createChartObject = function createChartObject_0(container){
   return new $wnd.google.visualization.BarChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_BarChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BarChart', 1421);
+var Lcom_googlecode_gwt_charts_client_corechart_BarChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BarChart', 1422);
 function BubbleChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1422, 236, $intern_40, BubbleChart);
+defineClass(1423, 236, $intern_41, BubbleChart);
 _.createChartObject = function createChartObject_1(container){
   return new $wnd.google.visualization.BubbleChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_BubbleChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BubbleChart', 1422);
+var Lcom_googlecode_gwt_charts_client_corechart_BubbleChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'BubbleChart', 1423);
 function CandlestickChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(1423, 236, $intern_40, CandlestickChart);
+defineClass(1424, 236, $intern_41, CandlestickChart);
 _.createChartObject = function createChartObject_2(container){
   return new $wnd.google.visualization.CandlestickChart(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_corechart_CandlestickChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'CandlestickChart', 1423);
+var Lcom_googlecode_gwt_charts_client_corechart_CandlestickChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.corechart', 'CandlestickChart', 1424);
 function PieChart(){
   CoreChartWidget.call(this);
 }
 
-defineClass(311, 236, $intern_40, PieChart);
+defineClass(311, 236, $intern_41, PieChart);
 _.createChartObject = function createChartObject_3(container){
   return new $wnd.google.visualization.PieChart(container);
 }
@@ -6784,17 +6813,17 @@ function Gauge(){
   ChartWidget.call(this);
 }
 
-defineClass(1424, 310, $intern_40, Gauge);
+defineClass(1425, 310, $intern_41, Gauge);
 _.createChartObject = function createChartObject_4(container){
   return new $wnd.google.visualization.Gauge(container);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_gauge_Gauge_2_classLit = createForClass('com.googlecode.gwt.charts.client.gauge', 'Gauge', 1424);
+var Lcom_googlecode_gwt_charts_client_gauge_Gauge_2_classLit = createForClass('com.googlecode.gwt.charts.client.gauge', 'Gauge', 1425);
 function GeoChart(){
   ChartWidget.call(this);
 }
 
-defineClass(1419, 310, $intern_40, GeoChart);
+defineClass(1420, 310, $intern_41, GeoChart);
 _.createChartObject = function createChartObject_5(container){
   return new $wnd.google.visualization.GeoChart(container);
 }
@@ -6804,7 +6833,7 @@ _.redraw = function redraw_0(){
   $redraw(this);
 }
 ;
-var Lcom_googlecode_gwt_charts_client_geochart_GeoChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.geochart', 'GeoChart', 1419);
+var Lcom_googlecode_gwt_charts_client_geochart_GeoChart_2_classLit = createForClass('com.googlecode.gwt.charts.client.geochart', 'GeoChart', 1420);
 function $setColors_1(this$static, colors){
   this$static.colors = colors;
 }
@@ -7243,7 +7272,7 @@ function $setInSlot_0(this$static, slot, content_0){
 function $unregisterVisibleHandlers(this$static){
   var handlerRegistration, handlerRegistration$iterator;
   for (handlerRegistration$iterator = new AbstractList$IteratorImpl(this$static.visibleHandlerRegistrations); handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1();) {
-    handlerRegistration = (checkCriticalElement(handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1()) , dynamicCast(handlerRegistration$iterator.this$01_0.get_1(handlerRegistration$iterator.last = handlerRegistration$iterator.i++), 1465));
+    handlerRegistration = (checkCriticalElement(handlerRegistration$iterator.i < handlerRegistration$iterator.this$01_0.size_1()) , dynamicCast(handlerRegistration$iterator.this$01_0.get_1(handlerRegistration$iterator.last = handlerRegistration$iterator.i++), 1466));
     handlerRegistration.removeHandler();
   }
   this$static.visibleHandlerRegistrations.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
@@ -7259,7 +7288,7 @@ function PresenterWidget(eventBus, view){
   this.view = view;
 }
 
-defineClass(49, 277, $intern_42);
+defineClass(49, 277, $intern_43);
 _.equals$ = function equals_10(obj){
   return this === obj;
 }
@@ -7323,7 +7352,7 @@ function Presenter_1(eventBus, view, proxy, revealType, slot){
   this.slot = slot;
 }
 
-defineClass(56, 49, $intern_42);
+defineClass(56, 49, $intern_43);
 _.bind_0 = function bind_2(){
   $bind(this);
   instanceOf(this.proxy, 60) && $bind_2(dynamicCast(this.proxy, 60).getHandlerContainer());
@@ -7422,7 +7451,7 @@ function ViewImpl(){
   this.orderedSlots = new HashMap;
 }
 
-defineClass(59, 1, $intern_43);
+defineClass(59, 1, $intern_44);
 _.asWidget = function asWidget_1(){
   if (!this.widget) {
     throw new NullPointerException_0('widget cannot be null, you should call ViewImpl.initWidget() before.');
@@ -7508,7 +7537,7 @@ function ViewImpl$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(561, 1, $intern_44, ViewImpl$1);
+defineClass(561, 1, $intern_45, ViewImpl$1);
 _.onAttachOrDetach = function onAttachOrDetach_0(event_0){
   event_0.attached?this.this$01.onAttach():undefined;
 }
@@ -7921,7 +7950,7 @@ defineClass(336, 1, {}, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinje
 _.singleton_Key$type$com$gwtplatform$mvp$client$AutobindDisable$_annotation$$none$$ = null;
 _.singleton_Key$type$com$gwtplatform$mvp$client$RootPresenter$_annotation$$none$$ = null;
 var Lcom_gwtplatform_mvp_client_com_1gwtplatform_1mvp_1client_1DesktopGinjector_1DesktopGinjectorGinjector_1fragment_2_classLit = createForClass('com.gwtplatform.mvp.client', 'com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment', 336);
-defineClass(1501, 1, $intern_45);
+defineClass(1502, 1, $intern_46);
 _.getRawSlot = function getRawSlot(){
   return this;
 }
@@ -7934,8 +7963,8 @@ _.isRemovable = function isRemovable(){
   return true;
 }
 ;
-var Lcom_gwtplatform_mvp_client_presenter_slots_MultiSlot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'MultiSlot', 1501);
-defineClass(1518, 1501, $intern_45);
+var Lcom_gwtplatform_mvp_client_presenter_slots_MultiSlot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'MultiSlot', 1502);
+defineClass(1518, 1502, $intern_46);
 var Lcom_gwtplatform_mvp_client_presenter_slots_Slot_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'Slot', 1518);
 function LegacySlot(rawSlot){
   this.rawSlot = rawSlot;
@@ -7962,14 +7991,14 @@ function LegacySlotConvertor(){
   this.legacySlotMap = new HashMap;
 }
 
-defineClass(1409, 1, {}, LegacySlotConvertor);
+defineClass(1410, 1, {}, LegacySlotConvertor);
 var INSTANCE_2;
-var Lcom_gwtplatform_mvp_client_presenter_slots_LegacySlotConvertor_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'LegacySlotConvertor', 1409);
+var Lcom_gwtplatform_mvp_client_presenter_slots_LegacySlotConvertor_2_classLit = createForClass('com.gwtplatform.mvp.client.presenter.slots', 'LegacySlotConvertor', 1410);
 function NestedSlot(){
   GwtEvent$Type.call(this);
 }
 
-defineClass(127, 67, $intern_45, NestedSlot);
+defineClass(127, 67, $intern_46, NestedSlot);
 _.getRawSlot = function getRawSlot_1(){
   return this;
 }
@@ -7986,7 +8015,7 @@ var Lcom_gwtplatform_mvp_client_presenter_slots_NestedSlot_2_classLit = createFo
 function PopupSlot(){
 }
 
-defineClass(788, 1501, $intern_45, PopupSlot);
+defineClass(788, 1502, $intern_46, PopupSlot);
 _.isPopup = function isPopup_1(){
   return true;
 }
@@ -7995,7 +8024,7 @@ var Lcom_gwtplatform_mvp_client_presenter_slots_PopupSlot_2_classLit = createFor
 function SingleSlot(){
 }
 
-defineClass(789, 1, $intern_45, SingleSlot);
+defineClass(789, 1, $intern_46, SingleSlot);
 _.getRawSlot = function getRawSlot_2(){
   return this;
 }
@@ -8204,7 +8233,7 @@ function $updateHistory(this$static, request, updateBrowserUrl){
   }
 }
 
-defineClass(706, 1, $intern_46);
+defineClass(706, 1, $intern_47);
 _.fireEvent = function fireEvent_7(event_0){
   $fireEvent_2(this, event_0);
 }
@@ -8227,7 +8256,7 @@ function DefaultPlaceManager(eventBus, tokenFormatter, defaultPlaceNameToken, er
   this.unauthorizedPlaceRequest = $build($nameToken(new PlaceRequest$Builder, unauthorizedPlaceNameToken));
 }
 
-defineClass(707, 706, $intern_46, DefaultPlaceManager);
+defineClass(707, 706, $intern_47, DefaultPlaceManager);
 var Lcom_gwtplatform_mvp_client_proxy_DefaultPlaceManager_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'DefaultPlaceManager', 707);
 var TYPE_32;
 function $dispatch_8(this$static, handler){
@@ -8387,7 +8416,7 @@ function PlaceManagerImpl$1(this$0, val$historyToken){
 }
 
 defineClass(708, 1, {}, PlaceManagerImpl$1);
-_.execute_1 = function execute_28(){
+_.execute_1 = function execute_29(){
   $handleTokenChange(this.this$01, this.val$historyToken2);
 }
 ;
@@ -8399,7 +8428,7 @@ function PlaceManagerImpl$2(this$0, val$request, val$updateBrowserUrl){
 }
 
 defineClass(709, 1, {}, PlaceManagerImpl$2);
-_.execute_1 = function execute_29(){
+_.execute_1 = function execute_30(){
   $revealPlace(this.this$01, this.val$request2, this.val$updateBrowserUrl3);
 }
 ;
@@ -8438,12 +8467,12 @@ function $getPresenter(this$static, callback){
   $checkLoading(callback);
 }
 
-defineClass($intern_47, 1, $intern_15);
+defineClass($intern_48, 1, $intern_15);
 _.fireEvent = function fireEvent_8(event_0){
   $doFire(this.eventBus, event_0, this);
 }
 ;
-var Lcom_gwtplatform_mvp_client_proxy_ProxyImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyImpl', $intern_47);
+var Lcom_gwtplatform_mvp_client_proxy_ProxyImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyImpl', $intern_48);
 function $addDeferredCommand(command){
   $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), command);
 }
@@ -8482,7 +8511,7 @@ function $setPlace(this$static, place){
   this$static.place = place;
 }
 
-defineClass(615, 1, $intern_48);
+defineClass(615, 1, $intern_49);
 _.equals$ = function equals_12(o){
   return $equals(this.place, o);
 }
@@ -8557,7 +8586,7 @@ function ProxyPlaceAbstract$3$1(this$1, val$presenter, val$request, val$updateBr
 }
 
 defineClass(622, 1, {}, ProxyPlaceAbstract$3$1);
-_.execute_1 = function execute_30(){
+_.execute_1 = function execute_31(){
   var originalRequest;
   originalRequest = $getCurrentPlaceRequest(this.this$11.this$01.placeManager);
   originalRequest == $getCurrentPlaceRequest(this.this$11.this$01.placeManager) && $updateHistory(this.this$11.this$01.placeManager, this.val$request3, this.val$updateBrowserUrl4);
@@ -8596,7 +8625,7 @@ function ProxyPlaceImpl(){
   this.handlerContainer = new ProxyPlaceAbstract$ProxyHandlerContainer(this);
 }
 
-defineClass(63, 615, $intern_48);
+defineClass(63, 615, $intern_49);
 var Lcom_gwtplatform_mvp_client_proxy_ProxyPlaceImpl_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'ProxyPlaceImpl', 63);
 function $clinit_ResetPresentersEvent(){
   $clinit_ResetPresentersEvent = emptyMethod;
@@ -8661,7 +8690,7 @@ function RevealContentHandler$1$1(val$presenter, val$revealContentEvent){
 }
 
 defineClass(787, 1, {}, RevealContentHandler$1$1);
-_.execute_1 = function execute_31(){
+_.execute_1 = function execute_32(){
   $forceReveal(this.val$presenter2);
   this.val$revealContentEvent3.type_0?$setInSlot(this.val$presenter2, this.val$revealContentEvent3.type_0, this.val$revealContentEvent3.content_0):$setInSlot_0(this.val$presenter2, this.val$revealContentEvent3.type_0, this.val$revealContentEvent3.content_0);
 }
@@ -9092,7 +9121,7 @@ function ComplexWidget_0(element){
   $setElement_0(this, ($clinit_DOM() , element));
 }
 
-defineClass(28, 183, $intern_49, ComplexWidget_0);
+defineClass(28, 183, $intern_50, ComplexWidget_0);
 _.add_0 = function add_13(child){
   $add_13(this, child);
 }
@@ -9114,7 +9143,7 @@ function Div(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(80, 28, $intern_49, Div);
+defineClass(80, 28, $intern_50, Div);
 var Lgwt_material_design_client_ui_html_Div_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Div', 80);
 function $inject_3(resource, removeTag, sourceUrl){
   var text_0;
@@ -9161,7 +9190,7 @@ function AbstractButton_0(type_0){
   $setType_1(this.cssTypeMixin, type_0);
 }
 
-defineClass(184, 28, $intern_50);
+defineClass(184, 28, $intern_51);
 var Lgwt_material_design_client_base_AbstractButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractButton', 184);
 function $$init_0(this$static){
   this$static.icon_0 = new MaterialIcon;
@@ -9182,7 +9211,7 @@ function AbstractIconButton(type_0){
   $setIconPosition(this, ($clinit_IconPosition() , LEFT_4));
 }
 
-defineClass(198, 184, $intern_50);
+defineClass(198, 184, $intern_51);
 var Lgwt_material_design_client_base_AbstractIconButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractIconButton', 198);
 function $setHTML(this$static, html){
   $setInnerHTML(($clinit_DOM() , this$static.element), html);
@@ -9194,8 +9223,8 @@ function AbstractTextWidget(element){
   $setElement_0(this, ($clinit_DOM() , element));
 }
 
-defineClass(1155, 18, $intern_24);
-var Lgwt_material_design_client_base_AbstractTextWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractTextWidget', 1155);
+defineClass(1156, 18, $intern_24);
+var Lgwt_material_design_client_base_AbstractTextWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractTextWidget', 1156);
 function $addObservedHandler(this$static, handler){
   return $addHandler_0(this$static.widget, handler, ($clinit_ObservedEvent() , TYPE_40));
 }
@@ -9226,7 +9255,7 @@ function getObserver(func){
   return new MutationObserver(func);
 }
 
-defineClass(1410, 1, $intern_15);
+defineClass(1411, 1, $intern_15);
 _.fireEvent = function fireEvent_10(event_0){
   $fireEvent_4(this, event_0);
 }
@@ -9236,14 +9265,14 @@ _.fireObserved = function fireObserved(old, newValue){
   $fireEvent_4(this, new ObservedEvent(newValue));
 }
 ;
-var Lgwt_material_design_client_base_AttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'AttributeObserver', 1410);
+var Lgwt_material_design_client_base_AttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'AttributeObserver', 1411);
 function StyleAttributeObserver(widget){
   this.widget = widget;
   this.style_0 = 'left';
 }
 
-defineClass(1411, 1410, $intern_15, StyleAttributeObserver);
-var Lgwt_material_design_client_base_StyleAttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'StyleAttributeObserver', 1411);
+defineClass(1412, 1411, $intern_15, StyleAttributeObserver);
+var Lgwt_material_design_client_base_StyleAttributeObserver_2_classLit = createForClass('gwt.material.design.client.base', 'StyleAttributeObserver', 1412);
 function detectAndApply(){
   $wnd.Waves.displayEffect();
 }
@@ -9255,12 +9284,12 @@ function detectAndApply_0(widget){
 function Waves$1(){
 }
 
-defineClass(1179, 1, $intern_44, Waves$1);
+defineClass(1180, 1, $intern_45, Waves$1);
 _.onAttachOrDetach = function onAttachOrDetach_1(event_0){
   event_0.attached && detectAndApply();
 }
 ;
-var Lgwt_material_design_client_base_Waves$1_2_classLit = createForClass('gwt.material.design.client.base', 'Waves/1', 1179);
+var Lgwt_material_design_client_base_Waves$1_2_classLit = createForClass('gwt.material.design.client.base', 'Waves/1', 1180);
 function getElementByAttribute(elems, value_0){
   var child, i;
   if (elems) {
@@ -9338,10 +9367,10 @@ function getMeasurementValue(value_0){
 }
 
 function addMousePressedHandlers(widget, cssStyleName){
-  widget.eventsToSink == -1?sinkEvents_0(($clinit_DOM() , widget.element), 4 | (widget.element.__eventBits || 0)):(widget.eventsToSink |= 4);
-  widget.eventsToSink == -1?sinkEvents_0(($clinit_DOM() , widget.element), 8 | (widget.element.__eventBits || 0)):(widget.eventsToSink |= 8);
-  widget.eventsToSink == -1?sinkEvents_0(($clinit_DOM() , widget.element), 32 | (widget.element.__eventBits || 0)):(widget.eventsToSink |= 32);
-  widget.eventsToSink == -1?sinkEvents_0(($clinit_DOM() , widget.element), 15728640 | (widget.element.__eventBits || 0)):(widget.eventsToSink |= 15728640);
+  widget.eventsToSink == -1?($clinit_DOM() , $sinkEvents_0(widget.element, 4 | (widget.element.__eventBits || 0))):(widget.eventsToSink |= 4);
+  widget.eventsToSink == -1?($clinit_DOM() , $sinkEvents_0(widget.element, 8 | (widget.element.__eventBits || 0))):(widget.eventsToSink |= 8);
+  widget.eventsToSink == -1?($clinit_DOM() , $sinkEvents_0(widget.element, 32 | (widget.element.__eventBits || 0))):(widget.eventsToSink |= 32);
+  widget.eventsToSink == -1?($clinit_DOM() , $sinkEvents_0(widget.element, 15728640 | (widget.element.__eventBits || 0))):(widget.eventsToSink |= 15728640);
   $addHandler_0(widget, new UiHelper$1(widget, cssStyleName), ($clinit_MouseDownEvent() , $clinit_MouseDownEvent() , TYPE_6));
   $addHandler_0(widget, new UiHelper$2(widget, cssStyleName), ($clinit_MouseUpEvent() , $clinit_MouseUpEvent() , TYPE_9));
   $addHandler_0(widget, new UiHelper$3(widget, cssStyleName), ($clinit_MouseOutEvent() , $clinit_MouseOutEvent() , TYPE_7));
@@ -9356,55 +9385,55 @@ function UiHelper$1(val$widget, val$cssStyleName){
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1338, 1, {1543:1, 20:1}, UiHelper$1);
-var Lgwt_material_design_client_base_helper_UiHelper$1_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/1', 1338);
+defineClass(1339, 1, {1543:1, 20:1}, UiHelper$1);
+var Lgwt_material_design_client_base_helper_UiHelper$1_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/1', 1339);
 function UiHelper$2(val$widget, val$cssStyleName){
   this.val$widget1 = val$widget;
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1339, 1, {1544:1, 20:1}, UiHelper$2);
-var Lgwt_material_design_client_base_helper_UiHelper$2_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/2', 1339);
+defineClass(1340, 1, {1544:1, 20:1}, UiHelper$2);
+var Lgwt_material_design_client_base_helper_UiHelper$2_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/2', 1340);
 function UiHelper$3(val$widget, val$cssStyleName){
   this.val$widget1 = val$widget;
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1340, 1, {1545:1, 20:1}, UiHelper$3);
-var Lgwt_material_design_client_base_helper_UiHelper$3_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/3', 1340);
+defineClass(1341, 1, {1545:1, 20:1}, UiHelper$3);
+var Lgwt_material_design_client_base_helper_UiHelper$3_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/3', 1341);
 function UiHelper$4(val$widget, val$cssStyleName){
   this.val$widget1 = val$widget;
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1341, 1, $intern_51, UiHelper$4);
+defineClass(1342, 1, $intern_52, UiHelper$4);
 _.onTouchStart = function onTouchStart_0(event_0){
   $addStyleName(this.val$widget1, this.val$cssStyleName2);
 }
 ;
-var Lgwt_material_design_client_base_helper_UiHelper$4_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/4', 1341);
+var Lgwt_material_design_client_base_helper_UiHelper$4_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/4', 1342);
 function UiHelper$5(val$widget, val$cssStyleName){
   this.val$widget1 = val$widget;
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1342, 1, $intern_52, UiHelper$5);
+defineClass(1343, 1, $intern_53, UiHelper$5);
 _.onTouchEnd = function onTouchEnd_0(event_0){
   $removeStyleName(this.val$widget1, this.val$cssStyleName2);
 }
 ;
-var Lgwt_material_design_client_base_helper_UiHelper$5_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/5', 1342);
+var Lgwt_material_design_client_base_helper_UiHelper$5_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/5', 1343);
 function UiHelper$6(val$widget, val$cssStyleName){
   this.val$widget1 = val$widget;
   this.val$cssStyleName2 = val$cssStyleName;
 }
 
-defineClass(1343, 1, $intern_53, UiHelper$6);
+defineClass(1344, 1, $intern_54, UiHelper$6);
 _.onTouchCancel = function onTouchCancel_0(event_0){
   $removeStyleName(this.val$widget1, this.val$cssStyleName2);
 }
 ;
-var Lgwt_material_design_client_base_helper_UiHelper$6_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/6', 1343);
+var Lgwt_material_design_client_base_helper_UiHelper$6_2_classLit = createForClass('gwt.material.design.client.base.helper', 'UiHelper/6', 1344);
 function AbstractMixin(uiObject){
   this.uiObject = uiObject;
 }
@@ -9610,8 +9639,8 @@ function LetterMixin(widget){
   $setStyleName(this.span_0, 'letter');
 }
 
-defineClass(1367, 107, {}, LetterMixin);
-var Lgwt_material_design_client_base_mixin_LetterMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'LetterMixin', 1367);
+defineClass(1368, 107, {}, LetterMixin);
+var Lgwt_material_design_client_base_mixin_LetterMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'LetterMixin', 1368);
 function ProgressMixin(uiObject){
   AbstractMixin.call(this, uiObject);
   this.progress = new MaterialProgress;
@@ -10879,7 +10908,7 @@ function ObservedEvent(value_0){
   this.value_0 = value_0;
 }
 
-defineClass(1206, $intern_14, {}, ObservedEvent);
+defineClass(1207, $intern_14, {}, ObservedEvent);
 _.dispatch = function dispatch_41(handler){
   $dispatch_14(this, dynamicCast(handler, 1542));
 }
@@ -10889,7 +10918,7 @@ _.getAssociatedType = function getAssociatedType_42(){
 }
 ;
 var TYPE_40;
-var Lgwt_material_design_client_events_ObservedEvent_2_classLit = createForClass('gwt.material.design.client.events', 'ObservedEvent', 1206);
+var Lgwt_material_design_client_events_ObservedEvent_2_classLit = createForClass('gwt.material.design.client.events', 'ObservedEvent', 1207);
 function $clinit_SideNavHiddenEvent(){
   $clinit_SideNavHiddenEvent = emptyMethod;
   TYPE_41 = new GwtEvent$Type;
@@ -10899,7 +10928,7 @@ function SideNavHiddenEvent(){
   $clinit_SideNavHiddenEvent();
 }
 
-defineClass(1464, $intern_14, {}, SideNavHiddenEvent);
+defineClass(1465, $intern_14, {}, SideNavHiddenEvent);
 _.dispatch = function dispatch_42(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -10910,7 +10939,7 @@ _.getAssociatedType = function getAssociatedType_43(){
 }
 ;
 var TYPE_41;
-var Lgwt_material_design_client_events_SideNavHiddenEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavHiddenEvent', 1464);
+var Lgwt_material_design_client_events_SideNavHiddenEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavHiddenEvent', 1465);
 function $clinit_SideNavShownEvent(){
   $clinit_SideNavShownEvent = emptyMethod;
   TYPE_42 = new GwtEvent$Type;
@@ -10920,7 +10949,7 @@ function SideNavShownEvent(){
   $clinit_SideNavShownEvent();
 }
 
-defineClass(1463, $intern_14, {}, SideNavShownEvent);
+defineClass(1464, $intern_14, {}, SideNavShownEvent);
 _.dispatch = function dispatch_43(handler){
   throwClassCastExceptionUnlessNull(handler);
   null.nullMethod();
@@ -10931,7 +10960,7 @@ _.getAssociatedType = function getAssociatedType_44(){
 }
 ;
 var TYPE_42;
-var Lgwt_material_design_client_events_SideNavShownEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavShownEvent', 1463);
+var Lgwt_material_design_client_events_SideNavShownEvent_2_classLit = createForClass('gwt.material.design.client.events', 'SideNavShownEvent', 1464);
 var materializeJsDebug;
 function MaterialDebugResources_default_InlineClientBundleGenerator$1(){
 }
@@ -11094,7 +11123,7 @@ function MaterialAnchorButton(){
   AbstractIconButton.call(this, ($clinit_ButtonType() , RAISED));
 }
 
-defineClass(82, 198, $intern_50, MaterialAnchorButton);
+defineClass(82, 198, $intern_51, MaterialAnchorButton);
 _.createElement_0 = function createElement(){
   return $doc.createElement('a');
 }
@@ -11104,7 +11133,7 @@ function Span(){
   ComplexWidget_0.call(this, $doc.createElement('span'));
 }
 
-defineClass(77, 28, $intern_49, Span);
+defineClass(77, 28, $intern_50, Span);
 _.setText = function setText(text_0){
   this.text_0 = text_0;
   $setInnerHTML(($clinit_DOM() , this.element), text_0);
@@ -11116,7 +11145,7 @@ function MaterialBadge(){
   $setClassName(($clinit_DOM() , this.element), 'badge sideBarBadge');
 }
 
-defineClass(233, 77, $intern_49, MaterialBadge);
+defineClass(233, 77, $intern_50, MaterialBadge);
 _.setText = function setText_0(text_0){
   $setInnerHTML(($clinit_DOM() , this.element), text_0);
 }
@@ -11126,10 +11155,10 @@ function MaterialButton(){
   AbstractIconButton.call(this, ($clinit_ButtonType() , RAISED));
 }
 
-defineClass(27, 198, $intern_54, MaterialButton);
+defineClass(27, 198, $intern_55, MaterialButton);
 _.createElement_0 = function createElement_0(){
   var e;
-  return e = $doc.createElement('BUTTON') , e.setAttribute('type', 'button') , e;
+  return e = $doc.createElement('BUTTON') , e.type = 'button' , e;
 }
 ;
 var Lgwt_material_design_client_ui_MaterialButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialButton', 27);
@@ -11138,21 +11167,21 @@ function MaterialCard(){
   $setClassName(($clinit_DOM() , this.element), 'card');
 }
 
-defineClass(50, 28, $intern_49, MaterialCard);
+defineClass(50, 28, $intern_50, MaterialCard);
 var Lgwt_material_design_client_ui_MaterialCard_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCard', 50);
 function MaterialCardAction(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
   $setClassName(($clinit_DOM() , this.element), 'card-action');
 }
 
-defineClass(52, 28, $intern_49, MaterialCardAction);
+defineClass(52, 28, $intern_50, MaterialCardAction);
 var Lgwt_material_design_client_ui_MaterialCardAction_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardAction', 52);
 function MaterialCardContent(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
   $setClassName(($clinit_DOM() , this.element), 'card-content');
 }
 
-defineClass(51, 28, $intern_49, MaterialCardContent);
+defineClass(51, 28, $intern_50, MaterialCardContent);
 var Lgwt_material_design_client_ui_MaterialCardContent_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardContent', 51);
 function $add_16(this$static, child){
   instanceOf(child, 38) && setStyleName(child.getStyleElement(), 'activator', true);
@@ -11163,7 +11192,7 @@ function MaterialCardImage(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(109, 28, $intern_49, MaterialCardImage);
+defineClass(109, 28, $intern_50, MaterialCardImage);
 _.add_0 = function add_15(child){
   $add_16(this, child);
 }
@@ -11174,7 +11203,7 @@ function MaterialCardReveal(){
   $setClassName(($clinit_DOM() , this.element), 'card-reveal');
 }
 
-defineClass(94, 28, $intern_49, MaterialCardReveal);
+defineClass(94, 28, $intern_50, MaterialCardReveal);
 var Lgwt_material_design_client_ui_MaterialCardReveal_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardReveal', 94);
 function $setIconPosition_0(this$static, position){
   $setIconPosition_1(this$static.icon_0, position);
@@ -11192,7 +11221,7 @@ function MaterialCardTitle(){
   $setClassName(($clinit_DOM() , this.element), 'card-title activator');
 }
 
-defineClass(41, 28, $intern_49, MaterialCardTitle);
+defineClass(41, 28, $intern_50, MaterialCardTitle);
 var Lgwt_material_design_client_ui_MaterialCardTitle_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardTitle', 41);
 function MaterialChip(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
@@ -11343,7 +11372,7 @@ function MaterialCollapsibleBody$1(this$0, val$child){
   this.val$child2 = val$child;
 }
 
-defineClass(423, 1, $intern_55, MaterialCollapsibleBody$1);
+defineClass(423, 1, $intern_56, MaterialCollapsibleBody$1);
 _.onClick = function onClick_8(event_0){
   $makeActive(this.this$01, this.val$child2);
 }
@@ -11440,7 +11469,7 @@ function MaterialCollection(){
   $setClassName(($clinit_DOM() , this.element), 'collection');
 }
 
-defineClass(105, 28, $intern_49, MaterialCollection);
+defineClass(105, 28, $intern_50, MaterialCollection);
 _.index_0 = 0;
 var Lgwt_material_design_client_ui_MaterialCollection_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollection', 105);
 function MaterialCollectionItem(){
@@ -11451,21 +11480,21 @@ function MaterialCollectionItem(){
   addMousePressedHandlers(this, PRESSED_CSS_STYLE_NAME);
 }
 
-defineClass(45, 28, $intern_49, MaterialCollectionItem);
+defineClass(45, 28, $intern_50, MaterialCollectionItem);
 var Lgwt_material_design_client_ui_MaterialCollectionItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollectionItem', 45);
 function MaterialColumn(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
   $setClassName(($clinit_DOM() , this.element), 'col');
 }
 
-defineClass(26, 28, $intern_49, MaterialColumn);
+defineClass(26, 28, $intern_50, MaterialColumn);
 var Lgwt_material_design_client_ui_MaterialColumn_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialColumn', 26);
 function MaterialContainer(){
   ComplexWidget_0.call(this, $doc.createElement('main'));
 }
 
-defineClass(1154, 28, $intern_49, MaterialContainer);
-var Lgwt_material_design_client_ui_MaterialContainer_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialContainer', 1154);
+defineClass(1155, 28, $intern_50, MaterialContainer);
+var Lgwt_material_design_client_ui_MaterialContainer_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialContainer', 1155);
 function $add_21(this$static, child){
   var li;
   if (instanceOf(child, 44)) {
@@ -11485,7 +11514,7 @@ function UnorderedList(){
   ComplexWidget_0.call(this, $doc.createElement('ul'));
 }
 
-defineClass(85, 28, $intern_56, UnorderedList);
+defineClass(85, 28, $intern_57, UnorderedList);
 _.add_0 = function add_20(child){
   $add_21(this, child);
 }
@@ -11537,7 +11566,7 @@ function MaterialDropDown(activator){
   $setId(this.element, this.activator);
 }
 
-defineClass(199, 85, $intern_56, MaterialDropDown);
+defineClass(199, 85, $intern_57, MaterialDropDown);
 _.add_0 = function add_21(child){
   $add_22(this, child);
 }
@@ -11565,7 +11594,7 @@ function MaterialFooter(){
   $add_13(this, this.container);
 }
 
-defineClass(406, 28, $intern_49, MaterialFooter);
+defineClass(406, 28, $intern_50, MaterialFooter);
 _.add_0 = function add_23(child){
   $add_23(this, child);
 }
@@ -11583,7 +11612,7 @@ function MaterialFooterCopyright(){
   $add_13(this, this.container);
 }
 
-defineClass(414, 28, $intern_49, MaterialFooterCopyright);
+defineClass(414, 28, $intern_50, MaterialFooterCopyright);
 _.add_0 = function add_24(child){
   $add_24(this, child);
 }
@@ -11609,7 +11638,7 @@ function MaterialIcon(){
   setStyleName(($clinit_DOM() , this.element), 'material-icons', true);
 }
 
-defineClass(48, 184, $intern_57, MaterialIcon);
+defineClass(48, 184, $intern_58, MaterialIcon);
 _.createElement_0 = function createElement_2(){
   return $doc.createElement('i');
 }
@@ -11663,7 +11692,7 @@ function MaterialLink_0(iconType){
   $setIconPosition(this, ($clinit_IconPosition() , LEFT_4));
 }
 
-defineClass(15, 198, $intern_50, MaterialLink, MaterialLink_0);
+defineClass(15, 198, $intern_51, MaterialLink, MaterialLink_0);
 _.createElement_0 = function createElement_3(){
   return $clinit_DOM() , $doc.createElement('a');
 }
@@ -11700,7 +11729,7 @@ function MaterialListBox(){
   $setId_1(this, $createUniqueId($doc));
 }
 
-defineClass(223, 1170, $intern_34, MaterialListBox);
+defineClass(223, 1171, $intern_35, MaterialListBox);
 _.onChangeInternal = function onChangeInternal(){
   $createHtmlEvent($doc, 'change', false, true);
 }
@@ -11715,10 +11744,10 @@ function MaterialPanel(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
 }
 
-defineClass(9, 28, $intern_49, MaterialPanel);
+defineClass(9, 28, $intern_50, MaterialPanel);
 var Lgwt_material_design_client_ui_MaterialPanel_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialPanel', 9);
-defineClass(1157, 28, $intern_49);
-var Lgwt_material_design_client_ui_html_Nav_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Nav', 1157);
+defineClass(1158, 28, $intern_50);
+var Lgwt_material_design_client_ui_html_Nav_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Nav', 1158);
 function $add_25(this$static, child){
   $add_13(this$static.div, child);
 }
@@ -11744,7 +11773,7 @@ function MaterialNavBar(){
   $setIconPosition(this.navMenu, ($clinit_IconPosition() , NONE_4));
 }
 
-defineClass(152, 1157, {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 152:1}, MaterialNavBar);
+defineClass(152, 1158, {25:1, 10:1, 24:1, 34:1, 23:1, 32:1, 14:1, 22:1, 18:1, 28:1, 40:1, 36:1, 152:1}, MaterialNavBar);
 _.add_0 = function add_25(child){
   $add_25(this, child);
 }
@@ -11756,7 +11785,7 @@ function MaterialNavSection(){
   $setHideOn(this, ($clinit_HideOn() , HIDE_ON_MED_DOWN));
 }
 
-defineClass(225, 85, $intern_56, MaterialNavSection);
+defineClass(225, 85, $intern_57, MaterialNavSection);
 _.add_0 = function add_26(child){
   $add_21(this, new ListItem_0(child));
 }
@@ -11775,14 +11804,14 @@ function MaterialProgress(){
   $setType_10(this, ($clinit_ProgressType() , INDETERMINATE));
 }
 
-defineClass(200, 80, $intern_49, MaterialProgress);
+defineClass(200, 80, $intern_50, MaterialProgress);
 var Lgwt_material_design_client_ui_MaterialProgress_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialProgress', 200);
 function MaterialRow(){
   ComplexWidget_0.call(this, $doc.createElement('div'));
   $setClassName(($clinit_DOM() , this.element), 'row');
 }
 
-defineClass(42, 28, $intern_49, MaterialRow);
+defineClass(42, 28, $intern_50, MaterialRow);
 var Lgwt_material_design_client_ui_MaterialRow_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialRow', 42);
 function $add_27(this$static, child){
   var collapsible, listItem;
@@ -11869,7 +11898,7 @@ function initialize(e, width_0, closeOnClick, edge){
   );
 }
 
-defineClass(301, 85, $intern_56, MaterialSideNav);
+defineClass(301, 85, $intern_57, MaterialSideNav);
 _.add_0 = function add_28(child){
   $add_27(this, child);
 }
@@ -11885,26 +11914,26 @@ function MaterialSideNav$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1203, 1, {20:1, 1541:1}, MaterialSideNav$1);
-var Lgwt_material_design_client_ui_MaterialSideNav$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/1', 1203);
+defineClass(1204, 1, {20:1, 1541:1}, MaterialSideNav$1);
+var Lgwt_material_design_client_ui_MaterialSideNav$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/1', 1204);
 function MaterialSideNav$2(this$0, val$finalChild){
   this.this$01 = this$0;
   this.val$finalChild2 = val$finalChild;
 }
 
-defineClass(1204, 1, $intern_55, MaterialSideNav$2);
+defineClass(1205, 1, $intern_56, MaterialSideNav$2);
 _.onClick = function onClick_10(event_0){
   $clearActive_1(this.this$01);
   $addStyleName(this.val$finalChild2, 'active');
 }
 ;
-var Lgwt_material_design_client_ui_MaterialSideNav$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/2', 1204);
+var Lgwt_material_design_client_ui_MaterialSideNav$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/2', 1205);
 function MaterialSideNav$3(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1205, 1, {20:1, 1542:1}, MaterialSideNav$3);
-var Lgwt_material_design_client_ui_MaterialSideNav$3_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/3', 1205);
+defineClass(1206, 1, {20:1, 1542:1}, MaterialSideNav$3);
+var Lgwt_material_design_client_ui_MaterialSideNav$3_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSideNav/3', 1206);
 function ListItem(){
   ComplexWidget.call(this);
   $setElement(this, ($clinit_DOM() , $doc.createElement('li')));
@@ -11915,7 +11944,7 @@ function ListItem_0(item_0){
   $add_0(this, item_0, ($clinit_DOM() , this.element));
 }
 
-defineClass(44, 28, $intern_58, ListItem, ListItem_0);
+defineClass(44, 28, $intern_59, ListItem, ListItem_0);
 var Lgwt_material_design_client_ui_html_ListItem_2_classLit = createForClass('gwt.material.design.client.ui.html', 'ListItem', 44);
 function MaterialTitle(){
   Div.call(this);
@@ -11927,7 +11956,7 @@ function MaterialTitle(){
   $add_13(this, this.paragraph);
 }
 
-defineClass(17, 80, $intern_49, MaterialTitle);
+defineClass(17, 80, $intern_50, MaterialTitle);
 var Lgwt_material_design_client_ui_MaterialTitle_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTitle', 17);
 function $toast(this$static, msg, lifeMillis, className){
   var genId, widget, widget$array, widget$index, widget$max;
@@ -12007,7 +12036,7 @@ function MaterialTooltip(){
   this.position_0 = ($clinit_Position() , TOP_0);
 }
 
-defineClass(136, 1, $intern_59, MaterialTooltip);
+defineClass(136, 1, $intern_60, MaterialTooltip);
 _.add_0 = function add_31(child){
   $add_30(this, child);
 }
@@ -12029,7 +12058,7 @@ _.setWidget = function setWidget_4(w){
 }
 ;
 _.toString$ = function toString_14(){
-  return $toString_0(this.widget);
+  return $toString_1(this.widget);
 }
 ;
 var Lgwt_material_design_client_ui_MaterialTooltip_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip', 136);
@@ -12037,12 +12066,12 @@ function MaterialTooltip$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1167, 1, $intern_44, MaterialTooltip$1);
+defineClass(1168, 1, $intern_45, MaterialTooltip$1);
 _.onAttachOrDetach = function onAttachOrDetach_2(event_0){
   $reconfigure(this.this$01);
 }
 ;
-var Lgwt_material_design_client_ui_MaterialTooltip$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip/1', 1167);
+var Lgwt_material_design_client_ui_MaterialTooltip$1_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip/1', 1168);
 function $next_4(this$static){
   if (!this$static.hasElement || !this$static.this$01.widget) {
     throw new NoSuchElementException;
@@ -12056,7 +12085,7 @@ function MaterialTooltip$2(this$0){
   this.hasElement = !!this.this$01.widget;
 }
 
-defineClass(1168, 1, {}, MaterialTooltip$2);
+defineClass(1169, 1, {}, MaterialTooltip$2);
 _.hasNext = function hasNext_5(){
   return this.hasElement;
 }
@@ -12071,12 +12100,12 @@ _.remove_0 = function remove_22(){
 ;
 _.hasElement = false;
 _.returned = null;
-var Lgwt_material_design_client_ui_MaterialTooltip$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip/2', 1168);
+var Lgwt_material_design_client_ui_MaterialTooltip$2_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTooltip/2', 1169);
 function MaterialTopNav(){
   Div.call(this);
 }
 
-defineClass(411, 80, $intern_49, MaterialTopNav);
+defineClass(411, 80, $intern_50, MaterialTopNav);
 var Lgwt_material_design_client_ui_MaterialTopNav_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTopNav', 411);
 function animate_1(transition, w, delayMillis){
   var li, li$iterator, name_0, ul;
@@ -12133,7 +12162,7 @@ function MaterialAnimator$1(val$transition, val$name, val$w){
   Timer.call(this);
 }
 
-defineClass(1335, 121, {}, MaterialAnimator$1);
+defineClass(1336, 121, {}, MaterialAnimator$1);
 _.run = function run_3(){
   switch (this.val$transition1.ordinal) {
     case 0:
@@ -12152,7 +12181,7 @@ _.run = function run_3(){
   }
 }
 ;
-var Lgwt_material_design_client_ui_animate_MaterialAnimator$1_2_classLit = createForClass('gwt.material.design.client.ui.animate', 'MaterialAnimator/1', 1335);
+var Lgwt_material_design_client_ui_animate_MaterialAnimator$1_2_classLit = createForClass('gwt.material.design.client.ui.animate', 'MaterialAnimator/1', 1336);
 function $clinit_Transition(){
   $clinit_Transition = emptyMethod;
   SHOW_STAGGERED_LIST = new Transition('SHOW_STAGGERED_LIST', 0, 'staggered_list');
@@ -12257,8 +12286,8 @@ function Header_0(){
   ComplexWidget_0.call(this, $doc.createElement('header'));
 }
 
-defineClass(1153, 28, $intern_49, Header_0);
-var Lgwt_material_design_client_ui_html_Header_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Header', 1153);
+defineClass(1154, 28, $intern_50, Header_0);
+var Lgwt_material_design_client_ui_html_Header_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Header', 1154);
 function $setFontWeight(this$static){
   ($clinit_DOM() , this$static.element).style['fontWeight'] = '300';
 }
@@ -12267,7 +12296,7 @@ function Heading(size_0){
   ComplexWidget_0.call(this, $createElement($doc, size_0.size_0));
 }
 
-defineClass(418, 28, $intern_49, Heading);
+defineClass(418, 28, $intern_50, Heading);
 var Lgwt_material_design_client_ui_html_Heading_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Heading', 418);
 function $setText_4(this$static, text_0){
   $setInnerText(($clinit_DOM() , this$static.element), text_0);
@@ -12277,10 +12306,10 @@ function Paragraph(){
   ComplexWidget_0.call(this, $doc.createElement('p'));
 }
 
-defineClass(168, 28, $intern_49, Paragraph);
+defineClass(168, 28, $intern_50, Paragraph);
 var Lgwt_material_design_client_ui_html_Paragraph_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Paragraph', 168);
-defineClass(1156, 1155, $intern_24);
-var Lgwt_material_design_client_ui_html_Pre_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Pre', 1156);
+defineClass(1157, 1156, $intern_24);
+var Lgwt_material_design_client_ui_html_Pre_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Pre', 1157);
 function $clinit_ApplicationPresenter(){
   $clinit_ApplicationPresenter = emptyMethod;
   $clinit_PresenterWidget();
@@ -12308,7 +12337,7 @@ function ApplicationPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(614, $intern_47, $intern_60, ApplicationPresenterMyProxyImpl);
+defineClass(614, $intern_48, $intern_61, ApplicationPresenterMyProxyImpl);
 _.delayedBind = function delayedBind(baseGinjector){
   var revealContentHandler;
   this.ginjector = baseGinjector;
@@ -12404,7 +12433,7 @@ var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl$Wid
 function ApplicationView_BinderImpl$Widgets$1(){
 }
 
-defineClass(876, 1, $intern_55, ApplicationView_BinderImpl$Widgets$1);
+defineClass(876, 1, $intern_56, ApplicationView_BinderImpl$Widgets$1);
 _.onClick = function onClick_13(event_0){
   open_0('https://plus.google.com/communities/108005250093449814286', '', '_blank');
 }
@@ -12413,9 +12442,9 @@ var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl$Wid
 function ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1201, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1202, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_2;
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1201);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1202);
 function $ensureInjected_7(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -12429,13 +12458,13 @@ function $ensureInjected_7(this$static){
 function ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1202, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1203, 1, {}, ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_15(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1202);
+var Lgwt_material_design_demo_client_application_ApplicationView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application', 'ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1203);
 function $clinit_ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_2 = new ApplicationView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -12468,7 +12497,7 @@ function AboutPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(565, 56, $intern_42, AboutPresenter);
+defineClass(565, 56, $intern_43, AboutPresenter);
 _.onReveal = function onReveal_1(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('GWT Material', 'A Material Design look and feel for GWT Apps plus Phonegap.'));
@@ -12481,7 +12510,7 @@ function AboutPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(616, 63, $intern_61, AboutPresenterMyProxyImpl);
+defineClass(616, 63, $intern_62, AboutPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_0(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12503,7 +12532,7 @@ function $delayedBind(this$static, baseGinjector){
 function AboutPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(617, $intern_47, $intern_60, AboutPresenterMyProxyImpl$WrappedProxy);
+defineClass(617, $intern_48, $intern_61, AboutPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_1(baseGinjector){
   $delayedBind(this, baseGinjector);
 }
@@ -12514,7 +12543,7 @@ function AboutView(){
   $initWidget_0(this, $build_f_HTMLPanel1_0(new AboutView_BinderImpl$Widgets));
 }
 
-defineClass(717, 59, $intern_43, AboutView);
+defineClass(717, 59, $intern_44, AboutView);
 var Lgwt_material_design_demo_client_application_about_AboutView_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutView', 717);
 function AboutView_BinderImpl(){
 }
@@ -12621,7 +12650,7 @@ function CutOutsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(623, 63, $intern_61, CutOutsPresenterMyProxyImpl);
+defineClass(623, 63, $intern_62, CutOutsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_2(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12646,7 +12675,7 @@ function $delayedBind_0(this$static, baseGinjector){
 function CutOutsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(624, $intern_47, $intern_60, CutOutsPresenterMyProxyImpl$WrappedProxy);
+defineClass(624, $intern_48, $intern_61, CutOutsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_3(baseGinjector){
   $delayedBind_0(this, baseGinjector);
 }
@@ -12691,7 +12720,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(484, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1);
+defineClass(484, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1);
 _.onFailure_0 = function onFailure_0(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12710,7 +12739,7 @@ function IconMorphPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(625, 63, $intern_61, IconMorphPresenterMyProxyImpl);
+defineClass(625, 63, $intern_62, IconMorphPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_4(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12735,7 +12764,7 @@ function $delayedBind_1(this$static, baseGinjector){
 function IconMorphPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(626, $intern_47, $intern_60, IconMorphPresenterMyProxyImpl$WrappedProxy);
+defineClass(626, $intern_48, $intern_61, IconMorphPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_5(baseGinjector){
   $delayedBind_1(this, baseGinjector);
 }
@@ -12780,7 +12809,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(486, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_0);
+defineClass(486, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_0);
 _.onFailure_0 = function onFailure_1(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12799,7 +12828,7 @@ function PathAnimatorPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(627, 63, $intern_61, PathAnimatorPresenterMyProxyImpl);
+defineClass(627, 63, $intern_62, PathAnimatorPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_6(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12824,7 +12853,7 @@ function $delayedBind_2(this$static, baseGinjector){
 function PathAnimatorPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(628, $intern_47, $intern_60, PathAnimatorPresenterMyProxyImpl$WrappedProxy);
+defineClass(628, $intern_48, $intern_61, PathAnimatorPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_7(baseGinjector){
   $delayedBind_2(this, baseGinjector);
 }
@@ -12869,7 +12898,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(488, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_1);
+defineClass(488, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_1);
 _.onFailure_0 = function onFailure_2(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12888,7 +12917,7 @@ function SteppersPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(629, 63, $intern_61, SteppersPresenterMyProxyImpl);
+defineClass(629, 63, $intern_62, SteppersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_8(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -12913,7 +12942,7 @@ function $delayedBind_3(this$static, baseGinjector){
 function SteppersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(630, $intern_47, $intern_60, SteppersPresenterMyProxyImpl$WrappedProxy);
+defineClass(630, $intern_48, $intern_61, SteppersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_9(baseGinjector){
   $delayedBind_3(this, baseGinjector);
 }
@@ -12958,7 +12987,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(490, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_2);
+defineClass(490, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_2);
 _.onFailure_0 = function onFailure_3(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -12977,7 +13006,7 @@ function SubHeadersPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(631, 63, $intern_61, SubHeadersPresenterMyProxyImpl);
+defineClass(631, 63, $intern_62, SubHeadersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_10(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13002,7 +13031,7 @@ function $delayedBind_4(this$static, baseGinjector){
 function SubHeadersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(632, $intern_47, $intern_60, SubHeadersPresenterMyProxyImpl$WrappedProxy);
+defineClass(632, $intern_48, $intern_61, SubHeadersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_11(baseGinjector){
   $delayedBind_4(this, baseGinjector);
 }
@@ -13047,7 +13076,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(492, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_3);
+defineClass(492, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_3);
 _.onFailure_0 = function onFailure_4(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -13066,7 +13095,7 @@ function TimePickersPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(633, 63, $intern_61, TimePickersPresenterMyProxyImpl);
+defineClass(633, 63, $intern_62, TimePickersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_12(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13091,7 +13120,7 @@ function $delayedBind_5(this$static, baseGinjector){
 function TimePickersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(634, $intern_47, $intern_60, TimePickersPresenterMyProxyImpl$WrappedProxy);
+defineClass(634, $intern_48, $intern_61, TimePickersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_13(baseGinjector){
   $delayedBind_5(this, baseGinjector);
 }
@@ -13136,7 +13165,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(494, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_4);
+defineClass(494, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_4);
 _.onFailure_0 = function onFailure_5(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -13147,7 +13176,7 @@ function CoreAnimationsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(572, 56, $intern_42, CoreAnimationsPresenter);
+defineClass(572, 56, $intern_43, CoreAnimationsPresenter);
 _.onReveal = function onReveal_8(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Core Animations', 'We used AnimateCSS to built our core animations.'));
@@ -13160,7 +13189,7 @@ function CoreAnimationsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(635, 63, $intern_61, CoreAnimationsPresenterMyProxyImpl);
+defineClass(635, 63, $intern_62, CoreAnimationsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_14(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13182,7 +13211,7 @@ function $delayedBind_6(this$static, baseGinjector){
 function CoreAnimationsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(636, $intern_47, $intern_60, CoreAnimationsPresenterMyProxyImpl$WrappedProxy);
+defineClass(636, $intern_48, $intern_61, CoreAnimationsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_15(baseGinjector){
   $delayedBind_6(this, baseGinjector);
 }
@@ -13200,7 +13229,7 @@ function CoreAnimationsView(){
   $initWidget_0(this, $build_f_MaterialPanel1_2(new CoreAnimationsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(725, 59, $intern_43, CoreAnimationsView);
+defineClass(725, 59, $intern_44, CoreAnimationsView);
 var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView', 725);
 function CoreAnimationsView_BinderImpl(){
 }
@@ -13539,7 +13568,7 @@ function CoreAnimationsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(881, 1, $intern_55, CoreAnimationsView_BinderImpl$Widgets$1);
+defineClass(881, 1, $intern_56, CoreAnimationsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_54(event_0){
   $animate(this.this$11.owner);
 }
@@ -13549,7 +13578,7 @@ function CoreAnimationsView_BinderImpl$Widgets$2(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(882, 1, $intern_63, CoreAnimationsView_BinderImpl$Widgets$2);
+defineClass(882, 1, $intern_64, CoreAnimationsView_BinderImpl$Widgets$2);
 _.onChange = function onChange_0(event_0){
   $animate(this.this$11.owner);
 }
@@ -13558,9 +13587,9 @@ var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsV
 function CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1207, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1208, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_5;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1207);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1208);
 function $ensureInjected_10(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -13575,13 +13604,13 @@ function $ensureInjected_10(this$static){
 function CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1208, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1209, 1, {}, CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_18(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1208);
+var Lgwt_material_design_demo_client_application_animations_core_CoreAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.core', 'CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1209);
 function $clinit_CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_5 = new CoreAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -13645,7 +13674,7 @@ function MeaningfulAnimationsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(573, 56, $intern_42, MeaningfulAnimationsPresenter);
+defineClass(573, 56, $intern_43, MeaningfulAnimationsPresenter);
 _.onReveal = function onReveal_9(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Meaningful Animations', 'Motion design can effectively guide the user\u2019s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy.'));
@@ -13658,7 +13687,7 @@ function MeaningfulAnimationsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(637, 63, $intern_61, MeaningfulAnimationsPresenterMyProxyImpl);
+defineClass(637, 63, $intern_62, MeaningfulAnimationsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_16(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -13680,7 +13709,7 @@ function $delayedBind_7(this$static, baseGinjector){
 function MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(638, $intern_47, $intern_60, MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy);
+defineClass(638, $intern_48, $intern_61, MeaningfulAnimationsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_17(baseGinjector){
   $delayedBind_7(this, baseGinjector);
 }
@@ -13708,7 +13737,7 @@ function MeaningfulAnimationsView(){
   ($clinit_DOM() , this.gridPanel.element).style.opacity = 0;
 }
 
-defineClass(726, 59, $intern_43, MeaningfulAnimationsView);
+defineClass(726, 59, $intern_44, MeaningfulAnimationsView);
 var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView', 726);
 function MeaningfulAnimationsView_BinderImpl(){
 }
@@ -13738,7 +13767,7 @@ function $build_f_HTMLPanel2(this$static){
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
   $addAndReplaceElement_1(f_HTMLPanel2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle3.header), 'Show Grid') , $setText_4(f_MaterialTitle3.paragraph, 'You can add a transition staggered reveal effect for any Unordered List material widget with List Items.') , f_MaterialTitle3), $get_0(this$static.domId0Element));
   $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre4 = new PrettyPre , $setHTML(f_PrettyPre4, (sb = new StringBuilder , sb.string += '\u2003@UiField MaterialRow rowCards;<br> MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre4.element, 'lang-java', true) , setStyleName(f_PrettyPre4.element, 'z-depth-1', true) , f_PrettyPre4), $get_0(this$static.domId1Element));
-  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId2Element));
+  $addAndReplaceElement_1(f_HTMLPanel2, (f_PrettyPre5 = new PrettyPre , $setHTML(f_PrettyPre5, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> \u2003&lt;m:MaterialColumn grid="l6"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="white"&gt;<br> \u2003\u2003&lt;!--Content here --&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003\u2003&lt;!--OTher cards --&gt;<br> \u2003&lt;/m:MaterialColumn grid="l6"&gt;<br> &lt;/m:MaterialRow ui:field="rowCards"&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre5.element, 'lang-xml', true) , setStyleName(f_PrettyPre5.element, 'z-depth-1', true) , f_PrettyPre5), $get_0(this$static.domId2Element));
   $addAndReplaceElement_1(f_HTMLPanel2, (btnShowGrid = new MaterialButton , btnShowGrid.span_0.setText('Show Grid') , $add_13(btnShowGrid, btnShowGrid.span_0) , $setBackgroundColor_0((!btnShowGrid.colorsMixin && (btnShowGrid.colorsMixin = new ColorsMixin(btnShowGrid)) , btnShowGrid.colorsMixin), 'blue') , $setWaves(btnShowGrid, ($clinit_WavesType() , LIGHT)) , $addDomHandler(btnShowGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames2, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShowGrid), $get_0(this$static.domId3Element));
   $addAndReplaceElement_1(f_HTMLPanel2, (btnCloseGrid = new MaterialButton , btnCloseGrid.span_0.setText('Close Grid') , $add_13(btnCloseGrid, btnCloseGrid.span_0) , $setTextColor_0((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'black') , $setBackgroundColor_0((!btnCloseGrid.colorsMixin && (btnCloseGrid.colorsMixin = new ColorsMixin(btnCloseGrid)) , btnCloseGrid.colorsMixin), 'white') , $setWaves(btnCloseGrid, LIGHT) , $addDomHandler(btnCloseGrid, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, (null , TYPE_1)) , btnCloseGrid), $get_0(this$static.domId4Element));
   $addAndReplaceElement_1(f_HTMLPanel2, (gridPanel = new MaterialRow , $add_13(gridPanel, (f_MaterialColumn6 = new MaterialColumn , $add_13(f_MaterialColumn6, (f_MaterialCard7 = new MaterialCard , $add_13(f_MaterialCard7, (f_MaterialCardContent8 = new MaterialCardContent , $add_13(f_MaterialCardContent8, (f_MaterialCardTitle9 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle9, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle9.span_0.setText('Sample') , $add_13(f_MaterialCardTitle9, f_MaterialCardTitle9.span_0) , $setIconType_0(f_MaterialCardTitle9, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle9)) , $add_13(f_MaterialCardContent8, (f_MaterialLabel10 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel10.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel10)) , $setTextColor_0((!f_MaterialCardContent8.colorsMixin && (f_MaterialCardContent8.colorsMixin = new ColorsMixin(f_MaterialCardContent8)) , f_MaterialCardContent8.colorsMixin), 'white') , f_MaterialCardContent8)) , $add_13(f_MaterialCard7, (f_MaterialCardAction11 = new MaterialCardAction , $add_13(f_MaterialCardAction11, (f_MaterialLink12 = new MaterialLink , f_MaterialLink12.span_0.setText('Link 1') , $add_13(f_MaterialLink12, f_MaterialLink12.span_0) , f_MaterialLink12)) , $add_13(f_MaterialCardAction11, (f_MaterialLink13 = new MaterialLink , f_MaterialLink13.span_0.setText('Link 1') , $add_13(f_MaterialLink13, f_MaterialLink13.span_0) , f_MaterialLink13)) , f_MaterialCardAction11)) , $setBackgroundColor_0((!f_MaterialCard7.colorsMixin && (f_MaterialCard7.colorsMixin = new ColorsMixin(f_MaterialCard7)) , f_MaterialCard7.colorsMixin), 'blue-grey darken-1') , f_MaterialCard7)) , $setGrid((!f_MaterialColumn6.gridMixin && (f_MaterialColumn6.gridMixin = new GridMixin(f_MaterialColumn6)) , f_MaterialColumn6.gridMixin), 'l3') , f_MaterialColumn6)) , $add_13(gridPanel, (f_MaterialColumn14 = new MaterialColumn , $add_13(f_MaterialColumn14, (f_MaterialCard15 = new MaterialCard , $add_13(f_MaterialCard15, (f_MaterialCardContent16 = new MaterialCardContent , $add_13(f_MaterialCardContent16, (f_MaterialCardTitle17 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle17, RIGHT_5) , f_MaterialCardTitle17.span_0.setText('Sample') , $add_13(f_MaterialCardTitle17, f_MaterialCardTitle17.span_0) , $setIconType_0(f_MaterialCardTitle17, POLYMER) , f_MaterialCardTitle17)) , $add_13(f_MaterialCardContent16, (f_MaterialLabel18 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel18.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel18)) , $setTextColor_0((!f_MaterialCardContent16.colorsMixin && (f_MaterialCardContent16.colorsMixin = new ColorsMixin(f_MaterialCardContent16)) , f_MaterialCardContent16.colorsMixin), 'white') , f_MaterialCardContent16)) , $add_13(f_MaterialCard15, (f_MaterialCardAction19 = new MaterialCardAction , $add_13(f_MaterialCardAction19, (f_MaterialLink20 = new MaterialLink , f_MaterialLink20.span_0.setText('Link 1') , $add_13(f_MaterialLink20, f_MaterialLink20.span_0) , f_MaterialLink20)) , $add_13(f_MaterialCardAction19, (f_MaterialLink21 = new MaterialLink , f_MaterialLink21.span_0.setText('Link 1') , $add_13(f_MaterialLink21, f_MaterialLink21.span_0) , f_MaterialLink21)) , f_MaterialCardAction19)) , $setBackgroundColor_0((!f_MaterialCard15.colorsMixin && (f_MaterialCard15.colorsMixin = new ColorsMixin(f_MaterialCard15)) , f_MaterialCard15.colorsMixin), 'blue-grey darken-1') , f_MaterialCard15)) , $setGrid((!f_MaterialColumn14.gridMixin && (f_MaterialColumn14.gridMixin = new GridMixin(f_MaterialColumn14)) , f_MaterialColumn14.gridMixin), 'l3') , f_MaterialColumn14)) , $add_13(gridPanel, (f_MaterialColumn22 = new MaterialColumn , $add_13(f_MaterialColumn22, (f_MaterialCard23 = new MaterialCard , $add_13(f_MaterialCard23, (f_MaterialCardContent24 = new MaterialCardContent , $add_13(f_MaterialCardContent24, (f_MaterialCardTitle25 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle25, RIGHT_5) , f_MaterialCardTitle25.span_0.setText('Sample') , $add_13(f_MaterialCardTitle25, f_MaterialCardTitle25.span_0) , $setIconType_0(f_MaterialCardTitle25, POLYMER) , f_MaterialCardTitle25)) , $add_13(f_MaterialCardContent24, (f_MaterialLabel26 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel26.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel26)) , $setTextColor_0((!f_MaterialCardContent24.colorsMixin && (f_MaterialCardContent24.colorsMixin = new ColorsMixin(f_MaterialCardContent24)) , f_MaterialCardContent24.colorsMixin), 'white') , f_MaterialCardContent24)) , $add_13(f_MaterialCard23, (f_MaterialCardAction27 = new MaterialCardAction , $add_13(f_MaterialCardAction27, (f_MaterialLink28 = new MaterialLink , f_MaterialLink28.span_0.setText('Link 1') , $add_13(f_MaterialLink28, f_MaterialLink28.span_0) , f_MaterialLink28)) , $add_13(f_MaterialCardAction27, (f_MaterialLink29 = new MaterialLink , f_MaterialLink29.span_0.setText('Link 1') , $add_13(f_MaterialLink29, f_MaterialLink29.span_0) , f_MaterialLink29)) , f_MaterialCardAction27)) , $setBackgroundColor_0((!f_MaterialCard23.colorsMixin && (f_MaterialCard23.colorsMixin = new ColorsMixin(f_MaterialCard23)) , f_MaterialCard23.colorsMixin), 'blue-grey darken-1') , f_MaterialCard23)) , $setGrid((!f_MaterialColumn22.gridMixin && (f_MaterialColumn22.gridMixin = new GridMixin(f_MaterialColumn22)) , f_MaterialColumn22.gridMixin), 'l3') , f_MaterialColumn22)) , $add_13(gridPanel, (f_MaterialColumn30 = new MaterialColumn , $add_13(f_MaterialColumn30, (f_MaterialCard31 = new MaterialCard , $add_13(f_MaterialCard31, (f_MaterialCardContent32 = new MaterialCardContent , $add_13(f_MaterialCardContent32, (f_MaterialCardTitle33 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle33, RIGHT_5) , f_MaterialCardTitle33.span_0.setText('Sample') , $add_13(f_MaterialCardTitle33, f_MaterialCardTitle33.span_0) , $setIconType_0(f_MaterialCardTitle33, POLYMER) , f_MaterialCardTitle33)) , $add_13(f_MaterialCardContent32, (f_MaterialLabel34 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel34.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel34)) , $setTextColor_0((!f_MaterialCardContent32.colorsMixin && (f_MaterialCardContent32.colorsMixin = new ColorsMixin(f_MaterialCardContent32)) , f_MaterialCardContent32.colorsMixin), 'white') , f_MaterialCardContent32)) , $add_13(f_MaterialCard31, (f_MaterialCardAction35 = new MaterialCardAction , $add_13(f_MaterialCardAction35, (f_MaterialLink36 = new MaterialLink , f_MaterialLink36.span_0.setText('Link 1') , $add_13(f_MaterialLink36, f_MaterialLink36.span_0) , f_MaterialLink36)) , $add_13(f_MaterialCardAction35, (f_MaterialLink37 = new MaterialLink , f_MaterialLink37.span_0.setText('Link 1') , $add_13(f_MaterialLink37, f_MaterialLink37.span_0) , f_MaterialLink37)) , f_MaterialCardAction35)) , $setBackgroundColor_0((!f_MaterialCard31.colorsMixin && (f_MaterialCard31.colorsMixin = new ColorsMixin(f_MaterialCard31)) , f_MaterialCard31.colorsMixin), 'blue-grey darken-1') , f_MaterialCard31)) , $setGrid((!f_MaterialColumn30.gridMixin && (f_MaterialColumn30.gridMixin = new GridMixin(f_MaterialColumn30)) , f_MaterialColumn30.gridMixin), 'l3') , f_MaterialColumn30)) , $add_13(gridPanel, (f_MaterialColumn38 = new MaterialColumn , $add_13(f_MaterialColumn38, (f_MaterialCard39 = new MaterialCard , $add_13(f_MaterialCard39, (f_MaterialCardContent40 = new MaterialCardContent , $add_13(f_MaterialCardContent40, (f_MaterialCardTitle41 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle41, RIGHT_5) , f_MaterialCardTitle41.span_0.setText('Sample') , $add_13(f_MaterialCardTitle41, f_MaterialCardTitle41.span_0) , $setIconType_0(f_MaterialCardTitle41, POLYMER) , f_MaterialCardTitle41)) , $add_13(f_MaterialCardContent40, (f_MaterialLabel42 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel42.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel42)) , $setTextColor_0((!f_MaterialCardContent40.colorsMixin && (f_MaterialCardContent40.colorsMixin = new ColorsMixin(f_MaterialCardContent40)) , f_MaterialCardContent40.colorsMixin), 'white') , f_MaterialCardContent40)) , $add_13(f_MaterialCard39, (f_MaterialCardAction43 = new MaterialCardAction , $add_13(f_MaterialCardAction43, (f_MaterialLink44 = new MaterialLink , f_MaterialLink44.span_0.setText('Link 1') , $add_13(f_MaterialLink44, f_MaterialLink44.span_0) , f_MaterialLink44)) , $add_13(f_MaterialCardAction43, (f_MaterialLink45 = new MaterialLink , f_MaterialLink45.span_0.setText('Link 1') , $add_13(f_MaterialLink45, f_MaterialLink45.span_0) , f_MaterialLink45)) , f_MaterialCardAction43)) , $setBackgroundColor_0((!f_MaterialCard39.colorsMixin && (f_MaterialCard39.colorsMixin = new ColorsMixin(f_MaterialCard39)) , f_MaterialCard39.colorsMixin), 'blue-grey darken-1') , f_MaterialCard39)) , $setGrid((!f_MaterialColumn38.gridMixin && (f_MaterialColumn38.gridMixin = new GridMixin(f_MaterialColumn38)) , f_MaterialColumn38.gridMixin), 'l3') , f_MaterialColumn38)) , $add_13(gridPanel, (f_MaterialColumn46 = new MaterialColumn , $add_13(f_MaterialColumn46, (f_MaterialCard47 = new MaterialCard , $add_13(f_MaterialCard47, (f_MaterialCardContent48 = new MaterialCardContent , $add_13(f_MaterialCardContent48, (f_MaterialCardTitle49 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle49, RIGHT_5) , f_MaterialCardTitle49.span_0.setText('Sample') , $add_13(f_MaterialCardTitle49, f_MaterialCardTitle49.span_0) , $setIconType_0(f_MaterialCardTitle49, POLYMER) , f_MaterialCardTitle49)) , $add_13(f_MaterialCardContent48, (f_MaterialLabel50 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel50.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel50)) , $setTextColor_0((!f_MaterialCardContent48.colorsMixin && (f_MaterialCardContent48.colorsMixin = new ColorsMixin(f_MaterialCardContent48)) , f_MaterialCardContent48.colorsMixin), 'white') , f_MaterialCardContent48)) , $add_13(f_MaterialCard47, (f_MaterialCardAction51 = new MaterialCardAction , $add_13(f_MaterialCardAction51, (f_MaterialLink52 = new MaterialLink , f_MaterialLink52.span_0.setText('Link 1') , $add_13(f_MaterialLink52, f_MaterialLink52.span_0) , f_MaterialLink52)) , $add_13(f_MaterialCardAction51, (f_MaterialLink53 = new MaterialLink , f_MaterialLink53.span_0.setText('Link 1') , $add_13(f_MaterialLink53, f_MaterialLink53.span_0) , f_MaterialLink53)) , f_MaterialCardAction51)) , $setBackgroundColor_0((!f_MaterialCard47.colorsMixin && (f_MaterialCard47.colorsMixin = new ColorsMixin(f_MaterialCard47)) , f_MaterialCard47.colorsMixin), 'blue-grey darken-1') , f_MaterialCard47)) , $setGrid((!f_MaterialColumn46.gridMixin && (f_MaterialColumn46.gridMixin = new GridMixin(f_MaterialColumn46)) , f_MaterialColumn46.gridMixin), 'l3') , f_MaterialColumn46)) , $add_13(gridPanel, (f_MaterialColumn54 = new MaterialColumn , $add_13(f_MaterialColumn54, (f_MaterialCard55 = new MaterialCard , $add_13(f_MaterialCard55, (f_MaterialCardContent56 = new MaterialCardContent , $add_13(f_MaterialCardContent56, (f_MaterialCardTitle57 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle57, RIGHT_5) , f_MaterialCardTitle57.span_0.setText('Sample') , $add_13(f_MaterialCardTitle57, f_MaterialCardTitle57.span_0) , $setIconType_0(f_MaterialCardTitle57, POLYMER) , f_MaterialCardTitle57)) , $add_13(f_MaterialCardContent56, (f_MaterialLabel58 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel58.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel58)) , $setTextColor_0((!f_MaterialCardContent56.colorsMixin && (f_MaterialCardContent56.colorsMixin = new ColorsMixin(f_MaterialCardContent56)) , f_MaterialCardContent56.colorsMixin), 'white') , f_MaterialCardContent56)) , $add_13(f_MaterialCard55, (f_MaterialCardAction59 = new MaterialCardAction , $add_13(f_MaterialCardAction59, (f_MaterialLink60 = new MaterialLink , f_MaterialLink60.span_0.setText('Link 1') , $add_13(f_MaterialLink60, f_MaterialLink60.span_0) , f_MaterialLink60)) , $add_13(f_MaterialCardAction59, (f_MaterialLink61 = new MaterialLink , f_MaterialLink61.span_0.setText('Link 1') , $add_13(f_MaterialLink61, f_MaterialLink61.span_0) , f_MaterialLink61)) , f_MaterialCardAction59)) , $setBackgroundColor_0((!f_MaterialCard55.colorsMixin && (f_MaterialCard55.colorsMixin = new ColorsMixin(f_MaterialCard55)) , f_MaterialCard55.colorsMixin), 'blue-grey darken-1') , f_MaterialCard55)) , $setGrid((!f_MaterialColumn54.gridMixin && (f_MaterialColumn54.gridMixin = new GridMixin(f_MaterialColumn54)) , f_MaterialColumn54.gridMixin), 'l3') , f_MaterialColumn54)) , $add_13(gridPanel, (f_MaterialColumn62 = new MaterialColumn , $add_13(f_MaterialColumn62, (f_MaterialCard63 = new MaterialCard , $add_13(f_MaterialCard63, (f_MaterialCardContent64 = new MaterialCardContent , $add_13(f_MaterialCardContent64, (f_MaterialCardTitle65 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle65, RIGHT_5) , f_MaterialCardTitle65.span_0.setText('Sample') , $add_13(f_MaterialCardTitle65, f_MaterialCardTitle65.span_0) , $setIconType_0(f_MaterialCardTitle65, POLYMER) , f_MaterialCardTitle65)) , $add_13(f_MaterialCardContent64, (f_MaterialLabel66 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel66.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel66)) , $setTextColor_0((!f_MaterialCardContent64.colorsMixin && (f_MaterialCardContent64.colorsMixin = new ColorsMixin(f_MaterialCardContent64)) , f_MaterialCardContent64.colorsMixin), 'white') , f_MaterialCardContent64)) , $add_13(f_MaterialCard63, (f_MaterialCardAction67 = new MaterialCardAction , $add_13(f_MaterialCardAction67, (f_MaterialLink68 = new MaterialLink , f_MaterialLink68.span_0.setText('Link 1') , $add_13(f_MaterialLink68, f_MaterialLink68.span_0) , f_MaterialLink68)) , $add_13(f_MaterialCardAction67, (f_MaterialLink69 = new MaterialLink , f_MaterialLink69.span_0.setText('Link 1') , $add_13(f_MaterialLink69, f_MaterialLink69.span_0) , f_MaterialLink69)) , f_MaterialCardAction67)) , $setBackgroundColor_0((!f_MaterialCard63.colorsMixin && (f_MaterialCard63.colorsMixin = new ColorsMixin(f_MaterialCard63)) , f_MaterialCard63.colorsMixin), 'blue-grey darken-1') , f_MaterialCard63)) , $setGrid((!f_MaterialColumn62.gridMixin && (f_MaterialColumn62.gridMixin = new GridMixin(f_MaterialColumn62)) , f_MaterialColumn62.gridMixin), 'l3') , f_MaterialColumn62)) , $add_13(gridPanel, (f_MaterialColumn70 = new MaterialColumn , $add_13(f_MaterialColumn70, (f_MaterialCard71 = new MaterialCard , $add_13(f_MaterialCard71, (f_MaterialCardContent72 = new MaterialCardContent , $add_13(f_MaterialCardContent72, (f_MaterialCardTitle73 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle73, RIGHT_5) , f_MaterialCardTitle73.span_0.setText('Sample') , $add_13(f_MaterialCardTitle73, f_MaterialCardTitle73.span_0) , $setIconType_0(f_MaterialCardTitle73, POLYMER) , f_MaterialCardTitle73)) , $add_13(f_MaterialCardContent72, (f_MaterialLabel74 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel74.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel74)) , $setTextColor_0((!f_MaterialCardContent72.colorsMixin && (f_MaterialCardContent72.colorsMixin = new ColorsMixin(f_MaterialCardContent72)) , f_MaterialCardContent72.colorsMixin), 'white') , f_MaterialCardContent72)) , $add_13(f_MaterialCard71, (f_MaterialCardAction75 = new MaterialCardAction , $add_13(f_MaterialCardAction75, (f_MaterialLink76 = new MaterialLink , f_MaterialLink76.span_0.setText('Link 1') , $add_13(f_MaterialLink76, f_MaterialLink76.span_0) , f_MaterialLink76)) , $add_13(f_MaterialCardAction75, (f_MaterialLink77 = new MaterialLink , f_MaterialLink77.span_0.setText('Link 1') , $add_13(f_MaterialLink77, f_MaterialLink77.span_0) , f_MaterialLink77)) , f_MaterialCardAction75)) , $setBackgroundColor_0((!f_MaterialCard71.colorsMixin && (f_MaterialCard71.colorsMixin = new ColorsMixin(f_MaterialCard71)) , f_MaterialCard71.colorsMixin), 'blue-grey darken-1') , f_MaterialCard71)) , $setGrid((!f_MaterialColumn70.gridMixin && (f_MaterialColumn70.gridMixin = new GridMixin(f_MaterialColumn70)) , f_MaterialColumn70.gridMixin), 'l3') , f_MaterialColumn70)) , $add_13(gridPanel, (f_MaterialColumn78 = new MaterialColumn , $add_13(f_MaterialColumn78, (f_MaterialCard79 = new MaterialCard , $add_13(f_MaterialCard79, (f_MaterialCardContent80 = new MaterialCardContent , $add_13(f_MaterialCardContent80, (f_MaterialCardTitle81 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle81, RIGHT_5) , f_MaterialCardTitle81.span_0.setText('Sample') , $add_13(f_MaterialCardTitle81, f_MaterialCardTitle81.span_0) , $setIconType_0(f_MaterialCardTitle81, POLYMER) , f_MaterialCardTitle81)) , $add_13(f_MaterialCardContent80, (f_MaterialLabel82 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel82.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel82)) , $setTextColor_0((!f_MaterialCardContent80.colorsMixin && (f_MaterialCardContent80.colorsMixin = new ColorsMixin(f_MaterialCardContent80)) , f_MaterialCardContent80.colorsMixin), 'white') , f_MaterialCardContent80)) , $add_13(f_MaterialCard79, (f_MaterialCardAction83 = new MaterialCardAction , $add_13(f_MaterialCardAction83, (f_MaterialLink84 = new MaterialLink , f_MaterialLink84.span_0.setText('Link 1') , $add_13(f_MaterialLink84, f_MaterialLink84.span_0) , f_MaterialLink84)) , $add_13(f_MaterialCardAction83, (f_MaterialLink85 = new MaterialLink , f_MaterialLink85.span_0.setText('Link 1') , $add_13(f_MaterialLink85, f_MaterialLink85.span_0) , f_MaterialLink85)) , f_MaterialCardAction83)) , $setBackgroundColor_0((!f_MaterialCard79.colorsMixin && (f_MaterialCard79.colorsMixin = new ColorsMixin(f_MaterialCard79)) , f_MaterialCard79.colorsMixin), 'blue-grey darken-1') , f_MaterialCard79)) , $setGrid((!f_MaterialColumn78.gridMixin && (f_MaterialColumn78.gridMixin = new GridMixin(f_MaterialColumn78)) , f_MaterialColumn78.gridMixin), 'l3') , f_MaterialColumn78)) , $add_13(gridPanel, (f_MaterialColumn86 = new MaterialColumn , $add_13(f_MaterialColumn86, (f_MaterialCard87 = new MaterialCard , $add_13(f_MaterialCard87, (f_MaterialCardContent88 = new MaterialCardContent , $add_13(f_MaterialCardContent88, (f_MaterialCardTitle89 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle89, RIGHT_5) , f_MaterialCardTitle89.span_0.setText('Sample') , $add_13(f_MaterialCardTitle89, f_MaterialCardTitle89.span_0) , $setIconType_0(f_MaterialCardTitle89, POLYMER) , f_MaterialCardTitle89)) , $add_13(f_MaterialCardContent88, (f_MaterialLabel90 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel90.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel90)) , $setTextColor_0((!f_MaterialCardContent88.colorsMixin && (f_MaterialCardContent88.colorsMixin = new ColorsMixin(f_MaterialCardContent88)) , f_MaterialCardContent88.colorsMixin), 'white') , f_MaterialCardContent88)) , $add_13(f_MaterialCard87, (f_MaterialCardAction91 = new MaterialCardAction , $add_13(f_MaterialCardAction91, (f_MaterialLink92 = new MaterialLink , f_MaterialLink92.span_0.setText('Link 1') , $add_13(f_MaterialLink92, f_MaterialLink92.span_0) , f_MaterialLink92)) , $add_13(f_MaterialCardAction91, (f_MaterialLink93 = new MaterialLink , f_MaterialLink93.span_0.setText('Link 1') , $add_13(f_MaterialLink93, f_MaterialLink93.span_0) , f_MaterialLink93)) , f_MaterialCardAction91)) , $setBackgroundColor_0((!f_MaterialCard87.colorsMixin && (f_MaterialCard87.colorsMixin = new ColorsMixin(f_MaterialCard87)) , f_MaterialCard87.colorsMixin), 'blue-grey darken-1') , f_MaterialCard87)) , $setGrid((!f_MaterialColumn86.gridMixin && (f_MaterialColumn86.gridMixin = new GridMixin(f_MaterialColumn86)) , f_MaterialColumn86.gridMixin), 'l3') , f_MaterialColumn86)) , $add_13(gridPanel, (f_MaterialColumn94 = new MaterialColumn , $add_13(f_MaterialColumn94, (f_MaterialCard95 = new MaterialCard , $add_13(f_MaterialCard95, (f_MaterialCardContent96 = new MaterialCardContent , $add_13(f_MaterialCardContent96, (f_MaterialCardTitle97 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle97, RIGHT_5) , f_MaterialCardTitle97.span_0.setText('Sample') , $add_13(f_MaterialCardTitle97, f_MaterialCardTitle97.span_0) , $setIconType_0(f_MaterialCardTitle97, POLYMER) , f_MaterialCardTitle97)) , $add_13(f_MaterialCardContent96, (f_MaterialLabel98 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel98.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel98)) , $setTextColor_0((!f_MaterialCardContent96.colorsMixin && (f_MaterialCardContent96.colorsMixin = new ColorsMixin(f_MaterialCardContent96)) , f_MaterialCardContent96.colorsMixin), 'white') , f_MaterialCardContent96)) , $add_13(f_MaterialCard95, (f_MaterialCardAction99 = new MaterialCardAction , $add_13(f_MaterialCardAction99, (f_MaterialLink100 = new MaterialLink , f_MaterialLink100.span_0.setText('Link 1') , $add_13(f_MaterialLink100, f_MaterialLink100.span_0) , f_MaterialLink100)) , $add_13(f_MaterialCardAction99, (f_MaterialLink101 = new MaterialLink , f_MaterialLink101.span_0.setText('Link 1') , $add_13(f_MaterialLink101, f_MaterialLink101.span_0) , f_MaterialLink101)) , f_MaterialCardAction99)) , $setBackgroundColor_0((!f_MaterialCard95.colorsMixin && (f_MaterialCard95.colorsMixin = new ColorsMixin(f_MaterialCard95)) , f_MaterialCard95.colorsMixin), 'blue-grey darken-1') , f_MaterialCard95)) , $setGrid((!f_MaterialColumn94.gridMixin && (f_MaterialColumn94.gridMixin = new GridMixin(f_MaterialColumn94)) , f_MaterialColumn94.gridMixin), 'l3') , f_MaterialColumn94)) , $add_13(gridPanel, (f_MaterialColumn102 = new MaterialColumn , $add_13(f_MaterialColumn102, (f_MaterialCard103 = new MaterialCard , $add_13(f_MaterialCard103, (f_MaterialCardContent104 = new MaterialCardContent , $add_13(f_MaterialCardContent104, (f_MaterialCardTitle105 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle105, RIGHT_5) , f_MaterialCardTitle105.span_0.setText('Sample') , $add_13(f_MaterialCardTitle105, f_MaterialCardTitle105.span_0) , $setIconType_0(f_MaterialCardTitle105, POLYMER) , f_MaterialCardTitle105)) , $add_13(f_MaterialCardContent104, (f_MaterialLabel106 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel106.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel106)) , $setTextColor_0((!f_MaterialCardContent104.colorsMixin && (f_MaterialCardContent104.colorsMixin = new ColorsMixin(f_MaterialCardContent104)) , f_MaterialCardContent104.colorsMixin), 'white') , f_MaterialCardContent104)) , $add_13(f_MaterialCard103, (f_MaterialCardAction107 = new MaterialCardAction , $add_13(f_MaterialCardAction107, (f_MaterialLink108 = new MaterialLink , f_MaterialLink108.span_0.setText('Link 1') , $add_13(f_MaterialLink108, f_MaterialLink108.span_0) , f_MaterialLink108)) , $add_13(f_MaterialCardAction107, (f_MaterialLink109 = new MaterialLink , f_MaterialLink109.span_0.setText('Link 1') , $add_13(f_MaterialLink109, f_MaterialLink109.span_0) , f_MaterialLink109)) , f_MaterialCardAction107)) , $setBackgroundColor_0((!f_MaterialCard103.colorsMixin && (f_MaterialCard103.colorsMixin = new ColorsMixin(f_MaterialCard103)) , f_MaterialCard103.colorsMixin), 'blue-grey darken-1') , f_MaterialCard103)) , $setGrid((!f_MaterialColumn102.gridMixin && (f_MaterialColumn102.gridMixin = new GridMixin(f_MaterialColumn102)) , f_MaterialColumn102.gridMixin), 'l3') , f_MaterialColumn102)) , $add_13(gridPanel, (f_MaterialColumn110 = new MaterialColumn , $add_13(f_MaterialColumn110, (f_MaterialCard111 = new MaterialCard , $add_13(f_MaterialCard111, (f_MaterialCardContent112 = new MaterialCardContent , $add_13(f_MaterialCardContent112, (f_MaterialCardTitle113 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle113, RIGHT_5) , f_MaterialCardTitle113.span_0.setText('Sample') , $add_13(f_MaterialCardTitle113, f_MaterialCardTitle113.span_0) , $setIconType_0(f_MaterialCardTitle113, POLYMER) , f_MaterialCardTitle113)) , $add_13(f_MaterialCardContent112, (f_MaterialLabel114 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel114.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel114)) , $setTextColor_0((!f_MaterialCardContent112.colorsMixin && (f_MaterialCardContent112.colorsMixin = new ColorsMixin(f_MaterialCardContent112)) , f_MaterialCardContent112.colorsMixin), 'white') , f_MaterialCardContent112)) , $add_13(f_MaterialCard111, (f_MaterialCardAction115 = new MaterialCardAction , $add_13(f_MaterialCardAction115, (f_MaterialLink116 = new MaterialLink , f_MaterialLink116.span_0.setText('Link 1') , $add_13(f_MaterialLink116, f_MaterialLink116.span_0) , f_MaterialLink116)) , $add_13(f_MaterialCardAction115, (f_MaterialLink117 = new MaterialLink , f_MaterialLink117.span_0.setText('Link 1') , $add_13(f_MaterialLink117, f_MaterialLink117.span_0) , f_MaterialLink117)) , f_MaterialCardAction115)) , $setBackgroundColor_0((!f_MaterialCard111.colorsMixin && (f_MaterialCard111.colorsMixin = new ColorsMixin(f_MaterialCard111)) , f_MaterialCard111.colorsMixin), 'blue-grey darken-1') , f_MaterialCard111)) , $setGrid((!f_MaterialColumn110.gridMixin && (f_MaterialColumn110.gridMixin = new GridMixin(f_MaterialColumn110)) , f_MaterialColumn110.gridMixin), 'l3') , f_MaterialColumn110)) , $add_13(gridPanel, (f_MaterialColumn118 = new MaterialColumn , $add_13(f_MaterialColumn118, (f_MaterialCard119 = new MaterialCard , $add_13(f_MaterialCard119, (f_MaterialCardContent120 = new MaterialCardContent , $add_13(f_MaterialCardContent120, (f_MaterialCardTitle121 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle121, RIGHT_5) , f_MaterialCardTitle121.span_0.setText('Sample') , $add_13(f_MaterialCardTitle121, f_MaterialCardTitle121.span_0) , $setIconType_0(f_MaterialCardTitle121, POLYMER) , f_MaterialCardTitle121)) , $add_13(f_MaterialCardContent120, (f_MaterialLabel122 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel122.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel122)) , $setTextColor_0((!f_MaterialCardContent120.colorsMixin && (f_MaterialCardContent120.colorsMixin = new ColorsMixin(f_MaterialCardContent120)) , f_MaterialCardContent120.colorsMixin), 'white') , f_MaterialCardContent120)) , $add_13(f_MaterialCard119, (f_MaterialCardAction123 = new MaterialCardAction , $add_13(f_MaterialCardAction123, (f_MaterialLink124 = new MaterialLink , f_MaterialLink124.span_0.setText('Link 1') , $add_13(f_MaterialLink124, f_MaterialLink124.span_0) , f_MaterialLink124)) , $add_13(f_MaterialCardAction123, (f_MaterialLink125 = new MaterialLink , f_MaterialLink125.span_0.setText('Link 1') , $add_13(f_MaterialLink125, f_MaterialLink125.span_0) , f_MaterialLink125)) , f_MaterialCardAction123)) , $setBackgroundColor_0((!f_MaterialCard119.colorsMixin && (f_MaterialCard119.colorsMixin = new ColorsMixin(f_MaterialCard119)) , f_MaterialCard119.colorsMixin), 'blue-grey darken-1') , f_MaterialCard119)) , $setGrid((!f_MaterialColumn118.gridMixin && (f_MaterialColumn118.gridMixin = new GridMixin(f_MaterialColumn118)) , f_MaterialColumn118.gridMixin), 'l3') , f_MaterialColumn118)) , $add_13(gridPanel, (f_MaterialColumn126 = new MaterialColumn , $add_13(f_MaterialColumn126, (f_MaterialCard127 = new MaterialCard , $add_13(f_MaterialCard127, (f_MaterialCardContent128 = new MaterialCardContent , $add_13(f_MaterialCardContent128, (f_MaterialCardTitle129 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle129, RIGHT_5) , f_MaterialCardTitle129.span_0.setText('Sample') , $add_13(f_MaterialCardTitle129, f_MaterialCardTitle129.span_0) , $setIconType_0(f_MaterialCardTitle129, POLYMER) , f_MaterialCardTitle129)) , $add_13(f_MaterialCardContent128, (f_MaterialLabel130 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel130.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel130)) , $setTextColor_0((!f_MaterialCardContent128.colorsMixin && (f_MaterialCardContent128.colorsMixin = new ColorsMixin(f_MaterialCardContent128)) , f_MaterialCardContent128.colorsMixin), 'white') , f_MaterialCardContent128)) , $add_13(f_MaterialCard127, (f_MaterialCardAction131 = new MaterialCardAction , $add_13(f_MaterialCardAction131, (f_MaterialLink132 = new MaterialLink , f_MaterialLink132.span_0.setText('Link 1') , $add_13(f_MaterialLink132, f_MaterialLink132.span_0) , f_MaterialLink132)) , $add_13(f_MaterialCardAction131, (f_MaterialLink133 = new MaterialLink , f_MaterialLink133.span_0.setText('Link 1') , $add_13(f_MaterialLink133, f_MaterialLink133.span_0) , f_MaterialLink133)) , f_MaterialCardAction131)) , $setBackgroundColor_0((!f_MaterialCard127.colorsMixin && (f_MaterialCard127.colorsMixin = new ColorsMixin(f_MaterialCard127)) , f_MaterialCard127.colorsMixin), 'blue-grey darken-1') , f_MaterialCard127)) , $setGrid((!f_MaterialColumn126.gridMixin && (f_MaterialColumn126.gridMixin = new GridMixin(f_MaterialColumn126)) , f_MaterialColumn126.gridMixin), 'l3') , f_MaterialColumn126)) , this$static.owner.gridPanel = gridPanel , gridPanel), $get_0(this$static.domId5Element));
@@ -13816,7 +13845,7 @@ function MeaningfulAnimationsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(885, 1, $intern_55, MeaningfulAnimationsView_BinderImpl$Widgets$1);
+defineClass(885, 1, $intern_56, MeaningfulAnimationsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_55(event_0){
   $onCloseGrid(this.this$11.owner);
 }
@@ -13826,7 +13855,7 @@ function MeaningfulAnimationsView_BinderImpl$Widgets$2(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(886, 1, $intern_55, MeaningfulAnimationsView_BinderImpl$Widgets$2);
+defineClass(886, 1, $intern_56, MeaningfulAnimationsView_BinderImpl$Widgets$2);
 _.onClick = function onClick_56(event_0){
   $onShowGrid(this.this$11.owner);
 }
@@ -13836,7 +13865,7 @@ function MeaningfulAnimationsView_BinderImpl$Widgets$3(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(887, 1, $intern_55, MeaningfulAnimationsView_BinderImpl$Widgets$3);
+defineClass(887, 1, $intern_56, MeaningfulAnimationsView_BinderImpl$Widgets$3);
 _.onClick = function onClick_57(event_0){
   $onStaggered(this.this$11.owner);
 }
@@ -13846,7 +13875,7 @@ function MeaningfulAnimationsView_BinderImpl$Widgets$4(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(888, 1, $intern_55, MeaningfulAnimationsView_BinderImpl$Widgets$4);
+defineClass(888, 1, $intern_56, MeaningfulAnimationsView_BinderImpl$Widgets$4);
 _.onClick = function onClick_58(event_0){
   $onFade(this.this$11.owner);
 }
@@ -13855,9 +13884,9 @@ var Lgwt_material_design_demo_client_application_animations_meaningful_Meaningfu
 function MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1209, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1210, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_6;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1209);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1210);
 function $ensureInjected_11(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -13872,13 +13901,13 @@ function $ensureInjected_11(this$static){
 function MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1210, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1211, 1, {}, MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_19(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1210);
+var Lgwt_material_design_demo_client_application_animations_meaningful_MeaningfulAnimationsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.animations.meaningful', 'MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1211);
 function $clinit_MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_6 = new MeaningfulAnimationsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -13987,7 +14016,7 @@ function ChartsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(574, 56, $intern_42, ChartsPresenter);
+defineClass(574, 56, $intern_43, ChartsPresenter);
 _.onReveal = function onReveal_10(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Material Charts', 'Using GWT Charts Library , we tried to do couple of Material Design Charts based on Design Options on each respective chart libraries.'));
@@ -14001,7 +14030,7 @@ function ChartsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(639, 63, $intern_61, ChartsPresenterMyProxyImpl);
+defineClass(639, 63, $intern_62, ChartsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_18(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14026,7 +14055,7 @@ function $delayedBind_8(this$static, baseGinjector){
 function ChartsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(640, $intern_47, $intern_60, ChartsPresenterMyProxyImpl$WrappedProxy);
+defineClass(640, $intern_48, $intern_61, ChartsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_19(baseGinjector){
   $delayedBind_8(this, baseGinjector);
 }
@@ -14037,7 +14066,7 @@ function ChartsView(){
   $initWidget_0(this, $build_f_HTMLPanel1_3(new ChartsView_BinderImpl$Widgets));
 }
 
-defineClass(727, 59, $intern_43, ChartsView);
+defineClass(727, 59, $intern_44, ChartsView);
 var Lgwt_material_design_demo_client_application_charts_ChartsView_2_classLit = createForClass('gwt.material.design.demo.client.application.charts', 'ChartsView', 727);
 function ChartsView_BinderImpl(){
 }
@@ -14224,7 +14253,7 @@ function AutoCompletePresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(641, 63, $intern_61, AutoCompletePresenterMyProxyImpl);
+defineClass(641, 63, $intern_62, AutoCompletePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_20(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14246,7 +14275,7 @@ function $delayedBind_9(this$static, baseGinjector){
 function AutoCompletePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(642, $intern_47, $intern_60, AutoCompletePresenterMyProxyImpl$WrappedProxy);
+defineClass(642, $intern_48, $intern_61, AutoCompletePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_21(baseGinjector){
   $delayedBind_9(this, baseGinjector);
 }
@@ -14291,7 +14320,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(499, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_5);
+defineClass(499, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_5);
 _.onFailure_0 = function onFailure_6(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -14302,7 +14331,7 @@ function BadgesPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(576, 56, $intern_42, BadgesPresenter);
+defineClass(576, 56, $intern_43, BadgesPresenter);
 _.onReveal = function onReveal_12(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Badges', 'Badges can notify you that there are new or unread messages or notifications. Add the new class to the badge to give it the background.'));
@@ -14315,7 +14344,7 @@ function BadgesPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(643, 63, $intern_61, BadgesPresenterMyProxyImpl);
+defineClass(643, 63, $intern_62, BadgesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_22(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14337,7 +14366,7 @@ function $delayedBind_10(this$static, baseGinjector){
 function BadgesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(644, $intern_47, $intern_60, BadgesPresenterMyProxyImpl$WrappedProxy);
+defineClass(644, $intern_48, $intern_61, BadgesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_23(baseGinjector){
   $delayedBind_10(this, baseGinjector);
 }
@@ -14348,7 +14377,7 @@ function BadgesView(){
   $initWidget_0(this, $build_f_HTMLPanel1_5(new BadgesView_BinderImpl$Widgets));
 }
 
-defineClass(729, 59, $intern_43, BadgesView);
+defineClass(729, 59, $intern_44, BadgesView);
 var Lgwt_material_design_demo_client_application_components_badges_BadgesView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.badges', 'BadgesView', 729);
 function BadgesView_BinderImpl(){
 }
@@ -14493,7 +14522,7 @@ function ButtonsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(577, 56, $intern_42, ButtonsPresenter);
+defineClass(577, 56, $intern_43, ButtonsPresenter);
 _.onReveal = function onReveal_13(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Buttons', 'There are 3 main button types described in material design. The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. The floating circular action button is meant for very important functions. Flat buttons are usually used within elements that already have depth like cards or modals.'));
@@ -14506,7 +14535,7 @@ function ButtonsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(645, 63, $intern_61, ButtonsPresenterMyProxyImpl);
+defineClass(645, 63, $intern_62, ButtonsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_24(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -14528,24 +14557,24 @@ function $delayedBind_11(this$static, baseGinjector){
 function ButtonsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(646, $intern_47, $intern_60, ButtonsPresenterMyProxyImpl$WrappedProxy);
+defineClass(646, $intern_48, $intern_61, ButtonsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_25(baseGinjector){
   $delayedBind_11(this, baseGinjector);
 }
 ;
 var Lgwt_material_design_demo_client_application_components_buttons_ButtonsPresenterMyProxyImpl$WrappedProxy_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsPresenterMyProxyImpl/WrappedProxy', 646);
 function $onClick_0(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Click Triggered', $intern_64, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Click Triggered', $intern_65, null);
   $setText_3(this$static.btnClick, 'Clicked');
 }
 
 function $onDoubleClick(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Double Click Triggered', $intern_64, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Double Click Triggered', $intern_65, null);
   $setText_3(this$static.btnDoubleClick, 'Double Clicked');
 }
 
 function $onHover(this$static){
-  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Hover Triggered', $intern_64, null);
+  $toast(new MaterialToast_0(initValues(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 18, 0, [])), 'Hover Triggered', $intern_65, null);
   $setText_3(this$static.btnHover, 'Hovered');
 }
 
@@ -14554,7 +14583,7 @@ function ButtonsView(){
   $initWidget_0(this, $build_panel(new ButtonsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(730, 59, $intern_43, ButtonsView);
+defineClass(730, 59, $intern_44, ButtonsView);
 var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView', 730);
 function ButtonsView_BinderImpl(){
 }
@@ -14765,7 +14794,7 @@ function ButtonsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(895, 1, $intern_55, ButtonsView_BinderImpl$Widgets$1);
+defineClass(895, 1, $intern_56, ButtonsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_63(event_0){
   $onClick_0(this.this$11.owner);
 }
@@ -14786,9 +14815,9 @@ var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_
 function ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1230, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1231, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_7;
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1230);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1231);
 function $ensureInjected_12(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -14803,13 +14832,13 @@ function $ensureInjected_12(this$static){
 function ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1231, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1232, 1, {}, ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_20(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1231);
+var Lgwt_material_design_demo_client_application_components_buttons_ButtonsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.buttons', 'ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1232);
 function $clinit_ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_7 = new ButtonsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -14970,7 +14999,7 @@ function CardsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(578, 56, $intern_42, CardsPresenter);
+defineClass(578, 56, $intern_43, CardsPresenter);
 _.onReveal = function onReveal_14(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('Cards', 'Cards are a convenient means of displaying content composed of different types of objects. They are also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.'));
@@ -14983,7 +15012,7 @@ function CardsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(647, 63, $intern_61, CardsPresenterMyProxyImpl);
+defineClass(647, 63, $intern_62, CardsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_26(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15005,7 +15034,7 @@ function $delayedBind_12(this$static, baseGinjector){
 function CardsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(648, $intern_47, $intern_60, CardsPresenterMyProxyImpl$WrappedProxy);
+defineClass(648, $intern_48, $intern_61, CardsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_27(baseGinjector){
   $delayedBind_12(this, baseGinjector);
 }
@@ -15020,7 +15049,7 @@ function CardsView(){
   $initWidget_0(this, $build_f_HTMLPanel1_6(new CardsView_BinderImpl$Widgets(this)));
 }
 
-defineClass(731, 59, $intern_43, CardsView);
+defineClass(731, 59, $intern_44, CardsView);
 var Lgwt_material_design_demo_client_application_components_cards_CardsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView', 731);
 function CardsView_BinderImpl(){
 }
@@ -15043,13 +15072,13 @@ function $build_f_HTMLPanel1_6(this$static){
   $get_0(this$static.domId9Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
   $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow2 = new MaterialRow , $add_13(f_MaterialRow2, (f_MaterialTitle3 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle3.header), 'Basic Card') , f_MaterialTitle3)) , $add_13(f_MaterialRow2, (f_MaterialColumn4 = new MaterialColumn , $add_13(f_MaterialColumn4, (f_MaterialCard5 = new MaterialCard , $add_13(f_MaterialCard5, (f_MaterialCardContent6 = new MaterialCardContent , $add_13(f_MaterialCardContent6, (f_MaterialCardTitle7 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle7, ($clinit_IconPosition() , RIGHT_5)) , f_MaterialCardTitle7.span_0.setText('Sample') , $add_13(f_MaterialCardTitle7, f_MaterialCardTitle7.span_0) , $setIconType_0(f_MaterialCardTitle7, ($clinit_IconType() , POLYMER)) , f_MaterialCardTitle7)) , $add_13(f_MaterialCardContent6, (f_MaterialLabel8 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel8.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel8)) , $setTextColor_0((!f_MaterialCardContent6.colorsMixin && (f_MaterialCardContent6.colorsMixin = new ColorsMixin(f_MaterialCardContent6)) , f_MaterialCardContent6.colorsMixin), 'white') , f_MaterialCardContent6)) , $add_13(f_MaterialCard5, (f_MaterialCardAction9 = new MaterialCardAction , $add_13(f_MaterialCardAction9, (f_MaterialLink10 = new MaterialLink , f_MaterialLink10.span_0.setText('Link 1') , $add_13(f_MaterialLink10, f_MaterialLink10.span_0) , $setIconType(f_MaterialLink10, POLYMER) , f_MaterialLink10)) , $add_13(f_MaterialCardAction9, (f_MaterialLink11 = new MaterialLink , f_MaterialLink11.span_0.setText('Link 1') , $add_13(f_MaterialLink11, f_MaterialLink11.span_0) , $setIconType(f_MaterialLink11, POLYMER) , f_MaterialLink11)) , f_MaterialCardAction9)) , $setBackgroundColor_0((!f_MaterialCard5.colorsMixin && (f_MaterialCard5.colorsMixin = new ColorsMixin(f_MaterialCard5)) , f_MaterialCard5.colorsMixin), 'blue-grey darken-1') , f_MaterialCard5)) , $setGrid((!f_MaterialColumn4.gridMixin && (f_MaterialColumn4.gridMixin = new GridMixin(f_MaterialColumn4)) , f_MaterialColumn4.gridMixin), 'l4') , f_MaterialColumn4)) , $add_13(f_MaterialRow2, (f_MaterialColumn12 = new MaterialColumn , $add_13(f_MaterialColumn12, (f_MaterialCard13 = new MaterialCard , $add_13(f_MaterialCard13, (f_MaterialCardContent14 = new MaterialCardContent , $add_13(f_MaterialCardContent14, (f_MaterialCardTitle15 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle15, RIGHT_5) , f_MaterialCardTitle15.span_0.setText('Sample') , $add_13(f_MaterialCardTitle15, f_MaterialCardTitle15.span_0) , $setTextColor_0((!f_MaterialCardTitle15.colorsMixin && (f_MaterialCardTitle15.colorsMixin = new ColorsMixin(f_MaterialCardTitle15)) , f_MaterialCardTitle15.colorsMixin), 'black') , $setIconColor(f_MaterialCardTitle15.icon_0, 'red') , $setIconType_0(f_MaterialCardTitle15, FAVORITE) , f_MaterialCardTitle15)) , $add_13(f_MaterialCardContent14, (f_MaterialLabel16 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel16.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel16)) , $setTextColor_0((!f_MaterialCardContent14.colorsMixin && (f_MaterialCardContent14.colorsMixin = new ColorsMixin(f_MaterialCardContent14)) , f_MaterialCardContent14.colorsMixin), 'black') , f_MaterialCardContent14)) , $add_13(f_MaterialCard13, (f_MaterialCardAction17 = new MaterialCardAction , $add_13(f_MaterialCardAction17, (f_MaterialLink18 = new MaterialLink , f_MaterialLink18.span_0.setText('Link 1') , $add_13(f_MaterialLink18, f_MaterialLink18.span_0) , $setTextColor_0((!f_MaterialLink18.colorsMixin && (f_MaterialLink18.colorsMixin = new ColorsMixin(f_MaterialLink18)) , f_MaterialLink18.colorsMixin), 'blue') , f_MaterialLink18)) , $add_13(f_MaterialCardAction17, (f_MaterialLink19 = new MaterialLink , f_MaterialLink19.span_0.setText('Link 1') , $add_13(f_MaterialLink19, f_MaterialLink19.span_0) , $setTextColor_0((!f_MaterialLink19.colorsMixin && (f_MaterialLink19.colorsMixin = new ColorsMixin(f_MaterialLink19)) , f_MaterialLink19.colorsMixin), 'blue') , f_MaterialLink19)) , f_MaterialCardAction17)) , $setBackgroundColor_0((!f_MaterialCard13.colorsMixin && (f_MaterialCard13.colorsMixin = new ColorsMixin(f_MaterialCard13)) , f_MaterialCard13.colorsMixin), 'white') , f_MaterialCard13)) , $setGrid((!f_MaterialColumn12.gridMixin && (f_MaterialColumn12.gridMixin = new GridMixin(f_MaterialColumn12)) , f_MaterialColumn12.gridMixin), 'l4') , f_MaterialColumn12)) , f_MaterialRow2), $get_0(this$static.domId0Element));
-  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre20 = new PrettyPre , $setHTML(f_PrettyPre20, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="white"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l4"&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre20.element, 'lang-xml', true) , setStyleName(f_PrettyPre20.element, 'z-depth-1', true) , f_PrettyPre20), $get_0(this$static.domId1Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre20 = new PrettyPre , $setHTML(f_PrettyPre20, (sb = new StringBuilder , sb.string += '\u2003&lt;m:MaterialRow&gt;<br> \u2003&lt;m:MaterialColumn grid="l4"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="blue-grey darken-1"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardContent textColor="white"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardContent&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" iconType="POLYMER"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" iconType="POLYMER"/&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardAction&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003&lt;/m:MaterialColumn&gt;<br> \u2003&lt;m:MaterialColumn grid="l4"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="white"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialCardTitle textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardContent&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" textColor="blue"/&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardAction&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003&lt;/m:MaterialColumn&gt;<br> &lt;/m:MaterialRow&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html) , setStyleName(f_PrettyPre20.element, 'lang-xml', true) , setStyleName(f_PrettyPre20.element, 'z-depth-1', true) , f_PrettyPre20), $get_0(this$static.domId1Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow21 = new MaterialRow , $add_13(f_MaterialRow21, (f_MaterialTitle22 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle22.header), 'Card Image') , f_MaterialTitle22)) , $add_13(f_MaterialRow21, (f_MaterialColumn23 = new MaterialColumn , $add_13(f_MaterialColumn23, (f_MaterialCard24 = new MaterialCard , $add_13(f_MaterialCard24, (f_MaterialCardImage25 = new MaterialCardImage , $add_16(f_MaterialCardImage25, (f_MaterialImage26 = new MaterialImage , $setUrl_2(f_MaterialImage26, ($clinit_UriUtils() , new SafeUriString('http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png'))) , f_MaterialImage26)) , $add_16(f_MaterialCardImage25, (f_MaterialCardTitle27 = new MaterialCardTitle , f_MaterialCardTitle27.span_0.setText('Sample') , $add_13(f_MaterialCardTitle27, f_MaterialCardTitle27.span_0) , f_MaterialCardTitle27)) , $setWaves(f_MaterialCardImage25, ($clinit_WavesType() , LIGHT)) , f_MaterialCardImage25)) , $add_13(f_MaterialCard24, (f_MaterialCardContent28 = new MaterialCardContent , $add_13(f_MaterialCardContent28, (f_MaterialLabel29 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel29.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel29)) , $setTextColor_0((!f_MaterialCardContent28.colorsMixin && (f_MaterialCardContent28.colorsMixin = new ColorsMixin(f_MaterialCardContent28)) , f_MaterialCardContent28.colorsMixin), 'black') , f_MaterialCardContent28)) , $add_13(f_MaterialCard24, (f_MaterialCardAction30 = new MaterialCardAction , $add_13(f_MaterialCardAction30, (f_MaterialLink31 = new MaterialLink , f_MaterialLink31.span_0.setText('Link 1') , $add_13(f_MaterialLink31, f_MaterialLink31.span_0) , f_MaterialLink31)) , $add_13(f_MaterialCardAction30, (f_MaterialLink32 = new MaterialLink , f_MaterialLink32.span_0.setText('Link 1') , $add_13(f_MaterialLink32, f_MaterialLink32.span_0) , f_MaterialLink32)) , f_MaterialCardAction30)) , $setBackgroundColor_0((!f_MaterialCard24.colorsMixin && (f_MaterialCard24.colorsMixin = new ColorsMixin(f_MaterialCard24)) , f_MaterialCard24.colorsMixin), 'white') , f_MaterialCard24)) , $setGrid((!f_MaterialColumn23.gridMixin && (f_MaterialColumn23.gridMixin = new GridMixin(f_MaterialColumn23)) , f_MaterialColumn23.gridMixin), 'l3') , f_MaterialColumn23)) , $add_13(f_MaterialRow21, (f_MaterialColumn33 = new MaterialColumn , $add_13(f_MaterialColumn33, (f_MaterialCard34 = new MaterialCard , $add_13(f_MaterialCard34, (f_MaterialCardImage35 = new MaterialCardImage , $add_16(f_MaterialCardImage35, (f_MaterialImage36 = new MaterialImage , $setUrl_2(f_MaterialImage36, new SafeUriString('http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb')) , f_MaterialImage36)) , $add_16(f_MaterialCardImage35, (f_MaterialCardTitle37 = new MaterialCardTitle , f_MaterialCardTitle37.span_0.setText('Sample') , $add_13(f_MaterialCardTitle37, f_MaterialCardTitle37.span_0) , f_MaterialCardTitle37)) , $setWaves(f_MaterialCardImage35, LIGHT) , f_MaterialCardImage35)) , $add_13(f_MaterialCard34, (f_MaterialCardContent38 = new MaterialCardContent , $add_13(f_MaterialCardContent38, (f_MaterialLabel39 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel39.directionalTextHelper, 'I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.') , f_MaterialLabel39)) , $setTextColor_0((!f_MaterialCardContent38.colorsMixin && (f_MaterialCardContent38.colorsMixin = new ColorsMixin(f_MaterialCardContent38)) , f_MaterialCardContent38.colorsMixin), 'black') , f_MaterialCardContent38)) , $add_13(f_MaterialCard34, (f_MaterialCardAction40 = new MaterialCardAction , $add_13(f_MaterialCardAction40, (f_MaterialLink41 = new MaterialLink , f_MaterialLink41.span_0.setText('Link 1') , $add_13(f_MaterialLink41, f_MaterialLink41.span_0) , f_MaterialLink41)) , $add_13(f_MaterialCardAction40, (f_MaterialLink42 = new MaterialLink , f_MaterialLink42.span_0.setText('Link 1') , $add_13(f_MaterialLink42, f_MaterialLink42.span_0) , f_MaterialLink42)) , f_MaterialCardAction40)) , $setBackgroundColor_0((!f_MaterialCard34.colorsMixin && (f_MaterialCard34.colorsMixin = new ColorsMixin(f_MaterialCard34)) , f_MaterialCard34.colorsMixin), 'white') , f_MaterialCard34)) , $setGrid((!f_MaterialColumn33.gridMixin && (f_MaterialColumn33.gridMixin = new GridMixin(f_MaterialColumn33)) , f_MaterialColumn33.gridMixin), 'l3') , f_MaterialColumn33)) , f_MaterialRow21), $get_0(this$static.domId2Element));
-  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre43 = new PrettyPre , $setHTML(f_PrettyPre43, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample"/&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br><br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br><br> \u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/&gt;<br> \u2003\u2003&lt;m:MaterialCardTitle text="Sample" /&gt;<br> \u2003&lt;/m:MaterialCardImage&gt;<br> \u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003&lt;/m:MaterialCardContent&gt;<br> \u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003&lt;/m:MaterialCardAction&gt;<br><br> &lt;/m:MaterialCard&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre43.element, 'lang-xml', true) , setStyleName(f_PrettyPre43.element, 'z-depth-1', true) , f_PrettyPre43), $get_0(this$static.domId3Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre43 = new PrettyPre , $setHTML(f_PrettyPre43, (sb_0 = new StringBuilder , sb_0.string += '\u2003&lt;m:MaterialRow&gt;<br> \u2003&lt;m:MaterialColumn grid="l3"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="white"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialCardTitle text="Sample"/&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardImage&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardContent&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1" /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardAction&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003&lt;/m:MaterialColumn&gt;<br> \u2003&lt;m:MaterialColumn grid="l3"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="white"&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardImage waves="LIGHT"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialCardTitle text="Sample" /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardImage&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardContent textColor="black"&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardContent&gt;<br> \u2003\u2003\u2003&lt;m:MaterialCardAction&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003\u2003\u2003&lt;m:MaterialLink text="Link 1"/&gt;<br> \u2003\u2003\u2003&lt;/m:MaterialCardAction&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003&lt;/m:MaterialColumn&gt;<br> &lt;/m:MaterialRow&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html) , setStyleName(f_PrettyPre43.element, 'lang-xml', true) , setStyleName(f_PrettyPre43.element, 'z-depth-1', true) , f_PrettyPre43), $get_0(this$static.domId3Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialRow44 = new MaterialRow , $add_13(f_MaterialRow44, (f_MaterialTitle45 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle45.header), 'Card Reveal') , f_MaterialTitle45)) , $add_13(f_MaterialRow44, (f_MaterialColumn46 = new MaterialColumn , $add_13(f_MaterialColumn46, (f_MaterialCard47 = new MaterialCard , $add_13(f_MaterialCard47, (f_MaterialCardImage48 = new MaterialCardImage , $add_16(f_MaterialCardImage48, (f_MaterialImage49 = new MaterialImage , $setUrl_2(f_MaterialImage49, new SafeUriString('http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif')) , f_MaterialImage49)) , $setWaves(f_MaterialCardImage48, LIGHT) , f_MaterialCardImage48)) , $add_13(f_MaterialCard47, (f_MaterialCardContent50 = new MaterialCardContent , $add_13(f_MaterialCardContent50, (f_MaterialCardTitle51 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle51, RIGHT_5) , f_MaterialCardTitle51.span_0.setText('Sample') , $add_13(f_MaterialCardTitle51, f_MaterialCardTitle51.span_0) , $setTextColor_0((!f_MaterialCardTitle51.colorsMixin && (f_MaterialCardTitle51.colorsMixin = new ColorsMixin(f_MaterialCardTitle51)) , f_MaterialCardTitle51.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle51, MORE_VERT) , f_MaterialCardTitle51)) , $setTextColor_0((!f_MaterialCardContent50.colorsMixin && (f_MaterialCardContent50.colorsMixin = new ColorsMixin(f_MaterialCardContent50)) , f_MaterialCardContent50.colorsMixin), 'black') , f_MaterialCardContent50)) , $add_13(f_MaterialCard47, (f_MaterialCardReveal52 = new MaterialCardReveal , $add_13(f_MaterialCardReveal52, (f_MaterialCardTitle53 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle53, RIGHT_5) , f_MaterialCardTitle53.span_0.setText('Sample') , $add_13(f_MaterialCardTitle53, f_MaterialCardTitle53.span_0) , $setTextColor_0((!f_MaterialCardTitle53.colorsMixin && (f_MaterialCardTitle53.colorsMixin = new ColorsMixin(f_MaterialCardTitle53)) , f_MaterialCardTitle53.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle53, CLOSE) , f_MaterialCardTitle53)) , $add_13(f_MaterialCardReveal52, (f_MaterialLabel54 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel54.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel54)) , f_MaterialCardReveal52)) , $add_13(f_MaterialCard47, (f_MaterialCardAction55 = new MaterialCardAction , $add_13(f_MaterialCardAction55, (f_MaterialLink56 = new MaterialLink , f_MaterialLink56.span_0.setText('Link 1') , $add_13(f_MaterialLink56, f_MaterialLink56.span_0) , $setTextColor_0((!f_MaterialLink56.colorsMixin && (f_MaterialLink56.colorsMixin = new ColorsMixin(f_MaterialLink56)) , f_MaterialLink56.colorsMixin), 'blue') , f_MaterialLink56)) , $add_13(f_MaterialCardAction55, (f_MaterialLink57 = new MaterialLink , f_MaterialLink57.span_0.setText('Link 1') , $add_13(f_MaterialLink57, f_MaterialLink57.span_0) , $setTextColor_0((!f_MaterialLink57.colorsMixin && (f_MaterialLink57.colorsMixin = new ColorsMixin(f_MaterialLink57)) , f_MaterialLink57.colorsMixin), 'blue') , f_MaterialLink57)) , f_MaterialCardAction55)) , $setBackgroundColor_0((!f_MaterialCard47.colorsMixin && (f_MaterialCard47.colorsMixin = new ColorsMixin(f_MaterialCard47)) , f_MaterialCard47.colorsMixin), 'white') , f_MaterialCard47)) , $setGrid((!f_MaterialColumn46.gridMixin && (f_MaterialColumn46.gridMixin = new GridMixin(f_MaterialColumn46)) , f_MaterialColumn46.gridMixin), 'l3') , f_MaterialColumn46)) , $add_13(f_MaterialRow44, (f_MaterialColumn58 = new MaterialColumn , $add_13(f_MaterialColumn58, (f_MaterialCard59 = new MaterialCard , $add_13(f_MaterialCard59, (f_MaterialCardImage60 = new MaterialCardImage , $add_16(f_MaterialCardImage60, (f_MaterialImage61 = new MaterialImage , $setUrl_2(f_MaterialImage61, new SafeUriString('http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png')) , f_MaterialImage61)) , $setWaves(f_MaterialCardImage60, LIGHT) , f_MaterialCardImage60)) , $add_13(f_MaterialCard59, (f_MaterialCardContent62 = new MaterialCardContent , $add_13(f_MaterialCardContent62, (f_MaterialCardTitle63 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle63, RIGHT_5) , f_MaterialCardTitle63.span_0.setText('Sample') , $add_13(f_MaterialCardTitle63, f_MaterialCardTitle63.span_0) , $setTextColor_0((!f_MaterialCardTitle63.colorsMixin && (f_MaterialCardTitle63.colorsMixin = new ColorsMixin(f_MaterialCardTitle63)) , f_MaterialCardTitle63.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle63, MORE_VERT) , f_MaterialCardTitle63)) , $setTextColor_0((!f_MaterialCardContent62.colorsMixin && (f_MaterialCardContent62.colorsMixin = new ColorsMixin(f_MaterialCardContent62)) , f_MaterialCardContent62.colorsMixin), 'black') , f_MaterialCardContent62)) , $add_13(f_MaterialCard59, (f_MaterialCardReveal64 = new MaterialCardReveal , $add_13(f_MaterialCardReveal64, (f_MaterialCardTitle65 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle65, RIGHT_5) , f_MaterialCardTitle65.span_0.setText('Sample') , $add_13(f_MaterialCardTitle65, f_MaterialCardTitle65.span_0) , $setTextColor_0((!f_MaterialCardTitle65.colorsMixin && (f_MaterialCardTitle65.colorsMixin = new ColorsMixin(f_MaterialCardTitle65)) , f_MaterialCardTitle65.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle65, CLOSE) , f_MaterialCardTitle65)) , $add_13(f_MaterialCardReveal64, (f_MaterialLabel66 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel66.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel66)) , f_MaterialCardReveal64)) , $add_13(f_MaterialCard59, (f_MaterialCardAction67 = new MaterialCardAction , $add_13(f_MaterialCardAction67, (f_MaterialLink68 = new MaterialLink , f_MaterialLink68.span_0.setText('Link 1') , $add_13(f_MaterialLink68, f_MaterialLink68.span_0) , $setTextColor_0((!f_MaterialLink68.colorsMixin && (f_MaterialLink68.colorsMixin = new ColorsMixin(f_MaterialLink68)) , f_MaterialLink68.colorsMixin), 'blue') , f_MaterialLink68)) , $add_13(f_MaterialCardAction67, (f_MaterialLink69 = new MaterialLink , f_MaterialLink69.span_0.setText('Link 1') , $add_13(f_MaterialLink69, f_MaterialLink69.span_0) , $setTextColor_0((!f_MaterialLink69.colorsMixin && (f_MaterialLink69.colorsMixin = new ColorsMixin(f_MaterialLink69)) , f_MaterialLink69.colorsMixin), 'blue') , f_MaterialLink69)) , f_MaterialCardAction67)) , $setBackgroundColor_0((!f_MaterialCard59.colorsMixin && (f_MaterialCard59.colorsMixin = new ColorsMixin(f_MaterialCard59)) , f_MaterialCard59.colorsMixin), 'white') , f_MaterialCard59)) , $setGrid((!f_MaterialColumn58.gridMixin && (f_MaterialColumn58.gridMixin = new GridMixin(f_MaterialColumn58)) , f_MaterialColumn58.gridMixin), 'l3') , f_MaterialColumn58)) , $add_13(f_MaterialRow44, (f_MaterialColumn70 = new MaterialColumn , $add_13(f_MaterialColumn70, (f_MaterialCard71 = new MaterialCard , $add_13(f_MaterialCard71, (f_MaterialCardImage72 = new MaterialCardImage , $add_16(f_MaterialCardImage72, (f_MaterialImage73 = new MaterialImage , $setUrl_2(f_MaterialImage73, new SafeUriString('http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif')) , f_MaterialImage73)) , $setWaves(f_MaterialCardImage72, LIGHT) , f_MaterialCardImage72)) , $add_13(f_MaterialCard71, (f_MaterialCardContent74 = new MaterialCardContent , $add_13(f_MaterialCardContent74, (f_MaterialCardTitle75 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle75, RIGHT_5) , f_MaterialCardTitle75.span_0.setText('Sample') , $add_13(f_MaterialCardTitle75, f_MaterialCardTitle75.span_0) , $setTextColor_0((!f_MaterialCardTitle75.colorsMixin && (f_MaterialCardTitle75.colorsMixin = new ColorsMixin(f_MaterialCardTitle75)) , f_MaterialCardTitle75.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle75, MORE_VERT) , f_MaterialCardTitle75)) , $setTextColor_0((!f_MaterialCardContent74.colorsMixin && (f_MaterialCardContent74.colorsMixin = new ColorsMixin(f_MaterialCardContent74)) , f_MaterialCardContent74.colorsMixin), 'black') , f_MaterialCardContent74)) , $add_13(f_MaterialCard71, (f_MaterialCardReveal76 = new MaterialCardReveal , $add_13(f_MaterialCardReveal76, (f_MaterialCardTitle77 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle77, RIGHT_5) , f_MaterialCardTitle77.span_0.setText('Sample') , $add_13(f_MaterialCardTitle77, f_MaterialCardTitle77.span_0) , $setTextColor_0((!f_MaterialCardTitle77.colorsMixin && (f_MaterialCardTitle77.colorsMixin = new ColorsMixin(f_MaterialCardTitle77)) , f_MaterialCardTitle77.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle77, CLOSE) , f_MaterialCardTitle77)) , $add_13(f_MaterialCardReveal76, (f_MaterialLabel78 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel78.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel78)) , f_MaterialCardReveal76)) , $add_13(f_MaterialCard71, (f_MaterialCardAction79 = new MaterialCardAction , $add_13(f_MaterialCardAction79, (f_MaterialLink80 = new MaterialLink , f_MaterialLink80.span_0.setText('Link 1') , $add_13(f_MaterialLink80, f_MaterialLink80.span_0) , $setTextColor_0((!f_MaterialLink80.colorsMixin && (f_MaterialLink80.colorsMixin = new ColorsMixin(f_MaterialLink80)) , f_MaterialLink80.colorsMixin), 'blue') , f_MaterialLink80)) , $add_13(f_MaterialCardAction79, (f_MaterialLink81 = new MaterialLink , f_MaterialLink81.span_0.setText('Link 1') , $add_13(f_MaterialLink81, f_MaterialLink81.span_0) , $setTextColor_0((!f_MaterialLink81.colorsMixin && (f_MaterialLink81.colorsMixin = new ColorsMixin(f_MaterialLink81)) , f_MaterialLink81.colorsMixin), 'blue') , f_MaterialLink81)) , f_MaterialCardAction79)) , $setBackgroundColor_0((!f_MaterialCard71.colorsMixin && (f_MaterialCard71.colorsMixin = new ColorsMixin(f_MaterialCard71)) , f_MaterialCard71.colorsMixin), 'white') , f_MaterialCard71)) , $setGrid((!f_MaterialColumn70.gridMixin && (f_MaterialColumn70.gridMixin = new GridMixin(f_MaterialColumn70)) , f_MaterialColumn70.gridMixin), 'l3') , f_MaterialColumn70)) , f_MaterialRow44), $get_0(this$static.domId4Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (f_MaterialTitle82 = new MaterialTitle , $setInnerHTML($getElement(f_MaterialTitle82.header), 'Grid Card Animation') , f_MaterialTitle82), $get_0(this$static.domId5Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre83 = new PrettyPre , $setHTML(f_PrettyPre83, (sb_1 = new StringBuilder , sb_1.string += '\u2003@UiField MaterialRow rowCards; MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html) , setStyleName(f_PrettyPre83.element, 'lang-java', true) , setStyleName(f_PrettyPre83.element, 'z-depth-1', true) , f_PrettyPre83), $get_0(this$static.domId6Element));
-  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre84 = new PrettyPre , $setHTML(f_PrettyPre84, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<br> &lt;!--Content here --&gt;<br> &lt;/m:MaterialCard&gt;<br> &lt;!--OTher cards --&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre84.element, 'lang-xml', true) , setStyleName(f_PrettyPre84.element, 'z-depth-1', true) , f_PrettyPre84), $get_0(this$static.domId7Element));
+  $addAndReplaceElement_1(f_HTMLPanel1, (f_PrettyPre84 = new PrettyPre , $setHTML(f_PrettyPre84, (sb_2 = new StringBuilder , sb_2.string += '\u2003&lt;m:MaterialRow ui:field="rowCards"&gt;<br> \u2003&lt;m:MaterialColumn grid="l6"&gt;<br> \u2003\u2003&lt;m:MaterialCard backgroundColor="white"&gt;<br> \u2003\u2003&lt;!--Content here --&gt;<br> \u2003\u2003&lt;/m:MaterialCard&gt;<br> \u2003\u2003&lt;!--OTher cards --&gt;<br> \u2003&lt;/m:MaterialColumn grid="l6"&gt;<br> &lt;/m:MaterialRow ui:field="rowCards"&gt;<br>' , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_2.string)).html) , setStyleName(f_PrettyPre84.element, 'lang-xml', true) , setStyleName(f_PrettyPre84.element, 'z-depth-1', true) , f_PrettyPre84), $get_0(this$static.domId7Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (btnShow = new MaterialButton , btnShow.span_0.setText('Show Cards') , $add_13(btnShow, btnShow.span_0) , $setTextColor_0((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'black') , $setBackgroundColor_0((!btnShow.colorsMixin && (btnShow.colorsMixin = new ColorsMixin(btnShow)) , btnShow.colorsMixin), 'white') , $addDomHandler(btnShow, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1, ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1)) , btnShow), $get_0(this$static.domId8Element));
   $addAndReplaceElement_1(f_HTMLPanel1, (rowCards = new MaterialRow , $add_13(rowCards, (f_MaterialColumn85 = new MaterialColumn , $add_13(f_MaterialColumn85, (f_MaterialCard86 = new MaterialCard , $add_13(f_MaterialCard86, (f_MaterialCardImage87 = new MaterialCardImage , $add_16(f_MaterialCardImage87, (f_MaterialImage88 = new MaterialImage , $setUrl_2(f_MaterialImage88, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage88)) , $setWaves(f_MaterialCardImage87, LIGHT) , f_MaterialCardImage87)) , $add_13(f_MaterialCard86, (f_MaterialCardContent89 = new MaterialCardContent , $add_13(f_MaterialCardContent89, (f_MaterialCardTitle90 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle90, RIGHT_5) , f_MaterialCardTitle90.span_0.setText('Sample') , $add_13(f_MaterialCardTitle90, f_MaterialCardTitle90.span_0) , $setTextColor_0((!f_MaterialCardTitle90.colorsMixin && (f_MaterialCardTitle90.colorsMixin = new ColorsMixin(f_MaterialCardTitle90)) , f_MaterialCardTitle90.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle90, MORE_VERT) , f_MaterialCardTitle90)) , $setTextColor_0((!f_MaterialCardContent89.colorsMixin && (f_MaterialCardContent89.colorsMixin = new ColorsMixin(f_MaterialCardContent89)) , f_MaterialCardContent89.colorsMixin), 'black') , f_MaterialCardContent89)) , $add_13(f_MaterialCard86, (f_MaterialCardReveal91 = new MaterialCardReveal , $add_13(f_MaterialCardReveal91, (f_MaterialCardTitle92 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle92, RIGHT_5) , f_MaterialCardTitle92.span_0.setText('Sample') , $add_13(f_MaterialCardTitle92, f_MaterialCardTitle92.span_0) , $setTextColor_0((!f_MaterialCardTitle92.colorsMixin && (f_MaterialCardTitle92.colorsMixin = new ColorsMixin(f_MaterialCardTitle92)) , f_MaterialCardTitle92.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle92, CLOSE) , f_MaterialCardTitle92)) , $add_13(f_MaterialCardReveal91, (f_MaterialLabel93 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel93.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel93)) , f_MaterialCardReveal91)) , $add_13(f_MaterialCard86, (f_MaterialCardAction94 = new MaterialCardAction , $add_13(f_MaterialCardAction94, (f_MaterialLink95 = new MaterialLink , $setIconPosition(f_MaterialLink95, LEFT_4) , f_MaterialLink95.span_0.setText('Link 1') , $add_13(f_MaterialLink95, f_MaterialLink95.span_0) , $setTextColor_0((!f_MaterialLink95.colorsMixin && (f_MaterialLink95.colorsMixin = new ColorsMixin(f_MaterialLink95)) , f_MaterialLink95.colorsMixin), 'blue') , $setIconType(f_MaterialLink95, POLYMER) , f_MaterialLink95)) , $add_13(f_MaterialCardAction94, (f_MaterialLink96 = new MaterialLink , $setIconPosition(f_MaterialLink96, LEFT_4) , f_MaterialLink96.span_0.setText('Link 1') , $add_13(f_MaterialLink96, f_MaterialLink96.span_0) , $setTextColor_0((!f_MaterialLink96.colorsMixin && (f_MaterialLink96.colorsMixin = new ColorsMixin(f_MaterialLink96)) , f_MaterialLink96.colorsMixin), 'blue') , $setIconType(f_MaterialLink96, POLYMER) , f_MaterialLink96)) , f_MaterialCardAction94)) , $setBackgroundColor_0((!f_MaterialCard86.colorsMixin && (f_MaterialCard86.colorsMixin = new ColorsMixin(f_MaterialCard86)) , f_MaterialCard86.colorsMixin), 'white') , f_MaterialCard86)) , $setGrid((!f_MaterialColumn85.gridMixin && (f_MaterialColumn85.gridMixin = new GridMixin(f_MaterialColumn85)) , f_MaterialColumn85.gridMixin), 'l3') , f_MaterialColumn85)) , $add_13(rowCards, (f_MaterialColumn97 = new MaterialColumn , $add_13(f_MaterialColumn97, (f_MaterialCard98 = new MaterialCard , $add_13(f_MaterialCard98, (f_MaterialCardImage99 = new MaterialCardImage , $add_16(f_MaterialCardImage99, (f_MaterialImage100 = new MaterialImage , $setUrl_2(f_MaterialImage100, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage100)) , $setWaves(f_MaterialCardImage99, LIGHT) , f_MaterialCardImage99)) , $add_13(f_MaterialCard98, (f_MaterialCardContent101 = new MaterialCardContent , $add_13(f_MaterialCardContent101, (f_MaterialCardTitle102 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle102, RIGHT_5) , f_MaterialCardTitle102.span_0.setText('Sample') , $add_13(f_MaterialCardTitle102, f_MaterialCardTitle102.span_0) , $setTextColor_0((!f_MaterialCardTitle102.colorsMixin && (f_MaterialCardTitle102.colorsMixin = new ColorsMixin(f_MaterialCardTitle102)) , f_MaterialCardTitle102.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle102, MORE_VERT) , f_MaterialCardTitle102)) , $setTextColor_0((!f_MaterialCardContent101.colorsMixin && (f_MaterialCardContent101.colorsMixin = new ColorsMixin(f_MaterialCardContent101)) , f_MaterialCardContent101.colorsMixin), 'black') , f_MaterialCardContent101)) , $add_13(f_MaterialCard98, (f_MaterialCardReveal103 = new MaterialCardReveal , $add_13(f_MaterialCardReveal103, (f_MaterialCardTitle104 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle104, RIGHT_5) , f_MaterialCardTitle104.span_0.setText('Sample') , $add_13(f_MaterialCardTitle104, f_MaterialCardTitle104.span_0) , $setTextColor_0((!f_MaterialCardTitle104.colorsMixin && (f_MaterialCardTitle104.colorsMixin = new ColorsMixin(f_MaterialCardTitle104)) , f_MaterialCardTitle104.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle104, CLOSE) , f_MaterialCardTitle104)) , $add_13(f_MaterialCardReveal103, (f_MaterialLabel105 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel105.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel105)) , f_MaterialCardReveal103)) , $add_13(f_MaterialCard98, (f_MaterialCardAction106 = new MaterialCardAction , $add_13(f_MaterialCardAction106, (f_MaterialLink107 = new MaterialLink , $setIconPosition(f_MaterialLink107, LEFT_4) , f_MaterialLink107.span_0.setText('Link 1') , $add_13(f_MaterialLink107, f_MaterialLink107.span_0) , $setTextColor_0((!f_MaterialLink107.colorsMixin && (f_MaterialLink107.colorsMixin = new ColorsMixin(f_MaterialLink107)) , f_MaterialLink107.colorsMixin), 'blue') , $setIconType(f_MaterialLink107, POLYMER) , f_MaterialLink107)) , $add_13(f_MaterialCardAction106, (f_MaterialLink108 = new MaterialLink , $setIconPosition(f_MaterialLink108, LEFT_4) , f_MaterialLink108.span_0.setText('Link 1') , $add_13(f_MaterialLink108, f_MaterialLink108.span_0) , $setTextColor_0((!f_MaterialLink108.colorsMixin && (f_MaterialLink108.colorsMixin = new ColorsMixin(f_MaterialLink108)) , f_MaterialLink108.colorsMixin), 'blue') , $setIconType(f_MaterialLink108, POLYMER) , f_MaterialLink108)) , f_MaterialCardAction106)) , $setBackgroundColor_0((!f_MaterialCard98.colorsMixin && (f_MaterialCard98.colorsMixin = new ColorsMixin(f_MaterialCard98)) , f_MaterialCard98.colorsMixin), 'white') , f_MaterialCard98)) , $setGrid((!f_MaterialColumn97.gridMixin && (f_MaterialColumn97.gridMixin = new GridMixin(f_MaterialColumn97)) , f_MaterialColumn97.gridMixin), 'l3') , f_MaterialColumn97)) , $add_13(rowCards, (f_MaterialColumn109 = new MaterialColumn , $add_13(f_MaterialColumn109, (f_MaterialCard110 = new MaterialCard , $add_13(f_MaterialCard110, (f_MaterialCardImage111 = new MaterialCardImage , $add_16(f_MaterialCardImage111, (f_MaterialImage112 = new MaterialImage , $setUrl_2(f_MaterialImage112, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage112)) , $setWaves(f_MaterialCardImage111, LIGHT) , f_MaterialCardImage111)) , $add_13(f_MaterialCard110, (f_MaterialCardContent113 = new MaterialCardContent , $add_13(f_MaterialCardContent113, (f_MaterialCardTitle114 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle114, RIGHT_5) , f_MaterialCardTitle114.span_0.setText('Sample') , $add_13(f_MaterialCardTitle114, f_MaterialCardTitle114.span_0) , $setTextColor_0((!f_MaterialCardTitle114.colorsMixin && (f_MaterialCardTitle114.colorsMixin = new ColorsMixin(f_MaterialCardTitle114)) , f_MaterialCardTitle114.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle114, MORE_VERT) , f_MaterialCardTitle114)) , $setTextColor_0((!f_MaterialCardContent113.colorsMixin && (f_MaterialCardContent113.colorsMixin = new ColorsMixin(f_MaterialCardContent113)) , f_MaterialCardContent113.colorsMixin), 'black') , f_MaterialCardContent113)) , $add_13(f_MaterialCard110, (f_MaterialCardReveal115 = new MaterialCardReveal , $add_13(f_MaterialCardReveal115, (f_MaterialCardTitle116 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle116, RIGHT_5) , f_MaterialCardTitle116.span_0.setText('Sample') , $add_13(f_MaterialCardTitle116, f_MaterialCardTitle116.span_0) , $setTextColor_0((!f_MaterialCardTitle116.colorsMixin && (f_MaterialCardTitle116.colorsMixin = new ColorsMixin(f_MaterialCardTitle116)) , f_MaterialCardTitle116.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle116, CLOSE) , f_MaterialCardTitle116)) , $add_13(f_MaterialCardReveal115, (f_MaterialLabel117 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel117.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel117)) , f_MaterialCardReveal115)) , $add_13(f_MaterialCard110, (f_MaterialCardAction118 = new MaterialCardAction , $add_13(f_MaterialCardAction118, (f_MaterialLink119 = new MaterialLink , $setIconPosition(f_MaterialLink119, LEFT_4) , f_MaterialLink119.span_0.setText('Link 1') , $add_13(f_MaterialLink119, f_MaterialLink119.span_0) , $setTextColor_0((!f_MaterialLink119.colorsMixin && (f_MaterialLink119.colorsMixin = new ColorsMixin(f_MaterialLink119)) , f_MaterialLink119.colorsMixin), 'blue') , $setIconType(f_MaterialLink119, POLYMER) , f_MaterialLink119)) , $add_13(f_MaterialCardAction118, (f_MaterialLink120 = new MaterialLink , $setIconPosition(f_MaterialLink120, LEFT_4) , f_MaterialLink120.span_0.setText('Link 1') , $add_13(f_MaterialLink120, f_MaterialLink120.span_0) , $setTextColor_0((!f_MaterialLink120.colorsMixin && (f_MaterialLink120.colorsMixin = new ColorsMixin(f_MaterialLink120)) , f_MaterialLink120.colorsMixin), 'blue') , $setIconType(f_MaterialLink120, POLYMER) , f_MaterialLink120)) , f_MaterialCardAction118)) , $setBackgroundColor_0((!f_MaterialCard110.colorsMixin && (f_MaterialCard110.colorsMixin = new ColorsMixin(f_MaterialCard110)) , f_MaterialCard110.colorsMixin), 'white') , f_MaterialCard110)) , $setGrid((!f_MaterialColumn109.gridMixin && (f_MaterialColumn109.gridMixin = new GridMixin(f_MaterialColumn109)) , f_MaterialColumn109.gridMixin), 'l3') , f_MaterialColumn109)) , $add_13(rowCards, (f_MaterialColumn121 = new MaterialColumn , $add_13(f_MaterialColumn121, (f_MaterialCard122 = new MaterialCard , $add_13(f_MaterialCard122, (f_MaterialCardImage123 = new MaterialCardImage , $add_16(f_MaterialCardImage123, (f_MaterialImage124 = new MaterialImage , $setUrl_2(f_MaterialImage124, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage124)) , $setWaves(f_MaterialCardImage123, LIGHT) , f_MaterialCardImage123)) , $add_13(f_MaterialCard122, (f_MaterialCardContent125 = new MaterialCardContent , $add_13(f_MaterialCardContent125, (f_MaterialCardTitle126 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle126, RIGHT_5) , f_MaterialCardTitle126.span_0.setText('Sample') , $add_13(f_MaterialCardTitle126, f_MaterialCardTitle126.span_0) , $setTextColor_0((!f_MaterialCardTitle126.colorsMixin && (f_MaterialCardTitle126.colorsMixin = new ColorsMixin(f_MaterialCardTitle126)) , f_MaterialCardTitle126.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle126, MORE_VERT) , f_MaterialCardTitle126)) , $setTextColor_0((!f_MaterialCardContent125.colorsMixin && (f_MaterialCardContent125.colorsMixin = new ColorsMixin(f_MaterialCardContent125)) , f_MaterialCardContent125.colorsMixin), 'black') , f_MaterialCardContent125)) , $add_13(f_MaterialCard122, (f_MaterialCardReveal127 = new MaterialCardReveal , $add_13(f_MaterialCardReveal127, (f_MaterialCardTitle128 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle128, RIGHT_5) , f_MaterialCardTitle128.span_0.setText('Sample') , $add_13(f_MaterialCardTitle128, f_MaterialCardTitle128.span_0) , $setTextColor_0((!f_MaterialCardTitle128.colorsMixin && (f_MaterialCardTitle128.colorsMixin = new ColorsMixin(f_MaterialCardTitle128)) , f_MaterialCardTitle128.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle128, CLOSE) , f_MaterialCardTitle128)) , $add_13(f_MaterialCardReveal127, (f_MaterialLabel129 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel129.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel129)) , f_MaterialCardReveal127)) , $add_13(f_MaterialCard122, (f_MaterialCardAction130 = new MaterialCardAction , $add_13(f_MaterialCardAction130, (f_MaterialLink131 = new MaterialLink , $setIconPosition(f_MaterialLink131, LEFT_4) , f_MaterialLink131.span_0.setText('Link 1') , $add_13(f_MaterialLink131, f_MaterialLink131.span_0) , $setTextColor_0((!f_MaterialLink131.colorsMixin && (f_MaterialLink131.colorsMixin = new ColorsMixin(f_MaterialLink131)) , f_MaterialLink131.colorsMixin), 'blue') , $setIconType(f_MaterialLink131, POLYMER) , f_MaterialLink131)) , $add_13(f_MaterialCardAction130, (f_MaterialLink132 = new MaterialLink , $setIconPosition(f_MaterialLink132, LEFT_4) , f_MaterialLink132.span_0.setText('Link 1') , $add_13(f_MaterialLink132, f_MaterialLink132.span_0) , $setTextColor_0((!f_MaterialLink132.colorsMixin && (f_MaterialLink132.colorsMixin = new ColorsMixin(f_MaterialLink132)) , f_MaterialLink132.colorsMixin), 'blue') , $setIconType(f_MaterialLink132, POLYMER) , f_MaterialLink132)) , f_MaterialCardAction130)) , $setBackgroundColor_0((!f_MaterialCard122.colorsMixin && (f_MaterialCard122.colorsMixin = new ColorsMixin(f_MaterialCard122)) , f_MaterialCard122.colorsMixin), 'white') , f_MaterialCard122)) , $setGrid((!f_MaterialColumn121.gridMixin && (f_MaterialColumn121.gridMixin = new GridMixin(f_MaterialColumn121)) , f_MaterialColumn121.gridMixin), 'l3') , f_MaterialColumn121)) , $add_13(rowCards, (f_MaterialColumn133 = new MaterialColumn , $add_13(f_MaterialColumn133, (f_MaterialCard134 = new MaterialCard , $add_13(f_MaterialCard134, (f_MaterialCardImage135 = new MaterialCardImage , $add_16(f_MaterialCardImage135, (f_MaterialImage136 = new MaterialImage , $setUrl_2(f_MaterialImage136, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage136)) , $setWaves(f_MaterialCardImage135, LIGHT) , f_MaterialCardImage135)) , $add_13(f_MaterialCard134, (f_MaterialCardContent137 = new MaterialCardContent , $add_13(f_MaterialCardContent137, (f_MaterialCardTitle138 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle138, RIGHT_5) , f_MaterialCardTitle138.span_0.setText('Sample') , $add_13(f_MaterialCardTitle138, f_MaterialCardTitle138.span_0) , $setTextColor_0((!f_MaterialCardTitle138.colorsMixin && (f_MaterialCardTitle138.colorsMixin = new ColorsMixin(f_MaterialCardTitle138)) , f_MaterialCardTitle138.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle138, MORE_VERT) , f_MaterialCardTitle138)) , $setTextColor_0((!f_MaterialCardContent137.colorsMixin && (f_MaterialCardContent137.colorsMixin = new ColorsMixin(f_MaterialCardContent137)) , f_MaterialCardContent137.colorsMixin), 'black') , f_MaterialCardContent137)) , $add_13(f_MaterialCard134, (f_MaterialCardReveal139 = new MaterialCardReveal , $add_13(f_MaterialCardReveal139, (f_MaterialCardTitle140 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle140, RIGHT_5) , f_MaterialCardTitle140.span_0.setText('Sample') , $add_13(f_MaterialCardTitle140, f_MaterialCardTitle140.span_0) , $setTextColor_0((!f_MaterialCardTitle140.colorsMixin && (f_MaterialCardTitle140.colorsMixin = new ColorsMixin(f_MaterialCardTitle140)) , f_MaterialCardTitle140.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle140, CLOSE) , f_MaterialCardTitle140)) , $add_13(f_MaterialCardReveal139, (f_MaterialLabel141 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel141.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel141)) , f_MaterialCardReveal139)) , $add_13(f_MaterialCard134, (f_MaterialCardAction142 = new MaterialCardAction , $add_13(f_MaterialCardAction142, (f_MaterialLink143 = new MaterialLink , $setIconPosition(f_MaterialLink143, LEFT_4) , f_MaterialLink143.span_0.setText('Link 1') , $add_13(f_MaterialLink143, f_MaterialLink143.span_0) , $setTextColor_0((!f_MaterialLink143.colorsMixin && (f_MaterialLink143.colorsMixin = new ColorsMixin(f_MaterialLink143)) , f_MaterialLink143.colorsMixin), 'blue') , $setIconType(f_MaterialLink143, POLYMER) , f_MaterialLink143)) , $add_13(f_MaterialCardAction142, (f_MaterialLink144 = new MaterialLink , $setIconPosition(f_MaterialLink144, LEFT_4) , f_MaterialLink144.span_0.setText('Link 1') , $add_13(f_MaterialLink144, f_MaterialLink144.span_0) , $setTextColor_0((!f_MaterialLink144.colorsMixin && (f_MaterialLink144.colorsMixin = new ColorsMixin(f_MaterialLink144)) , f_MaterialLink144.colorsMixin), 'blue') , $setIconType(f_MaterialLink144, POLYMER) , f_MaterialLink144)) , f_MaterialCardAction142)) , $setBackgroundColor_0((!f_MaterialCard134.colorsMixin && (f_MaterialCard134.colorsMixin = new ColorsMixin(f_MaterialCard134)) , f_MaterialCard134.colorsMixin), 'white') , f_MaterialCard134)) , $setGrid((!f_MaterialColumn133.gridMixin && (f_MaterialColumn133.gridMixin = new GridMixin(f_MaterialColumn133)) , f_MaterialColumn133.gridMixin), 'l3') , f_MaterialColumn133)) , $add_13(rowCards, (f_MaterialColumn145 = new MaterialColumn , $add_13(f_MaterialColumn145, (f_MaterialCard146 = new MaterialCard , $add_13(f_MaterialCard146, (f_MaterialCardImage147 = new MaterialCardImage , $add_16(f_MaterialCardImage147, (f_MaterialImage148 = new MaterialImage , $setUrl_2(f_MaterialImage148, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage148)) , $setWaves(f_MaterialCardImage147, LIGHT) , f_MaterialCardImage147)) , $add_13(f_MaterialCard146, (f_MaterialCardContent149 = new MaterialCardContent , $add_13(f_MaterialCardContent149, (f_MaterialCardTitle150 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle150, RIGHT_5) , f_MaterialCardTitle150.span_0.setText('Sample') , $add_13(f_MaterialCardTitle150, f_MaterialCardTitle150.span_0) , $setTextColor_0((!f_MaterialCardTitle150.colorsMixin && (f_MaterialCardTitle150.colorsMixin = new ColorsMixin(f_MaterialCardTitle150)) , f_MaterialCardTitle150.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle150, MORE_VERT) , f_MaterialCardTitle150)) , $setTextColor_0((!f_MaterialCardContent149.colorsMixin && (f_MaterialCardContent149.colorsMixin = new ColorsMixin(f_MaterialCardContent149)) , f_MaterialCardContent149.colorsMixin), 'black') , f_MaterialCardContent149)) , $add_13(f_MaterialCard146, (f_MaterialCardReveal151 = new MaterialCardReveal , $add_13(f_MaterialCardReveal151, (f_MaterialCardTitle152 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle152, RIGHT_5) , f_MaterialCardTitle152.span_0.setText('Sample') , $add_13(f_MaterialCardTitle152, f_MaterialCardTitle152.span_0) , $setTextColor_0((!f_MaterialCardTitle152.colorsMixin && (f_MaterialCardTitle152.colorsMixin = new ColorsMixin(f_MaterialCardTitle152)) , f_MaterialCardTitle152.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle152, CLOSE) , f_MaterialCardTitle152)) , $add_13(f_MaterialCardReveal151, (f_MaterialLabel153 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel153.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel153)) , f_MaterialCardReveal151)) , $add_13(f_MaterialCard146, (f_MaterialCardAction154 = new MaterialCardAction , $add_13(f_MaterialCardAction154, (f_MaterialLink155 = new MaterialLink , $setIconPosition(f_MaterialLink155, LEFT_4) , f_MaterialLink155.span_0.setText('Link 1') , $add_13(f_MaterialLink155, f_MaterialLink155.span_0) , $setTextColor_0((!f_MaterialLink155.colorsMixin && (f_MaterialLink155.colorsMixin = new ColorsMixin(f_MaterialLink155)) , f_MaterialLink155.colorsMixin), 'blue') , $setIconType(f_MaterialLink155, POLYMER) , f_MaterialLink155)) , $add_13(f_MaterialCardAction154, (f_MaterialLink156 = new MaterialLink , $setIconPosition(f_MaterialLink156, LEFT_4) , f_MaterialLink156.span_0.setText('Link 1') , $add_13(f_MaterialLink156, f_MaterialLink156.span_0) , $setTextColor_0((!f_MaterialLink156.colorsMixin && (f_MaterialLink156.colorsMixin = new ColorsMixin(f_MaterialLink156)) , f_MaterialLink156.colorsMixin), 'blue') , $setIconType(f_MaterialLink156, POLYMER) , f_MaterialLink156)) , f_MaterialCardAction154)) , $setBackgroundColor_0((!f_MaterialCard146.colorsMixin && (f_MaterialCard146.colorsMixin = new ColorsMixin(f_MaterialCard146)) , f_MaterialCard146.colorsMixin), 'white') , f_MaterialCard146)) , $setGrid((!f_MaterialColumn145.gridMixin && (f_MaterialColumn145.gridMixin = new GridMixin(f_MaterialColumn145)) , f_MaterialColumn145.gridMixin), 'l3') , f_MaterialColumn145)) , $add_13(rowCards, (f_MaterialColumn157 = new MaterialColumn , $add_13(f_MaterialColumn157, (f_MaterialCard158 = new MaterialCard , $add_13(f_MaterialCard158, (f_MaterialCardImage159 = new MaterialCardImage , $add_16(f_MaterialCardImage159, (f_MaterialImage160 = new MaterialImage , $setUrl_2(f_MaterialImage160, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage160)) , $setWaves(f_MaterialCardImage159, LIGHT) , f_MaterialCardImage159)) , $add_13(f_MaterialCard158, (f_MaterialCardContent161 = new MaterialCardContent , $add_13(f_MaterialCardContent161, (f_MaterialCardTitle162 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle162, RIGHT_5) , f_MaterialCardTitle162.span_0.setText('Sample') , $add_13(f_MaterialCardTitle162, f_MaterialCardTitle162.span_0) , $setTextColor_0((!f_MaterialCardTitle162.colorsMixin && (f_MaterialCardTitle162.colorsMixin = new ColorsMixin(f_MaterialCardTitle162)) , f_MaterialCardTitle162.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle162, MORE_VERT) , f_MaterialCardTitle162)) , $setTextColor_0((!f_MaterialCardContent161.colorsMixin && (f_MaterialCardContent161.colorsMixin = new ColorsMixin(f_MaterialCardContent161)) , f_MaterialCardContent161.colorsMixin), 'black') , f_MaterialCardContent161)) , $add_13(f_MaterialCard158, (f_MaterialCardReveal163 = new MaterialCardReveal , $add_13(f_MaterialCardReveal163, (f_MaterialCardTitle164 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle164, RIGHT_5) , f_MaterialCardTitle164.span_0.setText('Sample') , $add_13(f_MaterialCardTitle164, f_MaterialCardTitle164.span_0) , $setTextColor_0((!f_MaterialCardTitle164.colorsMixin && (f_MaterialCardTitle164.colorsMixin = new ColorsMixin(f_MaterialCardTitle164)) , f_MaterialCardTitle164.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle164, CLOSE) , f_MaterialCardTitle164)) , $add_13(f_MaterialCardReveal163, (f_MaterialLabel165 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel165.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel165)) , f_MaterialCardReveal163)) , $add_13(f_MaterialCard158, (f_MaterialCardAction166 = new MaterialCardAction , $add_13(f_MaterialCardAction166, (f_MaterialLink167 = new MaterialLink , $setIconPosition(f_MaterialLink167, LEFT_4) , f_MaterialLink167.span_0.setText('Link 1') , $add_13(f_MaterialLink167, f_MaterialLink167.span_0) , $setTextColor_0((!f_MaterialLink167.colorsMixin && (f_MaterialLink167.colorsMixin = new ColorsMixin(f_MaterialLink167)) , f_MaterialLink167.colorsMixin), 'blue') , $setIconType(f_MaterialLink167, POLYMER) , f_MaterialLink167)) , $add_13(f_MaterialCardAction166, (f_MaterialLink168 = new MaterialLink , $setIconPosition(f_MaterialLink168, LEFT_4) , f_MaterialLink168.span_0.setText('Link 1') , $add_13(f_MaterialLink168, f_MaterialLink168.span_0) , $setTextColor_0((!f_MaterialLink168.colorsMixin && (f_MaterialLink168.colorsMixin = new ColorsMixin(f_MaterialLink168)) , f_MaterialLink168.colorsMixin), 'blue') , $setIconType(f_MaterialLink168, POLYMER) , f_MaterialLink168)) , f_MaterialCardAction166)) , $setBackgroundColor_0((!f_MaterialCard158.colorsMixin && (f_MaterialCard158.colorsMixin = new ColorsMixin(f_MaterialCard158)) , f_MaterialCard158.colorsMixin), 'white') , f_MaterialCard158)) , $setGrid((!f_MaterialColumn157.gridMixin && (f_MaterialColumn157.gridMixin = new GridMixin(f_MaterialColumn157)) , f_MaterialColumn157.gridMixin), 'l3') , f_MaterialColumn157)) , $add_13(rowCards, (f_MaterialColumn169 = new MaterialColumn , $add_13(f_MaterialColumn169, (f_MaterialCard170 = new MaterialCard , $add_13(f_MaterialCard170, (f_MaterialCardImage171 = new MaterialCardImage , $add_16(f_MaterialCardImage171, (f_MaterialImage172 = new MaterialImage , $setUrl_2(f_MaterialImage172, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage172)) , $setWaves(f_MaterialCardImage171, LIGHT) , f_MaterialCardImage171)) , $add_13(f_MaterialCard170, (f_MaterialCardContent173 = new MaterialCardContent , $add_13(f_MaterialCardContent173, (f_MaterialCardTitle174 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle174, RIGHT_5) , f_MaterialCardTitle174.span_0.setText('Sample') , $add_13(f_MaterialCardTitle174, f_MaterialCardTitle174.span_0) , $setTextColor_0((!f_MaterialCardTitle174.colorsMixin && (f_MaterialCardTitle174.colorsMixin = new ColorsMixin(f_MaterialCardTitle174)) , f_MaterialCardTitle174.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle174, MORE_VERT) , f_MaterialCardTitle174)) , $setTextColor_0((!f_MaterialCardContent173.colorsMixin && (f_MaterialCardContent173.colorsMixin = new ColorsMixin(f_MaterialCardContent173)) , f_MaterialCardContent173.colorsMixin), 'black') , f_MaterialCardContent173)) , $add_13(f_MaterialCard170, (f_MaterialCardReveal175 = new MaterialCardReveal , $add_13(f_MaterialCardReveal175, (f_MaterialCardTitle176 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle176, RIGHT_5) , f_MaterialCardTitle176.span_0.setText('Sample') , $add_13(f_MaterialCardTitle176, f_MaterialCardTitle176.span_0) , $setTextColor_0((!f_MaterialCardTitle176.colorsMixin && (f_MaterialCardTitle176.colorsMixin = new ColorsMixin(f_MaterialCardTitle176)) , f_MaterialCardTitle176.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle176, CLOSE) , f_MaterialCardTitle176)) , $add_13(f_MaterialCardReveal175, (f_MaterialLabel177 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel177.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel177)) , f_MaterialCardReveal175)) , $add_13(f_MaterialCard170, (f_MaterialCardAction178 = new MaterialCardAction , $add_13(f_MaterialCardAction178, (f_MaterialLink179 = new MaterialLink , $setIconPosition(f_MaterialLink179, LEFT_4) , f_MaterialLink179.span_0.setText('Link 1') , $add_13(f_MaterialLink179, f_MaterialLink179.span_0) , $setTextColor_0((!f_MaterialLink179.colorsMixin && (f_MaterialLink179.colorsMixin = new ColorsMixin(f_MaterialLink179)) , f_MaterialLink179.colorsMixin), 'blue') , $setIconType(f_MaterialLink179, POLYMER) , f_MaterialLink179)) , $add_13(f_MaterialCardAction178, (f_MaterialLink180 = new MaterialLink , $setIconPosition(f_MaterialLink180, LEFT_4) , f_MaterialLink180.span_0.setText('Link 1') , $add_13(f_MaterialLink180, f_MaterialLink180.span_0) , $setTextColor_0((!f_MaterialLink180.colorsMixin && (f_MaterialLink180.colorsMixin = new ColorsMixin(f_MaterialLink180)) , f_MaterialLink180.colorsMixin), 'blue') , $setIconType(f_MaterialLink180, POLYMER) , f_MaterialLink180)) , f_MaterialCardAction178)) , $setBackgroundColor_0((!f_MaterialCard170.colorsMixin && (f_MaterialCard170.colorsMixin = new ColorsMixin(f_MaterialCard170)) , f_MaterialCard170.colorsMixin), 'white') , f_MaterialCard170)) , $setGrid((!f_MaterialColumn169.gridMixin && (f_MaterialColumn169.gridMixin = new GridMixin(f_MaterialColumn169)) , f_MaterialColumn169.gridMixin), 'l3') , f_MaterialColumn169)) , $add_13(rowCards, (f_MaterialColumn181 = new MaterialColumn , $add_13(f_MaterialColumn181, (f_MaterialCard182 = new MaterialCard , $add_13(f_MaterialCard182, (f_MaterialCardImage183 = new MaterialCardImage , $add_16(f_MaterialCardImage183, (f_MaterialImage184 = new MaterialImage , $setUrl_2(f_MaterialImage184, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage184)) , $setWaves(f_MaterialCardImage183, LIGHT) , f_MaterialCardImage183)) , $add_13(f_MaterialCard182, (f_MaterialCardContent185 = new MaterialCardContent , $add_13(f_MaterialCardContent185, (f_MaterialCardTitle186 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle186, RIGHT_5) , f_MaterialCardTitle186.span_0.setText('Sample') , $add_13(f_MaterialCardTitle186, f_MaterialCardTitle186.span_0) , $setTextColor_0((!f_MaterialCardTitle186.colorsMixin && (f_MaterialCardTitle186.colorsMixin = new ColorsMixin(f_MaterialCardTitle186)) , f_MaterialCardTitle186.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle186, MORE_VERT) , f_MaterialCardTitle186)) , $setTextColor_0((!f_MaterialCardContent185.colorsMixin && (f_MaterialCardContent185.colorsMixin = new ColorsMixin(f_MaterialCardContent185)) , f_MaterialCardContent185.colorsMixin), 'black') , f_MaterialCardContent185)) , $add_13(f_MaterialCard182, (f_MaterialCardReveal187 = new MaterialCardReveal , $add_13(f_MaterialCardReveal187, (f_MaterialCardTitle188 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle188, RIGHT_5) , f_MaterialCardTitle188.span_0.setText('Sample') , $add_13(f_MaterialCardTitle188, f_MaterialCardTitle188.span_0) , $setTextColor_0((!f_MaterialCardTitle188.colorsMixin && (f_MaterialCardTitle188.colorsMixin = new ColorsMixin(f_MaterialCardTitle188)) , f_MaterialCardTitle188.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle188, CLOSE) , f_MaterialCardTitle188)) , $add_13(f_MaterialCardReveal187, (f_MaterialLabel189 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel189.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel189)) , f_MaterialCardReveal187)) , $add_13(f_MaterialCard182, (f_MaterialCardAction190 = new MaterialCardAction , $add_13(f_MaterialCardAction190, (f_MaterialLink191 = new MaterialLink , $setIconPosition(f_MaterialLink191, LEFT_4) , f_MaterialLink191.span_0.setText('Link 1') , $add_13(f_MaterialLink191, f_MaterialLink191.span_0) , $setTextColor_0((!f_MaterialLink191.colorsMixin && (f_MaterialLink191.colorsMixin = new ColorsMixin(f_MaterialLink191)) , f_MaterialLink191.colorsMixin), 'blue') , $setIconType(f_MaterialLink191, POLYMER) , f_MaterialLink191)) , $add_13(f_MaterialCardAction190, (f_MaterialLink192 = new MaterialLink , $setIconPosition(f_MaterialLink192, LEFT_4) , f_MaterialLink192.span_0.setText('Link 1') , $add_13(f_MaterialLink192, f_MaterialLink192.span_0) , $setTextColor_0((!f_MaterialLink192.colorsMixin && (f_MaterialLink192.colorsMixin = new ColorsMixin(f_MaterialLink192)) , f_MaterialLink192.colorsMixin), 'blue') , $setIconType(f_MaterialLink192, POLYMER) , f_MaterialLink192)) , f_MaterialCardAction190)) , $setBackgroundColor_0((!f_MaterialCard182.colorsMixin && (f_MaterialCard182.colorsMixin = new ColorsMixin(f_MaterialCard182)) , f_MaterialCard182.colorsMixin), 'white') , f_MaterialCard182)) , $setGrid((!f_MaterialColumn181.gridMixin && (f_MaterialColumn181.gridMixin = new GridMixin(f_MaterialColumn181)) , f_MaterialColumn181.gridMixin), 'l3') , f_MaterialColumn181)) , $add_13(rowCards, (f_MaterialColumn193 = new MaterialColumn , $add_13(f_MaterialColumn193, (f_MaterialCard194 = new MaterialCard , $add_13(f_MaterialCard194, (f_MaterialCardImage195 = new MaterialCardImage , $add_16(f_MaterialCardImage195, (f_MaterialImage196 = new MaterialImage , $setUrl_2(f_MaterialImage196, new SafeUriString('http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png')) , f_MaterialImage196)) , $setWaves(f_MaterialCardImage195, LIGHT) , f_MaterialCardImage195)) , $add_13(f_MaterialCard194, (f_MaterialCardContent197 = new MaterialCardContent , $add_13(f_MaterialCardContent197, (f_MaterialCardTitle198 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle198, RIGHT_5) , f_MaterialCardTitle198.span_0.setText('Sample') , $add_13(f_MaterialCardTitle198, f_MaterialCardTitle198.span_0) , $setTextColor_0((!f_MaterialCardTitle198.colorsMixin && (f_MaterialCardTitle198.colorsMixin = new ColorsMixin(f_MaterialCardTitle198)) , f_MaterialCardTitle198.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle198, MORE_VERT) , f_MaterialCardTitle198)) , $setTextColor_0((!f_MaterialCardContent197.colorsMixin && (f_MaterialCardContent197.colorsMixin = new ColorsMixin(f_MaterialCardContent197)) , f_MaterialCardContent197.colorsMixin), 'black') , f_MaterialCardContent197)) , $add_13(f_MaterialCard194, (f_MaterialCardReveal199 = new MaterialCardReveal , $add_13(f_MaterialCardReveal199, (f_MaterialCardTitle200 = new MaterialCardTitle , $setIconPosition_0(f_MaterialCardTitle200, RIGHT_5) , f_MaterialCardTitle200.span_0.setText('Sample') , $add_13(f_MaterialCardTitle200, f_MaterialCardTitle200.span_0) , $setTextColor_0((!f_MaterialCardTitle200.colorsMixin && (f_MaterialCardTitle200.colorsMixin = new ColorsMixin(f_MaterialCardTitle200)) , f_MaterialCardTitle200.colorsMixin), 'black') , $setIconType_0(f_MaterialCardTitle200, CLOSE) , f_MaterialCardTitle200)) , $add_13(f_MaterialCardReveal199, (f_MaterialLabel201 = new MaterialLabel , $setTextOrHtml(f_MaterialLabel201.directionalTextHelper, 'Here is some more information about this product that is only revealed once clicked on.') , f_MaterialLabel201)) , f_MaterialCardReveal199)) , $add_13(f_MaterialCard194, (f_MaterialCardAction202 = new MaterialCardAction , $add_13(f_MaterialCardAction202, (f_MaterialLink203 = new MaterialLink , $setIconPosition(f_MaterialLink203, LEFT_4) , f_MaterialLink203.span_0.setText('Link 1') , $add_13(f_MaterialLink203, f_MaterialLink203.span_0) , $setTextColor_0((!f_MaterialLink203.colorsMixin && (f_MaterialLink203.colorsMixin = new ColorsMixin(f_MaterialLink203)) , f_MaterialLink203.colorsMixin), 'blue') , $setIconType(f_MaterialLink203, POLYMER) , f_MaterialLink203)) , $add_13(f_MaterialCardAction202, (f_MaterialLink204 = new MaterialLink , $setIconPosition(f_MaterialLink204, LEFT_4) , f_MaterialLink204.span_0.setText('Link 1') , $add_13(f_MaterialLink204, f_MaterialLink204.span_0) , $setTextColor_0((!f_MaterialLink204.colorsMixin && (f_MaterialLink204.colorsMixin = new ColorsMixin(f_MaterialLink204)) , f_MaterialLink204.colorsMixin), 'blue') , $setIconType(f_MaterialLink204, POLYMER) , f_MaterialLink204)) , f_MaterialCardAction202)) , $setBackgroundColor_0((!f_MaterialCard194.colorsMixin && (f_MaterialCard194.colorsMixin = new ColorsMixin(f_MaterialCard194)) , f_MaterialCard194.colorsMixin), 'white') , f_MaterialCard194)) , $setGrid((!f_MaterialColumn193.gridMixin && (f_MaterialColumn193.gridMixin = new GridMixin(f_MaterialColumn193)) , f_MaterialColumn193.gridMixin), 'l3') , f_MaterialColumn193)) , $setStyleName_0(rowCards, ($build_style_0() , 'HMPMMUB-g-a'), true) , this$static.owner.rowCards = rowCards , rowCards), $get_0(this$static.domId9Element));
   return f_HTMLPanel1;
@@ -15094,7 +15123,7 @@ function CardsView_BinderImpl$Widgets$1(this$1){
   this.this$11 = this$1;
 }
 
-defineClass(900, 1, $intern_55, CardsView_BinderImpl$Widgets$1);
+defineClass(900, 1, $intern_56, CardsView_BinderImpl$Widgets$1);
 _.onClick = function onClick_64(event_0){
   $onShow(this.this$11.owner);
 }
@@ -15103,9 +15132,9 @@ var Lgwt_material_design_demo_client_application_components_cards_CardsView_1Bin
 function CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1232, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1233, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_8;
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1232);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1233);
 function $ensureInjected_13(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -15120,13 +15149,13 @@ function $ensureInjected_13(this$static){
 function CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1233, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1234, 1, {}, CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_21(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1233);
+var Lgwt_material_design_demo_client_application_components_cards_CardsView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.components.cards', 'CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1234);
 function $clinit_CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_8 = new CardsView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -15218,7 +15247,7 @@ function ChipsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(649, 63, $intern_61, ChipsPresenterMyProxyImpl);
+defineClass(649, 63, $intern_62, ChipsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_28(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15240,7 +15269,7 @@ function $delayedBind_13(this$static, baseGinjector){
 function ChipsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(650, $intern_47, $intern_60, ChipsPresenterMyProxyImpl$WrappedProxy);
+defineClass(650, $intern_48, $intern_61, ChipsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_29(baseGinjector){
   $delayedBind_13(this, baseGinjector);
 }
@@ -15285,7 +15314,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(504, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_6);
+defineClass(504, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_6);
 _.onFailure_0 = function onFailure_7(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15297,7 +15326,7 @@ function CollapsiblePresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(651, 63, $intern_61, CollapsiblePresenterMyProxyImpl);
+defineClass(651, 63, $intern_62, CollapsiblePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_30(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15319,7 +15348,7 @@ function $delayedBind_14(this$static, baseGinjector){
 function CollapsiblePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(652, $intern_47, $intern_60, CollapsiblePresenterMyProxyImpl$WrappedProxy);
+defineClass(652, $intern_48, $intern_61, CollapsiblePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_31(baseGinjector){
   $delayedBind_14(this, baseGinjector);
 }
@@ -15364,7 +15393,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(506, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_7);
+defineClass(506, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_7);
 _.onFailure_0 = function onFailure_8(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15376,7 +15405,7 @@ function CollectionsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(653, 63, $intern_61, CollectionsPresenterMyProxyImpl);
+defineClass(653, 63, $intern_62, CollectionsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_32(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15398,7 +15427,7 @@ function $delayedBind_15(this$static, baseGinjector){
 function CollectionsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(654, $intern_47, $intern_60, CollectionsPresenterMyProxyImpl$WrappedProxy);
+defineClass(654, $intern_48, $intern_61, CollectionsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_33(baseGinjector){
   $delayedBind_15(this, baseGinjector);
 }
@@ -15443,7 +15472,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(508, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_8);
+defineClass(508, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_8);
 _.onFailure_0 = function onFailure_9(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15455,7 +15484,7 @@ function DatagridPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(655, 63, $intern_61, DatagridPresenterMyProxyImpl);
+defineClass(655, 63, $intern_62, DatagridPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_34(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15477,7 +15506,7 @@ function $delayedBind_16(this$static, baseGinjector){
 function DatagridPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(656, $intern_47, $intern_60, DatagridPresenterMyProxyImpl$WrappedProxy);
+defineClass(656, $intern_48, $intern_61, DatagridPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_35(baseGinjector){
   $delayedBind_16(this, baseGinjector);
 }
@@ -15522,7 +15551,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(510, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_9);
+defineClass(510, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_9);
 _.onFailure_0 = function onFailure_10(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15534,7 +15563,7 @@ function DialogsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(657, 63, $intern_61, DialogsPresenterMyProxyImpl);
+defineClass(657, 63, $intern_62, DialogsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_36(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15556,7 +15585,7 @@ function $delayedBind_17(this$static, baseGinjector){
 function DialogsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(658, $intern_47, $intern_60, DialogsPresenterMyProxyImpl$WrappedProxy);
+defineClass(658, $intern_48, $intern_61, DialogsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_37(baseGinjector){
   $delayedBind_17(this, baseGinjector);
 }
@@ -15601,7 +15630,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(512, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_10);
+defineClass(512, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_10);
 _.onFailure_0 = function onFailure_11(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15613,7 +15642,7 @@ function DropdownPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(659, 63, $intern_61, DropdownPresenterMyProxyImpl);
+defineClass(659, 63, $intern_62, DropdownPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_38(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15635,7 +15664,7 @@ function $delayedBind_18(this$static, baseGinjector){
 function DropdownPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(660, $intern_47, $intern_60, DropdownPresenterMyProxyImpl$WrappedProxy);
+defineClass(660, $intern_48, $intern_61, DropdownPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_39(baseGinjector){
   $delayedBind_18(this, baseGinjector);
 }
@@ -15680,7 +15709,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(514, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_11);
+defineClass(514, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_11);
 _.onFailure_0 = function onFailure_12(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15692,7 +15721,7 @@ function ErrorsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(661, 63, $intern_61, ErrorsPresenterMyProxyImpl);
+defineClass(661, 63, $intern_62, ErrorsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_40(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15714,7 +15743,7 @@ function $delayedBind_19(this$static, baseGinjector){
 function ErrorsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(662, $intern_47, $intern_60, ErrorsPresenterMyProxyImpl$WrappedProxy);
+defineClass(662, $intern_48, $intern_61, ErrorsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_41(baseGinjector){
   $delayedBind_19(this, baseGinjector);
 }
@@ -15759,7 +15788,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(516, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_12);
+defineClass(516, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_12);
 _.onFailure_0 = function onFailure_13(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15771,7 +15800,7 @@ function FABPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(663, 63, $intern_61, FABPresenterMyProxyImpl);
+defineClass(663, 63, $intern_62, FABPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_42(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15793,7 +15822,7 @@ function $delayedBind_20(this$static, baseGinjector){
 function FABPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(664, $intern_47, $intern_60, FABPresenterMyProxyImpl$WrappedProxy);
+defineClass(664, $intern_48, $intern_61, FABPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_43(baseGinjector){
   $delayedBind_20(this, baseGinjector);
 }
@@ -15838,7 +15867,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(518, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_13);
+defineClass(518, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_13);
 _.onFailure_0 = function onFailure_14(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15850,7 +15879,7 @@ function FooterPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(665, 63, $intern_61, FooterPresenterMyProxyImpl);
+defineClass(665, 63, $intern_62, FooterPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_44(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15872,7 +15901,7 @@ function $delayedBind_21(this$static, baseGinjector){
 function FooterPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(666, $intern_47, $intern_60, FooterPresenterMyProxyImpl$WrappedProxy);
+defineClass(666, $intern_48, $intern_61, FooterPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_45(baseGinjector){
   $delayedBind_21(this, baseGinjector);
 }
@@ -15917,7 +15946,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(520, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_14);
+defineClass(520, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_14);
 _.onFailure_0 = function onFailure_15(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -15929,7 +15958,7 @@ function FormsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(667, 63, $intern_61, FormsPresenterMyProxyImpl);
+defineClass(667, 63, $intern_62, FormsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_46(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -15951,7 +15980,7 @@ function $delayedBind_22(this$static, baseGinjector){
 function FormsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(668, $intern_47, $intern_60, FormsPresenterMyProxyImpl$WrappedProxy);
+defineClass(668, $intern_48, $intern_61, FormsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_47(baseGinjector){
   $delayedBind_22(this, baseGinjector);
 }
@@ -15996,7 +16025,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(522, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_15);
+defineClass(522, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_15);
 _.onFailure_0 = function onFailure_16(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16008,7 +16037,7 @@ function LoaderPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(669, 63, $intern_61, LoaderPresenterMyProxyImpl);
+defineClass(669, 63, $intern_62, LoaderPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_48(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16030,7 +16059,7 @@ function $delayedBind_23(this$static, baseGinjector){
 function LoaderPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(670, $intern_47, $intern_60, LoaderPresenterMyProxyImpl$WrappedProxy);
+defineClass(670, $intern_48, $intern_61, LoaderPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_49(baseGinjector){
   $delayedBind_23(this, baseGinjector);
 }
@@ -16075,7 +16104,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(524, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_16);
+defineClass(524, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_16);
 _.onFailure_0 = function onFailure_17(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16087,7 +16116,7 @@ function MediaPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(671, 63, $intern_61, MediaPresenterMyProxyImpl);
+defineClass(671, 63, $intern_62, MediaPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_50(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16109,7 +16138,7 @@ function $delayedBind_24(this$static, baseGinjector){
 function MediaPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(672, $intern_47, $intern_60, MediaPresenterMyProxyImpl$WrappedProxy);
+defineClass(672, $intern_48, $intern_61, MediaPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_51(baseGinjector){
   $delayedBind_24(this, baseGinjector);
 }
@@ -16154,7 +16183,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(526, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_17);
+defineClass(526, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_17);
 _.onFailure_0 = function onFailure_18(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16166,7 +16195,7 @@ function NavBarPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(673, 63, $intern_61, NavBarPresenterMyProxyImpl);
+defineClass(673, 63, $intern_62, NavBarPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_52(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16188,7 +16217,7 @@ function $delayedBind_25(this$static, baseGinjector){
 function NavBarPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(674, $intern_47, $intern_60, NavBarPresenterMyProxyImpl$WrappedProxy);
+defineClass(674, $intern_48, $intern_61, NavBarPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_53(baseGinjector){
   $delayedBind_25(this, baseGinjector);
 }
@@ -16233,7 +16262,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(528, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_18);
+defineClass(528, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_18);
 _.onFailure_0 = function onFailure_19(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16245,7 +16274,7 @@ function PickersPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(675, 63, $intern_61, PickersPresenterMyProxyImpl);
+defineClass(675, 63, $intern_62, PickersPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_54(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16267,7 +16296,7 @@ function $delayedBind_26(this$static, baseGinjector){
 function PickersPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(676, $intern_47, $intern_60, PickersPresenterMyProxyImpl$WrappedProxy);
+defineClass(676, $intern_48, $intern_61, PickersPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_55(baseGinjector){
   $delayedBind_26(this, baseGinjector);
 }
@@ -16312,7 +16341,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(530, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_19);
+defineClass(530, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_19);
 _.onFailure_0 = function onFailure_20(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16331,7 +16360,7 @@ function PushPinPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(677, 63, $intern_61, PushPinPresenterMyProxyImpl);
+defineClass(677, 63, $intern_62, PushPinPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_56(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16356,7 +16385,7 @@ function $delayedBind_27(this$static, baseGinjector){
 function PushPinPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(678, $intern_47, $intern_60, PushPinPresenterMyProxyImpl$WrappedProxy);
+defineClass(678, $intern_48, $intern_61, PushPinPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_57(baseGinjector){
   $delayedBind_27(this, baseGinjector);
 }
@@ -16401,7 +16430,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(532, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_20);
+defineClass(532, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_20);
 _.onFailure_0 = function onFailure_21(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16413,7 +16442,7 @@ function ScrollspyPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(679, 63, $intern_61, ScrollspyPresenterMyProxyImpl);
+defineClass(679, 63, $intern_62, ScrollspyPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_58(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16435,7 +16464,7 @@ function $delayedBind_28(this$static, baseGinjector){
 function ScrollspyPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(680, $intern_47, $intern_60, ScrollspyPresenterMyProxyImpl$WrappedProxy);
+defineClass(680, $intern_48, $intern_61, ScrollspyPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_59(baseGinjector){
   $delayedBind_28(this, baseGinjector);
 }
@@ -16480,7 +16509,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(534, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_21);
+defineClass(534, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_21);
 _.onFailure_0 = function onFailure_22(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16497,7 +16526,7 @@ function SideNavsPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(595, 56, $intern_42, SideNavsPresenter);
+defineClass(595, 56, $intern_43, SideNavsPresenter);
 _.onReveal = function onReveal_31(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('SideNavs', "Scrollspy is a jQuery plugin that tracks certain elements and which element the user's screen is currently centered on. Our main demo of this is our table of contents on every documentation page to the right. Clicking on these links will also scroll the page to that element."));
@@ -16511,7 +16540,7 @@ function SideNavsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(681, 63, $intern_61, SideNavsPresenterMyProxyImpl);
+defineClass(681, 63, $intern_62, SideNavsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_60(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16536,7 +16565,7 @@ function $delayedBind_29(this$static, baseGinjector){
 function SideNavsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(682, $intern_47, $intern_60, SideNavsPresenterMyProxyImpl$WrappedProxy);
+defineClass(682, $intern_48, $intern_61, SideNavsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_61(baseGinjector){
   $delayedBind_29(this, baseGinjector);
 }
@@ -16547,7 +16576,7 @@ function SideNavsView(){
   $initWidget_0(this, $build_f_MaterialPanel1_7(new SideNavsView_BinderImpl$Widgets));
 }
 
-defineClass(771, 59, $intern_43, SideNavsView);
+defineClass(771, 59, $intern_44, SideNavsView);
 var Lgwt_material_design_demo_client_application_components_sidenavs_SideNavsView_2_classLit = createForClass('gwt.material.design.demo.client.application.components.sidenavs', 'SideNavsView', 771);
 function SideNavsView_BinderImpl(){
 }
@@ -16796,7 +16825,7 @@ function TabsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(683, 63, $intern_61, TabsPresenterMyProxyImpl);
+defineClass(683, 63, $intern_62, TabsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_62(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16818,7 +16847,7 @@ function $delayedBind_30(this$static, baseGinjector){
 function TabsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(684, $intern_47, $intern_60, TabsPresenterMyProxyImpl$WrappedProxy);
+defineClass(684, $intern_48, $intern_61, TabsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_63(baseGinjector){
   $delayedBind_30(this, baseGinjector);
 }
@@ -16863,7 +16892,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(537, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_22);
+defineClass(537, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_22);
 _.onFailure_0 = function onFailure_23(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16875,7 +16904,7 @@ function GettingStartedPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(685, 63, $intern_61, GettingStartedPresenterMyProxyImpl);
+defineClass(685, 63, $intern_62, GettingStartedPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_64(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16897,7 +16926,7 @@ function $delayedBind_31(this$static, baseGinjector){
 function GettingStartedPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(686, $intern_47, $intern_60, GettingStartedPresenterMyProxyImpl$WrappedProxy);
+defineClass(686, $intern_48, $intern_61, GettingStartedPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_65(baseGinjector){
   $delayedBind_31(this, baseGinjector);
 }
@@ -16942,7 +16971,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(539, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_23);
+defineClass(539, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_23);
 _.onFailure_0 = function onFailure_24(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -16959,7 +16988,7 @@ function RoadMapPresenter(eventBus, view, proxy){
   Presenter.call(this, eventBus, view, proxy, ($clinit_ApplicationPresenter() , SLOT_MainContent));
 }
 
-defineClass(598, 56, $intern_42, RoadMapPresenter);
+defineClass(598, 56, $intern_43, RoadMapPresenter);
 _.onReveal = function onReveal_34(){
   $clinit_SetPageTitleEvent();
   $fireEvent_1(this, new SetPageTitleEvent('RoadMap', 'Lists of material widgets from 1.0 until the latest release of gwt-material.'));
@@ -16973,7 +17002,7 @@ function RoadMapPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(687, 63, $intern_61, RoadMapPresenterMyProxyImpl);
+defineClass(687, 63, $intern_62, RoadMapPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_66(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -16998,7 +17027,7 @@ function $delayedBind_32(this$static, baseGinjector){
 function RoadMapPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(688, $intern_47, $intern_60, RoadMapPresenterMyProxyImpl$WrappedProxy);
+defineClass(688, $intern_48, $intern_61, RoadMapPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_67(baseGinjector){
   $delayedBind_32(this, baseGinjector);
 }
@@ -17009,7 +17038,7 @@ function RoadMapView(){
   $initWidget_0(this, $build_f_MaterialRow1_0(new RoadMapView_BinderImpl$Widgets));
 }
 
-defineClass(775, 59, $intern_43, RoadMapView);
+defineClass(775, 59, $intern_44, RoadMapView);
 var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_2_classLit = createForClass('gwt.material.design.demo.client.application.roadmap', 'RoadMapView', 775);
 function RoadMapView_BinderImpl(){
 }
@@ -17041,9 +17070,9 @@ var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_1BinderImpl
 function RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1234, 1, {}, RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1235, 1, {}, RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_15;
-var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.roadmap', 'RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1234);
+var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.application.roadmap', 'RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator', 1235);
 function $ensureInjected_20(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17057,13 +17086,13 @@ function $ensureInjected_20(this$static){
 function RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1235, 1, {}, RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1236, 1, {}, RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_28(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.roadmap', 'RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1235);
+var Lgwt_material_design_demo_client_application_roadmap_RoadMapView_1BinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.application.roadmap', 'RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1236);
 function $clinit_RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_15 = new RoadMapView_BinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -17128,7 +17157,7 @@ function ShowcasePresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(689, 63, $intern_61, ShowcasePresenterMyProxyImpl);
+defineClass(689, 63, $intern_62, ShowcasePresenterMyProxyImpl);
 _.delayedBind = function delayedBind_68(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17150,7 +17179,7 @@ function $delayedBind_33(this$static, baseGinjector){
 function ShowcasePresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(690, $intern_47, $intern_60, ShowcasePresenterMyProxyImpl$WrappedProxy);
+defineClass(690, $intern_48, $intern_61, ShowcasePresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_69(baseGinjector){
   $delayedBind_33(this, baseGinjector);
 }
@@ -17195,7 +17224,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(542, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_24);
+defineClass(542, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_24);
 _.onFailure_0 = function onFailure_25(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17207,7 +17236,7 @@ function ColorsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(691, 63, $intern_61, ColorsPresenterMyProxyImpl);
+defineClass(691, 63, $intern_62, ColorsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_70(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17229,7 +17258,7 @@ function $delayedBind_34(this$static, baseGinjector){
 function ColorsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(692, $intern_47, $intern_60, ColorsPresenterMyProxyImpl$WrappedProxy);
+defineClass(692, $intern_48, $intern_61, ColorsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_71(baseGinjector){
   $delayedBind_34(this, baseGinjector);
 }
@@ -17274,7 +17303,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(544, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_25);
+defineClass(544, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_25);
 _.onFailure_0 = function onFailure_26(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17286,7 +17315,7 @@ function GridPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(693, 63, $intern_61, GridPresenterMyProxyImpl);
+defineClass(693, 63, $intern_62, GridPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_72(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17308,7 +17337,7 @@ function $delayedBind_35(this$static, baseGinjector){
 function GridPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(694, $intern_47, $intern_60, GridPresenterMyProxyImpl$WrappedProxy);
+defineClass(694, $intern_48, $intern_61, GridPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_73(baseGinjector){
   $delayedBind_35(this, baseGinjector);
 }
@@ -17353,7 +17382,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(546, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_26);
+defineClass(546, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_26);
 _.onFailure_0 = function onFailure_27(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17365,7 +17394,7 @@ function HelperPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(695, 63, $intern_61, HelperPresenterMyProxyImpl);
+defineClass(695, 63, $intern_62, HelperPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_74(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17387,7 +17416,7 @@ function $delayedBind_36(this$static, baseGinjector){
 function HelperPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(696, $intern_47, $intern_60, HelperPresenterMyProxyImpl$WrappedProxy);
+defineClass(696, $intern_48, $intern_61, HelperPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_75(baseGinjector){
   $delayedBind_36(this, baseGinjector);
 }
@@ -17432,7 +17461,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(548, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_27);
+defineClass(548, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_27);
 _.onFailure_0 = function onFailure_28(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17444,7 +17473,7 @@ function IconsPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(697, 63, $intern_61, IconsPresenterMyProxyImpl);
+defineClass(697, 63, $intern_62, IconsPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_76(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17466,7 +17495,7 @@ function $delayedBind_37(this$static, baseGinjector){
 function IconsPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(698, $intern_47, $intern_60, IconsPresenterMyProxyImpl$WrappedProxy);
+defineClass(698, $intern_48, $intern_61, IconsPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_77(baseGinjector){
   $delayedBind_37(this, baseGinjector);
 }
@@ -17511,7 +17540,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(550, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_28);
+defineClass(550, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_28);
 _.onFailure_0 = function onFailure_29(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17523,7 +17552,7 @@ function ShadowPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(699, 63, $intern_61, ShadowPresenterMyProxyImpl);
+defineClass(699, 63, $intern_62, ShadowPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_78(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17545,7 +17574,7 @@ function $delayedBind_38(this$static, baseGinjector){
 function ShadowPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(700, $intern_47, $intern_60, ShadowPresenterMyProxyImpl$WrappedProxy);
+defineClass(700, $intern_48, $intern_61, ShadowPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_79(baseGinjector){
   $delayedBind_38(this, baseGinjector);
 }
@@ -17590,7 +17619,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(552, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_29);
+defineClass(552, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_29);
 _.onFailure_0 = function onFailure_30(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17602,7 +17631,7 @@ function ThemesPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(701, 63, $intern_61, ThemesPresenterMyProxyImpl);
+defineClass(701, 63, $intern_62, ThemesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_80(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17624,7 +17653,7 @@ function $delayedBind_39(this$static, baseGinjector){
 function ThemesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(702, $intern_47, $intern_60, ThemesPresenterMyProxyImpl$WrappedProxy);
+defineClass(702, $intern_48, $intern_61, ThemesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_81(baseGinjector){
   $delayedBind_39(this, baseGinjector);
 }
@@ -17669,7 +17698,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(554, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_30);
+defineClass(554, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_30);
 _.onFailure_0 = function onFailure_31(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17688,7 +17717,7 @@ function TemplatesPresenterMyProxyImpl(){
   $add_32(delayedBindObjects, this);
 }
 
-defineClass(703, 63, $intern_61, TemplatesPresenterMyProxyImpl);
+defineClass(703, 63, $intern_62, TemplatesPresenterMyProxyImpl);
 _.delayedBind = function delayedBind_82(baseGinjector){
   var nameToken, wrappedProxy;
   this.ginjector = baseGinjector;
@@ -17713,7 +17742,7 @@ function $delayedBind_40(this$static, baseGinjector){
 function TemplatesPresenterMyProxyImpl$WrappedProxy(){
 }
 
-defineClass(704, $intern_47, $intern_60, TemplatesPresenterMyProxyImpl$WrappedProxy);
+defineClass(704, $intern_48, $intern_61, TemplatesPresenterMyProxyImpl$WrappedProxy);
 _.delayedBind = function delayedBind_83(baseGinjector){
   $delayedBind_40(this, baseGinjector);
 }
@@ -17758,7 +17787,7 @@ function com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_f
   this.val$callback2 = val$callback;
 }
 
-defineClass(556, 1, $intern_62, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_31);
+defineClass(556, 1, $intern_63, com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment$1$1_31);
 _.onFailure_0 = function onFailure_32(ex){
   $onFailure_0(this.val$callback2, ex);
 }
@@ -17839,7 +17868,7 @@ function PrettyPre(){
   setStyleName(($clinit_DOM() , this.element), 'prettyprint', true);
 }
 
-defineClass(21, 1156, $intern_24, PrettyPre);
+defineClass(21, 1157, $intern_24, PrettyPre);
 _.onLoad = function onLoad_27(){
   $wnd.prettyPrint();
 }
@@ -17914,27 +17943,27 @@ function MaterialAreaChart(){
   $loadApi(chartLoader, new MaterialAreaChart$1(this));
 }
 
-defineClass(1217, $intern_25, $intern_26, MaterialAreaChart);
+defineClass(1218, $intern_25, $intern_26, MaterialAreaChart);
 _.isLoop = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart', 1217);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart', 1218);
 function MaterialAreaChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1218, 1, $intern_41, MaterialAreaChart$1);
+defineClass(1219, 1, $intern_42, MaterialAreaChart$1);
 _.run = function run_14(){
   this.this$01.chart = new AreaChart;
   $add_13(this.this$01.cardContent, this.this$01.chart);
   $setLoop(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/1', 1218);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/1', 1219);
 function MaterialAreaChart$2(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(1219, 121, {}, MaterialAreaChart$2);
+defineClass(1220, 121, {}, MaterialAreaChart$2);
 _.run = function run_15(){
   if (this.this$01.isLoop) {
     $drawChart(this.this$01, this.this$01.values);
@@ -17946,7 +17975,7 @@ _.run = function run_15(){
   }
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/2', 1219);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart/2', 1220);
 function $build_f_MaterialColumn1(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
@@ -17967,14 +17996,14 @@ function MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets(owner){
   $build_style_4();
 }
 
-defineClass(1389, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl/Widgets', 1389);
+defineClass(1390, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl/Widgets', 1390);
 function MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1453, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1454, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_21;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1453);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1454);
 function $ensureInjected_26(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -17989,13 +18018,13 @@ function $ensureInjected_26(this$static){
 function MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1454, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1455, 1, {}, MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_34(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1454);
+var Lgwt_material_design_demo_client_ui_charts_MaterialAreaChart_1MaterialAreaChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1455);
 function $clinit_MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_21 = new MaterialAreaChart_MaterialAreaChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18065,27 +18094,27 @@ function MaterialBarChart(){
   $loadApi(chartLoader, new MaterialBarChart$1(this));
 }
 
-defineClass(1220, $intern_25, $intern_26, MaterialBarChart);
+defineClass(1221, $intern_25, $intern_26, MaterialBarChart);
 _.isLoop = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart', 1220);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart', 1221);
 function MaterialBarChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1221, 1, $intern_41, MaterialBarChart$1);
+defineClass(1222, 1, $intern_42, MaterialBarChart$1);
 _.run = function run_16(){
   this.this$01.chart = new BarChart;
   $add_13(this.this$01.cardContent, this.this$01.chart);
   $setLoop_0(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/1', 1221);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/1', 1222);
 function MaterialBarChart$2(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(1222, 121, {}, MaterialBarChart$2);
+defineClass(1223, 121, {}, MaterialBarChart$2);
 _.run = function run_17(){
   if (this.this$01.isLoop) {
     $drawChart_0(this.this$01, this.this$01.values);
@@ -18097,7 +18126,7 @@ _.run = function run_17(){
   }
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/2', 1222);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart/2', 1223);
 function $build_f_MaterialColumn1_0(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
@@ -18118,14 +18147,14 @@ function MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets(owner){
   $build_style_5();
 }
 
-defineClass(1390, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl/Widgets', 1390);
+defineClass(1391, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl/Widgets', 1391);
 function MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1455, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1456, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_22;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1455);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1456);
 function $ensureInjected_27(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18140,13 +18169,13 @@ function $ensureInjected_27(this$static){
 function MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1456, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1457, 1, {}, MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_35(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1456);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBarChart_1MaterialBarChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1457);
 function $clinit_MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_22 = new MaterialBarChart_MaterialBarChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18191,20 +18220,20 @@ function MaterialBubbleChart(){
   $loadApi(chartLoader, new MaterialBubbleChart$1(this));
 }
 
-defineClass(1223, $intern_25, $intern_26, MaterialBubbleChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart', 1223);
+defineClass(1224, $intern_25, $intern_26, MaterialBubbleChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart', 1224);
 function MaterialBubbleChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1224, 1, $intern_41, MaterialBubbleChart$1);
+defineClass(1225, 1, $intern_42, MaterialBubbleChart$1);
 _.run = function run_18(){
   this.this$01.chart = new BubbleChart;
   $add_13(this.this$01.cardContent, this.this$01.chart);
   $draw_1(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart/1', 1224);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart/1', 1225);
 function $build_f_MaterialColumn1_1(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
@@ -18225,14 +18254,14 @@ function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets(owner){
   $build_style_6();
 }
 
-defineClass(1391, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl/Widgets', 1391);
+defineClass(1392, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl/Widgets', 1392);
 function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1457, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1458, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_23;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1457);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1458);
 function $ensureInjected_28(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18247,13 +18276,13 @@ function $ensureInjected_28(this$static){
 function MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1458, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1459, 1, {}, MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_36(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1458);
+var Lgwt_material_design_demo_client_ui_charts_MaterialBubbleChart_1MaterialBubbleChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1459);
 function $clinit_MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_23 = new MaterialBubbleChart_MaterialBubbleChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18281,20 +18310,20 @@ function MaterialCandleStick(){
   $loadApi(chartLoader, new MaterialCandleStick$1(this));
 }
 
-defineClass(1225, $intern_25, $intern_26, MaterialCandleStick);
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick', 1225);
+defineClass(1226, $intern_25, $intern_26, MaterialCandleStick);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick', 1226);
 function MaterialCandleStick$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1226, 1, $intern_41, MaterialCandleStick$1);
+defineClass(1227, 1, $intern_42, MaterialCandleStick$1);
 _.run = function run_19(){
   this.this$01.chart = new CandlestickChart;
   $add_13(this.this$01.cardContent, this.this$01.chart);
   $draw_2(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick/1', 1226);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick/1', 1227);
 function $build_f_MaterialColumn1_2(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction7, f_MaterialCardTitle5, f_MaterialLabel6, f_MaterialLink8, f_MaterialLink9;
   f_MaterialColumn1 = new MaterialColumn;
@@ -18315,14 +18344,14 @@ function MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets(owner){
   $build_style_7();
 }
 
-defineClass(1392, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl/Widgets', 1392);
+defineClass(1393, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl/Widgets', 1393);
 function MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1459, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1460, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_24;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1459);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1460);
 function $ensureInjected_29(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18337,13 +18366,13 @@ function $ensureInjected_29(this$static){
 function MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1460, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1461, 1, {}, MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_37(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1460);
+var Lgwt_material_design_demo_client_ui_charts_MaterialCandleStick_1MaterialCandleStickUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1461);
 function $clinit_MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_24 = new MaterialCandleStick_MaterialCandleStickUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18374,20 +18403,20 @@ function MaterialGauge(){
   $loadApi(chartLoader, new MaterialGauge$1(this));
 }
 
-defineClass(1227, $intern_25, $intern_26, MaterialGauge);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge', 1227);
+defineClass(1228, $intern_25, $intern_26, MaterialGauge);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge', 1228);
 function MaterialGauge$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1228, 1, $intern_41, MaterialGauge$1);
+defineClass(1229, 1, $intern_42, MaterialGauge$1);
 _.run = function run_20(){
   this.this$01.gauge = new Gauge;
   $add_13(this.this$01.cardContent, this.this$01.gauge);
   $draw_3(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge/1', 1228);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge/1', 1229);
 function $build_f_MaterialColumn1_3(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
@@ -18408,14 +18437,14 @@ function MaterialGauge_MaterialGaugeUiBinderImpl$Widgets(owner){
   $build_style_8();
 }
 
-defineClass(1393, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl/Widgets', 1393);
+defineClass(1394, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl/Widgets', 1394);
 function MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1461, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1462, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_25;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1461);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1462);
 function $ensureInjected_30(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18430,13 +18459,13 @@ function $ensureInjected_30(this$static){
 function MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1462, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1463, 1, {}, MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_38(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1462);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGauge_1MaterialGaugeUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1463);
 function $clinit_MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_25 = new MaterialGauge_MaterialGaugeUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18475,20 +18504,20 @@ function MaterialGeoChart(){
   $loadApi(chartLoader, new MaterialGeoChart$1(this));
 }
 
-defineClass(1215, $intern_25, $intern_26, MaterialGeoChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart', 1215);
+defineClass(1216, $intern_25, $intern_26, MaterialGeoChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart', 1216);
 function MaterialGeoChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1216, 1, $intern_41, MaterialGeoChart$1);
+defineClass(1217, 1, $intern_42, MaterialGeoChart$1);
 _.run = function run_21(){
   this.this$01.geoChart = new GeoChart;
   $add_13(this.this$01.cardContent, this.this$01.geoChart);
   $draw_4(this.this$01);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart/1', 1216);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart/1', 1217);
 function $build_f_MaterialColumn1_4(this$static){
   var f_MaterialColumn1, f_MaterialCard2, f_MaterialCardTitle3, cardContent, f_MaterialCardReveal4, f_MaterialCardAction6, f_MaterialCardTitle5, f_MaterialLink7, f_MaterialLink8;
   f_MaterialColumn1 = new MaterialColumn;
@@ -18509,14 +18538,14 @@ function MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets(owner){
   $build_style_9();
 }
 
-defineClass(1388, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl/Widgets', 1388);
+defineClass(1389, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl/Widgets', 1389);
 function MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1451, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1452, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_26;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1451);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1452);
 function $ensureInjected_31(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18531,13 +18560,13 @@ function $ensureInjected_31(this$static){
 function MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1452, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1453, 1, {}, MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_39(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1452);
+var Lgwt_material_design_demo_client_ui_charts_MaterialGeoChart_1MaterialGeoChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1453);
 function $clinit_MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_26 = new MaterialGeoChart_MaterialGeoChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18554,13 +18583,13 @@ function MaterialPieChart(){
   $loadApi(chartLoader_1, new MaterialPieChart$3(this));
 }
 
-defineClass(1211, $intern_25, $intern_26, MaterialPieChart);
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart', 1211);
+defineClass(1212, $intern_25, $intern_26, MaterialPieChart);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart', 1212);
 function MaterialPieChart$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1212, 1, $intern_41, MaterialPieChart$1);
+defineClass(1213, 1, $intern_42, MaterialPieChart$1);
 _.run = function run_22(){
   var chart, dataTable, opt;
   chart = new PieChart;
@@ -18586,12 +18615,12 @@ _.run = function run_22(){
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/1', 1212);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/1', 1213);
 function MaterialPieChart$2(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1213, 1, $intern_41, MaterialPieChart$2);
+defineClass(1214, 1, $intern_42, MaterialPieChart$2);
 _.run = function run_23(){
   var chart, dataTable, opt;
   chart = new PieChart;
@@ -18618,12 +18647,12 @@ _.run = function run_23(){
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/2', 1213);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$2_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/2', 1214);
 function MaterialPieChart$3(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(1214, 1, $intern_41, MaterialPieChart$3);
+defineClass(1215, 1, $intern_42, MaterialPieChart$3);
 _.run = function run_24(){
   var chart, dataTable, opt;
   chart = new PieChart;
@@ -18650,7 +18679,7 @@ _.run = function run_24(){
   $draw_0(chart, dataTable, opt._this);
 }
 ;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$3_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/3', 1214);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart$3_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart/3', 1215);
 function $setColors_2(this$static, colors){
   $setColors_0(this$static._this, createArray(colors));
 }
@@ -18681,14 +18710,14 @@ function MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets(owner){
   $build_style_10();
 }
 
-defineClass(1387, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets);
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl/Widgets', 1387);
+defineClass(1388, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl$Widgets);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl$Widgets_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl/Widgets', 1388);
 function MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator(){
 }
 
-defineClass(1449, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
+defineClass(1450, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator);
 var style_27;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1449);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator', 1450);
 function $ensureInjected_32(this$static){
   if (!this$static.injected) {
     this$static.injected = true;
@@ -18703,13 +18732,13 @@ function $ensureInjected_32(this$static){
 function MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1(){
 }
 
-defineClass(1450, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
+defineClass(1451, 1, {}, MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1);
 _.getName = function getName_40(){
   return 'style';
 }
 ;
 _.injected = false;
-var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1450);
+var Lgwt_material_design_demo_client_ui_charts_MaterialPieChart_1MaterialPieChartUiBinderImpl_1GenBundle_1default_1InlineClientBundleGenerator$1_2_classLit = createForClass('gwt.material.design.demo.client.ui.charts', 'MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator/1', 1451);
 function $clinit_MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer(){
   $clinit_MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$styleInitializer = emptyMethod;
   style_27 = new MaterialPieChart_MaterialPieChartUiBinderImpl_GenBundle_default_InlineClientBundleGenerator$1;
@@ -18733,13 +18762,13 @@ function IndexOutOfBoundsException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(88, 47, $intern_65, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
+defineClass(88, 47, $intern_66, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
 var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 88);
 function ArrayIndexOutOfBoundsException(){
   IndexOutOfBoundsException.call(this);
 }
 
-defineClass(427, 88, $intern_65, ArrayIndexOutOfBoundsException);
+defineClass(427, 88, $intern_66, ArrayIndexOutOfBoundsException);
 var Ljava_lang_ArrayIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'ArrayIndexOutOfBoundsException', 427);
 function ArrayStoreException(){
   RuntimeException.call(this);
@@ -18793,7 +18822,7 @@ function ClassCastException(){
   RuntimeException.call(this);
 }
 
-defineClass(137, 47, $intern_66, ClassCastException);
+defineClass(137, 47, $intern_67, ClassCastException);
 var Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 137);
 function __parseAndValidateDouble(s){
   var floatRegex;
@@ -19220,7 +19249,7 @@ function $implFindEntry(this$static, key, remove){
   return null;
 }
 
-function $toString_2(this$static, o){
+function $toString_3(this$static, o){
   return o === this$static?'(this Map)':'' + o;
 }
 
@@ -19228,7 +19257,7 @@ function getEntryValueOrNull(entry){
   return !entry?null:entry.getValue_0();
 }
 
-defineClass(1490, 1, {159:1});
+defineClass(1491, 1, {159:1});
 _.containsKey = function containsKey(key){
   return !!$implFindEntry(this, key, false);
 }
@@ -19268,15 +19297,15 @@ _.toString$ = function toString_21(){
   for (entry$iterator = this.entrySet_0().iterator(); entry$iterator.hasNext();) {
     entry = dynamicCast(entry$iterator.next_0(), 81);
     comma?(sb.string += ', ' , sb):(comma = true);
-    $append_3(sb, $toString_2(this, entry.getKey()));
+    $append_3(sb, $toString_3(this, entry.getKey()));
     sb.string += '=';
-    $append_3(sb, $toString_2(this, entry.getValue_0()));
+    $append_3(sb, $toString_3(this, entry.getValue_0()));
   }
   sb.string += '}';
   return sb.string;
 }
 ;
-var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 1490);
+var Ljava_util_AbstractMap_2_classLit = createForClass('java.util', 'AbstractMap', 1491);
 function $elementAdded(this$static){
   ++this$static.size_0;
   structureChanged(this$static);
@@ -19297,7 +19326,7 @@ function $reset_0(this$static){
   structureChanged(this$static);
 }
 
-defineClass(271, 1490, {159:1});
+defineClass(271, 1491, {159:1});
 _.clear_0 = function clear_10(){
   $reset_0(this);
 }
@@ -19332,7 +19361,7 @@ _.size_1 = function size_4(){
 ;
 _.size_0 = 0;
 var Ljava_util_AbstractHashMap_2_classLit = createForClass('java.util', 'AbstractHashMap', 271);
-defineClass(1492, 1491, $intern_67);
+defineClass(1493, 1492, $intern_68);
 _.equals$ = function equals_20(o){
   var other;
   if (o === this) {
@@ -19352,7 +19381,7 @@ _.hashCode$ = function hashCode_22(){
   return hashCode_27(this);
 }
 ;
-var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 1492);
+var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 1493);
 function $contains_0(this$static, o){
   if (instanceOf(o, 81)) {
     return $containsEntry(this$static.this$01, dynamicCast(o, 81));
@@ -19364,8 +19393,8 @@ function AbstractHashMap$EntrySet(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(443, 1492, $intern_67, AbstractHashMap$EntrySet);
-_.contains_0 = function contains_2(o){
+defineClass(443, 1493, $intern_68, AbstractHashMap$EntrySet);
+_.contains = function contains_2(o){
   return $contains_0(this, o);
 }
 ;
@@ -19447,7 +19476,7 @@ function $equals_2(this$static, o){
   return true;
 }
 
-defineClass($intern_68, 1491, $intern_69);
+defineClass($intern_69, 1492, $intern_70);
 _.add_3 = function add_32(index_0, element){
   throw new UnsupportedOperationException_0('Add not supported on this list');
 }
@@ -19498,7 +19527,7 @@ _.set_0 = function set_2(index_0, o){
   throw new UnsupportedOperationException_0('Set not supported on this list');
 }
 ;
-var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', $intern_68);
+var Ljava_util_AbstractList_2_classLit = createForClass('java.util', 'AbstractList', $intern_69);
 function AbstractList$IteratorImpl(this$0){
   this.this$01_0 = this$0;
 }
@@ -19550,8 +19579,8 @@ function AbstractMap$1(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(113, 1492, $intern_67, AbstractMap$1);
-_.contains_0 = function contains_3(key){
+defineClass(113, 1493, $intern_68, AbstractMap$1);
+_.contains = function contains_3(key){
   return this.this$01.containsKey(key);
 }
 ;
@@ -19606,8 +19635,8 @@ function AbstractMap$2(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(273, 1491, $intern_36, AbstractMap$2);
-_.contains_0 = function contains_4(value_0){
+defineClass(273, 1492, $intern_37, AbstractMap$2);
+_.contains = function contains_4(value_0){
   return this.this$01.containsValue(value_0);
 }
 ;
@@ -19651,7 +19680,7 @@ function $setValue_8(this$static, value_0){
   return oldValue;
 }
 
-defineClass(445, 1, $intern_70);
+defineClass(445, 1, $intern_71);
 _.equals$ = function equals_22(other){
   var entry;
   if (!instanceOf(other, 81)) {
@@ -19687,9 +19716,9 @@ function AbstractMap$SimpleEntry(key, value_0){
   this.value_0 = value_0;
 }
 
-defineClass(272, 445, $intern_70, AbstractMap$SimpleEntry);
+defineClass(272, 445, $intern_71, AbstractMap$SimpleEntry);
 var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 272);
-defineClass(1494, 1, $intern_70);
+defineClass(1495, 1, $intern_71);
 _.equals$ = function equals_23(other){
   var entry;
   if (!instanceOf(other, 81)) {
@@ -19707,7 +19736,7 @@ _.toString$ = function toString_23(){
   return this.getKey() + '=' + this.getValue_0();
 }
 ;
-var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 1494);
+var Ljava_util_AbstractMapEntry_2_classLit = createForClass('java.util', 'AbstractMapEntry', 1495);
 function $$init_1(this$static){
   this$static.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
 }
@@ -19814,7 +19843,7 @@ function splice_0(array, index_0, deleteCount, value_0){
   array.splice(index_0, deleteCount, value_0);
 }
 
-defineClass(61, $intern_68, $intern_71, ArrayList, ArrayList_1);
+defineClass(61, $intern_69, $intern_72, ArrayList, ArrayList_1);
 _.add_3 = function add_35(index_0, o){
   $add_31(this, index_0, o);
 }
@@ -19827,7 +19856,7 @@ _.clear_0 = function clear_12(){
   this.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
 }
 ;
-_.contains_0 = function contains_5(o){
+_.contains = function contains_5(o){
   return $indexOf_2(this, o, 0) != -1;
 }
 ;
@@ -20023,8 +20052,8 @@ var EMPTY_LIST, EMPTY_SET;
 function Collections$EmptyList(){
 }
 
-defineClass(451, $intern_68, $intern_71, Collections$EmptyList);
-_.contains_0 = function contains_6(object){
+defineClass(451, $intern_69, $intern_72, Collections$EmptyList);
+_.contains = function contains_6(object){
   return false;
 }
 ;
@@ -20080,8 +20109,8 @@ var Ljava_util_Collections$EmptyListIterator_2_classLit = createForClass('java.u
 function Collections$EmptySet(){
 }
 
-defineClass(453, 1492, $intern_72, Collections$EmptySet);
-_.contains_0 = function contains_7(object){
+defineClass(453, 1493, $intern_73, Collections$EmptySet);
+_.contains = function contains_7(object){
   return false;
 }
 ;
@@ -20098,7 +20127,7 @@ function Collections$UnmodifiableCollection(coll){
   this.coll = coll;
 }
 
-defineClass(325, 1, $intern_36);
+defineClass(325, 1, $intern_37);
 _.add_1 = function add_37(o){
   throw new UnsupportedOperationException;
 }
@@ -20193,7 +20222,7 @@ function Collections$UnmodifiableSet(set_0){
   Collections$UnmodifiableCollection.call(this, set_0);
 }
 
-defineClass(327, 325, $intern_67, Collections$UnmodifiableSet);
+defineClass(327, 325, $intern_68, Collections$UnmodifiableSet);
 _.equals$ = function equals_27(o){
   return this.coll.equals$(o);
 }
@@ -20214,7 +20243,7 @@ function Collections$UnmodifiableMap$UnmodifiableEntrySet(s){
   Collections$UnmodifiableSet.call(this, s);
 }
 
-defineClass(455, 327, $intern_67, Collections$UnmodifiableMap$UnmodifiableEntrySet);
+defineClass(455, 327, $intern_68, Collections$UnmodifiableMap$UnmodifiableEntrySet);
 _.iterator = function iterator_16(){
   var it;
   it = this.coll.iterator();
@@ -20251,7 +20280,7 @@ function Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(entr
   this.entry = entry;
 }
 
-defineClass(328, 1, $intern_70, Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry);
+defineClass(328, 1, $intern_71, Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry);
 _.equals$ = function equals_28(o){
   return this.entry.equals$(o);
 }
@@ -20292,12 +20321,12 @@ function $compare_2(o1, o2){
 function Comparators$1(){
 }
 
-defineClass(1386, 1, $intern_73, Comparators$1);
+defineClass(1387, 1, $intern_74, Comparators$1);
 _.compare = function compare_7(o1, o2){
   return $compare_2(o1, o2);
 }
 ;
-var Ljava_util_Comparators$1_2_classLit = createForClass('java.util', 'Comparators/1', 1386);
+var Ljava_util_Comparators$1_2_classLit = createForClass('java.util', 'Comparators/1', 1387);
 function checkStructuralChange(host, iterator){
   if (iterator._gwt_modCount != host._gwt_modCount) {
     throw new ConcurrentModificationException;
@@ -20334,7 +20363,7 @@ function HashMap_0(ignored){
   $reset_0(this);
 }
 
-defineClass(70, 271, $intern_74, HashMap, HashMap_0);
+defineClass(70, 271, $intern_75, HashMap, HashMap_0);
 _.equals = function equals_29(value1, value2){
   return maskUndefined(value1) === maskUndefined(value2) || value1 != null && equals_Ljava_lang_Object__Z__devirtual$(value1, value2);
 }
@@ -20369,12 +20398,12 @@ function HashSet_0(c){
   $addAll(this, c);
 }
 
-defineClass(95, 1492, $intern_72, HashSet, HashSet_0);
+defineClass(95, 1493, $intern_73, HashSet, HashSet_0);
 _.add_1 = function add_38(o){
   return $add_33(this, o);
 }
 ;
-_.contains_0 = function contains_10(o){
+_.contains = function contains_10(o){
   return $contains_1(this, o);
 }
 ;
@@ -20395,7 +20424,7 @@ _.size_1 = function size_14(){
 }
 ;
 _.toString$ = function toString_27(){
-  return $toString_1(new AbstractMap$1(this.map_0));
+  return $toString_2(new AbstractMap$1(this.map_0));
 }
 ;
 var Ljava_util_HashSet_2_classLit = createForClass('java.util', 'HashSet', 95);
@@ -20577,7 +20606,7 @@ function InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1(this$1){
   ArrayList.call(this);
 }
 
-defineClass(467, 61, $intern_71, InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
+defineClass(467, 61, $intern_72, InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
 _.remove_2 = function remove_43(index_0){
   var removed;
   return removed = dynamicCast($remove_11(this, index_0), 81) , $remove_14(this.this$11, removed.getKey()) , removed;
@@ -20758,7 +20787,7 @@ function InternalJsStringMap$2(this$0, val$key){
   this.val$key2 = val$key;
 }
 
-defineClass(331, 1494, $intern_70, InternalJsStringMap$2);
+defineClass(331, 1495, $intern_71, InternalJsStringMap$2);
 _.getKey = function getKey_1(){
   return this.val$key2;
 }
@@ -20827,7 +20856,7 @@ function InternalJsStringMap$InternalJsStringMapLegacy$1(this$1){
   ArrayList.call(this);
 }
 
-defineClass(460, 61, $intern_71, InternalJsStringMap$InternalJsStringMapLegacy$1);
+defineClass(460, 61, $intern_72, InternalJsStringMap$InternalJsStringMapLegacy$1);
 _.remove_2 = function remove_47(index_0){
   var removed;
   return removed = dynamicCast($remove_11(this, index_0), 81) , $remove_15(this.this$11, ':' + dynamicCastToString(removed.getKey())) , removed;
@@ -20917,7 +20946,7 @@ function LinkedHashMap(){
   this.head_0.next = this.head_0;
 }
 
-defineClass(387, 70, $intern_74, LinkedHashMap);
+defineClass(387, 70, $intern_75, LinkedHashMap);
 _.clear_0 = function clear_14(){
   $clear_4(this);
 }
@@ -20996,8 +21025,8 @@ function LinkedHashMap$EntrySet(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(244, 1492, $intern_67, LinkedHashMap$EntrySet);
-_.contains_0 = function contains_11(o){
+defineClass(244, 1493, $intern_68, LinkedHashMap$EntrySet);
+_.contains = function contains_11(o){
   return $contains_2(this, o);
 }
 ;
@@ -21074,7 +21103,7 @@ function checkArrayElementIndex(index_0, size_0){
   }
 }
 
-defineClass(1418, $intern_68, $intern_71, Vector);
+defineClass(1419, $intern_69, $intern_72, Vector);
 _.add_3 = function add_39(index_0, o){
   checkArrayElementIndex(index_0, this.arrayList.array.length + 1);
   $add_31(this.arrayList, index_0, o);
@@ -21088,7 +21117,7 @@ _.clear_0 = function clear_15(){
   this.arrayList.array = initDim(Ljava_lang_Object_2_classLit, $intern_4, 1, 0, 3, 1);
 }
 ;
-_.contains_0 = function contains_12(elem){
+_.contains = function contains_12(elem){
   return $indexOf_2(this.arrayList, elem, 0) != -1;
 }
 ;
@@ -21132,15 +21161,15 @@ _.toArray_0 = function toArray_7(a){
 }
 ;
 _.toString$ = function toString_28(){
-  return $toString_1(this.arrayList);
+  return $toString_2(this.arrayList);
 }
 ;
-var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 1418);
-var I_classLit = createForPrimitive('int', 'I'), Z_classLit = createForPrimitive('boolean', 'Z'), Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler'), Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback'), Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit = createForClass('com.google.gwt.lang', 'CollapsedPropertyHolder', 1479), Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit = createForClass('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 1481), Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', null), Lcom_google_gwt_lang_ModuleUtils_2_classLit = createForClass('com.google.gwt.lang', 'ModuleUtils', 1484), Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry'), Lcom_google_gwt_user_client_ui_IsWidget_2_classLit = createForInterface('com.google.gwt.user.client.ui', 'IsWidget');
+var Ljava_util_Vector_2_classLit = createForClass('java.util', 'Vector', 1419);
+var I_classLit = createForPrimitive('int', 'I'), Z_classLit = createForPrimitive('boolean', 'Z'), Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit = createForInterface('com.google.gwt.core.client.impl', 'AsyncFragmentLoader/LoadTerminatedHandler'), Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit = createForInterface('com.google.gwt.core.client', 'RunAsyncCallback'), Lcom_google_gwt_lang_CollapsedPropertyHolder_2_classLit = createForClass('com.google.gwt.lang', 'CollapsedPropertyHolder', 1480), Lcom_google_gwt_lang_JavaClassHierarchySetupUtil_2_classLit = createForClass('com.google.gwt.lang', 'JavaClassHierarchySetupUtil', 1482), Lcom_google_gwt_lang_LongLibBase$LongEmul_2_classLit = createForClass('com.google.gwt.lang', 'LongLibBase/LongEmul', null), Lcom_google_gwt_lang_ModuleUtils_2_classLit = createForClass('com.google.gwt.lang', 'ModuleUtils', 1485), Ljava_util_Map$Entry_2_classLit = createForInterface('java.util', 'Map/Entry'), Lcom_google_gwt_user_client_ui_IsWidget_2_classLit = createForInterface('com.google.gwt.user.client.ui', 'IsWidget');
 var $entry = registerEntry();
 var gwtOnLoad = gwtOnLoad = gwtOnLoad_0;
 addInitFunctions(init);
-setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'safari']]]);
+setGwtProperty('permProps', [[['locale', 'default'], ['user.agent', 'gecko1_8']]]);
 $sendStats('moduleStartup', 'moduleEvalEnd');
 gwtOnLoad(__gwtModuleFunction.__errFn, __gwtModuleFunction.__moduleName, __gwtModuleFunction.__moduleBase, __gwtModuleFunction.__softPermutationId,__gwtModuleFunction.__computePropValue);
 $sendStats('moduleStartup', 'end');
