@@ -9,11 +9,7 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.ui.MaterialOverlay;
 import gwt.material.design.addins.client.ui.MaterialPathAnimator;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialCard;
-import gwt.material.design.client.ui.MaterialColumn;
-import gwt.material.design.client.ui.MaterialLink;
-
+import gwt.material.design.client.ui.*;
 
 
 public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.MyView {
@@ -30,7 +26,10 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     MaterialLink btnSource2;
 
     @UiField
-    MaterialOverlay panelTarget1, panelTarget2, panelTargetCol1, panelTargetCol2, panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
+    MaterialIcon btnSource4;
+
+    @UiField
+    MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2, panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
 
     @UiField
     MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
@@ -54,6 +53,11 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     @UiHandler("btnSource3")
     void onClickCard3(ClickEvent e) {
         MaterialPathAnimator.animate(btnSource3.getElement(), panelTarget3.getElement());
+    }
+
+    @UiHandler("btnSource4")
+    void onClickIconDelete(ClickEvent e) {
+        MaterialPathAnimator.animate(btnSource4.getElement(), panelTarget4.getElement());
     }
 
     @UiHandler("col1")
@@ -104,6 +108,11 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     @UiHandler("btnClose3")
     void onCardClose3(ClickEvent e) {
         MaterialPathAnimator.reverseAnimate(btnSource3.getElement(), panelTarget3.getElement());
+    }
+
+    @UiHandler("btnClose4")
+    void onClose4(ClickEvent e) {
+        MaterialPathAnimator.reverseAnimate(btnSource4.getElement(), panelTarget4.getElement());
     }
 
     @UiHandler("btnCloseCol1")
