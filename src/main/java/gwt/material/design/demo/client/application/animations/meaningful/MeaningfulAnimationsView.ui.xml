@@ -21,11 +21,13 @@
             </demo:PrettyPre>
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m:MaterialRow ui:field="rowCards"><br/>
-                &lt;m:MaterialCard backgroundColor="white" grid="l3"><br/>
-                &lt;!--Content here --><br/>
-                &lt;/m:MaterialCard><br/>
-
-                &lt;!--OTher cards --><br/>
+                &emsp;&lt;m:MaterialColumn grid="l6"><br/>
+                &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
+                &emsp;&emsp;&lt;!--Content here --><br/>
+                &emsp;&emsp;&lt;/m:MaterialCard><br/>
+                &emsp;&emsp;&lt;!--OTher cards --><br/>
+                &emsp;&lt;/m:MaterialColumn grid="l6"><br/>
+                &lt;/m:MaterialRow ui:field="rowCards"><br/>
             </demo:PrettyPre>
             <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" backgroundColor="blue" waves="LIGHT"/>
             <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="white" textColor="black" waves="LIGHT"/>
