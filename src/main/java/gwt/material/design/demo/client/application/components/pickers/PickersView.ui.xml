@@ -5,7 +5,7 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
     <m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
-    <m:MaterialDatePicker ui:field="dp" placeholder="Date" />
+    <m:MaterialDatePicker placeholder="Date" />
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;m:MaterialDatePicker ui:field="dp" placeholder="Date" />
@@ -17,5 +17,29 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="setDate() and getDate()"/>
+    <m:MaterialDatePicker ui:field="dp"  placeholder="Date" selectionType="YEAR"/>
+    <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2020" />
+    <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
+
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;// setDate();<br/>
+      dp.setDate(new Date(116, 0,1));
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;// getDate();<br/>
+      dp.getDate();
+    </demo:PrettyPre>
+
+    <m:MaterialTitle title="Formats" description="You can set the format of the date picker by adding format='FORMAT'"/>
+    <m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
+    <m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format"/>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="yyyy mm dd"/>
+    </demo:PrettyPre>
+
+
   </g:HTMLPanel>
 </ui:UiBinder>

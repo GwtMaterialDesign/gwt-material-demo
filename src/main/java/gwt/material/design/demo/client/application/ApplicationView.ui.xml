@@ -98,6 +98,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getCollections}" text="Collections" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getDatagrid}" text="Datagrid" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getDialogs}" text="Dialogs" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getErrors}" text="Errors" textColor="blue" waves="DEFAULT" />
@@ -107,7 +108,6 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getPushPin}" text="Pushpin" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" textColor="blue" waves="DEFAULT" />
