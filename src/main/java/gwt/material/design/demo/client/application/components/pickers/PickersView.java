@@ -17,11 +17,12 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     }
 
     @UiField
-    MaterialDatePicker dp, dpFormat;
+    MaterialDatePicker dp, dpFormat, dpLimit;
 
     @Inject
     PickersView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        dpLimit.setDateLimit(new Date(117, 0, 1), new Date(117, 0, 15));
     }
 
     @UiHandler("btnSetDate")

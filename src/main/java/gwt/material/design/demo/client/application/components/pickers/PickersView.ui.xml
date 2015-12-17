@@ -40,6 +40,11 @@
       &emsp;&lt;m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="yyyy mm dd"/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Date Limit" description="You can limit the date by calling setDateLimit(Date min, Date max) method."/>
+    <m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
 
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;setDateLimit(Date dateMin, Date dateMax);
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
