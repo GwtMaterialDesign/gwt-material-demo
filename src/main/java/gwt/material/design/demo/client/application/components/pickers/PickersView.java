@@ -22,7 +22,9 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     @Inject
     PickersView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        dpLimit.setDateLimit(new Date(117, 0, 1), new Date(117, 0, 15));
+
+        dpLimit.setDateMin(new Date(117, 0, 1));
+        dpLimit.setDateMax(new Date(117, 0, 15));
     }
 
     @UiHandler("btnSetDate")
