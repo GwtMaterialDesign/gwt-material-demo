@@ -7,6 +7,7 @@ import gwt.material.design.demo.client.application.addins.pathanimator.PathAnima
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
+import gwt.material.design.demo.client.application.addins.waterfall.WaterfallModule;
 
 /**
  * Created by Mark Kevin on 11/30/2015.
@@ -21,5 +22,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new SteppersModule());
         install(new PathAnimatorModule());
         install(new IconMorphModule());
+        install(new WaterfallModule());
     }
 }

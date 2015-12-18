@@ -28,8 +28,10 @@
                     <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="deep-orange" text="Roadmap" margin="4"/>
                     <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="Core Animations" margin="4"/>
                     <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="deep-orange" text="Letter Chips" margin="4"/>
-                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="grey" text="Tree Item" margin="4"/>
-                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="grey" text="Window" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Waterfall" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="grey" text="ScrollFire" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="grey" text="Tree Item" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="grey" text="Window" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
