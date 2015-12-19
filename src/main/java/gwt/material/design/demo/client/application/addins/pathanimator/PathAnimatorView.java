@@ -29,7 +29,8 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     MaterialIcon btnSource4;
 
     @UiField
-    MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2, panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
+    MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2,
+        panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
 
     @UiField
     MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
@@ -38,7 +39,6 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     PathAnimatorView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
-
 
     @UiHandler("btnSource1")
     void onSource(ClickEvent e) {

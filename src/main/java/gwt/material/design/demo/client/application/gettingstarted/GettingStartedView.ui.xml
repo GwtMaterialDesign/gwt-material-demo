@@ -15,14 +15,14 @@
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-        &emsp;&lt;version>1.4.0&lt;/version><br/>
+        &emsp;&lt;version>1.5.0-SNAPSHOT&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
     </m:MaterialPanel>
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.4.0"/>
+      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.0" enabled="false"/>
     </m:MaterialPanel>
     <m:MaterialPanel scrollspy="Configuring Your Module">
       <m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
