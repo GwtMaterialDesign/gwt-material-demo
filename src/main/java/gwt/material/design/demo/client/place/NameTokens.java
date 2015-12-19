@@ -46,6 +46,8 @@ public class NameTokens {
     public static final String pushPin = "pushPin";
     public static final String roadmap = "roadmap";
     public static final String waterfall = "waterfall";
+    public static final String scrollFire = "scrollFire";
+    public static final String scrollfire = "scrollfire";
 
     public static String getAbout() {
         return about;
@@ -225,5 +227,13 @@ public class NameTokens {
 
     public static String getWaterfall() {
         return waterfall;
+    }
+
+    public static String getScrollFire() {
+        return scrollFire;
+    }
+
+    public static String getScrollfire() {
+        return scrollfire;
     }
 }

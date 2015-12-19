@@ -4,6 +4,7 @@ import com.google.gwt.inject.client.AbstractGinModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
+import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireModule;
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
@@ -23,5 +24,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new PathAnimatorModule());
         install(new IconMorphModule());
         install(new WaterfallModule());
+        install(new ScrollFireModule());
     }
 }
