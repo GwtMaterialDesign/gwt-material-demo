@@ -43,6 +43,6 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     private void animate(){
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
-        MaterialAnimator.animate(transition, card, 300);
+        MaterialAnimator.animate(transition, card, 1000);
     }
 }

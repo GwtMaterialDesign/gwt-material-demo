@@ -2,7 +2,8 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
      xmlns:g="urn:import:com.google.gwt.user.client.ui"
      xmlns:m="urn:import:gwt.material.design.client.ui"
-     xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+     xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+     xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
 
   <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
 
@@ -211,6 +212,26 @@
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
+    
+    <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
+    <showcase:PathAnimatorShowcase />
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCard backgroundColor="white" textColor="white"><br/>
+      &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
+      &emsp;&emsp;&lt;m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/><br/>
+      &emsp;&lt;/m:MaterialCardImage><br/><br/>
+      &emsp;&lt;m:MaterialCardContent backgroundColor="blue-grey darken-3" layoutPosition="RELATIVE" paddingBottom="62"><br/>
+      &emsp;&emsp;&lt;m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="blue lighten-1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/><br/>
+      &emsp;&emsp;&lt;m:MaterialLabel text="Pharell Williams" fontSize="2em"/><br/>
+      &emsp;&emsp;&lt;m:MaterialLabel text="Love Yourself to Dance" fontSize="1.2em"/><br/>
+      &emsp;&lt;/m:MaterialCardContent><br/><br/>
+      &emsp;&lt;m:MaterialCardAction backgroundColor="blue-grey" height="88px"><br/>
+      &emsp;&emsp;&lt;m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/><br/>
+      &emsp;&emsp;&lt;m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/><br/>
+      &emsp;&lt;/m:MaterialCardAction><br/>
+      &lt;/m:MaterialCard><br/>
+    </demo:PrettyPre>
 
       <m:MaterialTitle title="Grid Card Animation" />
       <demo:PrettyPre addStyleNames="lang-java z-depth-1">

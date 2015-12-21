@@ -1,0 +1,61 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
+
+
+    <ui:style>
+        .fav{
+            position: absolute;
+            right: 32px;
+            bottom: 176px;
+        }
+        .panel, .musicPanel{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        .music_thumb span{
+            display: none;
+        }
+        .musicPanel{
+            bottom: 68px;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+    </ui:style>
+    <m:MaterialRow>
+        <m:MaterialColumn grid="l5 s12 m5">
+            <m:MaterialCard backgroundColor="white" textColor="white">
+                <m:MaterialCardImage waves="LIGHT">
+                    <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
+                </m:MaterialCardImage>
+                <m:MaterialCardContent backgroundColor="blue-grey darken-3" layoutPosition="RELATIVE" padding="0">
+                    <m:MaterialRow padding="24" margin="0" height="132px">
+                        <m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="blue lighten-1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/>
+                        <m:MaterialLabel text="Pharell Williams" fontSize="2em"/>
+                        <m:MaterialLabel text="Love Yourself to Dance" fontSize="1.2em"/>
+                    </m:MaterialRow>
+
+                    <m:MaterialRow ui:field="musicPanel" textColor="white" padding="24" margin="0" height="132px" textAlign="CENTER" layoutPosition="ABSOLUTE" top="0" width="100%" opacity="0" visibility="HIDDEN" backgroundColor="blue lighten-1">
+                        <m:MaterialColumn grid="s4 l4">
+                            <m:MaterialIcon iconType="FAST_REWIND" waves="DEFAULT" iconSize="SMALL" circle="true"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn grid="s4 l4">
+                            <m:MaterialIcon ui:field="btnPause" iconType="PAUSE" waves="DEFAULT" iconSize="SMALL" circle="true"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn grid="s4 l4">
+                            <m:MaterialIcon iconType="FAST_FORWARD" waves="DEFAULT" iconSize="SMALL" circle="true"    />
+                        </m:MaterialColumn>
+                        <m:MaterialLabel text="Now Playing"/>
+                    </m:MaterialRow>
+                </m:MaterialCardContent>
+                <m:MaterialCardAction backgroundColor="blue-grey" height="88px" overflow="HIDDEN">
+                    <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/>
+                    <m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/>
+                </m:MaterialCardAction>
+            </m:MaterialCard>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

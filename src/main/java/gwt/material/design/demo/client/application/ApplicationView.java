@@ -41,8 +41,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         this.title.setText(title);
         this.description.setText(description);
         sideNav.hide(sideNav.getElement());
-        MaterialAnimator.animate(Transition.FADEINLEFT, topNavRow, 500);
-        MaterialAnimator.animate(Transition.FADEINUP, main, 500);
+        MaterialAnimator.animate(Transition.FADEINLEFT, topNavRow, 1000);
+        MaterialAnimator.animate(Transition.FADEINUP, main, 1000);
     }
 
     @UiHandler("imgGPlus")
