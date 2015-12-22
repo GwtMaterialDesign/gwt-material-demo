@@ -475,6 +475,9 @@ nav .nav-wrapper .side-nav i {
 	vertical-align: middle;
 	
 }
+nav.pinned{
+	z-index: 1000;
+}
 .side-nav i {
 	font-size: 2em !important;
 	line-height: inherit;
@@ -500,11 +503,11 @@ nav .nav-wrapper .collapsible-body {
 }
 
 .collection .collection-item .secondary-content i {
-	margin-top: -5px;
+	margin-top: -28px;
 }
 
-ul.collection .collection-item .gwt-Label{
-	display: inline;
+ul.collection .collection-item .gwt-Label, ul.collection .collection-item a:first-child{
+	display: block;
 }
 
 @media only screen and (max-width : 992px) {
@@ -851,3 +854,4 @@ i[class*="waves-"].material-icons {
 		margin-top: 12px;
 	}
 }
+
