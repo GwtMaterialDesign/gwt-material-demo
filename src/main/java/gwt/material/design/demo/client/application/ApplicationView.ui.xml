@@ -73,7 +73,7 @@
 
   <g:HTMLPanel>
     <m.html:Header ui:field="header">
-      <m:MaterialNavBar ui:field="navBar" backgroundColor="blue darken-1" activates="sideBar" textColor="white">
+      <m:MaterialNavBar ui:field="navBar" width="84%" backgroundColor="blue darken-1" activates="sideBar" textColor="white">
         <m:MaterialNavBrand ui:field="navBrand" addStyleNames="{style.navBrand}"/>
         <m:MaterialLink iconType="MENU" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
       </m:MaterialNavBar>
