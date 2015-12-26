@@ -1,12 +1,12 @@
-package gwt.material.design.demo.client.application.components.autocomplete;
+package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
+import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
@@ -17,16 +17,19 @@ public class AutoCompletePresenter extends Presenter<AutoCompletePresenter.MyVie
     }
 
     @NameToken(NameTokens.autocomplete)
-    @ProxyCodeSplit
+    @ProxyStandard
     interface MyProxy extends ProxyPlace<AutoCompletePresenter> {
     }
 
+    public static final NestedSlot SLOT_AUTOCOMPLETE = new NestedSlot();
+
     @Inject
     AutoCompletePresenter(
-        EventBus eventBus,
-        MyView view,
-        MyProxy proxy) {
+            EventBus eventBus,
+            MyView view,
+            MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+
     }
 
     @Override
@@ -34,6 +37,7 @@ public class AutoCompletePresenter extends Presenter<AutoCompletePresenter.MyVie
         super.onReveal();
 
         SetPageTitleEvent.fire("Autocomplete", "Autocompletes are best way for selecting item easily and " +
-            "grouped them into chips for later search based on item values.", this);
+                "grouped them into chips for later search based on item values.", this);
     }
+
 }

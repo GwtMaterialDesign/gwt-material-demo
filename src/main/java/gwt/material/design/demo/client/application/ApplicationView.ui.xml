@@ -108,7 +108,6 @@
             </m:MaterialCollapsibleHeader>
             <m:MaterialCollapsibleBody>
               <m.html:UnorderedList>
-                <m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getBadges}" text="Badges" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getButtons}" text="Buttons" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getCards}" text="Cards" textColor="blue" waves="DEFAULT" />
@@ -153,6 +152,7 @@
             </m:MaterialCollapsibleHeader>
             <m:MaterialCollapsibleBody>
               <m.html:UnorderedList>
+                <m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" textColor="blue" waves="DEFAULT"/>

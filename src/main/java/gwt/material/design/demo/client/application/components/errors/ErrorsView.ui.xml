@@ -22,7 +22,7 @@
     <!-- Autocomplete -->
     <m:MaterialRow>
       <m:MaterialTitle title="Autocomplete"/>
-      <m:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
+      <m.addins:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
     </m:MaterialRow>
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="red" waves="LIGHT"/>

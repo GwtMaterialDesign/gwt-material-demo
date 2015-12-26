@@ -6,8 +6,9 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.base.MaterialSuggestionOracle;
+import gwt.material.design.addins.client.ui.MaterialAutoComplete;
 import gwt.material.design.addins.client.ui.MaterialTimePicker;
-import gwt.material.design.client.base.MaterialSuggestionOracle;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
@@ -16,7 +17,8 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     interface Binder extends UiBinder<Widget, ErrorsView> {
     }
 
-    @UiField MaterialAutoComplete acList;
+    @UiField
+    MaterialAutoComplete acList;
     @UiField MaterialDatePicker dp;
     @UiField MaterialTimePicker tp;
     @UiField MaterialRange range;

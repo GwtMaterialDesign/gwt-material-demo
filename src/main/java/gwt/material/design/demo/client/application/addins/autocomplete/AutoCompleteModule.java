@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.autocomplete;
+package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 

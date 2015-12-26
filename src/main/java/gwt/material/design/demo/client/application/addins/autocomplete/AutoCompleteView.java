@@ -1,20 +1,20 @@
-package gwt.material.design.demo.client.application.components.autocomplete;
+package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.SuggestOracle;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.base.MaterialSuggestionOracle;
-import gwt.material.design.client.base.Suggestion;
-import gwt.material.design.client.ui.MaterialAutoComplete;
+import gwt.material.design.addins.client.base.MaterialSuggestionOracle;
+import gwt.material.design.addins.client.ui.MaterialAutoComplete;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 import java.util.List;
+
 
 public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.MyView {
     interface Binder extends UiBinder<Widget, AutoCompleteView> {
@@ -26,7 +26,6 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     @Inject
     AutoCompleteView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
         acList.setSuggestions(getSimpleSuggestions());
         acListLimit.setSuggestions(getSimpleSuggestions());
         acWithImage.setSuggestions(getWithImageSuggestions());

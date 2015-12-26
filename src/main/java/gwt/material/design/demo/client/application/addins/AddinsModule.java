@@ -1,6 +1,7 @@
 package gwt.material.design.demo.client.application.addins;
 
 import com.google.gwt.inject.client.AbstractGinModule;
+import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompleteModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
@@ -25,5 +26,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new IconMorphModule());
         install(new WaterfallModule());
         install(new ScrollFireModule());
+        install(new AutoCompleteModule());
     }
 }

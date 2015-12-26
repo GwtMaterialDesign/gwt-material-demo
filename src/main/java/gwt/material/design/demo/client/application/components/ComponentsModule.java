@@ -1,7 +1,6 @@
 package gwt.material.design.demo.client.application.components;
 
 import com.google.gwt.inject.client.AbstractGinModule;
-import gwt.material.design.demo.client.application.components.autocomplete.AutoCompleteModule;
 import gwt.material.design.demo.client.application.components.badges.BadgesModule;
 import gwt.material.design.demo.client.application.components.buttons.ButtonsModule;
 import gwt.material.design.demo.client.application.components.cards.CardsModule;
@@ -28,7 +27,6 @@ public class ComponentsModule extends AbstractGinModule {
 
     @Override
     protected void configure() {
-        install(new AutoCompleteModule());
         install(new BadgesModule());
         install(new ButtonsModule());
         install(new CardsModule());

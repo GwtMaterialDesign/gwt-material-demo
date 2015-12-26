@@ -2,6 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <ui:style>
     .btn{
@@ -156,10 +157,10 @@
       }<br/>
     </demo:PrettyPre>
 
-    <m:MaterialTitle title="Autocomplete Integration" />
-    <m:MaterialAutoComplete ui:field="acList" placeholder="Your State"/>
+    <m:MaterialTitle title="plete Integration" />
+    <m.addins:MaterialAutoComplete ui:field="acList" placeholder="Your State"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      @UiField MaterialAutoComplete acList;<br/><br/>
+      @UiField MaterialAutCompleteplete acList;<br/><br/>
 
       // Show Progress<br/>
       acList.showProgress(true);<br/><br/>
