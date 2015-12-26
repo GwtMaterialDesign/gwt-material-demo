@@ -8,6 +8,9 @@
         .card{
             margin-left: 25% !important;
         }
+        .horizontalCard{
+            min-height: 150px;
+        }
     </ui:style>
     <m:MaterialRow>
         <!-- 1.5 -->
@@ -16,7 +19,7 @@
                 <m:MaterialCardTitle text="1.5.0" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="On Going"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" height="250px">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="CutOut" margin="4"/>
                     <m:MaterialChip letter="I" letterColor="white" letterBackgroundColor="deep-orange" text="Icon Morph" margin="4"/>
@@ -29,7 +32,8 @@
                     <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="Core Animations" margin="4"/>
                     <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="deep-orange" text="Letter Chips" margin="4"/>
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Waterfall" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="grey" text="ScrollFire" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="ScrollFire" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Autocomplete" margin="4"/>
                     <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="grey" text="Tree Item" margin="4"/>
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="grey" text="Window" margin="4"/>
                 </m:MaterialPanel>
@@ -42,7 +46,7 @@
                 <m:MaterialCardTitle text="1.4.1" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="On Going"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" height="120px">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.4.0 Bug Fixes" margin="4"/>
                 </m:MaterialPanel>
@@ -55,7 +59,7 @@
                 <m:MaterialCardTitle text="v. 1.4.0" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="November 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="220px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="D" letterColor="pink accent-1" letterBackgroundColor="purple" text="DataGrid" margin="4"/>
                     <m:MaterialChip letter="C" letterColor="pink accent-1" letterBackgroundColor="purple" text="Chips" margin="4"/>
@@ -72,7 +76,7 @@
                 <m:MaterialCardTitle text="v. 1.3.3" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="July 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="220px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="pink" text="Toasts" margin="4"/>
                     <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="pink" text="Charts" margin="4"/>
@@ -93,7 +97,7 @@
                 <m:MaterialCardTitle text="v. 1.3.2" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="June 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="220px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="T" letterColor="yellow" letterBackgroundColor="brown" text="Themes" margin="4"/>
                     <m:MaterialChip letter="S" letterColor="yellow" letterBackgroundColor="brown" text="Shadows" margin="4"/>
@@ -112,7 +116,7 @@
                 <m:MaterialCardTitle text="v. 1.3.1" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="April 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="120px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.3.0 Bug Fixes." margin="4"/>
                 </m:MaterialPanel>
@@ -125,7 +129,7 @@
                 <m:MaterialCardTitle text="v. 1.3.0" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="April 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="220px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="P" letterColor="yellow" letterBackgroundColor="blue" text="Parallax" margin="4"/>
                     <m:MaterialChip letter="W" letterColor="yellow" letterBackgroundColor="blue" text="Weather" margin="4"/>
@@ -142,7 +146,7 @@
                 <m:MaterialCardTitle text="v. 1.2" textColor="black"/>
                 <m:MaterialLabel textColor="grey" text="March 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" height="220px" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
                     <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="green" text="Phonegap" margin="4"/>
                     <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="green" text="Parallax" margin="4"/>

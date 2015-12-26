@@ -129,7 +129,6 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getTransitions}" text="Transitions" textColor="blue" waves="DEFAULT"/>
               </m.html:UnorderedList>
             </m:MaterialCollapsibleBody>
           </m:MaterialCollapsibleItem>
