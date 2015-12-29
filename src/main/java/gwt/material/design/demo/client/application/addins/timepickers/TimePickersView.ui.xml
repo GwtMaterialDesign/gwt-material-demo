@@ -9,5 +9,12 @@
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
         </demo:PrettyPre>
+
+        <!-- 24 hour format -->
+        <m:MaterialTitle title="24 Hour format"  description="You can set 24 hour format of time picker by adding a parameter : hour24='true'"/>
+        <m.addins:MaterialTimePicker placeholder="Snooze Time" hour24="true"/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
