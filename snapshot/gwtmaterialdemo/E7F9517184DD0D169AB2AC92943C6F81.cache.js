@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '39B17B0C07F842FB1FFAD2A7383E6672';
+var $strongName = 'E7F9517184DD0D169AB2AC92943C6F81';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -15837,7 +15837,6 @@ function $setPageTitle(this$static, title_0, description){
   $hide_0(this$static.sideNav_0.element);
   animate_1(($clinit_Transition() , BOUNCEINLEFT), this$static.title_0, $intern_2);
   animate_1(BOUNCEINLEFT, this$static.description_0, $intern_2);
-  animate_1(FADEINUP, this$static.main_0, $intern_2);
 }
 
 function ApplicationView(){

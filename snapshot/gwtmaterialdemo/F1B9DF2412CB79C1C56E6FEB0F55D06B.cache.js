@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'E51F29F228D23E2701431289514BD0E4';
+var $strongName = 'F1B9DF2412CB79C1C56E6FEB0F55D06B';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -16000,7 +16000,6 @@ function $setPageTitle(this$static, title_0, description){
   $hide_0(($clinit_DOM() , this$static.sideNav_0.element));
   animate_1(($clinit_Transition() , BOUNCEINLEFT), this$static.title_0, $intern_2);
   animate_1(BOUNCEINLEFT, this$static.description_0, $intern_2);
-  animate_1(FADEINUP, this$static.main_0, $intern_2);
 }
 
 function ApplicationView(){
