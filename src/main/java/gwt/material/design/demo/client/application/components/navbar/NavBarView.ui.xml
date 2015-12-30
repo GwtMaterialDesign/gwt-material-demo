@@ -61,7 +61,17 @@
       &emsp;&lt;/m:MaterialNavSection><br/><br/>
       &lt;/m:MaterialNavBar><br/>
     </demo:PrettyPre>
-    
+
+    <!-- Shrink Type -->
+    <m:MaterialTitle title="Shrink Type" description="Scaling on Material NavBrand Logo (either image or text) with delightful animation "/>
+    <m:MaterialImage url="http://oi63.tinypic.com/dqnpy1.jpg"/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="SHRINK"><br/>
+      &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+      &lt;/m:MaterialNavBar><br/>
+    </demo:PrettyPre>
+
+    <!-- Fixed Type -->
     <m:MaterialTitle title="Fixed Type" description="You can make your navbar fixed by adding: type='FIXED'"/>
 
     <m:MaterialRow>
