@@ -152,6 +152,7 @@
             <m:MaterialCollapsibleBody>
               <m.html:UnorderedList>
                 <m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" textColor="blue" waves="DEFAULT"/>

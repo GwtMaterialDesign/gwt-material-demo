@@ -1,0 +1,119 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <g:HTMLPanel>
+        <m:MaterialTitle title="Addins Usage" description="In every gwt-material-addins components you may require to add the following namespace to the &lt;ui:UIBinder> element"/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Usage" description="You can position the bubble by adding : position='LEFT,RIGHT,TOP or BOTTOM'"/>
+        <m:MaterialRow marginBottom="0">
+            <m:MaterialImage textColor="white" backgroundColor="red" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1ccdd322433737.5631e853db4a9.png"/>
+            <m.addins:MaterialBubble textColor="white" backgroundColor="red" position="LEFT" float="LEFT">
+                <m:MaterialLabel text="Hello there, How are you doing?"/>
+                <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+            </m.addins:MaterialBubble>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.addins:MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT"><br/>
+            &emsp;&lt;m:MaterialLabel text="Hello there, How are you doing?"/><br/>
+            &emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &lt;/m.addins:MaterialBubble><br/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Example" description="Here is a sample card with chat feature implementing bubble addin component"/>
+        <m:MaterialCard backgroundColor="blue" grid="l5 m12 s12" marginTop="24" marginLeft="24">
+            <m:MaterialPanel backgroundColor="blue darken-2" overflow="HIDDEN" padding="12">
+                <m:MaterialIcon iconType="MORE_VERT" float="RIGHT" textColor="white"/>
+                <m:MaterialIcon iconType="CLOSE" float="RIGHT" textColor="white"/>
+            </m:MaterialPanel>
+            <m:MaterialCardContent>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
+                    <m.addins:MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT">
+                        <m:MaterialLabel text="Hello there, How are you doing?"/>
+                        <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+                    </m.addins:MaterialBubble>
+                </m:MaterialRow>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                    <m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialLabel text="Hi there, Im fine, thank you. How about you?"/>
+                        <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+                    </m.addins:MaterialBubble>
+                </m:MaterialRow>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                    <m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialLabel text="Me too, Im doing good."/>
+                        <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+                    </m.addins:MaterialBubble>
+                </m:MaterialRow>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
+                    <m.addins:MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT">
+                        <m:MaterialLabel text="Would you want to go to Philippines?"/>
+                        <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+                    </m.addins:MaterialBubble>
+                </m:MaterialRow>
+                <m:MaterialRow marginBottom="0">
+                    <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                    <m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialLabel text="Yes of course, I want to visit Philippines and take a tour."/>
+                        <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
+                    </m.addins:MaterialBubble>
+                </m:MaterialRow>
+            </m:MaterialCardContent>
+        </m:MaterialCard>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialCard backgroundColor="blue" grid="l5 m12 s12" marginTop="24" marginLeft="24"><br/>
+            &lt;m:MaterialPanel backgroundColor="blue darken-2" overflow="HIDDEN" padding="12"><br/>
+            &emsp;&lt;m:MaterialIcon iconType="MORE_VERT" float="RIGHT" textColor="white"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="CLOSE" float="RIGHT" textColor="white"/><br/>
+            &lt;/m:MaterialPanel><br/>
+            &lt;m:MaterialCardContent><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+            &emsp;&emsp;&lt;m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Hello there, How are you doing?"/><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialBubble><br/>
+            &emsp;&lt;/m:MaterialRow><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+            &emsp;&emsp;&lt;m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Hi there, Im fine, thank you. How about you?"/><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialBubble><br/>
+            &emsp;&lt;/m:MaterialRow><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+            &emsp;&emsp;&lt;m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Me too, Im doing good."/><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialBubble><br/>
+            &emsp;&lt;/m:MaterialRow><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+            &emsp;&emsp;&lt;m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Would you want to go to Philippines?"/><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialBubble><br/>
+            &emsp;&lt;/m:MaterialRow><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+            &emsp;&emsp;&lt;m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Yes of course, I want to visit Philippines and take a tour."/><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialBubble><br/>
+            &emsp;&lt;/m:MaterialRow><br/>
+            &lt;/m:MaterialCardContent><br/>
+            &lt;/m:MaterialCard><br/>
+        </demo:PrettyPre>
+    </g:HTMLPanel>
+</ui:UiBinder>

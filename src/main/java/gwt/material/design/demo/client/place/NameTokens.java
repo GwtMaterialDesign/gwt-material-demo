@@ -47,6 +47,7 @@ public class NameTokens {
     public static final String roadmap = "roadmap";
     public static final String waterfall = "waterfall";
     public static final String scrollfire = "scrollfire";
+    public static final String bubble = "bubble";
 
     public static String getAbout() {
         return about;
@@ -230,5 +231,9 @@ public class NameTokens {
 
     public static String getScrollfire() {
         return scrollfire;
+    }
+
+    public static String getBubble() {
+        return bubble;
     }
 }
