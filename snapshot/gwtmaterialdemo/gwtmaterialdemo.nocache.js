@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie8'], '12A46E52E241BA7A9365F5E33AC52CF9');
-      unflattenKeylistIntoAnswers(['ie9'], '3C260DBA725A3D98F6F6BB33ECBA496C');
-      unflattenKeylistIntoAnswers(['ie10'], '4A7A02473124EF1E6DF348FABE21489D');
-      unflattenKeylistIntoAnswers(['safari'], 'B72968A845C00CD7D26CD4413859E6DC');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'EFF1F518939B8104FF31222C3317618E');
+      unflattenKeylistIntoAnswers(['safari'], '4D8BE33B14173CF0F7A24E61E97A9998');
+      unflattenKeylistIntoAnswers(['ie10'], '5E5BBF365143E4B2E9C121378AEE0416');
+      unflattenKeylistIntoAnswers(['ie9'], '7AF54A9703CDD5F62D92CC325BA9CF51');
+      unflattenKeylistIntoAnswers(['ie8'], 'C0E88A7262DDCBC8DA40B5A063F5E87D');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'D6BE2FB800F5144FB75C0948AA38D354');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -414,6 +414,7 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/materialize.blue.css');
     installOneStylesheet('css/overridecss.blue.css');
     installOneStylesheet('css/autocomplete.css');
+    installOneStylesheet('css/bubble.css');
     installOneStylesheet('css/sideprofile.css');
     installOneStylesheet('css/subheader.css');
     installOneStylesheet('css/timepicker.css');
