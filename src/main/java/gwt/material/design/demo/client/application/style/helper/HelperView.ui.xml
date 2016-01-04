@@ -156,5 +156,65 @@
       &lt;m:MaterialLabel text="This is an extremely long title that will be truncated" addStyleNames="truncate" fontSize="2.5em"/>
       &lt;/m:MaterialPanel>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards."/>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l4 s12">
+        <m:MaterialCard backgroundColor="white" hoverable="true">
+          <m:MaterialCardImage waves="LIGHT">
+            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+            <m:MaterialCardTitle text="Sample"/>
+          </m:MaterialCardImage>
+
+          <m:MaterialCardContent textColor="black">
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" />
+            <m:MaterialLink text="Link 1" />
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l4 s12">
+        <m:MaterialCard backgroundColor="white" hoverable="true">
+          <m:MaterialCardImage waves="LIGHT">
+            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+            <m:MaterialCardTitle text="Sample"/>
+          </m:MaterialCardImage>
+
+          <m:MaterialCardContent textColor="black">
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" />
+            <m:MaterialLink text="Link 1" />
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l4 s12">
+        <m:MaterialCard backgroundColor="white" hoverable="true">
+          <m:MaterialCardImage waves="LIGHT">
+            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+            <m:MaterialCardTitle text="Sample"/>
+          </m:MaterialCardImage>
+
+          <m:MaterialCardContent textColor="black">
+            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+          </m:MaterialCardContent>
+
+          <m:MaterialCardAction>
+            <m:MaterialLink text="Link 1" />
+            <m:MaterialLink text="Link 1" />
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialCard hoverable="true"><br/>
+      &emsp;&lt;!-- Card content goes here --><br/>
+      &lt;/m:MaterialCard>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
