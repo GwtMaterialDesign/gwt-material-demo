@@ -144,5 +144,25 @@
       &emsp;&lt;/m:MaterialColumn><br/><br/>
       &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Sections and Dividers" description="For Additional Grid components you can use the built section and divider components to separate two components"/>
+    <m:MaterialSection>
+      <m:MaterialTitle title="Section 1" description="Stuff"/>
+    </m:MaterialSection>
+    <m:MaterialDivider/>
+    <m:MaterialSection>
+      <m:MaterialTitle title="Section 2" description="Stuff"/>
+    </m:MaterialSection>
+    <m:MaterialDivider/>
+    <m:MaterialSection>
+      <m:MaterialTitle title="Section 3" description="Stuff"/>
+    </m:MaterialSection>
+    <m:MaterialDivider/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialSection><br/>
+      &emsp;&lt;m:MaterialTitle title="Section 1" description="Stuff"/><br/>
+      &lt;/m:MaterialSection><br/>
+      &lt;m:MaterialDivider/><br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
