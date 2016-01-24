@@ -1,3 +1,42 @@
+@media only screen and (max-width: 992px) {
+    /** Search Bar Responsive design **/
+    .input-field input[type=search] {
+        padding-left: 2rem !important;
+        width: calc(100% - 10rem) !important;
+        margin-bottom: 0px !important;
+    }
+    .input-field input[type=search] + label {
+        z-index: 999;
+    }
+    .search-result{
+        max-height: 400px;
+        overflow: auto;
+    }
+}
+
+/** Search Result **/
+.search-result{
+    margin: 0;
+    border-top: 1px solid #e9e9e9;
+    background-color: #fff;
+    max-height: 500px;
+    overflow: auto;
+}
+.search-result a{
+    display: block;
+    border-bottom: 1px solid #e9e9e9;
+    padding-left: 20px;
+}
+.search-result a span{
+    margin-left: 28px;
+}
+.search-result a:hover, .search-result a.higlighted{
+    background-color: #eeeeee;
+}
+.input-field input[type=search] {
+    margin-bottom: 0px;
+}
+
 html{
     overflow-x: hidden !important;
 }
@@ -20,6 +59,10 @@ pre.prettyprint {
 
 .progress{
     background-color: #E8F4FD;
+}
+
+nav{
+    width: calc(100% - 240px);
 }
 
 /* Styles for Affix/sidebar shamelessly copied from http://getbootstrap.com/assets/css/docs.css */
