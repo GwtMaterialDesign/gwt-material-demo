@@ -2,6 +2,7 @@ package gwt.material.design.demo.client.application.components.forms;
 
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,7 +34,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @UiHandler("lstOptions")
-    void onChangeListBox(ChangeEvent e) {
+    void onChangeListBox(ValueChangeEvent<String> e) {
         MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
     }
 

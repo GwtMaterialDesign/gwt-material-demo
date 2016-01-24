@@ -38,11 +38,10 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-    <m:MaterialListBox ui:field="lstOptions">
-      <item>Option 1</item>
-      <item>Option 2</item>
-      <item>Option 3</item>
-    </m:MaterialListBox>
+    <m:MaterialListBox ui:field="lstOptions" />
+    <g:ListBox>
+      <g:item>das</g:item>
+    </g:ListBox>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialListBox ui:field="lstOptions" placeholder="Choose an option"><br/>
@@ -61,11 +60,7 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
-    <m:MaterialListBox old="true">
-      <item>Option 1</item>
-      <item>Option 2</item>
-      <item>Option 3</item>
-    </m:MaterialListBox>
+    <m:MaterialListBox old="true" />
     
     <demo:PrettyPre addStyleNames="lang-xml java">
       &emsp;&lt;m:MaterialListBox old="true"><br/>
@@ -76,16 +71,8 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
-    <m:MaterialListBox  enabled="false">
-      <item>Option 1</item>
-      <item>Option 2</item>
-      <item>Option 3</item>
-    </m:MaterialListBox>
-    <m:MaterialListBox  old="true" enabled="false">
-      <item>Option 1</item>
-      <item>Option 2</item>
-      <item>Option 3</item>
-    </m:MaterialListBox>
+    <m:MaterialListBox  enabled="false" />
+    <m:MaterialListBox  old="true" enabled="false" />
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialListBox  enabled="false"><br/>
       &emsp;&lt;item>Option 1&lt;/item><br/>
