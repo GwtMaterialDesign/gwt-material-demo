@@ -75,7 +75,7 @@
 
     <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
     <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <m:MaterialNavBar ui:field="navBar" backgroundColor="blue" addStyleNames="{style.navBar}">
+    <m:MaterialNavBar ui:field="navBar" backgroundColor="blue" addStyleNames="{style.navBar}" width="100%">
       <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
       <m:MaterialNavSection float="RIGHT">
         <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
