@@ -36,6 +36,7 @@
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Autocomplete" margin="4"/>
                     <m:MaterialChip letter="H" letterColor="white" letterBackgroundColor="deep-orange" text="Hoverable" margin="4"/>
                     <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="deep-orange" text="Bubble" margin="4"/>
+                    <m:MaterialChip letter="H" letterColor="white" letterBackgroundColor="deep-orange" text="Horizontal Card" margin="4"/>
                     <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="grey" text="Tree Item" margin="4"/>
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="grey" text="Window" margin="4"/>
                 </m:MaterialPanel>

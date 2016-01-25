@@ -144,6 +144,98 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
 
+      <!-- Horizontal Card implementation -->
+      <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            </m:MaterialCardImage>
+
+            <m:MaterialCardContent textColor="black">
+              <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate"/>
+              <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
+            </m:MaterialCardContent>
+
+            <m:MaterialCardAction>
+              <m:MaterialLink iconType="SHARE" textColor="black" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            </m:MaterialCardImage>
+
+            <m:MaterialCardContent textColor="black">
+              <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate"/>
+              <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
+            </m:MaterialCardContent>
+
+            <m:MaterialCardAction>
+              <m:MaterialLink iconType="SHARE" textColor="black" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            </m:MaterialCardImage>
+
+            <m:MaterialCardContent textColor="black">
+              <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
+              <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
+            </m:MaterialCardContent>
+
+            <m:MaterialCardAction>
+              <m:MaterialLink iconType="SHARE" textColor="black" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            </m:MaterialCardImage>
+      
+            <m:MaterialCardContent textColor="black">
+              <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
+              <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
+            </m:MaterialCardContent>
+      
+            <m:MaterialCardAction>
+              <m:MaterialLink iconType="SHARE" textColor="black" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="white" axis="HORIZONTAL"><br/>
+        &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+
+        &emsp;&emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" /><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+
+        &emsp;&emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SHARE" textColor="black" /><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="LOCATION_ON" textColor="red" /><br/>
+        &emsp;&emsp;&lt;/m:MaterialCardAction><br/>
+        &emsp;&lt;/m:MaterialCard><br/>
+        &lt;/m:MaterialColumn><br/>
+      </demo:PrettyPre>
+
       <m:MaterialRow>
         <m:MaterialTitle title="Card Reveal" />
         <m:MaterialColumn grid="l3">
