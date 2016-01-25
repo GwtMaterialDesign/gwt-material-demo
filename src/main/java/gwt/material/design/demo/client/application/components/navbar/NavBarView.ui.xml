@@ -5,7 +5,7 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
     <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
-    <m:MaterialNavBar backgroundColor="blue" >
+    <m:MaterialNavBar backgroundColor="blue" width="100%">
       <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
       <m:MaterialNavSection float="RIGHT">
         <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
@@ -20,7 +20,7 @@
     </m:MaterialNavBar>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" ><br/><br/>
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/><br/>
       &emsp;&lt;m:MaterialNavBrand href="#Test" float="LEFT">App Title&lt;/m:MaterialNavBrand><br/><br/>
       &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
       &emsp;&emsp;&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/><br/>
@@ -36,7 +36,7 @@
     </demo:PrettyPre>
     
     <m:MaterialTitle title="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section"/>
-    <m:MaterialNavBar backgroundColor="blue" >
+    <m:MaterialNavBar backgroundColor="blue" width="100%">
       <m:MaterialNavBrand href="#Test" float="RIGHT">App Title</m:MaterialNavBrand>
       <m:MaterialNavSection float="LEFT">
         <m:MaterialTooltip text="Menu">
@@ -49,7 +49,7 @@
     </m:MaterialNavBar>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" ><br/><br/>
+      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/><br/>
       &emsp;&lt;m:MaterialNavBrand href="#Test" float="RIGHT">App Title&lt;/m:MaterialNavBrand><br/><br/>
       &emsp;&lt;m:MaterialNavSection float="LEFT"><br/>
       &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>

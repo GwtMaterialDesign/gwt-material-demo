@@ -77,7 +77,7 @@
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
-      <m:MaterialNavBar backgroundColor="blue">
+      <m:MaterialNavBar backgroundColor="blue" width="100%">
         <m:MaterialNavBrand>App Name</m:MaterialNavBrand>
         <m:MaterialNavSection position="RIGHT">
           <!--Activator -->
@@ -93,7 +93,7 @@
       </m:MaterialDropDown>
       
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialNavBar backgroundColor="blue"><br/>
+        &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/>
         &emsp;&lt;m:MaterialNavBrand><br/>App Name&lt;/m:MaterialNavBrand><br/>
         &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
         &emsp;&emsp;&lt;!--Activator --><br/>

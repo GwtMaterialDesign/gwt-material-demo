@@ -69,7 +69,7 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Badges in NavBar"/>
-    <m:MaterialNavBar backgroundColor="blue">
+    <m:MaterialNavBar backgroundColor="blue" width="100%">
       <m:MaterialNavSection float="RIGHT">
         <m:MaterialLink text="Link 1" />
         <m:MaterialLink text="Link 2">
@@ -92,7 +92,7 @@
   
     <!-- Circular Badge -->
     <m:MaterialTitle title="Circular Badge inside Icon Link"/>
-    <m:MaterialNavBar backgroundColor="blue darken-1" type="TALL">
+    <m:MaterialNavBar backgroundColor="blue darken-1" type="TALL" width="100%">
       <m:MaterialNavSection float="LEFT">
         <!-- Nav Sections with Badge components beside the icon if any -->
         <m:MaterialLink textColor="white" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>
