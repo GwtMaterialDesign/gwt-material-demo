@@ -87,7 +87,7 @@
       </m:MaterialRow>
 
       <m:MaterialTitle title="5. Material Icon to Overlay Panel (Vice versa)" description="Source Component : MaterialIcon and Target Component : MaterialOverlay."/>
-      <m:MaterialNavBar backgroundColor="blue" paddingLeft="12">
+      <m:MaterialNavBar backgroundColor="blue" paddingLeft="12" width="100%">
         <m:MaterialNavBrand text="App Name"/>
         <m:MaterialNavSection position="RIGHT">
           <m:MaterialIcon ui:field="btnSource4" iconType="DELETE" paddingLeft="12" paddingRight="12"/>
