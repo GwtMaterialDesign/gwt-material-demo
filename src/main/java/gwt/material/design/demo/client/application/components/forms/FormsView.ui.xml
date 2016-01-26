@@ -2,7 +2,9 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:m.addins="urn:import:gwt.material.design.client.ui.html"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
   <ui:style>
     .block{
       display: block;
@@ -38,17 +40,20 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-    <m:MaterialListBox ui:field="lstOptions" />
-    <g:ListBox>
-      <g:item>das</g:item>
-    </g:ListBox>
+    <m:MaterialListBox ui:field="lstOptions">
+      <m.html:Option text="Option 1"/>
+      <m.html:Option text="Option 2"/>
+      <m.html:Option text="Option 3"/>
+      <m.html:Option text="Option 4"/>
+    </m:MaterialListBox>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialListBox ui:field="lstOptions" placeholder="Choose an option"><br/>
-      &emsp;&lt;item>Option 1&lt;/item><br/>
-      &emsp;&lt;item>Option 2&lt;/item><br/>
-      &emsp;&lt;item>Option 3&lt;/item><br/>
-      &lt;/m:MaterialListBox><br/>
+      &emsp;&lt;m:MaterialListBox>
+        &emsp;&lt;m.html:Option text="Option 1"/><br/>
+        &emsp;&lt;m.html:Option text="Option 2"/><br/>
+        &emsp;&lt;m.html:Option text="Option 3"/><br/>
+        &emsp;&lt;m.html:Option text="Option 4"/><br/>
+      &lt;/m:MaterialListBox>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="ChangeHandler" description="Add the code below to trigger any events on listbox"/>
@@ -60,34 +65,51 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
-    <m:MaterialListBox old="true" />
+    <m:MaterialListBox old="true">
+      <m.html:Option text="Option 1"/>
+      <m.html:Option text="Option 2"/>
+      <m.html:Option text="Option 3"/>
+      <m.html:Option text="Option 4"/>
+    </m:MaterialListBox>
     
     <demo:PrettyPre addStyleNames="lang-xml java">
       &emsp;&lt;m:MaterialListBox old="true"><br/>
-      &emsp;&lt;item>Option 1&lt;/item><br/>
-      &emsp;&lt;item>Option 2&lt;/item><br/>
-      &emsp;&lt;item>Option 3&lt;/item><br/>
-      &lt;/m:MaterialListBox><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
-    <m:MaterialListBox  enabled="false" />
-    <m:MaterialListBox  old="true" enabled="false" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialListBox  enabled="false"><br/>
-      &emsp;&lt;item>Option 1&lt;/item><br/>
-      &emsp;&lt;item>Option 2&lt;/item><br/>
-      &emsp;&lt;item>Option 3&lt;/item><br/>
-      &lt;/m:MaterialListBox><br/><br/>
-      &lt;m:MaterialListBox  old="true" enabled="false"><br/>
-      &emsp;&lt;item>Option 1&lt;/item><br/>
-      &emsp;&lt;item>Option 2&lt;/item><br/>
-      &emsp;&lt;item>Option 3&lt;/item><br/>
+      &emsp;&lt;m.html:Option text="Option 1"/><br/>
+      &emsp;&lt;m.html:Option text="Option 2"/><br/>
+      &emsp;&lt;m.html:Option text="Option 3"/><br/>
+      &emsp;&lt;m.html:Option text="Option 4"/><br/>
       &lt;/m:MaterialListBox>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
+    <m:MaterialListBox  enabled="false">
+      <m.html:Option text="Option 1"/>
+      <m.html:Option text="Option 2"/>
+      <m.html:Option text="Option 3"/>
+      <m.html:Option text="Option 4"/>
+    </m:MaterialListBox>
+    <m:MaterialListBox  old="true" enabled="false">
+      <m.html:Option text="Option 1"/>
+      <m.html:Option text="Option 2"/>
+      <m.html:Option text="Option 3"/>
+      <m.html:Option text="Option 4"/>
+    </m:MaterialListBox>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialListBox  old="true" enabled="false"><br/>
+      &emsp;&lt;m.html:Option text="Option 1"/><br/>
+      &emsp;&lt;m.html:Option text="Option 2"/><br/>
+      &emsp;&lt;m.html:Option text="Option 3"/><br/>
+      &emsp;&lt;m.html:Option text="Option 4"/><br/><br/>
+      &emsp;&lt;m:MaterialListBox  old="true" enabled="false"><br/>
+      &emsp;&lt;m.html:Option text="Option 1"/><br/>
+      &emsp;&lt;m.html:Option text="Option 2"/><br/>
+      &emsp;&lt;m.html:Option text="Option 3"/><br/>
+      &emsp;&lt;m.html:Option text="Option 4"/><br/>
+      &lt;/m:MaterialListBox><br/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="Radio Button" description="Radio Buttons are used when the user must make only one selection out of a group of items"/>
-    <m:MaterialRadioButton name="color" text="Red" addStyleNames="{style.block}"/>
+    <m:MaterialRadioButton name="color" text="Red" type="GAP" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Yellow" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Green" addStyleNames="{style.block}"/>
     <m:MaterialRadioButton name="color" text="Brown" enabled="false" addStyleNames="{style.block}"/>
