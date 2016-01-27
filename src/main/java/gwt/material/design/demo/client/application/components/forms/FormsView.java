@@ -8,12 +8,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialCheckBox;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialListBox;
-import gwt.material.design.client.ui.MaterialRange;
-import gwt.material.design.client.ui.MaterialSwitch;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -28,9 +23,18 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialLabel lblRange;
     @UiField MaterialRange range;
 
+    @UiField MaterialFloatBox txtFloatBox;
+    @UiField MaterialIntegerBox txtIntegerBox;
+    @UiField MaterialDoubleBox txtDoubleBox;
+    @UiField MaterialLongBox txtLongBox;
+
     @Inject
     FormsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        txtFloatBox.setValue(1000.25f);
+        txtIntegerBox.setValue(10);
+        txtDoubleBox.setValue(9999.90);
+        txtLongBox.setValue((long) 1000.00);
     }
 
     @UiHandler("lstOptions")
