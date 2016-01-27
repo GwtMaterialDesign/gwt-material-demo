@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie9'], '04AD762AE1B7F42144E86BE3367A338D');
-      unflattenKeylistIntoAnswers(['ie10'], '50D70DB22B5A3B834219237A907DE8A1');
-      unflattenKeylistIntoAnswers(['ie8'], '5BD562E9D4C239CCC2AA2B562281E2A7');
-      unflattenKeylistIntoAnswers(['gecko1_8'], '65C9866F6A27C287D9D300C10CB412F6');
-      unflattenKeylistIntoAnswers(['safari'], 'B49305795E41081D7769F1C8CE238862');
+      unflattenKeylistIntoAnswers(['ie9'], '119A9464CA601A19796939B1F8AF5117');
+      unflattenKeylistIntoAnswers(['ie8'], '61368A8E779E706DF67D2BB64239D80B');
+      unflattenKeylistIntoAnswers(['ie10'], '7787D98EECDACE423E4930C3FFD3A398');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'E3C723DEC0691E42842CFC6601D7A501');
+      unflattenKeylistIntoAnswers(['safari'], 'E7058F5989C4E946D846D1ADCDBFBE56');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
