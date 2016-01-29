@@ -84,6 +84,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         listSearches.add(new SearchObject(IconType.POLYMER, "Media", "#!media"));
         listSearches.add(new SearchObject(IconType.POLYMER, "NavBar", "#!navbar"));
         listSearches.add(new SearchObject(IconType.POLYMER, "PushPin", "#!pushpin"));
+        listSearches.add(new SearchObject(IconType.POLYMER, "Search", "#search"));
         listSearches.add(new SearchObject(IconType.POLYMER, "SideNavs", "#!sidenavs"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Scrollspy", "#!scrollspy"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Tabs", "#!tabs"));
@@ -104,26 +105,34 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         listSearches.add(new SearchObject(IconType.EXTENSION, "Time Picker", "#timepickers"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Waterfall", "#waterfall"));
         // Style And Layout
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Colors", "#!colors"));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Grid", "#!grid"));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Helper", "#!helper"));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Icons", "#!icons"));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Shadow", "#!shadow"));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Theming", "#!themes"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Colors", "#!colors"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Grid", "#!grid"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Helper", "#!helper"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Icons", "#!icons"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Shadow", "#!shadow"));
+        listSearches.add(new SearchObject(IconType.STYLE, "Theming", "#!themes"));
 
         // Roadmap
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Roadmap", "#roadmap"));
+        listSearches.add(new SearchObject(IconType.TIMELINE, "Roadmap", "#roadmap"));
 
         // Showcase
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Showcase", "#!showcase"));
+        listSearches.add(new SearchObject(IconType.WEB, "Showcase", "#!showcase"));
 
         // Template
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Template", "#!templates"));
+        listSearches.add(new SearchObject(IconType.DASHBOARD, "Template", "#!templates"));
 
         // Charts
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Charts", "#!charts"));
+        listSearches.add(new SearchObject(IconType.INSERT_CHART, "Charts", "#!charts"));
 
         txtSearch.setListSearches(listSearches);
+
+        // Sets up the search no result event
+        /*txtSearch.addSearchNoResultHandler(new SearchNoResultEvent.SearchNoResultHandler() {
+            @Override
+            public void onSearchNoResult(SearchNoResultEvent event) {
+                MaterialToast.fireToast("No Search Result");
+            }
+        });*/
     }
 
     @Override

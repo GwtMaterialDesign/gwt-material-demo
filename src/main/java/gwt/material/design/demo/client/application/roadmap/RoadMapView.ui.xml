@@ -47,7 +47,7 @@
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="1.4.1" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="On Going"/>
+                <m:MaterialLabel textColor="grey" text="January 2016"/>
             </m:MaterialCardContent>
             <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>

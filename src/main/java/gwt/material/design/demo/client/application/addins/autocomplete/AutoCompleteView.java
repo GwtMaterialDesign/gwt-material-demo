@@ -5,7 +5,6 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.base.MaterialSuggestionOracle;
@@ -13,6 +12,7 @@ import gwt.material.design.addins.client.ui.MaterialAutoComplete;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -26,14 +26,14 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     @Inject
     AutoCompleteView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        acList.setSuggestions(getSimpleSuggestions());
-        acListLimit.setSuggestions(getSimpleSuggestions());
+        acList.setItemValues(getSimpleSuggestions());
+        acListLimit.setItemValues(getSimpleSuggestions());
         acWithImage.setSuggestions(getWithImageSuggestions());
-        acText.setSuggestions(getSimpleSuggestions());
+        acText.setItemValues(getSimpleSuggestions());
     }
 
-    private MaterialSuggestionOracle getSimpleSuggestions() {
-        MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();
+    private List<String> getSimpleSuggestions() {
+        List<String> suggestions = new ArrayList<>();
         suggestions.add("Alabama");
         suggestions.add("Alaska");
         suggestions.add("Arizona");

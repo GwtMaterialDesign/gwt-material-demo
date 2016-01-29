@@ -1,5 +1,6 @@
 package gwt.material.design.demo.client.resources;
 
+import com.google.appengine.api.images.Image;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.ImageResource;
@@ -63,4 +64,41 @@ public interface MaterialResources extends ClientBundle {
 
 	@Source("img/gplus.png")
 	ImageResource gplus();
+
+	// Profile Images
+	@Source("img/batman.png")
+	ImageResource batman();
+
+	@Source("img/captain_america.png")
+	ImageResource captain_america();
+
+	@Source("img/cat_woman.png")
+	ImageResource cat_woman();
+
+	@Source("img/cyclops.png")
+	ImageResource cyclops();
+
+	@Source("img/flash.png")
+	ImageResource flash();
+
+	@Source("img/green_lantern.png")
+	ImageResource green_lantern();
+
+	@Source("img/robin.png")
+	ImageResource robin();
+
+	@Source("img/spiderman.png")
+	ImageResource spiderman();
+
+	@Source("img/superman.png")
+	ImageResource superman();
+
+	@Source("img/thor.png")
+	ImageResource thor();
+
+	@Source("img/wolverine.png")
+	ImageResource wolverine();
+
+	@Source("img/wonder_woman.png")
+	ImageResource wonder_woman();
 }

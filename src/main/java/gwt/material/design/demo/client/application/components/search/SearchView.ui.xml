@@ -1,0 +1,98 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+  <g:HTMLPanel>
+      <m:MaterialTitle title="Super Heroes" description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it."/>
+      <!-- Navbar component that contains a search icon -->
+      <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" backgroundColor="blue darken-2" activates="sideBar" textColor="white">
+        <m:MaterialNavBrand ui:field="navBrand" text="GWT Material"/>
+        <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="white" float="RIGHT"/>
+      </m:MaterialNavBar>
+
+      <!-- NavBar Search -->
+      <m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false">
+        <m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="white" iconColor="black"  active="true" grid="l3" shadow="1"/>
+      </m:MaterialNavBar>
+
+      <m:MaterialRow padding="32" textAlign="CENTER">
+          <m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
+              <m:MaterialImage ui:field="imgHero" resource="{res.batman}" circle="true" shadow="1"/>
+              <m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
+              <m:MaterialLabel ui:field="lblDescription" text="Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime."/>
+              <m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">
+                  <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" offset="l1" iconColor="amber"/>
+                  <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="amber"/>
+                  <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="amber"/>
+                  <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="amber"/>
+                  <m:MaterialIcon iconType="STAR" grid="l2 m2 s2" iconColor="amber"/>
+              </m:MaterialRow>
+          </m:MaterialColumn>
+      </m:MaterialRow>
+      
+      <!-- Code blocks -->
+      <m:MaterialTitle title="Markup" description="You must add visible='false' property into your navbar search component."/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+          &emsp;&lt;!-- Navbar component that contains a search icon --><br/>
+          &lt;m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" backgroundColor="blue darken-2" activates="sideBar" textColor="white"><br/>
+          &emsp;&lt;m:MaterialNavBrand ui:field="navBrand" text="GWT Material"/><br/>
+          &emsp;&lt;m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="white" float="RIGHT"/><br/>
+          &lt;/m:MaterialNavBar><br/><br/>
+    
+          &lt;!-- NavBar Search --><br/>
+          &lt;m:MaterialNavBar ui:field="navBarSearch" width="100%" visible="false"><br/>
+          &emsp;&lt;m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="white" iconColor="black"  active="true" grid="l3" shadow="1"/><br/>
+          &lt;/m:MaterialNavBar><br/>
+      </demo:PrettyPre>
+
+      <m:MaterialTitle title="Activator" description="To activate your search you must add a click handler into your activator e.g search icon." />
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+          @UiHandler("btnSearch")<br/>
+          void onSearch(ClickEvent e){<br/>
+          &emsp;navBar.setVisible(false);<br/>
+          &emsp;navBarSearch.setVisible(true);<br/>
+          }
+      </demo:PrettyPre>
+      
+      <m:MaterialTitle title="Populating data" description="Take note that we are using Search Object by defaul to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero." />
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+          &emsp;// Populate the search keyword into search component<br/>
+          List&lt;SearchObject> objects = new ArrayList&lt;>();<br/>
+          for(Hero hero : DataHelper.getAllHeroes()){<br/>
+          &emsp;objects.add(hero);<br/>
+          }<br/>
+          txtSearch.setListSearches(objects);
+      </demo:PrettyPre>
+      
+      <m:MaterialTitle title="Add Close Handler" description="You can add a logic into your search component."/>
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+          &emsp;// Add Close Handler<br/>
+          txtSearch.addCloseHandler(new CloseHandler&lt;String>() {<br/>
+          &emsp;@Override<br/>
+          &emsp;public void onClose(CloseEvent&lt;String> event) {<br/>
+          &emsp;&emsp;navBar.setVisible(true);<br/>
+          &emsp;&emsp;navBarSearch.setVisible(false);<br/>
+          &emsp;}<br/>
+          });
+      </demo:PrettyPre>
+
+      <m:MaterialTitle title="Add Finish Handler" description="You can add a finish handler into your search component but by default you can just add link value to your search object to set its href attribute."/>
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+          &emsp;// Add Finish Handler<br/>
+          txtSearch.addSearchFinishHandler(new SearchFinishEvent.SearchFinishHandler() {<br/>
+          &emsp;@Override<br/>
+          &emsp;public void onSearchFinish(SearchFinishEvent event) {<br/>
+          &emsp;&emsp;// Get the selected search object<br/>
+          &emsp;&emsp;Hero hero = (Hero)txtSearch.getSelectedObject();<br/>
+          &emsp;&emsp;imgHero.setResource(hero.getResource());<br/>
+          &emsp;&emsp;lblName.setText(hero.getName());<br/>
+          &emsp;&emsp;lblDescription.setText(hero.getDescription());<br/>
+          &emsp;}<br/>
+          });
+      </demo:PrettyPre>
+  </g:HTMLPanel>
+</ui:UiBinder>
