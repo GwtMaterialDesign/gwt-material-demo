@@ -10,6 +10,7 @@ import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireM
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
+import gwt.material.design.demo.client.application.addins.treeview.TreeViewModule;
 import gwt.material.design.demo.client.application.addins.waterfall.WaterfallModule;
 
 /**
@@ -29,5 +30,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new ScrollFireModule());
         install(new AutoCompleteModule());
         install(new BubbleModule());
+        install(new TreeViewModule());
     }
 }
