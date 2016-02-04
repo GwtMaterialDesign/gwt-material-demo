@@ -12,6 +12,7 @@ import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersM
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
 import gwt.material.design.demo.client.application.addins.treeview.TreeViewModule;
 import gwt.material.design.demo.client.application.addins.waterfall.WaterfallModule;
+import gwt.material.design.demo.client.application.addins.window.WindowModule;
 
 /**
  * Created by Mark Kevin on 11/30/2015.
@@ -31,5 +32,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new AutoCompleteModule());
         install(new BubbleModule());
         install(new TreeViewModule());
+        install(new WindowModule());
     }
 }

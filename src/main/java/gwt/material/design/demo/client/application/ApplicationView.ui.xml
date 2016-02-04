@@ -167,6 +167,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getTree}" text="Tree View" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getWaterfall}" text="Waterfall" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getWindow}" text="Window" textColor="blue" waves="DEFAULT"/>
               </m.html:UnorderedList>
             </m:MaterialCollapsibleBody>
           </m:MaterialCollapsibleItem>

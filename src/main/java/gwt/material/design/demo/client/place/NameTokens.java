@@ -50,6 +50,7 @@ public class NameTokens {
     public static final String bubble = "bubble";
     public static final String search = "search";
     public static final String tree = "tree";
+    public static final String window = "window";
 
     public static String getAbout() {
         return about;
@@ -243,5 +244,9 @@ public class NameTokens {
 
     public static String getTree() {
         return tree;
+    }
+
+    public static String getWindow() {
+        return window;
     }
 }
