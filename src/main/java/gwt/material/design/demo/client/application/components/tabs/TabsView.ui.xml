@@ -100,10 +100,10 @@
       }<br/>
     </demo:PrettyPre>
 
-    <m:MaterialTitle title="Tabs with Icons">
+    <m:MaterialTitle title="Tabs with Icons" description="You can add icons by setting the type='ICON' on MaterialTab.">
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
+          <m:MaterialTab shadow="1" type="ICON" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/>
             </m:MaterialTabItem>
@@ -129,7 +129,7 @@
     </m:MaterialTitle>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialTab shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW"><br/>
+      &emsp;&lt;m:MaterialTab type="ICON" shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW"><br/>
       &emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
       &emsp;&emsp;&lt;m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/><br/>
       &emsp;&lt;/m:MaterialTabItem><br/>
@@ -145,7 +145,7 @@
     <m:MaterialTitle title="Changing Indicator Color"/>
     <m:MaterialRow>
       <m:MaterialColumn grid="s12">
-        <m:MaterialTab shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+        <m:MaterialTab type="ICON" shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink iconType="PHONE" text="Recents" href="#tab41" textColor="white"/>
           </m:MaterialTabItem>
@@ -170,7 +170,42 @@
     </m:MaterialRow>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialTab shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+      &lt;m:MaterialTab type="ICON" shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+    </demo:PrettyPre>
+    
+    <m:MaterialTitle title="Controlling the width of Tabs" description="By wrapping tabs into columns you canset it's grid."/>
+    <m:MaterialRow backgroundColor="green" shadow="1">
+      <m:MaterialColumn grid="l4 m6 s12">
+        <m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="Recents" href="#tab41" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="Favorites" href="#tab42" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="NearBy" href="#tab43" textColor="white"/>
+          </m:MaterialTabItem>
+        </m:MaterialTab>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+    
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialRow backgroundColor="green" shadow="1"><br/>
+      &emsp;&lt;m:MaterialColumn grid="l4 m6 s12"><br/>
+      &emsp;&emsp;&lt;m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Recents" href="#tab41" textColor="white"/><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Favorites" href="#tab42" textColor="white"/><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="NearBy" href="#tab43" textColor="white"/><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+      &emsp;&emsp;&lt;/m:MaterialTab><br/>
+      &emsp;&lt;/m:MaterialColumn><br/>
+      &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
 
   </g:HTMLPanel>
