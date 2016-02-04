@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie10'], '070F5C2938FA759CC4CE70562A5B6BDE');
-      unflattenKeylistIntoAnswers(['ie8'], '36047266C4117976CB1CB634CDCEFB69');
-      unflattenKeylistIntoAnswers(['safari'], '5F43BC2D0C1C9DF77FAB0F7101EC6FC5');
-      unflattenKeylistIntoAnswers(['ie9'], 'AC32F82A88C0D909636EBDF454C3D2D7');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'B8207638A032D75A10A3FDF6317B7A5B');
+      unflattenKeylistIntoAnswers(['gecko1_8'], '1BCD8B2677BAED0B500AB2263D933D1F');
+      unflattenKeylistIntoAnswers(['ie8'], '69AF41D3C842BD82BD0F5645EADB60F8');
+      unflattenKeylistIntoAnswers(['ie9'], '797641FE08CAB39B0E53FE15E3005BAB');
+      unflattenKeylistIntoAnswers(['safari'], '8088B6B0A2696FE0E2A70657C4164630');
+      unflattenKeylistIntoAnswers(['ie10'], 'B70D277505B727FFDFD532912609B158');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -424,6 +424,7 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/morph.css');
     installOneStylesheet('css/overlay.css');
     installOneStylesheet('css/waterfall.css');
+    installOneStylesheet('css/window.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');

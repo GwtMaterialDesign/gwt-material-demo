@@ -590,6 +590,7 @@ i[class*="waves-"].material-icons {
 	width: initial;
 	height: auto;
 	text-align: center;
+	padding: 4px;
 }
 
 /** Loader */
@@ -646,6 +647,9 @@ i[class*="waves-"].material-icons {
 }
 
 /** Tabs **/
+.tabs{
+	overflow: hidden !important;
+}
 .tab a i{
 	margin-top: 12px;
 	padding-left: 36%;
@@ -680,7 +684,7 @@ i[class*="waves-"].material-icons {
 }
 
 @media only screen and (max-width: 992px) {
-	.tab a span{
+	.tab.tab-icon a span{
 		display: none !important;
 	}
 	.tab a i{
