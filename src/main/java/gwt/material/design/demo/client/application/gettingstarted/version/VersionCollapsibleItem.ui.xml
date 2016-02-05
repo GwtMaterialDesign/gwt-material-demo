@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+						 xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+
+	</ui:style>
+	<m:MaterialCollapsibleItem ui:field="colapsItem">
+		<m:MaterialRow padding="12" marginBottom="0">
+			<m:MaterialColumn grid="l6 m6 s5">
+				<m:MaterialLabel ui:field="lblVersion" fontSize="1.2em"/>
+				<m:MaterialLabel ui:field="lblDate" fontSize="0.9em" textColor="grey" />
+			</m:MaterialColumn>
+			<m:MaterialColumn grid="l6 m6 s7">
+				<m:MaterialColumn grid="l4 m4 s4">
+					<m:MaterialAnchorButton ui:field="btnCore" type="FLOATING" iconType="POLYMER" backgroundColor="deep-orange"  opacity="1"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l4 m4 s4">
+					<m:MaterialAnchorButton ui:field="btnAddins" type="FLOATING" iconType="EXTENSION" backgroundColor="deep-orange"  opacity="1"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l4 m4 s4">
+					<m:MaterialAnchorButton ui:field="btnThemes" type="FLOATING" iconType="PALETTE" backgroundColor="deep-orange"  opacity="1"/>
+				</m:MaterialColumn>
+			</m:MaterialColumn>
+		</m:MaterialRow>
+	</m:MaterialCollapsibleItem>
+</ui:UiBinder> 

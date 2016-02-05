@@ -24,6 +24,23 @@
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
       <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.0" enabled="false"/>
     </m:MaterialPanel>
+
+    <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
+
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l7 m7 s12">
+        <m:MaterialLabel text="Version" fontSize="0.8em" textColor="grey" grid="l6 m6 s5"/>
+        <m:MaterialColumn grid="l6 m6 s7">
+          <m:MaterialLabel text="Core" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
+          <m:MaterialLabel text="Addins" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
+          <m:MaterialLabel text="Themes" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
+        </m:MaterialColumn>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialCollapsible grid="l7 m7 s12" ui:field="versionColaps" padding="0"/>
+    </m:MaterialRow>
+
     <m:MaterialPanel scrollspy="Configuring Your Module">
       <m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
