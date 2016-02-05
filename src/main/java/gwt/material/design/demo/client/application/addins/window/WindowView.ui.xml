@@ -11,7 +11,7 @@
     <m:MaterialPanel>
         <m:MaterialTitle title="Simple Window" description="Simple Window contains only header toolbar (Close, Max / Restore action buttons)."/>
         <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="white" backgroundColor="blue" />
-        <m.addins:MaterialWindow ui:field="window" width="70%" title="Documents">
+        <m.addins:MaterialWindow ui:field="window" width="50%" title="Documents">
             <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
                 <m:MaterialIcon iconType="HEADSET" iconColor="orange" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
                 <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
