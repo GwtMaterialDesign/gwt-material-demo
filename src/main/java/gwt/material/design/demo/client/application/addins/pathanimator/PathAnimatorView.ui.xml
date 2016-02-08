@@ -12,16 +12,21 @@
       }
     </ui:style>
     <g:HTMLPanel>
+      <m:MaterialTitle title="Addins Usage" description="In every gwt-material-addins components you may require to add the following namespace to the &lt;ui:UIBinder> element"/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+          xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'
+      </demo:PrettyPre>
+
       <m:MaterialTitle title="Markup Definition" description="FIRST , Set your source and target components."/>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;!-- Source Component --><br/>
         &lt;m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="blue" size="LARGE" /><br/><br/>
 
         &emsp;&lt;!-- Target Component --><br/>
-        &lt;m:MaterialOverlay ui:field="overlayTarget" visibility="HIDDEN" opacity="0" textAlign="CENTER" backgroundColor="blue" ><br/>
+        &lt;m.addins:MaterialOverlay ui:field="overlayTarget" visibility="HIDDEN" opacity="0" textAlign="CENTER" backgroundColor="blue" ><br/>
         &emsp;&lt;m:MaterialTitle addStyleNames="{style.title}" textColor="white" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/><br/>
         &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Back to Main Page" backgroundColor="blue lighten-2" textColor="white" size="LARGE" /><br/>
-        &lt;/m:MaterialOverlay>
+        &lt;/m.addins:MaterialOverlay>
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Source Logic" description="SECOND , Add an event into your source component and inside that method you need to call MaterialPathAnimator.animate() method."/>
