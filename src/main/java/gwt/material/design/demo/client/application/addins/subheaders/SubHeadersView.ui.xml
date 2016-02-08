@@ -22,7 +22,7 @@
 
         <m:MaterialTitle title="Pinned Type" description="This type of container will pinned your subheader items fixed at top when scrolling."/>
         <m:MaterialRow>
-            <m.addins:MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED">
+            <m.addins:MaterialSubHeaderContainer shadow="1" height="300px" grid="l6 m6 s12" type="PINNED">
                 <m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/>
                 <m:MaterialCollection>
                     <m:MaterialCollectionItem type="AVATAR">
