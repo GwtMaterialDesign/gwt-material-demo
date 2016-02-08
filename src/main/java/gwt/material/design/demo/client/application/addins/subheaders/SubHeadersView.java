@@ -8,6 +8,7 @@ import javax.inject.Inject;
 
 
 public class SubHeadersView extends ViewImpl implements SubHeadersPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, SubHeadersView> {
     }
 
@@ -15,4 +16,5 @@ public class SubHeadersView extends ViewImpl implements SubHeadersPresenter.MyVi
     SubHeadersView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
+
 }

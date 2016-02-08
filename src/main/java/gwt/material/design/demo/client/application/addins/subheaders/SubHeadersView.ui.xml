@@ -1,5 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
@@ -7,208 +8,263 @@
     <ui:style>
     </ui:style>
 
-    <m:MaterialPanel m:id="subheader-con">
-        <m:MaterialTitle title="Addins Usage" description="In every gwt-material-addins components you may require to add the following namespace to the &lt;ui:UIBinder> element"/>
+    <m:MaterialPanel>
+        <m:MaterialTitle title="Introduction" description="You may require to wrap your MaterialSubHeader components to MaterialSubHeaderContainer."/>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'
+            &emsp;&lt;m.addins:MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
+            &emsp;&lt;m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/><br/>
+            &emsp;&lt;m:MaterialCollection><br/>
+            &emsp;&emsp;&lt;!-- Collection content --><br/>
+            &emsp;&lt;/m:MaterialCollection><br/>
+            &emsp;&lt;!-- Other SubHeader components here --><br/>
+            &lt;/m.addins:MaterialSubHeaderContainer><br/>
         </demo:PrettyPre>
 
-        <m:MaterialTitle title="Static Type" description="SubHeader for SideNavs and Grid List."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSubHeader type="STATIC" text="Unread Messages" textColor="purple"/>
-        </demo:PrettyPre>
-        <m.addins:MaterialSubHeader type="STATIC" textColor="grey" text="SubHeader 1"/>
-        <m:MaterialCollapsible type="POPOUT">
-            <!-- ITEM 1 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 2 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 3 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-        </m:MaterialCollapsible>
+        <m:MaterialTitle title="Pinned Type" description="This type of container will pinned your subheader items fixed at top when scrolling."/>
+        <m:MaterialRow>
+            <m.addins:MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED">
+                <m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
 
-        <m.addins:MaterialSubHeader type="STATIC" textColor="grey" text="SubHeader 2"/>
-        <m:MaterialCollapsible type="POPOUT">
-            <!-- ITEM 1 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 2 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 3 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-        </m:MaterialCollapsible>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
 
-        <m.addins:MaterialSubHeader type="STATIC" textColor="grey" text="SubHeader 3"/>
-        <m:MaterialCollapsible type="POPOUT">
-            <!-- ITEM 1 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 2 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 3 -->
-            <m:MaterialCollapsibleItem>
-                <m:MaterialCollapsibleHeader>
-                    <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-                </m:MaterialCollapsibleHeader>
-                <m:MaterialCollapsibleBody>
-                    <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-        </m:MaterialCollapsible>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
 
-        <m:MaterialTitle title="Pinned Type" description="SubHeader for Collections, Collapsible List Item components."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSubHeader type="PINNED" text="Unread Messages" textColor="purple"/>
-        </demo:PrettyPre>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+                <m.addins:MaterialSubHeader text="Late Messages" textColor="red"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+                <m.addins:MaterialSubHeader text="Read Messages" textColor="grey"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+                <m.addins:MaterialSubHeader text="Archived Messages" textColor="pink"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+            </m.addins:MaterialSubHeaderContainer>
+        </m:MaterialRow>
         
-        <m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/>
-        <m:MaterialCollection>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-        </m:MaterialCollection>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialRow><br/>
+            &emsp;&lt;m.addins:MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/><br/>
+            &emsp;&emsp;&lt;m:MaterialCollection><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
 
-        <m.addins:MaterialSubHeader text="Late Messages" textColor="red"/>
-        <m:MaterialCollection>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-        </m:MaterialCollection>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
 
-        <m.addins:MaterialSubHeader text="Read Messages" textColor="grey"/>
-        <m:MaterialCollection>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-        </m:MaterialCollection>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
 
-        <m.addins:MaterialSubHeader text="Archived Messages" textColor="pink"/>
-        <m:MaterialCollection>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-            <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-                <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
-                <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
-                <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
-            </m:MaterialCollectionItem>
-        </m:MaterialCollection>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
+            &emsp;&emsp;&lt;/m:MaterialCollection><br/>
+            &emsp;&emsp;&lt;!-- Other subheader and collection components here --><br/>
+            &emsp;&lt;/m.addins:MaterialSubHeaderContainer><br/>
+            &lt;/m:MaterialRow><br/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Static Type" description="Static SubHeader Container will have a default behaviour without being pinned at the top of your container."/>
+        <m:MaterialRow>
+            <m.addins:MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC">
+                <m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+                <m.addins:MaterialSubHeader text="Late Messages" textColor="red"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+                <m.addins:MaterialSubHeader text="Read Messages" textColor="grey"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+
+                    <m:MaterialCollectionItem type="AVATAR">
+                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+                        <m:MaterialLabel text="Title" fontSize="2em"/>
+                        <m:MaterialLabel text="First Line"/>
+                        <m:MaterialLabel text="Second Line"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+            </m.addins:MaterialSubHeaderContainer>
+        </m:MaterialRow>
+
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialRow><br/>
+            &emsp;&lt;m.addins:MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC"><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialSubHeader text="Unread Messages" textColor="purple"/><br/>
+            &emsp;&lt;/m.addins:MaterialSubHeaderContainer><br/>
+            &lt;/m:MaterialRow><br/>
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
