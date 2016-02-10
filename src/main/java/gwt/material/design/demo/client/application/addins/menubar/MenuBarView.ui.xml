@@ -1,0 +1,92 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <g:HTMLPanel>
+        <m:MaterialTitle title="Introduction" description="Nested dropdowns are good for Desktop/Tablets." />
+        <m:MaterialCard backgroundColor="grey lighten-3" marginBottom="10">
+            <!-- Header -->
+            <m:MaterialRow margin="0" backgroundColor="white">
+                <m:MaterialColumn grid="l2" backgroundColor="blue" height="100%" textAlign="CENTER" padding="40">
+                    <m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="white"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l10">
+                    <m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/>
+                    <!-- MenuBar component -->
+                    <m.addins:MaterialMenuBar>
+                        <!-- Menu Link items -->
+                        <m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="black" activates="dp-file"/>
+                        <m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="black" activates="dp-edit"/>
+                        <m:MaterialLink padding="12" waves="DEFAULT" text="View" textColor="black" activates="dp-view"/>
+                        <m:MaterialLink padding="12" waves="DEFAULT" text="Format" textColor="black" activates="dp-format"/>
+
+                        <!-- File Drop Down -->
+                        <m:MaterialDropDown activator="dp-file" belowOrigin="true">
+                            <m:MaterialLink text="Share..." separator="true" textColor="black"/>
+                            <m:MaterialLink text="New" textColor="black" activates="dp-new" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY">
+                                <!-- Sub menu for NEW -->
+                                <m:MaterialDropDown activator="dp-new" hover="true" belowOrigin="true">
+                                    <m:MaterialLink text="Document" textColor="black"/>
+                                    <m:MaterialLink text="Presentation" textColor="black" />
+                                    <m:MaterialLink text="Form" textColor="black" />
+                                    <m:MaterialLink text="Drawing" textColor="black" />
+                                </m:MaterialDropDown>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Open..." textColor="black" />
+                            <m:MaterialLink text="Rename" enabled="false" separator="true" textColor="black" />
+                            <m:MaterialLink text="Print" textColor="black" >
+                                <m:MaterialLabel text="Ctrl P" float="RIGHT"/>
+                            </m:MaterialLink>
+                        </m:MaterialDropDown>
+
+                        <!-- Edit Drop Down -->
+                        <m:MaterialDropDown activator="dp-edit" belowOrigin="true">
+                            <m:MaterialLink text="Undo" iconType="UNDO" textColor="black">
+                                <m:MaterialLabel text="Ctrl + Z" float="RIGHT"/>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Redo" iconType="REDO" textColor="black">
+                                <m:MaterialLabel text="Ctrl + Y" float="RIGHT"/>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Cut" iconType="CONTENT_CUT" textColor="black">
+                                <m:MaterialLabel text="Ctrl + X" float="RIGHT"/>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Copy" iconType="CONTENT_COPY" textColor="black">
+                                <m:MaterialLabel text="Ctrl + C" float="RIGHT"/>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="black" separator="true">
+                                <m:MaterialLabel text="Ctrl + V" float="RIGHT"/>
+                            </m:MaterialLink>
+                            <m:MaterialLink text="Find and Replace..." iconType="CONTENT_PASTE" textColor="black">
+                                <m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/>
+                            </m:MaterialLink>
+                        </m:MaterialDropDown>
+
+                        <!-- View Drop Down -->
+                        <m:MaterialDropDown activator="dp-view" belowOrigin="true">
+                            <m:MaterialCheckBox text="Print Layout" />
+                            <m:MaterialCheckBox text="Mode"  />
+                            <m:MaterialCheckBox text="Show ruler" />
+                            <m:MaterialCheckBox text="Show equation toolbar" />
+                            <m:MaterialCheckBox text="Show spelling suggestions" />
+                            <m:MaterialCheckBox text="Compact controls" />
+                            <m:MaterialCheckBox text="Fullscreen" />
+                        </m:MaterialDropDown>
+                    </m.addins:MaterialMenuBar>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+
+            <!-- Content -->
+            <m:MaterialRow padding="20">
+                <m:MaterialPanel backgroundColor="white" padding="20" grid="l8" offset="l2" hoverable="true" shadow="1">
+                    <m:MaterialLabel text="Untitled Document" marginTop="20" marginBottom="20" fontSize="1.5em" textAlign="CENTER"/>
+                    <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet." marginBottom="40"/>
+                    <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum." marginBottom="40"/>
+                    <m:MaterialLabel text="Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et." marginBottom="40"/>
+                </m:MaterialPanel>
+            </m:MaterialRow>
+
+        </m:MaterialCard>
+    </g:HTMLPanel>
+</ui:UiBinder>
