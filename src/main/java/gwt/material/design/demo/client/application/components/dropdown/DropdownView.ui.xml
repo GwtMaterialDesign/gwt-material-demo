@@ -110,6 +110,21 @@
         &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 3" /><br/>
         &lt;/m:MaterialDropDown><br/>
       </demo:PrettyPre>
+
+      <m:MaterialTitle title="Selection Event" />
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-selection"/>
+      <!-- My Drop Down -->
+      <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
+        <m:MaterialLink text="First" />
+        <m:MaterialLink text="Second" />
+        <m:MaterialLink text="Third" />
+      </m:MaterialDropDown>
+      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        @UiHandler("dropdown")<br/>
+        void onDropdown(SelectionEvent&emsp;Widget> callback){<br/>
+        &emsp;MaterialToast.fireToast("Selected : " + ((MaterialLink)callback.getSelectedItem()).getText());<br/>
+        }<br/>
+      </demo:PrettyPre>
     </g:HTMLPanel>
   </m:MaterialPanel>
 </ui:UiBinder>
