@@ -1,13 +1,11 @@
 package gwt.material.design.demo.client.application.addins.menubar;
 
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.SelectionEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.MaterialCheckBox;
 import gwt.material.design.client.ui.MaterialDropDown;
 import gwt.material.design.client.ui.MaterialLink;
@@ -48,10 +46,5 @@ public class MenuBarView extends ViewImpl implements MenuBarPresenter.MyView {
             ((MaterialCheckBox) selection.getSelectedItem()).setValue(true);
             MaterialToast.fireToast("Checked : " + ((MaterialCheckBox) selection.getSelectedItem()).getText());
         }
-    }
-
-    @UiHandler("btnNew")
-    void onNew(ClickEvent e){
-        e.stopPropagation();
     }
 }
