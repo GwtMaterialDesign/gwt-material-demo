@@ -9,10 +9,10 @@
         <m:MaterialCard backgroundColor="grey lighten-3" marginBottom="10">
             <!-- Header -->
             <m:MaterialRow margin="0" backgroundColor="white">
-                <m:MaterialColumn grid="l2" backgroundColor="blue" height="100%" textAlign="CENTER" padding="40">
+                <m:MaterialColumn grid="l2 s2 m2" backgroundColor="blue" height="120px" textAlign="CENTER" paddingTop="40">
                     <m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="white"/>
                 </m:MaterialColumn>
-                <m:MaterialColumn grid="l10">
+                <m:MaterialColumn grid="l10 s10 m10">
                     <m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/>
                     <!-- MenuBar component -->
                     <m.addins:MaterialMenuBar>
@@ -31,7 +31,15 @@
                                     <m:MaterialLink text="Document" textColor="black"/>
                                     <m:MaterialLink text="Presentation" textColor="black" />
                                     <m:MaterialLink text="Form" textColor="black" />
-                                    <m:MaterialLink text="Drawing" textColor="black" />
+                                    <m:MaterialLink text="Drawing" textColor="black" activates="dp-test">
+                                        <!-- Sub menu for NEW -->
+                                        <m:MaterialDropDown activator="dp-test" hover="true" belowOrigin="true">
+                                            <m:MaterialLink text="Document" textColor="black"/>
+                                            <m:MaterialLink text="Presentation" textColor="black" />
+                                            <m:MaterialLink text="Form" textColor="black" />
+                                            <m:MaterialLink text="Drawing" textColor="black" />
+                                        </m:MaterialDropDown>
+                                    </m:MaterialLink>
                                 </m:MaterialDropDown>
                             </m:MaterialLink>
                             <m:MaterialLink text="Open..." textColor="black" />
