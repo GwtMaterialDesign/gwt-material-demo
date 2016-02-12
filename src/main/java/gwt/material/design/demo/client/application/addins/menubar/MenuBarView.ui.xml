@@ -9,7 +9,7 @@
         <m:MaterialCard backgroundColor="grey lighten-3" marginBottom="10">
             <!-- Header -->
             <m:MaterialRow margin="0" backgroundColor="white">
-                <m:MaterialColumn grid="l2 s2 m2" backgroundColor="blue" height="120px" textAlign="CENTER" paddingTop="40">
+                <m:MaterialColumn grid="l2 s2 m2" backgroundColor="blue" height="106px" textAlign="CENTER" paddingTop="40">
                     <m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="white"/>
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="l10 s10 m10">
@@ -31,15 +31,7 @@
                                     <m:MaterialLink text="Document" textColor="black"/>
                                     <m:MaterialLink text="Presentation" textColor="black" />
                                     <m:MaterialLink text="Form" textColor="black" />
-                                    <m:MaterialLink text="Drawing" textColor="black" activates="dp-test">
-                                        <!-- Sub menu for NEW -->
-                                        <m:MaterialDropDown activator="dp-test" hover="true" belowOrigin="true">
-                                            <m:MaterialLink text="Document" textColor="black"/>
-                                            <m:MaterialLink text="Presentation" textColor="black" />
-                                            <m:MaterialLink text="Form" textColor="black" />
-                                            <m:MaterialLink text="Drawing" textColor="black" />
-                                        </m:MaterialDropDown>
-                                    </m:MaterialLink>
+                                    <m:MaterialLink text="Drawing" textColor="black" />
                                 </m:MaterialDropDown>
                             </m:MaterialLink>
                             <m:MaterialLink text="Open..." textColor="black" />
@@ -66,7 +58,7 @@
                             <m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="black" separator="true">
                                 <m:MaterialLabel text="Ctrl + V" float="RIGHT"/>
                             </m:MaterialLink>
-                            <m:MaterialLink text="Find and Replace...">
+                            <m:MaterialLink text="Find and Replace..." paddingLeft="64">
                                 <m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/>
                             </m:MaterialLink>
                         </m:MaterialDropDown>
