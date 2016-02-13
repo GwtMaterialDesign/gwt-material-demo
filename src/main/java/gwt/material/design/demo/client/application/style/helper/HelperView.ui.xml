@@ -216,5 +216,8 @@
       &emsp;&lt;!-- Card content goes here --><br/>
       &lt;/m:MaterialCard>
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Truncate" description="If you have very long texts you can truncate it by adding truncate='true'"/>
+    <m:MaterialLabel truncate="true" text="This is a very very very long long text." fontSize="3em" width="300px"/>
   </g:HTMLPanel>
 </ui:UiBinder>
