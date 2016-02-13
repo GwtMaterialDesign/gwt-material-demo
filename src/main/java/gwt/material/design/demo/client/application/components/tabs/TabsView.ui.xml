@@ -11,7 +11,7 @@
 
     <m:MaterialRow>
       <m:MaterialColumn grid="s12">
-        <m:MaterialTab ui:field="tab" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
+        <m:MaterialTab ui:field="tab" backgroundColor="blue" indicatorColor="yellow">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink text="Tab 1" href="#tab1" textColor="white"/>
           </m:MaterialTabItem>
@@ -38,7 +38,7 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialRow><br/>
       &emsp;&lt;m:MaterialColumn grid="s12"><br/>
-      &emsp;&emsp;&lt;m:MaterialTab ui:field="tab" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW"><br/>
+      &emsp;&emsp;&lt;m:MaterialTab ui:field="tab" backgroundColor="blue" indicatorColor="yellow"><br/>
       &emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Tab 1" href="#tab1" textColor="white"/><br/>
       &emsp;&emsp;&emsp;&lt;/m:MaterialTabItem><br/>
@@ -63,11 +63,44 @@
       &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Disabled Tab Item" />
+    <m:MaterialRow>
+      <m:MaterialColumn grid="s12">
+        <m:MaterialTab type="ICON" shadow="1" backgroundColor="blue">
+          <m:MaterialTabItem grid="s4">
+            <m:MaterialLink iconType="PHONE" text="Recents" href="#tab51" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem enabled="false" waves="YELLOW" grid="s4">
+            <m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" textColor="white"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink iconType="NEAR_ME" text="NearBy" href="#tab53" textColor="white"/>
+          </m:MaterialTabItem>
+        </m:MaterialTab>
+
+        <m:MaterialColumn m:id="tab51" grid="s12">
+          <m:MaterialLabel text="Tab 1 Content"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn m:id="tab52" grid="s12">
+          <m:MaterialLabel text="Tab 2 Content"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn m:id="tab53" grid="s12">
+          <m:MaterialLabel text="Tab 3 Content"/>
+        </m:MaterialColumn>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTabItem enabled="false" waves="YELLOW" grid="s4"><br/>
+      &emsp;&lt;m:MaterialLink iconType="FAVORITE" text="Favorites" href="#tab52" textColor="white"/><br/>
+      &lt;/m:MaterialTabItem><br/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="Set Tab Index Method" description="By calling this method, you can easily preselect a tab index. Note the index will start at 1."/>
 
     <m:MaterialRow>
       <m:MaterialColumn grid="s12">
-        <m:MaterialTab ui:field="tab2" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
+        <m:MaterialTab ui:field="tab2" backgroundColor="blue" indicatorColor="yellow">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink text="Tab 1" href="#tab21" textColor="white"/>
           </m:MaterialTabItem>
@@ -103,7 +136,7 @@
     <m:MaterialTitle title="Tabs with Icons" description="You can add icons by setting the type='ICON' on MaterialTab.">
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab shadow="1" type="ICON" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW">
+          <m:MaterialTab shadow="1" type="ICON" backgroundColor="blue" indicatorColor="yellow">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/>
             </m:MaterialTabItem>
@@ -129,7 +162,7 @@
     </m:MaterialTitle>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialTab type="ICON" shadow="1" backgroundColor="blue" indicatorColor="yellow" waves="YELLOW"><br/>
+      &emsp;&lt;m:MaterialTab type="ICON" shadow="1" backgroundColor="blue" indicatorColor="yellow"><br/>
       &emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
       &emsp;&emsp;&lt;m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="white"/><br/>
       &emsp;&lt;/m:MaterialTabItem><br/>
@@ -145,7 +178,7 @@
     <m:MaterialTitle title="Changing Indicator Color"/>
     <m:MaterialRow>
       <m:MaterialColumn grid="s12">
-        <m:MaterialTab type="ICON" shadow="1" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+        <m:MaterialTab type="ICON" shadow="1" backgroundColor="green" indicatorColor="green lighten-3">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink iconType="PHONE" text="Recents" href="#tab41" textColor="white"/>
           </m:MaterialTabItem>
@@ -176,7 +209,7 @@
     <m:MaterialTitle title="Controlling the width of Tabs" description="By wrapping tabs into columns you canset it's grid."/>
     <m:MaterialRow backgroundColor="green" shadow="1">
       <m:MaterialColumn grid="l4 m6 s12">
-        <m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW">
+        <m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink text="Recents" href="#tab41" textColor="white"/>
           </m:MaterialTabItem>
@@ -193,7 +226,7 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialRow backgroundColor="green" shadow="1"><br/>
       &emsp;&lt;m:MaterialColumn grid="l4 m6 s12"><br/>
-      &emsp;&emsp;&lt;m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3" waves="YELLOW"><br/>
+      &emsp;&emsp;&lt;m:MaterialTab type="ICON" backgroundColor="green" indicatorColor="green lighten-3"><br/>
       &emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="YELLOW" grid="s4"><br/>
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Recents" href="#tab41" textColor="white"/><br/>
       &emsp;&emsp;&emsp;&lt;/m:MaterialTabItem><br/>
@@ -207,6 +240,5 @@
       &emsp;&lt;/m:MaterialColumn><br/>
       &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
-
   </g:HTMLPanel>
 </ui:UiBinder>
