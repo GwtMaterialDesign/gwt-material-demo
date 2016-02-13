@@ -49,11 +49,21 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         txtSearch.addCloseHandler(new CloseHandler<String>() {
             @Override
             public void onClose(CloseEvent<String> event) {
-                MaterialAnimator.animate(Transition.FADEIN, navBar, 0);
                 navBar.setVisible(true);
                 navBarSearch.setVisible(false);
             }
         });
+
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                for(Widget w : waterfall){
+                    w.getElement().getStyle().setOpacity(1);
+                }
+            }
+        };
+
+        waterfall.setCallbacks(callback, callback);
 
         initSearches();
     }
@@ -155,7 +165,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     @UiHandler("btnSearch")
     void onSearch(ClickEvent e){
-        MaterialAnimator.animate(Transition.FADEIN, navBarSearch, 0);
         navBarSearch.setVisible(true);
         navBar.setVisible(false);
     }
