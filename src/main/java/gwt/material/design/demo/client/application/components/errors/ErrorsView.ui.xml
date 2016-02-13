@@ -44,7 +44,7 @@
     <!-- Time Picker -->
     <m:MaterialRow>
       <m:MaterialTitle title="Time Picker" />
-      <m.addins:MaterialTimePicker ui:field="tp"  grid="s12 m12 l5" />
+      <m.addins:MaterialTimePicker placeholder="Time" ui:field="tp"  grid="s12 m12 l5" />
     </m:MaterialRow>
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="red" waves="LIGHT"/>
