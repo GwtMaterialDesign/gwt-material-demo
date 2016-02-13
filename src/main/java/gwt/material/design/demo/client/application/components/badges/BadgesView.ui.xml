@@ -44,10 +44,10 @@
     <m:MaterialTitle title="Badges in Dropdown"/>
 
     <!-- Activator -->
-    <m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN"
+    <m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
               iconPosition="RIGHT" textColor="white" backgroundColor="blue"/>
     <!-- My Drop Down -->
-    <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px">
+    <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
       <m:MaterialLink text="First" />
       <m:MaterialLink text="Second" >
         <m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/>
@@ -57,9 +57,9 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;!-- Activator --><br/>
-      &lt;m:MaterialButton activates="dp-4" text="Dropdown" width="400px" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/><br/>
+      &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue"/><br/>
       &lt;!-- My Drop Down --><br/>
-      &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" width="400px"><br/>
+      &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" ><br/>
       &emsp;&lt;m:MaterialLink text="First" /><br/>
       &emsp;&lt;m:MaterialLink text="Second" ><br/>
       &emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="blue" textColor="white"/><br/>
@@ -92,7 +92,7 @@
   
     <!-- Circular Badge -->
     <m:MaterialTitle title="Circular Badge inside Icon Link"/>
-    <m:MaterialNavBar backgroundColor="blue darken-1" type="TALL" width="100%">
+    <m:MaterialNavBar backgroundColor="blue darken-1" width="100%">
       <m:MaterialNavSection float="LEFT">
         <!-- Nav Sections with Badge components beside the icon if any -->
         <m:MaterialLink textColor="white" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>
