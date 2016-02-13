@@ -11,6 +11,9 @@
       &lt;m:MaterialDatePicker ui:field="dp" placeholder="Date" />
     </demo:PrettyPre>
 
+    <m:MaterialTitle title="Disabled Styles" description="You can disable the datepicker by adding enabled='false'"/>
+    <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
+
     <m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
     <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
 

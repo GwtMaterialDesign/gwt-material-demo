@@ -69,6 +69,22 @@
       txtLongBox.setValue((long) 1000.00);<br/>
     </m.demo:PrettyPre>
 
+    <m:MaterialTitle title="Disabled Styles" description="You can disable any text field by adding enabled='false'"/>
+    <m:MaterialTextBox enabled="false" placeholder="TextBox" />
+    <m:MaterialTextArea enabled="false" placeholder="TextArea" />
+    <m:MaterialFloatBox enabled="false" placeholder="FloatBox"/>
+    <m:MaterialIntegerBox enabled="false" placeholder="IntegerBox"/>
+    <m:MaterialDoubleBox enabled="false" placeholder="DoubleBox"/>
+    <m:MaterialLongBox enabled="false" placeholder="LongBox"/>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTextBox enabled="false" placeholder="TextBox" /><br/>
+      &lt;m:MaterialTextArea enabled="false" placeholder="TextArea" /><br/>
+      &lt;m:MaterialFloatBox enabled="false" placeholder="FloatBox"/><br/>
+      &lt;m:MaterialIntegerBox enabled="false" placeholder="IntegerBox"/><br/>
+      &lt;m:MaterialDoubleBox enabled="false" placeholder="DoubleBox"/><br/>
+      &lt;m:MaterialLongBox enabled="false" placeholder="LongBox"/><br/>
+    </demo:PrettyPre>
+
     <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
     <m:MaterialListBox ui:field="lstOptions">
       <m.html:Option text="Option 1"/>
