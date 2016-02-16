@@ -107,6 +107,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         listSearches.add(new SearchObject(IconType.EXTENSION, "Autocomplete", "#!autocomplete"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Bubble", "#bubble"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#cutouts"));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#dnd"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "IconMorph", "#iconMorph"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "MenuBar", "#menubar"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "PathAnimator", "#pathAnimator"));

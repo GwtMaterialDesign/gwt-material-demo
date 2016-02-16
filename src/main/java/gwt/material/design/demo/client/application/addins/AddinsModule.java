@@ -4,6 +4,7 @@ import com.google.gwt.inject.client.AbstractGinModule;
 import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompleteModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
+import gwt.material.design.demo.client.application.addins.dnd.DndModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
@@ -35,5 +36,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new TreeViewModule());
         install(new WindowModule());
         install(new MenuBarModule());
+        install(new DndModule());
     }
 }

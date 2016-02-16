@@ -52,6 +52,7 @@ public class NameTokens {
     public static final String tree = "tree";
     public static final String window = "window";
     public static final String menubar = "menubar";
+    public static final String dnd = "dnd";
 
     public static String getAbout() {
         return about;
@@ -252,4 +253,6 @@ public class NameTokens {
     }
 
     public static String getMenubar() { return menubar; }
+
+    public static String getDnd() { return dnd; }
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <m:MaterialPanel>
+        <m:MaterialTitle title="Introduction" />
+        <m:MaterialPanel backgroundColor="grey lighten-4" padding="10">
+            <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="Default" fontSize="1.5em"/>
+            </m:MaterialPanel>
+            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="amber" textColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="With Inertia" fontSize="1.5em"/>
+                <m:MaterialLabel text="dnd.setInertia(true)" />
+            </m:MaterialPanel>
+        </m:MaterialPanel>
+    </m:MaterialPanel>
+</ui:UiBinder>
