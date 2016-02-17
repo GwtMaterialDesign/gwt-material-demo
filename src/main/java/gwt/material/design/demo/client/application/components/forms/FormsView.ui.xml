@@ -13,10 +13,10 @@
     }
   </ui:style>
 
-  <g:HTMLPanel>
+  <m:MaterialRow>
     <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
-    <m:MaterialTextBox placeholder="First Name" />
-    <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" />
+    <m:MaterialTextBox placeholder="First Name" grid="s12"/>
+    <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextBox placeholder="First Name" /><br/>
@@ -24,8 +24,8 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
-    <m:MaterialTextArea placeholder="Content" />
-    <m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/>
+    <m:MaterialTextArea placeholder="Content" grid="s12"/>
+    <m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE" grid="s12"/>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextArea placeholder="Content" /><br/>
@@ -33,8 +33,8 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Character Counter" description="Use a character counter in fields where a character restriction is in place."/>
-    <m:MaterialTextBox placeholder="Input Text" length="10"/>
-    <m:MaterialTextArea placeholder="Text Area" length="120"/>
+    <m:MaterialTextBox placeholder="Input Text" length="10" grid="s12"/>
+    <m:MaterialTextArea placeholder="Text Area" length="120" grid="s12"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextBox placeholder="Input Text" length="10"/><br/>
       &lt;m:MaterialTextArea placeholder="Text Area" length="120"/><br/>
@@ -43,13 +43,13 @@
     <!-- MaterialNumber boxes -->
     <m:MaterialTitle title="Number Value Box" description="We provided additional value boxes : Material Float, Integer, Double and Long boxes for specific data format." />
     <!-- Float box -->
-    <m:MaterialFloatBox ui:field="txtFloatBox" placeholder="Float value"/>
+    <m:MaterialFloatBox ui:field="txtFloatBox" placeholder="Float value" grid="s12"/>
     <!-- Integer box -->
-    <m:MaterialIntegerBox ui:field="txtIntegerBox" placeholder="Integer value"/>
+    <m:MaterialIntegerBox ui:field="txtIntegerBox" placeholder="Integer value" grid="s12"/>
     <!-- Double box -->
-    <m:MaterialDoubleBox ui:field="txtDoubleBox" placeholder="Double value"/>
+    <m:MaterialDoubleBox ui:field="txtDoubleBox" placeholder="Double value" grid="s12"/>
     <!-- Long Box -->
-    <m:MaterialLongBox ui:field="txtLongBox" placeholder="Long value"/>
+    <m:MaterialLongBox ui:field="txtLongBox" placeholder="Long value" grid="s12"/>
     <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;!-- MaterialNumber boxes --><br/>
       &lt;m:MaterialTitle title="Number Value Box" description="We provided additional value boxes : Material Float, Integer, Double and Long boxes for specific data format." /><br/>
@@ -70,12 +70,12 @@
     </m.demo:PrettyPre>
 
     <m:MaterialTitle title="Disabled Styles" description="You can disable any text field by adding enabled='false'"/>
-    <m:MaterialTextBox enabled="false" placeholder="TextBox" />
-    <m:MaterialTextArea enabled="false" placeholder="TextArea" />
-    <m:MaterialFloatBox enabled="false" placeholder="FloatBox"/>
-    <m:MaterialIntegerBox enabled="false" placeholder="IntegerBox"/>
-    <m:MaterialDoubleBox enabled="false" placeholder="DoubleBox"/>
-    <m:MaterialLongBox enabled="false" placeholder="LongBox"/>
+    <m:MaterialTextBox enabled="false" placeholder="TextBox" grid="s12"/>
+    <m:MaterialTextArea enabled="false" placeholder="TextArea" grid="s12"/>
+    <m:MaterialFloatBox enabled="false" placeholder="FloatBox" grid="s12"/>
+    <m:MaterialIntegerBox enabled="false" placeholder="IntegerBox" grid="s12"/>
+    <m:MaterialDoubleBox enabled="false" placeholder="DoubleBox" grid="s12"/>
+    <m:MaterialLongBox enabled="false" placeholder="LongBox" grid="s12"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextBox enabled="false" placeholder="TextBox" /><br/>
       &lt;m:MaterialTextArea enabled="false" placeholder="TextArea" /><br/>
@@ -235,5 +235,5 @@
       &emsp;&emsp;lblRange.setText("Value: " + String.valueOf(range.getValue()));<br/>
       }
     </demo:PrettyPre>
-  </g:HTMLPanel>
+  </m:MaterialRow>
 </ui:UiBinder>
