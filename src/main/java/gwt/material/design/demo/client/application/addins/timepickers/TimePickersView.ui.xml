@@ -19,5 +19,25 @@
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
         </demo:PrettyPre>
+
+        <!-- Events -->
+        <m:MaterialTitle title="Open / Close Handlers" />
+        <m.addins:MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Open Handler<br/>
+            tpEvents.addOpenHandler(new OpenHandler&lt;String>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onOpen(OpenEvent&lt;String> event) {<br/>
+            &emsp;&emsp;MaterialToast.fireToast("Opened Time Picker");<br/>
+            &emsp;}<br/>
+            });<br/>
+            // Close Handler<br/>
+            tpEvents.addCloseHandler(new CloseHandler&lt;String>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onClose(CloseEvent&lt;String> event) {<br/>
+            &emsp;&emsp;MaterialToast.fireToast("Closed Time Picker");<br/>
+            &emsp;}<br/>
+            });<br/>
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
