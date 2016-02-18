@@ -10,11 +10,71 @@
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="Default" fontSize="1.5em"/>
             </m:MaterialPanel>
-            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="amber" textColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+
+            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="With Inertia" fontSize="1.5em"/>
-                <m:MaterialLabel text="dnd.setInertia(true)" />
+            </m:MaterialPanel>
+
+            <m:MaterialPanel ui:field="endOnlyPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="End Only" fontSize="1.5em"/>
+            </m:MaterialPanel>
+
+            <m:MaterialPanel ui:field="selfRestrict" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="Self Restrict" fontSize="1.5em"/>
+            </m:MaterialPanel>
+
+            <m:MaterialPanel ui:field="restrictPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="Rect Restrict" fontSize="1.5em"/>
             </m:MaterialPanel>
         </m:MaterialPanel>
+
+        <m:MaterialTitle title="Default" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dnd = new MaterialDnd();<br/>
+            dnd.setTarget(panel);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="With Inertia" description="Inertia allows drag and resize actions to coninue after the user releases the pointer at a fast enough speed. The required launch speed, end speed and resistance can optionally be configured with the settings below"/>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dndWoInertia = new MaterialDnd();<br/>
+            dndWoInertia.setTarget(woInertialPanel);<br/>
+            dndWoInertia.setInertia(false);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="End Only" description="The endOnly option is used to restrict the widget around the corners of it's parent "/>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dndEndOnly = new MaterialDnd();<br/>
+            dndEndOnly.setTarget(endOnlyPanel);<br/><br/>
+            Restriction restriction = new Restriction();<br/>
+            restriction.setEndOnly(false);<br/>
+            dndEndOnly.setRestriction(restriction);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Restriction" description="The restriction value specifies the area that the action will be confined to. "/>
+        <m:MaterialTitle title="Self Restrict" description="With this option , It will only restrict the target on itself. By Default without this option will restrict to it's parent."/>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dndSelfRestrict = new MaterialDnd();<br/>
+            dndSelfRestrict.setTarget(selfRestrict);<br/>
+            Restriction restriction1 = new Restriction();<br/>
+            restriction1.setRestriction(Restriction.Restrict.SELF);<br/>
+            dndSelfRestrict.setRestriction(restriction1);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Specific Properties" description="For the left and right properties, 0 means the left edge of the element and 1 means the right edge. For top and bottom, 0 means the top edge of the element and 1 means the bottom." />
+        <m:MaterialLabel text="On the example above, { top: 0.25, left: 0.25, bottom: 0.75, right: 0.75 } would result in a quarter of the element being allowed to hang over the restriction edges." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dndRestrict = new MaterialDnd();<br/>
+            dndRestrict.setTarget(restrictPanel);<br/>
+            Restriction restriction2 = new Restriction();<br/>
+            restriction2.setTop(0.25);<br/>
+            restriction2.setLeft(0.25);<br/>
+            restriction2.setRight(0.75);<br/>
+            restriction2.setBottom(0.75);<br/>
+            dndRestrict.setRestriction(restriction2);
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
