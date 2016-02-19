@@ -39,5 +39,12 @@
             &emsp;}<br/>
             });<br/>
         </demo:PrettyPre>
+
+        <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
+        <m.addins:MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
+        <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            timePicker.clear();
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>

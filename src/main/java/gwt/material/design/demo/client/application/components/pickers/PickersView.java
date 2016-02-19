@@ -17,7 +17,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     }
 
     @UiField
-    MaterialDatePicker dp, dpFormat, dpLimit;
+    MaterialDatePicker dp, dpFormat, dpLimit, dpClear;
 
     @Inject
     PickersView(Binder uiBinder) {
@@ -41,4 +41,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     void onDpFormat(ClickEvent e){
         dpFormat.setDate(new Date());
     }
+
+    @UiHandler("btnClear")
+    void onDpClear(ClickEvent e) { dpClear.clear(); }
 }

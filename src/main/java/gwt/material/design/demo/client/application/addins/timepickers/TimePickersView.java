@@ -1,11 +1,13 @@
 package gwt.material.design.demo.client.application.addins.timepickers;
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.event.logical.shared.OpenEvent;
 import com.google.gwt.event.logical.shared.OpenHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -20,7 +22,7 @@ public class TimePickersView extends ViewImpl implements TimePickersPresenter.My
     }
 
     @UiField
-    MaterialTimePicker tpEvents;
+    MaterialTimePicker tpEvents, tpClear;
 
     @Inject
     TimePickersView(Binder uiBinder) {
@@ -39,5 +41,10 @@ public class TimePickersView extends ViewImpl implements TimePickersPresenter.My
                 MaterialToast.fireToast("Closed Time Picker");
             }
         });
+    }
+
+    @UiHandler("btnClear")
+    void onClear(ClickEvent e){
+        tpClear.clear();
     }
 }

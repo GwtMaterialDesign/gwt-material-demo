@@ -49,5 +49,12 @@
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;setDateLimit(Date dateMin, Date dateMax);
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Clear" description="Clear your date picker"/>
+    <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday"/>
+    <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      datePicker.clear();
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
