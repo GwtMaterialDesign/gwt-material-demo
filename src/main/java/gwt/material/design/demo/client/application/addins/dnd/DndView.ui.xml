@@ -76,5 +76,47 @@
             restriction2.setBottom(0.75);<br/>
             dndRestrict.setRestriction(restriction2);
         </demo:PrettyPre>
+
+        <m:MaterialTitle title="Events" />
+        <m:MaterialPanel padding="10" backgroundColor="grey lighten-4">
+            <m:MaterialPanel ui:field="eventPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel ui:field="lblStarted" text="Drag Started" visible="false"/>
+                <m:MaterialLabel ui:field="lblMoved" text="Drag Moved" visible="false"/>
+                <m:MaterialLabel ui:field="lblEnded" text="Drag Ended" visible="false"/>
+            </m:MaterialPanel>
+        </m:MaterialPanel>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;final MaterialDnd dndEvent = new MaterialDnd();<br/>
+            dndEvent.setTarget(eventPanel);<br/><br/>
+
+            // Add Drag Start Handler<br/>
+            dndEvent.addDragStartHandler(new DragStartEvent.DragStartHandler() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onDragStart(DragStartEvent event) {<br/>
+            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("blue");<br/>
+            &emsp;&emsp;lblStarted.setVisible(false);<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+
+            // Add Drag Move Handler<br/>
+            dndEvent.addDragMoveHandler(new DragMoveEvent.DragMoveHandler() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onDragMove(DragMoveEvent event) {<br/>
+            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("amber");<br/>
+            &emsp;&emsp;lblMoved.setVisible(false);<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+
+            // Add Drag End Handler<br/>
+            dndEvent.addDragEndHandler(new DragEndEvent.DragEndHandler() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onDragEnd(DragEndEvent event) {<br/>
+            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("green");<br/>
+            &emsp;&emsp;lblEnded.setVisible(false);<br/>
+            &emsp;}<br/>
+            });<br/>
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
