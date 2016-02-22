@@ -50,11 +50,41 @@
       &emsp;setDateLimit(Date dateMin, Date dateMax);
     </demo:PrettyPre>
 
-    <m:MaterialTitle title="Clear" description="Clear your date picker"/>
-    <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday"/>
+    <m:MaterialTitle title="Clear()" description="Clearing the value of datepicker."/>
+    <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday" />
     <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       datePicker.clear();
     </demo:PrettyPre>
+
+    <m:MaterialTitle title="Events" description="We provided events on date picker namely : Close, Open, ValueChange events."/>
+    <m:MaterialDatePicker ui:field="dpEvents" placeholder="Birthday"/>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;dpEvents.addOpenHandler(new OpenHandler&lt;MaterialDatePicker>() {<br/>
+      &emsp;@Override<br/>
+      &emsp;public void onOpen(OpenEvent&lt;MaterialDatePicker> event) {<br/>
+      &emsp;if(event.getTarget().getValue() != null){<br/>
+      &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());<br/>
+      &emsp;}else{<br/>
+      &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker" );<br/>
+      &emsp;}<br/>
+      &emsp;}<br/>
+      });<br/><br/>
+
+      dpEvents.addCloseHandler(new CloseHandler&lt;MaterialDatePicker>() {<br/>
+      &emsp;@Override<br/>
+      &emsp;public void onClose(CloseEvent&lt;MaterialDatePicker> event) {<br/>
+      &emsp;MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue());<br/>
+      &emsp;}<br/>
+      });<br/><br/>
+
+      dpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
+      &emsp;@Override<br/>
+      &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
+      &emsp;&emsp;MaterialToast.fireToast("Date Selected " + event.getValue());<br/>
+      &emsp;}<br/>
+      });<br/>
+    </demo:PrettyPre>
+
   </g:HTMLPanel>
 </ui:UiBinder>
