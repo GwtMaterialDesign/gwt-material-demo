@@ -11,6 +11,7 @@ import gwt.material.design.demo.client.application.addins.pathanimator.PathAnima
 import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireModule;
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
+import gwt.material.design.demo.client.application.addins.swipeable.SwipeableModule;
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
 import gwt.material.design.demo.client.application.addins.treeview.TreeViewModule;
 import gwt.material.design.demo.client.application.addins.waterfall.WaterfallModule;
@@ -37,5 +38,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new WindowModule());
         install(new MenuBarModule());
         install(new DndModule());
+        install(new SwipeableModule());
     }
 }

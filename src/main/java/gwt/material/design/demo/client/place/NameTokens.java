@@ -53,6 +53,7 @@ public class NameTokens {
     public static final String window = "window";
     public static final String menubar = "menubar";
     public static final String dnd = "dnd";
+    public static final String swipeable = "swipeable";
 
     public static String getAbout() {
         return about;
@@ -242,7 +243,9 @@ public class NameTokens {
         return bubble;
     }
 
-    public static String getSearch() { return search; }
+    public static String getSearch() {
+        return search;
+    }
 
     public static String getTree() {
         return tree;
@@ -252,7 +255,15 @@ public class NameTokens {
         return window;
     }
 
-    public static String getMenubar() { return menubar; }
+    public static String getMenubar() {
+        return menubar;
+    }
 
-    public static String getDnd() { return dnd; }
+    public static String getDnd() {
+        return dnd;
+    }
+
+    public static String getSwipeable() {
+        return swipeable;
+    }
 }
