@@ -41,7 +41,7 @@
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Window" margin="4"/>
                     <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Menu Bar" margin="4"/>
                     <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Menu Bar" margin="4"/>
-                    <m:MaterialChip letter="D" letterColor="white" letterBackgroundColor="deep-orange" text="Swipeable" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Swipeable" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
