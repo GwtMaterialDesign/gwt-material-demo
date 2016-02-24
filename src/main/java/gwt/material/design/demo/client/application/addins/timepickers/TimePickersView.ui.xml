@@ -21,7 +21,7 @@
         </demo:PrettyPre>
 
         <!-- Events -->
-        <m:MaterialTitle title="Open / Close Handlers" />
+        <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>
         <m.addins:MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;// Open Handler<br/>
@@ -30,12 +30,21 @@
             &emsp;public void onOpen(OpenEvent&lt;String> event) {<br/>
             &emsp;&emsp;MaterialToast.fireToast("Opened Time Picker");<br/>
             &emsp;}<br/>
-            });<br/>
+            });<br/><br/>
             // Close Handler<br/>
             tpEvents.addCloseHandler(new CloseHandler&lt;String>() {<br/>
             &emsp;@Override<br/>
             &emsp;public void onClose(CloseEvent&lt;String> event) {<br/>
             &emsp;&emsp;MaterialToast.fireToast("Closed Time Picker");<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+            // ValueChange Handler<br/>
+            tpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
+            &emsp;&emsp;DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");<br/>
+            &emsp;&emsp;Date time = event.getValue();<br/>
+            &emsp;&emsp;MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));<br/>
             &emsp;}<br/>
             });<br/>
         </demo:PrettyPre>
@@ -44,7 +53,7 @@
         <m.addins:MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
         <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            timePicker.clear();
+            timepick.clear();
         </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
