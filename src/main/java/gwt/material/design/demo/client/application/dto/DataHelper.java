@@ -29,7 +29,7 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
-        versions.add(new Version("1.5.0-SNAPSHOT", "Ongoing", Version.VersionLink.CORE_1_5_SNAPSHOT.getName(), Version.VersionLink.ADDINS_1_5_SNAPSHOT.getName(), Version.VersionLink.THEME_1_4.getName(), "deep-orange"));
+        versions.add(new Version("1.5.0-SNAPSHOT", "Ongoing", Version.VersionLink.CORE_1_5_SNAPSHOT.getName(), Version.VersionLink.ADDINS_1_5_SNAPSHOT.getName(), Version.VersionLink.THEME_1_5.getName(), "deep-orange"));
         versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), "red"));
         versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), "purple"));
         versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, "pink"));
