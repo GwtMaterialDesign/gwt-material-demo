@@ -23,6 +23,7 @@ public class Version implements Serializable {
 
         // FOR gwt-material Themes
         THEME_1_4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.4"),
+        THEME_1_5("https://oss.sonatype.org/content/repositories/snapshots/com/github/gwtmaterialdesign/gwt-material-themes/1.5.0-SNAPSHOT/"),
 
         // FOR gwt-material Addins
         ADDINS_1_5_SNAPSHOT("https://oss.sonatype.org/content/repositories/snapshots/com/github/gwtmaterialdesign/gwt-material-addins/1.5.0-SNAPSHOT/");
