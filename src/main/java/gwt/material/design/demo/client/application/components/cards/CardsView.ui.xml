@@ -348,6 +348,50 @@
       </m:MaterialColumn>
     </m:MaterialRow>
     
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialRow><br/>
+      &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
+      &emsp;&emsp;&lt;m:MaterialCard><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardContent><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0" padding="20"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Amazingly clear seas of the Philippines" /><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" /><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardAction padding="0"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow margin="12"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="12" marginLeft="12"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="12" marginLeft="12"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;!-- Collection items for comments --><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollection><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Yuna" fontWeight="BOLD" /><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." /><br/>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollection><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
+      &emsp;&emsp;&lt;/m:MaterialCard><br/>
+      &emsp;&lt;/m:MaterialColumn><br/>
+      &lt;/m:MaterialRow><br/>
+    </demo:PrettyPre>
+    
     <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
     <showcase:PathAnimatorShowcase />
     
