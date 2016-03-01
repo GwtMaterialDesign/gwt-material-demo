@@ -391,6 +391,91 @@
       &emsp;&lt;/m:MaterialColumn><br/>
       &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
+
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l3 m4 s12">
+        <m:MaterialCard backgroundColor="indigo lighten-1">
+          <m:MaterialCardImage>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
+          </m:MaterialCardImage>
+          <m:MaterialCardContent textColor="white" height="120px">
+            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+            <m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
+            <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+
+      <m:MaterialColumn grid="l3 m4 s12">
+        <m:MaterialCard backgroundColor="red lighten-1">
+          <m:MaterialCardImage>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
+          </m:MaterialCardImage>
+          <m:MaterialCardContent textColor="white" height="120px">
+            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+            <m:MaterialLabel fontSize="1.5em" text="King Leonidas and the 300 Spartans"/>
+            <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+
+      <m:MaterialColumn grid="l3 m4 s12">
+        <m:MaterialCard backgroundColor="teal lighten-1">
+          <m:MaterialCardImage>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
+          </m:MaterialCardImage>
+          <m:MaterialCardContent textColor="white" height="120px">
+            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+            <m:MaterialLabel fontSize="1.5em" text="RESEARCH"/>
+            <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+
+      <m:MaterialColumn grid="l3 m4 s12">
+        <m:MaterialCard backgroundColor="black lighten-1">
+          <m:MaterialCardImage>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
+          </m:MaterialCardImage>
+          <m:MaterialCardContent textColor="white" height="120px">
+            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+            <m:MaterialLabel fontSize="1.5em" text="A few of my Favorite Words"/>
+            <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
+          </m:MaterialCardContent>
+          <m:MaterialCardAction>
+            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialRow><br/>
+      &emsp;&lt;m:MaterialColumn grid="l3 m4 s12"><br/>
+      &emsp;&emsp;&lt;m:MaterialCard backgroundColor="indigo lighten-1"><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" /><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="white" height="120px"><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" /><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" /><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/><br/>
+      &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
+      &emsp;&emsp;&lt;/m:MaterialCard><br/>
+      &emsp;&lt;/m:MaterialColumn><br/>
+      &lt;/m:MaterialRow><br/>
+    </demo:PrettyPre>
     
     <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
     <showcase:PathAnimatorShowcase />
