@@ -41,4 +41,11 @@ public class DataHelper {
         return versions;
     }
 
+    public static List<Apps> getAllApps() {
+        List<Apps> apps = new ArrayList<>();
+        apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", "red"));
+        apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", "green"));
+        return apps;
+    }
+
 }

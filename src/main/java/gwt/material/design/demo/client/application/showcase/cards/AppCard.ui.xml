@@ -1,0 +1,24 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+>
+
+
+    <ui:style>
+
+    </ui:style>
+    <m:MaterialColumn grid="l4 m6 s12">
+        <m:MaterialCard ui:field="card">
+            <m:MaterialCardImage>
+                <m:MaterialImage ui:field="imgApp"/>
+            </m:MaterialCardImage>
+            <m:MaterialCardContent textColor="white" height="100px">
+                <m:MaterialImage ui:field="imgOwner" layoutPosition="ABSOLUTE" marginTop="-32" circle="true" width="32px" height="32px" />
+                <m:MaterialLabel ui:field="lblApp" fontSize="1.5em"/>
+                <m:MaterialLabel ui:field="lblOwner" opacity="0.6" marginTop="4"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+                <m:MaterialLink ui:field="lblLink" target="_blank" text="DEMO" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+    </m:MaterialColumn>
+</ui:UiBinder>
