@@ -55,6 +55,7 @@ public class NameTokens {
     public static final String dnd = "dnd";
     public static final String swipeable = "swipeable";
     public static final String masonry = "masonry";
+    public static final String camera = "camera";
 
     public static String getAbout() {
         return about;
@@ -270,5 +271,9 @@ public class NameTokens {
 
     public static String getMasonry() {
         return masonry;
+    }
+
+    public static String getCamera() {
+        return camera;
     }
 }

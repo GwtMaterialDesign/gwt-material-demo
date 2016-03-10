@@ -158,6 +158,7 @@
               <m.html:UnorderedList>
                 <m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
