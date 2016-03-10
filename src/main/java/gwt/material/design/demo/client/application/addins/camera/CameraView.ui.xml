@@ -8,22 +8,8 @@
         <m:MaterialTitle title="Note" description="This widget only works on pages served by a secure protocol (HTTPS). For the browser compatibility, access http://caniuse.com/#feat=stream."/>
 
         <m:MaterialRow>
-            <m:MaterialColumn grid="l6" backgroundColor="blue" padding="0" shadow="1">
-                <m.addins:MaterialCameraCapture padding="0" ui:field="camera" grid="l12 m12 s12"/>
-                <m:MaterialPanel grid="l12 m12 s12" backgroundColor="blue" padding="12" textAlign="CENTER">
-                    <m:MaterialButton ui:field="btnCapture" tooltip="Capture" waves="DEFAULT" size="LARGE" type="FLOATING" iconType="CAMERA" backgroundColor="pink"/>
-                </m:MaterialPanel>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l6">
-                <m:MaterialCard>
-                    <m:MaterialCardImage>
-                        <m:MaterialImage ui:field="imgCapture" url="http://i.imgur.com/pRs1OWi.png" width="100%" height="100%" backgroundColor="grey lighten-2"/>
-                    </m:MaterialCardImage>
-                    <m:MaterialCardContent>
-                        <m:MaterialLabel text="This is the photo you captured" fontSize="1.5em" />
-                        <m:MaterialLabel text="Just call camera.captureToDataURL() to capture image." fontSize="0.9em" opacity="0.7" />
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
+            <m:MaterialColumn grid="l4 m6 s12" height="500px" padding="0" shadow="1">
+                <g:Frame url="https://feel-vision.appspot.com/" width="100%" height="100%"/>
             </m:MaterialColumn>
         </m:MaterialRow>
 

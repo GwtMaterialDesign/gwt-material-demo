@@ -19,34 +19,9 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
     interface Binder extends UiBinder<Widget, CameraView> {
     }
 
-    @UiField
-    MaterialCameraCapture camera;
-
-    @UiField
-    MaterialImage imgCapture;
-
     @Inject
     CameraView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        if (MaterialCameraCapture.isSupported()){
-            camera.addCameraCaptureHandler(new CameraCaptureHandler() {
-                @Override
-                public void onCameraCaptureChange(CameraCaptureEvent event) {
-                    if (event.getCaptureStatus() == CameraCaptureEvent.CaptureStatus.ERRORED){
-                        MaterialToast.fireToast("Error on starting the camera capture: " + event.getErrorMessage());
-                        ((MaterialCameraCapture)event.getSource()).removeFromParent();
-                    }else{
-                        MaterialToast.fireToast("Camera Captured");
-                    }
-                }
-            });
-        }else {
-            MaterialToast.fireToast("Sorry, your browser doesn't support the camera capture.");
-        }
     }
 
-    @UiHandler("btnCapture")
-    void onCapture(ClickEvent e) {
-        imgCapture.setUrl(camera.captureToDataURL());
-    }
 }
