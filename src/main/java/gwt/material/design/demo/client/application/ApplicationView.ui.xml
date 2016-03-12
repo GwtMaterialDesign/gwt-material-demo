@@ -114,6 +114,7 @@
               <m.html:UnorderedList>
                 <m:MaterialLink targetHistoryToken="{tokens.getBadges}" text="Badges" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getButtons}" text="Buttons" textColor="blue" waves="DEFAULT" />
+                <m:MaterialLink targetHistoryToken="{tokens.getBreadcrumbs}" text="Breadcrumb" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getCards}" text="Cards" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getChips}" text="Chips" textColor="blue" waves="DEFAULT" />
                 <m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" textColor="blue" waves="DEFAULT"/>

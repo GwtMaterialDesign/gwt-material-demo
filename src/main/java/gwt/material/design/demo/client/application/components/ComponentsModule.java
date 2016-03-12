@@ -2,6 +2,7 @@ package gwt.material.design.demo.client.application.components;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 import gwt.material.design.demo.client.application.components.badges.BadgesModule;
+import gwt.material.design.demo.client.application.components.breadcrumbs.BreadcrumbsModule;
 import gwt.material.design.demo.client.application.components.buttons.ButtonsModule;
 import gwt.material.design.demo.client.application.components.cards.CardsModule;
 import gwt.material.design.demo.client.application.components.chips.ChipsModule;
@@ -30,6 +31,7 @@ public class ComponentsModule extends AbstractGinModule {
     protected void configure() {
         install(new BadgesModule());
         install(new ButtonsModule());
+        install(new BreadcrumbsModule());
         install(new CardsModule());
         install(new ChipsModule());
         install(new CollapsibleModule());

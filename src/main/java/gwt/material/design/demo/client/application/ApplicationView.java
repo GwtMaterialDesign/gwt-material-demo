@@ -106,6 +106,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         // Addins
         listSearches.add(new SearchObject(IconType.EXTENSION, "Autocomplete", "#!autocomplete"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Bubble", "#bubble"));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Breadcrumb", "#breadcrumb"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Camera", "#camera"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#cutouts"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#dnd"));
