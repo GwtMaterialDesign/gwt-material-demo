@@ -45,6 +45,7 @@ public class DataHelper {
         List<Apps> apps = new ArrayList<>();
         apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", "red"));
         apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", "green"));
+        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", "blue"));
         return apps;
     }
 
