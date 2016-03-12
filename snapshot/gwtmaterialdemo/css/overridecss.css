@@ -871,3 +871,12 @@ footer.fixed{
 .dropdown-content {
 	z-index: 995 !important;
 }
+
+/** Fixed breadcrumb **/
+.breadcrumb:nth-child(2):before {
+	display: none;
+}
+
+.breadcrumb i{
+	float: none !important;
+}
