@@ -22,13 +22,9 @@ public class ShowcaseView extends ViewImpl implements ShowcasePresenter.MyView {
     @UiField
     MaterialSplashScreen splash;
 
-    @UiField
-    MaterialRow appRow;
-
     @Inject
     ShowcaseView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        populateApps();
     }
 
     @UiHandler("btnSplashScreen")
@@ -41,11 +37,5 @@ public class ShowcaseView extends ViewImpl implements ShowcasePresenter.MyView {
             }
         };
         t.schedule(3000);
-    }
-
-    private void populateApps() {
-        for(Apps app : DataHelper.getAllApps()) {
-            appRow.add(new AppCard(app));
-        }
     }
 }

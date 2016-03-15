@@ -131,11 +131,15 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         listSearches.add(new SearchObject(IconType.STYLE, "Shadow", "#!shadow"));
         listSearches.add(new SearchObject(IconType.STYLE, "Theming", "#!themes"));
 
+
         // Roadmap
         listSearches.add(new SearchObject(IconType.TIMELINE, "Roadmap", "#roadmap"));
 
         // Showcase
         listSearches.add(new SearchObject(IconType.WEB, "Showcase", "#!showcase"));
+
+        // Apps
+        listSearches.add(new SearchObject(IconType.WEB, "Apps", "#apps"));
 
         // Template
         listSearches.add(new SearchObject(IconType.DASHBOARD, "Template", "#!templates"));

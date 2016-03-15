@@ -41,9 +41,6 @@
     }
   </ui:style>
   <g:HTMLPanel>
-    <m:MaterialTitle title="gwt-material Apps" description="Lists of apps that use gwt-material"/>
-    <m.addins:MaterialMasonry ui:field="appRow" />
-
     <m:MaterialTitle title="Card (FAB) with Delightful Animations" description="With the power of MaterialPathAnimator (Addin), MaterialAnimator (Core) animation libraries, you can now apply delightful animations on card and FAB."/>
     <m:MaterialAnchorButton text="Source" textColor="white" href="https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/showcase/pathanimator" target="_blank"/>
     <showcase:PathAnimatorShowcase />

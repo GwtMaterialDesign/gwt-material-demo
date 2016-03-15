@@ -194,10 +194,12 @@
             </m:MaterialCollapsibleBody>
           </m:MaterialCollapsibleItem>
         </m:MaterialCollapsible>
-          <!-- CHARTS -->
-          <m:MaterialLink targetHistoryToken="{tokens.getRoadmap}" iconPosition="LEFT" iconType="TIMELINE" text="Roadmap" textColor="blue" waves="DEFAULT" />
-          <!-- SHOWCASE -->
+        <!-- ROADMAPS -->
+        <m:MaterialLink targetHistoryToken="{tokens.getRoadmap}" iconPosition="LEFT" iconType="TIMELINE" text="Roadmap" textColor="blue" waves="DEFAULT" />
+        <!-- SHOWCASE -->
         <m:MaterialLink targetHistoryToken="{tokens.getShowcase}" iconPosition="LEFT" iconType="WEB" text="Showcase" textColor="blue" waves="DEFAULT" />
+        <!-- APPS -->
+        <m:MaterialLink targetHistoryToken="{tokens.getApps}" iconPosition="LEFT" iconType="APPS" text="Apps" textColor="blue" waves="DEFAULT" />
         <!-- TEMPLATES -->
         <m:MaterialLink targetHistoryToken="{tokens.getTemplates}" iconPosition="LEFT" iconType="DASHBOARD" text="Templates" textColor="blue" waves="DEFAULT" />
         <!-- CHARTS -->
