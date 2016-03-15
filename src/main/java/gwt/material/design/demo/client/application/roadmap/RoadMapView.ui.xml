@@ -39,9 +39,13 @@
                     <m:MaterialChip letter="H" letterColor="white" letterBackgroundColor="deep-orange" text="Horizontal Card" margin="4"/>
                     <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="deep-orange" text="Tree View" margin="4"/>
                     <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Window" margin="4"/>
-                    <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Menu Bar" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Masonry" margin="4"/>
                     <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Menu Bar" margin="4"/>
                     <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Swipeable" margin="4"/>
+                    <m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="deep-orange" text="Apps Showcase" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="grey" letterBackgroundColor="grey lighten-1" text="File Upload" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="grey" letterBackgroundColor="grey lighten-1" text="Rich Editor" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="grey" letterBackgroundColor="grey lighten-1" text="Document Viewer" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
