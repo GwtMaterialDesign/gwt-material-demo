@@ -25,6 +25,12 @@
       <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.0" enabled="false"/>
     </m:MaterialPanel>
 
+    <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" backgroundColor="blue" textColor="white" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" backgroundColor="blue" textColor="white" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" backgroundColor="blue" textColor="white" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" backgroundColor="blue" textColor="white" />
+
     <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
 
     <m:MaterialRow>
