@@ -6,6 +6,7 @@ import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.dnd.DndModule;
+import gwt.material.design.demo.client.application.addins.docviewer.DocViewerModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.masonry.MasonryModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
@@ -43,5 +44,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new SwipeableModule());
         install(new MasonryModule());
         install(new CameraModule());
+        install(new DocViewerModule());
     }
 }
