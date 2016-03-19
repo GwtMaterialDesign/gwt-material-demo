@@ -1,6 +1,7 @@
 package gwt.material.design.demo.client.application.addins;
 
 import com.google.gwt.inject.client.AbstractGinModule;
+import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompleteModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
@@ -12,6 +13,7 @@ import gwt.material.design.demo.client.application.addins.masonry.MasonryModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
 import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireModule;
+import gwt.material.design.demo.client.application.addins.splitpanel.SplitPanelModule;
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
 import gwt.material.design.demo.client.application.addins.swipeable.SwipeableModule;
@@ -45,5 +47,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new MasonryModule());
         install(new CameraModule());
         install(new DocViewerModule());
+        install(new SplitPanelModule());
     }
 }
