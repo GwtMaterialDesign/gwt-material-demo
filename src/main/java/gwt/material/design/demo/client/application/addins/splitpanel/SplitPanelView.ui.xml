@@ -118,5 +118,66 @@
             &emsp;&lt;/m:MaterialPanel><br/>
             &lt;/m.addins:MaterialSplitPanel><br/>
         </demo:PrettyPre>
+
+        <m:MaterialTitle title="Bar Position" description="Bar Position accepts a percentage where the split bar will be (By default it's 50 means it's in the middle)" />
+        <m.addins:MaterialSplitPanel barPosition="10" backgroundColor="black" height="500px">
+            <m:MaterialPanel backgroundColor="grey lighten-2">
+                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/>
+            </m:MaterialPanel>
+            <m:MaterialPanel backgroundColor="grey lighten-3">
+                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/>
+            </m:MaterialPanel>
+        </m.addins:MaterialSplitPanel>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.addins:MaterialSplitPanel barPosition="10" backgroundColor="black" height="500px"><br/>
+            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
+            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-3"><br/>
+            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &lt;/m.addins:MaterialSplitPanel><br/>    
+        </demo:PrettyPre>
+                         
+        <m:MaterialTitle title="Advance Splitting" description="You can split any divs easily just like the core gwt split layout panel but with more control"/>
+        <m.addins:MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="black" height="500px">
+            <m.addins:MaterialSplitPanel barPosition="20" backgroundColor="black" height="500px">
+                <m:MaterialPanel backgroundColor="grey lighten-2">
+                    <m:MaterialTitle textAlign="CENTER" title="1"/>
+                </m:MaterialPanel>
+                <m.addins:MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="black">
+                    <m:MaterialPanel backgroundColor="grey lighten-2">
+                        <m:MaterialTitle textAlign="CENTER" title="2"/>
+                    </m:MaterialPanel>
+                    <m:MaterialPanel backgroundColor="grey lighten-2">
+                        <m:MaterialTitle textAlign="CENTER" title="3"/>
+                    </m:MaterialPanel>
+                </m.addins:MaterialSplitPanel>
+            </m.addins:MaterialSplitPanel>
+            <m:MaterialPanel backgroundColor="grey lighten-2">
+                <m:MaterialTitle textAlign="CENTER" title="4"/>
+            </m:MaterialPanel>
+        </m.addins:MaterialSplitPanel>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.addins:MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="black" height="500px"><br/>
+            &emsp;&lt;m.addins:MaterialSplitPanel barPosition="20" backgroundColor="black" height="500px"><br/>
+            &emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="1"/><br/>
+            &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&emsp;&lt;m.addins:MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="black"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="2"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="3"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&emsp;&lt;/m.addins:MaterialSplitPanel><br/>
+            &emsp;&lt;/m.addins:MaterialSplitPanel><br/>
+            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
+            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="4"/><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &lt;/m.addins:MaterialSplitPanel><br/>
+        </demo:PrettyPre>
+
     </m:MaterialPanel>
 </ui:UiBinder>
