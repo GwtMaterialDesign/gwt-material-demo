@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['gecko1_8'], '0CBCD8F206FFB7F96544BE58BAD522AA');
-      unflattenKeylistIntoAnswers(['ie10'], '2AAD40240BB26AF8CD1D3D739D5264F7');
-      unflattenKeylistIntoAnswers(['ie9'], '350B227CA2D8F160CF7065DEDBEDAC3D');
-      unflattenKeylistIntoAnswers(['ie8'], '4F369E257A1D4537215FBF2735ACDA4C');
-      unflattenKeylistIntoAnswers(['safari'], 'D4FF23E6F89777C4E94D377CB0F43213');
+      unflattenKeylistIntoAnswers(['ie9'], '0A8777823BB1FC427D2A3C2CD484281F');
+      unflattenKeylistIntoAnswers(['safari'], '12C3F9EE01C2C7D9481E7411B32D9EC0');
+      unflattenKeylistIntoAnswers(['ie10'], '1FE224CE04CE2F5BC32C9E7F71EF511C');
+      unflattenKeylistIntoAnswers(['ie8'], 'BDC7EDE1D56C7A4CAA1999BE90DEF056');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'F8F6465052A883DF2A97905A231F3D60');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -428,6 +428,7 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/waterfall.css');
     installOneStylesheet('css/window.css');
     installOneStylesheet('css/touchsplitter.css');
+    installOneStylesheet('css/dropzone.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
