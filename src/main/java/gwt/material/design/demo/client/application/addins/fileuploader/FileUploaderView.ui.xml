@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <g:HTMLPanel>
+        <m:MaterialTitle title="Note" description="The File Upload Addin component is just a Client UI, you can pass the Form url by adding url='/fileupload'. The server side must be developed by users, why? because some uses different Server Configs e.g GAE, Servlet or Commons API." />
+        <m.addins:MaterialFileUploader ui:field="uploader" url="/filuploader" maxFileSize="20">
+            <m.addins:MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
+        </m.addins:MaterialFileUploader>
+
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.addins:MaterialFileUploader ui:field="uploader" url="/filuploader" maxFileSize="20"><br/>
+            &emsp;&lt;m.addins:MaterialUploadLabel title="Drag Files to Upload" description="Some description here" /><br/>
+            &lt;/m.addins:MaterialFileUploader><br/>
+        </demo:PrettyPre>
+        
+        <m:MaterialTitle title="Properties" />
+        <blockquote>
+            <p><b>url</b> - Has to be specified on elements other than form (or when the form doesn't have an action attribute).</p>
+            <p><b>method</b> - Does not change width of dropdown to that of the activator</p>
+            <p><b>maxFilesize</b> - in MB, if it exceeded it will fire the maxfilesreached event.</p>
+            <p><b>acceptedFiles</b> - The default implementation of accept checks the file's mime type or extension against this list. This is a comma separated list of mime types or file extensions. Eg.: image/*,application/pdf,.psd.</p>
+        </blockquote>
+
+        <m:MaterialTitle title="Events" />
+        <blockquote>
+            <p><b>Drop</b> - The user dropped something onto the dropzone.</p>
+            <p><b>Drag Start</b> - The user started to drag anywhere.</p>
+            <p><b>Drag End</b> - Dragging has ended.</p>
+            <p><b>Drag Enter</b> - The user dragged a file onto the Dropzone.</p>
+            <p><b>Drag Over</b> - The user is dragging a file over the Dropzone.</p>
+            <p><b>Drag Leave</b> - The user is dragging a file over the Dropzone.</p>
+            <p><b>Added File &lt;UploadFile></b> - When a file is added to the list.</p>
+            <p><b>Removed File &lt;UploadFile></b> - Called whenever a file is removed from the list. You can listen to this and delete the file from your server if you want to.</p>
+            <p><b>Error &lt;UploadFile></b> - An error occured. Receives the errorMessage as second parameter and if the error was due to the XMLHttpRequest the xhr object as third.</p>
+            <p><b>Sending &lt;UploadFile></b> - Called just before each file is sent..</p>
+            <p><b>Success &lt;UploadFile></b> - The file has been uploaded successfully. Gets the server response as second argument. (This event was called finished previously).</p>
+            <p><b>Complete &lt;UploadFile></b> - Called when the upload was either successful or erroneous.</p>
+            <p><b>Cancel &lt;UploadFile></b> - Called when a file upload gets canceled.</p>
+            <p><b>Max File Reach &lt;UploadFile></b> - Called when the number of files accepted reaches the maxFiles limit.</p>
+            <p><b>Max File Exceeded &lt;UploadFile></b> - Called for each file that has been rejected because the number of files exceeds the maxFiles limit..</p>
+        </blockquote>
+
+        <m:MaterialTitle title="Server" description="Take note that we provide only Cient UI for the uploader, but you can configure the server side by the following guidelines."/>
+        <m:MaterialAnchorButton href="https://gist.github.com/kevzlou7979/2d97b81437760016cad8ecc9d74b8f7a" target="_blank" text="File Upload Servlet" textColor="white" waves="DEFAULT" />
+
+        <m:MaterialTitle title="Servlet definition" description="You must set your form url provided on gwt-material File Upload url inside the web.xml" />
+    </g:HTMLPanel>
+</ui:UiBinder>

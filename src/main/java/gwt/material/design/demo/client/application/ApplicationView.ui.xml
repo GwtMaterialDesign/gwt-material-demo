@@ -163,6 +163,7 @@
                 <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" textColor="blue" waves="DEFAULT"/>
+                <m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" textColor="blue" waves="DEFAULT"/>
                 <m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" textColor="blue" waves="DEFAULT"/>

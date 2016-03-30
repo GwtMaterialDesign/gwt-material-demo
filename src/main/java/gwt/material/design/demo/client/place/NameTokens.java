@@ -60,6 +60,7 @@ public class NameTokens {
     public static final String apps = "apps";
     public static final String docviewer = "docviewer";
     public static final String splitpanel = "splitpanel";
+    public static final String fileuploader = "fileuploader";
 
     public static String getAbout() {
         return about;
@@ -295,5 +296,9 @@ public class NameTokens {
 
     public static String getSplitpanel() {
         return splitpanel;
+    }
+
+    public static String getFileuploader() {
+        return fileuploader;
     }
 }
