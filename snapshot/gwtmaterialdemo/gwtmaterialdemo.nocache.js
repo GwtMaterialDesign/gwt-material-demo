@@ -374,11 +374,11 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie9'], '0A8777823BB1FC427D2A3C2CD484281F');
-      unflattenKeylistIntoAnswers(['safari'], '12C3F9EE01C2C7D9481E7411B32D9EC0');
-      unflattenKeylistIntoAnswers(['ie10'], '1FE224CE04CE2F5BC32C9E7F71EF511C');
-      unflattenKeylistIntoAnswers(['ie8'], 'BDC7EDE1D56C7A4CAA1999BE90DEF056');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'F8F6465052A883DF2A97905A231F3D60');
+      unflattenKeylistIntoAnswers(['ie8'], '21166BA6744C246B7FD7089A4DF24F78');
+      unflattenKeylistIntoAnswers(['ie10'], '3A1CE663D3A0E3E16616545B57C95254');
+      unflattenKeylistIntoAnswers(['ie9'], '6A6BE0054577E1F145469072617045B5');
+      unflattenKeylistIntoAnswers(['safari'], '9BA9513D0B4E7559F62E3FD3C1610AB3');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'CA0FDA95B8002E6593E42E7CB905E875');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -413,22 +413,6 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/materialize.blue.css');
     installOneStylesheet('css/overridecss.blue.css');
-    installOneStylesheet('css/autocomplete.css');
-    installOneStylesheet('css/bubble.css');
-    installOneStylesheet('css/sideprofile.css');
-    installOneStylesheet('css/subheader.css');
-    installOneStylesheet('css/treeitem.css');
-    installOneStylesheet('css/timepicker.css');
-    installOneStylesheet('css/window.css');
-    installOneStylesheet('css/stepper.css');
-    installOneStylesheet('css/swipeable.css');
-    installOneStylesheet('css/morph.css');
-    installOneStylesheet('css/overlay.css');
-    installOneStylesheet('css/menubar.css');
-    installOneStylesheet('css/waterfall.css');
-    installOneStylesheet('css/window.css');
-    installOneStylesheet('css/touchsplitter.css');
-    installOneStylesheet('css/dropzone.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
