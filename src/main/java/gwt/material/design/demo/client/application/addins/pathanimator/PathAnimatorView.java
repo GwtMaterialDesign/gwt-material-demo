@@ -7,8 +7,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.ui.MaterialOverlay;
-import gwt.material.design.addins.client.ui.MaterialPathAnimator;
+import gwt.material.design.addins.client.overlay.MaterialOverlay;
+import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
 import gwt.material.design.client.ui.*;
 
 

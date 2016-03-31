@@ -4,10 +4,9 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.ui.MaterialCutOut;
+import gwt.material.design.addins.client.cutout.MaterialCutOut;
 import gwt.material.design.client.ui.MaterialIcon;
 
 import javax.inject.Inject;

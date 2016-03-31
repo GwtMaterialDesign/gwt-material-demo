@@ -7,8 +7,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.base.MaterialSuggestionOracle;
-import gwt.material.design.addins.client.ui.MaterialAutoComplete;
+import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
+import gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;

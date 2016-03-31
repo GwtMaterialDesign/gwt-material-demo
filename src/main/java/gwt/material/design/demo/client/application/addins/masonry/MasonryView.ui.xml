@@ -1,13 +1,12 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:m.masonry="urn:import:gwt.material.design.addins.client.masonry"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
 
         <m:MaterialTitle title="Basic" description="You can use masonry by wrapping column components."/>
-        <m.addins:MaterialMasonry>
+        <m.masonry:MaterialMasonry>
             <m:MaterialColumn grid="l4 s12 m6" backgroundColor="blue lighten-1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER">
                 <m:MaterialIcon iconType="WIFI_TETHERING" iconColor="white" iconSize="LARGE" marginTop="125" />
                 <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="blue darken-1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="white" width="100%"/>
@@ -52,7 +51,7 @@
                 <m:MaterialIcon iconType="AIRPLANEMODE_ON" iconColor="white" iconSize="MEDIUM" marginTop="50" />
                 <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="pink darken-1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="white" width="100%"/>
             </m:MaterialColumn>
-        </m.addins:MaterialMasonry>
+        </m.masonry:MaterialMasonry>
 
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m.addins:MaterialMasonry><br/>
@@ -64,7 +63,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Origin Left" description="By default originLeft is set to true, you can rearrange the blocks into right by setting it to false." />
-        <m.addins:MaterialMasonry grid="l6 s12 m12" originLeft="false">
+        <m.masonry:MaterialMasonry grid="l6 s12 m12" originLeft="false">
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="blue lighten-1" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="grey lighten-2" height="400px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="yellow lighten-3" height="200px" waves="DEFAULT" padding="0"/>
@@ -74,7 +73,7 @@
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="indigo darken-3" height="100px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="yellow darken-4" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="green accent-1" height="200px" waves="DEFAULT" padding="0"/>
-        </m.addins:MaterialMasonry>
+        </m.masonry:MaterialMasonry>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m.addins:MaterialMasonry grid="l6 s12 m12" originLeft="false"><br/>
             &emsp;&lt;!-- Column content here --><br/>
@@ -82,7 +81,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Origin Top" description="By default originLeft is set to false, you can rearrange the blocks into bottom by setting it to false." />
-        <m.addins:MaterialMasonry grid="l6 s12 m12" originTop="false">
+        <m.masonry:MaterialMasonry grid="l6 s12 m12" originTop="false">
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="blue lighten-1" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="grey lighten-2" height="400px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="yellow lighten-3" height="200px" waves="DEFAULT" padding="0"/>
@@ -92,7 +91,7 @@
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="indigo darken-3" height="100px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="yellow darken-4" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l1 s12 m6" backgroundColor="green accent-1" height="200px" waves="DEFAULT" padding="0"/>
-        </m.addins:MaterialMasonry>
+        </m.masonry:MaterialMasonry>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m.addins:MaterialMasonry grid="l6 s12 m12" originTop="false"><br/>
             &emsp;&lt;!-- Column content here --><br/>
@@ -100,7 +99,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Transition Duration" description="You can set how fast the transition of masonry by settung it's duration, if set to 0 then no transition will be applied." />
-        <m.addins:MaterialMasonry grid="l6 s12 m12" transitionDuration="0">
+        <m.masonry:MaterialMasonry grid="l6 s12 m12" transitionDuration="0">
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="blue lighten-1" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="grey lighten-2" height="400px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l3 s12 m6" backgroundColor="yellow lighten-3" height="200px" waves="DEFAULT" padding="0"/>
@@ -110,7 +109,7 @@
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="indigo darken-3" height="100px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="yellow darken-4" height="200px" waves="DEFAULT" padding="0"/>
             <m:MaterialColumn grid="l1 s12 m6" backgroundColor="green accent-1" height="200px" waves="DEFAULT" padding="0"/>
-        </m.addins:MaterialMasonry>
+        </m.masonry:MaterialMasonry>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m.addins:MaterialMasonry grid="l6 s12 m12" transitionDuration="0"><br/>
             &emsp;&lt;!-- Column content here --><br/>
@@ -118,7 +117,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Card Support" description="You can wrap the columns and add card inside of it" />
-        <m.addins:MaterialMasonry backgroundColor="black">
+        <m.masonry:MaterialMasonry backgroundColor="black">
             <m:MaterialColumn grid="l6 s12 m6" padding="4">
                 <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="grey darken-1">
                     <m:MaterialCardImage waves="DEFAULT">
@@ -211,7 +210,7 @@
                     </m:MaterialCardContent>
                 </m:MaterialCard>
             </m:MaterialColumn>
-        </m.addins:MaterialMasonry>
+        </m.masonry:MaterialMasonry>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m.addins:MaterialMasonry backgroundColor="black"><br/>
             &emsp;&lt;m:MaterialColumn grid="l6 s12 m6" padding="4"><br/>

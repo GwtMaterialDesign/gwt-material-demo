@@ -4,9 +4,11 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.base.UploadFile;
-import gwt.material.design.addins.client.events.*;
-import gwt.material.design.addins.client.ui.MaterialFileUploader;
+import gwt.material.design.addins.client.dnd.events.DragEndEvent;
+import gwt.material.design.addins.client.dnd.events.DragStartEvent;
+import gwt.material.design.addins.client.fileuploader.MaterialFileUploader;
+import gwt.material.design.addins.client.fileuploader.base.UploadFile;
+import gwt.material.design.addins.client.fileuploader.events.*;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;

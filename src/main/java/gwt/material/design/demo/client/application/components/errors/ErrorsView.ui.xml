@@ -2,7 +2,8 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:m.autocomplete="urn:import:gwt.material.design.addins.client.autocomplete"
+             xmlns:m.timepicker="urn:import:gwt.material.design.addins.client.timepicker"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
     <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
@@ -22,7 +23,7 @@
     <!-- Autocomplete -->
     <m:MaterialRow>
       <m:MaterialTitle title="Autocomplete"/>
-      <m.addins:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
+      <m.autocomplete:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
     </m:MaterialRow>
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="red" waves="LIGHT"/>
@@ -44,7 +45,7 @@
     <!-- Time Picker -->
     <m:MaterialRow>
       <m:MaterialTitle title="Time Picker" />
-      <m.addins:MaterialTimePicker placeholder="Time" ui:field="tp"  grid="s12 m12 l5" />
+      <m.timepicker:MaterialTimePicker placeholder="Time" ui:field="tp"  grid="s12 m12 l5" />
     </m:MaterialRow>
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="red" waves="LIGHT"/>

@@ -1,9 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui">
+             xmlns:m.masonry="urn:import:gwt.material.design.addins.client.masonry">
     <m:MaterialPanel>
         <m:MaterialTitle title="gwt-material Apps" description="Lists of apps that use gwt-material"/>
-        <m.addins:MaterialMasonry ui:field="appRow" />
+        <m.masonry:MaterialMasonry ui:field="appRow" />
     </m:MaterialPanel>
 </ui:UiBinder>

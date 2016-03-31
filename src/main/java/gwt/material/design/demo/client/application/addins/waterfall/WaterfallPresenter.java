@@ -6,7 +6,6 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
@@ -20,8 +19,6 @@ public class WaterfallPresenter extends Presenter<WaterfallPresenter.MyView, Wat
     @ProxyStandard
     interface MyProxy extends ProxyPlace<WaterfallPresenter> {
     }
-
-    public static final NestedSlot SLOT_WATERFALL = new NestedSlot();
 
     @Inject
     WaterfallPresenter(

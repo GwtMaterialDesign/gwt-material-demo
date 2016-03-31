@@ -10,7 +10,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.ui.MaterialWindow;
+import gwt.material.design.addins.client.window.MaterialWindow;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;

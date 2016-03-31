@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
+             xmlns:m.menubar="urn:import:gwt.material.design.addins.client.menubar"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
         <m:MaterialTitle title="Introduction" description="Nested dropdowns are good for Desktop/Tablets." />
@@ -15,7 +15,7 @@
                 <m:MaterialColumn grid="l10 s10 m10">
                     <m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/>
                     <!-- MenuBar component -->
-                    <m.addins:MaterialMenuBar>
+                    <m.menubar:MaterialMenuBar>
                         <!-- Menu Link items -->
                         <m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="black" activates="dp-file"/>
                         <m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="black" activates="dp-edit"/>
@@ -103,7 +103,7 @@
                             </m:MaterialLink>
                             <m:MaterialLink text="Clear Formatting" />
                         </m:MaterialDropDown>
-                    </m.addins:MaterialMenuBar>
+                    </m.menubar:MaterialMenuBar>
                 </m:MaterialColumn>
             </m:MaterialRow>
 

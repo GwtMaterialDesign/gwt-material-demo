@@ -7,11 +7,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.MaterialSplashScreen;
-import gwt.material.design.demo.client.application.dto.Apps;
-import gwt.material.design.demo.client.application.dto.DataHelper;
-import gwt.material.design.demo.client.application.showcase.cards.AppCard;
 
 import javax.inject.Inject;
 

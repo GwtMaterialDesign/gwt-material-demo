@@ -21,8 +21,6 @@ public class RoadMapPresenter extends Presenter<RoadMapPresenter.MyView, RoadMap
     interface MyProxy extends ProxyPlace<RoadMapPresenter> {
     }
 
-    public static final NestedSlot SLOT_ROADMAP = new NestedSlot();
-
     @Inject
     RoadMapPresenter(
             EventBus eventBus,

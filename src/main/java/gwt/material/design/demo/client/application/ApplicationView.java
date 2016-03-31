@@ -10,7 +10,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.ui.MaterialWaterfall;
+import gwt.material.design.addins.client.waterfall.MaterialWaterfall;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.ui.*;
@@ -31,7 +31,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField MaterialNavBrand navBrand;
     @UiField MaterialSideNav sideNav;
     @UiField HTMLPanel main;
-    @UiField MaterialWaterfall waterfall;
+    @UiField
+    MaterialWaterfall waterfall;
     @UiField MaterialPanel panel;
     @UiField MaterialLabel title, description;
     @UiField MaterialAnchorButton btnStarted;

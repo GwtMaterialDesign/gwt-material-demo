@@ -1,20 +1,17 @@
 package gwt.material.design.demo.client.application.addins.dnd;
 
-import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.base.HasDraggable;
-import gwt.material.design.addins.client.constants.Restriction;
-import gwt.material.design.addins.client.events.DragEndEvent;
-import gwt.material.design.addins.client.events.DragMoveEvent;
-import gwt.material.design.addins.client.events.DragStartEvent;
-import gwt.material.design.addins.client.ui.MaterialDnd;
+import gwt.material.design.addins.client.dnd.MaterialDnd;
+import gwt.material.design.addins.client.dnd.constants.Restriction;
+import gwt.material.design.addins.client.dnd.events.DragEndEvent;
+import gwt.material.design.addins.client.dnd.events.DragMoveEvent;
+import gwt.material.design.addins.client.dnd.events.DragStartEvent;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 

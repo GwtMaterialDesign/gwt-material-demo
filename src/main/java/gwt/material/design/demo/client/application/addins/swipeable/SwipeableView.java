@@ -5,10 +5,9 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.events.SwipeLeftEvent;
-import gwt.material.design.addins.client.events.SwipeRightEvent;
-import gwt.material.design.addins.client.ui.MaterialSwipeablePanel;
-import gwt.material.design.client.ui.MaterialCard;
+import gwt.material.design.addins.client.swipeable.MaterialSwipeablePanel;
+import gwt.material.design.addins.client.swipeable.events.SwipeLeftEvent;
+import gwt.material.design.addins.client.swipeable.events.SwipeRightEvent;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialToast;
 
