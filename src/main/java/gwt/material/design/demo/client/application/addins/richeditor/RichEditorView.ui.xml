@@ -1,0 +1,66 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <ui:style>
+
+    </ui:style>
+    <g:HTMLPanel>
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/>
+            &lt;!-- Addin Usage --><br/>
+            &emsp;&lt;ma:richeditor.MaterialRichEditor placeholder="Type everything about Material Design"/>
+        </demo:PrettyPre>
+        <ma:richeditor.MaterialRichEditor placeholder="Type everything about Material Design"/>
+
+        <m:MaterialTitle title="Set/Get HTML" description="We provided a method to easily set the html content of the rich editor component"/>
+        <m:MaterialRow>
+            <m:MaterialTextBox placeholder="Any HTML" ui:field="txtHTML" grid="s12 l3 m3"/>
+            <m:MaterialColumn grid="s12 m4 l4">
+                <m:MaterialButton ui:field="btnSetHTML" margin="8"  waves="DEFAULT" text="Set HTML"/>
+                <m:MaterialButton ui:field="btnGetHTML" margin="8" waves="DEFAULT" text="Get HTML"/>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+        <ma:richeditor.MaterialRichEditor ui:field="richEditor"/>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;richEditor.setHTML("&lt;b>I Love Material Design&lt;/b>");<br/>
+            richEditor.getHTML();
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Air mode" description="Air-mode gives clearer interface with hiddened toolbar. To reveal toolbar, select a text where you want to shape up. Simply turn on airMode and just focus on text."/>
+        <ma:richeditor.MaterialRichEditor ui:field="airmodeRichEditor" airMode="true" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &lt;ma:richeditor.MaterialRichEditor ui:field="airmodeRichEditor" airMode="true" />
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Height" description="The height param applied to Editor's zone" />
+        <ma:richeditor.MaterialRichEditor height="200px"/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &lt;ma:richeditor.MaterialRichEditor height="200px"/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Controlling Options" description="You can set Options and remove what you want or even place it. Options style, fonts, colors, undo, ckMedia, misc, para and height are placed respectively."/>
+        <ma:richeditor.MaterialRichEditor ui:field="optionRichEditor"/>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;optionRichEditor.setStyleOptions(ToolbarButton.STYLE, ToolbarButton.BOLD, ToolbarButton.ITALIC);<br/>
+            optionRichEditor.setParaOptions(ToolbarButton.LEFT, ToolbarButton.RIGHT, ToolbarButton.JUSTIFY);<br/>
+            optionRichEditor.setMiscOptions(ToolbarButton.CODE_VIEW, ToolbarButton.FULLSCREEN);<br/>
+            // Without undo options<br/>
+            optionRichEditor.setUndoOptions();<br/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Clear and Insert Text" />
+        <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT"/>
+        <m:MaterialButton ui:field="btnInsertText" text="Insert Material Design" waves="DEFAULT"/>
+        <ma:richeditor.MaterialRichEditor ui:field="clearRichEditor" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;richEditor.clear(); // Clearing the rich editor <br/>
+            richEditor.insertText("Material Design"); // Inserting text into rich editor <br/>
+        </demo:PrettyPre>
+    </g:HTMLPanel>
+</ui:UiBinder>

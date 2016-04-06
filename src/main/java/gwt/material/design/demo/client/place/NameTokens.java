@@ -61,6 +61,7 @@ public class NameTokens {
     public static final String docviewer = "docviewer";
     public static final String splitpanel = "splitpanel";
     public static final String fileuploader = "fileuploader";
+    public static final String richeditor = "richeditor";
 
     public static String getAbout() {
         return about;
@@ -300,5 +301,9 @@ public class NameTokens {
 
     public static String getFileuploader() {
         return fileuploader;
+    }
+
+    public static String getRicheditor() {
+        return richeditor;
     }
 }
