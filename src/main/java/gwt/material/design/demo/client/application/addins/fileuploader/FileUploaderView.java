@@ -85,6 +85,7 @@ public class FileUploaderView extends ViewImpl implements FileUploaderPresenter.
             @Override
             public void onError(ErrorEvent<UploadFile> event) {
                 MaterialToast.fireToast("Event : Error (" + event.getTarget().getName() + ")");
+                MaterialToast.fireToast("Response Code : (" + event.getResponse().getCode() + ") - " + event.getResponse().getMessage());
             }
         });
 
