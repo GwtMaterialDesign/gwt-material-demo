@@ -5,19 +5,20 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
         <m:MaterialTitle title="Note" description="This widget only works on pages served by a secure protocol (HTTPS). For the browser compatibility, access http://caniuse.com/#feat=stream."/>
-
+    
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:camera.MaterialCameraCapture padding="0" ui:field="camera" grid="l12 m12 s12"/>
+        </demo:PrettyPre>
+        
         <m:MaterialRow>
             <m:MaterialColumn grid="l4 m6 s12" height="500px" padding="0" shadow="1">
                 <g:Frame url="https://feel-vision.appspot.com/" width="100%" height="100%"/>
             </m:MaterialColumn>
         </m:MaterialRow>
-
-        <m:MaterialTitle title="Markup" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.camera:MaterialCameraCapture padding="0" ui:field="camera" grid="l12 m12 s12"/><br/>
-            &lt;m:MaterialButton ui:field="btnCapture" tooltip="Capture" waves="DEFAULT" size="LARGE" type="FLOATING" iconType="CAMERA" backgroundColor="pink"/><br/>
-            &lt;m:MaterialImage ui:field="imgCapture"/><br/>
-        </demo:PrettyPre>
 
         <m:MaterialTitle title="Browser Check" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
