@@ -1,7 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.cutout="urn:import:gwt.material.design.addins.client.cutout"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
         <m:MaterialTitle title="Usage" />
@@ -19,10 +19,10 @@
         <m:MaterialIcon iconType="POLYMER" ui:field="btnCutOut"/>
 
         <!-- Material CutOut -->
-        <m.cutout:MaterialCutOut ui:field="cutout" backgroundColor="blue" circle="true" opacity="0.8" textAlign="CENTER">
+        <ma:cutout.MaterialCutOut ui:field="cutout" backgroundColor="blue" circle="true" opacity="0.8" textAlign="CENTER">
             <m:MaterialTitle title="New Feature" description="Description of your new Feature" textColor="white"/>
             <m:MaterialButton text="Close" ui:field="btnCutOutClose" textColor="blue" backgroundColor="white"/>
-        </m.cutout:MaterialCutOut>
+        </ma:cutout.MaterialCutOut>
 
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt; -- Target Element --><br/>

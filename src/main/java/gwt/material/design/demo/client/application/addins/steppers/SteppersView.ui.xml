@@ -1,7 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.stepper="urn:import:gwt.material.design.addins.client.stepper"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
     <ui:style>
@@ -10,47 +10,56 @@
         }
     </ui:style>
     <m:MaterialPanel>
-        <m:MaterialTitle title="Addins Usage" description="In every gwt-material-addins components you may require to add the following namespace to the &lt;ui:UIBinder> element"/>
+        <m:MaterialTitle title="Usage" />
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Vertical Steppers" description="Vertical steppers are designed for narrow screen sizes. They are ideal for mobile." />
-        <m.stepper:MaterialStepper ui:field="stepper">
-            <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
-                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
-                <m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-                <m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-            <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
-                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
-                <m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-                <m:MaterialButton ui:field="btnPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-            <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
-                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
-                <m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-                <m:MaterialButton ui:field="btnPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-        </m.stepper:MaterialStepper>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialStepper ui:field="stepper"><br/>
-            &emsp;&lt;m.addins:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1"><br/>
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:stepper.MaterialStepper ui:field="stepper"><br/>
+            &emsp;&lt;ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1"><br/>
             &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
-            &emsp;&lt;/m.addins:MaterialStep><br/>
-            &emsp;&lt;m.addins:MaterialStep step="2" title="Name of Step 2" description="Description of Step 1"><br/>
+            &emsp;&lt;/ma:stepper.MaterialStep><br/>
+            &lt;/ma:stepper.MaterialStepper><br/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Vertical Steppers" description="Vertical steppers are designed for narrow screen sizes. They are ideal for mobile." />
+        <ma:stepper.MaterialStepper ui:field="stepper">
+            <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+        </ma:stepper.MaterialStepper>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;ma:stepper.MaterialStepper ui:field="stepper"><br/>
+            &emsp;&lt;ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1"><br/>
+            &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/><br/>
+            &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/><br/>
+            &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
+            &emsp;&lt;/ma:stepper.MaterialStep><br/>
+            &emsp;&lt;ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1"><br/>
             &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
-            &emsp;&lt;/m.addins:MaterialStep><br/>
-            &emsp;&lt;m.addins:MaterialStep step="3" title="Name of Step 3" description="Description of Step 1"><br/>
+            &emsp;&lt;/ma:stepper.MaterialStep><br/>
+            &emsp;&lt;ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1"><br/>
             &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/><br/>
             &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
-            &emsp;&lt;/m.addins:MaterialStep><br/>
-            &lt;/m.addins:MaterialStepper><br/>
+            &emsp;&lt;/ma:stepper.MaterialStep><br/>
+            &lt;/ma:stepper.MaterialStepper><br/>
         </demo:PrettyPre>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
           &emsp;@UiHandler({"btnContinue1", "btnContinue2", "btnContinue3"})<br/>
@@ -72,56 +81,56 @@
 
         <m:MaterialTitle hideOn="HIDE_ON_SMALL" title="Horizontal Steppers" description="Vertical steppers are designed for narrow screen sizes. They are ideal for mobile." />
         <m:MaterialPanel hideOn="HIDE_ON_SMALL" height="500px" width="100%">
-          <m.stepper:MaterialStepper ui:field="stepperHori" axis="HORIZONTAL" shadow="1">
-            <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+          <ma:stepper.MaterialStepper ui:field="stepperHori" axis="HORIZONTAL" shadow="1">
+            <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
               <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
               <m:MaterialButton ui:field="btnContinue01" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
               <m:MaterialButton ui:field="btnPrev01" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-            <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
               <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
               <m:MaterialButton ui:field="btnContinue02" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
               <m:MaterialButton ui:field="btnPrev02" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-            <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
               <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
               <m:MaterialButton ui:field="btnContinue03" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
               <m:MaterialButton ui:field="btnPrev03" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-            </m.stepper:MaterialStep>
-          </m.stepper:MaterialStepper>
+            </ma:stepper.MaterialStep>
+          </ma:stepper.MaterialStepper>
         </m:MaterialPanel>
       
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
           &emsp;&lt;!-- You need to contain your horizontal Stepper into a MaterialPanel to specify the width and height of your stepper --><br/>
           &lt;m:MaterialPanel height="500px" width="100%"><br/>
-          &emsp;&lt;m.addins:MaterialStepper axis="HORIZONTAL" shadow="1"><br/>
+          &emsp;&lt;ma:stepper.MaterialStepper axis="HORIZONTAL" shadow="1"><br/>
           &emsp;&emsp;&lt;!-- Step components here --><br/>
-          &emsp;&lt;/m.addins:MaterialStepper><br/>
+          &emsp;&lt;/ma:stepper.MaterialStepper><br/>
           &lt;/m:MaterialPanel><br/>
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Card Steppers" description="You can put your Steppers inside a card component by adding shadow='1'" />
-        <m.stepper:MaterialStepper ui:field="stepperCard" shadow="1">
-          <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+        <ma:stepper.MaterialStepper ui:field="stepperCard" shadow="1">
+          <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnContinue11" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnPrev11" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnContinue12" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnPrev12" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnContinue13" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnPrev13" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-        </m.stepper:MaterialStepper>
+          </ma:stepper.MaterialStep>
+        </ma:stepper.MaterialStepper>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-          &emsp;&lt;m.addins:MaterialStepper ui:field="stepperCard" shadow="1"><br/>
+          &emsp;&lt;ma:stepper.MaterialStepper ui:field="stepperCard" shadow="1"><br/>
           &emsp;&lt;!-- Step components here --><br/>
-          &lt;/m.addins:MaterialStepper><br/>
+          &lt;/ma:stepper.MaterialStepper><br/>
         </demo:PrettyPre>
 
         <!-- Steppers inside modal -->
@@ -129,55 +138,55 @@
         <m:MaterialButton ui:field="btnModal" text="Open Modal" waves="DEFAULT" textColor="white" backgroundColor="blue" />
         <m:MaterialModal ui:field="modalStepper" dismissable="false" inDuration="500" outDuration="500">
           <m:MaterialModalContent>
-            <m.stepper:MaterialStepper ui:field="stepperModal">
-              <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+            <ma:stepper.MaterialStepper ui:field="stepperModal">
+              <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
                 <m:MaterialButton ui:field="btnContinue31" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev31" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-              </m.stepper:MaterialStep>
-              <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
+              </ma:stepper.MaterialStep>
+              <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
                 <m:MaterialButton ui:field="btnContinue32" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev32" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-              </m.stepper:MaterialStep>
-              <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
+              </ma:stepper.MaterialStep>
+              <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
                 <m:MaterialButton ui:field="btnContinue33" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev33" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-              </m.stepper:MaterialStep>
-            </m.stepper:MaterialStepper>
+              </ma:stepper.MaterialStep>
+            </ma:stepper.MaterialStepper>
           </m:MaterialModalContent>
         </m:MaterialModal>
         
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
           &emsp;&lt;m:MaterialModal ui:field="modalStepper" dismissable="false" inDuration="500" outDuration="500"><br/>
           &emsp;&lt;m:MaterialModalContent><br/>
-          &emsp;&emsp;&lt;m.addins:MaterialStepper ui:field="stepperModal"><br/>
+          &emsp;&emsp;&lt;ma:stepper.MaterialStepper ui:field="stepperModal"><br/>
           &emsp;&emsp;&emsp;&lt;!-- Step components here --><br/>
-          &emsp;&emsp;&lt;/m.addins:MaterialStepper><br/>
+          &emsp;&emsp;&lt;/ma:stepper.MaterialStepper><br/>
           &emsp;&lt;/m:MaterialModalContent><br/>
           &lt;/m:MaterialModal><br/>
         </demo:PrettyPre>
 
       <m:MaterialTitle hideOn="HIDE_ON_SMALL" title="Error on Steppers" description="You can specify a global stepper error by : setError('Error Message'); " />
       <m:MaterialPanel hideOn="HIDE_ON_SMALL" height="500px" width="100%">
-        <m.stepper:MaterialStepper ui:field="stepperError" axis="HORIZONTAL" shadow="1">
-          <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+        <ma:stepper.MaterialStepper ui:field="stepperError" axis="HORIZONTAL" shadow="1">
+          <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnError" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnSuccess" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnError1" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnSuccess1" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnError2" text="Set Error" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
             <m:MaterialButton ui:field="btnSuccess2" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-        </m.stepper:MaterialStepper>
+          </ma:stepper.MaterialStep>
+        </ma:stepper.MaterialStepper>
       </m:MaterialPanel>
       <demo:PrettyPre addStyleNames="lang-java z-depth-1">
         &emsp;// Setting error message<br/>
@@ -186,20 +195,20 @@
 
       <m:MaterialTitle title="Feedback on Steppers" description="Steppers may display a transient feedback message after a step is saved. Stepper feedback should only be used if there is a long latency between steps"/>
       <m:MaterialPanel hideOn="HIDE_ON_SMALL" height="500px" width="100%">
-        <m.stepper:MaterialStepper ui:field="stepperFeedback" axis="HORIZONTAL" shadow="1">
-          <m.stepper:MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+        <ma:stepper.MaterialStepper ui:field="stepperFeedback" axis="HORIZONTAL" shadow="1">
+          <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
             <m:MaterialPanel width="100%" backgroundColor="grey lighten-2" addStyleNames="{style.block}"/>
             <m:MaterialButton ui:field="btnContinue41" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
             <m:MaterialButton ui:field="btnContinue42" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-          <m.stepper:MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
+          </ma:stepper.MaterialStep>
+          <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
             <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
               <m:MaterialButton ui:field="btnContinue43" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
-          </m.stepper:MaterialStep>
-        </m.stepper:MaterialStepper>
+          </ma:stepper.MaterialStep>
+        </ma:stepper.MaterialStepper>
       </m:MaterialPanel>
       <demo:PrettyPre addStyleNames="lang-java z-depth-1">
           &emsp;// show feedback<br/>

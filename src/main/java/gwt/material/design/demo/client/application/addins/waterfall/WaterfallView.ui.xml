@@ -3,6 +3,13 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
+        <m:MaterialTitle title="Usage"/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px">
+        </demo:PrettyPre>
         <m:MaterialTitle title="Waterfall Declaration" description="FIRST, You need to define your nav component and waterfall component in UiBinder."/>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m:MaterialHeader><br/>
@@ -17,12 +24,12 @@
             &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH"/><br/>
             &emsp;&emsp;&lt;/m:MaterialNavSection><br/>
             &emsp;&lt;/m:MaterialNavBar><br/>
-            &emsp;&lt;m:MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px"><br/>
+            &emsp;&lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px"><br/>
             &emsp;&emsp;&lt;m:MaterialPanel ui:field="panel" addStyleNames="container" paddingTop="20"><br/>
             &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="GWT Material" description="Google Material Design UI / UX for GWT Applications."/><br/>
             &emsp;&emsp;&emsp;&lt;m:MaterialAnchorButton text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"/><br/>
             &emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;/m:MaterialWaterfall><br/>
+            &emsp;&lt;/ma:waterfall.MaterialWaterfall><br/>
             &lt;/m:MaterialHeader><br/>
         </demo:PrettyPre>
         <m:MaterialTitle title="Container Declaration" description="In order to have a beautiful effect on waterfall, you must define the container and make the height filled the entire space so that we can have a scrolling feature on it."/>

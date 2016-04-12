@@ -1,28 +1,35 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:m.timepicker="urn:import:gwt.material.design.addins.client.timepicker"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Time Picker"  description="Tap between the hour and minute label in the title bar to switch between the hour or minute view. Additionally, tap on the AM/PM label in the title bar to switch between AM or PM (in 12-hour clock mode)."/>
-        <m.timepicker:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+        <m:MaterialTitle title="Usage"/>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+        </demo:PrettyPre>
+        <m:MaterialTitle title="Time Picker"  description="Tap between the hour and minute label in the title bar to switch between the hour or minute view. Additionally, tap on the AM/PM label in the title bar to switch between AM or PM (in 12-hour clock mode)."/>
+        <ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Disabled Styles" description="You can disable your time picker by adding enabled='false'"/>
-        <m.timepicker:MaterialTimePicker placeholder="Snooze Time" enabled="false" />
+        <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" enabled="false" />
 
         <!-- 24 hour format -->
         <m:MaterialTitle title="24 Hour format"  description="You can set 24 hour format of time picker by adding a parameter : hour24='true'"/>
-        <m.timepicker:MaterialTimePicker placeholder="Snooze Time" hour24="true"/>
+        <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" hour24="true"/>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;m:MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
+            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
         </demo:PrettyPre>
 
         <!-- Events -->
         <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>
-        <m.timepicker:MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
+        <ma:timepicker.MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;// Open Handler<br/>
             tpEvents.addOpenHandler(new OpenHandler&lt;String>() {<br/>
@@ -50,7 +57,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
-        <m.timepicker:MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
+        <ma:timepicker.MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
         <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             timepick.clear();

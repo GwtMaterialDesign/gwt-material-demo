@@ -11,7 +11,7 @@
         <m:MaterialTitle title="Usage" />
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
             &lt;!-- Addin Usage --><br/>
             &emsp;&lt;ma:richeditor.MaterialRichEditor placeholder="Type everything about Material Design"/>
         </demo:PrettyPre>
