@@ -1,15 +1,20 @@
 package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Image;
+import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.UserSuggestion;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -21,81 +26,57 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acWithImage, acListLimit, acText;
+    MaterialAutoComplete acList, acListType, acListLimit;
 
     @Inject
     AutoCompleteView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        acList.setItemValues(getSimpleSuggestions());
-        acListLimit.setItemValues(getSimpleSuggestions());
-        acWithImage.setSuggestions(getWithImageSuggestions());
-        acText.setItemValues(getSimpleSuggestions());
+        UserOracle oracle = new UserOracle();
+        oracle.addContacts(getAllUsers());
+        acList.setSuggestions(oracle);
+        acListType.setSuggestions(oracle);
+        acListLimit.setSuggestions(oracle);
     }
 
-    private List<String> getSimpleSuggestions() {
-        List<String> suggestions = new ArrayList<>();
-        suggestions.add("Alabama");
-        suggestions.add("Alaska");
-        suggestions.add("Arizona");
-        suggestions.add("Arkansas");
-        suggestions.add("California");
-        suggestions.add("Colorado");
-        suggestions.add("Connecticut");
-        suggestions.add("Delaware");
-        suggestions.add("Florida");
-        suggestions.add("Georgia");
-        suggestions.add("Hawaii");
-        suggestions.add("Idaho");
-        suggestions.add("Illinois");
-        suggestions.add("Indiana");
-        suggestions.add("Iowa");
-        suggestions.add("Kansas");
-        suggestions.add("Kentucky");
-        suggestions.add("Louisiana");
-        suggestions.add("Maine");
-        suggestions.add("Maryland");
-        suggestions.add("Massachusetts");
-        suggestions.add("Michigan");
-        suggestions.add("Minnesota");
-        suggestions.add("Mississippi");
-        suggestions.add("Missouri");
-        suggestions.add("Montana");
-        suggestions.add("Louisiana");
-        return suggestions;
-    }
 
-    private MaterialSuggestionOracle getWithImageSuggestions() {
-        MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();
-        suggestions.add("Yunalis Mat Zara'ai", new Image("http://b.vimeocdn.com/ps/339/488/3394886_300.jpg"));
-        suggestions.add("Marjorie Matias", new Image("http://lorempixel.com/50/50/people?1"));
-        suggestions.add("Zenaida Ringor", new Image("http://lorempixel.com/50/50/people?8"));
-        suggestions.add("Hanna Matias", new Image("http://lorempixel.com/50/50/people?2"));
-        return suggestions;
+    @UiHandler("btnClear")
+    void onClear(ClickEvent e) {
+        acList.clear();
     }
 
     @UiHandler("btnGetAll")
     void onGetAll(ClickEvent e) {
-        List<String> listItems = acList.getItemValues();
-        for(String item : listItems) {
-            MaterialToast.fireToast(item);
+        for(User user : getSelectedUsers()){
+            MaterialToast.fireToast(user.getName());
         }
     }
 
-    @UiHandler("btnGetAllContacts")
-    void onGetAllContacts(ClickEvent e) {
-        List<String> listItems = acWithImage.getItemValues();
-        for(String item : listItems) {
-            MaterialToast.fireToast(item);
+    public List<User> getSelectedUsers() {
+        List<? extends SuggestOracle.Suggestion> values = acList.getValue();
+        List<User> users = new ArrayList<>(values.size());
+        for(SuggestOracle.Suggestion value : values){
+            if(value instanceof UserSuggestion){
+                UserSuggestion us = (UserSuggestion) value;
+                User user = us.getUser();
+                users.add(user);
+            }
         }
+        return users;
     }
 
-    @UiHandler("btnClear")
-    void onClear(ClickEvent e){
-        acList.clear();
-    }
-
-    @UiHandler("btnClearWithImage")
-    void onClearWithImage(ClickEvent e){
-        acWithImage.clear();
+    public List<User> getAllUsers() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", User.Position.DEVELOPER, true, "Luis Hoppe", "luis@mail.com", "123123123", "718-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", User.Position.DEVELOPER, true, "Irwin Mueller", "irwin@mail.com", "123123123", "718-432-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", User.Position.DEVELOPER, true, "Levin Card", "levin@mail.com", "123123123", "432-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg", User.Position.DEVELOPER, false, "Dr. Cassie Keeling", "cassie@mail.com", "123123123", "432-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/ariil/128.jpg", User.Position.DEVELOPER, false, "Dr. Madelynn Schamberger", "madelyn@mail.com", "123123123", "543-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/devankoshal/128.jpg", User.Position.MARKETING, false, "Dominique Schmidt", "dom@mail.com", "123123123", "718-657-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg", User.Position.CTO, false, "Rowland Heller", "rowland@mail.com", "123123123", "718-765-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/GavicoInd/128.jpg", User.Position.CEO, false, "Quincy Schimmel", "quincy@mail.com", "123123123", "46-555-876", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", User.Position.MARKETING, false, "Tierra VonRueden", "tierra@mail.com", "123123123", "654-56-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/kimcool/128.jpg", User.Position.MARKETING, false, "Travis Larson", "travis@mail.com", "123123123", "465-456-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", User.Position.MARKETING, false, "Clint Heller", "clint@mail.com", "123123123", "645-555-65", "Makati City, Philippines", "Gwt Material"));
+        return list;
     }
 }

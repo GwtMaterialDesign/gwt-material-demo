@@ -3,14 +3,23 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
-             xmlns:m.autocomplete="urn:import:gwt.material.design.addins.client.autocomplete"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:m.demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
+
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:autocomplete.MaterialAutoComplete placeholder="Contacts"/>
+        </demo:PrettyPre>
 
         <m:MaterialTitle title="Autocomplete" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l6">
-                <m.autocomplete:MaterialAutoComplete ui:field="acList" placeholder="States" />
+                <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
             </m:MaterialColumn>
         </m:MaterialRow>
 
@@ -26,89 +35,56 @@
         <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="blue"/>
         <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="black" backgroundColor="white"/>
 
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;m.addins:MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
-        </demo:PrettyPre>
+        <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;@UiField MaterialAutoComplete acList; <br/><br/>
 
+            UserOracle oracle = new UserOracle();<br/>
+            oracle.addContacts(getAllUsers());<br/>
+            acList.setSuggestions(oracle);
+        </m.demo:PrettyPre>
+
+        <m:MaterialTitle title="Gist Files" description="With the given example, we use UserOracle, User and UserSuggestion in order to build the Autocomplete more flexible." />
+        <m:MaterialAnchorButton text="Link to Gist" textColor="white" target="_blank" href="https://gist.github.com/kevzlou7979/dfb18c003513311345e53af7253b1e39" />
+
+        <m:MaterialTitle title="Get all Selected Items" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiField MaterialAutoComplete acList;<br/><br/>
-
-            &emsp;MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
-            &emsp;suggestions.add("Alabama");<br/>
-            &emsp;suggestions.add("Alaska");<br/>
-            &emsp;suggestions.add("Arizona");<br/>
-            &emsp;suggestions.add("Arkansas");<br/>
-            &emsp;suggestions.add("California");<br/>
-            &emsp;suggestions.add("Colorado");<br/>
-            &emsp;suggestions.add("Connecticut");<br/>
-            &emsp;suggestions.add("Delaware");<br/>
-            &emsp;suggestions.add("Florida");<br/>
-            &emsp;suggestions.add("Georgia");<br/><br/>
-
-            &emsp;acList.setSuggestions(suggestions);
+            &emsp;public List&lt;User> getSelectedUsers() {<br/>
+            &emsp;List&lt;? extends SuggestOracle.Suggestion> values = acList.getValue();<br/>
+            &emsp;List&lt;User> users = new ArrayList&lt;>(values.size());<br/>
+            &emsp;for(SuggestOracle.Suggestion value : values){<br/>
+            &emsp;&emsp;if(value instanceof UserSuggestion){<br/>
+            &emsp;&emsp;&emsp;UserSuggestion us = (UserSuggestion) value;<br/>
+            &emsp;&emsp;&emsp;User user = us.getUser();<br/>
+            &emsp;&emsp;&emsp;users.add(user);<br/>
+            &emsp;&emsp;}<br/>
+            &emsp;}<br/>
+            &emsp;return users;<br/>
+            }
         </demo:PrettyPre>
 
+        <m:MaterialTitle title="Clearing Items on Autocomplete" description="You can easily clear the Autocomplete List Items by calling autocomlete.clear()"/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// to clear your autocomplete list<br/>
-            acList.clear();
+            &emsp;acList.clear();
         </demo:PrettyPre>
 
-        <m:MaterialTitle title="With Image" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
+        <m:MaterialTitle title="Type TEXT" description="Type TEXT is just an alternative for combo box component."/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l6">
-                <m.autocomplete:MaterialAutoComplete ui:field="acWithImage" placeholder="Contacts" />
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem avatar="true">
-                        <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE"/>
-                        <m.html:Paragraph text="Yunalis Mat Zara'ai" fontSize="1.3em" opacity="0.71"/>
-                        <m.html:Paragraph text="yunna@mail.com" opacity="0.71"/>
-                    </m:MaterialCollectionItem>
-                    <m:MaterialCollectionItem avatar="true">
-                        <m:MaterialImage url="http://lorempixel.com/50/50/people?1" type="CIRCLE"/>
-                        <m.html:Paragraph text="Marjorie Matias" fontSize="1.3em" opacity="0.71"/>
-                        <m.html:Paragraph text="marjorie@mail.com" opacity="0.71"/>
-                    </m:MaterialCollectionItem>
-                    <m:MaterialCollectionItem avatar="true">
-                        <m:MaterialImage url="http://lorempixel.com/50/50/people?8" type="CIRCLE"/>
-                        <m.html:Paragraph text="Zenaida Ringor" fontSize="1.3em" opacity="0.71"/>
-                        <m.html:Paragraph text="zenaida@mail.com" opacity="0.71"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
+                <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" />
             </m:MaterialColumn>
         </m:MaterialRow>
-
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialAutoComplete ui:field="acWithImage" placeholder="Contacts" />
+            &emsp;&lt;ma:autocomplete.MaterialAutoComplete type="TEXT" limit="1" placeholder="States" />
         </demo:PrettyPre>
 
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiField MaterialAutoComplete acWithImage;<br/><br/>
-
-            &emsp;MaterialSuggestionOracle suggestions = new MaterialSuggestionOracle();<br/>
-            &emsp;suggestions.add("Yunalis Mat Zara'ai", new Image("http://b.vimeocdn.com/ps/339/488/3394886_300.jpg"));<br/>
-            &emsp;suggestions.add("Marjorie Matias", new Image("http://lorempixel.com/50/50/people?1"));<br/>
-            &emsp;suggestions.add("Zenaida Ringor", new Image("http://lorempixel.com/50/50/people?8"));<br/>
-            &emsp;suggestions.add("Hanna Matias", new Image("http://lorempixel.com/50/50/people?2"));<br/><br/>
-
-            &emsp;acWithImage.setSuggestions(suggestions);
-        </demo:PrettyPre>
-
-        <m:MaterialButton ui:field="btnGetAllContacts" text="Get All Contacts" waves="LIGHT" backgroundColor="blue"/>
-        <m:MaterialButton ui:field="btnClearWithImage" text="Clear" waves="DEFAULT" textColor="black" backgroundColor="white"/>
-
-        <m:MaterialTitle title="Limit items" description="You can specify the number of items on the autocomplete by adding an attribute limit='1'"/>
-
+        <m:MaterialTitle title="Limiting Items" description="You can limit the autocomplete items by adding limit='2' attribute."/>
         <m:MaterialRow>
             <m:MaterialColumn grid="s12 m12 l6">
-                <m.autocomplete:MaterialAutoComplete ui:field="acListLimit" placeholder="States" limit="1"/>
+                <ma:autocomplete.MaterialAutoComplete ui:field="acListLimit" limit="3" placeholder="Contacts" />
             </m:MaterialColumn>
         </m:MaterialRow>
-
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;m.addins:MaterialAutoComplete ui:field="acListLimit" placeholder="States" limit="1"/>
+            &emsp;&lt;ma:autocomplete.MaterialAutoComplete limit="3" placeholder="States" />
         </demo:PrettyPre>
-
-        <m:MaterialTitle title="Autocomplete Types" description="The default type of Material Autocomplete is CHIP while the other one is TEXT type which only act as a textBox component"/>
-        <m.autocomplete:MaterialAutoComplete ui:field="acText" type="TEXT" placeholder="Choose only one State"/>
     </g:HTMLPanel>
 </ui:UiBinder>
