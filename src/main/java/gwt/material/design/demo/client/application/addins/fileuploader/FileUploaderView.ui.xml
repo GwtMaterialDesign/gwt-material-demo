@@ -16,7 +16,7 @@
         </demo:PrettyPre>
         
         <m:MaterialTitle title="Note" description="The File Upload Addin component is just a Client UI, you can pass the Form url by adding url='/fileupload'. The server side must be developed by users, why? because some uses different Server Configs e.g GAE, Servlet or Commons API." />
-        <ma:fileuploader.MaterialFileUploader ui:field="uploader" url="/uploadServlet" maxFileSize="20" shadow="1">
+        <ma:fileuploader.MaterialFileUploader ui:field="uploader" url="/fileupload" method="POST" maxFileSize="20" shadow="1">
             <ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
         </ma:fileuploader.MaterialFileUploader>
 
@@ -25,7 +25,7 @@
             &emsp;&lt;ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" /><br/>
             &lt;/ma:fileuploader.MaterialFileUploader><br/>
         </demo:PrettyPre>
-        
+
         <m:MaterialTitle title="Properties" />
         <blockquote>
             <p><b>url</b> - Has to be specified on elements other than form (or when the form doesn't have an action attribute).</p>
@@ -34,6 +34,57 @@
             <p><b>acceptedFiles</b> - The default implementation of accept checks the file's mime type or extension against this list. This is a comma separated list of mime types or file extensions. Eg.: image/*,application/pdf,.psd.</p>
         </blockquote>
 
+        <m:MaterialTitle title="Flexible Integration" description="MaterialFileUploader can be use on any widgets to control the upload process." />
+        <m:MaterialImage url="http://i.imgur.com/GrM6eIz.gif" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m:MaterialRow><br/>
+            &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="cardUploader" acceptedFiles="image/*" grid="l4" url="/fileupload" preview="false" maxFileSize="20" shadow="0" clickable="cardUpload"><br/>
+            &emsp;&emsp;&lt;m:MaterialCard><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage ui:field="imgPreview" url="http://demo.geekslabs.com/materialize/v3.1/images/gallary/33.jpg" /><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialCardContent layoutPosition="RELATIVE"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblName" text="Sample.png" fontSize="1.5em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblSize" text="13 mb" fontSize="0.8em"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialProgress ui:field="progress" layoutPosition="ABSOLUTE" bottom="0" left="0" type="DETERMINATE" percent="0" /><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton m:id="cardUpload" layoutPosition="ABSOLUTE" top="-25" right="25" type="FLOATING" backgroundColor="pink" size="LARGE" iconType="CLOUD_UPLOAD" iconColor="white"/><br/>
+            &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+            &emsp;&emsp;&lt;/m:MaterialCard><br/>
+            &emsp;&lt;/ma:fileuploader.MaterialFileUploader><br/>
+            &lt;/m:MaterialRow><br/>
+        </demo:PrettyPre>
+        <m:MaterialTitle title="Java" description="Define all the fields and set the logic handlers during the upload process"/>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;@UiField MaterialFileUploader uploader, cardUploader;<br/>
+            @UiField MaterialImage imgPreview;<br/>
+            @UiField MaterialProgress progress;<br/>
+            @UiField MaterialLabel lblName, lblSize;<br/><br/>
+
+            // Added the progress to card uploader<br/>
+            cardUploader.addTotalUploadProgressHandler(new TotalUploadProgressEvent.TotalUploadProgressHandler() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onTotalUploadProgress(TotalUploadProgressEvent event) {<br/>
+            &emsp;&emsp;progress.setPercent(event.getProgress());<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+
+            cardUploader.addSuccessHandler(new SuccessEvent.SuccessHandler&lt;UploadFile>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onSuccess(SuccessEvent&lt;UploadFile> event) {<br/>
+            &emsp;&emsp;lblName.setText(event.getTarget().getName());<br/>
+            &emsp;&emsp;lblSize.setText(event.getTarget().getType());<br/>
+            &emsp;&emsp;imgPreview.setUrl(GWT.getHostPageBaseURL() + "uploadedFiles/" + event.getTarget().getName());<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+
+            cardUploader.addDragOverHandler(new DragOverEvent.DragOverHandler() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onDragOver(DragOverEvent event) {<br/>
+            &emsp;&emsp;MaterialAnimator.animate(Transition.RUBBERBAND, cardUploader, 0);<br/>
+            &emsp;}<br/>
+            });
+        </demo:PrettyPre>
+        
         <m:MaterialTitle title="Events" />
         <blockquote>
             <p><b>Drop</b> - The user dropped something onto the dropzone.</p>
@@ -57,5 +108,16 @@
         <m:MaterialAnchorButton href="https://gist.github.com/kevzlou7979/2d97b81437760016cad8ecc9d74b8f7a" target="_blank" text="File Upload Servlet" textColor="white" waves="DEFAULT" />
 
         <m:MaterialTitle title="Servlet definition" description="You must set your form url provided on gwt-material File Upload url inside the web.xml" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;servlet><br/>
+            &emsp;&lt;servlet-name><br/>fileUploaderServlet&lt;/servlet-name><br/>
+            &emsp;&lt;servlet-class><br/>gwt.material.design.demo.server.FileUploadServlet&lt;/servlet-class><br/>
+            &lt;/servlet><br/>
+            &lt;servlet-mapping><br/>
+            &emsp;&lt;servlet-name><br/>fileUploaderServlet&lt;/servlet-name><br/>
+            &emsp;&lt;url-pattern><br/>/fileupload&lt;/url-pattern><br/>
+            &lt;/servlet-mapping><br/>
+        </demo:PrettyPre>
+    
     </g:HTMLPanel>
 </ui:UiBinder>
