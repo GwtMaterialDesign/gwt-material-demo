@@ -61,6 +61,24 @@
             }
         </demo:PrettyPre>
 
+        <m:MaterialTitle title="Events" description="You can easily add Value Change Event and Selection Event on autocomplete component."/>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;acList.addSelectionHandler(new SelectionHandler&lt;SuggestOracle.Suggestion>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onSelection(SelectionEvent&lt;SuggestOracle.Suggestion> event) {<br/>
+            &emsp;&emsp;MaterialToast.fireToast(event.getSelectedItem().getDisplayString() + " Selected");<br/>
+            &emsp;}<br/>
+            });<br/><br/>
+            acList.addValueChangeHandler(new ValueChangeHandler&lt;List&lt;? extends SuggestOracle.Suggestion>>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public void onValueChange(ValueChangeEvent&lt;List&lt;? extends SuggestOracle.Suggestion>> event) {<br/>
+            &emsp;&emsp;for(SuggestOracle.Suggestion user : event.getValue()){<br/>
+            &emsp;&emsp;&emsp;MaterialToast.fireToast(user.getDisplayString());<br/>
+            &emsp;&emsp;}<br/>
+            &emsp;}<br/>
+            });
+        </demo:PrettyPre>
+
         <m:MaterialTitle title="Clearing Items on Autocomplete" description="You can easily clear the Autocomplete List Items by calling autocomlete.clear()"/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;acList.clear();
@@ -107,6 +125,6 @@
             &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="black" waves="DEFAULT"/><br/>
             &emsp;&lt;/m:MaterialModalFooter><br/>
             &lt;/m:MaterialModal><br/>
-        </demo:PrettyPre> 
+        </demo:PrettyPre>
     </g:HTMLPanel>
 </ui:UiBinder>

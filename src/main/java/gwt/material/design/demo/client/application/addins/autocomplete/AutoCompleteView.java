@@ -1,6 +1,10 @@
 package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.SelectionEvent;
+import com.google.gwt.event.logical.shared.SelectionHandler;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -35,6 +39,20 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         UserOracle oracle = new UserOracle();
         oracle.addContacts(getAllUsers());
         acList.setSuggestions(oracle);
+        acList.addSelectionHandler(new SelectionHandler<SuggestOracle.Suggestion>() {
+            @Override
+            public void onSelection(SelectionEvent<SuggestOracle.Suggestion> event) {
+                MaterialToast.fireToast(event.getSelectedItem().getDisplayString() + " Selected");
+            }
+        });
+        acList.addValueChangeHandler(new ValueChangeHandler<List<? extends SuggestOracle.Suggestion>>() {
+            @Override
+            public void onValueChange(ValueChangeEvent<List<? extends SuggestOracle.Suggestion>> event) {
+                for(SuggestOracle.Suggestion user : event.getValue()){
+                    MaterialToast.fireToast("Value : " + user.getDisplayString());
+                }
+            }
+        });
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
         acModal.setSuggestions(oracle);
