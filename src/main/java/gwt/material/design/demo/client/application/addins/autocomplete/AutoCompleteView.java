@@ -1,16 +1,14 @@
 package gwt.material.design.demo.client.application.addins.autocomplete;
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
-import gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle;
+import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
@@ -26,7 +24,10 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acListType, acListLimit;
+    MaterialAutoComplete acList, acListType, acListLimit, acModal;
+
+    @UiField
+    MaterialModal modal;
 
     @Inject
     AutoCompleteView(Binder uiBinder) {
@@ -36,6 +37,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         acList.setSuggestions(oracle);
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
+        acModal.setSuggestions(oracle);
     }
 
 
@@ -78,5 +80,15 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/kimcool/128.jpg", User.Position.MARKETING, false, "Travis Larson", "travis@mail.com", "123123123", "465-456-7654", "Makati City, Philippines", "Gwt Material"));
         list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", User.Position.MARKETING, false, "Clint Heller", "clint@mail.com", "123123123", "645-555-65", "Makati City, Philippines", "Gwt Material"));
         return list;
+    }
+
+    @UiHandler("btnOpenModal")
+    void onOpenModal(ClickEvent e) {
+        modal.openModal();
+    }
+
+    @UiHandler("btnClose")
+    void onClose(ClickEvent e) {
+        modal.closeModal();
     }
 }
