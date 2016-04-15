@@ -59,7 +59,7 @@
                 <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="brown darken-1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="white" width="100%"/>
             </m:MaterialColumn>
             <m:MaterialColumn grid="l2 s12 m6" backgroundColor="pink lighten-1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="AIRPLANEMODE_ON" iconColor="white" iconSize="MEDIUM" marginTop="50" />
+                <m:MaterialIcon iconType="AIRPLANEMODE_ACTIVE" iconColor="white" iconSize="MEDIUM" marginTop="50" />
                 <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="pink darken-1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="white" width="100%"/>
             </m:MaterialColumn>
         </ma:masonry.MaterialMasonry>
@@ -138,7 +138,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="In a Perfect World" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="Kodaline" textColor="white"/>
                         <m:MaterialLabel text="Recently Added" fontSize="0.8em" textColor="white"/>
@@ -154,7 +154,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="Supermodel" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="Foster the people" textColor="white"/>
                     </m:MaterialCardContent>
@@ -169,7 +169,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="Halcyon Days" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="Ellie Goulding" textColor="white"/>
                     </m:MaterialCardContent>
@@ -184,7 +184,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="Native" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="One Republic" textColor="white"/>
                     </m:MaterialCardContent>
@@ -200,7 +200,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="Comedown machine" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="The Strokes" textColor="white"/>
                     </m:MaterialCardContent>
@@ -215,7 +215,7 @@
                     <m:MaterialCardContent textColor="black">
                         <m:MaterialRow marginBottom="0">
                             <m:MaterialLabel fontSize="1.2em" text="Girl" textColor="white" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
+                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="white" grid="l3 s3 m3" />
                         </m:MaterialRow>
                         <m:MaterialLabel text="Pharrell Williams" textColor="white"/>
                     </m:MaterialCardContent>

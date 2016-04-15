@@ -36,7 +36,7 @@
                             <ma:tree.MaterialTreeItem resource="{res.superman}" iconColor="blue" text="superman.jpg" />
                             <ma:tree.MaterialTreeItem resource="{res.batman}" iconColor="blue" text="batman.jpg" />
                         </ma:tree.MaterialTreeItem>
-                        <ma:tree.MaterialTreeItem iconType="VIDEO_COLLECTION" iconColor="blue" text="Videos">
+                        <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" iconColor="blue" text="Videos">
                             <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Animations">
                                 <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_1.png"/>
                                 <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_2.png"/>
