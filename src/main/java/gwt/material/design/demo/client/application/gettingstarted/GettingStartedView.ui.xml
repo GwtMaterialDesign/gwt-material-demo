@@ -69,7 +69,7 @@
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &lt;inherits name="gwt.material.design.GwtMaterialWithJQuery" /&gt;
       </demo:PrettyPre>
-      <m:MaterialTitle description="Here are the available modules for 1.4 release"/>
+      <m:MaterialTitle description="Here are the available modules for 1.4 and above release"/>
       <demo:PrettyPre addStyleNames="lang-yaml z-depth-1">
         &emsp;- GwtMaterialDesign # Standard use with all resources (but will not load jQuery for you).<br/>
         - GwtMaterialDesignDebug # Same as above but will load non-minified js and Source URL included for Chrome debugging<br/>
