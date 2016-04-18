@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = 'BD97DC4C0F5D332905A646B4E5D88B7F';
+var $strongName = '3418464D5E6A505736566B595590708C';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {7:1, 14:1}, $intern_4 = {7:1, 87:1, 62:1, 67:1}, $intern_5 = {94:1, 7:1}, $intern_6 = {7:1}, $intern_7 = {7:1, 32:1, 14:1}, $intern_8 = {73:1, 40:1, 7:1, 30:1, 22:1}, $intern_9 = {77:1, 40:1, 7:1, 30:1, 22:1}, $intern_10 = {184:1, 40:1, 7:1, 30:1, 22:1}, $intern_11 = {156:1, 40:1, 7:1, 30:1, 22:1}, $intern_12 = {40:1, 157:1, 7:1, 30:1, 22:1}, $intern_13 = {40:1, 158:1, 7:1, 30:1, 22:1}, $intern_14 = {105:1, 7:1, 30:1, 22:1}, $intern_15 = {40:1, 222:1, 7:1, 30:1, 22:1}, $intern_16 = 1897, $intern_17 = {10:1}, $intern_18 = {220:1, 7:1, 87:1, 62:1, 67:1}, $intern_19 = {7:1, 30:1, 85:1}, $intern_20 = 4194303, $intern_21 = 1048575, $intern_22 = 4194304, $intern_23 = 17592186044416, $intern_24 = -9223372036854775808, $intern_25 = 524288, $intern_26 = {275:1, 7:1}, $intern_27 = {25:1, 24:1}, $intern_28 = {27:1, 10:1, 26:1, 25:1, 17:1, 24:1, 21:1}, $intern_29 = 1904, $intern_30 = {27:1, 10:1, 26:1, 25:1, 126:1, 17:1, 24:1, 21:1}, $intern_31 = 16384, $intern_32 = 65536, $intern_33 = 131072, $intern_34 = 1048576, $intern_35 = 16777216, $intern_36 = 33554432, $intern_37 = 67108864, $intern_38 = {27:1, 10:1, 26:1, 25:1, 31:1, 17:1, 24:1, 21:1}, $intern_39 = {27:1, 10:1, 26:1, 25:1, 31:1, 307:1, 17:1, 24:1, 21:1}, $intern_40 = {27:1, 10:1, 26:1, 34:1, 25:1, 17:1, 24:1, 21:1}, $intern_41 = {27:1, 10:1, 26:1, 243:1, 25:1, 31:1, 17:1, 24:1, 21:1}, $intern_42 = 65535, $intern_43 = {27:1, 10:1, 26:1, 25:1, 31:1, 17:1, 108:1, 24:1, 21:1}, $intern_44 = {368:1, 19:1}, $intern_45 = {19:1, 1871:1}, $intern_46 = {195:1, 19:1}, $intern_47 = {101:1}, $intern_48 = {27:1, 10:1, 26:1, 25:1, 31:1, 307:1, 17:1, 228:1, 24:1, 21:1}, $intern_49 = {244:1, 19:1}, $intern_50 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 17:1, 24:1, 21:1}, $intern_51 = {1869:1, 19:1}, $intern_52 = {161:1, 7:1, 30:1, 22:1}, $intern_53 = {7:1, 197:1, 67:1}, $intern_54 = {27:1, 10:1, 26:1, 25:1, 17:1, 108:1, 24:1, 21:1}, $intern_55 = {107:1}, $intern_56 = {10:1, 17:1, 48:1}, $intern_57 = {17:1}, $intern_58 = {194:1, 19:1}, $intern_59 = {274:1}, $intern_60 = {195:1, 19:1, 10:1, 1867:1}, $intern_61 = 1900, $intern_62 = {10:1, 59:1, 55:1}, $intern_63 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1}, $intern_64 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1}, $intern_65 = {29:1, 19:1}, $intern_66 = {217:1, 19:1}, $intern_67 = 4000, $intern_68 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1}, $intern_69 = {1874:1, 19:1}, $intern_70 = {1875:1, 19:1}, $intern_71 = {1876:1, 19:1}, $intern_72 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1, 115:1}, $intern_73 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 129:1}, $intern_74 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 99:1}, $intern_75 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1, 16:1}, $intern_76 = {496:1, 19:1}, $intern_77 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 49:1}, $intern_78 = {243:1, 31:1, 17:1}, $intern_79 = {10:1, 36:1}, $intern_80 = {10:1, 36:1, 59:1, 55:1}, $intern_81 = {69:1}, $intern_82 = {367:1, 19:1}, $intern_83 = {7:1, 87:1, 95:1, 62:1, 67:1}, $intern_84 = -2147483648, $intern_85 = {101:1, 180:1}, $intern_86 = 1894, $intern_87 = {101:1, 103:1}, $intern_88 = {93:1}, $intern_89 = {7:1, 101:1, 103:1}, $intern_90 = {7:1, 101:1, 180:1}, $intern_91 = {306:1}, $intern_92 = {7:1, 179:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {7:1, 14:1}, $intern_4 = {7:1, 87:1, 62:1, 67:1}, $intern_5 = {93:1, 7:1}, $intern_6 = {7:1}, $intern_7 = {7:1, 32:1, 14:1}, $intern_8 = {73:1, 40:1, 7:1, 30:1, 22:1}, $intern_9 = {77:1, 40:1, 7:1, 30:1, 22:1}, $intern_10 = {184:1, 40:1, 7:1, 30:1, 22:1}, $intern_11 = {156:1, 40:1, 7:1, 30:1, 22:1}, $intern_12 = {40:1, 157:1, 7:1, 30:1, 22:1}, $intern_13 = {40:1, 158:1, 7:1, 30:1, 22:1}, $intern_14 = {105:1, 7:1, 30:1, 22:1}, $intern_15 = {40:1, 222:1, 7:1, 30:1, 22:1}, $intern_16 = 1897, $intern_17 = {10:1}, $intern_18 = {220:1, 7:1, 87:1, 62:1, 67:1}, $intern_19 = {7:1, 30:1, 85:1}, $intern_20 = 4194303, $intern_21 = 1048575, $intern_22 = 4194304, $intern_23 = 17592186044416, $intern_24 = -9223372036854775808, $intern_25 = 524288, $intern_26 = {275:1, 7:1}, $intern_27 = {25:1, 24:1}, $intern_28 = {27:1, 10:1, 26:1, 25:1, 17:1, 24:1, 21:1}, $intern_29 = 1904, $intern_30 = {27:1, 10:1, 26:1, 25:1, 126:1, 17:1, 24:1, 21:1}, $intern_31 = 16384, $intern_32 = 65536, $intern_33 = 131072, $intern_34 = 1048576, $intern_35 = 16777216, $intern_36 = 33554432, $intern_37 = 67108864, $intern_38 = {27:1, 10:1, 26:1, 25:1, 31:1, 17:1, 24:1, 21:1}, $intern_39 = {27:1, 10:1, 26:1, 25:1, 31:1, 307:1, 17:1, 24:1, 21:1}, $intern_40 = {27:1, 10:1, 26:1, 34:1, 25:1, 17:1, 24:1, 21:1}, $intern_41 = {27:1, 10:1, 26:1, 243:1, 25:1, 31:1, 17:1, 24:1, 21:1}, $intern_42 = 65535, $intern_43 = {27:1, 10:1, 26:1, 25:1, 31:1, 17:1, 108:1, 24:1, 21:1}, $intern_44 = {368:1, 19:1}, $intern_45 = {19:1, 1871:1}, $intern_46 = {195:1, 19:1}, $intern_47 = {101:1}, $intern_48 = {27:1, 10:1, 26:1, 25:1, 31:1, 307:1, 17:1, 228:1, 24:1, 21:1}, $intern_49 = {244:1, 19:1}, $intern_50 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 17:1, 24:1, 21:1}, $intern_51 = {1869:1, 19:1}, $intern_52 = {161:1, 7:1, 30:1, 22:1}, $intern_53 = {7:1, 197:1, 67:1}, $intern_54 = {27:1, 10:1, 26:1, 25:1, 17:1, 108:1, 24:1, 21:1}, $intern_55 = {107:1}, $intern_56 = {10:1, 17:1, 48:1}, $intern_57 = {17:1}, $intern_58 = {194:1, 19:1}, $intern_59 = {274:1}, $intern_60 = {195:1, 19:1, 10:1, 1867:1}, $intern_61 = 1900, $intern_62 = {10:1, 59:1, 55:1}, $intern_63 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1}, $intern_64 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1}, $intern_65 = {29:1, 19:1}, $intern_66 = {217:1, 19:1}, $intern_67 = 4000, $intern_68 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1}, $intern_69 = {1874:1, 19:1}, $intern_70 = {1875:1, 19:1}, $intern_71 = {1876:1, 19:1}, $intern_72 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1, 115:1}, $intern_73 = {27:1, 10:1, 26:1, 34:1, 91:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 129:1}, $intern_74 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 99:1}, $intern_75 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 147:1, 39:1, 37:1, 23:1, 16:1}, $intern_76 = {496:1, 19:1}, $intern_77 = {27:1, 10:1, 26:1, 34:1, 25:1, 31:1, 17:1, 24:1, 21:1, 39:1, 37:1, 23:1, 49:1}, $intern_78 = {243:1, 31:1, 17:1}, $intern_79 = {10:1, 36:1}, $intern_80 = {10:1, 36:1, 59:1, 55:1}, $intern_81 = {69:1}, $intern_82 = {367:1, 19:1}, $intern_83 = {7:1, 87:1, 94:1, 62:1, 67:1}, $intern_84 = -2147483648, $intern_85 = {101:1, 180:1}, $intern_86 = 1894, $intern_87 = {101:1, 103:1}, $intern_88 = {92:1}, $intern_89 = {7:1, 101:1, 103:1}, $intern_90 = {7:1, 101:1, 180:1}, $intern_91 = {306:1}, $intern_92 = {7:1, 179:1};
 var _, initFnList_0, prototypesByTypeId_0 = {}, permutationId = -1;
 function typeMarkerFn(){
 }
@@ -15161,12 +15161,12 @@ function EnabledMixin(widget){
   AbstractMixin_0.call(this, widget);
 }
 
-defineClass(92, 110, {}, EnabledMixin);
+defineClass(96, 110, {}, EnabledMixin);
 _.isEnabled = function isEnabled_5(){
   return !containsStyle(this.uiObject.getStyleElement().className || '', 'disabled');
 }
 ;
-var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 92);
+var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 96);
 function EnabledMixin$1(val$enabled, val$obj){
   this.val$enabled2 = val$enabled;
   this.val$obj3 = val$obj;
@@ -18639,8 +18639,8 @@ function toast(msg, lifeMillis, id_0, className, callback){
   $wnd.jQuery('.toast.' + className).attr('id', id_0);
 }
 
-defineClass(96, 1, {}, MaterialToast_0);
-var Lgwt_material_design_client_ui_MaterialToast_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialToast', 96);
+defineClass(95, 1, {}, MaterialToast_0);
+var Lgwt_material_design_client_ui_MaterialToast_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialToast', 95);
 function $$init_2(this$static){
   this$static.position_0 = ($clinit_Position() , TOP_1);
 }
@@ -27271,8 +27271,8 @@ function $setLoop(this$static){
 
 function MaterialAreaChart(){
   var chartLoader;
-  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 94, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [165, 135, 157, 139, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [938, 1120, 1167, 1110, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [998, 1268, 807, 968, 1026]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [450, 288, 397, 215, 366])]);
-  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 94, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1167, 1110, 938, 1120, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [135, 165, 165, 157, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [450, 288, 397, 215, 366]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [998, 1268, 807, 968, 1026])]);
+  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 93, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [165, 135, 157, 139, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [938, 1120, 1167, 1110, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [998, 1268, 807, 968, 1026]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [450, 288, 397, 215, 366])]);
+  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 93, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1167, 1110, 938, 1120, 691]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [135, 165, 165, 157, 136]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [450, 288, 397, 215, 366]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [522, 599, 587, 615, 629]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [998, 1268, 807, 968, 1026])]);
   this.countries = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['Bolivia', 'Ecuador', 'Madagascar', 'Papua Guinea', 'Rwanda']);
   this.months = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['2004/05', '2005/06', '2006/07', '2007/08', '2008/09']);
   $initWidget(this, $build_f_MaterialColumn1_0(new MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets(this)));
@@ -27424,8 +27424,8 @@ function MaterialBarChart(){
   var chartLoader;
   this.countries = initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['Austria', 'Bulgaria', 'Denmark', 'Greece']);
   this.years = initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [2003, 2004, 2005]);
-  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 94, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1336060, 1538156, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [400361, 366849, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1001582, 1119450, 993360]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [997974, 941795, 930593])]);
-  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 94, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1538156, 1336060, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [366849, 400361, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1001582, 993360, 1119450]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [941795, 997974, 930593])]);
+  this.values = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 93, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1336060, 1538156, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [400361, 366849, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1001582, 1119450, 993360]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [997974, 941795, 930593])]);
+  this.valuesInitial = initValues(getClassLiteralForArray(I_classLit, 2), $intern_3, 93, 0, [initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1538156, 1336060, 1576579]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [366849, 400361, 440514]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [1001582, 993360, 1119450]), initValues(getClassLiteralForArray(I_classLit, 1), $intern_5, 0, 7, [941795, 997974, 930593])]);
   $initWidget(this, $build_f_MaterialColumn1_1(new MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets(this)));
   chartLoader = new ChartLoader(initValues(getClassLiteralForArray(Lcom_googlecode_gwt_charts_client_ChartPackage_2_classLit, 1), $intern_7, 117, 0, [($clinit_ChartPackage() , CORECHART)]));
   $loadApi(chartLoader, new MaterialBarChart$1(this));
@@ -28099,13 +28099,13 @@ function IndexOutOfBoundsException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(95, 62, $intern_83, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
-var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 95);
+defineClass(94, 62, $intern_83, IndexOutOfBoundsException, IndexOutOfBoundsException_0);
+var Ljava_lang_IndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'IndexOutOfBoundsException', 94);
 function ArrayIndexOutOfBoundsException(){
   IndexOutOfBoundsException.call(this);
 }
 
-defineClass(494, 95, $intern_83, ArrayIndexOutOfBoundsException);
+defineClass(494, 94, $intern_83, ArrayIndexOutOfBoundsException);
 var Ljava_lang_ArrayIndexOutOfBoundsException_2_classLit = createForClass('java.lang', 'ArrayIndexOutOfBoundsException', 494);
 function ArrayStoreException(){
   RuntimeException.call(this);
@@ -28627,7 +28627,7 @@ function $equals_2(this$static, obj){
     return false;
   }
   for (entry$iterator = otherMap.entrySet_0().iterator(); entry$iterator.hasNext();) {
-    entry = dynamicCast(entry$iterator.next_0(), 93);
+    entry = dynamicCast(entry$iterator.next_0(), 92);
     if (!$containsEntry(this$static, entry)) {
       return false;
     }
@@ -28638,7 +28638,7 @@ function $equals_2(this$static, obj){
 function $implFindEntry(this$static, key, remove){
   var entry, iter, k;
   for (iter = this$static.entrySet_0().iterator(); iter.hasNext();) {
-    entry = dynamicCast(iter.next_0(), 93);
+    entry = dynamicCast(iter.next_0(), 92);
     k = entry.getKey();
     if (maskUndefined(key) === maskUndefined(k) || key != null && equals_Ljava_lang_Object__Z__devirtual$(key, k)) {
       if (remove) {
@@ -28697,7 +28697,7 @@ _.toString$ = function toString_24(){
   sb = new StringBuilder_1('{');
   comma = false;
   for (entry$iterator = this.entrySet_0().iterator(); entry$iterator.hasNext();) {
-    entry = dynamicCast(entry$iterator.next_0(), 93);
+    entry = dynamicCast(entry$iterator.next_0(), 92);
     comma?(sb.string += ', ' , sb):(comma = true);
     $append_3(sb, $toString_4(this, entry.getKey()));
     sb.string += '=';
@@ -28785,8 +28785,8 @@ _.hashCode$ = function hashCode_25(){
 ;
 var Ljava_util_AbstractSet_2_classLit = createForClass('java.util', 'AbstractSet', 1893);
 function $contains_0(this$static, o){
-  if (instanceOf(o, 93)) {
-    return $containsEntry(this$static.this$01, dynamicCast(o, 93));
+  if (instanceOf(o, 92)) {
+    return $containsEntry(this$static.this$01, dynamicCast(o, 92));
   }
   return false;
 }
@@ -28807,7 +28807,7 @@ _.iterator = function iterator_10(){
 _.remove_2 = function remove_26(entry){
   var key;
   if ($contains_0(this, entry)) {
-    key = dynamicCast(entry, 93).getKey();
+    key = dynamicCast(entry, 92).getKey();
     this.this$01.remove_4(key);
     return true;
   }
@@ -28843,7 +28843,7 @@ _.hasNext = function hasNext_6(){
 }
 ;
 _.next_0 = function next_7(){
-  return checkStructuralChange(this.this$01, this) , checkCriticalElement($hasNext(this)) , this.last = this.current , dynamicCast(this.current.next_0(), 93);
+  return checkStructuralChange(this.this$01, this) , checkCriticalElement($hasNext(this)) , this.last = this.current , dynamicCast(this.current.next_0(), 92);
 }
 ;
 _.remove_1 = function remove_27(){
@@ -29005,7 +29005,7 @@ _.size_1 = function size_7(){
 var Ljava_util_AbstractMap$1_2_classLit = createForClass('java.util', 'AbstractMap/1', 127);
 function $next_5(this$static){
   var entry;
-  entry = dynamicCast(this$static.val$outerIter2.next_0(), 93);
+  entry = dynamicCast(this$static.val$outerIter2.next_0(), 92);
   return entry.getKey();
 }
 
@@ -29053,7 +29053,7 @@ _.size_1 = function size_8(){
 var Ljava_util_AbstractMap$2_2_classLit = createForClass('java.util', 'AbstractMap/2', 312);
 function $next_6(this$static){
   var entry;
-  entry = dynamicCast(this$static.val$outerIter2.next_0(), 93);
+  entry = dynamicCast(this$static.val$outerIter2.next_0(), 92);
   return entry.getValue_0();
 }
 
@@ -29085,10 +29085,10 @@ function $setValue_13(this$static, value_0){
 defineClass(513, 1, $intern_88);
 _.equals$ = function equals_25(other){
   var entry;
-  if (!instanceOf(other, 93)) {
+  if (!instanceOf(other, 92)) {
     return false;
   }
-  entry = dynamicCast(other, 93);
+  entry = dynamicCast(other, 92);
   return equals_33(this.key, entry.getKey()) && equals_33(this.value_0, entry.getValue_0());
 }
 ;
@@ -29123,10 +29123,10 @@ var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 
 defineClass(1895, 1, $intern_88);
 _.equals$ = function equals_26(other){
   var entry;
-  if (!instanceOf(other, 93)) {
+  if (!instanceOf(other, 92)) {
     return false;
   }
-  entry = dynamicCast(other, 93);
+  entry = dynamicCast(other, 92);
   return equals_33(this.getKey(), entry.getKey()) && equals_33(this.getValue_0(), entry.getValue_0());
 }
 ;
@@ -29717,7 +29717,7 @@ var Ljava_util_Collections$UnmodifiableSet_2_classLit = createForClass('java.uti
 function $wrap(array, size_0){
   var i;
   for (i = 0; i < size_0; ++i) {
-    setCheck(array, i, new Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(dynamicCast(array[i], 93)));
+    setCheck(array, i, new Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(dynamicCast(array[i], 92)));
   }
 }
 
@@ -29750,7 +29750,7 @@ _.hasNext = function hasNext_12(){
 }
 ;
 _.next_0 = function next_13(){
-  return new Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(dynamicCast(this.val$it2.next_0(), 93));
+  return new Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(dynamicCast(this.val$it2.next_0(), 92));
 }
 ;
 _.remove_1 = function remove_42(){
@@ -30017,7 +30017,7 @@ function $hasNext_0(this$static){
 function InternalJsHashCodeMap$1(this$0){
   this.this$01 = this$0;
   this.keys_0 = $keys(this.this$01);
-  this.chain = initDim(Ljava_util_Map$Entry_2_classLit, $intern_3, 93, 0, 0, 1);
+  this.chain = initDim(Ljava_util_Map$Entry_2_classLit, $intern_3, 92, 0, 0, 1);
 }
 
 defineClass(538, 1, {}, InternalJsHashCodeMap$1);
@@ -30098,7 +30098,7 @@ function InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1(this$1){
 defineClass(537, 63, $intern_89, InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1);
 _.remove_3 = function remove_45(index_0){
   var removed;
-  return removed = dynamicCast($remove_11(this, index_0), 93) , $remove_14(this.this$11, removed.getKey()) , removed;
+  return removed = dynamicCast($remove_11(this, index_0), 92) , $remove_14(this.this$11, removed.getKey()) , removed;
 }
 ;
 var Ljava_util_InternalJsHashCodeMap$InternalJsHashCodeMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsHashCodeMap/InternalJsHashCodeMapLegacy/1', 537);
@@ -30348,7 +30348,7 @@ function InternalJsStringMap$InternalJsStringMapLegacy$1(this$1){
 defineClass(530, 63, $intern_89, InternalJsStringMap$InternalJsStringMapLegacy$1);
 _.remove_3 = function remove_49(index_0){
   var removed;
-  return removed = dynamicCast($remove_11(this, index_0), 93) , $remove_15(this.this$11, ':' + dynamicCastToString(removed.getKey())) , removed;
+  return removed = dynamicCast($remove_11(this, index_0), 92) , $remove_15(this.this$11, ':' + dynamicCastToString(removed.getKey())) , removed;
 }
 ;
 var Ljava_util_InternalJsStringMap$InternalJsStringMapLegacy$1_2_classLit = createForClass('java.util', 'InternalJsStringMap/InternalJsStringMapLegacy/1', 530);
@@ -30501,11 +30501,11 @@ function LinkedHashMap$ChainEntry_0(this$0, key, value_0){
   AbstractMap$SimpleEntry.call(this, key, value_0);
 }
 
-defineClass(204, 311, {204:1, 93:1}, LinkedHashMap$ChainEntry, LinkedHashMap$ChainEntry_0);
+defineClass(204, 311, {204:1, 92:1}, LinkedHashMap$ChainEntry, LinkedHashMap$ChainEntry_0);
 var Ljava_util_LinkedHashMap$ChainEntry_2_classLit = createForClass('java.util', 'LinkedHashMap/ChainEntry', 204);
 function $contains_2(this$static, o){
-  if (instanceOf(o, 93)) {
-    return $containsEntry(this$static.this$01, dynamicCast(o, 93));
+  if (instanceOf(o, 92)) {
+    return $containsEntry(this$static.this$01, dynamicCast(o, 92));
   }
   return false;
 }
@@ -30526,7 +30526,7 @@ _.iterator = function iterator_20(){
 _.remove_2 = function remove_51(entry){
   var key;
   if ($contains_2(this, entry)) {
-    key = dynamicCast(entry, 93).getKey();
+    key = dynamicCast(entry, 92).getKey();
     $remove_16(this.this$01, key);
     return true;
   }
