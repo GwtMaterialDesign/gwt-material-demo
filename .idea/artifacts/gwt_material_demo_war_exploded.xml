@@ -1,15 +1,15 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="gwt-material-demo:war exploded">
-    <output-path>$PROJECT_DIR$/target/gwt-material-demo-1.5-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/target/gwt-material-demo-1.5.0</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="gwt-material-demo" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material:1.5-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-themes:1.5-SNAPSHOT" />
-          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-addins:1.5-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material:1.5.0" />
+          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-themes:1.5.0" />
+          <element id="library" level="project" name="Maven: com.github.gwtmaterialdesign:gwt-material-addins:1.5.0" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-1.0-sdk:1.9.24" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-endpoints:1.9.24" />
           <element id="library" level="project" name="Maven: com.google.appengine:appengine-api-labs:1.9.24" />
@@ -25,7 +25,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/gwt-material-demo-1.5-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/gwt-material-demo-1.5.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="gwt-material-demo/web/Web" />
       <element id="gwt-compiler-output" facet="gwt-material-demo/gwt/GWT" />
