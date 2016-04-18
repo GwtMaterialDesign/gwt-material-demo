@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>gwt-material-parent</artifactId>
+        <groupId>com.github.gwtmaterialdesign</groupId>
+        <version>1.5.0</version>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.5.0-SNAPSHOT</version>
-    <name>GwtMaterial - Demo</name>
-    <description>GWT Material Design - Demo</description>
+    <version>1.5.0</version>
+    <name>Gwt Material Demo</name>
+    <description>Showcase for gwt-material</description>
 
     <prerequisites>
         <maven>3.2.3</maven>
@@ -29,7 +35,7 @@
         <gwt.version>2.7.0</gwt.version>
         <gwtp.version>1.5.1</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.5.0-SNAPSHOT</gwt-material.version>
+        <gwt-material.version>1.5.0</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
