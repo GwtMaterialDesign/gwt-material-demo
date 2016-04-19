@@ -32,111 +32,120 @@
 <span class="sourceLineNo">024</span>import com.google.gwt.dom.client.Element;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Style;<a name="line.25"></a>
 <span class="sourceLineNo">026</span><a name="line.26"></a>
-<span class="sourceLineNo">027</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.client.base.mixin.ToggleStyleMixin;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.constants.IconPosition;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.constants.IconSize;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.client.base.AbstractButton;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import gwt.material.design.client.base.HasIcon;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>import gwt.material.design.client.base.HasSeparator;<a name="line.33"></a>
-<span class="sourceLineNo">034</span>import gwt.material.design.client.constants.IconType;<a name="line.34"></a>
-<span class="sourceLineNo">035</span><a name="line.35"></a>
-<span class="sourceLineNo">036</span>//@formatter:off<a name="line.36"></a>
-<span class="sourceLineNo">037</span><a name="line.37"></a>
-<span class="sourceLineNo">038</span>/**<a name="line.38"></a>
-<span class="sourceLineNo">039</span> * We have included 740 Material Design Icons courtesy of Google.<a name="line.39"></a>
-<span class="sourceLineNo">040</span> * You can download them directly from the Material Design specs.<a name="line.40"></a>
-<span class="sourceLineNo">041</span> *<a name="line.41"></a>
-<span class="sourceLineNo">042</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * &lt;pre&gt;<a name="line.43"></a>
-<span class="sourceLineNo">044</span> *{@code &lt;m:MaterialIcon waves="LIGHT" icon="POLYMER"/&gt;<a name="line.44"></a>
-<span class="sourceLineNo">045</span> * &lt;m:MaterialIcon waves="LIGHT" icon="POLYMER" textColor="blue" type="CIRCLE"/&gt;<a name="line.45"></a>
-<span class="sourceLineNo">046</span> * &lt;m:MaterialIcon waves="LIGHT" icon="POLYMER" backgroundColor="blue" textColor="white" type="CIRCLE" tooltip="Tooltip" tooltipLocation="BOTTOM"/&gt;}<a name="line.46"></a>
-<span class="sourceLineNo">047</span> * &lt;/pre&gt;<a name="line.47"></a>
-<span class="sourceLineNo">048</span> *<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * @author kevzlou7979<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * @author Ben Dol<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * @see &lt;a href="http://www.google.com/design/icons/"&gt;Search Google Icons&lt;/a&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#icons"&gt;Material Icons Documentation&lt;/a&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span> */<a name="line.53"></a>
-<span class="sourceLineNo">054</span>//@formatter:on<a name="line.54"></a>
-<span class="sourceLineNo">055</span>public class MaterialIcon extends AbstractButton implements HasSeparator, HasIcon {<a name="line.55"></a>
-<span class="sourceLineNo">056</span><a name="line.56"></a>
-<span class="sourceLineNo">057</span>    private final CssNameMixin&lt;MaterialIcon, IconPosition&gt; posMixin = new CssNameMixin&lt;&gt;(this);<a name="line.57"></a>
-<span class="sourceLineNo">058</span>    private final CssNameMixin&lt;MaterialIcon, IconSize&gt; sizeMixin = new CssNameMixin&lt;&gt;(this);<a name="line.58"></a>
-<span class="sourceLineNo">059</span>    private final ToggleStyleMixin&lt;MaterialIcon&gt; prefixMixin = new ToggleStyleMixin&lt;&gt;(this, "prefix");<a name="line.59"></a>
-<span class="sourceLineNo">060</span><a name="line.60"></a>
-<span class="sourceLineNo">061</span>    /**<a name="line.61"></a>
-<span class="sourceLineNo">062</span>     * Creates an empty icon.<a name="line.62"></a>
-<span class="sourceLineNo">063</span>     */<a name="line.63"></a>
-<span class="sourceLineNo">064</span>    public MaterialIcon() {<a name="line.64"></a>
-<span class="sourceLineNo">065</span>        super();<a name="line.65"></a>
-<span class="sourceLineNo">066</span>        addStyleName("material-icons");<a name="line.66"></a>
-<span class="sourceLineNo">067</span>    }<a name="line.67"></a>
-<span class="sourceLineNo">068</span><a name="line.68"></a>
-<span class="sourceLineNo">069</span>    /**<a name="line.69"></a>
-<span class="sourceLineNo">070</span>     * Sets a simple icon with a given type.<a name="line.70"></a>
-<span class="sourceLineNo">071</span>     */<a name="line.71"></a>
-<span class="sourceLineNo">072</span>    public MaterialIcon(IconType iconType) {<a name="line.72"></a>
-<span class="sourceLineNo">073</span>        this();<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        setIconType(iconType);<a name="line.74"></a>
-<span class="sourceLineNo">075</span>    }<a name="line.75"></a>
-<span class="sourceLineNo">076</span><a name="line.76"></a>
-<span class="sourceLineNo">077</span>    /**<a name="line.77"></a>
-<span class="sourceLineNo">078</span>     * Sets an icon with textColor and backgroundColor.<a name="line.78"></a>
-<span class="sourceLineNo">079</span>     */<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    public MaterialIcon(IconType iconType, String textColor, String bgColor) {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        this();<a name="line.81"></a>
-<span class="sourceLineNo">082</span>        setIconType(iconType);<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        setTextColor(textColor);<a name="line.83"></a>
-<span class="sourceLineNo">084</span>        setBackgroundColor(bgColor);<a name="line.84"></a>
-<span class="sourceLineNo">085</span>    }<a name="line.85"></a>
-<span class="sourceLineNo">086</span><a name="line.86"></a>
-<span class="sourceLineNo">087</span>    @Override<a name="line.87"></a>
-<span class="sourceLineNo">088</span>    protected Element createElement() {<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        return Document.get().createElement("i");<a name="line.89"></a>
+<span class="sourceLineNo">027</span>import gwt.material.design.client.base.mixin.ColorsMixin;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.base.mixin.ToggleStyleMixin;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.constants.IconPosition;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.client.constants.IconSize;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.client.base.AbstractButton;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.client.base.HasIcon;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import gwt.material.design.client.base.HasSeparator;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import gwt.material.design.client.constants.IconType;<a name="line.35"></a>
+<span class="sourceLineNo">036</span><a name="line.36"></a>
+<span class="sourceLineNo">037</span>//@formatter:off<a name="line.37"></a>
+<span class="sourceLineNo">038</span><a name="line.38"></a>
+<span class="sourceLineNo">039</span>/**<a name="line.39"></a>
+<span class="sourceLineNo">040</span> * We have included 740 Material Design Icons courtesy of Google.<a name="line.40"></a>
+<span class="sourceLineNo">041</span> * You can download them directly from the Material Design specs.<a name="line.41"></a>
+<span class="sourceLineNo">042</span> *<a name="line.42"></a>
+<span class="sourceLineNo">043</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span> * &lt;pre&gt;<a name="line.44"></a>
+<span class="sourceLineNo">045</span> *{@code &lt;m:MaterialIcon waves="LIGHT" iconType="POLYMER"/&gt;<a name="line.45"></a>
+<span class="sourceLineNo">046</span> * &lt;m:MaterialIcon waves="LIGHT" iconType="POLYMER" textColor="blue" type="CIRCLE"/&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;m:MaterialIcon waves="LIGHT" iconType="POLYMER" backgroundColor="blue" textColor="white" type="CIRCLE" tooltip="Tooltip" tooltipLocation="BOTTOM"/&gt;}<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * &lt;/pre&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> *<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * @author kevzlou7979<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * @author Ben Dol<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * @see &lt;a href="http://www.google.com/design/icons/"&gt;Search Google Icons&lt;/a&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#icons"&gt;Material Icons Documentation&lt;/a&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span> */<a name="line.54"></a>
+<span class="sourceLineNo">055</span>//@formatter:on<a name="line.55"></a>
+<span class="sourceLineNo">056</span>public class MaterialIcon extends AbstractButton implements HasSeparator, HasIcon {<a name="line.56"></a>
+<span class="sourceLineNo">057</span><a name="line.57"></a>
+<span class="sourceLineNo">058</span>    private final CssNameMixin&lt;MaterialIcon, IconPosition&gt; posMixin = new CssNameMixin&lt;&gt;(this);<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    private final CssNameMixin&lt;MaterialIcon, IconSize&gt; sizeMixin = new CssNameMixin&lt;&gt;(this);<a name="line.59"></a>
+<span class="sourceLineNo">060</span>    private final ToggleStyleMixin&lt;MaterialIcon&gt; prefixMixin = new ToggleStyleMixin&lt;&gt;(this, "prefix");<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    private final ColorsMixin&lt;MaterialIcon&gt; colorsMixin = new ColorsMixin&lt;&gt;(this);<a name="line.61"></a>
+<span class="sourceLineNo">062</span>    /**<a name="line.62"></a>
+<span class="sourceLineNo">063</span>     * Creates an empty icon.<a name="line.63"></a>
+<span class="sourceLineNo">064</span>     */<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    public MaterialIcon() {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        super();<a name="line.66"></a>
+<span class="sourceLineNo">067</span>        addStyleName("material-icons");<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    }<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>    /**<a name="line.70"></a>
+<span class="sourceLineNo">071</span>     * Sets a simple icon with a given type.<a name="line.71"></a>
+<span class="sourceLineNo">072</span>     */<a name="line.72"></a>
+<span class="sourceLineNo">073</span>    public MaterialIcon(IconType iconType) {<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        this();<a name="line.74"></a>
+<span class="sourceLineNo">075</span>        setIconType(iconType);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    }<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>    /**<a name="line.78"></a>
+<span class="sourceLineNo">079</span>     * Sets an icon with textColor and backgroundColor.<a name="line.79"></a>
+<span class="sourceLineNo">080</span>     */<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    public MaterialIcon(IconType iconType, String textColor, String bgColor) {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        this();<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        setIconType(iconType);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        setTextColor(textColor);<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        setBackgroundColor(bgColor);<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    }<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span>    public void setInnerText(String innerText){<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        getElement().setInnerText(innerText);<a name="line.89"></a>
 <span class="sourceLineNo">090</span>    }<a name="line.90"></a>
 <span class="sourceLineNo">091</span><a name="line.91"></a>
 <span class="sourceLineNo">092</span>    @Override<a name="line.92"></a>
-<span class="sourceLineNo">093</span>    public MaterialIcon getIcon() {<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        return this;<a name="line.94"></a>
+<span class="sourceLineNo">093</span>    protected Element createElement() {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        return Document.get().createElement("i");<a name="line.94"></a>
 <span class="sourceLineNo">095</span>    }<a name="line.95"></a>
 <span class="sourceLineNo">096</span><a name="line.96"></a>
 <span class="sourceLineNo">097</span>    @Override<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    public void setIconType(IconType icon) {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        getElement().setInnerText(icon.getCssName());<a name="line.99"></a>
+<span class="sourceLineNo">098</span>    public MaterialIcon getIcon() {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        return this;<a name="line.99"></a>
 <span class="sourceLineNo">100</span>    }<a name="line.100"></a>
 <span class="sourceLineNo">101</span><a name="line.101"></a>
-<span class="sourceLineNo">102</span>    @Override<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public void setIconPosition(IconPosition position) {<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        posMixin.setCssName(position);<a name="line.104"></a>
-<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
-<span class="sourceLineNo">106</span><a name="line.106"></a>
-<span class="sourceLineNo">107</span>    @Override<a name="line.107"></a>
-<span class="sourceLineNo">108</span>    public void setIconSize(IconSize size) {<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        sizeMixin.setCssName(size);<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
-<span class="sourceLineNo">111</span><a name="line.111"></a>
-<span class="sourceLineNo">112</span>    @Override<a name="line.112"></a>
-<span class="sourceLineNo">113</span>    public void setIconColor(String iconColor) {<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        getElement().getStyle().setColor(iconColor);<a name="line.114"></a>
-<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
-<span class="sourceLineNo">116</span><a name="line.116"></a>
-<span class="sourceLineNo">117</span>    @Override<a name="line.117"></a>
-<span class="sourceLineNo">118</span>    public void setIconFontSize(double size, Style.Unit unit) {<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        getElement().getStyle().setFontSize(size, unit);<a name="line.119"></a>
-<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
-<span class="sourceLineNo">121</span><a name="line.121"></a>
-<span class="sourceLineNo">122</span>    @Override<a name="line.122"></a>
-<span class="sourceLineNo">123</span>    public void setIconPrefix(boolean prefix) {<a name="line.123"></a>
-<span class="sourceLineNo">124</span>        prefixMixin.setOn(prefix);<a name="line.124"></a>
-<span class="sourceLineNo">125</span>    }<a name="line.125"></a>
-<span class="sourceLineNo">126</span><a name="line.126"></a>
-<span class="sourceLineNo">127</span>    @Override<a name="line.127"></a>
-<span class="sourceLineNo">128</span>    public boolean isIconPrefix() {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>        return prefixMixin.isOn();<a name="line.129"></a>
-<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
-<span class="sourceLineNo">131</span>}<a name="line.131"></a>
+<span class="sourceLineNo">102</span>    public IconType getIconType() {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        return IconType.fromStyleName(getElement().getInnerText());<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
+<span class="sourceLineNo">105</span><a name="line.105"></a>
+<span class="sourceLineNo">106</span>    @Override<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    public void setIconType(IconType icon) {<a name="line.107"></a>
+<span class="sourceLineNo">108</span>        getElement().setInnerText(icon.getCssName());<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    }<a name="line.109"></a>
+<span class="sourceLineNo">110</span><a name="line.110"></a>
+<span class="sourceLineNo">111</span>    @Override<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    public void setIconPosition(IconPosition position) {<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        posMixin.setCssName(position);<a name="line.113"></a>
+<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
+<span class="sourceLineNo">115</span><a name="line.115"></a>
+<span class="sourceLineNo">116</span>    @Override<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    public void setIconSize(IconSize size) {<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        sizeMixin.setCssName(size);<a name="line.118"></a>
+<span class="sourceLineNo">119</span>    }<a name="line.119"></a>
+<span class="sourceLineNo">120</span><a name="line.120"></a>
+<span class="sourceLineNo">121</span>    @Override<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public void setIconColor(String iconColor) {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        colorsMixin.setTextColor(iconColor);<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>    @Override<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    public void setIconFontSize(double size, Style.Unit unit) {<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        getElement().getStyle().setFontSize(size, unit);<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
+<span class="sourceLineNo">130</span><a name="line.130"></a>
+<span class="sourceLineNo">131</span>    @Override<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    public void setIconPrefix(boolean prefix) {<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        prefixMixin.setOn(prefix);<a name="line.133"></a>
+<span class="sourceLineNo">134</span>    }<a name="line.134"></a>
+<span class="sourceLineNo">135</span><a name="line.135"></a>
+<span class="sourceLineNo">136</span>    @Override<a name="line.136"></a>
+<span class="sourceLineNo">137</span>    public boolean isIconPrefix() {<a name="line.137"></a>
+<span class="sourceLineNo">138</span>        return prefixMixin.isOn();<a name="line.138"></a>
+<span class="sourceLineNo">139</span>    }<a name="line.139"></a>
+<span class="sourceLineNo">140</span>}<a name="line.140"></a>
 
 
 
