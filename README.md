@@ -23,7 +23,8 @@ Demo application to show the features of the [gwt-material](https://github.com/G
 ```
 
 ### Javadocs
-[http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs/](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs/)
+[GWT Material](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs/) <br/>
+[GWT Material Addins](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs-addins/)
 
 If you want to contribute, visit us at https://gitter.im/GwtMaterialDesign/gwt-material
 
