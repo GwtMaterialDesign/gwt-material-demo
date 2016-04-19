@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>package gwt.material.design.addins.client.autocomplete;<a name="line.1"></a>
+<span class="sourceLineNo">002</span><a name="line.2"></a>
+<span class="sourceLineNo">003</span>/*<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * #%L<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * GwtMaterial<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Copyright (C) 2015 GwtMaterialDesign<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * %%<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * you may not use this file except in compliance with the License.<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * You may obtain a copy of the License at<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * <a name="line.14"></a>
+<span class="sourceLineNo">015</span> * Unless required by applicable law or agreed to in writing, software<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * See the License for the specific language governing permissions and<a name="line.18"></a>
+<span class="sourceLineNo">019</span> * limitations under the License.<a name="line.19"></a>
+<span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
+<span class="sourceLineNo">021</span> */<a name="line.21"></a>
+<span class="sourceLineNo">022</span><a name="line.22"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Document;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.event.dom.client.*;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.event.logical.shared.*;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import com.google.gwt.user.client.DOM;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import com.google.gwt.user.client.ui.*;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import com.google.gwt.user.client.ui.SuggestOracle.Suggestion;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.addins.client.MaterialResourceInjector;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.addins.client.autocomplete.constants.AutocompleteType;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.client.base.*;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import gwt.material.design.client.base.mixin.ErrorMixin;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import gwt.material.design.client.base.mixin.ProgressMixin;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import gwt.material.design.client.constants.IconType;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import gwt.material.design.client.constants.ProgressType;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import gwt.material.design.client.ui.MaterialChip;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import gwt.material.design.client.ui.MaterialLabel;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>import gwt.material.design.client.ui.html.ListItem;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>import gwt.material.design.client.ui.html.UnorderedList;<a name="line.41"></a>
+<span class="sourceLineNo">042</span><a name="line.42"></a>
+<span class="sourceLineNo">043</span>import java.util.*;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>import java.util.Map.Entry;<a name="line.44"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>//@formatter:off<a name="line.46"></a>
+<span class="sourceLineNo">047</span>/**<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * &lt;p&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * Use GWT Autocomplete to search for matches from local or remote data sources.<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * We used MultiWordSuggestOracle to populate the list to be added on the<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * autocomplete values.<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * &lt;/p&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> *<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * &lt;pre&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * {@code<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * }<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * &lt;/pre&gt;<a name="line.59"></a>
+<span class="sourceLineNo">060</span> *<a name="line.60"></a>
+<span class="sourceLineNo">061</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span> * &lt;pre&gt;<a name="line.62"></a>
+<span class="sourceLineNo">063</span> * {@code<a name="line.63"></a>
+<span class="sourceLineNo">064</span> *  &lt;ma:autocomplete.MaterialAutoComplete ui:field="autocomplete" placeholder="States" /&gt;}<a name="line.64"></a>
+<span class="sourceLineNo">065</span> * &lt;/pre&gt;<a name="line.65"></a>
+<span class="sourceLineNo">066</span> *<a name="line.66"></a>
+<span class="sourceLineNo">067</span> * &lt;h3&gt;Java Usage:&lt;/h3&gt;<a name="line.67"></a>
+<span class="sourceLineNo">068</span> *<a name="line.68"></a>
+<span class="sourceLineNo">069</span> * &lt;p&gt;<a name="line.69"></a>
+<span class="sourceLineNo">070</span> * To use your domain object inside the MaterialAutoComplete, for example, an object<a name="line.70"></a>
+<span class="sourceLineNo">071</span> * "User", you can subclass the {@link gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle} and {@link Suggestion}, like this:<a name="line.71"></a>
+<span class="sourceLineNo">072</span> * &lt;/p&gt;<a name="line.72"></a>
+<span class="sourceLineNo">073</span> * &lt;p&gt;&lt;pre&gt;<a name="line.73"></a>
+<span class="sourceLineNo">074</span> * public class UserOracle extends MaterialSuggestionOracle {<a name="line.74"></a>
+<span class="sourceLineNo">075</span> *     private List&amp;lt;User&amp;gt; contacts = new LinkedList&amp;lt;&amp;gt;();<a name="line.75"></a>
+<span class="sourceLineNo">076</span> *<a name="line.76"></a>
+<span class="sourceLineNo">077</span> *     public void addContacts(List&amp;lt;User&amp;gt; users){<a name="line.77"></a>
+<span class="sourceLineNo">078</span> *         contacts.addAll(users);<a name="line.78"></a>
+<span class="sourceLineNo">079</span> *     }<a name="line.79"></a>
+<span class="sourceLineNo">080</span> *<a name="line.80"></a>
+<span class="sourceLineNo">081</span> *     {@literal @}Override<a name="line.81"></a>
+<span class="sourceLineNo">082</span> *     public void requestSuggestions(final Request request, final Callback callback) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span> *         Response resp = new Response();<a name="line.83"></a>
+<span class="sourceLineNo">084</span> *         if (contacts.isEmpty()){<a name="line.84"></a>
+<span class="sourceLineNo">085</span> *             callback.onSuggestionsReady(request, resp);<a name="line.85"></a>
+<span class="sourceLineNo">086</span> *             return;<a name="line.86"></a>
+<span class="sourceLineNo">087</span> *         }<a name="line.87"></a>
+<span class="sourceLineNo">088</span> *         String text = request.getQuery();<a name="line.88"></a>
+<span class="sourceLineNo">089</span> *         text = text.toLowerCase();<a name="line.89"></a>
+<span class="sourceLineNo">090</span> *<a name="line.90"></a>
+<span class="sourceLineNo">091</span> *         List&amp;lt;UserSuggestion&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();<a name="line.91"></a>
+<span class="sourceLineNo">092</span> *<a name="line.92"></a>
+<span class="sourceLineNo">093</span> *         /{@literal *}<a name="line.93"></a>
+<span class="sourceLineNo">094</span> *         {@literal *}  Finds the contacts that meets the criteria. Note that since the <a name="line.94"></a>
+<span class="sourceLineNo">095</span> *         {@literal *}  requestSuggestions method is asynchronous, you can fetch the<a name="line.95"></a>
+<span class="sourceLineNo">096</span> *         {@literal *}  results from the server instead of using a local contacts List.<a name="line.96"></a>
+<span class="sourceLineNo">097</span> *         {@literal *}/<a name="line.97"></a>
+<span class="sourceLineNo">098</span> *         for (User contact : contacts){<a name="line.98"></a>
+<span class="sourceLineNo">099</span> *             if (contact.getName().toLowerCase().contains(text)){<a name="line.99"></a>
+<span class="sourceLineNo">100</span> *                 list.add(new UserSuggestion(contact));<a name="line.100"></a>
+<span class="sourceLineNo">101</span> *             }<a name="line.101"></a>
+<span class="sourceLineNo">102</span> *          }<a name="line.102"></a>
+<span class="sourceLineNo">103</span> *          resp.setSuggestions(list);<a name="line.103"></a>
+<span class="sourceLineNo">104</span> *          callback.onSuggestionsReady(request, resp);<a name="line.104"></a>
+<span class="sourceLineNo">105</span> *     }<a name="line.105"></a>
+<span class="sourceLineNo">106</span> * }<a name="line.106"></a>
+<span class="sourceLineNo">107</span> *<a name="line.107"></a>
+<span class="sourceLineNo">108</span> * public class UserSuggestion implements SuggestOracle.Suggestion {<a name="line.108"></a>
+<span class="sourceLineNo">109</span> *<a name="line.109"></a>
+<span class="sourceLineNo">110</span> *     private User user;<a name="line.110"></a>
+<span class="sourceLineNo">111</span> *<a name="line.111"></a>
+<span class="sourceLineNo">112</span> *     public UserSuggestion(User user){<a name="line.112"></a>
+<span class="sourceLineNo">113</span> *         this.user = user;<a name="line.113"></a>
+<span class="sourceLineNo">114</span> *     }<a name="line.114"></a>
+<span class="sourceLineNo">115</span> *<a name="line.115"></a>
+<span class="sourceLineNo">116</span> *     {@literal @}Override<a name="line.116"></a>
+<span class="sourceLineNo">117</span> *     public String getDisplayString() {<a name="line.117"></a>
+<span class="sourceLineNo">118</span> *         return getReplacementString();<a name="line.118"></a>
+<span class="sourceLineNo">119</span> *     }<a name="line.119"></a>
+<span class="sourceLineNo">120</span> *<a name="line.120"></a>
+<span class="sourceLineNo">121</span> *     {@literal @}Override<a name="line.121"></a>
+<span class="sourceLineNo">122</span> *     public String getReplacementString() {<a name="line.122"></a>
+<span class="sourceLineNo">123</span> *         return user.getName();<a name="line.123"></a>
+<span class="sourceLineNo">124</span> *     }<a name="line.124"></a>
+<span class="sourceLineNo">125</span> *<a name="line.125"></a>
+<span class="sourceLineNo">126</span> *     public User getUser() {<a name="line.126"></a>
+<span class="sourceLineNo">127</span> *         return user;<a name="line.127"></a>
+<span class="sourceLineNo">128</span> *     }<a name="line.128"></a>
+<span class="sourceLineNo">129</span> * }<a name="line.129"></a>
+<span class="sourceLineNo">130</span> * &lt;/pre&gt;&lt;/p&gt;<a name="line.130"></a>
+<span class="sourceLineNo">131</span> * &lt;p&gt;<a name="line.131"></a>
+<span class="sourceLineNo">132</span> * And then use the UserOracle like this:<a name="line.132"></a>
+<span class="sourceLineNo">133</span> * &lt;/p&gt;<a name="line.133"></a>
+<span class="sourceLineNo">134</span> * &lt;p&gt;&lt;pre&gt;<a name="line.134"></a>
+<span class="sourceLineNo">135</span> * //Constructor<a name="line.135"></a>
+<span class="sourceLineNo">136</span> * MaterialAutoComplete userAutoComplete = new MaterialAutoComplete(new UserOracle());<a name="line.136"></a>
+<span class="sourceLineNo">137</span> *<a name="line.137"></a>
+<span class="sourceLineNo">138</span> * //How to get the selected User objects<a name="line.138"></a>
+<span class="sourceLineNo">139</span> * public List&amp;lt;User&amp;gt; getSelectedUsers(){<a name="line.139"></a>
+<span class="sourceLineNo">140</span> *     List&amp;lt;? extends Suggestion&amp;gt; values = userAutoComplete.getValue();<a name="line.140"></a>
+<span class="sourceLineNo">141</span> *     List&amp;lt;User&amp;gt; users = new ArrayList&amp;lt;&amp;gt;(values.size());<a name="line.141"></a>
+<span class="sourceLineNo">142</span> *     for (Suggestion value : values) {<a name="line.142"></a>
+<span class="sourceLineNo">143</span> *         if (value instanceof UserSuggestion){<a name="line.143"></a>
+<span class="sourceLineNo">144</span> *             UserSuggestion us = (UserSuggestion) value;<a name="line.144"></a>
+<span class="sourceLineNo">145</span> *             User user = us.getUser();                            <a name="line.145"></a>
+<span class="sourceLineNo">146</span> *             users.add(user);<a name="line.146"></a>
+<span class="sourceLineNo">147</span> *         }<a name="line.147"></a>
+<span class="sourceLineNo">148</span> *     }<a name="line.148"></a>
+<span class="sourceLineNo">149</span> *     return users;<a name="line.149"></a>
+<span class="sourceLineNo">150</span> * }<a name="line.150"></a>
+<span class="sourceLineNo">151</span> * &lt;/pre&gt;&lt;/p&gt;<a name="line.151"></a>
+<span class="sourceLineNo">152</span> *<a name="line.152"></a>
+<span class="sourceLineNo">153</span> * @author kevzlou7979<a name="line.153"></a>
+<span class="sourceLineNo">154</span> * @author gilberto-torrezan<a name="line.154"></a>
+<span class="sourceLineNo">155</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!autocomplete"&gt;Material AutoComplete&lt;/a&gt;<a name="line.155"></a>
+<span class="sourceLineNo">156</span> */<a name="line.156"></a>
+<span class="sourceLineNo">157</span>// @formatter:on<a name="line.157"></a>
+<span class="sourceLineNo">158</span>public class MaterialAutoComplete extends MaterialWidget implements HasError, HasPlaceholder,<a name="line.158"></a>
+<span class="sourceLineNo">159</span>        HasValue&lt;List&lt;? extends Suggestion&gt;&gt;, HasProgress, HasKeyUpHandlers, HasType&lt;AutocompleteType&gt;, HasSelectionHandlers&lt;Suggestion&gt; {<a name="line.159"></a>
+<span class="sourceLineNo">160</span><a name="line.160"></a>
+<span class="sourceLineNo">161</span>    static {<a name="line.161"></a>
+<span class="sourceLineNo">162</span>        if(MaterialResourceInjector.isDebug()) {<a name="line.162"></a>
+<span class="sourceLineNo">163</span>            MaterialResourceInjector.injectCss(MaterialAutocompleteDebugClientBundle.INSTANCE.autocompleteCssDebug());<a name="line.163"></a>
+<span class="sourceLineNo">164</span>        } else {<a name="line.164"></a>
+<span class="sourceLineNo">165</span>            MaterialResourceInjector.injectCss(MaterialAutocompleteClientBundle.INSTANCE.autocompleteCss());<a name="line.165"></a>
+<span class="sourceLineNo">166</span>        }<a name="line.166"></a>
+<span class="sourceLineNo">167</span>    }<a name="line.167"></a>
+<span class="sourceLineNo">168</span><a name="line.168"></a>
+<span class="sourceLineNo">169</span>    private Map&lt;Suggestion, Widget&gt; suggestionMap = new LinkedHashMap&lt;&gt;();<a name="line.169"></a>
+<span class="sourceLineNo">170</span><a name="line.170"></a>
+<span class="sourceLineNo">171</span>    private List&lt;ListItem&gt; itemsHighlighted = new ArrayList&lt;&gt;();<a name="line.171"></a>
+<span class="sourceLineNo">172</span>    private FlowPanel panel = new FlowPanel();<a name="line.172"></a>
+<span class="sourceLineNo">173</span>    private UnorderedList list = new UnorderedList();<a name="line.173"></a>
+<span class="sourceLineNo">174</span>    private SuggestOracle suggestions;<a name="line.174"></a>
+<span class="sourceLineNo">175</span>    private TextBox itemBox = new TextBox();<a name="line.175"></a>
+<span class="sourceLineNo">176</span>    private SuggestBox box;<a name="line.176"></a>
+<span class="sourceLineNo">177</span>    private int limit = 0;<a name="line.177"></a>
+<span class="sourceLineNo">178</span>    private MaterialLabel lblError = new MaterialLabel();<a name="line.178"></a>
+<span class="sourceLineNo">179</span>    private final ProgressMixin&lt;MaterialAutoComplete&gt; progressMixin = new ProgressMixin&lt;&gt;(this);<a name="line.179"></a>
+<span class="sourceLineNo">180</span><a name="line.180"></a>
+<span class="sourceLineNo">181</span>    private boolean directInputAllowed = true;<a name="line.181"></a>
+<span class="sourceLineNo">182</span>    private MaterialChipProvider chipProvider = new DefaultMaterialChipProvider();<a name="line.182"></a>
+<span class="sourceLineNo">183</span><a name="line.183"></a>
+<span class="sourceLineNo">184</span>    private final ErrorMixin&lt;MaterialAutoComplete, MaterialLabel&gt; errorMixin = new ErrorMixin&lt;&gt;(this,<a name="line.184"></a>
+<span class="sourceLineNo">185</span>            lblError, list);<a name="line.185"></a>
+<span class="sourceLineNo">186</span>    public final CssTypeMixin&lt;AutocompleteType, MaterialAutoComplete&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.186"></a>
+<span class="sourceLineNo">187</span><a name="line.187"></a>
+<span class="sourceLineNo">188</span>    /**<a name="line.188"></a>
+<span class="sourceLineNo">189</span>     * Use MaterialAutocomplete to search for matches from local or remote data<a name="line.189"></a>
+<span class="sourceLineNo">190</span>     * sources.<a name="line.190"></a>
+<span class="sourceLineNo">191</span>     */<a name="line.191"></a>
+<span class="sourceLineNo">192</span>    public MaterialAutoComplete() {<a name="line.192"></a>
+<span class="sourceLineNo">193</span>        super(Document.get().createDivElement());<a name="line.193"></a>
+<span class="sourceLineNo">194</span>        add(panel);<a name="line.194"></a>
+<span class="sourceLineNo">195</span>    }<a name="line.195"></a>
+<span class="sourceLineNo">196</span><a name="line.196"></a>
+<span class="sourceLineNo">197</span>    public MaterialAutoComplete(AutocompleteType type) {<a name="line.197"></a>
+<span class="sourceLineNo">198</span>        this();<a name="line.198"></a>
+<span class="sourceLineNo">199</span>        setType(type);<a name="line.199"></a>
+<span class="sourceLineNo">200</span>    }<a name="line.200"></a>
+<span class="sourceLineNo">201</span><a name="line.201"></a>
+<span class="sourceLineNo">202</span>    /**<a name="line.202"></a>
+<span class="sourceLineNo">203</span>     * Use MaterialAutocomplete to search for matches from local or remote data<a name="line.203"></a>
+<span class="sourceLineNo">204</span>     * sources.<a name="line.204"></a>
+<span class="sourceLineNo">205</span>     *<a name="line.205"></a>
+<span class="sourceLineNo">206</span>     * @see #setSuggestions(SuggestOracle)<a name="line.206"></a>
+<span class="sourceLineNo">207</span>     */<a name="line.207"></a>
+<span class="sourceLineNo">208</span>    public MaterialAutoComplete(SuggestOracle suggestions) {<a name="line.208"></a>
+<span class="sourceLineNo">209</span>        this();<a name="line.209"></a>
+<span class="sourceLineNo">210</span>        generateAutoComplete(suggestions);<a name="line.210"></a>
+<span class="sourceLineNo">211</span>    }<a name="line.211"></a>
+<span class="sourceLineNo">212</span><a name="line.212"></a>
+<span class="sourceLineNo">213</span>    /**<a name="line.213"></a>
+<span class="sourceLineNo">214</span>     * Generate and build the List Items to be set on Auto Complete box.<a name="line.214"></a>
+<span class="sourceLineNo">215</span>     */<a name="line.215"></a>
+<span class="sourceLineNo">216</span>    private void generateAutoComplete(SuggestOracle suggestions) {<a name="line.216"></a>
+<span class="sourceLineNo">217</span>        list.setStyleName("multiValueSuggestBox-list");<a name="line.217"></a>
+<span class="sourceLineNo">218</span>        this.suggestions = suggestions;<a name="line.218"></a>
+<span class="sourceLineNo">219</span>        final ListItem item = new ListItem();<a name="line.219"></a>
+<span class="sourceLineNo">220</span><a name="line.220"></a>
+<span class="sourceLineNo">221</span>        item.setStyleName("multiValueSuggestBox-input-token");<a name="line.221"></a>
+<span class="sourceLineNo">222</span>        box = new SuggestBox(suggestions, itemBox);<a name="line.222"></a>
+<span class="sourceLineNo">223</span>        setLimit(this.limit);<a name="line.223"></a>
+<span class="sourceLineNo">224</span>        String autocompleteId = DOM.createUniqueId();<a name="line.224"></a>
+<span class="sourceLineNo">225</span>        itemBox.getElement().setId(autocompleteId);<a name="line.225"></a>
+<span class="sourceLineNo">226</span><a name="line.226"></a>
+<span class="sourceLineNo">227</span>        item.add(box);<a name="line.227"></a>
+<span class="sourceLineNo">228</span>        list.add(item);<a name="line.228"></a>
+<span class="sourceLineNo">229</span><a name="line.229"></a>
+<span class="sourceLineNo">230</span>        list.addDomHandler(new ClickHandler() {<a name="line.230"></a>
+<span class="sourceLineNo">231</span>            @Override<a name="line.231"></a>
+<span class="sourceLineNo">232</span>            public void onClick(ClickEvent event) {<a name="line.232"></a>
+<span class="sourceLineNo">233</span>                box.showSuggestionList();<a name="line.233"></a>
+<span class="sourceLineNo">234</span>            }<a name="line.234"></a>
+<span class="sourceLineNo">235</span>        }, ClickEvent.getType());<a name="line.235"></a>
+<span class="sourceLineNo">236</span><a name="line.236"></a>
+<span class="sourceLineNo">237</span>        itemBox.addKeyDownHandler(new KeyDownHandler() {<a name="line.237"></a>
+<span class="sourceLineNo">238</span>            public void onKeyDown(KeyDownEvent event) {<a name="line.238"></a>
+<span class="sourceLineNo">239</span>                boolean itemsChanged = false;<a name="line.239"></a>
+<span class="sourceLineNo">240</span><a name="line.240"></a>
+<span class="sourceLineNo">241</span>                switch (event.getNativeKeyCode()) {<a name="line.241"></a>
+<span class="sourceLineNo">242</span>                    case KeyCodes.KEY_ENTER:<a name="line.242"></a>
+<span class="sourceLineNo">243</span>                        if (directInputAllowed) {<a name="line.243"></a>
+<span class="sourceLineNo">244</span>                            String value = itemBox.getValue();<a name="line.244"></a>
+<span class="sourceLineNo">245</span>                            if (value != null &amp;&amp; !(value = value.trim()).isEmpty()) {<a name="line.245"></a>
+<span class="sourceLineNo">246</span>                                gwt.material.design.client.base.Suggestion directInput = new gwt.material.design.client.base.Suggestion();<a name="line.246"></a>
+<span class="sourceLineNo">247</span>                                directInput.setDisplay(value);<a name="line.247"></a>
+<span class="sourceLineNo">248</span>                                directInput.setSuggestion(value);<a name="line.248"></a>
+<span class="sourceLineNo">249</span>                                itemsChanged = addItem(directInput);<a name="line.249"></a>
+<span class="sourceLineNo">250</span>                                itemBox.setValue("");<a name="line.250"></a>
+<span class="sourceLineNo">251</span>                                itemBox.setFocus(true);<a name="line.251"></a>
+<span class="sourceLineNo">252</span>                            }<a name="line.252"></a>
+<span class="sourceLineNo">253</span>                        }<a name="line.253"></a>
+<span class="sourceLineNo">254</span>                        break;<a name="line.254"></a>
+<span class="sourceLineNo">255</span><a name="line.255"></a>
+<span class="sourceLineNo">256</span>                    case KeyCodes.KEY_BACKSPACE:<a name="line.256"></a>
+<span class="sourceLineNo">257</span>                        if (itemBox.getValue().trim().isEmpty()) {<a name="line.257"></a>
+<span class="sourceLineNo">258</span>                            if (itemsHighlighted.isEmpty()) {<a name="line.258"></a>
+<span class="sourceLineNo">259</span>                                if (suggestionMap.size() &gt; 0) {<a name="line.259"></a>
+<span class="sourceLineNo">260</span><a name="line.260"></a>
+<span class="sourceLineNo">261</span>                                    ListItem li = (ListItem) list.getWidget(list.getWidgetCount() - 2);<a name="line.261"></a>
+<span class="sourceLineNo">262</span>                                    MaterialChip p = (MaterialChip) li.getWidget(0);<a name="line.262"></a>
+<span class="sourceLineNo">263</span><a name="line.263"></a>
+<span class="sourceLineNo">264</span>                                    Set&lt;Entry&lt;Suggestion, Widget&gt;&gt; entrySet = suggestionMap.entrySet();<a name="line.264"></a>
+<span class="sourceLineNo">265</span>                                    for (Entry&lt;Suggestion, Widget&gt; entry : entrySet) {<a name="line.265"></a>
+<span class="sourceLineNo">266</span>                                        if (p.equals(entry.getValue())) {<a name="line.266"></a>
+<span class="sourceLineNo">267</span>                                            suggestionMap.remove(entry.getKey());<a name="line.267"></a>
+<span class="sourceLineNo">268</span>                                            itemsChanged = true;<a name="line.268"></a>
+<span class="sourceLineNo">269</span>                                            break;<a name="line.269"></a>
+<span class="sourceLineNo">270</span>                                        }<a name="line.270"></a>
+<span class="sourceLineNo">271</span>                                    }<a name="line.271"></a>
+<span class="sourceLineNo">272</span><a name="line.272"></a>
+<span class="sourceLineNo">273</span>                                    list.remove(li);<a name="line.273"></a>
+<span class="sourceLineNo">274</span>                                }<a name="line.274"></a>
+<span class="sourceLineNo">275</span>                            }<a name="line.275"></a>
+<span class="sourceLineNo">276</span>                        }<a name="line.276"></a>
+<span class="sourceLineNo">277</span><a name="line.277"></a>
+<span class="sourceLineNo">278</span>                    case KeyCodes.KEY_DELETE:<a name="line.278"></a>
+<span class="sourceLineNo">279</span>                        if (itemBox.getValue().trim().isEmpty()) {<a name="line.279"></a>
+<span class="sourceLineNo">280</span>                            for (ListItem li : itemsHighlighted) {<a name="line.280"></a>
+<span class="sourceLineNo">281</span>                                li.removeFromParent();<a name="line.281"></a>
+<span class="sourceLineNo">282</span>                                MaterialChip p = (MaterialChip) li.getWidget(0);<a name="line.282"></a>
+<span class="sourceLineNo">283</span><a name="line.283"></a>
+<span class="sourceLineNo">284</span>                                Set&lt;Entry&lt;Suggestion, Widget&gt;&gt; entrySet = suggestionMap.entrySet();<a name="line.284"></a>
+<span class="sourceLineNo">285</span>                                for (Entry&lt;Suggestion, Widget&gt; entry : entrySet) {<a name="line.285"></a>
+<span class="sourceLineNo">286</span>                                    if (p.equals(entry.getValue())) {<a name="line.286"></a>
+<span class="sourceLineNo">287</span>                                        suggestionMap.remove(entry.getKey());<a name="line.287"></a>
+<span class="sourceLineNo">288</span>                                        itemsChanged = true;<a name="line.288"></a>
+<span class="sourceLineNo">289</span>                                        break;<a name="line.289"></a>
+<span class="sourceLineNo">290</span>                                    }<a name="line.290"></a>
+<span class="sourceLineNo">291</span>                                }<a name="line.291"></a>
+<span class="sourceLineNo">292</span>                            }<a name="line.292"></a>
+<span class="sourceLineNo">293</span>                            itemsHighlighted.clear();<a name="line.293"></a>
+<span class="sourceLineNo">294</span>                        }<a name="line.294"></a>
+<span class="sourceLineNo">295</span>                        itemBox.setFocus(true);<a name="line.295"></a>
+<span class="sourceLineNo">296</span>                        break;<a name="line.296"></a>
+<span class="sourceLineNo">297</span>                }<a name="line.297"></a>
+<span class="sourceLineNo">298</span><a name="line.298"></a>
+<span class="sourceLineNo">299</span>                if (itemsChanged) {<a name="line.299"></a>
+<span class="sourceLineNo">300</span>                    ValueChangeEvent.fire(MaterialAutoComplete.this, getValue());<a name="line.300"></a>
+<span class="sourceLineNo">301</span>                }<a name="line.301"></a>
+<span class="sourceLineNo">302</span>            }<a name="line.302"></a>
+<span class="sourceLineNo">303</span>        });<a name="line.303"></a>
+<span class="sourceLineNo">304</span><a name="line.304"></a>
+<span class="sourceLineNo">305</span>        itemBox.addClickHandler(new ClickHandler() {<a name="line.305"></a>
+<span class="sourceLineNo">306</span>            @Override<a name="line.306"></a>
+<span class="sourceLineNo">307</span>            public void onClick(ClickEvent event) {<a name="line.307"></a>
+<span class="sourceLineNo">308</span>                box.showSuggestionList();<a name="line.308"></a>
+<span class="sourceLineNo">309</span>            }<a name="line.309"></a>
+<span class="sourceLineNo">310</span>        });<a name="line.310"></a>
+<span class="sourceLineNo">311</span><a name="line.311"></a>
+<span class="sourceLineNo">312</span>        box.addSelectionHandler(new SelectionHandler&lt;Suggestion&gt;() {<a name="line.312"></a>
+<span class="sourceLineNo">313</span>            public void onSelection(SelectionEvent&lt;Suggestion&gt; selectionEvent) {<a name="line.313"></a>
+<span class="sourceLineNo">314</span>                Suggestion selectedItem = selectionEvent.getSelectedItem();<a name="line.314"></a>
+<span class="sourceLineNo">315</span>                itemBox.setValue("");<a name="line.315"></a>
+<span class="sourceLineNo">316</span>                if (addItem(selectedItem)) {<a name="line.316"></a>
+<span class="sourceLineNo">317</span>                    ValueChangeEvent.fire(MaterialAutoComplete.this, getValue());<a name="line.317"></a>
+<span class="sourceLineNo">318</span>                }<a name="line.318"></a>
+<span class="sourceLineNo">319</span>                itemBox.setFocus(true);<a name="line.319"></a>
+<span class="sourceLineNo">320</span>            }<a name="line.320"></a>
+<span class="sourceLineNo">321</span>        });<a name="line.321"></a>
+<span class="sourceLineNo">322</span><a name="line.322"></a>
+<span class="sourceLineNo">323</span>        panel.add(list);<a name="line.323"></a>
+<span class="sourceLineNo">324</span>        panel.getElement().setAttribute("onclick",<a name="line.324"></a>
+<span class="sourceLineNo">325</span>                "document.getElementById('" + autocompleteId + "').focus()");<a name="line.325"></a>
+<span class="sourceLineNo">326</span>        panel.add(lblError);<a name="line.326"></a>
+<span class="sourceLineNo">327</span>        box.setFocus(true);<a name="line.327"></a>
+<span class="sourceLineNo">328</span>    }<a name="line.328"></a>
+<span class="sourceLineNo">329</span><a name="line.329"></a>
+<span class="sourceLineNo">330</span>    /**<a name="line.330"></a>
+<span class="sourceLineNo">331</span>     * Adding the item value using Material Chips added on auto complete box<a name="line.331"></a>
+<span class="sourceLineNo">332</span>     */<a name="line.332"></a>
+<span class="sourceLineNo">333</span>    protected boolean addItem(final Suggestion suggestion) {<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        SelectionEvent.fire(MaterialAutoComplete.this, suggestion);<a name="line.334"></a>
+<span class="sourceLineNo">335</span>        if (getLimit() &gt; 0) {<a name="line.335"></a>
+<span class="sourceLineNo">336</span>            if (suggestionMap.size() &gt;= getLimit()) {<a name="line.336"></a>
+<span class="sourceLineNo">337</span>                return false;<a name="line.337"></a>
+<span class="sourceLineNo">338</span>            }<a name="line.338"></a>
+<span class="sourceLineNo">339</span>        }<a name="line.339"></a>
+<span class="sourceLineNo">340</span><a name="line.340"></a>
+<span class="sourceLineNo">341</span>        if (suggestionMap.containsKey(suggestion)) {<a name="line.341"></a>
+<span class="sourceLineNo">342</span>            return false;<a name="line.342"></a>
+<span class="sourceLineNo">343</span>        }<a name="line.343"></a>
+<span class="sourceLineNo">344</span><a name="line.344"></a>
+<span class="sourceLineNo">345</span>        final ListItem displayItem = new ListItem();<a name="line.345"></a>
+<span class="sourceLineNo">346</span>        displayItem.setStyleName("multiValueSuggestBox-token");<a name="line.346"></a>
+<span class="sourceLineNo">347</span><a name="line.347"></a>
+<span class="sourceLineNo">348</span>        if (getType() == AutocompleteType.TEXT){<a name="line.348"></a>
+<span class="sourceLineNo">349</span>            suggestionMap.clear();<a name="line.349"></a>
+<span class="sourceLineNo">350</span>            itemBox.setText(suggestion.getDisplayString());<a name="line.350"></a>
+<span class="sourceLineNo">351</span>            displayItem.add(itemBox);<a name="line.351"></a>
+<span class="sourceLineNo">352</span>        }<a name="line.352"></a>
+<span class="sourceLineNo">353</span>        else {<a name="line.353"></a>
+<span class="sourceLineNo">354</span>            final MaterialChip chip = chipProvider.getChip(suggestion);<a name="line.354"></a>
+<span class="sourceLineNo">355</span>            if (chip == null) {<a name="line.355"></a>
+<span class="sourceLineNo">356</span>                return false;<a name="line.356"></a>
+<span class="sourceLineNo">357</span>            }<a name="line.357"></a>
+<span class="sourceLineNo">358</span><a name="line.358"></a>
+<span class="sourceLineNo">359</span>            chip.setIconType(IconType.CLOSE);<a name="line.359"></a>
+<span class="sourceLineNo">360</span>            chip.addClickHandler(new ClickHandler() {<a name="line.360"></a>
+<span class="sourceLineNo">361</span>                public void onClick(ClickEvent clickEvent) {<a name="line.361"></a>
+<span class="sourceLineNo">362</span>                    if (itemsHighlighted.contains(displayItem)) {<a name="line.362"></a>
+<span class="sourceLineNo">363</span>                        chip.removeStyleName("blue white-text");<a name="line.363"></a>
+<span class="sourceLineNo">364</span>                        itemsHighlighted.remove(displayItem);<a name="line.364"></a>
+<span class="sourceLineNo">365</span>                    } else {<a name="line.365"></a>
+<span class="sourceLineNo">366</span>                        chip.addStyleName("blue white-text");<a name="line.366"></a>
+<span class="sourceLineNo">367</span>                        itemsHighlighted.add(displayItem);<a name="line.367"></a>
+<span class="sourceLineNo">368</span>                    }<a name="line.368"></a>
+<span class="sourceLineNo">369</span>                }<a name="line.369"></a>
+<span class="sourceLineNo">370</span>            });<a name="line.370"></a>
+<span class="sourceLineNo">371</span><a name="line.371"></a>
+<span class="sourceLineNo">372</span>            chip.getIcon().addClickHandler(new ClickHandler() {<a name="line.372"></a>
+<span class="sourceLineNo">373</span>                public void onClick(ClickEvent clickEvent) {<a name="line.373"></a>
+<span class="sourceLineNo">374</span>                    suggestionMap.remove(suggestion);<a name="line.374"></a>
+<span class="sourceLineNo">375</span>                    list.remove(displayItem);<a name="line.375"></a>
+<span class="sourceLineNo">376</span>                    ValueChangeEvent.fire(MaterialAutoComplete.this, getValue());<a name="line.376"></a>
+<span class="sourceLineNo">377</span>                    box.showSuggestionList();<a name="line.377"></a>
+<span class="sourceLineNo">378</span>                }<a name="line.378"></a>
+<span class="sourceLineNo">379</span>            });<a name="line.379"></a>
+<span class="sourceLineNo">380</span><a name="line.380"></a>
+<span class="sourceLineNo">381</span>            suggestionMap.put(suggestion, chip);<a name="line.381"></a>
+<span class="sourceLineNo">382</span>            displayItem.add(chip);<a name="line.382"></a>
+<span class="sourceLineNo">383</span>        }<a name="line.383"></a>
+<span class="sourceLineNo">384</span><a name="line.384"></a>
+<span class="sourceLineNo">385</span>        list.insert(displayItem, list.getWidgetCount() - 1);<a name="line.385"></a>
+<span class="sourceLineNo">386</span>        return true;<a name="line.386"></a>
+<span class="sourceLineNo">387</span>    }<a name="line.387"></a>
+<span class="sourceLineNo">388</span><a name="line.388"></a>
+<span class="sourceLineNo">389</span>    /**<a name="line.389"></a>
+<span class="sourceLineNo">390</span>     * Clear the chip items on the autocomplete box<a name="line.390"></a>
+<span class="sourceLineNo">391</span>     */<a name="line.391"></a>
+<span class="sourceLineNo">392</span>    public void clear() {<a name="line.392"></a>
+<span class="sourceLineNo">393</span>        itemBox.setValue("");<a name="line.393"></a>
+<span class="sourceLineNo">394</span><a name="line.394"></a>
+<span class="sourceLineNo">395</span>        Collection&lt;Widget&gt; values = suggestionMap.values();<a name="line.395"></a>
+<span class="sourceLineNo">396</span>        for (Widget widget : values) {<a name="line.396"></a>
+<span class="sourceLineNo">397</span>            Widget parent = widget.getParent();<a name="line.397"></a>
+<span class="sourceLineNo">398</span>            if (parent instanceof ListItem) {<a name="line.398"></a>
+<span class="sourceLineNo">399</span>                parent.removeFromParent();<a name="line.399"></a>
+<span class="sourceLineNo">400</span>            }<a name="line.400"></a>
+<span class="sourceLineNo">401</span>        }<a name="line.401"></a>
+<span class="sourceLineNo">402</span>        suggestionMap.clear();<a name="line.402"></a>
+<span class="sourceLineNo">403</span><a name="line.403"></a>
+<span class="sourceLineNo">404</span>        clearErrorOrSuccess();<a name="line.404"></a>
+<span class="sourceLineNo">405</span>    }<a name="line.405"></a>
+<span class="sourceLineNo">406</span><a name="line.406"></a>
+<span class="sourceLineNo">407</span>    /**<a name="line.407"></a>
+<span class="sourceLineNo">408</span>     * @return the item values on autocomplete<a name="line.408"></a>
+<span class="sourceLineNo">409</span>     * @see #getValue()<a name="line.409"></a>
+<span class="sourceLineNo">410</span>     */<a name="line.410"></a>
+<span class="sourceLineNo">411</span>    public List&lt;String&gt; getItemValues() {<a name="line.411"></a>
+<span class="sourceLineNo">412</span>        Set&lt;Suggestion&gt; keySet = suggestionMap.keySet();<a name="line.412"></a>
+<span class="sourceLineNo">413</span>        List&lt;String&gt; values = new ArrayList&lt;&gt;(keySet.size());<a name="line.413"></a>
+<span class="sourceLineNo">414</span>        for (Suggestion suggestion : keySet) {<a name="line.414"></a>
+<span class="sourceLineNo">415</span>            values.add(suggestion.getReplacementString());<a name="line.415"></a>
+<span class="sourceLineNo">416</span>        }<a name="line.416"></a>
+<span class="sourceLineNo">417</span>        return values;<a name="line.417"></a>
+<span class="sourceLineNo">418</span>    }<a name="line.418"></a>
+<span class="sourceLineNo">419</span><a name="line.419"></a>
+<span class="sourceLineNo">420</span>    /**<a name="line.420"></a>
+<span class="sourceLineNo">421</span>     * @param itemValues<a name="line.421"></a>
+<span class="sourceLineNo">422</span>     *            the itemsSelected to set<a name="line.422"></a>
+<span class="sourceLineNo">423</span>     * @see #setValue(List)<a name="line.423"></a>
+<span class="sourceLineNo">424</span>     */<a name="line.424"></a>
+<span class="sourceLineNo">425</span>    public void setItemValues(List&lt;String&gt; itemValues) {<a name="line.425"></a>
+<span class="sourceLineNo">426</span>        if (itemValues == null) {<a name="line.426"></a>
+<span class="sourceLineNo">427</span>            clear();<a name="line.427"></a>
+<span class="sourceLineNo">428</span>            return;<a name="line.428"></a>
+<span class="sourceLineNo">429</span>        }<a name="line.429"></a>
+<span class="sourceLineNo">430</span>        List&lt;Suggestion&gt; list = new ArrayList&lt;&gt;(itemValues.size());<a name="line.430"></a>
+<span class="sourceLineNo">431</span>        for (String value : itemValues) {<a name="line.431"></a>
+<span class="sourceLineNo">432</span>            Suggestion suggestion = new gwt.material.design.client.base.Suggestion(value, value);<a name="line.432"></a>
+<span class="sourceLineNo">433</span>            list.add(suggestion);<a name="line.433"></a>
+<span class="sourceLineNo">434</span>        }<a name="line.434"></a>
+<span class="sourceLineNo">435</span>        setValue(list);<a name="line.435"></a>
+<span class="sourceLineNo">436</span>    }<a name="line.436"></a>
+<span class="sourceLineNo">437</span><a name="line.437"></a>
+<span class="sourceLineNo">438</span>    /**<a name="line.438"></a>
+<span class="sourceLineNo">439</span>     * @return the itemsHighlighted<a name="line.439"></a>
+<span class="sourceLineNo">440</span>     */<a name="line.440"></a>
+<span class="sourceLineNo">441</span>    public List&lt;ListItem&gt; getItemsHighlighted() {<a name="line.441"></a>
+<span class="sourceLineNo">442</span>        return itemsHighlighted;<a name="line.442"></a>
+<span class="sourceLineNo">443</span>    }<a name="line.443"></a>
+<span class="sourceLineNo">444</span><a name="line.444"></a>
+<span class="sourceLineNo">445</span>    /**<a name="line.445"></a>
+<span class="sourceLineNo">446</span>     * @param itemsHighlighted<a name="line.446"></a>
+<span class="sourceLineNo">447</span>     *            the itemsHighlighted to set<a name="line.447"></a>
+<span class="sourceLineNo">448</span>     */<a name="line.448"></a>
+<span class="sourceLineNo">449</span>    public void setItemsHighlighted(List&lt;ListItem&gt; itemsHighlighted) {<a name="line.449"></a>
+<span class="sourceLineNo">450</span>        this.itemsHighlighted = itemsHighlighted;<a name="line.450"></a>
+<span class="sourceLineNo">451</span>    }<a name="line.451"></a>
+<span class="sourceLineNo">452</span><a name="line.452"></a>
+<span class="sourceLineNo">453</span>    /**<a name="line.453"></a>
+<span class="sourceLineNo">454</span>     * @return the suggestion oracle<a name="line.454"></a>
+<span class="sourceLineNo">455</span>     */<a name="line.455"></a>
+<span class="sourceLineNo">456</span>    public SuggestOracle getSuggestions() {<a name="line.456"></a>
+<span class="sourceLineNo">457</span>        return suggestions;<a name="line.457"></a>
+<span class="sourceLineNo">458</span>    }<a name="line.458"></a>
+<span class="sourceLineNo">459</span><a name="line.459"></a>
+<span class="sourceLineNo">460</span>    /**<a name="line.460"></a>
+<span class="sourceLineNo">461</span>     * Sets the SuggestOracle to be used to provide suggestions. Also setups the<a name="line.461"></a>
+<span class="sourceLineNo">462</span>     * component with the needed event handlers and UI elements.<a name="line.462"></a>
+<span class="sourceLineNo">463</span>     *<a name="line.463"></a>
+<span class="sourceLineNo">464</span>     * @param suggestions<a name="line.464"></a>
+<span class="sourceLineNo">465</span>     *            the suggestion oracle to set<a name="line.465"></a>
+<span class="sourceLineNo">466</span>     */<a name="line.466"></a>
+<span class="sourceLineNo">467</span>    public void setSuggestions(SuggestOracle suggestions) {<a name="line.467"></a>
+<span class="sourceLineNo">468</span>        this.suggestions = suggestions;<a name="line.468"></a>
+<span class="sourceLineNo">469</span>        generateAutoComplete(suggestions);<a name="line.469"></a>
+<span class="sourceLineNo">470</span>    }<a name="line.470"></a>
+<span class="sourceLineNo">471</span><a name="line.471"></a>
+<span class="sourceLineNo">472</span>    public void setSuggestions(SuggestOracle suggestions, AutocompleteType type) {<a name="line.472"></a>
+<span class="sourceLineNo">473</span>        setType(type);<a name="line.473"></a>
+<span class="sourceLineNo">474</span>        setSuggestions(suggestions);<a name="line.474"></a>
+<span class="sourceLineNo">475</span>    }<a name="line.475"></a>
+<span class="sourceLineNo">476</span><a name="line.476"></a>
+<span class="sourceLineNo">477</span>    public int getLimit() {<a name="line.477"></a>
+<span class="sourceLineNo">478</span>        return limit;<a name="line.478"></a>
+<span class="sourceLineNo">479</span>    }<a name="line.479"></a>
+<span class="sourceLineNo">480</span><a name="line.480"></a>
+<span class="sourceLineNo">481</span>    public void setLimit(int limit) {<a name="line.481"></a>
+<span class="sourceLineNo">482</span>        this.limit = limit;<a name="line.482"></a>
+<span class="sourceLineNo">483</span>        if (this.box != null) {<a name="line.483"></a>
+<span class="sourceLineNo">484</span>            this.box.setLimit(limit);<a name="line.484"></a>
+<span class="sourceLineNo">485</span>        }<a name="line.485"></a>
+<span class="sourceLineNo">486</span>    }<a name="line.486"></a>
+<span class="sourceLineNo">487</span><a name="line.487"></a>
+<span class="sourceLineNo">488</span>    @Override<a name="line.488"></a>
+<span class="sourceLineNo">489</span>    public String getPlaceholder() {<a name="line.489"></a>
+<span class="sourceLineNo">490</span>        return itemBox.getElement().getAttribute("placeholder");<a name="line.490"></a>
+<span class="sourceLineNo">491</span>    }<a name="line.491"></a>
+<span class="sourceLineNo">492</span><a name="line.492"></a>
+<span class="sourceLineNo">493</span>    @Override<a name="line.493"></a>
+<span class="sourceLineNo">494</span>    public void setPlaceholder(String placeholder) {<a name="line.494"></a>
+<span class="sourceLineNo">495</span>        itemBox.getElement().setAttribute("placeholder", placeholder);<a name="line.495"></a>
+<span class="sourceLineNo">496</span>    }<a name="line.496"></a>
+<span class="sourceLineNo">497</span><a name="line.497"></a>
+<span class="sourceLineNo">498</span>    @Override<a name="line.498"></a>
+<span class="sourceLineNo">499</span>    public void setError(String error) {<a name="line.499"></a>
+<span class="sourceLineNo">500</span>        errorMixin.setError(error);<a name="line.500"></a>
+<span class="sourceLineNo">501</span>    }<a name="line.501"></a>
+<span class="sourceLineNo">502</span><a name="line.502"></a>
+<span class="sourceLineNo">503</span>    @Override<a name="line.503"></a>
+<span class="sourceLineNo">504</span>    public void setSuccess(String success) {<a name="line.504"></a>
+<span class="sourceLineNo">505</span>        errorMixin.setSuccess(success);<a name="line.505"></a>
+<span class="sourceLineNo">506</span>    }<a name="line.506"></a>
+<span class="sourceLineNo">507</span><a name="line.507"></a>
+<span class="sourceLineNo">508</span>    @Override<a name="line.508"></a>
+<span class="sourceLineNo">509</span>    public void clearErrorOrSuccess() {<a name="line.509"></a>
+<span class="sourceLineNo">510</span>        errorMixin.clearErrorOrSuccess();<a name="line.510"></a>
+<span class="sourceLineNo">511</span>    }<a name="line.511"></a>
+<span class="sourceLineNo">512</span><a name="line.512"></a>
+<span class="sourceLineNo">513</span>    /**<a name="line.513"></a>
+<span class="sourceLineNo">514</span>     * Gets the current {@link MaterialChipProvider}. By default, the class uses<a name="line.514"></a>
+<span class="sourceLineNo">515</span>     * an instance of {@link DefaultMaterialChipProvider}.<a name="line.515"></a>
+<span class="sourceLineNo">516</span>     */<a name="line.516"></a>
+<span class="sourceLineNo">517</span>    public MaterialChipProvider getChipProvider() {<a name="line.517"></a>
+<span class="sourceLineNo">518</span>        return chipProvider;<a name="line.518"></a>
+<span class="sourceLineNo">519</span>    }<a name="line.519"></a>
+<span class="sourceLineNo">520</span><a name="line.520"></a>
+<span class="sourceLineNo">521</span>    /**<a name="line.521"></a>
+<span class="sourceLineNo">522</span>     * Sets a {@link MaterialChipProvider} that can customize how the<a name="line.522"></a>
+<span class="sourceLineNo">523</span>     * {@link MaterialChip} is created for each selected {@link Suggestion}.<a name="line.523"></a>
+<span class="sourceLineNo">524</span>     */<a name="line.524"></a>
+<span class="sourceLineNo">525</span>    public void setChipProvider(MaterialChipProvider chipProvider) {<a name="line.525"></a>
+<span class="sourceLineNo">526</span>        this.chipProvider = chipProvider;<a name="line.526"></a>
+<span class="sourceLineNo">527</span>    }<a name="line.527"></a>
+<span class="sourceLineNo">528</span><a name="line.528"></a>
+<span class="sourceLineNo">529</span>    /**<a name="line.529"></a>
+<span class="sourceLineNo">530</span>     * When set to &lt;code&gt;false&lt;/code&gt;, only {@link Suggestion}s from the<a name="line.530"></a>
+<span class="sourceLineNo">531</span>     * SuggestionOracle are accepted. Direct input create by the user is<a name="line.531"></a>
+<span class="sourceLineNo">532</span>     * ignored. By default, direct input is allowed.<a name="line.532"></a>
+<span class="sourceLineNo">533</span>     */<a name="line.533"></a>
+<span class="sourceLineNo">534</span>    public void setDirectInputAllowed(boolean directInputAllowed) {<a name="line.534"></a>
+<span class="sourceLineNo">535</span>        this.directInputAllowed = directInputAllowed;<a name="line.535"></a>
+<span class="sourceLineNo">536</span>    }<a name="line.536"></a>
+<span class="sourceLineNo">537</span><a name="line.537"></a>
+<span class="sourceLineNo">538</span>    /**<a name="line.538"></a>
+<span class="sourceLineNo">539</span>     * @return if {@link Suggestion}s created by direct input from the user<a name="line.539"></a>
+<span class="sourceLineNo">540</span>     *         should be allowed. By default directInputAllowed is<a name="line.540"></a>
+<span class="sourceLineNo">541</span>     *         &lt;code&gt;true&lt;/code&gt;.<a name="line.541"></a>
+<span class="sourceLineNo">542</span>     */<a name="line.542"></a>
+<span class="sourceLineNo">543</span>    public boolean isDirectInputAllowed() {<a name="line.543"></a>
+<span class="sourceLineNo">544</span>        return directInputAllowed;<a name="line.544"></a>
+<span class="sourceLineNo">545</span>    }<a name="line.545"></a>
+<span class="sourceLineNo">546</span><a name="line.546"></a>
+<span class="sourceLineNo">547</span>    @Override<a name="line.547"></a>
+<span class="sourceLineNo">548</span>    public void showProgress(ProgressType type) {<a name="line.548"></a>
+<span class="sourceLineNo">549</span>        progressMixin.showProgress(ProgressType.INDETERMINATE);<a name="line.549"></a>
+<span class="sourceLineNo">550</span>    }<a name="line.550"></a>
+<span class="sourceLineNo">551</span><a name="line.551"></a>
+<span class="sourceLineNo">552</span>    @Override<a name="line.552"></a>
+<span class="sourceLineNo">553</span>    public void setPercent(double percent) {<a name="line.553"></a>
+<span class="sourceLineNo">554</span>        progressMixin.setPercent(percent);<a name="line.554"></a>
+<span class="sourceLineNo">555</span>    }<a name="line.555"></a>
+<span class="sourceLineNo">556</span><a name="line.556"></a>
+<span class="sourceLineNo">557</span>    @Override<a name="line.557"></a>
+<span class="sourceLineNo">558</span>    public void hideProgress() {<a name="line.558"></a>
+<span class="sourceLineNo">559</span>        progressMixin.hideProgress();<a name="line.559"></a>
+<span class="sourceLineNo">560</span>    }<a name="line.560"></a>
+<span class="sourceLineNo">561</span><a name="line.561"></a>
+<span class="sourceLineNo">562</span>    @Override<a name="line.562"></a>
+<span class="sourceLineNo">563</span>    public HandlerRegistration addKeyUpHandler(KeyUpHandler handler) {<a name="line.563"></a>
+<span class="sourceLineNo">564</span>        return itemBox.addKeyUpHandler(handler);<a name="line.564"></a>
+<span class="sourceLineNo">565</span>    }<a name="line.565"></a>
+<span class="sourceLineNo">566</span><a name="line.566"></a>
+<span class="sourceLineNo">567</span>    @Override<a name="line.567"></a>
+<span class="sourceLineNo">568</span>    public void setType(AutocompleteType type) {<a name="line.568"></a>
+<span class="sourceLineNo">569</span>        typeMixin.setType(type);<a name="line.569"></a>
+<span class="sourceLineNo">570</span>    }<a name="line.570"></a>
+<span class="sourceLineNo">571</span><a name="line.571"></a>
+<span class="sourceLineNo">572</span>    @Override<a name="line.572"></a>
+<span class="sourceLineNo">573</span>    public AutocompleteType getType() {<a name="line.573"></a>
+<span class="sourceLineNo">574</span>        return typeMixin.getType();<a name="line.574"></a>
+<span class="sourceLineNo">575</span>    }<a name="line.575"></a>
+<span class="sourceLineNo">576</span><a name="line.576"></a>
+<span class="sourceLineNo">577</span>    @Override<a name="line.577"></a>
+<span class="sourceLineNo">578</span>    public HandlerRegistration addSelectionHandler(SelectionHandler&lt;Suggestion&gt; handler) {<a name="line.578"></a>
+<span class="sourceLineNo">579</span>        return addHandler(handler, SelectionEvent.getType());<a name="line.579"></a>
+<span class="sourceLineNo">580</span>    }<a name="line.580"></a>
+<span class="sourceLineNo">581</span><a name="line.581"></a>
+<span class="sourceLineNo">582</span>    /**<a name="line.582"></a>
+<span class="sourceLineNo">583</span>     * Interface that defines how a {@link MaterialChip} is created, given a<a name="line.583"></a>
+<span class="sourceLineNo">584</span>     * {@link Suggestion}.<a name="line.584"></a>
+<span class="sourceLineNo">585</span>     *<a name="line.585"></a>
+<span class="sourceLineNo">586</span>     * @see gwt.material.design.addins.client.autocomplete.MaterialAutoComplete#setChipProvider(MaterialChipProvider)<a name="line.586"></a>
+<span class="sourceLineNo">587</span>     */<a name="line.587"></a>
+<span class="sourceLineNo">588</span>    public static interface MaterialChipProvider {<a name="line.588"></a>
+<span class="sourceLineNo">589</span><a name="line.589"></a>
+<span class="sourceLineNo">590</span>        /**<a name="line.590"></a>
+<span class="sourceLineNo">591</span>         * Creates and returns a {@link MaterialChip} based on the selected<a name="line.591"></a>
+<span class="sourceLineNo">592</span>         * {@link Suggestion}.<a name="line.592"></a>
+<span class="sourceLineNo">593</span>         *<a name="line.593"></a>
+<span class="sourceLineNo">594</span>         * @param suggestion<a name="line.594"></a>
+<span class="sourceLineNo">595</span>         *            the selected {@link Suggestion}<a name="line.595"></a>
+<span class="sourceLineNo">596</span>         *<a name="line.596"></a>
+<span class="sourceLineNo">597</span>         * @return the created MaterialChip, or &lt;code&gt;null&lt;/code&gt; if the<a name="line.597"></a>
+<span class="sourceLineNo">598</span>         *         suggestion should be ignored.<a name="line.598"></a>
+<span class="sourceLineNo">599</span>         */<a name="line.599"></a>
+<span class="sourceLineNo">600</span>        MaterialChip getChip(Suggestion suggestion);<a name="line.600"></a>
+<span class="sourceLineNo">601</span>    }<a name="line.601"></a>
+<span class="sourceLineNo">602</span><a name="line.602"></a>
+<span class="sourceLineNo">603</span>    /**<a name="line.603"></a>
+<span class="sourceLineNo">604</span>     * Default implementation of the {@link MaterialChipProvider} interface,<a name="line.604"></a>
+<span class="sourceLineNo">605</span>     * used by the {@link gwt.material.design.addins.client.autocomplete.MaterialAutoComplete}.<a name="line.605"></a>
+<span class="sourceLineNo">606</span>     *<a name="line.606"></a>
+<span class="sourceLineNo">607</span>     * @see gwt.material.design.addins.client.autocomplete.MaterialAutoComplete#setChipProvider(MaterialChipProvider)<a name="line.607"></a>
+<span class="sourceLineNo">608</span>     */<a name="line.608"></a>
+<span class="sourceLineNo">609</span>    public static class DefaultMaterialChipProvider implements MaterialChipProvider {<a name="line.609"></a>
+<span class="sourceLineNo">610</span><a name="line.610"></a>
+<span class="sourceLineNo">611</span>        @Override<a name="line.611"></a>
+<span class="sourceLineNo">612</span>        public MaterialChip getChip(Suggestion suggestion) {<a name="line.612"></a>
+<span class="sourceLineNo">613</span>            final MaterialChip chip = new MaterialChip();<a name="line.613"></a>
+<span class="sourceLineNo">614</span><a name="line.614"></a>
+<span class="sourceLineNo">615</span>            String imageChip = suggestion.getDisplayString();<a name="line.615"></a>
+<span class="sourceLineNo">616</span>            String textChip = imageChip;<a name="line.616"></a>
+<span class="sourceLineNo">617</span><a name="line.617"></a>
+<span class="sourceLineNo">618</span>            String s = "&lt;img src=\"";<a name="line.618"></a>
+<span class="sourceLineNo">619</span>            if (imageChip.contains(s)) {<a name="line.619"></a>
+<span class="sourceLineNo">620</span>                int ix = imageChip.indexOf(s) + s.length();<a name="line.620"></a>
+<span class="sourceLineNo">621</span>                imageChip = imageChip.substring(ix, imageChip.indexOf("\"", ix + 1));<a name="line.621"></a>
+<span class="sourceLineNo">622</span>                chip.setUrl(imageChip);<a name="line.622"></a>
+<span class="sourceLineNo">623</span>                textChip = textChip.replaceAll("[&lt;](/)?img[^&gt;]*[&gt;]", "");<a name="line.623"></a>
+<span class="sourceLineNo">624</span>            }<a name="line.624"></a>
+<span class="sourceLineNo">625</span>            chip.setText(textChip);<a name="line.625"></a>
+<span class="sourceLineNo">626</span><a name="line.626"></a>
+<span class="sourceLineNo">627</span>            return chip;<a name="line.627"></a>
+<span class="sourceLineNo">628</span>        }<a name="line.628"></a>
+<span class="sourceLineNo">629</span>    }<a name="line.629"></a>
+<span class="sourceLineNo">630</span><a name="line.630"></a>
+<span class="sourceLineNo">631</span>    @Override<a name="line.631"></a>
+<span class="sourceLineNo">632</span>    public HandlerRegistration addValueChangeHandler(ValueChangeHandler&lt;List&lt;? extends Suggestion&gt;&gt; handler) {<a name="line.632"></a>
+<span class="sourceLineNo">633</span>        return addHandler(handler, ValueChangeEvent.getType());<a name="line.633"></a>
+<span class="sourceLineNo">634</span>    }<a name="line.634"></a>
+<span class="sourceLineNo">635</span><a name="line.635"></a>
+<span class="sourceLineNo">636</span>    /**<a name="line.636"></a>
+<span class="sourceLineNo">637</span>     * Returns the selected {@link Suggestion}s. Modifications to the list are<a name="line.637"></a>
+<span class="sourceLineNo">638</span>     * not propagated to the component.<a name="line.638"></a>
+<span class="sourceLineNo">639</span>     *<a name="line.639"></a>
+<span class="sourceLineNo">640</span>     * @return the list of selected {@link Suggestion}s, or empty if none was<a name="line.640"></a>
+<span class="sourceLineNo">641</span>     *         selected (never &lt;code&gt;null&lt;/code&gt;).<a name="line.641"></a>
+<span class="sourceLineNo">642</span>     */<a name="line.642"></a>
+<span class="sourceLineNo">643</span>    @Override<a name="line.643"></a>
+<span class="sourceLineNo">644</span>    public List&lt;? extends Suggestion&gt; getValue() {<a name="line.644"></a>
+<span class="sourceLineNo">645</span>        return new ArrayList&lt;&gt;(suggestionMap.keySet());<a name="line.645"></a>
+<span class="sourceLineNo">646</span>    }<a name="line.646"></a>
+<span class="sourceLineNo">647</span><a name="line.647"></a>
+<span class="sourceLineNo">648</span>    @Override<a name="line.648"></a>
+<span class="sourceLineNo">649</span>    public void setValue(List&lt;? extends Suggestion&gt; value) {<a name="line.649"></a>
+<span class="sourceLineNo">650</span>        setValue(value, false);<a name="line.650"></a>
+<span class="sourceLineNo">651</span>    }<a name="line.651"></a>
+<span class="sourceLineNo">652</span><a name="line.652"></a>
+<span class="sourceLineNo">653</span>    @Override<a name="line.653"></a>
+<span class="sourceLineNo">654</span>    public void setValue(List&lt;? extends Suggestion&gt; value, boolean fireEvents) {<a name="line.654"></a>
+<span class="sourceLineNo">655</span>        clear();<a name="line.655"></a>
+<span class="sourceLineNo">656</span>        if (value != null) {<a name="line.656"></a>
+<span class="sourceLineNo">657</span>            for (Suggestion suggestion : value) {<a name="line.657"></a>
+<span class="sourceLineNo">658</span>                addItem(suggestion);<a name="line.658"></a>
+<span class="sourceLineNo">659</span>            }<a name="line.659"></a>
+<span class="sourceLineNo">660</span>        }<a name="line.660"></a>
+<span class="sourceLineNo">661</span>        if (fireEvents) {<a name="line.661"></a>
+<span class="sourceLineNo">662</span>            ValueChangeEvent.fire(this, getValue());<a name="line.662"></a>
+<span class="sourceLineNo">663</span>        }<a name="line.663"></a>
+<span class="sourceLineNo">664</span>    }<a name="line.664"></a>
+<span class="sourceLineNo">665</span>}<a name="line.665"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>
