@@ -4,7 +4,7 @@
     <parent>
         <artifactId>gwt-material-parent</artifactId>
         <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>1.5.0</version>
+        <version>1.5.1-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -12,7 +12,7 @@
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.5.0</version>
+    <version>1.5.1-SNAPSHOT</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
 
@@ -35,7 +35,7 @@
         <gwt.version>2.7.0</gwt.version>
         <gwtp.version>1.5.1</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.5.0</gwt-material.version>
+        <gwt-material.version>1.5.1-SNAPSHOT</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
@@ -194,7 +194,7 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.5.0</version>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
