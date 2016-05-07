@@ -22,6 +22,10 @@ pre.prettyprint {
     background-color: #E8F4FD;
 }
 
+nav{
+    width: calc(100% - 240px);
+}
+
 /* Styles for Affix/sidebar shamelessly copied from http://getbootstrap.com/assets/css/docs.css */
 
 /* By default it's not affixed in mobile views, so undo that */

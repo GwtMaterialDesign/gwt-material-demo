@@ -91,17 +91,17 @@
   <g:HTMLPanel>
     <m.html:Header ui:field="header">
 
-      <m:MaterialNavBar m:id="navBar" ui:field="navBar" backgroundColor="blue darken-2" activates="sideBar" textColor="white">
+      <m:MaterialNavBar m:id="navBar" ui:field="navBar" type="FIXED" backgroundColor="blue darken-2" activates="sideBar" textColor="white">
         <m:MaterialNavBrand ui:field="navBrand" addStyleNames="{style.navBrand}"/>
         <m:MaterialLink ui:field="btnMiniMenu" iconType="MENU" showOn="SHOW_ON_LARGE" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
         <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="white" float="RIGHT"/>
       </m:MaterialNavBar>
 
-      <m:MaterialNavBar ui:field="navBarSearch" visible="false">
+      <m:MaterialNavBar ui:field="navBarSearch" type="FIXED" visible="false">
          <m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="white" iconColor="black"  active="true" grid="l3" shadow="1"/>
       </m:MaterialNavBar>
 
-      <m.waterfall:MaterialWaterfall ui:field="waterfall"  backgroundColor="blue" height="320px" textColor="white" padding="56" shadow="1">
+      <m:MaterialPanel backgroundColor="blue" marginTop="60" height="320px" textColor="white" padding="56" shadow="1">
           <m:MaterialPanel ui:field="panel">
               <m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="4em"/>
               <m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
@@ -109,7 +109,7 @@
                                       text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"
                                       addStyleNames="{style.btnGettingStarted}"/>
           </m:MaterialPanel>
-      </m.waterfall:MaterialWaterfall>
+      </m:MaterialPanel>
 
       <m:MaterialSideNav ui:field="sideNav" m:id="sideBar" type="OPEN" closeOnClick="false">
         <m.html:ListItem waves="DEFAULT" paddingBottom="22">
