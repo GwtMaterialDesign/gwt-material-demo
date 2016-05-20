@@ -24,7 +24,7 @@
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
-    <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
     <ui:style>
         .block{

@@ -21,7 +21,6 @@ package gwt.material.design.demo.client.resources;
  */
 
 
-import com.google.appengine.api.images.Image;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.ImageResource;
@@ -122,4 +121,7 @@ public interface MaterialResources extends ClientBundle {
 
 	@Source("img/wonder_woman.png")
 	ImageResource wonder_woman();
+
+	@Source("img/image.png")
+	ImageResource image();
 }

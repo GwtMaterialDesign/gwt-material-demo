@@ -24,7 +24,9 @@
              xmlns:m.addins="urn:import:gwt.material.design.addins.client.ui"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
-    <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
     <g:HTMLPanel>
         <m:MaterialTitle title="Usage" description=""/>
         <m:MaterialPanel ui:field="panel" />
