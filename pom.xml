@@ -32,7 +32,7 @@
 
         <!-- GWT -->
         <gwt.version>2.7.0</gwt.version>
-        <gwtp.version>1.5.1</gwtp.version>
+        <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>1.5.1-SNAPSHOT</gwt-material.version>
 
