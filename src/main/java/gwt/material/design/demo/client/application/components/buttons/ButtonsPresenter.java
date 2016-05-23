@@ -43,7 +43,7 @@ public class ButtonsPresenter extends Presenter<ButtonsPresenter.MyView, Buttons
 
     @Inject
     ButtonsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
     @Override

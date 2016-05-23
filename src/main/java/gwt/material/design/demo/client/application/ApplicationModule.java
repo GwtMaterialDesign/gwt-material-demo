@@ -20,7 +20,6 @@ package gwt.material.design.demo.client.application;
  * #L%
  */
 
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import gwt.material.design.demo.client.application.about.AboutModule;
 import gwt.material.design.demo.client.application.addins.AddinsModule;
@@ -29,6 +28,7 @@ import gwt.material.design.demo.client.application.apps.AppsModule;
 import gwt.material.design.demo.client.application.charts.ChartsModule;
 import gwt.material.design.demo.client.application.components.ComponentsModule;
 import gwt.material.design.demo.client.application.gettingstarted.GettingStartedModule;
+import gwt.material.design.demo.client.application.menu.MenuModule;
 import gwt.material.design.demo.client.application.roadmap.RoadMapModule;
 import gwt.material.design.demo.client.application.showcase.ShowcaseModule;
 import gwt.material.design.demo.client.application.style.StyleModule;
@@ -40,6 +40,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class,
                 ApplicationView.class, ApplicationPresenter.MyProxy.class);
 
+        install(new MenuModule());
         install(new AppsModule());
         install(new RoadMapModule());
         install(new TemplatesModule());

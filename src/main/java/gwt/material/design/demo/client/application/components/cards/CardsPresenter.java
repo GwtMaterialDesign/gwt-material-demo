@@ -23,7 +23,6 @@ package gwt.material.design.demo.client.application.components.cards;
 
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
@@ -44,7 +43,7 @@ public class CardsPresenter extends Presenter<CardsPresenter.MyView, CardsPresen
 
     @Inject
     CardsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
     @Override

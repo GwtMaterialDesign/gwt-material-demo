@@ -20,41 +20,12 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
        xmlns:g="urn:import:com.google.gwt.user.client.ui"
        xmlns:m="urn:import:gwt.material.design.client.ui"
-       xmlns:m.waterfall="urn:import:gwt.material.design.addins.client.waterfall"
        xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
 
   <ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
   <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
   <ui:style>
-      @external .sidebar, .nav-wrapper;
-      .sidebar {
-          padding: 10% !important;
-          font-size: 1em;
-          margin-left: -20px;
-          margin-right: -20px;
-      }
-      .sidebar a {
-          padding: 0 !important;
-      }
-      .sidebar a, .sidebar i{
-          line-height: 1 !important;
-          height: 0 !important;
-      }
-      .sidebar i {
-          line-height: 0.5 !important;
-      }
-      .topPanel {
-          padding: 9%;
-          font-size: 4em;
-      }
-
-      nav {
-          box-shadow: none;
-      }
-      .nav-wrapper{
-          margin: 0;
-      }
       .panel {
           padding-left: 5%;
           width: 100%;
@@ -64,179 +35,18 @@
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
       }
-      main, header, footer{
-          padding-left: 250px;
-      }
       .footer {
           margin-top: -50px !important;
-      }
-      .logo {
-        padding: 10px;
-        border-bottom: 1px solid #E9E9E9;
-      }
-      .btnGettingStarted {
-          font-size: 1em !important;
-          margin-top: 20px;
       }
       .gplus{
         display: block;
         margin-top: 20px;
       }
-      .navBrand{
-          font-size: 1.2em !important;
-          margin-left: 4%;
-      }
   </ui:style>
 
   <g:HTMLPanel>
-    <m.html:Header ui:field="header">
 
-      <m:MaterialNavBar m:id="navBar" ui:field="navBar" type="FIXED" backgroundColor="blue darken-2" activates="sideBar" textColor="white">
-        <m:MaterialNavBrand ui:field="navBrand" addStyleNames="{style.navBrand}"/>
-        <m:MaterialLink ui:field="btnMiniMenu" iconType="MENU" showOn="SHOW_ON_LARGE" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
-        <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="white" float="RIGHT"/>
-      </m:MaterialNavBar>
-
-      <m:MaterialNavBar ui:field="navBarSearch" type="FIXED" visible="false">
-         <m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="white" iconColor="black"  active="true" grid="l3" shadow="1"/>
-      </m:MaterialNavBar>
-
-      <m:MaterialPanel backgroundColor="blue" marginTop="56" height="320px" textColor="white" padding="56" shadow="1">
-          <m:MaterialPanel ui:field="panel">
-              <m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="4em"/>
-              <m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
-              <m:MaterialAnchorButton ui:field="btnStarted" targetHistoryToken="{tokens.getGettingstarted}"
-                                      text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"
-                                      addStyleNames="{style.btnGettingStarted}"/>
-          </m:MaterialPanel>
-      </m:MaterialPanel>
-
-      <m:MaterialSideNav ui:field="sideNav" m:id="sideBar" type="OPEN" width="250" closeOnClick="false">
-        <m.html:ListItem waves="DEFAULT" paddingBottom="22">
-          <m:MaterialImage width="100%" url="http://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
-        </m.html:ListItem>
-        <m.html:ListItem waves="DEFAULT">
-          <m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About" textColor="blue" />
-        </m.html:ListItem>
-        <m.html:ListItem waves="DEFAULT">
-          <m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started" textColor="blue">
-            <m:MaterialBadge text="1.5.0" backgroundColor="blue" textColor="white"/>
-          </m:MaterialLink>
-        </m.html:ListItem>
-        <m:MaterialCollapsible>
-          <!-- COMPONENTS -->
-          <m:MaterialCollapsibleItem>
-            <m:MaterialCollapsibleHeader waves="DEFAULT">
-              <m:MaterialLink text="Components" iconType="POLYMER" textColor="blue"/>
-            </m:MaterialCollapsibleHeader>
-            <m:MaterialCollapsibleBody>
-              <m.html:UnorderedList>
-                <m:MaterialLink targetHistoryToken="{tokens.getBadges}" text="Badges" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getButtons}" text="Buttons" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getBreadcrumbs}" text="Breadcrumb" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getCards}" text="Cards" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getChips}" text="Chips" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getCollections}" text="Collections" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getDatagrid}" text="Datagrid" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getDialogs}" text="Dialogs" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getErrors}" text="Errors" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getForms}" text="Forms" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getFabs}" text="FAB" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getFooter}" text="Footer" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getPushPin}" text="Pushpin" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getSearch}" text="Search" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" textColor="blue" waves="DEFAULT"/>
-              </m.html:UnorderedList>
-            </m:MaterialCollapsibleBody>
-          </m:MaterialCollapsibleItem>
-          <!-- ANIMATIONS -->
-          <m:MaterialCollapsibleItem>
-            <m:MaterialCollapsibleHeader waves="DEFAULT">
-              <m:MaterialLink text="Animations" iconType="PLAY_CIRCLE_OUTLINE" textColor="blue"/>
-            </m:MaterialCollapsibleHeader>
-            <m:MaterialCollapsibleBody>
-              <m.html:UnorderedList>
-                <m:MaterialLink targetHistoryToken="{tokens.getCoreAnimations}" text="Core" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getMeaningful}" text="Meaningful" textColor="blue" waves="DEFAULT"/>
-              </m.html:UnorderedList>
-            </m:MaterialCollapsibleBody>
-          </m:MaterialCollapsibleItem>
-          <!-- ADDINS -->
-          <m:MaterialCollapsibleItem>
-            <m:MaterialCollapsibleHeader waves="DEFAULT">
-              <m:MaterialLink text="Addins" iconType="EXTENSION" textColor="blue"/>
-            </m:MaterialCollapsibleHeader>
-            <m:MaterialCollapsibleBody>
-              <m.html:UnorderedList>
-                <m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
-                <m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getScrollfire}" text="Scroll Fire" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getSplitpanel}" text="Split Panel" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getSwipeable}" text="Swipeable" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getTree}" text="Tree View" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getWaterfall}" text="Waterfall" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getWindow}" text="Window" textColor="blue" waves="DEFAULT"/>
-              </m.html:UnorderedList>
-            </m:MaterialCollapsibleBody>
-          </m:MaterialCollapsibleItem>
-          <!-- STYLE AND LAYOUTS -->
-          <m:MaterialCollapsibleItem>
-            <m:MaterialCollapsibleHeader waves="DEFAULT">
-              <m:MaterialLink text="Style and Layout" iconType="STYLE" textColor="blue"/>
-            </m:MaterialCollapsibleHeader>
-            <m:MaterialCollapsibleBody>
-              <m.html:UnorderedList>
-                <m:MaterialLink targetHistoryToken="{tokens.getColors}" text="Colors" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getGrid}" text="Grid" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getHelper}" text="Helper" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" textColor="blue" waves="DEFAULT"/>
-                <m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" textColor="blue" waves="DEFAULT"/>
-              </m.html:UnorderedList>
-            </m:MaterialCollapsibleBody>
-          </m:MaterialCollapsibleItem>
-        </m:MaterialCollapsible>
-        <!-- ROADMAPS -->
-        <m:MaterialLink targetHistoryToken="{tokens.getRoadmap}" iconPosition="LEFT" iconType="TIMELINE" text="Roadmap" textColor="blue" waves="DEFAULT" />
-        <!-- SHOWCASE -->
-        <m:MaterialLink targetHistoryToken="{tokens.getShowcase}" iconPosition="LEFT" iconType="WEB" text="Showcase" textColor="blue" waves="DEFAULT" />
-        <!-- APPS -->
-        <m:MaterialLink targetHistoryToken="{tokens.getApps}" iconPosition="LEFT" iconType="APPS" text="Apps" textColor="blue" waves="DEFAULT" />
-        <!-- TEMPLATES -->
-        <m:MaterialLink targetHistoryToken="{tokens.getTemplates}" iconPosition="LEFT" iconType="DASHBOARD" text="Templates" textColor="blue" waves="DEFAULT" />
-        <!-- CHARTS -->
-        <m:MaterialLink targetHistoryToken="{tokens.getCharts}" iconPosition="LEFT" iconType="INSERT_CHART" text="Material Charts" textColor="blue" waves="DEFAULT" />
-      </m:MaterialSideNav>
-
-      <m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" fixed="false">
-        <m:MaterialLink><m:MaterialIcon iconType="POLYMER" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
-        <m:MaterialLink><m:MaterialIcon iconType="ADD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
-        <m:MaterialLink><m:MaterialIcon iconType="ADJUST" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
-        <m:MaterialLink><m:MaterialIcon iconType="BATTERY_STD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
-      </m:MaterialSideNav>
-    </m.html:Header>
-
+    <g:HTMLPanel ui:field="menu" />
     <m:MaterialContainer>
       <g:HTMLPanel ui:field="main" addStyleNames="{style.panel} container z-depth-2" />
 

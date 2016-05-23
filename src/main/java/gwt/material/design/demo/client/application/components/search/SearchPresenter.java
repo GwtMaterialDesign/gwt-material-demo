@@ -46,7 +46,7 @@ public class SearchPresenter extends Presenter<SearchPresenter.MyView, SearchPre
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
     @Override

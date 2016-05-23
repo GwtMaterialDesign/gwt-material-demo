@@ -27,7 +27,6 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
@@ -47,7 +46,7 @@ public class MeaningfulAnimationsPresenter extends Presenter<MeaningfulAnimation
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
 
     }
 

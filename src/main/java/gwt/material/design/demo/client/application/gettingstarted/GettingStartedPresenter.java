@@ -48,7 +48,7 @@ public class GettingStartedPresenter extends Presenter<GettingStartedPresenter.M
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MainContent);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
 
         getView().setUiHandlers(this);
     }
