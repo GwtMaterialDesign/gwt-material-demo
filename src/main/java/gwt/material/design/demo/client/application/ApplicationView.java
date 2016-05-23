@@ -144,7 +144,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         listSearches.add(new SearchObject(IconType.STYLE, "Shadow", "#!shadow"));
         listSearches.add(new SearchObject(IconType.STYLE, "Theming", "#!themes"));
 
-
         // Roadmap
         listSearches.add(new SearchObject(IconType.TIMELINE, "Roadmap", "#roadmap"));
 
@@ -175,7 +174,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     public void setPageTitle(String title, String description) {
         this.title.setText(title);
         this.description.setText(description);
-        sideNav.hide(sideNav.getElement());
+        sideNav.hide();
         MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);
         MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.description, 1000);
     }

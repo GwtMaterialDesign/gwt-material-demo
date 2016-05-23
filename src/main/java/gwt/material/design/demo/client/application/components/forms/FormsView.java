@@ -64,8 +64,8 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @UiHandler("cbBox")
-    void onCheckBox(ClickEvent e) {
-        if(cbBox.getValue()) {
+    void onCheckBox(ValueChangeEvent<Boolean> e) {
+        if(e.getValue()) {
             cbBox.setText("CheckBox 1: true");
         } else {
             cbBox.setText("CheckBox 1: false");
@@ -73,8 +73,8 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @UiHandler("cbBoxAll")
-    void onCheckAll(ClickEvent e) {
-        if(cbBoxAll.getValue()) {
+    void onCheckAll(ValueChangeEvent<Boolean> e) {
+        if(e.getValue()) {
             cbBlue.setValue(true);
             cbRed.setValue(true);
             cbCyan.setValue(true);
