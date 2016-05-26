@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '2676B180F5B718A11767CE307676F27B';
+var $strongName = 'B95A926EB1AB31A5AC5DD86839E0A4C2';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -12879,10 +12879,10 @@ function $initDropzone(this$static){
     this$static.clickable = clickable;
   }
   this$static.preview || $setDisplay_1(this$static.uploadPreview, ($clinit_Display() , NONE_4));
-  $initDropzone_0(this$static, this$static.element, $getElement(this$static.uploadPreview.uploadCollection.item_0), previews, $getElement(this$static.uploadPreview), $getElement(this$static.uploadPreview.uploadHeader.uploadedFiles), this$static.url_0, this$static.maxFileSize, this$static.maxFiles, this$static.method.cssClass, this$static.autoQueue, this$static.acceptedFiles, this$static.clickable, this$static.preview);
+  $initDropzone_0(this$static, this$static.element, $getElement(this$static.uploadPreview.uploadCollection.item_0), previews, $getElement(this$static.uploadPreview), $getElement(this$static.uploadPreview.uploadHeader.uploadedFiles), this$static.url_0, this$static.maxFileSize, this$static.maxFiles, this$static.method.cssClass, this$static.autoQueue, this$static.acceptedFiles, this$static.clickable, this$static.preview, false);
 }
 
-function $initDropzone_0(this$static, e, template, previews, uploadPreview, uploadedFiles, url_0, maxFileSize, maxFiles, method, autoQueue, acceptedFiles, clickable, preview){
+function $initDropzone_0(this$static, e, template, previews, uploadPreview, uploadedFiles, url_0, maxFileSize, maxFiles, method, autoQueue, acceptedFiles, clickable, preview, withCredentials){
   var that = this$static;
   $wnd.jQuery(document).ready(function(){
     var previewNode = $wnd.jQuery(template);
@@ -12890,7 +12890,7 @@ function $initDropzone_0(this$static, e, template, previews, uploadPreview, uplo
     previewNode.id = '';
     var previewTemplate = previewNode.parent().html();
     var totalFiles = 0;
-    var zdrop = new $wnd.Dropzone(e, {url:url_0, maxFilesize:maxFileSize, method:method, maxFiles:maxFiles, previewTemplate:previewTemplate, acceptedFiles:acceptedFiles, autoQueue:autoQueue, previewsContainer:'#' + previews, clickable:'#' + clickable});
+    var zdrop = new $wnd.Dropzone(e, {url:url_0, maxFilesize:maxFileSize, method:method, maxFiles:maxFiles, previewTemplate:previewTemplate, acceptedFiles:acceptedFiles, autoQueue:autoQueue, previewsContainer:'#' + previews, clickable:'#' + clickable, withCredentials:withCredentials});
     zdrop.on('drop', function(){
       that.fireDropEvent();
       preview && $wnd.jQuery(e).removeClass('active');
@@ -13710,6 +13710,10 @@ function MaterialRow(){
   MaterialWidget_1.call(this, $doc.createElement('div'), initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['row']));
 }
 
+function MaterialRow_0(element, initialClass){
+  MaterialWidget_1.call(this, element, initialClass);
+}
+
 defineClass(35, 23, $intern_62, MaterialRow);
 var Lgwt_material_design_client_ui_MaterialRow_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialRow', 35);
 function $clinit_MaterialMasonry(){
@@ -13722,8 +13726,8 @@ function $clinit_MaterialMasonry(){
 function $initMasonry(this$static, e){
   var that = this$static;
   $wnd.jQuery(window).ready(function(){
-    $wnd.jQuery('.masonry-row').imagesLoaded(function(){
-      var grid = $wnd.jQuery(e).masonry({itemSelector:'.masonry-row >' + that.getItemSelector(), percentPosition:that.isPercentPosition(), originLeft:that.isOriginLeft(), originTop:that.isOriginTop(), transitionDuration:that.getTransitionDuration() + 'ms', columnWidth:'.col-sizer'});
+    $wnd.jQuery('.masonry').imagesLoaded(function(){
+      var grid = $wnd.jQuery(e).masonry({itemSelector:'.masonry >' + that.getItemSelector(), percentPosition:that.isPercentPosition(), originLeft:that.isOriginLeft(), originTop:that.isOriginTop(), transitionDuration:that.getTransitionDuration() + 'ms', columnWidth:'.col-sizer'});
     }
     );
   }
@@ -13732,14 +13736,13 @@ function $initMasonry(this$static, e){
 
 function MaterialMasonry(){
   $clinit_MaterialMasonry();
-  MaterialRow.call(this);
+  MaterialRow_0.call(this, $doc.createElement('div'), initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['masonry', 'row']));
   this.itemSelector = '.col';
   this.percentPosition = true;
   this.originLeft = true;
   this.originTop = true;
   this.transitionDuration = 400;
   this.sizerDiv = new MaterialWidget_0($doc.createElement('div'));
-  $setInitialClasses(this, initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 4, ['masonry-row']));
   this.sizerDiv.setWidth_0('8.3333%');
   $setStyleName(this.sizerDiv, 'col-sizer');
   $add_12(this, this.sizerDiv);
