@@ -193,7 +193,7 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
-            <version>1.5.0</version>
+            <version>${gwt-material.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
