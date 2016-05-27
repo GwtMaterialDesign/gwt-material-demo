@@ -76,6 +76,26 @@
                 &lt;/m:MaterialSideNav><br/>
             </demo:PrettyPre>
 
+            <!-- FIXED type Variations -->
+            <m:MaterialTitle title="Fixed Type Variations" description="Fixed type can be displayed floating or clip. We let users to have control on it's design." />
+            <m:MaterialTitle title="Variation 1 : Floating" />
+            <m:MaterialImage url="http://i.imgur.com/hKKN3Fy.png" />
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;!-- Variation No. 1 - Floating Fixed. -->
+                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="grey lighten-4" top="68" shadow="0">
+                    &lt;!-- Items here -->
+                &lt;/m:MaterialSideNav>
+            </demo:PrettyPre>
+
+            <m:MaterialTitle title="Variation 2 : Clip" />
+            <m:MaterialImage url="http://i.imgur.com/fhOn7h4.png" />
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                &lt;!-- Variation No. 2 - Clip Fixed -->
+                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="white" top="64" shadow="0">
+                &lt;!-- Items here -->
+                &lt;/m:MaterialSideNav>
+            </demo:PrettyPre>
+
             <!-- CARD -->
             <m:MaterialTitle title="Card Type" />
             <m:MaterialImage addStyleNames="z-depth-1" url="https://cloud.githubusercontent.com/assets/3138071/10065493/bba5e930-623b-11e5-87c8-79dccfdad431.png"/>
