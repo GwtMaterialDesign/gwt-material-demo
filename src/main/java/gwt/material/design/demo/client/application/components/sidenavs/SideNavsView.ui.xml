@@ -81,19 +81,19 @@
             <m:MaterialTitle title="Variation 1 : Floating" />
             <m:MaterialImage url="http://i.imgur.com/hKKN3Fy.png" />
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-                &lt;!-- Variation No. 1 - Floating Fixed. -->
-                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="grey lighten-4" top="68" shadow="0">
-                    &lt;!-- Items here -->
+                &lt;!-- Variation No. 1 - Floating Fixed. --> <br/>
+                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="grey lighten-4" top="68" shadow="0"><br/>
+                    &lt;!-- Items here --><br/>
                 &lt;/m:MaterialSideNav>
             </demo:PrettyPre>
 
             <m:MaterialTitle title="Variation 2 : Clip" />
             <m:MaterialImage url="http://i.imgur.com/fhOn7h4.png" />
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-                &lt;!-- Variation No. 2 - Clip Fixed -->
-                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="white" top="64" shadow="0">
-                &lt;!-- Items here -->
-                &lt;/m:MaterialSideNav>
+                &lt;!-- Variation No. 2 - Clip Fixed --><br/>
+                &lt;m:MaterialSideNav m:id="sidenav" type="FIXED" alwaysShowActivator="true" showOnAttach="true" backgroundColor="white" top="64" shadow="0"><br/>
+                &lt;!-- Items here --><br/>
+                &lt;/m:MaterialSideNav><br/>
             </demo:PrettyPre>
 
             <!-- CARD -->
