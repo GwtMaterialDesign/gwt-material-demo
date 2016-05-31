@@ -73,7 +73,7 @@
 			<m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="white" iconColor="black" active="true" shadow="1"/>
 		</m:MaterialNavBar>
 
-		<m:MaterialPanel backgroundColor="blue" marginTop="56" height="320px" textColor="white" padding="56" shadow="1">
+		<m:MaterialPanel backgroundColor="blue" marginTop="56" textColor="white" padding="56" shadow="1">
 			<m:MaterialPanel ui:field="panel">
 				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="4em"/>
 				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
