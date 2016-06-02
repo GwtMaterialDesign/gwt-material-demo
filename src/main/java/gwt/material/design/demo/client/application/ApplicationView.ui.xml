@@ -48,7 +48,7 @@
 
     <g:HTMLPanel ui:field="menu" />
     <m:MaterialContainer>
-      <g:HTMLPanel ui:field="main" addStyleNames="{style.panel} container z-depth-2" />
+      <g:HTMLPanel ui:field="main" addStyleNames="{style.panel}" />
 
       <m:MaterialPanel>
         <g:HTMLPanel>
@@ -86,7 +86,7 @@
         </m:MaterialColumn>
       </m:MaterialRow>
 
-      <m:MaterialFooterCopyright>
+      <m:MaterialFooterCopyright addStyleNames="footer-copyright">
         <m:MaterialLabel text="© 2015 Copyright GWT Material" />
       </m:MaterialFooterCopyright>
     </m:MaterialFooter>

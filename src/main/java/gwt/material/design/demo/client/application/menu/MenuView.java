@@ -83,6 +83,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
                 style.setProperty("webkitTransition", duration + "ms");
 
                 navBar.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
+                navBarSearch.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
             }
         }, SideNavPushEvent.TYPE);
 
