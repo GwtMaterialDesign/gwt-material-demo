@@ -92,7 +92,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started" textColor="blue">
-					<m:MaterialBadge text="1.5.0" backgroundColor="blue" textColor="white"/>
+					<m:MaterialBadge text="1.5.1" backgroundColor="blue" textColor="white"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>

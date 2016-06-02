@@ -32,6 +32,7 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.1"),
         CORE_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.0"),
         CORE_1_4_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.4.1"),
         CORE_1_4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.4"),
@@ -45,9 +46,11 @@ public class Version implements Serializable {
         // FOR gwt-material Themes
         THEME_1_4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.4"),
         THEME_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.0"),
+        THEME_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.1"),
 
         // FOR gwt-material Addins
-        ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0");
+        ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0"),
+        ADDINS_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.1");
 
         String name;
         VersionLink(String name) {
