@@ -4,14 +4,14 @@
     <parent>
         <artifactId>gwt-material-parent</artifactId>
         <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>1.5.1-SNAPSHOT</version>
+        <version>1.5.1</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.5.1-SNAPSHOT</version>
+    <version>1.5.1</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
 
@@ -34,7 +34,7 @@
         <gwt.version>2.7.0</gwt.version>
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.5.1-SNAPSHOT</gwt-material.version>
+        <gwt-material.version>1.5.1</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
