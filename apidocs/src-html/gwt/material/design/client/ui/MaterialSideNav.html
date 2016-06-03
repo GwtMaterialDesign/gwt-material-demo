@@ -28,418 +28,516 @@
 <span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
 <span class="sourceLineNo">021</span> */<a name="line.21"></a>
 <span class="sourceLineNo">022</span><a name="line.22"></a>
-<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Document;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import com.google.gwt.dom.client.Element;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Style;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>import com.google.gwt.dom.client.Style.Unit;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import com.google.gwt.event.dom.client.ClickEvent;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import com.google.gwt.event.dom.client.ClickHandler;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import com.google.gwt.uibinder.client.UiConstructor;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import com.google.gwt.user.client.Timer;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import com.google.gwt.user.client.ui.HasWidgets;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import com.google.gwt.user.client.ui.Widget;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>import com.google.web.bindery.event.shared.HandlerRegistration;<a name="line.33"></a>
-<span class="sourceLineNo">034</span>import gwt.material.design.client.base.*;<a name="line.34"></a>
-<span class="sourceLineNo">035</span>import gwt.material.design.client.base.helper.DOMHelper;<a name="line.35"></a>
-<span class="sourceLineNo">036</span>import gwt.material.design.client.base.helper.StyleHelper;<a name="line.36"></a>
-<span class="sourceLineNo">037</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.37"></a>
-<span class="sourceLineNo">038</span>import gwt.material.design.client.base.mixin.ToggleStyleMixin;<a name="line.38"></a>
-<span class="sourceLineNo">039</span>import gwt.material.design.client.constants.Edge;<a name="line.39"></a>
-<span class="sourceLineNo">040</span>import gwt.material.design.client.constants.SideNavType;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>import gwt.material.design.client.events.ClearActiveEvent;<a name="line.41"></a>
-<span class="sourceLineNo">042</span>import gwt.material.design.client.events.ClearActiveEvent.ClearActiveHandler;<a name="line.42"></a>
-<span class="sourceLineNo">043</span>import gwt.material.design.client.events.ObservedEvent;<a name="line.43"></a>
-<span class="sourceLineNo">044</span>import gwt.material.design.client.events.SideNavHiddenEvent;<a name="line.44"></a>
-<span class="sourceLineNo">045</span>import gwt.material.design.client.events.SideNavHiddenEvent.SideNavHiddenHandler;<a name="line.45"></a>
-<span class="sourceLineNo">046</span>import gwt.material.design.client.events.SideNavShownEvent;<a name="line.46"></a>
-<span class="sourceLineNo">047</span>import gwt.material.design.client.events.SideNavShownEvent.SideNavShownHandler;<a name="line.47"></a>
-<span class="sourceLineNo">048</span>import gwt.material.design.client.ui.html.ListItem;<a name="line.48"></a>
-<span class="sourceLineNo">049</span><a name="line.49"></a>
-<span class="sourceLineNo">050</span>//@formatter:off<a name="line.50"></a>
-<span class="sourceLineNo">051</span><a name="line.51"></a>
-<span class="sourceLineNo">052</span>/**<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * SideNav is a material component that gives you a lists of menus and other navigation components.<a name="line.53"></a>
-<span class="sourceLineNo">054</span> *<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * &lt;pre&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * {@code<a name="line.57"></a>
-<span class="sourceLineNo">058</span> * &lt;m:MaterialSideNav ui:field="sideNav" width="280" m:id="mysidebar"  type="OPEN" closeOnClick="false"&gt;<a name="line.58"></a>
-<span class="sourceLineNo">059</span> *     &lt;m:MaterialLink href="#about" iconPosition="LEFT" iconType="OUTLINE" text="About" textColor="blue"  /&gt;<a name="line.59"></a>
-<span class="sourceLineNo">060</span> *     &lt;m:MaterialLink href="#gettingStarted" iconPosition="LEFT" iconType="DOWNLOAD" text="Getting Started" textColor="blue"  &gt;<a name="line.60"></a>
-<span class="sourceLineNo">061</span> * &lt;/m:MaterialSideNav&gt;<a name="line.61"></a>
-<span class="sourceLineNo">062</span> * }<a name="line.62"></a>
-<span class="sourceLineNo">063</span> * &lt;/pre&gt;<a name="line.63"></a>
-<span class="sourceLineNo">064</span> *<a name="line.64"></a>
-<span class="sourceLineNo">065</span> * @author kevzlou7979<a name="line.65"></a>
-<span class="sourceLineNo">066</span> * @author Ben Dol<a name="line.66"></a>
-<span class="sourceLineNo">067</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#sidenav"&gt;Material SideNav&lt;/a&gt;<a name="line.67"></a>
-<span class="sourceLineNo">068</span> */<a name="line.68"></a>
-<span class="sourceLineNo">069</span>//@formatter:on<a name="line.69"></a>
-<span class="sourceLineNo">070</span>public class MaterialSideNav extends MaterialWidget implements HasType&lt;SideNavType&gt;, HasSelectables {<a name="line.70"></a>
-<span class="sourceLineNo">071</span><a name="line.71"></a>
-<span class="sourceLineNo">072</span>    private int width = 240;<a name="line.72"></a>
-<span class="sourceLineNo">073</span>    private Edge edge = Edge.LEFT;<a name="line.73"></a>
-<span class="sourceLineNo">074</span>    private boolean closeOnClick = false;<a name="line.74"></a>
-<span class="sourceLineNo">075</span>    private Element activator;<a name="line.75"></a>
-<span class="sourceLineNo">076</span>    private HandlerRegistration observedHandler;<a name="line.76"></a>
-<span class="sourceLineNo">077</span><a name="line.77"></a>
-<span class="sourceLineNo">078</span>    private StyleAttributeObserver observer = new StyleAttributeObserver(this, "left");<a name="line.78"></a>
-<span class="sourceLineNo">079</span><a name="line.79"></a>
-<span class="sourceLineNo">080</span>    private final CssTypeMixin&lt;SideNavType, MaterialSideNav&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.80"></a>
-<span class="sourceLineNo">081</span>    private final ToggleStyleMixin&lt;MaterialSideNav&gt; fixedMixin = new ToggleStyleMixin&lt;&gt;(this, "fixed");<a name="line.81"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.core.client.Scheduler;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.core.client.Scheduler.ScheduledCommand;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Document;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.dom.client.Element;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import com.google.gwt.dom.client.Style;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import com.google.gwt.dom.client.Style.Unit;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import com.google.gwt.event.dom.client.ClickEvent;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import com.google.gwt.event.dom.client.ClickHandler;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import com.google.gwt.uibinder.client.UiConstructor;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import com.google.gwt.user.client.Timer;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import com.google.gwt.user.client.Window;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import com.google.gwt.user.client.ui.RootPanel;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import com.google.gwt.user.client.ui.Widget;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import com.google.web.bindery.event.shared.HandlerRegistration;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import gwt.material.design.client.base.*;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import gwt.material.design.client.base.helper.DOMHelper;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>import gwt.material.design.client.base.mixin.ToggleStyleMixin;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>import gwt.material.design.client.constants.Edge;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>import gwt.material.design.client.constants.SideNavType;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>import gwt.material.design.client.events.*;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>import gwt.material.design.client.events.ClearActiveEvent.ClearActiveHandler;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>import gwt.material.design.client.events.SideNavClosedEvent.SideNavClosedHandler;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>import gwt.material.design.client.events.SideNavClosingEvent.SideNavClosingHandler;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>import gwt.material.design.client.events.SideNavOpenedEvent.SideNavOpenedHandler;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>import gwt.material.design.client.events.SideNavOpeningEvent.SideNavOpeningHandler;<a name="line.48"></a>
+<span class="sourceLineNo">049</span>import gwt.material.design.client.ui.html.ListItem;<a name="line.49"></a>
+<span class="sourceLineNo">050</span><a name="line.50"></a>
+<span class="sourceLineNo">051</span>//@formatter:off<a name="line.51"></a>
+<span class="sourceLineNo">052</span><a name="line.52"></a>
+<span class="sourceLineNo">053</span>/**<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * SideNav is a material component that gives you a lists of menus and other navigation components.<a name="line.54"></a>
+<span class="sourceLineNo">055</span> *<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * &lt;pre&gt;<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * {@code<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * &lt;m:MaterialSideNav ui:field="sideNav" width="280" m:id="mysidebar"  type="OPEN" closeOnClick="false"&gt;<a name="line.59"></a>
+<span class="sourceLineNo">060</span> *     &lt;m:MaterialLink href="#about" iconPosition="LEFT" iconType="OUTLINE" text="About" textColor="blue"  /&gt;<a name="line.60"></a>
+<span class="sourceLineNo">061</span> *     &lt;m:MaterialLink href="#gettingStarted" iconPosition="LEFT" iconType="DOWNLOAD" text="Getting Started" textColor="blue"  &gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span> * &lt;/m:MaterialSideNav&gt;<a name="line.62"></a>
+<span class="sourceLineNo">063</span> * }<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * &lt;/pre&gt;<a name="line.64"></a>
+<span class="sourceLineNo">065</span> *<a name="line.65"></a>
+<span class="sourceLineNo">066</span> * @author kevzlou7979<a name="line.66"></a>
+<span class="sourceLineNo">067</span> * @author Ben Dol<a name="line.67"></a>
+<span class="sourceLineNo">068</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#sidenav"&gt;Material SideNav&lt;/a&gt;<a name="line.68"></a>
+<span class="sourceLineNo">069</span> */<a name="line.69"></a>
+<span class="sourceLineNo">070</span>//@formatter:on<a name="line.70"></a>
+<span class="sourceLineNo">071</span>public class MaterialSideNav extends MaterialWidget implements HasType&lt;SideNavType&gt;, HasSelectables {<a name="line.71"></a>
+<span class="sourceLineNo">072</span><a name="line.72"></a>
+<span class="sourceLineNo">073</span>    private int width = 240;<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    private Edge edge = Edge.LEFT;<a name="line.74"></a>
+<span class="sourceLineNo">075</span>    private boolean closeOnClick = false;<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    private boolean alwaysShowActivator = false;<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    private boolean allowBodyScroll = false;<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    private boolean showOnAttach = false;<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    private boolean open;<a name="line.79"></a>
+<span class="sourceLineNo">080</span><a name="line.80"></a>
+<span class="sourceLineNo">081</span>    private Element activator;<a name="line.81"></a>
 <span class="sourceLineNo">082</span><a name="line.82"></a>
-<span class="sourceLineNo">083</span>    /**<a name="line.83"></a>
-<span class="sourceLineNo">084</span>     * Container for App Toolbar and App Sidebar , contains Material Links,<a name="line.84"></a>
-<span class="sourceLineNo">085</span>     * Icons or any other material components.<a name="line.85"></a>
-<span class="sourceLineNo">086</span>     */<a name="line.86"></a>
-<span class="sourceLineNo">087</span>    public MaterialSideNav() {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        super(Document.get().createULElement());<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        setStyleName("side-nav");<a name="line.89"></a>
-<span class="sourceLineNo">090</span>    }<a name="line.90"></a>
-<span class="sourceLineNo">091</span><a name="line.91"></a>
-<span class="sourceLineNo">092</span>    /**<a name="line.92"></a>
-<span class="sourceLineNo">093</span>     *  Creates a list and adds the given widgets.<a name="line.93"></a>
-<span class="sourceLineNo">094</span>     */<a name="line.94"></a>
-<span class="sourceLineNo">095</span>    public MaterialSideNav(final Widget... widgets){<a name="line.95"></a>
-<span class="sourceLineNo">096</span>        this();<a name="line.96"></a>
-<span class="sourceLineNo">097</span>        for (final Widget w : widgets) {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            add(w);<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        }<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
-<span class="sourceLineNo">101</span><a name="line.101"></a>
-<span class="sourceLineNo">102</span>    @UiConstructor<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public MaterialSideNav(SideNavType type){<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        this();<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        setId("nav-mobile");<a name="line.105"></a>
-<span class="sourceLineNo">106</span>        setType(type);<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
-<span class="sourceLineNo">108</span><a name="line.108"></a>
-<span class="sourceLineNo">109</span>    @Override<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    public void onLoad() {<a name="line.110"></a>
-<span class="sourceLineNo">111</span>        super.onLoad();<a name="line.111"></a>
-<span class="sourceLineNo">112</span><a name="line.112"></a>
-<span class="sourceLineNo">113</span>        // Initialize the side nav<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        initialize();<a name="line.114"></a>
-<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
+<span class="sourceLineNo">083</span>    private final CssTypeMixin&lt;SideNavType, MaterialSideNav&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    private final ToggleStyleMixin&lt;MaterialSideNav&gt; fixedMixin = new ToggleStyleMixin&lt;&gt;(this, "fixed");<a name="line.84"></a>
+<span class="sourceLineNo">085</span><a name="line.85"></a>
+<span class="sourceLineNo">086</span>    /**<a name="line.86"></a>
+<span class="sourceLineNo">087</span>     * Container for App Toolbar and App Sidebar , contains Material Links,<a name="line.87"></a>
+<span class="sourceLineNo">088</span>     * Icons or any other material components.<a name="line.88"></a>
+<span class="sourceLineNo">089</span>     */<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    public MaterialSideNav() {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>        super(Document.get().createULElement(), "side-nav");<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    }<a name="line.92"></a>
+<span class="sourceLineNo">093</span><a name="line.93"></a>
+<span class="sourceLineNo">094</span>    /**<a name="line.94"></a>
+<span class="sourceLineNo">095</span>     *  Creates a list and adds the given widgets.<a name="line.95"></a>
+<span class="sourceLineNo">096</span>     */<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    public MaterialSideNav(final Widget... widgets){<a name="line.97"></a>
+<span class="sourceLineNo">098</span>        this();<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        for (final Widget w : widgets) {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>            add(w);<a name="line.100"></a>
+<span class="sourceLineNo">101</span>        }<a name="line.101"></a>
+<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
+<span class="sourceLineNo">103</span><a name="line.103"></a>
+<span class="sourceLineNo">104</span>    @UiConstructor<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    public MaterialSideNav(SideNavType type){<a name="line.105"></a>
+<span class="sourceLineNo">106</span>        this();<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        setType(type);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span><a name="line.109"></a>
+<span class="sourceLineNo">110</span>    @Override<a name="line.110"></a>
+<span class="sourceLineNo">111</span>    public void onLoad() {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        super.onLoad();<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>        // Initialize the side nav<a name="line.114"></a>
+<span class="sourceLineNo">115</span>        initialize();<a name="line.115"></a>
 <span class="sourceLineNo">116</span><a name="line.116"></a>
-<span class="sourceLineNo">117</span>    /**<a name="line.117"></a>
-<span class="sourceLineNo">118</span>     * This handler will be triggered when the side nav is shown.<a name="line.118"></a>
-<span class="sourceLineNo">119</span>     */<a name="line.119"></a>
-<span class="sourceLineNo">120</span>    public HandlerRegistration addShownHandler(SideNavShownHandler handler) {<a name="line.120"></a>
-<span class="sourceLineNo">121</span>        return addHandler(handler, SideNavShownEvent.TYPE);<a name="line.121"></a>
-<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
-<span class="sourceLineNo">123</span><a name="line.123"></a>
-<span class="sourceLineNo">124</span>    /**<a name="line.124"></a>
-<span class="sourceLineNo">125</span>     * This handler will be triggered when the side nav is hidden.<a name="line.125"></a>
-<span class="sourceLineNo">126</span>     */<a name="line.126"></a>
-<span class="sourceLineNo">127</span>    public HandlerRegistration addHiddenHandler(SideNavHiddenHandler handler) {<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        return addHandler(handler, SideNavHiddenEvent.TYPE);<a name="line.128"></a>
-<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
-<span class="sourceLineNo">130</span><a name="line.130"></a>
-<span class="sourceLineNo">131</span>    @Override<a name="line.131"></a>
-<span class="sourceLineNo">132</span>    public void add(Widget child) {<a name="line.132"></a>
-<span class="sourceLineNo">133</span>        if(child instanceof MaterialImage) {<a name="line.133"></a>
-<span class="sourceLineNo">134</span>            child.getElement().getStyle().setProperty("border", "1px solid #e9e9e9");<a name="line.134"></a>
-<span class="sourceLineNo">135</span>            child.getElement().getStyle().setProperty("textAlign", "center");<a name="line.135"></a>
-<span class="sourceLineNo">136</span>        }<a name="line.136"></a>
-<span class="sourceLineNo">137</span><a name="line.137"></a>
-<span class="sourceLineNo">138</span>        boolean collapsible = child instanceof MaterialCollapsible;<a name="line.138"></a>
-<span class="sourceLineNo">139</span>        if(collapsible) {<a name="line.139"></a>
-<span class="sourceLineNo">140</span>            // Since the collapsible is separ<a name="line.140"></a>
-<span class="sourceLineNo">141</span>            ((MaterialCollapsible)child).addClearActiveHandler(new ClearActiveHandler() {<a name="line.141"></a>
-<span class="sourceLineNo">142</span>                @Override<a name="line.142"></a>
-<span class="sourceLineNo">143</span>                public void onClearActive(ClearActiveEvent event) {<a name="line.143"></a>
-<span class="sourceLineNo">144</span>                    clearActive();<a name="line.144"></a>
-<span class="sourceLineNo">145</span>                }<a name="line.145"></a>
-<span class="sourceLineNo">146</span>            });<a name="line.146"></a>
-<span class="sourceLineNo">147</span>        }<a name="line.147"></a>
-<span class="sourceLineNo">148</span><a name="line.148"></a>
-<span class="sourceLineNo">149</span>        if(!(child instanceof ListItem)) {<a name="line.149"></a>
-<span class="sourceLineNo">150</span>            // Direct list item not collapsible<a name="line.150"></a>
-<span class="sourceLineNo">151</span>            final ListItem listItem = new ListItem();<a name="line.151"></a>
-<span class="sourceLineNo">152</span>            if(child instanceof MaterialCollapsible) {<a name="line.152"></a>
-<span class="sourceLineNo">153</span>                listItem.getElement().getStyle().setBackgroundColor("transparent");<a name="line.153"></a>
-<span class="sourceLineNo">154</span>            }<a name="line.154"></a>
-<span class="sourceLineNo">155</span>            if(child instanceof HasWaves) {<a name="line.155"></a>
-<span class="sourceLineNo">156</span>                listItem.setWaves(((HasWaves) child).getWaves());<a name="line.156"></a>
-<span class="sourceLineNo">157</span>                ((HasWaves) child).setWaves(null);<a name="line.157"></a>
-<span class="sourceLineNo">158</span>            }<a name="line.158"></a>
-<span class="sourceLineNo">159</span>            listItem.add(child);<a name="line.159"></a>
-<span class="sourceLineNo">160</span><a name="line.160"></a>
-<span class="sourceLineNo">161</span>            child = listItem;<a name="line.161"></a>
+<span class="sourceLineNo">117</span>        if(showOnAttach) {<a name="line.117"></a>
+<span class="sourceLineNo">118</span>            Scheduler.get().scheduleDeferred(new ScheduledCommand() {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>                @Override<a name="line.119"></a>
+<span class="sourceLineNo">120</span>                public void execute() {<a name="line.120"></a>
+<span class="sourceLineNo">121</span>                    if(Window.getClientWidth() &gt; 960) {<a name="line.121"></a>
+<span class="sourceLineNo">122</span>                        show();<a name="line.122"></a>
+<span class="sourceLineNo">123</span>                    }<a name="line.123"></a>
+<span class="sourceLineNo">124</span>                }<a name="line.124"></a>
+<span class="sourceLineNo">125</span>            });<a name="line.125"></a>
+<span class="sourceLineNo">126</span>        }<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    }<a name="line.127"></a>
+<span class="sourceLineNo">128</span><a name="line.128"></a>
+<span class="sourceLineNo">129</span>    /**<a name="line.129"></a>
+<span class="sourceLineNo">130</span>     * This handler will be triggered when the side nav starts opening.<a name="line.130"></a>
+<span class="sourceLineNo">131</span>     */<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    public HandlerRegistration addOpeningHandler(SideNavOpeningHandler handler) {<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        return addHandler(handler, SideNavOpeningEvent.TYPE);<a name="line.133"></a>
+<span class="sourceLineNo">134</span>    }<a name="line.134"></a>
+<span class="sourceLineNo">135</span><a name="line.135"></a>
+<span class="sourceLineNo">136</span>    /**<a name="line.136"></a>
+<span class="sourceLineNo">137</span>     * This handler will be triggered when the side nav is opened.<a name="line.137"></a>
+<span class="sourceLineNo">138</span>     */<a name="line.138"></a>
+<span class="sourceLineNo">139</span>    public HandlerRegistration addOpenedHandler(SideNavOpenedHandler handler) {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        return addHandler(handler, SideNavOpenedEvent.TYPE);<a name="line.140"></a>
+<span class="sourceLineNo">141</span>    }<a name="line.141"></a>
+<span class="sourceLineNo">142</span><a name="line.142"></a>
+<span class="sourceLineNo">143</span>    /**<a name="line.143"></a>
+<span class="sourceLineNo">144</span>     * This handler will be triggered when the side nav starts closing.<a name="line.144"></a>
+<span class="sourceLineNo">145</span>     */<a name="line.145"></a>
+<span class="sourceLineNo">146</span>    public HandlerRegistration addClosingHandler(SideNavClosingHandler handler) {<a name="line.146"></a>
+<span class="sourceLineNo">147</span>        return addHandler(handler, SideNavClosingEvent.TYPE);<a name="line.147"></a>
+<span class="sourceLineNo">148</span>    }<a name="line.148"></a>
+<span class="sourceLineNo">149</span><a name="line.149"></a>
+<span class="sourceLineNo">150</span>    /**<a name="line.150"></a>
+<span class="sourceLineNo">151</span>     * This handler will be triggered when the side nav is closed.<a name="line.151"></a>
+<span class="sourceLineNo">152</span>     */<a name="line.152"></a>
+<span class="sourceLineNo">153</span>    public HandlerRegistration addClosedHandler(SideNavClosedHandler handler) {<a name="line.153"></a>
+<span class="sourceLineNo">154</span>        return addHandler(handler, SideNavClosedEvent.TYPE);<a name="line.154"></a>
+<span class="sourceLineNo">155</span>    }<a name="line.155"></a>
+<span class="sourceLineNo">156</span><a name="line.156"></a>
+<span class="sourceLineNo">157</span>    @Override<a name="line.157"></a>
+<span class="sourceLineNo">158</span>    public void add(Widget child) {<a name="line.158"></a>
+<span class="sourceLineNo">159</span>        if(child instanceof MaterialImage) {<a name="line.159"></a>
+<span class="sourceLineNo">160</span>            child.getElement().getStyle().setProperty("border", "1px solid #e9e9e9");<a name="line.160"></a>
+<span class="sourceLineNo">161</span>            child.getElement().getStyle().setProperty("textAlign", "center");<a name="line.161"></a>
 <span class="sourceLineNo">162</span>        }<a name="line.162"></a>
 <span class="sourceLineNo">163</span><a name="line.163"></a>
-<span class="sourceLineNo">164</span>        // Collapsible's should not be selectable<a name="line.164"></a>
-<span class="sourceLineNo">165</span>        final Widget finalChild = child;<a name="line.165"></a>
-<span class="sourceLineNo">166</span>        if(!collapsible) {<a name="line.166"></a>
-<span class="sourceLineNo">167</span>            // Active click handler<a name="line.167"></a>
-<span class="sourceLineNo">168</span>            finalChild.addDomHandler(new ClickHandler() {<a name="line.168"></a>
-<span class="sourceLineNo">169</span>                @Override<a name="line.169"></a>
-<span class="sourceLineNo">170</span>                public void onClick(ClickEvent event) {<a name="line.170"></a>
-<span class="sourceLineNo">171</span>                    clearActive();<a name="line.171"></a>
-<span class="sourceLineNo">172</span>                    finalChild.addStyleName("active");<a name="line.172"></a>
-<span class="sourceLineNo">173</span>                }<a name="line.173"></a>
-<span class="sourceLineNo">174</span>            }, ClickEvent.getType());<a name="line.174"></a>
-<span class="sourceLineNo">175</span>        }<a name="line.175"></a>
-<span class="sourceLineNo">176</span>        child.getElement().getStyle().setDisplay(Style.Display.BLOCK);<a name="line.176"></a>
-<span class="sourceLineNo">177</span>        super.add(child);<a name="line.177"></a>
-<span class="sourceLineNo">178</span>    }<a name="line.178"></a>
-<span class="sourceLineNo">179</span><a name="line.179"></a>
-<span class="sourceLineNo">180</span>    @Override<a name="line.180"></a>
-<span class="sourceLineNo">181</span>    public void setWidth(String width) {<a name="line.181"></a>
-<span class="sourceLineNo">182</span>        setWidth(Integer.parseInt(width));<a name="line.182"></a>
-<span class="sourceLineNo">183</span>    }<a name="line.183"></a>
-<span class="sourceLineNo">184</span><a name="line.184"></a>
-<span class="sourceLineNo">185</span>    /**<a name="line.185"></a>
-<span class="sourceLineNo">186</span>     * Set the menu's width in pixels.<a name="line.186"></a>
-<span class="sourceLineNo">187</span>     */<a name="line.187"></a>
-<span class="sourceLineNo">188</span>    public void setWidth(int width){<a name="line.188"></a>
-<span class="sourceLineNo">189</span>        this.width = width;<a name="line.189"></a>
-<span class="sourceLineNo">190</span>        getElement().getStyle().setWidth(width, Unit.PX);<a name="line.190"></a>
-<span class="sourceLineNo">191</span>    }<a name="line.191"></a>
-<span class="sourceLineNo">192</span><a name="line.192"></a>
-<span class="sourceLineNo">193</span>    public int getWidth() {<a name="line.193"></a>
-<span class="sourceLineNo">194</span>        return width;<a name="line.194"></a>
-<span class="sourceLineNo">195</span>    }<a name="line.195"></a>
-<span class="sourceLineNo">196</span><a name="line.196"></a>
-<span class="sourceLineNo">197</span>    public boolean isCloseOnClick() {<a name="line.197"></a>
-<span class="sourceLineNo">198</span>        return closeOnClick;<a name="line.198"></a>
-<span class="sourceLineNo">199</span>    }<a name="line.199"></a>
-<span class="sourceLineNo">200</span><a name="line.200"></a>
-<span class="sourceLineNo">201</span>    /**<a name="line.201"></a>
-<span class="sourceLineNo">202</span>     * Close the side nav menu when an \&lt;a\&gt; tag is clicked<a name="line.202"></a>
-<span class="sourceLineNo">203</span>     * from inside it. Note that if you want this to work you<a name="line.203"></a>
-<span class="sourceLineNo">204</span>     * must wrap your item within a {@link MaterialLink}.<a name="line.204"></a>
-<span class="sourceLineNo">205</span>     */<a name="line.205"></a>
-<span class="sourceLineNo">206</span>    public void setCloseOnClick(boolean closeOnClick){<a name="line.206"></a>
-<span class="sourceLineNo">207</span>        this.closeOnClick = closeOnClick;<a name="line.207"></a>
-<span class="sourceLineNo">208</span>    }<a name="line.208"></a>
-<span class="sourceLineNo">209</span><a name="line.209"></a>
-<span class="sourceLineNo">210</span>    public Edge getEdge() {<a name="line.210"></a>
-<span class="sourceLineNo">211</span>        return edge;<a name="line.211"></a>
-<span class="sourceLineNo">212</span>    }<a name="line.212"></a>
-<span class="sourceLineNo">213</span><a name="line.213"></a>
-<span class="sourceLineNo">214</span>    /**<a name="line.214"></a>
-<span class="sourceLineNo">215</span>     * Set which edge of the window the menu should attach to.<a name="line.215"></a>
-<span class="sourceLineNo">216</span>     */<a name="line.216"></a>
-<span class="sourceLineNo">217</span>    public void setEdge(Edge edge) {<a name="line.217"></a>
-<span class="sourceLineNo">218</span>        this.edge = edge;<a name="line.218"></a>
-<span class="sourceLineNo">219</span>    }<a name="line.219"></a>
-<span class="sourceLineNo">220</span><a name="line.220"></a>
-<span class="sourceLineNo">221</span>    public boolean isFixed() {<a name="line.221"></a>
-<span class="sourceLineNo">222</span>        return fixedMixin.isOn();<a name="line.222"></a>
-<span class="sourceLineNo">223</span>    }<a name="line.223"></a>
-<span class="sourceLineNo">224</span><a name="line.224"></a>
-<span class="sourceLineNo">225</span>    /**<a name="line.225"></a>
-<span class="sourceLineNo">226</span>     * Fixed determines its display state on loading<a name="line.226"></a>
-<span class="sourceLineNo">227</span>     * (fixed being visible on load).<a name="line.227"></a>
-<span class="sourceLineNo">228</span>     */<a name="line.228"></a>
-<span class="sourceLineNo">229</span>    public void setFixed(boolean fixed) {<a name="line.229"></a>
-<span class="sourceLineNo">230</span>        fixedMixin.setOn(fixed);<a name="line.230"></a>
-<span class="sourceLineNo">231</span>    }<a name="line.231"></a>
-<span class="sourceLineNo">232</span><a name="line.232"></a>
-<span class="sourceLineNo">233</span>    /**<a name="line.233"></a>
-<span class="sourceLineNo">234</span>     * Define the menu's type specification.<a name="line.234"></a>
-<span class="sourceLineNo">235</span>     */<a name="line.235"></a>
-<span class="sourceLineNo">236</span>    public void setType(SideNavType type) {<a name="line.236"></a>
-<span class="sourceLineNo">237</span>        typeMixin.setType(type);<a name="line.237"></a>
+<span class="sourceLineNo">164</span>        boolean collapsible = child instanceof MaterialCollapsible;<a name="line.164"></a>
+<span class="sourceLineNo">165</span>        if(collapsible) {<a name="line.165"></a>
+<span class="sourceLineNo">166</span>            // Since the collapsible is separ<a name="line.166"></a>
+<span class="sourceLineNo">167</span>            ((MaterialCollapsible)child).addClearActiveHandler(new ClearActiveHandler() {<a name="line.167"></a>
+<span class="sourceLineNo">168</span>                @Override<a name="line.168"></a>
+<span class="sourceLineNo">169</span>                public void onClearActive(ClearActiveEvent event) {<a name="line.169"></a>
+<span class="sourceLineNo">170</span>                    clearActive();<a name="line.170"></a>
+<span class="sourceLineNo">171</span>                }<a name="line.171"></a>
+<span class="sourceLineNo">172</span>            });<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        }<a name="line.173"></a>
+<span class="sourceLineNo">174</span><a name="line.174"></a>
+<span class="sourceLineNo">175</span>        if(!(child instanceof ListItem)) {<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            // Direct list item not collapsible<a name="line.176"></a>
+<span class="sourceLineNo">177</span>            final ListItem listItem = new ListItem();<a name="line.177"></a>
+<span class="sourceLineNo">178</span>            if(child instanceof MaterialCollapsible) {<a name="line.178"></a>
+<span class="sourceLineNo">179</span>                listItem.getElement().getStyle().setBackgroundColor("transparent");<a name="line.179"></a>
+<span class="sourceLineNo">180</span>            }<a name="line.180"></a>
+<span class="sourceLineNo">181</span>            if(child instanceof HasWaves) {<a name="line.181"></a>
+<span class="sourceLineNo">182</span>                listItem.setWaves(((HasWaves) child).getWaves());<a name="line.182"></a>
+<span class="sourceLineNo">183</span>                ((HasWaves) child).setWaves(null);<a name="line.183"></a>
+<span class="sourceLineNo">184</span>            }<a name="line.184"></a>
+<span class="sourceLineNo">185</span>            listItem.add(child);<a name="line.185"></a>
+<span class="sourceLineNo">186</span><a name="line.186"></a>
+<span class="sourceLineNo">187</span>            child = listItem;<a name="line.187"></a>
+<span class="sourceLineNo">188</span>        }<a name="line.188"></a>
+<span class="sourceLineNo">189</span><a name="line.189"></a>
+<span class="sourceLineNo">190</span>        // Collapsible's should not be selectable<a name="line.190"></a>
+<span class="sourceLineNo">191</span>        final Widget finalChild = child;<a name="line.191"></a>
+<span class="sourceLineNo">192</span>        if(!collapsible) {<a name="line.192"></a>
+<span class="sourceLineNo">193</span>            // Active click handler<a name="line.193"></a>
+<span class="sourceLineNo">194</span>            finalChild.addDomHandler(new ClickHandler() {<a name="line.194"></a>
+<span class="sourceLineNo">195</span>                @Override<a name="line.195"></a>
+<span class="sourceLineNo">196</span>                public void onClick(ClickEvent event) {<a name="line.196"></a>
+<span class="sourceLineNo">197</span>                    clearActive();<a name="line.197"></a>
+<span class="sourceLineNo">198</span>                    finalChild.addStyleName("active");<a name="line.198"></a>
+<span class="sourceLineNo">199</span>                }<a name="line.199"></a>
+<span class="sourceLineNo">200</span>            }, ClickEvent.getType());<a name="line.200"></a>
+<span class="sourceLineNo">201</span>        }<a name="line.201"></a>
+<span class="sourceLineNo">202</span>        child.getElement().getStyle().setDisplay(Style.Display.BLOCK);<a name="line.202"></a>
+<span class="sourceLineNo">203</span>        super.add(child);<a name="line.203"></a>
+<span class="sourceLineNo">204</span>    }<a name="line.204"></a>
+<span class="sourceLineNo">205</span><a name="line.205"></a>
+<span class="sourceLineNo">206</span>    @Override<a name="line.206"></a>
+<span class="sourceLineNo">207</span>    public void setWidth(String width) {<a name="line.207"></a>
+<span class="sourceLineNo">208</span>        setWidth(Integer.parseInt(width));<a name="line.208"></a>
+<span class="sourceLineNo">209</span>    }<a name="line.209"></a>
+<span class="sourceLineNo">210</span><a name="line.210"></a>
+<span class="sourceLineNo">211</span>    /**<a name="line.211"></a>
+<span class="sourceLineNo">212</span>     * Set the menu's width in pixels.<a name="line.212"></a>
+<span class="sourceLineNo">213</span>     */<a name="line.213"></a>
+<span class="sourceLineNo">214</span>    public void setWidth(int width){<a name="line.214"></a>
+<span class="sourceLineNo">215</span>        this.width = width;<a name="line.215"></a>
+<span class="sourceLineNo">216</span>        getElement().getStyle().setWidth(width, Unit.PX);<a name="line.216"></a>
+<span class="sourceLineNo">217</span>    }<a name="line.217"></a>
+<span class="sourceLineNo">218</span><a name="line.218"></a>
+<span class="sourceLineNo">219</span>    public int getWidth() {<a name="line.219"></a>
+<span class="sourceLineNo">220</span>        return width;<a name="line.220"></a>
+<span class="sourceLineNo">221</span>    }<a name="line.221"></a>
+<span class="sourceLineNo">222</span><a name="line.222"></a>
+<span class="sourceLineNo">223</span>    public boolean isCloseOnClick() {<a name="line.223"></a>
+<span class="sourceLineNo">224</span>        return closeOnClick;<a name="line.224"></a>
+<span class="sourceLineNo">225</span>    }<a name="line.225"></a>
+<span class="sourceLineNo">226</span><a name="line.226"></a>
+<span class="sourceLineNo">227</span>    /**<a name="line.227"></a>
+<span class="sourceLineNo">228</span>     * Close the side nav menu when an \&lt;a\&gt; tag is clicked<a name="line.228"></a>
+<span class="sourceLineNo">229</span>     * from inside it. Note that if you want this to work you<a name="line.229"></a>
+<span class="sourceLineNo">230</span>     * must wrap your item within a {@link MaterialLink}.<a name="line.230"></a>
+<span class="sourceLineNo">231</span>     */<a name="line.231"></a>
+<span class="sourceLineNo">232</span>    public void setCloseOnClick(boolean closeOnClick){<a name="line.232"></a>
+<span class="sourceLineNo">233</span>        this.closeOnClick = closeOnClick;<a name="line.233"></a>
+<span class="sourceLineNo">234</span>    }<a name="line.234"></a>
+<span class="sourceLineNo">235</span><a name="line.235"></a>
+<span class="sourceLineNo">236</span>    public Edge getEdge() {<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        return edge;<a name="line.237"></a>
 <span class="sourceLineNo">238</span>    }<a name="line.238"></a>
 <span class="sourceLineNo">239</span><a name="line.239"></a>
-<span class="sourceLineNo">240</span>    @Override<a name="line.240"></a>
-<span class="sourceLineNo">241</span>    public SideNavType getType() {<a name="line.241"></a>
-<span class="sourceLineNo">242</span>        return typeMixin.getType();<a name="line.242"></a>
-<span class="sourceLineNo">243</span>    }<a name="line.243"></a>
-<span class="sourceLineNo">244</span><a name="line.244"></a>
-<span class="sourceLineNo">245</span>    private void processType(SideNavType type) {<a name="line.245"></a>
-<span class="sourceLineNo">246</span>        if(activator != null &amp;&amp; type != null) {<a name="line.246"></a>
-<span class="sourceLineNo">247</span>            switch (type) {<a name="line.247"></a>
-<span class="sourceLineNo">248</span>                case MINI:<a name="line.248"></a>
-<span class="sourceLineNo">249</span>                    setWidth(64);<a name="line.249"></a>
-<span class="sourceLineNo">250</span>                    break;<a name="line.250"></a>
-<span class="sourceLineNo">251</span>                case CARD:<a name="line.251"></a>
-<span class="sourceLineNo">252</span>                case FLOAT:<a name="line.252"></a>
-<span class="sourceLineNo">253</span>                    activator.addClassName("navmenu-permanent");<a name="line.253"></a>
-<span class="sourceLineNo">254</span>                    Timer t = new Timer() {<a name="line.254"></a>
-<span class="sourceLineNo">255</span>                        @Override<a name="line.255"></a>
-<span class="sourceLineNo">256</span>                        public void run() {<a name="line.256"></a>
-<span class="sourceLineNo">257</span>                            if(isSmall()){<a name="line.257"></a>
-<span class="sourceLineNo">258</span>                                show();<a name="line.258"></a>
-<span class="sourceLineNo">259</span>                            }<a name="line.259"></a>
-<span class="sourceLineNo">260</span>                        }<a name="line.260"></a>
-<span class="sourceLineNo">261</span>                    };<a name="line.261"></a>
-<span class="sourceLineNo">262</span>                    t.schedule(500);<a name="line.262"></a>
-<span class="sourceLineNo">263</span>                    break;<a name="line.263"></a>
-<span class="sourceLineNo">264</span>                case CLOSE:<a name="line.264"></a>
-<span class="sourceLineNo">265</span>                    applyCloseType(activator, width);<a name="line.265"></a>
-<span class="sourceLineNo">266</span>                    break;<a name="line.266"></a>
-<span class="sourceLineNo">267</span>            }<a name="line.267"></a>
-<span class="sourceLineNo">268</span>        }<a name="line.268"></a>
+<span class="sourceLineNo">240</span>    /**<a name="line.240"></a>
+<span class="sourceLineNo">241</span>     * Set which edge of the window the menu should attach to.<a name="line.241"></a>
+<span class="sourceLineNo">242</span>     */<a name="line.242"></a>
+<span class="sourceLineNo">243</span>    public void setEdge(Edge edge) {<a name="line.243"></a>
+<span class="sourceLineNo">244</span>        this.edge = edge;<a name="line.244"></a>
+<span class="sourceLineNo">245</span>    }<a name="line.245"></a>
+<span class="sourceLineNo">246</span><a name="line.246"></a>
+<span class="sourceLineNo">247</span>    public boolean isFixed() {<a name="line.247"></a>
+<span class="sourceLineNo">248</span>        return fixedMixin.isOn();<a name="line.248"></a>
+<span class="sourceLineNo">249</span>    }<a name="line.249"></a>
+<span class="sourceLineNo">250</span><a name="line.250"></a>
+<span class="sourceLineNo">251</span>    /**<a name="line.251"></a>
+<span class="sourceLineNo">252</span>     * Fixed determines its display state on loading<a name="line.252"></a>
+<span class="sourceLineNo">253</span>     * (fixed being visible on load).<a name="line.253"></a>
+<span class="sourceLineNo">254</span>     */<a name="line.254"></a>
+<span class="sourceLineNo">255</span>    public void setFixed(boolean fixed) {<a name="line.255"></a>
+<span class="sourceLineNo">256</span>        fixedMixin.setOn(fixed);<a name="line.256"></a>
+<span class="sourceLineNo">257</span>    }<a name="line.257"></a>
+<span class="sourceLineNo">258</span><a name="line.258"></a>
+<span class="sourceLineNo">259</span>    /**<a name="line.259"></a>
+<span class="sourceLineNo">260</span>     * Define the menu's type specification.<a name="line.260"></a>
+<span class="sourceLineNo">261</span>     */<a name="line.261"></a>
+<span class="sourceLineNo">262</span>    public void setType(SideNavType type) {<a name="line.262"></a>
+<span class="sourceLineNo">263</span>        typeMixin.setType(type);<a name="line.263"></a>
+<span class="sourceLineNo">264</span>    }<a name="line.264"></a>
+<span class="sourceLineNo">265</span><a name="line.265"></a>
+<span class="sourceLineNo">266</span>    @Override<a name="line.266"></a>
+<span class="sourceLineNo">267</span>    public SideNavType getType() {<a name="line.267"></a>
+<span class="sourceLineNo">268</span>        return typeMixin.getType();<a name="line.268"></a>
 <span class="sourceLineNo">269</span>    }<a name="line.269"></a>
 <span class="sourceLineNo">270</span><a name="line.270"></a>
-<span class="sourceLineNo">271</span>    private native boolean isSmall() /*-{<a name="line.271"></a>
-<span class="sourceLineNo">272</span>        var mq = $wnd.window.matchMedia('all and (max-width: 992px)');<a name="line.272"></a>
-<span class="sourceLineNo">273</span>        if(!mq.matches) {<a name="line.273"></a>
-<span class="sourceLineNo">274</span>            return true;<a name="line.274"></a>
-<span class="sourceLineNo">275</span>        }<a name="line.275"></a>
-<span class="sourceLineNo">276</span>        return false;<a name="line.276"></a>
-<span class="sourceLineNo">277</span>    }-*/;<a name="line.277"></a>
-<span class="sourceLineNo">278</span><a name="line.278"></a>
-<span class="sourceLineNo">279</span>    /**<a name="line.279"></a>
-<span class="sourceLineNo">280</span>     * Push the header, footer, and main to the right part when Close type is applied.<a name="line.280"></a>
-<span class="sourceLineNo">281</span>     * @param activator<a name="line.281"></a>
-<span class="sourceLineNo">282</span>     * @param width<a name="line.282"></a>
-<span class="sourceLineNo">283</span>     */<a name="line.283"></a>
-<span class="sourceLineNo">284</span>    private native void applyCloseType(Element activator, double width) /*-{<a name="line.284"></a>
-<span class="sourceLineNo">285</span>        var toggle;<a name="line.285"></a>
-<span class="sourceLineNo">286</span>        var _width;<a name="line.286"></a>
-<span class="sourceLineNo">287</span>        var _duration;<a name="line.287"></a>
-<span class="sourceLineNo">288</span><a name="line.288"></a>
-<span class="sourceLineNo">289</span>        $wnd.jQuery(activator).click(function (){<a name="line.289"></a>
-<span class="sourceLineNo">290</span><a name="line.290"></a>
-<span class="sourceLineNo">291</span>            var mq = $wnd.window.matchMedia('all and (max-width: 992px)');<a name="line.291"></a>
-<span class="sourceLineNo">292</span>            if(!mq.matches) {<a name="line.292"></a>
-<span class="sourceLineNo">293</span>                if(toggle){<a name="line.293"></a>
-<span class="sourceLineNo">294</span>                    _width = 0;<a name="line.294"></a>
-<span class="sourceLineNo">295</span>                    toggle = false;<a name="line.295"></a>
-<span class="sourceLineNo">296</span>                    _duration = 200;<a name="line.296"></a>
-<span class="sourceLineNo">297</span>                }else{<a name="line.297"></a>
-<span class="sourceLineNo">298</span>                    _width = width;<a name="line.298"></a>
-<span class="sourceLineNo">299</span>                    toggle = true;<a name="line.299"></a>
-<span class="sourceLineNo">300</span>                    _duration = 300;<a name="line.300"></a>
-<span class="sourceLineNo">301</span>                }<a name="line.301"></a>
-<span class="sourceLineNo">302</span>            }<a name="line.302"></a>
-<span class="sourceLineNo">303</span>            applyTransition($wnd.jQuery('header'), _width);<a name="line.303"></a>
-<span class="sourceLineNo">304</span>            applyTransition($wnd.jQuery('main'), _width);<a name="line.304"></a>
-<span class="sourceLineNo">305</span>            applyTransition($wnd.jQuery('footer'), _width);<a name="line.305"></a>
-<span class="sourceLineNo">306</span>        });<a name="line.306"></a>
-<span class="sourceLineNo">307</span>        function applyTransition(elem, _width){<a name="line.307"></a>
-<span class="sourceLineNo">308</span>            $wnd.jQuery(elem).css('transition', _duration + 'ms');<a name="line.308"></a>
-<span class="sourceLineNo">309</span>            $wnd.jQuery(elem).css('-moz-transition', _duration + 'ms');<a name="line.309"></a>
-<span class="sourceLineNo">310</span>            $wnd.jQuery(elem).css('-webkit-transition', _duration + 'ms');<a name="line.310"></a>
-<span class="sourceLineNo">311</span>            $wnd.jQuery(elem).css('margin-left', _width);<a name="line.311"></a>
-<span class="sourceLineNo">312</span>        }<a name="line.312"></a>
-<span class="sourceLineNo">313</span>    }-*/;<a name="line.313"></a>
-<span class="sourceLineNo">314</span><a name="line.314"></a>
-<span class="sourceLineNo">315</span>    @Override<a name="line.315"></a>
-<span class="sourceLineNo">316</span>    public void clearActive() {<a name="line.316"></a>
-<span class="sourceLineNo">317</span>        clearActive(this);<a name="line.317"></a>
-<span class="sourceLineNo">318</span><a name="line.318"></a>
-<span class="sourceLineNo">319</span>        ClearActiveEvent.fire(this);<a name="line.319"></a>
-<span class="sourceLineNo">320</span>    }<a name="line.320"></a>
-<span class="sourceLineNo">321</span><a name="line.321"></a>
-<span class="sourceLineNo">322</span>    private void clearActive(HasWidgets widget) {<a name="line.322"></a>
-<span class="sourceLineNo">323</span>        for(Widget child : widget) {<a name="line.323"></a>
-<span class="sourceLineNo">324</span>            Element element = child.getElement();<a name="line.324"></a>
-<span class="sourceLineNo">325</span>            if(StyleHelper.containsStyle(element.getClassName(), "active")) {<a name="line.325"></a>
-<span class="sourceLineNo">326</span>                element.removeClassName("active");<a name="line.326"></a>
-<span class="sourceLineNo">327</span>            }<a name="line.327"></a>
-<span class="sourceLineNo">328</span><a name="line.328"></a>
-<span class="sourceLineNo">329</span>            if(child instanceof HasWidgets) {<a name="line.329"></a>
-<span class="sourceLineNo">330</span>                clearActive((HasWidgets)child);<a name="line.330"></a>
-<span class="sourceLineNo">331</span>            }<a name="line.331"></a>
-<span class="sourceLineNo">332</span>        }<a name="line.332"></a>
-<span class="sourceLineNo">333</span>    }<a name="line.333"></a>
-<span class="sourceLineNo">334</span><a name="line.334"></a>
-<span class="sourceLineNo">335</span>    /**<a name="line.335"></a>
-<span class="sourceLineNo">336</span>     * reinitialize the side nav configurations when changing<a name="line.336"></a>
-<span class="sourceLineNo">337</span>     * properties.<a name="line.337"></a>
-<span class="sourceLineNo">338</span>     */<a name="line.338"></a>
-<span class="sourceLineNo">339</span>    public void reinitialize() {<a name="line.339"></a>
-<span class="sourceLineNo">340</span>        activator = null;<a name="line.340"></a>
-<span class="sourceLineNo">341</span>        initialize(false);<a name="line.341"></a>
-<span class="sourceLineNo">342</span>    }<a name="line.342"></a>
-<span class="sourceLineNo">343</span><a name="line.343"></a>
-<span class="sourceLineNo">344</span>    protected void initialize() {<a name="line.344"></a>
-<span class="sourceLineNo">345</span>        initialize(true);<a name="line.345"></a>
+<span class="sourceLineNo">271</span>    private void processType(SideNavType type) {<a name="line.271"></a>
+<span class="sourceLineNo">272</span>        if(activator != null &amp;&amp; type != null) {<a name="line.272"></a>
+<span class="sourceLineNo">273</span>            addStyleName(type.getCssName());<a name="line.273"></a>
+<span class="sourceLineNo">274</span>            switch (type) {<a name="line.274"></a>
+<span class="sourceLineNo">275</span>                case MINI:<a name="line.275"></a>
+<span class="sourceLineNo">276</span>                    setWidth(64);<a name="line.276"></a>
+<span class="sourceLineNo">277</span>                    break;<a name="line.277"></a>
+<span class="sourceLineNo">278</span>                case CARD:<a name="line.278"></a>
+<span class="sourceLineNo">279</span>                    new Timer() {<a name="line.279"></a>
+<span class="sourceLineNo">280</span>                        @Override<a name="line.280"></a>
+<span class="sourceLineNo">281</span>                        public void run() {<a name="line.281"></a>
+<span class="sourceLineNo">282</span>                            if(isSmall()) { show(); }<a name="line.282"></a>
+<span class="sourceLineNo">283</span>                        }}.schedule(500);<a name="line.283"></a>
+<span class="sourceLineNo">284</span>                    break;<a name="line.284"></a>
+<span class="sourceLineNo">285</span>                case PUSH:<a name="line.285"></a>
+<span class="sourceLineNo">286</span>                    applyPushType(getElement(), activator, width);<a name="line.286"></a>
+<span class="sourceLineNo">287</span>                    break;<a name="line.287"></a>
+<span class="sourceLineNo">288</span>            }<a name="line.288"></a>
+<span class="sourceLineNo">289</span>        }<a name="line.289"></a>
+<span class="sourceLineNo">290</span>    }<a name="line.290"></a>
+<span class="sourceLineNo">291</span><a name="line.291"></a>
+<span class="sourceLineNo">292</span>    private native boolean isSmall() /*-{<a name="line.292"></a>
+<span class="sourceLineNo">293</span>        var mq = $wnd.window.matchMedia('all and (max-width: 992px)');<a name="line.293"></a>
+<span class="sourceLineNo">294</span>        if(!mq.matches) {<a name="line.294"></a>
+<span class="sourceLineNo">295</span>            return true;<a name="line.295"></a>
+<span class="sourceLineNo">296</span>        }<a name="line.296"></a>
+<span class="sourceLineNo">297</span>        return false;<a name="line.297"></a>
+<span class="sourceLineNo">298</span>    }-*/;<a name="line.298"></a>
+<span class="sourceLineNo">299</span><a name="line.299"></a>
+<span class="sourceLineNo">300</span>    /**<a name="line.300"></a>
+<span class="sourceLineNo">301</span>     * Push the header, footer, and main to the right part when Close type is applied.<a name="line.301"></a>
+<span class="sourceLineNo">302</span>     */<a name="line.302"></a>
+<span class="sourceLineNo">303</span>    private native void applyPushType(Element element, Element activator, double width) /*-{<a name="line.303"></a>
+<span class="sourceLineNo">304</span>        var that = this;<a name="line.304"></a>
+<span class="sourceLineNo">305</span><a name="line.305"></a>
+<span class="sourceLineNo">306</span>        $wnd.jQuery($wnd.window).off("resize");<a name="line.306"></a>
+<span class="sourceLineNo">307</span>        $wnd.jQuery($wnd.window).resize(function() {<a name="line.307"></a>
+<span class="sourceLineNo">308</span>            var toggle = that.@gwt.material.design.client.ui.MaterialSideNav::open;<a name="line.308"></a>
+<span class="sourceLineNo">309</span>            that.@gwt.material.design.client.ui.MaterialSideNav::pushElements(*)(toggle, width);<a name="line.309"></a>
+<span class="sourceLineNo">310</span>        });<a name="line.310"></a>
+<span class="sourceLineNo">311</span>    }-*/;<a name="line.311"></a>
+<span class="sourceLineNo">312</span><a name="line.312"></a>
+<span class="sourceLineNo">313</span>    private native void pushElements(boolean toggle, int width) /*-{<a name="line.313"></a>
+<span class="sourceLineNo">314</span>        var _width = 0;<a name="line.314"></a>
+<span class="sourceLineNo">315</span>        var _duration = 200;<a name="line.315"></a>
+<span class="sourceLineNo">316</span><a name="line.316"></a>
+<span class="sourceLineNo">317</span>        var mq = $wnd.window.matchMedia('all and (max-width: 992px)');<a name="line.317"></a>
+<span class="sourceLineNo">318</span>        if(!mq.matches) {<a name="line.318"></a>
+<span class="sourceLineNo">319</span>            if(toggle) {<a name="line.319"></a>
+<span class="sourceLineNo">320</span>                _width = width;<a name="line.320"></a>
+<span class="sourceLineNo">321</span>                _duration = 300;<a name="line.321"></a>
+<span class="sourceLineNo">322</span>            }<a name="line.322"></a>
+<span class="sourceLineNo">323</span><a name="line.323"></a>
+<span class="sourceLineNo">324</span>            applyTransition($wnd.jQuery('header'), _width);<a name="line.324"></a>
+<span class="sourceLineNo">325</span>            applyTransition($wnd.jQuery('main'), _width);<a name="line.325"></a>
+<span class="sourceLineNo">326</span>            applyTransition($wnd.jQuery('footer'), _width);<a name="line.326"></a>
+<span class="sourceLineNo">327</span><a name="line.327"></a>
+<span class="sourceLineNo">328</span>            function applyTransition(elem, _width) {<a name="line.328"></a>
+<span class="sourceLineNo">329</span>                $wnd.jQuery(elem).css('transition', _duration + 'ms');<a name="line.329"></a>
+<span class="sourceLineNo">330</span>                $wnd.jQuery(elem).css('-moz-transition', _duration + 'ms');<a name="line.330"></a>
+<span class="sourceLineNo">331</span>                $wnd.jQuery(elem).css('-webkit-transition', _duration + 'ms');<a name="line.331"></a>
+<span class="sourceLineNo">332</span>                $wnd.jQuery(elem).css('margin-left', _width);<a name="line.332"></a>
+<span class="sourceLineNo">333</span>            }<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        }<a name="line.334"></a>
+<span class="sourceLineNo">335</span>        this.@gwt.material.design.client.ui.MaterialSideNav::onPush(*)(toggle, _width, _duration);<a name="line.335"></a>
+<span class="sourceLineNo">336</span>    }-*/;<a name="line.336"></a>
+<span class="sourceLineNo">337</span><a name="line.337"></a>
+<span class="sourceLineNo">338</span>    protected void onPush(boolean toggle, int width, int duration) {<a name="line.338"></a>
+<span class="sourceLineNo">339</span>        SideNavPushEvent.fire(this, getElement(), activator, toggle, width, duration);<a name="line.339"></a>
+<span class="sourceLineNo">340</span>    }<a name="line.340"></a>
+<span class="sourceLineNo">341</span><a name="line.341"></a>
+<span class="sourceLineNo">342</span>    @Override<a name="line.342"></a>
+<span class="sourceLineNo">343</span>    public void clearActive() {<a name="line.343"></a>
+<span class="sourceLineNo">344</span>        clearActiveClass(this);<a name="line.344"></a>
+<span class="sourceLineNo">345</span>        ClearActiveEvent.fire(this);<a name="line.345"></a>
 <span class="sourceLineNo">346</span>    }<a name="line.346"></a>
 <span class="sourceLineNo">347</span><a name="line.347"></a>
-<span class="sourceLineNo">348</span>    protected void initialize(boolean strict) {<a name="line.348"></a>
-<span class="sourceLineNo">349</span>        if(activator == null) {<a name="line.349"></a>
-<span class="sourceLineNo">350</span>            activator = DOMHelper.getElementByAttribute("data-activates", getId());<a name="line.350"></a>
-<span class="sourceLineNo">351</span>            if (activator != null) {<a name="line.351"></a>
-<span class="sourceLineNo">352</span>                SideNavType type = getType();<a name="line.352"></a>
-<span class="sourceLineNo">353</span>                processType(type);<a name="line.353"></a>
-<span class="sourceLineNo">354</span><a name="line.354"></a>
-<span class="sourceLineNo">355</span>                if(observedHandler != null) {<a name="line.355"></a>
-<span class="sourceLineNo">356</span>                    observedHandler.removeHandler();<a name="line.356"></a>
-<span class="sourceLineNo">357</span>                }<a name="line.357"></a>
-<span class="sourceLineNo">358</span>                observedHandler = observer.addObservedHandler(new ObservedEvent.ObservedHandler() {<a name="line.358"></a>
-<span class="sourceLineNo">359</span>                    @Override<a name="line.359"></a>
-<span class="sourceLineNo">360</span>                    public void onObserved(ObservedEvent event) {<a name="line.360"></a>
-<span class="sourceLineNo">361</span>                        if(event.getValue().equals("0px")) {<a name="line.361"></a>
-<span class="sourceLineNo">362</span>                            SideNavShownEvent.fire(MaterialSideNav.this);<a name="line.362"></a>
-<span class="sourceLineNo">363</span>                        } else if(event.getValue().equals("-"+getWidth()+"px")) {<a name="line.363"></a>
-<span class="sourceLineNo">364</span>                            SideNavHiddenEvent.fire(MaterialSideNav.this);<a name="line.364"></a>
-<span class="sourceLineNo">365</span>                        }<a name="line.365"></a>
-<span class="sourceLineNo">366</span>                    }<a name="line.366"></a>
-<span class="sourceLineNo">367</span>                });<a name="line.367"></a>
-<span class="sourceLineNo">368</span>                observer.observe(getElement());<a name="line.368"></a>
+<span class="sourceLineNo">348</span>    /**<a name="line.348"></a>
+<span class="sourceLineNo">349</span>     * reinitialize the side nav configurations when changing<a name="line.349"></a>
+<span class="sourceLineNo">350</span>     * properties.<a name="line.350"></a>
+<span class="sourceLineNo">351</span>     */<a name="line.351"></a>
+<span class="sourceLineNo">352</span>    public void reinitialize() {<a name="line.352"></a>
+<span class="sourceLineNo">353</span>        activator = null;<a name="line.353"></a>
+<span class="sourceLineNo">354</span>        initialize(false);<a name="line.354"></a>
+<span class="sourceLineNo">355</span>    }<a name="line.355"></a>
+<span class="sourceLineNo">356</span><a name="line.356"></a>
+<span class="sourceLineNo">357</span>    protected void initialize() {<a name="line.357"></a>
+<span class="sourceLineNo">358</span>        initialize(true);<a name="line.358"></a>
+<span class="sourceLineNo">359</span>    }<a name="line.359"></a>
+<span class="sourceLineNo">360</span><a name="line.360"></a>
+<span class="sourceLineNo">361</span>    protected void initialize(boolean strict) {<a name="line.361"></a>
+<span class="sourceLineNo">362</span>        if(activator == null) {<a name="line.362"></a>
+<span class="sourceLineNo">363</span>            activator = DOMHelper.getElementByAttribute("data-activates", getId());<a name="line.363"></a>
+<span class="sourceLineNo">364</span>            if (activator != null) {<a name="line.364"></a>
+<span class="sourceLineNo">365</span>                SideNavType type = getType();<a name="line.365"></a>
+<span class="sourceLineNo">366</span>                processType(type);<a name="line.366"></a>
+<span class="sourceLineNo">367</span><a name="line.367"></a>
+<span class="sourceLineNo">368</span>                initialize(activator, width, closeOnClick, edge.getCssName());<a name="line.368"></a>
 <span class="sourceLineNo">369</span><a name="line.369"></a>
-<span class="sourceLineNo">370</span>                initialize(activator, width, closeOnClick, edge.getCssName());<a name="line.370"></a>
-<span class="sourceLineNo">371</span><a name="line.371"></a>
-<span class="sourceLineNo">372</span>                if(!isFixed()) {<a name="line.372"></a>
-<span class="sourceLineNo">373</span>                    String style = activator.getAttribute("style");<a name="line.373"></a>
-<span class="sourceLineNo">374</span>                    activator.setAttribute("style", style + "; display: block !important");<a name="line.374"></a>
-<span class="sourceLineNo">375</span>                }<a name="line.375"></a>
-<span class="sourceLineNo">376</span>            } else if(strict) {<a name="line.376"></a>
-<span class="sourceLineNo">377</span>                throw new RuntimeException("Cannot find an activator for the MaterialSideNav, " +<a name="line.377"></a>
-<span class="sourceLineNo">378</span>                        "please ensure you have a MaterialNavBar with an activator setup to match " +<a name="line.378"></a>
-<span class="sourceLineNo">379</span>                        "this widgets id.");<a name="line.379"></a>
-<span class="sourceLineNo">380</span>            }<a name="line.380"></a>
-<span class="sourceLineNo">381</span>        }<a name="line.381"></a>
-<span class="sourceLineNo">382</span>    }<a name="line.382"></a>
-<span class="sourceLineNo">383</span><a name="line.383"></a>
-<span class="sourceLineNo">384</span>    private static native void initialize(Element e, int width, boolean closeOnClick, String edge)/*-{<a name="line.384"></a>
-<span class="sourceLineNo">385</span>        $wnd.jQuery(e).ready(function() {<a name="line.385"></a>
-<span class="sourceLineNo">386</span>            $wnd.jQuery(e).sideNav({<a name="line.386"></a>
-<span class="sourceLineNo">387</span>                menuWidth: width,<a name="line.387"></a>
-<span class="sourceLineNo">388</span>                edge: edge,<a name="line.388"></a>
-<span class="sourceLineNo">389</span>                closeOnClick: closeOnClick<a name="line.389"></a>
-<span class="sourceLineNo">390</span>            });<a name="line.390"></a>
-<span class="sourceLineNo">391</span>        });<a name="line.391"></a>
-<span class="sourceLineNo">392</span>    }-*/;<a name="line.392"></a>
-<span class="sourceLineNo">393</span><a name="line.393"></a>
-<span class="sourceLineNo">394</span>    /**<a name="line.394"></a>
-<span class="sourceLineNo">395</span>     * Hide the overlay menu.<a name="line.395"></a>
-<span class="sourceLineNo">396</span>     */<a name="line.396"></a>
-<span class="sourceLineNo">397</span>    public native void hideOverlay()/*-{<a name="line.397"></a>
-<span class="sourceLineNo">398</span>        $wnd.jQuery(document).ready(function(){<a name="line.398"></a>
-<span class="sourceLineNo">399</span>            $wnd.jQuery('#sidenav-overlay').remove();<a name="line.399"></a>
-<span class="sourceLineNo">400</span>        })<a name="line.400"></a>
-<span class="sourceLineNo">401</span>    }-*/;<a name="line.401"></a>
-<span class="sourceLineNo">402</span><a name="line.402"></a>
-<span class="sourceLineNo">403</span>    /**<a name="line.403"></a>
-<span class="sourceLineNo">404</span>     * Show the sidenav.<a name="line.404"></a>
-<span class="sourceLineNo">405</span>     */<a name="line.405"></a>
-<span class="sourceLineNo">406</span>    public native void show(Element e)/*-{<a name="line.406"></a>
-<span class="sourceLineNo">407</span>        $wnd.jQuery(document).ready(function() {<a name="line.407"></a>
-<span class="sourceLineNo">408</span>            $wnd.jQuery(e).sideNav('show');<a name="line.408"></a>
-<span class="sourceLineNo">409</span>        });<a name="line.409"></a>
-<span class="sourceLineNo">410</span>    }-*/;<a name="line.410"></a>
-<span class="sourceLineNo">411</span><a name="line.411"></a>
-<span class="sourceLineNo">412</span>    /**<a name="line.412"></a>
-<span class="sourceLineNo">413</span>     * Hide the sidenav.<a name="line.413"></a>
-<span class="sourceLineNo">414</span>     */<a name="line.414"></a>
-<span class="sourceLineNo">415</span>    public native void hide(Element e)/*-{<a name="line.415"></a>
-<span class="sourceLineNo">416</span>        $wnd.jQuery(document).ready(function() {<a name="line.416"></a>
-<span class="sourceLineNo">417</span>            $wnd.jQuery(e).sideNav('hide');<a name="line.417"></a>
-<span class="sourceLineNo">418</span>        });<a name="line.418"></a>
-<span class="sourceLineNo">419</span>    }-*/;<a name="line.419"></a>
-<span class="sourceLineNo">420</span><a name="line.420"></a>
-<span class="sourceLineNo">421</span>    /**<a name="line.421"></a>
-<span class="sourceLineNo">422</span>     * Show the sidenav using the activator element<a name="line.422"></a>
-<span class="sourceLineNo">423</span>     */<a name="line.423"></a>
-<span class="sourceLineNo">424</span>    public void show() {<a name="line.424"></a>
-<span class="sourceLineNo">425</span>        show(activator);<a name="line.425"></a>
-<span class="sourceLineNo">426</span>    }<a name="line.426"></a>
-<span class="sourceLineNo">427</span><a name="line.427"></a>
-<span class="sourceLineNo">428</span>    /**<a name="line.428"></a>
-<span class="sourceLineNo">429</span>     * Hide the sidenav using the activator element<a name="line.429"></a>
-<span class="sourceLineNo">430</span>     */<a name="line.430"></a>
-<span class="sourceLineNo">431</span>    public void hide() {<a name="line.431"></a>
-<span class="sourceLineNo">432</span>        hide(activator);<a name="line.432"></a>
+<span class="sourceLineNo">370</span>                if(alwaysShowActivator || !isFixed()) {<a name="line.370"></a>
+<span class="sourceLineNo">371</span>                    String style = activator.getAttribute("style");<a name="line.371"></a>
+<span class="sourceLineNo">372</span>                    activator.setAttribute("style", style + "; display: block !important");<a name="line.372"></a>
+<span class="sourceLineNo">373</span>                    activator.removeClassName("navmenu-permanent");<a name="line.373"></a>
+<span class="sourceLineNo">374</span>                }<a name="line.374"></a>
+<span class="sourceLineNo">375</span>            } else if(strict) {<a name="line.375"></a>
+<span class="sourceLineNo">376</span>                throw new RuntimeException("Cannot find an activator for the MaterialSideNav, " +<a name="line.376"></a>
+<span class="sourceLineNo">377</span>                        "please ensure you have a MaterialNavBar with an activator setup to match " +<a name="line.377"></a>
+<span class="sourceLineNo">378</span>                        "this widgets id.");<a name="line.378"></a>
+<span class="sourceLineNo">379</span>            }<a name="line.379"></a>
+<span class="sourceLineNo">380</span>        }<a name="line.380"></a>
+<span class="sourceLineNo">381</span>    }<a name="line.381"></a>
+<span class="sourceLineNo">382</span><a name="line.382"></a>
+<span class="sourceLineNo">383</span>    private native void initialize(Element e, int width, boolean closeOnClick, String edge)/*-{<a name="line.383"></a>
+<span class="sourceLineNo">384</span>        var that = this;<a name="line.384"></a>
+<span class="sourceLineNo">385</span>        var $e = $wnd.jQuery(e);<a name="line.385"></a>
+<span class="sourceLineNo">386</span>        $wnd.jQuery(e).sideNav({<a name="line.386"></a>
+<span class="sourceLineNo">387</span>            menuWidth: width,<a name="line.387"></a>
+<span class="sourceLineNo">388</span>            edge: edge,<a name="line.388"></a>
+<span class="sourceLineNo">389</span>            closeOnClick: closeOnClick<a name="line.389"></a>
+<span class="sourceLineNo">390</span>        });<a name="line.390"></a>
+<span class="sourceLineNo">391</span><a name="line.391"></a>
+<span class="sourceLineNo">392</span>        $e.off("side-nav-closing");<a name="line.392"></a>
+<span class="sourceLineNo">393</span>        $e.on("side-nav-closing", function() {<a name="line.393"></a>
+<span class="sourceLineNo">394</span>            that.@gwt.material.design.client.ui.MaterialSideNav::onClosing()();<a name="line.394"></a>
+<span class="sourceLineNo">395</span>        });<a name="line.395"></a>
+<span class="sourceLineNo">396</span><a name="line.396"></a>
+<span class="sourceLineNo">397</span>        $e.off("side-nav-closed");<a name="line.397"></a>
+<span class="sourceLineNo">398</span>        $e.on("side-nav-closed", function() {<a name="line.398"></a>
+<span class="sourceLineNo">399</span>            that.@gwt.material.design.client.ui.MaterialSideNav::onClosed()();<a name="line.399"></a>
+<span class="sourceLineNo">400</span>        });<a name="line.400"></a>
+<span class="sourceLineNo">401</span><a name="line.401"></a>
+<span class="sourceLineNo">402</span>        $e.off("side-nav-opening");<a name="line.402"></a>
+<span class="sourceLineNo">403</span>        $e.on("side-nav-opening", function() {<a name="line.403"></a>
+<span class="sourceLineNo">404</span>            that.@gwt.material.design.client.ui.MaterialSideNav::onOpening()();<a name="line.404"></a>
+<span class="sourceLineNo">405</span>        });<a name="line.405"></a>
+<span class="sourceLineNo">406</span><a name="line.406"></a>
+<span class="sourceLineNo">407</span>        $e.off("side-nav-opened");<a name="line.407"></a>
+<span class="sourceLineNo">408</span>        $e.on("side-nav-opened", function() {<a name="line.408"></a>
+<span class="sourceLineNo">409</span>            that.@gwt.material.design.client.ui.MaterialSideNav::onOpened()();<a name="line.409"></a>
+<span class="sourceLineNo">410</span>        });<a name="line.410"></a>
+<span class="sourceLineNo">411</span>    }-*/;<a name="line.411"></a>
+<span class="sourceLineNo">412</span><a name="line.412"></a>
+<span class="sourceLineNo">413</span>    protected void onClosing() {<a name="line.413"></a>
+<span class="sourceLineNo">414</span>        open = false;<a name="line.414"></a>
+<span class="sourceLineNo">415</span>        if(getType().equals(SideNavType.PUSH)) {<a name="line.415"></a>
+<span class="sourceLineNo">416</span>            pushElements(false, width);<a name="line.416"></a>
+<span class="sourceLineNo">417</span>        }<a name="line.417"></a>
+<span class="sourceLineNo">418</span><a name="line.418"></a>
+<span class="sourceLineNo">419</span>        SideNavClosingEvent.fire(this);<a name="line.419"></a>
+<span class="sourceLineNo">420</span>    }<a name="line.420"></a>
+<span class="sourceLineNo">421</span><a name="line.421"></a>
+<span class="sourceLineNo">422</span>    protected void onClosed() {<a name="line.422"></a>
+<span class="sourceLineNo">423</span>        SideNavClosedEvent.fire(this);<a name="line.423"></a>
+<span class="sourceLineNo">424</span>    }<a name="line.424"></a>
+<span class="sourceLineNo">425</span><a name="line.425"></a>
+<span class="sourceLineNo">426</span>    protected void onOpening() {<a name="line.426"></a>
+<span class="sourceLineNo">427</span>        open = true;<a name="line.427"></a>
+<span class="sourceLineNo">428</span>        if(getType().equals(SideNavType.PUSH)) {<a name="line.428"></a>
+<span class="sourceLineNo">429</span>            pushElements(true, width);<a name="line.429"></a>
+<span class="sourceLineNo">430</span>        }<a name="line.430"></a>
+<span class="sourceLineNo">431</span><a name="line.431"></a>
+<span class="sourceLineNo">432</span>        SideNavOpeningEvent.fire(this);<a name="line.432"></a>
 <span class="sourceLineNo">433</span>    }<a name="line.433"></a>
-<span class="sourceLineNo">434</span>}<a name="line.434"></a>
+<span class="sourceLineNo">434</span><a name="line.434"></a>
+<span class="sourceLineNo">435</span>    protected void onOpened() {<a name="line.435"></a>
+<span class="sourceLineNo">436</span>        if(allowBodyScroll) {<a name="line.436"></a>
+<span class="sourceLineNo">437</span>            RootPanel.getBodyElement().getStyle().clearOverflow();<a name="line.437"></a>
+<span class="sourceLineNo">438</span>        }<a name="line.438"></a>
+<span class="sourceLineNo">439</span><a name="line.439"></a>
+<span class="sourceLineNo">440</span>        SideNavOpenedEvent.fire(this);<a name="line.440"></a>
+<span class="sourceLineNo">441</span>    }<a name="line.441"></a>
+<span class="sourceLineNo">442</span><a name="line.442"></a>
+<span class="sourceLineNo">443</span>    /**<a name="line.443"></a>
+<span class="sourceLineNo">444</span>     * Hide the overlay menu.<a name="line.444"></a>
+<span class="sourceLineNo">445</span>     */<a name="line.445"></a>
+<span class="sourceLineNo">446</span>    public native void hideOverlay()/*-{<a name="line.446"></a>
+<span class="sourceLineNo">447</span>        $wnd.jQuery(document).ready(function() {<a name="line.447"></a>
+<span class="sourceLineNo">448</span>            $wnd.jQuery('#sidenav-overlay').remove();<a name="line.448"></a>
+<span class="sourceLineNo">449</span>        })<a name="line.449"></a>
+<span class="sourceLineNo">450</span>    }-*/;<a name="line.450"></a>
+<span class="sourceLineNo">451</span><a name="line.451"></a>
+<span class="sourceLineNo">452</span>    /**<a name="line.452"></a>
+<span class="sourceLineNo">453</span>     * Show the sidenav.<a name="line.453"></a>
+<span class="sourceLineNo">454</span>     */<a name="line.454"></a>
+<span class="sourceLineNo">455</span>    private native void show(Element e)/*-{<a name="line.455"></a>
+<span class="sourceLineNo">456</span>        $wnd.jQuery(document).ready(function() {<a name="line.456"></a>
+<span class="sourceLineNo">457</span>            $wnd.jQuery(e).sideNav('show');<a name="line.457"></a>
+<span class="sourceLineNo">458</span>        });<a name="line.458"></a>
+<span class="sourceLineNo">459</span>    }-*/;<a name="line.459"></a>
+<span class="sourceLineNo">460</span><a name="line.460"></a>
+<span class="sourceLineNo">461</span>    /**<a name="line.461"></a>
+<span class="sourceLineNo">462</span>     * Hide the sidenav.<a name="line.462"></a>
+<span class="sourceLineNo">463</span>     */<a name="line.463"></a>
+<span class="sourceLineNo">464</span>    private native void hide(Element e)/*-{<a name="line.464"></a>
+<span class="sourceLineNo">465</span>        $wnd.jQuery(document).ready(function() {<a name="line.465"></a>
+<span class="sourceLineNo">466</span>            $wnd.jQuery(e).sideNav('hide');<a name="line.466"></a>
+<span class="sourceLineNo">467</span>        });<a name="line.467"></a>
+<span class="sourceLineNo">468</span>    }-*/;<a name="line.468"></a>
+<span class="sourceLineNo">469</span><a name="line.469"></a>
+<span class="sourceLineNo">470</span>    /**<a name="line.470"></a>
+<span class="sourceLineNo">471</span>     * Show the sidenav using the activator element<a name="line.471"></a>
+<span class="sourceLineNo">472</span>     */<a name="line.472"></a>
+<span class="sourceLineNo">473</span>    public void show() {<a name="line.473"></a>
+<span class="sourceLineNo">474</span>        show(activator);<a name="line.474"></a>
+<span class="sourceLineNo">475</span>    }<a name="line.475"></a>
+<span class="sourceLineNo">476</span><a name="line.476"></a>
+<span class="sourceLineNo">477</span>    /**<a name="line.477"></a>
+<span class="sourceLineNo">478</span>     * Hide the sidenav using the activator element<a name="line.478"></a>
+<span class="sourceLineNo">479</span>     */<a name="line.479"></a>
+<span class="sourceLineNo">480</span>    public void hide() {<a name="line.480"></a>
+<span class="sourceLineNo">481</span>        hide(activator);<a name="line.481"></a>
+<span class="sourceLineNo">482</span>    }<a name="line.482"></a>
+<span class="sourceLineNo">483</span><a name="line.483"></a>
+<span class="sourceLineNo">484</span>    public boolean isOpen() {<a name="line.484"></a>
+<span class="sourceLineNo">485</span>        return open;<a name="line.485"></a>
+<span class="sourceLineNo">486</span>    }<a name="line.486"></a>
+<span class="sourceLineNo">487</span><a name="line.487"></a>
+<span class="sourceLineNo">488</span>    /**<a name="line.488"></a>
+<span class="sourceLineNo">489</span>     * Will the body have scroll capability<a name="line.489"></a>
+<span class="sourceLineNo">490</span>     * while the menu is open.<a name="line.490"></a>
+<span class="sourceLineNo">491</span>     */<a name="line.491"></a>
+<span class="sourceLineNo">492</span>    public boolean isAllowBodyScroll() {<a name="line.492"></a>
+<span class="sourceLineNo">493</span>        return allowBodyScroll;<a name="line.493"></a>
+<span class="sourceLineNo">494</span>    }<a name="line.494"></a>
+<span class="sourceLineNo">495</span><a name="line.495"></a>
+<span class="sourceLineNo">496</span>    /**<a name="line.496"></a>
+<span class="sourceLineNo">497</span>     * Allow the body to maintain its scroll capability<a name="line.497"></a>
+<span class="sourceLineNo">498</span>     * while the menu is visible.<a name="line.498"></a>
+<span class="sourceLineNo">499</span>     */<a name="line.499"></a>
+<span class="sourceLineNo">500</span>    public void setAllowBodyScroll(boolean allowBodyScroll) {<a name="line.500"></a>
+<span class="sourceLineNo">501</span>        this.allowBodyScroll = allowBodyScroll;<a name="line.501"></a>
+<span class="sourceLineNo">502</span>    }<a name="line.502"></a>
+<span class="sourceLineNo">503</span><a name="line.503"></a>
+<span class="sourceLineNo">504</span>    /**<a name="line.504"></a>
+<span class="sourceLineNo">505</span>     * Will the activator always be shown.<a name="line.505"></a>
+<span class="sourceLineNo">506</span>     */<a name="line.506"></a>
+<span class="sourceLineNo">507</span>    public boolean isAlwaysShowActivator() {<a name="line.507"></a>
+<span class="sourceLineNo">508</span>        return alwaysShowActivator;<a name="line.508"></a>
+<span class="sourceLineNo">509</span>    }<a name="line.509"></a>
+<span class="sourceLineNo">510</span><a name="line.510"></a>
+<span class="sourceLineNo">511</span>    /**<a name="line.511"></a>
+<span class="sourceLineNo">512</span>     * Disable the hiding of your activator element.<a name="line.512"></a>
+<span class="sourceLineNo">513</span>     */<a name="line.513"></a>
+<span class="sourceLineNo">514</span>    public void setAlwaysShowActivator(boolean alwaysShowActivator) {<a name="line.514"></a>
+<span class="sourceLineNo">515</span>        this.alwaysShowActivator = alwaysShowActivator;<a name="line.515"></a>
+<span class="sourceLineNo">516</span>    }<a name="line.516"></a>
+<span class="sourceLineNo">517</span><a name="line.517"></a>
+<span class="sourceLineNo">518</span>    /**<a name="line.518"></a>
+<span class="sourceLineNo">519</span>     * Will the menu forcefully show on attachment.<a name="line.519"></a>
+<span class="sourceLineNo">520</span>     */<a name="line.520"></a>
+<span class="sourceLineNo">521</span>    public boolean isShowOnAttach() {<a name="line.521"></a>
+<span class="sourceLineNo">522</span>        return showOnAttach;<a name="line.522"></a>
+<span class="sourceLineNo">523</span>    }<a name="line.523"></a>
+<span class="sourceLineNo">524</span><a name="line.524"></a>
+<span class="sourceLineNo">525</span>    /**<a name="line.525"></a>
+<span class="sourceLineNo">526</span>     * Show the menu upon attachment, this isn't always required.<a name="line.526"></a>
+<span class="sourceLineNo">527</span>     * Some menu types will automatically show themselves by default.<a name="line.527"></a>
+<span class="sourceLineNo">528</span>     */<a name="line.528"></a>
+<span class="sourceLineNo">529</span>    public void setShowOnAttach(boolean showOnAttach) {<a name="line.529"></a>
+<span class="sourceLineNo">530</span>        this.showOnAttach = showOnAttach;<a name="line.530"></a>
+<span class="sourceLineNo">531</span>    }<a name="line.531"></a>
+<span class="sourceLineNo">532</span>}<a name="line.532"></a>
 
 
 

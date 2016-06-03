@@ -48,56 +48,56 @@
 <span class="sourceLineNo">040</span>import com.google.gwt.dom.client.Element;<a name="line.40"></a>
 <span class="sourceLineNo">041</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.41"></a>
 <span class="sourceLineNo">042</span>import com.google.gwt.user.client.ui.Widget;<a name="line.42"></a>
-<span class="sourceLineNo">043</span>import gwt.material.design.addins.client.MaterialResourceInjector;<a name="line.43"></a>
+<span class="sourceLineNo">043</span>import gwt.material.design.addins.client.MaterialAddins;<a name="line.43"></a>
 <span class="sourceLineNo">044</span>import gwt.material.design.addins.client.swipeable.base.HasSwipeable;<a name="line.44"></a>
 <span class="sourceLineNo">045</span>import gwt.material.design.addins.client.swipeable.events.SwipeLeftEvent;<a name="line.45"></a>
 <span class="sourceLineNo">046</span>import gwt.material.design.addins.client.swipeable.events.SwipeRightEvent;<a name="line.46"></a>
-<span class="sourceLineNo">047</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.47"></a>
-<span class="sourceLineNo">048</span><a name="line.48"></a>
-<span class="sourceLineNo">049</span>/**<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * A panel that allows any of its nested children to be swiped away.<a name="line.50"></a>
-<span class="sourceLineNo">051</span> *<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * &lt;pre&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * {@code<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * }<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * &lt;/pre&gt;<a name="line.57"></a>
-<span class="sourceLineNo">058</span> *<a name="line.58"></a>
-<span class="sourceLineNo">059</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.59"></a>
-<span class="sourceLineNo">060</span> * &lt;pre&gt;<a name="line.60"></a>
-<span class="sourceLineNo">061</span> *{<a name="line.61"></a>
-<span class="sourceLineNo">062</span> * @code<a name="line.62"></a>
-<span class="sourceLineNo">063</span> * &lt;ma:swipeable.MaterialSwipeablePanel ui:field="swipeablePanel" shadow="1" backgroundColor="white" padding="12"&gt;<a name="line.63"></a>
-<span class="sourceLineNo">064</span> *   &lt;m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="yellow" padding="12" /&gt;<a name="line.64"></a>
-<span class="sourceLineNo">065</span> *   &lt;m:MaterialCard&gt;<a name="line.65"></a>
-<span class="sourceLineNo">066</span> *     &lt;m:MaterialCardContent&gt;<a name="line.66"></a>
-<span class="sourceLineNo">067</span> *       &lt;m:MaterialLabel text="This is another Card Component that is swipeable." /&gt;<a name="line.67"></a>
-<span class="sourceLineNo">068</span> *       &lt;/m:MaterialCardContent&gt;<a name="line.68"></a>
-<span class="sourceLineNo">069</span> *     &lt;/m:MaterialCard&gt;<a name="line.69"></a>
-<span class="sourceLineNo">070</span> * &lt;/ma:swipeable.MaterialSwipeablePanel&gt;<a name="line.70"></a>
-<span class="sourceLineNo">071</span> * }<a name="line.71"></a>
-<span class="sourceLineNo">072</span> * &lt;/pre&gt;<a name="line.72"></a>
-<span class="sourceLineNo">073</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#swipeable"&gt;Material Swipeable&lt;/a&gt;<a name="line.73"></a>
-<span class="sourceLineNo">074</span> * @author kevzlou7979<a name="line.74"></a>
-<span class="sourceLineNo">075</span> * @author Ben Dol<a name="line.75"></a>
-<span class="sourceLineNo">076</span> */<a name="line.76"></a>
-<span class="sourceLineNo">077</span>//@formatter:on<a name="line.77"></a>
-<span class="sourceLineNo">078</span>public class MaterialSwipeablePanel extends MaterialWidget implements HasSwipeable&lt;Widget&gt; {<a name="line.78"></a>
-<span class="sourceLineNo">079</span><a name="line.79"></a>
-<span class="sourceLineNo">080</span>    static {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        if(MaterialResourceInjector.isDebug()) {<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            MaterialResourceInjector.injectCss(MaterialSwipeableDebugClientBundle.INSTANCE.swipeableCssDebug());<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        } else {<a name="line.83"></a>
-<span class="sourceLineNo">084</span>            MaterialResourceInjector.injectCss(MaterialSwipeableClientBundle.INSTANCE.swipeableCss());<a name="line.84"></a>
-<span class="sourceLineNo">085</span>        }<a name="line.85"></a>
-<span class="sourceLineNo">086</span>    }<a name="line.86"></a>
-<span class="sourceLineNo">087</span><a name="line.87"></a>
-<span class="sourceLineNo">088</span>    private final String DISABLED = "disabled-swipe";<a name="line.88"></a>
-<span class="sourceLineNo">089</span><a name="line.89"></a>
-<span class="sourceLineNo">090</span>    public MaterialSwipeablePanel() {<a name="line.90"></a>
-<span class="sourceLineNo">091</span>        super(Document.get().createDivElement());<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        setStyleName("swipeable");<a name="line.92"></a>
+<span class="sourceLineNo">047</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>/**<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * A panel that allows any of its nested children to be swiped away.<a name="line.51"></a>
+<span class="sourceLineNo">052</span> *<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * &lt;pre&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * {@code<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * }<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * &lt;/pre&gt;<a name="line.58"></a>
+<span class="sourceLineNo">059</span> *<a name="line.59"></a>
+<span class="sourceLineNo">060</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.60"></a>
+<span class="sourceLineNo">061</span> * &lt;pre&gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span> *{<a name="line.62"></a>
+<span class="sourceLineNo">063</span> * @code<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * &lt;ma:swipeable.MaterialSwipeablePanel ui:field="swipeablePanel" shadow="1" backgroundColor="white" padding="12"&gt;<a name="line.64"></a>
+<span class="sourceLineNo">065</span> *   &lt;m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="yellow" padding="12" /&gt;<a name="line.65"></a>
+<span class="sourceLineNo">066</span> *   &lt;m:MaterialCard&gt;<a name="line.66"></a>
+<span class="sourceLineNo">067</span> *     &lt;m:MaterialCardContent&gt;<a name="line.67"></a>
+<span class="sourceLineNo">068</span> *       &lt;m:MaterialLabel text="This is another Card Component that is swipeable." /&gt;<a name="line.68"></a>
+<span class="sourceLineNo">069</span> *       &lt;/m:MaterialCardContent&gt;<a name="line.69"></a>
+<span class="sourceLineNo">070</span> *     &lt;/m:MaterialCard&gt;<a name="line.70"></a>
+<span class="sourceLineNo">071</span> * &lt;/ma:swipeable.MaterialSwipeablePanel&gt;<a name="line.71"></a>
+<span class="sourceLineNo">072</span> * }<a name="line.72"></a>
+<span class="sourceLineNo">073</span> * &lt;/pre&gt;<a name="line.73"></a>
+<span class="sourceLineNo">074</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#swipeable"&gt;Material Swipeable&lt;/a&gt;<a name="line.74"></a>
+<span class="sourceLineNo">075</span> * @author kevzlou7979<a name="line.75"></a>
+<span class="sourceLineNo">076</span> * @author Ben Dol<a name="line.76"></a>
+<span class="sourceLineNo">077</span> */<a name="line.77"></a>
+<span class="sourceLineNo">078</span>//@formatter:on<a name="line.78"></a>
+<span class="sourceLineNo">079</span>public class MaterialSwipeablePanel extends MaterialWidget implements HasSwipeable&lt;Widget&gt; {<a name="line.79"></a>
+<span class="sourceLineNo">080</span><a name="line.80"></a>
+<span class="sourceLineNo">081</span>    static {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        if(MaterialAddins.isDebug()) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            MaterialDesignBase.injectCss(MaterialSwipeableDebugClientBundle.INSTANCE.swipeableCssDebug());<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        } else {<a name="line.84"></a>
+<span class="sourceLineNo">085</span>            MaterialDesignBase.injectCss(MaterialSwipeableClientBundle.INSTANCE.swipeableCss());<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        }<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    }<a name="line.87"></a>
+<span class="sourceLineNo">088</span><a name="line.88"></a>
+<span class="sourceLineNo">089</span>    private final String DISABLED = "disabled-swipe";<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>    public MaterialSwipeablePanel() {<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        super(Document.get().createDivElement(), "swipeable");<a name="line.92"></a>
 <span class="sourceLineNo">093</span>    }<a name="line.93"></a>
 <span class="sourceLineNo">094</span><a name="line.94"></a>
 <span class="sourceLineNo">095</span>    @Override<a name="line.95"></a>
@@ -195,37 +195,51 @@
 <span class="sourceLineNo">187</span>    }-*/;<a name="line.187"></a>
 <span class="sourceLineNo">188</span><a name="line.188"></a>
 <span class="sourceLineNo">189</span>    @Override<a name="line.189"></a>
-<span class="sourceLineNo">190</span>    public HandlerRegistration addSwipeLeft(SwipeLeftEvent.SwipeLeftHandler&lt;Widget&gt; handler) {<a name="line.190"></a>
-<span class="sourceLineNo">191</span>        return addHandler(handler, SwipeLeftEvent.getType());<a name="line.191"></a>
-<span class="sourceLineNo">192</span>    }<a name="line.192"></a>
-<span class="sourceLineNo">193</span><a name="line.193"></a>
-<span class="sourceLineNo">194</span>    @Override<a name="line.194"></a>
-<span class="sourceLineNo">195</span>    public HandlerRegistration addSwipeRight(SwipeRightEvent.SwipeRightHandler&lt;Widget&gt; handler) {<a name="line.195"></a>
-<span class="sourceLineNo">196</span>        return addHandler(handler, SwipeRightEvent.getType());<a name="line.196"></a>
-<span class="sourceLineNo">197</span>    }<a name="line.197"></a>
-<span class="sourceLineNo">198</span><a name="line.198"></a>
-<span class="sourceLineNo">199</span>    /**<a name="line.199"></a>
-<span class="sourceLineNo">200</span>     * Fire the Swipe left event listener<a name="line.200"></a>
-<span class="sourceLineNo">201</span>     * @param target<a name="line.201"></a>
-<span class="sourceLineNo">202</span>     */<a name="line.202"></a>
-<span class="sourceLineNo">203</span>    public void fireSwipeLeftEvent(Widget target) {<a name="line.203"></a>
-<span class="sourceLineNo">204</span>        SwipeLeftEvent.fire(MaterialSwipeablePanel.this, target);<a name="line.204"></a>
-<span class="sourceLineNo">205</span>    }<a name="line.205"></a>
-<span class="sourceLineNo">206</span><a name="line.206"></a>
-<span class="sourceLineNo">207</span>    /**<a name="line.207"></a>
-<span class="sourceLineNo">208</span>     * Fire the Swipe right event listener<a name="line.208"></a>
-<span class="sourceLineNo">209</span>     * @param target<a name="line.209"></a>
-<span class="sourceLineNo">210</span>     */<a name="line.210"></a>
-<span class="sourceLineNo">211</span>    public void fireSwipeRightEvent(Widget target) {<a name="line.211"></a>
-<span class="sourceLineNo">212</span>        SwipeRightEvent.fire(MaterialSwipeablePanel.this, target);<a name="line.212"></a>
-<span class="sourceLineNo">213</span>    }<a name="line.213"></a>
-<span class="sourceLineNo">214</span><a name="line.214"></a>
-<span class="sourceLineNo">215</span>    public void setDisable(Widget... widgets) {<a name="line.215"></a>
-<span class="sourceLineNo">216</span>        for(Widget w : widgets){<a name="line.216"></a>
-<span class="sourceLineNo">217</span>            w.addStyleName(DISABLED);<a name="line.217"></a>
-<span class="sourceLineNo">218</span>        }<a name="line.218"></a>
+<span class="sourceLineNo">190</span>    public HandlerRegistration addSwipeLeft(final SwipeLeftEvent.SwipeLeftHandler&lt;Widget&gt; handler) {<a name="line.190"></a>
+<span class="sourceLineNo">191</span>        return addHandler(new SwipeLeftEvent.SwipeLeftHandler&lt;Widget&gt;() {<a name="line.191"></a>
+<span class="sourceLineNo">192</span>            @Override<a name="line.192"></a>
+<span class="sourceLineNo">193</span>            public void onSwipeLeft(SwipeLeftEvent&lt;Widget&gt; event) {<a name="line.193"></a>
+<span class="sourceLineNo">194</span>                if(isEnabled()){<a name="line.194"></a>
+<span class="sourceLineNo">195</span>                    handler.onSwipeLeft(event);<a name="line.195"></a>
+<span class="sourceLineNo">196</span>                }<a name="line.196"></a>
+<span class="sourceLineNo">197</span>            }<a name="line.197"></a>
+<span class="sourceLineNo">198</span>        }, SwipeLeftEvent.getType());<a name="line.198"></a>
+<span class="sourceLineNo">199</span>    }<a name="line.199"></a>
+<span class="sourceLineNo">200</span><a name="line.200"></a>
+<span class="sourceLineNo">201</span>    @Override<a name="line.201"></a>
+<span class="sourceLineNo">202</span>    public HandlerRegistration addSwipeRight(final SwipeRightEvent.SwipeRightHandler&lt;Widget&gt; handler) {<a name="line.202"></a>
+<span class="sourceLineNo">203</span>        return addHandler(new SwipeRightEvent.SwipeRightHandler&lt;Widget&gt;() {<a name="line.203"></a>
+<span class="sourceLineNo">204</span>            @Override<a name="line.204"></a>
+<span class="sourceLineNo">205</span>            public void onSwipeRight(SwipeRightEvent&lt;Widget&gt; event) {<a name="line.205"></a>
+<span class="sourceLineNo">206</span>                if(isEnabled()){<a name="line.206"></a>
+<span class="sourceLineNo">207</span>                    handler.onSwipeRight(event);<a name="line.207"></a>
+<span class="sourceLineNo">208</span>                }<a name="line.208"></a>
+<span class="sourceLineNo">209</span>            }<a name="line.209"></a>
+<span class="sourceLineNo">210</span>        }, SwipeRightEvent.getType());<a name="line.210"></a>
+<span class="sourceLineNo">211</span>    }<a name="line.211"></a>
+<span class="sourceLineNo">212</span><a name="line.212"></a>
+<span class="sourceLineNo">213</span>    /**<a name="line.213"></a>
+<span class="sourceLineNo">214</span>     * Fire the Swipe left event listener<a name="line.214"></a>
+<span class="sourceLineNo">215</span>     * @param target<a name="line.215"></a>
+<span class="sourceLineNo">216</span>     */<a name="line.216"></a>
+<span class="sourceLineNo">217</span>    public void fireSwipeLeftEvent(Widget target) {<a name="line.217"></a>
+<span class="sourceLineNo">218</span>        SwipeLeftEvent.fire(MaterialSwipeablePanel.this, target);<a name="line.218"></a>
 <span class="sourceLineNo">219</span>    }<a name="line.219"></a>
-<span class="sourceLineNo">220</span>}<a name="line.220"></a>
+<span class="sourceLineNo">220</span><a name="line.220"></a>
+<span class="sourceLineNo">221</span>    /**<a name="line.221"></a>
+<span class="sourceLineNo">222</span>     * Fire the Swipe right event listener<a name="line.222"></a>
+<span class="sourceLineNo">223</span>     * @param target<a name="line.223"></a>
+<span class="sourceLineNo">224</span>     */<a name="line.224"></a>
+<span class="sourceLineNo">225</span>    public void fireSwipeRightEvent(Widget target) {<a name="line.225"></a>
+<span class="sourceLineNo">226</span>        SwipeRightEvent.fire(MaterialSwipeablePanel.this, target);<a name="line.226"></a>
+<span class="sourceLineNo">227</span>    }<a name="line.227"></a>
+<span class="sourceLineNo">228</span><a name="line.228"></a>
+<span class="sourceLineNo">229</span>    public void setDisable(Widget... widgets) {<a name="line.229"></a>
+<span class="sourceLineNo">230</span>        for(Widget w : widgets){<a name="line.230"></a>
+<span class="sourceLineNo">231</span>            w.addStyleName(DISABLED);<a name="line.231"></a>
+<span class="sourceLineNo">232</span>        }<a name="line.232"></a>
+<span class="sourceLineNo">233</span>    }<a name="line.233"></a>
+<span class="sourceLineNo">234</span>}<a name="line.234"></a>
 
 
 

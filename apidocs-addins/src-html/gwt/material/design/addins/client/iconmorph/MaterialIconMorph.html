@@ -29,53 +29,53 @@
 <span class="sourceLineNo">021</span> */<a name="line.21"></a>
 <span class="sourceLineNo">022</span><a name="line.22"></a>
 <span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Document;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import gwt.material.design.addins.client.MaterialResourceInjector;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import gwt.material.design.client.constants.IconSize;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.client.ui.MaterialIcon;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.ui.MaterialToast;<a name="line.29"></a>
-<span class="sourceLineNo">030</span><a name="line.30"></a>
-<span class="sourceLineNo">031</span>//@formatter:off<a name="line.31"></a>
-<span class="sourceLineNo">032</span>/**<a name="line.32"></a>
-<span class="sourceLineNo">033</span> * Provides visual continuity by morphing two material icons.<a name="line.33"></a>
-<span class="sourceLineNo">034</span> *<a name="line.34"></a>
-<span class="sourceLineNo">035</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.35"></a>
-<span class="sourceLineNo">036</span> * &lt;pre&gt;<a name="line.36"></a>
-<span class="sourceLineNo">037</span> * {@code<a name="line.37"></a>
-<span class="sourceLineNo">038</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.38"></a>
-<span class="sourceLineNo">039</span> * }<a name="line.39"></a>
-<span class="sourceLineNo">040</span> * &lt;/pre&gt;<a name="line.40"></a>
-<span class="sourceLineNo">041</span> *<a name="line.41"></a>
-<span class="sourceLineNo">042</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * &lt;pre&gt;<a name="line.43"></a>
-<span class="sourceLineNo">044</span> * {@code<a name="line.44"></a>
-<span class="sourceLineNo">045</span> * &lt;ma:iconmorph.MaterialIconMorph iconSize="SMALL"&gt;<a name="line.45"></a>
-<span class="sourceLineNo">046</span> *    &lt;m:MaterialIcon iconType="POLYMER"/&gt;<a name="line.46"></a>
-<span class="sourceLineNo">047</span> *    &lt;m:MaterialIcon iconType="DONE"/&gt;<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * &lt;/ma:iconmorph.MaterialIconMorph&gt;<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * }<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * &lt;/pre&gt;<a name="line.50"></a>
-<span class="sourceLineNo">051</span> *<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * @author kevzlou7979<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/snapshot/#morphingIcons"&gt;Material Icon Morph&lt;/a&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> */<a name="line.54"></a>
-<span class="sourceLineNo">055</span>//@formatter:on<a name="line.55"></a>
-<span class="sourceLineNo">056</span>public class MaterialIconMorph extends MaterialWidget {<a name="line.56"></a>
-<span class="sourceLineNo">057</span><a name="line.57"></a>
-<span class="sourceLineNo">058</span>    static {<a name="line.58"></a>
-<span class="sourceLineNo">059</span>        if(MaterialResourceInjector.isDebug()) {<a name="line.59"></a>
-<span class="sourceLineNo">060</span>            MaterialResourceInjector.injectCss(MaterialIconMorphDebugClientBundle.INSTANCE.morphCssDebug());<a name="line.60"></a>
-<span class="sourceLineNo">061</span>        } else {<a name="line.61"></a>
-<span class="sourceLineNo">062</span>            MaterialResourceInjector.injectCss(MaterialIconMorphClientBundle.INSTANCE.morphCss());<a name="line.62"></a>
-<span class="sourceLineNo">063</span>        }<a name="line.63"></a>
-<span class="sourceLineNo">064</span>    }<a name="line.64"></a>
-<span class="sourceLineNo">065</span><a name="line.65"></a>
-<span class="sourceLineNo">066</span>    private final CssNameMixin&lt;MaterialIconMorph, IconSize&gt; sizeMixin = new CssNameMixin&lt;&gt;(this);<a name="line.66"></a>
-<span class="sourceLineNo">067</span><a name="line.67"></a>
-<span class="sourceLineNo">068</span>    public MaterialIconMorph() {<a name="line.68"></a>
-<span class="sourceLineNo">069</span>        super(Document.get().createDivElement());<a name="line.69"></a>
-<span class="sourceLineNo">070</span>        setStyleName("anim-container");<a name="line.70"></a>
+<span class="sourceLineNo">024</span>import gwt.material.design.addins.client.MaterialAddins;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.constants.IconSize;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.ui.MaterialIcon;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.ui.MaterialToast;<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>//@formatter:off<a name="line.32"></a>
+<span class="sourceLineNo">033</span>/**<a name="line.33"></a>
+<span class="sourceLineNo">034</span> * Provides visual continuity by morphing two material icons.<a name="line.34"></a>
+<span class="sourceLineNo">035</span> *<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * &lt;pre&gt;<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * {@code<a name="line.38"></a>
+<span class="sourceLineNo">039</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.39"></a>
+<span class="sourceLineNo">040</span> * }<a name="line.40"></a>
+<span class="sourceLineNo">041</span> * &lt;/pre&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span> *<a name="line.42"></a>
+<span class="sourceLineNo">043</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span> * &lt;pre&gt;<a name="line.44"></a>
+<span class="sourceLineNo">045</span> * {@code<a name="line.45"></a>
+<span class="sourceLineNo">046</span> * &lt;ma:iconmorph.MaterialIconMorph iconSize="SMALL"&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span> *    &lt;m:MaterialIcon iconType="POLYMER"/&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> *    &lt;m:MaterialIcon iconType="DONE"/&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * &lt;/ma:iconmorph.MaterialIconMorph&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * }<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * &lt;/pre&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span> *<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * @author kevzlou7979<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/snapshot/#morphingIcons"&gt;Material Icon Morph&lt;/a&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> */<a name="line.55"></a>
+<span class="sourceLineNo">056</span>//@formatter:on<a name="line.56"></a>
+<span class="sourceLineNo">057</span>public class MaterialIconMorph extends MaterialWidget {<a name="line.57"></a>
+<span class="sourceLineNo">058</span><a name="line.58"></a>
+<span class="sourceLineNo">059</span>    static {<a name="line.59"></a>
+<span class="sourceLineNo">060</span>        if(MaterialAddins.isDebug()) {<a name="line.60"></a>
+<span class="sourceLineNo">061</span>            MaterialDesignBase.injectCss(MaterialIconMorphDebugClientBundle.INSTANCE.morphCssDebug());<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        } else {<a name="line.62"></a>
+<span class="sourceLineNo">063</span>            MaterialDesignBase.injectCss(MaterialIconMorphClientBundle.INSTANCE.morphCss());<a name="line.63"></a>
+<span class="sourceLineNo">064</span>        }<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    }<a name="line.65"></a>
+<span class="sourceLineNo">066</span><a name="line.66"></a>
+<span class="sourceLineNo">067</span>    private final CssNameMixin&lt;MaterialIconMorph, IconSize&gt; sizeMixin = new CssNameMixin&lt;&gt;(this);<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>    public MaterialIconMorph() {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        super(Document.get().createDivElement(), "anim-container");<a name="line.70"></a>
 <span class="sourceLineNo">071</span>        getElement().setAttribute("onclick", "this.classList.toggle('morphed')");<a name="line.71"></a>
 <span class="sourceLineNo">072</span>    }<a name="line.72"></a>
 <span class="sourceLineNo">073</span><a name="line.73"></a>

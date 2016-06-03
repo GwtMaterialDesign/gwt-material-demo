@@ -78,64 +78,63 @@
 <span class="sourceLineNo">070</span>    private final ToggleStyleMixin&lt;MaterialSlider&gt; fsMixin = new ToggleStyleMixin&lt;&gt;(this, "fullscreen");<a name="line.70"></a>
 <span class="sourceLineNo">071</span><a name="line.71"></a>
 <span class="sourceLineNo">072</span>    public MaterialSlider() {<a name="line.72"></a>
-<span class="sourceLineNo">073</span>        super(Document.get().createDivElement());<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        setStyleName("slider");<a name="line.74"></a>
-<span class="sourceLineNo">075</span>        ul.setStyleName("slides");<a name="line.75"></a>
-<span class="sourceLineNo">076</span>        super.add(ul);<a name="line.76"></a>
-<span class="sourceLineNo">077</span>    }<a name="line.77"></a>
-<span class="sourceLineNo">078</span><a name="line.78"></a>
-<span class="sourceLineNo">079</span>    @Override<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    protected void onLoad() {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        super.onLoad();<a name="line.81"></a>
-<span class="sourceLineNo">082</span><a name="line.82"></a>
-<span class="sourceLineNo">083</span>        initialize();<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    @Override<a name="line.86"></a>
-<span class="sourceLineNo">087</span>    public void add(Widget child) {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        ul.add(child);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    }<a name="line.89"></a>
-<span class="sourceLineNo">090</span><a name="line.90"></a>
-<span class="sourceLineNo">091</span>    @Override<a name="line.91"></a>
-<span class="sourceLineNo">092</span>    public void setHeight(String height) {<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        super.setHeight(height);<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        ul.setHeight(height);<a name="line.94"></a>
-<span class="sourceLineNo">095</span>    }<a name="line.95"></a>
-<span class="sourceLineNo">096</span><a name="line.96"></a>
-<span class="sourceLineNo">097</span>    /**<a name="line.97"></a>
-<span class="sourceLineNo">098</span>     * Set the image slider to fullscreen view.<a name="line.98"></a>
-<span class="sourceLineNo">099</span>     */<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    public void setFullscreen(boolean fullscreen) {<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        fsMixin.setOn(fullscreen);<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span><a name="line.103"></a>
-<span class="sourceLineNo">104</span>    public boolean isFullscreen() {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        return fsMixin.isOn();<a name="line.105"></a>
-<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
-<span class="sourceLineNo">107</span><a name="line.107"></a>
-<span class="sourceLineNo">108</span>    /**<a name="line.108"></a>
-<span class="sourceLineNo">109</span>     * Initialize the slider when the widget is attached.<a name="line.109"></a>
-<span class="sourceLineNo">110</span>     */<a name="line.110"></a>
-<span class="sourceLineNo">111</span>    private void initialize() {<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        initialize(getElement());<a name="line.112"></a>
-<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
-<span class="sourceLineNo">114</span><a name="line.114"></a>
-<span class="sourceLineNo">115</span>    private native void initialize(Element e)/*-{<a name="line.115"></a>
-<span class="sourceLineNo">116</span>        $wnd.jQuery(document).ready(function() {<a name="line.116"></a>
-<span class="sourceLineNo">117</span>            $wnd.jQuery(e).slider({<a name="line.117"></a>
-<span class="sourceLineNo">118</span>                full_width : true<a name="line.118"></a>
-<span class="sourceLineNo">119</span>            });<a name="line.119"></a>
-<span class="sourceLineNo">120</span>        });<a name="line.120"></a>
-<span class="sourceLineNo">121</span>    }-*/;<a name="line.121"></a>
-<span class="sourceLineNo">122</span><a name="line.122"></a>
-<span class="sourceLineNo">123</span>    private native void pause(Element e)/*-{<a name="line.123"></a>
-<span class="sourceLineNo">124</span>        $wnd.jQuery(e).slider("pause")<a name="line.124"></a>
-<span class="sourceLineNo">125</span>    }-*/;<a name="line.125"></a>
-<span class="sourceLineNo">126</span><a name="line.126"></a>
-<span class="sourceLineNo">127</span>    private native void start(Element e)/*-{<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        $wnd.jQuery(e).slider("start")<a name="line.128"></a>
-<span class="sourceLineNo">129</span>    }-*/;<a name="line.129"></a>
-<span class="sourceLineNo">130</span>}<a name="line.130"></a>
+<span class="sourceLineNo">073</span>        super(Document.get().createDivElement(), "slider");<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        ul.setStyleName("slides");<a name="line.74"></a>
+<span class="sourceLineNo">075</span>        super.add(ul);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    }<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>    @Override<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    protected void onLoad() {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>        super.onLoad();<a name="line.80"></a>
+<span class="sourceLineNo">081</span><a name="line.81"></a>
+<span class="sourceLineNo">082</span>        initialize();<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span>    @Override<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    public void add(Widget child) {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>        ul.add(child);<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    }<a name="line.88"></a>
+<span class="sourceLineNo">089</span><a name="line.89"></a>
+<span class="sourceLineNo">090</span>    @Override<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    public void setHeight(String height) {<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        super.setHeight(height);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        ul.setHeight(height);<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    }<a name="line.94"></a>
+<span class="sourceLineNo">095</span><a name="line.95"></a>
+<span class="sourceLineNo">096</span>    /**<a name="line.96"></a>
+<span class="sourceLineNo">097</span>     * Set the image slider to fullscreen view.<a name="line.97"></a>
+<span class="sourceLineNo">098</span>     */<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    public void setFullscreen(boolean fullscreen) {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        fsMixin.setOn(fullscreen);<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    }<a name="line.101"></a>
+<span class="sourceLineNo">102</span><a name="line.102"></a>
+<span class="sourceLineNo">103</span>    public boolean isFullscreen() {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        return fsMixin.isOn();<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
+<span class="sourceLineNo">106</span><a name="line.106"></a>
+<span class="sourceLineNo">107</span>    /**<a name="line.107"></a>
+<span class="sourceLineNo">108</span>     * Initialize the slider when the widget is attached.<a name="line.108"></a>
+<span class="sourceLineNo">109</span>     */<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    private void initialize() {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        initialize(getElement());<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    }<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>    private native void initialize(Element e)/*-{<a name="line.114"></a>
+<span class="sourceLineNo">115</span>        $wnd.jQuery(document).ready(function() {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>            $wnd.jQuery(e).slider({<a name="line.116"></a>
+<span class="sourceLineNo">117</span>                full_width : true<a name="line.117"></a>
+<span class="sourceLineNo">118</span>            });<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        });<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    }-*/;<a name="line.120"></a>
+<span class="sourceLineNo">121</span><a name="line.121"></a>
+<span class="sourceLineNo">122</span>    private native void pause(Element e)/*-{<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        $wnd.jQuery(e).slider("pause")<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }-*/;<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>    private native void start(Element e)/*-{<a name="line.126"></a>
+<span class="sourceLineNo">127</span>        $wnd.jQuery(e).slider("start")<a name="line.127"></a>
+<span class="sourceLineNo">128</span>    }-*/;<a name="line.128"></a>
+<span class="sourceLineNo">129</span>}<a name="line.129"></a>
 
 
 

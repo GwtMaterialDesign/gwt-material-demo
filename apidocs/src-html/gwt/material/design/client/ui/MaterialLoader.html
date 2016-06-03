@@ -80,29 +80,30 @@
 <span class="sourceLineNo">072</span>            if(!(con instanceof RootPanel)) {<a name="line.72"></a>
 <span class="sourceLineNo">073</span>                div.getElement().getStyle().setProperty("position", "absolute");<a name="line.73"></a>
 <span class="sourceLineNo">074</span>            }<a name="line.74"></a>
-<span class="sourceLineNo">075</span>            div.add(preLoader);<a name="line.75"></a>
-<span class="sourceLineNo">076</span>            con.add(div);<a name="line.76"></a>
-<span class="sourceLineNo">077</span>        } else {<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            div.removeFromParent();<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            preLoader.removeFromParent();<a name="line.79"></a>
-<span class="sourceLineNo">080</span>        }<a name="line.80"></a>
-<span class="sourceLineNo">081</span>    }<a name="line.81"></a>
-<span class="sourceLineNo">082</span><a name="line.82"></a>
-<span class="sourceLineNo">083</span>    /**<a name="line.83"></a>
-<span class="sourceLineNo">084</span>     * Show a progress loader.<a name="line.84"></a>
-<span class="sourceLineNo">085</span>     */<a name="line.85"></a>
-<span class="sourceLineNo">086</span>    public static void showProgress(boolean isShow) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        if (isShow) {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            div.setStyleName("valign-wrapper  progress-wrapper");<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            progress.getElement().getStyle().setProperty("margin", "auto");<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            div.add(progress);<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            RootPanel.get().add(div);<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        } else {<a name="line.92"></a>
-<span class="sourceLineNo">093</span>            div.removeFromParent();<a name="line.93"></a>
-<span class="sourceLineNo">094</span>            progress.removeFromParent();<a name="line.94"></a>
-<span class="sourceLineNo">095</span>        }<a name="line.95"></a>
-<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
-<span class="sourceLineNo">097</span>}<a name="line.97"></a>
+<span class="sourceLineNo">075</span>            div.setStyleName("valign-wrapper loader-wrapper");<a name="line.75"></a>
+<span class="sourceLineNo">076</span>            div.add(preLoader);<a name="line.76"></a>
+<span class="sourceLineNo">077</span>            con.add(div);<a name="line.77"></a>
+<span class="sourceLineNo">078</span>        } else {<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            div.removeFromParent();<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            preLoader.removeFromParent();<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        }<a name="line.81"></a>
+<span class="sourceLineNo">082</span>    }<a name="line.82"></a>
+<span class="sourceLineNo">083</span><a name="line.83"></a>
+<span class="sourceLineNo">084</span>    /**<a name="line.84"></a>
+<span class="sourceLineNo">085</span>     * Show a progress loader.<a name="line.85"></a>
+<span class="sourceLineNo">086</span>     */<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    public static void showProgress(boolean isShow) {<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        if (isShow) {<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            div.setStyleName("valign-wrapper  progress-wrapper");<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            progress.getElement().getStyle().setProperty("margin", "auto");<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            div.add(progress);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            RootPanel.get().add(div);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        } else {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            div.removeFromParent();<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            progress.removeFromParent();<a name="line.95"></a>
+<span class="sourceLineNo">096</span>        }<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    }<a name="line.97"></a>
+<span class="sourceLineNo">098</span>}<a name="line.98"></a>
 
 
 

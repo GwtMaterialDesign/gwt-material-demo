@@ -77,29 +77,28 @@
 <span class="sourceLineNo">069</span>    private MaterialProgress progress = new MaterialProgress();<a name="line.69"></a>
 <span class="sourceLineNo">070</span><a name="line.70"></a>
 <span class="sourceLineNo">071</span>    public MaterialSplashScreen(){<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        super(Document.get().createDivElement());<a name="line.72"></a>
-<span class="sourceLineNo">073</span>        setStyleName("splash-screen");<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        setDisplay(Display.NONE);<a name="line.74"></a>
-<span class="sourceLineNo">075</span>        div.setWidth("100%");<a name="line.75"></a>
-<span class="sourceLineNo">076</span>        div.getElement().getStyle().setMarginTop(15, Style.Unit.PCT);<a name="line.76"></a>
-<span class="sourceLineNo">077</span>        super.add(div);<a name="line.77"></a>
-<span class="sourceLineNo">078</span>        super.add(progress);<a name="line.78"></a>
-<span class="sourceLineNo">079</span>    }<a name="line.79"></a>
-<span class="sourceLineNo">080</span><a name="line.80"></a>
-<span class="sourceLineNo">081</span>    @Override<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    public void add(Widget child) {<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        div.add(child);<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    public void show(){<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        getElement().getStyle().setDisplay(Display.BLOCK.getGwtDisplay());<a name="line.87"></a>
-<span class="sourceLineNo">088</span>    }<a name="line.88"></a>
-<span class="sourceLineNo">089</span><a name="line.89"></a>
-<span class="sourceLineNo">090</span>    public void hide(){<a name="line.90"></a>
-<span class="sourceLineNo">091</span>        getElement().getStyle().setDisplay(Display.NONE.getGwtDisplay());<a name="line.91"></a>
-<span class="sourceLineNo">092</span>    }<a name="line.92"></a>
-<span class="sourceLineNo">093</span><a name="line.93"></a>
-<span class="sourceLineNo">094</span>}<a name="line.94"></a>
+<span class="sourceLineNo">072</span>        super(Document.get().createDivElement(), "splash-screen");<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        setDisplay(Display.NONE);<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        div.setWidth("100%");<a name="line.74"></a>
+<span class="sourceLineNo">075</span>        div.getElement().getStyle().setMarginTop(15, Style.Unit.PCT);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        super.add(div);<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        super.add(progress);<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
+<span class="sourceLineNo">079</span><a name="line.79"></a>
+<span class="sourceLineNo">080</span>    @Override<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    public void add(Widget child) {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        div.add(child);<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span>    public void show(){<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        getElement().getStyle().setDisplay(Display.BLOCK.getGwtDisplay());<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    }<a name="line.87"></a>
+<span class="sourceLineNo">088</span><a name="line.88"></a>
+<span class="sourceLineNo">089</span>    public void hide(){<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        getElement().getStyle().setDisplay(Display.NONE.getGwtDisplay());<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>}<a name="line.93"></a>
 
 
 

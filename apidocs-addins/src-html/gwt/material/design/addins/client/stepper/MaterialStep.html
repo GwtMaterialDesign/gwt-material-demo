@@ -94,146 +94,152 @@
 <span class="sourceLineNo">086</span>    private Axis axis = Axis.VERTICAL;<a name="line.86"></a>
 <span class="sourceLineNo">087</span><a name="line.87"></a>
 <span class="sourceLineNo">088</span>    public MaterialStep() {<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        super(Document.get().createDivElement());<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        setStyleName("step");<a name="line.90"></a>
-<span class="sourceLineNo">091</span><a name="line.91"></a>
-<span class="sourceLineNo">092</span>        super.add(conCircle);<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        conCircle.add(divCircle);<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        conCircle.add(divLine);<a name="line.94"></a>
-<span class="sourceLineNo">095</span><a name="line.95"></a>
-<span class="sourceLineNo">096</span>        super.add(conBody);<a name="line.96"></a>
-<span class="sourceLineNo">097</span>        conBody.add(divTitle);<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        conBody.add(divBody);<a name="line.98"></a>
-<span class="sourceLineNo">099</span><a name="line.99"></a>
-<span class="sourceLineNo">100</span>        divCircle.setStyleName("circle");<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        divLine.setStyleName("line");<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        divTitle.setStyleName("title");<a name="line.102"></a>
-<span class="sourceLineNo">103</span>        divBody.setStyleName("body");<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        <a name="line.104"></a>
-<span class="sourceLineNo">105</span>        ClickHandler handler = new ClickHandler() {<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            @Override<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            public void onClick(ClickEvent event) {<a name="line.107"></a>
-<span class="sourceLineNo">108</span>                if (isEnabled() &amp;&amp; isVisible()){<a name="line.108"></a>
-<span class="sourceLineNo">109</span>                    SelectionEvent.fire(MaterialStep.this, MaterialStep.this);                    <a name="line.109"></a>
-<span class="sourceLineNo">110</span>                }<a name="line.110"></a>
-<span class="sourceLineNo">111</span>            }<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        };<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        conCircle.addClickHandler(handler);<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        divTitle.addClickHandler(handler);<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        divDescription.addClickHandler(handler);<a name="line.115"></a>
-<span class="sourceLineNo">116</span>    }<a name="line.116"></a>
-<span class="sourceLineNo">117</span><a name="line.117"></a>
-<span class="sourceLineNo">118</span>    @Override<a name="line.118"></a>
-<span class="sourceLineNo">119</span>    public void add(Widget child) {<a name="line.119"></a>
-<span class="sourceLineNo">120</span>        divBody.add(child);<a name="line.120"></a>
-<span class="sourceLineNo">121</span>    }<a name="line.121"></a>
-<span class="sourceLineNo">122</span><a name="line.122"></a>
-<span class="sourceLineNo">123</span>    public int getStep() {<a name="line.123"></a>
-<span class="sourceLineNo">124</span>        return step;<a name="line.124"></a>
-<span class="sourceLineNo">125</span>    }<a name="line.125"></a>
-<span class="sourceLineNo">126</span><a name="line.126"></a>
-<span class="sourceLineNo">127</span>    public void setStep(int step) {<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        this.step = step;<a name="line.128"></a>
-<span class="sourceLineNo">129</span>        divCircle.getElement().setInnerHTML(String.valueOf(step));<a name="line.129"></a>
-<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
-<span class="sourceLineNo">131</span><a name="line.131"></a>
-<span class="sourceLineNo">132</span>    @Override<a name="line.132"></a>
-<span class="sourceLineNo">133</span>    public void setTitle(String title) {<a name="line.133"></a>
-<span class="sourceLineNo">134</span>        this.title = title;<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        divTitle.getElement().setInnerHTML(title);<a name="line.135"></a>
-<span class="sourceLineNo">136</span>    }<a name="line.136"></a>
-<span class="sourceLineNo">137</span><a name="line.137"></a>
-<span class="sourceLineNo">138</span>    public String getTitle() {<a name="line.138"></a>
-<span class="sourceLineNo">139</span>        return title;<a name="line.139"></a>
-<span class="sourceLineNo">140</span>    }<a name="line.140"></a>
-<span class="sourceLineNo">141</span><a name="line.141"></a>
-<span class="sourceLineNo">142</span>    @Override<a name="line.142"></a>
-<span class="sourceLineNo">143</span>    public void setDescription(String description) {<a name="line.143"></a>
-<span class="sourceLineNo">144</span>        this.description = description;<a name="line.144"></a>
-<span class="sourceLineNo">145</span>        divDescription.setStyleName("description");<a name="line.145"></a>
-<span class="sourceLineNo">146</span>        divDescription.getElement().setInnerHTML(description);<a name="line.146"></a>
-<span class="sourceLineNo">147</span>        conBody.insert(divDescription, 1);<a name="line.147"></a>
-<span class="sourceLineNo">148</span>    }<a name="line.148"></a>
-<span class="sourceLineNo">149</span><a name="line.149"></a>
-<span class="sourceLineNo">150</span>    public String getDescription() {<a name="line.150"></a>
-<span class="sourceLineNo">151</span>        return description;<a name="line.151"></a>
-<span class="sourceLineNo">152</span>    }<a name="line.152"></a>
-<span class="sourceLineNo">153</span><a name="line.153"></a>
-<span class="sourceLineNo">154</span>    @Override<a name="line.154"></a>
-<span class="sourceLineNo">155</span>    public void setActive(boolean active) {<a name="line.155"></a>
-<span class="sourceLineNo">156</span>        activeMixin.setActive(active);<a name="line.156"></a>
-<span class="sourceLineNo">157</span>    }<a name="line.157"></a>
-<span class="sourceLineNo">158</span><a name="line.158"></a>
-<span class="sourceLineNo">159</span>    @Override<a name="line.159"></a>
-<span class="sourceLineNo">160</span>    public boolean isActive() {<a name="line.160"></a>
-<span class="sourceLineNo">161</span>        return activeMixin.isActive();<a name="line.161"></a>
-<span class="sourceLineNo">162</span>    }<a name="line.162"></a>
-<span class="sourceLineNo">163</span><a name="line.163"></a>
-<span class="sourceLineNo">164</span>    @Override<a name="line.164"></a>
-<span class="sourceLineNo">165</span>    public void setError(String error) {<a name="line.165"></a>
-<span class="sourceLineNo">166</span>        removeStyleName("success");<a name="line.166"></a>
-<span class="sourceLineNo">167</span>        addStyleName("error");<a name="line.167"></a>
-<span class="sourceLineNo">168</span>        applyIconStatus(iconError, "red", error);<a name="line.168"></a>
-<span class="sourceLineNo">169</span>    }<a name="line.169"></a>
-<span class="sourceLineNo">170</span><a name="line.170"></a>
-<span class="sourceLineNo">171</span>    @Override<a name="line.171"></a>
-<span class="sourceLineNo">172</span>    public void setSuccess(String success) {<a name="line.172"></a>
-<span class="sourceLineNo">173</span>        removeStyleName("error");<a name="line.173"></a>
-<span class="sourceLineNo">174</span>        addStyleName("success");<a name="line.174"></a>
-<span class="sourceLineNo">175</span>        applyIconStatus(iconSuccess, "blue", success);<a name="line.175"></a>
-<span class="sourceLineNo">176</span>    }<a name="line.176"></a>
-<span class="sourceLineNo">177</span><a name="line.177"></a>
-<span class="sourceLineNo">178</span>    @Override<a name="line.178"></a>
-<span class="sourceLineNo">179</span>    public void clearErrorOrSuccess() {<a name="line.179"></a>
-<span class="sourceLineNo">180</span>        iconError.removeFromParent();<a name="line.180"></a>
-<span class="sourceLineNo">181</span>        iconSuccess.removeFromParent();<a name="line.181"></a>
-<span class="sourceLineNo">182</span>        conCircle.insert(divCircle, 0);<a name="line.182"></a>
-<span class="sourceLineNo">183</span>        removeStyleName("error");<a name="line.183"></a>
-<span class="sourceLineNo">184</span>        removeStyleName("success");<a name="line.184"></a>
-<span class="sourceLineNo">185</span>    }<a name="line.185"></a>
+<span class="sourceLineNo">089</span>        super(Document.get().createDivElement(), "step");<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>        super.add(conCircle);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        conCircle.add(divCircle);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        conCircle.add(divLine);<a name="line.93"></a>
+<span class="sourceLineNo">094</span><a name="line.94"></a>
+<span class="sourceLineNo">095</span>        super.add(conBody);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>        conBody.add(divTitle);<a name="line.96"></a>
+<span class="sourceLineNo">097</span>        conBody.add(divBody);<a name="line.97"></a>
+<span class="sourceLineNo">098</span><a name="line.98"></a>
+<span class="sourceLineNo">099</span>        divCircle.setStyleName("circle");<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        divLine.setStyleName("line");<a name="line.100"></a>
+<span class="sourceLineNo">101</span>        divTitle.setStyleName("title");<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        divBody.setStyleName("body");<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        <a name="line.103"></a>
+<span class="sourceLineNo">104</span>        ClickHandler handler = new ClickHandler() {<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            @Override<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            public void onClick(ClickEvent event) {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                if (isEnabled() &amp;&amp; isVisible()){<a name="line.107"></a>
+<span class="sourceLineNo">108</span>                    SelectionEvent.fire(MaterialStep.this, MaterialStep.this);                    <a name="line.108"></a>
+<span class="sourceLineNo">109</span>                }<a name="line.109"></a>
+<span class="sourceLineNo">110</span>            }<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        };<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        conCircle.addClickHandler(handler);<a name="line.112"></a>
+<span class="sourceLineNo">113</span>        divTitle.addClickHandler(handler);<a name="line.113"></a>
+<span class="sourceLineNo">114</span>        divDescription.addClickHandler(handler);<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
+<span class="sourceLineNo">116</span><a name="line.116"></a>
+<span class="sourceLineNo">117</span>    @Override<a name="line.117"></a>
+<span class="sourceLineNo">118</span>    public void add(Widget child) {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        divBody.add(child);<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
+<span class="sourceLineNo">121</span><a name="line.121"></a>
+<span class="sourceLineNo">122</span>    public int getStep() {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        return step;<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>    public void setStep(int step) {<a name="line.126"></a>
+<span class="sourceLineNo">127</span>        this.step = step;<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        divCircle.getElement().setInnerHTML(String.valueOf(step));<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
+<span class="sourceLineNo">130</span><a name="line.130"></a>
+<span class="sourceLineNo">131</span>    @Override<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    public void setTitle(String title) {<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        this.title = title;<a name="line.133"></a>
+<span class="sourceLineNo">134</span>        divTitle.getElement().setInnerHTML(title);<a name="line.134"></a>
+<span class="sourceLineNo">135</span>    }<a name="line.135"></a>
+<span class="sourceLineNo">136</span><a name="line.136"></a>
+<span class="sourceLineNo">137</span>    public String getTitle() {<a name="line.137"></a>
+<span class="sourceLineNo">138</span>        return title;<a name="line.138"></a>
+<span class="sourceLineNo">139</span>    }<a name="line.139"></a>
+<span class="sourceLineNo">140</span><a name="line.140"></a>
+<span class="sourceLineNo">141</span>    @Override<a name="line.141"></a>
+<span class="sourceLineNo">142</span>    public void setDescription(String description) {<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        this.description = description;<a name="line.143"></a>
+<span class="sourceLineNo">144</span>        divDescription.setStyleName("description");<a name="line.144"></a>
+<span class="sourceLineNo">145</span>        divDescription.getElement().setInnerHTML(description);<a name="line.145"></a>
+<span class="sourceLineNo">146</span>        conBody.insert(divDescription, 1);<a name="line.146"></a>
+<span class="sourceLineNo">147</span>    }<a name="line.147"></a>
+<span class="sourceLineNo">148</span><a name="line.148"></a>
+<span class="sourceLineNo">149</span>    public String getDescription() {<a name="line.149"></a>
+<span class="sourceLineNo">150</span>        return description;<a name="line.150"></a>
+<span class="sourceLineNo">151</span>    }<a name="line.151"></a>
+<span class="sourceLineNo">152</span><a name="line.152"></a>
+<span class="sourceLineNo">153</span>    @Override<a name="line.153"></a>
+<span class="sourceLineNo">154</span>    public void setActive(boolean active) {<a name="line.154"></a>
+<span class="sourceLineNo">155</span>        activeMixin.setActive(active);<a name="line.155"></a>
+<span class="sourceLineNo">156</span>    }<a name="line.156"></a>
+<span class="sourceLineNo">157</span><a name="line.157"></a>
+<span class="sourceLineNo">158</span>    @Override<a name="line.158"></a>
+<span class="sourceLineNo">159</span>    public boolean isActive() {<a name="line.159"></a>
+<span class="sourceLineNo">160</span>        return activeMixin.isActive();<a name="line.160"></a>
+<span class="sourceLineNo">161</span>    }<a name="line.161"></a>
+<span class="sourceLineNo">162</span><a name="line.162"></a>
+<span class="sourceLineNo">163</span>    @Override<a name="line.163"></a>
+<span class="sourceLineNo">164</span>    public void setError(String error) {<a name="line.164"></a>
+<span class="sourceLineNo">165</span>        removeStyleName("success");<a name="line.165"></a>
+<span class="sourceLineNo">166</span>        addStyleName("error");<a name="line.166"></a>
+<span class="sourceLineNo">167</span>        applyIconStatus(iconError, "red", error);<a name="line.167"></a>
+<span class="sourceLineNo">168</span>    }<a name="line.168"></a>
+<span class="sourceLineNo">169</span><a name="line.169"></a>
+<span class="sourceLineNo">170</span>    @Override<a name="line.170"></a>
+<span class="sourceLineNo">171</span>    public void setSuccess(String success) {<a name="line.171"></a>
+<span class="sourceLineNo">172</span>        removeStyleName("error");<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        addStyleName("success");<a name="line.173"></a>
+<span class="sourceLineNo">174</span>        applyIconStatus(iconSuccess, "blue", success);<a name="line.174"></a>
+<span class="sourceLineNo">175</span>    }<a name="line.175"></a>
+<span class="sourceLineNo">176</span><a name="line.176"></a>
+<span class="sourceLineNo">177</span>    @Override<a name="line.177"></a>
+<span class="sourceLineNo">178</span>    public void clearErrorOrSuccess() {<a name="line.178"></a>
+<span class="sourceLineNo">179</span>        iconError.removeFromParent();<a name="line.179"></a>
+<span class="sourceLineNo">180</span>        iconSuccess.removeFromParent();<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        conCircle.insert(divCircle, 0);<a name="line.181"></a>
+<span class="sourceLineNo">182</span>        removeStyleName("error");<a name="line.182"></a>
+<span class="sourceLineNo">183</span>        removeStyleName("success");<a name="line.183"></a>
+<span class="sourceLineNo">184</span>    }<a name="line.184"></a>
+<span class="sourceLineNo">185</span><a name="line.185"></a>
 <span class="sourceLineNo">186</span><a name="line.186"></a>
-<span class="sourceLineNo">187</span><a name="line.187"></a>
-<span class="sourceLineNo">188</span>    private void applyIconStatus(MaterialIcon icon, String color, String description){<a name="line.188"></a>
-<span class="sourceLineNo">189</span>        iconError.removeFromParent();<a name="line.189"></a>
-<span class="sourceLineNo">190</span>        iconSuccess.removeFromParent();<a name="line.190"></a>
-<span class="sourceLineNo">191</span>        divCircle.removeFromParent();<a name="line.191"></a>
-<span class="sourceLineNo">192</span>        conCircle.insert(icon, 0);<a name="line.192"></a>
-<span class="sourceLineNo">193</span>        divDescription.getElement().setInnerHTML(description);<a name="line.193"></a>
-<span class="sourceLineNo">194</span>    }<a name="line.194"></a>
-<span class="sourceLineNo">195</span><a name="line.195"></a>
-<span class="sourceLineNo">196</span>    public Div getDivBody() {<a name="line.196"></a>
-<span class="sourceLineNo">197</span>        return divBody;<a name="line.197"></a>
-<span class="sourceLineNo">198</span>    }<a name="line.198"></a>
-<span class="sourceLineNo">199</span>    <a name="line.199"></a>
-<span class="sourceLineNo">200</span>    @Override<a name="line.200"></a>
-<span class="sourceLineNo">201</span>    public void setAxis(Axis axis) {<a name="line.201"></a>
-<span class="sourceLineNo">202</span>        if (axis == null){<a name="line.202"></a>
-<span class="sourceLineNo">203</span>            axis = Axis.VERTICAL;<a name="line.203"></a>
-<span class="sourceLineNo">204</span>        }<a name="line.204"></a>
-<span class="sourceLineNo">205</span>        this.axis = axis;<a name="line.205"></a>
-<span class="sourceLineNo">206</span>        switch (axis){<a name="line.206"></a>
-<span class="sourceLineNo">207</span>        case HORIZONTAL:<a name="line.207"></a>
-<span class="sourceLineNo">208</span>            conCircle.add(divTitle);<a name="line.208"></a>
-<span class="sourceLineNo">209</span>            conCircle.add(divLine);<a name="line.209"></a>
-<span class="sourceLineNo">210</span>            conCircle.add(divDescription);<a name="line.210"></a>
-<span class="sourceLineNo">211</span>            break;<a name="line.211"></a>
-<span class="sourceLineNo">212</span>        case VERTICAL:<a name="line.212"></a>
-<span class="sourceLineNo">213</span>            conBody.insert(divTitle, 0);<a name="line.213"></a>
-<span class="sourceLineNo">214</span>            conCircle.add(divLine);<a name="line.214"></a>
-<span class="sourceLineNo">215</span>            break;<a name="line.215"></a>
-<span class="sourceLineNo">216</span>        }<a name="line.216"></a>
-<span class="sourceLineNo">217</span>    }<a name="line.217"></a>
-<span class="sourceLineNo">218</span>    <a name="line.218"></a>
-<span class="sourceLineNo">219</span>    @Override<a name="line.219"></a>
-<span class="sourceLineNo">220</span>    public Axis getAxis() {<a name="line.220"></a>
-<span class="sourceLineNo">221</span>        return axis;<a name="line.221"></a>
-<span class="sourceLineNo">222</span>    }<a name="line.222"></a>
-<span class="sourceLineNo">223</span><a name="line.223"></a>
-<span class="sourceLineNo">224</span>    @Override<a name="line.224"></a>
-<span class="sourceLineNo">225</span>    public HandlerRegistration addSelectionHandler(SelectionHandler&lt;MaterialStep&gt; handler) {<a name="line.225"></a>
-<span class="sourceLineNo">226</span>        return this.addHandler(handler, SelectionEvent.getType());<a name="line.226"></a>
-<span class="sourceLineNo">227</span>    }<a name="line.227"></a>
-<span class="sourceLineNo">228</span>}<a name="line.228"></a>
+<span class="sourceLineNo">187</span>    private void applyIconStatus(MaterialIcon icon, String color, String description){<a name="line.187"></a>
+<span class="sourceLineNo">188</span>        iconError.removeFromParent();<a name="line.188"></a>
+<span class="sourceLineNo">189</span>        iconSuccess.removeFromParent();<a name="line.189"></a>
+<span class="sourceLineNo">190</span>        divCircle.removeFromParent();<a name="line.190"></a>
+<span class="sourceLineNo">191</span>        conCircle.insert(icon, 0);<a name="line.191"></a>
+<span class="sourceLineNo">192</span>        divDescription.getElement().setInnerHTML(description);<a name="line.192"></a>
+<span class="sourceLineNo">193</span>    }<a name="line.193"></a>
+<span class="sourceLineNo">194</span><a name="line.194"></a>
+<span class="sourceLineNo">195</span>    public Div getDivBody() {<a name="line.195"></a>
+<span class="sourceLineNo">196</span>        return divBody;<a name="line.196"></a>
+<span class="sourceLineNo">197</span>    }<a name="line.197"></a>
+<span class="sourceLineNo">198</span>    <a name="line.198"></a>
+<span class="sourceLineNo">199</span>    @Override<a name="line.199"></a>
+<span class="sourceLineNo">200</span>    public void setAxis(Axis axis) {<a name="line.200"></a>
+<span class="sourceLineNo">201</span>        if (axis == null){<a name="line.201"></a>
+<span class="sourceLineNo">202</span>            axis = Axis.VERTICAL;<a name="line.202"></a>
+<span class="sourceLineNo">203</span>        }<a name="line.203"></a>
+<span class="sourceLineNo">204</span>        this.axis = axis;<a name="line.204"></a>
+<span class="sourceLineNo">205</span>        switch (axis){<a name="line.205"></a>
+<span class="sourceLineNo">206</span>        case HORIZONTAL:<a name="line.206"></a>
+<span class="sourceLineNo">207</span>            conCircle.add(divTitle);<a name="line.207"></a>
+<span class="sourceLineNo">208</span>            conCircle.add(divLine);<a name="line.208"></a>
+<span class="sourceLineNo">209</span>            conCircle.add(divDescription);<a name="line.209"></a>
+<span class="sourceLineNo">210</span>            break;<a name="line.210"></a>
+<span class="sourceLineNo">211</span>        case VERTICAL:<a name="line.211"></a>
+<span class="sourceLineNo">212</span>            conBody.insert(divTitle, 0);<a name="line.212"></a>
+<span class="sourceLineNo">213</span>            conCircle.add(divLine);<a name="line.213"></a>
+<span class="sourceLineNo">214</span>            break;<a name="line.214"></a>
+<span class="sourceLineNo">215</span>        }<a name="line.215"></a>
+<span class="sourceLineNo">216</span>    }<a name="line.216"></a>
+<span class="sourceLineNo">217</span>    <a name="line.217"></a>
+<span class="sourceLineNo">218</span>    @Override<a name="line.218"></a>
+<span class="sourceLineNo">219</span>    public Axis getAxis() {<a name="line.219"></a>
+<span class="sourceLineNo">220</span>        return axis;<a name="line.220"></a>
+<span class="sourceLineNo">221</span>    }<a name="line.221"></a>
+<span class="sourceLineNo">222</span><a name="line.222"></a>
+<span class="sourceLineNo">223</span>    @Override<a name="line.223"></a>
+<span class="sourceLineNo">224</span>    public HandlerRegistration addSelectionHandler(final SelectionHandler&lt;MaterialStep&gt; handler) {<a name="line.224"></a>
+<span class="sourceLineNo">225</span>        return this.addHandler(new SelectionHandler&lt;MaterialStep&gt;() {<a name="line.225"></a>
+<span class="sourceLineNo">226</span>            @Override<a name="line.226"></a>
+<span class="sourceLineNo">227</span>            public void onSelection(SelectionEvent&lt;MaterialStep&gt; event) {<a name="line.227"></a>
+<span class="sourceLineNo">228</span>                if(isEnabled()){<a name="line.228"></a>
+<span class="sourceLineNo">229</span>                    handler.onSelection(event);<a name="line.229"></a>
+<span class="sourceLineNo">230</span>                }<a name="line.230"></a>
+<span class="sourceLineNo">231</span>            }<a name="line.231"></a>
+<span class="sourceLineNo">232</span>        }, SelectionEvent.getType());<a name="line.232"></a>
+<span class="sourceLineNo">233</span>    }<a name="line.233"></a>
+<span class="sourceLineNo">234</span>}<a name="line.234"></a>
 
 
 

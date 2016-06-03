@@ -29,56 +29,56 @@
 <span class="sourceLineNo">021</span> */<a name="line.21"></a>
 <span class="sourceLineNo">022</span><a name="line.22"></a>
 <span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Element;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import com.google.gwt.user.client.ui.Widget;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import gwt.material.design.client.base.HasType;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import gwt.material.design.client.base.mixin.ColorsMixin;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.constants.TabType;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.ui.html.UnorderedList;<a name="line.30"></a>
-<span class="sourceLineNo">031</span><a name="line.31"></a>
-<span class="sourceLineNo">032</span>//@formatter:off<a name="line.32"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.event.logical.shared.AttachEvent;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.user.client.ui.Widget;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import gwt.material.design.client.base.HasType;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.base.mixin.ColorsMixin;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.client.constants.TabType;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.client.ui.html.UnorderedList;<a name="line.32"></a>
 <span class="sourceLineNo">033</span><a name="line.33"></a>
-<span class="sourceLineNo">034</span>/**<a name="line.34"></a>
-<span class="sourceLineNo">035</span> * The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids. Then when you click on each tab, only the container with the corresponding tab id will become visible.<a name="line.35"></a>
-<span class="sourceLineNo">036</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.36"></a>
-<span class="sourceLineNo">037</span> * &lt;pre&gt;<a name="line.37"></a>
-<span class="sourceLineNo">038</span> *{@code<a name="line.38"></a>
-<span class="sourceLineNo">039</span>&lt;m:MaterialTab ui:field="tab"  backgroundColor="blue"&gt;<a name="line.39"></a>
-<span class="sourceLineNo">040</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 1" href="#tab1" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 2" href="#tab2" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.41"></a>
-<span class="sourceLineNo">042</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 3" href="#tab3" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span>&lt;/m:MaterialTab&gt;<a name="line.43"></a>
-<span class="sourceLineNo">044</span>&lt;i:Panel m:id="tab1"&gt;<a name="line.44"></a>
-<span class="sourceLineNo">045</span>&lt;i:Title title="Tab 1" description="Tab 1 Content"/&gt;<a name="line.45"></a>
-<span class="sourceLineNo">046</span>&lt;/i:Panel&gt;<a name="line.46"></a>
-<span class="sourceLineNo">047</span>&lt;i:Panel m:id="tab2"&gt;<a name="line.47"></a>
-<span class="sourceLineNo">048</span>&lt;i:Title title="Tab 2" description="Tab 2 Content"/&gt;<a name="line.48"></a>
-<span class="sourceLineNo">049</span>&lt;/i:Panel&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span>&lt;i:Panel m:id="tab3"&gt;<a name="line.50"></a>
-<span class="sourceLineNo">051</span>&lt;i:Title title="Tab 3" description="Tab 3 Content"/&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span>&lt;/i:Panel&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span>}<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * &lt;/pre&gt;<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#tabs"&gt;Material Tabs&lt;/a&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * @author kevzlou7979<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * @author Ben Dol<a name="line.57"></a>
-<span class="sourceLineNo">058</span> */<a name="line.58"></a>
-<span class="sourceLineNo">059</span>//@formatter:on<a name="line.59"></a>
-<span class="sourceLineNo">060</span>public class MaterialTab extends UnorderedList implements HasType&lt;TabType&gt; {<a name="line.60"></a>
-<span class="sourceLineNo">061</span><a name="line.61"></a>
-<span class="sourceLineNo">062</span>    private int tabIndex;<a name="line.62"></a>
-<span class="sourceLineNo">063</span>    private String indicatorColor;<a name="line.63"></a>
-<span class="sourceLineNo">064</span><a name="line.64"></a>
-<span class="sourceLineNo">065</span>    private MaterialWidget indicator;<a name="line.65"></a>
-<span class="sourceLineNo">066</span>    private ColorsMixin&lt;MaterialWidget&gt; indicatorColorMixin;<a name="line.66"></a>
-<span class="sourceLineNo">067</span>    private String width;<a name="line.67"></a>
-<span class="sourceLineNo">068</span><a name="line.68"></a>
-<span class="sourceLineNo">069</span>    private final CssTypeMixin&lt;TabType, MaterialTab&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.69"></a>
-<span class="sourceLineNo">070</span><a name="line.70"></a>
-<span class="sourceLineNo">071</span>    public MaterialTab() {<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        super();<a name="line.72"></a>
-<span class="sourceLineNo">073</span>        setStyleName("tabs");<a name="line.73"></a>
+<span class="sourceLineNo">034</span>//@formatter:off<a name="line.34"></a>
+<span class="sourceLineNo">035</span><a name="line.35"></a>
+<span class="sourceLineNo">036</span>/**<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids. Then when you click on each tab, only the container with the corresponding tab id will become visible.<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.38"></a>
+<span class="sourceLineNo">039</span> * &lt;pre&gt;<a name="line.39"></a>
+<span class="sourceLineNo">040</span> *{@code<a name="line.40"></a>
+<span class="sourceLineNo">041</span>&lt;m:MaterialTab ui:field="tab"  backgroundColor="blue"&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 1" href="#tab1" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 2" href="#tab2" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>&lt;m:MaterialTabItem waves="YELLOW" grid="l4"&gt;&lt;i:Link text="Tab 3" href="#tab3" textColor="white"/&gt;&lt;/m:MaterialTabItem&gt;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>&lt;/m:MaterialTab&gt;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>&lt;i:Panel m:id="tab1"&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>&lt;i:Title title="Tab 1" description="Tab 1 Content"/&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>&lt;/i:Panel&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span>&lt;i:Panel m:id="tab2"&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span>&lt;i:Title title="Tab 2" description="Tab 2 Content"/&gt;<a name="line.50"></a>
+<span class="sourceLineNo">051</span>&lt;/i:Panel&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span>&lt;i:Panel m:id="tab3"&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span>&lt;i:Title title="Tab 3" description="Tab 3 Content"/&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>&lt;/i:Panel&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span>}<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * &lt;/pre&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * @see &lt;a href="http://gwt-material-demo.herokuapp.com/#tabs"&gt;Material Tabs&lt;/a&gt;<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * @author kevzlou7979<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * @author Ben Dol<a name="line.59"></a>
+<span class="sourceLineNo">060</span> */<a name="line.60"></a>
+<span class="sourceLineNo">061</span>//@formatter:on<a name="line.61"></a>
+<span class="sourceLineNo">062</span>public class MaterialTab extends UnorderedList implements HasType&lt;TabType&gt; {<a name="line.62"></a>
+<span class="sourceLineNo">063</span><a name="line.63"></a>
+<span class="sourceLineNo">064</span>    private int tabIndex;<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    private String indicatorColor;<a name="line.65"></a>
+<span class="sourceLineNo">066</span><a name="line.66"></a>
+<span class="sourceLineNo">067</span>    private MaterialWidget indicator;<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    private ColorsMixin&lt;MaterialWidget&gt; indicatorColorMixin;<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>    private final CssTypeMixin&lt;TabType, MaterialTab&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.70"></a>
+<span class="sourceLineNo">071</span><a name="line.71"></a>
+<span class="sourceLineNo">072</span>    public MaterialTab() {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        super("tabs");<a name="line.73"></a>
 <span class="sourceLineNo">074</span>    }<a name="line.74"></a>
 <span class="sourceLineNo">075</span><a name="line.75"></a>
 <span class="sourceLineNo">076</span>    @Override<a name="line.76"></a>
@@ -150,20 +150,15 @@
 <span class="sourceLineNo">142</span>    }-*/;<a name="line.142"></a>
 <span class="sourceLineNo">143</span><a name="line.143"></a>
 <span class="sourceLineNo">144</span>    @Override<a name="line.144"></a>
-<span class="sourceLineNo">145</span>    public void setWidth(String width) {<a name="line.145"></a>
-<span class="sourceLineNo">146</span>        this.width = width;<a name="line.146"></a>
+<span class="sourceLineNo">145</span>    public void setType(TabType type) {<a name="line.145"></a>
+<span class="sourceLineNo">146</span>        typeMixin.setType(type);<a name="line.146"></a>
 <span class="sourceLineNo">147</span>    }<a name="line.147"></a>
 <span class="sourceLineNo">148</span><a name="line.148"></a>
 <span class="sourceLineNo">149</span>    @Override<a name="line.149"></a>
-<span class="sourceLineNo">150</span>    public void setType(TabType type) {<a name="line.150"></a>
-<span class="sourceLineNo">151</span>        typeMixin.setType(type);<a name="line.151"></a>
+<span class="sourceLineNo">150</span>    public TabType getType() {<a name="line.150"></a>
+<span class="sourceLineNo">151</span>        return typeMixin.getType();<a name="line.151"></a>
 <span class="sourceLineNo">152</span>    }<a name="line.152"></a>
-<span class="sourceLineNo">153</span><a name="line.153"></a>
-<span class="sourceLineNo">154</span>    @Override<a name="line.154"></a>
-<span class="sourceLineNo">155</span>    public TabType getType() {<a name="line.155"></a>
-<span class="sourceLineNo">156</span>        return typeMixin.getType();<a name="line.156"></a>
-<span class="sourceLineNo">157</span>    }<a name="line.157"></a>
-<span class="sourceLineNo">158</span>}<a name="line.158"></a>
+<span class="sourceLineNo">153</span>}<a name="line.153"></a>
 
 
 

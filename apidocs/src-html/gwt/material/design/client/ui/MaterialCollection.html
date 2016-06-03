@@ -105,39 +105,38 @@
 <span class="sourceLineNo">097</span>     * Creates an empty collection component.<a name="line.97"></a>
 <span class="sourceLineNo">098</span>     */<a name="line.98"></a>
 <span class="sourceLineNo">099</span>    public MaterialCollection() {<a name="line.99"></a>
-<span class="sourceLineNo">100</span>        super(Document.get().createULElement());<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        setStyleName("collection");<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span><a name="line.103"></a>
-<span class="sourceLineNo">104</span>    /**<a name="line.104"></a>
-<span class="sourceLineNo">105</span>     * Sets the header of the collection component.<a name="line.105"></a>
-<span class="sourceLineNo">106</span>     */<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    public void setHeader(String header){<a name="line.107"></a>
-<span class="sourceLineNo">108</span>        span.getElement().setInnerHTML(header);<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        addStyleName("with-header");<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        ListItem item = new ListItem(span);<a name="line.110"></a>
-<span class="sourceLineNo">111</span>        UiHelper.addMousePressedHandlers(item);<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        item.setStyleName("collection-header");<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        insert(item, 0);<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
-<span class="sourceLineNo">115</span><a name="line.115"></a>
-<span class="sourceLineNo">116</span>    public void setActive(int index) {<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        this.index = index;<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        Widget activeWidget = getActive();<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        if(activeWidget != null) {<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            activeWidget.removeStyleName("active");<a name="line.120"></a>
-<span class="sourceLineNo">121</span>            activeWidget.addStyleName("active");<a name="line.121"></a>
-<span class="sourceLineNo">122</span>        }<a name="line.122"></a>
-<span class="sourceLineNo">123</span>    }<a name="line.123"></a>
-<span class="sourceLineNo">124</span><a name="line.124"></a>
-<span class="sourceLineNo">125</span>    public Widget getActive() {<a name="line.125"></a>
-<span class="sourceLineNo">126</span>        try {<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            return getWidget(index);<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        } catch (IndexOutOfBoundsException ex) {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            return null;<a name="line.129"></a>
-<span class="sourceLineNo">130</span>        }<a name="line.130"></a>
-<span class="sourceLineNo">131</span>    }<a name="line.131"></a>
-<span class="sourceLineNo">132</span>}<a name="line.132"></a>
+<span class="sourceLineNo">100</span>        super(Document.get().createULElement(), "collection");<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    }<a name="line.101"></a>
+<span class="sourceLineNo">102</span><a name="line.102"></a>
+<span class="sourceLineNo">103</span>    /**<a name="line.103"></a>
+<span class="sourceLineNo">104</span>     * Sets the header of the collection component.<a name="line.104"></a>
+<span class="sourceLineNo">105</span>     */<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public void setHeader(String header){<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        span.getElement().setInnerHTML(header);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>        addStyleName("with-header");<a name="line.108"></a>
+<span class="sourceLineNo">109</span>        ListItem item = new ListItem(span);<a name="line.109"></a>
+<span class="sourceLineNo">110</span>        UiHelper.addMousePressedHandlers(item);<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        item.setStyleName("collection-header");<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        insert(item, 0);<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public void setActive(int index) {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        this.index = index;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>        Widget activeWidget = getActive();<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        if(activeWidget != null) {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>            activeWidget.removeStyleName("active");<a name="line.119"></a>
+<span class="sourceLineNo">120</span>            activeWidget.addStyleName("active");<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        }<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
+<span class="sourceLineNo">123</span><a name="line.123"></a>
+<span class="sourceLineNo">124</span>    public Widget getActive() {<a name="line.124"></a>
+<span class="sourceLineNo">125</span>        try {<a name="line.125"></a>
+<span class="sourceLineNo">126</span>            return getWidget(index);<a name="line.126"></a>
+<span class="sourceLineNo">127</span>        } catch (IndexOutOfBoundsException ex) {<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            return null;<a name="line.128"></a>
+<span class="sourceLineNo">129</span>        }<a name="line.129"></a>
+<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
+<span class="sourceLineNo">131</span>}<a name="line.131"></a>
 
 
 

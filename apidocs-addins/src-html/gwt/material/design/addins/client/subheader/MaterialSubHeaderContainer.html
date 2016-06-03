@@ -32,88 +32,80 @@
 <span class="sourceLineNo">024</span>import com.google.gwt.dom.client.Element;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>import com.google.gwt.user.client.DOM;<a name="line.25"></a>
 <span class="sourceLineNo">026</span>import com.google.gwt.user.client.ui.Widget;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import gwt.material.design.addins.client.MaterialResourceInjector;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.addins.client.subheader.constants.SubHeaderType;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.base.HasType;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.31"></a>
-<span class="sourceLineNo">032</span><a name="line.32"></a>
-<span class="sourceLineNo">033</span>//@formatter:off<a name="line.33"></a>
-<span class="sourceLineNo">034</span><a name="line.34"></a>
-<span class="sourceLineNo">035</span>/**<a name="line.35"></a>
-<span class="sourceLineNo">036</span> * SubHeader Container will wrap your subheader items.<a name="line.36"></a>
-<span class="sourceLineNo">037</span> * There are two types of SubHeader Container &lt;br/&gt;<a name="line.37"></a>
-<span class="sourceLineNo">038</span> * 1. PINNED&lt;br/&gt;<a name="line.38"></a>
-<span class="sourceLineNo">039</span> * 2. STATIC<a name="line.39"></a>
-<span class="sourceLineNo">040</span> *<a name="line.40"></a>
-<span class="sourceLineNo">041</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.41"></a>
-<span class="sourceLineNo">042</span> * &lt;pre&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * {@code<a name="line.43"></a>
-<span class="sourceLineNo">044</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.44"></a>
-<span class="sourceLineNo">045</span> * }<a name="line.45"></a>
-<span class="sourceLineNo">046</span> * &lt;/pre&gt;<a name="line.46"></a>
-<span class="sourceLineNo">047</span> *<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * &lt;pre&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * {@code<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * &lt;ma:subheader.MaterialSubHeaderContainer height="400px" type="PINNED"&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span> *     &lt;ma:subheader.MaterialSubHeader text="Subheader" textColor="pink" /&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * &lt;/ma:subheader.MaterialSubHeaderContainer&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * }<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * &lt;/pre&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#subheaders"&gt;Material Subheader&lt;/a&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * @author kevzlou7979<a name="line.57"></a>
-<span class="sourceLineNo">058</span> */<a name="line.58"></a>
-<span class="sourceLineNo">059</span>//@formatter:on<a name="line.59"></a>
-<span class="sourceLineNo">060</span>public class MaterialSubHeaderContainer extends MaterialWidget implements HasType&lt;SubHeaderType&gt;{<a name="line.60"></a>
-<span class="sourceLineNo">061</span><a name="line.61"></a>
-<span class="sourceLineNo">062</span>    static {<a name="line.62"></a>
-<span class="sourceLineNo">063</span>        if(MaterialResourceInjector.isDebug()) {<a name="line.63"></a>
-<span class="sourceLineNo">064</span>            MaterialResourceInjector.injectDebugJs(MaterialSubHeaderDebugClientBundle.INSTANCE.subheaderJsDebug());<a name="line.64"></a>
-<span class="sourceLineNo">065</span>            MaterialResourceInjector.injectCss(MaterialSubHeaderDebugClientBundle.INSTANCE.subheaderCssDebug());<a name="line.65"></a>
-<span class="sourceLineNo">066</span>        } else {<a name="line.66"></a>
-<span class="sourceLineNo">067</span>            MaterialResourceInjector.injectJs(MaterialSubHeaderClientBundle.INSTANCE.subheaderJs());<a name="line.67"></a>
-<span class="sourceLineNo">068</span>            MaterialResourceInjector.injectCss(MaterialSubHeaderClientBundle.INSTANCE.subheaderCss());<a name="line.68"></a>
-<span class="sourceLineNo">069</span>        }<a name="line.69"></a>
-<span class="sourceLineNo">070</span>    }<a name="line.70"></a>
-<span class="sourceLineNo">071</span><a name="line.71"></a>
-<span class="sourceLineNo">072</span>    private final CssTypeMixin&lt;SubHeaderType, MaterialSubHeaderContainer&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.72"></a>
-<span class="sourceLineNo">073</span><a name="line.73"></a>
-<span class="sourceLineNo">074</span>    public MaterialSubHeaderContainer() {<a name="line.74"></a>
-<span class="sourceLineNo">075</span>        super(Document.get().createDivElement());<a name="line.75"></a>
-<span class="sourceLineNo">076</span>        setStyleName("container1");<a name="line.76"></a>
-<span class="sourceLineNo">077</span>    }<a name="line.77"></a>
-<span class="sourceLineNo">078</span><a name="line.78"></a>
-<span class="sourceLineNo">079</span>    @Override<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    protected void onLoad() {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        super.onLoad();<a name="line.81"></a>
-<span class="sourceLineNo">082</span>        if(getType() == SubHeaderType.PINNED) {<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            String uniqueName = DOM.createUniqueId();<a name="line.83"></a>
-<span class="sourceLineNo">084</span>            for (Widget w : getChildren()) {<a name="line.84"></a>
-<span class="sourceLineNo">085</span>                if (w instanceof MaterialSubHeader) {<a name="line.85"></a>
-<span class="sourceLineNo">086</span>                    w.addStyleName(uniqueName);<a name="line.86"></a>
-<span class="sourceLineNo">087</span>                }<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            }<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            initSubheaders("." + uniqueName, getElement());<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        }<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
-<span class="sourceLineNo">092</span><a name="line.92"></a>
-<span class="sourceLineNo">093</span>    private native void initSubheaders(String subheader, Element container) /*-{<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        $wnd.jQuery(document).ready(function() {<a name="line.94"></a>
-<span class="sourceLineNo">095</span>            $wnd.initSubheader(subheader, container);<a name="line.95"></a>
-<span class="sourceLineNo">096</span>        });<a name="line.96"></a>
-<span class="sourceLineNo">097</span>    }-*/;<a name="line.97"></a>
-<span class="sourceLineNo">098</span><a name="line.98"></a>
-<span class="sourceLineNo">099</span>    @Override<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    public void setType(SubHeaderType type) {<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        typeMixin.setType(type);<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span><a name="line.103"></a>
-<span class="sourceLineNo">104</span>    @Override<a name="line.104"></a>
-<span class="sourceLineNo">105</span>    public SubHeaderType getType() {<a name="line.105"></a>
-<span class="sourceLineNo">106</span>        return typeMixin.getType();<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
-<span class="sourceLineNo">108</span>}<a name="line.108"></a>
+<span class="sourceLineNo">027</span>import gwt.material.design.addins.client.subheader.constants.SubHeaderType;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.base.HasType;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.base.mixin.CssTypeMixin;<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>//@formatter:off<a name="line.32"></a>
+<span class="sourceLineNo">033</span><a name="line.33"></a>
+<span class="sourceLineNo">034</span>/**<a name="line.34"></a>
+<span class="sourceLineNo">035</span> * SubHeader Container will wrap your subheader items.<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * There are two types of SubHeader Container &lt;br/&gt;<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * 1. PINNED&lt;br/&gt;<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * 2. STATIC<a name="line.38"></a>
+<span class="sourceLineNo">039</span> *<a name="line.39"></a>
+<span class="sourceLineNo">040</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.40"></a>
+<span class="sourceLineNo">041</span> * &lt;pre&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span> * {@code<a name="line.42"></a>
+<span class="sourceLineNo">043</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.43"></a>
+<span class="sourceLineNo">044</span> * }<a name="line.44"></a>
+<span class="sourceLineNo">045</span> * &lt;/pre&gt;<a name="line.45"></a>
+<span class="sourceLineNo">046</span> *<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * &lt;pre&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * {@code<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * &lt;ma:subheader.MaterialSubHeaderContainer height="400px" type="PINNED"&gt;<a name="line.50"></a>
+<span class="sourceLineNo">051</span> *     &lt;ma:subheader.MaterialSubHeader text="Subheader" textColor="pink" /&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * &lt;/ma:subheader.MaterialSubHeaderContainer&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * }<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * &lt;/pre&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#subheaders"&gt;Material Subheader&lt;/a&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * @author kevzlou7979<a name="line.56"></a>
+<span class="sourceLineNo">057</span> */<a name="line.57"></a>
+<span class="sourceLineNo">058</span>//@formatter:on<a name="line.58"></a>
+<span class="sourceLineNo">059</span>public class MaterialSubHeaderContainer extends MaterialWidget implements HasType&lt;SubHeaderType&gt;{<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>    static {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        MaterialSubHeader.loadResources();<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    }<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>    private final CssTypeMixin&lt;SubHeaderType, MaterialSubHeaderContainer&gt; typeMixin = new CssTypeMixin&lt;&gt;(this);<a name="line.65"></a>
+<span class="sourceLineNo">066</span><a name="line.66"></a>
+<span class="sourceLineNo">067</span>    public MaterialSubHeaderContainer() {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        super(Document.get().createDivElement(), "container1");<a name="line.68"></a>
+<span class="sourceLineNo">069</span>    }<a name="line.69"></a>
+<span class="sourceLineNo">070</span><a name="line.70"></a>
+<span class="sourceLineNo">071</span>    @Override<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    protected void onLoad() {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        super.onLoad();<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        if(getType() == SubHeaderType.PINNED) {<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            String uniqueName = DOM.createUniqueId();<a name="line.75"></a>
+<span class="sourceLineNo">076</span>            for (Widget w : getChildren()) {<a name="line.76"></a>
+<span class="sourceLineNo">077</span>                if (w instanceof MaterialSubHeader) {<a name="line.77"></a>
+<span class="sourceLineNo">078</span>                    w.addStyleName(uniqueName);<a name="line.78"></a>
+<span class="sourceLineNo">079</span>                }<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            }<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            initSubheaders("." + uniqueName, getElement());<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        }<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span>    private native void initSubheaders(String subheader, Element container) /*-{<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        $wnd.jQuery(document).ready(function() {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>            $wnd.initSubheader(subheader, container);<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        });<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    }-*/;<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>    @Override<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    public void setType(SubHeaderType type) {<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        typeMixin.setType(type);<a name="line.93"></a>
+<span class="sourceLineNo">094</span>    }<a name="line.94"></a>
+<span class="sourceLineNo">095</span><a name="line.95"></a>
+<span class="sourceLineNo">096</span>    @Override<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    public SubHeaderType getType() {<a name="line.97"></a>
+<span class="sourceLineNo">098</span>        return typeMixin.getType();<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    }<a name="line.99"></a>
+<span class="sourceLineNo">100</span>}<a name="line.100"></a>
 
 
 
