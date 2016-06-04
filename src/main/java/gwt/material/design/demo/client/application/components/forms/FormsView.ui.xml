@@ -44,11 +44,24 @@
 
     <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
     <m:MaterialTextArea placeholder="Content" grid="s12"/>
-    <m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE" grid="s12"/>
+    <m:MaterialTextArea placeholder="About" iconType="FACE" grid="s12"/>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextArea placeholder="Content" /><br/>
       &lt;m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/><br/>
+    </demo:PrettyPre>
+
+    <m:MaterialTitle title="Textarea" description="Textareas use a resize policy that can be configured to suit your need. "/>
+    <m:MaterialTextArea ui:field="txtAreaAuto" placeholder="Using AUTO" resizeRule="AUTO" grid="s12"/>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialTextAre placeholder="Using AUTO" resizeRule="AUTO"/><br/>
+    </demo:PrettyPre>
+
+    <m:MaterialTextArea ui:field="txtAreaFocus" placeholder="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &lt;m:MaterialTextAre placeholder="Using FOCUS" resizeRule="FOCUS"/><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Character Counter" description="Use a character counter in fields where a character restriction is in place."/>
