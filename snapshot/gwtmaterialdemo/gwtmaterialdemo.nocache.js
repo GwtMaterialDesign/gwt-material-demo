@@ -320,48 +320,6 @@ function gwtmaterialdemo(){
       throw null;
     }
 
-    providers['locale'] = function(){
-      var locale = null;
-      var rtlocale = 'en';
-      try {
-        if (!locale) {
-          var queryParam = location.search;
-          var qpStart = queryParam.indexOf('locale=');
-          if (qpStart >= 0) {
-            var value_0 = queryParam.substring(qpStart + 7);
-            var end = queryParam.indexOf('&', qpStart);
-            if (end < 0) {
-              end = queryParam.length;
-            }
-            locale = queryParam.substring(qpStart + 7, end);
-          }
-        }
-        if (!locale) {
-          locale = __gwt_getMetaProperty('locale');
-        }
-        if (!locale) {
-          locale = $wnd_0['__gwt_Locale'];
-        }
-        if (locale) {
-          rtlocale = locale;
-        }
-        while (locale && !__gwt_isKnownPropertyValue('locale', locale)) {
-          var lastIndex = locale.lastIndexOf('_');
-          if (lastIndex < 0) {
-            locale = null;
-            break;
-          }
-          locale = locale.substring(0, lastIndex);
-        }
-      }
-       catch (e) {
-        alert('Unexpected exception in locale detection, using default: ' + e);
-      }
-      $wnd_0['__gwt_Locale'] = rtlocale;
-      return locale || 'en';
-    }
-    ;
-    values['locale'] = {'default':0, en:1};
     providers['user.agent'] = function(){
       var ua = navigator.userAgent.toLowerCase();
       var docMode = $doc_0.documentMode;
@@ -416,17 +374,12 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['default', 'gecko1_8'], '39B0B457F423EAC5FB0E852901A4A511');
-      unflattenKeylistIntoAnswers(['default', 'ie10'], '39B0B457F423EAC5FB0E852901A4A511' + ':1');
-      unflattenKeylistIntoAnswers(['default', 'ie8'], '39B0B457F423EAC5FB0E852901A4A511' + ':2');
-      unflattenKeylistIntoAnswers(['default', 'ie9'], '39B0B457F423EAC5FB0E852901A4A511' + ':3');
-      unflattenKeylistIntoAnswers(['default', 'safari'], '39B0B457F423EAC5FB0E852901A4A511' + ':4');
-      unflattenKeylistIntoAnswers(['en', 'gecko1_8'], '39B0B457F423EAC5FB0E852901A4A511' + ':5');
-      unflattenKeylistIntoAnswers(['en', 'ie10'], '39B0B457F423EAC5FB0E852901A4A511' + ':6');
-      unflattenKeylistIntoAnswers(['en', 'ie8'], '39B0B457F423EAC5FB0E852901A4A511' + ':7');
-      unflattenKeylistIntoAnswers(['en', 'ie9'], '39B0B457F423EAC5FB0E852901A4A511' + ':8');
-      unflattenKeylistIntoAnswers(['en', 'safari'], '39B0B457F423EAC5FB0E852901A4A511' + ':9');
-      strongName = answers[computePropValue('locale')][computePropValue('user.agent')];
+      unflattenKeylistIntoAnswers(['gecko1_8'], '3A64D4F6AE5E2BFB1999FDB10E87B8D1');
+      unflattenKeylistIntoAnswers(['ie8'], '79AD05E1D29FE741EC4B4038267E82BC');
+      unflattenKeylistIntoAnswers(['safari'], '8B338374C574C98B2B6D83A30333E804');
+      unflattenKeylistIntoAnswers(['ie10'], '9D2EB8B7C39AF34B7090FB8DCB29F254');
+      unflattenKeylistIntoAnswers(['ie9'], 'DA3CDBCA6DB469367054245C14355108');
+      strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
