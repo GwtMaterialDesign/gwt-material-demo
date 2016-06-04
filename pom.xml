@@ -140,7 +140,7 @@
 
                     <runTarget>index.html</runTarget>
                     <modules>
-                        <module>gwt.material.design.demo.GwtMaterialDesignDemoDev</module>
+                        <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
                     </modules>
 
                     <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
