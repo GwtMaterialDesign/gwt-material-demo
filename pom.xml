@@ -11,7 +11,7 @@
 
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.6.0</version>
+    <version>1.6.0-SNAPSHOT</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
 

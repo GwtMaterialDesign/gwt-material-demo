@@ -45,12 +45,14 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiField MaterialSwitch sw;
     @UiField MaterialTextArea txtArea;
     @UiField MaterialTextBox txtBox;
+    @UiField MaterialTextBox txtBoxValidator;
 
     @Inject
     ErrorsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         acList.setSuggestions(getSimpleSuggestions());
+        txtBoxValidator.addValidator(new EmailValidator());
     }
 
     private MaterialSuggestionOracle getSimpleSuggestions() {
@@ -83,6 +85,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         suggestions.add("Montana");
         suggestions.add("Louisiana");
         return suggestions;
+    }
+
+    @UiHandler("btnValidate")
+    void btnValidateClick(ClickEvent e) {
+        txtBoxValidator.validate();
     }
 
     @UiHandler("btnError")
