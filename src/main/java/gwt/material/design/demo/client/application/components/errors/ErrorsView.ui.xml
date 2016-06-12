@@ -61,7 +61,7 @@
     </demo:PrettyPre>
 
     <m:MaterialRow paddingTop="10">
-      <m:MaterialTextBox ui:field="txtBoxValidator" placeholder="First Name" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
+      <m:MaterialTextBox ui:field="txtBoxValidator" placeholder="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
     </m:MaterialRow>
     <m:MaterialRow>
       <m:MaterialButton ui:field="btnValidate" text="Validate" backgroundColor="blue" waves="LIGHT"/>
