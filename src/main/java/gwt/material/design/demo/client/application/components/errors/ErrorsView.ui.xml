@@ -31,14 +31,42 @@
       txtBox.setError("Your username is available");
     </demo:PrettyPre>
 
-    <m:MaterialLabel fontSize="1.5em" text="Supported widgets"/>
-    <blockquote >
+    <m:MaterialLabel fontSize="1.5em" text="Supported widgets" paddingTop="15"/>
+    <blockquote>
       <p>Autocomplete</p>
       <p>Date Picker</p>
       <p>Text Area</p>
       <p>Text Box</p>
       <p>Time Picker</p>
     </blockquote>
+
+    <m:MaterialTitle title="Validation" description="You can add validators and error handlers to input fields." />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialTextBox ui:field="txtBox" placeholder="Email" validateOnBlur="true" allowBlank="false" />
+    </demo:PrettyPre>
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;public class EmailValidator extends RegExValidator {<br/>
+      &emsp;&emsp;public EmailValidator() {<br/>
+      &emsp;&emsp;&emsp;&emsp;super("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.(?:[a-zA-Z]{2,6})$", "Not a valid email address.");<br/>
+      &emsp;&emsp;}<br/>
+      <br/>
+      &emsp;&emsp;@Override<br/>
+      &emsp;&emsp;public int getPriority() {<br/>
+      &emsp;&emsp;&emsp;&emsp;return 0;<br/>
+      &emsp;&emsp;}<br/>
+      }<br/>
+      <br/>
+      // Add the validator to the input component<br/>
+      txtBox.addValidator(new EmailValidator());
+    </demo:PrettyPre>
+
+    <m:MaterialRow paddingTop="10">
+      <m:MaterialTextBox ui:field="txtBoxValidator" placeholder="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnValidate" text="Validate" backgroundColor="blue" waves="LIGHT"/>
+    </m:MaterialRow>
+
     <!-- Autocomplete -->
     <m:MaterialRow>
       <m:MaterialTitle title="Autocomplete"/>
