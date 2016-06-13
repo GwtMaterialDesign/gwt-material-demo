@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '64B07B5625955543DC2242049E16FB32';
+var $strongName = '83F92CEE688BF595BD7E8B2CFB9BBAE5';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -13953,10 +13953,12 @@ function $revalidateSelection(this$static, rating){
 
 function $setSelectedRatingIcon(this$static, selectedRatingIcon){
   this$static.selectedRatingIcon = selectedRatingIcon;
+  $revalidateLayout(this$static);
 }
 
 function $setUnselectedRatingIcon(this$static, unselectedRatingIcon){
   this$static.unselectedRatingIcon = unselectedRatingIcon;
+  $revalidateLayout(this$static);
 }
 
 function $setValue_5(this$static, value_0, fireEvents){
