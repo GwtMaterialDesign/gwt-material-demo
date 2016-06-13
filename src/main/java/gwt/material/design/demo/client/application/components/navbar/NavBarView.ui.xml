@@ -126,7 +126,7 @@
       &emsp;&lt;m:MaterialHeader><br/>
       &emsp;&lt;m:MaterialNavBar><br/>
       &emsp;&emsp;&lt;-- Navbar content goes here --><br/>
-      &emsp;&lt;/m:MaterialHeader><br/>
+      &emsp;&lt;/m:MaterialNavBar><br/>
       &lt;/m:MaterialHeader><br/>
     </demo:PrettyPre>
   </g:HTMLPanel>
