@@ -160,6 +160,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" textColor="blue" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getRating}" text="Rating" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollfire}" text="Scroll Fire" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSplitpanel}" text="Split Panel" textColor="blue" waves="DEFAULT"/>

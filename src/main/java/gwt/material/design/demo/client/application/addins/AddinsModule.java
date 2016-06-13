@@ -35,6 +35,7 @@ import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphMod
 import gwt.material.design.demo.client.application.addins.masonry.MasonryModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
+import gwt.material.design.demo.client.application.addins.rating.RatingModule;
 import gwt.material.design.demo.client.application.addins.richeditor.RichEditorModule;
 import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireModule;
 import gwt.material.design.demo.client.application.addins.splitpanel.SplitPanelModule;
@@ -75,5 +76,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new FileUploaderModule());
         install(new RichEditorModule());
         install(new AvatarModule());
+        install(new RatingModule());
     }
 }
