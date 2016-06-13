@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '6BE31F485A32377B44610B2C166816FA';
+var $strongName = '01BFC73581895C6768DEEEB327FAD49E';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -26533,7 +26533,7 @@ function $initSearches(this$static){
   $add_36(this$static.listSearches, new SearchObject(PLAY_CIRCLE_OUTLINE, 'Core Animations', '#coreAnimations'));
   $add_36(this$static.listSearches, new SearchObject(PLAY_CIRCLE_OUTLINE, 'Meaningful', '#meaningful'));
   $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Autocomplete', '#!autocomplete'));
-  $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Avatar', '#!avatar'));
+  $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Avatar', '#avatar'));
   $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Bubble', '#bubble'));
   $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Breadcrumb', '#breadcrumb'));
   $add_36(this$static.listSearches, new SearchObject(EXTENSION, 'Camera', '#camera'));
