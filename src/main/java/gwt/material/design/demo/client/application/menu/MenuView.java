@@ -136,6 +136,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
         // Addins
         listSearches.add(new SearchObject(IconType.EXTENSION, "Autocomplete", "#!autocomplete"));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Avatar", "#!avatar"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Bubble", "#bubble"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Breadcrumb", "#breadcrumb"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Camera", "#camera"));

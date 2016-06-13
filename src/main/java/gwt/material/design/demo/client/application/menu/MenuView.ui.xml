@@ -149,6 +149,7 @@
 					<m:MaterialCollapsibleBody>
 						<m.html:UnorderedList>
 							<m:MaterialLink targetHistoryToken="{tokens.getAutocomplete}" text="Autocomplete" textColor="blue" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getAvatar}" text="Avatar" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>

@@ -24,6 +24,7 @@ package gwt.material.design.demo.client.application.addins;
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompleteModule;
+import gwt.material.design.demo.client.application.addins.avatar.AvatarModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
@@ -73,5 +74,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new SplitPanelModule());
         install(new FileUploaderModule());
         install(new RichEditorModule());
+        install(new AvatarModule());
     }
 }

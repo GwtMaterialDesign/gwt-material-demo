@@ -29,6 +29,31 @@
         }
     </ui:style>
     <m:MaterialRow>
+        <!-- 1.6.0 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="1.6.0" textColor="black"/>
+                <m:MaterialLabel textColor="grey" text="June 2016"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="pink" text="Avatar" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="pink" text="Rating" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+        <!-- 1.5.2 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="1.5.2" textColor="black"/>
+                <m:MaterialLabel textColor="grey" text="Ongoing"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.5.1 Bug Fixes" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
         <!-- 1.5.1 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
@@ -41,7 +66,7 @@
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
-        <!-- 1.5 -->
+        <!-- 1.5.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="1.5.0" textColor="black"/>
