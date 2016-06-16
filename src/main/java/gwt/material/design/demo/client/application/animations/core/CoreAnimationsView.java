@@ -28,8 +28,11 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialCard;
 import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 
@@ -42,6 +45,9 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
 
     @UiField
     MaterialCard card;
+
+    @UiField
+    MaterialButton iconHeart, iconCallback, iconState;
 
     @UiField
     MaterialListBox lstAnimations;
@@ -146,5 +152,34 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
         MaterialAnimator.animate(transition, card, 1000);
+    }
+
+    @UiHandler("btnAnimateInfinite")
+    void onAnimateInfinite(ClickEvent e) {
+        MaterialAnimator.animate(Transition.PULSE, iconHeart, 1000, true);
+    }
+
+    @UiHandler("btnStopAnimation")
+    void onStopAnimation(ClickEvent e) {
+        MaterialAnimator.stopAnimation(iconHeart);
+    }
+
+    @UiHandler("btnAnimateCallback")
+    void onCallback(ClickEvent e) {
+        Runnable callback = new Runnable() {
+            @Override
+            public void run() {
+                MaterialToast.fireToast("Animation is finished");
+            }
+        };
+        MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, callback);
+    }
+
+    @UiHandler("btnAnimateStateful")
+    void onStateful(ClickEvent e) {
+        new MaterialAnimation().durationMillis(1000)
+                .delayMillis(100)
+                .transition(Transition.WOBBLE)
+                .animate(iconState);
     }
 }
