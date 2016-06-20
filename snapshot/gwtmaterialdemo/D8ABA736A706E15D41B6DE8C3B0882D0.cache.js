@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.7.0";
-var $strongName = '6115C4C25EEB638031422187163386BF';
+var $strongName = 'D8ABA736A706E15D41B6DE8C3B0882D0';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -12146,16 +12146,16 @@ function $getEnabledMixin(this$static){
 }
 
 function $insert_3(this$static, child, beforeIndex){
-  $insert_4(this$static, child, this$static.element, beforeIndex);
+  this$static.insert_0(child, this$static.element, beforeIndex, true);
 }
 
-function $insert_4(this$static, child, container, beforeIndex){
+function $insert_4(this$static, child, container, beforeIndex, domInsert){
   if (!this$static.attached && $isFeatureEnabled(this$static, ($clinit_MaterialWidget$Feature() , ONLOAD_ADD_QUEUE))) {
     !this$static.onLoadAdd && (this$static.onLoadAdd = new ArrayList);
     $add_35(this$static.onLoadAdd, new MaterialWidget$Appender_0(child, beforeIndex));
   }
    else {
-    $insert_0(this$static, child, container, beforeIndex, true);
+    $insert_0(this$static, child, container, beforeIndex, domInsert);
   }
 }
 
@@ -12299,6 +12299,10 @@ _.add_0 = function add_14(child){
 ;
 _.getWaves = function getWaves(){
   return (!this.wavesMixin && (this.wavesMixin = new WavesMixin(this)) , this.wavesMixin).waves;
+}
+;
+_.insert_0 = function insert_2(child, container, beforeIndex, domInsert){
+  $insert_4(this, child, container, beforeIndex, domInsert);
 }
 ;
 _.isEnabled = function isEnabled_3(){
@@ -18308,12 +18312,9 @@ function $initializeMaterial(element){
 
 function $setValue_12(this$static, value_0){
   var before, index_0;
-  if (value_0 == this$static.value_0) {
-    return;
-  }
   index_0 = $getIndex(this$static, toString__Ljava_lang_String___devirtual$(value_0));
   if (index_0 > 0 && $indexOf_2(this$static.values, value_0, 0) != -1) {
-    before = this$static.value_0;
+    before = $get_7(this$static.values, this$static.listBox.element.selectedIndex);
     $setSelectedIndex_0(this$static.listBox, index_0);
     this$static.initialized && $initializeMaterial(this$static.listBox.element);
     fireIfNotEqual(this$static, before, value_0);
@@ -18331,7 +18332,7 @@ _.clear_0 = function clear_11(){
 }
 ;
 _.getValue_0 = function getValue_14(){
-  return this.value_0;
+  return $get_7(this.values, this.listBox.element.selectedIndex);
 }
 ;
 _.onChangeInternal = function onChangeInternal(){
@@ -18657,7 +18658,7 @@ _.onKeyUp = function onKeyUp_1(event_0){
     image = new MaterialImage;
     if (obj.resource) {
       $setResource_1(image, obj.resource);
-      $insert_4(link_0, image, link_0.element, 0);
+      $insert_4(link_0, image, link_0.element, 0, true);
     }
     !obj.link_0.length || $setHref(link_0, obj.link_0);
     $setText_3(link_0, obj.keyword);
@@ -18734,26 +18735,7 @@ function MaterialSearchResult(){
 defineClass(1895, 23, $intern_61, MaterialSearchResult);
 var Lgwt_material_design_client_ui_MaterialSearchResult_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialSearchResult', 1895);
 function $add_30(this$static, child){
-  var collapsible, listItem;
-  if (instanceOf(child, 39)) {
-    $setPropertyImpl(child.element.style, 'border', '1px solid #e9e9e9');
-    $setPropertyImpl(child.element.style, 'textAlign', 'center');
-  }
-  collapsible = instanceOf(child, 135);
-  collapsible && $addClearActiveHandler(dynamicCast(child, 135), new MaterialSideNav$2(this$static));
-  if (!instanceOf(child, 48)) {
-    listItem = new ListItem;
-    instanceOf(child, 135) && $setPropertyImpl(listItem.element.style, 'backgroundColor', 'transparent');
-    if (instanceOf(child, 37)) {
-      $setWaves(listItem, dynamicCast(child, 37).getWaves());
-      dynamicCast(child, 37).setWaves(null);
-    }
-    $add_12(listItem, child, listItem.element);
-    child = listItem;
-  }
-  collapsible || $addDomHandler(child, new MaterialSideNav$3(this$static, child), ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1));
-  child.element.style['display'] = ($clinit_Style$Display() , 'block');
-  $add_12(this$static, child, this$static.element);
+  $add_11(this$static, $wrap(this$static, child));
 }
 
 function $applyPushType(this$static, width_0){
@@ -18882,6 +18864,29 @@ function $show_0(e){
   );
 }
 
+function $wrap(this$static, child){
+  var collapsible, listItem;
+  if (instanceOf(child, 39)) {
+    $setPropertyImpl(child.element.style, 'border', '1px solid #e9e9e9');
+    $setPropertyImpl(child.element.style, 'textAlign', 'center');
+  }
+  collapsible = instanceOf(child, 135);
+  collapsible && $addClearActiveHandler(dynamicCast(child, 135), new MaterialSideNav$2(this$static));
+  if (!instanceOf(child, 48)) {
+    listItem = new ListItem;
+    instanceOf(child, 135) && $setPropertyImpl(listItem.element.style, 'backgroundColor', 'transparent');
+    if (instanceOf(child, 37)) {
+      $setWaves(listItem, dynamicCast(child, 37).getWaves());
+      dynamicCast(child, 37).setWaves(null);
+    }
+    $add_12(listItem, child, listItem.element);
+    child = listItem;
+  }
+  collapsible || $addDomHandler(child, new MaterialSideNav$3(this$static, child), ($clinit_ClickEvent() , $clinit_ClickEvent() , TYPE_1));
+  child.element.style['display'] = ($clinit_Style$Display() , 'block');
+  return child;
+}
+
 function MaterialSideNav(type_0){
   MaterialWidget_1.call(this, $createElement($doc, 'ul'), initValues(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 4, ['side-nav']));
   this.width_0 = 240;
@@ -18897,6 +18902,10 @@ function MaterialSideNav(type_0){
 defineClass(349, 23, $intern_61, MaterialSideNav);
 _.add_0 = function add_33(child){
   $add_30(this, child);
+}
+;
+_.insert_0 = function insert_3(child, container, beforeIndex, domInsert){
+  $insert_4(this, $wrap(this, child), container, beforeIndex, domInsert);
 }
 ;
 _.onClosed = function onClosed_0(){
@@ -30876,7 +30885,7 @@ _.hashCode$ = function hashCode_36(){
 }
 ;
 var Ljava_util_Collections$UnmodifiableSet_2_classLit = createForClass('java.util', 'Collections/UnmodifiableSet', 397);
-function $wrap(array, size_0){
+function $wrap_0(array, size_0){
   var i;
   for (i = 0; i < size_0; ++i) {
     setCheck(array, i, new Collections$UnmodifiableMap$UnmodifiableEntrySet$UnmodifiableEntry(dynamicCast(array[i], 88)));
@@ -30897,7 +30906,7 @@ _.iterator = function iterator_19(){
 _.toArray = function toArray_5(){
   var array;
   array = this.coll.toArray();
-  $wrap(array, array.length);
+  $wrap_0(array, array.length);
   return array;
 }
 ;
