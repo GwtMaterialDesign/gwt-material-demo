@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.components.pickers;
  */
 
 
+import com.google.gwt.event.dom.client.ChangeHandler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.*;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -28,18 +29,30 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.constants.DatePickerLanguage;
 import gwt.material.design.client.ui.MaterialDatePicker;
+import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.html.Option;
+import gwt.material.design.demo.client.application.dto.DataHelper;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     interface Binder extends UiBinder<Widget, PickersView> {
     }
 
     @UiField
-    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents;
+    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents, dpTranslation;
+
+    @UiField
+    MaterialListBox lstLanguage;
+
+    private List<DatePickerLanguage> languages = new ArrayList<>();
 
     @Inject
     PickersView(Binder uiBinder) {
@@ -72,6 +85,22 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
                 MaterialToast.fireToast("Date Selected " + event.getValue());
             }
         });
+
+        initLanguage();
+    }
+
+    private void initLanguage() {
+        for(DatePickerLanguage lang : DataHelper.getAllDateLanguage()) {
+            languages.add(lang);
+            lstLanguage.add(new Option(lang.getName()));
+        }
+    }
+
+    @UiHandler("lstLanguage")
+    void onChange(ValueChangeEvent<String> event) {
+        DatePickerLanguage lang = languages.get(lstLanguage.getSelectedIndex());
+        dpTranslation.setLanguage(lang);
+        dpTranslation.reinitialize();
     }
 
     @UiHandler("btnSetDate")
