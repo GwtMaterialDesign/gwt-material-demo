@@ -55,13 +55,13 @@
     <m:MaterialTextArea ui:field="txtAreaAuto" placeholder="Using AUTO" resizeRule="AUTO" grid="s12"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialTextAre placeholder="Using AUTO" resizeRule="AUTO"/><br/>
+      &lt;m:MaterialTextArea placeholder="Using AUTO" resizeRule="AUTO"/><br/>
     </demo:PrettyPre>
 
     <m:MaterialTextArea ui:field="txtAreaFocus" placeholder="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialTextAre placeholder="Using FOCUS" resizeRule="FOCUS"/><br/>
+      &lt;m:MaterialTextArea placeholder="Using FOCUS" resizeRule="FOCUS"/><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Character Counter" description="Use a character counter in fields where a character restriction is in place."/>
