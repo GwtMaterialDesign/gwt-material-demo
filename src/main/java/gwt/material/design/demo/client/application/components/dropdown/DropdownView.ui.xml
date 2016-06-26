@@ -80,7 +80,7 @@
       <m:MaterialTitle title="Icon Dropdown" />
       <m:MaterialIcon iconType="PHONE" iconColor="black" activates="dp-4" waves="DEFAULT" grid="l2"/>
 
-      <m:MaterialDropDown activator="dp-4" constrainWidth="false">
+      <m:MaterialDropDown activator="dp-4" constrainWidth="true">
         <m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
         <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="black" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
         <m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />

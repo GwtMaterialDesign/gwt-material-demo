@@ -26,15 +26,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!-- Project properties -->
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.encoding>UTF-8</project.encoding>
 
         <!-- GWT -->
-        <gwt.version>2.7.0</gwt.version>
+        <gwt.version>2.8.0-beta1</gwt.version>
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>1.6.0-SNAPSHOT</gwt-material.version>
+        <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
 
         <gwt.style>PRETTY</gwt.style>
 
@@ -193,12 +193,12 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.6.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-addins</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.6.0-SNAPSHOT</version>
         </dependency>
 
         <!-- App Engine -->
