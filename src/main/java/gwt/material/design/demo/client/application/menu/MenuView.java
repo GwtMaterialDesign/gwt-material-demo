@@ -35,16 +35,10 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.events.SideNavOpenedEvent;
 import gwt.material.design.client.events.SideNavPushEvent;
 import gwt.material.design.client.events.SideNavPushEvent.SideNavPushHandler;
-import gwt.material.design.client.ui.MaterialAnchorButton;
-import gwt.material.design.client.ui.MaterialHeader;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialNavBar;
-import gwt.material.design.client.ui.MaterialNavBrand;
-import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialSearch;
-import gwt.material.design.client.ui.MaterialSideNav;
+import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.client.ui.html.Header;
@@ -97,6 +91,31 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         });
 
         initSearches();
+    }
+
+    @UiHandler("btnOpenSide")
+    void onOpenSide(ClickEvent e) {
+        sideNav.show();
+    }
+
+    @UiHandler("btnCloseSide")
+    void onCloseSide(ClickEvent e) {
+        sideNav.hide();
+        sideNav.addOpenedHandler(new SideNavOpenedEvent.SideNavOpenedHandler() {
+            @Override
+            public void onSideNavOpened(SideNavOpenedEvent event) {
+                MaterialToast.fireToast("Opened");
+            }
+        });
+        sideNav.addOpeningHandler(event -> {
+           MaterialToast.fireToast("Opening");
+        });
+        sideNav.addClosedHandler(event -> {
+           MaterialToast.fireToast("Closed");
+        });
+        sideNav.addClosingHandler(event -> {
+           MaterialToast.fireToast("Closing");
+        });
     }
 
     private void initSearches() {
