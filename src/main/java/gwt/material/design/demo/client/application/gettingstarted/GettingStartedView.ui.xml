@@ -35,7 +35,7 @@
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
+        &emsp;&lt;version>1.5.2&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
       <m:MaterialRow>
@@ -62,7 +62,7 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
+      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.6.0"/>
     </m:MaterialPanel>
 
     <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
@@ -115,6 +115,20 @@
     <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+    </demo:PrettyPre>
+
+    <m:MaterialTitle description="Other Options : We have 10 color themes implemented on GMD" />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;inherits name="gwt.material.design.themes.GwtMaterialThemeAmber"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBrown"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeGreen"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeGrey"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeOrange"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemePink"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemePurple"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeRed"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeYellow"/&gt;<br/>
     </demo:PrettyPre>
 
     <m:MaterialPanel>
