@@ -37,5 +37,19 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
     </demo:PrettyPre>
+
+    <m:MaterialTitle description="Other Options : We have 10 color themes implemented on GMD" />
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;inherits name="gwt.material.design.themes.GwtMaterialThemeAmber"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBrown"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeGreen"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeGrey"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeOrange"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemePink"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemePurple"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeRed"/&gt;<br/>
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeYellow"/&gt;<br/>
+    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
