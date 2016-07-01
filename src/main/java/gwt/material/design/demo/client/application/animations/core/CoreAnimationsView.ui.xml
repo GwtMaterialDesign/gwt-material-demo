@@ -28,6 +28,9 @@
         .block{
             display: block;
         }
+        .icon i{
+            font-size: 4em;
+        }
     </ui:style>
     <m:MaterialPanel>
         <m:MaterialTitle title="Usage" description="You can easily apply animation by calling MaterialAnimator.animate(Transition, Widget, Delay);"/>
@@ -50,5 +53,52 @@
                 <m:MaterialButton ui:field="btnAnimate" text="Animate" backgroundColor="blue" textColor="white"/>
             </m:MaterialColumn>
         </m:MaterialRow>
+
+        <m:MaterialTitle title="Infinite" description="You can easily set the animation infinite."/>
+        <m:MaterialRow>
+            <m:MaterialColumn grid="s12 l6">
+                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                    // Play Infinite Animation<br/>
+                    MaterialAnimator.animate(Transition.PULSE, heart, 1000, true);<br/>
+                    // Stop Infinite Animation <br/>
+                    MaterialAnimator.stopAnimation(heart);<br/>
+                </demo:PrettyPre>
+                <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="FAVORITE" backgroundColor="pink" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+        <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation" backgroundColor="blue" textColor="white"/>
+        <m:MaterialButton ui:field="btnStopAnimation" text="Stop Animation" type="FLAT" />
+
+        <m:MaterialTitle title="Callback" description="Setting the callback after animation" />
+        <m:MaterialRow>
+            <m:MaterialColumn grid="s12 l6">
+                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                    &emsp;Runnable callback = new Runnable() {<br/>
+                    &emsp;@Override<br/>
+                    &emsp;public void run() {<br/>
+                    &emsp;&emsp;MaterialToast.fireToast("Animation is finished");<br/>
+                    &emsp;}<br/>
+                    };<br/>
+                    MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, callback);
+                </demo:PrettyPre>
+                <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" backgroundColor="blue" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+        <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback" backgroundColor="blue" textColor="white"/>
+
+        <m:MaterialTitle title="Stateful Animation" description="Stateful object holding animation details. Default behaviour is a bounce transition for 800ms." />
+        <m:MaterialRow>
+            <m:MaterialColumn grid="s12 l6">
+                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                    &emsp;new MaterialAnimation().durationMillis(1000)<br/>
+                    &emsp;.delayMillis(100)<br/>
+                    &emsp;.transition(Transition.WOBBLE)<br/>
+                    &emsp;.animate(iconState);
+                </demo:PrettyPre>
+                <m:MaterialButton ui:field="iconState" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="POLYMER" backgroundColor="purple" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+        <m:MaterialButton ui:field="btnAnimateStateful" text="Animate with Callback" backgroundColor="blue" textColor="white"/>
+
     </m:MaterialPanel>
 </ui:UiBinder>
