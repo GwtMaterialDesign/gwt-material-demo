@@ -32,6 +32,7 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_1_5_3("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.3"),
         CORE_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.2"),
         CORE_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.1"),
         CORE_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.0"),
