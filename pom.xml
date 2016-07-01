@@ -188,17 +188,17 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.5.3</version>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.5.2</version>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-addins</artifactId>
-            <version>${gwt-material.version}</version>
+            <version>1.5.2</version>
         </dependency>
 
         <!-- App Engine -->
