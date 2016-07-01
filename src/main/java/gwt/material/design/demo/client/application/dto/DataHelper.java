@@ -50,6 +50,7 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
+        versions.add(new Version("1.5.3", "June 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, "red"));
         versions.add(new Version("1.5.2", "June 2016", Version.VersionLink.CORE_1_5_2.getName(), Version.VersionLink.ADDINS_1_5_2.getName(), Version.VersionLink.THEME_1_5_2.getName(), "orange"));
         versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), "teal"));
         versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), "deep-orange"));

@@ -28,10 +28,31 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
       <m:MaterialLink ui:field="btnMaven"  text="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material." iconType="LINK" iconPosition="LEFT" textColor="blue"/>
+      <m:MaterialLabel text="For gwt-material we've proposed an emergency release of 1.5.3 for the fixed on MaterialSwitch core component" />
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
+        &emsp;&lt;version>1.5.3&lt;/version><br/>
+        &lt;/dependency>
+      </demo:PrettyPre>
+      <m:MaterialRow>
+        <m:MaterialLink target="_blank" text="gwt-material-addins"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins" iconType="EXTENSION" iconPosition="LEFT" textColor="blue"/>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;dependency><br/>
+        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+        &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
+        &emsp;&lt;version>1.5.2&lt;/version><br/>
+        &lt;/dependency>
+      </demo:PrettyPre>
+      <m:MaterialRow>
+        <m:MaterialLink target="_blank" text="gwt-material-themes"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes" iconType="PALETTE" iconPosition="LEFT" textColor="blue"/>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;dependency><br/>
+        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+        &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
         &emsp;&lt;version>1.5.2&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
@@ -39,7 +60,7 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.2"/>
+      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.3"/>
     </m:MaterialPanel>
 
     <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
