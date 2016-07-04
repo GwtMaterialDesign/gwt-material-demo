@@ -21,9 +21,6 @@ package gwt.material.design.demo.client.application.menu;
  */
 
 
-import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.core.client.Scheduler.ScheduledCommand;
-import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.CloseEvent;
@@ -35,13 +32,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.events.SideNavOpenedEvent;
 import gwt.material.design.client.events.SideNavPushEvent;
 import gwt.material.design.client.events.SideNavPushEvent.SideNavPushHandler;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
-import gwt.material.design.client.ui.html.Header;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -93,31 +88,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         initSearches();
     }
 
-    @UiHandler("btnOpenSide")
-    void onOpenSide(ClickEvent e) {
-        sideNav.show();
-    }
-
-    @UiHandler("btnCloseSide")
-    void onCloseSide(ClickEvent e) {
-        sideNav.hide();
-        sideNav.addOpenedHandler(new SideNavOpenedEvent.SideNavOpenedHandler() {
-            @Override
-            public void onSideNavOpened(SideNavOpenedEvent event) {
-                MaterialToast.fireToast("Opened");
-            }
-        });
-        sideNav.addOpeningHandler(event -> {
-           MaterialToast.fireToast("Opening");
-        });
-        sideNav.addClosedHandler(event -> {
-           MaterialToast.fireToast("Closed");
-        });
-        sideNav.addClosingHandler(event -> {
-           MaterialToast.fireToast("Closing");
-        });
-    }
-
     private void initSearches() {
         // About
         listSearches.add(new SearchObject(IconType.INFO_OUTLINE, "About", "#!about"));
@@ -159,6 +129,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Bubble", "#bubble"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Breadcrumb", "#breadcrumb"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Camera", "#camera"));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "ComboBox", "#combobox"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#cutouts"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Doc Viewer", "#docviewer"));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#dnd"));
@@ -204,13 +175,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
         txtSearch.setListSearches(listSearches);
 
-        // Sets up the search no result event
-        /*txtSearch.addSearchNoResultHandler(new SearchNoResultEvent.SearchNoResultHandler() {
-            @Override
-            public void onSearchNoResult(SearchNoResultEvent event) {
-                MaterialToast.fireToast("No Search Result");
-            }
-        });*/
     }
 
     @Override

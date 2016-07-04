@@ -1,0 +1,59 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <m:MaterialPanel>
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &emsp;&lt;combobox:MaterialComboBox><br/>
+            &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
+            &emsp;&lt;m:html.Option value="2" text="Sample 2"/><br/>
+            &emsp;&lt;m:html.Option value="3" text="Sample 3"/><br/>
+            &lt;/combobox:MaterialComboBox><br/>
+        </demo:PrettyPre>
+
+        <combobox:MaterialComboBox>
+            <m:html.Option value="1" text="Sample 1"/>
+            <m:html.Option value="2" text="Sample 2"/>
+            <m:html.Option value="3" text="Sample 3"/>
+        </combobox:MaterialComboBox>
+
+        <m:MaterialTitle title="Multiple Select" description="Just like Autocomplete you can have a capability to select ComboBox options multiple."/>
+        <combobox:MaterialComboBox multiple="true">
+            <m:html.Option value="1" text="Sample 1"/>
+            <m:html.Option value="2" text="Sample 2"/>
+            <m:html.Option value="3" text="Sample 3"/>
+        </combobox:MaterialComboBox>
+        
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;combobox:MaterialComboBox multiple="true"><br/>
+            &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
+            &emsp;&lt;m:html.Option value="2" text="Sample 2"/><br/>
+            &emsp;&lt;m:html.Option value="3" text="Sample 3"/><br/>
+            &lt;/combobox:MaterialComboBox><br/>
+        </demo:PrettyPre>
+    </m:MaterialPanel>
+</ui:UiBinder>

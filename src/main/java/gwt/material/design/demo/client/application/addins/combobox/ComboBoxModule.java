@@ -1,4 +1,4 @@
-package gwt.material.design.client.js;
+package gwt.material.design.demo.client.application.addins.combobox;
 
 /*
  * #%L
@@ -21,16 +21,11 @@ package gwt.material.design.client.js;
  */
 
 
-import jsinterop.annotations.JsType;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * Created by Mark Kevin on 6/27/2016.
- */
-@JsType(isNative = false)
-public class Window {
-
-    public static native boolean matchMedia(String query) /*-{
-        return $wnd.window.matchMedia(query).matches;
-    }-*/;
-
+public class ComboBoxModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(ComboBoxPresenter.class, ComboBoxPresenter.MyView.class, ComboBoxView.class, ComboBoxPresenter.MyProxy.class);
+    }
 }

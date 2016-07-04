@@ -85,6 +85,7 @@ public class NameTokens {
     public static final String richeditor = "richeditor";
     public static final String avatar = "avatar";
     public static final String rating = "rating";
+    public static final String combobox = "combobox";
 
     public static String getAbout() {
         return about;
@@ -336,5 +337,9 @@ public class NameTokens {
 
     public static String getRating() {
         return rating;
+    }
+
+    public static String getCombobox() {
+        return combobox;
     }
 }

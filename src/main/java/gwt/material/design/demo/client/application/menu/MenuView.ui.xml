@@ -77,8 +77,6 @@
 			<m:MaterialPanel ui:field="panel">
 				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="4em"/>
 				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
-				<m:MaterialButton text="Open SideNav" ui:field="btnOpenSide" />
-				<m:MaterialButton text="Close SideNav" ui:field="btnCloseSide" />
 				<m:MaterialAnchorButton ui:field="btnStarted" targetHistoryToken="{tokens.getGettingstarted}"
 																text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"
 																addStyleNames="{style.btnGettingStarted}"/>
@@ -154,6 +152,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getAvatar}" text="Avatar" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" textColor="blue" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" textColor="blue" waves="DEFAULT"/>
