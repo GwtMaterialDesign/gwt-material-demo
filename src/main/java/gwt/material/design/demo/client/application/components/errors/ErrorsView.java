@@ -45,6 +45,7 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiField MaterialSwitch sw;
     @UiField MaterialTextArea txtArea;
     @UiField MaterialTextBox txtBox;
+    @UiField MaterialTextBox txtBoxWithHelper;
     @UiField MaterialTextBox txtBoxValidator;
 
     @Inject
@@ -180,6 +181,21 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnClearTxtBox")
     void onClearTxtBox(ClickEvent e) {
         txtBox.clearErrorOrSuccess();
+    }
+    
+    @UiHandler("btnErrorTxtBoxWithHelper")
+    void onErrorTxtBoxWithHelper(ClickEvent e) {
+        txtBoxWithHelper.setError("This is an error message for text box, that replaces the helper text.");
+    }
+
+    @UiHandler("btnSuccessTxtBoxWithHelper")
+    void onSuccessTxtBoxWithHelper(ClickEvent e) {
+        txtBoxWithHelper.setSuccess("This is a success message for text box, that replaces the helper text.");
+    }
+
+    @UiHandler("btnClearTxtBoxWithHelper")
+    void onClearTxtBoxWithHelper(ClickEvent e) {
+        txtBoxWithHelper.clearErrorOrSuccess();
     }
 
     @UiHandler("btnErrorTime")
