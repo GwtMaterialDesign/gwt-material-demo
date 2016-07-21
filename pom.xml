@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <artifactId>gwt-material-parent</artifactId>
-        <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>2.0-SNAPSHOT</version>
-    </parent>
-
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
-    <packaging>war</packaging>
     <version>2.0-SNAPSHOT</version>
-    <name>Gwt Material Demo</name>
-    <description>Showcase for gwt-material</description>
 
-    <prerequisites>
-        <maven>3.2.3</maven>
-    </prerequisites>
+    <name>Gwt Material Design</name>
+    <description>A demo app for gwt-material</description>
+
+    <packaging>war</packaging>
 
     <properties>
-        <!-- Don't let your Mac use a crazy non-standard encoding -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <!-- Project properties -->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <project.encoding>UTF-8</project.encoding>
-
-        <!-- GWT -->
+        <!-- client -->
         <gwt.version>2.8.0-beta1</gwt.version>
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
-
         <gwt.style>PRETTY</gwt.style>
+        <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
+        <gwt-material-table.version>1.0-SNAPSHOT</gwt-material-table.version>
 
-        <!-- Maven -->
+        <!-- maven -->
+        <maven-war-plugin.version>2.6</maven-war-plugin.version>
+        <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
+
+        <target.jdk>1.8</target.jdk>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <appengine.version>1.9.24</appengine.version>
-        <junit.version>4.12</junit.version>
-        <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
-        <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
     </properties>
 
     <build>
-        <outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/classes</outputDirectory>
+        <finalName>budget</finalName>
+        <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
         <resources>
             <resource>
@@ -58,50 +43,13 @@
 
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.2</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>display-dependency-updates</goal>
-                            <goal>display-plugin-updates</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <version>${maven-compiler-plugin.version}</version>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-                <dependencies>
-                    <!-- Run RequestFactory validation tool. -->
-                    <dependency>
-                        <groupId>com.google.web.bindery</groupId>
-                        <artifactId>requestfactory-apt</artifactId>
-                        <version>${gwt.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-
-            <!-- Skips the GWTTestCases during Junit Testing -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
-                    <excludes>
-                        <exclude>**/*GwtTest.java</exclude>
-                    </excludes>
+                    <source>${target.jdk}</source>
+                    <target>${target.jdk}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
 
@@ -110,44 +58,19 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
                 <version>${gwt.version}</version>
-
                 <configuration>
                     <strict>true</strict>
+
                     <testTimeOut>180</testTimeOut>
                     <mode>htmlunit</mode>
-
-                    <!-- Switch to a suite to run tests faster -->
-                    <!-- <includes>**/*GwtTestSuite.java</includes> -->
-                    <!-- <excludes>**/*GwtTest.java</excludes> -->
                     <includes>**/*GwtTest.java</includes>
 
-                    <copyWebapp>true</copyWebapp>
-                    <hostedWebapp>${webappDirectory}</hostedWebapp>
-
-                    <!--Might be needed later for appengine-->
-                    <!--<server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>-->
-                    <!--<appEngineVersion>${appengine.version}</appEngineVersion>-->
-                    <!--<appEngineHome>${gae.home}</appEngineHome>-->
-                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.home}</extraJvmArgs>-->
-                    <!--<extraJvmArgs>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=20</extraJvmArgs>-->
-                    <!--<port>8888</port>-->
-
-                    <extraJvmArgs>-Xmx1g</extraJvmArgs>
-                    <logLevel>INFO</logLevel>
-                    <style>${gwt.style}</style>
-                    <compileReport>true</compileReport>
-                    <compilerMetrics>true</compilerMetrics>
+                    <logLevel>TRACE</logLevel>
+                    <extraJvmArgs>-Xms1024m -Xmx1024m</extraJvmArgs>
 
                     <runTarget>index.html</runTarget>
-                    <modules>
-                        <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
-                    </modules>
-
-                    <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
-                    <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
+                    <module>gwt.material.design.demo.client.Application</module>
                 </configuration>
-
-                <!--Replaced the existing executions block-->
                 <executions>
                     <execution>
                         <goals>
@@ -156,35 +79,44 @@
                         </goals>
                     </execution>
                 </executions>
-
-                <!--<executions>-->
-                <!--<execution>-->
-                <!--<phase>compile</phase>-->
-                <!--<goals>-->
-                <!--<goal>clean</goal>-->
-                <!--<goal>compile</goal>-->
-                <!--</goals>-->
-                <!--</execution>-->
-                <!--</executions>-->
             </plugin>
         </plugins>
     </build>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>sonatype-nexus-snapshot</id>
             <name>Sonatype Nexus snapshot repository</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>sonatype-nexus-staging</id>
-            <name>Sonatype Nexus release repository</name>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
-    </distributionManagement>
+    </repositories>
 
     <dependencies>
-        <!-- GwtMaterial -->
+        <!-- GWT -->
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-servlet</artifactId>
+            <version>${gwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-user</artifactId>
+            <version>${gwt.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-dev</artifactId>
+            <version>${gwt.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Gwt Material -->
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material</artifactId>
@@ -200,76 +132,13 @@
             <artifactId>gwt-material-addins</artifactId>
             <version>${gwt-material.version}</version>
         </dependency>
-
-        <!-- App Engine -->
         <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-endpoints</artifactId>
-            <version>${appengine.version}</version>
+            <groupId>com.github.gwtmaterialdesign</groupId>
+            <artifactId>gwt-material-table</artifactId>
+            <version>${gwt-material-table.version}</version>
         </dependency>
 
-        <!-- Testing -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-labs</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-testing</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>3.0-alpha-1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
-            <version>1</version>
-        </dependency>
-
-        <!-- GWT -->
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-servlet</artifactId>
-            <version>${gwt.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-codeserver</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-dev</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <!-- GWTP Components -->
+        <!-- GWTP -->
         <dependency>
             <groupId>com.gwtplatform</groupId>
             <artifactId>gwtp-mvp-client</artifactId>
@@ -293,66 +162,45 @@
             <version>${gwtp.version}</version>
         </dependency>
 
-        <!--GWT Charts-->
         <dependency>
             <groupId>com.googlecode.gwt-charts</groupId>
             <artifactId>gwt-charts</artifactId>
             <version>0.9.9</version>
         </dependency>
 
-    </dependencies>
+        <!-- DI -->
+        <dependency>
+            <groupId>com.google.gwt.inject</groupId>
+            <artifactId>gin</artifactId>
+            <version>${gin.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.google.appengine</groupId>
-                        <artifactId>appengine-maven-plugin</artifactId>
-                        <version>${appengine.version}</version>
-                        <configuration>
-                            <enableJarClasses>false</enableJarClasses>
-                            <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
-                            <!-- address>0.0.0.0</address>
-                            <port>8080</port -->
-                            <!-- Comment in the below snippet to enable local debugging with a remove debugger
-                            like those included with Eclipse or IntelliJ -->
-                            <!-- jvmFlags>
-                            <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
-                            </jvmFlags -->
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>endpoints_get_discovery_doc</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>dev</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>gwt-maven-plugin</artifactId>
-                        <version>${gwt.version}</version>
-                        <configuration>
-                            <modules>
-                                <module>gwt.material.design.demo.GwtMaterialDesignDemoDev</module>
-                            </modules>
-                            <draftCompile combine.self="override">true</draftCompile>
-                            <optimizationLevel combine.self="override">0</optimizationLevel>
-                            <disableCastChecking combine.self="override">false</disableCastChecking>
-                            <disableClassMetadata combine.self="override">false</disableClassMetadata>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+        <!-- SLF4J -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jul-to-slf4j</artifactId>
+            <version>1.7.13</version>
+        </dependency>
+
+        <!-- Gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!-- Expression Language -->
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>javax.el-api</artifactId>
+            <version>3.0.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

@@ -86,6 +86,7 @@ public class NameTokens {
     public static final String avatar = "avatar";
     public static final String rating = "rating";
     public static final String combobox = "combobox";
+    public static final String datatable = "datatable";
 
     public static String getAbout() {
         return about;
@@ -341,5 +342,9 @@ public class NameTokens {
 
     public static String getCombobox() {
         return combobox;
+    }
+
+    public static String getDatatable() {
+        return datatable;
     }
 }

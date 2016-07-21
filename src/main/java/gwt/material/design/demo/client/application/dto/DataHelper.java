@@ -74,7 +74,7 @@ public class DataHelper {
     }
 
     public static String getRichEditorHTML() {
-        String html = "<h2 style=\"text-align: center; \"> <span style=\"color: rgb(101, 31, 255);\"> I Love Material Design </span> </h2> <p style=\"text-align: center;\"> <span style=\"font-size: 17px;\"> Using </span> <span style=\"font-weight: bold; font-size: 17px; text-decoration: underline;\"> Airmode </span> <span style=\"font-size: 17px;\"> you can directly modify this html. </span> </p> <p style=\"text-align: center;\"> <br> </p> <table class=\"hoverable bordered striped responsive-table\"> <thead> <tr> <th> Country </th> <th> Capital </th> <th> Currency </th> </tr> </thead> <tbody> <tr> <td> Philippines </td> <td> Manila </td> <td> Peso </td> </tr> <tr> <td> Japan </td> <td> Tokyo </td> <td> Yen </td> </tr> </tbody> </table> <p> </p>";
+        String html = "<h2 style=\"text-align: center; \"> <span style=\"color: rgb(101, 31, 255);\"> I Love Material Design </span> </h2> <p style=\"text-align: center;\"> <span style=\"font-size: 17px;\"> Using </span> <span style=\"font-weight: bold; font-size: 17px; text-decoration: underline;\"> Airmode </span> <span style=\"font-size: 17px;\"> you can directly modify this html. </span> </p> <p style=\"text-align: center;\"> <br> </p> <table class=\"hoverable bordered striped responsive-table\"> <thead> <tr> <th> State </th> <th> Capital </th> <th> Currency </th> </tr> </thead> <tbody> <tr> <td> Philippines </td> <td> Manila </td> <td> Peso </td> </tr> <tr> <td> Japan </td> <td> Tokyo </td> <td> Yen </td> </tr> </tbody> </table> <p> </p>";
         return html;
     }
 
@@ -106,5 +106,43 @@ public class DataHelper {
         dpLanguages.add(DatePickerLanguage.JA);
         dpLanguages.add(DatePickerLanguage.KO);
         return dpLanguages;
+    }
+
+    public static List<Repository> getAllRepositories() {
+        List<Repository> repositories = new ArrayList<>();
+        repositories.add(new Repository("gwt-material", 200, 64));
+        repositories.add(new Repository("gwt-material-addins", 14, 17));
+        repositories.add(new Repository("gwt-material-themes", 5, 5));
+        repositories.add(new Repository("gwt-material-demo", 16, 27));
+        repositories.add(new Repository("gwt-material-patterns", 7, 3));
+        repositories.add(new Repository("gwt-material-starter", 4, 7));
+        repositories.add(new Repository("gwt-material-basic", 3, 0));
+        repositories.add(new Repository("gwt-material-archetype", 3, 0));
+        repositories.add(new Repository("gwt-material-errai", 5, 2));
+        repositories.add(new Repository("gwt-material-phonegap", 7, 4));
+        return repositories;
+    }
+
+    public static List<TimeZone> getTimeZones() {
+        List<TimeZone> timeZones = new ArrayList<>();
+        timeZones.add(new TimeZone("Alaskan/Hawaiian Time Zone", getHawaiianTimeZone()));
+        timeZones.add(new TimeZone("Pacific Time Zone", getPacificTimeZone()));
+        return timeZones;
+    }
+
+    protected static List<State> getHawaiianTimeZone() {
+        List<State> states = new ArrayList<>();
+        states.add(new State("Alaska"));
+        states.add(new State("Hawaii"));
+        return states;
+    }
+
+    protected static List<State> getPacificTimeZone() {
+        List<State> states = new ArrayList<>();
+        states.add(new State("California"));
+        states.add(new State("Nevada"));
+        states.add(new State("Oregon"));
+        states.add(new State("Washington"));
+        return states;
     }
 }

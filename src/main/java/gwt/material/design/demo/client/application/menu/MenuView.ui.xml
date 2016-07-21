@@ -154,6 +154,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" textColor="blue" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" textColor="blue" waves="DEFAULT"/>

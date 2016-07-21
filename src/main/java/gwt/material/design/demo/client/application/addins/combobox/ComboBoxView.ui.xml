@@ -35,25 +35,87 @@
             &lt;/combobox:MaterialComboBox><br/>
         </demo:PrettyPre>
 
-        <combobox:MaterialComboBox>
-            <m:html.Option value="1" text="Sample 1"/>
-            <m:html.Option value="2" text="Sample 2"/>
-            <m:html.Option value="3" text="Sample 3"/>
-        </combobox:MaterialComboBox>
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <combobox:MaterialComboBox ui:field="comboTimeZone1" placeholder="TimeZone" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
 
-        <m:MaterialTitle title="Multiple Select" description="Just like Autocomplete you can have a capability to select ComboBox options multiple."/>
-        <combobox:MaterialComboBox multiple="true">
-            <m:html.Option value="1" text="Sample 1"/>
-            <m:html.Option value="2" text="Sample 2"/>
-            <m:html.Option value="3" text="Sample 3"/>
-        </combobox:MaterialComboBox>
-        
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;combobox:MaterialComboBox multiple="true"><br/>
-            &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
-            &emsp;&lt;m:html.Option value="2" text="Sample 2"/><br/>
-            &emsp;&lt;m:html.Option value="3" text="Sample 3"/><br/>
-            &lt;/combobox:MaterialComboBox><br/>
-        </demo:PrettyPre>
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Label and Placeholder" description="On Combo Box we have two types of labeling your component. They are label and placeholder." />
+                <combobox:MaterialComboBox ui:field="comboTimeZone2" multiple="true" label="This is label" placeholder="This is placeholder" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Allow Clear" />
+                <combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" multiple="true" allowClear="true" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="With OptGroup" />
+                <combobox:MaterialComboBox ui:field="comboTimeZone" placeholder="TimeZone"/>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Multiple Select" description="Just like Autocomplete you can have a capability to select ComboBox options multiple."/>
+                <combobox:MaterialComboBox multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Clear" description="Provides a handful way of clearing the multiple combo box items." />
+                <combobox:MaterialComboBox ui:field="comboTimeZone5" multiple="true" placeholder="TimeZone"/>
+                <m:MaterialButton text="Clear" ui:field="btnClear" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Disabled" />
+                <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone6" />
+                <m:MaterialSwitch value="true" marginTop="12" onLabel="Enable" offLabel="Disable" ui:field="swState" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Disabling Result" />
+                <combobox:MaterialComboBox placeholder="Time Zone">
+                    <m:html.Option text="Item 1"></m:html.Option>
+                    <m:html.Option enabled="false" text="Item 2 (disabled)"></m:html.Option>
+                    <m:html.Option text="Item 3"></m:html.Option>
+                </combobox:MaterialComboBox>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Limit" />
+                <combobox:MaterialComboBox multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <!--<m:MaterialTitle title="Hide Search Box" />-->
+                <combobox:MaterialComboBox multiple="true" placeholder="Time Zone" hideSearch="true" ui:field="comboTimeZone8" />
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialListBox>
+                    <m:html.Option text="Sample 2"></m:html.Option>
+                    <m:html.Option text="Sample 3"></m:html.Option>
+                    <m:html.Option text="Sample 4"></m:html.Option>
+                </m:MaterialListBox>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
     </m:MaterialPanel>
 </ui:UiBinder>
