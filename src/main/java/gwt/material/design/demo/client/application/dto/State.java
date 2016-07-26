@@ -30,9 +30,11 @@ import java.io.Serializable;
 public class State implements Serializable {
 
     private String name;
+    private String value;
 
-    public State(String name) {
+    public State(String name, String value) {
         this.name = name;
+        this.value = value;
     }
 
     public State() {}
@@ -43,5 +45,13 @@ public class State implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 }

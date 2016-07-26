@@ -132,17 +132,17 @@ public class DataHelper {
 
     protected static List<State> getHawaiianTimeZone() {
         List<State> states = new ArrayList<>();
-        states.add(new State("Alaska"));
-        states.add(new State("Hawaii"));
+        states.add(new State("Alaska", "AK"));
+        states.add(new State("Hawaii", "HI"));
         return states;
     }
 
     protected static List<State> getPacificTimeZone() {
         List<State> states = new ArrayList<>();
-        states.add(new State("California"));
-        states.add(new State("Nevada"));
-        states.add(new State("Oregon"));
-        states.add(new State("Washington"));
+        states.add(new State("California", "CA"));
+        states.add(new State("Nevada", "NV"));
+        states.add(new State("Oregon", "OR"));
+        states.add(new State("Washington", "WA"));
         return states;
     }
 }

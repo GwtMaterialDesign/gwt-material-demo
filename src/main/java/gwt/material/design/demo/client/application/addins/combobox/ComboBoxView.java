@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.addins.combobox;
 
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -44,7 +45,10 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     }
 
     @UiField
-    MaterialComboBox comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4, comboTimeZone5, comboTimeZone6, comboTimeZone7, comboTimeZone8;
+    MaterialComboBox comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4, comboTimeZone5, comboTimeZone6, comboTimeZone7;
+
+    @UiField
+    MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10, comboTimeZone11, comboTimeZone12, comboTimeZone12_1;
 
     @Inject
     ComboBoxView(Binder uiBinder) {
@@ -54,14 +58,58 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     protected void populateTimeZones() {
         addItems(comboTimeZone);
-        addItems(comboTimeZone1);
-        addItems(comboTimeZone2);
+        addItemsWithoutGroup(comboTimeZone1);
+        addItemsWithoutGroup(comboTimeZone2);
         addItems(comboTimeZone3);
         addItems(comboTimeZone4);
         addItems(comboTimeZone5);
         addItems(comboTimeZone6);
         addItems(comboTimeZone7);
         addItems(comboTimeZone8);
+        addItems(comboTimeZone8_1);
+        addItemsWithoutGroup(comboTimeZone9);
+        addItemsWithoutGroup(comboTimeZone9_1);
+        addItems(comboTimeZone10);
+        addItems(comboTimeZone11);
+        addItems(comboTimeZone12);
+        addItems(comboTimeZone12_1);
+
+        comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+        });
+
+        comboTimeZone8_1.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+        });
+
+        comboTimeZone9.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Event: Select State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+        });
+
+        comboTimeZone9_1.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Event: Select State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+        });
+
+        comboTimeZone10.addOpenHandler(openEvent -> {
+            MaterialToast.fireToast("Opened");
+        });
+
+        comboTimeZone10.addCloseHandler(closeEvent -> {
+            MaterialToast.fireToast("Closed");
+        });
+
+        comboTimeZone11.addRemoveItemHandler(event -> {
+            MaterialToast.fireToast("Removed: " + event.getTarget().getName());
+        });
+
+    }
+
+    protected void addItemsWithoutGroup(MaterialComboBox box) {
+        for(TimeZone tz : DataHelper.getTimeZones()) {
+            for(State s : tz.getStates()) {
+                box.addValue(s.getName(), s);
+            }
+        }
     }
 
     protected void addItems(MaterialComboBox box) {
@@ -69,11 +117,9 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
             OptGroup optGroup = new OptGroup();
             optGroup.setLabel(tz.getName());
             for(State s : tz.getStates()) {
-                Option option = new Option();
-                option.setText(s.getName());
-                optGroup.add(option);
+                box.addValue(s.getName(), s, optGroup);
             }
-            box.add(optGroup);
+            box.addGroup(optGroup);
         }
     }
 
@@ -82,4 +128,15 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         comboTimeZone6.setEnabled(e.getValue());
     }
 
+    @UiHandler("btnGetValue")
+    void onGetValue(ClickEvent e) {
+        MaterialToast.fireToast(comboTimeZone12.getSelectedValue().getName());
+    }
+
+    @UiHandler("btnGetValues")
+    void onGetValues(ClickEvent e) {
+        for(State state : comboTimeZone12_1.getSelectedValues()) {
+            MaterialToast.fireToast("Name: " + state.getName() + " Value: " + state.getValue());
+        }
+    }
 }
