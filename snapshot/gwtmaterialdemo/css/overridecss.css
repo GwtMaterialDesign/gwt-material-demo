@@ -90,6 +90,11 @@ ul li button.btn-floating {
 .field-success-label {
 	color: #4CAF50 !important;
 }
+.field-helper-label {
+	color: #9E9E9E !important;
+	font-size: 12px;
+	opacity: 1 !important;
+}
 
 .field-success, .field-success-picker input {
 	border-bottom: 1px solid #4CAF50 !important;
@@ -874,6 +879,11 @@ footer.fixed{
 }
 .dropdown-content {
 	z-index: 995 !important;
+}
+
+/** Fixed the autofill bg color on chrome **/
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 100px white inset !important;
 }
 
 /** Fixed breadcrumb **/
