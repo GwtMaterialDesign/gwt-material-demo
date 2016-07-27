@@ -25,10 +25,15 @@
              xmlns:m.timepicker="urn:import:gwt.material.design.addins.client.timepicker"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
-    <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
+    <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling:" />
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;txtBox.setError("Please provide your name");<br/>
-      txtBox.setError("Your username is available");
+      txtBox.setSuccess("Your username is available");
+    </demo:PrettyPre>
+    
+    <m:MaterialLabel text="You can also set helper texts by using: " />
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;txtBox.setHelperText("This is a helper text");
     </demo:PrettyPre>
 
     <m:MaterialLabel fontSize="1.5em" text="Supported widgets" paddingTop="15"/>
@@ -142,6 +147,15 @@
       <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="red" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="green" waves="LIGHT"/>
       <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialTitle title="Text Box With Helper Text" />
+      <m:MaterialTextBox ui:field="txtBoxWithHelper" placeholder="First Name" grid="s12 m12 l5" text="Marjorie Matias" helperText="This is a helper text"/>
+    </m:MaterialRow>
+    <m:MaterialRow>
+      <m:MaterialButton ui:field="btnErrorTxtBoxWithHelper" text="Error" backgroundColor="red" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtBoxWithHelper" text="Success" backgroundColor="green" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtBoxWithHelper" text="Clear" backgroundColor="blue" waves="LIGHT"/>
     </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>
