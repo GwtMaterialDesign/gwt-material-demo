@@ -29,6 +29,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.addins.client.timepicker.MaterialTimePicker;
 import gwt.material.design.client.ui.*;
 
@@ -46,6 +47,7 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiField MaterialTextArea txtArea;
     @UiField MaterialTextBox txtBox;
     @UiField MaterialTextBox txtBoxValidator;
+    @UiField MaterialComboBox<String> combobox;
 
     @Inject
     ErrorsView(Binder uiBinder) {
@@ -195,5 +197,20 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnClearTime")
     void onClearTime(ClickEvent e) {
         tp.clearErrorOrSuccess();
+    }
+
+    @UiHandler("btnErrorComboBox")
+    void onErrorComboBox(ClickEvent e) {
+        combobox.setError("This is an error message for ComboBox.");
+    }
+
+    @UiHandler("btnSuccessComboBox")
+    void onSuccessComboBox(ClickEvent e) {
+        combobox.setSuccess("This is a success message for ComboBox.");
+    }
+
+    @UiHandler("btnClearComboBox")
+    void onClearComboBox(ClickEvent e) {
+        combobox.clearErrorOrSuccess();
     }
 }
