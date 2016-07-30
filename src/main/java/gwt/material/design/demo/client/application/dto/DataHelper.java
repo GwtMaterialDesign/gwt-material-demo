@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.dto;
 
 
 import gwt.material.design.client.constants.DatePickerLanguage;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.resources.MaterialResources;
 
 import java.util.ArrayList;
@@ -144,5 +145,21 @@ public class DataHelper {
         states.add(new State("Oregon", "OR"));
         states.add(new State("Washington", "WA"));
         return states;
+    }
+
+    public static List<User> getAllUsers() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "Luis Hoppe", "luis@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", "Irwin Mueller", "irwin@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", "Levin Card", "levin@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg",  "Dr. Cassie Keeling", "cassie@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/ariil/128.jpg",  "Dr. Madelynn Schamberger", "madelyn@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/devankoshal/128.jpg", "Dominique Schmidt", "dom@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg", "Rowland Heller", "rowland@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/GavicoInd/128.jpg", "Quincy Schimmel", "quincy@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", "Tierra VonRueden", "tierra@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/kimcool/128.jpg", "Travis Larson", "travis@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", "Clint Heller", "clint@mail.com"));
+        return list;
     }
 }

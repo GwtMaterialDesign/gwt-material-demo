@@ -58,6 +58,12 @@ public class User implements Serializable {
 
     public User() {}
 
+    public User(String picture, String name, String email) {
+        this.picture = picture;
+        this.name = name;
+        this.email = email;
+    }
+
     public User(String picture, Position position, boolean starred, String name, String email, String password, String contactNo, String address, String company) {
         this.picture = picture;
         this.position = position;

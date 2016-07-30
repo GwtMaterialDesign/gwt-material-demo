@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.addins.masonry;
+package gwt.material.design.demo.client.application.addins.masonry.cards;
 
 /*
  * #%L
@@ -21,42 +21,45 @@ package gwt.material.design.demo.client.application.addins.masonry;
  */
 
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.masonry.MaterialMasonry;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
-import gwt.material.design.demo.client.application.addins.masonry.cards.UserCard;
-import gwt.material.design.demo.client.application.dto.DataHelper;
 
-import javax.inject.Inject;
+public class UserCard extends Composite {
 
+    private static UserCardUiBinder uiBinder = GWT.create(UserCardUiBinder.class);
 
-public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
-    interface Binder extends UiBinder<Widget, MasonryView> {
+    interface UserCardUiBinder extends UiBinder<Widget, UserCard> {
     }
 
     @UiField
-    MaterialMasonry dynamicMasonry;
+    MaterialImage imgUser;
 
-    @Inject
-    MasonryView(Binder uiBinder) {
+    @UiField
+    MaterialLabel lblName, lblEmail;
+
+    private MaterialMasonry rowCards;
+
+    public UserCard(User user, final MaterialMasonry rowCards) {
         initWidget(uiBinder.createAndBindUi(this));
-        buildDynamicMasonry();
+        imgUser.setUrl(user.getPicture());
+        lblName.setText(user.getName());
+        lblEmail.setText(user.getEmail());
+        this.rowCards = rowCards;
     }
 
-    private void buildDynamicMasonry() {
-        dynamicMasonry.clear();
-        for(User user : DataHelper.getAllUsers()) {
-            dynamicMasonry.add(new UserCard(user, dynamicMasonry));
-        }
+    @UiHandler("btnRemove")
+    void onRemove(ClickEvent e) {
+        rowCards.remove(UserCard.this);
     }
 
-    @UiHandler("btnAddItem")
-    void onAddItem(ClickEvent e) {
-        dynamicMasonry.add(new UserCard(DataHelper.getAllUsers().get(0), dynamicMasonry));
-    }
 }

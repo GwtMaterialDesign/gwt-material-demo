@@ -21,8 +21,125 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:table="urn:import:gwt.material.design.demo.client.application.addins.datatable.table"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
     <m:MaterialPanel>
-       <m:MaterialTitle title="Data table" />
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.table:MaterialDataTable ui:field="table"<br/>
+                                       height="calc(100vh - 131px)"<br/>
+                                       useStickyHeader="true"<br/>
+                                       useCategories="true"<br/>
+                                       useRowExpansion="true"<br/>
+                                       selectionType="SINGLE"/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Standard Table" description="You can filter any options below." />
+        <table:StandardTable />
+
+        <m:MaterialTitle title="Basic properties" />
+        <g:HTMLPanel>
+            <blockquote>
+                <p><b>height - </b> sets the height of the datatable</p>
+                <p><b>useStickyHeader - </b> Enable the use of sticky table header bar.</p>
+                <p><b>useCategories - </b> Allow the data view to generate categories, or use added categories for row data. </p>
+                <p><b>selectionType - </b> Set the data views row selection type.</p>
+                <p><b>useLoadOverlay - </b> Use the loading overlay mask.</p>
+                <p><b>useRowExpansion - </b> Use row expansion functionality, giving the user a way to expand rows for extra information.</p>
+            </blockquote>
+        </g:HTMLPanel>
+
+        <m:MaterialTitle title="DataTable Events" />
+        <g:HTMLPanel>
+            <blockquote>
+                <p><b>Row Select Event - </b>Add a row select handler, called when a user selects a row.</p>
+                <p><b>Sort Column Event - </b>Add a sort column handler, called when a user sorts a column.</p>
+                <p><b>Row Count Change Event - </b>Add a row count change handler, called when the row count changes.</p>
+                <p><b>Category Opened Event - </b>Add category opened handler, called when a category is opened.</p>
+                <p><b>Category Closed Event - </b>Add category closed handler, called when a category is closed.</p>
+                <p><b>Row Double Click Event - </b>Add a row double click handler, called when a row is double clicked.</p>
+                <p><b>Select All Event - </b>Add a select all handler, called when all rows were selected</p>
+                <p><b>Row Long Press Event - </b>Add a row long press handler, called when a row is long pressed.</p>
+                <p><b>Row Short Press Event - </b>Add a row short press handler, called when a row is short pressed.</p>
+                <p><b>Selection Event - </b>Add a selection handler, called when a row is selected</p>
+                <p><b>Row Context Menu - </b>Add a row context menu handler, called when user right click a row to open context menu.</p>
+            </blockquote>
+        </g:HTMLPanel>
+
+        <m:MaterialTitle title="Row Factory" description="We will define our own person row factory to generate the category name. This can be used to generate your own RowComponent's too, if custom functionality is required." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setRowFactory(new PersonRowFactory());
+        </demo:PrettyPre>
+        <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/factory/PersonRowFactory.java" target="_blank" text="Link to Person Row Factory" />
+
+        <m:MaterialTitle title="Category Factory" description="If we want to generate all our categories using CustomCategoryComponent We can define our own CategoryComponentFactory. There we can define our own CategoryComponent implementations." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setCategoryFactory(new CustomCategoryFactory());
+        </demo:PrettyPre>
+        <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/factory/CustomCategoryFactory.java" target="_blank" text="Link to Category Factory" />
+
+        <m:MaterialTitle title="Renderer" description="It is possible to create your own custom renderer per table When you use the BaseRenderer you can override certain draw methods to create elements the way you would like." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setRenderer(new CustomRenderer&lt;>());
+        </demo:PrettyPre>
+        <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/renderer/CustomRenderer.java" target="_blank" text="Link to Renderer" />
+
+        <m:MaterialTitle title="Adding columns" description="You can easily add data table columns by calling table.addColumn(). Also you can setup the sort comparator on each column." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.addColumn(new TextColumn&lt;Person>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public Comparator&lt;? super RowComponent&lt;Person>> getSortComparator() {<br/>
+            &emsp;&emsp;return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());<br/>
+            &emsp;}<br/>
+            &emsp;@Override<br/>
+            &emsp;public String getValue(Person object) {<br/>
+            &emsp;&emsp;return object.getFirstName();<br/>
+            &emsp;}<br/>
+            }, "First Name");
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Adding column material widget" description="" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.addColumn(new WidgetColumn&lt;Person, MaterialImage>() {<br/>
+            &emsp;@Override<br/>
+            &emsp;public MaterialImage getValue(Person object) {<br/>
+            &emsp;&emsp;MaterialImage profile = new MaterialImage();<br/>
+            &emsp;&emsp;profile.setUrl(object.getPicture());<br/>
+            &emsp;&emsp;profile.setWidth("40px");<br/>
+            &emsp;&emsp;profile.setHeight("40px");<br/>
+            &emsp;&emsp;profile.setPadding(4);<br/>
+            &emsp;&emsp;profile.setMarginTop(8);<br/>
+            &emsp;&emsp;profile.setBackgroundColor("grey lighten-2");<br/>
+            &emsp;&emsp;profile.setCircle(true);<br/>
+            &emsp;&emsp;return profile;<br/>
+            &emsp;}<br/>
+            });
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Set Visible Range" description="Set the visible range of the table for  pager." />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setVisibleRange(0, 2001);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Set Row Data" description="" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setRowData(0, people);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Refreshing and Redrawing the table" description="" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;table.setRedraw(true);
+            table.refreshView();
+        </demo:PrettyPre>
+
+        <!--<m:MaterialTitle title="Infinite Data Table" description="" />
+
+        <m:MaterialTitle title="Data Source" description="" />
+
+        <m:MaterialTitle title="Pager" description="" />
+
+        <m:MaterialTitle title="Context Menu" description="" />-->
+
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -263,5 +263,36 @@
             &lt;/ma:masonry.MaterialMasonry><br/>
         </demo:PrettyPre>
 
+        <m:MaterialRow>
+            <m:MaterialTitle title="Dynamic Adding and Removing" description="You can easily add / remove items with transition animations and reload the masonry easily."/>
+            <m:MaterialButton ui:field="btnAddItem" margin="12" text="Add New Item" />
+            <ma:masonry.MaterialMasonry ui:field="dynamicMasonry" />
+        </m:MaterialRow>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;//Populate your data source to masonry using UserCard<br/>
+            masonry.clear();<br/>
+            for(User user : DataHelper.getAllUsers()) {<br/>
+            &emsp;masonry.add(new UserCard(user));<br/>
+            }
+        </demo:PrettyPre>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Dynamic adding<br/>
+            masonry.add(new UserCard(user));<br/>
+        </demo:PrettyPre>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Dynamic inserting<br/>
+            masonry.insert(new UserCard(user), 3));<br/>
+        </demo:PrettyPre>
+
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Dynamic Removing<br/>
+            masonry.remove(usercard);<br/>
+            // Dynamic Clearing<br/>
+            masonry.clear();<br/>
+        </demo:PrettyPre>
+
     </m:MaterialPanel>
 </ui:UiBinder>

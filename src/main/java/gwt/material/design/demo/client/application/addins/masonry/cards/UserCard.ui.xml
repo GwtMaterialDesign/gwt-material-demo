@@ -1,0 +1,35 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui">
+
+    <m:MaterialColumn grid="l3 m4 s12" height="100px" marginBottom="12">
+        <m:MaterialCard height="100%" padding="20">
+            <m:MaterialIcon ui:field="btnRemove" layoutPosition="ABSOLUTE" right="20" iconType="CLOSE" />
+            <m:MaterialColumn grid="l3">
+                <m:MaterialImage ui:field="imgUser" width="50px" height="50px" circle="true"/>
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="l9">
+                <m:MaterialLabel ui:field="lblEmail" />
+                <m:MaterialLabel ui:field="lblName" />
+            </m:MaterialColumn>
+        </m:MaterialCard>
+    </m:MaterialColumn>
+</ui:UiBinder>

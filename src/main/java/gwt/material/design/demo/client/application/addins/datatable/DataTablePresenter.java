@@ -52,7 +52,7 @@ public class DataTablePresenter extends Presenter<DataTablePresenter.MyView, Dat
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Data Table", "Later Description", this);
+        SetPageTitleEvent.fire("Data Table", "Data tables display sets of raw data. They usually appear in desktop enterprise products. Material DataTable supports Standard, Infinite Table, Pager and Context Menu.", this);
     }
 }
 
