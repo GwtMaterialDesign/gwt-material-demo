@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.addins.datatable.table.renderer;
+package gwt.material.design.demo.client.application.addins.datatable.table;
 
 /*
  * #%L
@@ -20,19 +20,22 @@ package gwt.material.design.demo.client.application.addins.datatable.table.rende
  * #L%
  */
 
-import gwt.material.design.client.constants.CheckBoxType;
-import gwt.material.design.client.data.BaseRenderer;
-import gwt.material.design.client.ui.MaterialCheckBox;
-import gwt.material.design.client.ui.table.TableData;
 
-public class CustomRenderer<T> extends BaseRenderer<T> {
+import java.io.Serializable;
+import java.util.ArrayList;
 
-    @Override
-    public TableData drawSelectionCell() {
-        TableData td = new TableData();
-        td.setId("col0");
-        MaterialCheckBox checkBox = new MaterialCheckBox(td.getElement());
-        checkBox.setType(CheckBoxType.FILLED);
-        return td;
+public class People extends ArrayList<Person> implements Serializable {
+
+    private int absoluteTotal = 0;
+
+    public People() {
+    }
+
+    public void setAbsoluteTotal(int absoluteTotal) {
+        this.absoluteTotal = absoluteTotal;
+    }
+
+    public int getAbsoluteTotal() {
+        return absoluteTotal;
     }
 }

@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.addins.datatable.table.renderer;
+package gwt.material.design.demo.client.application.addins.datatable.table.service;
 
 /*
  * #%L
@@ -20,19 +20,17 @@ package gwt.material.design.demo.client.application.addins.datatable.table.rende
  * #L%
  */
 
-import gwt.material.design.client.constants.CheckBoxType;
-import gwt.material.design.client.data.BaseRenderer;
-import gwt.material.design.client.ui.MaterialCheckBox;
-import gwt.material.design.client.ui.table.TableData;
 
-public class CustomRenderer<T> extends BaseRenderer<T> {
+import com.google.gwt.user.client.rpc.RemoteService;
+import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
+import gwt.material.design.demo.client.application.addins.datatable.table.People;
 
-    @Override
-    public TableData drawSelectionCell() {
-        TableData td = new TableData();
-        td.setId("col0");
-        MaterialCheckBox checkBox = new MaterialCheckBox(td.getElement());
-        checkBox.setType(CheckBoxType.FILLED);
-        return td;
-    }
+import java.util.List;
+
+@RemoteServiceRelativePath("personService")
+public interface PersonService extends RemoteService {
+
+      People getPeople(int startIndex, int viewSize, List<String> categories);
+
+      List<String> getCategories();
 }

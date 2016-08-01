@@ -133,13 +133,14 @@
             table.refreshView();
         </demo:PrettyPre>
 
-        <!--<m:MaterialTitle title="Infinite Data Table" description="" />
+        <m:MaterialTitle title="Infinite Data Table" description="" />
+        <table:InfiniteTable />
 
         <m:MaterialTitle title="Data Source" description="" />
 
         <m:MaterialTitle title="Pager" description="" />
 
-        <m:MaterialTitle title="Context Menu" description="" />-->
+        <m:MaterialTitle title="Context Menu" description="" />
 
     </m:MaterialPanel>
 </ui:UiBinder>
