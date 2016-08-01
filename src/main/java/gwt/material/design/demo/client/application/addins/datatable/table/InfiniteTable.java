@@ -22,22 +22,29 @@ package gwt.material.design.demo.client.application.addins.datatable.table;
 
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.infinite.InfiniteDataView;
 import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.table.MaterialInfiniteDataTable;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
 import gwt.material.design.demo.client.application.addins.datatable.table.datasource.PersonDataSource;
+import gwt.material.design.demo.client.application.addins.datatable.table.service.FakePersonService;
 import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonService;
 import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonServiceAsync;
+import gwt.material.design.jquery.client.api.JQueryElement;
 
 import java.util.List;
+
+import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class InfiniteTable extends Composite {
     interface InfiniteGridUiBinder extends UiBinder<HTMLPanel, InfiniteTable> {
@@ -45,14 +52,17 @@ public class InfiniteTable extends Composite {
 
     private static InfiniteGridUiBinder ourUiBinder = GWT.create(InfiniteGridUiBinder.class);
 
-    private PersonServiceAsync personService = GWT.create(PersonService.class);
+    // Replace this with your actual service interface, like so:
+    // private PersonServiceAsync personService = GWT.create(PersonService.class);
+    // we are faking the service on the client side to avoid requiring a web server.
+    private PersonServiceAsync personService = GWT.create(FakePersonService.class);
 
     @UiField(provided = true)
     MaterialInfiniteDataTable<Person> table;
 
     public InfiniteTable() {
         table = new MaterialInfiniteDataTable<>(20,
-            InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
+                InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
 
         initWidget(ourUiBinder.createAndBindUi(this));
     }
@@ -92,7 +102,7 @@ public class InfiniteTable extends Composite {
                 return profile;
             }
         });
-        
+
         // Add the tables columns
         table.addColumn(new TextColumn<Person>() {
             @Override
@@ -128,6 +138,7 @@ public class InfiniteTable extends Composite {
         }, "Phone");
 
         table.addRowSelectHandler((e, model, elem, selected) -> {
+            updateSelectedRows(table.getSelectedRowModels(false).size());
             GWT.log(model.getId() + ": " + selected);
             return true;
         });
@@ -139,6 +150,7 @@ public class InfiniteTable extends Composite {
         });
 
         table.addSelectAllHandler((e, models, elems, selected) -> {
+            updateSelectedRows(table.getSelectedRowModels(false).size());
             GWT.log("Selected["+selected+"]: " + models.size() + " models");
             return true;
         });
@@ -148,6 +160,33 @@ public class InfiniteTable extends Composite {
             // we will forcefully invoke a table refresh that
             // sends a request for data.
             table.refreshView();
+        }
+    }
+
+    @UiHandler("cbCategories")
+    void onCategories(ValueChangeEvent<Boolean> e) {
+        if(e.getValue()){
+            table.setUseCategories(true);
+            GWT.log("Categories checked");
+        }else{
+            table.setUseCategories(false);
+            GWT.log("Categories not checked");
+        }
+        table.setRedraw(true);
+        table.refreshView();
+    }
+
+    private void updateSelectedRows(int size) {
+        String word = " item ";
+        if(size > 1) {
+            word = " items ";
+        }
+        if(size <= 0) {
+            table.getTableTitle().setText("Table Title");
+            table.getScaffolding().getTopPanel().removeStyleName("active-header");
+        }else {
+            table.getScaffolding().getTopPanel().addStyleName("active-header");
+            table.getTableTitle().setText(size + word + "selected ");
         }
     }
 }

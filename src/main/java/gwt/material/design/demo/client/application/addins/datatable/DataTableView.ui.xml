@@ -36,7 +36,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Standard Table" description="You can filter any options below." />
-        <table:StandardTable />
+        <m:MaterialPanel ui:field="standardTablePanel" />
 
         <m:MaterialTitle title="Basic properties" />
         <g:HTMLPanel>
@@ -134,7 +134,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Infinite Data Table" description="" />
-        <table:InfiniteTable />
+        <m:MaterialPanel ui:field="infiniteTablePanel" />
 
         <m:MaterialTitle title="Data Source" description="" />
 

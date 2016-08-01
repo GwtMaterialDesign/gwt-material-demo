@@ -1,4 +1,4 @@
-package gwt.material.design.demo.server;
+package gwt.material.design.demo.client.application.addins.datatable.table.service;
 
 /*
  * #%L
@@ -21,18 +21,18 @@ package gwt.material.design.demo.server;
  */
 
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import com.google.gwt.user.client.Random;
+import com.google.gwt.user.client.Timer;
+import com.google.gwt.user.client.rpc.AsyncCallback;
 import gwt.material.design.demo.client.application.addins.datatable.table.People;
 import gwt.material.design.demo.client.application.addins.datatable.table.Person;
-import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonService;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PersonServiceImpl extends RemoteServiceServlet implements PersonService {
-
+public class FakePersonService implements PersonServiceAsync {
     private static List<String> categories = new ArrayList<>();
     private static Map<String, List<Person>> peopleMap = new HashMap<>();
     static {
@@ -56,11 +56,11 @@ public class PersonServiceImpl extends RemoteServiceServlet implements PersonSer
     }
 
     @Override
-    public People getPeople(int startIndex, int viewSize, List<String> categories) {
+    public void getPeople(int startIndex, int viewSize, List<String> categories, AsyncCallback<People> async) {
         List<Person> flatData = new ArrayList<>();
         if(categories == null) {
             // Load all data
-            for(String category : PersonServiceImpl.categories) {
+            for(String category : FakePersonService.categories) {
                 flatData.addAll(peopleMap.get(category));
             }
         } else {
@@ -81,11 +81,23 @@ public class PersonServiceImpl extends RemoteServiceServlet implements PersonSer
             }
         }
         people.setAbsoluteTotal(flatData.size());
-        return people;
+        // Fake a delay for the demo
+        new Timer() {
+            @Override
+            public void run() {
+                async.onSuccess(people);
+            }
+        }.schedule(Math.min(200, Random.nextInt(500)));
     }
 
     @Override
-    public List<String> getCategories() {
-        return categories;
+    public void getCategories(AsyncCallback<List<String>> async) {
+        // Fake a delay for the demo
+        new Timer() {
+            @Override
+            public void run() {
+                async.onSuccess(categories);
+            }
+        }.schedule(Math.min(200, Random.nextInt(500)));
     }
 }

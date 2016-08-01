@@ -29,6 +29,9 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.cutout.MaterialCutOut;
 import gwt.material.design.client.ui.MaterialIcon;
+import gwt.material.design.client.ui.MaterialPanel;
+import gwt.material.design.demo.client.application.addins.datatable.table.InfiniteTable;
+import gwt.material.design.demo.client.application.addins.datatable.table.StandardTable;
 
 import javax.inject.Inject;
 
@@ -37,10 +40,14 @@ public class DataTableView extends ViewImpl implements DataTablePresenter.MyView
     interface Binder extends UiBinder<Widget, DataTableView> {
     }
 
+    @UiField
+    MaterialPanel standardTablePanel, infiniteTablePanel;
 
     @Inject
     DataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        standardTablePanel.add(new StandardTable());
+        infiniteTablePanel.add(new InfiniteTable());
     }
 
    }
