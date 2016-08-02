@@ -77,6 +77,35 @@
             &lt;/m.addins:MaterialSplitPanel><br/>
         </demo:PrettyPre>
 
+        <m:MaterialTitle title="Thickness" description="You can easily set the thickness of your split bar by adding thickness='12'" />
+        <ma:splitpanel.MaterialSplitPanel thickness="12" backgroundColor="blue" height="500px">
+            <m:MaterialPanel backgroundColor="blue lighten-2">
+                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+            </m:MaterialPanel>
+            <m:MaterialPanel backgroundColor="blue lighten-3">
+                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+            </m:MaterialPanel>
+        </ma:splitpanel.MaterialSplitPanel>
+        <m:MaterialTitle title="Horizontal Thichness" description="You can also set the horizontal bar thickness of your split panel."/>
+        <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" thickness="12" backgroundColor="blue" height="500px">
+            <m:MaterialPanel backgroundColor="blue lighten-2">
+                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+            </m:MaterialPanel>
+            <m:MaterialPanel backgroundColor="blue lighten-3">
+                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+            </m:MaterialPanel>
+        </ma:splitpanel.MaterialSplitPanel>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="blue" thickness="12" height="500px"><br/>
+            &emsp;&lt;m:MaterialPanel backgroundColor="blue lighten-2"><br/>
+            &emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&lt;m:MaterialPanel backgroundColor="blue lighten-3"><br/>
+            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &lt;/m.addins:MaterialSplitPanel><br/>
+        </demo:PrettyPre>
+
         <m:MaterialTitle title="Vertical Splitter" description="You can set the axis / orientation of your splitter by addins splitter='Axis.VERTICAL'"/>
         <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" height="500px">
             <m:MaterialPanel backgroundColor="grey lighten-2">
