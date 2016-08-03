@@ -32,15 +32,12 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.infinite.InfiniteDataView;
 import gwt.material.design.client.ui.MaterialImage;
-import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.table.MaterialInfiniteDataTable;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
 import gwt.material.design.demo.client.application.addins.datatable.table.datasource.PersonDataSource;
 import gwt.material.design.demo.client.application.addins.datatable.table.service.FakePersonService;
-import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonService;
 import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonServiceAsync;
-import gwt.material.design.jquery.client.api.JQueryElement;
 
 import java.util.List;
 
