@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0-beta1";
-var $strongName = '96466EFE139B239431B2F3E5933C4AE3';
+var $strongName = '21126F27924071ADEBA991CC6D272EC2';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -8199,15 +8199,15 @@ function $onLoad(this$static, image){
   $equals_2('load', unhandledEvent) && (this$static.syntheticEventCommand = new Image$State$1(this$static, image) , $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), this$static.syntheticEventCommand));
 }
 
-defineClass(1710, 1, {});
+defineClass(1709, 1, {});
 _.syntheticEventCommand = null;
-var Lcom_google_gwt_user_client_ui_Image$State_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State', 1710);
+var Lcom_google_gwt_user_client_ui_Image$State_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State', 1709);
 function Image$State$1(this$1, val$image){
   this.this$11 = this$1;
   this.val$image2 = val$image;
 }
 
-defineClass(1711, 1, {}, Image$State$1);
+defineClass(1710, 1, {}, Image$State$1);
 _.execute_1 = function execute_16(){
   var evt, evt_0;
   if (this.val$image2.state != this.this$11 || this != this.this$11.syntheticEventCommand) {
@@ -8222,7 +8222,7 @@ _.execute_1 = function execute_16(){
   $dispatchEvent($getImageElement(this.val$image2), evt);
 }
 ;
-var Lcom_google_gwt_user_client_ui_Image$State$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State/1', 1711);
+var Lcom_google_gwt_user_client_ui_Image$State$1_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/State/1', 1710);
 function $getImageElement(image){
   return $clinit_DOM() , image.element_0;
 }
@@ -8233,7 +8233,7 @@ function Image$UnclippedState(image){
   image.eventsToSink == -1?sinkEvents_0(image.element_0, 133398655 | (image.element_0.__eventBits || 0)):(image.eventsToSink |= 133398655);
 }
 
-defineClass(333, 1710, {}, Image$UnclippedState);
+defineClass(333, 1709, {}, Image$UnclippedState);
 var Lcom_google_gwt_user_client_ui_Image$UnclippedState_2_classLit = createForClass('com.google.gwt.user.client.ui', 'Image/UnclippedState', 333);
 function $schedule_0(this$static){
   this$static.duration_0 = 0;
@@ -13155,8 +13155,7 @@ var Lgwt_material_design_addins_client_StartupState_2_classLit = createForClass(
 function $clinit_MaterialWidget(){
   $clinit_MaterialWidget = emptyMethod;
   $clinit_UIObject();
-  $wnd.$(($clinit_ScriptInjector() , TOP_WINDOW));
-  body_1 = $wnd.$('body');
+  body_1 = document.getElementsByTagName('body')[0];
 }
 
 function $add_15(this$static, child){
