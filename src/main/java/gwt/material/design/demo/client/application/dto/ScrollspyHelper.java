@@ -1,0 +1,36 @@
+package gwt.material.design.demo.client.application.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Mark Kevin on 8/4/2016.
+ */
+public class ScrollspyHelper {
+
+    public static List<Links> getDataTable() {
+        List<Links> links = new ArrayList<>();
+        links.add(Links.DT_USAGE);
+        links.add(Links.DT_RESOURCES);
+        links.add(Links.DT_STANDARD);
+        links.add(Links.DT_BASIC_PROPERTIES);
+        links.add(Links.DT_EVENTS);
+        links.add(Links.DT_ROW_FACTORY);
+        links.add(Links.DT_CATEGORY_FACTORY);
+        links.add(Links.DT_RENDERER);
+        links.add(Links.DT_ADDING_COLUMNS);
+        links.add(Links.DT_ADDING_COLUMNS_MATERIAL);
+        links.add(Links.DT_SET_VISIBLE_RANGE);
+        links.add(Links.DT_SET_ROW_DATA);
+        links.add(Links.DT_FIELD_UPDATER);
+        links.add(Links.DT_REFRESH_REDRAW);
+        links.add(Links.DT_CUSTOM);
+        links.add(Links.DT_INFINITE);
+        links.add(Links.DT_DATA_SOURCE);
+        links.add(Links.DT_ROW_SELECTION);
+        links.add(Links.DT_PAGER);
+        links.add(Links.DT_CONTEXT_MENU);
+        return links;
+    }
+
+}
