@@ -1,4 +1,5 @@
 package gwt.material.design.demo.client.ui;
+
 /*
  * #%L
  * GwtMaterial
@@ -8,9 +9,9 @@ package gwt.material.design.demo.client.ui;
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *
+ * 
  *      http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -18,6 +19,8 @@ package gwt.material.design.demo.client.ui;
  * limitations under the License.
  * #L%
  */
+
+
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.scrollfire.MaterialScrollfire;
 import gwt.material.design.client.base.MaterialWidget;
@@ -30,9 +33,6 @@ import java.util.List;
 
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
-/**
- * Created by Mark Kevin on 8/4/2016.
- */
 public class NavigatedView extends ViewImpl implements HasScrollspy {
 
     MaterialScrollspy scrollspy = new MaterialScrollspy();
