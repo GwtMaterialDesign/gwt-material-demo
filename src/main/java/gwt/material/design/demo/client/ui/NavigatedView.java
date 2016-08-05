@@ -51,15 +51,12 @@ public class NavigatedView extends ViewImpl implements HasScrollspy {
         scrollspy.setHideOn(HideOn.HIDE_ON_MED_DOWN);
         scrollspy.setTop(0);
         panel.add(scrollspy);
+        scrollspy.addAttachHandler(attachEvent -> {
+            double top = scrollspy.getOffsetHeight() - 65;
+            double bottom = $("footer").offset().top - 660;
+            double offset = 0;
+            MaterialPushpin.apply(scrollspy, top, bottom, offset);
+        });
     }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-        double top = scrollspy.getOffsetHeight() + 64;
-        double bottom = $("footer").offset().top - top;
-        double offset = scrollspy.getOffsetHeight();
-        GWT.log("Pushpin Top:" + top + " Bottom:" + bottom + " Offset:" + offset);
-        MaterialPushpin.apply(scrollspy, top, bottom, offset);
-    }
 }

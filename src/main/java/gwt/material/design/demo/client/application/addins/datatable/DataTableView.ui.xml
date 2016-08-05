@@ -29,9 +29,9 @@
         <m:MaterialColumn grid="l9 s12 m12">
             <m:MaterialTitle scrollspy="datatable_usage" title="Usage" />
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-                &emsp;&lt;-- UiBinder Import -->
-                xmlns:m.table='urn:import:gwt.material.design.client.ui.table'
-                &lt;!-- Sample Code -->
+                &emsp;&lt;-- UiBinder Import --> <br/>
+                xmlns:m.table='urn:import:gwt.material.design.client.ui.table'<br/>
+                &lt;!-- Sample Code --> <br/>
                 &lt;m.table:MaterialDataTable ui:field="table"<br/>
                 height="calc(100vh - 131px)"<br/>
                 useStickyHeader="true"<br/>
@@ -243,8 +243,76 @@
 
             <m:MaterialTitle scrollspy="data_pager" title="Pager" description="We developed a pager embeded component to data table to provide a better pagination into your data set." />
             <m:MaterialPanel ui:field="pagedTable" />
+            <g:HTMLPanel>
+                <blockquote>
+                    <p><b>getCurrentPage() - </b>Get the current page.</p>
+                    <p><b>getNumPages() - </b>Get Total number of pages</p>
+                    <p><b>next() - </b>Go to next page</p>
+                    <p><b>previous() - </b>Go to Previos page</p>
+                    <p><b>firstPage() - </b>Go to First page</p>
+                    <p><b>lastPage() - </b>Go to Last page</p>
+                    <p><b>useRowCountOptions="false" - </b>Disable the number of rows selection</p>
+                    <p><b></b></p>
+                    <p><b></b></p>
+                    <p><b></b></p>
+                </blockquote>
+            </g:HTMLPanel>
+            <demo:PrettyPre marginTop="40" addStyleNames="lang-java z-depth-1">
+                &emsp;// Declare your Pager <br/>
+                private MaterialDataPager pager; <br/>
+                // Set how many visible rows will contain the datatable. <br/>
+                table.setVisibleRange(1, 10); <br/>
+                // Pass your data table and your datasource ( List&lt;Person> ) <br/>
+                pager = new MaterialDataPager&lt;>(table, dataSource); <br/>
+                // Pager will build a selection of choices on how many number of rows should be displayed on the table <br/>
+                pager.setRowCountOptions(5, 10, 15, 20); <br/>
+                // Then add your pager into your data table <br/>
+                table.add(pager);
+            </demo:PrettyPre>
 
-            <m:MaterialTitle scrollspy="context_menu" title="Context Menu" description="Comming soon" />
+
+            <m:MaterialTitle scrollspy="context_menu" title="Context Menu" description="Using the addin component PopupMenu, we can easily integrate it to our MaterialDataTable." />
+            <m:MaterialPanel ui:field="contextMenuTable" />
+            <demo:PrettyPre marginTop="40" addStyleNames="lang-xml z-depth-1">
+                &emsp;&lt;!-- Declaration of Popupmenu Addins--><br/>
+                &lt;ma:popupmenu.MaterialPopupMenu ui:field="popupMenu"><br/>
+                &emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Copy" iconType="CONTENT_COPY" textColor="black"/><br/>
+                &emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Paste" iconType="CONTENT_PASTE" textColor="black"/><br/>
+                &emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Rename" iconType="EDIT" textColor="black"/><br/><br/>
+
+                &emsp;&lt;!-- Second level --><br/>
+                &emsp;&lt;m:MaterialLink activates="moveTo" padding="12" display="BLOCK" text="Move To ..." iconType="MOVE_TO_INBOX" textColor="black" ><br/>
+                &emsp;&emsp;&lt;m:MaterialDropDown activator="moveTo" hover="true" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Private" iconType="CONTENT_COPY" textColor="black"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Public" iconType="CONTENT_PASTE" textColor="black"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" text="Shared" iconType="EDIT" textColor="black"/><br/><br/>
+
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- Third level --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink activates="others" padding="12" display="BLOCK" text="Others" iconType="DEVICES_OTHER" textColor="black" ><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown activator="others" hover="true" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" iconColor="purple" text="Phone" iconType="PHONE" textColor="black"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" iconColor="green" text="Tablet" iconType="TABLET" textColor="black"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" display="BLOCK" iconColor="blue" text="Laptop" iconType="LAPTOP" textColor="black"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/><br/>
+
+                &emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+                &emsp;&lt;/m:MaterialLink><br/>
+                &lt;/ma:popupmenu.MaterialPopupMenu><br/>
+            </demo:PrettyPre>
+            
+            <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                table.addRowContextMenuHandler((e, mouseEvent, model, row) -> { <br/>
+                    &emsp;// Firing Row Context will automatically select the row where it was right clicked <br/>
+                    table.selectRow($(row).asElement(), true); <br/>
+                    popupMenu.setSelected(model); <br/>
+                    // Get the PageX and getPageY to set the popupmenu position <br/>
+                    popupMenu.setPopupPosition(mouseEvent.getPageX(), mouseEvent.getPageY()); <br/>
+                    popupMenu.open(); <br/>
+                    return true; <br/>
+                });
+            </demo:PrettyPre>
+            
         </m:MaterialColumn>
         <m:MaterialColumn ui:field="menuPanel" grid="s3" />
     </m:MaterialRow>

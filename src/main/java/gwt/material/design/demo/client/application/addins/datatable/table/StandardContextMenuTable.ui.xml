@@ -1,0 +1,42 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:t='urn:import:gwt.material.design.sample.client.ui'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:m.table='urn:import:gwt.material.design.client.ui.table'>
+
+  <g:HTMLPanel>
+    <m.table:MaterialDataTable shadow="1" ui:field="table"
+                               height="calc(100vh - 131px)"
+                               useStickyHeader="true"
+                               useCategories="false"
+                               useRowExpansion="false"
+                               selectionType="MULTIPLE"/>
+
+    <ma:popupmenu.MaterialPopupMenu ui:field="popupMenu">
+      <m:MaterialLink padding="12" display="BLOCK" text="Copy" iconType="CONTENT_COPY" textColor="black"/>
+      <m:MaterialLink padding="12" display="BLOCK" text="Paste" iconType="CONTENT_PASTE" textColor="black"/>
+      <m:MaterialLink padding="12" display="BLOCK" text="Rename" iconType="EDIT" textColor="black"/>
+
+      <!-- Second level -->
+      <m:MaterialLink activates="moveTo" padding="12" display="BLOCK" text="Move To ..." iconType="MOVE_TO_INBOX" textColor="black" >
+        <m:MaterialDropDown activator="moveTo" hover="true" belowOrigin="true">
+          <m:MaterialLink padding="12" display="BLOCK" text="Private" iconType="CONTENT_COPY" textColor="black"/>
+          <m:MaterialLink padding="12" display="BLOCK" text="Public" iconType="CONTENT_PASTE" textColor="black"/>
+          <m:MaterialLink padding="12" display="BLOCK" text="Shared" iconType="EDIT" textColor="black"/>
+
+          <!-- Third level -->
+          <m:MaterialLink activates="others" padding="12" display="BLOCK" text="Others" iconType="DEVICES_OTHER" textColor="black" >
+            <m:MaterialDropDown activator="others" hover="true" belowOrigin="true">
+              <m:MaterialLink padding="12" display="BLOCK" iconColor="purple" text="Phone" iconType="PHONE" textColor="black"/>
+              <m:MaterialLink padding="12" display="BLOCK" iconColor="green" text="Tablet" iconType="TABLET" textColor="black"/>
+              <m:MaterialLink padding="12" display="BLOCK" iconColor="blue" text="Laptop" iconType="LAPTOP" textColor="black"/>
+            </m:MaterialDropDown>
+          </m:MaterialLink>
+
+        </m:MaterialDropDown>
+      </m:MaterialLink>
+    </ma:popupmenu.MaterialPopupMenu>
+
+  </g:HTMLPanel>
+</ui:UiBinder>

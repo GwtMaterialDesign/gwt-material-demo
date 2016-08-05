@@ -28,10 +28,7 @@ import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.MaterialColumn;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialRow;
-import gwt.material.design.demo.client.application.addins.datatable.table.CustomTable;
-import gwt.material.design.demo.client.application.addins.datatable.table.InfiniteTable;
-import gwt.material.design.demo.client.application.addins.datatable.table.PageTable;
-import gwt.material.design.demo.client.application.addins.datatable.table.StandardTable;
+import gwt.material.design.demo.client.application.addins.datatable.table.*;
 import gwt.material.design.demo.client.application.dto.Links;
 import gwt.material.design.demo.client.application.dto.ScrollspyHelper;
 import gwt.material.design.demo.client.ui.NavigatedView;
@@ -44,7 +41,7 @@ public class DataTableView extends NavigatedView implements DataTablePresenter.M
     }
 
     @UiField
-    MaterialPanel standardTablePanel, infiniteTablePanel, customTablePanel, pagedTable;
+    MaterialPanel standardTablePanel, infiniteTablePanel, customTablePanel, pagedTable, contextMenuTable;
 
     @UiField
     MaterialColumn menuPanel;
@@ -56,6 +53,7 @@ public class DataTableView extends NavigatedView implements DataTablePresenter.M
         infiniteTablePanel.add(new InfiniteTable());
         customTablePanel.add(new CustomTable());
         pagedTable.add(new PageTable());
+        contextMenuTable.add(new StandardContextMenuTable());
         buildScrollSpy(ScrollspyHelper.getDataTable(), menuPanel);
     }
 

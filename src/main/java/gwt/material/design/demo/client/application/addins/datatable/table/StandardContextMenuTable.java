@@ -1,31 +1,10 @@
 package gwt.material.design.demo.client.application.addins.datatable.table;
 
-/*
- * #%L
- * GwtMaterial
- * %%
- * Copyright (C) 2015 - 2016 GwtMaterialDesign
- * %%
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *      http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * #L%
- */
-
-
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.dom.client.Style.Position;
 import com.google.gwt.dom.client.Style.Unit;
-import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,18 +12,18 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.Panel;
+import gwt.material.design.addins.client.popupmenu.MaterialPopupMenu;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.ButtonType;
-import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.constants.TextAlign;
-import gwt.material.design.client.data.ListDataSource;
+import gwt.material.design.client.constants.*;
+import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.pager.MaterialDataPager;
 import gwt.material.design.client.ui.table.MaterialDataTable;
+import gwt.material.design.client.ui.table.TableSubHeader;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
+import gwt.material.design.demo.client.application.addins.datatable.table.factory.CustomCategoryFactory;
 import gwt.material.design.demo.client.application.addins.datatable.table.factory.PersonRowFactory;
 import gwt.material.design.demo.client.application.addins.datatable.table.renderer.CustomRenderer;
 import gwt.material.design.jquery.client.api.JQueryElement;
@@ -53,46 +32,42 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
 
-public class PageTable extends Composite {
 
-    interface PageGridUiBinder extends UiBinder<HTMLPanel, PageTable> {
+public class StandardContextMenuTable extends Composite {
+    public static class CustomCategoryComponent extends CategoryComponent {
+        public CustomCategoryComponent(String category) {
+            super(category);
+        }
+
+        @Override
+        protected void render(TableSubHeader subheader) {
+            super.render(subheader);
+
+            subheader.setOpenIcon(IconType.FOLDER_OPEN);
+            subheader.setCloseIcon(IconType.FOLDER);
+        }
     }
 
-    private static PageGridUiBinder ourUiBinder = GWT.create(PageGridUiBinder.class);
+    interface StandardGridUiBinder extends UiBinder<HTMLPanel, StandardContextMenuTable> {
+    }
+
+    private static StandardGridUiBinder ourUiBinder = GWT.create(StandardGridUiBinder.class);
 
     @UiField
     MaterialDataTable<Person> table;
 
-    private MaterialDataPager pager;
-    private ListDataSource<Person> dataSource;
+    @UiField
+    MaterialPopupMenu popupMenu;
 
-    public PageTable() {
-        // Generate 20 categories
-        int rowIndex = 1;
-        List<Person> people = new ArrayList<>();
-        for(int k = 1; k <= 10; k++){
-            // Generate 100 rows
-            for(int i = 1; i <= 10; i++, rowIndex++){
-                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
-            }
-        }
-
+    public StandardContextMenuTable() {
         initWidget(ourUiBinder.createAndBindUi(this));
-
-        dataSource = new ListDataSource<>(table);
-        dataSource.add(0, people);
     }
 
     @Override
     protected void onLoad() {
         super.onLoad();
-
-        table.setVisibleRange(1, 10);
-
-        pager = new MaterialDataPager<>(table, dataSource);
-        pager.setRowCountOptions(5, 10, 15, 20);
-        table.add(pager);
 
         // We will manually add this category otherwise categories
         // can be loaded on the fly with HasDataCategory, or a custom
@@ -103,6 +78,11 @@ public class PageTable extends Composite {
         // category name. This can be used to generate your own
         // RowComponent's too, if custom functionality is required.
         table.setRowFactory(new PersonRowFactory());
+
+        // If we want to generate all our categories using CustomCategoryComponent
+        // We can define our own CategoryComponentFactory. There we can define our
+        // own CategoryComponent implementations.
+        table.setCategoryFactory(new CustomCategoryFactory());
 
         // It is possible to create your own custom renderer per table
         // When you use the BaseRenderer you can override certain draw
@@ -183,6 +163,19 @@ public class PageTable extends Composite {
                 return badge;
             }
         });
+
+        // Set the visible range of the table for  pager (later)
+        table.setVisibleRange(0, 2001);
+
+        // Generate 20 categories
+        int rowIndex = 0;
+        List<Person> people = new ArrayList<>();
+        for(int k = 1; k <= 10; k++){
+            // Generate 100 rows
+            for(int i = 1; i <= 20; i++, rowIndex++){
+                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));            }
+            }
+        table.setRowData(0, people);
 
         // Here we are adding a row expansion handler.
         // This is invoked when a row is expanded.
@@ -284,15 +277,29 @@ public class PageTable extends Composite {
             //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             return true;
         });
-    }
 
-    @UiHandler("btnGotoFirstPage")
-    void onGotoFirstPage(ClickEvent e) {
-        pager.firstPage();
-    }
+        popupMenu.addSelectionHandler(selectionEvent -> {
+            JQueryElement span = $(selectionEvent.getSelectedItem()).find("span");
+            for(Person per : table.getSelectedRowModels(false)){
+                MaterialToast.fireToast($(span).asElement().getInnerHTML() + " : " + per.getFirstName());
+            }
+        });
 
-    @UiHandler("btnGotoLastPage")
-    void onGotoLastPage(ClickEvent e) {
-        pager.lastPage();
+        table.addRowContextMenuHandler((e, mouseEvent, model, row) -> {
+            // Firing Row Context will automatically select the row where it was right clicked
+            table.selectRow($(row).asElement(), true);
+            popupMenu.setSelected(model);
+            // Get the PageX and getPageY
+            popupMenu.setPopupPosition(mouseEvent.getPageX(), mouseEvent.getPageY());
+            popupMenu.open();
+            return true;
+        });
+
+        // Added access to ToolPanel to add icon widget
+        Panel panel = table.getScaffolding().getToolPanel();
+        MaterialIcon polyIcon = new MaterialIcon(IconType.POLYMER);
+        polyIcon.setWaves(WavesType.LIGHT);
+        polyIcon.setCircle(true);
+        panel.add(polyIcon);
     }
 }
