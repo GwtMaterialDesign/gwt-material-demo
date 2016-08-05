@@ -141,3 +141,37 @@ ul.side-nav.fixed li:hover,ul.side-nav.fixed li.active {
 .side-nav .collapsible-body li.active, .side-nav.fixed .collapsible-body li.active {
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+/** Top Panel **/
+#customTable .top-panel {
+    background-color: white;
+    color: black;
+}
+
+/** ToolPanel icons **/
+#customTable .top-panel .tool-panel i {
+    color: #e91e63;
+}
+
+/** Hovering rows **/
+#customTable table tbody tr.data-row:hover {
+    background: rgba(33, 150, 243, 0.27);
+    color: #3f3f3f;
+}
+
+/** Columns **/
+#customTable table tbody td:nth-child(3) {
+    background: #2196f3 !important;
+    color: #fff;
+    border-bottom: 2px solid #1976d2;
+}
+
+/** Table Headers **/
+#customTable table thead tr th {
+    color: #1976d2;
+}
+
+/** Scroll Navigated menu **/
+.table-of-contents.pinned {
+    top: 80px !important;
+}
