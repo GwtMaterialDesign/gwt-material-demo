@@ -110,7 +110,6 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getChips}" text="Chips" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" textColor="blue" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCollections}" text="Collections" textColor="blue" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getDatagrid}" text="Datagrid" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getPickers}" text="Date Picker" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getDialogs}" text="Dialogs" textColor="blue" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" textColor="blue" waves="DEFAULT"/>

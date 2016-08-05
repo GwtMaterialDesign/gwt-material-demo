@@ -102,7 +102,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.POLYMER, "Chips", "#!chips"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Collapsible", "#!collapsible"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Collections", "#!collections"));
-        listSearches.add(new SearchObject(IconType.POLYMER, "Datagrid", "#!datagrid"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Date Picker", "#!pickers"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Dialogs", "#!dialogs"));
         listSearches.add(new SearchObject(IconType.POLYMER, "Dropdown", "#!dropdown"));
