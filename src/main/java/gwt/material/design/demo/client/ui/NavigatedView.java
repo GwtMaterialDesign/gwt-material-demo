@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.ui;
  */
 
 
+import com.google.gwt.core.client.GWT;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.scrollfire.MaterialScrollfire;
 import gwt.material.design.client.base.MaterialWidget;
@@ -55,6 +56,10 @@ public class NavigatedView extends ViewImpl implements HasScrollspy {
     @Override
     protected void onAttach() {
         super.onAttach();
-        MaterialPushpin.apply(scrollspy, scrollspy.getOffsetHeight() + 64, (int) Float.parseFloat(String.valueOf($("footer").offset().top)) - panel.getOffsetHeight(), 372);
+        double top = scrollspy.getOffsetHeight() + 64;
+        double bottom = $("footer").offset().top - top;
+        double offset = scrollspy.getOffsetHeight();
+        GWT.log("Pushpin Top:" + top + " Bottom:" + bottom + " Offset:" + offset);
+        MaterialPushpin.apply(scrollspy, top, bottom, offset);
     }
 }
