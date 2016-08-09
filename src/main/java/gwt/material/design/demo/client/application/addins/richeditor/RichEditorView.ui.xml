@@ -82,7 +82,7 @@
             richEditor.insertText("Material Design"); // Inserting text into rich editor <br/>
         </demo:PrettyPre>
 
-        <m:MaterialTitle title="Events" description="We have provided Value Change, Key Up, Blur and Focus events on rich editor."/>
+        <m:MaterialTitle title="Events" description="We have provided Value Change, Key Up, Blur and Focus events on rich editor. Note that in order to see the event logs, you might need to open the Browser's Console Editor to see those logs."/>
         <ma:richeditor.MaterialRichEditor ui:field="eventRichEditor" />
         <demo:PrettyPre marginTop="40" addStyleNames="lang-java z-depth-1">
             &emsp;// Value Change Event<br/>
