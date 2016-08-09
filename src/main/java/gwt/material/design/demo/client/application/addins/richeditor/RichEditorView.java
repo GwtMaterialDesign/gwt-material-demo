@@ -21,15 +21,19 @@ package gwt.material.design.demo.client.application.addins.richeditor;
  */
 
 
-import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.*;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.Focusable;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.richeditor.MaterialRichEditor;
 import gwt.material.design.addins.client.richeditor.base.constants.ToolbarButton;
+import gwt.material.design.addins.client.richeditor.events.PasteEvent;
 import gwt.material.design.client.ui.MaterialTextBox;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.dto.DataHelper;
@@ -40,7 +44,7 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
     }
 
     @UiField
-    MaterialRichEditor richEditor, airmodeRichEditor, optionRichEditor, clearRichEditor;
+    MaterialRichEditor richEditor, airmodeRichEditor, optionRichEditor, clearRichEditor, eventRichEditor;
 
     @UiField
     MaterialTextBox txtHTML;
@@ -77,5 +81,35 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
     @UiHandler("btnGetHTML")
     void onGetHTML(ClickEvent e) {
         MaterialToast.fireToast(richEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onValueChange(ValueChangeEvent<String> e) {
+        GWT.log("Value Change Event : " + eventRichEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onFocus(FocusEvent e) {
+        GWT.log("Focus Event : " + eventRichEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onBlur(BlurEvent event) {
+        GWT.log("Blur Event : " + eventRichEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onKeyUp(KeyUpEvent e) {
+        GWT.log("Key Up : " + eventRichEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onKeyDown(KeyDownEvent e) {
+        GWT.log("Key Down : " + eventRichEditor.getHTML());
+    }
+
+    @UiHandler("eventRichEditor")
+    void onPaste(PasteEvent e) {
+        GWT.log("Paste : " + eventRichEditor.getHTML());
     }
 }
