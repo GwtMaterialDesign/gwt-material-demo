@@ -9,7 +9,7 @@ function gwtmaterialdemo(){
 
   function sendStats(evtGroupString, typeString){
     if ($wnd_0.__gwtStatsEvent) {
-      $wnd_0.__gwtStatsEvent({'moduleName':'gwtmaterialdemo', 'sessionId':$wnd_0.__gwtStatsSessionId, 'subSystem':'startup', 'evtGroup':evtGroupString, 'millis':(new Date).getTime(), 'type':typeString});
+      $wnd_0.__gwtStatsEvent({moduleName:'gwtmaterialdemo', sessionId:$wnd_0.__gwtStatsSessionId, subSystem:'startup', evtGroup:evtGroupString, millis:(new Date).getTime(), type:typeString});
     }
   }
 
@@ -37,7 +37,7 @@ function gwtmaterialdemo(){
   ;
   var __propertyErrorFunction = null;
   var activeModules = $wnd_0.__gwt_activeModules = $wnd_0.__gwt_activeModules || {};
-  activeModules['gwtmaterialdemo'] = {'moduleName':'gwtmaterialdemo'};
+  activeModules['gwtmaterialdemo'] = {moduleName:'gwtmaterialdemo'};
   gwtmaterialdemo.__moduleStartupDone = function(permProps){
     var oldBindings = activeModules['gwtmaterialdemo'].bindings;
     activeModules['gwtmaterialdemo'].bindings = function(){
@@ -334,7 +334,7 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      strongName = '294218A3EDC79598ECE3AA211F43A121';
+      strongName = 'A4E84CA1BD01BE5D014DF5C1E6D3A213';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
