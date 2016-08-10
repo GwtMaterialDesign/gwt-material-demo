@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0-rc1";
-var $strongName = '86460F01B3DC1A953A9DEACDE857EA1C';
+var $strongName = 'E3124D6AE7263D8AC64C98B3AB0EB9C5';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -19703,7 +19703,7 @@ function MaterialListValueBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2337, $wnd.Function, {}, MaterialListValueBox$lambda$0$Type);
+defineClass(2338, $wnd.Function, {}, MaterialListValueBox$lambda$0$Type);
 _.call_1 = function call_48(arg0, arg1){
   return $onChangeInternal(this.$$outer_0) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
@@ -20506,7 +20506,7 @@ function MaterialToast$lambda$0$Type(callback_0){
   this.callback_0 = callback_0;
 }
 
-defineClass(2338, $wnd.Function, {}, MaterialToast$lambda$0$Type);
+defineClass(2337, $wnd.Function, {}, MaterialToast$lambda$0$Type);
 _.call_2 = function call_56(){
   lambda$0_1(this.callback_0);
 }
