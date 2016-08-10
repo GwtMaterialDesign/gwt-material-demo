@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0-rc1";
-var $strongName = 'E3124D6AE7263D8AC64C98B3AB0EB9C5';
+var $strongName = '69D1D019BCC378ED1181EA14F26D59E1';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -20027,7 +20027,7 @@ _.onKeyUp = function onKeyUp_2(event_0){
       $add_27(this.this$01.tempSearches, obj);
     }
   }
-  if ((event_0.nativeEvent.keyCode | 0) == 13) {
+  if ((event_0.nativeEvent.keyCode | 0) == 13 && this.this$01.tempSearches.array.length != 0) {
     if (this.this$01.curSel == -1) {
       $setSelectedObject(this.this$01, castTo($get_6(this.this$01.tempSearches, 0), 55));
       $setSelectedLink(this.this$01, castTo($getWidget(this.this$01.searchResult, 0), 19));
