@@ -24,8 +24,10 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 
@@ -44,6 +46,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
+        DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));
     }
 
     @UiHandler("imgGPlus")
