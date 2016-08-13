@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link type="text/css" rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -13,16 +13,68 @@
     <title>GWT Material Design</title>
 
     <script type="text/javascript" language="javascript" src="gwtmaterialdemo/gwtmaterialdemo.nocache.js"></script>
-  </head>
+</head>
 
 <body>
-    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
-    
-    <noscript>
-      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+        style="position:absolute;width:0;height:0;border:0"></iframe>
+
+<noscript>
+    <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
         Your web browser must have JavaScript enabled
         in order for this application to display correctly.
-      </div>
-    </noscript>
-  </body>
+    </div>
+</noscript>
+<style type="text/css">
+    .splash-overlay {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: #2196f3 !important;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .splash-overlay div {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .splash-overlay img {
+        width: 150px;
+    }
+
+    .splash-overlay .progress {
+        margin: 0px;
+        position: absolute;
+        bottom: 2px;
+        height: 6px;
+    }
+
+    .splash-overlay span {
+        font-family: Tahoma;
+    }
+</style>
+<div id="splashscreen" class="splash-overlay">
+    <div>
+        <img src="https://s9.postimg.org/r22gku3xr/2_0_logo.png"/>
+        <span style="font-size: 2em; display: block;">gwt-material 2.0</span>
+        <span style="font-weight: 200;">A Google Material Design wrapper for GWT</span>
+    </div>
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+</div>
+</body>
 </html>
