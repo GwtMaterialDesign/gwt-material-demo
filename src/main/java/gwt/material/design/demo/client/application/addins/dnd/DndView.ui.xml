@@ -137,5 +137,75 @@
             &emsp;}<br/>
             });<br/>
         </demo:PrettyPre>
+
+        <m:MaterialTitle title="IgnoreFrom" description="You can ignore any widget inside the dnd target easily."/>
+        <m:MaterialRow>
+            <m:MaterialPanel ui:field="dndIgnoreFrom" grid="l4 m6 s12" shadow="1" padding="0">
+                <m:MaterialPanel padding="20">
+                    <m:MaterialLink text="This is draggable" iconType="TOUCH_APP" />
+                </m:MaterialPanel>
+                <m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px">
+                    <m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="red" textColor="grey" fontSize="1.2em" text="This area is ignored from dragging" />
+                </m:MaterialPanel>
+            </m:MaterialPanel>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- UiBinder Declaration --><br/>
+            &lt;m:MaterialPanel ui:field="draggablePanel" grid="l4 m6 s12" shadow="1" padding="0"><br/>
+            &emsp;&lt;m:MaterialPanel padding="20"><br/>
+            &emsp;&emsp;&lt;m:MaterialLink text="This is draggable" iconType="TOUCH_APP" /><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &emsp;&lt;m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px"><br/>
+            &emsp;&emsp;&lt;m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="red" textColor="grey" fontSize="1.2em" text="This area is ignored from dragging" /><br/>
+            &emsp;&lt;/m:MaterialPanel><br/>
+            &lt;/m:MaterialPanel><br/>
+        </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-java">
+            MaterialDnd dndIgnore = new MaterialDnd();
+            dndIgnore.setTarget(dndIgnoreFrom);
+            dndIgnore.setIgnoreFrom(ignoredPanel);
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Axis" description="The axis in which the first movement must be in for the drag sequence to start. After the movement in that axis, the the action can move in both the HORIZONTAL and VERTICAL axes." />
+        <m:MaterialPanel backgroundColor="grey lighten-4" padding="10">
+            <m:MaterialPanel ui:field="xAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="X Axis" fontSize="1.5em"/>
+            </m:MaterialPanel>
+            <m:MaterialPanel ui:field="yAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                <m:MaterialLabel text="Y Axis" fontSize="1.5em"/>
+            </m:MaterialPanel>
+        </m:MaterialPanel>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;MaterialDnd dndXAxis = new MaterialDnd();<br/>
+            dndXAxis.setTarget(xAxisPanel);<br/>
+            dndXAxis.setAxis(Axis.HORIZONTAL);<br/><br/>
+
+            MaterialDnd dndYAxis = new MaterialDnd();<br/>
+            dndYAxis.setTarget(yAxisPanel);<br/>
+            dndYAxis.setAxis(Axis.VERTICAL);<br/>
+        </demo:PrettyPre>
+
+        <m:MaterialTitle title="Dropzone" />
+        <m:MaterialRow ui:field="dropzoneContainer" backgroundColor="grey lighten-1" padding="10">
+            <m:MaterialColumn grid="s6">
+                <m:MaterialPanel addStyleNames="test" ui:field="item1" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                    <m:MaterialLink text="Option 1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel addStyleNames="test" ui:field="item2" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                    <m:MaterialLink text="Option 2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel addStyleNames="test" ui:field="item3" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                    <m:MaterialLink text="Option 3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel addStyleNames="test" ui:field="item4" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                    <m:MaterialLink text="Option 4" />
+                </m:MaterialPanel>
+            </m:MaterialColumn>
+            <m:MaterialColumn ui:field="placeContainer" grid="s6" addStyleNames="grey lighten-3" padding="20">
+                <m:MaterialLabel text="Drop here" />
+            </m:MaterialColumn>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>
