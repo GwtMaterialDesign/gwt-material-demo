@@ -21,19 +21,15 @@ package gwt.material.design.demo.client.application.addins.dnd;
  */
 
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Document;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.dnd.MaterialDnd;
-import gwt.material.design.addins.client.dnd.base.DraggableOptions;
 import gwt.material.design.addins.client.dnd.constants.Restriction;
 import gwt.material.design.addins.client.dnd.events.DragEndEvent;
 import gwt.material.design.addins.client.dnd.events.DragMoveEvent;
 import gwt.material.design.addins.client.dnd.events.DragStartEvent;
-import gwt.material.design.addins.client.dnd.events.DropEvent;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Axis;
 import gwt.material.design.client.ui.*;
