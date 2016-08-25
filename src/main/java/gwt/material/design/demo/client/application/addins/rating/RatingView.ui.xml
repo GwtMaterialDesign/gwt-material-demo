@@ -39,7 +39,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Value Change Handler" description="You can get the value of the rating." />
-        <ma:rating.MaterialRating ui:field="rating" textColor="amber"/>
+        <ma:rating.MaterialRating ui:field="rating"/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;@UiHandler("rating")<br/>
             void onRate(ValueChangeEvent&lt;Integer> event) {<br/>

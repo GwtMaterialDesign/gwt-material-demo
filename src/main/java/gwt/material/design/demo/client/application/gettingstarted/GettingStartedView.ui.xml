@@ -35,7 +35,7 @@
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.2&lt;/version><br/>
+        &emsp;&lt;version>1.6.0&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
       <m:MaterialRow>
@@ -45,7 +45,7 @@
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
+        &emsp;&lt;version>1.6.0&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
       <m:MaterialRow>
@@ -55,7 +55,7 @@
         &emsp;&lt;dependency><br/>
         &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
         &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
+        &emsp;&lt;version>1.6.0&lt;/version><br/>
         &lt;/dependency>
       </demo:PrettyPre>
     </m:MaterialPanel>
