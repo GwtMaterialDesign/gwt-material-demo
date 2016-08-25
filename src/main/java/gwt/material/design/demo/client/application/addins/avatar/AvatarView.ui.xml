@@ -1,0 +1,54 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <g:HTMLPanel>
+        <m:MaterialTitle title="Usage" />
+        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+            &emsp;&lt;!-- Addin Import --><br/>
+            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+            &lt;!-- Addin Usage --><br/>
+            &lt;ma:avatar.MaterialAvatar name="kevzlou7979" width="150" height="150" />
+        </demo:PrettyPre>
+
+        <ma:avatar.MaterialAvatar name="kevzlou7979" width="150" height="150" />
+
+        <m:MaterialTitle title="initialize()" description="You can easily update the avatar during textbox key up events." />
+        <m:MaterialRow>
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialCard padding="20" marginTop="100" textAlign="CENTER">
+                    <ma:avatar.MaterialAvatar ui:field="avatar" backgroundColor="white" marginTop="-100" name="marjorie" width="150" height="150" shadow="1" circle="true" />
+                    <m:MaterialTextBox ui:field="txtAvatarName" placeholder="Avatar Name" text="marjorie"/>
+                </m:MaterialCard>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;@UiHandler("txtAvatarName")<br/>
+            void onUpdateAvatar(KeyUpEvent e) {<br/>
+            &emsp;avatar.setName(txtAvatarName.getText());<br/>
+            &emsp;avatar.initialize();<br/>
+            }
+        </demo:PrettyPre>
+    </g:HTMLPanel>
+</ui:UiBinder>

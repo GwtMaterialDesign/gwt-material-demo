@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.dto;
  */
 
 
+import gwt.material.design.client.constants.DatePickerLanguage;
 import gwt.material.design.demo.client.resources.MaterialResources;
 
 import java.util.ArrayList;
@@ -50,7 +51,8 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
-        versions.add(new Version("1.5.3", "June 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, "red"));
+        versions.add(new Version("1.6.0", "August 2016", Version.VersionLink.CORE_1_6_0.getName(), Version.VersionLink.ADDINS_1_6_0.getName(), Version.VersionLink.THEME_1_6_0.getName(), "purple"));
+        versions.add(new Version("1.5.3", "June 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, "pink"));
         versions.add(new Version("1.5.2", "June 2016", Version.VersionLink.CORE_1_5_2.getName(), Version.VersionLink.ADDINS_1_5_2.getName(), Version.VersionLink.THEME_1_5_2.getName(), "orange"));
         versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), "teal"));
         versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), "deep-orange"));
@@ -77,5 +79,35 @@ public class DataHelper {
     public static String getRichEditorHTML() {
         String html = "<h2 style=\"text-align: center; \"> <span style=\"color: rgb(101, 31, 255);\"> I Love Material Design </span> </h2> <p style=\"text-align: center;\"> <span style=\"font-size: 17px;\"> Using </span> <span style=\"font-weight: bold; font-size: 17px; text-decoration: underline;\"> Airmode </span> <span style=\"font-size: 17px;\"> you can directly modify this html. </span> </p> <p style=\"text-align: center;\"> <br> </p> <table class=\"hoverable bordered striped responsive-table\"> <thead> <tr> <th> Country </th> <th> Capital </th> <th> Currency </th> </tr> </thead> <tbody> <tr> <td> Philippines </td> <td> Manila </td> <td> Peso </td> </tr> <tr> <td> Japan </td> <td> Tokyo </td> <td> Yen </td> </tr> </tbody> </table> <p> </p>";
         return html;
+    }
+
+    public static List<DatePickerLanguage> getAllDateLanguage() {
+        List<DatePickerLanguage> dpLanguages = new ArrayList<>();
+        dpLanguages.add(DatePickerLanguage.EN);
+        dpLanguages.add(DatePickerLanguage.AR);
+        dpLanguages.add(DatePickerLanguage.BG);
+        dpLanguages.add(DatePickerLanguage.BS);
+        dpLanguages.add(DatePickerLanguage.CA);
+        dpLanguages.add(DatePickerLanguage.CS);
+        dpLanguages.add(DatePickerLanguage.DA);
+        dpLanguages.add(DatePickerLanguage.DE);
+        dpLanguages.add(DatePickerLanguage.EL);
+        dpLanguages.add(DatePickerLanguage.ES);
+        dpLanguages.add(DatePickerLanguage.ET);
+        dpLanguages.add(DatePickerLanguage.EU);
+        dpLanguages.add(DatePickerLanguage.FA);
+        dpLanguages.add(DatePickerLanguage.FI);
+        dpLanguages.add(DatePickerLanguage.FR);
+        dpLanguages.add(DatePickerLanguage.GL);
+        dpLanguages.add(DatePickerLanguage.HE);
+        dpLanguages.add(DatePickerLanguage.HI);
+        dpLanguages.add(DatePickerLanguage.HR);
+        dpLanguages.add(DatePickerLanguage.HU);
+        dpLanguages.add(DatePickerLanguage.ID);
+        dpLanguages.add(DatePickerLanguage.IS);
+        dpLanguages.add(DatePickerLanguage.IT);
+        dpLanguages.add(DatePickerLanguage.JA);
+        dpLanguages.add(DatePickerLanguage.KO);
+        return dpLanguages;
     }
 }

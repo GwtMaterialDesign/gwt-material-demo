@@ -52,11 +52,6 @@ public class GettingStartedView extends ViewWithUiHandlers<GettingStartedUiHandl
         this.constants = constants;
     }
 
-    @UiHandler("btnMaven")
-    void onGoToMaven(ClickEvent e) {
-        Window.open(constants.mavenUrl(), "_blank", "");
-    }
-
     @UiHandler("btnDemoStarter")
     void onDemoStarter(ClickEvent e) {
         Window.open(constants.demoStarterUrl(), "_blank", "");

@@ -42,7 +42,7 @@
 
     <m:MaterialTitle title="setDate() and getDate()"/>
     <m:MaterialDatePicker ui:field="dp"  placeholder="Date" selectionType="YEAR"/>
-    <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2020" />
+    <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" />
     <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
@@ -103,6 +103,26 @@
       &emsp;&emsp;MaterialToast.fireToast("Date Selected " + event.getValue());<br/>
       &emsp;}<br/>
       });<br/>
+    </demo:PrettyPre>
+
+
+    <m:MaterialTitle title="Language Translations" description="With API we have supported 43 languages into the datepicker component."/>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l4 m6 s12">
+        <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="grey"/>
+        <m:MaterialListBox ui:field="lstLanguage"/>
+      </m:MaterialColumn>
+      <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
+    </m:MaterialRow>
+
+    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      &emsp;&lt;m:MaterialDatePicker placeholder="With Translation" language="AR" />
+    </demo:PrettyPre>
+
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;// Using Java<br/>
+      dpTranslation.setLanguage(DatePickerLanguage.AR);<br/>
+      dpTranslation.reinitialize();
     </demo:PrettyPre>
 
   </g:HTMLPanel>

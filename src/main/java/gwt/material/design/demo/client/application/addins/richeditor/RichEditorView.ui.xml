@@ -81,5 +81,46 @@
             &emsp;richEditor.clear(); // Clearing the rich editor <br/>
             richEditor.insertText("Material Design"); // Inserting text into rich editor <br/>
         </demo:PrettyPre>
+
+        <m:MaterialTitle title="Events" description="We have provided Value Change, Key Up, Blur and Focus events on rich editor. Note that in order to see the event logs, you might need to open the Browser's Console Editor to see those logs."/>
+        <ma:richeditor.MaterialRichEditor ui:field="eventRichEditor" />
+        <demo:PrettyPre marginTop="40" addStyleNames="lang-java z-depth-1">
+            &emsp;// Value Change Event<br/>
+            @UiHandler("eventRichEditor")<br/>
+            void onValueChange(ValueChangeEvent&lt;String> e) {<br/>
+            &emsp;GWT.log("Value Change Event : " + eventRichEditor.getHTML());<br/>
+            }
+        </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Key Up and Down Events<br/>
+            @UiHandler("eventRichEditor")<br/>
+            void onKeyUp(KeyUpEvent e) {<br/>
+            &emsp;GWT.log("Key Up : " + eventRichEditor.getHTML());<br/>
+            }<br/><br/>
+
+            @UiHandler("eventRichEditor")<br/>
+            void onKeyDown(KeyDownEvent e) {<br/>
+            &emsp;GWT.log("Key Down : " + eventRichEditor.getHTML());<br/>
+            }
+        </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Focus and Blur Events<br/>
+            @UiHandler("eventRichEditor")<br/>
+            void onFocus(FocusEvent e) {<br/>
+            &emsp;GWT.log("Focus Event : " + eventRichEditor.getHTML());<br/>
+            }<br/><br/>
+
+            @UiHandler("eventRichEditor")<br/>
+            void onBlur(BlurEvent event) {<br/>
+            &emsp;GWT.log("Blur Event : " + eventRichEditor.getHTML());<br/>
+            }
+        </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Paste Event<br/>
+            @UiHandler("eventRichEditor")<br/>
+            void onPaste(PasteEvent e) {<br/>
+            &emsp;GWT.log("Paste : " + eventRichEditor.getHTML());<br/>
+            }
+        </demo:PrettyPre>
     </g:HTMLPanel>
 </ui:UiBinder>

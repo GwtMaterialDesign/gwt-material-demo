@@ -12,13 +12,13 @@ Demo application to show the features of the [gwt-material](https://github.com/G
 </dependency>
 ```
 
-### 1.6.0 Snapshot Demo
+### 1.5.2 Snapshot Demo
 [http://gwtmaterialdesign.github.io/gwt-material-demo/snapshot](http://gwtmaterialdesign.github.io/gwt-material-demo/snapshot)
 ```xml
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
-    <version>1.6.0-SNAPSHOT</version>
+    <version>1.5.2-SNAPSHOT</version>
 </dependency>
 ```
 
