@@ -202,11 +202,11 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     @UiHandler("btnOpenModal")
     void onOpenModal(ClickEvent e) {
-        modal.openModal();
+        modal.open();
     }
 
     @UiHandler("btnCloseModal")
     void onCloseModal(ClickEvent e) {
-        modal.closeModal();
+        modal.close();
     }
 }

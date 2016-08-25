@@ -27,7 +27,6 @@ import com.gwtplatform.mvp.client.ViewImpl;
 
 import javax.inject.Inject;
 
-
 public class WaterfallView extends ViewImpl implements WaterfallPresenter.MyView {
     interface Binder extends UiBinder<Widget, WaterfallView> {
     }

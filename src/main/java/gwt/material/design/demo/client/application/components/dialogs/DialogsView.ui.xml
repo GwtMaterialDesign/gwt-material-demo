@@ -89,9 +89,9 @@
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;@UiField MaterialModal modal;<br/>
       //Opening Modal<br/>
-      modal.openModal();<br/>
+      modal.open();<br/>
       //Closing Modal<br/>
-      modal.closeModal();<br/>
+      modal.close();<br/>
     </demo:PrettyPre>
     
     <!-- Fixed Footer Modal -->

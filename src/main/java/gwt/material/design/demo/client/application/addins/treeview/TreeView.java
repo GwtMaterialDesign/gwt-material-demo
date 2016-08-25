@@ -100,7 +100,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
 
     @UiHandler("btnDelete")
     void onDeleteModal(ClickEvent e) {
-        docTree.getSelectedTree().removeFromTree();
+        docTree.getSelectedItem().removeFromTree();
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 
@@ -110,7 +110,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
         item.setText(txtName.getText());
         item.setIconType(IconType.FOLDER);
         item.setIconColor("blue");
-        docTree.getSelectedTree().addItem(item);
+        docTree.getSelectedItem().addItem(item);
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 
