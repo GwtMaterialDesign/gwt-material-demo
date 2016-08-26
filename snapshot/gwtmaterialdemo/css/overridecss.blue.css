@@ -111,3 +111,8 @@ blockquote {
 button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
     background: #d8d8d7 !important;
 }
+
+/** Rating **/
+.material-rating {
+    color: #2196f3;
+}
