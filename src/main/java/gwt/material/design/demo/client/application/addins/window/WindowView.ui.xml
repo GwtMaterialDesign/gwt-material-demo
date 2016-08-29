@@ -59,7 +59,7 @@
         <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;// set maximize window<br/>
             window.setMaximize(true);<br/>
-            window.openWindow();
+            window.open();
         </m.demo:PrettyPre>
 
         <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
@@ -85,10 +85,10 @@
         <m:MaterialTitle title="Open / Close Window" description="Just like modals, window dialog has programmatically functions for opening and closing the window"/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             // Opening Window<br/>
-            window.openWindow();<br/><br/>
+            window.open();<br/><br/>
 
             // Closing Window<br/>
-            window.closeWindow();<br/>
+            window.close();<br/>
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Window Handlers" description="We built events for Window component : Open / Close Events" />

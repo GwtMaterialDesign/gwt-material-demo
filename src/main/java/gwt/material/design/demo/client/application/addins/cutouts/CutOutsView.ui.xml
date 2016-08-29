@@ -60,7 +60,7 @@
             @UiHandler("btnCutOut")<br/>
             void onCutOut(ClickEvent e){<br/>
             &emsp;cutout.setTarget(btnCutOut);<br/>
-            &emsp;cutout.openCutOut();<br/>
+            &emsp;cutout.open();<br/>
             }
         </demo:PrettyPre>
     </m:MaterialPanel>

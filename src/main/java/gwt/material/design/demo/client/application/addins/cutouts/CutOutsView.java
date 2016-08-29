@@ -51,11 +51,11 @@ public class CutOutsView extends ViewImpl implements CutOutsPresenter.MyView {
     @UiHandler("btnCutOut")
     void onCutOut(ClickEvent e){
         cutout.setTarget(btnCutOut);
-        cutout.openCutOut();
+        cutout.open();
     }
 
     @UiHandler("btnCutOutClose")
     void onClose(ClickEvent e){
-        cutout.closeCutOut();
+        cutout.close();
     }
 }
