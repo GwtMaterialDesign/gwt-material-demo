@@ -47,11 +47,11 @@ public class FABView extends ViewImpl implements FABPresenter.MyView {
 
     @UiHandler("btnOpen")
     void onOpen(ClickEvent e){
-        fab.openFAB();
+        fab.open();
     }
 
     @UiHandler("btnClose")
     void onClose(ClickEvent e){
-        fab.closeFAB();
+        fab.close();
     }
 }
