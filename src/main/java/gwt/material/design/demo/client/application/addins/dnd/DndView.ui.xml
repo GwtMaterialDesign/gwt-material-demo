@@ -53,47 +53,38 @@
 
         <m:MaterialTitle title="Default" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dnd = new MaterialDnd();<br/>
-            dnd.setTarget(panel);
+            &emsp;MaterialDnd.draggable(panel);
         </demo:PrettyPre>
 
         <m:MaterialTitle title="With Inertia" description="Inertia allows drag and resize actions to coninue after the user releases the pointer at a fast enough speed. The required launch speed, end speed and resistance can optionally be configured with the settings below"/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dndWoInertia = new MaterialDnd();<br/>
-            dndWoInertia.setTarget(woInertialPanel);<br/>
-            dndWoInertia.setInertia(false);
+            &emsp;MaterialDnd.draggable(woInertialPanel, JsDragOptions.create(false));
         </demo:PrettyPre>
 
         <m:MaterialTitle title="End Only" description="The endOnly option is used to restrict the widget around the corners of it's parent "/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dndEndOnly = new MaterialDnd();<br/>
-            dndEndOnly.setTarget(endOnlyPanel);<br/><br/>
-            Restriction restriction = new Restriction();<br/>
+            &emsp;Restriction restriction = new Restriction();<br/>
             restriction.setEndOnly(false);<br/>
-            dndEndOnly.setRestriction(restriction);
+            MaterialDnd.draggable(endOnlyPanel, JsDragOptions.create(restriction));
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Restriction" description="The restriction value specifies the area that the action will be confined to. "/>
         <m:MaterialTitle title="Self Restrict" description="With this option , It will only restrict the target on itself. By Default without this option will restrict to it's parent."/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dndSelfRestrict = new MaterialDnd();<br/>
-            dndSelfRestrict.setTarget(selfRestrict);<br/>
-            Restriction restriction1 = new Restriction();<br/>
+            &emsp;Restriction restriction1 = new Restriction();<br/>
             restriction1.setRestriction(Restriction.Restrict.SELF);<br/>
-            dndSelfRestrict.setRestriction(restriction1);
+            MaterialDnd.draggable(selfRestrict, JsDragOptions.create(restriction1));
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Specific Properties" description="For the left and right properties, 0 means the left edge of the element and 1 means the right edge. For top and bottom, 0 means the top edge of the element and 1 means the bottom." />
         <m:MaterialLabel text="On the example above, { top: 0.25, left: 0.25, bottom: 0.75, right: 0.75 } would result in a quarter of the element being allowed to hang over the restriction edges." />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dndRestrict = new MaterialDnd();<br/>
-            dndRestrict.setTarget(restrictPanel);<br/>
-            Restriction restriction2 = new Restriction();<br/>
+            &emsp;Restriction restriction2 = new Restriction();<br/>
             restriction2.setTop(0.25);<br/>
             restriction2.setLeft(0.25);<br/>
             restriction2.setRight(0.75);<br/>
-            restriction2.setBottom(0.75);<br/>
-            dndRestrict.setRestriction(restriction2);
+            restriction2.setBottom(0.75);<br/><br/>
+            MaterialDnd.draggable(restrictPanel, JsDragOptions.create(restriction2));
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Events" />
@@ -107,35 +98,25 @@
         </m:MaterialPanel>
 
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;final MaterialDnd dndEvent = new MaterialDnd();<br/>
-            dndEvent.setTarget(eventPanel);<br/><br/>
+            &emsp;MaterialDnd.draggable(eventPanel);<br/><br/>
 
             // Add Drag Start Handler<br/>
-            dndEvent.addDragStartHandler(new DragStartEvent.DragStartHandler() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onDragStart(DragStartEvent event) {<br/>
-            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("blue");<br/>
-            &emsp;&emsp;lblStarted.setVisible(false);<br/>
-            &emsp;}<br/>
+            eventPanel.addDragStartHandler(event -> {<br/>
+            &emsp;eventPanel.setBackgroundColor("blue");<br/>
+            &emsp;lblStarted.setVisible(true);<br/>
             });<br/><br/>
 
             // Add Drag Move Handler<br/>
-            dndEvent.addDragMoveHandler(new DragMoveEvent.DragMoveHandler() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onDragMove(DragMoveEvent event) {<br/>
-            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("amber");<br/>
-            &emsp;&emsp;lblMoved.setVisible(false);<br/>
-            &emsp;}<br/>
+            &emsp;eventPanel.addDragMoveHandler(event -> {<br/>
+            &emsp;eventPanel.setBackgroundColor("amber");<br/>
+            &emsp;lblMoved.setVisible(true);<br/>
             });<br/><br/>
 
             // Add Drag End Handler<br/>
-            dndEvent.addDragEndHandler(new DragEndEvent.DragEndHandler() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onDragEnd(DragEndEvent event) {<br/>
-            &emsp;&emsp;((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("green");<br/>
-            &emsp;&emsp;lblEnded.setVisible(false);<br/>
-            &emsp;}<br/>
-            });<br/>
+            &emsp;eventPanel.addDragEndHandler(event -> {<br/>
+            &emsp;eventPanel.setBackgroundColor("green");<br/>
+            &emsp;lblEnded.setVisible(true);<br/>
+            });
         </demo:PrettyPre>
 
         <m:MaterialTitle title="IgnoreFrom" description="You can ignore any widget inside the dnd target easily."/>
@@ -161,9 +142,8 @@
             &lt;/m:MaterialPanel><br/>
         </demo:PrettyPre>
         <demo:PrettyPre addStyleNames="lang-java">
-            MaterialDnd dndIgnore = new MaterialDnd();
-            dndIgnore.setTarget(dndIgnoreFrom);
-            dndIgnore.setIgnoreFrom(ignoredPanel);
+            &emsp;MaterialDnd dndIgnore =  MaterialDnd.draggable(dndIgnoreFrom);<br/>
+            dndIgnore.ignoreFrom(ignoredPanel);
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Axis" description="The axis in which the first movement must be in for the drag sequence to start. After the movement in that axis, the the action can move in both the HORIZONTAL and VERTICAL axes." />
@@ -178,13 +158,8 @@
             </m:MaterialPanel>
         </m:MaterialPanel>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd dndXAxis = new MaterialDnd();<br/>
-            dndXAxis.setTarget(xAxisPanel);<br/>
-            dndXAxis.setAxis(Axis.HORIZONTAL);<br/><br/>
-
-            MaterialDnd dndYAxis = new MaterialDnd();<br/>
-            dndYAxis.setTarget(yAxisPanel);<br/>
-            dndYAxis.setAxis(Axis.VERTICAL);<br/>
+            &emsp;MaterialDnd.draggable(xAxisPanel, JsDragOptions.create(Axis.HORIZONTAL));<br/>
+            MaterialDnd.draggable(yAxisPanel, JsDragOptions.create(Axis.VERTICAL));
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Dropzone" />
@@ -207,5 +182,36 @@
                 <m:MaterialLabel text="Drop here" />
             </m:MaterialColumn>
         </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;// Draggable Items<br/>
+            MaterialDnd.draggable(item1);<br/>
+            MaterialDnd.draggable(item2);<br/>
+            MaterialDnd.draggable(item3);<br/>
+            MaterialDnd.draggable(item4);<br/><br/>
+
+            // Initialize the dropzone container<br/>
+            MaterialDnd.dropzone(dropzoneContainer, JsDropOptions.create(".test"));<br/><br/>
+
+            dropzoneContainer.addDropActivateHandler(event1 -> {<br/>
+            &emsp;MaterialToast.fireToast("Drop Activate");<br/>
+            });<br/><br/>
+
+            dropzoneContainer.addDragEnterHandler(dragEnterEvent -> {<br/>
+            &emsp;placeContainer.setBackgroundColor("blue");<br/>
+            &emsp;MaterialToast.fireToast("Drag Enter");<br/>
+            });<br/><br/>
+
+            dropzoneContainer.addDragLeaveHandler(event1 -> {<br/>
+            &emsp;placeContainer.setBackgroundColor("grey lighten-2");<br/>
+            &emsp;MaterialToast.fireToast("Drag Leave");<br/>
+            });<br/><br/>
+
+            dropzoneContainer.addDropHandler(event -> {<br/>
+            &emsp;JQueryElement target = $(event.getRelatedTarget());<br/>
+            &emsp;MaterialWidget widget = new MaterialWidget(target.asElement());<br/>
+            &emsp;placeContainer.add(widget);<br/>
+            &emsp;MaterialToast.fireToast("Dropped");<br/>
+            });<br/>
+        </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
