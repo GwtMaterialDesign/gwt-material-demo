@@ -101,7 +101,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
 
     @UiHandler("btnModal")
     void onOpenModal(ClickEvent e){
-        modalStepper.openModal();
+        modalStepper.open();
     }
 
     @UiHandler({"btnContinue31", "btnContinue32", "btnContinue33"})
@@ -118,7 +118,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     void onFinish3(ClickEvent e){
         MaterialToast.fireToast("All done.");
         stepperModal.reset();
-        modalStepper.closeModal();
+        modalStepper.close();
     }
 
     @UiHandler({"btnError", "btnError1", "btnError2"})

@@ -84,16 +84,16 @@
       &emsp;&lt;m:MaterialModalFooter><br/>
       &emsp;&emsp;&lt;m:MaterialButton text="Close Modal" type="FLAT"/><br/>
       &emsp;&lt;/m:MaterialModalFooter><br/>
-      &lt;/m:MaterialModal><br/>  
+      &lt;/m:MaterialModal><br/>
     </demo:PrettyPre>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;@UiField MaterialModal modal;<br/>
       //Opening Modal<br/>
-      modal.openModal();<br/>
+      modal.open();<br/>
       //Closing Modal<br/>
-      modal.closeModal();<br/>
+      modal.close();<br/>
     </demo:PrettyPre>
-    
+
     <!-- Fixed Footer Modal -->
     <m:MaterialModal ui:field="modalFixed" type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500">
       <m:MaterialModalContent>

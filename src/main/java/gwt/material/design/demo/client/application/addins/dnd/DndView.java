@@ -27,9 +27,9 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.dnd.MaterialDnd;
 import gwt.material.design.addins.client.dnd.constants.Restriction;
-import gwt.material.design.addins.client.dnd.events.DragEndEvent;
-import gwt.material.design.addins.client.dnd.events.DragMoveEvent;
-import gwt.material.design.addins.client.dnd.events.DragStartEvent;
+import gwt.material.design.addins.client.dnd.js.JsDragElementRect;
+import gwt.material.design.addins.client.dnd.js.JsDragOptions;
+import gwt.material.design.addins.client.dnd.js.JsDragRestrictions;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Axis;
 import gwt.material.design.client.ui.*;
@@ -60,42 +60,45 @@ public class DndView extends ViewImpl implements DndPresenter.MyView {
     DndView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        MaterialDnd dnd = new MaterialDnd();
-        dnd.setTarget(panel);
-        dnd.draggable();
+        // Simple
+        MaterialDnd.draggable(panel);
 
-        MaterialDnd dndWoInertia = new MaterialDnd();
-        dndWoInertia.setTarget(woInertialPanel);
-        dndWoInertia.setInertia(false);
-        dndWoInertia.draggable();
+        // Without Inertia
+        JsDragOptions woInertiaOption = new JsDragOptions();
+        woInertiaOption.inertia = false;
+        MaterialDnd.draggable(woInertialPanel, woInertiaOption);
 
-        MaterialDnd dndEndOnly = new MaterialDnd();
-        dndEndOnly.setTarget(endOnlyPanel);
-        Restriction restriction = new Restriction();
-        restriction.setEndOnly(false);
-        dndEndOnly.setRestriction(restriction);
-        dndEndOnly.draggable();
+        // End Only
+        JsDragOptions endOnlyOption = new JsDragOptions();
+        JsDragRestrictions restrictions = new JsDragRestrictions();
+        restrictions.endOnly = false;
+        endOnlyOption.restrict = restrictions;
+        MaterialDnd.draggable(endOnlyPanel, endOnlyOption);
 
-        MaterialDnd dndSelfRestrict = new MaterialDnd();
-        dndSelfRestrict.setTarget(selfRestrict);
-        Restriction restriction1 = new Restriction();
-        restriction1.setRestriction(Restriction.Restrict.SELF);
-        dndSelfRestrict.setRestriction(restriction1);
-        dndSelfRestrict.draggable();
+        // Self Restriction
+        JsDragOptions selfRestrictOption = new JsDragOptions();
+        JsDragRestrictions selfRestriction = new JsDragRestrictions();
+        selfRestriction.restriction = Restriction.Restrict.SELF.getValue();
+        selfRestrictOption.restrict = selfRestriction;
+        MaterialDnd.draggable(selfRestrict, selfRestrictOption);
 
-        MaterialDnd dndRestrict = new MaterialDnd();
-        dndRestrict.setTarget(restrictPanel);
-        Restriction restriction2 = new Restriction();
-        restriction2.setTop(0.25);
-        restriction2.setLeft(0.25);
-        restriction2.setRight(0.75);
-        restriction2.setBottom(0.75);
-        dndRestrict.setRestriction(restriction2);
-        dndRestrict.draggable();
+        // Advance Restriction
+        JsDragOptions restrictOption = new JsDragOptions();
+        JsDragRestrictions restrict = new JsDragRestrictions();
+        JsDragElementRect rect = new JsDragElementRect();
+        rect.top = 0.25;
+        rect.left = 0.25;
+        rect.right = 0.75;
+        rect.bottom = 0.75;
+        restrict.elementRect = rect;
+        restrictOption.restrict = restrict;
+        MaterialDnd.draggable(restrictPanel, restrictOption);
 
-        final MaterialDnd dndEvent = new MaterialDnd();
+        /*final MaterialDnd dndEvent = new MaterialDnd();
         dndEvent.setTarget(eventPanel);
         dndEvent.draggable();
+
+        MaterialDnd.draggable(eventPanel);
 
         MaterialDnd dndIgnore = new MaterialDnd();
         dndIgnore.setTarget(dndIgnoreFrom);
@@ -181,7 +184,7 @@ public class DndView extends ViewImpl implements DndPresenter.MyView {
                 ((MaterialWidget)dndEvent.getTarget()).setBackgroundColor("green");
                 lblEnded.setVisible(true);
             }
-        });
+        });*/
     }
 
 }
