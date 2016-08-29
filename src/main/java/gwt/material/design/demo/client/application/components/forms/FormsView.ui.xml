@@ -35,7 +35,7 @@
 
   <m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialDatePicker grid="s12" placeholder="PLaceholder" iconType="ACCESS_ALARMS" />
+      <m:MaterialDatePicker grid="s12" placeholder="Placeholder" iconType="ACCESS_ALARMS" />
       <ma:timepicker.MaterialTimePicker grid="s12" placeholder="Placeholder" iconType="DASHBOARD" />
     </m:MaterialRow>
     <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
@@ -257,10 +257,10 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Range" />
-    <m:MaterialRange ui:field="range" min="10" max="50" value="25"/>
+    <m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
     <m:MaterialLabel text="Min: 10"/>
-    <m:MaterialLabel text="Min: 50"/>
-    <m:MaterialLabel ui:field="lblRange" text="Value: 25"/>
+    <m:MaterialLabel text="Min: 500"/>
+    <m:MaterialLabel ui:field="lblRange" text="Value: 25" paddingBottom="20"/>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialRange ui:field="range" min="10" max="50" value="25"/><br/>

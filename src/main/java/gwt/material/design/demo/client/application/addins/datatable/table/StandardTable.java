@@ -179,12 +179,12 @@ public class StandardTable extends Composite {
 
             @Override
             public MaterialComboBox getValue(Person object) {
-                MaterialComboBox comboBox = new MaterialComboBox();
-                comboBox.addValue("State 1", "State 1");
-                comboBox.addValue("State 2", "State 2");
-                comboBox.addValue("State 3", "State 3");
-                comboBox.addValue("State 4", "State 4");
-                comboBox.addValue("State 5", "State 5");
+                MaterialComboBox<String> comboBox = new MaterialComboBox<>();
+                comboBox.addItem("State 1", "State 1");
+                comboBox.addItem("State 2", "State 2");
+                comboBox.addItem("State 3", "State 3");
+                comboBox.addItem("State 4", "State 4");
+                comboBox.addItem("State 5", "State 5");
                 return comboBox;
             }
         });

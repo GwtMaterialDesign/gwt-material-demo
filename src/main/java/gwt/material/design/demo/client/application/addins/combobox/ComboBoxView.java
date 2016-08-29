@@ -40,16 +40,18 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     interface Binder extends UiBinder<Widget, ComboBoxView> {
     }
 
     @UiField
-    MaterialComboBox comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4, comboTimeZone6, comboTimeZone7;
+    MaterialComboBox<String> comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4,
+                             comboTimeZone6, comboTimeZone7;
 
     @UiField
-    MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10, comboTimeZone11, comboTimeZone12, comboTimeZone12_1, comboTimeZone13, comboTimeZone14, comboTimeZone15, comboTimeZone16, comboTimeZone17;
+    MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10,
+                                 comboTimeZone11, comboTimeZone12, comboTimeZone12_1, comboTimeZone13, comboTimeZone14,
+                                 comboTimeZone15, comboTimeZone16, comboTimeZone17;
 
     @UiField
     MaterialModal modal;
@@ -63,25 +65,25 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     }
 
     protected void populateTimeZones() {
-        addItems(comboTimeZone);
-        addItemsWithoutGroup(comboTimeZone1);
-        addItemsWithoutGroup(comboTimeZone2);
-        addItems(comboTimeZone3);
-        addItems(comboTimeZone4);
-        addItems(comboTimeZone6);
-        addItems(comboTimeZone7);
-        addItems(comboTimeZone8);
-        addItems(comboTimeZone8_1);
+        addStringItems(comboTimeZone);
+        addStringItemsWithoutGroup(comboTimeZone1);
+        addStringItemsWithoutGroup(comboTimeZone2);
+        addStringItems(comboTimeZone3);
+        addStringItems(comboTimeZone4);
+        addStringItems(comboTimeZone6);
+        addStringItems(comboTimeZone7);
+        addStateItems(comboTimeZone8);
+        addStateItems(comboTimeZone8_1);
         addItemsWithoutGroup(comboTimeZone9);
         addItemsWithoutGroup(comboTimeZone9_1);
-        addItems(comboTimeZone10);
-        addItems(comboTimeZone11);
-        addItems(comboTimeZone12);
-        addItems(comboTimeZone12_1);
-        addItems(comboTimeZone13);
-        addItems(comboTimeZone14);
-        addItems(comboTimeZone15);
-        addItems(comboTimeZone17);
+        addStateItems(comboTimeZone10);
+        addStateItems(comboTimeZone11);
+        addStateItems(comboTimeZone12);
+        addStateItems(comboTimeZone12_1);
+        addStateItems(comboTimeZone13);
+        addStateItems(comboTimeZone14);
+        addStateItems(comboTimeZone15);
+        addStateItems(comboTimeZone17);
 
         comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
             MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
@@ -116,20 +118,39 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         });
     }
 
-    protected void addItemsWithoutGroup(MaterialComboBox box) {
+    protected void addStringItemsWithoutGroup(MaterialComboBox<String> box) {
         for(TimeZone tz : DataHelper.getTimeZones()) {
             for(State s : tz.getStates()) {
-                box.addValue(s.getName(), s);
+                box.addItem(s.getName(), s.getValue());
             }
         }
     }
 
-    protected void addItems(MaterialComboBox box) {
+    protected void addItemsWithoutGroup(MaterialComboBox<State> box) {
+        for(TimeZone tz : DataHelper.getTimeZones()) {
+            for(State s : tz.getStates()) {
+                box.addItem(s.getName(), s);
+            }
+        }
+    }
+
+    protected void addStringItems(MaterialComboBox<String> box) {
         for(TimeZone tz : DataHelper.getTimeZones()) {
             OptGroup optGroup = new OptGroup();
             optGroup.setLabel(tz.getName());
             for(State s : tz.getStates()) {
-                box.addValue(s.getName(), s, optGroup);
+                box.addItem(s.getName(), s.getValue(), optGroup);
+            }
+            box.addGroup(optGroup);
+        }
+    }
+
+    protected void addStateItems(MaterialComboBox<State> box) {
+        for(TimeZone tz : DataHelper.getTimeZones()) {
+            OptGroup optGroup = new OptGroup();
+            optGroup.setLabel(tz.getName());
+            for(State s : tz.getStates()) {
+                box.addItem(s.getName(), s, optGroup);
             }
             box.addGroup(optGroup);
         }
@@ -194,7 +215,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     @UiHandler("btnAddOption")
     void onAddOption(ClickEvent e) {
         State newState = new State("Item " + dynamicIndex, "I" + dynamicIndex);
-        comboTimeZone16.addValue(newState.getName(), newState);
+        comboTimeZone16.addItem(newState.getName(), newState);
         comboTimeZone16.initialize();
         comboTimeZone16.setValue(newState);
         dynamicIndex ++;
