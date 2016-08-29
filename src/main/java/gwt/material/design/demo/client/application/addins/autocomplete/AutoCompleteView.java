@@ -123,11 +123,11 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
 
     @UiHandler("btnOpenModal")
     void onOpenModal(ClickEvent e) {
-        modal.openModal();
+        modal.open();
     }
 
     @UiHandler("btnClose")
     void onClose(ClickEvent e) {
-        modal.closeModal();
+        modal.close();
     }
 }

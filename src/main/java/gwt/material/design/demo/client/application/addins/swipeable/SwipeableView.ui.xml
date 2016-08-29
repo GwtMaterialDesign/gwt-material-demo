@@ -101,7 +101,7 @@
         </demo:PrettyPre>
 
 
-        <m:MaterialTitle title="Disable Items" description="You can easily disable swipeable elements by calling the container's method setDisable(widget1, widget2, ...)" />
+        <m:MaterialTitle title="Ignore Items" description="You can easily ignore swipeable elements by calling the container's method ignore(widget1, widget2, ...)" />
         <ma:swipeable.MaterialSwipeablePanel ui:field="swipeableDisablePanel" shadow="1" backgroundColor="white" padding="12">
             <!-- Item 1 -->
             <m:MaterialLabel margin="8" padding="12" text="Swipeable Item 1" shadow="1"/>
@@ -121,7 +121,7 @@
             &lt;/ma:swipeable.MaterialSwipeablePanel><br/>
         </demo:PrettyPre>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;swipeableDisablePanel.setDisable(item2, item3);
+            &emsp;swipeableDisablePanel.ignore(item2, item3);
         </demo:PrettyPre>
 
     </m:MaterialPanel>

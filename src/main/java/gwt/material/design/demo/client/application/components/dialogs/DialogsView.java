@@ -78,41 +78,41 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
     @UiHandler("btnModal")
     void onModal(ClickEvent e) {
-        modal.openModal();
+        modal.open();
     }
 
     @UiHandler("btnMoadalBottomSheets")
     void onModalBottom(ClickEvent e) {
-       modalBottomSheet.openModal();
+       modalBottomSheet.open();
     }
 
     @UiHandler("btnModalFixFooter")
     void onModalFix(ClickEvent e) {
-        modalFixed.openModal();
+        modalFixed.open();
     }
 
     @UiHandler("btnClosable")
     void onClosable(ClickEvent e) {
-        modalClosable.openModal();
+        modalClosable.open();
     }
 
     @UiHandler("btnCloseModal")
     void onCloseModal(ClickEvent e){
-        modal.closeModal();
+        modal.close();
     }
 
     @UiHandler("btnCloseFixedModal")
     void onCloseFixedModal(ClickEvent e) {
-        modalFixed.closeModal();
+        modalFixed.close();
     }
 
     @UiHandler("btnCloseBottomSheetModal")
     void onCloseBottomModal(ClickEvent e) {
-        modalBottomSheet.closeModal();
+        modalBottomSheet.close();
     }
 
     @UiHandler("btnCloseModalDismiss")
     void onCloseModalDismiss(ClickEvent e) {
-        modalClosable.closeModal();
+        modalClosable.close();
     }
 }
