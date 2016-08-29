@@ -138,11 +138,11 @@
         <m:MaterialTitle title="Add/Remove/Insert methods" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
             // For adding an item<br/>
-            docTree.getSelectedTree().addItem(item);<br/><br/>
+            docTree.getSelectedItem().addItem(item);<br/><br/>
             // For removing an item<br/>
-            docTree.getSelectedTree().removeItem(item);<br/><br/>
+            docTree.getSelectedItem().removeItem(item);<br/><br/>
             // For inserting an item<br/>
-            docTree.getSelectedTree().insertItem(item, 3);<br/>
+            docTree.getSelectedItem().insertItem(item, 3);<br/>
         </demo:PrettyPre>
     </m:MaterialPanel>
 </ui:UiBinder>
