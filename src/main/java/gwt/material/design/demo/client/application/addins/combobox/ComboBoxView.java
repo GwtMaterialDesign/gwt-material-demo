@@ -216,7 +216,6 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     void onAddOption(ClickEvent e) {
         State newState = new State("Item " + dynamicIndex, "I" + dynamicIndex);
         comboTimeZone16.addItem(newState.getName(), newState);
-        comboTimeZone16.initialize();
         comboTimeZone16.setValue(newState);
         dynamicIndex ++;
     }
