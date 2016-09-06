@@ -128,6 +128,32 @@
           &lt;/m:MaterialPanel><br/>
         </demo:PrettyPre>
 
+        <m:MaterialTitle title="Complete Event" description="We provided an easy way to determine if the Stepper reach the last step, so we fire Complete Event." />
+        <ma:stepper.MaterialStepper ui:field="stepperEvent" shadow="1">
+            <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnEventContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnEventPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnEventContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnEventPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+            <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
+                <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="grey lighten-2"/>
+                <m:MaterialButton ui:field="btnEventContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="blue" textColor="white" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnEventPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
+            </ma:stepper.MaterialStep>
+        </ma:stepper.MaterialStepper>
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;@UiHandler("stepper") <br/>
+            void onCompleteEvent(CompleteEvent event) { <br/>
+            &emsp;event.getLastStep(); // Get the last step <br/>
+            &emsp;stepper.reset(); // Reset the stepper <br/>
+            }
+        </demo:PrettyPre>
+
         <m:MaterialTitle title="Card Steppers" description="You can put your Steppers inside a card component by adding shadow='1'" />
         <ma:stepper.MaterialStepper ui:field="stepperCard" shadow="1">
           <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
