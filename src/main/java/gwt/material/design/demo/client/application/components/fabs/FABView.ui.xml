@@ -19,106 +19,214 @@
   -->
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
-    <ui:style>
+	xmlns:m="urn:import:gwt.material.design.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialTitle title="Fixed Action Button"
+			description="If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page." />
+		<m:MaterialFAB depth="995">
+			<m:MaterialButton type="FLOATING" backgroundColor="blue"
+				iconType="POLYMER" size="LARGE" />
+			<m:MaterialFABList>
+				<m:MaterialAnchorButton type="FLOATING"
+					waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+				<m:MaterialAnchorButton type="FLOATING"
+					waves="LIGHT" backgroundColor="green" iconType="POLYMER" />
+				<m:MaterialAnchorButton type="FLOATING"
+					waves="LIGHT" backgroundColor="red" iconType="POLYMER" />
+				<m:MaterialAnchorButton type="FLOATING"
+					waves="LIGHT" backgroundColor="orange" iconType="POLYMER" />
+				<m:MaterialAnchorButton type="FLOATING"
+					waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+			</m:MaterialFABList>
+		</m:MaterialFAB>
 
-    </ui:style>
-    <g:HTMLPanel>
-        <m:MaterialTitle title="Fixed Action Button" description="If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page."/>
-        <m:MaterialFAB depth="995">
-            <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
-            <m:MaterialFABList>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
-            </m:MaterialFABList>
-        </m:MaterialFAB>
+		<demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+			&emsp;&lt;m:MaterialFAB>
+			<br />
+			&emsp;&lt;m:MaterialAnchorButton type="FLOATING"
+			backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+			<br />
+			&emsp;&lt;m:MaterialFABList>
+			<br />
+			&emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"
+			backgroundColor="blue" iconType="POLYMER"/>
+			<br />
+			&emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"
+			backgroundColor="green" iconType="POLYMER"/>
+			<br />
+			&emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"
+			backgroundColor="red" iconType="POLYMER"/>
+			<br />
+			&emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"
+			backgroundColor="orange" iconType="POLYMER"/>
+			<br />
+			&emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT"
+			backgroundColor="blue" iconType="POLYMER"/>
+			<br />
+			&emsp;&lt;/m:MaterialFABList>
+			<br />
+			&lt;/m:MaterialFAB>
+			<br />
+		</demo:PrettyPre>
 
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialFAB><br/>
-            &emsp;&lt;m:MaterialAnchorButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/><br/>
-            &emsp;&lt;m:MaterialFABList><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/><br/>
-            &emsp;&lt;/m:MaterialFABList><br/>
-            &lt;/m:MaterialFAB><br/>
-        </demo:PrettyPre>
+		<m:MaterialTitle title="Open / Close FAB"
+			description="You can also open the Fixed Action Button Menu programatically." />
+		<m:MaterialButton text="Open" ui:field="btnOpen"
+			backgroundColor="blue" />
+		<m:MaterialButton text="Close" ui:field="btnClose"
+			backgroundColor="white" textColor="black" />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE"
+				height="80px">
+				<m:MaterialFAB ui:field="fab" axis="HORIZONTAL" depth="995"
+					layoutPosition="ABSOLUTE" right="0">
+					<m:MaterialButton type="FLOATING" backgroundColor="blue"
+						iconType="POLYMER" size="LARGE" />
+					<m:MaterialFABList>
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="green" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="red" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="orange" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+					</m:MaterialFABList>
+				</m:MaterialFAB>
+			</m:MaterialColumn>
+		</m:MaterialRow>
 
-        <m:MaterialTitle title="Open / Close FAB" description="You can also open the Fixed Action Button Menu programatically."/>
-        <m:MaterialButton text="Open" ui:field="btnOpen" backgroundColor="blue" />
-        <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="white" textColor="black"/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
-                <m:MaterialFAB ui:field="fab" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
-                    <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
-                    </m:MaterialFABList>
-                </m:MaterialFAB>
-            </m:MaterialColumn>
-        </m:MaterialRow>
+		<demo:PrettyPre>
+			&emsp;@UiField MaterialFAB fab;
+			<br />
+			<br />
 
-        <demo:PrettyPre>
-            &emsp;@UiField MaterialFAB fab;<br/><br/>
+			fab.openFAB();
+			<br />
+			fab.closeFAB();
+			<br />
+		</demo:PrettyPre>
 
-            fab.openFAB();<br/>
-            fab.closeFAB();<br/>
-        </demo:PrettyPre>
+		<m:MaterialTitle title="FAB Type : Horizontal"
+			description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'." />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE"
+				height="80px">
+				<m:MaterialFAB axis="HORIZONTAL" depth="995"
+					layoutPosition="ABSOLUTE" right="0">
+					<m:MaterialButton type="FLOATING" backgroundColor="blue"
+						iconType="POLYMER" size="LARGE" />
+					<m:MaterialFABList>
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="green" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="red" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="orange" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+					</m:MaterialFABList>
+				</m:MaterialFAB>
+			</m:MaterialColumn>
+		</m:MaterialRow>
 
-        <m:MaterialTitle title="FAB Type : Horizontal" description="Creating a horizontal FAB is easy! Just add axis='HORIZONTAL'."/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
-                <m:MaterialFAB axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
-                    <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
-                    </m:MaterialFABList>
-                </m:MaterialFAB>
-            </m:MaterialColumn>
-        </m:MaterialRow>
+		<demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+			&emsp;&lt;m:MaterialFAB axis="HORIZONTAL">
+			<br />
+			&emsp;&lt;-- Content here -->
+			<br />
+			&lt;/m:MaterialFAB>
+			<br />
+		</demo:PrettyPre>
 
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialFAB axis="HORIZONTAL"><br/>
-            &emsp;&lt;-- Content here --><br/>
-            &lt;/m:MaterialFAB><br/>
-        </demo:PrettyPre>
+		<m:MaterialTitle title="FAB Type : Click Only"
+			description="If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), Just add type='CLICK_ONLY' " />
+		<m:MaterialRow>
+			<m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE"
+				height="80px">
+				<m:MaterialFAB type="CLICK_ONLY" axis="HORIZONTAL"
+					depth="995" layoutPosition="ABSOLUTE" right="0">
+					<m:MaterialButton type="FLOATING" backgroundColor="blue"
+						iconType="POLYMER" size="LARGE" />
+					<m:MaterialFABList>
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="green" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="red" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="orange" iconType="POLYMER" />
+						<m:MaterialAnchorButton type="FLOATING"
+							waves="LIGHT" backgroundColor="blue" iconType="POLYMER" />
+					</m:MaterialFABList>
+				</m:MaterialFAB>
+			</m:MaterialColumn>
+		</m:MaterialRow>
 
-        <m:MaterialTitle title="FAB Type : Click Only" description="If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), Just add type='CLICK_ONLY' "/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
-                <m:MaterialFAB type="CLICK_ONLY" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
-                    <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
-                    </m:MaterialFABList>
-                </m:MaterialFAB>
-            </m:MaterialColumn>
-        </m:MaterialRow>
+		<demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+			&emsp;&lt;m:MaterialFAB type="CLICK_ONLY">
+			<br />
+			&emsp;&lt;-- Content here -->
+			<br />
+			&lt;/m:MaterialFAB>
+			<br />
+		</demo:PrettyPre>
 
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialFAB type="CLICK_ONLY"><br/>
-            &emsp;&lt;-- Content here --><br/>
-            &lt;/m:MaterialFAB><br/>
-        </demo:PrettyPre>
 
-    </g:HTMLPanel>
+		<m:MaterialTitle title="FAB view- Java code example" 
+					description="If you want to create fab view using only java." 
+					/>
+
+		<demo:PrettyPre addStyleNames="lang-java z-depth-1">
+			public class Fab extends Composite {<br />
+			    public Fab() {<br />
+				MaterialFAB fab = new MaterialFAB();<br /><br />
+				
+				// initial/first/always visible button to be always displayed<br />
+				MaterialButton btnInitial = new MaterialButton();<br />
+				btnInitial.setIconType(IconType.ADD);<br />
+				btnInitial.setType(ButtonType.FLOATING);<br />
+				btnInitial.setSize(ButtonSize.LARGE);<br />
+				btnInitial.setBackgroundColor("red");<br />
+				fab.add(btnInitial);<br /><br />
+				
+				// List of FAB buttons that will be hiden.<br /> 
+				// This FAB buttons will show up when User hover on initial button <br />
+				MaterialFABList fabList = new MaterialFABList();<br /><br />
+				
+				// Item 1<br />
+				MaterialButton btnItem1 = new MaterialButton();<br />
+				btnItem1.setType(ButtonType.FLOATING);<br />
+				btnItem1.setIconType(IconType.ACCESS_ALARMS);<br />
+				btnItem1.setBackgroundColor("blue");<br />
+				fabList.add(btnItem1);<br /><br />
+				
+				// Item 2<br />
+				MaterialButton btnItem2 = new MaterialButton();<br />
+				btnItem2.setType(ButtonType.FLOATING);<br />
+				btnItem2.setIconType(IconType.AC_UNIT);<br />
+				btnItem2.setBackgroundColor("purple");<br />
+				fabList.add(btnItem2);<br />
+				fab.add(fabList);<br />
+				initWidget(fab);<br />
+			}<br />
+			}<br />
+		</demo:PrettyPre>
+		
+		<br />
+		And then in Your view use just:<br />
+		<demo:PrettyPre addStyleNames="lang-java z-depth-1">
+			yoursViewThatYouWouldLikeToAddFab.add(new Fab());
+		</demo:PrettyPre>
+
+	</g:HTMLPanel>
 </ui:UiBinder>
