@@ -71,17 +71,17 @@
     <m:MaterialRow>
       <m:MaterialColumn grid="l4">
         <m:MaterialPreLoader size="BIG">
-          <m:MaterialSpinner color="blue-only" />
+          <m:MaterialSpinner color="BLUE_ONLY" />
         </m:MaterialPreLoader>
       </m:MaterialColumn>
       <m:MaterialColumn grid="l4">
         <m:MaterialPreLoader>
-          <m:MaterialSpinner color="red-only" />
+          <m:MaterialSpinner color="RED_ONLY" />
         </m:MaterialPreLoader>
       </m:MaterialColumn>
       <m:MaterialColumn grid="l4">
         <m:MaterialPreLoader size="SMALL">
-          <m:MaterialSpinner color="yellow-only" />
+          <m:MaterialSpinner color="YELLOW_ONLY" />
         </m:MaterialPreLoader>
       </m:MaterialColumn>
     </m:MaterialRow>
