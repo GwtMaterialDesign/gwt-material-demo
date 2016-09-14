@@ -243,8 +243,8 @@ public class StandardTable extends Composite {
                         badge.setFontSize(12, Unit.PX);
                         content.add(badge);
 
-                        MaterialButton btn = new MaterialButton(ButtonType.RAISED,
-                                "was made", new MaterialIcon(IconType.FULLSCREEN));
+                        MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
+                                new MaterialIcon(IconType.FULLSCREEN));
                         content.add(btn);
 
                         MaterialTextBox textBox = new MaterialTextBox();
