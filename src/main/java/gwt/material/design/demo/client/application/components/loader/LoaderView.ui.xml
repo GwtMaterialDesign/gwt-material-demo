@@ -115,6 +115,7 @@
       navBar.hideLoader();<br/>
     </demo:PrettyPre>
   
+    <m:MaterialTitle title="Specific Panels" description="You can attach the loader / progress to any panels" />
     <m:MaterialRow>
       <m:MaterialColumn grid="l12 m12 s12">
         <m:MaterialButton ui:field="btnLoader" text="Show Loader"/>
