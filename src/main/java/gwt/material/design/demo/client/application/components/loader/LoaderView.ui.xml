@@ -114,78 +114,75 @@
       // Hide NavBar Loader<br/>
       navBar.hideLoader();<br/>
     </demo:PrettyPre>
-
-    <m:MaterialTitle title="Collapsible Integration"/>
-    <m:MaterialCollapsible type="POPOUT">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemOne">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemTwo">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemThree">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem ui:field="collapseItemOne"><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/><br/>
-
-      &emsp;&lt;!-- Other Items --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
+  
+    <m:MaterialRow>
+      <m:MaterialColumn grid="l12 m12 s12">
+        <m:MaterialButton ui:field="btnLoader" text="Show Loader"/>
+        <m:MaterialButton ui:field="btnProgress" text="Show Progress"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="l6 m6 s12">
+        <m:MaterialCard>
+          <m:MaterialCardContent padding="0" ui:field="cardContent">
+            <m:MaterialRow marginBottom="0" padding="12">
+              <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+              <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
+              <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
+            </m:MaterialRow>
+            <m:MaterialRow marginBottom="0" padding="20">
+              <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
+              <m:MaterialRow marginBottom="0">
+                <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+              </m:MaterialRow>
+            </m:MaterialRow>
+          </m:MaterialCardContent>
+          <m:MaterialCardImage>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
+          </m:MaterialCardImage>
+          <m:MaterialCardAction padding="0">
+            <m:MaterialRow margin="12">
+              <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
+              <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="12" marginLeft="12"/>
+              <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="12" marginLeft="12"/>
+              <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
+            </m:MaterialRow>
+            <!-- Collection items for comments -->
+            <m:MaterialCollection>
+              <m:MaterialCollectionItem type="AVATAR">
+                <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
+                <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
+              </m:MaterialCollectionItem>
+            </m:MaterialCollection>
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+    </m:MaterialRow>
     
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;@UiHandler("collapseItemOne")<br/>
-      void onShowCollapseProgress(ClickEvent e){<br/>
-      &emsp;collapseItemOne.showProgress(ProgressType.INDETERMINATE);<br/>
-      &emsp;Timer t = new Timer() {<br/>
+      &emsp;@UiHandler("btnLoader")<br/>
+      void onShowLoaderSpecific(ClickEvent e) {<br/>
+      &emsp;Timer timer = new Timer() {<br/>
       &emsp;&emsp;@Override<br/>
       &emsp;&emsp;public void run() {<br/>
-      &emsp;&emsp;&emsp;collapseItemOne.hideProgress();<br/>
+      &emsp;&emsp;&emsp;MaterialLoader.showLoading(true, cardContent);<br/>
       &emsp;&emsp;}<br/>
       &emsp;};<br/>
-      &emsp;t.schedule(3000);<br/>
-      }<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="plete Integration" />
-    <m.autocomplete:MaterialAutoComplete ui:field="acList" placeholder="Your State"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      @UiField MaterialAutCompleteplete acList;<br/><br/>
-
-      // Show Progress<br/>
-      acList.showProgress(true);<br/><br/>
-
-      // Hide Progress<br/>
-      acList.showProgress(false);<br/>
+      &emsp;timer.schedule(2000);<br/>
+      }<br/><br/>
+  
+      @UiHandler("btnProgress")<br/>
+      void onShowProgressSpecific(ClickEvent e) {<br/>
+      &emsp;Timer timer = new Timer() {<br/>
+      &emsp;&emsp;@Override<br/>
+      &emsp;&emsp;public void run() {<br/>
+      &emsp;&emsp;&emsp;MaterialLoader.showProgress(true, cardContent);<br/>
+      &emsp;&emsp;}<br/>
+      &emsp;};<br/>
+      &emsp;timer.schedule(2000);<br/>
+      }
     </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>
