@@ -34,10 +34,6 @@
   </ui:style>
 
   <m:MaterialRow>
-    <m:MaterialRow>
-      <m:MaterialDatePicker grid="s12" placeholder="Placeholder" iconType="ACCESS_ALARMS" />
-      <ma:timepicker.MaterialTimePicker grid="s12" placeholder="Placeholder" iconType="DASHBOARD" />
-    </m:MaterialRow>
     <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
     <m:MaterialTextBox placeholder="First Name" grid="s12"/>
     <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>

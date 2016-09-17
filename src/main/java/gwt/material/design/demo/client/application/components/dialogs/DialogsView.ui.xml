@@ -57,12 +57,9 @@
     <m:MaterialTitle title="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions."/>
     <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback" backgroundColor="blue" addStyleNames="{style.btn}"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;new MaterialToast(new Runnable() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void run() {<br/>
-      &emsp;&emsp;MaterialToast.fireToast("BANG!");<br/>
-      &emsp;}<br/>
-      }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);<br/>
+      &emsp;new MaterialToast(() -> { <br/>
+      &emsp;MaterialToast.fireToast("BANG!"); <br/>
+        }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Modals" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>

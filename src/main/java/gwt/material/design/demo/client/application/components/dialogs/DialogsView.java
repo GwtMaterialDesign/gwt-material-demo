@@ -63,11 +63,8 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
     @UiHandler("btnToastCallback")
     void onToastCallback(ClickEvent e) {
-        new MaterialToast(new Runnable() {
-            @Override
-            public void run() {
-                MaterialToast.fireToast("BANG!");
-            }
+        new MaterialToast(() -> {
+            MaterialToast.fireToast("BANG!");
         }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
     }
 
