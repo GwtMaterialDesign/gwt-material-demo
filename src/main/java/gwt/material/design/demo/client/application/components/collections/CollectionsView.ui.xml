@@ -131,21 +131,21 @@
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR">
-        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR">
-        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR">
-        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -174,21 +174,21 @@
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-        <m:MaterialIcon iconType="FOLDER" iconColor="white" backgroundColor="blue" circle="true"/>
+        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-        <m:MaterialIcon iconType="INSERT_CHART" iconColor="white" backgroundColor="red" circle="true"/>
+        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
-        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="white" backgroundColor="amber" circle="true"/>
+        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -215,7 +215,7 @@
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
         <m:MaterialCollectionSecondary>
-          <m:MaterialIcon iconType="STAR" iconColor="blue"/>
+          <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
@@ -224,7 +224,7 @@
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
         <m:MaterialCollectionSecondary>
-          <m:MaterialIcon iconType="STAR" iconColor="blue"/>
+          <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
@@ -233,7 +233,7 @@
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
         <m:MaterialCollectionSecondary>
-          <m:MaterialIcon iconType="STAR" iconColor="blue"/>
+          <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissable="true">
@@ -242,7 +242,7 @@
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
         <m:MaterialCollectionSecondary>
-          <m:MaterialIcon iconType="STAR" iconColor="blue"/>
+          <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
@@ -255,7 +255,7 @@
       &emsp;&emsp;&lt;m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/><br/>
       &emsp;&emsp;&lt;m:MaterialCollectionSecondary><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="STAR" iconColor="blue"/><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="STAR" iconColor="BLUE"/><br/>
       &emsp;&emsp;&lt;/m:MaterialCollectionSecondary><br/>
       &emsp;&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection><br/>
@@ -352,19 +352,19 @@
     <m:MaterialTitle title="Clickable Items with Secondary Controls"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT">
-        <m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" backgroundColor="white" textColor="black"/>
+        <m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" backgroundColor="WHITE" textColor="BLACK"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialSwitch value="true"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem ui:field="collectBluetooth" type="CHECKBOX" waves="DEFAULT">
-        <m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" backgroundColor="white" textColor="black"/>
+        <m:MaterialLink text="Bluetooth" iconPosition="LEFT" iconType="BLUETOOTH" backgroundColor="WHITE" textColor="BLACK"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialSwitch value="true"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem ui:field="collectData" type="CHECKBOX" waves="DEFAULT">
-        <m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE" backgroundColor="white" textColor="black"/>
+        <m:MaterialLink text="Data Usage" iconPosition="LEFT" iconType="DATA_USAGE" backgroundColor="WHITE" textColor="BLACK"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialSwitch value="true"/>
         </m:MaterialCollectionSecondary>
@@ -374,7 +374,7 @@
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT"><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" iconColor="white" textColor="black"/><br/>
+      &emsp;&emsp;&lt;m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" iconColor="WHITE" textColor="BLACK"/><br/>
       &emsp;&emsp;&lt;m:MaterialCollectionSecondary><br/>
       &emsp;&emsp;&emsp;&lt;m:MaterialSwitch value="true"/><br/>
       &emsp;&emsp;&lt;/m:MaterialCollectionSecondary><br/>

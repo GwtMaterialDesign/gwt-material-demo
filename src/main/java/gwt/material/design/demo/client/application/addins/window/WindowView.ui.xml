@@ -64,18 +64,18 @@
 
         <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
         <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" backgroundColor="BLUE" />
-        <ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="green" toolbarColor="green darken-1" width="70%" title="Styles">
+        <ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles">
             <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
-                <m:MaterialIcon iconType="ANDROID" iconColor="green" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                <m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
                 <m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
                 <m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" />
             </m:MaterialPanel>
         </ma:window.MaterialWindow>
         
         <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="green" toolbarColor="green darken-1" width="70%" title="Styles"><br/>
+            &emsp;&lt;ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles"><br/>
             &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="ANDROID" iconColor="green" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+            &emsp;&emsp;&lt;m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>
@@ -110,7 +110,7 @@
 
         <m:MaterialTitle title="Window with tabs" />
         <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE" backgroundColor="BLUE"/>
-        <ma:window.MaterialWindow ui:field="windowTab" backgroundColor="grey lighten-4" title="Window with Tabs" toolbarColor="BLUE darken-2">
+        <ma:window.MaterialWindow ui:field="windowTab" backgroundColor="GREY_LIGHTEN_4" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2">
             <m:MaterialRow backgroundColor="BLUE" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1">
                 <m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/>
                 <m:MaterialColumn grid="l6 m6 s9">
@@ -135,12 +135,12 @@
                 <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
             </m:MaterialPanel>
             <m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
-                <m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="purple" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                <m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
                 <m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
                 <m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" />
             </m:MaterialPanel>
             <m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
-                <m:MaterialIcon iconType="PALETTE" iconColor="red" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                <m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
                 <m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
                 <m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" />
             </m:MaterialPanel>
@@ -148,7 +148,7 @@
 
         
         <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE darken-2"><br/>
+            &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2"><br/>
             &emsp;&lt;m:MaterialRow backgroundColor="BLUE" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/><br/>
             &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m6 s9"><br/>
@@ -173,12 +173,12 @@
             &emsp;&emsp;&lt;m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>
             &emsp;&lt;m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="purple" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+            &emsp;&emsp;&lt;m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>
             &emsp;&lt;m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="PALETTE" iconColor="red" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+            &emsp;&emsp;&lt;m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>

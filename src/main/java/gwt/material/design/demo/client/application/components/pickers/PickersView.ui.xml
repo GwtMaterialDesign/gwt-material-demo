@@ -109,7 +109,7 @@
     <m:MaterialTitle title="Language Translations" description="With API we have supported 43 languages into the datepicker component."/>
     <m:MaterialRow>
       <m:MaterialColumn grid="l4 m6 s12">
-        <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="grey"/>
+        <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="GREY"/>
         <m:MaterialListBox ui:field="lstLanguage"/>
       </m:MaterialColumn>
       <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>

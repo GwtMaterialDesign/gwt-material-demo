@@ -28,42 +28,42 @@
     <g:HTMLPanel>
         <m:MaterialTitle title="Fixed Action Button" description="If you want a fixed floating action button, you can add multiple actions that will appear on hover. Our demo is in the bottom righthand corner of the page."/>
         <m:MaterialFAB depth="995">
-            <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+            <m:MaterialButton type="FLOATING" backgroundColor="BLUE" iconType="POLYMER" size="LARGE"/>
             <m:MaterialFABList>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
+                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="POLYMER"/>
+                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE"  iconType="POLYMER"/>
             </m:MaterialFABList>
         </m:MaterialFAB>
 
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m:MaterialFAB><br/>
-            &emsp;&lt;m:MaterialAnchorButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/><br/>
+            &emsp;&lt;m:MaterialAnchorButton type="FLOATING" backgroundColor="BLUE" iconType="POLYMER" size="LARGE"/><br/>
             &emsp;&lt;m:MaterialFABList><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/><br/>
-            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/><br/>
+            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="POLYMER"/><br/>
+            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/><br/>
+            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/><br/>
+            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/><br/>
+            &emsp;&emsp;&lt;m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE"  iconType="POLYMER"/><br/>
             &emsp;&lt;/m:MaterialFABList><br/>
             &lt;/m:MaterialFAB><br/>
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Open / Close FAB" description="You can also open the Fixed Action Button Menu programatically."/>
-        <m:MaterialButton text="Open" ui:field="btnOpen" backgroundColor="blue" />
-        <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="white" textColor="black"/>
+        <m:MaterialButton text="Open" ui:field="btnOpen" backgroundColor="BLUE" />
+        <m:MaterialButton text="Close" ui:field="btnClose" backgroundColor="WHITE" textColor="BLACK"/>
         <m:MaterialRow>
             <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                 <m:MaterialFAB ui:field="fab" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+                    <m:MaterialButton type="FLOATING" backgroundColor="BLUE" iconType="POLYMER" size="LARGE"/>
                     <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE"  iconType="POLYMER"/>
                     </m:MaterialFABList>
                 </m:MaterialFAB>
             </m:MaterialColumn>
@@ -80,13 +80,13 @@
         <m:MaterialRow>
             <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                 <m:MaterialFAB axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+                    <m:MaterialButton type="FLOATING" backgroundColor="BLUE" iconType="POLYMER" size="LARGE"/>
                     <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE"  iconType="POLYMER"/>
                     </m:MaterialFABList>
                 </m:MaterialFAB>
             </m:MaterialColumn>
@@ -102,20 +102,20 @@
         <m:MaterialRow>
             <m:MaterialColumn grid="l6 m6 s12" layoutPosition="RELATIVE" height="80px">
                 <m:MaterialFAB type="CLICK_ONLY" axis="HORIZONTAL" depth="995" layoutPosition="ABSOLUTE" right="0">
-                    <m:MaterialButton type="FLOATING" backgroundColor="blue" iconType="POLYMER" size="LARGE"/>
+                    <m:MaterialButton type="FLOATING" backgroundColor="BLUE" iconType="POLYMER" size="LARGE"/>
                     <m:MaterialFABList>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue" iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="green"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="red"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="orange"  iconType="POLYMER"/>
-                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="blue"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE" iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="GREEN"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="RED"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="ORANGE"  iconType="POLYMER"/>
+                        <m:MaterialAnchorButton type="FLOATING" waves="LIGHT" backgroundColor="BLUE"  iconType="POLYMER"/>
                     </m:MaterialFABList>
                 </m:MaterialFAB>
             </m:MaterialColumn>
         </m:MaterialRow>
 
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialFAB type="CLICK_ONLY"><br/>
+            &emsp;&lt;m:MaterialFAB type="CLICK_ONLY"><br />
             &emsp;&lt;-- Content here --><br/>
             &lt;/m:MaterialFAB><br/>
         </demo:PrettyPre>

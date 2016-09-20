@@ -25,13 +25,13 @@
 
     <m:MaterialRow>
         <m:MaterialColumn grid="l4">
-            <m:MaterialCard backgroundColor="white" >
+            <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT">
                     <m:MaterialImage resource="{res.template_starter}"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
-                    <m:MaterialCardTitle text="Starter Template" textColor="black"/>
+                    <m:MaterialCardTitle text="Starter Template" textColor="BLACK"/>
                 </m:MaterialCardContent>
 
                 <m:MaterialCardAction>
@@ -42,13 +42,13 @@
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l4">
-            <m:MaterialCard backgroundColor="white" >
+            <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT">
                     <m:MaterialImage resource="{res.template_wrenx}"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
-                    <m:MaterialCardTitle text="Map Template" textColor="black"/>
+                    <m:MaterialCardTitle text="Map Template" textColor="BLACK"/>
                 </m:MaterialCardContent>
 
                 <m:MaterialCardAction>

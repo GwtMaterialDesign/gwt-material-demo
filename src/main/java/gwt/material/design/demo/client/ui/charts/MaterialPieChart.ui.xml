@@ -29,16 +29,16 @@
 
 	<m:MaterialColumn grid="s12 m6 l4">
 	    <m:MaterialCard>
-			<m:MaterialCardTitle text="Pie Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black" addStyleNames="{style.block}"/>
+			<m:MaterialCardTitle text="Pie Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK" addStyleNames="{style.block}"/>
 			<m:MaterialCardContent ui:field="cardContent" addStyleNames="no-padding"/>
 				
 			<m:MaterialCardReveal>
-				<m:MaterialCardTitle text="Pie Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+				<m:MaterialCardTitle text="Pie Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 			</m:MaterialCardReveal>
 				
 			<m:MaterialCardAction>
-			 	<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.ui.xml" text="UI Binder" textColor="blue" />
-				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.java" text="Java" textColor="blue" />
+			 	<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.ui.xml" text="UI Binder" textColor="BLUE" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialPieChart.java" text="Java" textColor="BLUE" />
 			</m:MaterialCardAction>
 		</m:MaterialCard>
 		

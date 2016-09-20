@@ -44,11 +44,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.MaterialButtonCell;
 import gwt.material.design.client.base.MaterialCheckBoxCell;
 import gwt.material.design.client.base.MaterialImageCell;
-import gwt.material.design.client.constants.ButtonType;
-import gwt.material.design.client.constants.IconPosition;
-import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.constants.ImageType;
-import gwt.material.design.client.constants.WavesType;
+import gwt.material.design.client.constants.*;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialToast;
@@ -184,7 +180,7 @@ public class DatagridView extends ViewImpl implements DatagridPresenter.MyView {
             public MaterialButton getValue(OrderDTO object) {
                 MaterialButton mb = new MaterialButton(ButtonType.RAISED);
                 mb.setText("Show log");
-                mb.setBackgroundColor("blue");
+                mb.setBackgroundColor(Color.BLUE);
                 mb.setWaves(WavesType.LIGHT);
                 mb.setIconType(IconType.POLYMER);
                 mb.setIconPosition(IconPosition.LEFT);

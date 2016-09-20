@@ -35,7 +35,7 @@
 
       <m:MaterialTitle title="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu."/>
       <!-- Activator -->
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-2"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-2"/>
       <!-- My Drop Down -->
         <m:MaterialDropDown activator="dp-2" constrainWidth="true">
         <m:MaterialLink text="First" />
@@ -46,7 +46,7 @@
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialTitle title="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu."/><br/>
         &lt;!-- Activator --><br/>
-        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-2"/><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-2"/><br/>
         &lt;!-- My Drop Down --><br/>
         &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true"><br/>
         &emsp;&lt;m:MaterialLink text="First" /><br/>
@@ -57,7 +57,7 @@
 
       <m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/>
       <!-- Activator -->
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-3"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-3"/>
       <!-- My Drop Down -->
       <m:MaterialDropDown activator="dp-3" constrainWidth="true">
         <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -68,7 +68,7 @@
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/><br/>
         &lt;!-- Activator --><br/>
-        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-3"/><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-3"/><br/>
         &lt;!-- My Drop Down --><br/>
         &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true"><br/>
         &emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/><br/>
@@ -78,60 +78,60 @@
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Icon Dropdown" />
-      <m:MaterialIcon iconType="PHONE" iconColor="black" activates="dp-4" waves="DEFAULT" grid="l2"/>
+      <m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT" grid="l2"/>
 
       <m:MaterialDropDown activator="dp-4" constrainWidth="true">
-        <m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
-        <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="black" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
-        <m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
+        <m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" />
+        <m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/>
+        <m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" />
       </m:MaterialDropDown>
       
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;!-- Activator --><br/>
-        &lt;m:MaterialIcon iconType="PHONE" iconColor="black" activates="dp-4" waves="DEFAULT" grid="l2"/><br/>
+        &lt;m:MaterialIcon iconType="PHONE" iconColor="BLACK" activates="dp-4" waves="DEFAULT" grid="l2"/><br/>
         &lt;!-- My Drop Down --><br/>
         &lt;m:MaterialDropDown activator="dp-4" constrainWidth="false"><br/>
-        &emsp;&lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="DIALPAD" iconPosition="LEFT" text="Redial" /><br/>
-        &emsp;&lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="black" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/><br/>
-        &emsp;&lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="black" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" /><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkDialPad" fontSize="0.9em" waves="DEFAULT" textColor="BLACK" iconType="DIALPAD" iconPosition="LEFT" text="Redial" /><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkVoicemail" fontSize="0.9em" waves="DEFAULT" enabled="false" textColor="BLACK" iconType="VOICEMAIL" iconPosition="LEFT" text="Check voicemail" separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink ui:field="linkNotification" fontSize="0.9em" waves="DEFAULT" textColor="BLACK" iconType="NOTIFICATIONS_OFF" iconPosition="LEFT" text="Disable Notification" /><br/>
         &lt;/m:MaterialDropDown><br/>
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
-      <m:MaterialNavBar backgroundColor="blue" width="100%">
+      <m:MaterialNavBar backgroundColor="BLUE" width="100%">
         <m:MaterialNavBrand>App Name</m:MaterialNavBrand>
         <m:MaterialNavSection position="RIGHT">
           <!--Activator -->
-          <m:MaterialLink text="Dropdown" activates="dp-5" textColor="white" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+          <m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
         </m:MaterialNavSection>
       </m:MaterialNavBar>
 
       <!-- My Dropdown -->
       <m:MaterialDropDown activator="dp-5" constrainWidth="true">
-        <m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 1" />
-        <m:MaterialLink waves="DEFAULT" enabled="false" textColor="black" text="Drop 2"  separator="true"/>
-        <m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 3" />
+        <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" />
+        <m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"  separator="true"/>
+        <m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" />
       </m:MaterialDropDown>
       
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/>
-        &emsp;&lt;m:MaterialNavBrand><br/>App Name&lt;/m:MaterialNavBrand><br/>
+        &emsp;&lt;m:MaterialNavBar backgroundColor="BLUE" width="100%"><br/>
+        &emsp;&lt;m:MaterialNavBrand><br />App Name&lt;/m:MaterialNavBrand><br/>
         &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
         &emsp;&emsp;&lt;!--Activator --><br/>
-        &emsp;&emsp;&lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="white" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/><br/>
         &emsp;&lt;/m:MaterialNavSection><br/>
         &lt;/m:MaterialNavBar><br/><br/>
 
         &lt;!-- My Dropdown --><br/>
         &lt;m:MaterialDropDown activator="dp-5" constrainWidth="true"><br/>
-        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 1" /><br/>
-        &emsp;&lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="black" text="Drop 2"  separator="true"/><br/>
-        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="black" text="Drop 3" /><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 1" /><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" enabled="false" textColor="BLACK" text="Drop 2"  separator="true"/><br/>
+        &emsp;&lt;m:MaterialLink waves="DEFAULT" textColor="BLACK" text="Drop 3" /><br/>
         &lt;/m:MaterialDropDown><br/>
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Selection Event" />
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="white" backgroundColor="blue" activates="dp-selection"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-selection"/>
       <!-- My Drop Down -->
       <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
         <m:MaterialLink text="First" />

@@ -67,7 +67,7 @@
 
       <m:MaterialTitle title="Icon inside MaterialLink"
                        description="You can add in your material link an icon instance by adding icon attribute" />
-      <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="red" iconType="FAVORITE" iconPosition="LEFT" />
+      <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE" iconPosition="LEFT" />
 
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &lt;m:MaterialLink fontSize="2em" text="I love Material Design" textColor="red" iconType="FAVORITE" iconPosition="LEFT" />

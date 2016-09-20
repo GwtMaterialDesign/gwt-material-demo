@@ -32,6 +32,7 @@ import gwt.material.design.addins.client.overlay.MaterialOverlay;
 import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
 import gwt.material.design.addins.client.tree.MaterialTree;
 import gwt.material.design.addins.client.tree.MaterialTreeItem;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialTextBox;
@@ -109,7 +110,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
         MaterialTreeItem item = new MaterialTreeItem();
         item.setText(txtName.getText());
         item.setIconType(IconType.FOLDER);
-        item.setIconColor("blue");
+        item.setIconColor(Color.BLUE);
         docTree.getSelectedItem().addItem(item);
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
