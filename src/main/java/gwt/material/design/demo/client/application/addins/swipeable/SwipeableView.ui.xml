@@ -41,9 +41,9 @@
 
         <m:MaterialTitle title="Note" description="This component will work only on touch screen devices but you can set any action button to be an alternative for swiping on desktop devices." />
         <m:MaterialTitle title="Markup" description="Wrap your items with MaterialSwipeablePanel to make it swipeable." />
-        <ma:swipeable.MaterialSwipeablePanel shadow="1" backgroundColor="white" padding="12">
+        <ma:swipeable.MaterialSwipeablePanel shadow="1" backgroundColor="WHITE" padding="12">
             <!-- MaterialLabel -->
-            <m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="yellow" padding="12" />
+            <m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="YELLOW" padding="12" />
             <!-- MaterialCard -->
             <m:MaterialCard ui:field="card1">
                 <m:MaterialCardContent>
@@ -51,7 +51,7 @@
                 </m:MaterialCardContent>
             </m:MaterialCard>
             <!-- MaterialCard -->
-            <m:MaterialCard ui:field="card2" backgroundColor="blue" textColor="white">
+            <m:MaterialCard ui:field="card2" backgroundColor="BLUE" textColor="WHITE">
                 <m:MaterialCardContent>
                     <m:MaterialLabel text="This is another Card Component that is swipeable." />
                 </m:MaterialCardContent>
@@ -59,9 +59,9 @@
         </ma:swipeable.MaterialSwipeablePanel>
         
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:swipeable.MaterialSwipeablePanel shadow="1" backgroundColor="white" padding="12"><br/>
+            &emsp;&lt;ma:swipeable.MaterialSwipeablePanel shadow="1" backgroundColor="WHITE" padding="12"><br/>
             &emsp;&lt;!-- MaterialLabel --><br/>
-            &emsp;&lt;m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="yellow" padding="12" /><br/>
+            &emsp;&lt;m:MaterialLabel text="You can swipe native components. This is a plain label" backgroundColor="YELLOW" padding="12" /><br/>
             &emsp;&lt;!-- MaterialCard --><br/>
             &emsp;&lt;m:MaterialCard ui:field="card1"><br/>
             &emsp;&emsp;&lt;m:MaterialCardContent><br/>
@@ -69,7 +69,7 @@
             &emsp;&emsp;&lt;/m:MaterialCardContent><br/>
             &emsp;&lt;/m:MaterialCard><br/>
             &emsp;&lt;!-- MaterialCard --><br/>
-            &emsp;&lt;m:MaterialCard ui:field="card2" backgroundColor="blue" textColor="white"><br/>
+            &emsp;&lt;m:MaterialCard ui:field="card2" backgroundColor="BLUE" textColor="WHITE"><br/>
             &emsp;&emsp;&lt;m:MaterialCardContent><br/>
             &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="This is another Card Component that is swipeable." /><br/>
             &emsp;&emsp;&lt;/m:MaterialCardContent><br/>
@@ -78,7 +78,7 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Swipe Right / Left" description="We added a functionality to set the swipe events." />
-        <ma:swipeable.MaterialSwipeablePanel ui:field="swipeablePanel" shadow="1" backgroundColor="white" padding="12">
+        <ma:swipeable.MaterialSwipeablePanel ui:field="swipeablePanel" shadow="1" backgroundColor="WHITE" padding="12">
             <!-- Item 1 -->
             <m:MaterialLabel margin="8" padding="12" text="Swipeable Item 1" shadow="1"/>
             <!-- Item 2 -->
@@ -102,7 +102,7 @@
 
 
         <m:MaterialTitle title="Ignore Items" description="You can easily ignore swipeable elements by calling the container's method ignore(widget1, widget2, ...)" />
-        <ma:swipeable.MaterialSwipeablePanel ui:field="swipeableDisablePanel" shadow="1" backgroundColor="white" padding="12">
+        <ma:swipeable.MaterialSwipeablePanel ui:field="swipeableDisablePanel" shadow="1" backgroundColor="WHITE" padding="12">
             <!-- Item 1 -->
             <m:MaterialLabel margin="8" padding="12" text="Swipeable Item 1" shadow="1"/>
             <!-- Item 2 -->
@@ -111,7 +111,7 @@
             <m:MaterialLabel margin="8" ui:field="item3" padding="12" text="Swipeable Item 3 (Disabled)" shadow="1"/>
         </ma:swipeable.MaterialSwipeablePanel>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:swipeable.MaterialSwipeablePanel ui:field="swipeableDisablePanel" shadow="1" backgroundColor="white" padding="12"><br/>
+            &emsp;&lt;ma:swipeable.MaterialSwipeablePanel ui:field="swipeableDisablePanel" shadow="1" backgroundColor="WHITE" padding="12"><br/>
             &emsp;&lt;!-- Item 1 --><br/>
             &emsp;&lt;m:MaterialLabel padding="12" text="Swipeable Item 1" shadow="1"/><br/>
             &emsp;&lt;!-- Item 2 --><br/>

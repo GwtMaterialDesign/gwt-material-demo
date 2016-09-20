@@ -24,28 +24,28 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
         <m:MaterialTitle title="Introduction" />
-        <m:MaterialPanel backgroundColor="grey lighten-4" padding="10">
-            <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
+            <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="Default" fontSize="1.5em"/>
             </m:MaterialPanel>
 
-            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="With Inertia" fontSize="1.5em"/>
             </m:MaterialPanel>
 
-            <m:MaterialPanel ui:field="endOnlyPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+            <m:MaterialPanel ui:field="endOnlyPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="End Only" fontSize="1.5em"/>
             </m:MaterialPanel>
 
-            <m:MaterialPanel ui:field="selfRestrict" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+            <m:MaterialPanel ui:field="selfRestrict" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="Self Restrict" fontSize="1.5em"/>
             </m:MaterialPanel>
 
-            <m:MaterialPanel ui:field="restrictPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+            <m:MaterialPanel ui:field="restrictPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="Rect Restrict" fontSize="1.5em"/>
             </m:MaterialPanel>
@@ -88,8 +88,8 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Events" />
-        <m:MaterialPanel padding="10" backgroundColor="grey lighten-4">
-            <m:MaterialPanel ui:field="eventPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+        <m:MaterialPanel padding="10" backgroundColor="GREY_LIGHTEN_4">
+            <m:MaterialPanel ui:field="eventPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel ui:field="lblStarted" text="Drag Started" visible="false"/>
                 <m:MaterialLabel ui:field="lblMoved" text="Drag Moved" visible="false"/>
@@ -102,19 +102,19 @@
 
             // Add Drag Start Handler<br/>
             eventPanel.addDragStartHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("blue");<br/>
+            &emsp;eventPanel.setBackgroundColor("BLUE");<br/>
             &emsp;lblStarted.setVisible(true);<br/>
             });<br/><br/>
 
             // Add Drag Move Handler<br/>
             &emsp;eventPanel.addDragMoveHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("amber");<br/>
+            &emsp;eventPanel.setBackgroundColor("AMBER");<br/>
             &emsp;lblMoved.setVisible(true);<br/>
             });<br/><br/>
 
             // Add Drag End Handler<br/>
             &emsp;eventPanel.addDragEndHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("green");<br/>
+            &emsp;eventPanel.setBackgroundColor("GREEN");<br/>
             &emsp;lblEnded.setVisible(true);<br/>
             });
         </demo:PrettyPre>
@@ -125,8 +125,8 @@
                 <m:MaterialPanel padding="20">
                     <m:MaterialLink text="This is draggable" iconType="TOUCH_APP" />
                 </m:MaterialPanel>
-                <m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px">
-                    <m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="red" textColor="grey" fontSize="1.2em" text="This area is ignored from dragging" />
+                <m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="GREY_LIGHTEN_3" width="100%" height="200px">
+                    <m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" />
                 </m:MaterialPanel>
             </m:MaterialPanel>
         </m:MaterialRow>
@@ -137,7 +137,7 @@
             &emsp;&emsp;&lt;m:MaterialLink text="This is draggable" iconType="TOUCH_APP" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>
             &emsp;&lt;m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px"><br/>
-            &emsp;&emsp;&lt;m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="red" textColor="grey" fontSize="1.2em" text="This area is ignored from dragging" /><br/>
+            &emsp;&emsp;&lt;m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" /><br/>
             &emsp;&lt;/m:MaterialPanel><br/>
             &lt;/m:MaterialPanel><br/>
         </demo:PrettyPre>
@@ -147,12 +147,12 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Axis" description="The axis in which the first movement must be in for the drag sequence to start. After the movement in that axis, the the action can move in both the HORIZONTAL and VERTICAL axes." />
-        <m:MaterialPanel backgroundColor="grey lighten-4" padding="10">
-            <m:MaterialPanel ui:field="xAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
+            <m:MaterialPanel ui:field="xAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="X Axis" fontSize="1.5em"/>
             </m:MaterialPanel>
-            <m:MaterialPanel ui:field="yAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="white" waves="DEFAULT" width="150px" height="150px" shadow="1">
+            <m:MaterialPanel ui:field="yAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                 <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
                 <m:MaterialLabel text="Y Axis" fontSize="1.5em"/>
             </m:MaterialPanel>
@@ -163,18 +163,18 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Dropzone" />
-        <m:MaterialRow ui:field="dropzoneContainer" backgroundColor="grey lighten-1" padding="10">
+        <m:MaterialRow ui:field="dropzoneContainer" backgroundColor="GREY_LIGHTEN_1" padding="10">
             <m:MaterialColumn grid="s6">
-                <m:MaterialPanel addStyleNames="test" ui:field="item1" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                <m:MaterialPanel addStyleNames="test" ui:field="item1" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
                     <m:MaterialLink text="Option 1" />
                 </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item2" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                <m:MaterialPanel addStyleNames="test" ui:field="item2" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
                     <m:MaterialLink text="Option 2" />
                 </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item3" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                <m:MaterialPanel addStyleNames="test" ui:field="item3" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
                     <m:MaterialLink text="Option 3" />
                 </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item4" backgroundColor="white" shadow="1" grid="s12" padding="8" margin="4">
+                <m:MaterialPanel addStyleNames="test" ui:field="item4" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
                     <m:MaterialLink text="Option 4" />
                 </m:MaterialPanel>
             </m:MaterialColumn>
@@ -197,12 +197,12 @@
             });<br/><br/>
 
             dropzoneContainer.addDragEnterHandler(dragEnterEvent -> {<br/>
-            &emsp;placeContainer.setBackgroundColor("blue");<br/>
+            &emsp;placeContainer.setBackgroundColor("BLUE");<br/>
             &emsp;MaterialToast.fireToast("Drag Enter");<br/>
             });<br/><br/>
 
             dropzoneContainer.addDragLeaveHandler(event1 -> {<br/>
-            &emsp;placeContainer.setBackgroundColor("grey lighten-2");<br/>
+            &emsp;placeContainer.setBackgroundColor("GREY_LIGHTEN_2");<br/>
             &emsp;MaterialToast.fireToast("Drag Leave");<br/>
             });<br/><br/>
 
