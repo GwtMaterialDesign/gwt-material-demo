@@ -102,6 +102,15 @@
         - GwtMaterialBasicWithJQuery # Same as above but will also include loading jQuery<br/>
         - GwtMaterialBasicWithJQueryDebug # Same as above but with non-minified js and Source URL included for Chrome debugging.<br/>
       </demo:PrettyPre>
+      <m:MaterialTitle description="If you use widgets from addins extend your App.gwt.xml file like this:"/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &lt;inherits name="gwt.material.design.addins.GwtMaterialAddins" /&gt;
+      </demo:PrettyPre>
+      <m:MaterialTitle description="Available modules:"/>
+      <demo:PrettyPre addStyleNames="lang-yaml z-depth-1">
+        &emsp;- GwtMaterialAddins # Standard use<br/>
+        - GwtMaterialAddinsDebug # Same as above but with debug enabled js<br/>
+      </demo:PrettyPre>
     </m:MaterialPanel>
 
 
