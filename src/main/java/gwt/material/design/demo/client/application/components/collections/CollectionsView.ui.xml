@@ -166,28 +166,28 @@
 
     <m:MaterialTitle title="Dismissable"/>
     <m:MaterialCollection>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
 
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
@@ -197,7 +197,7 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialCollection><br/>
-      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissable="true"><br/>
+      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
@@ -209,7 +209,7 @@
     
     <m:MaterialTitle title="3 line item"/>
     <m:MaterialCollection >
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
@@ -218,7 +218,7 @@
           <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
@@ -227,7 +227,7 @@
           <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
@@ -236,7 +236,7 @@
           <m:MaterialIcon iconType="STAR" iconColor="BLUE"/>
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
@@ -249,7 +249,7 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialCollection ><br/>
-      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissable="true"><br/>
+      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/><br/>
@@ -263,7 +263,7 @@
     
     <m:MaterialTitle title="2 line item"/>
     <m:MaterialCollection>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -272,7 +272,7 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialCollection><br/>
-      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissable="true"><br/>
+      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="I'll be in your neighborhood doing errands"/><br/>
@@ -282,12 +282,12 @@
 
     <m:MaterialTitle title="2 line item, long paragraph (see on mobile)"/>
     <m:MaterialCollection>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
         <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
       </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem type="AVATAR" dismissable="true">
+      <m:MaterialCollectionItem type="AVATAR" dismissible="true">
         <m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
         <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
@@ -296,12 +296,12 @@
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialCollection><br/>
-      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissable="true"><br/>
+      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/><br/>
       &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissable="true"><br/>
+      &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/><br/>

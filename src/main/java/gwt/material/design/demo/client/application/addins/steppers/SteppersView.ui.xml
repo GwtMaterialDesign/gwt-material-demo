@@ -181,7 +181,7 @@
         <!-- Steppers inside modal -->
         <m:MaterialTitle title="Modal Steppers" description="You can put your Steppers inside a card component by adding shadow='1'"/>
         <m:MaterialButton ui:field="btnModal" text="Open Modal" waves="DEFAULT" textColor="WHITE" backgroundColor="BLUE" />
-        <m:MaterialModal ui:field="modalStepper" dismissable="false" inDuration="500" outDuration="500">
+        <m:MaterialModal ui:field="modalStepper" dismissible="false" inDuration="500" outDuration="500">
           <m:MaterialModalContent>
             <ma:stepper.MaterialStepper ui:field="stepperModal">
               <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">

@@ -350,7 +350,7 @@
         <m:MaterialRow>
             <m:MaterialTitle title="Modal Integration" description="You can easily put your combobox inside modal easily" />
             <m:MaterialButton text="Open Modal" ui:field="btnOpenModal" />
-            <m:MaterialModal ui:field="modal" dismissable="true">
+            <m:MaterialModal ui:field="modal" dismissible="true">
                 <m:MaterialModalContent>
                     <combobox:MaterialComboBox label="Please provide your timezone" placeholder="Value" ui:field="comboTimeZone17"/>
                 </m:MaterialModalContent>
