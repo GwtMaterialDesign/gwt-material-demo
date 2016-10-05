@@ -75,6 +75,14 @@
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       datePicker.clear();
     </demo:PrettyPre>
+    
+    <m:MaterialTitle title="Open / Close control" description="You can control programmatically the date picker. We added value change event with datepicker.close() upon triggering the event." />
+    <m:MaterialDatePicker ui:field="dpOpenClose" placeholder="birthdate" />
+    <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" />
+    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      &emsp;dpOpenClose.open(); <br/>
+      dpOpenClose.close();
+    </demo:PrettyPre>
 
     <m:MaterialTitle title="Events" description="We provided events on date picker namely : Close, Open, ValueChange events."/>
     <m:MaterialDatePicker ui:field="dpEvents" placeholder="Birthday"/>
