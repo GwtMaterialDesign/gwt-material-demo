@@ -39,34 +39,46 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     interface Binder extends UiBinder<Widget, ErrorsView> {
     }
 
-    @UiField MaterialAutoComplete acList;
-    @UiField MaterialDatePicker dp;
-    @UiField MaterialTimePicker tp;
-    @UiField MaterialRange range;
-    @UiField MaterialSwitch sw;
-    @UiField MaterialTextArea txtArea;
-    @UiField MaterialTextBox txtBox;
-    @UiField MaterialTextBox txtBoxValidator;
-    @UiField MaterialComboBox<String> combobox;
+    @UiField
+    MaterialAutoComplete acList;
+    @UiField
+    MaterialDatePicker dp;
+    @UiField
+    MaterialTimePicker tp;
+    @UiField
+    MaterialRange range;
+    @UiField
+    MaterialSwitch sw;
+    @UiField
+    MaterialTextArea txtArea;
+    @UiField
+    MaterialTextBox txtBox;
+    @UiField
+    MaterialTextBox txtBoxValidator;
+    @UiField
+    MaterialComboBox<String> combobox;
 
-    @UiField MaterialAutoComplete autocompleteValidate;
-    @UiField MaterialTextBox txtBoxValidate;
-    @UiField MaterialTextArea txtAreaValidate;
-    @UiField MaterialIntegerBox intBoxValidate;
-    @UiField MaterialDoubleBox doubleBoxValidate;
-    @UiField MaterialFloatBox floatBoxValidate;
-    @UiField MaterialLongBox longBoxValidate;
-    @UiField MaterialDatePicker datePickerValidate;
-    @UiField MaterialTimePicker timePickerValidate;
+    @UiField
+    MaterialTextBox txtBoxValidate;
+    @UiField
+    MaterialTextArea txtAreaValidate;
+    @UiField
+    MaterialIntegerBox intBoxValidate;
+    @UiField
+    MaterialDoubleBox doubleBoxValidate;
+    @UiField
+    MaterialFloatBox floatBoxValidate;
+    @UiField
+    MaterialLongBox longBoxValidate;
+    @UiField
+    MaterialDatePicker datePickerValidate;
+    @UiField
+    MaterialTimePicker timePickerValidate;
 
     @Inject
     ErrorsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        autocompleteValidate.addBlurHandler(blurEvent -> {
-            MaterialToast.fireToast("Blur fired");
-        });
         acList.setSuggestions(getSimpleSuggestions());
-        autocompleteValidate.setSuggestions(getSimpleSuggestions());
         txtBoxValidator.addValidator(new EmailValidator());
     }
 

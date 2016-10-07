@@ -25,7 +25,7 @@
              xmlns:m.autocomplete="urn:import:gwt.material.design.addins.client.autocomplete"
              xmlns:m.timepicker="urn:import:gwt.material.design.addins.client.timepicker"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
-             xmlns:ma.autocomplete="urn:import:gwt.material.design.addins.client.autocomplete">
+>
   <g:HTMLPanel>
     <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
@@ -71,7 +71,6 @@
 
     <m:MaterialTitle title="Allow Blank Property" description="Allow blank property is similar to not required property. By setting allowBlank='false' it means that your field is required." />
     <m:MaterialRow>
-      <ma.autocomplete:MaterialAutoComplete ui:field="autocompleteValidate" allowBlank="false" validateOnBlur="true" placeholder="Autocomplete" />
       <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TextBox)" grid="s12"/>
       <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (Text Area)" grid="s12"/>
       <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (IntegerBox)" grid="s12"/>
