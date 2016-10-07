@@ -49,11 +49,24 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiField MaterialTextBox txtBoxValidator;
     @UiField MaterialComboBox<String> combobox;
 
+    @UiField MaterialAutoComplete autocompleteValidate;
+    @UiField MaterialTextBox txtBoxValidate;
+    @UiField MaterialTextArea txtAreaValidate;
+    @UiField MaterialIntegerBox intBoxValidate;
+    @UiField MaterialDoubleBox doubleBoxValidate;
+    @UiField MaterialFloatBox floatBoxValidate;
+    @UiField MaterialLongBox longBoxValidate;
+    @UiField MaterialDatePicker datePickerValidate;
+    @UiField MaterialTimePicker timePickerValidate;
+
     @Inject
     ErrorsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
+        autocompleteValidate.addBlurHandler(blurEvent -> {
+            MaterialToast.fireToast("Blur fired");
+        });
         acList.setSuggestions(getSimpleSuggestions());
+        autocompleteValidate.setSuggestions(getSimpleSuggestions());
         txtBoxValidator.addValidator(new EmailValidator());
     }
 
@@ -87,6 +100,18 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         suggestions.add("Montana");
         suggestions.add("Louisiana");
         return suggestions;
+    }
+
+    @UiHandler("btnValidateAll")
+    void btnValidateAll(ClickEvent e) {
+        txtBoxValidate.validate();
+        txtAreaValidate.validate();
+        intBoxValidate.validate();
+        doubleBoxValidate.validate();
+        longBoxValidate.validate();
+        floatBoxValidate.validate();
+        datePickerValidate.validate();
+        timePickerValidate.validate();
     }
 
     @UiHandler("btnValidate")
