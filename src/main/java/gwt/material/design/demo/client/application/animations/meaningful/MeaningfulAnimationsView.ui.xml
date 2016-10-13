@@ -41,19 +41,19 @@
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m:MaterialRow ui:field="rowCards"><br/>
                 &emsp;&lt;m:MaterialColumn grid="l6"><br/>
-                &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
+                &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
                 &emsp;&emsp;&lt;!--Content here --><br/>
                 &emsp;&emsp;&lt;/m:MaterialCard><br/>
                 &emsp;&emsp;&lt;!--OTher cards --><br/>
                 &emsp;&lt;/m:MaterialColumn grid="l6"><br/>
                 &lt;/m:MaterialRow ui:field="rowCards"><br/>
             </demo:PrettyPre>
-            <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" backgroundColor="blue" waves="LIGHT"/>
-            <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="white" textColor="black" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" backgroundColor="BLUE" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT"/>
             <m:MaterialRow ui:field="gridPanel">
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -65,8 +65,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -78,8 +78,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -91,8 +91,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -104,8 +104,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -117,8 +117,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -130,8 +130,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -143,8 +143,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -156,8 +156,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -169,8 +169,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -182,8 +182,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -195,8 +195,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -208,8 +208,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -221,8 +221,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -234,8 +234,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -247,8 +247,8 @@
                 </m:MaterialColumn>
 
                 <m:MaterialColumn grid="l3">
-                    <m:MaterialCard backgroundColor="blue-grey darken-1">
-                        <m:MaterialCardContent textColor="white">
+                    <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+                        <m:MaterialCardContent textColor="WHITE">
                             <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
                             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                         </m:MaterialCardContent>
@@ -261,7 +261,7 @@
             </m:MaterialRow>
 
             <m:MaterialTitle title="Show Staggered List" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items."/>
-            <m:MaterialButton ui:field="btnStaggered" text="Click Me" backgroundColor="blue" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnStaggered" text="Click Me" backgroundColor="BLUE" waves="LIGHT"/>
 
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m.html:UnorderedList ui:field="listContainer"><br/>
@@ -285,7 +285,7 @@
 
 
             <m:MaterialTitle title="Fade in Image" description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect."/>
-            <m:MaterialButton ui:field="btnFade" text="Click Me" backgroundColor="blue" waves="LIGHT" />
+            <m:MaterialButton ui:field="btnFade" text="Click Me" backgroundColor="BLUE" waves="LIGHT" />
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
             </demo:PrettyPre>

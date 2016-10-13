@@ -30,6 +30,7 @@ import gwt.material.design.addins.client.dnd.js.JsDragOptions;
 import gwt.material.design.addins.client.dnd.js.JsDropOptions;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Axis;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.jquery.client.api.JQueryElement;
 
@@ -94,12 +95,12 @@ public class DndView extends ViewImpl implements DndPresenter.MyView {
         });
 
         dropzoneContainer.addDragEnterHandler(dragEnterEvent -> {
-            placeContainer.setBackgroundColor("blue");
+            placeContainer.setBackgroundColor(Color.BLUE);
             MaterialToast.fireToast("Drag Enter");
         });
 
         dropzoneContainer.addDragLeaveHandler(event1 -> {
-            placeContainer.setBackgroundColor("grey lighten-2");
+            placeContainer.setBackgroundColor(Color.GREY_LIGHTEN_2);
             MaterialToast.fireToast("Drag Leave");
         });
 
@@ -118,17 +119,17 @@ public class DndView extends ViewImpl implements DndPresenter.MyView {
 
         // Add Drag Start Handler
         eventPanel.addDragStartHandler(event -> {
-            eventPanel.setBackgroundColor("blue");
+            eventPanel.setBackgroundColor(Color.BLUE);
             lblStarted.setVisible(true);
         });
         // Add Drag Move Handler
         eventPanel.addDragMoveHandler(event -> {
-            eventPanel.setBackgroundColor("amber");
+            eventPanel.setBackgroundColor(Color.AMBER);
             lblMoved.setVisible(true);
         });
         // Add Drag End Handler
         eventPanel.addDragEndHandler(event -> {
-            eventPanel.setBackgroundColor("green");
+            eventPanel.setBackgroundColor(Color.GREEN);
             lblEnded.setVisible(true);
         });
     }

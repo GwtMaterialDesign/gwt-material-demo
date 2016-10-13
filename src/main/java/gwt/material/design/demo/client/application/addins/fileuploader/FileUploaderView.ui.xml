@@ -66,7 +66,7 @@
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblName" text="Sample.png" fontSize="1.5em"/><br/>
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblSize" text="13 mb" fontSize="0.8em"/><br/>
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialProgress ui:field="progress" layoutPosition="ABSOLUTE" bottom="0" left="0" type="DETERMINATE" percent="0" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton m:id="cardUpload" layoutPosition="ABSOLUTE" top="-25" right="25" type="FLOATING" backgroundColor="pink" size="LARGE" iconType="CLOUD_UPLOAD" iconColor="white"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton m:id="cardUpload" layoutPosition="ABSOLUTE" top="-25" right="25" type="FLOATING" backgroundColor="PINK" size="LARGE" iconType="CLOUD_UPLOAD" iconColor="WHITE"/><br/>
             &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
             &emsp;&emsp;&lt;/m:MaterialCard><br/>
             &emsp;&lt;/ma:fileuploader.MaterialFileUploader><br/>
@@ -124,7 +124,7 @@
         </blockquote>
 
         <m:MaterialTitle title="Server" description="Take note that we provide only Cient UI for the uploader, but you can configure the server side by the following guidelines."/>
-        <m:MaterialAnchorButton href="https://gist.github.com/kevzlou7979/2d97b81437760016cad8ecc9d74b8f7a" target="_blank" text="File Upload Servlet" textColor="white" waves="DEFAULT" />
+        <m:MaterialAnchorButton href="https://gist.github.com/kevzlou7979/2d97b81437760016cad8ecc9d74b8f7a" target="_blank" text="File Upload Servlet" textColor="WHITE" waves="DEFAULT" />
 
         <m:MaterialTitle title="Servlet definition" description="You must set your form url provided on gwt-material File Upload url inside the web.xml" />
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">

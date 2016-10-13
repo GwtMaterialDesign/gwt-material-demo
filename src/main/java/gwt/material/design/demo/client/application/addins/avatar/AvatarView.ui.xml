@@ -38,7 +38,7 @@
         <m:MaterialRow>
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialCard padding="20" marginTop="100" textAlign="CENTER">
-                    <ma:avatar.MaterialAvatar ui:field="avatar" backgroundColor="white" marginTop="-100" name="marjorie" width="150" height="150" shadow="1" circle="true" />
+                    <ma:avatar.MaterialAvatar ui:field="avatar" backgroundColor="WHITE" marginTop="-100" name="marjorie" width="150" height="150" shadow="1" circle="true" />
                     <m:MaterialTextBox ui:field="txtAvatarName" placeholder="Avatar Name" text="marjorie"/>
                 </m:MaterialCard>
             </m:MaterialColumn>

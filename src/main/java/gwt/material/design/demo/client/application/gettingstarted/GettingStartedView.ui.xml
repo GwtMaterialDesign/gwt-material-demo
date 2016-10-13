@@ -29,7 +29,7 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
       <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material" href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material" iconType="POLYMER" iconPosition="LEFT" textColor="blue"/>
+        <m:MaterialLink target="_blank" text="gwt-material" href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE"/>
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;dependency><br/>
@@ -39,7 +39,7 @@
         &lt;/dependency>
       </demo:PrettyPre>
       <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material-addins"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins" iconType="EXTENSION" iconPosition="LEFT" textColor="blue"/>
+        <m:MaterialLink target="_blank" text="gwt-material-addins"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins" iconType="EXTENSION" iconPosition="LEFT" textColor="BLUE"/>
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;dependency><br/>
@@ -49,7 +49,7 @@
         &lt;/dependency>
       </demo:PrettyPre>
       <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material-themes"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes" iconType="PALETTE" iconPosition="LEFT" textColor="blue"/>
+        <m:MaterialLink target="_blank" text="gwt-material-themes"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes" iconType="PALETTE" iconPosition="LEFT" textColor="BLUE"/>
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;dependency><br/>
@@ -62,24 +62,24 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="blue" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
+      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="BLUE" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
     </m:MaterialPanel>
 
     <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" backgroundColor="blue" textColor="white" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" backgroundColor="blue" textColor="white" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" backgroundColor="blue" textColor="white" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" backgroundColor="blue" textColor="white" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" backgroundColor="BLUE" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" backgroundColor="BLUE" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" backgroundColor="BLUE" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" backgroundColor="BLUE" textColor="WHITE" />
 
     <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
 
     <m:MaterialRow>
       <m:MaterialColumn grid="l7 m7 s12">
-        <m:MaterialLabel text="Version" fontSize="0.8em" textColor="grey" grid="l6 m6 s5"/>
+        <m:MaterialLabel text="Version" fontSize="0.8em" textColor="GREY" grid="l6 m6 s5"/>
         <m:MaterialColumn grid="l6 m6 s7">
-          <m:MaterialLabel text="Core" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
-          <m:MaterialLabel text="Addins" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
-          <m:MaterialLabel text="Themes" fontSize="0.8em" textColor="grey" grid="l4 s4 m4"/>
+          <m:MaterialLabel text="Core" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
+          <m:MaterialLabel text="Addins" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
+          <m:MaterialLabel text="Themes" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
         </m:MaterialColumn>
       </m:MaterialColumn>
     </m:MaterialRow>
@@ -106,7 +106,7 @@
 
 
     <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
-    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="blue"/>
+    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
     <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
@@ -114,7 +114,7 @@
 
     <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBLUE"/&gt;
     </demo:PrettyPre>
 
     <m:MaterialPanel>
@@ -131,7 +131,7 @@
       </demo:PrettyPre>
       <m:MaterialTitle  description="Then you can easily use the m namespace in your widget design, like MaterialButton:"/>
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/>
+        &lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
       </demo:PrettyPre>
     </m:MaterialPanel>
     <m:MaterialPanel>

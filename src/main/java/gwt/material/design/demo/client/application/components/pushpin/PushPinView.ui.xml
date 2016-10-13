@@ -25,8 +25,8 @@
     <g:HTMLPanel>
         <m:MaterialTitle title="Usage" description="You just need to set the reference between your source and target offset element. To do this you will need to call MaterialPushPin.apply(Widget source, Widget target) inside onAttach method."/>
         <m:MaterialRow>
-            <m:MaterialPanel ui:field="source" backgroundColor="blue lighten-1" grid="s12 m12 l12" shadow="1" height="64px"/>
-            <m:MaterialPanel ui:field="target" backgroundColor="blue lighten-4" grid="s6 m6 l6" height="200px" marginBottom="20"/>
+            <m:MaterialPanel ui:field="source" backgroundColor="BLUE_LIGHTEN_1" grid="s12 m12 l12" shadow="1" height="64px"/>
+            <m:MaterialPanel ui:field="target" backgroundColor="BLUE_LIGHTEN_4" grid="s6 m6 l6" height="200px" marginBottom="20"/>
         </m:MaterialRow>
         <demo:PrettyPre addStyleNames="language-java z-depth-1">
             &emsp;@UiField<br/>

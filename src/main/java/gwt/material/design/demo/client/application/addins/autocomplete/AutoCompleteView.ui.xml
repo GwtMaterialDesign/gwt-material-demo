@@ -50,8 +50,8 @@
             <p>To disable , add enabled="false" parameter on the autocomplete widget</p>
         </blockquote>
 
-        <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="blue"/>
-        <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="black" backgroundColor="white"/>
+        <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="BLUE"/>
+        <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="BLACK" backgroundColor="WHITE"/>
 
         <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;@UiField MaterialAutoComplete acList; <br/><br/>
@@ -62,7 +62,7 @@
         </m.demo:PrettyPre>
 
         <m:MaterialTitle title="Gist Files" description="With the given example, we use UserOracle, User and UserSuggestion in order to build the Autocomplete more flexible." />
-        <m:MaterialAnchorButton text="Link to Gist" textColor="white" target="_blank" href="https://gist.github.com/kevzlou7979/dfb18c003513311345e53af7253b1e39" />
+        <m:MaterialAnchorButton text="Link to Gist" textColor="WHITE" target="_blank" href="https://gist.github.com/kevzlou7979/dfb18c003513311345e53af7253b1e39" />
 
         <m:MaterialTitle title="Get all Selected Items" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
@@ -124,14 +124,14 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Inside Modal" description="You can build your overlay inside the modal" />
-        <m:MaterialButton ui:field="btnOpenModal" text="Open Modal" textColor="white" waves="DEFAULT"/>
+        <m:MaterialButton ui:field="btnOpenModal" text="Open Modal" textColor="WHITE" waves="DEFAULT"/>
         <m:MaterialModal ui:field="modal">
             <m:MaterialModalContent>
                 <m:MaterialTitle title="Select contacts" description="Some description here..."/>
                 <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/>
             </m:MaterialModalContent>
             <m:MaterialModalFooter textAlign="RIGHT">
-                <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="black" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/>
             </m:MaterialModalFooter>
         </m:MaterialModal>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
@@ -141,7 +141,7 @@
             &emsp;&lt;ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/><br/>
             &emsp;&lt;/m:MaterialModalContent><br/>
             &emsp;&lt;m:MaterialModalFooter textAlign="RIGHT"><br/>
-            &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="black" waves="DEFAULT"/><br/>
+            &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/><br/>
             &emsp;&lt;/m:MaterialModalFooter><br/>
             &lt;/m:MaterialModal><br/>
         </demo:PrettyPre>

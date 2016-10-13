@@ -32,73 +32,73 @@
         <!-- 1.6.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="1.6.0" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="Ongoing"/>
+                <m:MaterialCardTitle text="1.6.0" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="Ongoing"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="pink" text="Avatar" margin="4"/>
-                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="pink" text="Rating" margin="4"/>
+                    <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="PINK" text="Avatar" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="PINK" text="Rating" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
         <!-- 1.5.2 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="1.5.2" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="Ongoing"/>
+                <m:MaterialCardTitle text="1.5.2" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="Ongoing"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.5.1 Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="1.5.1 Bug Fixes" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
         <!-- 1.5.1 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="1.5.1" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="June 2016"/>
+                <m:MaterialCardTitle text="1.5.1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="June 2016"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.5.0 Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="1.5.0 Bug Fixes" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
         <!-- 1.5.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="1.5.0" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="April 2016"/>
+                <m:MaterialCardTitle text="1.5.0" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="April 2016"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="CutOut" margin="4"/>
-                    <m:MaterialChip letter="I" letterColor="white" letterBackgroundColor="deep-orange" text="Icon Morph" margin="4"/>
-                    <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="deep-orange" text="Path Animator" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Subheader" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Steppers" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="deep-orange" text="Time Picker" margin="4"/>
-                    <m:MaterialChip letter="O" letterColor="white" letterBackgroundColor="deep-orange" text="Overlay Panel" margin="4"/>
-                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="deep-orange" text="Roadmap" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="deep-orange" text="Core Animations" margin="4"/>
-                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="deep-orange" text="Letter Chips" margin="4"/>
-                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Waterfall" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="ScrollFire" margin="4"/>
-                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Autocomplete" margin="4"/>
-                    <m:MaterialChip letter="H" letterColor="white" letterBackgroundColor="deep-orange" text="Hoverable" margin="4"/>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="deep-orange" text="Bubble" margin="4"/>
-                    <m:MaterialChip letter="H" letterColor="white" letterBackgroundColor="deep-orange" text="Horizontal Card" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="deep-orange" text="Tree View" margin="4"/>
-                    <m:MaterialChip letter="W" letterColor="white" letterBackgroundColor="deep-orange" text="Window" margin="4"/>
-                    <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Masonry" margin="4"/>
-                    <m:MaterialChip letter="M" letterColor="white" letterBackgroundColor="deep-orange" text="Menu Bar" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Swipeable" margin="4"/>
-                    <m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="deep-orange" text="Apps Showcase" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="File Upload" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Rich Editor" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="deep-orange" text="Document Viewer" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="CutOut" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Icon Morph" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Path Animator" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Subheader" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Steppers" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Time Picker" margin="4"/>
+                    <m:MaterialChip letter="O" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Overlay Panel" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Roadmap" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Core Animations" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Letter Chips" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Waterfall" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="ScrollFire" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Autocomplete" margin="4"/>
+                    <m:MaterialChip letter="H" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Hoverable" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Bubble" margin="4"/>
+                    <m:MaterialChip letter="H" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Horizontal Card" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Tree View" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Window" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Masonry" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Menu Bar" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Swipeable" margin="4"/>
+                    <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Apps Showcase" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="File Upload" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Rich Editor" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="DEEP_ORANGE" text="Document Viewer" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -106,12 +106,12 @@
         <!-- 1.4.1 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="1.4.1" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="January 2016"/>
+                <m:MaterialCardTitle text="1.4.1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="January 2016"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.4.0 Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="1.4.0 Bug Fixes" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -119,16 +119,16 @@
         <!-- 1.4.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3" >
-                <m:MaterialCardTitle text="v. 1.4.0" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="November 2015"/>
+                <m:MaterialCardTitle text="v. 1.4.0" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="November 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="D" letterColor="pink accent-1" letterBackgroundColor="purple" text="DataGrid" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="pink accent-1" letterBackgroundColor="purple" text="Chips" margin="4"/>
-                    <m:MaterialChip letter="A" letterColor="pink accent-1" letterBackgroundColor="purple" text="Autocomplete" margin="4"/>
-                    <m:MaterialChip letter="M" letterColor="pink accent-1" letterBackgroundColor="purple" text="Modals" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="pink accent-1" letterBackgroundColor="purple" text="Transitions" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="DataGrid" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Chips" margin="4"/>
+                    <m:MaterialChip letter="A" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Autocomplete" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Modals" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Transitions" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -136,20 +136,20 @@
         <!-- 1.3.3 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3" >
-                <m:MaterialCardTitle text="v. 1.3.3" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="July 2015"/>
+                <m:MaterialCardTitle text="v. 1.3.3" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="July 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="pink" text="Toasts" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="pink" text="Charts" margin="4"/>
-                    <m:MaterialChip letter="I" letterColor="white" letterBackgroundColor="pink" text="Image Slider" margin="4"/>
-                    <m:MaterialChip letter="D" letterColor="white" letterBackgroundColor="pink" text="Date Picker" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="pink" text="Transitions" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="white" letterBackgroundColor="pink" text="Splash Screen" margin="4"/>
-                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="pink" text="Loaders" margin="4"/>
-                    <m:MaterialChip letter="F" letterColor="white" letterBackgroundColor="pink" text="FAB" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="white" letterBackgroundColor="pink" text="Templates" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="PINK" text="Toasts" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="PINK" text="Charts" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="PINK" text="Image Slider" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="PINK" text="Date Picker" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="PINK" text="Transitions" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="PINK" text="Splash Screen" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="WHITE" letterBackgroundColor="PINK" text="Loaders" margin="4"/>
+                    <m:MaterialChip letter="F" letterColor="WHITE" letterBackgroundColor="PINK" text="FAB" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="PINK" text="Templates" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -157,18 +157,18 @@
         <!-- 1.3.2 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3" >
-                <m:MaterialCardTitle text="v. 1.3.2" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="June 2015"/>
+                <m:MaterialCardTitle text="v. 1.3.2" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="June 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="T" letterColor="yellow" letterBackgroundColor="brown" text="Themes" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="yellow" letterBackgroundColor="brown" text="Shadows" margin="4"/>
-                    <m:MaterialChip letter="H" letterColor="yellow" letterBackgroundColor="brown" text="Helpers" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="yellow" letterBackgroundColor="brown" text="Tables" margin="4"/>
-                    <m:MaterialChip letter="I" letterColor="yellow" letterBackgroundColor="brown" text="Icons" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="yellow" letterBackgroundColor="brown" text="SideNav" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="yellow" letterBackgroundColor="brown" text="Scroll Spy" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Themes" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Shadows" margin="4"/>
+                    <m:MaterialChip letter="H" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Helpers" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Tables" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Icons" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="YELLOW" letterBackgroundColor="BROWN" text="SideNav" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="YELLOW" letterBackgroundColor="BROWN" text="Scroll Spy" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -176,12 +176,12 @@
         <!-- 1.3.1 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="v. 1.3.1" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="April 2015"/>
+                <m:MaterialCardTitle text="v. 1.3.1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="April 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="red" text="1.3.0 Bug Fixes." margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="1.3.0 Bug Fixes." margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -189,16 +189,16 @@
         <!-- 1.3.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3" >
-                <m:MaterialCardTitle text="v. 1.3.0" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="April 2015"/>
+                <m:MaterialCardTitle text="v. 1.3.0" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="April 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="P" letterColor="yellow" letterBackgroundColor="blue" text="Parallax" margin="4"/>
-                    <m:MaterialChip letter="W" letterColor="yellow" letterBackgroundColor="blue" text="Weather" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="yellow" letterBackgroundColor="blue" text="Collapsible Popout" margin="4"/>
-                    <m:MaterialChip letter="B" letterColor="yellow" letterBackgroundColor="blue" text="Bottom Sheets" margin="4"/>
-                    <m:MaterialChip letter="S" letterColor="yellow" letterBackgroundColor="blue" text="Switch" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="YELLOW" letterBackgroundColor="BLUE" text="Parallax" margin="4"/>
+                    <m:MaterialChip letter="W" letterColor="YELLOW" letterBackgroundColor="BLUE" text="Weather" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="YELLOW" letterBackgroundColor="BLUE" text="Collapsible Popout" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="YELLOW" letterBackgroundColor="BLUE" text="Bottom Sheets" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="YELLOW" letterBackgroundColor="BLUE" text="Switch" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -206,19 +206,19 @@
         <!-- 1.2 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3" >
-                <m:MaterialCardTitle text="v. 1.2" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="March 2015"/>
+                <m:MaterialCardTitle text="v. 1.2" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="March 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3" addStyleNames="{style.horizontalCard}">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="green" text="Phonegap" margin="4"/>
-                    <m:MaterialChip letter="P" letterColor="white" letterBackgroundColor="green" text="Parallax" margin="4"/>
-                    <m:MaterialChip letter="B" letterColor="white" letterBackgroundColor="green" text="Badge" margin="4"/>
-                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="green" text="Roboto Font" margin="4"/>
-                    <m:MaterialChip letter="L" letterColor="white" letterBackgroundColor="green" text="ListBox" margin="4"/>
-                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="green" text="Range" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="white" letterBackgroundColor="green" text="CheckBox" margin="4"/>
-                    <m:MaterialChip letter="R" letterColor="white" letterBackgroundColor="green" text="Radio" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="GREEN" text="Phonegap" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="GREEN" text="Parallax" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="GREEN" text="Badge" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Roboto Font" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="WHITE" letterBackgroundColor="GREEN" text="ListBox" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Range" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="GREEN" text="CheckBox" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Radio" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>
@@ -226,22 +226,22 @@
         <!-- 1.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
-                <m:MaterialCardTitle text="v. 1.0" textColor="black"/>
-                <m:MaterialLabel textColor="grey" text="February 2015"/>
+                <m:MaterialCardTitle text="v. 1.0" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="February 2015"/>
             </m:MaterialCardContent>
-            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="grey lighten-3">
+            <m:MaterialCardAction grid="s12 l9" padding="12" backgroundColor="GREY_LIGHTEN_3">
                 <m:MaterialPanel>
-                    <m:MaterialChip letter="C" letterColor="red" letterBackgroundColor="amber" text="Collapsible" margin="4"/>
-                    <m:MaterialChip letter="D" letterColor="red" letterBackgroundColor="amber" text="Dropdown" margin="4"/>
-                    <m:MaterialChip letter="F" letterColor="red" letterBackgroundColor="amber" text="Footer" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="red" letterBackgroundColor="amber" text="Tabs" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="red" letterBackgroundColor="amber" text="Collection" margin="4"/>
-                    <m:MaterialChip letter="B" letterColor="red" letterBackgroundColor="amber" text="Buttons" margin="4"/>
-                    <m:MaterialChip letter="C" letterColor="red" letterBackgroundColor="amber" text="Cards" margin="4"/>
-                    <m:MaterialChip letter="D" letterColor="red" letterBackgroundColor="amber" text="Date Picker" margin="4"/>
-                    <m:MaterialChip letter="I" letterColor="red" letterBackgroundColor="amber" text="Image Box" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="red" letterBackgroundColor="amber" text="Text Box" margin="4"/>
-                    <m:MaterialChip letter="T" letterColor="red" letterBackgroundColor="amber" text="Text Area" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="RED" letterBackgroundColor="AMBER" text="Collapsible" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="RED" letterBackgroundColor="AMBER" text="Dropdown" margin="4"/>
+                    <m:MaterialChip letter="F" letterColor="RED" letterBackgroundColor="AMBER" text="Footer" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="RED" letterBackgroundColor="AMBER" text="Tabs" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="RED" letterBackgroundColor="AMBER" text="Collection" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="RED" letterBackgroundColor="AMBER" text="Buttons" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="RED" letterBackgroundColor="AMBER" text="Cards" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="RED" letterBackgroundColor="AMBER" text="Date Picker" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="RED" letterBackgroundColor="AMBER" text="Image Box" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="RED" letterBackgroundColor="AMBER" text="Text Box" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="RED" letterBackgroundColor="AMBER" text="Text Area" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>

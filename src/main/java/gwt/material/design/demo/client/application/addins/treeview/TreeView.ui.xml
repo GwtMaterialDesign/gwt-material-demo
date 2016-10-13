@@ -35,46 +35,46 @@
             xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
             &lt;!-- Addin Usage --><br/>
             &lt;ma:tree.MaterialTree ui:field="docTree"><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="blue" text="Documents" /><br/>
+            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="BLUE" text="Documents" /><br/>
             &lt;/ma:tree.MaterialTree><br/>
         </demo:PrettyPre>
         <m:MaterialTitle title="Introduction" description="Tree View component requires MaterialTree and MaterialTreeItem to build the component."/>
         <m:MaterialRow>
             <m:MaterialColumn shadow="1" padding="0" grid="l4 m6 s12" height="500px" overflow="AUTO">
-                <m:MaterialPanel padding="8" backgroundColor="blue" height="40px">
-                    <m:MaterialLabel text="FOLDERS" textColor="white" fontWeight="BOLD" float="LEFT"/>
-                    <m:MaterialIcon ui:field="btnCollapse" tooltip="Collapse" iconType="VERTICAL_ALIGN_CENTER" iconColor="white" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnExpand" tooltip="Expand" iconType="ZOOM_OUT_MAP" iconColor="white" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnDelete" visible="false" tooltip="Delete" iconType="DELETE" iconColor="white" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnAdd" visible="false" tooltip="Add" iconType="ADD" iconColor="white" circle="true" waves="DEFAULT" float="RIGHT" />
+                <m:MaterialPanel padding="8" backgroundColor="BLUE" height="40px">
+                    <m:MaterialLabel text="FOLDERS" textColor="WHITE" fontWeight="BOLD" float="LEFT"/>
+                    <m:MaterialIcon ui:field="btnCollapse" tooltip="Collapse" iconType="VERTICAL_ALIGN_CENTER" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                    <m:MaterialIcon ui:field="btnExpand" tooltip="Expand" iconType="ZOOM_OUT_MAP" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                    <m:MaterialIcon ui:field="btnDelete" visible="false" tooltip="Delete" iconType="DELETE" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                    <m:MaterialIcon ui:field="btnAdd" visible="false" tooltip="Add" iconType="ADD" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT" />
                 </m:MaterialPanel>
                 <ma:tree.MaterialTree ui:field="docTree">
-                    <ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="blue" text="Documents">
-                        <ma:tree.MaterialTreeItem iconType="IMAGE" iconColor="blue" text="Images">
-                            <ma:tree.MaterialTreeItem resource="{res.flash}" iconColor="blue" text="flash.jpg" />
-                            <ma:tree.MaterialTreeItem resource="{res.superman}" iconColor="blue" text="superman.jpg" />
-                            <ma:tree.MaterialTreeItem resource="{res.batman}" iconColor="blue" text="batman.jpg" />
+                    <ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="BLUE" text="Documents">
+                        <ma:tree.MaterialTreeItem iconType="IMAGE" iconColor="BLUE" text="Images">
+                            <ma:tree.MaterialTreeItem resource="{res.flash}" iconColor="BLUE" text="flash.jpg" />
+                            <ma:tree.MaterialTreeItem resource="{res.superman}" iconColor="BLUE" text="superman.jpg" />
+                            <ma:tree.MaterialTreeItem resource="{res.batman}" iconColor="BLUE" text="batman.jpg" />
                         </ma:tree.MaterialTreeItem>
-                        <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" iconColor="blue" text="Videos">
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Animations">
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_1.png"/>
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_2.png"/>
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_3.png"/>
+                        <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" iconColor="BLUE" text="Videos">
+                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Animations">
+                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/>
+                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/>
+                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/>
                             </ma:tree.MaterialTreeItem>
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Tutorials" />
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Funny" />
+                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Tutorials" />
+                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Funny" />
                         </ma:tree.MaterialTreeItem>
                     </ma:tree.MaterialTreeItem>
-                    <ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" iconColor="blue" text="Shared Document" />
-                    <ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="blue" text="Trash" />
+                    <ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" iconColor="BLUE" text="ShaRED Document" />
+                    <ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="BLUE" text="Trash" />
                 </ma:tree.MaterialTree>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <ma:overlay.MaterialOverlay ui:field="addOverlay" width="400px" padding="20" height="150px" visibility="HIDDEN" opacity="0" shadow="2" backgroundColor="white" addStyleNames="{style.overlay}">
+        <ma:overlay.MaterialOverlay ui:field="addOverlay" width="400px" padding="20" height="150px" visibility="HIDDEN" opacity="0" shadow="2" backgroundColor="WHITE" addStyleNames="{style.overlay}">
             <m:MaterialTextBox ui:field="txtName" placeholder="Folder Name"/>
             <m:MaterialRow>
-                <m:MaterialButton ui:field="btnFinish" text="Add" type="FLAT" float="RIGHT" textColor="blue"/>
+                <m:MaterialButton ui:field="btnFinish" text="Add" type="FLAT" float="RIGHT" textColor="BLUE"/>
                 <m:MaterialButton ui:field="btnCancel" text="Cancel" type="FLAT" float="RIGHT"/>
             </m:MaterialRow>
         </ma:overlay.MaterialOverlay>
@@ -82,24 +82,24 @@
         <m:MaterialTitle title="Markup" description="MaterialTree must have only MaterialTreeItem children to create the tree view component."/>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;ma:tree.MaterialTree ui:field="docTree"><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="blue" text="Documents"><br/>
-            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="IMAGE" iconColor="blue" text="Images"><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.flash}" iconColor="blue" text="flash.jpg" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.superman}" iconColor="blue" text="superman.jpg" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.batman}" iconColor="blue" text="batman.jpg" /><br/>
+            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="BLUE" text="Documents"><br/>
+            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="IMAGE" iconColor="BLUE" text="Images"><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.flash}" iconColor="BLUE" text="flash.jpg" /><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.superman}" iconColor="BLUE" text="superman.jpg" /><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.batman}" iconColor="BLUE" text="batman.jpg" /><br/>
             &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEO_COLLECTION" iconColor="blue" text="Videos"><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Animations"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_1.png"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_2.png"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="red" text="video_3.png"/><br/>
+            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEO_COLLECTION" iconColor="BLUE" text="Videos"><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Animations"><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/><br/>
+            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/><br/>
             &emsp;&emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Tutorials" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="blue" text="Funny" /><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Tutorials" /><br/>
+            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" iconColor="BLUE" text="Funny" /><br/>
             &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
             &emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" iconColor="blue" text="Shared Document" /><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="blue" text="Trash" /><br/>
+            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" iconColor="BLUE" text="ShaRED Document" /><br/>
+            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" iconColor="BLUE" text="Trash" /><br/>
             &lt;/ma:tree.MaterialTree><br/>
         </demo:PrettyPre>
         

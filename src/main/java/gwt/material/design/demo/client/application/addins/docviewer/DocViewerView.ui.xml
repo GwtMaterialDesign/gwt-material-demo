@@ -33,8 +33,8 @@
         <m:MaterialTitle title="Introduction" description="This component is an iframe that wraps your document using Google Doc Viewer. It's good for public document." />
         <m:MaterialRow padding="0">
             <m:MaterialColumn grid="l6 m12 s12" shadow="1" padding="0">
-                <m:MaterialPanel backgroundColor="blue darken-1" width="100%" padding="8">
-                    <m:MaterialLink backgroundColor="blue darken-1" text="File1.doc" textColor="white" iconType="NOTE" />
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_1" width="100%" padding="8">
+                    <m:MaterialLink backgroundColor="BLUE_DARKEN_1" text="File1.doc" textColor="WHITE" iconType="NOTE" />
                 </m:MaterialPanel>
                 <ma:docviewer.MaterialDocViewer width="100%" height="600px" url="http://www.khazanah.com.my/khazanah/files/20/200f21f3-07ff-4903-ab99-7c0cb557eb51.pdf" />
             </m:MaterialColumn>
