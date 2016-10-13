@@ -98,7 +98,7 @@
                 <m:MaterialButton ui:field="iconState" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="POLYMER" backgroundColor="PURPLE" />
             </m:MaterialColumn>
         </m:MaterialRow>
-        <m:MaterialButton ui:field="btnAnimateStateful" text="Animate with Callback" backgroundColor="BLUE" textColor="WHITE"/>
+        <m:MaterialButton ui:field="btnAnimateStateful" text="Animate" backgroundColor="BLUE" textColor="WHITE"/>
 
     </m:MaterialPanel>
 </ui:UiBinder>
