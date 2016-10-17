@@ -64,22 +64,22 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
 
     @UiHandler("btnOpenWindow")
     void onOpenWindow(ClickEvent e) {
-        window.openWindow();
+        window.open();
     }
 
     @UiHandler("btnWindowTab")
     void onOpenWindowWithTab(ClickEvent e) {
-        windowTab.openWindow();
+        windowTab.open();
     }
 
     @UiHandler("btnOpenWindowStyles")
     void onOpenStyledWindow(ClickEvent e) {
-        styledWindow.openWindow();
+        styledWindow.open();
     }
 
     @UiHandler("btnOpenMaximizedWindow")
     void onOpenMaximizedWindow(ClickEvent e) {
         window.setMaximize(true);
-        window.openWindow();
+        window.open();
     }
 }

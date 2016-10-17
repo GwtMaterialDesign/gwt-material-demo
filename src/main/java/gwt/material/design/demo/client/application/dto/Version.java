@@ -21,6 +21,8 @@ package gwt.material.design.demo.client.application.dto;
  */
 
 
+import gwt.material.design.client.constants.Color;
+
 import java.io.Serializable;
 
 /**
@@ -71,11 +73,11 @@ public class Version implements Serializable {
     private String linkCore;
     private String linkAddins;
     private String linkThemes;
-    private String color;
+    private Color color;
 
     public Version() {}
 
-    public Version(String version, String date, String linkCore, String linkAddins, String linkThemes, String color) {
+    public Version(String version, String date, String linkCore, String linkAddins, String linkThemes, Color color) {
         this.version = version;
         this.date = date;
         this.linkCore = linkCore;
@@ -124,11 +126,11 @@ public class Version implements Serializable {
         this.linkThemes = linkThemes;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 }

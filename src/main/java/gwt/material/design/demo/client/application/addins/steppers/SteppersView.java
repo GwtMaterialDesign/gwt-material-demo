@@ -29,6 +29,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.stepper.MaterialStepper;
+import gwt.material.design.addins.client.stepper.events.CompleteEvent;
 import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -40,7 +41,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError;
+    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError, stepperEvent;
 
 
     @UiField
@@ -61,10 +62,9 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         stepper.prevStep();
     }
 
-    @UiHandler("btnContinue3")
-    void onFinish(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepper.reset();
+    @UiHandler("stepper")
+    void onFinish(CompleteEvent e){
+        reset(stepper);
     }
 
     @UiHandler({"btnContinue01", "btnContinue02", "btnContinue03"})
@@ -77,10 +77,9 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         stepperHori.prevStep();
     }
 
-    @UiHandler("btnContinue03")
-    void onFinish0(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepperHori.reset();
+    @UiHandler("stepperHori")
+    void onFinish0(CompleteEvent e){
+        reset(stepperHori);
     }
 
     @UiHandler({"btnContinue11", "btnContinue12", "btnContinue13"})
@@ -93,15 +92,14 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         stepperCard.prevStep();
     }
 
-    @UiHandler("btnContinue13")
-    void onFinish1(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepperCard.reset();
+    @UiHandler("stepperCard")
+    void onFinish1(CompleteEvent e){
+        reset(stepperCard);
     }
 
     @UiHandler("btnModal")
     void onOpenModal(ClickEvent e){
-        modalStepper.openModal();
+        modalStepper.open();
     }
 
     @UiHandler({"btnContinue31", "btnContinue32", "btnContinue33"})
@@ -114,11 +112,10 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         stepperModal.prevStep();
     }
 
-    @UiHandler("btnContinue33")
-    void onFinish3(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepperModal.reset();
-        modalStepper.closeModal();
+    @UiHandler("stepperModal")
+    void onFinish3(CompleteEvent e){
+        reset(stepperModal);
+        modalStepper.close();
     }
 
     @UiHandler({"btnError", "btnError1", "btnError2"})
@@ -131,10 +128,9 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         stepperError.nextStep();
     }
 
-    @UiHandler("btnSuccess2")
-    void onSucess2(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepperError.reset();
+    @UiHandler("stepperError")
+    void onSucess2(CompleteEvent e){
+        reset(stepperError);
     }
 
     @UiHandler({"btnContinue41", "btnContinue42", "btnContinue43"})
@@ -150,9 +146,28 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         t.schedule(2000);
     }
 
-    @UiHandler("btnContinue43")
-    void onFinishFeedback(ClickEvent e){
-        MaterialToast.fireToast("All done.");
-        stepperFeedback.reset();
+    @UiHandler("stepperFeedback")
+    void onFinishFeedback(CompleteEvent e){
+        reset(stepperFeedback);
+    }
+
+    @UiHandler({"btnEventContinue1", "btnEventContinue2", "btnEventContinue3"})
+    void onNextStepEvent(ClickEvent e){
+        stepperEvent.nextStep();
+    }
+
+    @UiHandler({"btnEventPrev1", "btnEventPrev2", "btnEventPrev3"})
+    void onPrevStepEvent(ClickEvent e){
+        stepperEvent.prevStep();
+    }
+
+    @UiHandler("stepperEvent")
+    void onCompleteEvent(CompleteEvent e) {
+        reset(stepperEvent);
+    }
+
+    protected void reset(MaterialStepper stepper) {
+        MaterialToast.fireToast("All done");
+        stepper.reset();
     }
 }

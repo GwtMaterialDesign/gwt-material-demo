@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.dto;
  */
 
 
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.DatePickerLanguage;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.resources.MaterialResources;
@@ -52,25 +53,25 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
-        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), "teal"));
-        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), "deep-orange"));
-        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), "red"));
-        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), "purple"));
-        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, "pink"));
-        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, "brown"));
-        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, "red"));
-        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, "blue"));
-        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, "green"));
-        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, "amber"));
+        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), Color.TEAL));
+        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), Color.DEEP_ORANGE));
+        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), Color.RED));
+        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), Color.PURPLE));
+        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, Color.PINK));
+        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, Color.BROWN));
+        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, Color.RED));
+        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, Color.BLUE));
+        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, Color.GREEN));
+        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, Color.AMBER));
         return versions;
     }
 
     public static List<Apps> getAllApps() {
         List<Apps> apps = new ArrayList<>();
-        apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", "red"));
-        apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", "green"));
-        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", "blue"));
-        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://tripwego-gwt-material.appspot.com/", "http://i.imgur.com/BkWWPFr.png", "black"));
+        apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", Color.RED));
+        apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", Color.GREEN));
+        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", Color.BLUE));
+        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://tripwego-gwt-material.appspot.com/", "http://i.imgur.com/BkWWPFr.png", Color.BLACK));
         return apps;
     }
 

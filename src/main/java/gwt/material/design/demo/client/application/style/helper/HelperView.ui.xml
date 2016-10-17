@@ -179,13 +179,13 @@
     <m:MaterialTitle title="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards."/>
     <m:MaterialRow>
       <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
+        <m:MaterialCard backgroundColor="WHITE" hoverable="true">
           <m:MaterialCardImage waves="LIGHT">
             <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
             <m:MaterialCardTitle text="Sample"/>
           </m:MaterialCardImage>
 
-          <m:MaterialCardContent textColor="black">
+          <m:MaterialCardContent textColor="BLACK">
             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
           </m:MaterialCardContent>
 
@@ -196,13 +196,13 @@
         </m:MaterialCard>
       </m:MaterialColumn>
       <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
+        <m:MaterialCard backgroundColor="WHITE" hoverable="true">
           <m:MaterialCardImage waves="LIGHT">
             <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
             <m:MaterialCardTitle text="Sample"/>
           </m:MaterialCardImage>
 
-          <m:MaterialCardContent textColor="black">
+          <m:MaterialCardContent textColor="BLACK">
             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
           </m:MaterialCardContent>
 
@@ -213,13 +213,13 @@
         </m:MaterialCard>
       </m:MaterialColumn>
       <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
+        <m:MaterialCard backgroundColor="WHITE" hoverable="true">
           <m:MaterialCardImage waves="LIGHT">
             <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
             <m:MaterialCardTitle text="Sample"/>
           </m:MaterialCardImage>
 
-          <m:MaterialCardContent textColor="black">
+          <m:MaterialCardContent textColor="BLACK">
             <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
           </m:MaterialCardContent>
 

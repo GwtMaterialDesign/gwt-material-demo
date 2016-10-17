@@ -139,16 +139,16 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     }
 
     @UiHandler("btnAnimate")
-    void onAnimateCoreTransition(ClickEvent e){
+    void onAnimateCoreTransition(ClickEvent e) {
         animate();
     }
 
     @UiHandler("lstAnimations")
-    void onAnimateWithListBox(ValueChangeEvent<String> e){
+    void onAnimateWithListBox(ValueChangeEvent<String> e) {
         animate();
     }
 
-    private void animate(){
+    private void animate() {
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
         MaterialAnimator.animate(transition, card, 1000);
@@ -166,13 +166,9 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
 
     @UiHandler("btnAnimateCallback")
     void onCallback(ClickEvent e) {
-        Runnable callback = new Runnable() {
-            @Override
-            public void run() {
-                MaterialToast.fireToast("Animation is finished");
-            }
-        };
-        MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, callback);
+        MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, () -> {
+            MaterialToast.fireToast("Animation is finished");
+        });
     }
 
     @UiHandler("btnAnimateStateful")

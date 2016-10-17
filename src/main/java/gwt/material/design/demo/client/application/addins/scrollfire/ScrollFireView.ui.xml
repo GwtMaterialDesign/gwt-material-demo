@@ -31,30 +31,15 @@
         <m:MaterialTitle title="Usage" description=""/>
         <m:MaterialPanel ui:field="panel" />
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;Runnable forToast = new Runnable() { <br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Toasted");<br/>
-            &emsp;}<br/>
-            };<br/><br/>
-
-            Runnable forListItems = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);<br/>
-            &emsp;}<br/>
-            };<br/><br/>
-
-            Runnable forImage = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);<br/>
-            &emsp;}<br/>
-            };<br/><br/>
-
-            MaterialScrollfire.apply(panel.getElement(), forToast);<br/>
-            MaterialScrollfire.apply(listContainer.getElement(), forListItems);<br/>
-            MaterialScrollfire.apply(image.getElement(), forImage);<br/>
+            &emsp;MaterialScrollfire.apply(panel.getElement(), () -> { <br/>
+            &emsp;MaterialToast.fireToast("Toasted"); <br/>
+            }); <br/>
+            MaterialScrollfire.apply(listContainer.getElement(), () -> { <br/>
+            &emsp;MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0); <br/>
+            }); <br/>
+            MaterialScrollfire.apply(image.getElement(), () -> { <br/>
+            &emsp;MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0); <br/>
+            });
         </demo:PrettyPre>
         <m.html:UnorderedList ui:field="listContainer">
             <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>

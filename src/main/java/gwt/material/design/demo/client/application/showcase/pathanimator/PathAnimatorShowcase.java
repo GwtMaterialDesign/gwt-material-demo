@@ -63,57 +63,45 @@ public class PathAnimatorShowcase extends Composite {
 
     @UiHandler("btnFAB")
     void onFAB(ClickEvent e){
-        // Callback settings
-        Runnable openCallback = new Runnable() {
-            @Override
-            public void run() {
-                // Hide the fab with zoom out animation
-                MaterialAnimator.animate(Transition.ZOOMOUT, btnFAB, 1000);
-                btnFAB.setVisibility(Style.Visibility.HIDDEN);
-                btnFAB.setOpacity(0);
-
-                // Setting the visibility of the music panel
-                musicPanel.setVisibility(Style.Visibility.VISIBLE);
-                musicPanel.setOpacity(1);
-
-                // Setting the music label with Bounce up animation
-                lblMusic.setText("Pharell Williams / Love Yourself to Dance");
-                MaterialAnimator.animate(Transition.BOUNCEINUP, lblMusic, 1000);
-
-                // Setting the image of the artist
-                imgMusic.setUrl("http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png");
-            }
-        };
-
         // Execute the opening callback once the fab is clicked
-        MaterialPathAnimator.animate(btnFAB.getElement(), musicPanel.getElement(), openCallback);
+        MaterialPathAnimator.animate(btnFAB.getElement(), musicPanel.getElement(), () -> {
+            // Hide the fab with zoom out animation
+            MaterialAnimator.animate(Transition.ZOOMOUT, btnFAB, 1000);
+            btnFAB.setVisibility(Style.Visibility.HIDDEN);
+            btnFAB.setOpacity(0);
+
+            // Setting the visibility of the music panel
+            musicPanel.setVisibility(Style.Visibility.VISIBLE);
+            musicPanel.setOpacity(1);
+
+            // Setting the music label with Bounce up animation
+            lblMusic.setText("Pharell Williams / Love Yourself to Dance");
+            MaterialAnimator.animate(Transition.BOUNCEINUP, lblMusic, 1000);
+
+            // Setting the image of the artist
+            imgMusic.setUrl("http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png");
+        });
     }
 
     @UiHandler("btnPause")
     void onPause(ClickEvent e){
-        // Applying reverse animation callback once the pause button is clicked
-        Runnable closeCallback = new Runnable() {
-            @Override
-            public void run() {
-                // Setting the visibility of the FAB for reverse animation
-                MaterialAnimator.animate(Transition.ZOOMIN, btnFAB, 1000);
-                btnFAB.setVisibility(Style.Visibility.VISIBLE);
-                btnFAB.setOpacity(1);
-
-                // Hide the music panel once the pause button is clicked
-                musicPanel.setVisibility(Style.Visibility.HIDDEN);
-                musicPanel.setOpacity(0);
-
-                // Setting the previous music label with Bounce down animation
-                lblMusic.setText("Lady Gaga / Telephone");
-                MaterialAnimator.animate(Transition.BOUNCEINDOWN, lblMusic, 1000);
-
-                // Setting the image of the artist
-                imgMusic.setUrl("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG");
-            }
-        };
-
         // Execute the close callback animation
-        MaterialPathAnimator.reverseAnimate(btnFAB.getElement(), musicPanel.getElement(), closeCallback);
+        MaterialPathAnimator.reverseAnimate(btnFAB.getElement(), musicPanel.getElement(), () -> {
+            // Setting the visibility of the FAB for reverse animation
+            MaterialAnimator.animate(Transition.ZOOMIN, btnFAB, 1000);
+            btnFAB.setVisibility(Style.Visibility.VISIBLE);
+            btnFAB.setOpacity(1);
+
+            // Hide the music panel once the pause button is clicked
+            musicPanel.setVisibility(Style.Visibility.HIDDEN);
+            musicPanel.setOpacity(0);
+
+            // Setting the previous music label with Bounce down animation
+            lblMusic.setText("Lady Gaga / Telephone");
+            MaterialAnimator.animate(Transition.BOUNCEINDOWN, lblMusic, 1000);
+
+            // Setting the image of the artist
+            imgMusic.setUrl("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG");
+        });
     }
 }

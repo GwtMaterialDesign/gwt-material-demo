@@ -46,6 +46,14 @@
             &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
         </demo:PrettyPre>
 
+        <m:MaterialTitle title="Open / Close Control" description="You can programmatically control the time picker component." />
+        <ma:timepicker.MaterialTimePicker ui:field="tpOpenClose" placeholder="Snooze Time" />
+        <m:MaterialButton ui:field="btnOpen" text="Open Time Picker" />
+        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+            &emsp;tp.open() <br/>
+            tp.close()
+        </demo:PrettyPre>
+        
         <!-- Events -->
         <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>
         <ma:timepicker.MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />

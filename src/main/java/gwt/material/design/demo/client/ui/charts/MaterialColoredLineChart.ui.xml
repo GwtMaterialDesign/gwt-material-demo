@@ -27,18 +27,18 @@
 		}
 	</ui:style>
 	<m:MaterialColumn grid="s12 m12 l10">
-	    <m:MaterialCard backgroundColor="blue">
-			<m:MaterialCardTitle text="Colored Line Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="white" addStyleNames="{style.block}"/>
+	    <m:MaterialCard backgroundColor="BLUE">
+			<m:MaterialCardTitle text="Colored Line Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="WHITE" addStyleNames="{style.block}"/>
 			<m:MaterialCardContent ui:field="cardContent" addStyleNames="no-padding"/>
 				
 			<m:MaterialCardReveal>
-				<m:MaterialCardTitle text="Colored Line Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+				<m:MaterialCardTitle text="Colored Line Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 				<m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
 			</m:MaterialCardReveal>
 				
 			<m:MaterialCardAction>
-				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.ui.xml" text="UI Binder" textColor="white" />
-				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.java" text="Java" textColor="white" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.ui.xml" text="UI Binder" textColor="WHITE" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialColoredLineChart.java" text="Java" textColor="WHITE" />
 			</m:MaterialCardAction>
 		</m:MaterialCard>
 	</m:MaterialColumn>

@@ -30,13 +30,13 @@
             <m:MaterialCardImage>
                 <m:MaterialImage ui:field="imgApp"/>
             </m:MaterialCardImage>
-            <m:MaterialCardContent textColor="white" height="100px">
+            <m:MaterialCardContent textColor="WHITE" height="100px">
                 <m:MaterialImage ui:field="imgOwner" layoutPosition="ABSOLUTE" marginTop="-32" circle="true" width="32px" height="32px" />
                 <m:MaterialLabel ui:field="lblApp" fontSize="1.5em"/>
                 <m:MaterialLabel ui:field="lblOwner" opacity="0.6" marginTop="4"/>
             </m:MaterialCardContent>
             <m:MaterialCardAction>
-                <m:MaterialLink ui:field="lblLink" target="_blank" text="DEMO" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
+                <m:MaterialLink ui:field="lblLink" target="_blank" text="DEMO" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
             </m:MaterialCardAction>
         </m:MaterialCard>
     </m:MaterialColumn>

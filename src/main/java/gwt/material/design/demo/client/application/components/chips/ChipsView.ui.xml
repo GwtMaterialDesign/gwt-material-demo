@@ -26,32 +26,32 @@
     <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
     <m:MaterialRow>
       <m:MaterialChip text="Default" iconType="CLOSE"/>
-      <m:MaterialChip text="Apple" backgroundColor="red" textColor="white" iconType="CLOSE"/>
-      <m:MaterialChip text="Orange" backgroundColor="orange" textColor="white"  iconType="CLOSE"/>
-      <m:MaterialChip text="Banana" backgroundColor="amber" textColor="white" iconType="CLOSE"/>
-      <m:MaterialChip text="Mango" backgroundColor="green" textColor="white" iconType="CLOSE"/>
+      <m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
+      <m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
+      <m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
+      <m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/>
     </m:MaterialRow>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialChip text="Default" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Apple" backgroundColor="red" textColor="white" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Orange" backgroundColor="orange" textColor="white"  iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Banana" backgroundColor="amber" textColor="white" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Mango" backgroundColor="green" textColor="white" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
     <m:MaterialRow>
-      <m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="red" text="Apple" iconType="CLOSE"/>
-      <m:MaterialChip letter="G" letterColor="pink accent-1" letterBackgroundColor="purple" text="Grapes" iconType="CLOSE"/>
-      <m:MaterialChip letter="D" letterColor="white" letterBackgroundColor="green" text="Dalandan" iconType="CLOSE"/>
-      <m:MaterialChip letter="M" letterColor="orange" letterBackgroundColor="yellow" text="Mango" iconType="CLOSE"/>
+      <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+      <m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+      <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+      <m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
     </m:MaterialRow>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip letter="A" letterColor="white" letterBackgroundColor="red" text="Apple" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="G" letterColor="pink accent-1" letterBackgroundColor="purple" text="Grapes" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="D" letterColor="white" letterBackgroundColor="green" text="Dalandan" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="M" letterColor="orange" letterBackgroundColor="yellow" text="Mango" iconType="CLOSE"/><br/>
+      &emsp;&lt;m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+      &lt;m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>

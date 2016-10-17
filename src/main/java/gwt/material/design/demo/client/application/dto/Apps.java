@@ -21,6 +21,8 @@ package gwt.material.design.demo.client.application.dto;
  */
 
 
+import gwt.material.design.client.constants.Color;
+
 import java.io.Serializable;
 
 /**
@@ -33,12 +35,12 @@ public class Apps implements Serializable{
     private String ownerImage;
     private String link;
     private String image;
-    private String color;
+    private Color color;
 
     public Apps() {
     }
 
-    public Apps(String name, String owner, String ownerImage, String link, String image, String color) {
+    public Apps(String name, String owner, String ownerImage, String link, String image, Color color) {
         this.name = name;
         this.owner = owner;
         this.ownerImage = ownerImage;
@@ -79,11 +81,11 @@ public class Apps implements Serializable{
         this.image = image;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

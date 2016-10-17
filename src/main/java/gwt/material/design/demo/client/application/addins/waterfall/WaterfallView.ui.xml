@@ -70,22 +70,13 @@
 
         <m:MaterialTitle title="Set Callbacks (Optional)" description="If you want more advance functionality on the waterfall component, you just need to set the showing or hiding callbacks of waterfall. By doing it you can just call setCallbacks(Runnable showCallback, Runnable hideCallback) to override the default behaviour."/>
         <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;final Runnable showCallback = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;panel.setOpacity(1);<br/>
-            &emsp;&emsp;navBrand.setOpacity(0);<br/>
-            &emsp;}<br/>
-            };<br/><br/>
-
-            final Runnable hideCallback = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;panel.setOpacity(0);<br/>
-            &emsp;&emsp;navBrand.setOpacity(1);<br/>
-            &emsp;}<br/>
-            };<br/>
-            waterfall.setCallbacks(showCallback, hideCallback);
+            &emsp;waterfall.setCallbacks(() -> { <br/>
+            &emsp;panel.setOpacity(1); <br/>
+            &emsp;navBrand.setOpacity(0); <br/>
+            }), () -> { <br/>
+            &emsp;panel.setOpacity(0); <br/>
+            &emsp;navBrand.setOpacity(1); <br/>
+            });
         </demo:PrettyPre>
         <m:MaterialImage url="https://lh3.googleusercontent.com/HpoaiYFtiqeuTQC1YeM4GdjS3UlPyK-9HfqkmN4-qSMXRdu0B-9Bzl23ipHZ8N4kYNwc=w1366-h768-rw-no"/>
 

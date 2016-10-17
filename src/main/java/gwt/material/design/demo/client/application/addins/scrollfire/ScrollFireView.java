@@ -52,30 +52,16 @@ public class ScrollFireView extends ViewImpl implements ScrollFirePresenter.MyVi
     @Inject
     ScrollFireView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        Runnable forToast = new Runnable() {
-            @Override
-            public void run() {
-                MaterialToast.fireToast("Toasted");
-            }
-        };
 
-        Runnable forListItems = new Runnable() {
-            @Override
-            public void run() {
-                MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
-            }
-        };
-
-        Runnable forImage = new Runnable() {
-            @Override
-            public void run() {
-                MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
-            }
-        };
-
-        MaterialScrollfire.apply(panel.getElement(), forToast);
-        MaterialScrollfire.apply(listContainer.getElement(), forListItems);
-        MaterialScrollfire.apply(image.getElement(), forImage);
+        MaterialScrollfire.apply(panel.getElement(), () -> {
+            MaterialToast.fireToast("Toasted");
+        });
+        MaterialScrollfire.apply(listContainer.getElement(), () -> {
+            MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
+        });
+        MaterialScrollfire.apply(image.getElement(), () -> {
+            MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
+        });
 
     }
 }

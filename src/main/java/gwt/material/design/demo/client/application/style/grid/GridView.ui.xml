@@ -112,20 +112,20 @@
 
     <m:MaterialTitle title="Adding Responsiveness" description="In the previous examples, we only defined the size for small screens using 'col s12'. This is fine if we want a fixed layout since the rules propogate upwards. By just saying s12, we are essentially saying 'col s12 m12 l12'. But by explicitly defining the size we can make our website more responsive." />
     <m:MaterialRow>
-      <m:MaterialColumn grid="s12" addStyleNames="{style.grid}" backgroundColor="teal lighten-2">
+      <m:MaterialColumn grid="s12" addStyleNames="{style.grid}" backgroundColor="TEAL_LIGHTEN_2">
         <m.html:Span addStyleNames="flow-text">I am always full-width (col s12)</m.html:Span>
       </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6" addStyleNames="{style.grid}" backgroundColor="teal lighten-2">
+      <m:MaterialColumn grid="s12 m6" addStyleNames="{style.grid}" backgroundColor="TEAL_LIGHTEN_2">
         <m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)</m.html:Span>
       </m:MaterialColumn>
     </m:MaterialRow>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialRow><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12" backgroundColor="teal lighten-2"><br/>
+      &emsp;&lt;m:MaterialColumn grid="s12" backgroundColor="TEAL_LIGHTEN_2"><br/>
       &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am always full-width (col s12)&lt;/m.html:Span><br/>
       &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12 m6" backgroundColor="teal lighten-2"><br/>
+      &emsp;&lt;m:MaterialColumn grid="s12 m6" backgroundColor="TEAL_LIGHTEN_2"><br/>
       &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)&lt;/m.html:Span><br/>
       &emsp;&lt;/m:MaterialColumn><br/><br/>
       &lt;/m:MaterialRow><br/>

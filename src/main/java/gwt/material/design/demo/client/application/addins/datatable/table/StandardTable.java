@@ -34,10 +34,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.ButtonType;
-import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.constants.TextAlign;
+import gwt.material.design.client.constants.*;
 import gwt.material.design.client.data.SelectionType;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
@@ -115,7 +112,7 @@ public class StandardTable extends Composite {
                 profile.setHeight("40px");
                 profile.setPadding(4);
                 profile.setMarginTop(8);
-                profile.setBackgroundColor("grey lighten-2");
+                profile.setBackgroundColor(Color.GREY_LIGHTEN_2);
                 profile.setCircle(true);
                 return profile;
             }
@@ -179,12 +176,12 @@ public class StandardTable extends Composite {
 
             @Override
             public MaterialComboBox getValue(Person object) {
-                MaterialComboBox comboBox = new MaterialComboBox();
-                comboBox.addValue("State 1", "State 1");
-                comboBox.addValue("State 2", "State 2");
-                comboBox.addValue("State 3", "State 3");
-                comboBox.addValue("State 4", "State 4");
-                comboBox.addValue("State 5", "State 5");
+                MaterialComboBox<String> comboBox = new MaterialComboBox<>();
+                comboBox.addItem("State 1", "State 1");
+                comboBox.addItem("State 2", "State 2");
+                comboBox.addItem("State 3", "State 3");
+                comboBox.addItem("State 4", "State 4");
+                comboBox.addItem("State 5", "State 5");
                 return comboBox;
             }
         });
@@ -200,7 +197,7 @@ public class StandardTable extends Composite {
             public MaterialBadge getValue(Person object) {
                 MaterialBadge badge = new MaterialBadge();
                 badge.setText("badge " + object.getId());
-                badge.setBackgroundColor("blue");
+                badge.setBackgroundColor(Color.BLUE);
                 badge.setLayoutPosition(Position.RELATIVE);
                 return badge;
             }
@@ -237,14 +234,14 @@ public class StandardTable extends Composite {
                                 rowExpand.getRow().find(".content").empty().asElement());
 
                         // Add new content.
-                        MaterialBadge badge = new MaterialBadge("This content", "white", "blue");
+                        MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
                         badge.getElement().getStyle().setPosition(Position.RELATIVE);
                         badge.getElement().getStyle().setRight(0, Unit.PX);
                         badge.setFontSize(12, Unit.PX);
                         content.add(badge);
 
-                        MaterialButton btn = new MaterialButton(ButtonType.RAISED,
-                                "was made", new MaterialIcon(IconType.FULLSCREEN));
+                        MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
+                                new MaterialIcon(IconType.FULLSCREEN));
                         content.add(btn);
 
                         MaterialTextBox textBox = new MaterialTextBox();

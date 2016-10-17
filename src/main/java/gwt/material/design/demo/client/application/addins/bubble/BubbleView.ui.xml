@@ -29,7 +29,7 @@
             &emsp;&lt;!-- Addin Import --><br/>
             xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
             &lt;!-- Addin Usage --><br/>
-            &emsp;&lt;ma:bubble.MaterialBubble textColor="white" backgroundColor="red" position="LEFT" float="LEFT"><br/>
+            &emsp;&lt;ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="RED" position="LEFT" float="LEFT"><br/>
             &emsp;&lt;m:MaterialLabel text="Hello there, How are you doing?"/><br/>
             &emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
             &lt;/ma:bubble.MaterialBubble><br/>
@@ -37,14 +37,14 @@
 
         <m:MaterialTitle title="Usage" description="You can position the bubble by adding : position='LEFT,RIGHT,TOP or BOTTOM'"/>
         <m:MaterialRow marginBottom="0">
-            <m:MaterialImage textColor="white" backgroundColor="red" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1ccdd322433737.5631e853db4a9.png"/>
-            <ma:bubble.MaterialBubble textColor="white" backgroundColor="red" position="LEFT" float="LEFT">
+            <m:MaterialImage textColor="WHITE" backgroundColor="RED" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1ccdd322433737.5631e853db4a9.png"/>
+            <ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="RED" position="LEFT" float="LEFT">
                 <m:MaterialLabel text="Hello there, How are you doing?"/>
                 <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
             </ma:bubble.MaterialBubble>
         </m:MaterialRow>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:bubble.MaterialBubble textColor="white" backgroundColor="red" position="LEFT" float="LEFT"><br/>
+            &emsp;&lt;ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="RED" position="LEFT" float="LEFT"><br/>
             &emsp;&lt;m:MaterialLabel text="Hello there, How are you doing?"/><br/>
             &emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
             &lt;/ma:bubble.MaterialBubble><br/>
@@ -52,43 +52,43 @@
 
         <m:MaterialTitle title="Example" description="Here is a sample card with chat feature implementing bubble addin component"/>
         <m:MaterialRow>
-            <m:MaterialCard backgroundColor="blue" grid="l5 m12 s12" marginTop="24" marginLeft="24">
-                <m:MaterialPanel backgroundColor="blue darken-2" overflow="HIDDEN" padding="12">
-                    <m:MaterialIcon iconType="MORE_VERT" float="RIGHT" textColor="white"/>
-                    <m:MaterialIcon iconType="CLOSE" float="RIGHT" textColor="white"/>
+            <m:MaterialCard backgroundColor="BLUE" grid="l5 m12 s12" marginTop="24" marginLeft="24">
+                <m:MaterialPanel backgroundColor="BLUE_DARKEN_2" overflow="HIDDEN" padding="12">
+                    <m:MaterialIcon iconType="MORE_VERT" float="RIGHT" textColor="WHITE"/>
+                    <m:MaterialIcon iconType="CLOSE" float="RIGHT" textColor="WHITE"/>
                 </m:MaterialPanel>
                 <m:MaterialCardContent>
                     <m:MaterialRow marginBottom="0">
-                        <m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
-                        <ma:bubble.MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT">
+                        <m:MaterialImage backgroundColor="BLUE_ACCENT_1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
+                        <ma:bubble.MaterialBubble backgroundColor="BLUE_ACCENT_1" position="LEFT" float="LEFT">
                             <m:MaterialLabel text="Hello there, How are you doing?"/>
                             <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
                         </ma:bubble.MaterialBubble>
                     </m:MaterialRow>
                     <m:MaterialRow marginBottom="0">
-                        <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
-                        <ma:bubble.MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialImage backgroundColor="BLUE_DARKEN_3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                        <ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="BLUE_DARKEN_3" position="RIGHT" float="RIGHT">
                             <m:MaterialLabel text="Hi there, Im fine, thank you. How about you?"/>
                             <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
                         </ma:bubble.MaterialBubble>
                     </m:MaterialRow>
                     <m:MaterialRow marginBottom="0">
-                        <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
-                        <ma:bubble.MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialImage backgroundColor="BLUE_DARKEN_3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                        <ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="BLUE_DARKEN_3" position="RIGHT" float="RIGHT">
                             <m:MaterialLabel text="Me too, Im doing good."/>
                             <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
                         </ma:bubble.MaterialBubble>
                     </m:MaterialRow>
                     <m:MaterialRow marginBottom="0">
-                        <m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
-                        <ma:bubble.MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT">
+                        <m:MaterialImage backgroundColor="BLUE_ACCENT_1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/>
+                        <ma:bubble.MaterialBubble backgroundColor="BLUE_ACCENT_1" position="LEFT" float="LEFT">
                             <m:MaterialLabel text="Would you want to go to Philippines?"/>
                             <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
                         </ma:bubble.MaterialBubble>
                     </m:MaterialRow>
                     <m:MaterialRow marginBottom="0">
-                        <m:MaterialImage backgroundColor="blue darken-3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
-                        <ma:bubble.MaterialBubble textColor="white" backgroundColor="blue darken-3" position="RIGHT" float="RIGHT">
+                        <m:MaterialImage backgroundColor="BLUE_DARKEN_3" marginLeft="12" marginTop="8" float="RIGHT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6ba40822433737.5632180017216.png"/>
+                        <ma:bubble.MaterialBubble textColor="WHITE" backgroundColor="BLUE_DARKEN_3" position="RIGHT" float="RIGHT">
                             <m:MaterialLabel text="Yes of course, I want to visit Philippines and take a tour."/>
                             <m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/>
                         </ma:bubble.MaterialBubble>
@@ -98,8 +98,8 @@
         </m:MaterialRow>
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;m:MaterialRow marginBottom="0"><br/>
-            &emsp;&lt;m:MaterialImage backgroundColor="blue accent-1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/><br/>
-            &emsp;&lt;ma:bubble.MaterialBubble backgroundColor="blue accent-1" position="LEFT" float="LEFT"><br/>
+            &emsp;&lt;m:MaterialImage backgroundColor="BLUE_ACCENT_1" marginRight="12" marginTop="8" float="LEFT" width="40px" height="40px" shadow="1" circle="true" url="https://mir-s3-cdn-cf.behance.net/project_modules/disp/70e0a922433737.5631e83fc9429.png"/><br/>
+            &emsp;&lt;ma:bubble.MaterialBubble backgroundColor="BLUE_ACCENT_1" position="LEFT" float="LEFT"><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="Would you want to go to Philippines?"/><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="1/2/2016" fontSize="0.6em" float="RIGHT"/><br/>
             &emsp;&lt;/ma:bubble.MaterialBubble><br/>

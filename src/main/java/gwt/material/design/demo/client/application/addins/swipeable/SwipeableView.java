@@ -48,7 +48,7 @@ public class SwipeableView extends ViewImpl implements SwipeablePresenter.MyView
     @Inject
     SwipeableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        swipeableDisablePanel.setDisable(item2, item3);
+        swipeableDisablePanel.ignore(item2, item3);
     }
 
     @UiHandler("swipeablePanel")

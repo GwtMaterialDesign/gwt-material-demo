@@ -34,10 +34,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.ButtonType;
-import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.constants.TextAlign;
+import gwt.material.design.client.constants.*;
 import gwt.material.design.client.data.ListDataSource;
 import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.ui.*;
@@ -178,7 +175,7 @@ public class PageTable extends Composite {
             public MaterialBadge getValue(Person object) {
                 MaterialBadge badge = new MaterialBadge();
                 badge.setText("badge " + object.getId());
-                badge.setBackgroundColor("blue");
+                badge.setBackgroundColor(Color.BLUE);
                 badge.setLayoutPosition(Position.RELATIVE);
                 return badge;
             }
@@ -201,14 +198,14 @@ public class PageTable extends Composite {
                                 rowExpand.getRow().find(".content").empty().asElement());
 
                         // Add new content.
-                        MaterialBadge badge = new MaterialBadge("This content", "white", "blue");
+                        MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
                         badge.getElement().getStyle().setPosition(Position.RELATIVE);
                         badge.getElement().getStyle().setRight(0, Unit.PX);
                         badge.setFontSize(12, Unit.PX);
                         content.add(badge);
 
-                        MaterialButton btn = new MaterialButton(ButtonType.RAISED,
-                                "was made", new MaterialIcon(IconType.FULLSCREEN));
+                        MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
+                                new MaterialIcon(IconType.FULLSCREEN));
                         content.add(btn);
 
                         MaterialTextBox textBox = new MaterialTextBox();

@@ -41,38 +41,36 @@ public class TimePickersView extends ViewImpl implements TimePickersPresenter.My
     }
 
     @UiField
-    MaterialTimePicker tpEvents, tpClear;
+    MaterialTimePicker tpEvents, tpClear, tpOpenClose;
 
     @Inject
     TimePickersView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        // Open Handler
-        tpEvents.addOpenHandler(new OpenHandler<Date>() {
-            @Override
-            public void onOpen(OpenEvent<Date> event) {
-                MaterialToast.fireToast("Opened Time Picker");
-            }
+
+        tpEvents.addOpenHandler(event -> MaterialToast.fireToast("Opened Time Picker"));
+        tpEvents.addCloseHandler(event -> MaterialToast.fireToast("Closed Time Picker"));
+        tpEvents.addValueChangeHandler(event -> {
+            DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");
+            Date time = event.getValue();
+            MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));
         });
-        // Close Handler
-        tpEvents.addCloseHandler(new CloseHandler<Date>() {
-            @Override
-            public void onClose(CloseEvent<Date> event) {
-                MaterialToast.fireToast("Closed Time Picker");
-            }
-        });
-        // ValueChange Handler
-        tpEvents.addValueChangeHandler(new ValueChangeHandler<Date>() {
-            @Override
-            public void onValueChange(ValueChangeEvent<Date> event) {
-                DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");
-                Date time = event.getValue();
-                MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));
-            }
+
+        tpOpenClose.addOpenHandler(event -> MaterialToast.fireToast("Opened Time Picker"));
+        tpOpenClose.addCloseHandler(event -> MaterialToast.fireToast("Closed Time Picker"));
+        tpOpenClose.addValueChangeHandler(event -> {
+            DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");
+            Date time = event.getValue();
+            MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));
         });
     }
 
     @UiHandler("btnClear")
     void onClear(ClickEvent e){
         tpClear.clear();
+    }
+
+    @UiHandler("btnOpen")
+    void onOpen(ClickEvent e) {
+        tpOpenClose.open();
     }
 }

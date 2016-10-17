@@ -32,6 +32,7 @@ import gwt.material.design.addins.client.overlay.MaterialOverlay;
 import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
 import gwt.material.design.addins.client.tree.MaterialTree;
 import gwt.material.design.addins.client.tree.MaterialTreeItem;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialTextBox;
@@ -100,7 +101,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
 
     @UiHandler("btnDelete")
     void onDeleteModal(ClickEvent e) {
-        docTree.getSelectedTree().removeFromTree();
+        docTree.getSelectedItem().removeFromTree();
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 
@@ -109,8 +110,8 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
         MaterialTreeItem item = new MaterialTreeItem();
         item.setText(txtName.getText());
         item.setIconType(IconType.FOLDER);
-        item.setIconColor("blue");
-        docTree.getSelectedTree().addItem(item);
+        item.setIconColor(Color.BLUE);
+        docTree.getSelectedItem().addItem(item);
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 

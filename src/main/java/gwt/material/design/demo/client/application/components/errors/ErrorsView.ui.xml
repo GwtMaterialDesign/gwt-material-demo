@@ -24,7 +24,8 @@
              xmlns:m.combobox="urn:import:gwt.material.design.addins.client.combobox"
              xmlns:m.autocomplete="urn:import:gwt.material.design.addins.client.autocomplete"
              xmlns:m.timepicker="urn:import:gwt.material.design.addins.client.timepicker"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+>
   <g:HTMLPanel>
     <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
@@ -65,18 +66,31 @@
       <m:MaterialTextBox ui:field="txtBoxValidator" placeholder="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnValidate" text="Validate" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnValidate" text="Validate" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
+    <m:MaterialTitle title="Allow Blank Property" description="Allow blank property is similar to not required property. By setting allowBlank='false' it means that your field is required." />
+    <m:MaterialRow>
+      <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TextBox)" grid="s12"/>
+      <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (Text Area)" grid="s12"/>
+      <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (IntegerBox)" grid="s12"/>
+      <m:MaterialDoubleBox ui:field="doubleBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DoubleBox)" grid="s12"/>
+      <m:MaterialFloatBox ui:field="floatBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (FloatBox)" grid="s12"/>
+      <m:MaterialLongBox ui:field="longBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (LongBox)" grid="s12"/>
+      <m:MaterialDatePicker ui:field="datePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DatePicker)" grid="s12"/>
+      <m.timepicker:MaterialTimePicker ui:field="timePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TimePicker)" grid="s12"/>
+      <m:MaterialButton ui:field="btnValidateAll" text="Validate" backgroundColor="BLUE" waves="LIGHT" />
+    </m:MaterialRow>
+    
     <!-- Autocomplete -->
     <m:MaterialRow>
       <m:MaterialTitle title="Autocomplete"/>
       <m.autocomplete:MaterialAutoComplete ui:field="acList" placeholder="States" grid="s12 m12 l5"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccess" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClear" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnError" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccess" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClear" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Date Picker -->
@@ -85,9 +99,9 @@
       <m:MaterialDatePicker ui:field="dp" placeholder="States" grid="s12 m12 l5"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorDp" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessDp" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearDp" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorDp" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessDp" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearDp" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Time Picker -->
@@ -96,9 +110,9 @@
       <m.timepicker:MaterialTimePicker placeholder="Time" ui:field="tp"  grid="s12 m12 l5" />
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessTime" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearTime" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorTime" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTime" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTime" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Range -->
@@ -107,9 +121,9 @@
       <m:MaterialRange ui:field="range" grid="s12 m12 l5" />
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessRange" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearRange" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessRange" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearRange" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Switch -->
@@ -118,9 +132,9 @@
       <m:MaterialSwitch ui:field="sw" grid="s12 m12 l5" />
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorSwitch" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessSwitch" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearSwitch" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorSwitch" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessSwitch" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearSwitch" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Text Area -->
@@ -129,9 +143,9 @@
       <m:MaterialTextArea ui:field="txtArea" placeholder="About You" grid="s12 m12 l5" text="I Love Material Design"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessTxtArea" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtArea" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtArea" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- Text Box -->
@@ -140,9 +154,9 @@
       <m:MaterialTextBox ui:field="txtBox" placeholder="First Name" grid="s12 m12 l5" text="Marjorie Matias"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtBox" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtBox" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
 
     <!-- ComboBox -->
@@ -157,9 +171,9 @@
       </m:MaterialColumn>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorComboBox" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessComboBox" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearComboBox" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorComboBox" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessComboBox" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearComboBox" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

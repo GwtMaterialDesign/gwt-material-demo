@@ -52,7 +52,7 @@ public class NavigatedView extends ViewImpl implements HasScrollspy {
         scrollspy.setTop(0);
         panel.add(scrollspy);
         scrollspy.addAttachHandler(attachEvent -> {
-            double top = scrollspy.getOffsetHeight() - 65;
+            double top = scrollspy.getOffsetHeight() - 270;
             double bottom = $("footer").offset().top - 660;
             double offset = 0;
             MaterialPushpin.apply(scrollspy, top, bottom, offset);

@@ -26,7 +26,7 @@
 
   <g:HTMLPanel>
     <m:MaterialTitle title="Pre-requisites" description="First of all, you must download the gwt-charts 0.9.9.jar for the integration to GWT Material"/>
-    <m:MaterialLink href="http://gwt-charts.googlecode.com/svn/download/gwt-charts-0.9.9.jar" text="Download gwt-charts.jar here" textColor="blue"/>
+    <m:MaterialLink href="http://gwt-charts.googlecode.com/svn/download/gwt-charts-0.9.9.jar" text="Download gwt-charts.jar here" textColor="BLUE"/>
 
     <m:MaterialTitle title="Setup" description="After downloading the jar, You will have to configure your App.gwt.xml file to inherit the Gwt Charts library. You can do it like this: "/>
 

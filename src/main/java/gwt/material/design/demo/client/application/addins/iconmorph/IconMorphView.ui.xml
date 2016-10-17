@@ -30,20 +30,20 @@
             xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
             &lt;!-- Addin Usage --><br/>
             &lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="MENU" addStyleNames="source"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK" addStyleNames="target"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
             &lt;/ma:iconmorph.MaterialIconMorph>
         </demo:PrettyPre>
         
         <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
-            <m:MaterialIcon iconType="MENU" addStyleNames="source"/>
-            <m:MaterialIcon iconType="ARROW_BACK" addStyleNames="target"/>
+            <m:MaterialIcon iconType="MENU"/>
+            <m:MaterialIcon iconType="ARROW_BACK"/>
         </ma:iconmorph.MaterialIconMorph>
         
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="MENU" addStyleNames="source"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK" addStyleNames="target"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
             &lt;/ma:iconmorph.MaterialIconMorph>
         </demo:PrettyPre>
 
@@ -51,32 +51,32 @@
         
         <!-- Tiny -->
         <ma:iconmorph.MaterialIconMorph iconSize="TINY">
-            <m:MaterialIcon iconType="POLYMER" addStyleNames="source"/>
-            <m:MaterialIcon iconType="DONE" addStyleNames="target"/>
+            <m:MaterialIcon iconType="POLYMER"/>
+            <m:MaterialIcon iconType="DONE"/>
         </ma:iconmorph.MaterialIconMorph>
 
         <!-- Small -->
         <ma:iconmorph.MaterialIconMorph iconSize="SMALL">
-            <m:MaterialIcon iconType="POLYMER" addStyleNames="source"/>
-            <m:MaterialIcon iconType="DONE" addStyleNames="target"/>
+            <m:MaterialIcon iconType="POLYMER"/>
+            <m:MaterialIcon iconType="DONE"/>
         </ma:iconmorph.MaterialIconMorph>
 
         <!-- Medium -->
         <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
-            <m:MaterialIcon iconType="POLYMER" addStyleNames="source"/>
-            <m:MaterialIcon iconType="DONE" addStyleNames="target"/>
+            <m:MaterialIcon iconType="POLYMER"/>
+            <m:MaterialIcon iconType="DONE"/>
         </ma:iconmorph.MaterialIconMorph>
 
         <!-- Large -->
         <ma:iconmorph.MaterialIconMorph iconSize="LARGE">
-            <m:MaterialIcon iconType="POLYMER" addStyleNames="source"/>
-            <m:MaterialIcon iconType="DONE" addStyleNames="target"/>
+            <m:MaterialIcon iconType="POLYMER"/>
+            <m:MaterialIcon iconType="DONE"/>
         </ma:iconmorph.MaterialIconMorph>
         
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="TINY"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="POLYMER" addStyleNames="source"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="DONE" addStyleNames="target"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="POLYMER"/><br/>
+            &emsp;&lt;m:MaterialIcon iconType="DONE"/><br/>
             &lt;/ma:iconmorph.MaterialIconMorph><br/>
         </demo:PrettyPre>
     </g:HTMLPanel>
