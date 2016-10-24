@@ -36,7 +36,7 @@
             &lt;ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
         </demo:PrettyPre>
         <m:MaterialTitle title="Simple Window" description="Simple Window contains only header toolbar (Close, Max / Restore action buttons)."/>
-        <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="WHITE" backgroundColor="BLUE" />
+        <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="WHITE" />
         <ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
             <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
                 <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
@@ -55,7 +55,7 @@
         </m.demo:PrettyPre>
 
         <m:MaterialTitle title="Maximize Window"/>
-        <m:MaterialButton ui:field="btnOpenMaximizedWindow" text="Open Maximized Window" textColor="WHITE" backgroundColor="BLUE" />
+        <m:MaterialButton ui:field="btnOpenMaximizedWindow" text="Open Maximized Window" textColor="WHITE" />
         <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
             &emsp;// set maximize window<br/>
             window.setMaximize(true);<br/>
@@ -63,7 +63,7 @@
         </m.demo:PrettyPre>
 
         <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
-        <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" backgroundColor="BLUE" />
+        <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" />
         <ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles">
             <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
                 <m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
@@ -109,9 +109,9 @@
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Window with tabs" />
-        <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE" backgroundColor="BLUE"/>
+        <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE"/>
         <ma:window.MaterialWindow ui:field="windowTab" backgroundColor="GREY_LIGHTEN_4" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2">
-            <m:MaterialRow backgroundColor="BLUE" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1">
+            <m:MaterialRow ui:field="headerPanel" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1">
                 <m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/>
                 <m:MaterialColumn grid="l6 m6 s9">
                     <m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
@@ -120,9 +120,9 @@
                     <m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
-            <m:MaterialRow backgroundColor="BLUE" shadow="1" marginBottom="0">
+            <m:MaterialRow ui:field="tabsPanel" shadow="1" marginBottom="0">
                 <m:MaterialColumn grid="l6 m12 s12">
-                    <m:MaterialTab backgroundColor="BLUE" indicatorColor="WHITE" width="50%">
+                    <m:MaterialTab indicatorColor="WHITE" width="50%">
                         <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Music" href="#music" textColor="WHITE"/></m:MaterialTabItem>
                         <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/></m:MaterialTabItem>
                         <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Art" href="#art" textColor="WHITE"/></m:MaterialTabItem>
@@ -149,7 +149,7 @@
         
         <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
             &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2"><br/>
-            &emsp;&lt;m:MaterialRow backgroundColor="BLUE" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>
+            &emsp;&lt;m:MaterialRow marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>
             &emsp;&emsp;&lt;m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/><br/>
             &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m6 s9"><br/>
             &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/><br/>
@@ -158,9 +158,9 @@
             &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/><br/>
             &emsp;&emsp;&lt;/m:MaterialColumn><br/>
             &emsp;&lt;/m:MaterialRow><br/>
-            &emsp;&lt;m:MaterialRow backgroundColor="BLUE" shadow="1"><br/>
+            &emsp;&lt;m:MaterialRow shadow="1"><br/>
             &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m12 s12"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialTab backgroundColor="BLUE" indicatorColor="WHITE" width="50%"><br/>
+            &emsp;&emsp;&emsp;&lt;m:MaterialTab indicatorColor="WHITE" width="50%"><br/>
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Music" href="#music" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
             &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Art" href="#art" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>

@@ -31,15 +31,15 @@
 
   <g:HTMLPanel>
     <m:MaterialTitle title="Introduction" description="We use flexbox to structure our html so that the footer is always on the bottom of the page."/>
-    <m:MaterialFooter backgroundColor="BLUE" addStyleNames="{style.customFooter}">
+    <m:MaterialFooter addStyleNames="{style.customFooter}">
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialTitle textColor="WHITE" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
-          <m:MaterialButton ui:field="btnChat" text="CHAT" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT"/>
+          <m:MaterialButton ui:field="btnChat" text="CHAT" waves="LIGHT"/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialTitle textColor="WHITE" title="GWT Phonegap" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
-          <m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT"/>
+          <m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" waves="LIGHT"/>
         </m:MaterialColumn>
       </m:MaterialRow>
 
@@ -49,16 +49,16 @@
     </m:MaterialFooter>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialFooter backgroundColor="BLUE"><br/><br/>
+      &emsp;&lt;m:MaterialFooter><br/><br/>
 
       &emsp;&lt;m:MaterialRow><br/>
       &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l6"><br/>
       &emsp;&emsp;&emsp;&lt;m:MaterialTitle textColor="WHITE" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnChat" text="CHAT" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT"/><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnChat" text="CHAT" waves="LIGHT"/><br/>
       &emsp;&emsp;&lt;/m:MaterialColumn><br/>
       &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l6"><br/>
       &emsp;&emsp;&emsp;&lt;m:MaterialTitle textColor="WHITE" title="GWT Phonegap" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT"/><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnDownloadPhonegap" text="GWT Material APK" waves="LIGHT"/><br/>
       &emsp;&emsp;&lt;/m:MaterialColumn><br/>
       &emsp;&lt;/m:MaterialRow><br/><br/>
 

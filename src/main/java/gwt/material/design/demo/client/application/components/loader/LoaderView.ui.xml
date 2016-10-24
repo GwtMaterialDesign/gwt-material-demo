@@ -35,7 +35,7 @@
   <g:HTMLPanel>
 
     <m:MaterialTitle title="Circular" />
-    <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" addStyleNames="{style.btn}"/>
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       // Show Loader<br/>
@@ -45,7 +45,7 @@
     </demo:PrettyPre>
     
     <m:MaterialTitle title="Linear" />
-    <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" addStyleNames="{style.btn}"/>
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       // Show Progress<br/>
@@ -93,8 +93,8 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
-    <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
-    <m:MaterialNavBar ui:field="navBar" backgroundColor="BLUE" addStyleNames="{style.navBar}" width="100%">
+    <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" addStyleNames="{style.btn}"/>
+    <m:MaterialNavBar ui:field="navBar" addStyleNames="{style.navBar}" width="100%">
       <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
       <m:MaterialNavSection float="RIGHT">
         <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
@@ -132,10 +132,10 @@
             <m:MaterialRow marginBottom="0" padding="20">
               <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
               <m:MaterialRow marginBottom="0">
-                <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#philippines" textColor="BLACK" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#vacation" textColor="BLACK" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#holiday" textColor="BLACK" float="LEFT"/>
+                <m:MaterialChip margin="4" text="#sea" textColor="BLACK" float="LEFT"/>
               </m:MaterialRow>
             </m:MaterialRow>
           </m:MaterialCardContent>

@@ -30,6 +30,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.events.SideNavPushEvent;
@@ -37,7 +38,19 @@ import gwt.material.design.client.events.SideNavPushEvent.SideNavPushHandler;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
+import gwt.material.design.demo.client.ThemeManager;
 import gwt.material.design.demo.client.place.NameTokens;
+import gwt.material.design.themes.amber.ThemeAmber;
+import gwt.material.design.themes.blue.ThemeBlue;
+import gwt.material.design.themes.brown.ThemeBrown;
+import gwt.material.design.themes.client.ThemeLoader;
+import gwt.material.design.themes.green.ThemeGreen;
+import gwt.material.design.themes.grey.ThemeGrey;
+import gwt.material.design.themes.orange.ThemeOrange;
+import gwt.material.design.themes.pink.ThemePink;
+import gwt.material.design.themes.purple.ThemePurple;
+import gwt.material.design.themes.red.ThemeRed;
+import gwt.material.design.themes.yellow.ThemeYellow;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -52,15 +65,15 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     @UiField MaterialHeader header;
     @UiField MaterialNavBar navBar, navBarSearch;
     @UiField MaterialSideNav sideNav;
-    @UiField MaterialPanel panel;
+    @UiField MaterialPanel panel, titlePanel;
     @UiField MaterialLabel title, description;
     @UiField MaterialAnchorButton btnStarted;
     @UiField MaterialSearch txtSearch;
+    @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
 
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
         sideNav.addHandler(new SideNavPushHandler() {
             @Override
             public void onPush(SideNavPushEvent event) {
@@ -85,7 +98,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
                 navBarSearch.setVisible(false);
             }
         });
-
+        initThemes();
         initSearches();
     }
 
@@ -176,6 +189,30 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
         txtSearch.setListSearches(listSearches);
 
+    }
+
+    protected void initThemes() {
+        ThemeManager.initialize();
+        ThemeManager.register(navBar, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(titlePanel);
+        buildThemeList();
+        comboThemes.setValue(ThemeManager.getBundle());
+        comboThemes.addValueChangeHandler(event -> {
+            ThemeManager.loadTheme(event.getValue());
+        });
+    }
+
+    protected void buildThemeList() {
+        comboThemes.addItem("Amber", ThemeAmber.INSTANCE);
+        comboThemes.addItem("Blue", ThemeBlue.INSTANCE);
+        comboThemes.addItem("Brown", ThemeBrown.INSTANCE);
+        comboThemes.addItem("Green", ThemeGreen.INSTANCE);
+        comboThemes.addItem("Grey", ThemeGrey.INSTANCE);
+        comboThemes.addItem("Orange", ThemeOrange.INSTANCE);
+        comboThemes.addItem("Pink", ThemePink.INSTANCE);
+        comboThemes.addItem("Purple", ThemePurple.INSTANCE);
+        comboThemes.addItem("Red", ThemeRed.INSTANCE);
+        comboThemes.addItem("Yellow", ThemeYellow.INSTANCE);
     }
 
     @Override

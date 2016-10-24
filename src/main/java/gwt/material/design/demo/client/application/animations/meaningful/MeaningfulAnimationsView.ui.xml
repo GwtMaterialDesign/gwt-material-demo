@@ -48,7 +48,7 @@
                 &emsp;&lt;/m:MaterialColumn grid="l6"><br/>
                 &lt;/m:MaterialRow ui:field="rowCards"><br/>
             </demo:PrettyPre>
-            <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" backgroundColor="BLUE" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnShowGrid" text="Show Grid" waves="LIGHT"/>
             <m:MaterialButton ui:field="btnCloseGrid" text="Close Grid" backgroundColor="WHITE" textColor="BLACK" waves="LIGHT"/>
             <m:MaterialRow ui:field="gridPanel">
                 <m:MaterialColumn grid="l3">
@@ -261,7 +261,7 @@
             </m:MaterialRow>
 
             <m:MaterialTitle title="Show Staggered List" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items."/>
-            <m:MaterialButton ui:field="btnStaggered" text="Click Me" backgroundColor="BLUE" waves="LIGHT"/>
+            <m:MaterialButton ui:field="btnStaggered" text="Click Me" waves="LIGHT"/>
 
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m.html:UnorderedList ui:field="listContainer"><br/>
@@ -285,7 +285,7 @@
 
 
             <m:MaterialTitle title="Fade in Image" description="Use this to fade in images. It also animates grayscale and brightness to give it a unique effect."/>
-            <m:MaterialButton ui:field="btnFade" text="Click Me" backgroundColor="BLUE" waves="LIGHT" />
+            <m:MaterialButton ui:field="btnFade" text="Click Me" waves="LIGHT" />
             <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
                 &emsp;&lt;m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
             </demo:PrettyPre>
