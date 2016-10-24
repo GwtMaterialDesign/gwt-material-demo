@@ -57,7 +57,7 @@
       </m:MaterialPanel>
     </m:MaterialContainer>
 
-    <m:MaterialFooter backgroundColor="BLUE" addStyleNames="{style.footer}">
+    <m:MaterialFooter ui:field="footer" addStyleNames="{style.footer}">
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m4 m4">
           <g:HTMLPanel>
@@ -74,19 +74,19 @@
         <m:MaterialColumn grid="s12 m4 l4">
           <m:MaterialTitle textColor="WHITE" title="Join The Discussion"
                            description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>
-          <m:MaterialAnchorButton href="https://gitter.im/GwtMaterialDesign/gwt-material" target="_blank" text="CHAT" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT" textColor="WHITE"/>
+          <m:MaterialAnchorButton href="https://gitter.im/GwtMaterialDesign/gwt-material" target="_blank" text="CHAT" waves="LIGHT" textColor="WHITE"/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m4 l4">
           <m:MaterialTitle textColor="WHITE" title="Github"
                            description="Download, fork, pull, file issues, and more at the official GWT Material repo on Github."/>
-          <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material/" target="_blank" text="Github" backgroundColor="BLUE_LIGHTEN_2" waves="LIGHT" textColor="WHITE"/>
+          <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material/" target="_blank" text="Github" waves="LIGHT" textColor="WHITE"/>
           <m:MaterialTooltip text="Visit our Community" position="RIGHT">
             <m:MaterialImage ui:field="imgGPlus" resource="{res.gplus}" addStyleNames="{style.gplus}"/>
           </m:MaterialTooltip>
         </m:MaterialColumn>
       </m:MaterialRow>
 
-      <m:MaterialFooterCopyright addStyleNames="footer-copyright">
+      <m:MaterialFooterCopyright ui:field="footerCopyRight" addStyleNames="footer-copyright">
         <m:MaterialLabel text="© 2015 Copyright GWT Material" />
       </m:MaterialFooterCopyright>
     </m:MaterialFooter>

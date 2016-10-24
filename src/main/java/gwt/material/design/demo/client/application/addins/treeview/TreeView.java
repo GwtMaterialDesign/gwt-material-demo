@@ -35,8 +35,10 @@ import gwt.material.design.addins.client.tree.MaterialTreeItem;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.ui.MaterialIcon;
+import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialTextBox;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -57,9 +59,13 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
     @UiField
     MaterialIcon btnAdd, btnDelete;
 
+    @UiField
+    MaterialPanel titlePanel;
+
     @Inject
     TreeView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        ThemeManager.register(titlePanel);
         docTree.addCloseHandler(new CloseHandler<MaterialTreeItem>() {
             @Override
             public void onClose(CloseEvent<MaterialTreeItem> event) {

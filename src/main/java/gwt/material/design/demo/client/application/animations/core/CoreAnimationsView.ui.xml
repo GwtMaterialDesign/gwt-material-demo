@@ -39,10 +39,10 @@
                 <demo:PrettyPre addStyleNames="lang-java z-depth-1">
                     MaterialAnimator.animate(Transition.BOUNCE, card, 300);
                 </demo:PrettyPre>
-                <m:MaterialCard ui:field="card" backgroundColor="BLUE">
+                <m:MaterialCard ui:field="card">
                     <m:MaterialCardContent textColor="WHITE">
-                        <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
-                        <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+                        <m:MaterialCardTitle textColor="BLACK" text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+                        <m:MaterialLabel textColor="BLACK" text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
                     </m:MaterialCardContent>
                     <m:MaterialCardAction>
                         <m:MaterialLink text="Link 1" />
@@ -50,7 +50,7 @@
                     </m:MaterialCardAction>
                 </m:MaterialCard>
                 <m:MaterialListBox ui:field="lstAnimations" old="true" />
-                <m:MaterialButton ui:field="btnAnimate" text="Animate" backgroundColor="BLUE" textColor="WHITE"/>
+                <m:MaterialButton ui:field="btnAnimate" text="Animate" textColor="WHITE"/>
             </m:MaterialColumn>
         </m:MaterialRow>
 
@@ -66,7 +66,7 @@
                 <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="FAVORITE" backgroundColor="PINK" />
             </m:MaterialColumn>
         </m:MaterialRow>
-        <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation" backgroundColor="BLUE" textColor="WHITE"/>
+        <m:MaterialButton ui:field="btnAnimateInfinite" text="Infinite Animation" textColor="WHITE"/>
         <m:MaterialButton ui:field="btnStopAnimation" text="Stop Animation" type="FLAT" />
 
         <m:MaterialTitle title="Callback" description="Setting the callback after animation" />
@@ -81,10 +81,10 @@
                     };<br/>
                     MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, callback);
                 </demo:PrettyPre>
-                <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" backgroundColor="BLUE" />
+                <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" />
             </m:MaterialColumn>
         </m:MaterialRow>
-        <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback" backgroundColor="BLUE" textColor="WHITE"/>
+        <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback" textColor="WHITE"/>
 
         <m:MaterialTitle title="Stateful Animation" description="Stateful object holding animation details. Default behaviour is a bounce transition for 800ms." />
         <m:MaterialRow>
@@ -98,7 +98,7 @@
                 <m:MaterialButton ui:field="iconState" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="POLYMER" backgroundColor="PURPLE" />
             </m:MaterialColumn>
         </m:MaterialRow>
-        <m:MaterialButton ui:field="btnAnimateStateful" text="Animate" backgroundColor="BLUE" textColor="WHITE"/>
+        <m:MaterialButton ui:field="btnAnimateStateful" text="Animate" textColor="WHITE"/>
 
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -30,13 +30,13 @@
 
   <g:HTMLPanel>
     <m:MaterialTitle title="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast" addStyleNames="{style.btn}"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       MaterialToast.fireToast("I Love Material Design");
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Toast with Action" description="rovides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction" addStyleNames="{style.btn}"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;MaterialLink link = new MaterialLink("UNDO");<br/>
       link.addClickHandler(new ClickHandler() {<br/>
@@ -49,13 +49,13 @@
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded" addStyleNames="{style.btn}"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       MaterialToast.fireToast("I Love Material Design", "rounded");
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback" addStyleNames="{style.btn}"/>
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;new MaterialToast(() -> { <br/>
       &emsp;MaterialToast.fireToast("BANG!"); <br/>
@@ -72,7 +72,7 @@
         <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModal"/>
       </m:MaterialModalFooter>
     </m:MaterialModal>
-    <m:MaterialButton text="Show Modal" ui:field="btnModal" backgroundColor="BLUE" waves="LIGHT"/>
+    <m:MaterialButton text="Show Modal" ui:field="btnModal" waves="LIGHT"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
       &emsp;&lt;m:MaterialModalContent><br/>
@@ -100,7 +100,7 @@
         <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseFixedModal"/>
       </m:MaterialModalFooter>
     </m:MaterialModal>
-    <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" backgroundColor="BLUE" waves="LIGHT"/>
+    <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" waves="LIGHT"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
       &emsp;&emsp; &lt;-- Content Here --><br/>
@@ -116,7 +116,7 @@
         <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseBottomSheetModal"/>
       </m:MaterialModalFooter>
     </m:MaterialModal>
-    <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" backgroundColor="BLUE" waves="LIGHT"/>
+    <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
@@ -134,7 +134,7 @@
         <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalDismiss"/>
       </m:MaterialModalFooter>
     </m:MaterialModal>
-    <m:MaterialButton text="Closable Modal" ui:field="btnClosable" backgroundColor="BLUE" waves="LIGHT"/>
+    <m:MaterialButton text="Closable Modal" ui:field="btnClosable" waves="LIGHT"/>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
       &emsp;&emsp; &lt;-- Content Here --><br/>
@@ -144,24 +144,24 @@
     <m:MaterialTitle title="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function."/>
 
     <m:MaterialTooltip text="I am tooltip" position="BOTTOM">
-      <m:MaterialButton text="Bottom" waves="LIGHT" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+      <m:MaterialButton text="Bottom" waves="LIGHT" addStyleNames="{style.btn}"/>
     </m:MaterialTooltip>
 
     <m:MaterialTooltip text="I am tooltip" position="TOP">
-      <m:MaterialButton text="Top" waves="LIGHT" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+      <m:MaterialButton text="Top" waves="LIGHT" addStyleNames="{style.btn}"/>
     </m:MaterialTooltip>
 
     <m:MaterialTooltip text="I am tooltip" position="LEFT">
-      <m:MaterialButton text="Left" waves="LIGHT" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+      <m:MaterialButton text="Left" waves="LIGHT" addStyleNames="{style.btn}"/>
     </m:MaterialTooltip>
 
     <m:MaterialTooltip text="I am tooltip" position="RIGHT">
-      <m:MaterialButton text="Right" waves="LIGHT" backgroundColor="BLUE" addStyleNames="{style.btn}"/>
+      <m:MaterialButton text="Right" waves="LIGHT" addStyleNames="{style.btn}"/>
     </m:MaterialTooltip>
 
     <demo:PrettyPre addStyleNames="lang-java z-depth-1">
       &emsp;&lt;m:MaterialTooltip text="I am tooltip" position="RIGHT"><br/>
-      &emsp;&lt;m:MaterialButton text="Right" waves="LIGHT" backgroundColor="BLUE" addStyleNames="{style.btn}"/><br/>
+      &emsp;&lt;m:MaterialButton text="Right" waves="LIGHT" addStyleNames="{style.btn}"/><br/>
       &lt;/m:MaterialTooltip><br/>
     </demo:PrettyPre>
 

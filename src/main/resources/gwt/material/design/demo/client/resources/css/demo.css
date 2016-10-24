@@ -175,3 +175,11 @@ ul.side-nav.fixed li:hover,ul.side-nav.fixed li.active {
 .table-of-contents.pinned {
     top: 80px !important;
 }
+
+a:hover {
+     color: inherit !important;
+}
+
+.side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+    color: #000 !important;
+}

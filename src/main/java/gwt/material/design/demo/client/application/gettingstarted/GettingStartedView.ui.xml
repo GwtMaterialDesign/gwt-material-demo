@@ -62,14 +62,14 @@
     <m:MaterialPanel>
       <m:MaterialTitle title="Download the JAR (Alternative)"
                        description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" backgroundColor="BLUE" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
+      <m:MaterialButton ui:field="btnDownloadGWTMaterial" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
     </m:MaterialPanel>
 
     <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" backgroundColor="BLUE" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" backgroundColor="BLUE" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" backgroundColor="BLUE" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" backgroundColor="BLUE" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" textColor="WHITE" />
+    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" textColor="WHITE" />
 
     <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
 

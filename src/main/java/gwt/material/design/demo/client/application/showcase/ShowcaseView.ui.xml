@@ -62,15 +62,15 @@
     <m:MaterialTitle title="Card (FAB) with Delightful Animations" description="With the power of MaterialPathAnimator (Addin), MaterialAnimator (Core) animation libraries, you can now apply delightful animations on card and FAB."/>
     <m:MaterialAnchorButton text="Source" textColor="WHITE" href="https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/showcase/pathanimator" target="_blank"/>
     <showcase:PathAnimatorShowcase />
-    <m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER">
+    <m:MaterialSplashScreen ui:field="splash" textColor="WHITE" textAlign="CENTER">
       <m:MaterialImage resource="{res.ic_splash}" width="300px"/>
       <m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" />
     </m:MaterialSplashScreen>
 
     <m:MaterialTitle title="SplashScreen" />
-    <m:MaterialButton ui:field="btnSplashScreen" backgroundColor="BLUE" waves="LIGHT" text="Demo" />
+    <m:MaterialButton ui:field="btnSplashScreen" waves="LIGHT" text="Demo" />
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER"><br/>
+      &emsp;&lt;m:MaterialSplashScreen ui:field="splash" textColor="WHITE" textAlign="CENTER"><br/>
       &emsp;&lt;m:MaterialImage resource="{res.ic_splash}" width="300px"/><br/>
       &emsp;&lt;m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" /><br/>
       &lt;/m:MaterialSplashScreen><br/>
@@ -144,7 +144,7 @@
             <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
             <m:MaterialTextBox type="EMAIL" placeholder="Email"/>
             <m:MaterialTextBox type="PASSWORD" placeholder="Password" />
-            <m:MaterialButton ui:field="btnLogin" backgroundColor="BLUE" waves="LIGHT" text="Log In" width="100%"/>
+            <m:MaterialButton ui:field="btnLogin" waves="LIGHT" text="Log In" width="100%"/>
 
             <m:MaterialRow addStyleNames="{style.rowAction}">
               <m:MaterialColumn grid="s12 m12 l6">
@@ -187,7 +187,7 @@
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/><br/>
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="EMAIL" placeholder="Email"/><br/>
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="PASSWORD" placeholder="Password" /><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnLogin" backgroundColor="BLUE" waves="LIGHT" text="Log In" width="100%"/><br/>
+      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnLogin" waves="LIGHT" text="Log In" width="100%"/><br/>
 
       &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow addStyleNames="{style.rowAction}"><br/>
       &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialColumn grid="s12 m12 l6"><br/>
@@ -200,7 +200,7 @@
       &lt;/m:MaterialRow><br/>
     </demo:PrettyPre>
     <m:MaterialTitle title="GWT Material Phonegap" description="Phonegap Integration with GWT Material Wrapper is now available. Feel free to download the Android Release and give us feedback."/>
-    <m:MaterialAnchorButton href="http://gwt-material.appspot.com/bin/gwtmaterial.apk" target="_blank" textColor="WHITE" backgroundColor="BLUE" waves="LIGHT"  text="Download APK File"/>
-    <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material-phonegap" target="_blank" textColor="WHITE" backgroundColor="BLUE" waves="LIGHT"  text="Source"/>
+    <m:MaterialAnchorButton href="http://gwt-material.appspot.com/bin/gwtmaterial.apk" target="_blank" textColor="WHITE" waves="LIGHT"  text="Download APK File"/>
+    <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material-phonegap" target="_blank" textColor="WHITE" waves="LIGHT"  text="Source"/>
   </g:HTMLPanel>
 </ui:UiBinder>

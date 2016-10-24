@@ -68,7 +68,7 @@ public class InfiniteTable extends Composite {
     @Override
     protected void onLoad() {
         super.onLoad();
-
+        table.getTableTitle().setText("Infinite Table");
         // Load the categories from the server
         table.setLoadMask(true);
         personService.getCategories(new AsyncCallback<List<String>>() {

@@ -28,12 +28,12 @@
     <m:MaterialCollection>
       <m:MaterialCollectionItem>
         <m:MaterialLink text="Sample 1" >
-          <m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/>
+          <m:MaterialBadge text="1 new" textColor="WHITE"/>
         </m:MaterialLink>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem>
         <m:MaterialLink text="Sample 2" >
-          <m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/>
+          <m:MaterialBadge text="1 new" textColor="WHITE"/>
         </m:MaterialLink>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem><m:MaterialLink text="Collecton 3"/></m:MaterialCollectionItem>
@@ -45,13 +45,13 @@
 
       &emsp;&lt;m:MaterialCollectionItem><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Sample 1" ><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
       &emsp;&emsp;&lt;/m:MaterialLink><br/>
       &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
 
       &emsp;&lt;m:MaterialCollectionItem><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Sample 2" ><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/><br/>
+      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
       &emsp;&emsp;&lt;/m:MaterialLink><br/>
       &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
 
@@ -64,31 +64,31 @@
 
     <!-- Activator -->
     <m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
-              iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE"/>
+              iconPosition="RIGHT" textColor="WHITE"/>
     <!-- My Drop Down -->
     <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
       <m:MaterialLink text="First" />
       <m:MaterialLink text="Second" >
-        <m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/>
+        <m:MaterialBadge text="1 new" textColor="WHITE"/>
       </m:MaterialLink>
       <m:MaterialLink text="Third" />
     </m:MaterialDropDown>
 
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;!-- Activator --><br/>
-      &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE"/><br/>
+      &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/><br/>
       &lt;!-- My Drop Down --><br/>
       &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" ><br/>
       &emsp;&lt;m:MaterialLink text="First" /><br/>
       &emsp;&lt;m:MaterialLink text="Second" ><br/>
-      &emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="BLUE" textColor="WHITE"/><br/>
+      &emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
       &emsp;&lt;/m:MaterialLink><br/>
       &emsp;&lt;m:MaterialLink text="Third" /><br/>
       &lt;/m:MaterialDropDown><br/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Badges in NavBar"/>
-    <m:MaterialNavBar backgroundColor="BLUE" width="100%">
+    <m:MaterialNavBar width="100%">
       <m:MaterialNavSection float="RIGHT">
         <m:MaterialLink text="Link 1" />
         <m:MaterialLink text="Link 2">
@@ -98,7 +98,7 @@
       </m:MaterialNavSection>
     </m:MaterialNavBar>
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="BLUE"><br/>
+      &emsp;&lt;m:MaterialNavBar><br/>
       &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Link 2"><br/>
@@ -111,7 +111,7 @@
   
     <!-- Circular Badge -->
     <m:MaterialTitle title="Circular Badge inside Icon Link"/>
-    <m:MaterialNavBar backgroundColor="BLUE_DARKEN_1" width="100%">
+    <m:MaterialNavBar width="100%">
       <m:MaterialNavSection float="LEFT">
         <!-- Nav Sections with Badge components beside the icon if any -->
         <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>

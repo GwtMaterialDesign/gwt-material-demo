@@ -39,7 +39,16 @@
 
     <!--GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialWithJQueryDebug"/>
-    <inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/>
+    <inherits name="gwt.material.design.themes.ThemeAmberResources"/>
+    <inherits name="gwt.material.design.themes.ThemeBlueResources"/>
+    <inherits name="gwt.material.design.themes.ThemeBrownResources"/>
+    <inherits name="gwt.material.design.themes.ThemeGreenResources"/>
+    <inherits name="gwt.material.design.themes.ThemeGreyResources"/>
+    <inherits name="gwt.material.design.themes.ThemeOrangeResources"/>
+    <inherits name="gwt.material.design.themes.ThemePinkResources"/>
+    <inherits name="gwt.material.design.themes.ThemePurpleResources"/>
+    <inherits name="gwt.material.design.themes.ThemeRedResources"/>
+    <inherits name="gwt.material.design.themes.ThemeYellowResources"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
     <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
 

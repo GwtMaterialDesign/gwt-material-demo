@@ -35,7 +35,7 @@
 
       <m:MaterialTitle title="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu."/>
       <!-- Activator -->
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-2"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-2"/>
       <!-- My Drop Down -->
         <m:MaterialDropDown activator="dp-2" constrainWidth="true">
         <m:MaterialLink text="First" />
@@ -46,7 +46,7 @@
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialTitle title="Introduction" description="Add a dropdown list to any button. Make sure to add the property activates to be able to initialize the dropdown plugin, it will use that as your id on your dropdown menu."/><br/>
         &lt;!-- Activator --><br/>
-        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-2"/><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-2"/><br/>
         &lt;!-- My Drop Down --><br/>
         &lt;m:MaterialDropDown activator="dp-2" constrainWidth="true"><br/>
         &emsp;&lt;m:MaterialLink text="First" /><br/>
@@ -57,7 +57,7 @@
 
       <m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/>
       <!-- Activator -->
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-3"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-3"/>
       <!-- My Drop Down -->
       <m:MaterialDropDown activator="dp-3" constrainWidth="true">
         <m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/>
@@ -68,7 +68,7 @@
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialTitle title="Designing" description="You can add divider, waves and color attributes to your dropdown. On items you can use any Material Widgets like MaterialLink, MaterialButton etc. to add it inside the dropdown."/><br/>
         &lt;!-- Activator --><br/>
-        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-3"/><br/>
+        &lt;m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-3"/><br/>
         &lt;!-- My Drop Down --><br/>
         &lt;m:MaterialDropDown activator="dp-3" constrainWidth="true"><br/>
         &emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="RIGHT" separator="true"/><br/>
@@ -98,7 +98,7 @@
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
-      <m:MaterialNavBar backgroundColor="BLUE" width="100%">
+      <m:MaterialNavBar width="100%">
         <m:MaterialNavBrand>App Name</m:MaterialNavBrand>
         <m:MaterialNavSection position="RIGHT">
           <!--Activator -->
@@ -114,7 +114,7 @@
       </m:MaterialDropDown>
       
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialNavBar backgroundColor="BLUE" width="100%"><br/>
+        &emsp;&lt;m:MaterialNavBar width="100%"><br/>
         &emsp;&lt;m:MaterialNavBrand><br />App Name&lt;/m:MaterialNavBrand><br/>
         &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
         &emsp;&emsp;&lt;!--Activator --><br/>
@@ -131,7 +131,7 @@
       </demo:PrettyPre>
 
       <m:MaterialTitle title="Selection Event" />
-      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" backgroundColor="BLUE" activates="dp-selection"/>
+      <m:MaterialButton  text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE" activates="dp-selection"/>
       <!-- My Drop Down -->
       <m:MaterialDropDown ui:field="dropdown" activator="dp-selection" constrainWidth="true">
         <m:MaterialLink text="First" />
