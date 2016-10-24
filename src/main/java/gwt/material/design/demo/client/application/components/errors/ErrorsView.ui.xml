@@ -185,9 +185,9 @@
       <m:MaterialTextBox ui:field="txtBoxWithHelper" placeholder="First Name" grid="s12 m12 l5" text="Marjorie Matias" helperText="This is a helper text"/>
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnErrorTxtBoxWithHelper" text="Error" backgroundColor="red" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnSuccessTxtBoxWithHelper" text="Success" backgroundColor="green" waves="LIGHT"/>
-      <m:MaterialButton ui:field="btnClearTxtBoxWithHelper" text="Clear" backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnErrorTxtBoxWithHelper" text="Error" backgroundColor="RED" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSuccessTxtBoxWithHelper" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnClearTxtBoxWithHelper" text="Clear" backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>
