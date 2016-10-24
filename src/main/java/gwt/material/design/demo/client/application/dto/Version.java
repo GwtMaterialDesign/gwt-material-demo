@@ -34,6 +34,9 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.0"),
+        CORE_1_5_3("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.3"),
+        CORE_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.2"),
         CORE_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.1"),
         CORE_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.0"),
         CORE_1_4_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.4.1"),
@@ -49,10 +52,14 @@ public class Version implements Serializable {
         THEME_1_4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.4"),
         THEME_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.0"),
         THEME_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.1"),
+        THEME_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.2"),
+        THEME_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.6.0"),
 
         // FOR gwt-material Addins
         ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0"),
-        ADDINS_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.1");
+        ADDINS_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.1"),
+        ADDINS_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.2"),
+        ADDINS_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.6.0");
 
         String name;
         VersionLink(String name) {

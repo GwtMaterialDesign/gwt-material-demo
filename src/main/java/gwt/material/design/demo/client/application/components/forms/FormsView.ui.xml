@@ -37,10 +37,12 @@
     <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
     <m:MaterialTextBox placeholder="First Name" grid="s12"/>
     <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
+    <m:MaterialTextBox placeholder="Information" iconType="INFO" grid="s12" helperText="A brief info about you" marginBottom="20"/>
     
     <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
       &emsp;&lt;m:MaterialTextBox placeholder="First Name" /><br/>
       &lt;m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" /><br/>
+      &lt;m:MaterialTextBox placeholder="Information" iconType="INFO" helperText="A brief info about you"/>
     </demo:PrettyPre>
 
     <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
