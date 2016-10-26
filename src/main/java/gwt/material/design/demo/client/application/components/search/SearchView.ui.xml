@@ -77,7 +77,7 @@
           }
       </demo:PrettyPre>
       
-      <m:MaterialTitle title="Populating data" description="Take note that we are using Search Object by defaul to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero." />
+      <m:MaterialTitle title="Populating data" description="Take note that we are using Search Object by default to handle the search results. You can also create an object and extend it to Search Object so that you can add your custom attribute e.g Hero." />
       <demo:PrettyPre addStyleNames="lang-java z-depth-1">
           &emsp;// Populate the search keyword into search component<br/>
           List&lt;SearchObject> objects = new ArrayList&lt;>();<br/>
