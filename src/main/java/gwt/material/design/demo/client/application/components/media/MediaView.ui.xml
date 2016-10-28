@@ -23,83 +23,94 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
-    <m:MaterialTitle title="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key."/>
-    <m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/><br/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute."/>
-    <m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively."/>
-    <m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Material Slider" description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider."/>
-
-    <m:MaterialSlider ui:field="slider" fullscreen="false">
-      <m:MaterialSlideItem>
-        <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
-        <m:MaterialSlideCaption textAlign="CENTER">
-          <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-        </m:MaterialSlideCaption>
-      </m:MaterialSlideItem>
-
-      <m:MaterialSlideItem>
-        <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
-        <m:MaterialSlideCaption textAlign="LEFT">
-          <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-        </m:MaterialSlideCaption>
-      </m:MaterialSlideItem>
-
-      <m:MaterialSlideItem>
-        <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
-        <m:MaterialSlideCaption textAlign="RIGHT">
-          <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-        </m:MaterialSlideCaption>
-      </m:MaterialSlideItem>
-
-      <m:MaterialSlideItem>
-        <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
-        <m:MaterialSlideCaption textAlign="CENTER">
-          <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
-        </m:MaterialSlideCaption>
-      </m:MaterialSlideItem>
-    </m:MaterialSlider>
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialSlider ui:field="slider" fullscreen="false"><br/><br/>
-      &emsp;&lt;m:MaterialSlideItem><br/>
-      &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
-      &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
-      &emsp;&lt;/m:MaterialSlideItem><br/>
-      &emsp;&lt;--Other Items here --><br/><br/>
-      &lt;/m:MaterialSlider><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Material Slider Fullscreen" description="Just add fullscreen='true' on MaterialSlide to make the slider fullscreen"/>
-    <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialSlider ui:field="slider" fullscreen="true"><br/><br/>
-      &emsp;&lt;m:MaterialSlideItem><br/>
-      &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
-      &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
-      &emsp;&lt;/m:MaterialSlideItem><br/>
-      &emsp;&lt;--Other Items here --><br/><br/>
-      &lt;/m:MaterialSlider><br/>
-    </demo:PrettyPre>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key."/>
+      <m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute."/>
+      <m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively."/>
+      <m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Material Slider" description="Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider. Note: This is also Hammer.js compatible! Try swiping with your finger to scroll through the slider."/>
+  
+      <m:MaterialSlider ui:field="slider" fullscreen="false">
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+  
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
+          <m:MaterialSlideCaption textAlign="LEFT">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+  
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
+          <m:MaterialSlideCaption textAlign="RIGHT">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+  
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+      </m:MaterialSlider>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialSlider ui:field="slider" fullscreen="false"><br/><br/>
+        &emsp;&lt;m:MaterialSlideItem><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
+        &emsp;&lt;/m:MaterialSlideItem><br/>
+        &emsp;&lt;--Other Items here --><br/><br/>
+        &lt;/m:MaterialSlider><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Material Slider Fullscreen" description="Just add fullscreen='true' on MaterialSlide to make the slider fullscreen"/>
+      <m:MaterialButton ui:field="fullscreenBtn" text="Fullscreen Slider" waves="LIGHT" iconType="FULLSCREEN" />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialSlider ui:field="slider" fullscreen="true"><br/><br/>
+        &emsp;&lt;m:MaterialSlideItem><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
+        &emsp;&lt;/m:MaterialSlideItem><br/>
+        &emsp;&lt;--Other Items here --><br/><br/>
+        &lt;/m:MaterialSlider><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

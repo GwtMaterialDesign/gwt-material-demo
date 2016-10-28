@@ -26,16 +26,20 @@
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
-    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
-    <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
-    </demo:PrettyPre>
-
-    <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
-    </demo:PrettyPre>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
+      <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
+      <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

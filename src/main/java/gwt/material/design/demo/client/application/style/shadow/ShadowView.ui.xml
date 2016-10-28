@@ -34,29 +34,33 @@
 
   <m:MaterialPanel>
     <g:HTMLPanel>
-      <m:MaterialTitle title="Panels" description="By adding shadow='1' to any material panel, material row, material column, material card, you can easily apply a shadow to that element"/>
-      <m:MaterialRow>
-        <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT" addStyleNames="{style.panel}"/>
-        <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED" addStyleNames="{style.panel}"/>
-        <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL" addStyleNames="{style.panel}"/>
-        <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW" addStyleNames="{style.panel}"/>
-        <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE" addStyleNames="{style.panel}"/>
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Panels" description="By adding shadow='1' to any material panel, material row, material column, material card, you can easily apply a shadow to that element"/>
+        <m:MaterialRow>
+          <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT" addStyleNames="{style.panel}"/>
+          <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED" addStyleNames="{style.panel}"/>
+          <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL" addStyleNames="{style.panel}"/>
+          <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW" addStyleNames="{style.panel}"/>
+          <m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE" addStyleNames="{style.panel}"/>
+        </m:MaterialRow>
+  
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT"/>
+          &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED"/>
+          &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL"/>
+          &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW"/>
+          &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE"/>
+        </demo:PrettyPre>
       </m:MaterialRow>
-
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="1" waves="DEFAULT"/>
-        &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="2" waves="RED"/>
-        &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="3" waves="TEAL"/>
-        &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="4" waves="YELLOW"/>
-        &lt;m:MaterialColumn backgroundColor="WHITE" grid="s12 m12 l2" shadow="5" waves="PURPLE"/>
-      </demo:PrettyPre>
-
-      <m:MaterialTitle title="Any Material Elements" description="You can directly add shadows on any material widgets by adding: addStyleNames='z-depth-1' to the ui binder widget. "/>
-      <m:MaterialImage resource="{res.image}" addStyleNames="z-depth-1"/>
-
-      <pre>
-        &lt;m:MaterialImage resource="{res.image}" addStyleNames="z-depth-1"/>
-      </pre>
+  
+      <g:HTMLPanel addStyleNames="code">
+        <m:MaterialTitle title="Any Material Elements" description="You can directly add shadows on any material widgets by adding: addStyleNames='z-depth-1' to the ui binder widget. "/>
+        <m:MaterialImage resource="{res.image}" addStyleNames="z-depth-1"/>
+  
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &lt;m:MaterialImage resource="{res.image}" addStyleNames="z-depth-1"/>
+        </demo:PrettyPre>
+      </g:HTMLPanel>
     </g:HTMLPanel>
   </m:MaterialPanel>
 </ui:UiBinder>

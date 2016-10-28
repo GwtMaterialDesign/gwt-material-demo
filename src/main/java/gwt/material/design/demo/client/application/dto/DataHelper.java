@@ -53,16 +53,22 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
-        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), Color.TEAL));
-        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), Color.DEEP_ORANGE));
-        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), Color.RED));
-        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), Color.PURPLE));
-        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, Color.PINK));
-        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, Color.BROWN));
-        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, Color.RED));
-        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, Color.BLUE));
-        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, Color.GREEN));
-        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, Color.AMBER));
+        versions.add(new Version("2.0-rc1", "October 2016", Version.VersionLink.CORE_2_0_RC1.getName(), Version.VersionLink.ADDINS_2_0_RC1.getName(), Version.VersionLink.THEME_2_0_RC1.getName(), Version.VersionLink.JQUERY_1_0_RC1.getName(), Version.VersionLink.TABLE_1_0_RC1.getName(), Color.GREEN));
+        versions.add(new Version("1.6.2", "September 2016", Version.VersionLink.CORE_1_6_2.getName(), Version.VersionLink.ADDINS_1_6_2.getName(), null, null, null, Color.AMBER_DARKEN_2));
+        versions.add(new Version("1.6.1", "August 2016", Version.VersionLink.CORE_1_6_1.getName(), null, null, null, null, Color.DEEP_ORANGE_ACCENT_2));
+        versions.add(new Version("1.6.0", "August 2016", Version.VersionLink.CORE_1_6_0.getName(), Version.VersionLink.ADDINS_1_6_0.getName(), Version.VersionLink.THEME_1_6_0.getName(), null, null, Color.BROWN_DARKEN_1));
+        versions.add(new Version("1.5.3", "July 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, null, null, Color.TEAL));
+        versions.add(new Version("1.5.2", "June 2016", Version.VersionLink.CORE_1_5_2.getName(), Version.VersionLink.ADDINS_1_5_2.getName(), Version.VersionLink.THEME_1_5_2.getName(), null, null, Color.PINK_ACCENT_1));
+        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), null, null, Color.TEAL));
+        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), null, null, Color.DEEP_ORANGE));
+        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), null, null, Color.RED));
+        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), null, null, Color.PURPLE));
+        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, null, null, Color.PINK));
+        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, null, null, Color.BROWN));
+        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, null, null, Color.RED));
+        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, null, null, Color.BLUE));
+        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, null, null, Color.GREEN));
+        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, null, null, Color.AMBER));
         return versions;
     }
 

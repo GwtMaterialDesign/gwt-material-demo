@@ -53,6 +53,6 @@ public class SearchPresenter extends Presenter<SearchPresenter.MyView, SearchPre
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Search", "Attached to NavBar component or can be used on external panels.", this);
+        SetPageTitleEvent.fire("Search", "Attached to NavBar component or can be used on external panels.", "components/search/SearchView", this);
     }
 }

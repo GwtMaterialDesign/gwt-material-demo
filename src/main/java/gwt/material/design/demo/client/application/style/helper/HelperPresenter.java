@@ -54,6 +54,6 @@ public class HelperPresenter extends Presenter<HelperPresenter.MyView, HelperPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Helper",
-                "", this);
+                "", "", this);
     }
 }

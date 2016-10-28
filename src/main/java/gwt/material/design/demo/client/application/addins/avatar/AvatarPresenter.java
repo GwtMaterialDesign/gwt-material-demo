@@ -53,7 +53,7 @@ public class AvatarPresenter extends Presenter<AvatarPresenter.MyView, AvatarPre
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Avatar", "Generated avatar based on JDenticon that provides a unique avatar based on unique name.", this);
+        SetPageTitleEvent.fire("Avatar", "Generated avatar based on JDenticon that provides a unique avatar based on unique name.", "addins/avatar/AvatarView", this);
     }
 
 }

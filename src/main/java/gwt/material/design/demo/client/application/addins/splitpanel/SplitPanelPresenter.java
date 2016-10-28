@@ -52,7 +52,7 @@ public class SplitPanelPresenter extends Presenter<SplitPanelPresenter.MyView, S
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Split Panel", "A high performance content splitter compatible with touch events", this);
+        SetPageTitleEvent.fire("Split Panel", "A high performance content splitter compatible with touch events", "addins/splitpanel/SplitPanelView", this);
     }
 
 }

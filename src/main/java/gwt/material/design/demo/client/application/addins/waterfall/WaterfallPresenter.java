@@ -53,6 +53,6 @@ public class WaterfallPresenter extends Presenter<WaterfallPresenter.MyView, Wat
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Waterfall", "Act like a collapsible header below the nav bar component when scrolling up / down to provide delightful transition of components.", this);
+        SetPageTitleEvent.fire("Waterfall", "Act like a collapsible header below the nav bar component when scrolling up / down to provide delightful transition of components.", "addins/waterfall/WaterfallView", this);
     }
 }

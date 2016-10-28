@@ -34,6 +34,12 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc1"),
+        CORE_1_6_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.2"),
+        CORE_1_6_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.1"),
+        CORE_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.0"),
+        CORE_1_5_3("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.3"),
+        CORE_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.2"),
         CORE_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.1"),
         CORE_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.5.0"),
         CORE_1_4_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.4.1"),
@@ -49,10 +55,23 @@ public class Version implements Serializable {
         THEME_1_4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.4"),
         THEME_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.0"),
         THEME_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.1"),
+        THEME_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.2"),
+        THEME_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.6.0"),
+        THEME_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc1"),
 
         // FOR gwt-material Addins
         ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0"),
-        ADDINS_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.1");
+        ADDINS_1_5_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.1"),
+        ADDINS_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.2"),
+        ADDINS_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.6.0"),
+        ADDINS_1_6_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.6.2"),
+        ADDINS_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc1"),
+
+        // FOR gwt-material JQuery
+        JQUERY_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/1.0-rc1"),
+
+        // FOR gwt-material Table
+        TABLE_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc1");
 
         String name;
         VersionLink(String name) {
@@ -73,16 +92,20 @@ public class Version implements Serializable {
     private String linkCore;
     private String linkAddins;
     private String linkThemes;
+    private String linkJQuery;
+    private String linkTable;
     private Color color;
 
     public Version() {}
 
-    public Version(String version, String date, String linkCore, String linkAddins, String linkThemes, Color color) {
+    public Version(String version, String date, String linkCore, String linkAddins, String linkThemes, String linkJQuery, String linkTable, Color color) {
         this.version = version;
         this.date = date;
         this.linkCore = linkCore;
         this.linkAddins = linkAddins;
         this.linkThemes = linkThemes;
+        this.linkJQuery = linkJQuery;
+        this.linkTable = linkTable;
         this.color = color;
     }
 
@@ -124,6 +147,22 @@ public class Version implements Serializable {
 
     public void setLinkThemes(String linkThemes) {
         this.linkThemes = linkThemes;
+    }
+
+    public String getLinkJQuery() {
+        return linkJQuery;
+    }
+
+    public void setLinkJQuery(String linkJQuery) {
+        this.linkJQuery = linkJQuery;
+    }
+
+    public String getLinkTable() {
+        return linkTable;
+    }
+
+    public void setLinkTable(String linkTable) {
+        this.linkTable = linkTable;
     }
 
     public Color getColor() {

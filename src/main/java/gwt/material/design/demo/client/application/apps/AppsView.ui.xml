@@ -21,8 +21,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.masonry="urn:import:gwt.material.design.addins.client.masonry">
-    <m:MaterialPanel>
-        <m:MaterialTitle title="gwt-material Apps" description="Lists of apps that use gwt-material"/>
+    <m:MaterialPanel marginTop="60">
         <m.masonry:MaterialMasonry ui:field="appRow" />
     </m:MaterialPanel>
 </ui:UiBinder>

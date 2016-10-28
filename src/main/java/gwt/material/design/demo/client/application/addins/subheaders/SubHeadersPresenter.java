@@ -53,7 +53,7 @@ public class SubHeadersPresenter extends Presenter<SubHeadersPresenter.MyView, S
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("SubHeaders", "SubHeaders are special list tiles that delineate distinct sections of a list or grid list and are typically related to the current filtering or sorting criteria. Subheader tiles are either displayed inline with tiles or can be associated with content, for example, in an adjacent column.", this);
+        SetPageTitleEvent.fire("SubHeaders", "SubHeaders are special list tiles that delineate distinct sections of a list or grid list and are typically related to the current filtering or sorting criteria. Subheader tiles are either displayed inline with tiles or can be associated with content, for example, in an adjacent column.", "addins/subheaders/SubHeadersView", this);
     }
 
 }

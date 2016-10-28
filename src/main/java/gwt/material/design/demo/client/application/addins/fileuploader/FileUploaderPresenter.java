@@ -53,7 +53,7 @@ public class FileUploaderPresenter extends Presenter<FileUploaderPresenter.MyVie
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("File Uploader", "Custom file uploader with Dnd support with the help of dropzone.js. It has multiple feature just like the GWT File Uploader core widget.", this);
+        SetPageTitleEvent.fire("File Uploader", "Custom file uploader with Dnd support with the help of dropzone.js. It has multiple feature just like the GWT File Uploader core widget.", "addins/fileuploader/FileUploader", this);
     }
 
 }

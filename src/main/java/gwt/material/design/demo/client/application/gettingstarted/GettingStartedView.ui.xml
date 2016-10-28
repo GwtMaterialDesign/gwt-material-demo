@@ -27,73 +27,110 @@
 
   <m:MaterialPanel>
     <m:MaterialPanel>
-      <m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
-      <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material" href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE"/>
-      </m:MaterialRow>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;dependency><br/>
-        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
-        &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
-        &lt;/dependency>
-      </demo:PrettyPre>
-      <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material-addins"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins" iconType="EXTENSION" iconPosition="LEFT" textColor="BLUE"/>
-      </m:MaterialRow>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;dependency><br/>
-        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
-        &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
-        &lt;/dependency>
-      </demo:PrettyPre>
-      <m:MaterialRow>
-        <m:MaterialLink target="_blank" text="gwt-material-themes"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes" iconType="PALETTE" iconPosition="LEFT" textColor="BLUE"/>
-      </m:MaterialRow>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;dependency><br/>
-        &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
-        &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
-        &emsp;&lt;version>1.5.1&lt;/version><br/>
-        &lt;/dependency>
-      </demo:PrettyPre>
+      <m:MaterialPanel addStyleNames="code">
+        <m:MaterialTitle title="Setup using Maven Archetype" description="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure."/>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.0-rc1
+        </demo:PrettyPre>
+      </m:MaterialPanel>
+      <m:MaterialPanel addStyleNames="code">
+        <m:MaterialTitle title="Maven Repository" description="We release a maven repository in order to improve the productivity of GWT Material."/>
+        <m:MaterialRow>
+          <m:MaterialLink target="_blank" text="gwt-material" href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE"/>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;&lt;dependency><br/>
+          &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+          &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
+          &emsp;&lt;version>2.0-rc1&lt;/version><br/>
+          &lt;/dependency>
+        </demo:PrettyPre>
+        <m:MaterialRow>
+          <m:MaterialLink target="_blank" text="gwt-material-addins"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins" iconType="EXTENSION" iconPosition="LEFT" textColor="BLUE"/>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;&lt;dependency><br/>
+          &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+          &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
+          &emsp;&lt;version>2.0-rc1&lt;/version><br/>
+          &lt;/dependency>
+        </demo:PrettyPre>
+        <m:MaterialRow>
+          <m:MaterialLink target="_blank" text="gwt-material-themes"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes" iconType="PALETTE" iconPosition="LEFT" textColor="BLUE"/>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;&lt;dependency><br/>
+          &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+          &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
+          &emsp;&lt;version>2.0-rc1&lt;/version><br/>
+          &lt;/dependency>
+        </demo:PrettyPre>
+  
+        <m:MaterialRow>
+          <m:MaterialLink target="_blank" text="gwt-material-jquery"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery" iconType="ATTACH_MONEY" iconPosition="LEFT" textColor="BLUE"/>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;&lt;dependency><br/>
+          &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+          &emsp;&lt;artifactId>gwt-material-jquery&lt;/artifactId><br/>
+          &emsp;&lt;version>1.0-rc1&lt;/version><br/>
+          &lt;/dependency>
+        </demo:PrettyPre>
+  
+        <m:MaterialRow>
+          <m:MaterialLink target="_blank" text="gwt-material-table"  href="http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table" iconType="LIST" iconPosition="LEFT" textColor="BLUE"/>
+        </m:MaterialRow>
+        <demo:PrettyPre addStyleNames="lang-xml-1">
+          &emsp;&lt;dependency><br/>
+          &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
+          &emsp;&lt;artifactId>gwt-material-table&lt;/artifactId><br/>
+          &emsp;&lt;version>1.0-rc1&lt;/version><br/>
+          &lt;/dependency>
+        </demo:PrettyPre>
+      </m:MaterialPanel>
     </m:MaterialPanel>
-    <m:MaterialPanel>
-      <m:MaterialTitle title="Download the JAR (Alternative)"
-                       description="If you are not using maven you can download the latest Jar Release easily and add it in your classpath."/>
-      <m:MaterialButton ui:field="btnDownloadGWTMaterial" waves="LIGHT" iconType="FILE_DOWNLOAD" iconPosition="RIGHT" text="Download 1.5.1"/>
+
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" textColor="WHITE" />
     </m:MaterialPanel>
-
-    <m:MaterialTitle title="Wiki" description="A brief information about gwt-material using Github Wikis" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Changelog" text="Changelog" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Contributing" text="Contributing" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/How-to-file-a-bug" text="How to file a bug" textColor="WHITE" />
-    <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-1.3-to-1.4" text="Migrating from 1.3 to 1.4" textColor="WHITE" />
-
-    <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
-
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l7 m7 s12">
-        <m:MaterialLabel text="Version" fontSize="0.8em" textColor="GREY" grid="l6 m6 s5"/>
-        <m:MaterialColumn grid="l6 m6 s7">
-          <m:MaterialLabel text="Core" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
-          <m:MaterialLabel text="Addins" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
-          <m:MaterialLabel text="Themes" fontSize="0.8em" textColor="GREY" grid="l4 s4 m4"/>
+    
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Wiki 2.0" description="A brief information about the API Changes of GMD related projects" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/2.0---API-Changes" text="GMD 2.0 API Changes" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-addins/wiki/2.0-API-Changes" text="Addins 2.0 API Changes" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-themes/wiki/2.0---API-Changes" text="Themes 2.0 API Changes" textColor="WHITE" />
+    </m:MaterialPanel>
+    
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Version Table" description="You can view the hierarchy of versions of gwt-material here and also the supported version for addins and themes."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12">
+          <m:MaterialLabel text="Version" fontSize="0.8em" textColor="GREY" grid="l6 m6 s5"/>
+          <m:MaterialColumn grid="l6 m6 s7">
+            <m:MaterialLabel text="Core" fontSize="0.8em" textColor="GREY" grid="l2 s2 m2"/>
+            <m:MaterialLabel text="Addins" fontSize="0.8em" textColor="GREY" grid="l2 s2 m2"/>
+            <m:MaterialLabel text="Themes" fontSize="0.8em" textColor="GREY" grid="l2 s2 m2"/>
+            <m:MaterialLabel text="JQuery" fontSize="0.8em" textColor="GREY" grid="l2 s2 m2"/>
+            <m:MaterialLabel text="Table" fontSize="0.8em" textColor="GREY" grid="l2 s2 m2"/>
+          </m:MaterialColumn>
         </m:MaterialColumn>
-      </m:MaterialColumn>
-    </m:MaterialRow>
-    <m:MaterialRow>
-      <m:MaterialCollapsible grid="l7 m7 s12" ui:field="versionColaps" padding="0"/>
-    </m:MaterialRow>
-
-    <m:MaterialPanel scrollspy="Configuring Your Module">
+      </m:MaterialRow>
+      <m:MaterialRow>
+        <m:MaterialCollapsible grid="s12" ui:field="versionColaps" padding="0"/>
+      </m:MaterialRow>
+    </m:MaterialPanel>
+    
+    <m:MaterialPanel addStyleNames="code" scrollspy="Configuring Your Module">
       <m:MaterialTitle title="Configuring your module" description="You will have to configure your App.gwt.xml file to inherit the Gwt Material Widget widget library. You can do it like this:"/>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml-1">
         &lt;inherits name="gwt.material.design.GwtMaterialWithJQuery" /&gt;
       </demo:PrettyPre>
       <m:MaterialTitle description="Here are the available modules for 1.4 and above release"/>
-      <demo:PrettyPre addStyleNames="lang-yaml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-yaml-1">
         &emsp;- GwtMaterialDesign # Standard use with all resources (but will not load jQuery for you).<br/>
         - GwtMaterialDesignDebug # Same as above but will load non-minified js and Source URL included for Chrome debugging<br/>
         - GwtMaterialWithJQuery # Standard use with all resources and will also include loading jQuery<br/>
@@ -103,38 +140,95 @@
         - GwtMaterialBasicWithJQueryDebug # Same as above but with non-minified js and Source URL included for Chrome debugging.<br/>
       </demo:PrettyPre>
     </m:MaterialPanel>
-
-
-    <m:MaterialTitle title="Theming" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
-    <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
-    <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
-    </demo:PrettyPre>
-
-    <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBLUE"/&gt;
-    </demo:PrettyPre>
-
-    <m:MaterialPanel>
-      <m:MaterialTitle title="Responsive Design" description="Add meta tag for responsive design on Mobile devices in your gwt-app.html" />
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="JQuery" description="Starting 2.0 we have added GMD Jquery as dependency to enable JSInterop feature."/>
+      <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-jquery" text="Gwt Material JQuery Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;inherits name="gwt.material.design.jquery.JQuery" /&gt;
+      </demo:PrettyPre>
+      <m:MaterialTitle title="Usage" />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &emsp;import static gwt.material.design.jquery.client.api.JQuery.$;<br/><br/>
+  
+        public class MyEntryPoint implements EntryPoint {<br/><br/>
+  
+        &emsp;@Override<br/>
+        &emsp;public void onModuleLoad() {<br/>
+        &emsp;&emsp;$(".myclass").css("display", "block");<br/>
+        &emsp;}<br/>
+        }
+      </demo:PrettyPre>
+    </m:MaterialPanel>
+  
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Themes" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
+      <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
+      <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;inherits name="gwt.material.design.GwtMaterialDesignBasic" /&gt;
+      </demo:PrettyPre>
+      <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;inherits name="gwt.material.design.themes.ThemeBlue"/&gt;
+      </demo:PrettyPre>
+      <m:MaterialTitle title="Dynamic Theming" description="Starting 2.0 , we supported dynamic theming. Below is the procedure on how to support dynamic theming. Import any themes you want to include into your app." />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &emsp;&lt;inherits name="gwt.material.design.themes.ThemeAmberResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeBlueResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeBrownResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeGreenResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeGreyResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeOrangeResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemePinkResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemePurpleResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeRedResources"/><br/>
+        &lt;inherits name="gwt.material.design.themes.ThemeYellowResources"/><br/>
+      </demo:PrettyPre>
+      <m:MaterialTitle title="Build your theme manager" description="A Custom theme manager to store selected theme to browser’s cache. "/>
+      <m:MaterialAnchorButton target="_blank" textColor="WHITE" text="Theme Manager" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/release_2.0/src/main/java/gwt/material/design/demo/client/ThemeManager.java" />
+    
+      <m:MaterialTitle marginTop="12" title="Build your Theme Switcher component" description="In order to build the theme switcher we use MaterialCombobox component to populate the theme bundle"/>
+      <m:MaterialAnchorButton target="_blank" textColor="WHITE" text="Theme Switcher" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/release_2.0/src/main/java/gwt/material/design/demo/client/application/menu/MenuView.java#L72" />
+    </m:MaterialPanel>
+  
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Addins" description="We created another project for gwt-material-addins .See below the link of the repo."/>
+      <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-addins" text="Gwt Material Addins Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
+      <m:MaterialTitle description="Import the GwtMaterialAddins module to your app.xml. Make sure you have imported already the GwtMaterialDesign" />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;inherits name="gwt.material.design.addins.GwtMaterialAddins" /&gt;
+      </demo:PrettyPre>
+    </m:MaterialPanel>
+  
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Data Table" description="We created another project for gwt-material-table .See below the link of the repo."/>
+      <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-table" text="Gwt Material Table Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
+      <m:MaterialTitle description="As a required dependency for GMD Table you need to import GMD JQuery." />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;inherits name="gwt.material.design.GwtMaterialTable" /&gt;
       </demo:PrettyPre>
     </m:MaterialPanel>
 
-    <m:MaterialPanel>
+    <m:MaterialPanel addStyleNames="code">
       <m:MaterialTitle title="UiBinder usage" description="Assuming that you're using UIBinder, add the following namespace to the &lt;ui:UIBinder> element:"/>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml-1">
         xmlns:m="urn:import:gwt.material.design.client.ui"
       </demo:PrettyPre>
       <m:MaterialTitle  description="Then you can easily use the m namespace in your widget design, like MaterialButton:"/>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml-1">
         &lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
       </demo:PrettyPre>
     </m:MaterialPanel>
-    <m:MaterialPanel>
+  
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Responsive Design" description="Add meta tag for responsive design on Mobile devices in your gwt-app.html" />
+      <demo:PrettyPre addStyleNames="lang-xml-1">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </demo:PrettyPre>
+    </m:MaterialPanel>
+    
+    <m:MaterialPanel addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialTitle title="Starter Template"  description="You can copy and paste the UI Binder Code of this starter template into your app to know how GWT Material works with basic Nav Bar, Side Bar, Fixed Footer, and Container works."/>
@@ -147,16 +241,21 @@
 
     <m:MaterialRow>
       <m:MaterialColumn grid="l6 m6 s12">
-        <m:MaterialTitle title="Project Setup" description="Project setup using gwt-material-archetype on both Inteliji IDEA and Eclipse." />
-        <m:MaterialVideo url="https://www.youtube.com/embed/sEVqfqDUOpE"/>
-
-        <m:MaterialTitle title="Building Applications" description="On this tutorial, you will learn how to build the overall layout of gwt-material applications that includes the NavBar, Sidenav, Container and FAB (Floating Acton Button)"/>
-        <m:MaterialVideo url="https://www.youtube.com/embed/e-XY4EGVIuc"/>
+        <m:MaterialPanel addStyleNames="code">
+          <m:MaterialTitle title="Project Setup" description="Project setup using gwt-material-archetype on both Inteliji IDEA and Eclipse." />
+          <m:MaterialVideo url="https://www.youtube.com/embed/sEVqfqDUOpE"/>
+        </m:MaterialPanel>
+  
+        <m:MaterialPanel addStyleNames="code">
+          <m:MaterialTitle title="Building Applications" description="On this tutorial, you will learn how to build the overall layout of gwt-material applications that includes the NavBar, Sidenav, Container and FAB (Floating Acton Button)"/>
+          <m:MaterialVideo url="https://www.youtube.com/embed/e-XY4EGVIuc"/>
+        </m:MaterialPanel>
+  
+        <m:MaterialPanel addStyleNames="code">
+          <m:MaterialTitle title="Style and Layout" description="On this tutorial you will learn how to upgrade your gwt material version to 1.6.0 and the main topic which will be Style and Layout.You will learn how to use Colors, Grids, Helpers, Icons, Shadows and also Theming which we will use gwt-material-themes."/>
+          <m:MaterialVideo url="https://www.youtube.com/embed/79owqV8PPhQ"/>
+        </m:MaterialPanel>
       </m:MaterialColumn>
     </m:MaterialRow>
-
-
-
-
   </m:MaterialPanel>
 </ui:UiBinder>

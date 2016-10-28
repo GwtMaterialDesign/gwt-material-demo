@@ -28,161 +28,176 @@
     </ui:style>
 
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Simple Window" description="Simple Window contains only header toolbar (Close, Max / Restore action buttons)."/>
-        <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="WHITE" />
-        <ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
-            <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
-                <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
-                <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
-                <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
-            </m:MaterialPanel>
-        </ma:window.MaterialWindow>
-        <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:window.MaterialWindow ui:field="window" width="70%" title="Documents"><br/>
-            &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/ma:window.MaterialWindow><br/>
-        </m.demo:PrettyPre>
-
-        <m:MaterialTitle title="Maximize Window"/>
-        <m:MaterialButton ui:field="btnOpenMaximizedWindow" text="Open Maximized Window" textColor="WHITE" />
-        <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// set maximize window<br/>
-            window.setMaximize(true);<br/>
-            window.open();
-        </m.demo:PrettyPre>
-
-        <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
-        <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" />
-        <ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles">
-            <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
-                <m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
-                <m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
-                <m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" />
-            </m:MaterialPanel>
-        </ma:window.MaterialWindow>
-        
-        <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles"><br/>
-            &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/ma:window.MaterialWindow><br/>
-        </m.demo:PrettyPre>
-
-        <m:MaterialTitle title="Open / Close Window" description="Just like modals, window dialog has programmatically functions for opening and closing the window"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            // Opening Window<br/>
-            window.open();<br/><br/>
-
-            // Closing Window<br/>
-            window.close();<br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Window Handlers" description="We built events for Window component : Open / Close Events" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;window.addOpenHandler(new OpenHandler&lt;Boolean>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onOpen(OpenEvent&lt;Boolean> event) {<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Opened : " + window.getTitle());<br/>
-            &emsp;}<br/>
-            });<br/><br/>
-
-            window.addCloseHandler(new CloseHandler&lt;Boolean>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onClose(CloseEvent&lt;Boolean> event) {<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Closed : " + window.getTitle());<br/>
-            &emsp;}<br/>
-            });<br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Window with tabs" />
-        <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE"/>
-        <ma:window.MaterialWindow ui:field="windowTab" backgroundColor="GREY_LIGHTEN_4" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2">
-            <m:MaterialRow ui:field="headerPanel" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1">
-                <m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/>
-                <m:MaterialColumn grid="l6 m6 s9">
-                    <m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
-                    <m:MaterialIcon iconType="COLOR_LENS" iconColor="WHITE" float="RIGHT"/>
-                    <m:MaterialIcon iconType="SETTINGS" iconColor="WHITE" float="RIGHT"/>
-                    <m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/>
-                </m:MaterialColumn>
-            </m:MaterialRow>
-            <m:MaterialRow ui:field="tabsPanel" shadow="1" marginBottom="0">
-                <m:MaterialColumn grid="l6 m12 s12">
-                    <m:MaterialTab indicatorColor="WHITE" width="50%">
-                        <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Music" href="#music" textColor="WHITE"/></m:MaterialTabItem>
-                        <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/></m:MaterialTabItem>
-                        <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Art" href="#art" textColor="WHITE"/></m:MaterialTabItem>
-                    </m:MaterialTab>
-                </m:MaterialColumn>
-            </m:MaterialRow>
-            <m:MaterialPanel m:id="music"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
-                <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
-                <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
-                <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
-            </m:MaterialPanel>
-            <m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
-                <m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
-                <m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
-                <m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" />
-            </m:MaterialPanel>
-            <m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
-                <m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
-                <m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
-                <m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" />
-            </m:MaterialPanel>
-        </ma:window.MaterialWindow>
-
-        
-        <m.demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2"><br/>
-            &emsp;&lt;m:MaterialRow marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m6 s9"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="COLOR_LENS" iconColor="WHITE" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="SETTINGS" iconColor="WHITE" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-            &emsp;&lt;m:MaterialRow shadow="1"><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m12 s12"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialTab indicatorColor="WHITE" width="50%"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Music" href="#music" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Art" href="#art" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialTab><br/>
-            &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-            &emsp;&lt;m:MaterialPanel m:id="music"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
-            &emsp;&emsp;&lt;m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
-            &emsp;&emsp;&lt;m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/ma:window.MaterialWindow><br/>
-        </m.demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Simple Window" description="Simple Window contains only header toolbar (Close, Max / Restore action buttons)."/>
+            <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="WHITE" />
+            <ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
+                <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
+                    <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
+                </m:MaterialPanel>
+            </ma:window.MaterialWindow>
+            <m.demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:window.MaterialWindow ui:field="window" width="70%" title="Documents"><br/>
+                &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
+                &emsp;&emsp;&lt;m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:window.MaterialWindow><br/>
+            </m.demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Maximize Window"/>
+            <m:MaterialButton ui:field="btnOpenMaximizedWindow" text="Open Maximized Window" textColor="WHITE" />
+            <m.demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// set maximize window<br/>
+                window.setMaximize(true);<br/>
+                window.open();
+            </m.demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
+            <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" />
+            <ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles">
+                <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
+                    <m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" />
+                </m:MaterialPanel>
+            </ma:window.MaterialWindow>
+            
+            <m.demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles"><br/>
+                &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
+                &emsp;&emsp;&lt;m:MaterialIcon iconType="ANDROID" iconColor="GREEN" backgroundColor="WHITE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="I Love Programming" textColor="WHITE" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:window.MaterialWindow><br/>
+            </m.demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Open / Close Window" description="Just like modals, window dialog has programmatically functions for opening and closing the window"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                // Opening Window<br/>
+                window.open();<br/><br/>
+    
+                // Closing Window<br/>
+                window.close();<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Window Handlers" description="We built events for Window component : Open / Close Events" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;window.addOpenHandler(new OpenHandler&lt;Boolean>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onOpen(OpenEvent&lt;Boolean> event) {<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Opened : " + window.getTitle());<br/>
+                &emsp;}<br/>
+                });<br/><br/>
+    
+                window.addCloseHandler(new CloseHandler&lt;Boolean>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onClose(CloseEvent&lt;Boolean> event) {<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Closed : " + window.getTitle());<br/>
+                &emsp;}<br/>
+                });<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Window with tabs" />
+            <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE"/>
+            <ma:window.MaterialWindow ui:field="windowTab" backgroundColor="GREY_LIGHTEN_4" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2">
+                <m:MaterialRow ui:field="headerPanel" marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1">
+                    <m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/>
+                    <m:MaterialColumn grid="l6 m6 s9">
+                        <m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
+                        <m:MaterialIcon iconType="COLOR_LENS" iconColor="WHITE" float="RIGHT"/>
+                        <m:MaterialIcon iconType="SETTINGS" iconColor="WHITE" float="RIGHT"/>
+                        <m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+                <m:MaterialRow ui:field="tabsPanel" shadow="1" marginBottom="0">
+                    <m:MaterialColumn grid="l6 m12 s12">
+                        <m:MaterialTab indicatorColor="WHITE" width="50%">
+                            <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Music" href="#music" textColor="WHITE"/></m:MaterialTabItem>
+                            <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/></m:MaterialTabItem>
+                            <m:MaterialTabItem waves="LIGHT"><m:MaterialLink text="Art" href="#art" textColor="WHITE"/></m:MaterialTabItem>
+                        </m:MaterialTab>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+                <m:MaterialPanel m:id="music"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
+                    <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
+                </m:MaterialPanel>
+                <m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
+                    <m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" />
+                </m:MaterialPanel>
+                <m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO">
+                    <m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" />
+                </m:MaterialPanel>
+            </ma:window.MaterialWindow>
+    
+            
+            <m.demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2"><br/>
+                &emsp;&lt;m:MaterialRow marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="Demo" textColor="WHITE" fontSize="1.5em" fontWeight="BOLD" grid="l6 m6 s3"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m6 s9"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="SEARCH" iconColor="WHITE" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="COLOR_LENS" iconColor="WHITE" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="SETTINGS" iconColor="WHITE" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="MORE_VERT" iconColor="WHITE" float="RIGHT"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+                &emsp;&lt;m:MaterialRow shadow="1"><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="l6 m12 s12"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialTab indicatorColor="WHITE" width="50%"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Music" href="#music" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Sports" href="#sports" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTabItem waves="LIGHT"><br/>&lt;m:MaterialLink text="Art" href="#art" textColor="WHITE"/><br/>&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialTab><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+                &emsp;&lt;m:MaterialPanel m:id="music"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
+                &emsp;&emsp;&lt;m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel m:id="sports"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
+                &emsp;&emsp;&lt;m:MaterialIcon iconType="DIRECTIONS_BIKE" iconColor="PURPLE" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="I Love Sports" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="It's a slow process, but quitting won't speed up." fontSize="1.2em" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel m:id="art"  padding="32"  height="300px" textAlign="CENTER" overflow="AUTO"><br/>
+                &emsp;&emsp;&lt;m:MaterialIcon iconType="PALETTE" iconColor="RED" padding="24" iconSize="LARGE" circle="true" shadow="1"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="I Love Art" marginTop="20" fontSize="2em" fontWeight="BOLD"/><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:window.MaterialWindow><br/>
+            </m.demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

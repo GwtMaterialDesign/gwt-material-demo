@@ -61,12 +61,6 @@ public class GettingStartedView extends ViewWithUiHandlers<GettingStartedUiHandl
     void onSourceStarter(ClickEvent e) {
         Window.open(constants.sourceStarterUrl(), "_blank", "");
     }
-
-    @UiHandler("btnDownloadGWTMaterial")
-    void onDownloadGWTMaterial(ClickEvent e) {
-        Window.open(constants.sourceUrl(), "_blank", "");
-    }
-
     @Override
     public void loadAllVersions() {
         versionColaps.clear();

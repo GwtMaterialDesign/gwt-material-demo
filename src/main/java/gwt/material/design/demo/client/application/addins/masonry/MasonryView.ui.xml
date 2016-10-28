@@ -23,276 +23,289 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:masonry.MaterialMasonry><br/>
-            &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
-            &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
-            &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-        
-        <m:MaterialTitle title="Basic" description="You can use masonry by wrapping column components."/>
-        <ma:masonry.MaterialMasonry>
-            <m:MaterialColumn grid="l4 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="WIFI_TETHERING" iconColor="WHITE" iconSize="LARGE" marginTop="125" />
-                <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="BLUE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="RED_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="ACCESSIBLE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="RED_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="ARROW_UPWARD" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="YELLOW_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l4 s12 m6" backgroundColor="GREEN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="WRAP_TEXT" iconColor="WHITE" iconSize="MEDIUM" marginTop="50"/>
-                <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="GREEN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="ORANGE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="TIME_TO_LEAVE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="ORANGE_LIGHTEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="ASSIGNMENT_RETURN" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="PURPLE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l4 s12 m6" backgroundColor="GREY_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="VIDEOCAM" iconColor="WHITE" iconSize="LARGE" marginTop="125"/>
-                <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="GREY_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="AMBER_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="POLYMER" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="AMBER_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="WORK" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="INDIGO_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BROWN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="QUESTION_ANSWER" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="BROWN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PINK_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
-                <m:MaterialIcon iconType="AIRPLANEMODE_ACTIVE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
-                <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="PINK_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
-            </m:MaterialColumn>
-        </ma:masonry.MaterialMasonry>
-
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:masonry.MaterialMasonry><br/>
-            &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="WIFI_TETHERING" iconColor="WHITE" iconSize="LARGE" marginTop="125" /><br/>
-            &emsp;&lt;m:MaterialLabel text="4 columns" bottom="0" backgroundColor="BLUE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/><br/>
-            &emsp;&lt;/m:MaterialColumn><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Origin Left" description="By default originLeft is set to true, you can rearrange the blocks into right by setting it to false." />
-        <ma:masonry.MaterialMasonry grid="l6 s12 m12" originLeft="false">
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
-        </ma:masonry.MaterialMasonry>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" originLeft="false"><br/>
-            &emsp;&lt;!-- Column content here --><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Origin Top" description="By default originLeft is set to false, you can rearrange the blocks into bottom by setting it to false." />
-        <ma:masonry.MaterialMasonry grid="l6 s12 m12" originTop="false">
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l1 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
-        </ma:masonry.MaterialMasonry>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" originTop="false"><br/>
-            &emsp;&lt;!-- Column content here --><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Transition Duration" description="You can set how fast the transition of masonry by settung it's duration, if set to 0 then no transition will be applied." />
-        <ma:masonry.MaterialMasonry grid="l6 s12 m12" transitionDuration="0">
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
-            <m:MaterialColumn grid="l1 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
-        </ma:masonry.MaterialMasonry>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" transitionDuration="0"><br/>
-            &emsp;&lt;!-- Column content here --><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Card Support" description="You can wrap the columns and add card inside of it" />
-        <ma:masonry.MaterialMasonry backgroundColor="BLACK">
-            <m:MaterialColumn grid="l6 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="https://13thflooroffice.files.wordpress.com/2013/06/kodaline_in-a-perfect-world-packshot-1000.jpg"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="In a Perfect World" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="Kodaline" textColor="WHITE"/>
-                        <m:MaterialLabel text="Recently Added" fontSize="0.8em" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="TEAL_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="http://img2.ymlp344.net/tx3p_fosterthepeoplecoverblast.jpg"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="Supermodel" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="Foster the people" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PURPLE_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="https://s3.amazonaws.com/rapgenius/Ellie-Goulding-Halcyon-Days-2013-1200x1200.png"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="Halcyon Days" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="Ellie Goulding" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l2 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="http://poponandon.com/wp-content/uploads/2013/04/onerepublic-native-review-2013.jpg"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="Native" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="One Republic" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-
-            <m:MaterialColumn grid="l2 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="RED_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="http://cdn.pitchfork.com/news/49944/3490b02b.jpg"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="Comedown machine" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="The Strokes" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-            <m:MaterialColumn grid="l4 s12 m6" padding="4">
-                <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
-                    <m:MaterialCardImage waves="DEFAULT">
-                        <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2014/02/pharrell-williams-girl-album-cover.jpg"/>
-                    </m:MaterialCardImage>
-
-                    <m:MaterialCardContent textColor="BLACK">
-                        <m:MaterialRow marginBottom="0">
-                            <m:MaterialLabel fontSize="1.2em" text="Girl" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
-                            <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
-                        </m:MaterialRow>
-                        <m:MaterialLabel text="Pharrell Williams" textColor="WHITE"/>
-                    </m:MaterialCardContent>
-                </m:MaterialCard>
-            </m:MaterialColumn>
-        </ma:masonry.MaterialMasonry>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:masonry.MaterialMasonry backgroundColor="BLACK"><br/>
-            &emsp;&lt;m:MaterialColumn grid="l6 s12 m6" padding="4"><br/>
-            &emsp;&emsp;&lt;m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="DEFAULT"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://13thflooroffice.files.wordpress.com/2013/06/kodaline_in-a-perfect-world-packshot-1000.jpg"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/><br/>
-
-            &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="In a Perfect World" textColor="WHITE" grid="l9 s9 m9" truncate="true"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Kodaline" textColor="WHITE"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Recently Added" fontSize="0.8em" textColor="WHITE"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
-            &emsp;&emsp;&lt;/m:MaterialCard><br/>
-            &emsp;&lt;/m:MaterialColumn><br/>
-            &emsp;&lt;!-- Other column and it's card here --><br/>
-            &lt;/ma:masonry.MaterialMasonry><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialRow>
-            <m:MaterialTitle title="Dynamic Adding and Removing" description="You can easily add / remove items with transition animations and reload the masonry easily."/>
-            <m:MaterialButton ui:field="btnAddItem" margin="12" text="Add New Item" />
-            <ma:masonry.MaterialMasonry ui:field="dynamicMasonry" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:masonry.MaterialMasonry><br/>
+                &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
+                &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
+                &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" /><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
-
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;//Populate your data source to masonry using UserCard<br/>
-            masonry.clear();<br/>
-            for(User user : DataHelper.getAllUsers()) {<br/>
-            &emsp;masonry.add(new UserCard(user));<br/>
-            }
-        </demo:PrettyPre>
-
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// Dynamic adding<br/>
-            masonry.add(new UserCard(user));<br/>
-        </demo:PrettyPre>
-
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// Dynamic inserting<br/>
-            masonry.insert(new UserCard(user), 3));<br/>
-        </demo:PrettyPre>
-
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// Dynamic Removing<br/>
-            masonry.remove(usercard);<br/>
-            // Dynamic Clearing<br/>
-            masonry.clear();<br/>
-        </demo:PrettyPre>
-
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic" description="You can use masonry by wrapping column components."/>
+            <ma:masonry.MaterialMasonry>
+                <m:MaterialColumn grid="l4 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="WIFI_TETHERING" iconColor="WHITE" iconSize="LARGE" marginTop="125" />
+                    <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="BLUE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="RED_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="ACCESSIBLE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="RED_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="ARROW_UPWARD" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="YELLOW_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l4 s12 m6" backgroundColor="GREEN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="WRAP_TEXT" iconColor="WHITE" iconSize="MEDIUM" marginTop="50"/>
+                    <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="GREEN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="ORANGE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="TIME_TO_LEAVE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="ORANGE_LIGHTEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="ASSIGNMENT_RETURN" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="PURPLE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l4 s12 m6" backgroundColor="GREY_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="VIDEOCAM" iconColor="WHITE" iconSize="LARGE" marginTop="125"/>
+                    <m:MaterialLabel text="4 columns" bottom="0" backgroundColor="GREY_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="AMBER_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="POLYMER" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="AMBER_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="WORK" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="INDIGO_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BROWN_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="QUESTION_ANSWER" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="BROWN_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PINK_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0" textAlign="CENTER">
+                    <m:MaterialIcon iconType="AIRPLANEMODE_ACTIVE" iconColor="WHITE" iconSize="MEDIUM" marginTop="50" />
+                    <m:MaterialLabel text="2 columns" bottom="0" backgroundColor="PINK_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/>
+                </m:MaterialColumn>
+            </ma:masonry.MaterialMasonry>
+    
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:masonry.MaterialMasonry><br/>
+                &emsp;&lt;m:MaterialColumn grid="l4 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="400px" waves="DEFAULT" padding="0" textAlign="CENTER"><br/>
+                &emsp;&lt;m:MaterialIcon iconType="WIFI_TETHERING" iconColor="WHITE" iconSize="LARGE" marginTop="125" /><br/>
+                &emsp;&lt;m:MaterialLabel text="4 columns" bottom="0" backgroundColor="BLUE_DARKEN_1" layoutPosition="ABSOLUTE" padding="12" fontSize="1.2em" textColor="WHITE" width="100%"/><br/>
+                &emsp;&lt;/m:MaterialColumn><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Origin Left" description="By default originLeft is set to true, you can rearrange the blocks into right by setting it to false." />
+            <ma:masonry.MaterialMasonry grid="l6 s12 m12" originLeft="false">
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
+            </ma:masonry.MaterialMasonry>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" originLeft="false"><br/>
+                &emsp;&lt;!-- Column content here --><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Origin Top" description="By default originLeft is set to false, you can rearrange the blocks into bottom by setting it to false." />
+            <ma:masonry.MaterialMasonry grid="l6 s12 m12" originTop="false">
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l1 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
+            </ma:masonry.MaterialMasonry>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" originTop="false"><br/>
+                &emsp;&lt;!-- Column content here --><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Transition Duration" description="You can set how fast the transition of masonry by settung it's duration, if set to 0 then no transition will be applied." />
+            <ma:masonry.MaterialMasonry grid="l6 s12 m12" transitionDuration="0">
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="PURPLE_LIGHTEN_4" height="400px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l5 s12 m6" backgroundColor="RED_DARKEN_1" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l3 s12 m6" backgroundColor="PINK_DARKEN_2" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="INDIGO_DARKEN_3" height="100px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l2 s12 m6" backgroundColor="YELLOW_DARKEN_4" height="200px" waves="DEFAULT" padding="0"/>
+                <m:MaterialColumn grid="l1 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
+            </ma:masonry.MaterialMasonry>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" transitionDuration="0"><br/>
+                &emsp;&lt;!-- Column content here --><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Card Support" description="You can wrap the columns and add card inside of it" />
+            <ma:masonry.MaterialMasonry backgroundColor="BLACK">
+                <m:MaterialColumn grid="l6 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="https://13thflooroffice.files.wordpress.com/2013/06/kodaline_in-a-perfect-world-packshot-1000.jpg"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="In a Perfect World" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="Kodaline" textColor="WHITE"/>
+                            <m:MaterialLabel text="Recently Added" fontSize="0.8em" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="TEAL_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="http://img2.ymlp344.net/tx3p_fosterthepeoplecoverblast.jpg"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="Supermodel" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="Foster the people" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PURPLE_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="https://s3.amazonaws.com/rapgenius/Ellie-Goulding-Halcyon-Days-2013-1200x1200.png"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="Halcyon Days" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="Ellie Goulding" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l2 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="http://poponandon.com/wp-content/uploads/2013/04/onerepublic-native-review-2013.jpg"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="Native" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="One Republic" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+    
+                <m:MaterialColumn grid="l2 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="RED_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="http://cdn.pitchfork.com/news/49944/3490b02b.jpg"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="Comedown machine" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="The Strokes" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="l4 s12 m6" padding="4">
+                    <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
+                        <m:MaterialCardImage waves="DEFAULT">
+                            <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2014/02/pharrell-williams-girl-album-cover.jpg"/>
+                        </m:MaterialCardImage>
+    
+                        <m:MaterialCardContent textColor="BLACK">
+                            <m:MaterialRow marginBottom="0">
+                                <m:MaterialLabel fontSize="1.2em" text="Girl" textColor="WHITE" grid="l9 s9 m9" truncate="true"/>
+                                <m:MaterialIcon iconType="STAR_BORDER" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" />
+                            </m:MaterialRow>
+                            <m:MaterialLabel text="Pharrell Williams" textColor="WHITE"/>
+                        </m:MaterialCardContent>
+                    </m:MaterialCard>
+                </m:MaterialColumn>
+            </ma:masonry.MaterialMasonry>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:masonry.MaterialMasonry backgroundColor="BLACK"><br/>
+                &emsp;&lt;m:MaterialColumn grid="l6 s12 m6" padding="4"><br/>
+                &emsp;&emsp;&lt;m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="DEFAULT"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://13thflooroffice.files.wordpress.com/2013/06/kodaline_in-a-perfect-world-packshot-1000.jpg"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/><br/>
+    
+                &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="In a Perfect World" textColor="WHITE" grid="l9 s9 m9" truncate="true"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="STAR_OUTLINE" textAlign="RIGHT" iconColor="WHITE" grid="l3 s3 m3" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Kodaline" textColor="WHITE"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Recently Added" fontSize="0.8em" textColor="WHITE"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+                &emsp;&emsp;&lt;/m:MaterialCard><br/>
+                &emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;!-- Other column and it's card here --><br/>
+                &lt;/ma:masonry.MaterialMasonry><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialRow>
+                <m:MaterialTitle title="Dynamic Adding and Removing" description="You can easily add / remove items with transition animations and reload the masonry easily."/>
+                <m:MaterialButton ui:field="btnAddItem" margin="12" text="Add New Item" />
+                <ma:masonry.MaterialMasonry ui:field="dynamicMasonry" />
+            </m:MaterialRow>
+    
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;//Populate your data source to masonry using UserCard<br/>
+                masonry.clear();<br/>
+                for(User user : DataHelper.getAllUsers()) {<br/>
+                &emsp;masonry.add(new UserCard(user));<br/>
+                }
+            </demo:PrettyPre>
+    
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Dynamic adding<br/>
+                masonry.add(new UserCard(user));<br/>
+            </demo:PrettyPre>
+    
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Dynamic inserting<br/>
+                masonry.insert(new UserCard(user), 3));<br/>
+            </demo:PrettyPre>
+    
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Dynamic Removing<br/>
+                masonry.remove(usercard);<br/>
+                // Dynamic Clearing<br/>
+                masonry.clear();<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>
