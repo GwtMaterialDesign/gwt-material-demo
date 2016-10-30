@@ -40,16 +40,16 @@
 <span class="sourceLineNo">032</span>public class DOMHelper {<a name="line.32"></a>
 <span class="sourceLineNo">033</span><a name="line.33"></a>
 <span class="sourceLineNo">034</span>    public static Element getChildElementByClass(Element parent, String className) {<a name="line.34"></a>
-<span class="sourceLineNo">035</span>        if(parent != null) {<a name="line.35"></a>
+<span class="sourceLineNo">035</span>        if (parent != null) {<a name="line.35"></a>
 <span class="sourceLineNo">036</span>            for (int i = 0; i &lt; parent.getChildCount(); i++) {<a name="line.36"></a>
 <span class="sourceLineNo">037</span>                Node childNode = parent.getChild(i);<a name="line.37"></a>
-<span class="sourceLineNo">038</span>                if(Element.is(childNode)) {<a name="line.38"></a>
+<span class="sourceLineNo">038</span>                if (Element.is(childNode)) {<a name="line.38"></a>
 <span class="sourceLineNo">039</span>                    Element child = Element.as(childNode);<a name="line.39"></a>
 <span class="sourceLineNo">040</span>                    if (child.getClassName().contains(className)) {<a name="line.40"></a>
 <span class="sourceLineNo">041</span>                        return child;<a name="line.41"></a>
 <span class="sourceLineNo">042</span>                    }<a name="line.42"></a>
 <span class="sourceLineNo">043</span><a name="line.43"></a>
-<span class="sourceLineNo">044</span>                    if(child.getChildCount() &gt; 0) {<a name="line.44"></a>
+<span class="sourceLineNo">044</span>                    if (child.getChildCount() &gt; 0) {<a name="line.44"></a>
 <span class="sourceLineNo">045</span>                        return getChildElementByClass(child, className);<a name="line.45"></a>
 <span class="sourceLineNo">046</span>                    }<a name="line.46"></a>
 <span class="sourceLineNo">047</span>                }<a name="line.47"></a>
@@ -59,16 +59,16 @@
 <span class="sourceLineNo">051</span>    }<a name="line.51"></a>
 <span class="sourceLineNo">052</span><a name="line.52"></a>
 <span class="sourceLineNo">053</span>    public static Element getChildElementById(Element parent, String id) {<a name="line.53"></a>
-<span class="sourceLineNo">054</span>        if(parent != null) {<a name="line.54"></a>
+<span class="sourceLineNo">054</span>        if (parent != null) {<a name="line.54"></a>
 <span class="sourceLineNo">055</span>            for (int i = 0; i &lt; parent.getChildCount(); i++) {<a name="line.55"></a>
 <span class="sourceLineNo">056</span>                Node childNode = parent.getChild(i);<a name="line.56"></a>
-<span class="sourceLineNo">057</span>                if(Element.is(childNode)) {<a name="line.57"></a>
+<span class="sourceLineNo">057</span>                if (Element.is(childNode)) {<a name="line.57"></a>
 <span class="sourceLineNo">058</span>                    Element child = Element.as(childNode);<a name="line.58"></a>
 <span class="sourceLineNo">059</span>                    if (child.getId().equals(id)) {<a name="line.59"></a>
 <span class="sourceLineNo">060</span>                        return child;<a name="line.60"></a>
 <span class="sourceLineNo">061</span>                    }<a name="line.61"></a>
 <span class="sourceLineNo">062</span><a name="line.62"></a>
-<span class="sourceLineNo">063</span>                    if(child.getChildCount() &gt; 0) {<a name="line.63"></a>
+<span class="sourceLineNo">063</span>                    if (child.getChildCount() &gt; 0) {<a name="line.63"></a>
 <span class="sourceLineNo">064</span>                        return getChildElementById(child, id);<a name="line.64"></a>
 <span class="sourceLineNo">065</span>                    }<a name="line.65"></a>
 <span class="sourceLineNo">066</span>                }<a name="line.66"></a>
@@ -78,7 +78,7 @@
 <span class="sourceLineNo">070</span>    }<a name="line.70"></a>
 <span class="sourceLineNo">071</span><a name="line.71"></a>
 <span class="sourceLineNo">072</span>    public static Widget getChildWidgetById(HasWidgets parent, String id) {<a name="line.72"></a>
-<span class="sourceLineNo">073</span>        if(parent != null) {<a name="line.73"></a>
+<span class="sourceLineNo">073</span>        if (parent != null) {<a name="line.73"></a>
 <span class="sourceLineNo">074</span>            for (Widget child : parent) {<a name="line.74"></a>
 <span class="sourceLineNo">075</span>                if (child.getElement().getId().equals(id)) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>                    return child;<a name="line.76"></a>
@@ -93,7 +93,7 @@
 <span class="sourceLineNo">085</span>    }<a name="line.85"></a>
 <span class="sourceLineNo">086</span><a name="line.86"></a>
 <span class="sourceLineNo">087</span>    public static Element getElementByAttribute(NodeList&lt;Element&gt; elems, String attr, String value) {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        if(elems != null) {<a name="line.88"></a>
+<span class="sourceLineNo">088</span>        if (elems != null) {<a name="line.88"></a>
 <span class="sourceLineNo">089</span>            for (int i = 0; i &lt; elems.getLength(); i++) {<a name="line.89"></a>
 <span class="sourceLineNo">090</span>                Element child = elems.getItem(i);<a name="line.90"></a>
 <span class="sourceLineNo">091</span>                if (child.getAttribute(attr).equals(value)) {<a name="line.91"></a>

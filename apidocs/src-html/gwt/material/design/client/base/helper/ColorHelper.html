@@ -33,30 +33,28 @@
 <span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Element;<a name="line.25"></a>
 <span class="sourceLineNo">026</span>import com.google.gwt.user.client.ui.RootPanel;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.27"></a>
-<span class="sourceLineNo">028</span><a name="line.28"></a>
-<span class="sourceLineNo">029</span>/**<a name="line.29"></a>
-<span class="sourceLineNo">030</span> * Created by Mark Kevin on 12/2/2015.<a name="line.30"></a>
-<span class="sourceLineNo">031</span> */<a name="line.31"></a>
-<span class="sourceLineNo">032</span>public class ColorHelper {<a name="line.32"></a>
-<span class="sourceLineNo">033</span><a name="line.33"></a>
-<span class="sourceLineNo">034</span>    public static String setupComputedBackgroundColor(String color){<a name="line.34"></a>
-<span class="sourceLineNo">035</span>        MaterialWidget temp = new MaterialWidget(Document.get().createDivElement());<a name="line.35"></a>
-<span class="sourceLineNo">036</span>        temp.setBackgroundColor(color);<a name="line.36"></a>
-<span class="sourceLineNo">037</span>        RootPanel.get().add(temp);<a name="line.37"></a>
-<span class="sourceLineNo">038</span>        String computed = getComputedBackgroundColor(temp.getElement()).toLowerCase();<a name="line.38"></a>
-<span class="sourceLineNo">039</span>        temp.removeFromParent();<a name="line.39"></a>
-<span class="sourceLineNo">040</span>        return computed;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>    }<a name="line.41"></a>
-<span class="sourceLineNo">042</span><a name="line.42"></a>
-<span class="sourceLineNo">043</span>    /**<a name="line.43"></a>
-<span class="sourceLineNo">044</span>     * Native call to getComputedStyle.<a name="line.44"></a>
-<span class="sourceLineNo">045</span>     */<a name="line.45"></a>
-<span class="sourceLineNo">046</span>    private static native String getComputedBackgroundColor(Element e)/*-{<a name="line.46"></a>
-<span class="sourceLineNo">047</span>        var cs = $wnd.document.defaultView.getComputedStyle(e, null);<a name="line.47"></a>
-<span class="sourceLineNo">048</span>        return cs.getPropertyValue('background-color');<a name="line.48"></a>
-<span class="sourceLineNo">049</span>    }-*/;<a name="line.49"></a>
-<span class="sourceLineNo">050</span><a name="line.50"></a>
-<span class="sourceLineNo">051</span>}<a name="line.51"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.constants.Color;<a name="line.28"></a>
+<span class="sourceLineNo">029</span><a name="line.29"></a>
+<span class="sourceLineNo">030</span>public class ColorHelper {<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>    public static String setupComputedBackgroundColor(Color color) {<a name="line.32"></a>
+<span class="sourceLineNo">033</span>        MaterialWidget temp = new MaterialWidget(Document.get().createDivElement());<a name="line.33"></a>
+<span class="sourceLineNo">034</span>        temp.setBackgroundColor(color);<a name="line.34"></a>
+<span class="sourceLineNo">035</span>        RootPanel.get().add(temp);<a name="line.35"></a>
+<span class="sourceLineNo">036</span>        String computed = getComputedBackgroundColor(temp.getElement()).toLowerCase();<a name="line.36"></a>
+<span class="sourceLineNo">037</span>        temp.removeFromParent();<a name="line.37"></a>
+<span class="sourceLineNo">038</span>        return computed;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    }<a name="line.39"></a>
+<span class="sourceLineNo">040</span><a name="line.40"></a>
+<span class="sourceLineNo">041</span>    /**<a name="line.41"></a>
+<span class="sourceLineNo">042</span>     * Native call to getComputedStyle.<a name="line.42"></a>
+<span class="sourceLineNo">043</span>     */<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    protected static native String getComputedBackgroundColor(Element e)/*-{<a name="line.44"></a>
+<span class="sourceLineNo">045</span>        var cs = $wnd.document.defaultView.getComputedStyle(e, null);<a name="line.45"></a>
+<span class="sourceLineNo">046</span>        return cs.getPropertyValue('background-color');<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    }-*/;<a name="line.47"></a>
+<span class="sourceLineNo">048</span><a name="line.48"></a>
+<span class="sourceLineNo">049</span>}<a name="line.49"></a>
 
 
 

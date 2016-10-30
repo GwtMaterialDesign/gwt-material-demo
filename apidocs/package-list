@@ -1,9 +1,12 @@
 gwt.material.design.client
 gwt.material.design.client.base
+gwt.material.design.client.base.error
 gwt.material.design.client.base.helper
 gwt.material.design.client.base.mixin
+gwt.material.design.client.base.validator
 gwt.material.design.client.constants
 gwt.material.design.client.events
+gwt.material.design.client.js
 gwt.material.design.client.resources
 gwt.material.design.client.ui
 gwt.material.design.client.ui.animate
