@@ -53,7 +53,7 @@ public class TreeViewPresenter extends Presenter<TreeViewPresenter.MyView, TreeV
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Material Tree", "MaterialTree is a component that wraps all the tree items that provide lists of event handlers like open/close and selection event.", this);
+        SetPageTitleEvent.fire("Material Tree", "MaterialTree is a component that wraps all the tree items that provide lists of event handlers like open/close and selection event.", "addins/treeview/TreeView", this);
     }
 
 }

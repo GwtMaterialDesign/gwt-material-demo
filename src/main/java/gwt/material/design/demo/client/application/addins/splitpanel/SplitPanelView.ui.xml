@@ -23,194 +23,243 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:splitpanel.MaterialSplitPanel height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/ma:splitpanel.MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Introduction" description="Using MaterialSplitPanel you must require to wrap two columns inside for the splitting feature." />
-        <ma:splitpanel.MaterialSplitPanel height="500px">
-            <m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="black" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>    
-        </demo:PrettyPre>
-        
-        <m:MaterialTitle title="Styling" description="You can style the splitter bar easily." />
-        <ma:splitpanel.MaterialSplitPanel backgroundColor="blue" height="500px">
-            <m:MaterialPanel backgroundColor="blue lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="blue lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="blue" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="blue lighten-2"><br/>
-            &emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="blue lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Vertical Splitter" description="You can set the axis / orientation of your splitter by addins splitter='Axis.VERTICAL'"/>
-        <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" height="500px">
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel axis="VERTICAL" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Content must be added here"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Dock" description="Splitter Dock is the white line inside the splitter bar. When clicking into it, the splitter will collapse depends on Docking position (LEFT By Default for Horizontal Axis and TOP by Default for Vertical Axis) "/>
-        <ma:splitpanel.MaterialSplitPanel backgroundColor="black" dock="RIGHT" height="500px">
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="black" dock="RIGHT" height="500px"><br/>
-            &emsp;&lt;!-- Content goes here --><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Left/Right Min/Max for Horizontal Axis" description="You can set the minimu / mmaximum splitter area on each child component" />
-        <ma:splitpanel.MaterialSplitPanel leftMin="100" leftMax="400" rightMin="100" rightMax="300" backgroundColor="black" dock="RIGHT" height="500px">
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Min: 100 and Max: 400"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Min: 100 and Max: 300"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel leftMin="100" leftMax="400" rightMin="100" rightMax="300" backgroundColor="black" dock="RIGHT" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Min: 100 and Max: 400"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Min: 100 and Max: 300"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-        
-        <m:MaterialTitle title="Top/Bottom Min/Max for Vertical Axis" description="You can set the minimum / maximum splitter area on each child component" />
-        <ma:splitpanel.MaterialSplitPanel topMin="100" topMax="400" bottomMin="100" bottomMax="300" backgroundColor="black" axis="VERTICAL" height="500px">
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Min: 100 and Max: 400"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Min: 100 and Max: 300"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel topMin="100" topMax="400" bottomMin="100" bottomMax="300" backgroundColor="black" axis="VERTICAL" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Min: 100 and Max: 400"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Min: 100 and Max: 300"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Bar Position" description="Bar Position accepts a percentage where the split bar will be (By default it's 50 means it's in the middle)" />
-        <ma:splitpanel.MaterialSplitPanel barPosition="10" backgroundColor="black" height="500px">
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-3">
-                <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel barPosition="10" backgroundColor="black" height="500px"><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-3"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>    
-        </demo:PrettyPre>
-                         
-        <m:MaterialTitle title="Advance Splitting" description="You can split any divs easily just like the core gwt split layout panel but with more control"/>
-        <ma:splitpanel.MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="black" height="500px">
-            <ma:splitpanel.MaterialSplitPanel barPosition="20" backgroundColor="black" height="500px">
-                <m:MaterialPanel backgroundColor="grey lighten-2">
-                    <m:MaterialTitle textAlign="CENTER" title="1"/>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:splitpanel.MaterialSplitPanel height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:splitpanel.MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Introduction" description="Using MaterialSplitPanel you must require to wrap two columns inside for the splitting feature." />
+            <ma:splitpanel.MaterialSplitPanel height="500px">
+                <m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
-                <ma:splitpanel.MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="black">
-                    <m:MaterialPanel backgroundColor="grey lighten-2">
-                        <m:MaterialTitle textAlign="CENTER" title="2"/>
-                    </m:MaterialPanel>
-                    <m:MaterialPanel backgroundColor="grey lighten-2">
-                        <m:MaterialTitle textAlign="CENTER" title="3"/>
-                    </m:MaterialPanel>
-                </ma:splitpanel.MaterialSplitPanel>
+                <m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
             </ma:splitpanel.MaterialSplitPanel>
-            <m:MaterialPanel backgroundColor="grey lighten-2">
-                <m:MaterialTitle textAlign="CENTER" title="4"/>
-            </m:MaterialPanel>
-        </ma:splitpanel.MaterialSplitPanel>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m.addins:MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="black" height="500px"><br/>
-            &emsp;&lt;m.addins:MaterialSplitPanel barPosition="20" backgroundColor="black" height="500px"><br/>
-            &emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="1"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&emsp;&lt;m.addins:MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="black"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="2"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="3"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&emsp;&lt;/m.addins:MaterialSplitPanel><br/>
-            &emsp;&lt;/m.addins:MaterialSplitPanel><br/>
-            &emsp;&lt;m:MaterialPanel backgroundColor="grey lighten-2"><br/>
-            &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="4"/><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m.addins:MaterialSplitPanel><br/>
-        </demo:PrettyPre>
-
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="BLACK" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Styling" description="You can style the splitter bar easily." />
+            <ma:splitpanel.MaterialSplitPanel backgroundColor="BLUE" height="500px">
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="BLUE" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2"><br/>
+                &emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Thickness" description="You can easily set the thickness of your split bar by adding thickness='12'" />
+            <ma:splitpanel.MaterialSplitPanel thickness="12" backgroundColor="BLUE" height="500px">
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <m:MaterialTitle title="Horizontal Thichness" description="You can also set the horizontal bar thickness of your split panel."/>
+            <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" thickness="12" backgroundColor="BLUE" height="500px">
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="BLUE" thickness="12" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2"><br/>
+                &emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Vertical Splitter" description="You can set the axis / orientation of your splitter by addins splitter='Axis.VERTICAL'"/>
+            <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" height="500px">
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel axis="VERTICAL" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Content must be added here"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Dock" description="Splitter Dock is the white line inside the splitter bar. When clicking into it, the splitter will collapse depends on Docking position (LEFT By Default for Horizontal Axis and TOP by Default for Vertical Axis) "/>
+            <ma:splitpanel.MaterialSplitPanel backgroundColor="BLACK" dock="RIGHT" height="500px">
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="BLACK" dock="RIGHT" height="500px"><br/>
+                &emsp;&lt;!-- Content goes here --><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Left/Right Min/Max for Horizontal Axis" description="You can set the minimu / mmaximum splitter area on each child component" />
+            <ma:splitpanel.MaterialSplitPanel leftMin="100" leftMax="400" rightMin="100" rightMax="300" backgroundColor="BLACK" dock="RIGHT" height="500px">
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Min: 100 and Max: 400"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Min: 100 and Max: 300"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel leftMin="100" leftMax="400" rightMin="100" rightMax="300" backgroundColor="BLACK" dock="RIGHT" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Min: 100 and Max: 400"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Min: 100 and Max: 300"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Top/Bottom Min/Max for Vertical Axis" description="You can set the minimum / maximum splitter area on each child component" />
+            <ma:splitpanel.MaterialSplitPanel topMin="100" topMax="400" bottomMin="100" bottomMax="300" backgroundColor="BLACK" axis="VERTICAL" height="500px">
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Min: 100 and Max: 400"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Min: 100 and Max: 300"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel topMin="100" topMax="400" bottomMin="100" bottomMax="300" backgroundColor="BLACK" axis="VERTICAL" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Top Zone" description="Min: 100 and Max: 400"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Bottom Zone" description="Min: 100 and Max: 300"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Bar Position" description="Bar Position accepts a percentage where the split bar will be (By default it's 50 means it's in the middle)" />
+            <ma:splitpanel.MaterialSplitPanel barPosition="10" backgroundColor="BLACK" height="500px">
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3">
+                    <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel barPosition="10" backgroundColor="BLACK" height="500px"><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Bar position at 10%"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Bar position at 10%"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Advance Splitting" description="You can split any divs easily just like the core gwt split layout panel but with more control"/>
+            <ma:splitpanel.MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="BLACK" height="500px">
+                <ma:splitpanel.MaterialSplitPanel barPosition="20" backgroundColor="BLACK" height="500px">
+                    <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                        <m:MaterialTitle textAlign="CENTER" title="1"/>
+                    </m:MaterialPanel>
+                    <ma:splitpanel.MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="BLACK">
+                        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                            <m:MaterialTitle textAlign="CENTER" title="2"/>
+                        </m:MaterialPanel>
+                        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                            <m:MaterialTitle textAlign="CENTER" title="3"/>
+                        </m:MaterialPanel>
+                    </ma:splitpanel.MaterialSplitPanel>
+                </ma:splitpanel.MaterialSplitPanel>
+                <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                    <m:MaterialTitle textAlign="CENTER" title="4"/>
+                </m:MaterialPanel>
+            </ma:splitpanel.MaterialSplitPanel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m.addins:MaterialSplitPanel dock="BOTTOM" barPosition="80" axis="VERTICAL" backgroundColor="BLACK" height="500px"><br/>
+                &emsp;&lt;m.addins:MaterialSplitPanel barPosition="20" backgroundColor="BLACK" height="500px"><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="1"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;m.addins:MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="2"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="3"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;/m.addins:MaterialSplitPanel><br/>
+                &emsp;&lt;/m.addins:MaterialSplitPanel><br/>
+                &emsp;&lt;m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="4"/><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m.addins:MaterialSplitPanel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

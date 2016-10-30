@@ -52,7 +52,7 @@ public class CutOutsPresenter extends Presenter<CutOutsPresenter.MyView, CutOuts
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("CutOuts", "The MaterialCutOut is an excellent component to show users about new features and important components (buttons, labels and so) on the UI.", this);
+        SetPageTitleEvent.fire("CutOuts", "The MaterialCutOut is an excellent component to show users about new features and important components (buttons, labels and so) on the UI.", "addins/cutouts/CutOutsView", this);
     }
 }
 

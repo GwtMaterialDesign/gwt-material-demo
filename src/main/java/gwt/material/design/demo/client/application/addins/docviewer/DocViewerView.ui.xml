@@ -23,21 +23,23 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:docviewer.MaterialDocViewer width="100%" height="600px" url="http://infolab.stanford.edu/pub/papers/google.pdf" />
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Introduction" description="This component is an iframe that wraps your document using Google Doc Viewer. It's good for public document." />
-        <m:MaterialRow padding="0">
-            <m:MaterialColumn grid="l6 m12 s12" shadow="1" padding="0">
-                <m:MaterialPanel backgroundColor="blue darken-1" width="100%" padding="8">
-                    <m:MaterialLink backgroundColor="blue darken-1" text="File1.doc" textColor="white" iconType="NOTE" />
-                </m:MaterialPanel>
-                <ma:docviewer.MaterialDocViewer width="100%" height="600px" url="http://infolab.stanford.edu/pub/papers/google.pdf" />
-            </m:MaterialColumn>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:docviewer.MaterialDocViewer width="100%" height="600px" url="http://www.khazanah.com.my/khazanah/files/20/200f21f3-07ff-4903-ab99-7c0cb557eb51.pdf" />
+            </demo:PrettyPre>
+            <m:MaterialTitle title="Introduction" description="This component is an iframe that wraps your document using Google Doc Viewer. It's good for public document." />
+            <m:MaterialRow padding="0">
+                <m:MaterialColumn grid="l6 m12 s12" shadow="1" padding="0">
+                    <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_1" width="100%" padding="8">
+                        <m:MaterialLink backgroundColor="BLUE_DARKEN_1" text="File1.doc" textColor="WHITE" iconType="NOTE" />
+                    </m:MaterialPanel>
+                    <ma:docviewer.MaterialDocViewer width="100%" height="600px" url="http://www.khazanah.com.my/khazanah/files/20/200f21f3-07ff-4903-ab99-7c0cb557eb51.pdf" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

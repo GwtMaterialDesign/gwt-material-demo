@@ -23,63 +23,83 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Time Picker"  description="Tap between the hour and minute label in the title bar to switch between the hour or minute view. Additionally, tap on the AM/PM label in the title bar to switch between AM or PM (in 12-hour clock mode)."/>
-        <ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Disabled Styles" description="You can disable your time picker by adding enabled='false'"/>
-        <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" enabled="false" />
-
-        <!-- 24 hour format -->
-        <m:MaterialTitle title="24 Hour format"  description="You can set 24 hour format of time picker by adding a parameter : hour24='true'"/>
-        <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" hour24="true"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
-        </demo:PrettyPre>
-
-        <!-- Events -->
-        <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>
-        <ma:timepicker.MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// Open Handler<br/>
-            tpEvents.addOpenHandler(new OpenHandler&lt;String>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onOpen(OpenEvent&lt;String> event) {<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Opened Time Picker");<br/>
-            &emsp;}<br/>
-            });<br/><br/>
-            // Close Handler<br/>
-            tpEvents.addCloseHandler(new CloseHandler&lt;String>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onClose(CloseEvent&lt;String> event) {<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Closed Time Picker");<br/>
-            &emsp;}<br/>
-            });<br/><br/>
-            // ValueChange Handler<br/>
-            tpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
-            &emsp;&emsp;DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");<br/>
-            &emsp;&emsp;Date time = event.getValue();<br/>
-            &emsp;&emsp;MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));<br/>
-            &emsp;}<br/>
-            });<br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
-        <ma:timepicker.MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
-        <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            timepick.clear();
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+            </demo:PrettyPre>
+            <m:MaterialTitle title="Time Picker"  description="Tap between the hour and minute label in the title bar to switch between the hour or minute view. Additionally, tap on the AM/PM label in the title bar to switch between AM or PM (in 12-hour clock mode)."/>
+            <ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Disabled Styles" description="You can disable your time picker by adding enabled='false'"/>
+            <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" enabled="false" />
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <!-- 24 hour format -->
+            <m:MaterialTitle title="24 Hour format"  description="You can set 24 hour format of time picker by adding a parameter : hour24='true'"/>
+            <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" hour24="true"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:timepicker.MaterialTimePicker ui:field="tp" placeholder="Snooze Time" hour24="true"/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Open / Close Control" description="You can programmatically control the time picker component." />
+            <ma:timepicker.MaterialTimePicker ui:field="tpOpenClose" placeholder="Snooze Time" />
+            <m:MaterialButton ui:field="btnOpen" text="Open Time Picker" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;tp.open() <br/>
+                tp.close()
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <!-- Events -->
+            <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>
+            <ma:timepicker.MaterialTimePicker ui:field="tpEvents" placeholder="Alarm Time" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Open Handler<br/>
+                tpEvents.addOpenHandler(new OpenHandler&lt;String>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onOpen(OpenEvent&lt;String> event) {<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Opened Time Picker");<br/>
+                &emsp;}<br/>
+                });<br/><br/>
+                // Close Handler<br/>
+                tpEvents.addCloseHandler(new CloseHandler&lt;String>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onClose(CloseEvent&lt;String> event) {<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Closed Time Picker");<br/>
+                &emsp;}<br/>
+                });<br/><br/>
+                // ValueChange Handler<br/>
+                tpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
+                &emsp;&emsp;DateTimeFormat dtf = DateTimeFormat.getFormat("hh:mm a");<br/>
+                &emsp;&emsp;Date time = event.getValue();<br/>
+                &emsp;&emsp;MaterialToast.fireToast("MaterialTimePicker value changed to: " + dtf.format(time));<br/>
+                &emsp;}<br/>
+                });<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
+            <ma:timepicker.MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" />
+            <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                timepick.clear();
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

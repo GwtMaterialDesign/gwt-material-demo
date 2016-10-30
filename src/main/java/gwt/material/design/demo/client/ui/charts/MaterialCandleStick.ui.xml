@@ -28,17 +28,17 @@
 	</ui:style>
 	<m:MaterialColumn grid="s12 m6 l9">
 	    <m:MaterialCard>
-			<m:MaterialCardTitle text="Candle Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black" addStyleNames="{style.block}"/>
+			<m:MaterialCardTitle text="Candle Chart" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK" addStyleNames="{style.block}"/>
 			<m:MaterialCardContent ui:field="cardContent" addStyleNames="no-padding"/>
 				
 			<m:MaterialCardReveal>
-				<m:MaterialCardTitle text="Candle Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+				<m:MaterialCardTitle text="Candle Chart" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
 				<m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
 			</m:MaterialCardReveal>
 				
 			<m:MaterialCardAction>
-				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.ui.xml" text="UI Binder" textColor="blue" />
-				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.java" text="Java" textColor="blue" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.ui.xml" text="UI Binder" textColor="BLUE" />
+				<m:MaterialLink target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-demo/blob/master/src/main/java/gwt/material/design/demo/client/ui/charts/MaterialCandleStick.java" text="Java" textColor="BLUE" />
 			</m:MaterialCardAction>
 		</m:MaterialCard>
 	    

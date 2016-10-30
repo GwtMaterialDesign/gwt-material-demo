@@ -53,6 +53,6 @@ public class CollectionsPresenter extends Presenter<CollectionsPresenter.MyView,
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Collections", "Collections allow you to group list objects together.", this);
+        SetPageTitleEvent.fire("Collections", "Collections allow you to group list objects together.", "components/collections/CollectionsView", this);
     }
 }

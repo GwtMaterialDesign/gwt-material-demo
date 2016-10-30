@@ -1,24 +1,29 @@
 sudo: false
 language: java
 jdk:
-- oraclejdk7
+- oraclejdk8
 cache:
   directories:
   - $HOME/.m2
 before_install:
 # install the gwt-material library before we build the demo
-- git clone -b release_1.6.0 https://github.com/GwtMaterialDesign/gwt-material.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material.git
 - cd gwt-material
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
 # install the gwt-material-themes library
-- git clone -b release_1.6.0 https://github.com/GwtMaterialDesign/gwt-material-themes.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material-themes.git
 - cd gwt-material-themes
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
 # install the gwt-material-addins library
-- git clone -b release_1.6.0 https://github.com/GwtMaterialDesign/gwt-material-addins.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material-addins.git
 - cd gwt-material-addins
+- mvn install -DskipTests=true -DdryRun=true
+- cd ..
+# install the gwt-material-table library before we build the demo
+- git clone -b master https://github.com/GwtMaterialDesign/gwt-material-table.git
+- cd gwt-material-table
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
 install: true

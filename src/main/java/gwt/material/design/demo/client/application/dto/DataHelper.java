@@ -21,7 +21,9 @@ package gwt.material.design.demo.client.application.dto;
  */
 
 
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.DatePickerLanguage;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.resources.MaterialResources;
 
 import java.util.ArrayList;
@@ -51,33 +53,36 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
-        versions.add(new Version("1.6.0", "August 2016", Version.VersionLink.CORE_1_6_0.getName(), Version.VersionLink.ADDINS_1_6_0.getName(), Version.VersionLink.THEME_1_6_0.getName(), "purple"));
-        versions.add(new Version("1.5.3", "June 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, "pink"));
-        versions.add(new Version("1.5.2", "June 2016", Version.VersionLink.CORE_1_5_2.getName(), Version.VersionLink.ADDINS_1_5_2.getName(), Version.VersionLink.THEME_1_5_2.getName(), "orange"));
-        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), "teal"));
-        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), "deep-orange"));
-        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), "red"));
-        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), "purple"));
-        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, "pink"));
-        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, "brown"));
-        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, "red"));
-        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, "blue"));
-        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, "green"));
-        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, "amber"));
+        versions.add(new Version("2.0-rc1", "October 2016", Version.VersionLink.CORE_2_0_RC1.getName(), Version.VersionLink.ADDINS_2_0_RC1.getName(), Version.VersionLink.THEME_2_0_RC1.getName(), Version.VersionLink.JQUERY_1_0_RC1.getName(), Version.VersionLink.TABLE_1_0_RC1.getName(), Color.GREEN));
+        versions.add(new Version("1.6.2", "September 2016", Version.VersionLink.CORE_1_6_2.getName(), Version.VersionLink.ADDINS_1_6_2.getName(), null, null, null, Color.AMBER_DARKEN_2));
+        versions.add(new Version("1.6.1", "August 2016", Version.VersionLink.CORE_1_6_1.getName(), null, null, null, null, Color.DEEP_ORANGE_ACCENT_2));
+        versions.add(new Version("1.6.0", "August 2016", Version.VersionLink.CORE_1_6_0.getName(), Version.VersionLink.ADDINS_1_6_0.getName(), Version.VersionLink.THEME_1_6_0.getName(), null, null, Color.BROWN_DARKEN_1));
+        versions.add(new Version("1.5.3", "July 2016", Version.VersionLink.CORE_1_5_3.getName(), null, null, null, null, Color.TEAL));
+        versions.add(new Version("1.5.2", "June 2016", Version.VersionLink.CORE_1_5_2.getName(), Version.VersionLink.ADDINS_1_5_2.getName(), Version.VersionLink.THEME_1_5_2.getName(), null, null, Color.PINK_ACCENT_1));
+        versions.add(new Version("1.5.1", "June 2016", Version.VersionLink.CORE_1_5_1.getName(), Version.VersionLink.ADDINS_1_5_1.getName(), Version.VersionLink.THEME_1_5_1.getName(), null, null, Color.TEAL));
+        versions.add(new Version("1.5.0", "April 2016", Version.VersionLink.CORE_1_5_0.getName(), Version.VersionLink.ADDINS_1_5_0.getName(), Version.VersionLink.THEME_1_5_0.getName(), null, null, Color.DEEP_ORANGE));
+        versions.add(new Version("1.4.1", "January 2016", Version.VersionLink.CORE_1_4_1.getName(), null, Version.VersionLink.THEME_1_4.getName(), null, null, Color.RED));
+        versions.add(new Version("1.4", "November 2015", Version.VersionLink.CORE_1_4.getName(), null, Version.VersionLink.THEME_1_4.getName(), null, null, Color.PURPLE));
+        versions.add(new Version("1.3.3", "July 2015", Version.VersionLink.CORE_1_3_3.getName(), null, null, null, null, Color.PINK));
+        versions.add(new Version("1.3.2", "June 2015", Version.VersionLink.CORE_1_3_2.getName(), null, null, null, null, Color.BROWN));
+        versions.add(new Version("1.3.1", "April 2015", Version.VersionLink.CORE_1_3_1.getName(), null, null, null, null, Color.RED));
+        versions.add(new Version("1.3", "April 2015", Version.VersionLink.CORE_1_3.getName(), null, null, null, null, Color.BLUE));
+        versions.add(new Version("1.2", "April 2015", Version.VersionLink.CORE_1_2.getName(), null, null, null, null, Color.GREEN));
+        versions.add(new Version("1.0", "April 2015", Version.VersionLink.CORE_1.getName(), null, null, null, null, Color.AMBER));
         return versions;
     }
 
     public static List<Apps> getAllApps() {
         List<Apps> apps = new ArrayList<>();
-        apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", "red"));
-        apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", "green"));
-        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", "blue"));
-        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://tripwego-gwt-material.appspot.com/", "http://i.imgur.com/BkWWPFr.png", "black"));
+        apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", Color.RED));
+        apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", Color.GREEN));
+        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", Color.BLUE));
+        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://tripwego-gwt-material.appspot.com/", "http://i.imgur.com/BkWWPFr.png", Color.BLACK));
         return apps;
     }
 
     public static String getRichEditorHTML() {
-        String html = "<h2 style=\"text-align: center; \"> <span style=\"color: rgb(101, 31, 255);\"> I Love Material Design </span> </h2> <p style=\"text-align: center;\"> <span style=\"font-size: 17px;\"> Using </span> <span style=\"font-weight: bold; font-size: 17px; text-decoration: underline;\"> Airmode </span> <span style=\"font-size: 17px;\"> you can directly modify this html. </span> </p> <p style=\"text-align: center;\"> <br> </p> <table class=\"hoverable bordered striped responsive-table\"> <thead> <tr> <th> Country </th> <th> Capital </th> <th> Currency </th> </tr> </thead> <tbody> <tr> <td> Philippines </td> <td> Manila </td> <td> Peso </td> </tr> <tr> <td> Japan </td> <td> Tokyo </td> <td> Yen </td> </tr> </tbody> </table> <p> </p>";
+        String html = "<h2 style=\"text-align: center; \"> <span style=\"color: rgb(101, 31, 255);\"> I Love Material Design </span> </h2> <p style=\"text-align: center;\"> <span style=\"font-size: 17px;\"> Using </span> <span style=\"font-weight: bold; font-size: 17px; text-decoration: underline;\"> Airmode </span> <span style=\"font-size: 17px;\"> you can directly modify this html. </span> </p> <p style=\"text-align: center;\"> <br> </p> <table class=\"hoverable bordered striped responsive-table\"> <thead> <tr> <th> State </th> <th> Capital </th> <th> Currency </th> </tr> </thead> <tbody> <tr> <td> Philippines </td> <td> Manila </td> <td> Peso </td> </tr> <tr> <td> Japan </td> <td> Tokyo </td> <td> Yen </td> </tr> </tbody> </table> <p> </p>";
         return html;
     }
 
@@ -109,5 +114,59 @@ public class DataHelper {
         dpLanguages.add(DatePickerLanguage.JA);
         dpLanguages.add(DatePickerLanguage.KO);
         return dpLanguages;
+    }
+
+    public static List<Repository> getAllRepositories() {
+        List<Repository> repositories = new ArrayList<>();
+        repositories.add(new Repository("gwt-material", 200, 64));
+        repositories.add(new Repository("gwt-material-addins", 14, 17));
+        repositories.add(new Repository("gwt-material-themes", 5, 5));
+        repositories.add(new Repository("gwt-material-demo", 16, 27));
+        repositories.add(new Repository("gwt-material-patterns", 7, 3));
+        repositories.add(new Repository("gwt-material-starter", 4, 7));
+        repositories.add(new Repository("gwt-material-basic", 3, 0));
+        repositories.add(new Repository("gwt-material-archetype", 3, 0));
+        repositories.add(new Repository("gwt-material-errai", 5, 2));
+        repositories.add(new Repository("gwt-material-phonegap", 7, 4));
+        return repositories;
+    }
+
+    public static List<TimeZone> getTimeZones() {
+        List<TimeZone> timeZones = new ArrayList<>();
+        timeZones.add(new TimeZone("Alaskan/Hawaiian Time Zone", getHawaiianTimeZone()));
+        timeZones.add(new TimeZone("Pacific Time Zone", getPacificTimeZone()));
+        return timeZones;
+    }
+
+    protected static List<State> getHawaiianTimeZone() {
+        List<State> states = new ArrayList<>();
+        states.add(new State("Alaska", "AK"));
+        states.add(new State("Hawaii", "HI"));
+        return states;
+    }
+
+    protected static List<State> getPacificTimeZone() {
+        List<State> states = new ArrayList<>();
+        states.add(new State("California", "CA"));
+        states.add(new State("Nevada", "NV"));
+        states.add(new State("Oregon", "OR"));
+        states.add(new State("Washington", "WA"));
+        return states;
+    }
+
+    public static List<User> getAllUsers() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", "Luis Hoppe", "luis@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", "Irwin Mueller", "irwin@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", "Levin Card", "levin@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg",  "Dr. Cassie Keeling", "cassie@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/ariil/128.jpg",  "Dr. Madelynn Schamberger", "madelyn@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/devankoshal/128.jpg", "Dominique Schmidt", "dom@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg", "Rowland Heller", "rowland@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/GavicoInd/128.jpg", "Quincy Schimmel", "quincy@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", "Tierra VonRueden", "tierra@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/kimcool/128.jpg", "Travis Larson", "travis@mail.com"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", "Clint Heller", "clint@mail.com"));
+        return list;
     }
 }

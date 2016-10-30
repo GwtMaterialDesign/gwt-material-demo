@@ -30,51 +30,59 @@
 
   <m:MaterialPanel>
     <g:HTMLPanel>
-      <m:MaterialTitle title="Usage"
-                       description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon." />
-      <m:MaterialIcon iconType="ROTATION_3D" />
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-       &lt;m:MaterialIcon iconType="ROTATION_3D" />
-      </demo:PrettyPre>
-
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Usage"
+                         description="Using MaterialIcon Widget you can easily make it by adding the lines below. Just set the icon attribute and indicate which icon you want to display. Please refer below about the list of icon." />
+        <m:MaterialIcon iconType="ROTATION_3D" />
+        <demo:PrettyPre addStyleNames="lang-xml">
+         &lt;m:MaterialIcon iconType="ROTATION_3D" />
+        </demo:PrettyPre>
+      </m:MaterialRow>
+  
+      <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Sizes"
                        description="To control the size of the icon, just set size attribute in your MaterialIcon widget." />
-      <m:MaterialRow addStyleNames="valign-wrapper">
-        <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
-          <m:MaterialIcon iconType="POLYMER" iconSize="TINY" />
-          <m:MaterialLabel text="Tiny" />
-        </m:MaterialColumn>
-        <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
-          <m:MaterialIcon iconType="POLYMER" iconSize="SMALL" />
-          <m:MaterialLabel text="Small" />
-        </m:MaterialColumn>
-        <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
-          <m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" />
-          <m:MaterialLabel text="Medium" />
-        </m:MaterialColumn>
-        <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
-          <m:MaterialIcon iconType="POLYMER" iconSize="LARGE" />
-          <m:MaterialLabel text="Large" />
-        </m:MaterialColumn>
+        <m:MaterialRow addStyleNames="valign-wrapper">
+          <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+            <m:MaterialIcon iconType="POLYMER" iconSize="TINY" />
+            <m:MaterialLabel text="Tiny" />
+          </m:MaterialColumn>
+          <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+            <m:MaterialIcon iconType="POLYMER" iconSize="SMALL" />
+            <m:MaterialLabel text="Small" />
+          </m:MaterialColumn>
+          <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+            <m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" />
+            <m:MaterialLabel text="Medium" />
+          </m:MaterialColumn>
+          <m:MaterialColumn grid="s4 m2" addStyleNames="center-align">
+            <m:MaterialIcon iconType="POLYMER" iconSize="LARGE" />
+            <m:MaterialLabel text="Large" />
+          </m:MaterialColumn>
+        </m:MaterialRow>
+  
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialIcon iconType="POLYMER" iconSize="TINY" /><br/>
+          &lt;m:MaterialIcon iconType="POLYMER" iconSize="SMALL" /><br/>
+          &lt;m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" /><br/>
+          &lt;m:MaterialIcon iconType="POLYMER" iconSize="LARGE" /><br/>
+        </demo:PrettyPre>
       </m:MaterialRow>
-
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialIcon iconType="POLYMER" iconSize="TINY" /><br/>
-        &lt;m:MaterialIcon iconType="POLYMER" iconSize="SMALL" /><br/>
-        &lt;m:MaterialIcon iconType="POLYMER" iconSize="MEDIUM" /><br/>
-        &lt;m:MaterialIcon iconType="POLYMER" iconSize="LARGE" /><br/>
-      </demo:PrettyPre>
-
-      <m:MaterialTitle title="Icon inside MaterialLink"
-                       description="You can add in your material link an icon instance by adding icon attribute" />
-      <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="red" iconType="FAVORITE" iconPosition="LEFT" />
-
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;m:MaterialLink fontSize="2em" text="I love Material Design" textColor="red" iconType="FAVORITE" iconPosition="LEFT" />
-      </demo:PrettyPre>
-
-      <m:MaterialTitle title="Get Icons from Google Material Design" />
-      <g:Frame url="https://www.google.com/design/icons/#ic_3d_rotation" width="100%" height="700px" addStyleNames="{style.frame}"/>
+  
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Icon inside MaterialLink"
+                         description="You can add in your material link an icon instance by adding icon attribute" />
+        <m:MaterialLink fontSize="2em" text="I love Material Design" textColor="RED" iconType="FAVORITE" iconPosition="LEFT" />
+  
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &lt;m:MaterialLink fontSize="2em" text="I love Material Design" textColor="red" iconType="FAVORITE" iconPosition="LEFT" />
+        </demo:PrettyPre>
+      </m:MaterialRow>
+  
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Get Icons from Google Material Design" />
+        <g:Frame url="https://www.google.com/design/icons/#ic_3d_rotation" width="100%" height="700px" addStyleNames="{style.frame}"/>
+      </m:MaterialRow>
     </g:HTMLPanel>
   </m:MaterialPanel>
 </ui:UiBinder>

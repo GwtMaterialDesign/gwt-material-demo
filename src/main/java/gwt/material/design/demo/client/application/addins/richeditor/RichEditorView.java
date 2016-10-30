@@ -85,31 +85,31 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
 
     @UiHandler("eventRichEditor")
     void onValueChange(ValueChangeEvent<String> e) {
-        GWT.log("Value Change Event : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Value Change Event : " + eventRichEditor.getHTML());
     }
 
     @UiHandler("eventRichEditor")
     void onFocus(FocusEvent e) {
-        GWT.log("Focus Event : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Focus Event : " + eventRichEditor.getHTML());
     }
 
     @UiHandler("eventRichEditor")
     void onBlur(BlurEvent event) {
-        GWT.log("Blur Event : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Blur Event : " + eventRichEditor.getHTML());
     }
 
     @UiHandler("eventRichEditor")
     void onKeyUp(KeyUpEvent e) {
-        GWT.log("Key Up : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Key Up : " + eventRichEditor.getHTML());
     }
 
     @UiHandler("eventRichEditor")
     void onKeyDown(KeyDownEvent e) {
-        GWT.log("Key Down : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Key Down : " + eventRichEditor.getHTML());
     }
 
     @UiHandler("eventRichEditor")
     void onPaste(PasteEvent e) {
-        GWT.log("Paste : " + eventRichEditor.getHTML());
+        MaterialToast.fireToast("Paste : " + eventRichEditor.getHTML());
     }
 }

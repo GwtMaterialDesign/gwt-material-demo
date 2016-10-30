@@ -23,402 +23,418 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
-
-    <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type.'"/>
-    <m:MaterialCollapsible grid="s12 m6 l8">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible grid="s12 m6 l8"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &emsp;&lt;!-- Other Collapsible items here --><br/>
-
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Expandable" description="You can set the accordion type by adding an attribute accordion='false'"/>
-    <m:MaterialCollapsible accordion="false">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1 ">
-      &emsp;&lt;m:MaterialCollapsible accordion="false"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &emsp;&lt;!-- Other Collapsible items here --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Popout" description="You can set the popout type by adding an attribute type='POPOUT'"/>
-    <m:MaterialCollapsible type="POPOUT">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &emsp;&lt;!-- Other Collapsible items here --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Style" description="You can define easily the style of your collapsible"/>
-    <m:MaterialCollapsible type="POPOUT">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader backgroundColor="grey" waves="DEFAULT">
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="white"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody backgroundColor="grey darken-1">
-          <m:MaterialLabel textColor="white" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
-      &emsp;&lt;!-- ITEM 1 -->&lt;br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader backgroundColor="grey" waves="DEFAULT"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="white"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody backgroundColor="grey darken-1"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="white" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Preselected Section" description="If you want a collapsible with a preopened section just add active='1' the parameter is the index of the collapsible item."/>
-    <m:MaterialCollapsible type="POPOUT" active="1">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type.'"/>
+      <m:MaterialCollapsible grid="s12 m6 l8">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCollapsible grid="s12 m6 l8"><br/>
+        &emsp;&lt;!-- ITEM 1 --><br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &emsp;&lt;!-- Other Collapsible items here --><br/>
+  
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Expandable" description="You can set the accordion type by adding an attribute accordion='false'"/>
+      <m:MaterialCollapsible accordion="false">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+  
+      <demo:PrettyPre addStyleNames="lang-xml ">
+        &emsp;&lt;m:MaterialCollapsible accordion="false"><br/>
+        &emsp;&lt;!-- ITEM 1 --><br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &emsp;&lt;!-- Other Collapsible items here --><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Popout" description="You can set the popout type by adding an attribute type='POPOUT'"/>
+      <m:MaterialCollapsible type="POPOUT">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
+        &emsp;&lt;!-- ITEM 1 --><br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &emsp;&lt;!-- Other Collapsible items here --><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Style" description="You can define easily the style of your collapsible"/>
+      <m:MaterialCollapsible type="POPOUT">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader backgroundColor="GREY" waves="DEFAULT">
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="WHITE"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody backgroundColor="GREY_DARKEN_1">
+            <m:MaterialLabel textColor="WHITE" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
+        &emsp;&lt;!-- ITEM 1 -->&lt;br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader backgroundColor="GREY" waves="DEFAULT"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="WHITE"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody backgroundColor="GREY_DARKEN_1"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="WHITE" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Preselected Section" description="If you want a collapsible with a preopened section just add active='1' the parameter is the index of the collapsible item."/>
+      <m:MaterialCollapsible type="POPOUT" active="1">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+          &lt;!-- ITEM 1 --><br/>
+          &lt;m:MaterialCollapsibleItem><br/>
+            &lt;m:MaterialCollapsibleHeader><br/>
+              &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+            &lt;/m:MaterialCollapsibleHeader><br/>
+            &lt;m:MaterialCollapsibleBody><br/>
+              &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+            &lt;/m:MaterialCollapsibleBody><br/>
+          &lt;/m:MaterialCollapsibleItem><br/>
+          &lt;!-- Other collapsible items here --><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle description="Or you can simply set the MaterialCollapsibleItem as active='true'."/>
+      <m:MaterialCollapsible type="POPOUT">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem active="true">
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialCollapsible type="POPOUT"><br/>
         &lt;!-- ITEM 1 --><br/>
-        &lt;m:MaterialCollapsibleItem><br/>
-          &lt;m:MaterialCollapsibleHeader><br/>
-            &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-          &lt;/m:MaterialCollapsibleHeader><br/>
-          &lt;m:MaterialCollapsibleBody><br/>
-            &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-          &lt;/m:MaterialCollapsibleBody><br/>
+        &lt;m:MaterialCollapsibleItem active="true"><br/>
+        &lt;m:MaterialCollapsibleHeader><br/>
+        &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &lt;/m:MaterialCollapsibleHeader><br/>
+        &lt;m:MaterialCollapsibleBody><br/>
+        &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &lt;/m:MaterialCollapsibleBody><br/>
         &lt;/m:MaterialCollapsibleItem><br/>
         &lt;!-- Other collapsible items here --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle description="Or you can simply set the MaterialCollapsibleItem as active='true'."/>
-    <m:MaterialCollapsible type="POPOUT">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem active="true">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialCollapsible type="POPOUT"><br/>
-      &lt;!-- ITEM 1 --><br/>
-      &lt;m:MaterialCollapsibleItem active="true"><br/>
-      &lt;m:MaterialCollapsibleHeader><br/>
-      &lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &lt;/m:MaterialCollapsibleHeader><br/>
-      &lt;m:MaterialCollapsibleBody><br/>
-      &lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &lt;/m:MaterialCollapsibleBody><br/>
-      &lt;/m:MaterialCollapsibleItem><br/>
-      &lt;!-- Other collapsible items here --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Nested Collapsibles" />
-    <m:MaterialCollapsible type="POPOUT" active="1">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <!-- Another Collapsible -->
-          <m:MaterialCollapsible type="POPOUT" active="1">
-            <!-- ITEM 1 -->
-            <m:MaterialCollapsibleItem>
-              <m:MaterialCollapsibleHeader>
-                <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-              </m:MaterialCollapsibleHeader>
-              <m:MaterialCollapsibleBody>
-                <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-              </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 2 -->
-            <m:MaterialCollapsibleItem>
-              <m:MaterialCollapsibleHeader>
-                <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-              </m:MaterialCollapsibleHeader>
-              <m:MaterialCollapsibleBody>
-                <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-              </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-            <!-- ITEM 3 -->
-            <m:MaterialCollapsibleItem>
-              <m:MaterialCollapsibleHeader>
-                <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-              </m:MaterialCollapsibleHeader>
-              <m:MaterialCollapsibleBody>
-                <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-              </m:MaterialCollapsibleBody>
-            </m:MaterialCollapsibleItem>
-          </m:MaterialCollapsible>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
-      &lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/><br/>
-
-      &emsp;&emsp;&emsp;&lt;-- Child Collapsible --><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleItem><br/><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCollapsible><br/>
-
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &lt;!-- Other collapsible items here --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Collapsible Secondary Icons" />
-    <m:MaterialCollapsible type="POPOUT" active="1">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-          <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
-          <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-          <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
-          <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem>
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-          <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
-          <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" /><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" /><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Nested Collapsibles" />
+      <m:MaterialCollapsible type="POPOUT" active="1">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <!-- Another Collapsible -->
+            <m:MaterialCollapsible type="POPOUT" active="1">
+              <!-- ITEM 1 -->
+              <m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleHeader>
+                  <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+                </m:MaterialCollapsibleHeader>
+                <m:MaterialCollapsibleBody>
+                  <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                </m:MaterialCollapsibleBody>
+              </m:MaterialCollapsibleItem>
+              <!-- ITEM 2 -->
+              <m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleHeader>
+                  <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+                </m:MaterialCollapsibleHeader>
+                <m:MaterialCollapsibleBody>
+                  <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                </m:MaterialCollapsibleBody>
+              </m:MaterialCollapsibleItem>
+              <!-- ITEM 3 -->
+              <m:MaterialCollapsibleItem>
+                <m:MaterialCollapsibleHeader>
+                  <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+                </m:MaterialCollapsibleHeader>
+                <m:MaterialCollapsibleBody>
+                  <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                </m:MaterialCollapsibleBody>
+              </m:MaterialCollapsibleItem>
+            </m:MaterialCollapsible>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+        &lt;!-- ITEM 1 --><br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/><br/>
+  
+        &emsp;&emsp;&emsp;&lt;-- Child Collapsible --><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollapsibleItem><br/><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCollapsible><br/>
+  
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &lt;!-- Other collapsible items here --><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Collapsible Secondary Icons" />
+      <m:MaterialCollapsible type="POPOUT" active="1">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+            <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
+            <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+            <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
+            <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+            <m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" />
+            <m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" />
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCollapsible type="POPOUT" active="1"><br/>
+        &emsp;&lt;!-- ITEM 1 --><br/>
+        &emsp;&lt;m:MaterialCollapsibleItem><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="DELETE" waves="DEFAULT" float="RIGHT" circle="true" /><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="PIN_DROP" waves="DEFAULT" float="RIGHT" circle="true" /><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
+        &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
+        &emsp;&lt;/m:MaterialCollapsibleItem><br/>
+        &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>

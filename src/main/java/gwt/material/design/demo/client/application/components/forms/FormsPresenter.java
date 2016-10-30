@@ -20,7 +20,6 @@ package gwt.material.design.demo.client.application.components.forms;
  * #L%
  */
 
-
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -42,10 +41,7 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
     }
 
     @Inject
-    FormsPresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy) {
+    FormsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
@@ -55,6 +51,6 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
 
         SetPageTitleEvent.fire("Forms", "Forms are the standard way to receive user inputted data. " +
             "The transitions and smoothness of these elements are very important because of the inherent " +
-            "user interaction associated with forms.", this);
+            "user interaction associated with forms.", "components/forms/FormsView", this);
     }
 }

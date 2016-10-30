@@ -24,270 +24,278 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:menubar.MaterialMenuBar><br/>
-            &emsp;&lt;m:MaterialLink text="Link 1" activates="drop" /><br/>
-            &emsp;&lt;m:MaterialDropDown activator="drop" ><br/>
-            &emsp;&emsp;&lt;m:MaterialLink text="Link 1.1" /><br/>
-            &emsp;&emsp;&lt;m:MaterialLink text="Link 1.2" /><br/>
-            &emsp;&lt;/m:MaterialDropDown><br/>
-            &lt;/ma:menubar.MaterialMenuBar><br/>        
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:menubar.MaterialMenuBar><br/>
+                &emsp;&lt;m:MaterialLink text="Link 1" activates="drop" /><br/>
+                &emsp;&lt;m:MaterialDropDown activator="drop" ><br/>
+                &emsp;&emsp;&lt;m:MaterialLink text="Link 1.1" /><br/>
+                &emsp;&emsp;&lt;m:MaterialLink text="Link 1.2" /><br/>
+                &emsp;&lt;/m:MaterialDropDown><br/>
+                &lt;/ma:menubar.MaterialMenuBar><br/>        
+            </demo:PrettyPre>
+        </m:MaterialRow>
     
-        <m:MaterialTitle title="Introduction" description="Nested dropdowns are good for Desktop/Tablets." />
-        <m:MaterialCard backgroundColor="grey lighten-3" marginBottom="10">
-            <!-- Header -->
-            <m:MaterialRow margin="0" backgroundColor="white">
-                <m:MaterialColumn grid="l2 s2 m2" backgroundColor="blue" height="106px" textAlign="CENTER" paddingTop="40">
-                    <m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="white"/>
-                </m:MaterialColumn>
-                <m:MaterialColumn grid="l10 s10 m10">
-                    <m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/>
-                    <!-- MenuBar component -->
-                    <ma:menubar.MaterialMenuBar>
-                        <!-- Menu Link items -->
-                        <m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="black" activates="dp-file"/>
-                        <m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="black" activates="dp-edit"/>
-                        <m:MaterialLink padding="12" waves="DEFAULT" text="View" textColor="black" activates="dp-view"/>
-                        <m:MaterialLink padding="12" waves="DEFAULT" text="Format" textColor="black" activates="dp-format"/>
-
-                        <!-- File Drop Down -->
-                        <m:MaterialDropDown ui:field="dpFile" activator="dp-file" belowOrigin="true">
-                            <m:MaterialLink text="Share..." separator="true" textColor="black"/>
-                            <m:MaterialLink ui:field="btnNew" text="New" textColor="black" activates="dp-new" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY">
-                                <!-- Sub menu for NEW -->
-                                <m:MaterialDropDown ui:field="dpNew" activator="dp-new" hover="true" belowOrigin="true">
-                                    <m:MaterialLink text="Document" textColor="black"/>
-                                    <m:MaterialLink text="Presentation" textColor="black" />
-                                    <m:MaterialLink text="Form" textColor="black" />
-                                    <m:MaterialLink text="Drawing" textColor="black" />
-                                </m:MaterialDropDown>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Open..." textColor="black" />
-                            <m:MaterialLink text="Rename" enabled="false" separator="true" textColor="black" />
-                            <m:MaterialLink text="Print" textColor="black" >
-                                <m:MaterialLabel text="Ctrl P" float="RIGHT"/>
-                            </m:MaterialLink>
-                        </m:MaterialDropDown>
-
-                        <!-- Edit Drop Down -->
-                        <m:MaterialDropDown ui:field="dpEdit" activator="dp-edit" belowOrigin="true">
-                            <m:MaterialLink text="Undo" iconType="UNDO" textColor="black">
-                                <m:MaterialLabel text="Ctrl + Z" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Redo" iconType="REDO" textColor="black">
-                                <m:MaterialLabel text="Ctrl + Y" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Cut" iconType="CONTENT_CUT" textColor="black">
-                                <m:MaterialLabel text="Ctrl + X" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Copy" iconType="CONTENT_COPY" textColor="black">
-                                <m:MaterialLabel text="Ctrl + C" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="black" separator="true">
-                                <m:MaterialLabel text="Ctrl + V" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Find and Replace..." paddingLeft="64">
-                                <m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/>
-                            </m:MaterialLink>
-                        </m:MaterialDropDown>
-
-                        <!-- View Drop Down -->
-                        <m:MaterialDropDown ui:field="dpView" activator="dp-view" belowOrigin="true">
-                            <m:MaterialCheckBox text="Print Layout" />
-                            <m:MaterialLink text="Mode" activates="dp-mode" paddingLeft="50" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY">
-                                <!-- Mode Dropdown -->
-                                <m:MaterialDropDown ui:field="dpMode" activator="dp-mode" hover="true" belowOrigin="true">
-                                    <m:MaterialCheckBox text="Presentation" />
-                                    <m:MaterialCheckBox text="Edit" />
-                                    <m:MaterialCheckBox text="Modifiable" />
-                                </m:MaterialDropDown>
-                            </m:MaterialLink>
-                            <m:MaterialCheckBox text="Show ruler" />
-                            <m:MaterialCheckBox text="Show equation toolbar" />
-                            <m:MaterialCheckBox text="Show spelling suggestions" />
-                            <m:MaterialCheckBox text="Compact controls" />
-                            <m:MaterialCheckBox text="Fullscreen" />
-                        </m:MaterialDropDown>
-
-                        <!-- Format Drop Down -->
-                        <m:MaterialDropDown ui:field="dpFormat" activator="dp-format" belowOrigin="true">
-                            <m:MaterialLink text="Bold">
-                                <m:MaterialLabel text="Ctrl + B" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Italic">
-                                <m:MaterialLabel text="Ctrl + I" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Underline">
-                                <m:MaterialLabel text="Ctrl + U" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Strikethrough">
-                                <m:MaterialLabel text="Alt + Shift + 5" float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Superscript">
-                                <m:MaterialLabel text="Ctrl + ." float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Subscript" separator="true">
-                                <m:MaterialLabel text="Ctrl + ," float="RIGHT"/>
-                            </m:MaterialLink>
-                            <m:MaterialLink text="Clear Formatting" />
-                        </m:MaterialDropDown>
-                    </ma:menubar.MaterialMenuBar>
-                </m:MaterialColumn>
-            </m:MaterialRow>
-
-            <!-- Content -->
-            <m:MaterialRow padding="20">
-                <m:MaterialPanel backgroundColor="white" padding="20" grid="l8" offset="l2" hoverable="true" shadow="1">
-                    <m:MaterialLabel text="Untitled Document" marginTop="20" marginBottom="20" fontSize="1.5em" textAlign="CENTER"/>
-                    <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet." marginBottom="40"/>
-                    <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum." marginBottom="40"/>
-                    <m:MaterialLabel text="Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et." marginBottom="40"/>
-                </m:MaterialPanel>
-            </m:MaterialRow>
-        </m:MaterialCard>
-
-        <m:MaterialTitle title="Full Markup" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialCard backgroundColor="grey lighten-3" marginBottom="10"><br/>
-            &emsp;&lt;!-- Header --><br/>
-            &emsp;&lt;m:MaterialRow margin="0" backgroundColor="white"><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn grid="l2" backgroundColor="blue" height="100%" textAlign="CENTER" padding="40"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="white"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn grid="l10"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/><br/>
-            &emsp;&emsp;&emsp;&lt;!-- MenuBar component --><br/>
-            &emsp;&emsp;&emsp;&lt;ma:menubar.MaterialMenuBar><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;!-- Menu Link items --><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="black" activates="dp-file"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="black" activates="dp-edit"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="View" textColor="black" activates="dp-view"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="Format" textColor="black" activates="dp-format"/><br/>
-
-            &emsp;&emsp;&emsp;&emsp;&lt;!-- File Drop Down --><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpFile" activator="dp-file" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Share..." separator="true" textColor="black"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="New" textColor="black" activates="dp-new" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;!-- Sub menu for NEW --><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpNew" activator="dp-new" hover="true" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Document" textColor="black"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Presentation" textColor="black" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Form" textColor="black" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Drawing" textColor="black" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Open..." textColor="black" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Rename" enabled="false" separator="true" textColor="black" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Print" textColor="black" ><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl P" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-
-            &emsp;&emsp;&emsp;&emsp;&lt;!-- Edit Drop Down --><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpEdit" activator="dp-edit" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Undo" iconType="UNDO" textColor="black"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Z" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Redo" iconType="REDO" textColor="black"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Y" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Cut" iconType="CONTENT_CUT" textColor="black"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + X" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Copy" iconType="CONTENT_COPY" textColor="black"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + C" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="black" separator="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + V" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Find and Replace..."><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-
-            &emsp;&emsp;&emsp;&emsp;&lt;!-- View Drop Down --><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpView" activator="dp-view" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Print Layout" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Mode" activates="dp-mode" paddingLeft="50" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;!-- Mode Dropdown --><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpMode" activator="dp-mode" hover="true" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Presentation" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Edit" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Modifiable" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show ruler" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show equation toolbar" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show spelling suggestions" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Compact controls" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Fullscreen" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-
-            &emsp;&emsp;&emsp;&emsp;&lt;!-- Format Drop Down --><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpFormat" activator="dp-format" belowOrigin="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Bold"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + B" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Italic"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + I" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Underline"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + U" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Strikethrough"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Alt + Shift + 5" float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Superscript"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + ." float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Subscript" separator="true"><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + ," float="RIGHT"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Clear Formatting" /><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
-            &emsp;&emsp;&emsp;&lt;/ma:menubar.MaterialMenuBar><br/>
-            &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-
-            &emsp;&lt;!-- Content --><br/>
-            &emsp;&lt;m:MaterialRow padding="20"><br/>
-            &emsp;&emsp;&lt;m:MaterialPanel backgroundColor="white" padding="20" grid="l8" offset="l2" hoverable="true" shadow="1"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Untitled Document" marginTop="20" marginBottom="20" fontSize="1.5em" textAlign="CENTER"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet." marginBottom="40"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum." marginBottom="40"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et." marginBottom="40"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-            &lt;/m:MaterialCard><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Java"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiHandler({"dpFile", "dpNew", "dpView", "dpEdit", "dpFormat"})<br/>
-            void onSelectionFileDropdown(SelectionEvent&lt;Widget> selection) {<br/>
-            &emsp;if(selection.getSelectedItem() instanceof MaterialLink){<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Triggered : " + ((MaterialLink)selection.getSelectedItem()).getText());<br/>
-            &emsp;}else if(selection.getSelectedItem() instanceof MaterialCheckBox){<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Checked : " + ((MaterialCheckBox)selection.getSelectedItem()).getText());<br/>
-            &emsp;}<br/>
-            }<br/><br/>
-
-            @UiHandler("dpMode")<br/>
-            void onSelectionMode(SelectionEvent&lt;Widget> selection) {<br/>
-            &emsp;for(Widget w : dpMode.getItems()){<br/>
-            &emsp;&emsp;if(w instanceof MaterialCheckBox){<br/>
-            &emsp;&emsp;&emsp;((MaterialCheckBox) w).setValue(false);<br/>
-            &emsp;&emsp;}<br/>
-            &emsp;}<br/>
-            &emsp;if(selection.getSelectedItem() instanceof MaterialCheckBox){<br/>
-            &emsp;&emsp;((MaterialCheckBox) selection.getSelectedItem()).setValue(true);<br/>
-            &emsp;}<br/>
-            }<br/>
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Introduction" description="Nested dropdowns are good for Desktop/Tablets." />
+            <m:MaterialCard backgroundColor="GREY_LIGHTEN_3" marginBottom="10">
+                <!-- Header -->
+                <m:MaterialRow margin="0" backgroundColor="WHITE">
+                    <m:MaterialColumn grid="l2 s2 m2" backgroundColor="BLUE" height="106px" textAlign="CENTER" paddingTop="40">
+                        <m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="WHITE"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="l10 s10 m10">
+                        <m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/>
+                        <!-- MenuBar component -->
+                        <ma:menubar.MaterialMenuBar>
+                            <!-- Menu Link items -->
+                            <m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="BLACK" activates="dp-file"/>
+                            <m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="BLACK" activates="dp-edit"/>
+                            <m:MaterialLink padding="12" waves="DEFAULT" text="View" textColor="BLACK" activates="dp-view"/>
+                            <m:MaterialLink padding="12" waves="DEFAULT" text="Format" textColor="BLACK" activates="dp-format"/>
+    
+                            <!-- File Drop Down -->
+                            <m:MaterialDropDown ui:field="dpFile" activator="dp-file" belowOrigin="true">
+                                <m:MaterialLink text="Share..." separator="true" textColor="BLACK"/>
+                                <m:MaterialLink ui:field="btnNew" text="New" textColor="BLACK" activates="dp-new" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY">
+                                    <!-- Sub menu for NEW -->
+                                    <m:MaterialDropDown ui:field="dpNew" activator="dp-new" hover="true" belowOrigin="true">
+                                        <m:MaterialLink text="Document" textColor="BLACK"/>
+                                        <m:MaterialLink text="Presentation" textColor="BLACK" />
+                                        <m:MaterialLink text="Form" textColor="BLACK" />
+                                        <m:MaterialLink text="Drawing" textColor="BLACK" />
+                                    </m:MaterialDropDown>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Open..." textColor="BLACK" />
+                                <m:MaterialLink text="Rename" enabled="false" separator="true" textColor="BLACK" />
+                                <m:MaterialLink text="Print" textColor="BLACK" >
+                                    <m:MaterialLabel text="Ctrl P" float="RIGHT"/>
+                                </m:MaterialLink>
+                            </m:MaterialDropDown>
+    
+                            <!-- Edit Drop Down -->
+                            <m:MaterialDropDown ui:field="dpEdit" activator="dp-edit" belowOrigin="true">
+                                <m:MaterialLink text="Undo" iconType="UNDO" textColor="BLACK">
+                                    <m:MaterialLabel text="Ctrl + Z" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Redo" iconType="REDO" textColor="BLACK">
+                                    <m:MaterialLabel text="Ctrl + Y" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Cut" iconType="CONTENT_CUT" textColor="BLACK">
+                                    <m:MaterialLabel text="Ctrl + X" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Copy" iconType="CONTENT_COPY" textColor="BLACK">
+                                    <m:MaterialLabel text="Ctrl + C" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="BLACK" separator="true">
+                                    <m:MaterialLabel text="Ctrl + V" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Find and Replace..." paddingLeft="64">
+                                    <m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/>
+                                </m:MaterialLink>
+                            </m:MaterialDropDown>
+    
+                            <!-- View Drop Down -->
+                            <m:MaterialDropDown ui:field="dpView" activator="dp-view" belowOrigin="true">
+                                <m:MaterialCheckBox text="Print Layout" />
+                                <m:MaterialLink text="Mode" activates="dp-mode" paddingLeft="50" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY">
+                                    <!-- Mode Dropdown -->
+                                    <m:MaterialDropDown ui:field="dpMode" activator="dp-mode" hover="true" belowOrigin="true">
+                                        <m:MaterialCheckBox text="Presentation" />
+                                        <m:MaterialCheckBox text="Edit" />
+                                        <m:MaterialCheckBox text="Modifiable" />
+                                    </m:MaterialDropDown>
+                                </m:MaterialLink>
+                                <m:MaterialCheckBox text="Show ruler" />
+                                <m:MaterialCheckBox text="Show equation toolbar" />
+                                <m:MaterialCheckBox text="Show spelling suggestions" />
+                                <m:MaterialCheckBox text="Compact controls" />
+                                <m:MaterialCheckBox text="Fullscreen" />
+                            </m:MaterialDropDown>
+    
+                            <!-- Format Drop Down -->
+                            <m:MaterialDropDown ui:field="dpFormat" activator="dp-format" belowOrigin="true">
+                                <m:MaterialLink text="Bold">
+                                    <m:MaterialLabel text="Ctrl + B" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Italic">
+                                    <m:MaterialLabel text="Ctrl + I" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Underline">
+                                    <m:MaterialLabel text="Ctrl + U" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Strikethrough">
+                                    <m:MaterialLabel text="Alt + Shift + 5" float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Superscript">
+                                    <m:MaterialLabel text="Ctrl + ." float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Subscript" separator="true">
+                                    <m:MaterialLabel text="Ctrl + ," float="RIGHT"/>
+                                </m:MaterialLink>
+                                <m:MaterialLink text="Clear Formatting" />
+                            </m:MaterialDropDown>
+                        </ma:menubar.MaterialMenuBar>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+    
+                <!-- Content -->
+                <m:MaterialRow padding="20">
+                    <m:MaterialPanel backgroundColor="WHITE" padding="20" grid="l8" offset="l2" hoverable="true" shadow="1">
+                        <m:MaterialLabel text="Untitled Document" marginTop="20" marginBottom="20" fontSize="1.5em" textAlign="CENTER"/>
+                        <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet." marginBottom="40"/>
+                        <m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum." marginBottom="40"/>
+                        <m:MaterialLabel text="Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et." marginBottom="40"/>
+                    </m:MaterialPanel>
+                </m:MaterialRow>
+            </m:MaterialCard>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Full Markup" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialCard backgroundColor="GREY_LIGHTEN_3" marginBottom="10"><br/>
+                &emsp;&lt;!-- Header --><br/>
+                &emsp;&lt;m:MaterialRow margin="0" backgroundColor="WHITE"><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="l2" backgroundColor="BLUE" height="100%" textAlign="CENTER" padding="40"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="CHAT" opacity="0.8" iconColor="WHITE"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="l10"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Untitled Document" fontSize="2em" padding="12"/><br/>
+                &emsp;&emsp;&emsp;&lt;!-- MenuBar component --><br/>
+                &emsp;&emsp;&emsp;&lt;ma:menubar.MaterialMenuBar><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- Menu Link items --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="File" textColor="BLACK" activates="dp-file"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="Edit" textColor="BLACK" activates="dp-edit"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="View" textColor="BLACK" activates="dp-view"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink padding="12" waves="DEFAULT" text="Format" textColor="BLACK" activates="dp-format"/><br/>
+    
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- File Drop Down --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpFile" activator="dp-file" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Share..." separator="true" textColor="BLACK"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="New" textColor="BLACK" activates="dp-new" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;!-- Sub menu for NEW --><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpNew" activator="dp-new" hover="true" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Document" textColor="BLACK"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Presentation" textColor="BLACK" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Form" textColor="BLACK" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Drawing" textColor="BLACK" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Open..." textColor="BLACK" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Rename" enabled="false" separator="true" textColor="BLACK" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Print" textColor="BLACK" ><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl P" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+    
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- Edit Drop Down --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpEdit" activator="dp-edit" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Undo" iconType="UNDO" textColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Z" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Redo" iconType="REDO" textColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Y" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Cut" iconType="CONTENT_CUT" textColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + X" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Copy" iconType="CONTENT_COPY" textColor="BLACK"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + C" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Paste" iconType="CONTENT_PASTE" textColor="BLACK" separator="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + V" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Find and Replace..."><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + Shift + H" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+    
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- View Drop Down --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpView" activator="dp-view" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Print Layout" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Mode" activates="dp-mode" paddingLeft="50" iconType="PLAY_ARROW" iconPosition="RIGHT" iconSize="TINY"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;!-- Mode Dropdown --><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpMode" activator="dp-mode" hover="true" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Presentation" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Edit" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Modifiable" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show ruler" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show equation toolbar" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Show spelling suggestions" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Compact controls" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCheckBox text="Fullscreen" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+    
+                &emsp;&emsp;&emsp;&emsp;&lt;!-- Format Drop Down --><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialDropDown ui:field="dpFormat" activator="dp-format" belowOrigin="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Bold"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + B" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Italic"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + I" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Underline"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + U" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Strikethrough"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Alt + Shift + 5" float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Superscript"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + ." float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Subscript" separator="true"><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Ctrl + ," float="RIGHT"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialLink><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Clear Formatting" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialDropDown><br/>
+                &emsp;&emsp;&emsp;&lt;/ma:menubar.MaterialMenuBar><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+    
+                &emsp;&lt;!-- Content --><br/>
+                &emsp;&lt;m:MaterialRow padding="20"><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel backgroundColor="WHITE" padding="20" grid="l8" offset="l2" hoverable="true" shadow="1"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Untitled Document" marginTop="20" marginBottom="20" fontSize="1.5em" textAlign="CENTER"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet." marginBottom="40"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum." marginBottom="40"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et." marginBottom="40"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+                &lt;/m:MaterialCard><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+        
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Java"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler({"dpFile", "dpNew", "dpView", "dpEdit", "dpFormat"})<br/>
+                void onSelectionFileDropdown(SelectionEvent&lt;Widget> selection) {<br/>
+                &emsp;if(selection.getSelectedItem() instanceof MaterialLink){<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Triggered : " + ((MaterialLink)selection.getSelectedItem()).getText());<br/>
+                &emsp;}else if(selection.getSelectedItem() instanceof MaterialCheckBox){<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Checked : " + ((MaterialCheckBox)selection.getSelectedItem()).getText());<br/>
+                &emsp;}<br/>
+                }<br/><br/>
+    
+                @UiHandler("dpMode")<br/>
+                void onSelectionMode(SelectionEvent&lt;Widget> selection) {<br/>
+                &emsp;for(Widget w : dpMode.getItems()){<br/>
+                &emsp;&emsp;if(w instanceof MaterialCheckBox){<br/>
+                &emsp;&emsp;&emsp;((MaterialCheckBox) w).setValue(false);<br/>
+                &emsp;&emsp;}<br/>
+                &emsp;}<br/>
+                &emsp;if(selection.getSelectedItem() instanceof MaterialCheckBox){<br/>
+                &emsp;&emsp;((MaterialCheckBox) selection.getSelectedItem()).setValue(true);<br/>
+                &emsp;}<br/>
+                }<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

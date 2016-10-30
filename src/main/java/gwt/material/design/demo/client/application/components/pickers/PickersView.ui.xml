@@ -23,107 +23,131 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
-    <m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
-    <m:MaterialDatePicker placeholder="Date" />
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialDatePicker ui:field="dp" placeholder="Date" />
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Disabled Styles" description="You can disable the datepicker by adding enabled='false'"/>
-    <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
-
-    <m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
-    <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="setDate() and getDate()"/>
-    <m:MaterialDatePicker ui:field="dp"  placeholder="Date" selectionType="YEAR"/>
-    <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" />
-    <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;// setDate();<br/>
-      dp.setDate(new Date(116, 0,1));
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;// getDate();<br/>
-      dp.getDate();
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Formats" description="You can set the format of the date picker by adding format='FORMAT'"/>
-    <m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
-    <m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="yyyy mm dd"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Date Limit" description="You can limit the date by calling setDateLimit(Date min, Date max) method."/>
-    <m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;setDateLimit(Date dateMin, Date dateMax);
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Clear()" description="Clearing the value of datepicker."/>
-    <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday" />
-    <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      datePicker.clear();
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Events" description="We provided events on date picker namely : Close, Open, ValueChange events."/>
-    <m:MaterialDatePicker ui:field="dpEvents" placeholder="Birthday"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;dpEvents.addOpenHandler(new OpenHandler&lt;MaterialDatePicker>() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void onOpen(OpenEvent&lt;MaterialDatePicker> event) {<br/>
-      &emsp;if(event.getTarget().getValue() != null){<br/>
-      &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());<br/>
-      &emsp;}else{<br/>
-      &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker" );<br/>
-      &emsp;}<br/>
-      &emsp;}<br/>
-      });<br/><br/>
-
-      dpEvents.addCloseHandler(new CloseHandler&lt;MaterialDatePicker>() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void onClose(CloseEvent&lt;MaterialDatePicker> event) {<br/>
-      &emsp;MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue());<br/>
-      &emsp;}<br/>
-      });<br/><br/>
-
-      dpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
-      &emsp;&emsp;MaterialToast.fireToast("Date Selected " + event.getValue());<br/>
-      &emsp;}<br/>
-      });<br/>
-    </demo:PrettyPre>
-
-
-    <m:MaterialTitle title="Language Translations" description="With API we have supported 43 languages into the datepicker component."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l4 m6 s12">
-        <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="grey"/>
-        <m:MaterialListBox ui:field="lstLanguage"/>
-      </m:MaterialColumn>
-      <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
-    </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialDatePicker placeholder="With Translation" language="AR" />
-    </demo:PrettyPre>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;// Using Java<br/>
-      dpTranslation.setLanguage(DatePickerLanguage.AR);<br/>
-      dpTranslation.reinitialize();
-    </demo:PrettyPre>
-
+      <m:MaterialRow addStyleNames="code">  
+        <m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
+        <m:MaterialDatePicker placeholder="Date" />
+    
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &lt;m:MaterialDatePicker ui:field="dp" placeholder="Date" />
+        </demo:PrettyPre>
+      </m:MaterialRow>
+      
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Disabled Styles" description="You can disable the datepicker by adding enabled='false'"/>
+        <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
+    
+        <m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
+        <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+    
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="setDate() and getDate()"/>
+        <m:MaterialDatePicker ui:field="dp"  placeholder="Date" selectionType="YEAR"/>
+        <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" />
+        <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
+    
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;// setDate();<br/>
+          dp.setDate(new Date(116, 0,1));
+        </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;// getDate();<br/>
+          dp.getDate();
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Formats" description="You can set the format of the date picker by adding format='FORMAT'"/>
+        <m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
+        <m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format"/>
+    
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="yyyy mm dd"/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Date Limit" description="You can limit the date by calling setDateLimit(Date min, Date max) method."/>
+        <m:MaterialDatePicker ui:field="dpLimit" placeholder="With Limit"/>
+    
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;setDateLimit(Date dateMin, Date dateMax);
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Clear()" description="Clearing the value of datepicker."/>
+        <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday" />
+        <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
+        <demo:PrettyPre addStyleNames="lang-java">
+          datePicker.clear();
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Open / Close control" description="You can control programmatically the date picker. We added value change event with datepicker.close() upon triggering the event." />
+        <m:MaterialDatePicker ui:field="dpOpenClose" placeholder="birthdate" />
+        <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" />
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;dpOpenClose.open(); <br/>
+          dpOpenClose.close();
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Events" description="We provided events on date picker namely : Close, Open, ValueChange events."/>
+        <m:MaterialDatePicker ui:field="dpEvents" placeholder="Birthday"/>
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;dpEvents.addOpenHandler(new OpenHandler&lt;MaterialDatePicker>() {<br/>
+          &emsp;@Override<br/>
+          &emsp;public void onOpen(OpenEvent&lt;MaterialDatePicker> event) {<br/>
+          &emsp;if(event.getTarget().getValue() != null){<br/>
+          &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());<br/>
+          &emsp;}else{<br/>
+          &emsp;&emsp;MaterialToast.fireToast("Opened Date Picker" );<br/>
+          &emsp;}<br/>
+          &emsp;}<br/>
+          });<br/><br/>
+    
+          dpEvents.addCloseHandler(new CloseHandler&lt;MaterialDatePicker>() {<br/>
+          &emsp;@Override<br/>
+          &emsp;public void onClose(CloseEvent&lt;MaterialDatePicker> event) {<br/>
+          &emsp;MaterialToast.fireToast("Closed Date Picker with value " + event.getTarget().getValue());<br/>
+          &emsp;}<br/>
+          });<br/><br/>
+    
+          dpEvents.addValueChangeHandler(new ValueChangeHandler&lt;Date>() {<br/>
+          &emsp;@Override<br/>
+          &emsp;public void onValueChange(ValueChangeEvent&lt;Date> event) {<br/>
+          &emsp;&emsp;MaterialToast.fireToast("Date Selected " + event.getValue());<br/>
+          &emsp;}<br/>
+          });<br/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+    
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Language Translations" description="With API we have supported 43 languages into the datepicker component."/>
+        <m:MaterialRow>
+          <m:MaterialColumn grid="l4 m6 s12">
+            <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="GREY"/>
+            <m:MaterialListBox ui:field="lstLanguage"/>
+          </m:MaterialColumn>
+          <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
+        </m:MaterialRow>
+    
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialDatePicker placeholder="With Translation" language="AR" />
+        </demo:PrettyPre>
+    
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;// Using Java<br/>
+          dpTranslation.setLanguage(DatePickerLanguage.AR);<br/>
+          dpTranslation.reinitialize();
+        </demo:PrettyPre>
+      </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

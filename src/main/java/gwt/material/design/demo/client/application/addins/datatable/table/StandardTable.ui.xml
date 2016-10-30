@@ -1,0 +1,52 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:t='urn:import:gwt.material.design.sample.client.ui'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:m.table='urn:import:gwt.material.design.client.ui.table'>
+
+  <g:HTMLPanel>
+    <m:MaterialRow>
+      <m:MaterialColumn grid="s3" marginTop="28">
+        <m:MaterialCheckBox ui:field="cbCategories" type="FILLED" value="true" text="With Categories"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="s3" marginTop="28">
+        <m:MaterialCheckBox ui:field="cbStickyHeader" type="FILLED" value="true" text="With Sticky Header"/>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="s3" marginTop="28">
+        <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="true" text="With Row Expansion"/>
+      </m:MaterialColumn>
+      <ma:combobox.MaterialComboBox grid="s3" ui:field="listSelectionType" hideSearch="false" label="Selection Type">
+        <m:html.Option text="NONE" />
+        <m:html.Option text="SINGLE" />
+        <m:html.Option text="MULTIPLE" />
+      </ma:combobox.MaterialComboBox>
+    </m:MaterialRow>
+    <m.table:MaterialDataTable ui:field="table"
+                               shadow="1"
+                               height="calc(100vh - 131px)"
+                               useStickyHeader="true"
+                               useCategories="true"
+                               useRowExpansion="true"
+                               selectionType="SINGLE"/>
+  </g:HTMLPanel>
+</ui:UiBinder>

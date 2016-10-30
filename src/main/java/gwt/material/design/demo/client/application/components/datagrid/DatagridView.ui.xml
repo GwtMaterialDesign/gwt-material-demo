@@ -42,7 +42,7 @@
       <m:MaterialRadioButton ui:field="rbHoverable" name="type" text="Hoverable" />
     </m:MaterialRow>
     <m:MaterialRow>
-      <m:MaterialButton ui:field="btnSource" text="Source"  backgroundColor="blue" waves="LIGHT"/>
+      <m:MaterialButton ui:field="btnSource" text="Source"  backgroundColor="BLUE" waves="LIGHT"/>
     </m:MaterialRow>
     <m:MaterialRow addStyleNames="card">
       <g:SimplePanel ui:field="gridPanel" />

@@ -25,16 +25,22 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Pre-requisites" description="First of all, you must download the gwt-charts 0.9.10.jar for the integration to GWT Material"/>
-    <m:MaterialLink href="https://mvnrepository.com/artifact/com.googlecode.gwt-charts/gwt-charts" target="_blank" text="Download gwt-charts.jar here" textColor="blue"/>
-
-    <m:MaterialTitle title="Setup" description="After downloading the jar, You will have to configure your App.gwt.xml file to inherit the Gwt Charts library. You can do it like this: "/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;inherits name="com.googlecode.gwt.charts.Charts" /&gt;
-    </demo:PrettyPre>
-    <m:MaterialTitle title="Chart Gallery" description="Thats it, you can now download the Java or UI Binder files on each chart you want to add it in your dashboard."/>
-
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Pre-requisites" description="First of all, you must download the gwt-charts 0.9.9.jar for the integration to GWT Material"/>
+      <m:MaterialLink href="http://gwt-charts.googlecode.com/svn/download/gwt-charts-0.9.9.jar" text="Download gwt-charts.jar here" textColor="BLUE"/>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Setup" description="After downloading the jar, You will have to configure your App.gwt.xml file to inherit the Gwt Charts library. You can do it like this: "/>
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &lt;inherits name="com.googlecode.gwt.charts.Charts" /&gt;
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Chart Gallery" description="Thats it, you can now download the Java or UI Binder files on each chart you want to add it in your dashboard."/>
+    </m:MaterialRow>
+    
     <m:MaterialRow ui:field="rowCharts" >
       <c:MaterialPieChart />
       <c:MaterialGeoChart />

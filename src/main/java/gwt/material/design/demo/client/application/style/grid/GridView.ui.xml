@@ -40,148 +40,160 @@
   </ui:style>
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="12 Columns" description="Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 1 </m.html:Span>  </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 2 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 3 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 4 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 5 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 6 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 7 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 8 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 9 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 10 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 11 </m.html:Span> </m:MaterialColumn>
-      <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 12 </m.html:Span> </m:MaterialColumn>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="12 Columns" description="Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 1 </m.html:Span>  </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 2 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 3 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 4 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 5 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 6 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 7 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 8 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 9 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 10 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 11 </m.html:Span> </m:MaterialColumn>
+        <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 12 </m.html:Span> </m:MaterialColumn>
+      </m:MaterialRow>
+      <m:MaterialLabel text="To get a feel of how the grid is used in HTML. Take a look at this code below which will produce a similar result as the one above."/>
+  
+      <g:HTMLPanel>
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialRow><br/><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" >&lt;m.html:Span addStyleNames="flow-text"> 1 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 2 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 3 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 4 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 5 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 6 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 7 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 8 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 9 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 10 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 11 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
+          &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 12 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/><br/>
+          &lt;/m:MaterialRow><br/>
+        </demo:PrettyPre>
+      </g:HTMLPanel>
+  
+      <m:MaterialLabel text="Note: For now, just know that the s1 stands for small-1 which in plain English means '1 column on small screens'."/>
     </m:MaterialRow>
-    <m:MaterialLabel text="To get a feel of how the grid is used in HTML. Take a look at this code below which will produce a similar result as the one above."/>
-
-    <g:HTMLPanel>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialRow><br/><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" >&lt;m.html:Span addStyleNames="flow-text"> 1 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 2 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 3 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 4 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 5 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 6 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 7 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 8 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 9 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 10 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 11 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/>
-        &emsp;&lt;m:MaterialColumn grid="s1" addStyleNames="{style.grid}">&lt;m.html:Span addStyleNames="flow-text"> 12 &lt;/m.html:Span> &lt;/m:MaterialColumn><br/><br/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Columns live inside Rows" description="Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns"/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> This div is 12-columns wide on all screen sizes </m.html:Span> </g:HTMLPanel></m:MaterialColumn>
+      </m:MaterialRow>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> 6-columns (one-half) </m.html:Span></g:HTMLPanel> </m:MaterialColumn>
+        <m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> 6-columns (one-half) </m.html:Span></g:HTMLPanel> </m:MaterialColumn>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> This div is 12-columns wide on all screen sizes &lt;/m.html:Span> &lt;/g:HTMLPanel>&lt;/m:MaterialColumn><br/>
+        &lt;/m:MaterialRow><br/><br/>
+        &lt;m:MaterialRow><br/>
+        &emsp;&lt;m:MaterialColumn grid="s6"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
+        &emsp;&lt;m:MaterialColumn grid="s6"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
-    </g:HTMLPanel>
-
-    <m:MaterialLabel text="Note: For now, just know that the s1 stands for small-1 which in plain English means '1 column on small screens'."/>
-
-    <m:MaterialTitle title="Columns live inside Rows" description="Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns"/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> This div is 12-columns wide on all screen sizes </m.html:Span> </g:HTMLPanel></m:MaterialColumn>
     </m:MaterialRow>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> 6-columns (one-half) </m.html:Span></g:HTMLPanel> </m:MaterialColumn>
-      <m:MaterialColumn grid="s6" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text"> 6-columns (one-half) </m.html:Span></g:HTMLPanel> </m:MaterialColumn>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Offsets" description="To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text">This div is 12-columns wide on all screen sizes</m.html:Span></g:HTMLPanel> </m:MaterialColumn>
+        <m:MaterialColumn grid="s6" offset="s6" addStyleNames="{style.grid}"><g:HTMLPanel><m.html:Span addStyleNames="flow-text">6-columns (offset-by-6)</m.html:Span></g:HTMLPanel></m:MaterialColumn>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12" >&lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text">This div is 12-columns wide on all screen sizes&lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
+        &emsp;&lt;m:MaterialColumn grid="s6" offset="s6" >&lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text">6-columns (offset-by-6)&lt;/m.html:Span>&lt;/g:HTMLPanel>&lt;/m:MaterialColumn><br/><br/>
+        &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> This div is 12-columns wide on all screen sizes &lt;/m.html:Span> &lt;/g:HTMLPanel>&lt;/m:MaterialColumn><br/>
-      &lt;/m:MaterialRow><br/><br/>
-      &lt;m:MaterialRow><br/>
-      &emsp;&lt;m:MaterialColumn grid="s6"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
-      &emsp;&lt;m:MaterialColumn grid="s6"> &lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text"> 6-columns (one-half) &lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Offsets" description="To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12" addStyleNames="{style.grid}"> <g:HTMLPanel><m.html:Span addStyleNames="flow-text">This div is 12-columns wide on all screen sizes</m.html:Span></g:HTMLPanel> </m:MaterialColumn>
-      <m:MaterialColumn grid="s6" offset="s6" addStyleNames="{style.grid}"><g:HTMLPanel><m.html:Span addStyleNames="flow-text">6-columns (offset-by-6)</m.html:Span></g:HTMLPanel></m:MaterialColumn>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Adding Responsiveness" description="In the previous examples, we only defined the size for small screens using 'col s12'. This is fine if we want a fixed layout since the rules propogate upwards. By just saying s12, we are essentially saying 'col s12 m12 l12'. But by explicitly defining the size we can make our website more responsive." />
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12" addStyleNames="{style.grid}" backgroundColor="TEAL_LIGHTEN_2">
+          <m.html:Span addStyleNames="flow-text">I am always full-width (col s12)</m.html:Span>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6" addStyleNames="{style.grid}" backgroundColor="TEAL_LIGHTEN_2">
+          <m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)</m.html:Span>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12" backgroundColor="TEAL_LIGHTEN_2"><br/>
+        &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am always full-width (col s12)&lt;/m.html:Span><br/>
+        &emsp;&lt;/m:MaterialColumn><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12 m6" backgroundColor="TEAL_LIGHTEN_2"><br/>
+        &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)&lt;/m.html:Span><br/>
+        &emsp;&lt;/m:MaterialColumn><br/><br/>
+        &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12" >&lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text">This div is 12-columns wide on all screen sizes&lt;/m.html:Span>&lt;/g:HTMLPanel> &lt;/m:MaterialColumn><br/>
-      &emsp;&lt;m:MaterialColumn grid="s6" offset="s6" >&lt;g:HTMLPanel>&lt;m.html:Span addStyleNames="flow-text">6-columns (offset-by-6)&lt;/m.html:Span>&lt;/g:HTMLPanel>&lt;/m:MaterialColumn><br/><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Adding Responsiveness" description="In the previous examples, we only defined the size for small screens using 'col s12'. This is fine if we want a fixed layout since the rules propogate upwards. By just saying s12, we are essentially saying 'col s12 m12 l12'. But by explicitly defining the size we can make our website more responsive." />
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12" addStyleNames="{style.grid}" backgroundColor="teal lighten-2">
-        <m.html:Span addStyleNames="flow-text">I am always full-width (col s12)</m.html:Span>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6" addStyleNames="{style.grid}" backgroundColor="teal lighten-2">
-        <m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)</m.html:Span>
-      </m:MaterialColumn>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Example Promotion Table" description="If we want 3 divs that are equal size, we define the divs with a width of 4-columns, 4+4+4 = 12, which nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12 m4">
+          <m:MaterialImage resource="{res.ic_metaphor}"/>
+          <m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m4">
+          <m:MaterialImage resource="{res.ic_bold}"/>
+          <m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m4">
+          <m:MaterialImage resource="{res.ic_motion}"/>
+          <m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_metaphor}"/><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/><br/>
+        &emsp;&lt;/m:MaterialColumn><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_bold}"/><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/><br/>
+        &emsp;&lt;/m:MaterialColumn><br/><br/>
+        &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_motion}"/><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/><br/>
+        &emsp;&lt;/m:MaterialColumn><br/><br/>
+        &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12" backgroundColor="teal lighten-2"><br/>
-      &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am always full-width (col s12)&lt;/m.html:Span><br/>
-      &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12 m6" backgroundColor="teal lighten-2"><br/>
-      &emsp;&emsp;&lt;m.html:Span addStyleNames="flow-text">I am full-width on mobile (col s12 m6)&lt;/m.html:Span><br/>
-      &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Example Promotion Table" description="If we want 3 divs that are equal size, we define the divs with a width of 4-columns, 4+4+4 = 12, which nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12 m4">
-        <m:MaterialImage resource="{res.ic_metaphor}"/>
-        <m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m4">
-        <m:MaterialImage resource="{res.ic_bold}"/>
-        <m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m4">
-        <m:MaterialImage resource="{res.ic_motion}"/>
-        <m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/>
-      </m:MaterialColumn>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Sections and Dividers" description="For Additional Grid components you can use the built section and divider components to separate two components"/>
+      <m:MaterialSection>
+        <m:MaterialTitle title="Section 1" description="Stuff"/>
+      </m:MaterialSection>
+      <m:MaterialDivider/>
+      <m:MaterialSection>
+        <m:MaterialTitle title="Section 2" description="Stuff"/>
+      </m:MaterialSection>
+      <m:MaterialDivider/>
+      <m:MaterialSection>
+        <m:MaterialTitle title="Section 3" description="Stuff"/>
+      </m:MaterialSection>
+      <m:MaterialDivider/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialSection><br/>
+        &emsp;&lt;m:MaterialTitle title="Section 1" description="Stuff"/><br/>
+        &lt;/m:MaterialSection><br/>
+        &lt;m:MaterialDivider/><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_metaphor}"/><br/>
-      &emsp;&emsp;&lt;m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/><br/>
-      &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_bold}"/><br/>
-      &emsp;&emsp;&lt;m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/><br/>
-      &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &emsp;&lt;m:MaterialColumn grid="s12 m4"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage resource="{res.ic_motion}"/><br/>
-      &emsp;&emsp;&lt;m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/><br/>
-      &emsp;&lt;/m:MaterialColumn><br/><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Sections and Dividers" description="For Additional Grid components you can use the built section and divider components to separate two components"/>
-    <m:MaterialSection>
-      <m:MaterialTitle title="Section 1" description="Stuff"/>
-    </m:MaterialSection>
-    <m:MaterialDivider/>
-    <m:MaterialSection>
-      <m:MaterialTitle title="Section 2" description="Stuff"/>
-    </m:MaterialSection>
-    <m:MaterialDivider/>
-    <m:MaterialSection>
-      <m:MaterialTitle title="Section 3" description="Stuff"/>
-    </m:MaterialSection>
-    <m:MaterialDivider/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialSection><br/>
-      &emsp;&lt;m:MaterialTitle title="Section 1" description="Stuff"/><br/>
-      &lt;/m:MaterialSection><br/>
-      &lt;m:MaterialDivider/><br/>
-    </demo:PrettyPre>
   </g:HTMLPanel>
 </ui:UiBinder>

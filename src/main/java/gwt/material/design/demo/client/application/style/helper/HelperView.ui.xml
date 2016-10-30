@@ -42,201 +42,217 @@
   </ui:style>
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align."/>
-    <m:MaterialPanel addStyleNames="valign-wrapper {style.panel}">
-      <m:MaterialLabel fontSize="2em" addStyleNames="valign center" text="This should be vertically aligned"/>
-    </m:MaterialPanel>
- 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialPanel addStyleNames="valign-wrapper {style.panel}"><br/>
-      &emsp;&lt;m:MaterialLabel fontSize="2em" addStyleNames="valign center {style.title}" text="This should be vertically aligned"/><br/>
-      &lt;/m:MaterialPanel><br/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle description="Text Align - These classes are for horizontally aligning content. Just add textAlign='CENTER, LEFT OR RIGHT' to any material widget"/>
-    <m:MaterialPanel textAlign="LEFT" addStyleNames="{style.item}">
-      <m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
-    </m:MaterialPanel>
-
-    <m:MaterialPanel textAlign="CENTER" addStyleNames="{style.item}">
-      <m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
-    </m:MaterialPanel>
-
-    <m:MaterialPanel textAlign="RIGHT" addStyleNames="{style.item}">
-      <m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/>
-    </m:MaterialPanel>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialTitle description="Text Align - These classes are for horizontally aligning content. We have .left-align, .right-align and .center-align"/><br/>
-      &lt;m:MaterialPanel textAlign="LEFT" addStyleNames="{style.item}"><br/>
-      &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/><br/>
-      &lt;/m:MaterialPanel><br/><br/>
-
-      &lt;m:MaterialPanel textAlign="CENTER" addStyleNames="{style.item}"><br/>
-      &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/><br/>
-      &lt;/m:MaterialPanel><br/><br/>
-
-      &lt;m:MaterialPanel textAlign="RIGHT" addStyleNames="{style.item}"><br/>
-      &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/><br/>
-      &lt;/m:MaterialPanel><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Float" description="Quick Floats - Quickly float things by adding float='RIGHT , LEFT, or NONE' to any material components."/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialPanel float="LEFT"/>
-      &lt;m:MaterialPanel float="RIGHT"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="hideOn" description="We provide easy to use classes to hide content on specific screen sizes. Just add hideOn='HIDE_ON_SMALL...' to any material components; "/>
-    <table class="striped">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Screen Range</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code class="language-markup">HIDE_ON_SMALL</code></td>
-          <td>Hidden for Mobile Only</td>
-        </tr>
-        <tr>
-          <td><code class="language-markup">HIDE_ON_SMALL_DOWN</code></td>
-          <td>Hidden for Mobile Only and Below</td>
-        </tr>
-        <tr>
-          <td><code class="language-markup">HIDE_ON_MED</code></td>
-          <td>Hidden for Tablet Only</td>
-        </tr>
-        <tr>
-          <td><code class=" language-markup">HIDE_ON_MED_DOWN</code></td>
-          <td>Hidden for Tablet and Below</td>
-        </tr>
-        <tr>
-          <td><code class=" language-markup">HIDE_ON_MED_UP</code></td>
-          <td>Hidden for Tablet and Above</td>
-        </tr>
-        <tr>
-          <td><code class=" language-markup">HIDE_ON_LARGE</code></td>
-          <td>Hidden for Desktop Only</td>
-        </tr>
-      </tbody>
-    </table>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialPanel hideOn="HIDE_ON_LARGE"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="showOn" description="We provide easy to use classes to show content on specific screen sizes. Just add showOn='SHOW_ON_LARGE...' to any material components; " showOn="SHOW_ON_LARGE"/>
-    <table class="striped">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Screen Range</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><code class="language-markup">SHOW_ON_SMALL</code></td>
-          <td>Shown for Mobile Only</td>
-        </tr>
-        <tr>
-          <td><code class="language-markup">SHOW_ON_LARGE</code></td>
-          <td>Shown for Large Only</td>
-        </tr>
-        <tr>
-          <td><code class="language-markup">SHOW_ON_MED</code></td>
-          <td>Shown for Tablet Only</td>
-        </tr>
-        <tr>
-          <td><code class=" language-markup">SHOW_ON_MED_UP</code></td>
-          <td>Shown for Tablet and Above</td>
-        </tr>
-        <tr>
-          <td><code class=" language-markup">SHOW_ON_MED_DOWN</code></td>
-          <td>Shown for Tablet and Below</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
-    </demo:PrettyPre>
-
-
-    <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
-    <m:MaterialTitle  description="Truncation - To truncate long lines of text in an ellipsis, add the class truncate to the tag which contains the text. See an exaple below of a header being truncated inside a card."/>
-
-    <m:MaterialPanel shadow="1" addStyleNames="{style.truncate}">
-      <m:MaterialLabel text="This is an extremely long title that will be truncated" addStyleNames="truncate" fontSize="2.5em"/>
-    </m:MaterialPanel>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialPanel shadow="1">
-      &lt;m:MaterialLabel text="This is an extremely long title that will be truncated" addStyleNames="truncate" fontSize="2.5em"/>
-      &lt;/m:MaterialPanel>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
-          <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
-            <m:MaterialCardTitle text="Sample"/>
-          </m:MaterialCardImage>
-
-          <m:MaterialCardContent textColor="black">
-            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-          </m:MaterialCardContent>
-
-          <m:MaterialCardAction>
-            <m:MaterialLink text="Link 1" />
-            <m:MaterialLink text="Link 1" />
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
-          <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
-            <m:MaterialCardTitle text="Sample"/>
-          </m:MaterialCardImage>
-
-          <m:MaterialCardContent textColor="black">
-            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-          </m:MaterialCardContent>
-
-          <m:MaterialCardAction>
-            <m:MaterialLink text="Link 1" />
-            <m:MaterialLink text="Link 1" />
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="l4 s12">
-        <m:MaterialCard backgroundColor="white" hoverable="true">
-          <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
-            <m:MaterialCardTitle text="Sample"/>
-          </m:MaterialCardImage>
-
-          <m:MaterialCardContent textColor="black">
-            <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
-          </m:MaterialCardContent>
-
-          <m:MaterialCardAction>
-            <m:MaterialLink text="Link 1" />
-            <m:MaterialLink text="Link 1" />
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align."/>
+      <m:MaterialPanel addStyleNames="valign-wrapper {style.panel}">
+        <m:MaterialLabel fontSize="2em" addStyleNames="valign center" text="This should be vertically aligned"/>
+      </m:MaterialPanel>
+   
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialPanel addStyleNames="valign-wrapper {style.panel}"><br/>
+        &emsp;&lt;m:MaterialLabel fontSize="2em" addStyleNames="valign center {style.title}" text="This should be vertically aligned"/><br/>
+        &lt;/m:MaterialPanel><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCard hoverable="true"><br/>
-      &emsp;&lt;!-- Card content goes here --><br/>
-      &lt;/m:MaterialCard>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Truncate" description="If you have very long texts you can truncate it by adding truncate='true'"/>
-    <m:MaterialLabel truncate="true" text="This is a very very very long long text." fontSize="3em" width="300px"/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle description="Text Align - These classes are for horizontally aligning content. Just add textAlign='CENTER, LEFT OR RIGHT' to any material widget"/>
+      <m:MaterialPanel textAlign="LEFT" addStyleNames="{style.item}">
+        <m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/>
+      </m:MaterialPanel>
+      
+  
+      <m:MaterialPanel textAlign="CENTER" addStyleNames="{style.item}">
+        <m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/>
+      </m:MaterialPanel>
+  
+      <m:MaterialPanel textAlign="RIGHT" addStyleNames="{style.item}">
+        <m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/>
+      </m:MaterialPanel>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialTitle description="Text Align - These classes are for horizontally aligning content. We have .left-align, .right-align and .center-align"/><br/>
+        &lt;m:MaterialPanel textAlign="LEFT" addStyleNames="{style.item}"><br/>
+        &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be left aligned"/><br/>
+        &lt;/m:MaterialPanel><br/><br/>
+  
+        &lt;m:MaterialPanel textAlign="CENTER" addStyleNames="{style.item}"><br/>
+        &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be center aligned"/><br/>
+        &lt;/m:MaterialPanel><br/><br/>
+  
+        &lt;m:MaterialPanel textAlign="RIGHT" addStyleNames="{style.item}"><br/>
+        &emsp;&lt;m:MaterialLabel fontSize="1.5em" text="This should be right aligned"/><br/>
+        &lt;/m:MaterialPanel><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Float" description="Quick Floats - Quickly float things by adding float='RIGHT , LEFT, or NONE' to any material components."/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialPanel float="LEFT"/>
+        &lt;m:MaterialPanel float="RIGHT"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <g:HTMLPanel addStyleNames="code">
+      <m:MaterialTitle title="hideOn" description="We provide easy to use classes to hide content on specific screen sizes. Just add hideOn='HIDE_ON_SMALL...' to any material components; "/>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Screen Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="language-markup">HIDE_ON_SMALL</code></td>
+            <td>Hidden for Mobile Only</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup">HIDE_ON_SMALL_DOWN</code></td>
+            <td>Hidden for Mobile Only and Below</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup">HIDE_ON_MED</code></td>
+            <td>Hidden for Tablet Only</td>
+          </tr>
+          <tr>
+            <td><code class=" language-markup">HIDE_ON_MED_DOWN</code></td>
+            <td>Hidden for Tablet and Below</td>
+          </tr>
+          <tr>
+            <td><code class=" language-markup">HIDE_ON_MED_UP</code></td>
+            <td>Hidden for Tablet and Above</td>
+          </tr>
+          <tr>
+            <td><code class=" language-markup">HIDE_ON_LARGE</code></td>
+            <td>Hidden for Desktop Only</td>
+          </tr>
+        </tbody>
+      </table>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialPanel hideOn="HIDE_ON_LARGE"/>
+      </demo:PrettyPre>
+    </g:HTMLPanel>
+  
+    <g:HTMLPanel addStyleNames="code">
+      <m:MaterialTitle title="showOn" description="We provide easy to use classes to show content on specific screen sizes. Just add showOn='SHOW_ON_LARGE...' to any material components; " showOn="SHOW_ON_LARGE"/>
+      <table class="striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Screen Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="language-markup">SHOW_ON_SMALL</code></td>
+            <td>Shown for Mobile Only</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup">SHOW_ON_LARGE</code></td>
+            <td>Shown for Large Only</td>
+          </tr>
+          <tr>
+            <td><code class="language-markup">SHOW_ON_MED</code></td>
+            <td>Shown for Tablet Only</td>
+          </tr>
+          <tr>
+            <td><code class=" language-markup">SHOW_ON_MED_UP</code></td>
+            <td>Shown for Tablet and Above</td>
+          </tr>
+          <tr>
+            <td><code class=" language-markup">SHOW_ON_MED_DOWN</code></td>
+            <td>Shown for Tablet and Below</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
+      </demo:PrettyPre>
+    </g:HTMLPanel>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
+      <m:MaterialTitle  description="Truncation - To truncate long lines of text in an ellipsis, add the class truncate to the tag which contains the text. See an exaple below of a header being truncated inside a card."/>
+  
+      <m:MaterialPanel shadow="1" addStyleNames="{style.truncate}">
+        <m:MaterialLabel text="This is an extremely long title that will be truncated" addStyleNames="truncate" fontSize="2.5em"/>
+      </m:MaterialPanel>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialPanel shadow="1">
+        &lt;m:MaterialLabel text="This is an extremely long title that will be truncated" addStyleNames="truncate" fontSize="2.5em"/>
+        &lt;/m:MaterialPanel>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Hoverable" description="The hoverable is a hover class that adds an animation for box shadow as seen below. It can be used on most elements, but meant for use on cards."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l4 s12">
+          <m:MaterialCard backgroundColor="WHITE" hoverable="true">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialCardTitle text="Sample"/>
+            </m:MaterialCardImage>
+  
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+            </m:MaterialCardContent>
+  
+            <m:MaterialCardAction>
+              <m:MaterialLink text="Link 1" />
+              <m:MaterialLink text="Link 1" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l4 s12">
+          <m:MaterialCard backgroundColor="WHITE" hoverable="true">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialCardTitle text="Sample"/>
+            </m:MaterialCardImage>
+  
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+            </m:MaterialCardContent>
+  
+            <m:MaterialCardAction>
+              <m:MaterialLink text="Link 1" />
+              <m:MaterialLink text="Link 1" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l4 s12">
+          <m:MaterialCard backgroundColor="WHITE" hoverable="true">
+            <m:MaterialCardImage waves="LIGHT">
+              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialCardTitle text="Sample"/>
+            </m:MaterialCardImage>
+  
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+            </m:MaterialCardContent>
+  
+            <m:MaterialCardAction>
+              <m:MaterialLink text="Link 1" />
+              <m:MaterialLink text="Link 1" />
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCard hoverable="true"><br/>
+        &emsp;&lt;!-- Card content goes here --><br/>
+        &lt;/m:MaterialCard>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Truncate" description="If you have very long texts you can truncate it by adding truncate='true'"/>
+      <m:MaterialLabel truncate="true" text="This is a very very very long long text." fontSize="3em" width="300px"/>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

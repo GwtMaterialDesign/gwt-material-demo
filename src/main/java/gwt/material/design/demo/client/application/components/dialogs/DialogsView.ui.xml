@@ -29,144 +29,159 @@
   </ui:style>
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialToast.fireToast("I Love Material Design");
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Toast with Action" description="rovides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;MaterialLink link = new MaterialLink("UNDO");<br/>
-      link.addClickHandler(new ClickHandler() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void onClick(ClickEvent event) {<br/>
-      &emsp;&emsp;MaterialToast.fireToast("UNDO DONE");<br/>
-      &emsp;}<br/>
-      });<br/>
-      new MaterialToast(link).toast("Item Deleted");<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      MaterialToast.fireToast("I Love Material Design", "rounded");
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions."/>
-    <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;new MaterialToast(new Runnable() {<br/>
-      &emsp;@Override<br/>
-      &emsp;public void run() {<br/>
-      &emsp;&emsp;MaterialToast.fireToast("BANG!");<br/>
-      &emsp;}<br/>
-      }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Modals" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>
-    <!-- Default Modal -->
-    <m:MaterialModal ui:field="modal" type="DEFAULT" dismissable="false" inDuration="500" outDuration="500">
-      <m:MaterialModalContent>
-        <m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-      </m:MaterialModalContent>
-      <m:MaterialModalFooter>
-        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModal"/>
-      </m:MaterialModalFooter>
-    </m:MaterialModal>
-    <m:MaterialButton text="Show Modal" ui:field="btnModal" backgroundColor="blue" waves="LIGHT"/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialModal type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
-      &emsp;&lt;m:MaterialModalContent><br/>
-      &emsp;&emsp;&lt;m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" /><br/>
-      &emsp;&lt;/m:MaterialModalContent><br/>
-      &emsp;&lt;m:MaterialModalFooter><br/>
-      &emsp;&emsp;&lt;m:MaterialButton text="Close Modal" type="FLAT"/><br/>
-      &emsp;&lt;/m:MaterialModalFooter><br/>
-      &lt;/m:MaterialModal><br/>  
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;@UiField MaterialModal modal;<br/>
-      //Opening Modal<br/>
-      modal.openModal();<br/>
-      //Closing Modal<br/>
-      modal.closeModal();<br/>
-    </demo:PrettyPre>
-    
-    <!-- Fixed Footer Modal -->
-    <m:MaterialModal ui:field="modalFixed" type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500">
-      <m:MaterialModalContent>
-        <m:MaterialTitle title="Fixed Footer Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-      </m:MaterialModalContent>
-      <m:MaterialModalFooter>
-        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseFixedModal"/>
-      </m:MaterialModalFooter>
-    </m:MaterialModal>
-    <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" backgroundColor="blue" waves="LIGHT"/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here --><br/>
-      &lt;/m:MaterialModal><br/>
-    </demo:PrettyPre>
-
-    <!-- Bottom Sheet Modal -->
-    <m:MaterialModal ui:field="modalBottomSheet" type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500">
-      <m:MaterialModalContent>
-        <m:MaterialTitle title="Bottom Sheet Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-      </m:MaterialModalContent>
-      <m:MaterialModalFooter>
-        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseBottomSheetModal"/>
-      </m:MaterialModalFooter>
-    </m:MaterialModal>
-    <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" backgroundColor="blue" waves="LIGHT"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here --><br/>
-      &lt;/m:MaterialModal><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Auto Hide Modals" description="Just set the boolean parameter on the method showModal. If TRUE == you can click outside and the modal will be close."/>
-    <!-- Fixed Footer Modal -->
-    <m:MaterialModal ui:field="modalClosable" type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500">
-      <m:MaterialModalContent>
-        <m:MaterialTitle title="Closable Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-      </m:MaterialModalContent>
-      <m:MaterialModalFooter>
-        <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalDismiss"/>
-      </m:MaterialModalFooter>
-    </m:MaterialModal>
-    <m:MaterialButton text="Closable Modal" ui:field="btnClosable" backgroundColor="blue" waves="LIGHT"/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
-      &emsp;&emsp; &lt;-- Content Here --><br/>
-      &lt;/m:MaterialModal><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function."/>
-
-    <m:MaterialTooltip text="I am tooltip" position="BOTTOM">
-      <m:MaterialButton text="Bottom" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    </m:MaterialTooltip>
-
-    <m:MaterialTooltip text="I am tooltip" position="TOP">
-      <m:MaterialButton text="Top" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    </m:MaterialTooltip>
-
-    <m:MaterialTooltip text="I am tooltip" position="LEFT">
-      <m:MaterialButton text="Left" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    </m:MaterialTooltip>
-
-    <m:MaterialTooltip text="I am tooltip" position="RIGHT">
-      <m:MaterialButton text="Right" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    </m:MaterialTooltip>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;&lt;m:MaterialTooltip text="I am tooltip" position="RIGHT"><br/>
-      &emsp;&lt;m:MaterialButton text="Right" waves="LIGHT" backgroundColor="blue" addStyleNames="{style.btn}"/><br/>
-      &lt;/m:MaterialTooltip><br/>
-    </demo:PrettyPre>
-
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Toast" description="GWT Material provides an easy way for you to send unobtrusive alerts to your users through toasts. These toasts are also placed and sized responsively, try it out by clicking the button below on different device sizes."/>
+      <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToast" addStyleNames="{style.btn}"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        MaterialToast.fireToast("I Love Material Design");
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Toast with Action" description="rovides an advance toast with any widget (MaterialLink) for declaration of actions when toast is applied."/>
+      <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastAction" addStyleNames="{style.btn}"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;MaterialLink link = new MaterialLink("UNDO");<br/>
+        link.addClickHandler(new ClickHandler() {<br/>
+        &emsp;@Override<br/>
+        &emsp;public void onClick(ClickEvent event) {<br/>
+        &emsp;&emsp;MaterialToast.fireToast("UNDO DONE");<br/>
+        &emsp;}<br/>
+        });<br/>
+        new MaterialToast(link).toast("Item Deleted");<br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Styling Toasts" description="We've added the ability to customize your toasts easily. You can pass in classes as an optional parameter into the toast function. We've added a rounded class for you, but you can create your own CSS classes and apply them to toasts. Checkout out our full example below."/>
+      <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastRounded" addStyleNames="{style.btn}"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        MaterialToast.fireToast("I Love Material Design", "rounded");
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Toasts with Callback" description="You can add finishing callbacks to your toasts to invoke actions."/>
+      <m:MaterialButton text="Toast Me" waves="LIGHT" ui:field="btnToastCallback" addStyleNames="{style.btn}"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;new MaterialToast(() -> { <br/>
+        &emsp;MaterialToast.fireToast("BANG!"); <br/>
+          }).toast("Explosion in: 5, 4, 3, 2, 1", 5000);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Modals" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>
+      <!-- Default Modal -->
+      <m:MaterialModal ui:field="modal" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialModalContent>
+          <m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialModalContent>
+        <m:MaterialModalFooter>
+          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModal"/>
+        </m:MaterialModalFooter>
+      </m:MaterialModal>
+      <m:MaterialButton text="Show Modal" ui:field="btnModal" waves="LIGHT"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialModal type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&lt;m:MaterialModalContent><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" /><br/>
+        &emsp;&lt;/m:MaterialModalContent><br/>
+        &emsp;&lt;m:MaterialModalFooter><br/>
+        &emsp;&emsp;&lt;m:MaterialButton text="Close Modal" type="FLAT"/><br/>
+        &emsp;&lt;/m:MaterialModalFooter><br/>
+        &lt;/m:MaterialModal><br/>  
+      </demo:PrettyPre>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiField MaterialModal modal;<br/>
+        //Opening Modal<br/>
+        modal.open();<br/>
+        //Closing Modal<br/>
+        modal.close();<br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <!-- Fixed Footer Modal -->
+      <m:MaterialModal ui:field="modalFixed" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialModalContent>
+          <m:MaterialTitle title="Fixed Footer Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialModalContent>
+        <m:MaterialModalFooter>
+          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseFixedModal"/>
+        </m:MaterialModalFooter>
+      </m:MaterialModal>
+      <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" waves="LIGHT"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&emsp; &lt;-- Content Here --><br/>
+        &lt;/m:MaterialModal><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <!-- Bottom Sheet Modal -->
+      <m:MaterialModal ui:field="modalBottomSheet" type="BOTTOM_SHEET" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialModalContent>
+          <m:MaterialTitle title="Bottom Sheet Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialModalContent>
+        <m:MaterialModalFooter>
+          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseBottomSheetModal"/>
+        </m:MaterialModalFooter>
+      </m:MaterialModal>
+      <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&emsp; &lt;-- Content Here --><br/>
+        &lt;/m:MaterialModal><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Auto Hide Modals" description="Just set the boolean parameter on the method showModal. If TRUE == you can click outside and the modal will be close."/>
+      <!-- Fixed Footer Modal -->
+      <m:MaterialModal ui:field="modalClosable" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
+        <m:MaterialModalContent>
+          <m:MaterialTitle title="Closable Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialModalContent>
+        <m:MaterialModalFooter>
+          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalDismiss"/>
+        </m:MaterialModalFooter>
+      </m:MaterialModal>
+      <m:MaterialButton text="Closable Modal" ui:field="btnClosable" waves="LIGHT"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
+        &emsp;&emsp; &lt;-- Content Here --><br/>
+        &lt;/m:MaterialModal><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Tooltip" description="Tooltips are small, interactive, textual hints for mainly graphical elements. When using icons for actions you can use a tooltip to give people clarification on its function."/>
+  
+      <m:MaterialTooltip text="I am tooltip" position="BOTTOM">
+        <m:MaterialButton text="Bottom" waves="LIGHT" addStyleNames="{style.btn}"/>
+      </m:MaterialTooltip>
+  
+      <m:MaterialTooltip text="I am tooltip" position="TOP">
+        <m:MaterialButton text="Top" waves="LIGHT" addStyleNames="{style.btn}"/>
+      </m:MaterialTooltip>
+  
+      <m:MaterialTooltip text="I am tooltip" position="LEFT">
+        <m:MaterialButton text="Left" waves="LIGHT" addStyleNames="{style.btn}"/>
+      </m:MaterialTooltip>
+  
+      <m:MaterialTooltip text="I am tooltip" position="RIGHT">
+        <m:MaterialButton text="Right" waves="LIGHT" addStyleNames="{style.btn}"/>
+      </m:MaterialTooltip>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;&lt;m:MaterialTooltip text="I am tooltip" position="RIGHT"><br/>
+        &emsp;&lt;m:MaterialButton text="Right" waves="LIGHT" addStyleNames="{style.btn}"/><br/>
+        &lt;/m:MaterialTooltip><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

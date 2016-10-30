@@ -24,10 +24,15 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialFooter;
+import gwt.material.design.client.ui.MaterialFooterCopyright;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -38,12 +43,17 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField HTMLPanel menu;
     @UiField HTMLPanel main;
 
+    @UiField MaterialFooter footer;
+    @UiField MaterialFooterCopyright footerCopyRight;
+
     @Inject
     ApplicationView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
+        ThemeManager.register(footer);
+        ThemeManager.register(footerCopyRight, ThemeManager.DARKER_SHADE);
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
+        DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));
     }
 
     @UiHandler("imgGPlus")

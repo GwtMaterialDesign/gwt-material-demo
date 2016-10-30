@@ -22,75 +22,77 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px">
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Waterfall Declaration" description="FIRST, You need to define your nav component and waterfall component in UiBinder."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialHeader><br/>
-            &emsp;&lt;m:MaterialNavBar backgroundColor="blue" shadow="0" width="100%"><br/>
-            &emsp;&emsp;&lt;m:MaterialNavBrand ui:field="navBrand" text="GWT Material" opacity="0"/><br/>
-            &emsp;&emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink text="ARTICLES"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink text="RESOURCES"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink text="EVENTS"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink text="JOBS"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink text="ABOUT"/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialNavSection><br/>
-            &emsp;&lt;/m:MaterialNavBar><br/>
-            &emsp;&lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px"><br/>
-            &emsp;&emsp;&lt;m:MaterialPanel ui:field="panel" addStyleNames="container" paddingTop="20"><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="GWT Material" description="Google Material Design UI / UX for GWT Applications."/><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialAnchorButton text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"/><br/>
-            &emsp;&emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;/ma:waterfall.MaterialWaterfall><br/>
-            &lt;/m:MaterialHeader><br/>
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Container Declaration" description="In order to have a beautiful effect on waterfall, you must define the container and make the height filled the entire space so that we can have a scrolling feature on it."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialContainer height="800px" padding="40"><br/>
-            &emsp;&lt;m:MaterialRow><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col1" grid="s12 l4" backgroundColor="pink" height="200px"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col2" grid="s12 l4" backgroundColor="blue" height="200px"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col3" grid="s12 l4" backgroundColor="yellow" height="200px"/><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-            &emsp;&lt;m:MaterialRow><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col4" grid="s12 l4" backgroundColor="green" height="200px"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col5" grid="s12 l2" backgroundColor="purple" height="200px"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col6" grid="s12 l4" backgroundColor="green" height="200px"/><br/>
-            &emsp;&emsp;&lt;m:MaterialColumn ui:field="col7" grid="s12 l2" backgroundColor="pink" height="200px"/><br/>
-            &emsp;&lt;/m:MaterialRow><br/>
-            &lt;/m:MaterialContainer><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Set Callbacks (Optional)" description="If you want more advance functionality on the waterfall component, you just need to set the showing or hiding callbacks of waterfall. By doing it you can just call setCallbacks(Runnable showCallback, Runnable hideCallback) to override the default behaviour."/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;final Runnable showCallback = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;panel.setOpacity(1);<br/>
-            &emsp;&emsp;navBrand.setOpacity(0);<br/>
-            &emsp;}<br/>
-            };<br/><br/>
-
-            final Runnable hideCallback = new Runnable() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void run() {<br/>
-            &emsp;&emsp;panel.setOpacity(0);<br/>
-            &emsp;&emsp;navBrand.setOpacity(1);<br/>
-            &emsp;}<br/>
-            };<br/>
-            waterfall.setCallbacks(showCallback, hideCallback);
-        </demo:PrettyPre>
-        <m:MaterialImage url="https://lh3.googleusercontent.com/HpoaiYFtiqeuTQC1YeM4GdjS3UlPyK-9HfqkmN4-qSMXRdu0B-9Bzl23ipHZ8N4kYNwc=w1366-h768-rw-no"/>
-
-        <m:MaterialTitle title="Mobile Version"/>
-        <m:MaterialImage url="https://lh3.googleusercontent.com/eMJDlDbJZjZ_p6RRx9Gmpk7PCvHuWhN-6nbnXc3BwyawDPT7apNaBVGhgHxjqumWDyo7=w1366-h768-rw-no"/>
-
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px">
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Waterfall Declaration" description="FIRST, You need to define your nav component and waterfall component in UiBinder."/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialHeader><br/>
+                &emsp;&lt;m:MaterialNavBar backgroundColor="blue" shadow="0" width="100%"><br/>
+                &emsp;&emsp;&lt;m:MaterialNavBrand ui:field="navBrand" text="GWT Material" opacity="0"/><br/>
+                &emsp;&emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="ARTICLES"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="RESOURCES"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="EVENTS"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="JOBS"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink text="ABOUT"/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialNavSection><br/>
+                &emsp;&lt;/m:MaterialNavBar><br/>
+                &emsp;&lt;ma:waterfall.MaterialWaterfall ui:field="waterfall" backgroundColor="blue" textColor="white" height="280px"><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel ui:field="panel" addStyleNames="container" paddingTop="20"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="GWT Material" description="Google Material Design UI / UX for GWT Applications."/><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialAnchorButton text="Get Started" size="LARGE" backgroundColor="blue lighten-2" textColor="white"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;/ma:waterfall.MaterialWaterfall><br/>
+                &lt;/m:MaterialHeader><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Container Declaration" description="In order to have a beautiful effect on waterfall, you must define the container and make the height filled the entire space so that we can have a scrolling feature on it."/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialContainer height="800px" padding="40"><br/>
+                &emsp;&lt;m:MaterialRow><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col1" grid="s12 l4" backgroundColor="pink" height="200px"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col2" grid="s12 l4" backgroundColor="blue" height="200px"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col3" grid="s12 l4" backgroundColor="yellow" height="200px"/><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+                &emsp;&lt;m:MaterialRow><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col4" grid="s12 l4" backgroundColor="green" height="200px"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col5" grid="s12 l2" backgroundColor="purple" height="200px"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col6" grid="s12 l4" backgroundColor="green" height="200px"/><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn ui:field="col7" grid="s12 l2" backgroundColor="pink" height="200px"/><br/>
+                &emsp;&lt;/m:MaterialRow><br/>
+                &lt;/m:MaterialContainer><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Set Callbacks (Optional)" description="If you want more advance functionality on the waterfall component, you just need to set the showing or hiding callbacks of waterfall. By doing it you can just call setCallbacks(Runnable showCallback, Runnable hideCallback) to override the default behaviour."/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;waterfall.setCallbacks(() -> { <br/>
+                &emsp;panel.setOpacity(1); <br/>
+                &emsp;navBrand.setOpacity(0); <br/>
+                }), () -> { <br/>
+                &emsp;panel.setOpacity(0); <br/>
+                &emsp;navBrand.setOpacity(1); <br/>
+                });
+            </demo:PrettyPre>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/HpoaiYFtiqeuTQC1YeM4GdjS3UlPyK-9HfqkmN4-qSMXRdu0B-9Bzl23ipHZ8N4kYNwc=w1366-h768-rw-no"/>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Mobile Version"/>
+            <m:MaterialImage url="https://lh3.googleusercontent.com/eMJDlDbJZjZ_p6RRx9Gmpk7PCvHuWhN-6nbnXc3BwyawDPT7apNaBVGhgHxjqumWDyo7=w1366-h768-rw-no"/>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

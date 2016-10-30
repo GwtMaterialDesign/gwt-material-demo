@@ -58,7 +58,7 @@ public class GettingStartedPresenter extends Presenter<GettingStartedPresenter.M
         super.onReveal();
         loadAllVersions();
         SetPageTitleEvent.fire("Getting Started",
-            "Learn how to easily start using GWT Material Design in your app.", this);
+            "Learn how to easily start using GWT Material Design in your app.", "", this);
     }
 
     public void loadAllVersions() {

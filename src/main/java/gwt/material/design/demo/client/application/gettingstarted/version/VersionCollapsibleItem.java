@@ -22,16 +22,14 @@ package gwt.material.design.demo.client.application.gettingstarted.version;
 
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.MaterialAnchorButton;
 import gwt.material.design.client.ui.MaterialCollapsibleItem;
 import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.dto.Version;
 
 public class VersionCollapsibleItem extends Composite {
@@ -49,16 +47,17 @@ public class VersionCollapsibleItem extends Composite {
 	MaterialCollapsibleItem colapsItem;
 
 	@UiField
-	MaterialAnchorButton btnCore, btnAddins, btnThemes;
+	MaterialAnchorButton btnCore, btnAddins, btnThemes, btnTable, btnJQuery;
 
 	public VersionCollapsibleItem(Version version, int index) {
 		initWidget(uiBinder.createAndBindUi(this));
 		lblVersion.setText(version.getVersion());
 		lblDate.setText(version.getDate());
-
 		btnCore.setBackgroundColor(version.getColor());
 		btnAddins.setBackgroundColor(version.getColor());
 		btnThemes.setBackgroundColor(version.getColor());
+		btnTable.setBackgroundColor(version.getColor());
+		btnJQuery.setBackgroundColor(version.getColor());
 		this.version = version;
 		if(version.getLinkCore() == null){
 			btnCore.setEnabled(false);
@@ -78,8 +77,20 @@ public class VersionCollapsibleItem extends Composite {
 			btnThemes.setHref(version.getLinkThemes());
 			btnThemes.setTarget("_blank");
 		}
+		if(version.getLinkJQuery() == null) {
+			btnJQuery.setEnabled(false);
+		}else{
+			btnJQuery.setHref(version.getLinkJQuery());
+			btnJQuery.setTarget("_blank");
+		}
+		if(version.getLinkTable() == null) {
+			btnTable.setEnabled(false);
+		}else{
+			btnTable.setHref(version.getLinkTable());
+			btnTable.setTarget("_blank");
+		}
 		if(index % 2 == 0){
-			colapsItem.setBackgroundColor("grey lighten-4");
+			colapsItem.setBackgroundColor(Color.GREY_LIGHTEN_4);
 		}
 	}
 }

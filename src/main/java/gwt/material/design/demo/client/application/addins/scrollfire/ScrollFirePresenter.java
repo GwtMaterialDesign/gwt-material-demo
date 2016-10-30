@@ -56,7 +56,7 @@ public class ScrollFirePresenter extends Presenter<ScrollFirePresenter.MyView, S
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Scrollfire", "Executes callback functions depending on how far into the page you've scrolled.", this);
+        SetPageTitleEvent.fire("Scrollfire", "Executes callback functions depending on how far into the page you've scrolled.", "addins/scrollfire/ScrollFireView", this);
     }
 
 }

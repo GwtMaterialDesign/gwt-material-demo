@@ -33,11 +33,12 @@
   </ui:style>
 
   <g:HTMLPanel>
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Basic Card" />
         <m:MaterialColumn grid="l4">
-          <m:MaterialCard backgroundColor="blue-grey darken-1">
-            <m:MaterialCardContent textColor="white">
+          <m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1">
+            <m:MaterialCardContent textColor="WHITE">
               <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
               <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
             </m:MaterialCardContent>
@@ -48,24 +49,23 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l4">
-          <m:MaterialCard backgroundColor="white">
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle  textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/>
+          <m:MaterialCard backgroundColor="WHITE">
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle  textColor="BLACK" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="RED"/>
               <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
             </m:MaterialCardContent>
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
-
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRow><br/>
         &emsp;&lt;m:MaterialColumn grid="l4"><br/>
-        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="blue-grey darken-1"><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="white"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
@@ -76,30 +76,32 @@
         &emsp;&emsp;&lt;/m:MaterialCard><br/>
         &emsp;&lt;/m:MaterialColumn><br/>
         &emsp;&lt;m:MaterialColumn grid="l4"><br/>
-        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="black"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle  textColor="black" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="red"/><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle  textColor="BLACK" text="Sample" iconType="FAVORITE" iconPosition="RIGHT" iconColor="RED"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="blue"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="BLUE"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="Link 1" textColor="BLUE"/><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
         &emsp;&emsp;&lt;/m:MaterialCard><br/>
         &emsp;&lt;/m:MaterialColumn><br/>
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
-
+    </m:MaterialRow>
+    
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Card Image" />
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
             </m:MaterialCardContent>
 
@@ -110,13 +112,13 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
             </m:MaterialCardContent>
 
@@ -128,15 +130,15 @@
         </m:MaterialColumn>
       </m:MaterialRow>
 
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRow><br/>
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
-        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample"/><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
@@ -146,12 +148,12 @@
         &emsp;&emsp;&lt;/m:MaterialCard><br/>
         &emsp;&lt;/m:MaterialColumn><br/>
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
-        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
@@ -162,596 +164,609 @@
         &emsp;&lt;/m:MaterialColumn><br/>
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
-
+    </m:MaterialRow>
+    
+    <m:MaterialRow addStyleNames="code">
       <!-- Horizontal Card implementation -->
       <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
       <m:MaterialRow>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate"/>
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardAction>
-              <m:MaterialLink iconType="SHARE" textColor="black" />
-              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+              <m:MaterialLink iconType="SHARE" textColor="BLACK" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate"/>
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardAction>
-              <m:MaterialLink iconType="SHARE" textColor="black" />
-              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+              <m:MaterialLink iconType="SHARE" textColor="BLACK" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardAction>
-              <m:MaterialLink iconType="SHARE" textColor="black" />
-              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+              <m:MaterialLink iconType="SHARE" textColor="BLACK" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="white" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
       
-            <m:MaterialCardContent textColor="black">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
       
             <m:MaterialCardAction>
-              <m:MaterialLink iconType="SHARE" textColor="black" />
-              <m:MaterialLink iconType="LOCATION_ON" textColor="red" />
+              <m:MaterialLink iconType="SHARE" textColor="BLACK" />
+              <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
-        &emsp;&lt;m:MaterialCard backgroundColor="white" axis="HORIZONTAL"><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL"><br/>
         &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardImage><br/>
 
-        &emsp;&emsp;&lt;m:MaterialCardContent textColor="black"><br/>
+        &emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" /><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardContent><br/>
 
         &emsp;&emsp;&lt;m:MaterialCardAction><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SHARE" textColor="black" /><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="LOCATION_ON" textColor="red" /><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SHARE" textColor="BLACK" /><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="LOCATION_ON" textColor="RED" /><br/>
         &emsp;&emsp;&lt;/m:MaterialCardAction><br/>
         &emsp;&lt;/m:MaterialCard><br/>
         &lt;/m:MaterialColumn><br/>
       </demo:PrettyPre>
-
+    </m:MaterialRow>
+    
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Card Reveal" />
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" />
-              <m:MaterialLink text="Link 1" textColor="blue" />
+              <m:MaterialLink text="Link 1" textColor="BLUE" />
+              <m:MaterialLink text="Link 1" textColor="BLUE" />
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
-              <m:MaterialLink text="Link 1" textColor="blue"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
-
-    <m:MaterialTitle title="Complex Example" description="You can reorganize your card elements freely." />
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l6 m6 s12">
-        <m:MaterialCard>
-          <m:MaterialCardContent>
-            <m:MaterialRow marginBottom="0">
-              <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
-              <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
-              <m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/>
-            </m:MaterialRow>
-            <m:MaterialRow marginBottom="0" padding="20">
-              <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Complex Example" description="You can reorganize your card elements freely." />
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard>
+            <m:MaterialCardContent>
               <m:MaterialRow marginBottom="0">
-                <m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/>
-                <m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/>
+                <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
+                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
-            </m:MaterialRow>
-          </m:MaterialCardContent>
-          <m:MaterialCardImage>
-            <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
-          </m:MaterialCardImage>
-          <m:MaterialCardAction padding="0">
-            <m:MaterialRow margin="12">
-              <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/>
-              <m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="12" marginLeft="12"/>
-              <m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="12" marginLeft="12"/>
-              <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/>
-            </m:MaterialRow>
-            <!-- Collection items for comments -->
-            <m:MaterialCollection>
-              <m:MaterialCollectionItem type="AVATAR">
-                <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
-                <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
-                <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
-              </m:MaterialCollectionItem>
-            </m:MaterialCollection>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
+              <m:MaterialRow marginBottom="0" padding="20">
+                <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
+                <m:MaterialRow marginBottom="0">
+                  <m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/>
+                </m:MaterialRow>
+              </m:MaterialRow>
+            </m:MaterialCardContent>
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
+            </m:MaterialCardImage>
+            <m:MaterialCardAction padding="0">
+              <m:MaterialRow margin="12">
+                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="12" marginLeft="12"/>
+                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="12" marginLeft="12"/>
+                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
+              </m:MaterialRow>
+              <!-- Collection items for comments -->
+              <m:MaterialCollection>
+                <m:MaterialCollectionItem type="AVATAR">
+                  <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
+                  <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
+                </m:MaterialCollectionItem>
+              </m:MaterialCollection>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/>
+        &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0" padding="20"><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Amazingly clear seas of the Philippines" /><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#philippines" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#vacation" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#holiday" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#sea" backgroundColor="BLUE" textColor="WHITE" float="LEFT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" /><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardAction padding="0"><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow margin="12"><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="12" marginLeft="12"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="12" marginLeft="12"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;!-- Collection items for comments --><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollection><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Yuna" fontWeight="BOLD" /><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." /><br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollection><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;/m:MaterialCard><br/>
+        &emsp;&lt;/m:MaterialColumn><br/>
+        &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l3 m4 s12">
+          <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
+            </m:MaterialCardImage>
+            <m:MaterialCardContent textColor="WHITE" height="120px">
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
+              <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+              <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+  
+        <m:MaterialColumn grid="l3 m4 s12">
+          <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
+            </m:MaterialCardImage>
+            <m:MaterialCardContent textColor="WHITE" height="120px">
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialLabel fontSize="1.5em" text="King Leonidas and the 300 Spartans"/>
+              <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+              <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+  
+        <m:MaterialColumn grid="l3 m4 s12">
+          <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
+            </m:MaterialCardImage>
+            <m:MaterialCardContent textColor="WHITE" height="120px">
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialLabel fontSize="1.5em" text="RESEARCH"/>
+              <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+              <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+  
+        <m:MaterialColumn grid="l3 m4 s12">
+          <m:MaterialCard backgroundColor="BLACK">
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
+            </m:MaterialCardImage>
+            <m:MaterialCardContent textColor="WHITE" height="120px">
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialLabel fontSize="1.5em" text="A few of my Favorite Words"/>
+              <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+              <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRow><br/>
+        &emsp;&lt;m:MaterialColumn grid="l3 m4 s12"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" /><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="WHITE" height="120px"><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" /><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" /><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="WHITE"/><br/>
+        &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
+        &emsp;&emsp;&lt;/m:MaterialCard><br/>
+        &emsp;&lt;/m:MaterialColumn><br/>
+        &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
+      <showcase:PathAnimatorShowcase />
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" textColor="WHITE"><br/>
+        &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/><br/>
+        &emsp;&lt;/m:MaterialCardImage><br/><br/>
+        &emsp;&lt;m:MaterialCardContent backgroundColor="blue-grey darken-3" layoutPosition="RELATIVE" paddingBottom="62"><br/>
+        &emsp;&emsp;&lt;m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="blue lighten-1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="Pharell Williams" fontSize="2em"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel text="Love Yourself to Dance" fontSize="1.2em"/><br/>
+        &emsp;&lt;/m:MaterialCardContent><br/><br/>
+        &emsp;&lt;m:MaterialCardAction backgroundColor="blue-GREY" height="88px"><br/>
+        &emsp;&emsp;&lt;m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/><br/>
+        &emsp;&emsp;&lt;m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/><br/>
+        &emsp;&lt;/m:MaterialCardAction><br/>
+        &lt;/m:MaterialCard><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
     
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/>
-      &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
-      &emsp;&emsp;&lt;m:MaterialCard><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardContent><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="2d"  textColor="grey" float="RIGHT" marginTop="20" marginRight="20"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0" padding="20"><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Amazingly clear seas of the Philippines" /><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow marginBottom="0"><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#philippines" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#vacation" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#holiday" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialChip margin="4" text="#sea" backgroundColor="blue" textColor="white" float="LEFT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" /><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardAction padding="0"><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialRow margin="12"><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="LEFT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="310" textColor="grey" float="LEFT" marginTop="12" marginLeft="12"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="1000" textColor="grey" float="RIGHT" marginTop="12" marginLeft="12"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="grey" backgroundColor="grey lighten-2" shadow="0" float="RIGHT"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialRow><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;!-- Collection items for comments --><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollection><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Yuna" fontWeight="BOLD" /><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." /><br/>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;/m:MaterialCollection><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
-      &emsp;&emsp;&lt;/m:MaterialCard><br/>
-      &emsp;&lt;/m:MaterialColumn><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l3 m4 s12">
-        <m:MaterialCard backgroundColor="indigo lighten-1">
-          <m:MaterialCardImage>
-            <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
-          </m:MaterialCardImage>
-          <m:MaterialCardContent textColor="white" height="120px">
-            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
-            <m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
-            <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
-          </m:MaterialCardContent>
-          <m:MaterialCardAction>
-            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-
-      <m:MaterialColumn grid="l3 m4 s12">
-        <m:MaterialCard backgroundColor="red lighten-1">
-          <m:MaterialCardImage>
-            <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
-          </m:MaterialCardImage>
-          <m:MaterialCardContent textColor="white" height="120px">
-            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
-            <m:MaterialLabel fontSize="1.5em" text="King Leonidas and the 300 Spartans"/>
-            <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
-          </m:MaterialCardContent>
-          <m:MaterialCardAction>
-            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-
-      <m:MaterialColumn grid="l3 m4 s12">
-        <m:MaterialCard backgroundColor="teal lighten-1">
-          <m:MaterialCardImage>
-            <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
-          </m:MaterialCardImage>
-          <m:MaterialCardContent textColor="white" height="120px">
-            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
-            <m:MaterialLabel fontSize="1.5em" text="RESEARCH"/>
-            <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
-          </m:MaterialCardContent>
-          <m:MaterialCardAction>
-            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-
-      <m:MaterialColumn grid="l3 m4 s12">
-        <m:MaterialCard backgroundColor="black lighten-1">
-          <m:MaterialCardImage>
-            <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
-          </m:MaterialCardImage>
-          <m:MaterialCardContent textColor="white" height="120px">
-            <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
-            <m:MaterialLabel fontSize="1.5em" text="A few of my Favorite Words"/>
-            <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
-          </m:MaterialCardContent>
-          <m:MaterialCardAction>
-            <m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/>
-          </m:MaterialCardAction>
-        </m:MaterialCard>
-      </m:MaterialColumn>
-    </m:MaterialRow>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialRow><br/>
-      &emsp;&lt;m:MaterialColumn grid="l3 m4 s12"><br/>
-      &emsp;&emsp;&lt;m:MaterialCard backgroundColor="indigo lighten-1"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" /><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="white" height="120px"><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" /><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" /><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardContent><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialCardAction><br/>
-      &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLink text="FOLLOW" fontSize="1.5em" fontWeight="BOLDER" textColor="white"/><br/>
-      &emsp;&emsp;&emsp;&lt;/m:MaterialCardAction><br/>
-      &emsp;&emsp;&lt;/m:MaterialCard><br/>
-      &emsp;&lt;/m:MaterialColumn><br/>
-      &lt;/m:MaterialRow><br/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
-    <showcase:PathAnimatorShowcase />
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCard backgroundColor="white" textColor="white"><br/>
-      &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/><br/>
-      &emsp;&lt;/m:MaterialCardImage><br/><br/>
-      &emsp;&lt;m:MaterialCardContent backgroundColor="blue-grey darken-3" layoutPosition="RELATIVE" paddingBottom="62"><br/>
-      &emsp;&emsp;&lt;m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="blue lighten-1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/><br/>
-      &emsp;&emsp;&lt;m:MaterialLabel text="Pharell Williams" fontSize="2em"/><br/>
-      &emsp;&emsp;&lt;m:MaterialLabel text="Love Yourself to Dance" fontSize="1.2em"/><br/>
-      &emsp;&lt;/m:MaterialCardContent><br/><br/>
-      &emsp;&lt;m:MaterialCardAction backgroundColor="blue-grey" height="88px"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/><br/>
-      &emsp;&emsp;&lt;m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/><br/>
-      &emsp;&lt;/m:MaterialCardAction><br/>
-      &lt;/m:MaterialCard><br/>
-    </demo:PrettyPre>
-
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Grid Card Animation" />
-      <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-java">
         &emsp;@UiField MaterialRow rowCards;
         MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
       </demo:PrettyPre>
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+      <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRow ui:field="rowCards"><br/>
         &emsp;&lt;m:MaterialColumn grid="l6"><br/>
-        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="white"><br/>
+        &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&lt;!--Content here --><br/>
         &emsp;&emsp;&lt;/m:MaterialCard><br/>
         &emsp;&emsp;&lt;!--OTher cards --><br/>
         &emsp;&lt;/m:MaterialColumn grid="l6"><br/>
         &lt;/m:MaterialRow ui:field="rowCards"><br/>
       </demo:PrettyPre>
-      <m:MaterialButton ui:field="btnShow" text="Show Cards" backgroundColor="white" textColor="black"/>
+      <m:MaterialButton ui:field="btnShow" text="Show Cards" backgroundColor="WHITE" textColor="BLACK"/>
       <m:MaterialRow ui:field="rowCards" addStyleNames="{style.rowCards}">
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
 
         <m:MaterialColumn grid="l3">
-          <m:MaterialCard backgroundColor="white">
+          <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
             </m:MaterialCardImage>
 
-            <m:MaterialCardContent textColor="black">
-              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="black"/>
+            <m:MaterialCardContent textColor="BLACK">
+              <m:MaterialCardTitle text="Sample" iconType="MORE_VERT" iconPosition="RIGHT" textColor="BLACK"/>
             </m:MaterialCardContent>
 
             <m:MaterialCardReveal>
-              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="black"/>
+              <m:MaterialCardTitle text="Sample" iconType="CLOSE" iconPosition="RIGHT" textColor="BLACK"/>
               <m:MaterialLabel text="Here is some more information about this product that is only revealed once clicked on." />
             </m:MaterialCardReveal>
 
             <m:MaterialCardAction>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
-              <m:MaterialLink text="Link 1" textColor="blue" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+              <m:MaterialLink text="Link 1" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

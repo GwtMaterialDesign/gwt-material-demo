@@ -46,18 +46,18 @@
     </ui:style>
     <m:MaterialRow>
         <m:MaterialColumn grid="l5 s12 m5">
-            <m:MaterialCard backgroundColor="white" textColor="white">
+            <m:MaterialCard backgroundColor="WHITE" textColor="WHITE">
                 <m:MaterialCardImage waves="LIGHT">
                     <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
                 </m:MaterialCardImage>
-                <m:MaterialCardContent backgroundColor="blue-grey darken-3" layoutPosition="RELATIVE" padding="0">
+                <m:MaterialCardContent backgroundColor="BLUE_GREY_DARKEN_3" layoutPosition="RELATIVE" padding="0">
                     <m:MaterialRow padding="24" margin="0" height="132px">
-                        <m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="blue lighten-1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/>
+                        <m:MaterialAnchorButton ui:field="btnFAB" type="FLOATING" backgroundColor="BLUE_LIGHTEN_1" iconType="PLAY_ARROW" size="LARGE" waves="DEFAULT" layoutPosition="ABSOLUTE" right="32" top="-32"/>
                         <m:MaterialLabel text="Pharell Williams" fontSize="2em"/>
                         <m:MaterialLabel text="Love Yourself to Dance" fontSize="1.2em"/>
                     </m:MaterialRow>
 
-                    <m:MaterialRow ui:field="musicPanel" textColor="white" padding="24" margin="0" height="132px" textAlign="CENTER" layoutPosition="ABSOLUTE" top="0" width="100%" opacity="0" visibility="HIDDEN" backgroundColor="blue lighten-1">
+                    <m:MaterialRow ui:field="musicPanel" textColor="WHITE" padding="24" margin="0" height="132px" textAlign="CENTER" layoutPosition="ABSOLUTE" top="0" width="100%" opacity="0" visibility="HIDDEN" backgroundColor="BLUE_LIGHTEN_1">
                         <m:MaterialColumn grid="s4 l4">
                             <m:MaterialIcon iconType="FAST_REWIND" waves="DEFAULT" iconSize="SMALL" circle="true"/>
                         </m:MaterialColumn>
@@ -70,7 +70,7 @@
                         <m:MaterialLabel text="Now Playing"/>
                     </m:MaterialRow>
                 </m:MaterialCardContent>
-                <m:MaterialCardAction backgroundColor="blue-grey" height="88px" overflow="HIDDEN">
+                <m:MaterialCardAction backgroundColor="BLUE_GREY" height="88px" overflow="HIDDEN">
                     <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/>
                     <m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/>
                 </m:MaterialCardAction>

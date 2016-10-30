@@ -23,58 +23,71 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
-        <m:MaterialTitle title="Note" description="This widget only works on pages served by a secure protocol (HTTPS). For the browser compatibility, access http://caniuse.com/#feat=stream."/>
     
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:camera.MaterialCameraCapture padding="0" ui:field="camera" grid="l12 m12 s12"/>
-        </demo:PrettyPre>
-        
-        <m:MaterialRow>
-            <m:MaterialColumn grid="l4 m6 s12" height="500px" padding="0" shadow="1">
-                <g:Frame url="https://feel-vision.appspot.com/" width="100%" height="100%"/>
-            </m:MaterialColumn>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Note" description="This widget only works on pages served by a secure protocol (HTTPS). For the browser compatibility, access http://caniuse.com/#feat=stream."/>
         </m:MaterialRow>
-
-        <m:MaterialTitle title="Browser Check" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;if (MaterialCameraCapture.isSupported()){ <br/>
-            &emsp;camera.addCameraCaptureHandler(new CameraCaptureHandler() {<br/>
-            &emsp;&emsp;@Override<br/>
-            &emsp;&emsp;public void onCameraCaptureChange(CameraCaptureEvent event) {<br/>
-            &emsp;&emsp;&emsp;if (event.getCaptureStatus() == CameraCaptureEvent.CaptureStatus.ERRORED){<br/>
-            &emsp;&emsp;&emsp;&emsp;MaterialToast.fireToast("Error on starting the camera capture: " + event.getErrorMessage());<br/>
-            &emsp;&emsp;&emsp;&emsp;((MaterialCameraCapture)event.getSource()).removeFromParent();<br/>
-            &emsp;&emsp;&emsp;}else{<br/>
-            &emsp;&emsp;&emsp;&emsp;MaterialToast.fireToast("Camera Captured");<br/>
-            &emsp;&emsp;&emsp;}<br/>
-            &emsp;&emsp;}<br/>
-            &emsp;});<br/>
-            }else {<br/>
-            &emsp;MaterialToast.fireToast("Sorry, your browser doesn't support the camera capture.");<br/>
-            }
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Capturing" description="Capturing image and set the captured url to MaterialImage" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiHandler("btnCapture")<br/>
-            void onCapture(ClickEvent e) {<br/>
-            &emsp;imgCapture.setUrl(camera.captureToDataURL());<br/>
-            }
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Methods" description="You can call / set other method API on Camera Capture widget."/>
-        <blockquote>
-            <p><b>captureToDataURL()</b> - Captures the current frame of the video to an image data URL. Returns The Data URL of the captured image, which can be used as "src" on an "img" element or sent to the server</p>
-            <p><b>captureToDataURL(String mimeType)</b> - The same with captureToDataURL() but you can set the param mimeType The type of the output image, such as "image/png" or "image/jpeg"</p>
-            <p><b>play()</b> - Starts the video stream from the camera. This is called when the component is loaded.At this point the user is requested by the browser to allow the application to use the camera.</p>
-            <p><b>restart()</b> - Restarts the video stream from the camera. The user is requested again by the browser to allow the application to use the camera.</p>
-            <p><b>setPauseOnUnload(boolean pauseOnUnload)</b> - Sets if the camera capture should pause when the widget is unloaded.</p>
-            <p><b>isPauseOnUnload()</b> - Returns if the camera capture should pause when the widget is unloaded.</p>
-            <p><b>isSupported()</b> - ests if the browser supports the Streams API. This should be called before creating any MaterialCameraCapture widgets to avoid errors on the browser.</p>
-        </blockquote>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:camera.MaterialCameraCapture padding="0" ui:field="camera" grid="l12 m12 s12"/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l4 m6 s12" height="500px" padding="0" shadow="1">
+                    <g:Frame url="https://feel-vision.appspot.com/" width="100%" height="100%"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Browser Check" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;if (MaterialCameraCapture.isSupported()){ <br/>
+                &emsp;camera.addCameraCaptureHandler(new CameraCaptureHandler() {<br/>
+                &emsp;&emsp;@Override<br/>
+                &emsp;&emsp;public void onCameraCaptureChange(CameraCaptureEvent event) {<br/>
+                &emsp;&emsp;&emsp;if (event.getCaptureStatus() == CameraCaptureEvent.CaptureStatus.ERRORED){<br/>
+                &emsp;&emsp;&emsp;&emsp;MaterialToast.fireToast("Error on starting the camera capture: " + event.getErrorMessage());<br/>
+                &emsp;&emsp;&emsp;&emsp;((MaterialCameraCapture)event.getSource()).removeFromParent();<br/>
+                &emsp;&emsp;&emsp;}else{<br/>
+                &emsp;&emsp;&emsp;&emsp;MaterialToast.fireToast("Camera Captured");<br/>
+                &emsp;&emsp;&emsp;}<br/>
+                &emsp;&emsp;}<br/>
+                &emsp;});<br/>
+                }else {<br/>
+                &emsp;MaterialToast.fireToast("Sorry, your browser doesn't support the camera capture.");<br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Capturing" description="Capturing image and set the captured url to MaterialImage" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler("btnCapture")<br/>
+                void onCapture(ClickEvent e) {<br/>
+                &emsp;imgCapture.setUrl(camera.captureToDataURL());<br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <g:HTMLPanel addStyleNames="code">
+            <m:MaterialTitle title="Methods" description="You can call / set other method API on Camera Capture widget."/>
+            <blockquote>
+                <p><b>captureToDataURL()</b> - Captures the current frame of the video to an image data URL. Returns The Data URL of the captured image, which can be used as "src" on an "img" element or sent to the server</p>
+                <p><b>captureToDataURL(String mimeType)</b> - The same with captureToDataURL() but you can set the param mimeType The type of the output image, such as "image/png" or "image/jpeg"</p>
+                <p><b>play()</b> - Starts the video stream from the camera. This is called when the component is loaded.At this point the user is requested by the browser to allow the application to use the camera.</p>
+                <p><b>restart()</b> - Restarts the video stream from the camera. The user is requested again by the browser to allow the application to use the camera.</p>
+                <p><b>setPauseOnUnload(boolean pauseOnUnload)</b> - Sets if the camera capture should pause when the widget is unloaded.</p>
+                <p><b>isPauseOnUnload()</b> - Returns if the camera capture should pause when the widget is unloaded.</p>
+                <p><b>isSupported()</b> - ests if the browser supports the Streams API. This should be called before creating any MaterialCameraCapture widgets to avoid errors on the browser.</p>
+            </blockquote>
+        </g:HTMLPanel>
     </g:HTMLPanel>
 </ui:UiBinder>

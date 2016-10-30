@@ -54,6 +54,6 @@ public class GridPresenter extends Presenter<GridPresenter.MyView, GridPresenter
         super.onReveal();
 
         SetPageTitleEvent.fire("Grid",
-                "We are using a standard 12 column fluid responsive grid system.The grid helps you layout your page in an ordered, easy fashion", this);
+                "We are using a standard 12 column fluid responsive grid system.The grid helps you layout your page in an ordered, easy fashion", "", this);
     }
 }

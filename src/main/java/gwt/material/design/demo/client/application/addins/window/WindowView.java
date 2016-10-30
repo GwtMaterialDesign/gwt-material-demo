@@ -32,7 +32,9 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.window.MaterialWindow;
+import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -44,9 +46,14 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
     @UiField
     MaterialWindow window, windowTab, styledWindow;
 
+    @UiField
+    MaterialRow headerPanel, tabsPanel;
+
     @Inject
     WindowView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        ThemeManager.register(headerPanel);
+        ThemeManager.register(tabsPanel);
         window.addOpenHandler(new OpenHandler<Boolean>() {
             @Override
             public void onOpen(OpenEvent<Boolean> event) {
@@ -64,22 +71,22 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
 
     @UiHandler("btnOpenWindow")
     void onOpenWindow(ClickEvent e) {
-        window.openWindow();
+        window.open();
     }
 
     @UiHandler("btnWindowTab")
     void onOpenWindowWithTab(ClickEvent e) {
-        windowTab.openWindow();
+        windowTab.open();
     }
 
     @UiHandler("btnOpenWindowStyles")
     void onOpenStyledWindow(ClickEvent e) {
-        styledWindow.openWindow();
+        styledWindow.open();
     }
 
     @UiHandler("btnOpenMaximizedWindow")
     void onOpenMaximizedWindow(ClickEvent e) {
         window.setMaximize(true);
-        window.openWindow();
+        window.open();
     }
 }

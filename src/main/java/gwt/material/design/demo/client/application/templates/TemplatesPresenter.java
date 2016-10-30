@@ -56,7 +56,7 @@ public class TemplatesPresenter extends Presenter<TemplatesPresenter.MyView, Tem
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Templates", "Inspiring templates before starting designing / developing your GWT Apps with Material Design look and feel.", this);
+        SetPageTitleEvent.fire("Templates", "Inspiring templates before starting designing / developing your GWT Apps with Material Design look and feel.", "", this);
     }
 
 }

@@ -52,6 +52,6 @@ public class PickersPresenter extends Presenter<PickersPresenter.MyView, Pickers
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Date Picker", "A dialog picker is used to select a single date on mobile. The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight.", this);
+        SetPageTitleEvent.fire("Date Picker", "A dialog picker is used to select a single date on mobile. The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight.", "components/pickers/PickersView", this);
     }
 }

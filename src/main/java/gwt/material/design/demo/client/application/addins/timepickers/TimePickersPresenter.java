@@ -58,7 +58,7 @@ public class TimePickersPresenter extends Presenter<TimePickersPresenter.MyView,
         super.onReveal();
         SetPageTitleEvent.fire("Time Pickers", "A dialog picker is used to select a single time (hours:minutes) on mobile.\n" +
             "\n" +
-            "The selected time is indicated by the filled circle at the end of the clock hand.", this);
+            "The selected time is indicated by the filled circle at the end of the clock hand.", "addins/timepickers/TimePickersView", this);
     }
 
 }

@@ -29,6 +29,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.autocomplete.base.MaterialSuggestionOracle;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.addins.client.timepicker.MaterialTimePicker;
 import gwt.material.design.client.ui.*;
 
@@ -38,20 +39,45 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     interface Binder extends UiBinder<Widget, ErrorsView> {
     }
 
-    @UiField MaterialAutoComplete acList;
-    @UiField MaterialDatePicker dp;
-    @UiField MaterialTimePicker tp;
-    @UiField MaterialRange range;
-    @UiField MaterialSwitch sw;
-    @UiField MaterialTextArea txtArea;
-    @UiField MaterialTextBox txtBox;
-    @UiField MaterialTextBox txtBoxWithHelper;
-    @UiField MaterialTextBox txtBoxValidator;
+    @UiField
+    MaterialAutoComplete acList;
+    @UiField
+    MaterialDatePicker dp;
+    @UiField
+    MaterialTimePicker tp;
+    @UiField
+    MaterialRange range;
+    @UiField
+    MaterialSwitch sw;
+    @UiField
+    MaterialTextArea txtArea;
+    @UiField
+    MaterialTextBox txtBox;
+    @UiField
+    MaterialTextBox txtBoxValidator;
+    @UiField
+    MaterialComboBox<String> combobox;
+
+    @UiField
+    MaterialTextBox txtBoxValidate;
+    @UiField
+    MaterialTextArea txtAreaValidate;
+    @UiField
+    MaterialIntegerBox intBoxValidate;
+    @UiField
+    MaterialDoubleBox doubleBoxValidate;
+    @UiField
+    MaterialFloatBox floatBoxValidate;
+    @UiField
+    MaterialLongBox longBoxValidate;
+    @UiField
+    MaterialDatePicker datePickerValidate;
+    @UiField
+    MaterialTimePicker timePickerValidate;
 
     @Inject
     ErrorsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
         acList.setSuggestions(getSimpleSuggestions());
         txtBoxValidator.addValidator(new EmailValidator());
     }
@@ -86,6 +112,18 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         suggestions.add("Montana");
         suggestions.add("Louisiana");
         return suggestions;
+    }
+
+    @UiHandler("btnValidateAll")
+    void btnValidateAll(ClickEvent e) {
+        txtBoxValidate.validate();
+        txtAreaValidate.validate();
+        intBoxValidate.validate();
+        doubleBoxValidate.validate();
+        longBoxValidate.validate();
+        floatBoxValidate.validate();
+        datePickerValidate.validate();
+        timePickerValidate.validate();
     }
 
     @UiHandler("btnValidate")
@@ -182,21 +220,6 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     void onClearTxtBox(ClickEvent e) {
         txtBox.clearErrorOrSuccess();
     }
-    
-    @UiHandler("btnErrorTxtBoxWithHelper")
-    void onErrorTxtBoxWithHelper(ClickEvent e) {
-        txtBoxWithHelper.setError("This is an error message for text box, that replaces the helper text.");
-    }
-
-    @UiHandler("btnSuccessTxtBoxWithHelper")
-    void onSuccessTxtBoxWithHelper(ClickEvent e) {
-        txtBoxWithHelper.setSuccess("This is a success message for text box, that replaces the helper text.");
-    }
-
-    @UiHandler("btnClearTxtBoxWithHelper")
-    void onClearTxtBoxWithHelper(ClickEvent e) {
-        txtBoxWithHelper.clearErrorOrSuccess();
-    }
 
     @UiHandler("btnErrorTime")
     void onErrorTime(ClickEvent e) {
@@ -211,5 +234,20 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnClearTime")
     void onClearTime(ClickEvent e) {
         tp.clearErrorOrSuccess();
+    }
+
+    @UiHandler("btnErrorComboBox")
+    void onErrorComboBox(ClickEvent e) {
+        combobox.setError("This is an error message for ComboBox.");
+    }
+
+    @UiHandler("btnSuccessComboBox")
+    void onSuccessComboBox(ClickEvent e) {
+        combobox.setSuccess("This is a success message for ComboBox.");
+    }
+
+    @UiHandler("btnClearComboBox")
+    void onClearComboBox(ClickEvent e) {
+        combobox.clearErrorOrSuccess();
     }
 }

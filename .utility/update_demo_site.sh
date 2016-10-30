@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-if [ "$TRAVIS_JDK_VERSION" == "oraclejdk7" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "release_1.6.0" ]; then
+if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "release_2.0" ]; then
 
 if [[ -z "$GH_TOKEN" ]]; then
 echo -e "GH_TOKEN is not set"
@@ -24,23 +24,23 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GwtMaterialDemo directories from git.
-if [[ -d ./snapshot/gwtmaterialdemo ]]; then
-git rm -rf ./snapshot/gwtmaterialdemo
+if [[ -d ./2.0-SNAPSHOT/gwtmaterialdemo ]]; then
+git rm -rf ./2.0-SNAPSHOT/gwtmaterialdemo
 fi
-if [[ -f ./snapshot/index.html ]]; then
-git rm -rf ./snapshot/index.html
+if [[ -f ./2.0-SNAPSHOT/index.html ]]; then
+git rm -rf ./2.0-SNAPSHOT/index.html
 fi
-if [[ -d ./snapshot/META-INF ]]; then
-git rm -rf ./snapshot/META-INF
+if [[ -d ./2.0-SNAPSHOT/META-INF ]]; then
+git rm -rf ./2.0-SNAPSHOT/META-INF
 fi
-if [[ -d ./snapshot/WEB-INF ]]; then
-git rm -rf ./snapshot/WEB-INF
+if [[ -d ./2.0-SNAPSHOT/WEB-INF ]]; then
+git rm -rf ./2.0-SNAPSHOT/WEB-INF
 fi
 
-# copy the new GwtMaterialDemo the snapshot dir.
-unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./snapshot/
-rm -rf ./snapshot/META-INF
-rm -rf ./snapshot/WEB-INF
+# copy the new GwtMaterialDemo the 2.0-SNAPSHOT dir.
+unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./2.0-SNAPSHOT/
+rm -rf ./2.0-SNAPSHOT/META-INF
+rm -rf ./2.0-SNAPSHOT/WEB-INF
 
 git add -f .
 git commit -m "Auto-push demo to gh-pages successful. (Travis build: $TRAVIS_BUILD_NUMBER)"

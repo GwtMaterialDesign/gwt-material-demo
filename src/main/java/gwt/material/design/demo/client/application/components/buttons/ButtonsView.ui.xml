@@ -28,109 +28,125 @@
   </ui:style>
 
   <g:HTMLPanel ui:field="panel">
-
-    <m:MaterialTitle title="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page."/>
-    <m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/>
-    <m:MaterialButton text="Primary" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/>
-    <m:MaterialButton text="Disabled" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
-    <m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="red" textColor="white" iconType="POLYMER" iconPosition="RIGHT"/>
-    <m:MaterialButton text="Icon Color" waves="RED" backgroundColor="white" textColor="black" iconType="POLYMER" iconPosition="RIGHT" iconColor="red"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="white"  textColor="black"/><br/>
-      &lt;m:MaterialButton text="Primary" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
-      &lt;m:MaterialButton text="Disabled" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
-      &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="red" textColor="white" iconType="POLYMER" iconPosition="RIGHT"/><br/>
-      &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="white" textColor="black" iconType="POLYMER" iconPosition="RIGHT" iconColor="red"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle  title="Floating" description="The floating circular action button is meant for very important functions."/>
-    <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" />
-    <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="ANDROID" />
-    <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="MESSAGE" enabled="false"/>
-    <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="GROUP" />
-    <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" />
-    <m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" />
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="ANDROID" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="MESSAGE" enabled="false"/><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="blue" iconType="GROUP" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="red" iconType="CAKE" /><br/>
-      &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="white" iconColor="green" iconType="ANDROID" /><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
-    <m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" />
-    <m:MaterialButton text="Primary (No Waves)" textColor="blue" type="FLAT" />
-    <m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
-    <m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" />
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton text="Button" textColor="black" type="FLAT" waves="DEFAULT" /><br/>
-      &lt;m:MaterialButton text="Primary (No Waves)" textColor="blue" type="FLAT" /><br/>
-      &lt;m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" /><br/>
-      &lt;m:MaterialButton text="Warn" textColor="red" type="FLAT" waves="RED" /><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Large" description="This button has a larger height for buttons that need more attention."/>
-    <m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/>
-    <m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/>
-    <m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" size="LARGE"/><br/>
-      &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/><br/>
-      &lt;m:MaterialButton text="Button" waves="LIGHT" backgroundColor="blue" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Icon Button" description="Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities"/>
-    <m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"/>
-    <m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"/>
-    <m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="blue" waves="DEFAULT" circle="true"//><br/>
-      &lt;m:MaterialIcon iconType="FAVORITE" iconColor="red" waves="DEFAULT" enabled="false" circle="true"//><br/>
-      &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="grey" waves="DEFAULT" circle="true"//><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Disabled" description="When you set disabled='true' All events will be disabled."/>
-    <m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/>
-    <m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/>
-    <m:MaterialButton text="Button" type="FLAT" enabled="false"/>
-    <m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/><br/>
-      &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/><br/>
-      &lt;m:MaterialButton text="Button" type="FLAT" enabled="false"/><br/>
-      &lt;m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Events" description="MaterialButtons , MaterialIcons and MaterialLinks extends ButtonBase which implements all Mouse Handlers, Click Handlers and other events."/>
-    <m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/>
-    <m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/>
-    <m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
-      &lt;m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
-      &lt;m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" backgroundColor="blue" textColor="white" iconType="POLYMER" iconPosition="LEFT"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Links" description="Using Material Link you can easily add href functionality into your app for navigation"/>
-    <m:MaterialRow>
-      <m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
-      <m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
-      <m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red" grid=" "/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page."/>
+      <m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
+      <m:MaterialButton text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+      <m:MaterialButton text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
+      <m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/>
+      <m:MaterialButton text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/><br/>
+        &lt;m:MaterialButton text="Primary" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialButton text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
+        &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/><br/>
+        &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="red" iconType="POLYMER" iconPosition="LEFT"/><br/>
-      &lt;m:MaterialLink href="#material" text="Link with Href" textColor="red" iconType="POLYMER" iconPosition="LEFT"/><br/>
-      &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="black" iconType="POLYMER" iconPosition="LEFT" iconColor="red"/><br/>
-    </demo:PrettyPre>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle  title="Floating" description="The floating circular action button is meant for very important functions."/>
+      <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
+      <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="ANDROID" />
+      <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="MESSAGE" enabled="false"/>
+      <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="GROUP" />
+      <m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" />
+      <m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" />
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" /><br/>
+        &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="ANDROID" /><br/>
+        &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="MESSAGE" enabled="false"/><br/>
+        &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" iconType="GROUP" /><br/>
+        &lt;m:MaterialButton type="FLOATING" waves="LIGHT" size="LARGE" backgroundColor="RED" iconType="CAKE" /><br/>
+        &lt;m:MaterialButton type="FLOATING" waves="DEFAULT" size="LARGE" backgroundColor="WHITE" iconColor="GREEN" iconType="ANDROID" /><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
+      <m:MaterialButton text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" />
+      <m:MaterialButton text="Primary (No Waves)" textColor="BLUE" type="FLAT" />
+      <m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
+      <m:MaterialButton text="Warn" textColor="RED" type="FLAT" waves="RED" />
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" /><br/>
+        &lt;m:MaterialButton text="Primary (No Waves)" textColor="BLUE" type="FLAT" /><br/>
+        &lt;m:MaterialButton text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" /><br/>
+        &lt;m:MaterialButton text="Warn" textColor="RED" type="FLAT" waves="RED" /><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Large" description="This button has a larger height for buttons that need more attention."/>
+      <m:MaterialButton text="Button" waves="LIGHT" size="LARGE"/>
+      <m:MaterialButton text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/>
+      <m:MaterialButton text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" waves="LIGHT" size="LARGE"/><br/>
+        &lt;m:MaterialButton text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="LEFT" size="LARGE"/><br/>
+        &lt;m:MaterialButton text="Button" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" size="LARGE"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Icon Button" description="Using MaterialIcon component extends ButtonBased which has predefined click events and functionalities"/>
+      <m:MaterialIcon iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/>
+      <m:MaterialIcon iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/>
+      <m:MaterialIcon iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"//><br/>
+        &lt;m:MaterialIcon iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"//><br/>
+        &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"//><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Disabled" description="When you set disabled='true' All events will be disabled."/>
+      <m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/>
+      <m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/>
+      <m:MaterialButton text="Button" type="FLAT" enabled="false"/>
+      <m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/><br/>
+        &lt;m:MaterialButton text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/><br/>
+        &lt;m:MaterialButton text="Button" type="FLAT" enabled="false"/><br/>
+        &lt;m:MaterialButton type="FLOATING"  iconType="POLYMER" enabled="false"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Events" description="MaterialButtons , MaterialIcons and MaterialLinks extends ButtonBase which implements all Mouse Handlers, Click Handlers and other events."/>
+      <m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+      <m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+      <m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton ui:field="btnClick" text="Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialButton ui:field="btnHover" text="Hover Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialButton ui:field="btnDoubleClick" text="Double Click Me" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Links" description="Using Material Link you can easily add href functionality into your app for navigation"/>
+      <m:MaterialRow>
+        <m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
+        <m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
+        <m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

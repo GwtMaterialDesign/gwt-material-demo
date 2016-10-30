@@ -33,159 +33,168 @@
     }
   </ui:style>
   <g:HTMLPanel>
-
-    <m:MaterialTitle title="Circular" />
-    <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" backgroundColor="blue" addStyleNames="{style.btn}"/>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      // Show Loader<br/>
-      MaterialLoader.showLoading(true);<br/><br/>
-      // Hide Loader<br/>
-      MaterialLoader.showLoading(false);<br/>
-    </demo:PrettyPre>
-    
-    <m:MaterialTitle title="Linear" />
-    <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      // Show Progress<br/>
-      MaterialLoader.showProgress(true);<br/><br/>
-
-      // Hide Progress<br/>
-      MaterialLoader.showProgress(false);<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Determinate Type"/>
-    <m:MaterialProgress type="DETERMINATE" percent="30"/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialProgress type="DETERMINATE" percent="30"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Indeterminate Type"/>
-    <m:MaterialProgress type="INDETERMINATE" />
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialProgress type="INDETERMINATE"/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Stand alone Loaders" description="Standalone loaders can be added to any place of your app using UiBinder(inside a dialog, a page or everywhere depends on your UI UX)."/>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="l4">
-        <m:MaterialPreLoader size="BIG">
-          <m:MaterialSpinner color="blue-only" />
-        </m:MaterialPreLoader>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="l4">
-        <m:MaterialPreLoader>
-          <m:MaterialSpinner color="red-only" />
-        </m:MaterialPreLoader>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="l4">
-        <m:MaterialPreLoader size="SMALL">
-          <m:MaterialSpinner color="yellow-only" />
-        </m:MaterialPreLoader>
-      </m:MaterialColumn>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Circular" />
+      <m:MaterialButton text="Show Loader" ui:field="btnShowLoader" addStyleNames="{style.btn}"/>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Show Loader<br/>
+        MaterialLoader.showLoading(true);<br/><br/>
+        // Hide Loader<br/>
+        MaterialLoader.showLoading(false);<br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;&lt;m:MaterialPreLoader size="BIG"><br/>
-      &emsp;&lt;m:MaterialSpinner color="blue-only" /><br/>
-      &lt;/m:MaterialPreLoader><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
-    <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" backgroundColor="blue" addStyleNames="{style.btn}"/>
-    <m:MaterialNavBar ui:field="navBar" backgroundColor="blue" addStyleNames="{style.navBar}" width="100%">
-      <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
-      <m:MaterialNavSection float="RIGHT">
-        <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
-        <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/>
-        <m:MaterialTooltip text ="Menu">
-          <m:MaterialLink iconType="SEARCH" textColor="white" waves="LIGHT"/>
-        </m:MaterialTooltip>
-        <m:MaterialTooltip text ="Starter">
-          <m:MaterialLink iconType="MORE_VERT" textColor="white" waves="LIGHT"/>
-        </m:MaterialTooltip>
-      </m:MaterialNavSection>
-    </m:MaterialNavBar>
-
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      // Show NavBar Loader<br/>
-      navBar.showLoader();<br/><br/>
-      // Hide NavBar Loader<br/>
-      navBar.hideLoader();<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Collapsible Integration"/>
-    <m:MaterialCollapsible type="POPOUT">
-      <!-- ITEM 1 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemOne">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 2 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemTwo">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-      <!-- ITEM 3 -->
-      <m:MaterialCollapsibleItem ui:field="collapseItemThree">
-        <m:MaterialCollapsibleHeader>
-          <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="black"/>
-        </m:MaterialCollapsibleHeader>
-        <m:MaterialCollapsibleBody>
-          <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-        </m:MaterialCollapsibleBody>
-      </m:MaterialCollapsibleItem>
-    </m:MaterialCollapsible>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Linear" />
+      <m:MaterialButton text="Show Progress" ui:field="btnShowProgress" addStyleNames="{style.btn}"/>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Show Progress<br/>
+        MaterialLoader.showProgress(true);<br/><br/>
+  
+        // Hide Progress<br/>
+        MaterialLoader.showProgress(false);<br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Determinate Type"/>
+      <m:MaterialProgress type="DETERMINATE" percent="30"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialProgress type="DETERMINATE" percent="30"/>
+      </demo:PrettyPre>
+  
+      <m:MaterialTitle title="Indeterminate Type"/>
+      <m:MaterialProgress type="INDETERMINATE" />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialProgress type="INDETERMINATE"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Stand alone Loaders" description="Standalone loaders can be added to any place of your app using UiBinder(inside a dialog, a page or everywhere depends on your UI UX)."/>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l4">
+          <m:MaterialPreLoader size="BIG">
+            <m:MaterialSpinner color="BLUE_ONLY" />
+          </m:MaterialPreLoader>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l4">
+          <m:MaterialPreLoader>
+            <m:MaterialSpinner color="RED_ONLY" />
+          </m:MaterialPreLoader>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l4">
+          <m:MaterialPreLoader size="SMALL">
+            <m:MaterialSpinner color="YELLOW_ONLY" />
+          </m:MaterialPreLoader>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;&lt;m:MaterialPreLoader size="BIG"><br/>
+        &emsp;&lt;m:MaterialSpinner color="blue-only" /><br/>
+        &lt;/m:MaterialPreLoader><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="NavBar Integration" description="Using the progress we can attach it below the nav for better UI / UX when displaying important content on your app."/>
+      <m:MaterialButton text="Show Progress" ui:field="btnShowNavBarProgress" addStyleNames="{style.btn}"/>
+      <m:MaterialNavBar ui:field="navBar" addStyleNames="{style.navBar}" width="100%">
+        <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
+        <m:MaterialNavSection float="RIGHT">
+          <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+          <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+          <m:MaterialTooltip text ="Menu">
+            <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+          </m:MaterialTooltip>
+          <m:MaterialTooltip text ="Starter">
+            <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+          </m:MaterialTooltip>
+        </m:MaterialNavSection>
+      </m:MaterialNavBar>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Show NavBar Loader<br/>
+        navBar.showLoader();<br/><br/>
+        // Hide NavBar Loader<br/>
+        navBar.hideLoader();<br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Specific Panels" description="You can attach the loader / progress to any panels" />
+      <m:MaterialRow>
+        <m:MaterialColumn grid="l12 m12 s12">
+          <m:MaterialButton ui:field="btnLoader" text="Show Loader"/>
+          <m:MaterialButton ui:field="btnProgress" text="Show Progress"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="l6 m6 s12">
+          <m:MaterialCard>
+            <m:MaterialCardContent padding="0" ui:field="cardContent">
+              <m:MaterialRow marginBottom="0" padding="12">
+                <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
+                <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
+              </m:MaterialRow>
+              <m:MaterialRow marginBottom="0" padding="20">
+                <m:MaterialLabel text="Amazingly clear seas of the Philippines" />
+                <m:MaterialRow marginBottom="0">
+                  <m:MaterialChip margin="4" text="#philippines" textColor="BLACK" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#vacation" textColor="BLACK" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#holiday" textColor="BLACK" float="LEFT"/>
+                  <m:MaterialChip margin="4" text="#sea" textColor="BLACK" float="LEFT"/>
+                </m:MaterialRow>
+              </m:MaterialRow>
+            </m:MaterialCardContent>
+            <m:MaterialCardImage>
+              <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
+            </m:MaterialCardImage>
+            <m:MaterialCardAction padding="0">
+              <m:MaterialRow margin="12">
+                <m:MaterialButton type="FLOATING" iconType="PLUS_ONE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="LEFT"/>
+                <m:MaterialLabel text="310" textColor="GREY" float="LEFT" marginTop="12" marginLeft="12"/>
+                <m:MaterialLabel text="1000" textColor="GREY" float="RIGHT" marginTop="12" marginLeft="12"/>
+                <m:MaterialButton type="FLOATING" iconType="SHARE" iconColor="GREY" backgroundColor="GREY_LIGHTEN_2" shadow="0" float="RIGHT"/>
+              </m:MaterialRow>
+              <!-- Collection items for comments -->
+              <m:MaterialCollection>
+                <m:MaterialCollectionItem type="AVATAR">
+                  <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
+                  <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
+                </m:MaterialCollectionItem>
+              </m:MaterialCollection>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiHandler("btnLoader")<br/>
+        void onShowLoaderSpecific(ClickEvent e) {<br/>
+        &emsp;Timer timer = new Timer() {<br/>
+        &emsp;&emsp;@Override<br/>
+        &emsp;&emsp;public void run() {<br/>
+        &emsp;&emsp;&emsp;MaterialLoader.showLoading(true, cardContent);<br/>
+        &emsp;&emsp;}<br/>
+        &emsp;};<br/>
+        &emsp;timer.schedule(2000);<br/>
+        }<br/><br/>
     
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollapsible type="POPOUT"><br/>
-      &emsp;&lt;!-- ITEM 1 --><br/>
-      &emsp;&lt;m:MaterialCollapsibleItem ui:field="collapseItemOne"><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="black"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleHeader><br/>
-      &emsp;&emsp;&lt;m:MaterialCollapsibleBody><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/><br/>
-      &emsp;&emsp;&lt;/m:MaterialCollapsibleBody><br/>
-      &emsp;&lt;/m:MaterialCollapsibleItem><br/><br/>
-
-      &emsp;&lt;!-- Other Items --><br/>
-      &lt;/m:MaterialCollapsible><br/>
-    </demo:PrettyPre>
-    
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;@UiHandler("collapseItemOne")<br/>
-      void onShowCollapseProgress(ClickEvent e){<br/>
-      &emsp;collapseItemOne.showProgress(ProgressType.INDETERMINATE);<br/>
-      &emsp;Timer t = new Timer() {<br/>
-      &emsp;&emsp;@Override<br/>
-      &emsp;&emsp;public void run() {<br/>
-      &emsp;&emsp;&emsp;collapseItemOne.hideProgress();<br/>
-      &emsp;&emsp;}<br/>
-      &emsp;};<br/>
-      &emsp;t.schedule(3000);<br/>
-      }<br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="plete Integration" />
-    <m.autocomplete:MaterialAutoComplete ui:field="acList" placeholder="Your State"/>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      @UiField MaterialAutCompleteplete acList;<br/><br/>
-
-      // Show Progress<br/>
-      acList.showProgress(true);<br/><br/>
-
-      // Hide Progress<br/>
-      acList.showProgress(false);<br/>
-    </demo:PrettyPre>
+        @UiHandler("btnProgress")<br/>
+        void onShowProgressSpecific(ClickEvent e) {<br/>
+        &emsp;Timer timer = new Timer() {<br/>
+        &emsp;&emsp;@Override<br/>
+        &emsp;&emsp;public void run() {<br/>
+        &emsp;&emsp;&emsp;MaterialLoader.showProgress(true, cardContent);<br/>
+        &emsp;&emsp;}<br/>
+        &emsp;};<br/>
+        &emsp;timer.schedule(2000);<br/>
+        }
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

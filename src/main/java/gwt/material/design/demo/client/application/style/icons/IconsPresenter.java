@@ -54,6 +54,6 @@ public class IconsPresenter extends Presenter<IconsPresenter.MyView, IconsPresen
         super.onReveal();
 
         SetPageTitleEvent.fire("Icons",
-                "We have included 740 Material Design Icons courtesy of Google. You can download them directly from the Material Design specs.", this);
+                "We have included 740 Material Design Icons courtesy of Google. You can download them directly from the Material Design specs.", "", this);
     }
 }

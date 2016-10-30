@@ -23,111 +23,117 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
-    <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
-    <m:MaterialNavBar backgroundColor="blue" width="100%">
-      <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
-      <m:MaterialNavSection float="RIGHT">
-        <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/>
-        <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/>
-        <m:MaterialTooltip text="Menu">
-          <m:MaterialLink iconType="SEARCH" textColor="white" waves="LIGHT"/>
-        </m:MaterialTooltip>
-        <m:MaterialTooltip text="Starter">
-          <m:MaterialLink iconType="MORE_VERT" textColor="white" waves="LIGHT"/>
-        </m:MaterialTooltip>
-      </m:MaterialNavSection>
-    </m:MaterialNavBar>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/><br/>
-      &emsp;&lt;m:MaterialNavBrand href="#Test" float="LEFT">App Title&lt;/m:MaterialNavBrand><br/><br/>
-      &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
-      &emsp;&emsp;&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="white" waves="LIGHT"/><br/>
-      &emsp;&emsp;&lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="white" waves="LIGHT"/><br/>
-      &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="white" waves="LIGHT"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
-      &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="white" waves="LIGHT"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
-      &emsp;&lt;/m:MaterialNavSection><br/><br/>
-      &lt;/m:MaterialNavBar><br/>
-    </demo:PrettyPre>
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
+        <m:MaterialNavBar width="100%">
+          <m:MaterialNavBrand href="#Test" float="LEFT">Title</m:MaterialNavBrand>
+          <m:MaterialNavSection float="RIGHT">
+            <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+            <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+            <m:MaterialTooltip text="Menu">
+              <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+            </m:MaterialTooltip>
+            <m:MaterialTooltip text="Starter">
+              <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+            </m:MaterialTooltip>
+          </m:MaterialNavSection>
+        </m:MaterialNavBar>
     
-    <m:MaterialTitle title="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section"/>
-    <m:MaterialNavBar backgroundColor="blue" width="100%">
-      <m:MaterialNavBrand href="#Test" float="RIGHT">App Title</m:MaterialNavBrand>
-      <m:MaterialNavSection float="LEFT">
-        <m:MaterialTooltip text="Menu">
-          <m:MaterialLink iconType="SEARCH" textColor="white"/>
-        </m:MaterialTooltip>
-        <m:MaterialTooltip text="Starter">
-          <m:MaterialLink iconType="MORE_VERT" textColor="white"/>
-        </m:MaterialTooltip>
-      </m:MaterialNavSection>
-    </m:MaterialNavBar>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" width="100%"><br/><br/>
-      &emsp;&lt;m:MaterialNavBrand href="#Test" float="RIGHT">App Title&lt;/m:MaterialNavBrand><br/><br/>
-      &emsp;&lt;m:MaterialNavSection float="LEFT"><br/>
-      &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="white"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
-      &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="white"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
-      &emsp;&lt;/m:MaterialNavSection><br/><br/>
-      &lt;/m:MaterialNavBar><br/>
-    </demo:PrettyPre>
-
-    <!-- Shrink Type -->
-    <m:MaterialTitle title="Shrink Type" description="Scaling on Material NavBrand Logo (either image or text) with delightful animation "/>
-    <m:MaterialImage url="http://oi63.tinypic.com/dqnpy1.jpg"/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="SHRINK"><br/>
-      &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-      &lt;/m:MaterialNavBar><br/>
-    </demo:PrettyPre>
-
-    <!-- Fixed Type -->
-    <m:MaterialTitle title="Fixed Type" description="You can make your navbar fixed by adding: type='FIXED'"/>
-
-    <m:MaterialRow>
-      <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072886/d4bb530e-6279-11e5-93ae-e3d8622a1236.gif"/>
-      <m:MaterialColumn grid="s12 m12 l8">
-        <g:HTMLPanel>
-          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="FIXED"><br/>
-            &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-            &lt;/m:MaterialNavBar><br/>
-          </demo:PrettyPre>
-        </g:HTMLPanel>
-      </m:MaterialColumn>
-    </m:MaterialRow>
-
-
-    <m:MaterialTitle title="Tall Type" description="You can make your navbar fixed by adding: type='TALL'"/>
-    <m:MaterialRow>
-      <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072883/d2121638-6279-11e5-8e84-5fbcec8148f5.PNG"/>
-      <m:MaterialColumn grid="s12 m12 l8">
-        <g:HTMLPanel>
-          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialNavBar backgroundColor="blue" type="TALL"><br/>
-            &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-            &lt;/m:MaterialNavBar><br/>
-          </demo:PrettyPre>
-        </g:HTMLPanel>
-      </m:MaterialColumn>
-    </m:MaterialRow>
-
-    <m:MaterialTitle title="MaterialHeader Usage" description="If you are using an open sidenav you are required to use MaterialHeader to contain your navBar component for padding-left usage. And add into your style this : header, main, footer { padding-left: 200px } wherein 200px is the width of your sidenav."/>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialHeader><br/>
-      &emsp;&lt;m:MaterialNavBar><br/>
-      &emsp;&emsp;&lt;-- Navbar content goes here --><br/>
-      &emsp;&lt;/m:MaterialHeader><br/>
-      &lt;/m:MaterialHeader><br/>
-    </demo:PrettyPre>
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialNavBar width="100%"><br/><br/>
+          &emsp;&lt;m:MaterialNavBrand href="#Test" float="LEFT">App Title&lt;/m:MaterialNavBrand><br/><br/>
+          &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
+          &emsp;&emsp;&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/><br/>
+          &emsp;&emsp;&lt;m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/><br/>
+          &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
+          &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/><br/>
+          &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+          &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+          &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/><br/>
+          &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+          &emsp;&lt;/m:MaterialNavSection><br/><br/>
+          &lt;/m:MaterialNavBar><br/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+      
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section"/>
+        <m:MaterialNavBar width="100%">
+          <m:MaterialNavBrand href="#Test" float="RIGHT">App Title</m:MaterialNavBrand>
+          <m:MaterialNavSection float="LEFT">
+            <m:MaterialTooltip text="Menu">
+              <m:MaterialLink iconType="SEARCH" textColor="WHITE"/>
+            </m:MaterialTooltip>
+            <m:MaterialTooltip text="Starter">
+              <m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/>
+            </m:MaterialTooltip>
+          </m:MaterialNavSection>
+        </m:MaterialNavBar>
+    
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialNavBar width="100%"><br/><br/>
+          &emsp;&lt;m:MaterialNavBrand href="#Test" float="RIGHT">App Title&lt;/m:MaterialNavBrand><br/><br/>
+          &emsp;&lt;m:MaterialNavSection float="LEFT"><br/>
+          &emsp;&emsp;&lt;m:MaterialTooltip text="Menu"><br/>
+          &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="SEARCH" textColor="WHITE"/><br/>
+          &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+          &emsp;&emsp;&lt;m:MaterialTooltip text="Starter"><br/>
+          &emsp;&emsp;&emsp;&lt;m:MaterialLink iconType="MORE_VERT" textColor="WHITE"/><br/>
+          &emsp;&emsp;&lt;/m:MaterialTooltip><br/>
+          &emsp;&lt;/m:MaterialNavSection><br/><br/>
+          &lt;/m:MaterialNavBar><br/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+      
+      <m:MaterialRow addStyleNames="code">
+        <!-- Shrink Type -->
+        <m:MaterialTitle title="Shrink Type" description="Scaling on Material NavBrand Logo (either image or text) with delightful animation "/>
+        <m:MaterialImage url="http://oi63.tinypic.com/dqnpy1.jpg"/>
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialNavBar type="SHRINK"><br/>
+          &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+          &lt;/m:MaterialNavBar><br/>
+        </demo:PrettyPre>
+    
+        <!-- Fixed Type -->
+        <m:MaterialTitle title="Fixed Type" description="You can make your navbar fixed by adding: type='FIXED'"/>
+    
+        <m:MaterialRow>
+          <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072886/d4bb530e-6279-11e5-93ae-e3d8622a1236.gif"/>
+          <m:MaterialColumn grid="s12 m12 l8">
+            <g:HTMLPanel>
+              <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialNavBar type="FIXED"><br/>
+                &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+                &lt;/m:MaterialNavBar><br/>
+              </demo:PrettyPre>
+            </g:HTMLPanel>
+          </m:MaterialColumn>
+        </m:MaterialRow>
+    
+    
+        <m:MaterialTitle title="Tall Type" description="You can make your navbar fixed by adding: type='TALL'"/>
+        <m:MaterialRow>
+          <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072883/d2121638-6279-11e5-8e84-5fbcec8148f5.PNG"/>
+          <m:MaterialColumn grid="s12 m12 l8">
+            <g:HTMLPanel>
+              <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialNavBar type="TALL"><br/>
+                &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
+                &lt;/m:MaterialNavBar><br/>
+              </demo:PrettyPre>
+            </g:HTMLPanel>
+          </m:MaterialColumn>
+        </m:MaterialRow>
+    
+        <m:MaterialTitle title="MaterialHeader Usage" description="If you are using an open sidenav you are required to use MaterialHeader to contain your navBar component for padding-left usage. And add into your style this : header, main, footer { padding-left: 200px } wherein 200px is the width of your sidenav."/>
+        <demo:PrettyPre addStyleNames="lang-xml">
+          &emsp;&lt;m:MaterialHeader><br/>
+          &emsp;&lt;m:MaterialNavBar><br/>
+          &emsp;&emsp;&lt;-- Navbar content goes here --><br/>
+          &emsp;&lt;/m:MaterialHeader><br/>
+          &lt;/m:MaterialHeader><br/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>
