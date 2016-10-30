@@ -26,9 +26,13 @@
 	<ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
 
 	<ui:style>
-		@external .sidebar, .nav-wrapper;
+		@external .sidebar, .nav-wrapper, .select2-selection__rendered;
 		main, header, footer{
 			/*padding-left: 250px;*/
+		}
+
+		.select2-selection__rendered {
+			color: white !important;
 		}
 
 		.sidebar {
