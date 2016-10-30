@@ -53,6 +53,6 @@ public class MenuBarPresenter extends Presenter<MenuBarPresenter.MyView, MenuBar
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Menu Bar", "Menu bar is a component that bring a good UI UX navigation for Desktop or tablet interface. This component provides a multi dropdown heirarchy best suit for larger applications.", this);
+        SetPageTitleEvent.fire("Menu Bar", "Menu bar is a component that bring a good UI UX navigation for Desktop or tablet interface. This component provides a multi dropdown heirarchy best suit for larger applications.", "addins/menubar/MenuBarView", this);
     }
 }

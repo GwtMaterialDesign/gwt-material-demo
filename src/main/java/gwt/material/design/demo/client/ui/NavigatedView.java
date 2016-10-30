@@ -48,6 +48,7 @@ public class NavigatedView extends ViewImpl implements HasScrollspy {
             spy.setHref(link.getLink());
             scrollspy.add(spy);
         }
+        panel.setMarginTop(40);
         scrollspy.setHideOn(HideOn.HIDE_ON_MED_DOWN);
         scrollspy.setTop(0);
         panel.add(scrollspy);

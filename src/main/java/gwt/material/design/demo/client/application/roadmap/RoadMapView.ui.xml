@@ -28,12 +28,56 @@
             min-height: 150px;
         }
     </ui:style>
-    <m:MaterialRow>
+    <m:MaterialRow marginTop="60">
+        <!-- 2.0-rc1 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.0-rc1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="October 2016"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="J" letterColor="WHITE" letterBackgroundColor="GREEN" text="JSInterop" margin="4"/>
+                    <m:MaterialChip letter="J" letterColor="WHITE" letterBackgroundColor="GREEN" text="Java 8" margin="4"/>
+                    <m:MaterialChip letter="G" letterColor="WHITE" letterBackgroundColor="GREEN" text="GWT 2.8" margin="4"/>
+                    <m:MaterialChip letter="E" letterColor="WHITE" letterBackgroundColor="GREEN" text="Enhancement and Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="GREEN" text="Color Enums" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Data Table" margin="4"/>
+                    <m:MaterialChip letter="U" letterColor="WHITE" letterBackgroundColor="GREEN" text="Unit Test" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Read only State" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dynamic Themes" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+        <!-- 1.6.2 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="1.6.2" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="September 2016"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+        <!-- 1.6.1 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="1.6.1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="August 2016"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
         <!-- 1.6.0 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="1.6.0" textColor="BLACK"/>
-                <m:MaterialLabel textColor="GREY" text="Ongoing"/>
+                <m:MaterialLabel textColor="GREY" text="August 2016"/>
             </m:MaterialCardContent>
             <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>
@@ -46,7 +90,7 @@
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="1.5.2" textColor="BLACK"/>
-                <m:MaterialLabel textColor="GREY" text="Ongoing"/>
+                <m:MaterialLabel textColor="GREY" text="June 2016"/>
             </m:MaterialCardContent>
             <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
                 <m:MaterialPanel>

@@ -35,14 +35,16 @@ public class SetPageTitleEvent extends GwtEvent<SetPageTitleEvent.SetPageTitleHa
 
     private final String title;
     private final String description;
+    private final String link;
 
-    public SetPageTitleEvent(String title, String description) {
+    public SetPageTitleEvent(String title, String description, String link) {
         this.title = title;
         this.description = description;
+        this.link = link;
     }
 
-    public static void fire(String title, String description, HasHandlers source) {
-        source.fireEvent(new SetPageTitleEvent(title, description));
+    public static void fire(String title, String description, String link, HasHandlers source) {
+        source.fireEvent(new SetPageTitleEvent(title, description, link));
     }
 
     public String getTitle() {
@@ -51,6 +53,10 @@ public class SetPageTitleEvent extends GwtEvent<SetPageTitleEvent.SetPageTitleHa
 
     public String getDescription() {
         return description;
+    }
+
+    public String getLink() {
+        return link;
     }
 
     @Override

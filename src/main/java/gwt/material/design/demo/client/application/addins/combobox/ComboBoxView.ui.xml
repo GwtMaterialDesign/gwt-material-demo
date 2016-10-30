@@ -23,50 +23,52 @@
              xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &emsp;&lt;combobox:MaterialComboBox><br/>
-            &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
-            &emsp;&lt;m:html.Option value="2" text="Sample 2"/><br/>
-            &emsp;&lt;m:html.Option value="3" text="Sample 3"/><br/>
-            &lt;/combobox:MaterialComboBox><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialRow>
-            <m:MaterialColumn grid="l6 m6 s12">
-                <combobox:MaterialComboBox ui:field="comboTimeZone1" placeholder="TimeZone" />
-            </m:MaterialColumn>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &emsp;&lt;combobox:MaterialComboBox><br/>
+                &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
+                &emsp;&lt;m:html.Option value="2" text="Sample 2"/><br/>
+                &emsp;&lt;m:html.Option value="3" text="Sample 3"/><br/>
+                &lt;/combobox:MaterialComboBox><br/>
+            </demo:PrettyPre>
+    
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12">
+                    <combobox:MaterialComboBox ui:field="comboTimeZone1" placeholder="TimeZone" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Label and Placeholder" description="On Combo Box we have two types of labeling your component. They are label and placeholder." />
                 <combobox:MaterialComboBox ui:field="comboTimeZone2" multiple="true" label="This is label" placeholder="This is placeholder" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="l12 m12 s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone2" multiple="true" label="This is label" placeholder="This is placeholder" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l12 m12 s12">
                 <m:MaterialTitle title="Java : Adding Options" description="Populating your data can be done using java. By calling combobox.addItem(String, T)" />
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="combobox" label="This is label" placeholder="This is placeholder" />
                 </demo:PrettyPre>
 
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-java">
                     // Declaration <br/>
                     @UiField <br/>
                     MaterialComboBox&lt;State> combobox;
                 </demo:PrettyPre>
 
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-java">
                     //Populating Data <br/>
                     &emsp;for(State state : tz.getStates()) { <br/>
                     &emsp;combobox.addItem(state.getName(), state); <br/>
@@ -75,21 +77,21 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="s12">
                 <m:MaterialTitle title="Java : Adding Options plus OptGroup" description="You can add an optgroup easily by calling combobox.addGroup(OptionGroup)"/>
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="combobox" label="This is label" placeholder="This is placeholder" />
                 </demo:PrettyPre>
 
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-java">
                     &emsp;// Declaration <br/>
                     @UiField <br/>
                     MaterialComboBox&lt;State> combobox;
                 </demo:PrettyPre>
-                <demo:PrettyPre marginTop="12" addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre marginTop="12" addStyleNames="lang-java">
                     &emsp;//Populating Data <br/>
                     &emsp;for(TimeZone tz : DataHelper.getTimeZones()) {<br/>
                     &emsp;&emsp;OptGroup optGroup = new OptGroup();<br/>
@@ -103,25 +105,25 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Allow Clear" description="We added a built in clear icon to easily clear all items on Multiple Combobox" />
                 <combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" multiple="true" allowClear="true" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" multiple="true" allowClear="true" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="With OptGroup" description="Just like on java way of adding optgroup, we have also added it on UiBinder way."/>
                 <combobox:MaterialComboBox ui:field="comboTimeZone" placeholder="TimeZone"/>
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone" placeholder="TimeZone"><br/>
                     &emsp;&lt;m:html.OptGroup label="Group 1"><br/>
                     &emsp;&emsp;&lt;m:html.Option text="Sample 1"/><br/>
@@ -138,26 +140,26 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Multiple Select" description="Just like Autocomplete you can have a capability to select ComboBox options multiple."/>
                 <combobox:MaterialComboBox multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &lt;combobox:MaterialComboBox multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Disabled" description="You can disabled your combobox by adding enabled='false'"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone6" />
                 <m:MaterialSwitch value="true" marginTop="12" onLabel="Enable" offLabel="Disable" ui:field="swState" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;// UiBinder <br/>
                     &lt;combobox:MaterialComboBox placeholder="Time Zone" ui:field="combobox" /> <br/><br/>
                     // Java <br/>
@@ -168,7 +170,7 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Disabling Result" description="You can disable each Option by adding enabled'false'"/>
                 <combobox:MaterialComboBox ui:field="comboDisable" placeholder="Time Zone">
@@ -178,7 +180,7 @@
                 </combobox:MaterialComboBox>
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox ui:field="comboDisable" placeholder="Time Zone"><br/>
                     &emsp;&lt;m:html.Option text="Item 1">&lt;/m:html.Option><br/>
                     &emsp;&lt;m:html.Option enabled="false" text="Item 2 (disabled)">&lt;/m:html.Option><br/>
@@ -188,26 +190,26 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Limit" description="You can set the item limit on multiple combobox."/>
                 <combobox:MaterialComboBox multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Value Change Event" description="This event will be fired when changing values on combobox"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone8" />
                 <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone8_1" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;comboTimeZone8.addValueChangeHandler(valueChangeEvent -> { <br/>
                     &emsp;MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());<br/>
                     });
@@ -215,14 +217,14 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Selection Event" description="This event will be fired when Selecting values on combobox"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone9" />
                 <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone9_1" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;comboTimeZone9.addValueChangeHandler(valueChangeEvent -> { <br/>
                     &emsp;MaterialToast.fireToast("Event: Select State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());<br/>
                     });
@@ -230,13 +232,13 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Remove Item Event" description="This event will be fired when removing item/value on multiple combobox" />
                 <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone11" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;comboTimeZone11.addRemoveItemHandler(event -> {<br/>
                     &emsp;MaterialToast.fireToast("Removed: " + event.getTarget().getName());<br/>
                     });
@@ -244,26 +246,26 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Open / Close Event for Simple" description="This event will be fired when opening / closing the combobox"  />
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone10" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone10" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Get Selected Value / Values" description="We provided a way to get values from simple and multiple combobox."/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone12" />
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValue" text="Get Value" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// For simple combobox<br/>
                     combobox.getSelectedValues()
                 </demo:PrettyPre>
@@ -273,14 +275,14 @@
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValues" text="Get Values" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// For multiple combobox<br/>
                     combobox.getSelectedValues()
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Set Value / Values" description="setValue() will be applied on Simple while setValues() can be applied on Multiple combobox"/>
             <m:MaterialColumn grid="l6 m6 s12">
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone13" />
@@ -288,7 +290,7 @@
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValue2" text="Get Value" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;State california = comboTimeZone.getValues().get(2);<br/>
                     comboTimeZone.setValue(california);
                 </demo:PrettyPre>
@@ -300,7 +302,7 @@
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValues2" text="Get Values" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;List&lt;State> states = new ArrayList&lt;>();<br/>
                     State california = comboTimeZone.getValues().get(2);<br/>
                     State alabama = comboTimeZone.getValues().get(3);<br/>
@@ -311,7 +313,7 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Programmatic Access" description="MaterialCombobox supports methods that allow programmatic control of the component."/>
             <m:MaterialColumn grid="l6 m6 s12">
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone15" />
@@ -321,7 +323,7 @@
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnClose" text="Close" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// Open combobox<br/>
                     comboTimeZone.open();<br/>
                     // Close<br/>
@@ -330,14 +332,14 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Initialization update" description="You might need to reinitialize your combobox if you want to update the combobox list items" />
             <m:MaterialColumn grid="l6 m6 s12">
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone16" />
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnAddOption" text="Add new Option" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
-                <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+                <demo:PrettyPre addStyleNames="lang-java">
                     State newState = new State("Item " + dynamicIndex, "I" + dynamicIndex);<br/>
                     comboTimeZone16.addItem(newState.getName(), newState);<br/>
                     comboTimeZone16.initialize();<br/>
@@ -347,7 +349,7 @@
             </m:MaterialColumn>
         </m:MaterialRow>
 
-        <m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Modal Integration" description="You can easily put your combobox inside modal easily" />
             <m:MaterialButton text="Open Modal" ui:field="btnOpenModal" />
             <m:MaterialModal ui:field="modal" dismissible="true">

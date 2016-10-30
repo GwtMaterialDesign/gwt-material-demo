@@ -24,60 +24,66 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
-            &lt;/ma:iconmorph.MaterialIconMorph>
-        </demo:PrettyPre>
-        
-        <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
-            <m:MaterialIcon iconType="MENU"/>
-            <m:MaterialIcon iconType="ARROW_BACK"/>
-        </ma:iconmorph.MaterialIconMorph>
-        
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
-            &lt;/ma:iconmorph.MaterialIconMorph>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Sizes" description="Like Material Icons you can easily adjust the sizes of icons by adding iconSize='SIZE' into your MaterialIconMorph component"/>
-        
-        <!-- Tiny -->
-        <ma:iconmorph.MaterialIconMorph iconSize="TINY">
-            <m:MaterialIcon iconType="POLYMER"/>
-            <m:MaterialIcon iconType="DONE"/>
-        </ma:iconmorph.MaterialIconMorph>
-
-        <!-- Small -->
-        <ma:iconmorph.MaterialIconMorph iconSize="SMALL">
-            <m:MaterialIcon iconType="POLYMER"/>
-            <m:MaterialIcon iconType="DONE"/>
-        </ma:iconmorph.MaterialIconMorph>
-
-        <!-- Medium -->
-        <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
-            <m:MaterialIcon iconType="POLYMER"/>
-            <m:MaterialIcon iconType="DONE"/>
-        </ma:iconmorph.MaterialIconMorph>
-
-        <!-- Large -->
-        <ma:iconmorph.MaterialIconMorph iconSize="LARGE">
-            <m:MaterialIcon iconType="POLYMER"/>
-            <m:MaterialIcon iconType="DONE"/>
-        </ma:iconmorph.MaterialIconMorph>
-        
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="TINY"><br/>
-            &emsp;&lt;m:MaterialIcon iconType="POLYMER"/><br/>
-            &emsp;&lt;m:MaterialIcon iconType="DONE"/><br/>
-            &lt;/ma:iconmorph.MaterialIconMorph><br/>
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
+                &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
+                &lt;/ma:iconmorph.MaterialIconMorph>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
+                <m:MaterialIcon iconType="MENU"/>
+                <m:MaterialIcon iconType="ARROW_BACK"/>
+            </ma:iconmorph.MaterialIconMorph>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="MEDIUM"><br/>
+                &emsp;&lt;m:MaterialIcon iconType="MENU"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="ARROW_BACK"/><br/>
+                &lt;/ma:iconmorph.MaterialIconMorph>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Sizes" description="Like Material Icons you can easily adjust the sizes of icons by adding iconSize='SIZE' into your MaterialIconMorph component"/>
+            
+            <!-- Tiny -->
+            <ma:iconmorph.MaterialIconMorph iconSize="TINY">
+                <m:MaterialIcon iconType="POLYMER"/>
+                <m:MaterialIcon iconType="DONE"/>
+            </ma:iconmorph.MaterialIconMorph>
+    
+            <!-- Small -->
+            <ma:iconmorph.MaterialIconMorph iconSize="SMALL">
+                <m:MaterialIcon iconType="POLYMER"/>
+                <m:MaterialIcon iconType="DONE"/>
+            </ma:iconmorph.MaterialIconMorph>
+    
+            <!-- Medium -->
+            <ma:iconmorph.MaterialIconMorph iconSize="MEDIUM">
+                <m:MaterialIcon iconType="POLYMER"/>
+                <m:MaterialIcon iconType="DONE"/>
+            </ma:iconmorph.MaterialIconMorph>
+    
+            <!-- Large -->
+            <ma:iconmorph.MaterialIconMorph iconSize="LARGE">
+                <m:MaterialIcon iconType="POLYMER"/>
+                <m:MaterialIcon iconType="DONE"/>
+            </ma:iconmorph.MaterialIconMorph>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:iconmorph.MaterialIconMorph iconSize="TINY"><br/>
+                &emsp;&lt;m:MaterialIcon iconType="POLYMER"/><br/>
+                &emsp;&lt;m:MaterialIcon iconType="DONE"/><br/>
+                &lt;/ma:iconmorph.MaterialIconMorph><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

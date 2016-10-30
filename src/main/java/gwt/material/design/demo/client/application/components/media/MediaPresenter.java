@@ -54,6 +54,6 @@ public class MediaPresenter extends Presenter<MediaPresenter.MyView, MediaPresen
         super.onReveal();
 
         SetPageTitleEvent.fire("Media", "Media components include things that have to do with " +
-            "large media objects like Images, Video, Audio, etc.", this);
+            "large media objects like Images, Video, Audio, etc.", "components/media/MediaView", this);
     }
 }

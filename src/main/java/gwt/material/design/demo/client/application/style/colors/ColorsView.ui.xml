@@ -24,357 +24,362 @@
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
-    <m:MaterialTitle title="Usage" description="Here is a backgroundColor palette based on the material design base backgroundColors. Each of these backgroundColors is defined with a base backgroundColor class and an optional lighten or darken class." />
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12 m3" addStyleNames="center-align">
-        <m:MaterialLabel text="Background backgroundColor" fontSize="2em" />
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m9" addStyleNames="left-align">
-        <m:MaterialLabel
-            text="To apply a background backgroundColor, just add the backgroundColor name and light/darkness as a class to the element." />
-        <m.html:Br/>
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2" textAlign="CENTER" shadow="1">
-          <m.html:Br/>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Usage" description="Here is a backgroundColor palette based on the material design base backgroundColors. Each of these backgroundColors is defined with a base backgroundColor class and an optional lighten or darken class." />
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12 m3" addStyleNames="center-align">
+          <m:MaterialLabel text="Background backgroundColor" fontSize="2em" />
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m9" addStyleNames="left-align">
           <m:MaterialLabel
-              text="This is a Material Panel with a TEAL_LIGHTEN_2 class" />
+              text="To apply a background backgroundColor, just add the backgroundColor name and light/darkness as a class to the element." />
           <m.html:Br/>
-        </m:MaterialPanel>
-        <g:HTMLPanel>
-          <m.html:Br/>
-          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2">
-            &emsp;&lt;m:MaterialLabel text="This is a Material Panel with a TEAL_LIGHTEN_2 class" />
-            &lt;/m:MaterialPanel>
-          </demo:PrettyPre>
-        </g:HTMLPanel>
-      </m:MaterialColumn>
-      <m.html:Br/>
-    </m:MaterialRow>
-    <m:MaterialRow>
-      <m:MaterialColumn grid="s12 m3" addStyleNames="center-align">
-        <m:MaterialLabel text="Text backgroundColor" fontSize="2em" />
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m9" addStyleNames="left-align">
-        <m:MaterialLabel text="To apply a text backgroundColor, just append -text to the backgroundColor class like this:" />
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2" textAlign="CENTER" shadow="1">
+            <m.html:Br/>
+            <m:MaterialLabel
+                text="This is a Material Panel with a TEAL_LIGHTEN_2 class" />
+            <m.html:Br/>
+          </m:MaterialPanel>
+          <g:HTMLPanel>
+            <m.html:Br/>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+              &emsp;&lt;m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2">
+              &emsp;&lt;m:MaterialLabel text="This is a Material Panel with a TEAL_LIGHTEN_2 class" />
+              &lt;/m:MaterialPanel>
+            </demo:PrettyPre>
+          </g:HTMLPanel>
+        </m:MaterialColumn>
         <m.html:Br/>
-        <m:MaterialPanel textColor="BLUE_DARKEN_2" textAlign="CENTER" shadow="1">
+      </m:MaterialRow>
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12 m3" addStyleNames="center-align">
+          <m:MaterialLabel text="Text backgroundColor" fontSize="2em" />
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m9" addStyleNames="left-align">
+          <m:MaterialLabel text="To apply a text backgroundColor, just append -text to the backgroundColor class like this:" />
           <m.html:Br/>
-          <m:MaterialLabel text="This is a Material Panel with dark BLUE text" />
+          <m:MaterialPanel textColor="BLUE_DARKEN_2" textAlign="CENTER" shadow="1">
+            <m.html:Br/>
+            <m:MaterialLabel text="This is a Material Panel with dark BLUE text" />
+            <m.html:Br/>
+          </m:MaterialPanel>
           <m.html:Br/>
-        </m:MaterialPanel>
+          <g:HTMLPanel>
+            <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+              &emsp;&lt;m:MaterialPanel backgroundColor="BLUE-text text-darken-2" textAlign="CENTER">
+              &emsp;&lt;m:MaterialLabel text="This is a Material Panel with dark BLUE text" />
+              &lt;m:MaterialPanel>
+            </demo:PrettyPre>
+          </g:HTMLPanel>
+        </m:MaterialColumn>
         <m.html:Br/>
-        <g:HTMLPanel>
-          <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialPanel backgroundColor="BLUE-text text-darken-2" textAlign="CENTER">
-            &emsp;&lt;m:MaterialLabel text="This is a Material Panel with dark BLUE text" />
-            &lt;m:MaterialPanel>
-          </demo:PrettyPre>
-        </g:HTMLPanel>
-      </m:MaterialColumn>
+      </m:MaterialRow>
+    </m:MaterialRow>
+    
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="BackgroundColor Palette"/>
+      <m:MaterialRow addStyleNames="dynamic-backgroundColor">
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="RED_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#ffebee RED_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffcdd2 RED_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ef9a9a RED_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#e57373 RED_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ef5350 RED_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED"><m.html:Br/><m:MaterialLabel text="#f44336 RED" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e53935 RED_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d32f2f RED_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c62828 RED_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#b71c1c RED_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff8a80 RED_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff5252 RED_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff1744 RED_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="RED_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#d50000 RED_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="PINK_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fce4ec PINK_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f8bbd0 PINK_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#f48fb1 PINK_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#f06292 PINK_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ec407a PINK_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK"><m.html:Br/><m:MaterialLabel text="#e91e63 PINK" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d81b60 PINK_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c2185b PINK_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ad1457 PINK_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#880e4f PINK_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff80ab PINK_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff4081 PINK_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#f50057 PINK_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PINK_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#c51162 PINK_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f3e5f5 PURPLE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#e1bee7 PURPLE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ce93d8 PURPLE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ba68c8 PURPLE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ab47bc PURPLE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE"><m.html:Br/><m:MaterialLabel text="#9c27b0 PURPLE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#8e24aa PURPLE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#7b1fa2 PURPLE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#6a1b9a PURPLE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4a148c PURPLE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ea80fc PURPLE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#e040fb PURPLE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#d500f9 PURPLE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="PURPLE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#aa00ff PURPLE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#ede7f6 DEEP_PURPLE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#d1c4e9 DEEP_PURPLE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#b39ddb DEEP_PURPLE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#9575cd DEEP_PURPLE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#7e57c2 DEEP_PURPLE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE"><m.html:Br/><m:MaterialLabel text="#673ab7 DEEP_PURPLE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#5e35b1 DEEP_PURPLE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#512da8 DEEP_PURPLE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4527a0 DEEP_PURPLE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#311b92 DEEP_PURPLE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#b388ff DEEP_PURPLE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#7c4dff DEEP_PURPLE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#651fff DEEP_PURPLE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#6200ea DEEP_PURPLE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e8eaf6 INDIGO_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#c5cae9 INDIGO_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#9fa8da INDIGO_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#7986cb INDIGO_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#5c6bc0 INDIGO_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO"><m.html:Br/><m:MaterialLabel text="#3f51b5 INDIGO" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#3949ab INDIGO_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#303f9f INDIGO_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#283593 INDIGO_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1a237e INDIGO_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#8c9eff INDIGO_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#536dfe INDIGO_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#3d5afe INDIGO_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="INDIGO_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#304ffe INDIGO_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e3f2fd BLUE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#bbdefb BLUE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#90caf9 BLUE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#64b5f6 BLUE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#42a5f5 BLUE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE"><m.html:Br/><m:MaterialLabel text="#2196f3 BLUE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1e88e5 BLUE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1976d2 BLUE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1565c0 BLUE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0d47a1 BLUE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#82b1ff BLUE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#448aff BLUE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#2979ff BLUE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#2962ff BLUE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e1f5fe LIGHT_BLUE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b3e5fc LIGHT_BLUE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#81d4fa LIGHT_BLUE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4fc3f7 LIGHT_BLUE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#29b6f6 LIGHT_BLUE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE"><m.html:Br/><m:MaterialLabel text="#03a9f4 LIGHT_BLUE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#039be5 LIGHT_BLUE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0288d1 LIGHT_BLUE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0277bd LIGHT_BLUE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#01579b LIGHT_BLUE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#80d8ff LIGHT_BLUE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#40c4ff LIGHT_BLUE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00b0ff LIGHT_BLUE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#0091ea LIGHT_BLUE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e0f7fa CYAN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b2ebf2 CYAN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#80deea CYAN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4dd0e1 CYAN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#26c6da CYAN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN"><m.html:Br/><m:MaterialLabel text="#00bcd4 CYAN" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00acc1 CYAN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0097a7 CYAN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00838f CYAN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#006064 CYAN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#84ffff CYAN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#18ffff CYAN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00e5ff CYAN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="CYAN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00b8d4 CYAN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e0f2f1 TEAL_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b2dfdb TEAL_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#80cbc4 TEAL_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4db6ac TEAL_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#26a69a TEAL_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL"><m.html:Br/><m:MaterialLabel text="#009688 TEAL" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00897b TEAL_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00796b TEAL_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00695c TEAL_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#004d40 TEAL_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#a7ffeb TEAL_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#64ffda TEAL_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#1de9b6 TEAL_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TEAL_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00bfa5 TEAL_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e8f5e9 GREEN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#c8e6c9 GREEN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#a5d6a7 GREEN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#81c784 GREEN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#66bb6a GREEN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN"><m.html:Br/><m:MaterialLabel text="#4caf50 GREEN" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#43a047 GREEN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#388e3c GREEN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#2e7d32 GREEN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1b5e20 GREEN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#b9f6ca GREEN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#69f0ae GREEN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00e676 GREEN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREEN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00c853 GREEN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f1f8e9 LIGHTE_GREEN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#dcedc8 LIGHTE_GREEN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#c5e1a5 LIGHTE_GREEN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#aed581 LIGHTE_GREEN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#9ccc65 LIGHTE_GREEN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN"><m.html:Br/><m:MaterialLabel text="#8bc34a LIGHTE_GREEN" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#7cb342 LIGHTE_GREEN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#689f38 LIGHTE_GREEN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#558b2f LIGHTE_GREEN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#33691e LIGHTE_GREEN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ccff90 LIGHTE_GREEN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#b2ff59 LIGHTE_GREEN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#76ff03 LIGHTE_GREEN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#64dd17 LIGHTE_GREEN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="LIME_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f9fbe7 LIME_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f0f4c3 LIME_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#e6ee9c LIME_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#dce775 LIME_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#d4e157 LIME_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME"><m.html:Br/><m:MaterialLabel text="#cddc39 LIME" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c0ca33 LIME_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#afb42b LIME_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#9e9d24 LIME_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#827717 LIME_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#f4ff81 LIME_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#eeff41 LIME_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#c6ff00 LIME_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="LIME_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#aeea00 LIME_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fffde7 YELLOW_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#fff9c4 YELLOW_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#fff59d YELLOW_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#fff176 YELLOW_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffee58 YELLOW_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW"><m.html:Br/><m:MaterialLabel text="#ffeb3b YELLOW" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fdd835 YELLOW_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fbc02d YELLOW_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f9a825 YELLOW_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f57f17 YELLOW_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffff8d YELLOW_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffff00 YELLOW_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ffea00 YELLOW_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="YELLOW_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ffd600 YELLOW_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fff8e1 AMBER_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffecb3 AMBER_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffe082 AMBER_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ffd54f AMBER_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffca28 AMBER_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER"><m.html:Br/><m:MaterialLabel text="#ffc107 AMBER" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ffb300 AMBER_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ffa000 AMBER_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ff8f00 AMBER_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ff6f00 AMBER_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffe57f AMBER_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffd740 AMBER_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ffc400 AMBER_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="AMBER_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ffab00 AMBER_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fff3e0 ORANGE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffe0b2 ORANGE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffcc80 ORANGE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ffb74d ORANGE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffa726 ORANGE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE"><m.html:Br/><m:MaterialLabel text="#ff9800 ORANGE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fb8c00 ORANGE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f57c00 ORANGE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ef6c00 ORANGE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e65100 ORANGE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffd180 ORANGE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffab40 ORANGE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff9100 ORANGE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="ORANGE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ff6d00 ORANGE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fbe9e7 DEEP_ORANGE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffccbc DEEP_ORANGE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffab91 DEEP_ORANGE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ff8a65 DEEP_ORANGE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ff7043 DEEP_ORANGE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE"><m.html:Br/><m:MaterialLabel text="#ff5722 DEEP_ORANGE" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f4511e DEEP_ORANGE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e64a19 DEEP_ORANGE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d84315 DEEP_ORANGE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#bf360c DEEP_ORANGE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff9e80 DEEP_ORANGE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff6e40 DEEP_ORANGE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff3d00 DEEP_ORANGE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#dd2c00 DEEP_ORANGE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#efebe9 BROWN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#d7ccc8 BROWN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#bcaaa4 BROWN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#a1887f BROWN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#8d6e63 BROWN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN"><m.html:Br/><m:MaterialLabel text="#795548 BROWN" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#6d4c41 BROWN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#5d4037 BROWN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4e342e BROWN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BROWN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#3e2723 BROWN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="GREY_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fafafa GREY_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f5f5f5 GREY_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#eeeeee GREY_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#e0e0e0 GREY_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#bdbdbd GREY_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY"><m.html:Br/><m:MaterialLabel text="#9e9e9e GREY" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#757575 GREY_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#616161 GREY_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#424242 GREY_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="GREY_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#212121 GREY_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+      </m:MaterialRow>
       <m.html:Br/>
-    </m:MaterialRow>
-    <m:MaterialTitle title="backgroundColor Palette"/>
-    <m:MaterialRow addStyleNames="dynamic-backgroundColor">
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="RED_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#ffebee RED_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffcdd2 RED_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ef9a9a RED_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#e57373 RED_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ef5350 RED_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED"><m.html:Br/><m:MaterialLabel text="#f44336 RED" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e53935 RED_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d32f2f RED_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c62828 RED_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#b71c1c RED_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff8a80 RED_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff5252 RED_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff1744 RED_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="RED_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#d50000 RED_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="PINK_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fce4ec PINK_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f8bbd0 PINK_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#f48fb1 PINK_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#f06292 PINK_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ec407a PINK_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK"><m.html:Br/><m:MaterialLabel text="#e91e63 PINK" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d81b60 PINK_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c2185b PINK_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ad1457 PINK_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#880e4f PINK_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff80ab PINK_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff4081 PINK_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#f50057 PINK_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PINK_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#c51162 PINK_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f3e5f5 PURPLE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#e1bee7 PURPLE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ce93d8 PURPLE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ba68c8 PURPLE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ab47bc PURPLE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE"><m.html:Br/><m:MaterialLabel text="#9c27b0 PURPLE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#8e24aa PURPLE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#7b1fa2 PURPLE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#6a1b9a PURPLE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4a148c PURPLE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ea80fc PURPLE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#e040fb PURPLE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#d500f9 PURPLE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="PURPLE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#aa00ff PURPLE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#ede7f6 DEEP_PURPLE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#d1c4e9 DEEP_PURPLE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#b39ddb DEEP_PURPLE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#9575cd DEEP_PURPLE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#7e57c2 DEEP_PURPLE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE"><m.html:Br/><m:MaterialLabel text="#673ab7 DEEP_PURPLE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#5e35b1 DEEP_PURPLE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#512da8 DEEP_PURPLE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4527a0 DEEP_PURPLE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#311b92 DEEP_PURPLE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#b388ff DEEP_PURPLE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#7c4dff DEEP_PURPLE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#651fff DEEP_PURPLE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_PURPLE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#6200ea DEEP_PURPLE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e8eaf6 INDIGO_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#c5cae9 INDIGO_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#9fa8da INDIGO_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#7986cb INDIGO_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#5c6bc0 INDIGO_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO"><m.html:Br/><m:MaterialLabel text="#3f51b5 INDIGO" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#3949ab INDIGO_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#303f9f INDIGO_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#283593 INDIGO_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1a237e INDIGO_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#8c9eff INDIGO_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#536dfe INDIGO_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#3d5afe INDIGO_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="INDIGO_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#304ffe INDIGO_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e3f2fd BLUE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#bbdefb BLUE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#90caf9 BLUE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#64b5f6 BLUE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#42a5f5 BLUE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE"><m.html:Br/><m:MaterialLabel text="#2196f3 BLUE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1e88e5 BLUE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1976d2 BLUE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1565c0 BLUE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0d47a1 BLUE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#82b1ff BLUE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#448aff BLUE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#2979ff BLUE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#2962ff BLUE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e1f5fe LIGHT_BLUE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b3e5fc LIGHT_BLUE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#81d4fa LIGHT_BLUE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4fc3f7 LIGHT_BLUE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#29b6f6 LIGHT_BLUE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE"><m.html:Br/><m:MaterialLabel text="#03a9f4 LIGHT_BLUE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#039be5 LIGHT_BLUE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0288d1 LIGHT_BLUE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0277bd LIGHT_BLUE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#01579b LIGHT_BLUE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#80d8ff LIGHT_BLUE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#40c4ff LIGHT_BLUE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00b0ff LIGHT_BLUE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_BLUE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#0091ea LIGHT_BLUE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e0f7fa CYAN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b2ebf2 CYAN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#80deea CYAN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4dd0e1 CYAN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#26c6da CYAN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN"><m.html:Br/><m:MaterialLabel text="#00bcd4 CYAN" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00acc1 CYAN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#0097a7 CYAN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00838f CYAN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#006064 CYAN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#84ffff CYAN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#18ffff CYAN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00e5ff CYAN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="CYAN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00b8d4 CYAN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e0f2f1 TEAL_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#b2dfdb TEAL_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#80cbc4 TEAL_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#4db6ac TEAL_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#26a69a TEAL_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL"><m.html:Br/><m:MaterialLabel text="#009688 TEAL" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00897b TEAL_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00796b TEAL_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#00695c TEAL_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#004d40 TEAL_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#a7ffeb TEAL_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#64ffda TEAL_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#1de9b6 TEAL_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TEAL_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00bfa5 TEAL_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#e8f5e9 GREEN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#c8e6c9 GREEN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#a5d6a7 GREEN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#81c784 GREEN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#66bb6a GREEN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN"><m.html:Br/><m:MaterialLabel text="#4caf50 GREEN" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#43a047 GREEN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#388e3c GREEN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#2e7d32 GREEN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#1b5e20 GREEN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#b9f6ca GREEN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#69f0ae GREEN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#00e676 GREEN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREEN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#00c853 GREEN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f1f8e9 LIGHTE_GREEN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#dcedc8 LIGHTE_GREEN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#c5e1a5 LIGHTE_GREEN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#aed581 LIGHTE_GREEN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#9ccc65 LIGHTE_GREEN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN"><m.html:Br/><m:MaterialLabel text="#8bc34a LIGHTE_GREEN" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#7cb342 LIGHTE_GREEN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#689f38 LIGHTE_GREEN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#558b2f LIGHTE_GREEN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#33691e LIGHTE_GREEN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ccff90 LIGHTE_GREEN_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#b2ff59 LIGHTE_GREEN_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#76ff03 LIGHTE_GREEN_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIGHT_GREEN_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#64dd17 LIGHTE_GREEN_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="LIME_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#f9fbe7 LIME_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f0f4c3 LIME_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#e6ee9c LIME_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#dce775 LIME_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#d4e157 LIME_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME"><m.html:Br/><m:MaterialLabel text="#cddc39 LIME" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#c0ca33 LIME_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#afb42b LIME_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#9e9d24 LIME_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#827717 LIME_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#f4ff81 LIME_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#eeff41 LIME_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#c6ff00 LIME_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="LIME_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#aeea00 LIME_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fffde7 YELLOW_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#fff9c4 YELLOW_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#fff59d YELLOW_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#fff176 YELLOW_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffee58 YELLOW_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW"><m.html:Br/><m:MaterialLabel text="#ffeb3b YELLOW" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fdd835 YELLOW_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fbc02d YELLOW_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f9a825 YELLOW_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f57f17 YELLOW_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffff8d YELLOW_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffff00 YELLOW_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ffea00 YELLOW_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="YELLOW_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ffd600 YELLOW_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fff8e1 AMBER_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffecb3 AMBER_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffe082 AMBER_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ffd54f AMBER_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffca28 AMBER_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER"><m.html:Br/><m:MaterialLabel text="#ffc107 AMBER" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ffb300 AMBER_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ffa000 AMBER_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ff8f00 AMBER_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ff6f00 AMBER_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffe57f AMBER_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffd740 AMBER_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ffc400 AMBER_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="AMBER_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ffab00 AMBER_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fff3e0 ORANGE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffe0b2 ORANGE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffcc80 ORANGE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ffb74d ORANGE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ffa726 ORANGE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE"><m.html:Br/><m:MaterialLabel text="#ff9800 ORANGE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#fb8c00 ORANGE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f57c00 ORANGE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#ef6c00 ORANGE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e65100 ORANGE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ffd180 ORANGE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ffab40 ORANGE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff9100 ORANGE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="ORANGE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#ff6d00 ORANGE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fbe9e7 DEEP_ORANGE_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#ffccbc DEEP_ORANGE_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#ffab91 DEEP_ORANGE_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#ff8a65 DEEP_ORANGE_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#ff7043 DEEP_ORANGE_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE"><m.html:Br/><m:MaterialLabel text="#ff5722 DEEP_ORANGE" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#f4511e DEEP_ORANGE_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#e64a19 DEEP_ORANGE_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#d84315 DEEP_ORANGE_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#bf360c DEEP_ORANGE_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_1"><m.html:Br/><m:MaterialLabel text="#ff9e80 DEEP_ORANGE_ACCENT_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_2"><m.html:Br/><m:MaterialLabel text="#ff6e40 DEEP_ORANGE_ACCENT_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_3"><m.html:Br/><m:MaterialLabel text="#ff3d00 DEEP_ORANGE_ACCENT_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="DEEP_ORANGE_ACCENT_4"><m.html:Br/><m:MaterialLabel text="#dd2c00 DEEP_ORANGE_ACCENT_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#efebe9 BROWN_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#d7ccc8 BROWN_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#bcaaa4 BROWN_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#a1887f BROWN_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#8d6e63 BROWN_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN"><m.html:Br/><m:MaterialLabel text="#795548 BROWN" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#6d4c41 BROWN_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#5d4037 BROWN_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#4e342e BROWN_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BROWN_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#3e2723 BROWN_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#fafafa GREY_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#f5f5f5 GREY_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#eeeeee GREY_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#e0e0e0 GREY_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#bdbdbd GREY_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY"><m.html:Br/><m:MaterialLabel text="#9e9e9e GREY" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#757575 GREY_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#616161 GREY_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#424242 GREY_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="GREY_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#212121 GREY_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-    </m:MaterialRow>
-    <m.html:Br/>
-    <m:MaterialRow addStyleNames="dynamic-backgroundColor">
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#eceff1 BLUE_GREY_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#cfd8dc BLUE_GREY_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#b0bec5 BLUE_GREY_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#90a4ae BLUE_GREY_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#78909c BLUE_GREY_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY"><m.html:Br/><m:MaterialLabel text="#607d8b BLUE_GREY" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#546e7a BLUE_GREY_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#455a64 BLUE_GREY_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#37474f BLUE_GREY_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#263238 BLUE_GREY_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
-      <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
-        <m:MaterialPanel backgroundColor="BLACK" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#000000 black" addStyleNames="white-text"/><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="WHITE"><m.html:Br/><m:MaterialLabel text="#ffffff white"/><m.html:Br/></m:MaterialPanel>
-        <m:MaterialPanel backgroundColor="TRANSPARENT"><m.html:Br/><m:MaterialLabel text="N/A transparent" /><m.html:Br/></m:MaterialPanel>
-      </m:MaterialColumn>
+      <m:MaterialRow addStyleNames="dynamic-backgroundColor">
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_5"><m.html:Br/><m:MaterialLabel text="#eceff1 BLUE_GREY_LIGHTEN_5" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_4"><m.html:Br/><m:MaterialLabel text="#cfd8dc BLUE_GREY_LIGHTEN_4" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_3"><m.html:Br/><m:MaterialLabel text="#b0bec5 BLUE_GREY_LIGHTEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_2"><m.html:Br/><m:MaterialLabel text="#90a4ae BLUE_GREY_LIGHTEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_LIGHTEN_1"><m.html:Br/><m:MaterialLabel text="#78909c BLUE_GREY_LIGHTEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY"><m.html:Br/><m:MaterialLabel text="#607d8b BLUE_GREY" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_1" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#546e7a BLUE_GREY_DARKEN_1" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_2" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#455a64 BLUE_GREY_DARKEN_2" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_3" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#37474f BLUE_GREY_DARKEN_3" /><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="BLUE_GREY_DARKEN_4" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#263238 BLUE_GREY_DARKEN_4" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m6 l4" addStyleNames="center-align">
+          <m:MaterialPanel backgroundColor="BLACK" addStyleNames="backgroundColor=rgba(255, 255, 255, 0.901961);"><m.html:Br/><m:MaterialLabel text="#000000 black" addStyleNames="white-text"/><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="WHITE"><m.html:Br/><m:MaterialLabel text="#ffffff white"/><m.html:Br/></m:MaterialPanel>
+          <m:MaterialPanel backgroundColor="TRANSPARENT"><m.html:Br/><m:MaterialLabel text="N/A transparent" /><m.html:Br/></m:MaterialPanel>
+        </m:MaterialColumn>
+      </m:MaterialRow>
     </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>

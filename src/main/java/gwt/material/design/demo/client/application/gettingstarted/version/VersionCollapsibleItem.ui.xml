@@ -30,14 +30,20 @@
 				<m:MaterialLabel ui:field="lblDate" fontSize="0.9em" textColor="GREY" />
 			</m:MaterialColumn>
 			<m:MaterialColumn grid="l6 m6 s7">
-				<m:MaterialColumn grid="l4 m4 s4">
+				<m:MaterialColumn grid="l2 m2 s2">
 					<m:MaterialAnchorButton ui:field="btnCore" type="FLOATING" iconType="POLYMER" backgroundColor="DEEP_ORANGE"  opacity="1"/>
 				</m:MaterialColumn>
-				<m:MaterialColumn grid="l4 m4 s4">
+				<m:MaterialColumn grid="l2 m2 s2">
 					<m:MaterialAnchorButton ui:field="btnAddins" type="FLOATING" iconType="EXTENSION" backgroundColor="DEEP_ORANGE"  opacity="1"/>
 				</m:MaterialColumn>
-				<m:MaterialColumn grid="l4 m4 s4">
+				<m:MaterialColumn grid="l2 m2 s2">
 					<m:MaterialAnchorButton ui:field="btnThemes" type="FLOATING" iconType="PALETTE" backgroundColor="DEEP_ORANGE"  opacity="1"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l2 m2 s2">
+					<m:MaterialAnchorButton ui:field="btnJQuery" type="FLOATING" iconType="ATTACH_MONEY" backgroundColor="DEEP_ORANGE"  opacity="1"/>
+				</m:MaterialColumn>
+				<m:MaterialColumn grid="l2 m2 s2">
+					<m:MaterialAnchorButton ui:field="btnTable" type="FLOATING" iconType="LIST" backgroundColor="DEEP_ORANGE"  opacity="1"/>
 				</m:MaterialColumn>
 			</m:MaterialColumn>
 		</m:MaterialRow>

@@ -23,84 +23,94 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
-    <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
-    <m:MaterialRow>
-      <m:MaterialChip text="Default" iconType="CLOSE"/>
-      <m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
-      <m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
-      <m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
-      <m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
+      <m:MaterialRow>
+        <m:MaterialChip text="Default" iconType="CLOSE"/>
+        <m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
+        <m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
+        <m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
+        <m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip text="Default" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip text="Default" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
-    <m:MaterialRow>
-      <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
-      <m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
-      <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
-      <m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
+      <m:MaterialRow>
+        <m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+        <m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+        <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+        <m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+      </m:MaterialRow>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-    
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>
-    <m:MaterialRow>
-      <m:MaterialChip text="Apple" />
-      <m:MaterialChip text="Banana" />
-      <m:MaterialChip text="Mango" />
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>
+      <m:MaterialRow>
+        <m:MaterialChip text="Apple" />
+        <m:MaterialChip text="Banana" />
+        <m:MaterialChip text="Mango" />
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip text="Apple" /><br/>
+        &lt;m:MaterialChip text="Banana" /><br/>
+        &lt;m:MaterialChip text="Mango" /><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip text="Apple" /><br/>
-      &lt;m:MaterialChip text="Banana" /><br/>
-      &lt;m:MaterialChip text="Mango" /><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contactâ€™s name, sees the contactâ€™s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
-    <m:MaterialRow>
-      <m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
-      <m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
-      <m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contactâ€™s name, sees the contactâ€™s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
+      <m:MaterialRow>
+        <m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        <m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
+        <m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
-    <m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
-    <m:MaterialChip ui:field="chipClick" text="Click Me" />
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
-      &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
-    </demo:PrettyPre>
-    <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-      &emsp;@UiField MaterialChip chip;<br/><br/>
-
-      chip.getIcon().addClickHandler(new ClickHandler() {<br/>
-      @Override<br/>
-      &emsp;public void onClick(ClickEvent event) {<br/>
-      &emsp;&emsp;MaterialToast.fireToast(chip.getText());<br/>
-      &emsp;}<br/>
-      });<br/><br/>
-
-      @UiHandler("chipClick")<br/>
-      void onClickChip(ClickEvent e) {<br/>
-      &emsp;MaterialToast.fireToast("You clicked me");<br/>
-      }
-
-    </demo:PrettyPre>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
+      <m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+      <m:MaterialChip ui:field="chipClick" text="Click Me" />
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
+      </demo:PrettyPre>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiField MaterialChip chip;<br/><br/>
+  
+        chip.getIcon().addClickHandler(new ClickHandler() {<br/>
+        @Override<br/>
+        &emsp;public void onClick(ClickEvent event) {<br/>
+        &emsp;&emsp;MaterialToast.fireToast(chip.getText());<br/>
+        &emsp;}<br/>
+        });<br/><br/>
+  
+        @UiHandler("chipClick")<br/>
+        void onClickChip(ClickEvent e) {<br/>
+        &emsp;MaterialToast.fireToast("You clicked me");<br/>
+        }
+  
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

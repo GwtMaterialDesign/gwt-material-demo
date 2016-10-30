@@ -28,6 +28,7 @@ import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
@@ -57,6 +58,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresenter.MyView {
+    private String link;
+
     interface Binder extends UiBinder<Widget, MenuView> {
     }
 
@@ -67,13 +70,29 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     @UiField MaterialSideNav sideNav;
     @UiField MaterialPanel panel, titlePanel;
     @UiField MaterialLabel title, description;
-    @UiField MaterialAnchorButton btnStarted;
     @UiField MaterialSearch txtSearch;
     @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
+    @UiField MaterialChip chipXml, chipJava;
 
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
+        chipJava.addClickHandler(clickEvent -> {
+            String java = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".java";
+            Window.open(java, "_blank", "");
+        });
+
+        chipXml.getElement().getStyle().setCursor(Style.Cursor.POINTER);
+        chipXml.addClickHandler(clickEvent -> {
+            String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
+            Window.open(xml, "_blank", "");
+        });
+        ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
         sideNav.addHandler(new SideNavPushHandler() {
             @Override
             public void onPush(SideNavPushEvent event) {
@@ -216,9 +235,18 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     }
 
     @Override
-    public void setPageTitle(String title, String description) {
+    public void setPageTitle(String title, String description, String link) {
         this.title.setText(title);
         this.description.setText(description);
+        this.link = link;
+
+        if (link.isEmpty()) {
+            chipJava.setVisible(false);
+            chipXml.setVisible(false);
+        } else {
+            chipJava.setVisible(true);
+            chipXml.setVisible(true);
+        }
 
         MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);
         MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.description, 1000);

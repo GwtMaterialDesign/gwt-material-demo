@@ -27,269 +27,275 @@
     </ui:style>
 
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Introduction" description="You may require to wrap your MaterialSubHeader components to MaterialSubHeaderContainer."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:subheader.MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
-            &emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
-            &emsp;&lt;m:MaterialCollection><br/>
-            &emsp;&emsp;&lt;!-- Collection content --><br/>
-            &emsp;&lt;/m:MaterialCollection><br/>
-            &emsp;&lt;!-- Other SubHeader components here --><br/>
-            &lt;/ma:subheader.MaterialSubHeaderContainer><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Pinned Type" description="This type of container will pinned your subheader items fixed at top when scrolling."/>
-        <m:MaterialRow>
-            <ma:subheader.MaterialSubHeaderContainer shadow="1" height="300px" grid="l6 m6 s12" type="PINNED">
-                <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-                <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-                <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-                <ma:subheader.MaterialSubHeader text="Archived Messages" textColor="PINK"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-            </ma:subheader.MaterialSubHeaderContainer>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
+            </demo:PrettyPre>
+            <m:MaterialTitle title="Introduction" description="You may require to wrap your MaterialSubHeader components to MaterialSubHeaderContainer."/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:subheader.MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
+                &emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
+                &emsp;&lt;m:MaterialCollection><br/>
+                &emsp;&emsp;&lt;!-- Collection content --><br/>
+                &emsp;&lt;/m:MaterialCollection><br/>
+                &emsp;&lt;!-- Other SubHeader components here --><br/>
+                &lt;/ma:subheader.MaterialSubHeaderContainer><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
-        
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialRow><br/>
-            &emsp;&lt;ma:subheader.MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
-            &emsp;&emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
-            &emsp;&emsp;&lt;m:MaterialCollection><br/>
-            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-
-            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-
-            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-
-            &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
-            &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
-            &emsp;&emsp;&lt;/m:MaterialCollection><br/>
-            &emsp;&emsp;&lt;!-- Other subheader and collection components here --><br/>
-            &emsp;&lt;/ma:subheader.MaterialSubHeaderContainer><br/>
-            &lt;/m:MaterialRow><br/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Static Type" description="Static SubHeader Container will have a default behaviour without being pinned at the top of your container."/>
-        <m:MaterialRow>
-            <ma:subheader.MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC">
-                <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-                <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-                <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
-                <m:MaterialCollection>
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-
-                    <m:MaterialCollectionItem type="AVATAR">
-                        <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
-                        <m:MaterialLabel text="Title" fontSize="2em"/>
-                        <m:MaterialLabel text="First Line"/>
-                        <m:MaterialLabel text="Second Line"/>
-                    </m:MaterialCollectionItem>
-                </m:MaterialCollection>
-            </ma:subheader.MaterialSubHeaderContainer>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Pinned Type" description="This type of container will pinned your subheader items fixed at top when scrolling."/>
+            <m:MaterialRow>
+                <ma:subheader.MaterialSubHeaderContainer shadow="1" height="300px" grid="l6 m6 s12" type="PINNED">
+                    <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                    <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                    <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                    <ma:subheader.MaterialSubHeader text="Archived Messages" textColor="PINK"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                </ma:subheader.MaterialSubHeaderContainer>
+            </m:MaterialRow>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialRow><br/>
+                &emsp;&lt;ma:subheader.MaterialSubHeaderContainer shadow="1" height="400px" grid="l6 m6 s12" type="PINNED"><br/>
+                &emsp;&emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
+                &emsp;&emsp;&lt;m:MaterialCollection><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+    
+                &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+    
+                &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+    
+                &emsp;&emsp;&emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialIcon iconType="PLAY_ARROW" iconColor="WHITE" backgroundColor="AMBER" circle="true"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
+                &emsp;&emsp;&emsp;&lt;/m:MaterialCollectionItem><br/>
+                &emsp;&emsp;&lt;/m:MaterialCollection><br/>
+                &emsp;&emsp;&lt;!-- Other subheader and collection components here --><br/>
+                &emsp;&lt;/ma:subheader.MaterialSubHeaderContainer><br/>
+                &lt;/m:MaterialRow><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
-
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialRow><br/>
-            &emsp;&lt;ma:subheader.MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC"><br/>
-            &emsp;&emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
-            &emsp;&lt;/ma:subheader.MaterialSubHeaderContainer><br/>
-            &lt;/m:MaterialRow><br/>
-        </demo:PrettyPre>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Static Type" description="Static SubHeader Container will have a default behaviour without being pinned at the top of your container."/>
+            <m:MaterialRow>
+                <ma:subheader.MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC">
+                    <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                    <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                    <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
+                    <m:MaterialCollection>
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="FOLDER" iconColor="WHITE" backgroundColor="BLUE" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+    
+                        <m:MaterialCollectionItem type="AVATAR">
+                            <m:MaterialIcon iconType="INSERT_CHART" iconColor="WHITE" backgroundColor="RED" circle="true"/>
+                            <m:MaterialLabel text="Title" fontSize="2em"/>
+                            <m:MaterialLabel text="First Line"/>
+                            <m:MaterialLabel text="Second Line"/>
+                        </m:MaterialCollectionItem>
+                    </m:MaterialCollection>
+                </ma:subheader.MaterialSubHeaderContainer>
+            </m:MaterialRow>
+    
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialRow><br/>
+                &emsp;&lt;ma:subheader.MaterialSubHeaderContainer grid="l6 m6 s12" type="STATIC"><br/>
+                &emsp;&emsp;&lt;ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/><br/>
+                &emsp;&lt;/ma:subheader.MaterialSubHeaderContainer><br/>
+                &lt;/m:MaterialRow><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -24,111 +24,118 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <g:HTMLPanel>
-    <m:MaterialTitle title="Collections"/>
-    <m:MaterialCollection>
-      <m:MaterialCollectionItem>
-        <m:MaterialLink text="Sample 1" >
-          <m:MaterialBadge text="1 new" textColor="WHITE"/>
-        </m:MaterialLink>
-      </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem>
-        <m:MaterialLink text="Sample 2" >
-          <m:MaterialBadge text="1 new" textColor="WHITE"/>
-        </m:MaterialLink>
-      </m:MaterialCollectionItem>
-      <m:MaterialCollectionItem><m:MaterialLink text="Collecton 3"/></m:MaterialCollectionItem>
-      <m:MaterialCollectionItem><m:MaterialLink text="Collecton 4"/></m:MaterialCollectionItem>
-    </m:MaterialCollection>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialCollection><br/><br/>
-
-      &emsp;&lt;m:MaterialCollectionItem><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Sample 1" ><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialLink><br/>
-      &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-
-      &emsp;&lt;m:MaterialCollectionItem><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Sample 2" ><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialLink><br/>
-      &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
-
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
-      &lt;/m:MaterialCollection>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Badges in Dropdown"/>
-
-    <!-- Activator -->
-    <m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
-              iconPosition="RIGHT" textColor="WHITE"/>
-    <!-- My Drop Down -->
-    <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
-      <m:MaterialLink text="First" />
-      <m:MaterialLink text="Second" >
-        <m:MaterialBadge text="1 new" textColor="WHITE"/>
-      </m:MaterialLink>
-      <m:MaterialLink text="Third" />
-    </m:MaterialDropDown>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;!-- Activator --><br/>
-      &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/><br/>
-      &lt;!-- My Drop Down --><br/>
-      &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" ><br/>
-      &emsp;&lt;m:MaterialLink text="First" /><br/>
-      &emsp;&lt;m:MaterialLink text="Second" ><br/>
-      &emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
-      &emsp;&lt;/m:MaterialLink><br/>
-      &emsp;&lt;m:MaterialLink text="Third" /><br/>
-      &lt;/m:MaterialDropDown><br/>
-    </demo:PrettyPre>
-
-    <m:MaterialTitle title="Badges in NavBar"/>
-    <m:MaterialNavBar width="100%">
-      <m:MaterialNavSection float="RIGHT">
-        <m:MaterialLink text="Link 1" />
-        <m:MaterialLink text="Link 2">
-          <m:MaterialBadge text="1 new" backgroundColor="RED"/>
-        </m:MaterialLink>
-        <m:MaterialLink text="Link 3" />
-      </m:MaterialNavSection>
-    </m:MaterialNavBar>
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialNavBar><br/>
-      &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Link 2"><br/>
-      &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="red"/><br/>
-      &emsp;&emsp;&lt;/m:MaterialLink><br/>
-      &emsp;&emsp;&lt;m:MaterialLink text="Link 3" /><br/>
-      &emsp;&lt;/m:MaterialNavSection><br/>
-      &lt;/m:MaterialNavBar><br/>
-    </demo:PrettyPre>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Collections"/>
+      <m:MaterialCollection>
+        <m:MaterialCollectionItem>
+          <m:MaterialLink text="Sample 1" >
+            <m:MaterialBadge text="1 new" textColor="WHITE"/>
+          </m:MaterialLink>
+        </m:MaterialCollectionItem>
+        <m:MaterialCollectionItem>
+          <m:MaterialLink text="Sample 2" >
+            <m:MaterialBadge text="1 new" textColor="WHITE"/>
+          </m:MaterialLink>
+        </m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLink text="Collecton 3"/></m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLink text="Collecton 4"/></m:MaterialCollectionItem>
+      </m:MaterialCollection>
   
-    <!-- Circular Badge -->
-    <m:MaterialTitle title="Circular Badge inside Icon Link"/>
-    <m:MaterialNavBar width="100%">
-      <m:MaterialNavSection float="LEFT">
-        <!-- Nav Sections with Badge components beside the icon if any -->
-        <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>
-        <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS" layoutPosition="RELATIVE">
-          <m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialCollection><br/><br/>
+  
+        &emsp;&lt;m:MaterialCollectionItem><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Sample 1" ><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialLink><br/>
+        &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+  
+        &emsp;&lt;m:MaterialCollectionItem><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Sample 2" ><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialLink><br/>
+        &emsp;&lt;/m:MaterialCollectionItem><br/><br/>
+  
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLink text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
+        &lt;/m:MaterialCollection>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Badges in Dropdown"/>
+      <!-- Activator -->
+      <m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN"
+                iconPosition="RIGHT" textColor="WHITE"/>
+      <!-- My Drop Down -->
+      <m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="true">
+        <m:MaterialLink text="First" />
+        <m:MaterialLink text="Second" >
+          <m:MaterialBadge text="1 new" textColor="WHITE"/>
         </m:MaterialLink>
-        <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER" layoutPosition="RELATIVE">
-          <m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
-        </m:MaterialLink>
-      </m:MaterialNavSection>
-    </m:MaterialNavBar>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &emsp;&lt;m:MaterialLink href="#" iconPosition="NONE" iconType="NOTIFICATIONS" layoutPosition="RELATIVE"><br/>
-      &emsp;&lt;m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/><br/>
-      &lt;/m:MaterialLink><br/>
-    </demo:PrettyPre>
+        <m:MaterialLink text="Third" />
+      </m:MaterialDropDown>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;!-- Activator --><br/>
+        &lt;m:MaterialButton activates="dp-4" text="Dropdown" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/><br/>
+        &lt;!-- My Drop Down --><br/>
+        &lt;m:MaterialDropDown activator="dp-4" belowOrigin="false" constrainWidth="false" ><br/>
+        &emsp;&lt;m:MaterialLink text="First" /><br/>
+        &emsp;&lt;m:MaterialLink text="Second" ><br/>
+        &emsp;&emsp;&lt;m:MaterialBadge text="1 new" textColor="WHITE"/><br/>
+        &emsp;&lt;/m:MaterialLink><br/>
+        &emsp;&lt;m:MaterialLink text="Third" /><br/>
+        &lt;/m:MaterialDropDown><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Badges in NavBar"/>
+      <m:MaterialNavBar width="100%">
+        <m:MaterialNavSection float="RIGHT">
+          <m:MaterialLink text="Link 1" />
+          <m:MaterialLink text="Link 2">
+            <m:MaterialBadge text="1 new" backgroundColor="RED"/>
+          </m:MaterialLink>
+          <m:MaterialLink text="Link 3" />
+        </m:MaterialNavSection>
+      </m:MaterialNavBar>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialNavBar><br/>
+        &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 1" /><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 2"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialBadge text="1 new" backgroundColor="red"/><br/>
+        &emsp;&emsp;&lt;/m:MaterialLink><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Link 3" /><br/>
+        &emsp;&lt;/m:MaterialNavSection><br/>
+        &lt;/m:MaterialNavBar><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <!-- Circular Badge -->
+      <m:MaterialTitle title="Circular Badge inside Icon Link"/>
+      <m:MaterialNavBar width="100%">
+        <m:MaterialNavSection float="LEFT">
+          <!-- Nav Sections with Badge components beside the icon if any -->
+          <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>
+          <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS" layoutPosition="RELATIVE">
+            <m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+          </m:MaterialLink>
+          <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="BOOKMARK_BORDER" layoutPosition="RELATIVE">
+            <m:MaterialBadge text="21" backgroundColor="PINK" textColor="WHITE" circle="true"/>
+          </m:MaterialLink>
+        </m:MaterialNavSection>
+      </m:MaterialNavBar>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialLink href="#" iconPosition="NONE" iconType="NOTIFICATIONS" layoutPosition="RELATIVE"><br/>
+        &emsp;&lt;m:MaterialBadge text="2" backgroundColor="PINK" textColor="WHITE" circle="true"/><br/>
+        &lt;/m:MaterialLink><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 
 </ui:UiBinder>

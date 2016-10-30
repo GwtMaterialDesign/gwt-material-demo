@@ -54,6 +54,6 @@ public class DropdownPresenter extends Presenter<DropdownPresenter.MyView, Dropd
         super.onReveal();
 
         SetPageTitleEvent.fire("Dropdown", "You can add dropdown easily by specifying it's" +
-            " item content and add a UiHandler on it to implement any event.", this);
+            " item content and add a UiHandler on it to implement any event.", "components/dropdown/DropdownView", this);
     }
 }

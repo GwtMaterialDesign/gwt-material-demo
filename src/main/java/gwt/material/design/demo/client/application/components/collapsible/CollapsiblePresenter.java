@@ -55,6 +55,6 @@ public class CollapsiblePresenter extends Presenter<CollapsiblePresenter.MyView,
 
         SetPageTitleEvent.fire("Collapsibles", "Collapsibles are accordion elements that " +
             "expand when clicked on. They allow you to hide content that is not immediately " +
-            "relevant to the user.", this);
+            "relevant to the user.", "components/collapsible/CollapsibleView", this);
     }
 }

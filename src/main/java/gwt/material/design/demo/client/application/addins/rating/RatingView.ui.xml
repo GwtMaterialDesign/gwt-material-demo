@@ -23,46 +23,58 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage" description=" By default, it uses the IconType#STAR to represent the selected rating, but other icons can be set using the #setSelectedRatingIcon(IconType) method."/>
-        <ma:rating.MaterialRating   textColor="AMBER"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:rating.MaterialRating />
-        </demo:PrettyPre>
-        
-        <m:MaterialTitle title="Setting icon" description="Tip: Refer to Material Design icons for having a pair for rating icons (e.g FAVORITE (selected) and FAVORITE_BORDER (unselected)" />
-        <ma:rating.MaterialRating selectedRatingIcon="FAVORITE" unselectedRatingIcon="FAVORITE_BORDER" textColor="PINK"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:rating.MaterialRating selectedRatingIcon="FAVORITE" unselectedRatingIcon="FAVORITE_BORDER" textColor="red"/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Value Change Handler" description="You can get the value of the rating." />
-        <ma:rating.MaterialRating ui:field="rating" textColor="AMBER"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiHandler("rating")<br/>
-            void onRate(ValueChangeEvent&lt;Integer> event) {<br/>
-                MaterialToast.fireToast(event.getValue() + " Rate value");<br/>
-            }
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Setting value" description="You can set the default current rate by calling setValue(value, fire events)" />
-        <ma:rating.MaterialRating textColor="AMBER" value="3"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:rating.MaterialRating textColor="AMBER" value="3"/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Editable" description="You can turn on / off the editable feature of rating" />
-        <ma:rating.MaterialRating textColor="AMBER" value="2" editable="false" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:rating.MaterialRating textColor="AMBER" value="2" editable="false" />
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Max Rating" description="You can set the max rating by adding maxRating attribute." />
-        <ma:rating.MaterialRating textColor="AMBER" maxRating="10" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &lt;ma:rating.MaterialRating textColor="AMBER" maxRating="10" />
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" description=" By default, it uses the IconType#STAR to represent the selected rating, but other icons can be set using the #setSelectedRatingIcon(IconType) method."/>
+            <ma:rating.MaterialRating   textColor="AMBER"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:rating.MaterialRating />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Setting icon" description="Tip: Refer to Material Design icons for having a pair for rating icons (e.g FAVORITE (selected) and FAVORITE_BORDER (unselected)" />
+            <ma:rating.MaterialRating selectedRatingIcon="FAVORITE" unselectedRatingIcon="FAVORITE_BORDER" textColor="PINK"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:rating.MaterialRating selectedRatingIcon="FAVORITE" unselectedRatingIcon="FAVORITE_BORDER" textColor="red"/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Value Change Handler" description="You can get the value of the rating." />
+            <ma:rating.MaterialRating ui:field="rating" textColor="AMBER"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler("rating")<br/>
+                void onRate(ValueChangeEvent&lt;Integer> event) {<br/>
+                    MaterialToast.fireToast(event.getValue() + " Rate value");<br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Setting value" description="You can set the default current rate by calling setValue(value, fire events)" />
+            <ma:rating.MaterialRating textColor="AMBER" value="3"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:rating.MaterialRating textColor="AMBER" value="3"/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Editable" description="You can turn on / off the editable feature of rating" />
+            <ma:rating.MaterialRating textColor="AMBER" value="2" editable="false" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:rating.MaterialRating textColor="AMBER" value="2" editable="false" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Max Rating" description="You can set the max rating by adding maxRating attribute." />
+            <ma:rating.MaterialRating textColor="AMBER" maxRating="10" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:rating.MaterialRating textColor="AMBER" maxRating="10" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

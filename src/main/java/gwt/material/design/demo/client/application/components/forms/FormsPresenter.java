@@ -51,6 +51,6 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
 
         SetPageTitleEvent.fire("Forms", "Forms are the standard way to receive user inputted data. " +
             "The transitions and smoothness of these elements are very important because of the inherent " +
-            "user interaction associated with forms.", this);
+            "user interaction associated with forms.", "components/forms/FormsView", this);
     }
 }

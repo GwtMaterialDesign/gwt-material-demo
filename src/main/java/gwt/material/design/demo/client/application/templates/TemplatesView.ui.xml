@@ -23,7 +23,7 @@
 
     <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources" />
 
-    <m:MaterialRow>
+    <m:MaterialRow marginTop="60">
         <m:MaterialColumn grid="l4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT">

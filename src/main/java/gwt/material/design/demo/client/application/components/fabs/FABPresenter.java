@@ -53,7 +53,7 @@ public class FABPresenter extends Presenter<FABPresenter.MyView, FABPresenter.My
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("FAB", "FAB or Floating action buttons are used for a promoted action. They are distinguished by a circled icon floating above the UI and have motion behaviors that include morphing, launching, and a transferring anchor point.", this);
+        SetPageTitleEvent.fire("FAB", "FAB or Floating action buttons are used for a promoted action. They are distinguished by a circled icon floating above the UI and have motion behaviors that include morphing, launching, and a transferring anchor point.", "components/fabs/FABView", this);
     }
 
 }

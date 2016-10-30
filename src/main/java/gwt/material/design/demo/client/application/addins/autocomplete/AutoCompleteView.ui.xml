@@ -25,125 +25,143 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
              xmlns:m.demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
-
-        <m:MaterialTitle title="Usage" />
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:autocomplete.MaterialAutoComplete placeholder="Contacts"/>
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Autocomplete" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="s12 m12 l6">
-                <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
-            </m:MaterialColumn>
+        
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:autocomplete.MaterialAutoComplete placeholder="Contacts"/>
+            </demo:PrettyPre>
         </m:MaterialRow>
+    
+        <g:HTMLPanel addStyleNames="code">
+            <m:MaterialTitle title="Autocomplete" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m12 l6">
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
 
-        <blockquote >
-            <p>You can click the chips to select it.</p>
-            <p>Perform any keyboard actions like pressing KEY DELETE and KEY BACKSPACE to remove it from the autocomplete values</p>
-            <p>By calling automcomplte.getItemValues() you will retrieve all the items that is currently on the Autocomplete Field</p>
-            <p>If the value is already exist, we automatically remove it when adding</p>
-            <p>You can add an unknown value by typing new one then PRESS ENTER</p>
-            <p>To disable , add enabled="false" parameter on the autocomplete widget</p>
-        </blockquote>
-
-        <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="BLUE"/>
-        <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="BLACK" backgroundColor="WHITE"/>
-
-        <m.demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiField MaterialAutoComplete acList; <br/><br/>
-
-            UserOracle oracle = new UserOracle();<br/>
-            oracle.addContacts(getAllUsers());<br/>
-            acList.setSuggestions(oracle);
-        </m.demo:PrettyPre>
-
-        <m:MaterialTitle title="Gist Files" description="With the given example, we use UserOracle, User and UserSuggestion in order to build the Autocomplete more flexible." />
-        <m:MaterialAnchorButton text="Link to Gist" textColor="WHITE" target="_blank" href="https://gist.github.com/kevzlou7979/dfb18c003513311345e53af7253b1e39" />
-
-        <m:MaterialTitle title="Get all Selected Items" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;public List&lt;User> getSelectedUsers() {<br/>
-            &emsp;List&lt;? extends SuggestOracle.Suggestion> values = acList.getValue();<br/>
-            &emsp;List&lt;User> users = new ArrayList&lt;>(values.size());<br/>
-            &emsp;for(SuggestOracle.Suggestion value : values){<br/>
-            &emsp;&emsp;if(value instanceof UserSuggestion){<br/>
-            &emsp;&emsp;&emsp;UserSuggestion us = (UserSuggestion) value;<br/>
-            &emsp;&emsp;&emsp;User user = us.getUser();<br/>
-            &emsp;&emsp;&emsp;users.add(user);<br/>
-            &emsp;&emsp;}<br/>
-            &emsp;}<br/>
-            &emsp;return users;<br/>
-            }
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Events" description="You can easily add Value Change Event and Selection Event on autocomplete component."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;acList.addSelectionHandler(new SelectionHandler&lt;SuggestOracle.Suggestion>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onSelection(SelectionEvent&lt;SuggestOracle.Suggestion> event) {<br/>
-            &emsp;&emsp;MaterialToast.fireToast(event.getSelectedItem().getDisplayString() + " Selected");<br/>
-            &emsp;}<br/>
-            });<br/><br/>
-            acList.addValueChangeHandler(new ValueChangeHandler&lt;List&lt;? extends SuggestOracle.Suggestion>>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;public void onValueChange(ValueChangeEvent&lt;List&lt;? extends SuggestOracle.Suggestion>> event) {<br/>
-            &emsp;&emsp;for(SuggestOracle.Suggestion user : event.getValue()){<br/>
-            &emsp;&emsp;&emsp;MaterialToast.fireToast(user.getDisplayString());<br/>
-            &emsp;&emsp;}<br/>
-            &emsp;}<br/>
-            });
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Clearing Items on Autocomplete" description="You can easily clear the Autocomplete List Items by calling autocomlete.clear()"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;acList.clear();
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Type TEXT" description="Type TEXT is just an alternative for combo box component."/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="s12 m12 l6">
-                <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" />
-            </m:MaterialColumn>
+            <blockquote >
+                <p>You can click the chips to select it.</p>
+                <p>Perform any keyboard actions like pressing KEY DELETE and KEY BACKSPACE to remove it from the autocomplete values</p>
+                <p>By calling automcomplte.getItemValues() you will retrieve all the items that is currently on the Autocomplete Field</p>
+                <p>If the value is already exist, we automatically remove it when adding</p>
+                <p>You can add an unknown value by typing new one then PRESS ENTER</p>
+                <p>To disable , add enabled="false" parameter on the autocomplete widget</p>
+            </blockquote>
+    
+            <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="BLUE"/>
+            <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="BLACK" backgroundColor="WHITE"/>
+    
+            <m.demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiField MaterialAutoComplete acList; <br/><br/>
+    
+                UserOracle oracle = new UserOracle();<br/>
+                oracle.addContacts(getAllUsers());<br/>
+                acList.setSuggestions(oracle);
+            </m.demo:PrettyPre>
+        </g:HTMLPanel>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Gist Files" description="With the given example, we use UserOracle, User and UserSuggestion in order to build the Autocomplete more flexible." />
+            <m:MaterialAnchorButton text="Link to Gist" textColor="WHITE" target="_blank" href="https://gist.github.com/kevzlou7979/dfb18c003513311345e53af7253b1e39" />
         </m:MaterialRow>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:autocomplete.MaterialAutoComplete type="TEXT" limit="1" placeholder="States" />
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Limiting Items" description="You can limit the autocomplete items by adding limit='2' attribute."/>
-        <m:MaterialRow>
-            <m:MaterialColumn grid="s12 m12 l6">
-                <ma:autocomplete.MaterialAutoComplete ui:field="acListLimit" limit="3" placeholder="Contacts" />
-            </m:MaterialColumn>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Get all Selected Items" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;public List&lt;User> getSelectedUsers() {<br/>
+                &emsp;List&lt;? extends SuggestOracle.Suggestion> values = acList.getValue();<br/>
+                &emsp;List&lt;User> users = new ArrayList&lt;>(values.size());<br/>
+                &emsp;for(SuggestOracle.Suggestion value : values){<br/>
+                &emsp;&emsp;if(value instanceof UserSuggestion){<br/>
+                &emsp;&emsp;&emsp;UserSuggestion us = (UserSuggestion) value;<br/>
+                &emsp;&emsp;&emsp;User user = us.getUser();<br/>
+                &emsp;&emsp;&emsp;users.add(user);<br/>
+                &emsp;&emsp;}<br/>
+                &emsp;}<br/>
+                &emsp;return users;<br/>
+                }
+            </demo:PrettyPre>
         </m:MaterialRow>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:autocomplete.MaterialAutoComplete limit="3" placeholder="States" />
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Inside Modal" description="You can build your overlay inside the modal" />
-        <m:MaterialButton ui:field="btnOpenModal" text="Open Modal" textColor="WHITE" waves="DEFAULT"/>
-        <m:MaterialModal ui:field="modal">
-            <m:MaterialModalContent>
-                <m:MaterialTitle title="Select contacts" description="Some description here..."/>
-                <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/>
-            </m:MaterialModalContent>
-            <m:MaterialModalFooter textAlign="RIGHT">
-                <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/>
-            </m:MaterialModalFooter>
-        </m:MaterialModal>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;m:MaterialModal ui:field="modal"><br/>
-            &emsp;&lt;m:MaterialModalContent><br/>
-            &emsp;&lt;m:MaterialTitle title="Select contacts" description="Some description here..."/><br/>
-            &emsp;&lt;ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/><br/>
-            &emsp;&lt;/m:MaterialModalContent><br/>
-            &emsp;&lt;m:MaterialModalFooter textAlign="RIGHT"><br/>
-            &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/><br/>
-            &emsp;&lt;/m:MaterialModalFooter><br/>
-            &lt;/m:MaterialModal><br/>
-        </demo:PrettyPre>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Events" description="You can easily add Value Change Event and Selection Event on autocomplete component."/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;acList.addSelectionHandler(new SelectionHandler&lt;SuggestOracle.Suggestion>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onSelection(SelectionEvent&lt;SuggestOracle.Suggestion> event) {<br/>
+                &emsp;&emsp;MaterialToast.fireToast(event.getSelectedItem().getDisplayString() + " Selected");<br/>
+                &emsp;}<br/>
+                });<br/><br/>
+                acList.addValueChangeHandler(new ValueChangeHandler&lt;List&lt;? extends SuggestOracle.Suggestion>>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;public void onValueChange(ValueChangeEvent&lt;List&lt;? extends SuggestOracle.Suggestion>> event) {<br/>
+                &emsp;&emsp;for(SuggestOracle.Suggestion user : event.getValue()){<br/>
+                &emsp;&emsp;&emsp;MaterialToast.fireToast(user.getDisplayString());<br/>
+                &emsp;&emsp;}<br/>
+                &emsp;}<br/>
+                });
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Clearing Items on Autocomplete" description="You can easily clear the Autocomplete List Items by calling autocomlete.clear()"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;acList.clear();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Type TEXT" description="Type TEXT is just an alternative for combo box component."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m12 l6">
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:autocomplete.MaterialAutoComplete type="TEXT" limit="1" placeholder="States" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Limiting Items" description="You can limit the autocomplete items by adding limit='2' attribute."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m12 l6">
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acListLimit" limit="3" placeholder="Contacts" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:autocomplete.MaterialAutoComplete limit="3" placeholder="States" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Inside Modal" description="You can build your overlay inside the modal" />
+            <m:MaterialButton ui:field="btnOpenModal" text="Open Modal" textColor="WHITE" waves="DEFAULT"/>
+            <m:MaterialModal ui:field="modal">
+                <m:MaterialModalContent>
+                    <m:MaterialTitle title="Select contacts" description="Some description here..."/>
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/>
+                </m:MaterialModalContent>
+                <m:MaterialModalFooter textAlign="RIGHT">
+                    <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/>
+                </m:MaterialModalFooter>
+            </m:MaterialModal>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialModal ui:field="modal"><br/>
+                &emsp;&lt;m:MaterialModalContent><br/>
+                &emsp;&lt;m:MaterialTitle title="Select contacts" description="Some description here..."/><br/>
+                &emsp;&lt;ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/><br/>
+                &emsp;&lt;/m:MaterialModalContent><br/>
+                &emsp;&lt;m:MaterialModalFooter textAlign="RIGHT"><br/>
+                &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/><br/>
+                &emsp;&lt;/m:MaterialModalFooter><br/>
+                &lt;/m:MaterialModal><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

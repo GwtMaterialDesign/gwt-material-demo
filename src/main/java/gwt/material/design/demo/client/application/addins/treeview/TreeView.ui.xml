@@ -29,120 +29,133 @@
         }
     </ui:style>
     <m:MaterialPanel>
-        <m:MaterialTitle title="Usage"/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- Addin Import --><br/>
-            xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
-            &lt;!-- Addin Usage --><br/>
-            &lt;ma:tree.MaterialTree ui:field="docTree"><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents" /><br/>
-            &lt;/ma:tree.MaterialTree><br/>
-        </demo:PrettyPre>
-        <m:MaterialTitle title="Introduction" description="Tree View component requires MaterialTree and MaterialTreeItem to build the component."/>
-        <m:MaterialRow>
-            <m:MaterialColumn shadow="1" padding="0" grid="l4 m6 s12" height="500px" overflow="AUTO">
-                <m:MaterialPanel ui:field="titlePanel" padding="8" height="40px">
-                    <m:MaterialLabel text="FOLDERS" textColor="WHITE" fontWeight="BOLD" float="LEFT"/>
-                    <m:MaterialIcon ui:field="btnCollapse" tooltip="Collapse" iconType="VERTICAL_ALIGN_CENTER" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnExpand" tooltip="Expand" iconType="ZOOM_OUT_MAP" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnDelete" visible="false" tooltip="Delete" iconType="DELETE" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
-                    <m:MaterialIcon ui:field="btnAdd" visible="false" tooltip="Add" iconType="ADD" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT" />
-                </m:MaterialPanel>
-                <ma:tree.MaterialTree ui:field="docTree">
-                    <ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents">
-                        <ma:tree.MaterialTreeItem iconType="IMAGE" text="Images">
-                            <ma:tree.MaterialTreeItem resource="{res.flash}" text="flash.jpg" />
-                            <ma:tree.MaterialTreeItem resource="{res.superman}" text="superman.jpg" />
-                            <ma:tree.MaterialTreeItem resource="{res.batman}" text="batman.jpg" />
-                        </ma:tree.MaterialTreeItem>
-                        <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" text="Videos">
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Animations">
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/>
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/>
-                                <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/>
-                            </ma:tree.MaterialTreeItem>
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Tutorials" />
-                            <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Funny" />
-                        </ma:tree.MaterialTreeItem>
-                    </ma:tree.MaterialTreeItem>
-                    <ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" text="ShaRED Document" />
-                    <ma:tree.MaterialTreeItem iconType="FOLDER" text="Trash" />
-                </ma:tree.MaterialTree>
-            </m:MaterialColumn>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- Addin Import --><br/>
+                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                &lt;!-- Addin Usage --><br/>
+                &lt;ma:tree.MaterialTree ui:field="docTree"><br/>
+                &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents" /><br/>
+                &lt;/ma:tree.MaterialTree><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
-
-        <ma:overlay.MaterialOverlay ui:field="addOverlay" width="400px" padding="20" height="150px" visibility="HIDDEN" opacity="0" shadow="2" backgroundColor="WHITE" addStyleNames="{style.overlay}">
-            <m:MaterialTextBox ui:field="txtName" placeholder="Folder Name"/>
-            <m:MaterialRow>
-                <m:MaterialButton ui:field="btnFinish" text="Add" type="FLAT" float="RIGHT"/>
-                <m:MaterialButton ui:field="btnCancel" text="Cancel" type="FLAT" float="RIGHT"/>
-            </m:MaterialRow>
-        </ma:overlay.MaterialOverlay>
-
-        <m:MaterialTitle title="Markup" description="MaterialTree must have only MaterialTreeItem children to create the tree view component."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;ma:tree.MaterialTree ui:field="docTree"><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents"><br/>
-            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="IMAGE" text="Images"><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.flash}" text="flash.jpg" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.superman}" text="superman.jpg" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.batman}" text="batman.jpg" /><br/>
-            &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEO_COLLECTION" text="Videos"><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Animations"><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/><br/>
-            &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/><br/>
-            &emsp;&emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Tutorials" /><br/>
-            &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Funny" /><br/>
-            &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&lt;/ma:tree.MaterialTreeItem><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" text="ShaRED Document" /><br/>
-            &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Trash" /><br/>
-            &lt;/ma:tree.MaterialTree><br/>
-        </demo:PrettyPre>
-        
-        <m:MaterialTitle title="Open / Close Handlers" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;docTree.addCloseHandler(new CloseHandler&lt;MaterialTreeItem>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;&emsp;public void onClose(CloseEvent&lt;MaterialTreeItem> event) {<br/>
-            &emsp;&emsp;// event.getTraget() returns MaterialTreeItem<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Closed : " + event.getTarget().getText());<br/>
-            &emsp;}<br/>
-            });<br/><br/>
     
-            docTree.addOpenHandler(new OpenHandler&lt;MaterialTreeItem>() {<br/>
-            &emsp;@Override<br/>
-            &emsp;&emsp;public void onOpen(OpenEvent&lt;MaterialTreeItem> event) {<br/>
-            &emsp;&emsp;// event.getTraget() returns MaterialTreeItem<br/>
-            &emsp;&emsp;MaterialToast.fireToast("Opened : " + event.getTarget().getText());<br/>
-            &emsp;}<br/>
-            });
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Collapse / Expand Handlers"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;@UiHandler("btnCollapse")<br/>
-            void onCollapseTree(ClickEvent e) {<br/>
-            &emsp;docTree.collapse();<br/>
-            }<br/><br/>
-
-            @UiHandler("btnExpand")<br/>
-            void onExpandTree(ClickEvent e) {<br/>
-            &emsp;docTree.expand();<br/>
-            }
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Add/Remove/Insert methods" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            // For adding an item<br/>
-            docTree.getSelectedItem().addItem(item);<br/><br/>
-            // For removing an item<br/>
-            docTree.getSelectedItem().removeItem(item);<br/><br/>
-            // For inserting an item<br/>
-            docTree.getSelectedItem().insertItem(item, 3);<br/>
-        </demo:PrettyPre>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Introduction" description="Tree View component requires MaterialTree and MaterialTreeItem to build the component."/>
+            <m:MaterialRow>
+                <m:MaterialColumn shadow="1" padding="0" grid="l4 m6 s12" height="500px" overflow="AUTO">
+                    <m:MaterialPanel ui:field="titlePanel" padding="8" height="40px">
+                        <m:MaterialLabel text="FOLDERS" textColor="WHITE" fontWeight="BOLD" float="LEFT"/>
+                        <m:MaterialIcon ui:field="btnCollapse" tooltip="Collapse" iconType="VERTICAL_ALIGN_CENTER" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                        <m:MaterialIcon ui:field="btnExpand" tooltip="Expand" iconType="ZOOM_OUT_MAP" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                        <m:MaterialIcon ui:field="btnDelete" visible="false" tooltip="Delete" iconType="DELETE" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
+                        <m:MaterialIcon ui:field="btnAdd" visible="false" tooltip="Add" iconType="ADD" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT" />
+                    </m:MaterialPanel>
+                    <ma:tree.MaterialTree ui:field="docTree">
+                        <ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents">
+                            <ma:tree.MaterialTreeItem iconType="IMAGE" text="Images">
+                                <ma:tree.MaterialTreeItem resource="{res.flash}" text="flash.jpg" />
+                                <ma:tree.MaterialTreeItem resource="{res.superman}" text="superman.jpg" />
+                                <ma:tree.MaterialTreeItem resource="{res.batman}" text="batman.jpg" />
+                            </ma:tree.MaterialTreeItem>
+                            <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" text="Videos">
+                                <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Animations">
+                                    <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/>
+                                    <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/>
+                                    <ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/>
+                                </ma:tree.MaterialTreeItem>
+                                <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Tutorials" />
+                                <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Funny" />
+                            </ma:tree.MaterialTreeItem>
+                        </ma:tree.MaterialTreeItem>
+                        <ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" text="ShaRED Document" />
+                        <ma:tree.MaterialTreeItem iconType="FOLDER" text="Trash" />
+                    </ma:tree.MaterialTree>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+    
+            <ma:overlay.MaterialOverlay ui:field="addOverlay" width="400px" padding="20" height="150px" visibility="HIDDEN" opacity="0" shadow="2" backgroundColor="WHITE" addStyleNames="{style.overlay}">
+                <m:MaterialTextBox ui:field="txtName" placeholder="Folder Name"/>
+                <m:MaterialRow>
+                    <m:MaterialButton ui:field="btnFinish" text="Add" type="FLAT" float="RIGHT"/>
+                    <m:MaterialButton ui:field="btnCancel" text="Cancel" type="FLAT" float="RIGHT"/>
+                </m:MaterialRow>
+            </ma:overlay.MaterialOverlay>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Markup" description="MaterialTree must have only MaterialTreeItem children to create the tree view component."/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:tree.MaterialTree ui:field="docTree"><br/>
+                &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents"><br/>
+                &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="IMAGE" text="Images"><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.flash}" text="flash.jpg" /><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.superman}" text="superman.jpg" /><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem resource="{res.batman}" text="batman.jpg" /><br/>
+                &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
+                &emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEO_COLLECTION" text="Videos"><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Animations"><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_1.png"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_2.png"/><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="VIDEOCAM" iconColor="RED" text="video_3.png"/><br/>
+                &emsp;&emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Tutorials" /><br/>
+                &emsp;&emsp;&emsp;&lt;ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Funny" /><br/>
+                &emsp;&emsp;&lt;/ma:tree.MaterialTreeItem><br/>
+                &emsp;&lt;/ma:tree.MaterialTreeItem><br/>
+                &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER_SHARED" text="ShaRED Document" /><br/>
+                &emsp;&lt;ma:tree.MaterialTreeItem iconType="FOLDER" text="Trash" /><br/>
+                &lt;/ma:tree.MaterialTree><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Open / Close Handlers" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;docTree.addCloseHandler(new CloseHandler&lt;MaterialTreeItem>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;&emsp;public void onClose(CloseEvent&lt;MaterialTreeItem> event) {<br/>
+                &emsp;&emsp;// event.getTraget() returns MaterialTreeItem<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Closed : " + event.getTarget().getText());<br/>
+                &emsp;}<br/>
+                });<br/><br/>
+        
+                docTree.addOpenHandler(new OpenHandler&lt;MaterialTreeItem>() {<br/>
+                &emsp;@Override<br/>
+                &emsp;&emsp;public void onOpen(OpenEvent&lt;MaterialTreeItem> event) {<br/>
+                &emsp;&emsp;// event.getTraget() returns MaterialTreeItem<br/>
+                &emsp;&emsp;MaterialToast.fireToast("Opened : " + event.getTarget().getText());<br/>
+                &emsp;}<br/>
+                });
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Collapse / Expand Handlers"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler("btnCollapse")<br/>
+                void onCollapseTree(ClickEvent e) {<br/>
+                &emsp;docTree.collapse();<br/>
+                }<br/><br/>
+    
+                @UiHandler("btnExpand")<br/>
+                void onExpandTree(ClickEvent e) {<br/>
+                &emsp;docTree.expand();<br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Add/Remove/Insert methods" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                // For adding an item<br/>
+                docTree.getSelectedItem().addItem(item);<br/><br/>
+                // For removing an item<br/>
+                docTree.getSelectedItem().removeItem(item);<br/><br/>
+                // For inserting an item<br/>
+                docTree.getSelectedItem().insertItem(item, 3);<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

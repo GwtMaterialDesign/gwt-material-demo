@@ -54,6 +54,6 @@ public class ShadowPresenter extends Presenter<ShadowPresenter.MyView, ShadowPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Shadow",
-                "By importing another project called gwt-material-themes, you can now easily integrate it and make your app more professional with branding identity.", this);
+                "By importing another project called gwt-material-themes, you can now easily integrate it and make your app more professional with branding identity.", "", this);
     }
 }

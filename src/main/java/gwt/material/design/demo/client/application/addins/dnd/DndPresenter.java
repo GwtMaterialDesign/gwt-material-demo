@@ -52,7 +52,7 @@ public class DndPresenter extends Presenter<DndPresenter.MyView, DndPresenter.My
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Drag and Drop", "Provides a delightful dragging capability.", this);
+        SetPageTitleEvent.fire("Drag and Drop", "Provides a delightful dragging capability.", "addins/dnd/DndView", this);
     }
 }
 

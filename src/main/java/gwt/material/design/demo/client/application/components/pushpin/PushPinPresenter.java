@@ -56,7 +56,7 @@ public class PushPinPresenter extends Presenter<PushPinPresenter.MyView, PushPin
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Push Pin", "Pushpin is our fixed positioning plugin. You can check out our live examples: the fixed Table of Contents on the right.", this);
+        SetPageTitleEvent.fire("Push Pin", "Pushpin is our fixed positioning plugin. You can check out our live examples: the fixed Table of Contents on the right.", "components/pushpin/PushPinView", this);
     }
 
 }

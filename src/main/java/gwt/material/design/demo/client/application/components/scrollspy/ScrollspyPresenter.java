@@ -56,6 +56,6 @@ public class ScrollspyPresenter extends Presenter<ScrollspyPresenter.MyView, Scr
         SetPageTitleEvent.fire("Scrollspy", "Scrollspy is a jQuery plugin that tracks certain elements " +
             "and which element the user's screen is currently centered on. Our main demo of this is our " +
             "table of contents on every documentation page to the right. Clicking on these links will also " +
-            "scroll the page to that element.", this);
+            "scroll the page to that element.", "components/scrollspy/Scrollsp", this);
     }
 }

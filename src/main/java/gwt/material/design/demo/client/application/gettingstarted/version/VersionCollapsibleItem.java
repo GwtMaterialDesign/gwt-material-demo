@@ -47,7 +47,7 @@ public class VersionCollapsibleItem extends Composite {
 	MaterialCollapsibleItem colapsItem;
 
 	@UiField
-	MaterialAnchorButton btnCore, btnAddins, btnThemes;
+	MaterialAnchorButton btnCore, btnAddins, btnThemes, btnTable, btnJQuery;
 
 	public VersionCollapsibleItem(Version version, int index) {
 		initWidget(uiBinder.createAndBindUi(this));
@@ -56,6 +56,8 @@ public class VersionCollapsibleItem extends Composite {
 		btnCore.setBackgroundColor(version.getColor());
 		btnAddins.setBackgroundColor(version.getColor());
 		btnThemes.setBackgroundColor(version.getColor());
+		btnTable.setBackgroundColor(version.getColor());
+		btnJQuery.setBackgroundColor(version.getColor());
 		this.version = version;
 		if(version.getLinkCore() == null){
 			btnCore.setEnabled(false);
@@ -74,6 +76,18 @@ public class VersionCollapsibleItem extends Composite {
 		}else{
 			btnThemes.setHref(version.getLinkThemes());
 			btnThemes.setTarget("_blank");
+		}
+		if(version.getLinkJQuery() == null) {
+			btnJQuery.setEnabled(false);
+		}else{
+			btnJQuery.setHref(version.getLinkJQuery());
+			btnJQuery.setTarget("_blank");
+		}
+		if(version.getLinkTable() == null) {
+			btnTable.setEnabled(false);
+		}else{
+			btnTable.setHref(version.getLinkTable());
+			btnTable.setTarget("_blank");
 		}
 		if(index % 2 == 0){
 			colapsItem.setBackgroundColor(Color.GREY_LIGHTEN_4);

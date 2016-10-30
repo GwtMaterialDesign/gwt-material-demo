@@ -28,26 +28,28 @@
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
     <g:HTMLPanel>
-        <m:MaterialTitle title="Usage" description=""/>
-        <m:MaterialPanel ui:field="panel" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialScrollfire.apply(panel.getElement(), () -> { <br/>
-            &emsp;MaterialToast.fireToast("Toasted"); <br/>
-            }); <br/>
-            MaterialScrollfire.apply(listContainer.getElement(), () -> { <br/>
-            &emsp;MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0); <br/>
-            }); <br/>
-            MaterialScrollfire.apply(image.getElement(), () -> { <br/>
-            &emsp;MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0); <br/>
-            });
-        </demo:PrettyPre>
-        <m.html:UnorderedList ui:field="listContainer">
-            <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-            <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-            <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-            <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
-        </m.html:UnorderedList>
-
-        <m:MaterialImage opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" description=""/>
+            <m:MaterialPanel ui:field="panel" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialScrollfire.apply(panel.getElement(), () -> { <br/>
+                &emsp;MaterialToast.fireToast("Toasted"); <br/>
+                }); <br/>
+                MaterialScrollfire.apply(listContainer.getElement(), () -> { <br/>
+                &emsp;MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0); <br/>
+                }); <br/>
+                MaterialScrollfire.apply(image.getElement(), () -> { <br/>
+                &emsp;MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0); <br/>
+                });
+            </demo:PrettyPre>
+            <m.html:UnorderedList ui:field="listContainer">
+                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+                <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
+            </m.html:UnorderedList>
+    
+            <m:MaterialImage opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

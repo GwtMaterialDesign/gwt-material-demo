@@ -26,23 +26,26 @@
 
   </ui:style>
   <m:MaterialRow>
-    <m:MaterialTitle title="Basic"/>
-    <m:MaterialCollection>
-      <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
-      <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
-      <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
-      <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
-    </m:MaterialCollection>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-      &lt;m:MaterialCollection><br/>
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
-      &lt;/m:MaterialCollection><br/>
-    </demo:PrettyPre>
-
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Basic"/>
+      <m:MaterialCollection>
+        <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
+      </m:MaterialCollection>
+  
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialCollection><br/>
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem><br/>
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem><br/>
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
+        &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
+        &lt;/m:MaterialCollection><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Preselection"/>
     <m:MaterialCollection active="1">
       <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
@@ -51,7 +54,7 @@
       <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
     </m:MaterialCollection>
     
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection active="1"><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem><br/>
@@ -59,7 +62,9 @@
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Header"/>
     <m:MaterialCollection header="Header Title" active="2">
       <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
@@ -67,8 +72,8 @@
       <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
       <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
     </m:MaterialCollection>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+  
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection header="Header Title" active="2">
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem><br/>
@@ -76,7 +81,9 @@
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 4"/>&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Secondary Content"/>
     <m:MaterialCollection header="Header Title" >
       <m:MaterialCollectionItem>
@@ -108,7 +115,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection header="Header Title" ><br/>
       &emsp;&lt;m:MaterialCollectionItem><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Collecton 1"/><br/>
@@ -120,7 +127,9 @@
       &emsp;&lt;-- Other collection items here --><br/>
       &lt;/m:MaterialCollection>
     </demo:PrettyPre>
-    
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Avatar"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR">
@@ -151,8 +160,8 @@
         <m:MaterialLabel text="Second Line"/>
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
-
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+  
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
@@ -163,7 +172,9 @@
       &emsp;&lt;-- Other collection items here --><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Dismissable"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
@@ -195,7 +206,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
@@ -206,7 +217,9 @@
       &emsp;&lt;-- Other Collection items here -->
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-    
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="3 line item"/>
     <m:MaterialCollection >
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
@@ -247,7 +260,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection ><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
@@ -260,7 +273,9 @@
       &emsp;&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-    
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="2 line item"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
@@ -270,7 +285,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
@@ -279,7 +294,9 @@
       &emsp;&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="2 line item, long paragraph (see on mobile)"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
@@ -294,7 +311,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
       &emsp;&emsp;&lt;m:MaterialImage url="https://material.angularjs.org/latest/img/list/60.jpeg" type="CIRCLE"/><br/>
@@ -308,7 +325,9 @@
       &emsp;&lt;/m:MaterialCollectionItem><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Single Action Checkboxes"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="CHECKBOX" waves="DEFAULT">
@@ -337,7 +356,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="CHECKBOX" waves="DEFAULT"><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Item 1"/><br/>
@@ -348,7 +367,9 @@
       &emsp;&lt;-- Other collection items here --><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
-
+  </m:MaterialRow>
+  
+  <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Clickable Items with Secondary Controls"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT">
@@ -371,7 +392,7 @@
       </m:MaterialCollectionItem>
     </m:MaterialCollection>
 
-    <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+    <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem ui:field="collectWifi" type="CHECKBOX" waves="DEFAULT"><br/>
       &emsp;&emsp;&lt;m:MaterialLink text="Wifi" iconPosition="LEFT" iconType="NETWORK_WIFI" iconColor="WHITE" textColor="BLACK"/><br/>
@@ -382,5 +403,6 @@
       &emsp;&lt;-- Other Collection items here --><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
+  </m:MaterialRow>
   </m:MaterialRow>
 </ui:UiBinder>

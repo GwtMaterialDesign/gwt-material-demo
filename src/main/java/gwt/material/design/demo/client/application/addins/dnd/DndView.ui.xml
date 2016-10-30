@@ -23,195 +23,215 @@
              xmlns:m.addins="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-        <m:MaterialTitle title="Introduction" />
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
-            <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="Default" fontSize="1.5em"/>
-            </m:MaterialPanel>
-
-            <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="With Inertia" fontSize="1.5em"/>
-            </m:MaterialPanel>
-
-            <m:MaterialPanel ui:field="endOnlyPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="End Only" fontSize="1.5em"/>
-            </m:MaterialPanel>
-
-            <m:MaterialPanel ui:field="selfRestrict" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="Self Restrict" fontSize="1.5em"/>
-            </m:MaterialPanel>
-
-            <m:MaterialPanel ui:field="restrictPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="Rect Restrict" fontSize="1.5em"/>
-            </m:MaterialPanel>
-        </m:MaterialPanel>
-
-        <m:MaterialTitle title="Default" />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd.draggable(panel);
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="With Inertia" description="Inertia allows drag and resize actions to coninue after the user releases the pointer at a fast enough speed. The required launch speed, end speed and resistance can optionally be configured with the settings below"/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd.draggable(woInertialPanel, JsDragOptions.create(false));
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="End Only" description="The endOnly option is used to restrict the widget around the corners of it's parent "/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;Restriction restriction = new Restriction();<br/>
-            restriction.setEndOnly(false);<br/>
-            MaterialDnd.draggable(endOnlyPanel, JsDragOptions.create(restriction));
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Restriction" description="The restriction value specifies the area that the action will be confined to. "/>
-        <m:MaterialTitle title="Self Restrict" description="With this option , It will only restrict the target on itself. By Default without this option will restrict to it's parent."/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;Restriction restriction1 = new Restriction();<br/>
-            restriction1.setRestriction(Restriction.Restrict.SELF);<br/>
-            MaterialDnd.draggable(selfRestrict, JsDragOptions.create(restriction1));
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Specific Properties" description="For the left and right properties, 0 means the left edge of the element and 1 means the right edge. For top and bottom, 0 means the top edge of the element and 1 means the bottom." />
-        <m:MaterialLabel text="On the example above, { top: 0.25, left: 0.25, bottom: 0.75, right: 0.75 } would result in a quarter of the element being allowed to hang over the restriction edges." />
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;Restriction restriction2 = new Restriction();<br/>
-            restriction2.setTop(0.25);<br/>
-            restriction2.setLeft(0.25);<br/>
-            restriction2.setRight(0.75);<br/>
-            restriction2.setBottom(0.75);<br/><br/>
-            MaterialDnd.draggable(restrictPanel, JsDragOptions.create(restriction2));
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Events" />
-        <m:MaterialPanel padding="10" backgroundColor="GREY_LIGHTEN_4">
-            <m:MaterialPanel ui:field="eventPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel ui:field="lblStarted" text="Drag Started" visible="false"/>
-                <m:MaterialLabel ui:field="lblMoved" text="Drag Moved" visible="false"/>
-                <m:MaterialLabel ui:field="lblEnded" text="Drag Ended" visible="false"/>
-            </m:MaterialPanel>
-        </m:MaterialPanel>
-
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd.draggable(eventPanel);<br/><br/>
-
-            // Add Drag Start Handler<br/>
-            eventPanel.addDragStartHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("BLUE");<br/>
-            &emsp;lblStarted.setVisible(true);<br/>
-            });<br/><br/>
-
-            // Add Drag Move Handler<br/>
-            &emsp;eventPanel.addDragMoveHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("AMBER");<br/>
-            &emsp;lblMoved.setVisible(true);<br/>
-            });<br/><br/>
-
-            // Add Drag End Handler<br/>
-            &emsp;eventPanel.addDragEndHandler(event -> {<br/>
-            &emsp;eventPanel.setBackgroundColor("GREEN");<br/>
-            &emsp;lblEnded.setVisible(true);<br/>
-            });
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="IgnoreFrom" description="You can ignore any widget inside the dnd target easily."/>
-        <m:MaterialRow>
-            <m:MaterialPanel ui:field="dndIgnoreFrom" grid="l4 m6 s12" shadow="1" padding="0">
-                <m:MaterialPanel padding="20">
-                    <m:MaterialLink text="This is draggable" iconType="TOUCH_APP" />
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Introduction" />
+            <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
+                <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="Default" fontSize="1.5em"/>
                 </m:MaterialPanel>
-                <m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="GREY_LIGHTEN_3" width="100%" height="200px">
-                    <m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" />
+    
+                <m:MaterialPanel ui:field="woInertialPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="With Inertia" fontSize="1.5em"/>
+                </m:MaterialPanel>
+    
+                <m:MaterialPanel ui:field="endOnlyPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="End Only" fontSize="1.5em"/>
+                </m:MaterialPanel>
+    
+                <m:MaterialPanel ui:field="selfRestrict" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="Self Restrict" fontSize="1.5em"/>
+                </m:MaterialPanel>
+    
+                <m:MaterialPanel ui:field="restrictPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="Rect Restrict" fontSize="1.5em"/>
                 </m:MaterialPanel>
             </m:MaterialPanel>
         </m:MaterialRow>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-            &emsp;&lt;!-- UiBinder Declaration --><br/>
-            &lt;m:MaterialPanel ui:field="draggablePanel" grid="l4 m6 s12" shadow="1" padding="0"><br/>
-            &emsp;&lt;m:MaterialPanel padding="20"><br/>
-            &emsp;&emsp;&lt;m:MaterialLink text="This is draggable" iconType="TOUCH_APP" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &emsp;&lt;m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px"><br/>
-            &emsp;&emsp;&lt;m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" /><br/>
-            &emsp;&lt;/m:MaterialPanel><br/>
-            &lt;/m:MaterialPanel><br/>
-        </demo:PrettyPre>
-        <demo:PrettyPre addStyleNames="lang-java">
-            &emsp;MaterialDnd dndIgnore =  MaterialDnd.draggable(dndIgnoreFrom);<br/>
-            dndIgnore.ignoreFrom(ignoredPanel);
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Axis" description="The axis in which the first movement must be in for the drag sequence to start. After the movement in that axis, the the action can move in both the HORIZONTAL and VERTICAL axes." />
-        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
-            <m:MaterialPanel ui:field="xAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="X Axis" fontSize="1.5em"/>
-            </m:MaterialPanel>
-            <m:MaterialPanel ui:field="yAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
-                <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
-                <m:MaterialLabel text="Y Axis" fontSize="1.5em"/>
-            </m:MaterialPanel>
-        </m:MaterialPanel>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;MaterialDnd.draggable(xAxisPanel, JsDragOptions.create(Axis.HORIZONTAL));<br/>
-            MaterialDnd.draggable(yAxisPanel, JsDragOptions.create(Axis.VERTICAL));
-        </demo:PrettyPre>
-
-        <m:MaterialTitle title="Dropzone" />
-        <m:MaterialRow ui:field="dropzoneContainer" backgroundColor="GREY_LIGHTEN_1" padding="10">
-            <m:MaterialColumn grid="s6">
-                <m:MaterialPanel addStyleNames="test" ui:field="item1" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
-                    <m:MaterialLink text="Option 1" />
-                </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item2" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
-                    <m:MaterialLink text="Option 2" />
-                </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item3" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
-                    <m:MaterialLink text="Option 3" />
-                </m:MaterialPanel>
-                <m:MaterialPanel addStyleNames="test" ui:field="item4" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
-                    <m:MaterialLink text="Option 4" />
-                </m:MaterialPanel>
-            </m:MaterialColumn>
-            <m:MaterialColumn ui:field="placeContainer" grid="s6" addStyleNames="grey lighten-3" padding="20">
-                <m:MaterialLabel text="Drop here" />
-            </m:MaterialColumn>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Default" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialDnd.draggable(panel);
+            </demo:PrettyPre>
         </m:MaterialRow>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
-            &emsp;// Draggable Items<br/>
-            MaterialDnd.draggable(item1);<br/>
-            MaterialDnd.draggable(item2);<br/>
-            MaterialDnd.draggable(item3);<br/>
-            MaterialDnd.draggable(item4);<br/><br/>
-
-            // Initialize the dropzone container<br/>
-            MaterialDnd.dropzone(dropzoneContainer, JsDropOptions.create(".test"));<br/><br/>
-
-            dropzoneContainer.addDropActivateHandler(event1 -> {<br/>
-            &emsp;MaterialToast.fireToast("Drop Activate");<br/>
-            });<br/><br/>
-
-            dropzoneContainer.addDragEnterHandler(dragEnterEvent -> {<br/>
-            &emsp;placeContainer.setBackgroundColor("BLUE");<br/>
-            &emsp;MaterialToast.fireToast("Drag Enter");<br/>
-            });<br/><br/>
-
-            dropzoneContainer.addDragLeaveHandler(event1 -> {<br/>
-            &emsp;placeContainer.setBackgroundColor("GREY_LIGHTEN_2");<br/>
-            &emsp;MaterialToast.fireToast("Drag Leave");<br/>
-            });<br/><br/>
-
-            dropzoneContainer.addDropHandler(event -> {<br/>
-            &emsp;JQueryElement target = $(event.getRelatedTarget());<br/>
-            &emsp;MaterialWidget widget = new MaterialWidget(target.asElement());<br/>
-            &emsp;placeContainer.add(widget);<br/>
-            &emsp;MaterialToast.fireToast("Dropped");<br/>
-            });<br/>
-        </demo:PrettyPre>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="With Inertia" description="Inertia allows drag and resize actions to coninue after the user releases the pointer at a fast enough speed. The required launch speed, end speed and resistance can optionally be configured with the settings below"/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialDnd.draggable(woInertialPanel, JsDragOptions.create(false));
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="End Only" description="The endOnly option is used to restrict the widget around the corners of it's parent "/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;Restriction restriction = new Restriction();<br/>
+                restriction.setEndOnly(false);<br/>
+                MaterialDnd.draggable(endOnlyPanel, JsDragOptions.create(restriction));
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Restriction" description="The restriction value specifies the area that the action will be confined to. "/>
+            <m:MaterialTitle title="Self Restrict" description="With this option , It will only restrict the target on itself. By Default without this option will restrict to it's parent."/>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;Restriction restriction1 = new Restriction();<br/>
+                restriction1.setRestriction(Restriction.Restrict.SELF);<br/>
+                MaterialDnd.draggable(selfRestrict, JsDragOptions.create(restriction1));
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Specific Properties" description="For the left and right properties, 0 means the left edge of the element and 1 means the right edge. For top and bottom, 0 means the top edge of the element and 1 means the bottom." />
+            <m:MaterialLabel text="On the example above, { top: 0.25, left: 0.25, bottom: 0.75, right: 0.75 } would result in a quarter of the element being allowed to hang over the restriction edges." />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;Restriction restriction2 = new Restriction();<br/>
+                restriction2.setTop(0.25);<br/>
+                restriction2.setLeft(0.25);<br/>
+                restriction2.setRight(0.75);<br/>
+                restriction2.setBottom(0.75);<br/><br/>
+                MaterialDnd.draggable(restrictPanel, JsDragOptions.create(restriction2));
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Events" />
+            <m:MaterialPanel padding="10" backgroundColor="GREY_LIGHTEN_4">
+                <m:MaterialPanel ui:field="eventPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel ui:field="lblStarted" text="Drag Started" visible="false"/>
+                    <m:MaterialLabel ui:field="lblMoved" text="Drag Moved" visible="false"/>
+                    <m:MaterialLabel ui:field="lblEnded" text="Drag Ended" visible="false"/>
+                </m:MaterialPanel>
+            </m:MaterialPanel>
+    
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialDnd.draggable(eventPanel);<br/><br/>
+    
+                // Add Drag Start Handler<br/>
+                eventPanel.addDragStartHandler(event -> {<br/>
+                &emsp;eventPanel.setBackgroundColor("BLUE");<br/>
+                &emsp;lblStarted.setVisible(true);<br/>
+                });<br/><br/>
+    
+                // Add Drag Move Handler<br/>
+                &emsp;eventPanel.addDragMoveHandler(event -> {<br/>
+                &emsp;eventPanel.setBackgroundColor("AMBER");<br/>
+                &emsp;lblMoved.setVisible(true);<br/>
+                });<br/><br/>
+    
+                // Add Drag End Handler<br/>
+                &emsp;eventPanel.addDragEndHandler(event -> {<br/>
+                &emsp;eventPanel.setBackgroundColor("GREEN");<br/>
+                &emsp;lblEnded.setVisible(true);<br/>
+                });
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="IgnoreFrom" description="You can ignore any widget inside the dnd target easily."/>
+            <m:MaterialRow>
+                <m:MaterialPanel ui:field="dndIgnoreFrom" grid="l4 m6 s12" shadow="1" padding="0">
+                    <m:MaterialPanel padding="20">
+                        <m:MaterialLink text="This is draggable" iconType="TOUCH_APP" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="GREY_LIGHTEN_3" width="100%" height="200px">
+                        <m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" />
+                    </m:MaterialPanel>
+                </m:MaterialPanel>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;!-- UiBinder Declaration --><br/>
+                &lt;m:MaterialPanel ui:field="draggablePanel" grid="l4 m6 s12" shadow="1" padding="0"><br/>
+                &emsp;&lt;m:MaterialPanel padding="20"><br/>
+                &emsp;&emsp;&lt;m:MaterialLink text="This is draggable" iconType="TOUCH_APP" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel ui:field="ignoredPanel" addStyleNames="valign-wrapper" paddingLeft="80" backgroundColor="grey lighten-3" width="100%" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLink iconType="HIGHLIGHT_OFF" iconColor="RED" textColor="GREY" fontSize="1.2em" text="This area is ignored from dragging" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/m:MaterialPanel><br/>
+            </demo:PrettyPre>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialDnd dndIgnore =  MaterialDnd.draggable(dndIgnoreFrom);<br/>
+                dndIgnore.ignoreFrom(ignoredPanel);
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Axis" description="The axis in which the first movement must be in for the drag sequence to start. After the movement in that axis, the the action can move in both the HORIZONTAL and VERTICAL axes." />
+            <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
+                <m:MaterialPanel ui:field="xAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="X Axis" fontSize="1.5em"/>
+                </m:MaterialPanel>
+                <m:MaterialPanel ui:field="yAxisPanel" margin="10" paddingTop="40" textAlign="CENTER" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
+                    <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />
+                    <m:MaterialLabel text="Y Axis" fontSize="1.5em"/>
+                </m:MaterialPanel>
+            </m:MaterialPanel>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;MaterialDnd.draggable(xAxisPanel, JsDragOptions.create(Axis.HORIZONTAL));<br/>
+                MaterialDnd.draggable(yAxisPanel, JsDragOptions.create(Axis.VERTICAL));
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Dropzone" />
+            <m:MaterialRow ui:field="dropzoneContainer" backgroundColor="GREY_LIGHTEN_1" padding="10">
+                <m:MaterialColumn grid="s6">
+                    <m:MaterialPanel addStyleNames="test" ui:field="item1" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
+                        <m:MaterialLink text="Option 1" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel addStyleNames="test" ui:field="item2" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
+                        <m:MaterialLink text="Option 2" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel addStyleNames="test" ui:field="item3" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
+                        <m:MaterialLink text="Option 3" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel addStyleNames="test" ui:field="item4" backgroundColor="WHITE" shadow="1" grid="s12" padding="8" margin="4">
+                        <m:MaterialLink text="Option 4" />
+                    </m:MaterialPanel>
+                </m:MaterialColumn>
+                <m:MaterialColumn ui:field="placeContainer" grid="s6" addStyleNames="grey lighten-3" padding="20">
+                    <m:MaterialLabel text="Drop here" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Draggable Items<br/>
+                MaterialDnd.draggable(item1);<br/>
+                MaterialDnd.draggable(item2);<br/>
+                MaterialDnd.draggable(item3);<br/>
+                MaterialDnd.draggable(item4);<br/><br/>
+    
+                // Initialize the dropzone container<br/>
+                MaterialDnd.dropzone(dropzoneContainer, JsDropOptions.create(".test"));<br/><br/>
+    
+                dropzoneContainer.addDropActivateHandler(event1 -> {<br/>
+                &emsp;MaterialToast.fireToast("Drop Activate");<br/>
+                });<br/><br/>
+    
+                dropzoneContainer.addDragEnterHandler(dragEnterEvent -> {<br/>
+                &emsp;placeContainer.setBackgroundColor("BLUE");<br/>
+                &emsp;MaterialToast.fireToast("Drag Enter");<br/>
+                });<br/><br/>
+    
+                dropzoneContainer.addDragLeaveHandler(event1 -> {<br/>
+                &emsp;placeContainer.setBackgroundColor("GREY_LIGHTEN_2");<br/>
+                &emsp;MaterialToast.fireToast("Drag Leave");<br/>
+                });<br/><br/>
+    
+                dropzoneContainer.addDropHandler(event -> {<br/>
+                &emsp;JQueryElement target = $(event.getRelatedTarget());<br/>
+                &emsp;MaterialWidget widget = new MaterialWidget(target.asElement());<br/>
+                &emsp;placeContainer.add(widget);<br/>
+                &emsp;MaterialToast.fireToast("Dropped");<br/>
+                });<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

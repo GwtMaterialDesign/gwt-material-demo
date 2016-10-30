@@ -53,6 +53,6 @@ public class CameraPresenter extends Presenter<CameraPresenter.MyView, CameraPre
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Camera Capture", "MaterialCameraCapture is a widget that captures the video stream from the camera, using the MediaDevices.getUserMedia() (Streams API). This widget can capture images from the video, to allow the upload to the server of photos from the camera.", this);
+        SetPageTitleEvent.fire("Camera Capture", "MaterialCameraCapture is a widget that captures the video stream from the camera, using the MediaDevices.getUserMedia() (Streams API). This widget can capture images from the video, to allow the upload to the server of photos from the camera.", "addins/camera/CameraView", this);
     }
 }

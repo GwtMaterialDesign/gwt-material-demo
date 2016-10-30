@@ -81,11 +81,12 @@
 
 		<m:MaterialPanel ui:field="titlePanel" backgroundColor="BLUE" marginTop="56" textColor="WHITE" padding="56" shadow="1">
 			<m:MaterialPanel ui:field="panel">
-				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="4em"/>
+				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="2.3em"/>
 				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
-				<m:MaterialAnchorButton ui:field="btnStarted" targetHistoryToken="{tokens.getGettingstarted}"
-																text="Get Started" size="LARGE" textColor="WHITE"
-																addStyleNames="{style.btnGettingStarted}"/>
+				<m:MaterialPanel marginTop="20">
+					<m:MaterialChip ui:field="chipXml" textColor="WHITE" marginRight="12" letter="&lt;&gt;" text="XML" />
+					<m:MaterialChip ui:field="chipJava" textColor="WHITE" letter="&lt;&gt;" text="JAVA" />
+				</m:MaterialPanel>
 			</m:MaterialPanel>
 		</m:MaterialPanel>
 
@@ -98,7 +99,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="1.6.0" textColor="WHITE"/>
+					<m:MaterialBadge text="2.0-rc1" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
