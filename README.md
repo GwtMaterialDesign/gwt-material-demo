@@ -2,13 +2,13 @@
 #gwt-material-demo [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo)
 Demo application to show the features of the [gwt-material](https://github.com/GwtMaterialDesign/gwt-material) library.
 
-### Release 1.6.0 Demo
+### Release 2.0-rc1 Demo
 [http://gwtmaterialdesign.github.io/gwt-material-demo](http://gwtmaterialdesign.github.io/gwt-material-demo)
 ```xml
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
-    <version>1.6.0</version>
+    <version>2.0-rc1</version>
 </dependency>
 ```
 
