@@ -218,3 +218,17 @@ main .panel, main {
 .TouchSplitter h4 {
     padding-top: 100px;
 }
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+    margin: 15px 6px 6px;
+}
+
+/** Workaround for ComboBox conflicting label color on New Look and Feel **/
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444 !important;
+}
+
+header nav .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff !important;
+}
