@@ -24,7 +24,8 @@ Demo application to show the features of the [gwt-material](https://github.com/G
 
 ### Javadocs
 [GWT Material](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs/) <br/>
-[GWT Material Addins](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs-addins/)
+[GWT Material Addins](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs-addins/)</br>
+[GWT Material Table](http://gwtmaterialdesign.github.io/gwt-material-demo/apidocs-table/)
 
 If you want to contribute, visit us at https://gitter.im/GwtMaterialDesign/gwt-material
 
