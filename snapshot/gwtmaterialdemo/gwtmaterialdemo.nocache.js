@@ -295,14 +295,6 @@ function gwtmaterialdemo(){
   function getCompiledCodeFilename(){
     var answers = [];
     var softPermutationId = 0;
-    function unflattenKeylistIntoAnswers(propValArray, value_0){
-      var answer = answers;
-      for (var i = 0, n = propValArray.length - 1; i < n; ++i) {
-        answer = answer[propValArray[i]] || (answer[propValArray[i]] = []);
-      }
-      answer[propValArray[n]] = value_0;
-    }
-
     var values = [];
     var providers = [];
     function computePropValue(propName){
@@ -320,38 +312,6 @@ function gwtmaterialdemo(){
       throw null;
     }
 
-    providers['user.agent'] = function(){
-      var ua = navigator.userAgent.toLowerCase();
-      var docMode = $doc_0.documentMode;
-      if (function(){
-        return ua.indexOf('webkit') != -1;
-      }
-      ())
-        return 'safari';
-      if (function(){
-        return ua.indexOf('msie') != -1 && (docMode >= 10 && docMode < 11);
-      }
-      ())
-        return 'ie10';
-      if (function(){
-        return ua.indexOf('msie') != -1 && (docMode >= 9 && docMode < 11);
-      }
-      ())
-        return 'ie9';
-      if (function(){
-        return ua.indexOf('msie') != -1 && (docMode >= 8 && docMode < 11);
-      }
-      ())
-        return 'ie8';
-      if (function(){
-        return ua.indexOf('gecko') != -1 || docMode >= 11;
-      }
-      ())
-        return 'gecko1_8';
-      return '';
-    }
-    ;
-    values['user.agent'] = {gecko1_8:0, ie10:1, ie8:2, ie9:3, safari:4};
     __gwt_isKnownPropertyValue = function(propName, propValue){
       return propValue in values[propName];
     }
@@ -374,12 +334,7 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie9'], '14A4C3D7E89932AC1587CCE76D49F88D');
-      unflattenKeylistIntoAnswers(['gecko1_8'], '37B8FD7B4C9CB66B667DBE30C33C50BE');
-      unflattenKeylistIntoAnswers(['safari'], '812D92D5759C551BBD4CFA07636122A1');
-      unflattenKeylistIntoAnswers(['ie8'], '84A0AA5D544B6A650EBDBBBE5FC44534');
-      unflattenKeylistIntoAnswers(['ie10'], 'BABC49253D2DDFEF9F7606E666E353F1');
-      strongName = answers[computePropValue('user.agent')];
+      strongName = '0BCCC591D45B68AD21BC8E330CAAA149';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
@@ -411,8 +366,7 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/overridecss.css');
     installOneStylesheet('css/animation.css');
     installOneStylesheet('css/material-icons.css');
-    installOneStylesheet('css/materialize.blue.css');
-    installOneStylesheet('css/overridecss.blue.css');
+    installOneStylesheet('css/materialize.min.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');

@@ -1,71 +1,71 @@
 /** Blockquote **/
 blockquote {
-    border-left: 5px solid #42A5F5 !important;
+    border-left: 5px solid #ffee58 !important;
 }
 
 .multiValueSuggestBox-panel:focus {
-    border-bottom: 2px solid #42A5F5 !important;
+    border-bottom: 2px solid #ffee58 !important;
 }
 
 /** Image Slider **/
 .slider .indicators .indicator-item.active {
-    background-color: #2196f3;
+    background-color: #ffeb3b;
 }
 
 /**SCROLLSPY**/
 .table-of-contents a.active {
-    border-left: 2px solid #2196f3 !important;
+    border-left: 2px solid #ffeb3b !important;
 }
 
 .table-of-contents a:hover {
-    border-left: 1px solid #2196f3 !important;
+    border-left: 1px solid #ffeb3b !important;
 }
 
 .progress div {
-    background-color: #1e88e5;
+    background-color: #fdd835;
 }
 
 /**Time Picker**/
 .lolliclock-header {
-    background: #2196f3 !important;
+    background: #ffeb3b !important;
 }
 
 .lolliclock-active-button-background {
-    background-color: #2196f3 !important;
+    background-color: #ffeb3b !important;
 }
 
 .lolliclock-button {
-    color: #2196f3 !important;
+    color: #ffeb3b !important;
 }
 
 .lolliclock-canvas-bg {
-    fill: rgba(33, 150, 243, 0.25) !important;
+    fill: rgba(255, 235, 59, 0.25) !important
 }
 
 .lolliclock-canvas-fg {
-    fill: #2196f3 !important;
+    fill: #ffeb3b !important;
 }
 
 .lolliclock-canvas line {
-    stroke: rgba(33, 150, 243, 0.5) !important;
+    stroke: rgba(255, 235, 59, 0.5) !important;
 }
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
-    background-color: #64b5f6 !important;
+    background-color: #fff176 !important;
 }
 
 /** File Uploader **/
 .fileuploader .upload-label {
-    background-color: #2196f3 !important;
+    background-color: #ffeb3b !important;
 }
 
 .fileuploader .upload-label i {
     background: #fff !important;
-    color: #2196f3 !important;
+    color: #ffeb3b !important;
 }
 
 .fileuploader.active {
-    background: #2196f3 !important;
+    background: #ffeb3b !important;
 }
 
 .fileuploader.active .upload-label {
@@ -73,39 +73,39 @@ blockquote {
 }
 
 .preview-container .previews .zdrop-info .preview-icon {
-    color: #2196f3 !important;
+    color: #ffeb3b !important;
 }
 
 .preview-container .header {
-    background-color: #2196f3 !important;
+    background-color: #ffeb3b !important;
 }
 
 /** Window **/
 .window-overlay .window .window-toolbar {
-    background-color: #2196f3 !important;
+    background-color: #ffeb3b !important;
 }
 
 /** Tree Item **/
 .tree-item i {
-    color: #2196f3;
+    color: #ffeb3b;
 }
 
 /** Stepper **/
 .stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
-    color: #2196f3 !important;
+    color: #ffeb3b !important;
 }
 
 .stepper .step > div:first-child .circle {
-    background: #2196f3 !important;
+    background: #ffeb3b !important;
 }
 
 /** Rich Editor **/
 .editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
-    background: #2196f3 !important;
+    background: #ffeb3b !important;
 }
 
-.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
-    background: #2196f3 !important;
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .note-link-btn:hover, .note-editor .modal .note-image-btn:hover {
+    background: #ffeb3b !important;
 }
 
 button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
@@ -114,20 +114,20 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 
 /** Rating **/
 .material-rating {
-    color: #2196f3;
+    color: #ffeb3b;
 }
 
 /** Badge **/
 .badge {
-    background: #1976d2;
+    background: #fbc02d;
 }
 
 /** Tabs **/
 .tabs {
-    background: #2196f3;
+    background: #ffeb3b;
 }
 
 /** Table **/
 .top-panel {
-    background: #1565c0;
+    background: #f9a825;
 }

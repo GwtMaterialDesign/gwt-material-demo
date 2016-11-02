@@ -1,71 +1,71 @@
 /** Blockquote **/
 blockquote {
-    border-left: 5px solid #42A5F5 !important;
+    border-left: 5px solid #ab47bc !important;
 }
 
 .multiValueSuggestBox-panel:focus {
-    border-bottom: 2px solid #42A5F5 !important;
+    border-bottom: 2px solid #ab47bc !important;
 }
 
 /** Image Slider **/
 .slider .indicators .indicator-item.active {
-    background-color: #2196f3;
+    background-color: #9c27b0;
 }
 
 /**SCROLLSPY**/
 .table-of-contents a.active {
-    border-left: 2px solid #2196f3 !important;
+    border-left: 2px solid #9c27b0 !important;
 }
 
 .table-of-contents a:hover {
-    border-left: 1px solid #2196f3 !important;
+    border-left: 1px solid #9c27b0 !important;
 }
 
 .progress div {
-    background-color: #1e88e5;
+    background-color: #8e24aa;
 }
 
 /**Time Picker**/
 .lolliclock-header {
-    background: #2196f3 !important;
+    background: #9c27b0 !important;
 }
 
 .lolliclock-active-button-background {
-    background-color: #2196f3 !important;
+    background-color: #9c27b0 !important;
 }
 
 .lolliclock-button {
-    color: #2196f3 !important;
+    color: #9c27b0 !important;
 }
 
 .lolliclock-canvas-bg {
-    fill: rgba(33, 150, 243, 0.25) !important;
+    fill: rgba(156, 39, 176, 0.25) !important
 }
 
 .lolliclock-canvas-fg {
-    fill: #2196f3 !important;
+    fill: #9c27b0 !important;
 }
 
 .lolliclock-canvas line {
-    stroke: rgba(33, 150, 243, 0.5) !important;
+    stroke: rgba(156, 39, 176, 0.5) !important;
 }
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
-    background-color: #64b5f6 !important;
+    background-color: #ba68c8 !important;
 }
 
 /** File Uploader **/
 .fileuploader .upload-label {
-    background-color: #2196f3 !important;
+    background-color: #9c27b0 !important;
 }
 
 .fileuploader .upload-label i {
     background: #fff !important;
-    color: #2196f3 !important;
+    color: #9c27b0 !important;
 }
 
 .fileuploader.active {
-    background: #2196f3 !important;
+    background: #9c27b0 !important;
 }
 
 .fileuploader.active .upload-label {
@@ -73,39 +73,39 @@ blockquote {
 }
 
 .preview-container .previews .zdrop-info .preview-icon {
-    color: #2196f3 !important;
+    color: #9c27b0 !important;
 }
 
 .preview-container .header {
-    background-color: #2196f3 !important;
+    background-color: #9c27b0 !important;
 }
 
 /** Window **/
 .window-overlay .window .window-toolbar {
-    background-color: #2196f3 !important;
+    background-color: #9c27b0 !important;
 }
 
 /** Tree Item **/
 .tree-item i {
-    color: #2196f3;
+    color: #9c27b0;
 }
 
 /** Stepper **/
 .stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
-    color: #2196f3 !important;
+    color: #9c27b0 !important;
 }
 
 .stepper .step > div:first-child .circle {
-    background: #2196f3 !important;
+    background: #9c27b0 !important;
 }
 
 /** Rich Editor **/
 .editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
-    background: #2196f3 !important;
+    background: #9c27b0 !important;
 }
 
 .editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
-    background: #2196f3 !important;
+    background: #9c27b0 !important;
 }
 
 button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
@@ -114,20 +114,20 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 
 /** Rating **/
 .material-rating {
-    color: #2196f3;
+    color: #9c27b0;
 }
 
 /** Badge **/
 .badge {
-    background: #1976d2;
+    background: #7b1fa2;
 }
 
 /** Tabs **/
 .tabs {
-    background: #2196f3;
+    background: #9c27b0;
 }
 
 /** Table **/
 .top-panel {
-    background: #1565c0;
+    background: #6a1b9a;
 }
