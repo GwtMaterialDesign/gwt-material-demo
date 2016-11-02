@@ -223,12 +223,3 @@ main .panel, main {
 #closeButton {
     margin: 15px 6px 6px;
 }
-
-/** Workaround for ComboBox conflicting label color on New Look and Feel **/
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #444 !important;
-}
-
-header nav .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #fff !important;
-}
