@@ -35,12 +35,22 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Disabled Styles" description="You can disable the datepicker by adding enabled='false'"/>
         <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
-    
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
         <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
-    
+
         <demo:PrettyPre addStyleNames="lang-xml">
-          &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+           &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+        </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Auto Close" description="Provides a way to automatically closes the datepicker after selecting dates." />
+        <m:MaterialDatePicker ui:field="dpAutoClose" autoClose="true" placeholder="Date" />
+        <demo:PrettyPre addStyleNames="lang-xml">
+           &lt;m:MaterialDatePicker autoClose="true" placeholder="Date" />
         </demo:PrettyPre>
       </m:MaterialRow>
     
