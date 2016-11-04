@@ -183,5 +183,10 @@
         &lt;/m:MaterialTooltip><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Tooltip with HTML" description="You can set any html element inside the tooltip component."/>
+      <m:MaterialButton tooltipDelayMs="0" tooltipHTML="&lt;i&gt;Italic text&lt;/i&gt;" text="Tooltip with HTML" />
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

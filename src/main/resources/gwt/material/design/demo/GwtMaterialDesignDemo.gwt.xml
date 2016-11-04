@@ -30,9 +30,6 @@
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.inject.Inject'/>
 
-    <!--Theme-->
-    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
-
     <!--GWTP-->
     <inherits name='com.gwtplatform.dispatch.Dispatch'/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>

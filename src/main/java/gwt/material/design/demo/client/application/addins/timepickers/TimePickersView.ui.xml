@@ -61,7 +61,15 @@
                 tp.close()
             </demo:PrettyPre>
         </m:MaterialRow>
-    
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Auto Close" description="Provides a way to automatically closes the timepicker after selecting time." />
+            <ma:timepicker.MaterialTimePicker ui:field="tpAutoClose" autoClose="true" placeholder="Time" />
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:timepicker.MaterialTimePicker autoClose="true" placeholder="Time" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
         <m:MaterialRow addStyleNames="code">
             <!-- Events -->
             <m:MaterialTitle title="Events" description="We provided events on time picker namely : Close, Open, ValueChange events."/>

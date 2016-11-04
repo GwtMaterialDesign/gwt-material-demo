@@ -53,7 +53,7 @@
                 <p>To disable , add enabled="false" parameter on the autocomplete widget</p>
             </blockquote>
     
-            <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="BLUE"/>
+            <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT"/>
             <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="BLACK" backgroundColor="WHITE"/>
     
             <m.demo:PrettyPre addStyleNames="lang-java">

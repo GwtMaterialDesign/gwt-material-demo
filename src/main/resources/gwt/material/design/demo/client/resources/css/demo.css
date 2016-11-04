@@ -179,10 +179,6 @@ ul.side-nav.fixed li:hover,ul.side-nav.fixed li.active {
     top: 80px !important;
 }
 
-a:hover {
-     color: inherit !important;
-}
-
 .side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
     color: #000 !important;
 }
@@ -206,6 +202,10 @@ main .panel, main {
 .code div h4 {
     font-size: 1.2em;
     margin-top: 0px !important;
+}
+
+.code div p {
+    margin-bottom: 20px;
 }
 
 .code {
