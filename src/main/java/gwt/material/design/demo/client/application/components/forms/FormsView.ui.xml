@@ -158,7 +158,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-      <m:MaterialListBox ui:field="lstOptions">
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstOptions">
         <m.html:Option text="Option 1"/>
         <m.html:Option text="Option 2"/>
         <m.html:Option text="Option 3"/>
@@ -166,7 +166,7 @@
       </m:MaterialListBox>
       
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialListBox>
+        &emsp;&lt;m:MaterialListBox placeholder="ListBox">
           &emsp;&lt;m.html:Option text="Option 1"/><br/>
           &emsp;&lt;m.html:Option text="Option 2"/><br/>
           &emsp;&lt;m.html:Option text="Option 3"/><br/>

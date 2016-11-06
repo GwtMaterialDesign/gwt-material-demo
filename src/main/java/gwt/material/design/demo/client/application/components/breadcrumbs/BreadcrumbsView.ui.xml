@@ -26,31 +26,39 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Text Only" />
             <m:MaterialNavBar>
-                <m:MaterialBreadcrumb text="First"/>
-                <m:MaterialBreadcrumb text="Second"/>
-                <m:MaterialBreadcrumb text="Third"/>
+                <m:MaterialNavSection hideOn="NONE">
+                    <m:MaterialBreadcrumb text="First"/>
+                    <m:MaterialBreadcrumb text="Second"/>
+                    <m:MaterialBreadcrumb text="Third"/>
+                </m:MaterialNavSection>
             </m:MaterialNavBar>
-            <demo:PrettyPre addStyleNames="lang-xml">
+            <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialNavBar><br/>
-                &emsp;&lt;m:MaterialBreadcrumb text="First"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb text="Second"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb text="Third"/><br/>
-                &lt;/m:MaterialNavBar><br/>
+                &emsp;&lt;m:MaterialNavSection hideOn="NONE"><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb text="First"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb text="Second"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb text="Third"/><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
+                &emsp;&lt;/m:MaterialNavBar><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Only Icons" />
             <m:MaterialNavBar>
-                <m:MaterialBreadcrumb iconType="POLYMER"/>
-                <m:MaterialBreadcrumb iconType="STAR"/>
-                <m:MaterialBreadcrumb iconType="MOTORCYCLE"/>
+                <m:MaterialNavSection hideOn="NONE">
+                    <m:MaterialBreadcrumb iconType="POLYMER"/>
+                    <m:MaterialBreadcrumb iconType="STAR"/>
+                    <m:MaterialBreadcrumb iconType="MOTORCYCLE"/>
+                </m:MaterialNavSection>
             </m:MaterialNavBar>
-            <demo:PrettyPre addStyleNames="lang-xml">
+            <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialNavBar><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconType="POLYMER"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconType="STAR"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconType="MOTORCYCLE"/><br/>
+                  &emsp;&lt;m:MaterialNavSection hideOn="NONE"><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconType="POLYMER"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconType="STAR"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconType="MOTORCYCLE"/><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
                 &lt;/m:MaterialNavBar><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
@@ -58,15 +66,19 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Text with Icons" />
             <m:MaterialNavBar>
-                <m:MaterialBreadcrumb iconPosition="LEFT" iconType="POLYMER" text="First"/>
-                <m:MaterialBreadcrumb iconPosition="LEFT" iconType="STAR" text="Second"/>
-                <m:MaterialBreadcrumb iconPosition="LEFT" iconType="MOTORCYCLE" text="Third"/>
+                <m:MaterialNavSection hideOn="NONE">
+                    <m:MaterialBreadcrumb iconPosition="LEFT" iconType="POLYMER" text="First"/>
+                    <m:MaterialBreadcrumb iconPosition="LEFT" iconType="STAR" text="Second"/>
+                    <m:MaterialBreadcrumb iconPosition="LEFT" iconType="MOTORCYCLE" text="Third"/>
+                </m:MaterialNavSection>
             </m:MaterialNavBar>
-            <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;m:MaterialNavBar><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="POLYMER" text="First"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="STAR" text="Second"/><br/>
-                &emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="MOTORCYCLE" text="Third"/><br/>
+            <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
+                &lt;m:MaterialNavBar><br/>
+                &emsp;&lt;m:MaterialNavSection hideOn="NONE"><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="POLYMER" text="First"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="STAR" text="Second"/><br/>
+                &emsp;&emsp;&lt;m:MaterialBreadcrumb iconPosition="LEFT" iconType="MOTORCYCLE" text="Third"/><br/>
+                &emsp;&lt;/m:MaterialNavSection><br/>
                 &lt;/m:MaterialNavBar><br/>
             </demo:PrettyPre>
         </m:MaterialRow>

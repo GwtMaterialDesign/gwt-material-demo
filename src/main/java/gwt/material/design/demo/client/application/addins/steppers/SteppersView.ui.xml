@@ -38,7 +38,7 @@
                 &lt;ma:stepper.MaterialStepper ui:field="stepper"><br/>
                 &emsp;&lt;ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1"><br/>
                 &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/><br/>
-                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/><br/>
                 &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
                 &emsp;&lt;/ma:stepper.MaterialStep><br/>
                 &lt;/ma:stepper.MaterialStepper><br/>
@@ -50,17 +50,17 @@
             <ma:stepper.MaterialStepper ui:field="stepper">
                 <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
             </ma:stepper.MaterialStepper>
@@ -68,17 +68,17 @@
                 &emsp;&lt;ma:stepper.MaterialStepper ui:field="stepper"><br/>
                 &emsp;&lt;ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1"><br/>
                 &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/><br/>
-                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/><br/>
                 &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
                 &emsp;&lt;/ma:stepper.MaterialStep><br/>
                 &emsp;&lt;ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1"><br/>
                 &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/><br/>
-                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue2" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/><br/>
                 &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
                 &emsp;&lt;/ma:stepper.MaterialStep><br/>
                 &emsp;&lt;ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1"><br/>
                 &emsp;&emsp;&lt;m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/><br/>
-                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/><br/>
+                &emsp;&emsp;&lt;m:MaterialButton ui:field="btnContinue3" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/><br/>
                 &emsp;&emsp;&lt;m:MaterialButton ui:field="btnPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/><br/>
                 &emsp;&lt;/ma:stepper.MaterialStep><br/>
                 &lt;/ma:stepper.MaterialStepper><br/>
@@ -108,17 +108,17 @@
               <ma:stepper.MaterialStepper ui:field="stepperHori" axis="HORIZONTAL" shadow="1">
                 <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                   <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                  <m:MaterialButton ui:field="btnContinue01" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                  <m:MaterialButton ui:field="btnContinue01" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                   <m:MaterialButton ui:field="btnPrev01" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
                   <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                  <m:MaterialButton ui:field="btnContinue02" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                  <m:MaterialButton ui:field="btnContinue02" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                   <m:MaterialButton ui:field="btnPrev02" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
                   <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                  <m:MaterialButton ui:field="btnContinue03" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                  <m:MaterialButton ui:field="btnContinue03" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                   <m:MaterialButton ui:field="btnPrev03" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
               </ma:stepper.MaterialStepper>
@@ -139,17 +139,17 @@
             <ma:stepper.MaterialStepper ui:field="stepperEvent" shadow="1">
                 <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnEventContinue1" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnEventContinue1" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnEventPrev1" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnEventContinue2" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnEventContinue2" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnEventPrev2" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
                 <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnEventContinue3" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnEventContinue3" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnEventPrev3" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                 </ma:stepper.MaterialStep>
             </ma:stepper.MaterialStepper>
@@ -167,17 +167,17 @@
             <ma:stepper.MaterialStepper ui:field="stepperCard" shadow="1">
               <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnContinue11" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnContinue11" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev11" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnContinue12" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnContinue12" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev12" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnContinue13" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnContinue13" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnPrev13" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
             </ma:stepper.MaterialStepper>
@@ -191,23 +191,23 @@
         <m:MaterialPanel addStyleNames="code">
             <!-- Steppers inside modal -->
             <m:MaterialTitle title="Modal Steppers" description="You can put your Steppers inside a card component by adding shadow='1'"/>
-            <m:MaterialButton ui:field="btnModal" text="Open Modal" waves="DEFAULT" textColor="WHITE" backgroundColor="BLUE" />
+            <m:MaterialButton ui:field="btnModal" text="Open Modal" waves="DEFAULT" textColor="WHITE"  />
             <m:MaterialModal ui:field="modalStepper" dismissible="false" inDuration="500" outDuration="500">
               <m:MaterialModalContent>
                 <ma:stepper.MaterialStepper ui:field="stepperModal">
                   <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue31" text="Continue to Step 2" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue31" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev31" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                   </ma:stepper.MaterialStep>
                   <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue32" text="Continue to Step 3" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue32" text="Continue to Step 3" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev32" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                   </ma:stepper.MaterialStep>
                   <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                    <m:MaterialButton ui:field="btnContinue33" text="Finish" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                    <m:MaterialButton ui:field="btnContinue33" text="Finish" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                     <m:MaterialButton ui:field="btnPrev33" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                   </ma:stepper.MaterialStep>
                 </ma:stepper.MaterialStepper>
@@ -231,17 +231,17 @@
             <ma:stepper.MaterialStepper ui:field="stepperError" axis="HORIZONTAL" shadow="1">
               <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnError" text="Set Error" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnError" text="Set Error" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnSuccess" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnError1" text="Set Error" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnError1" text="Set Error" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnSuccess1" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnError2" text="Set Error" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnError2" text="Set Error" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
                 <m:MaterialButton ui:field="btnSuccess2" text="Continue" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
             </ma:stepper.MaterialStepper>
@@ -258,15 +258,15 @@
             <ma:stepper.MaterialStepper ui:field="stepperFeedback" axis="HORIZONTAL" shadow="1">
               <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                 <m:MaterialPanel width="100%" backgroundColor="GREY_LIGHTEN_2" addStyleNames="{style.block}"/>
-                <m:MaterialButton ui:field="btnContinue41" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnContinue41" text="Continue with Feedback Loader" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="2" title="Name of Step 2" description="Description of Step 2">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                <m:MaterialButton ui:field="btnContinue42" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="btnContinue42" text="Continue with Feedback Loader" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
               <ma:stepper.MaterialStep step="3" title="Name of Step 3" description="Description of Step 3">
                 <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
-                  <m:MaterialButton ui:field="btnContinue43" text="Continue with Feedback Loader" grid="l4" marginTop="12" backgroundColor="BLUE" textColor="WHITE" waves="DEFAULT"/>
+                  <m:MaterialButton ui:field="btnContinue43" text="Continue with Feedback Loader" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
               </ma:stepper.MaterialStep>
             </ma:stepper.MaterialStepper>
           </m:MaterialPanel>
