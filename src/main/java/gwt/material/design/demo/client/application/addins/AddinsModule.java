@@ -36,6 +36,7 @@ import gwt.material.design.demo.client.application.addins.fileuploader.FileUploa
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.masonry.MasonryModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
+import gwt.material.design.demo.client.application.addins.overlay.OverlayModule;
 import gwt.material.design.demo.client.application.addins.pathanimator.PathAnimatorModule;
 import gwt.material.design.demo.client.application.addins.rating.RatingModule;
 import gwt.material.design.demo.client.application.addins.richeditor.RichEditorModule;
@@ -81,5 +82,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new RatingModule());
         install(new ComboBoxModule());
         install(new DataTableModule());
+        install(new OverlayModule());
     }
 }
