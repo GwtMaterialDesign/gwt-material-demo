@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '94EC8278E4FDB7B5F6DA7A84724206D9';
+var $strongName = '010D2EF2A536C42DCDE5548AD5F8BFC9';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
