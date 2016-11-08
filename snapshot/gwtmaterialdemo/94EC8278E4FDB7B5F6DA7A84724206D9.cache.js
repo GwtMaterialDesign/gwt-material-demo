@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '5C041D77AD6496160EAACA68C9BEE0B2';
+var $strongName = '94EC8278E4FDB7B5F6DA7A84724206D9';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = 2000, $intern_4 = {4:1, 8:1}, $intern_5 = {4:1, 88:1, 63:1, 67:1}, $intern_6 = {108:1, 4:1}, $intern_7 = {4:1}, $intern_8 = {4:1, 34:1, 8:1}, $intern_9 = {89:1, 42:1, 4:1, 31:1, 24:1}, $intern_10 = {85:1, 42:1, 4:1, 31:1, 24:1}, $intern_11 = {225:1, 42:1, 4:1, 31:1, 24:1}, $intern_12 = {187:1, 42:1, 4:1, 31:1, 24:1}, $intern_13 = {42:1, 188:1, 4:1, 31:1, 24:1}, $intern_14 = {42:1, 189:1, 4:1, 31:1, 24:1}, $intern_15 = {128:1, 4:1, 31:1, 24:1}, $intern_16 = {42:1, 264:1, 4:1, 31:1, 24:1}, $intern_17 = 2305, $intern_18 = {14:1}, $intern_19 = {245:1, 4:1, 88:1, 63:1, 67:1}, $intern_20 = {4:1, 31:1, 106:1}, $intern_21 = 4194303, $intern_22 = 1048575, $intern_23 = 4194304, $intern_24 = 17592186044416, $intern_25 = 524288, $intern_26 = -17592186044416, $intern_27 = -2147483648, $intern_28 = {326:1, 4:1}, $intern_29 = {27:1, 25:1}, $intern_30 = {29:1, 14:1, 28:1, 27:1, 18:1, 25:1, 20:1}, $intern_31 = 2318, $intern_32 = {29:1, 14:1, 28:1, 27:1, 121:1, 18:1, 25:1, 20:1}, $intern_33 = 16384, $intern_34 = 65536, $intern_35 = 1048576, $intern_36 = 16777216, $intern_37 = 33554432, $intern_38 = 67108864, $intern_39 = {29:1, 14:1, 28:1, 27:1, 32:1, 18:1, 25:1, 20:1}, $intern_40 = {29:1, 14:1, 28:1, 27:1, 32:1, 364:1, 18:1, 25:1, 20:1}, $intern_41 = {29:1, 14:1, 28:1, 35:1, 27:1, 18:1, 25:1, 20:1}, $intern_42 = {29:1, 14:1, 28:1, 286:1, 27:1, 32:1, 18:1, 25:1, 20:1}, $intern_43 = {29:1, 14:1, 28:1, 27:1, 32:1, 18:1, 117:1, 25:1, 20:1}, $intern_44 = {237:1, 15:1}, $intern_45 = {437:1, 15:1}, $intern_46 = {15:1, 2283:1}, $intern_47 = {97:1, 15:1}, $intern_48 = {104:1}, $intern_49 = {29:1, 14:1, 28:1, 27:1, 32:1, 364:1, 18:1, 248:1, 25:1, 20:1}, $intern_50 = {161:1, 15:1}, $intern_51 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 18:1, 25:1, 20:1}, $intern_52 = {2279:1, 15:1}, $intern_53 = {196:1, 4:1, 31:1, 24:1}, $intern_54 = {4:1, 239:1, 67:1}, $intern_55 = {29:1, 14:1, 28:1, 27:1, 18:1, 117:1, 25:1, 20:1}, $intern_56 = {221:1}, $intern_57 = {14:1, 18:1, 52:1}, $intern_58 = {18:1}, $intern_59 = {157:1, 15:1}, $intern_60 = {324:1}, $intern_61 = {97:1, 15:1, 14:1, 2258:1}, $intern_62 = 2313, $intern_63 = {14:1, 62:1, 60:1}, $intern_64 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1}, $intern_65 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1}, $intern_66 = {178:1, 15:1}, $intern_67 = {30:1, 15:1}, $intern_68 = {440:1, 15:1}, $intern_69 = 4000, $intern_70 = {15:1, 2267:1}, $intern_71 = {15:1, 2274:1}, $intern_72 = {15:1, 2268:1}, $intern_73 = {15:1, 2269:1}, $intern_74 = {15:1, 2270:1}, $intern_75 = {15:1, 2271:1}, $intern_76 = {15:1, 2272:1}, $intern_77 = {15:1, 2273:1}, $intern_78 = {15:1, 2275:1}, $intern_79 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 113:1}, $intern_80 = {441:1, 15:1}, $intern_81 = {438:1, 15:1}, $intern_82 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1}, $intern_83 = {15:1, 2278:1}, $intern_84 = {15:1, 2277:1}, $intern_85 = {602:1, 15:1}, $intern_86 = {603:1, 15:1}, $intern_87 = {2282:1, 15:1}, $intern_88 = {2281:1, 15:1}, $intern_89 = {2280:1, 15:1}, $intern_90 = 2302, $intern_91 = {104:1, 101:1}, $intern_92 = {4:1, 104:1, 101:1, 285:1}, $intern_93 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 26:1}, $intern_94 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 167:1}, $intern_95 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 179:1, 38:1, 37:1, 22:1, 141:1}, $intern_96 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 154:1}, $intern_97 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 135:1, 113:1}, $intern_98 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 17:1}, $intern_99 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 210:1}, $intern_100 = {325:1, 15:1}, $intern_101 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 45:1}, $intern_102 = {286:1, 32:1, 18:1}, $intern_103 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 98:1}, $intern_104 = {14:1, 39:1}, $intern_105 = {14:1, 39:1, 62:1, 60:1}, $intern_106 = {75:1}, $intern_107 = {185:1, 15:1}, $intern_108 = {220:1}, $intern_109 = {4:1, 88:1, 93:1, 63:1, 67:1}, $intern_110 = 65535, $intern_111 = {184:1}, $intern_112 = 2307, $intern_113 = {104:1, 169:1}, $intern_114 = {4:1, 104:1, 169:1}, $intern_115 = {4:1, 184:1}, $intern_116 = {4:1, 31:1, 24:1, 209:1}, $intern_117 = 2303, $intern_118 = {4:1, 8:1, 599:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = 2000, $intern_4 = {4:1, 8:1}, $intern_5 = {4:1, 90:1, 63:1, 67:1}, $intern_6 = {108:1, 4:1}, $intern_7 = {4:1}, $intern_8 = {4:1, 34:1, 8:1}, $intern_9 = {88:1, 42:1, 4:1, 31:1, 24:1}, $intern_10 = {85:1, 42:1, 4:1, 31:1, 24:1}, $intern_11 = {225:1, 42:1, 4:1, 31:1, 24:1}, $intern_12 = {187:1, 42:1, 4:1, 31:1, 24:1}, $intern_13 = {42:1, 188:1, 4:1, 31:1, 24:1}, $intern_14 = {42:1, 189:1, 4:1, 31:1, 24:1}, $intern_15 = {128:1, 4:1, 31:1, 24:1}, $intern_16 = {42:1, 264:1, 4:1, 31:1, 24:1}, $intern_17 = 2305, $intern_18 = {14:1}, $intern_19 = {245:1, 4:1, 90:1, 63:1, 67:1}, $intern_20 = {4:1, 31:1, 106:1}, $intern_21 = 4194303, $intern_22 = 1048575, $intern_23 = 4194304, $intern_24 = 17592186044416, $intern_25 = 524288, $intern_26 = -17592186044416, $intern_27 = -2147483648, $intern_28 = {326:1, 4:1}, $intern_29 = {27:1, 25:1}, $intern_30 = {29:1, 14:1, 28:1, 27:1, 18:1, 25:1, 20:1}, $intern_31 = 2318, $intern_32 = {29:1, 14:1, 28:1, 27:1, 121:1, 18:1, 25:1, 20:1}, $intern_33 = 16384, $intern_34 = 65536, $intern_35 = 1048576, $intern_36 = 16777216, $intern_37 = 33554432, $intern_38 = 67108864, $intern_39 = {29:1, 14:1, 28:1, 27:1, 32:1, 18:1, 25:1, 20:1}, $intern_40 = {29:1, 14:1, 28:1, 27:1, 32:1, 364:1, 18:1, 25:1, 20:1}, $intern_41 = {29:1, 14:1, 28:1, 35:1, 27:1, 18:1, 25:1, 20:1}, $intern_42 = {29:1, 14:1, 28:1, 286:1, 27:1, 32:1, 18:1, 25:1, 20:1}, $intern_43 = {29:1, 14:1, 28:1, 27:1, 32:1, 18:1, 117:1, 25:1, 20:1}, $intern_44 = {237:1, 15:1}, $intern_45 = {437:1, 15:1}, $intern_46 = {15:1, 2283:1}, $intern_47 = {97:1, 15:1}, $intern_48 = {104:1}, $intern_49 = {29:1, 14:1, 28:1, 27:1, 32:1, 364:1, 18:1, 248:1, 25:1, 20:1}, $intern_50 = {161:1, 15:1}, $intern_51 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 18:1, 25:1, 20:1}, $intern_52 = {2279:1, 15:1}, $intern_53 = {197:1, 4:1, 31:1, 24:1}, $intern_54 = {4:1, 239:1, 67:1}, $intern_55 = {29:1, 14:1, 28:1, 27:1, 18:1, 117:1, 25:1, 20:1}, $intern_56 = {221:1}, $intern_57 = {14:1, 18:1, 52:1}, $intern_58 = {18:1}, $intern_59 = {157:1, 15:1}, $intern_60 = {324:1}, $intern_61 = {97:1, 15:1, 14:1, 2258:1}, $intern_62 = 2313, $intern_63 = {14:1, 62:1, 60:1}, $intern_64 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1}, $intern_65 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1}, $intern_66 = {178:1, 15:1}, $intern_67 = {30:1, 15:1}, $intern_68 = {440:1, 15:1}, $intern_69 = 4000, $intern_70 = {15:1, 2267:1}, $intern_71 = {15:1, 2274:1}, $intern_72 = {15:1, 2268:1}, $intern_73 = {15:1, 2269:1}, $intern_74 = {15:1, 2270:1}, $intern_75 = {15:1, 2271:1}, $intern_76 = {15:1, 2272:1}, $intern_77 = {15:1, 2273:1}, $intern_78 = {15:1, 2275:1}, $intern_79 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 113:1}, $intern_80 = {441:1, 15:1}, $intern_81 = {438:1, 15:1}, $intern_82 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1}, $intern_83 = {15:1, 2278:1}, $intern_84 = {15:1, 2277:1}, $intern_85 = {602:1, 15:1}, $intern_86 = {603:1, 15:1}, $intern_87 = {2282:1, 15:1}, $intern_88 = {2281:1, 15:1}, $intern_89 = {2280:1, 15:1}, $intern_90 = 2302, $intern_91 = {104:1, 101:1}, $intern_92 = {4:1, 104:1, 101:1, 285:1}, $intern_93 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 26:1}, $intern_94 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 167:1}, $intern_95 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 179:1, 38:1, 37:1, 22:1, 141:1}, $intern_96 = {29:1, 14:1, 28:1, 35:1, 94:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 154:1}, $intern_97 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 134:1, 113:1}, $intern_98 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 17:1}, $intern_99 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 210:1}, $intern_100 = {325:1, 15:1}, $intern_101 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 45:1}, $intern_102 = {286:1, 32:1, 18:1}, $intern_103 = {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 98:1}, $intern_104 = {14:1, 39:1}, $intern_105 = {14:1, 39:1, 62:1, 60:1}, $intern_106 = {75:1}, $intern_107 = {185:1, 15:1}, $intern_108 = {220:1}, $intern_109 = {4:1, 90:1, 93:1, 63:1, 67:1}, $intern_110 = 65535, $intern_111 = {184:1}, $intern_112 = 2307, $intern_113 = {104:1, 169:1}, $intern_114 = {4:1, 104:1, 169:1}, $intern_115 = {4:1, 184:1}, $intern_116 = {4:1, 31:1, 24:1, 209:1}, $intern_117 = 2303, $intern_118 = {4:1, 8:1, 599:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function setGwtProperty(propertyName, propertyValue){
   typeof window === 'object' && typeof window['$gwt'] === 'object' && (window['$gwt'][propertyName] = propertyValue);
@@ -634,7 +634,7 @@ function setTimeout_0(func, time){
   return $wnd.setTimeout(func, time);
 }
 
-defineClass(131, 1, {});
+defineClass(132, 1, {});
 _.fire = function fire(scheduleCancelCounter){
   if (scheduleCancelCounter != this.cancelCounter) {
     return;
@@ -646,13 +646,13 @@ _.fire = function fire(scheduleCancelCounter){
 _.cancelCounter = 0;
 _.isRepeating = false;
 _.timerId = null;
-var Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 131);
+var Lcom_google_gwt_user_client_Timer_2_classLit = createForClass('com.google.gwt.user.client', 'Timer', 132);
 function AnimationSchedulerImplTimer$1(this$0){
   this.this$01 = this$0;
   Timer.call(this);
 }
 
-defineClass(2142, 131, {}, AnimationSchedulerImplTimer$1);
+defineClass(2142, 132, {}, AnimationSchedulerImplTimer$1);
 _.run = function run(){
   $updateAnimations(this.this$01);
 }
@@ -1273,7 +1273,7 @@ function TreeitemRoleImpl(){
 defineClass(2032, 66, {}, TreeitemRoleImpl);
 var Lcom_google_gwt_aria_client_TreeitemRoleImpl_2_classLit = createForClass('com.google.gwt.aria.client', 'TreeitemRoleImpl', 2032);
 function $$init(this$static){
-  this$static.stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 202, 0, 0, 1);
+  this$static.stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 203, 0, 0, 1);
 }
 
 function $addSuppressed(this$static, exception){
@@ -1368,8 +1368,8 @@ _.backingJsObject = '__noinit__';
 _.disableSuppression = false;
 _.writetableStackTrace = true;
 var Ljava_lang_Throwable_2_classLit = createForClass('java.lang', 'Throwable', 67);
-defineClass(88, 67, {4:1, 88:1, 67:1});
-var Ljava_lang_Exception_2_classLit = createForClass('java.lang', 'Exception', 88);
+defineClass(90, 67, {4:1, 90:1, 67:1});
+var Ljava_lang_Exception_2_classLit = createForClass('java.lang', 'Exception', 90);
 function RuntimeException(){
   $$init(this);
   $fillInStackTrace(this);
@@ -1387,7 +1387,7 @@ function RuntimeException_1(message, cause){
   Throwable.call(this, message, cause);
 }
 
-defineClass(63, 88, $intern_5, RuntimeException, RuntimeException_0);
+defineClass(63, 90, $intern_5, RuntimeException, RuntimeException_0);
 var Ljava_lang_RuntimeException_2_classLit = createForClass('java.lang', 'RuntimeException', 63);
 function CodeDownloadException(message){
   RuntimeException_0.call(this, message);
@@ -1446,7 +1446,7 @@ function getExceptionName0(e){
   return e == null?null:e.name;
 }
 
-defineClass(261, 625, {261:1, 4:1, 88:1, 63:1, 67:1}, JavaScriptException);
+defineClass(261, 625, {261:1, 4:1, 90:1, 63:1, 67:1}, JavaScriptException);
 _.getMessage = function getMessage_0(){
   $ensureInit(this);
   return this.message_0;
@@ -2349,7 +2349,7 @@ function ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1(val$request){
 defineClass(447, 1, {}, ScriptTagLoadingStrategy$ScriptTagDownloadStrategy$1);
 _.onFailure = function onFailure(reason){
   var lastArg;
-  cleanup((lastArg = this , castTo(reason, 88) , lastArg).val$request2);
+  cleanup((lastArg = this , castTo(reason, 90) , lastArg).val$request2);
 }
 ;
 _.onSuccess = function onSuccess(result){
@@ -2438,7 +2438,7 @@ _.getStackTrace = function getStackTrace(t){
   var i, length_0, stack_0, stackTrace;
   stack_0 = ($clinit_StackTraceCreator() , t && t['fnStack']?t['fnStack']:[]);
   length_0 = stack_0.length;
-  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 202, length_0, 0, 1);
+  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 203, length_0, 0, 1);
   for (i = 0; i < length_0; i++) {
     stackTrace[i] = new StackTraceElement(stack_0[i], null, -1);
   }
@@ -2498,7 +2498,7 @@ _.createSte = function createSte(fileName, method, line, col){
 _.getStackTrace = function getStackTrace_0(t){
   var addIndex, i, length_0, stack_0, stackTrace, ste, e;
   stack_0 = ($clinit_StackTraceCreator() , e = t.backingJsObject , e && e.stack?e.stack.split('\n'):[]);
-  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 202, 0, 0, 1);
+  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_4, 203, 0, 0, 1);
   addIndex = 0;
   length_0 = stack_0.length;
   if (length_0 == 0) {
@@ -2936,17 +2936,17 @@ function Style$Cursor(enum$name, enum$ordinal){
 
 function values_0(){
   $clinit_Style$Cursor();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Cursor_2_classLit, 1), $intern_8, 89, 0, [DEFAULT, AUTO, CROSSHAIR, POINTER, MOVE, E_RESIZE, NE_RESIZE, NW_RESIZE, N_RESIZE, SE_RESIZE, SW_RESIZE, S_RESIZE, W_RESIZE, TEXT, WAIT, HELP, COL_RESIZE, ROW_RESIZE]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Cursor_2_classLit, 1), $intern_8, 88, 0, [DEFAULT, AUTO, CROSSHAIR, POINTER, MOVE, E_RESIZE, NE_RESIZE, NW_RESIZE, N_RESIZE, SE_RESIZE, SW_RESIZE, S_RESIZE, W_RESIZE, TEXT, WAIT, HELP, COL_RESIZE, ROW_RESIZE]);
 }
 
-defineClass(89, 24, $intern_9);
+defineClass(88, 24, $intern_9);
 var AUTO, COL_RESIZE, CROSSHAIR, DEFAULT, E_RESIZE, HELP, MOVE, NE_RESIZE, NW_RESIZE, N_RESIZE, POINTER, ROW_RESIZE, SE_RESIZE, SW_RESIZE, S_RESIZE, TEXT, WAIT, W_RESIZE;
-var Lcom_google_gwt_dom_client_Style$Cursor_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor', 89, values_0);
+var Lcom_google_gwt_dom_client_Style$Cursor_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Cursor', 88, values_0);
 function Style$Cursor$1(){
   Style$Cursor.call(this, 'DEFAULT', 0);
 }
 
-defineClass(1187, 89, $intern_9, Style$Cursor$1);
+defineClass(1187, 88, $intern_9, Style$Cursor$1);
 _.getCssName = function getCssName(){
   return 'default';
 }
@@ -2956,7 +2956,7 @@ function Style$Cursor$10(){
   Style$Cursor.call(this, 'SE_RESIZE', 9);
 }
 
-defineClass(1196, 89, $intern_9, Style$Cursor$10);
+defineClass(1196, 88, $intern_9, Style$Cursor$10);
 _.getCssName = function getCssName_0(){
   return 'se-resize';
 }
@@ -2966,7 +2966,7 @@ function Style$Cursor$11(){
   Style$Cursor.call(this, 'SW_RESIZE', 10);
 }
 
-defineClass(1197, 89, $intern_9, Style$Cursor$11);
+defineClass(1197, 88, $intern_9, Style$Cursor$11);
 _.getCssName = function getCssName_1(){
   return 'sw-resize';
 }
@@ -2976,7 +2976,7 @@ function Style$Cursor$12(){
   Style$Cursor.call(this, 'S_RESIZE', 11);
 }
 
-defineClass(1198, 89, $intern_9, Style$Cursor$12);
+defineClass(1198, 88, $intern_9, Style$Cursor$12);
 _.getCssName = function getCssName_2(){
   return 's-resize';
 }
@@ -2986,7 +2986,7 @@ function Style$Cursor$13(){
   Style$Cursor.call(this, 'W_RESIZE', 12);
 }
 
-defineClass(1199, 89, $intern_9, Style$Cursor$13);
+defineClass(1199, 88, $intern_9, Style$Cursor$13);
 _.getCssName = function getCssName_3(){
   return 'w-resize';
 }
@@ -2996,7 +2996,7 @@ function Style$Cursor$14(){
   Style$Cursor.call(this, 'TEXT', 13);
 }
 
-defineClass(1200, 89, $intern_9, Style$Cursor$14);
+defineClass(1200, 88, $intern_9, Style$Cursor$14);
 _.getCssName = function getCssName_4(){
   return 'text';
 }
@@ -3006,7 +3006,7 @@ function Style$Cursor$15(){
   Style$Cursor.call(this, 'WAIT', 14);
 }
 
-defineClass(1201, 89, $intern_9, Style$Cursor$15);
+defineClass(1201, 88, $intern_9, Style$Cursor$15);
 _.getCssName = function getCssName_5(){
   return 'wait';
 }
@@ -3016,7 +3016,7 @@ function Style$Cursor$16(){
   Style$Cursor.call(this, 'HELP', 15);
 }
 
-defineClass(1202, 89, $intern_9, Style$Cursor$16);
+defineClass(1202, 88, $intern_9, Style$Cursor$16);
 _.getCssName = function getCssName_6(){
   return 'help';
 }
@@ -3026,7 +3026,7 @@ function Style$Cursor$17(){
   Style$Cursor.call(this, 'COL_RESIZE', 16);
 }
 
-defineClass(1203, 89, $intern_9, Style$Cursor$17);
+defineClass(1203, 88, $intern_9, Style$Cursor$17);
 _.getCssName = function getCssName_7(){
   return 'col-resize';
 }
@@ -3036,7 +3036,7 @@ function Style$Cursor$18(){
   Style$Cursor.call(this, 'ROW_RESIZE', 17);
 }
 
-defineClass(1204, 89, $intern_9, Style$Cursor$18);
+defineClass(1204, 88, $intern_9, Style$Cursor$18);
 _.getCssName = function getCssName_8(){
   return 'row-resize';
 }
@@ -3046,7 +3046,7 @@ function Style$Cursor$2(){
   Style$Cursor.call(this, 'AUTO', 1);
 }
 
-defineClass(1188, 89, $intern_9, Style$Cursor$2);
+defineClass(1188, 88, $intern_9, Style$Cursor$2);
 _.getCssName = function getCssName_9(){
   return 'auto';
 }
@@ -3056,7 +3056,7 @@ function Style$Cursor$3(){
   Style$Cursor.call(this, 'CROSSHAIR', 2);
 }
 
-defineClass(1189, 89, $intern_9, Style$Cursor$3);
+defineClass(1189, 88, $intern_9, Style$Cursor$3);
 _.getCssName = function getCssName_10(){
   return 'crosshair';
 }
@@ -3066,7 +3066,7 @@ function Style$Cursor$4(){
   Style$Cursor.call(this, 'POINTER', 3);
 }
 
-defineClass(1190, 89, $intern_9, Style$Cursor$4);
+defineClass(1190, 88, $intern_9, Style$Cursor$4);
 _.getCssName = function getCssName_11(){
   return 'pointer';
 }
@@ -3076,7 +3076,7 @@ function Style$Cursor$5(){
   Style$Cursor.call(this, 'MOVE', 4);
 }
 
-defineClass(1191, 89, $intern_9, Style$Cursor$5);
+defineClass(1191, 88, $intern_9, Style$Cursor$5);
 _.getCssName = function getCssName_12(){
   return 'move';
 }
@@ -3086,7 +3086,7 @@ function Style$Cursor$6(){
   Style$Cursor.call(this, 'E_RESIZE', 5);
 }
 
-defineClass(1192, 89, $intern_9, Style$Cursor$6);
+defineClass(1192, 88, $intern_9, Style$Cursor$6);
 _.getCssName = function getCssName_13(){
   return 'e-resize';
 }
@@ -3096,7 +3096,7 @@ function Style$Cursor$7(){
   Style$Cursor.call(this, 'NE_RESIZE', 6);
 }
 
-defineClass(1193, 89, $intern_9, Style$Cursor$7);
+defineClass(1193, 88, $intern_9, Style$Cursor$7);
 _.getCssName = function getCssName_14(){
   return 'ne-resize';
 }
@@ -3106,7 +3106,7 @@ function Style$Cursor$8(){
   Style$Cursor.call(this, 'NW_RESIZE', 7);
 }
 
-defineClass(1194, 89, $intern_9, Style$Cursor$8);
+defineClass(1194, 88, $intern_9, Style$Cursor$8);
 _.getCssName = function getCssName_15(){
   return 'nw-resize';
 }
@@ -3116,7 +3116,7 @@ function Style$Cursor$9(){
   Style$Cursor.call(this, 'N_RESIZE', 8);
 }
 
-defineClass(1195, 89, $intern_9, Style$Cursor$9);
+defineClass(1195, 88, $intern_9, Style$Cursor$9);
 _.getCssName = function getCssName_16(){
   return 'n-resize';
 }
@@ -9458,35 +9458,35 @@ function ValueBoxBase$TextAlignment(enum$name, enum$ordinal){
 
 function values_14(){
   $clinit_ValueBoxBase$TextAlignment();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, 1), $intern_8, 196, 0, [CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, 1), $intern_8, 197, 0, [CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1]);
 }
 
-defineClass(196, 24, $intern_53);
+defineClass(197, 24, $intern_53);
 var CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1;
-var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment', 196, values_14);
+var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment', 197, values_14);
 function ValueBoxBase$TextAlignment$1(){
   ValueBoxBase$TextAlignment.call(this, 'CENTER', 0);
 }
 
-defineClass(1709, 196, $intern_53, ValueBoxBase$TextAlignment$1);
+defineClass(1709, 197, $intern_53, ValueBoxBase$TextAlignment$1);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$1_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/1', 1709, null);
 function ValueBoxBase$TextAlignment$2(){
   ValueBoxBase$TextAlignment.call(this, 'JUSTIFY', 1);
 }
 
-defineClass(1710, 196, $intern_53, ValueBoxBase$TextAlignment$2);
+defineClass(1710, 197, $intern_53, ValueBoxBase$TextAlignment$2);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$2_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/2', 1710, null);
 function ValueBoxBase$TextAlignment$3(){
   ValueBoxBase$TextAlignment.call(this, 'LEFT', 2);
 }
 
-defineClass(1711, 196, $intern_53, ValueBoxBase$TextAlignment$3);
+defineClass(1711, 197, $intern_53, ValueBoxBase$TextAlignment$3);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$3_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/3', 1711, null);
 function ValueBoxBase$TextAlignment$4(){
   ValueBoxBase$TextAlignment.call(this, 'RIGHT', 3);
 }
 
-defineClass(1712, 196, $intern_53, ValueBoxBase$TextAlignment$4);
+defineClass(1712, 197, $intern_53, ValueBoxBase$TextAlignment$4);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$4_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/4', 1712, null);
 function $add_12(this$static, w){
   $insert_3(this$static, w, this$static.size_0);
@@ -12571,7 +12571,7 @@ function TokenFormatException(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(181, 63, {181:1, 4:1, 88:1, 63:1, 67:1}, TokenFormatException);
+defineClass(181, 63, {181:1, 4:1, 90:1, 63:1, 67:1}, TokenFormatException);
 var Lcom_gwtplatform_mvp_shared_proxy_TokenFormatException_2_classLit = createForClass('com.gwtplatform.mvp.shared.proxy', 'TokenFormatException', 181);
 function $get_Key$type$com$gwtplatform$mvp$shared$proxy$TokenFormatter$_annotation$$none$$(this$static){
   var result, result0;
@@ -12917,7 +12917,7 @@ function AbstractValueWidget_0(element, initialClass){
   $$init_1(this);
 }
 
-defineClass(204, 22, $intern_65);
+defineClass(205, 22, $intern_65);
 _.clearErrorOrSuccess = function clearErrorOrSuccess(){
   $clearErrorOrSuccess_1(this.getErrorMixin());
 }
@@ -12939,7 +12939,7 @@ _.setValue_1 = function setValue_3(value_0, fireEvents){
   fireEvents && fire_5(this, value_0);
 }
 ;
-var Lgwt_material_design_client_base_AbstractValueWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractValueWidget', 204);
+var Lgwt_material_design_client_base_AbstractValueWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractValueWidget', 205);
 function $clinit_MaterialAutoComplete(){
   $clinit_MaterialAutoComplete = emptyMethod;
   !startupState && (startupState = new StartupState$DebugState);
@@ -13148,7 +13148,7 @@ function MaterialAutoComplete(){
   $add_14(this, this.panel);
 }
 
-defineClass(294, 204, $intern_65, MaterialAutoComplete);
+defineClass(294, 205, $intern_65, MaterialAutoComplete);
 _.getValue_0 = function getValue_5(){
   return new ArrayList_1(new AbstractMap$1(this.suggestionMap));
 }
@@ -13363,7 +13363,7 @@ function values_23(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_addins_client_autocomplete_constants_AutocompleteType_2_classLit, 1), $intern_8, 316, 0, [CHIP, TEXT_0]);
 }
 
-defineClass(316, 24, {42:1, 316:1, 138:1, 112:1, 4:1, 31:1, 24:1}, AutocompleteType);
+defineClass(316, 24, {42:1, 316:1, 137:1, 112:1, 4:1, 31:1, 24:1}, AutocompleteType);
 _.getCssName = function getCssName_68(){
   return this.cssClass;
 }
@@ -13477,7 +13477,7 @@ function MaterialComboBox(){
   this.errorMixin = new ErrorMixin_0(this, this.lblError, this);
 }
 
-defineClass(109, 204, $intern_65, MaterialComboBox);
+defineClass(109, 205, $intern_65, MaterialComboBox);
 _.add_0 = function add_19(child){
   $add_16(this, child);
 }
@@ -13547,7 +13547,7 @@ function MaterialComboBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2482, $wnd.Function, {}, MaterialComboBox$lambda$0$Type);
+defineClass(2484, $wnd.Function, {}, MaterialComboBox$lambda$0$Type);
 _.call_0 = function call_0(arg0){
   return $lambda$0_1(this.$$outer_0);
 }
@@ -13556,7 +13556,7 @@ function MaterialComboBox$lambda$1$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2483, $wnd.Function, {}, MaterialComboBox$lambda$1$Type);
+defineClass(2485, $wnd.Function, {}, MaterialComboBox$lambda$1$Type);
 _.call_0 = function call_1(arg0){
   return $lambda$1_1(this.$$outer_0);
 }
@@ -13565,7 +13565,7 @@ function MaterialComboBox$lambda$2$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2484, $wnd.Function, {}, MaterialComboBox$lambda$2$Type);
+defineClass(2486, $wnd.Function, {}, MaterialComboBox$lambda$2$Type);
 _.call_0 = function call_2(arg0){
   return $lambda$2_0(this.$$outer_0);
 }
@@ -13574,7 +13574,7 @@ function MaterialComboBox$lambda$3$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2485, $wnd.Function, {}, MaterialComboBox$lambda$3$Type);
+defineClass(2487, $wnd.Function, {}, MaterialComboBox$lambda$3$Type);
 _.call_1 = function call_3(arg0, arg1){
   return $lambda$3_0(this.$$outer_0);
 }
@@ -13583,7 +13583,7 @@ function MaterialComboBox$lambda$4$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2486, $wnd.Function, {}, MaterialComboBox$lambda$4$Type);
+defineClass(2488, $wnd.Function, {}, MaterialComboBox$lambda$4$Type);
 _.call_1 = function call_4(arg0, arg1){
   return $lambda$4_1(this.$$outer_0);
 }
@@ -14644,7 +14644,7 @@ function MaterialUploadHeader$lambda$1$Type($$outer_0, collection_1, iconColaps_
   this.iconColaps_2 = iconColaps_2;
 }
 
-defineClass(2540, $wnd.Function, {}, MaterialUploadHeader$lambda$1$Type);
+defineClass(2542, $wnd.Function, {}, MaterialUploadHeader$lambda$1$Type);
 _.call_5 = function call_30(arg0){
   return $lambda$1_3(this.$$outer_0, this.collection_1, this.iconColaps_2);
 }
@@ -14703,7 +14703,7 @@ function values_25(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_addins_client_fileuploader_constants_FileMethod_2_classLit, 1), $intern_8, 352, 0, [POST, PUT]);
 }
 
-defineClass(352, 24, {42:1, 352:1, 138:1, 112:1, 4:1, 31:1, 24:1}, FileMethod);
+defineClass(352, 24, {42:1, 352:1, 137:1, 112:1, 4:1, 31:1, 24:1}, FileMethod);
 _.getCssName = function getCssName_69(){
   return this.cssClass;
 }
@@ -15097,7 +15097,7 @@ function MaterialMasonry$lambda$0$Type($$outer_0, e_1){
   this.e_1 = e_1;
 }
 
-defineClass(2478, $wnd.Function, {}, MaterialMasonry$lambda$0$Type);
+defineClass(2480, $wnd.Function, {}, MaterialMasonry$lambda$0$Type);
 _.call_6 = function call_31(){
   $lambda$0_4(this.$$outer_0, this.e_1);
 }
@@ -15107,7 +15107,7 @@ function MaterialMasonry$lambda$1$Type($$outer_0, e_1){
   this.e_1 = e_1;
 }
 
-defineClass(2480, $wnd.Function, {}, MaterialMasonry$lambda$1$Type);
+defineClass(2482, $wnd.Function, {}, MaterialMasonry$lambda$1$Type);
 _.call_6 = function call_32(){
   $lambda$1_4(this.$$outer_0, this.e_1);
 }
@@ -15227,7 +15227,7 @@ function MaterialPathAnimator$lambda$1$Type(source_0, target_1, callback_2){
   this.callback_2 = callback_2;
 }
 
-defineClass(2533, $wnd.Function, {}, MaterialPathAnimator$lambda$1$Type);
+defineClass(2535, $wnd.Function, {}, MaterialPathAnimator$lambda$1$Type);
 _.call_6 = function call_34(){
   $clinit_MaterialPathAnimator();
   $wnd.cta(this.source_0, this.target_1, makeLambdaFunction(MaterialPathAnimator$lambda$4$Type.prototype.call_6, MaterialPathAnimator$lambda$4$Type, [this.callback_2]));
@@ -15239,7 +15239,7 @@ function MaterialPathAnimator$lambda$3$Type(callback_0, target_1, source_2){
   this.source_2 = source_2;
 }
 
-defineClass(2535, $wnd.Function, {}, MaterialPathAnimator$lambda$3$Type);
+defineClass(2537, $wnd.Function, {}, MaterialPathAnimator$lambda$3$Type);
 _.call_6 = function call_36(){
   lambda$3(this.callback_0, this.target_1, this.source_2);
 }
@@ -15248,7 +15248,7 @@ function MaterialPathAnimator$lambda$4$Type(callback_0){
   this.callback_0 = callback_0;
 }
 
-defineClass(2536, $wnd.Function, {}, MaterialPathAnimator$lambda$4$Type);
+defineClass(2538, $wnd.Function, {}, MaterialPathAnimator$lambda$4$Type);
 _.call_6 = function call_37(){
   lambda$4(this.callback_0);
 }
@@ -15619,7 +15619,7 @@ function values_27(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_addins_client_splitpanel_constants_Dock_2_classLit, 1), $intern_8, 279, 0, [LEFT_3, RIGHT_4, TOP_0, BOTTOM_0]);
 }
 
-defineClass(279, 24, {42:1, 279:1, 138:1, 112:1, 4:1, 31:1, 24:1}, Dock);
+defineClass(279, 24, {42:1, 279:1, 137:1, 112:1, 4:1, 31:1, 24:1}, Dock);
 _.getCssName = function getCssName_70(){
   return this.cssClass;
 }
@@ -16152,7 +16152,7 @@ function AbstractTextWidget(element){
   AbstractValueWidget.call(this, element);
 }
 
-defineClass(1924, 204, $intern_65);
+defineClass(1924, 205, $intern_65);
 _.getValue_0 = function getValue_10(){
   return ($clinit_DOM() , this.element_0).textContent;
 }
@@ -16260,7 +16260,7 @@ function MaterialWidget$lambda$29$Type(){
 }
 
 defineClass(2380, $wnd.Function, {}, MaterialWidget$lambda$29$Type);
-_.call_0 = function call_55(arg0){
+_.call_0 = function call_56(arg0){
   return arg0.stopPropagation() , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
@@ -16483,7 +16483,7 @@ function getMeasurementUnit(value_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 82)) {
+    if (instanceOf($e0, 80)) {
       return null;
     }
      else 
@@ -16497,7 +16497,7 @@ function getMeasurementValue(value_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 203)) {
+    if (instanceOf($e0, 204)) {
       return null;
     }
      else 
@@ -16657,8 +16657,8 @@ function ColorsMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(198, 114, {}, ColorsMixin);
-var Lgwt_material_design_client_base_mixin_ColorsMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ColorsMixin', 198);
+defineClass(199, 114, {}, ColorsMixin);
+var Lgwt_material_design_client_base_mixin_ColorsMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ColorsMixin', 199);
 function CounterMixin(widget){
   AbstractMixin.call(this, widget);
 }
@@ -16682,8 +16682,8 @@ function CssNameMixin(widget){
   this.setUiObject(widget);
 }
 
-defineClass(134, 1760, {}, CssNameMixin);
-var Lgwt_material_design_client_base_mixin_CssNameMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssNameMixin', 134);
+defineClass(139, 1760, {}, CssNameMixin);
+var Lgwt_material_design_client_base_mixin_CssNameMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'CssNameMixin', 139);
 function $setType_2(this$static, type_0){
   !!this$static.type_0 && this$static.type_0.getCssName().length != 0 && (this$static.target_0?$removeStyleName(this$static.target_0, this$static.type_0.getCssName()):$removeStyleName(this$static.uiObject, this$static.type_0.getCssName()));
   this$static.type_0 = type_0;
@@ -16959,8 +16959,8 @@ function ReadOnlyMixin(uiObject, target){
   this.target_0 = target;
 }
 
-defineClass(130, 114, {}, ReadOnlyMixin);
-var Lgwt_material_design_client_base_mixin_ReadOnlyMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ReadOnlyMixin', 130);
+defineClass(131, 114, {}, ReadOnlyMixin);
+var Lgwt_material_design_client_base_mixin_ReadOnlyMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ReadOnlyMixin', 131);
 function $setShadow_0(this$static, shadow){
   $removeStyleName(this$static.uiObject, 'z-depth-' + this$static.shadow);
   this$static.shadow = shadow;
@@ -17218,7 +17218,7 @@ function values_33(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_ButtonType_2_classLit, 1), $intern_8, 269, 0, [LINK_1, RAISED, FLAT, FLOATING]);
 }
 
-defineClass(269, 24, {42:1, 269:1, 138:1, 112:1, 4:1, 31:1, 24:1}, ButtonType);
+defineClass(269, 24, {42:1, 269:1, 137:1, 112:1, 4:1, 31:1, 24:1}, ButtonType);
 _.getCssName = function getCssName_75(){
   return this.cssClass;
 }
@@ -17241,7 +17241,7 @@ function values_36(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_CollectionType_2_classLit, 1), $intern_8, 361, 0, [AVATAR, CHECKBOX_0]);
 }
 
-defineClass(361, 24, {42:1, 361:1, 138:1, 112:1, 4:1, 31:1, 24:1}, CollectionType);
+defineClass(361, 24, {42:1, 361:1, 137:1, 112:1, 4:1, 31:1, 24:1}, CollectionType);
 _.getCssName = function getCssName_78(){
   return this.cssClass;
 }
@@ -17520,7 +17520,7 @@ function values_37(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Color_2_classLit, 1), $intern_8, 21, 0, [DEFAULT_2, BLACK, WHITE, TRANSPARENT, BLUE_GREY_LIGHTEN_5, BLUE_GREY_LIGHTEN_4, BLUE_GREY_LIGHTEN_3, BLUE_GREY_LIGHTEN_2, BLUE_GREY_LIGHTEN_1, BLUE_GREY, BLUE_GREY_DARKEN_1, BLUE_GREY_DARKEN_2, BLUE_GREY_DARKEN_3, BLUE_GREY_DARKEN_4, GREY_LIGHTEN_5, GREY_LIGHTEN_4, GREY_LIGHTEN_3, GREY_LIGHTEN_2, GREY_LIGHTEN_1, GREY, GREY_DARKEN_1, GREY_DARKEN_2, GREY_DARKEN_3, GREY_DARKEN_4, BROWN_LIGHTEN_5, BROWN_LIGHTEN_4, BROWN_LIGHTEN_3, BROWN_LIGHTEN_2, BROWN_LIGHTEN_1, BROWN, BROWN_DARKEN_1, BROWN_DARKEN_2, BROWN_DARKEN_3, BROWN_DARKEN_4, DEEP_ORANGE_LIGHTEN_5, DEEP_ORANGE_LIGHTEN_4, DEEP_ORANGE_LIGHTEN_3, DEEP_ORANGE_LIGHTEN_2, DEEP_ORANGE_LIGHTEN_1, DEEP_ORANGE, DEEP_ORANGE_DARKEN_1, DEEP_ORANGE_DARKEN_2, DEEP_ORANGE_DARKEN_3, DEEP_ORANGE_DARKEN_4, DEEP_ORANGE_ACCENT_1, DEEP_ORANGE_ACCENT_2, DEEP_ORANGE_ACCENT_3, DEEP_ORANGE_ACCENT_4, ORANGE_LIGHTEN_5, ORANGE_LIGHTEN_4, ORANGE_LIGHTEN_3, ORANGE_LIGHTEN_2, ORANGE_LIGHTEN_1, ORANGE, ORANGE_DARKEN_1, ORANGE_DARKEN_2, ORANGE_DARKEN_3, ORANGE_DARKEN_4, ORANGE_ACCENT_1, ORANGE_ACCENT_2, ORANGE_ACCENT_3, ORANGE_ACCENT_4, AMBER_LIGHTEN_5, AMBER_LIGHTEN_4, AMBER_LIGHTEN_3, AMBER_LIGHTEN_2, AMBER_LIGHTEN_1, AMBER, AMBER_DARKEN_1, AMBER_DARKEN_2, AMBER_DARKEN_3, AMBER_DARKEN_4, AMBER_ACCENT_1, AMBER_ACCENT_2, AMBER_ACCENT_3, AMBER_ACCENT_4, YELLOW_LIGHTEN_5, YELLOW_LIGHTEN_4, YELLOW_LIGHTEN_3, YELLOW_LIGHTEN_2, YELLOW_LIGHTEN_1, YELLOW, YELLOW_DARKEN_1, YELLOW_DARKEN_2, YELLOW_DARKEN_3, YELLOW_DARKEN_4, YELLOW_ACCENT_1, YELLOW_ACCENT_2, YELLOW_ACCENT_3, YELLOW_ACCENT_4, LIME_LIGHTEN_5, LIME_LIGHTEN_4, LIME_LIGHTEN_3, LIME_LIGHTEN_2, LIME_LIGHTEN_1, LIME, LIME_DARKEN_1, LIME_DARKEN_2, LIME_DARKEN_3, LIME_DARKEN_4, LIME_ACCENT_1, LIME_ACCENT_2, LIME_ACCENT_3, LIME_ACCENT_4, LIGHT_GREEN_LIGHTEN_5, LIGHT_GREEN_LIGHTEN_4, LIGHT_GREEN_LIGHTEN_3, LIGHT_GREEN_LIGHTEN_2, LIGHT_GREEN_LIGHTEN_1, LIGHT_GREEN, LIGHT_GREEN_DARKEN_1, LIGHT_GREEN_DARKEN_2, LIGHT_GREEN_DARKEN_3, LIGHT_GREEN_DARKEN_4, LIGHT_GREEN_ACCENT_1, LIGHT_GREEN_ACCENT_2, LIGHT_GREEN_ACCENT_3, LIGHT_GREEN_ACCENT_4, GREEN_LIGHTEN_5, GREEN_LIGHTEN_4, GREEN_LIGHTEN_3, GREEN_LIGHTEN_2, GREEN_LIGHTEN_1, GREEN, GREEN_DARKEN_1, GREEN_DARKEN_2, GREEN_DARKEN_3, GREEN_DARKEN_4, GREEN_ACCENT_1, GREEN_ACCENT_2, GREEN_ACCENT_3, GREEN_ACCENT_4, TEAL_LIGHTEN_5, TEAL_LIGHTEN_4, TEAL_LIGHTEN_3, TEAL_LIGHTEN_2, TEAL_LIGHTEN_1, TEAL, TEAL_DARKEN_1, TEAL_DARKEN_2, TEAL_DARKEN_3, TEAL_DARKEN_4, TEAL_ACCENT_1, TEAL_ACCENT_2, TEAL_ACCENT_3, TEAL_ACCENT_4, CYAN_LIGHTEN_5, CYAN_LIGHTEN_4, CYAN_LIGHTEN_3, CYAN_LIGHTEN_2, CYAN_LIGHTEN_1, CYAN, CYAN_DARKEN_1, CYAN_DARKEN_2, CYAN_DARKEN_3, CYAN_DARKEN_4, CYAN_ACCENT_1, CYAN_ACCENT_2, CYAN_ACCENT_3, CYAN_ACCENT_4, LIGHT_BLUE_LIGHTEN_5, LIGHT_BLUE_LIGHTEN_4, LIGHT_BLUE_LIGHTEN_3, LIGHT_BLUE_LIGHTEN_2, LIGHT_BLUE_LIGHTEN_1, LIGHT_BLUE, LIGHT_BLUE_DARKEN_1, LIGHT_BLUE_DARKEN_2, LIGHT_BLUE_DARKEN_3, LIGHT_BLUE_DARKEN_4, LIGHT_BLUE_ACCENT_1, LIGHT_BLUE_ACCENT_2, LIGHT_BLUE_ACCENT_3, LIGHT_BLUE_ACCENT_4, BLUE_LIGHTEN_5, BLUE_LIGHTEN_4, BLUE_LIGHTEN_3, BLUE_LIGHTEN_2, BLUE_LIGHTEN_1, BLUE, BLUE_DARKEN_1, BLUE_DARKEN_2, BLUE_DARKEN_3, BLUE_DARKEN_4, BLUE_ACCENT_1, BLUE_ACCENT_2, BLUE_ACCENT_3, BLUE_ACCENT_4, INDIGO_LIGHTEN_5, INDIGO_LIGHTEN_4, INDIGO_LIGHTEN_3, INDIGO_LIGHTEN_2, INDIGO_LIGHTEN_1, INDIGO, INDIGO_DARKEN_1, INDIGO_DARKEN_2, INDIGO_DARKEN_3, INDIGO_DARKEN_4, INDIGO_ACCENT_1, INDIGO_ACCENT_2, INDIGO_ACCENT_3, INDIGO_ACCENT_4, DEEP_PURPLE_LIGHTEN_5, DEEP_PURPLE_LIGHTEN_4, DEEP_PURPLE_LIGHTEN_3, DEEP_PURPLE_LIGHTEN_2, DEEP_PURPLE_LIGHTEN_1, DEEP_PURPLE, DEEP_PURPLE_DARKEN_1, DEEP_PURPLE_DARKEN_2, DEEP_PURPLE_DARKEN_3, DEEP_PURPLE_DARKEN_4, DEEP_PURPLE_ACCENT_1, DEEP_PURPLE_ACCENT_2, DEEP_PURPLE_ACCENT_3, DEEP_PURPLE_ACCENT_4, PURPLE_LIGHTEN_5, PURPLE_LIGHTEN_4, PURPLE_LIGHTEN_3, PURPLE_LIGHTEN_2, PURPLE_LIGHTEN_1, PURPLE, PURPLE_DARKEN_1, PURPLE_DARKEN_2, PURPLE_DARKEN_3, PURPLE_DARKEN_4, PURPLE_ACCENT_1, PURPLE_ACCENT_2, PURPLE_ACCENT_3, PURPLE_ACCENT_4, PINK_LIGHTEN_5, PINK_LIGHTEN_4, PINK_LIGHTEN_3, PINK_LIGHTEN_2, PINK_LIGHTEN_1, PINK, PINK_DARKEN_1, PINK_DARKEN_2, PINK_DARKEN_3, PINK_DARKEN_4, PINK_ACCENT_1, PINK_ACCENT_2, PINK_ACCENT_3, PINK_ACCENT_4, RED_LIGHTEN_5, RED_LIGHTEN_4, RED_LIGHTEN_3, RED_LIGHTEN_2, RED_LIGHTEN_1, RED, RED_DARKEN_1, RED_DARKEN_2, RED_DARKEN_3, RED_DARKEN_4, RED_ACCENT_1, RED_ACCENT_2, RED_ACCENT_3, RED_ACCENT_4]);
 }
 
-defineClass(21, 24, {42:1, 21:1, 138:1, 112:1, 4:1, 31:1, 24:1}, Color);
+defineClass(21, 24, {42:1, 21:1, 137:1, 112:1, 4:1, 31:1, 24:1}, Color);
 _.getCssName = function getCssName_79(){
   return this.cssClass;
 }
@@ -17573,16 +17573,16 @@ function parse_3(display){
 
 function values_39(){
   $clinit_Display();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Display_2_classLit, 1), $intern_8, 136, 0, [FLEX_0, NONE_4, BLOCK_0, INLINE_0, INLINE_BLOCK_0, INLINE_TABLE_0, LIST_ITEM_0, RUN_IN_0, TABLE_2, TABLE_CAPTION_0, TABLE_COLUMN_GROUP_0, TABLE_HEADER_GROUP_0, TABLE_FOOTER_GROUP_0, TABLE_ROW_GROUP_0, TABLE_CELL_0, TABLE_COLUMN_0, TABLE_ROW_0, INITIAL_0]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Display_2_classLit, 1), $intern_8, 135, 0, [FLEX_0, NONE_4, BLOCK_0, INLINE_0, INLINE_BLOCK_0, INLINE_TABLE_0, LIST_ITEM_0, RUN_IN_0, TABLE_2, TABLE_CAPTION_0, TABLE_COLUMN_GROUP_0, TABLE_HEADER_GROUP_0, TABLE_FOOTER_GROUP_0, TABLE_ROW_GROUP_0, TABLE_CELL_0, TABLE_COLUMN_0, TABLE_ROW_0, INITIAL_0]);
 }
 
-defineClass(136, 24, {42:1, 136:1, 4:1, 31:1, 24:1}, Display, Display_0);
+defineClass(135, 24, {42:1, 135:1, 4:1, 31:1, 24:1}, Display, Display_0);
 _.getCssName = function getCssName_80(){
   return this.cssName;
 }
 ;
 var BLOCK_0, FLEX_0, INITIAL_0, INLINE_0, INLINE_BLOCK_0, INLINE_TABLE_0, LIST_ITEM_0, NONE_4, RUN_IN_0, TABLE_2, TABLE_CAPTION_0, TABLE_CELL_0, TABLE_COLUMN_0, TABLE_COLUMN_GROUP_0, TABLE_FOOTER_GROUP_0, TABLE_HEADER_GROUP_0, TABLE_ROW_0, TABLE_ROW_GROUP_0;
-var Lgwt_material_design_client_constants_Display_2_classLit = createForEnum('gwt.material.design.client.constants', 'Display', 136, values_39);
+var Lgwt_material_design_client_constants_Display_2_classLit = createForEnum('gwt.material.design.client.constants', 'Display', 135, values_39);
 function $clinit_Edge(){
   $clinit_Edge = emptyMethod;
   LEFT_5 = new Edge('LEFT', 0, 'left');
@@ -17650,7 +17650,7 @@ function values_43(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_HideOn_2_classLit, 1), $intern_8, 206, 0, [HIDE_ON_SMALL, HIDE_ON_SMALL_DOWN, HIDE_ON_MED, HIDE_ON_MED_DOWN, HIDE_ON_MED_UP, HIDE_ON_LARGE, NONE_5]);
 }
 
-defineClass(206, 24, {42:1, 138:1, 206:1, 112:1, 4:1, 31:1, 24:1}, HideOn);
+defineClass(206, 24, {42:1, 137:1, 206:1, 112:1, 4:1, 31:1, 24:1}, HideOn);
 _.getCssName = function getCssName_83(){
   return this.cssClass;
 }
@@ -18653,7 +18653,7 @@ function values_46(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_IconType_2_classLit, 1), $intern_8, 3, 0, [DEFAULT_3, ROTATION_3D, AC_UNIT, ACCESS_ALARM, ACCESS_ALARMS, ACCESS_TIME, ACCESSIBILITY, ACCESSIBLE, ACCOUNT_BALANCE, ACCOUNT_BALANCE_WALLET, ACCOUNT_BOX, ACCOUNT_CIRCLE, ADB, ADD, ADD_A_PHOTO, ADD_ALARM, ADD_ALERT, ADD_BOX, ADD_CIRCLE, ADD_CIRCLE_OUTLINE, ADD_LOCATION, ADD_SHOPPING_CART, ADD_TO_PHOTOS, ADD_TO_QUEUE, ADJUST, AIRLINE_SEAT_FLAT, AIRLINE_SEAT_FLAT_ANGLED, AIRLINE_SEAT_INDIVIDUAL_SUITE, AIRLINE_SEAT_LEGROOM_EXTRA, AIRLINE_SEAT_LEGROOM_NORMAL, AIRLINE_SEAT_LEGROOM_REDUCED, AIRLINE_SEAT_RECLINE_EXTRA, AIRLINE_SEAT_RECLINE_NORMAL, AIRPLANEMODE_ACTIVE, AIRPLANEMODE_INACTIVE, AIRPLAY, AIRPORT_SHUTTLE, ALARM, ALARM_ADD, ALARM_OFF, ALARM_ON, ALBUM, ALL_INCLUSIVE, ALL_OUT, ANDROID, ANNOUNCEMENT, APPS, ARCHIVE, ARROW_BACK, ARROW_DOWNWARD, ARROW_DROP_DOWN, ARROW_DROP_DOWN_CIRCLE, ARROW_DROP_UP, ARROW_FORWARD, ARROW_UPWARD, ART_TRACK, ASPECT_RATIO, ASSESSMENT, ASSIGNMENT, ASSIGNMENT_IND, ASSIGNMENT_LATE, ASSIGNMENT_RETURN, ASSIGNMENT_RETURNED, ASSIGNMENT_TURNED_IN, ASSISTANT, ASSISTANT_PHOTO, ATTACH_FILE, ATTACH_MONEY, ATTACHMENT, AUDIOTRACK, AUTORENEW, AV_TIMER, BACKSPACE, BACKUP, BATTERY_ALERT, BATTERY_CHARGING_FULL, BATTERY_FULL, BATTERY_STD, BATTERY_UNKNOWN, BEACH_ACCESS, BEENHERE, BLOCK_1, BLUETOOTH, BLUETOOTH_AUDIO, BLUETOOTH_CONNECTED, BLUETOOTH_DISABLED, BLUETOOTH_SEARCHING, BLUR_CIRCULAR, BLUR_LINEAR, BLUR_OFF, BLUR_ON, BOOK, BOOKMARK, BOOKMARK_BORDER, BORDER_ALL, BORDER_BOTTOM, BORDER_CLEAR, BORDER_COLOR, BORDER_HORIZONTAL, BORDER_INNER, BORDER_LEFT, BORDER_OUTER, BORDER_RIGHT, BORDER_STYLE, BORDER_TOP, BORDER_VERTICAL, BRANDING_WATERMARK, BRIGHTNESS_1, BRIGHTNESS_2, BRIGHTNESS_3, BRIGHTNESS_4, BRIGHTNESS_5, BRIGHTNESS_6, BRIGHTNESS_7, BRIGHTNESS_AUTO, BRIGHTNESS_HIGH, BRIGHTNESS_LOW, BRIGHTNESS_MEDIUM, BROKEN_IMAGE, BRUSH, BUBBLE_CHART, BUG_REPORT, BUILD, BURST_MODE, BUSINESS, BUSINESS_CENTER, CACHED, CAKE, CALL, CALL_END, CALL_MADE, CALL_MERGE, CALL_MISSED, CALL_MISSED_OUTGOING, CALL_RECEIVED, CALL_SPLIT, CALL_TO_ACTION, CAMERA, CAMERA_ALT, CAMERA_ENHANCE, CAMERA_FRONT, CAMERA_REAR, CAMERA_ROLL, CANCEL, CARD_GIFTCARD, CARD_MEMBERSHIP, CARD_TRAVEL, CASINO, CAST, CAST_CONNECTED, CENTER_FOCUS_STRONG, CENTER_FOCUS_WEAK, CHANGE_HISTORY, CHAT, CHAT_BUBBLE, CHAT_BUBBLE_OUTLINE, CHECK, CHECK_BOX, CHECK_BOX_OUTLINE_BLANK, CHECK_CIRCLE, CHEVRON_LEFT, CHEVRON_RIGHT, CHILD_CARE, CHILD_FRIENDLY, CHROME_READER_MODE, CLASS, CLEAR_0, CLEAR_ALL, CLOSE, CLOSED_CAPTION, CLOUD, CLOUD_CIRCLE, CLOUD_DONE, CLOUD_DOWNLOAD, CLOUD_OFF, CLOUD_QUEUE, CLOUD_UPLOAD, CODE, COLLECTIONS, COLLECTIONS_BOOKMARK, COLOR_LENS, COLORIZE, COMMENT, COMPARE, COMPARE_ARROWS, COMPUTER, CONFIRMATION_NUMBER, CONTACT_MAIL, CONTACT_PHONE, CONTACTS, CONTENT_COPY, CONTENT_CUT, CONTENT_PASTE, CONTROL_POINT, CONTROL_POINT_DUPLICATE, COPYRIGHT, CREATE, CREATE_NEW_FOLDER, CREDIT_CARD, CROP, CROP_16_9, CROP_3_2, CROP_5_4, CROP_7_5, CROP_DIN, CROP_FREE, CROP_LANDSCAPE, CROP_ORIGINAL, CROP_PORTRAIT, CROP_ROTATE, CROP_SQUARE, DASHBOARD, DATA_USAGE, DATE_RANGE, DEHAZE, DELETE, DELETE_FOREVER, DELETE_SWEEP, DESCRIPTION, DESKTOP_MAC, DESKTOP_WINDOWS, DETAILS, DEVELOPER_BOARD, DEVELOPER_MODE, DEVICE_HUB, DEVICES, DEVICES_OTHER, DIALER_SIP, DIALPAD, DIRECTIONS, DIRECTIONS_BIKE, DIRECTIONS_BOAT, DIRECTIONS_BUS, DIRECTIONS_CAR, DIRECTIONS_RAILWAY, DIRECTIONS_RUN, DIRECTIONS_SUBWAY, DIRECTIONS_TRANSIT, DIRECTIONS_WALK, DISC_FULL, DNS, DO_NOT_DISTURB, DO_NOT_DISTURB_ALT, DO_NOT_DISTURB_OFF, DO_NOT_DISTURB_ON, DOCK, DOMAIN, DONE, DONE_ALL, DONUT_LARGE, DONUT_SMALL, DRAFTS, DRAG_HANDLE, DRIVE_ETA, DVR, EDIT, EDIT_LOCATION, EJECT, EMAIL, ENHANCED_ENCRYPTION, EQUALIZER, ERROR, ERROR_OUTLINE, EURO_SYMBOL, EV_STATION, EVENT, EVENT_AVAILABLE, EVENT_BUSY, EVENT_NOTE, EVENT_SEAT, EXIT_TO_APP, EXPAND_LESS, EXPAND_MORE, EXPLICIT, EXPLORE, EXPOSURE, EXPOSURE_NEG_1, EXPOSURE_NEG_2, EXPOSURE_PLUS_1, EXPOSURE_PLUS_2, EXPOSURE_ZERO, EXTENSION, FACE, FAST_FORWARD, FAST_REWIND, FAVORITE, FAVORITE_BORDER, FEATURED_PLAY_LIST, FEATURED_VIDEO, FEEDBACK, FIBER_DVR, FIBER_MANUAL_RECORD, FIBER_NEW, FIBER_PIN, FIBER_SMART_RECORD, FILE_DOWNLOAD, FILE_UPLOAD, FILTER, FILTER_1, FILTER_2, FILTER_3, FILTER_4, FILTER_5, FILTER_6, FILTER_7, FILTER_8, FILTER_9, FILTER_9_PLUS, FILTER_B_AND_W, FILTER_CENTER_FOCUS, FILTER_DRAMA, FILTER_FRAMES, FILTER_HDR, FILTER_LIST, FILTER_NONE, FILTER_TILT_SHIFT, FILTER_VINTAGE, FIND_IN_PAGE, FIND_REPLACE, FINGERPRINT, FIRST_PAGE, FITNESS_CENTER, FLAG, FLARE, FLASH_AUTO, FLASH_OFF, FLASH_ON, FLIGHT, FLIGHT_LAND, FLIGHT_TAKEOFF, FLIP, FLIP_TO_BACK, FLIP_TO_FRONT, FOLDER, FOLDER_OPEN, FOLDER_SHARED, FOLDER_SPECIAL, FONT_DOWNLOAD, FORMAT_ALIGN_CENTER, FORMAT_ALIGN_JUSTIFY, FORMAT_ALIGN_LEFT, FORMAT_ALIGN_RIGHT, FORMAT_BOLD, FORMAT_CLEAR, FORMAT_COLOR_FILL, FORMAT_COLOR_RESET, FORMAT_COLOR_TEXT, FORMAT_INDENT_DECREASE, FORMAT_INDENT_INCREASE, FORMAT_ITALIC, FORMAT_LINE_SPACING, FORMAT_LIST_BULLETED, FORMAT_LIST_NUMBERED, FORMAT_PAINT, FORMAT_QUOTE, FORMAT_SHAPES, FORMAT_SIZE, FORMAT_STRIKETHROUGH, FORMAT_TEXTDIRECTION_L_TO_R, FORMAT_TEXTDIRECTION_R_TO_L, FORMAT_UNDERLINED, FORUM, FORWARD, FORWARD_10, FORWARD_30, FORWARD_5, FREE_BREAKFAST, FULLSCREEN_0, FULLSCREEN_EXIT, FUNCTIONS, G_TRANSLATE, GAMEPAD, GAMES, GAVEL, GESTURE, GET_APP, GIF, GOLF_COURSE, GPS_FIXED, GPS_NOT_FIXED, GPS_OFF, GRADE, GRADIENT, GRAIN, GRAPHIC_EQ, GRID_OFF, GRID_ON, GROUP_0, GROUP_ADD, GROUP_WORK, HD, HDR_OFF, HDR_ON, HDR_STRONG, HDR_WEAK, HEADSET, HEADSET_MIC, HEALING, HEARING, HELP_1, HELP_OUTLINE, HIGH_QUALITY, HIGHLIGHT, HIGHLIGHT_OFF, HISTORY, HOME, HOT_TUB, HOTEL, HOURGLASS_EMPTY, HOURGLASS_FULL, HTTP, HTTPS, IMAGE, IMAGE_ASPECT_RATIO, IMPORT_CONTACTS, IMPORT_EXPORT, IMPORTANT_DEVICES, INBOX, INDETERMINATE_CHECK_BOX, INFO, INFO_OUTLINE, INPUT, INSERT_CHART, INSERT_COMMENT, INSERT_DRIVE_FILE, INSERT_EMOTICON, INSERT_INVITATION, INSERT_LINK, INSERT_PHOTO, INVERT_COLORS, INVERT_COLORS_OFF, ISO, KEYBOARD, KEYBOARD_ARROW_DOWN, KEYBOARD_ARROW_LEFT, KEYBOARD_ARROW_RIGHT, KEYBOARD_ARROW_UP, KEYBOARD_BACKSPACE, KEYBOARD_CAPSLOCK, KEYBOARD_HIDE, KEYBOARD_RETURN, KEYBOARD_TAB, KEYBOARD_VOICE, KITCHEN, LABEL_0, LABEL_OUTLINE, LANDSCAPE, LANGUAGE, LAPTOP, LAPTOP_CHROMEBOOK, LAPTOP_MAC, LAPTOP_WINDOWS, LAST_PAGE, LAUNCH, LAYERS, LAYERS_CLEAR, LEAK_ADD, LEAK_REMOVE, LENS, LIBRARY_ADD, LIBRARY_BOOKS, LIBRARY_MUSIC, LIGHTBULB_OUTLINE, LINE_STYLE, LINE_WEIGHT, LINEAR_SCALE, LINK_2, LINKED_CAMERA, LIST_0, LIVE_HELP, LIVE_TV, LOCAL_ACTIVITY, LOCAL_AIRPORT, LOCAL_ATM, LOCAL_BAR, LOCAL_CAFE, LOCAL_CAR_WASH, LOCAL_CONVENIENCE_STORE, LOCAL_DINING, LOCAL_DRINK, LOCAL_FLORIST, LOCAL_GAS_STATION, LOCAL_GROCERY_STORE, LOCAL_HOSPITAL, LOCAL_HOTEL, LOCAL_LAUNDRY_SERVICE, LOCAL_LIBRARY, LOCAL_MALL, LOCAL_MOVIES, LOCAL_OFFER, LOCAL_PARKING, LOCAL_PHARMACY, LOCAL_PHONE, LOCAL_PIZZA, LOCAL_PLAY, LOCAL_POST_OFFICE, LOCAL_PRINTSHOP, LOCAL_SEE, LOCAL_SHIPPING, LOCAL_TAXI, LOCATION_CITY, LOCATION_DISABLED, LOCATION_OFF, LOCATION_ON, LOCATION_SEARCHING, LOCK, LOCK_OPEN, LOCK_OUTLINE, LOOKS, LOOKS_3, LOOKS_4, LOOKS_5, LOOKS_6, LOOKS_ONE, LOOKS_TWO, LOOP, LOUPE, LOW_PRIORITY, LOYALTY, MAIL, MAIL_OUTLINE, MAP, MARKUNREAD, MARKUNREAD_MAILBOX, MEMORY, MENU_0, MERGE_TYPE, MESSAGE, MIC, MIC_NONE, MIC_OFF, MMS, MODE_COMMENT, MODE_EDIT, MONETIZATION_ON, MONEY_OFF, MONOCHROME_PHOTOS, MOOD, MOOD_BAD, MORE, MORE_HORIZ, MORE_VERT, MOTORCYCLE, MOUSE, MOVE_TO_INBOX, MOVIE, MOVIE_CREATION, MOVIE_FILTER, MULTILINE_CHART, MUSIC_NOTE, MUSIC_VIDEO, MY_LOCATION, NATURE, NATURE_PEOPLE, NAVIGATE_BEFORE, NAVIGATE_NEXT, NAVIGATION_0, NEAR_ME, NETWORK_CELL, NETWORK_CHECK, NETWORK_LOCKED, NETWORK_WIFI, NEW_RELEASES, NEXT_WEEK, NFC, NO_ENCRYPTION, NO_SIM, NOT_INTERESTED, NOTE_0, NOTE_ADD, NOTIFICATIONS, NOTIFICATIONS_ACTIVE, NOTIFICATIONS_NONE, NOTIFICATIONS_OFF, NOTIFICATIONS_PAUSED, OFFLINE_PIN, ONDEMAND_VIDEO, OPACITY, OPEN_IN_BROWSER, OPEN_IN_NEW, OPEN_WITH, PAGES, PAGEVIEW, PALETTE, PAN_TOOL, PANORAMA, PANORAMA_FISH_EYE, PANORAMA_HORIZONTAL, PANORAMA_VERTICAL, PANORAMA_WIDE_ANGLE, PARTY_MODE, PAUSE, PAUSE_CIRCLE_FILLED, PAUSE_CIRCLE_OUTLINE, PAYMENT, PEOPLE, PEOPLE_OUTLINE, PERM_CAMERA_MIC, PERM_CONTACT_CALENDAR, PERM_DATA_SETTING, PERM_DEVICE_INFORMATION, PERM_IDENTITY, PERM_MEDIA, PERM_PHONE_MSG, PERM_SCAN_WIFI, PERSON, PERSON_ADD, PERSON_OUTLINE, PERSON_PIN, PERSON_PIN_CIRCLE, PERSONAL_VIDEO, PETS, PHONE, PHONE_ANDROID, PHONE_BLUETOOTH_SPEAKER, PHONE_FORWARDED, PHONE_IN_TALK, PHONE_IPHONE, PHONE_LOCKED, PHONE_MISSED, PHONE_PAUSED, PHONELINK, PHONELINK_ERASE, PHONELINK_LOCK, PHONELINK_OFF, PHONELINK_RING, PHONELINK_SETUP, PHOTO, PHOTO_ALBUM, PHOTO_CAMERA, PHOTO_FILTER, PHOTO_LIBRARY, PHOTO_SIZE_SELECT_ACTUAL, PHOTO_SIZE_SELECT_LARGE, PHOTO_SIZE_SELECT_SMALL, PICTURE_AS_PDF, PICTURE_IN_PICTURE, PICTURE_IN_PICTURE_ALT, PIE_CHART, PIE_CHART_OUTLINED, PIN_DROP, PLACE, PLAY_ARROW, PLAY_CIRCLE_FILLED, PLAY_CIRCLE_OUTLINE, PLAY_FOR_WORK, PLAYLIST_ADD, PLAYLIST_ADD_CHECK, PLAYLIST_PLAY, PLUS_ONE, POLL, POLYMER, POOL, PORTABLE_WIFI_OFF, PORTRAIT, POWER, POWER_INPUT, POWER_SETTINGS_NEW, PREGNANT_WOMAN, PRESENT_TO_ALL, PRINT, PRIORITY_HIGH, PUBLIC, PUBLISH, QUERY_BUILDER, QUESTION_ANSWER, QUEUE, QUEUE_MUSIC, QUEUE_PLAY_NEXT, RADIO_0, RADIO_BUTTON_CHECKED, RADIO_BUTTON_UNCHECKED, RATE_REVIEW, RECEIPT, RECENT_ACTORS, RECORD_VOICE_OVER, REDEEM, REDO_0, REFRESH, REMOVE, REMOVE_CIRCLE, REMOVE_CIRCLE_OUTLINE, REMOVE_FROM_QUEUE, REMOVE_RED_EYE, REMOVE_SHOPPING_CART, REORDER, REPEAT, REPEAT_ONE, REPLAY, REPLAY_10, REPLAY_30, REPLAY_5, REPLY, REPLY_ALL, REPORT, REPORT_PROBLEM, RESTAURANT, RESTAURANT_MENU, RESTORE, RESTORE_PAGE, RING_VOLUME, ROOM, ROOM_SERVICE, ROTATE_90_DEGREES_CCW, ROTATE_LEFT, ROTATE_RIGHT, ROUNDED_CORNER, ROUTER, ROWING, RSS_FEED, RV_HOOKUP, SATELLITE, SAVE, SCANNER, SCHEDULE, SCHOOL, SCREEN_LOCK_LANDSCAPE, SCREEN_LOCK_PORTRAIT, SCREEN_LOCK_ROTATION, SCREEN_ROTATION, SCREEN_SHARE, SD_CARD, SD_STORAGE, SEARCH_0, SECURITY, SELECT_ALL, SEND, SENTIMENT_DISSATISFIED, SENTIMENT_NEUTRAL, SENTIMENT_SATISFIED, SENTIMENT_VERY_DISSATISFIED, SENTIMENT_VERY_SATISFIED, SETTINGS, SETTINGS_APPLICATIONS, SETTINGS_BACKUP_RESTORE, SETTINGS_BLUETOOTH, SETTINGS_BRIGHTNESS, SETTINGS_CELL, SETTINGS_ETHERNET, SETTINGS_INPUT_ANTENNA, SETTINGS_INPUT_COMPONENT, SETTINGS_INPUT_COMPOSITE, SETTINGS_INPUT_HDMI, SETTINGS_INPUT_SVIDEO, SETTINGS_OVERSCAN, SETTINGS_PHONE, SETTINGS_POWER, SETTINGS_REMOTE, SETTINGS_SYSTEM_DAYDREAM, SETTINGS_VOICE, SHARE, SHOP, SHOP_TWO, SHOPPING_BASKET, SHOPPING_CART, SHORT_TEXT, SHOW_CHART, SHUFFLE, SIGNAL_CELLULAR_4_BAR, SIGNAL_CELLULAR_CONNECTED_NO_INTERNET_4_BAR, SIGNAL_CELLULAR_NO_SIM, SIGNAL_CELLULAR_NULL, SIGNAL_CELLULAR_OFF, SIGNAL_WIFI_4_BAR, SIGNAL_WIFI_4_BAR_LOCK, SIGNAL_WIFI_OFF, SIM_CARD, SIM_CARD_ALERT, SKIP_NEXT, SKIP_PREVIOUS, SLIDESHOW, SLOW_MOTION_VIDEO, SMARTPHONE, SMOKE_FREE, SMOKING_ROOMS, SMS, SMS_FAILED, SNOOZE, SORT, SORT_BY_ALPHA, SPA, SPACE_BAR, SPEAKER, SPEAKER_GROUP, SPEAKER_NOTES, SPEAKER_NOTES_OFF, SPEAKER_PHONE, SPELLCHECK, STAR, STAR_BORDER, STAR_HALF, STARS, STAY_CURRENT_LANDSCAPE, STAY_CURRENT_PORTRAIT, STAY_PRIMARY_LANDSCAPE, STAY_PRIMARY_PORTRAIT, STOP, STOP_SCREEN_SHARE, STORAGE, STORE, STORE_MALL_DIRECTORY, STRAIGHTEN, STREETVIEW, STRIKETHROUGH_S, STYLE_0, SUBDIRECTORY_ARROW_LEFT, SUBDIRECTORY_ARROW_RIGHT, SUBJECT, SUBSCRIPTIONS, SUBTITLES, SUBWAY, SUPERVISOR_ACCOUNT, SURROUND_SOUND, SWAP_CALLS, SWAP_HORIZ, SWAP_VERT, SWAP_VERTICAL_CIRCLE, SWITCH_CAMERA, SWITCH_VIDEO, SYNC, SYNC_DISABLED, SYNC_PROBLEM, SYSTEM_UPDATE, SYSTEM_UPDATE_ALT, TAB_0, TAB_UNSELECTED, TABLET, TABLET_ANDROID, TABLET_MAC, TAG_FACES, TAP_AND_PLAY, TERRAIN, TEXT_FIELDS, TEXT_FORMAT, TEXTSMS, TEXTURE, THEATERS, THUMB_DOWN, THUMB_UP, THUMBS_UP_DOWN, TIME_TO_LEAVE, TIMELAPSE, TIMELINE, TIMER_0, TIMER_10, TIMER_3, TIMER_OFF, TITLE, TOC, TODAY, TOLL, TONALITY, TOUCH_APP, TOYS, TRACK_CHANGES, TRAFFIC, TRAIN, TRAM, TRANSFER_WITHIN_A_STATION, TRANSFORM, TRANSLATE, TRENDING_DOWN, TRENDING_FLAT, TRENDING_UP, TUNE, TURNED_IN, TURNED_IN_NOT, TV, UNARCHIVE, UNDO_0, UNFOLD_LESS, UNFOLD_MORE, UPDATE, USB, VERIFIED_USER, VERTICAL_ALIGN_BOTTOM, VERTICAL_ALIGN_CENTER, VERTICAL_ALIGN_TOP, VIBRATION, VIDEO_CALL, VIDEO_LABEL, VIDEO_LIBRARY, VIDEOCAM, VIDEOCAM_OFF, VIDEOGAME_ASSET, VIEW_AGENDA, VIEW_ARRAY, VIEW_CAROUSEL, VIEW_COLUMN, VIEW_COMFY, VIEW_COMPACT, VIEW_DAY, VIEW_HEADLINE, VIEW_LIST, VIEW_MODULE, VIEW_QUILT, VIEW_STREAM, VIEW_WEEK, VIGNETTE, VISIBILITY, VISIBILITY_OFF, VOICE_CHAT, VOICEMAIL, VOLUME_DOWN, VOLUME_MUTE, VOLUME_OFF, VOLUME_UP, VPN_KEY, VPN_LOCK, WALLPAPER, WARNING, WATCH, WATCH_LATER, WB_AUTO, WB_CLOUDY, WB_INCANDESCENT, WB_IRIDESCENT, WB_SUNNY, WC, WEB, WEB_ASSET, WEEKEND, WHATSHOT, WIDGETS, WIFI, WIFI_LOCK, WIFI_TETHERING, WORK, WRAP_TEXT, YOUTUBE_SEARCHED_FOR, ZOOM_IN, ZOOM_OUT, ZOOM_OUT_MAP]);
 }
 
-defineClass(3, 24, {42:1, 138:1, 3:1, 112:1, 4:1, 31:1, 24:1}, IconType);
+defineClass(3, 24, {42:1, 137:1, 3:1, 112:1, 4:1, 31:1, 24:1}, IconType);
 _.getCssName = function getCssName_86(){
   return this.cssClass;
 }
@@ -18711,7 +18711,7 @@ function values_51(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_NavBarType_2_classLit, 1), $intern_8, 274, 0, [FIXED_1, TALL, SHRINK]);
 }
 
-defineClass(274, 24, {42:1, 138:1, 274:1, 112:1, 4:1, 31:1, 24:1}, NavBarType);
+defineClass(274, 24, {42:1, 137:1, 274:1, 112:1, 4:1, 31:1, 24:1}, NavBarType);
 _.getCssName = function getCssName_90(){
   return this.cssClass;
 }
@@ -18736,7 +18736,7 @@ function values_53(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_Position_2_classLit, 1), $intern_8, 257, 0, [BOTTOM_1, TOP_1, LEFT_7, RIGHT_8]);
 }
 
-defineClass(257, 24, {42:1, 138:1, 257:1, 112:1, 4:1, 31:1, 24:1}, Position_0);
+defineClass(257, 24, {42:1, 137:1, 257:1, 112:1, 4:1, 31:1, 24:1}, Position_0);
 _.getCssName = function getCssName_92(){
   return this.cssClass;
 }
@@ -18759,7 +18759,7 @@ function values_54(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_ProgressType_2_classLit, 1), $intern_8, 350, 0, [INDETERMINATE, DETERMINATE]);
 }
 
-defineClass(350, 24, {42:1, 138:1, 350:1, 112:1, 4:1, 31:1, 24:1}, ProgressType);
+defineClass(350, 24, {42:1, 137:1, 350:1, 112:1, 4:1, 31:1, 24:1}, ProgressType);
 _.getCssName = function getCssName_93(){
   return this.cssClass;
 }
@@ -18786,7 +18786,7 @@ function values_56(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_ShowOn_2_classLit, 1), $intern_8, 234, 0, [SHOW_ON_SMALL, SHOW_ON_LARGE, SHOW_ON_MED, SHOW_ON_MED_UP, SHOW_ON_MED_DOWN, NONE_7]);
 }
 
-defineClass(234, 24, {42:1, 138:1, 234:1, 112:1, 4:1, 31:1, 24:1}, ShowOn);
+defineClass(234, 24, {42:1, 137:1, 234:1, 112:1, 4:1, 31:1, 24:1}, ShowOn);
 _.getCssName = function getCssName_95(){
   return this.cssClass;
 }
@@ -18811,7 +18811,7 @@ function values_57(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_SideNavType_2_classLit, 1), $intern_8, 214, 0, [FIXED_2, PUSH, MINI, CARD]);
 }
 
-defineClass(214, 24, {42:1, 138:1, 214:1, 112:1, 4:1, 31:1, 24:1}, SideNavType);
+defineClass(214, 24, {42:1, 137:1, 214:1, 112:1, 4:1, 31:1, 24:1}, SideNavType);
 _.getCssName = function getCssName_96(){
   return this.cssClass;
 }
@@ -18862,16 +18862,16 @@ function WavesType(enum$name, enum$ordinal, cssClass){
 
 function values_61(){
   $clinit_WavesType();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_WavesType_2_classLit, 1), $intern_8, 197, 0, [DEFAULT_8, LIGHT, RED_1, YELLOW_1, ORANGE_0, PURPLE_0, GREEN_1, TEAL_0]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_WavesType_2_classLit, 1), $intern_8, 198, 0, [DEFAULT_8, LIGHT, RED_1, YELLOW_1, ORANGE_0, PURPLE_0, GREEN_1, TEAL_0]);
 }
 
-defineClass(197, 24, {42:1, 112:1, 197:1, 4:1, 31:1, 24:1}, WavesType);
+defineClass(198, 24, {42:1, 112:1, 198:1, 4:1, 31:1, 24:1}, WavesType);
 _.getCssName = function getCssName_100(){
   return this.cssClass;
 }
 ;
 var DEFAULT_8, GREEN_1, LIGHT, ORANGE_0, PURPLE_0, RED_1, TEAL_0, YELLOW_1;
-var Lgwt_material_design_client_constants_WavesType_2_classLit = createForEnum('gwt.material.design.client.constants', 'WavesType', 197, values_61);
+var Lgwt_material_design_client_constants_WavesType_2_classLit = createForEnum('gwt.material.design.client.constants', 'WavesType', 198, values_61);
 function $equals_1(this$static, o){
   var elem, elem$iterator, elemOther, iterOther, other;
   if (o === this$static) {
@@ -19368,7 +19368,7 @@ function $clinit_SideNavOpenedEvent(){
 }
 
 function $dispatch_9(handler){
-  $lambda$7_2(handler.$$outer_0, handler.openedHandler_1);
+  $lambda$7_3(handler.$$outer_0, handler.openedHandler_1);
 }
 
 function SideNavOpenedEvent(){
@@ -19795,18 +19795,18 @@ function MaterialCardImage(){
   MaterialWidget_1.call(this, $doc.createElement('div'), stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 6, ['card-image']));
 }
 
-defineClass(90, 22, $intern_64, MaterialCardImage);
+defineClass(89, 22, $intern_64, MaterialCardImage);
 _.add_0 = function add_32(child){
   $add_26(this, child);
 }
 ;
-var Lgwt_material_design_client_ui_MaterialCardImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardImage', 90);
+var Lgwt_material_design_client_ui_MaterialCardImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardImage', 89);
 function MaterialCardReveal(){
   MaterialWidget_1.call(this, $doc.createElement('div'), stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_4, 2, 6, ['card-reveal']));
 }
 
-defineClass(137, 22, $intern_64, MaterialCardReveal);
-var Lgwt_material_design_client_ui_MaterialCardReveal_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardReveal', 137);
+defineClass(136, 22, $intern_64, MaterialCardReveal);
+var Lgwt_material_design_client_ui_MaterialCardReveal_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardReveal', 136);
 function $setIconColor_0(this$static, iconColor){
   $setIconColor_2(this$static.icon_0, iconColor);
 }
@@ -19852,7 +19852,7 @@ function MaterialChip(){
 defineClass(41, 22, $intern_64, MaterialChip);
 var Lgwt_material_design_client_ui_MaterialChip_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialChip', 41);
 function $add_27(this$static, child){
-  instanceOf(child, 80) && $setParent_0(castTo(child, 80), this$static);
+  instanceOf(child, 81) && $setParent_0(castTo(child, 81), this$static);
   $add_1(this$static, child, ($clinit_DOM() , this$static.element_0));
 }
 
@@ -19880,8 +19880,8 @@ function $setActive_3(this$static, index_0){
     if (index_0 <= this$static.children_1.size_0) {
       if (index_0 != 0) {
         this$static.activeWidget = $get_3(this$static.children_1, index_0 - 1);
-        if (!!this$static.activeWidget && instanceOf(this$static.activeWidget, 80)) {
-          $setActive_4(castTo(this$static.activeWidget, 80));
+        if (!!this$static.activeWidget && instanceOf(this$static.activeWidget, 81)) {
+          $setActive_4(castTo(this$static.activeWidget, 81));
           this$static.initialized && $collapsible(this$static, ($clinit_DOM() , this$static.element_0), this$static.accordion);
         }
       }
@@ -19914,7 +19914,7 @@ _.onLoad = function onLoad_28(){
 }
 ;
 _.remove_0 = function remove_23(w){
-  instanceOf(w, 80) && $setParent_0(castTo(w, 80), null);
+  instanceOf(w, 81) && $setParent_0(castTo(w, 81), null);
   setStyleName(w.getStyleElement(), 'active', false);
   return $remove_1(this, w);
 }
@@ -19961,7 +19961,7 @@ function $checkActiveState(this$static, child){
 
 function $findCollapsibleItemParent(this$static, widget){
   if (widget) {
-    return instanceOf(widget, 80)?castTo(widget, 80):$findCollapsibleItemParent(this$static, widget.parent_1);
+    return instanceOf(widget, 81)?castTo(widget, 81):$findCollapsibleItemParent(this$static, widget.parent_1);
   }
   return null;
 }
@@ -20074,7 +20074,7 @@ function MaterialCollapsibleItem(){
   new ProgressMixin(this);
 }
 
-defineClass(80, 192, {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 238:1, 80:1}, MaterialCollapsibleItem);
+defineClass(81, 192, {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 180:1, 179:1, 38:1, 37:1, 22:1, 238:1, 81:1}, MaterialCollapsibleItem);
 _.add_0 = function add_36(child){
   $add_30(this, child);
 }
@@ -20098,7 +20098,7 @@ _.setWaves = function setWaves_1(waves){
   $setDisplay_1(this, ($clinit_Display() , BLOCK_0));
 }
 ;
-var Lgwt_material_design_client_ui_MaterialCollapsibleItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsibleItem', 80);
+var Lgwt_material_design_client_ui_MaterialCollapsibleItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCollapsibleItem', 81);
 function $lambda$0_15(this$static){
   var a, a$iterator, cb, w, w$iterator;
   for (w$iterator = new WidgetCollection$WidgetIterator(this$static.children_1); w$iterator.index_0 < w$iterator.this$01.size_0;) {
@@ -20268,7 +20268,7 @@ function MaterialValueBox_0(tValueBox){
   $add_14(this, this.valueBoxBase);
 }
 
-defineClass(154, 204, $intern_96);
+defineClass(154, 205, $intern_96);
 _.addBlurHandler = function addBlurHandler_1(handler){
   return $addBlurHandler_0(this, handler);
 }
@@ -20321,7 +20321,7 @@ function $add_31(this$static, child){
     if (instanceOf(child, 17)) {
       link_0 = castTo(child, 17);
       for (i = 0; i < link_0.children_1.size_0; i++) {
-        if (instanceOf($get_3(link_0.children_1, i), 135)) {
+        if (instanceOf($get_3(link_0.children_1, i), 134)) {
           $addClickHandler(link_0, new MaterialDropDown$0methodref$stopPropagation$Type);
           $wnd.$(link_0.element_0).bind('touchstart', makeLambdaFunction(MaterialWidget$lambda$29$Type.prototype.call_0, MaterialWidget$lambda$29$Type, []));
         }
@@ -20336,7 +20336,7 @@ function $add_31(this$static, child){
   }
 }
 
-function $initialize_1(this$static){
+function $initialize_2(this$static){
   var parent_0, uid;
   parent_0 = this$static.parent_1;
   if (instanceOf(parent_0, 180)) {
@@ -20349,10 +20349,10 @@ function $initialize_1(this$static){
     this$static.activatorElement = getElementByAttribute_0(this$static.activator);
     !this$static.activatorElement && (new IllegalStateException , $clinit_GWT() , !!logger_0 && undefined);
   }
-  $initialize_2(this$static, this$static.activatorElement);
+  $initialize_3(this$static, this$static.activatorElement);
 }
 
-function $initialize_2(this$static, activator){
+function $initialize_3(this$static, activator){
   var options;
   options = new $wnd.Object;
   options.constrain_width = this$static.constrainWidth;
@@ -20385,14 +20385,14 @@ function MaterialDropDown_2(activator){
   $setId(($clinit_DOM() , this.element_0), this.activator);
 }
 
-defineClass(135, 113, $intern_97, MaterialDropDown_2);
+defineClass(134, 113, $intern_97, MaterialDropDown_2);
 _.add_0 = function add_37(child){
   $add_31(this, child);
 }
 ;
 _.onLoad = function onLoad_32(){
   $onLoad_0(this);
-  $initialize_1(this);
+  $initialize_2(this);
 }
 ;
 _.belowOrigin = false;
@@ -20401,7 +20401,7 @@ _.gutter = 0;
 _.hover_0 = false;
 _.inDuration = 0;
 _.outDuration = 0;
-var Lgwt_material_design_client_ui_MaterialDropDown_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialDropDown', 135);
+var Lgwt_material_design_client_ui_MaterialDropDown_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialDropDown', 134);
 function MaterialDropDown$0methodref$stopPropagation$Type(){
 }
 
@@ -20626,7 +20626,7 @@ function $setValue_14(this$static, value_0, fireEvents){
   }
 }
 
-defineClass(1715, 204, $intern_65);
+defineClass(1715, 205, $intern_65);
 _.clear_0 = function clear_17(){
   $clear_10(this);
 }
@@ -20685,8 +20685,8 @@ function MaterialListValueBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2497, $wnd.Function, {}, MaterialListValueBox$lambda$0$Type);
-_.call_1 = function call_86(arg0, arg1){
+defineClass(2499, $wnd.Function, {}, MaterialListValueBox$lambda$0$Type);
+_.call_1 = function call_88(arg0, arg1){
   return $lambda$0_18(this.$$outer_0);
 }
 ;
@@ -20774,8 +20774,8 @@ function MaterialModal$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2527, $wnd.Function, {}, MaterialModal$lambda$0$Type);
-_.call_6 = function call_87(){
+defineClass(2529, $wnd.Function, {}, MaterialModal$lambda$0$Type);
+_.call_6 = function call_89(){
   $onNativeClose(this.$$outer_0);
 }
 ;
@@ -20783,8 +20783,8 @@ function MaterialModal$lambda$1$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2528, $wnd.Function, {}, MaterialModal$lambda$1$Type);
-_.call_6 = function call_88(){
+defineClass(2530, $wnd.Function, {}, MaterialModal$lambda$1$Type);
+_.call_6 = function call_90(){
   $lambda$1_11(this.$$outer_0);
 }
 ;
@@ -20817,7 +20817,7 @@ function $add_35(this$static, child){
 }
 
 function $applyType(type_0, element){
-  $equals_2(type_0, ($clinit_NavBarType() , SHRINK).cssClass)?$wnd.initShrink(element, 300):($clinit_GWT() , $clinit_GWT());
+  type_0 == ($clinit_NavBarType() , SHRINK)?$wnd.initShrink(element, 300):($clinit_GWT() , $clinit_GWT());
 }
 
 function $setType_11(this$static, type_0){
@@ -20856,7 +20856,7 @@ _.clear_0 = function clear_18(){
 ;
 _.onLoad = function onLoad_36(){
   $onLoad_0(this);
-  !!this.typeMixin.type_0 && $applyType(castTo(this.typeMixin.type_0, 274).cssClass, ($clinit_DOM() , this.element_0));
+  !!this.typeMixin.type_0 && $applyType(castTo(this.typeMixin.type_0, 274), ($clinit_DOM() , this.element_0));
 }
 ;
 _.setActivates = function setActivates_2(activates){
@@ -20870,12 +20870,12 @@ function MaterialNavSection(){
   $setHideOn(this, ($clinit_HideOn() , HIDE_ON_MED_DOWN));
 }
 
-defineClass(199, 113, $intern_79, MaterialNavSection);
+defineClass(200, 113, $intern_79, MaterialNavSection);
 _.add_0 = function add_42(child){
   $add_18(this, new ListItem_0(child));
 }
 ;
-var Lgwt_material_design_client_ui_MaterialNavSection_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialNavSection', 199);
+var Lgwt_material_design_client_ui_MaterialNavSection_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialNavSection', 200);
 function Div(){
   MaterialWidget_0.call(this, $doc.createElement('div'));
 }
@@ -21115,7 +21115,7 @@ function $applyTransition(elem, width_0, duration){
   $wnd.$(elem).css('margin-left', width_0 + 'px');
 }
 
-function $initialize_3(this$static){
+function $initialize_4(this$static){
   var element, options, style, type_0;
   if (!this$static.activator) {
     this$static.activator = getElementByAttribute_0($getElement((!this$static.idMixin && (this$static.idMixin = new IdMixin(this$static)) , this$static.idMixin).uiObject).id);
@@ -21172,7 +21172,7 @@ function $lambda$2_7(this$static, width_1){
   return $clinit_Boolean() , $clinit_Boolean() , true;
 }
 
-function $lambda$7_2(this$static, openedHandler_1){
+function $lambda$7_3(this$static, openedHandler_1){
   $wnd.$(this$static.activator).sideNav('hide');
   !!openedHandler_1[0] && openedHandler_1[0].removeHandler();
 }
@@ -21299,7 +21299,7 @@ _.insert_0 = function insert_8(child, container, beforeIndex, domInsert){
 ;
 _.onLoad = function onLoad_40(){
   $onLoad_0(this);
-  $initialize_3(this);
+  $initialize_4(this);
   this.showOnAttach != null && $scheduleDeferred(($clinit_SchedulerImpl() , INSTANCE), new MaterialSideNav$lambda$0$Type(this));
 }
 ;
@@ -21321,7 +21321,7 @@ function MaterialSideNav$1(this$0){
   Timer.call(this);
 }
 
-defineClass(1680, 131, {}, MaterialSideNav$1);
+defineClass(1680, 132, {}, MaterialSideNav$1);
 _.run = function run_2(){
   !matchMedia_0('all and (max-width: 992px)') && $wnd.$(this.this$01.activator).sideNav('show');
 }
@@ -21353,8 +21353,8 @@ function MaterialSideNav$lambda$2$Type($$outer_0, width_1){
   this.width_1 = width_1;
 }
 
-defineClass(2472, $wnd.Function, {}, MaterialSideNav$lambda$2$Type);
-_.call_1 = function call_89(arg0, arg1){
+defineClass(2474, $wnd.Function, {}, MaterialSideNav$lambda$2$Type);
+_.call_1 = function call_91(arg0, arg1){
   return $lambda$2_7(this.$$outer_0, this.width_1);
 }
 ;
@@ -21363,8 +21363,8 @@ function MaterialSideNav$lambda$3$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2474, $wnd.Function, {}, MaterialSideNav$lambda$3$Type);
-_.call_0 = function call_90(arg0){
+defineClass(2476, $wnd.Function, {}, MaterialSideNav$lambda$3$Type);
+_.call_0 = function call_92(arg0){
   return $onClosing(this.$$outer_0) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
@@ -21372,8 +21372,8 @@ function MaterialSideNav$lambda$4$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2475, $wnd.Function, {}, MaterialSideNav$lambda$4$Type);
-_.call_0 = function call_91(arg0){
+defineClass(2477, $wnd.Function, {}, MaterialSideNav$lambda$4$Type);
+_.call_0 = function call_93(arg0){
   return $onClosed(this.$$outer_0) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
@@ -21381,8 +21381,8 @@ function MaterialSideNav$lambda$5$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2476, $wnd.Function, {}, MaterialSideNav$lambda$5$Type);
-_.call_0 = function call_92(arg0){
+defineClass(2478, $wnd.Function, {}, MaterialSideNav$lambda$5$Type);
+_.call_0 = function call_94(arg0){
   return $onOpening(this.$$outer_0) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
@@ -21390,8 +21390,8 @@ function MaterialSideNav$lambda$6$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2477, $wnd.Function, {}, MaterialSideNav$lambda$6$Type);
-_.call_0 = function call_93(arg0){
+defineClass(2479, $wnd.Function, {}, MaterialSideNav$lambda$6$Type);
+_.call_0 = function call_95(arg0){
   return $onOpened(this.$$outer_0) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
@@ -21417,7 +21417,7 @@ function ListItem_1(initialClass){
 
 defineClass(45, 22, $intern_101, ListItem, ListItem_0);
 var Lgwt_material_design_client_ui_html_ListItem_2_classLit = createForClass('gwt.material.design.client.ui.html', 'ListItem', 45);
-function $initialize_4(this$static){
+function $initialize_5(this$static){
   var i;
   if (this$static.children_1.size_0 > 0) {
     $wnd.$(($clinit_DOM() , this$static.element_0)).tabs();
@@ -21440,7 +21440,7 @@ function MaterialTab(){
 defineClass(208, 113, {29:1, 14:1, 28:1, 35:1, 27:1, 32:1, 18:1, 25:1, 20:1, 38:1, 37:1, 22:1, 208:1, 113:1}, MaterialTab);
 _.onLoad = function onLoad_43(){
   $onLoad_0(this);
-  $initialize_4(this);
+  $initialize_5(this);
   this.indicator = new MaterialWidget_0($wnd.$(($clinit_DOM() , this.element_0)).find('.indicator').get(0));
   this.indicatorColorMixin = new ColorsMixin(this.indicator);
   $setIndicatorColor(this, this.indicatorColor);
@@ -21521,8 +21521,8 @@ function MaterialToast$lambda$0$Type(callback_0){
   this.callback_0 = callback_0;
 }
 
-defineClass(2492, $wnd.Function, {}, MaterialToast$lambda$0$Type);
-_.call_6 = function call_94(){
+defineClass(2494, $wnd.Function, {}, MaterialToast$lambda$0$Type);
+_.call_6 = function call_96(){
   lambda$0_1(this.callback_0);
 }
 ;
@@ -21747,7 +21747,7 @@ function MaterialAnimator$1(val$transition, val$name, val$w, val$infinite, val$c
   Timer.call(this);
 }
 
-defineClass(1794, 131, {}, MaterialAnimator$1);
+defineClass(1794, 132, {}, MaterialAnimator$1);
 _.run = function run_3(){
   switch (this.val$transition1.ordinal) {
     case 0:
@@ -21778,8 +21778,8 @@ function MaterialAnimator$lambda$0$Type(callback_0, name_1, oldClass_2){
   this.oldClass_2 = oldClass_2;
 }
 
-defineClass(2521, $wnd.Function, {}, MaterialAnimator$lambda$0$Type);
-_.call_0 = function call_95(arg0){
+defineClass(2523, $wnd.Function, {}, MaterialAnimator$lambda$0$Type);
+_.call_0 = function call_97(arg0){
   return lambda$0_2(this.callback_0, this.name_1, this.oldClass_2);
 }
 ;
@@ -21876,7 +21876,7 @@ function values_63(){
   return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_ui_animate_Transition_2_classLit, 1), $intern_8, 51, 0, [SHOW_STAGGERED_LIST, FADE_IN_IMAGE, SHOW_GRID, CLOSE_GRID, BOUNCE, FLASH, PULSE, RUBBERBAND, SHAKE, HEADSHAKE, SWING, TADA, WOBBLE, JELLO, BOUNCEIN, BOUNCEINDOWN, BOUNCEINLEFT, BOUNCEINRIGHT, BOUNCEINUP, BOUNCEOUT, BOUNCEOUTDOWN, BOUNCEOUTLEFT, BOUNCEOUTRIGHT, BOUNCEOUTUP, FADEIN, FADEINDOWN, FADEINDOWNBIG, FADEINLEFT, FADEINLEFTBIG, FADEINRIGHT, FADEINRIGHTBIG, FADEINUP, FADEINUPBIG, FADEOUT, FADEOUTDOWN, FADEOUTDOWNBIG, FADEOUTLEFT, FADEOUTLEFTBIG, FADEOUTRIGHT, FADEOUTRIGHTBIG, FADEOUTUP, FADEOUTUPBIG, FLIPINX, FLIPINY, FLIPOUTX, FLIPOUTY, LIGHTSPEEDIN, LIGHTSPEEDOUT, ROTATEIN, ROTATEINDOWNLEFT, ROTATEINDOWNRIGHT, ROTATEINUPLEFT, ROTATEINUPRIGHT, ROTATEOUT, ROTATEOUTDOWNLEFT, ROTATEOUTDOWNRIGHT, ROTATEOUTUPLEFT, ROTATEOUTUPRIGHT, HINGE, ROLLIN, ROLLOUT, ZOOMIN, ZOOMINDOWN, ZOOMINLEFT, ZOOMINRIGHT, ZOOMINUP, ZOOMOUT, ZOOMOUTDOWN, ZOOMOUTLEFT, ZOOMOUTRIGHT, ZOOMOUTUP, SLIDEINDOWN, SLIDEINLEFT, SLIDEINRIGHT, SLIDEINUP, SLIDEOUTDOWN, SLIDEOUTLEFT, SLIDEOUTRIGHT, SLIDEOUTUP]);
 }
 
-defineClass(51, 24, {42:1, 138:1, 112:1, 51:1, 4:1, 31:1, 24:1}, Transition);
+defineClass(51, 24, {42:1, 137:1, 112:1, 51:1, 4:1, 31:1, 24:1}, Transition);
 _.getCssName = function getCssName_101(){
   return this.cssClass;
 }
@@ -25489,7 +25489,7 @@ function CoreAnimationsView$lambda$0$Type(){
 }
 
 defineClass(2378, $wnd.Function, {}, CoreAnimationsView$lambda$0$Type);
-_.call_6 = function call_144(){
+_.call_6 = function call_146(){
   $toast(new MaterialToast_0(stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_Widget_2_classLit, 1), $intern_4, 20, 0, [])), 'Animation is finished', $intern_69, null);
 }
 ;
@@ -29207,8 +29207,8 @@ function PathAnimatorShowcase$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2530, $wnd.Function, {}, PathAnimatorShowcase$lambda$0$Type);
-_.call_6 = function call_146(){
+defineClass(2532, $wnd.Function, {}, PathAnimatorShowcase$lambda$0$Type);
+_.call_6 = function call_148(){
   $lambda$0_30(this.$$outer_0);
 }
 ;
@@ -29216,8 +29216,8 @@ function PathAnimatorShowcase$lambda$1$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
 
-defineClass(2531, $wnd.Function, {}, PathAnimatorShowcase$lambda$1$Type);
-_.call_6 = function call_147(){
+defineClass(2533, $wnd.Function, {}, PathAnimatorShowcase$lambda$1$Type);
+_.call_6 = function call_149(){
   $lambda$1_18(this.$$outer_0);
 }
 ;
@@ -29987,7 +29987,7 @@ function MaterialAreaChart$2(this$0){
   Timer.call(this);
 }
 
-defineClass(1942, 131, {}, MaterialAreaChart$2);
+defineClass(1942, 132, {}, MaterialAreaChart$2);
 _.run = function run_18(){
   if (this.this$01.isLoop) {
     $drawChart(this.this$01, this.this$01.values);
@@ -30124,7 +30124,7 @@ function MaterialBarChart$2(this$0){
   Timer.call(this);
 }
 
-defineClass(1945, 131, {}, MaterialBarChart$2);
+defineClass(1945, 132, {}, MaterialBarChart$2);
 _.run = function run_20(){
   if (this.this$01.isLoop) {
     $drawChart_0(this.this$01, this.this$01.values);
@@ -30894,7 +30894,7 @@ function ClassCastException_0(){
   RuntimeException_0.call(this, 'MaterialTabItem must be within a MaterialTab widget.');
 }
 
-defineClass(289, 63, {4:1, 289:1, 88:1, 63:1, 67:1}, ClassCastException, ClassCastException_0);
+defineClass(289, 63, {4:1, 289:1, 90:1, 63:1, 67:1}, ClassCastException, ClassCastException_0);
 var Ljava_lang_ClassCastException_2_classLit = createForClass('java.lang', 'ClassCastException', 289);
 function __parseAndValidateDouble(s){
   floatRegex == null && (floatRegex = /^\s*[+-]?(NaN|Infinity|((\d+\.?\d*)|(\.\d+))([eE][+-]?\d+)?[dDfF]?)\s*$/);
@@ -30957,8 +30957,8 @@ function IllegalArgumentException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(82, 63, {4:1, 88:1, 82:1, 63:1, 67:1}, IllegalArgumentException, IllegalArgumentException_0);
-var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 82);
+defineClass(80, 63, {4:1, 90:1, 80:1, 63:1, 67:1}, IllegalArgumentException, IllegalArgumentException_0);
+var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 80);
 function IllegalStateException(){
   RuntimeException.call(this);
 }
@@ -31047,8 +31047,8 @@ function NumberFormatException(message){
   IllegalArgumentException_0.call(this, message);
 }
 
-defineClass(203, 82, {4:1, 88:1, 82:1, 203:1, 63:1, 67:1}, NumberFormatException);
-var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 203);
+defineClass(204, 80, {4:1, 90:1, 80:1, 204:1, 63:1, 67:1}, NumberFormatException);
+var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 204);
 function StackTraceElement(methodName, fileName, lineNumber){
   this.className_0 = 'Unknown';
   this.methodName = methodName;
@@ -31056,11 +31056,11 @@ function StackTraceElement(methodName, fileName, lineNumber){
   this.lineNumber = lineNumber;
 }
 
-defineClass(202, 1, {4:1, 202:1}, StackTraceElement);
+defineClass(203, 1, {4:1, 203:1}, StackTraceElement);
 _.equals_0 = function equals_45(other){
   var st;
-  if (instanceOf(other, 202)) {
-    st = castTo(other, 202);
+  if (instanceOf(other, 203)) {
+    st = castTo(other, 203);
     return this.lineNumber == st.lineNumber && equals_57(this.methodName, st.methodName) && equals_57(this.className_0, st.className_0) && equals_57(this.fileName, st.fileName);
   }
   return false;
@@ -31075,7 +31075,7 @@ _.toString_0 = function toString_27(){
 }
 ;
 _.lineNumber = 0;
-var Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 202);
+var Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 203);
 function $charAt_0(this$static, index_0){
   return this$static.charCodeAt(index_0);
 }
@@ -31254,7 +31254,7 @@ function $clinit_System(){
   new PrintStream(null);
 }
 
-defineClass(2558, 1, {});
+defineClass(2560, 1, {});
 var err;
 function UnsupportedOperationException(){
   RuntimeException.call(this);
@@ -31264,7 +31264,7 @@ function UnsupportedOperationException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(87, 63, {4:1, 88:1, 63:1, 67:1, 87:1}, UnsupportedOperationException, UnsupportedOperationException_0);
+defineClass(87, 63, {4:1, 90:1, 63:1, 67:1, 87:1}, UnsupportedOperationException, UnsupportedOperationException_0);
 var Ljava_lang_UnsupportedOperationException_2_classLit = createForClass('java.lang', 'UnsupportedOperationException', 87);
 function $containsEntry(this$static, entry){
   var key, ourValue, value_0;
@@ -33319,7 +33319,7 @@ function NoSuchElementException_0(){
   RuntimeException_0.call(this, 'No more elements in the iterator');
 }
 
-defineClass(153, 63, {4:1, 88:1, 63:1, 67:1, 153:1}, NoSuchElementException, NoSuchElementException_0);
+defineClass(153, 63, {4:1, 90:1, 63:1, 67:1, 153:1}, NoSuchElementException, NoSuchElementException_0);
 var Ljava_util_NoSuchElementException_2_classLit = createForClass('java.util', 'NoSuchElementException', 153);
 function equals_57(a, b){
   return maskUndefined(a) === maskUndefined(b) || a != null && equals_Ljava_lang_Object__Z__devirtual$(a, b);
