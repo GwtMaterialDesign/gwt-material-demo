@@ -41,7 +41,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError, stepperEvent;
+    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError, stepperEvent, stepperMobile;
 
 
     @UiField
@@ -164,6 +164,21 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @UiHandler("stepperEvent")
     void onCompleteEvent(CompleteEvent e) {
         reset(stepperEvent);
+    }
+
+    @UiHandler({"btnMobileContinue1", "btnMobileContinue2", "btnMobileContinue3"})
+    void onNextStepMobile(ClickEvent e){
+        stepperMobile.nextStep();
+    }
+
+    @UiHandler({"btnMobilePrev1", "btnMobilePrev2", "btnMobilePrev3"})
+    void onPrevStepMobile(ClickEvent e){
+        stepperMobile.prevStep();
+    }
+
+    @UiHandler("stepperMobile")
+    void onCompleteMobile(CompleteEvent e) {
+        reset(stepperMobile);
     }
 
     protected void reset(MaterialStepper stepper) {
