@@ -259,7 +259,28 @@
         &lt;/m:MaterialColumn><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Mobile" description="Open this card on a mobile device to test." />
+      <m:MaterialColumn grid="l6 m6 s12">
+        <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL" detectOrientation="true">
+          <m:MaterialCardImage waves="LIGHT">
+            <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+          </m:MaterialCardImage>
+
+          <m:MaterialCardContent textColor="BLACK">
+            <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate"/>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
+          </m:MaterialCardContent>
+
+          <m:MaterialCardAction>
+            <m:MaterialLink iconType="SHARE" textColor="BLACK" />
+            <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
+          </m:MaterialCardAction>
+        </m:MaterialCard>
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Card Reveal" />
