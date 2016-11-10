@@ -24,7 +24,7 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code" height="1000px">
-            <m:MaterialTitle title="Usage" description="You just need to set the reference between your source and target offset element. To do this you will need to call MaterialPushPin.apply(Widget source, Widget target) inside onAttach method."/>
+            <m:MaterialTitle title="Basic" description="A pushpinned element has 3 states. One above (TOP) and below (BELOW) the scrolling threshold, and the pinned state where the element becomes fixed (OFFSET)."/>
             <m:MaterialRow>
                 <m:MaterialPanel ui:field="source" grid="s12 m12 l12" paddingTop="50" shadow="1" height="200px" width="200px">
                     <m:MaterialLabel textColor="WHITE" text="Pinned Options top at 300, offset at 64 (navbar's height)" />
