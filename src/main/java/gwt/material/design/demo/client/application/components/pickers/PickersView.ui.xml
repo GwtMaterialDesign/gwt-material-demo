@@ -56,7 +56,7 @@
 
       <m:MaterialRow addStyleNames="code">
           <m:MaterialTitle title="Mobile" description="Open this time picker on a mobile device to test." />
-          <m:MaterialDatePicker detectOrientation="true" placeholder="Supports mobile orientations" />
+          <m:MaterialDatePicker detectOrientation="true" grid="s12" placeholder="Supports mobile orientations" />
           <demo:PrettyPre addStyleNames="lang-xml">
               &emsp;&lt;m:MaterialDatePicker ui:field="dpMobile" grid="s12" detectOrientation="true" placeholder="Supports mobile orientations" />
           </demo:PrettyPre>
