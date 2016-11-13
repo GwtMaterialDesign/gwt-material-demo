@@ -179,10 +179,6 @@ ul.side-nav.fixed li:hover,ul.side-nav.fixed li.active {
     top: 80px !important;
 }
 
-a:hover {
-     color: inherit !important;
-}
-
 .side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
     color: #000 !important;
 }
@@ -208,6 +204,10 @@ main .panel, main {
     margin-top: 0px !important;
 }
 
+.code div p {
+    margin-bottom: 20px;
+}
+
 .code {
     padding: 20px;
     margin-bottom: 12px;
@@ -224,11 +224,6 @@ main .panel, main {
     margin: 15px 6px 6px;
 }
 
-/** Workaround for ComboBox conflicting label color on New Look and Feel **/
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #444 !important;
-}
-
-header nav .select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #fff !important;
+nav .button-collapse i {
+    font-size: 1.5rem !important;
 }

@@ -334,7 +334,7 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      strongName = '0428F7055CF667FB50E374E8F562FB26';
+      strongName = 'DDE20E3C350E7DB4C2583A265DB220AF';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
@@ -362,7 +362,6 @@ function gwtmaterialdemo(){
     }
 
     sendStats('loadExternalRefs', 'begin');
-    installOneStylesheet('gwt/clean/clean.css');
     installOneStylesheet('css/overridecss.css');
     installOneStylesheet('css/animation.css');
     installOneStylesheet('css/material-icons.css');
