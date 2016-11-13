@@ -25,7 +25,7 @@
   <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">  
         <m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
-        <m:MaterialDatePicker placeholder="Date" />
+        <m:MaterialDatePicker placeholder="Date" grid="s12"/>
     
         <demo:PrettyPre addStyleNames="lang-xml">
           &lt;m:MaterialDatePicker ui:field="dp" placeholder="Date" />
@@ -34,19 +34,37 @@
       
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Disabled Styles" description="You can disable the datepicker by adding enabled='false'"/>
-        <m:MaterialDatePicker placeholder="Birthday" enabled="false"/>
-    
+        <m:MaterialDatePicker placeholder="Birthday" enabled="false" grid="s12"/>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Date Picker Selection Types" description="You can set easily the selection type of your datepicker by adding an attribute, selectionType='YEAR'. Here is the available formats [DAY, MONTH_DAY, YEAR_MONTH_DAY, YEAR]"/>
-        <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
-    
+        <m:MaterialDatePicker  placeholder="Date" selectionType="YEAR" grid="s12"/>
+
         <demo:PrettyPre addStyleNames="lang-xml">
-          &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
+           &lt;m:MaterialDatePicker  placeholder="Date" selectionType="YEAR"/>
         </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Auto Close" description="Provides a way to automatically closes the datepicker after selecting dates." />
+        <m:MaterialDatePicker ui:field="dpAutoClose" grid="s12" autoClose="true" placeholder="Date" />
+        <demo:PrettyPre addStyleNames="lang-xml">
+           &lt;m:MaterialDatePicker autoClose="true" placeholder="Date" />
+        </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
+          <m:MaterialTitle title="Mobile" description="Open this time picker on a mobile device to test." />
+          <m:MaterialDatePicker detectOrientation="true" grid="s12" placeholder="Supports mobile orientations" />
+          <demo:PrettyPre addStyleNames="lang-xml">
+              &emsp;&lt;m:MaterialDatePicker ui:field="dpMobile" grid="s12" detectOrientation="true" placeholder="Supports mobile orientations" />
+          </demo:PrettyPre>
       </m:MaterialRow>
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="setDate() and getDate()"/>
-        <m:MaterialDatePicker ui:field="dp"  placeholder="Date" selectionType="YEAR"/>
+        <m:MaterialDatePicker ui:field="dp" grid="s12" placeholder="Date" selectionType="YEAR"/>
         <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" />
         <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
     
@@ -62,7 +80,7 @@
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Formats" description="You can set the format of the date picker by adding format='FORMAT'"/>
-        <m:MaterialDatePicker ui:field="dpFormat" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
+        <m:MaterialDatePicker ui:field="dpFormat" grid="s12" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
         <m:MaterialButton ui:field="btnSetFormat" text="Set Date with custom format"/>
     
         <demo:PrettyPre addStyleNames="lang-xml">
@@ -81,7 +99,7 @@
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Clear()" description="Clearing the value of datepicker."/>
-        <m:MaterialDatePicker ui:field="dpClear" placeholder="Birthday" />
+        <m:MaterialDatePicker ui:field="dpClear" grid="s12" placeholder="Birthday" />
         <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
         <demo:PrettyPre addStyleNames="lang-java">
           datePicker.clear();
@@ -90,7 +108,7 @@
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Open / Close control" description="You can control programmatically the date picker. We added value change event with datepicker.close() upon triggering the event." />
-        <m:MaterialDatePicker ui:field="dpOpenClose" placeholder="birthdate" />
+        <m:MaterialDatePicker ui:field="dpOpenClose" grid="s12" placeholder="birthdate" />
         <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" />
         <demo:PrettyPre addStyleNames="lang-java">
           &emsp;dpOpenClose.open(); <br/>
@@ -100,7 +118,7 @@
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Events" description="We provided events on date picker namely : Close, Open, ValueChange events."/>
-        <m:MaterialDatePicker ui:field="dpEvents" placeholder="Birthday"/>
+        <m:MaterialDatePicker ui:field="dpEvents" grid="s12" placeholder="Birthday"/>
         <demo:PrettyPre addStyleNames="lang-java">
           &emsp;dpEvents.addOpenHandler(new OpenHandler&lt;MaterialDatePicker>() {<br/>
           &emsp;@Override<br/>

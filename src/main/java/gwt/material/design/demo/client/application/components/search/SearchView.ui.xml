@@ -73,13 +73,22 @@
       </m:MaterialRow>
     
       <m:MaterialRow addStyleNames="code">
-          <m:MaterialTitle title="Activator" description="To activate your search you must add a click handler into your activator e.g search icon." />
+          <m:MaterialTitle title="Open" description="To show the search input field try to call open()." />
           <demo:PrettyPre addStyleNames="lang-java">
               @UiHandler("btnSearch")<br/>
               void onSearch(ClickEvent e){<br/>
+              &emsp;txtSearch.open();<br/>
+              }
+          </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
+          <m:MaterialTitle title="Open Handler" description="You must specify the event callback after your search is open." />
+          <demo:PrettyPre addStyleNames="lang-java">
+              txtSearch.addOpenHandler(openEvent -> {<br/>
               &emsp;navBar.setVisible(false);<br/>
               &emsp;navBarSearch.setVisible(true);<br/>
-              }
+              });
           </demo:PrettyPre>
       </m:MaterialRow>
       

@@ -45,7 +45,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     }
 
     @UiField
-    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents, dpTranslation, dpOpenClose;
+    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents, dpTranslation, dpOpenClose, dpAutoClose;
 
     @UiField
     MaterialListBox lstLanguage;
@@ -80,6 +80,10 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
         dpOpenClose.addValueChangeHandler(event -> {
             MaterialToast.fireToast("Date Selected " + event.getValue());
             dpOpenClose.close();
+        });
+
+        dpAutoClose.addValueChangeHandler(event -> {
+            MaterialToast.fireToast("Date Selected " + event.getValue());
         });
 
         initLanguage();

@@ -110,12 +110,15 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         }, SideNavPushEvent.TYPE);
 
         // search close event
-        txtSearch.addCloseHandler(new CloseHandler<String>() {
-            @Override
-            public void onClose(CloseEvent<String> event) {
-                navBar.setVisible(true);
-                navBarSearch.setVisible(false);
-            }
+        txtSearch.addCloseHandler(event -> {
+            navBar.setVisible(true);
+            navBarSearch.setVisible(false);
+        });
+
+        // search open event
+        txtSearch.addOpenHandler(openEvent -> {
+            navBarSearch.setVisible(true);
+            navBar.setVisible(false);
         });
         initThemes();
         initSearches();
@@ -170,6 +173,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "IconMorph", "#" + NameTokens.iconMorph));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Masonry", "#" + NameTokens.masonry));
         listSearches.add(new SearchObject(IconType.EXTENSION, "MenuBar", "#" + NameTokens.menubar));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Overlay", "#" + NameTokens.overlay));
         listSearches.add(new SearchObject(IconType.EXTENSION, "PathAnimator", "#" + NameTokens.pathAnimator));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Rating", "#" + NameTokens.rating));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Rich Editor", "#" + NameTokens.richeditor));
@@ -254,7 +258,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
     @UiHandler("btnSearch")
     void onSearch(ClickEvent e){
-        navBarSearch.setVisible(true);
-        navBar.setVisible(false);
+        txtSearch.open();
     }
 }

@@ -30,15 +30,12 @@
     <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.inject.Inject'/>
 
-    <!--Theme-->
-    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
-
     <!--GWTP-->
     <inherits name='com.gwtplatform.dispatch.Dispatch'/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 
     <!--GWT Material-->
-    <inherits name="gwt.material.design.GwtMaterialWithJQuery"/>
+    <inherits name="gwt.material.design.GwtMaterialWithJQueryDebug"/>
     <inherits name="gwt.material.design.themes.ThemeAmberResources"/>
     <inherits name="gwt.material.design.themes.ThemeBlueResources"/>
     <inherits name="gwt.material.design.themes.ThemeBrownResources"/>
@@ -49,8 +46,8 @@
     <inherits name="gwt.material.design.themes.ThemePurpleResources"/>
     <inherits name="gwt.material.design.themes.ThemeRedResources"/>
     <inherits name="gwt.material.design.themes.ThemeYellowResources"/>
-    <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
-    <inherits name="gwt.material.design.GwtMaterialTable"/>
+    <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
+    <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
 
     <inherits name="com.googlecode.gwt.charts.Charts"/>
 

@@ -29,6 +29,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.constants.ProgressType;
+import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialCardContent;
 import gwt.material.design.client.ui.MaterialLoader;
 import gwt.material.design.client.ui.MaterialNavBar;
@@ -45,6 +46,9 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     @UiField
     MaterialCardContent cardContent;
 
+    @UiField
+    MaterialButton btnLoader, btnProgress;
+
     @Inject
     LoaderView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -53,9 +57,11 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     @UiHandler("btnLoader")
     void onShowLoaderSpecific(ClickEvent e) {
         MaterialLoader.showLoading(true, cardContent);
+        btnProgress.setEnabled(false);
         Timer timer = new Timer() {
             @Override
             public void run() {
+                btnProgress.setEnabled(true);
                 MaterialLoader.showLoading(false);
             }
         };
@@ -65,9 +71,11 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
     @UiHandler("btnProgress")
     void onShowProgressSpecific(ClickEvent e) {
         MaterialLoader.showProgress(true, cardContent);
+        btnLoader.setEnabled(false);
         Timer timer = new Timer() {
             @Override
             public void run() {
+                btnLoader.setEnabled(true);
                 MaterialLoader.showProgress(false);
             }
         };

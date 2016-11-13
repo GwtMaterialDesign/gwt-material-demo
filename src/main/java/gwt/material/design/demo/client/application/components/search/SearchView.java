@@ -31,10 +31,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.events.SearchFinishEvent;
-import gwt.material.design.client.ui.MaterialImage;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialNavBar;
-import gwt.material.design.client.ui.MaterialSearch;
+import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.application.dto.DataHelper;
@@ -63,12 +60,18 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     @Inject
     SearchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        txtSearch.addCloseHandler(new CloseHandler<String>() {
-            @Override
-            public void onClose(CloseEvent<String> event) {
-                navBar.setVisible(true);
-                navBarSearch.setVisible(false);
-            }
+        // Add Open Handler
+        txtSearch.addOpenHandler(openEvent -> {
+            navBar.setVisible(false);
+            navBarSearch.setVisible(true);
+            MaterialToast.fireToast("Open Event was fired");
+        });
+
+        // Add Close Handler
+        txtSearch.addCloseHandler(event -> {
+            navBar.setVisible(true);
+            navBarSearch.setVisible(false);
+            MaterialToast.fireToast("Close Event was fired");
         });
 
         // Populate the search keyword into search component
@@ -79,22 +82,19 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
         txtSearch.setListSearches(objects);
 
         // Add Finish Handler
-        txtSearch.addSearchFinishHandler(new SearchFinishEvent.SearchFinishHandler() {
-            @Override
-            public void onSearchFinish(SearchFinishEvent event) {
-                // Get the selected search object
-                Hero hero = (Hero)txtSearch.getSelectedObject();
-                MaterialAnimator.animate(Transition.ZOOMIN, imgHero, 0);
-                imgHero.setResource(hero.getResource());
-                lblName.setText(hero.getName());
-                lblDescription.setText(hero.getDescription());
-            }
+        txtSearch.addSearchFinishHandler(event -> {
+            // Get the selected search object
+            Hero hero = (Hero)txtSearch.getSelectedObject();
+            MaterialAnimator.animate(Transition.ZOOMIN, imgHero, 0);
+            imgHero.setResource(hero.getResource());
+            lblName.setText(hero.getName());
+            lblDescription.setText(hero.getDescription());
+            MaterialToast.fireToast("Search Finish Event was fired");
         });
     }
 
     @UiHandler("btnSearch")
     void onSearch(ClickEvent e){
-        navBar.setVisible(false);
-        navBarSearch.setVisible(true);
+        txtSearch.open();
     }
 }

@@ -27,6 +27,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialPushpin;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -36,17 +37,12 @@ public class PushPinView extends ViewImpl implements PushPinPresenter.MyView {
     }
 
     @UiField
-    MaterialPanel source, target;
+    MaterialPanel source;
 
     @Inject
     PushPinView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-        MaterialPushpin.apply(target, source.getOffsetHeight() + 600);
+        ThemeManager.register(source);
+        MaterialPushpin.apply(source, 300.0, 64.0);
     }
 }

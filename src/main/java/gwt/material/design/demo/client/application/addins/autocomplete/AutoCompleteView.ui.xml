@@ -40,7 +40,7 @@
             <m:MaterialTitle title="Autocomplete" description="Use GWT Autocomplete to search for matches from local or remote data sources. We used MultiWordSuggestOracle to populate the list to be added on the autocomplete values"/>
             <m:MaterialRow>
                 <m:MaterialColumn grid="s12 m12 l6">
-                    <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="Contacts" />
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acList" placeholder="Contacts" grid="s12"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
 
@@ -53,7 +53,7 @@
                 <p>To disable , add enabled="false" parameter on the autocomplete widget</p>
             </blockquote>
     
-            <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT" backgroundColor="BLUE"/>
+            <m:MaterialButton ui:field="btnGetAll" text="Get All States" waves="LIGHT"/>
             <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT" textColor="BLACK" backgroundColor="WHITE"/>
     
             <m.demo:PrettyPre addStyleNames="lang-java">
@@ -119,7 +119,7 @@
             <m:MaterialTitle title="Type TEXT" description="Type TEXT is just an alternative for combo box component."/>
             <m:MaterialRow>
                 <m:MaterialColumn grid="s12 m12 l6">
-                    <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" />
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" grid="s12"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <demo:PrettyPre addStyleNames="lang-xml">
@@ -131,7 +131,7 @@
             <m:MaterialTitle title="Limiting Items" description="You can limit the autocomplete items by adding limit='2' attribute."/>
             <m:MaterialRow>
                 <m:MaterialColumn grid="s12 m12 l6">
-                    <ma:autocomplete.MaterialAutoComplete ui:field="acListLimit" limit="3" placeholder="Contacts" />
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acListLimit" limit="3" placeholder="Contacts" grid="s12"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <demo:PrettyPre addStyleNames="lang-xml">
@@ -145,7 +145,7 @@
             <m:MaterialModal ui:field="modal">
                 <m:MaterialModalContent>
                     <m:MaterialTitle title="Select contacts" description="Some description here..."/>
-                    <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/>
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts" grid="s12"/>
                 </m:MaterialModalContent>
                 <m:MaterialModalFooter textAlign="RIGHT">
                     <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/>

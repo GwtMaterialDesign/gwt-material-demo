@@ -93,7 +93,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Badges in NavBar"/>
       <m:MaterialNavBar width="100%">
-        <m:MaterialNavSection float="RIGHT">
+        <m:MaterialNavSection hideOn="NONE" float="RIGHT">
           <m:MaterialLink text="Link 1" />
           <m:MaterialLink text="Link 2">
             <m:MaterialBadge text="1 new" backgroundColor="RED"/>
@@ -118,7 +118,7 @@
       <!-- Circular Badge -->
       <m:MaterialTitle title="Circular Badge inside Icon Link"/>
       <m:MaterialNavBar width="100%">
-        <m:MaterialNavSection float="LEFT">
+        <m:MaterialNavSection hideOn="NONE" float="LEFT">
           <!-- Nav Sections with Badge components beside the icon if any -->
           <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="SEARCH" layoutPosition="RELATIVE"/>
           <m:MaterialLink textColor="WHITE" href="#" iconPosition="NONE" iconType="NOTIFICATIONS" layoutPosition="RELATIVE">

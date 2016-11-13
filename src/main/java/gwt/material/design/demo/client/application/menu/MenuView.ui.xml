@@ -99,7 +99,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-rc1" textColor="WHITE"/>
+					<m:MaterialBadge text="2.0-rc2" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
@@ -167,6 +167,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getOverlay}" text="Overlay" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getPathAnimator}" text="Path Animator" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRating}" text="Rating" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" waves="DEFAULT"/>

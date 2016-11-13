@@ -34,6 +34,7 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_2_0_RC2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc2"),
         CORE_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc1"),
         CORE_1_6_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.2"),
         CORE_1_6_1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/1.6.1"),
@@ -58,6 +59,7 @@ public class Version implements Serializable {
         THEME_1_5_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.5.2"),
         THEME_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/1.6.0"),
         THEME_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc1"),
+        THEME_2_0_RC2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc2"),
 
         // FOR gwt-material Addins
         ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0"),
@@ -66,12 +68,15 @@ public class Version implements Serializable {
         ADDINS_1_6_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.6.0"),
         ADDINS_1_6_2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.6.2"),
         ADDINS_2_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc1"),
+        ADDINS_2_0_RC2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc2"),
 
         // FOR gwt-material JQuery
         JQUERY_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/1.0-rc1"),
+        JQUERY_1_0_RC2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/1.0-rc2"),
 
         // FOR gwt-material Table
-        TABLE_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc1");
+        TABLE_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc1"),
+        TABLE_1_0_RC2("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc2");
 
         String name;
         VersionLink(String name) {

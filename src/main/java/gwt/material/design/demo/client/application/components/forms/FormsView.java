@@ -46,18 +46,26 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialTextArea txtAreaAuto;
     @UiField MaterialTextArea txtAreaFocus;
 
-    @UiField MaterialFloatBox txtFloatBox;
-    @UiField MaterialIntegerBox txtIntegerBox;
-    @UiField MaterialDoubleBox txtDoubleBox;
-    @UiField MaterialLongBox txtLongBox;
+    @UiField MaterialFloatBox txtFloatBox, txtFloatRO, txtFloatTRO;
+    @UiField MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO;
+    @UiField MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO;
+    @UiField MaterialLongBox txtLongBox, txtLongRO, txtLongTRO;
 
     @Inject
     FormsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         txtFloatBox.setValue(1000.25f);
+        txtFloatRO.setValue(1000.25f);
+        txtFloatTRO.setValue(1000.25f);
         txtIntegerBox.setValue(10);
+        txtIntegerRO.setValue(10);
+        txtIntegerTRO.setValue(10);
         txtDoubleBox.setValue(9999.90);
+        txtDoubleRO.setValue(9999.90);
+        txtDoubleTRO.setValue(9999.90);
         txtLongBox.setValue((long) 1000.00);
+        txtLongRO.setValue((long) 1000.00);
+        txtLongTRO.setValue((long) 1000.00);
 
         txtAreaAuto.setValue("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat " +
             "lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa " +
