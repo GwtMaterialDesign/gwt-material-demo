@@ -66,7 +66,9 @@ public class PathAnimatorShowcase extends Composite {
         // Execute the opening callback once the fab is clicked
         MaterialPathAnimator.animate(btnFAB.getElement(), musicPanel.getElement(), () -> {
             // Hide the fab with zoom out animation
-            MaterialAnimator.animate(Transition.ZOOMOUT, btnFAB, 1000);
+            MaterialAnimator.animate(Transition.ZOOMOUT, btnFAB, 1000, () -> {
+                btnPause.setVisible(true);
+            });
             btnFAB.setVisibility(Style.Visibility.HIDDEN);
             btnFAB.setOpacity(0);
 

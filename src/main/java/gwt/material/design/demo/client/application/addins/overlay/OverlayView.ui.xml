@@ -29,7 +29,7 @@
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic" description="Requires a source component when opening the overlay to transform it to overlay panel." />
-            <ma:overlay.MaterialOverlay ui:field="overlay" textAlign="CENTER" textColor="WHITE">
+            <ma:overlay.MaterialOverlay ui:field="overlay" backgroundColor="BLUE" textAlign="CENTER" textColor="WHITE">
                 <m:MaterialLabel textAlign="CENTER" text="This is an overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
                 <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
                 <m:MaterialButton ui:field="btnCloseOverlay" text="Close Overlay" />
@@ -51,7 +51,7 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We have provided open and close events"/>
-            <ma:overlay.MaterialOverlay ui:field="overlayEvents" textAlign="CENTER" textColor="WHITE">
+            <ma:overlay.MaterialOverlay ui:field="overlayEvents" backgroundColor="BLUE" textAlign="CENTER" textColor="WHITE">
                 <m:MaterialLabel textAlign="CENTER" text="This is an overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
                 <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
                 <m:MaterialButton ui:field="btnCloseOverlayEvents" text="Close Overlay" />

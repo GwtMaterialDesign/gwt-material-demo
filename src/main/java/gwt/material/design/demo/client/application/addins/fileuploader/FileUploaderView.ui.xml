@@ -123,7 +123,7 @@
                 <p><b>Drag End</b> - Dragging has ended.</p>
                 <p><b>Drag Enter</b> - The user dragged a file onto the Dropzone.</p>
                 <p><b>Drag Over</b> - The user is dragging a file over the Dropzone.</p>
-                <p><b>Drag Leave</b> - The user is dragging a file over the Dropzone.</p>
+                <p><b>Drag Leave</b> - The user dragged a file out of the Dropzone.</p>
                 <p><b>Added File &lt;UploadFile></b> - When a file is added to the list.</p>
                 <p><b>Removed File &lt;UploadFile></b> - Called whenever a file is removed from the list. You can listen to this and delete the file from your server if you want to.</p>
                 <p><b>Error &lt;UploadFile></b> - An error occured. Receives the errorMessage as second parameter and if the error was due to the XMLHttpRequest the xhr object as third.</p>

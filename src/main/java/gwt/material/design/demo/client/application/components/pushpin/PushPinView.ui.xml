@@ -26,7 +26,7 @@
         <m:MaterialRow addStyleNames="code" height="1000px">
             <m:MaterialTitle title="Basic" description="A pushpinned element has 3 states. One above (TOP) and below (BELOW) the scrolling threshold, and the pinned state where the element becomes fixed (OFFSET)."/>
             <m:MaterialRow>
-                <m:MaterialPanel ui:field="source" grid="s12 m12 l12" paddingTop="50" shadow="1" height="200px" width="200px">
+                <m:MaterialPanel ui:field="source" grid="s12 m12 l12" backgroundColor="BLUE" paddingTop="50" shadow="1" height="200px" width="200px">
                     <m:MaterialLabel textColor="WHITE" text="Pinned Options top at 300, offset at 64 (navbar's height)" />
                 </m:MaterialPanel>
             </m:MaterialRow>
