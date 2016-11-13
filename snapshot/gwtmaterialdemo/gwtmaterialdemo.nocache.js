@@ -334,7 +334,7 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      strongName = '309D9C77052FE390E8713CAB645B8F4C';
+      strongName = 'DDE20E3C350E7DB4C2583A265DB220AF';
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
