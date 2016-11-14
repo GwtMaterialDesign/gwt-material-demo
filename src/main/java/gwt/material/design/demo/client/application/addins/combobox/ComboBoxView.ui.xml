@@ -204,6 +204,18 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Close On Select" description="Allow or Prevent the dropdown from closing when a result is selected (Default : true)"/>
+                <combobox:MaterialComboBox closeOnSelect="false" multiple="true" placeholder="Time Zone" ui:field="comboCloseOnSelect" />
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="s12">
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;combobox:MaterialComboBox closeOnSelect="false" multiple="true" placeholder="Time Zone" ui:field="comboCloseOnSelect" />
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Value Change Event" description="This event will be fired when changing values on combobox"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone8" />
                 <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone8_1" />
