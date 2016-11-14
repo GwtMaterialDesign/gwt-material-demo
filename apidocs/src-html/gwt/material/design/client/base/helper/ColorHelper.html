@@ -28,33 +28,46 @@
 <span class="sourceLineNo">020</span> * #L%<a name="line.20"></a>
 <span class="sourceLineNo">021</span> */<a name="line.21"></a>
 <span class="sourceLineNo">022</span><a name="line.22"></a>
-<span class="sourceLineNo">023</span><a name="line.23"></a>
-<span class="sourceLineNo">024</span>import com.google.gwt.dom.client.Document;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Element;<a name="line.25"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Document;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.dom.client.Element;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.dom.client.Style;<a name="line.25"></a>
 <span class="sourceLineNo">026</span>import com.google.gwt.user.client.ui.RootPanel;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.27"></a>
 <span class="sourceLineNo">028</span>import gwt.material.design.client.constants.Color;<a name="line.28"></a>
 <span class="sourceLineNo">029</span><a name="line.29"></a>
 <span class="sourceLineNo">030</span>public class ColorHelper {<a name="line.30"></a>
 <span class="sourceLineNo">031</span><a name="line.31"></a>
-<span class="sourceLineNo">032</span>    public static String setupComputedBackgroundColor(Color color) {<a name="line.32"></a>
-<span class="sourceLineNo">033</span>        MaterialWidget temp = new MaterialWidget(Document.get().createDivElement());<a name="line.33"></a>
-<span class="sourceLineNo">034</span>        temp.setBackgroundColor(color);<a name="line.34"></a>
-<span class="sourceLineNo">035</span>        RootPanel.get().add(temp);<a name="line.35"></a>
-<span class="sourceLineNo">036</span>        String computed = getComputedBackgroundColor(temp.getElement()).toLowerCase();<a name="line.36"></a>
-<span class="sourceLineNo">037</span>        temp.removeFromParent();<a name="line.37"></a>
-<span class="sourceLineNo">038</span>        return computed;<a name="line.38"></a>
-<span class="sourceLineNo">039</span>    }<a name="line.39"></a>
-<span class="sourceLineNo">040</span><a name="line.40"></a>
-<span class="sourceLineNo">041</span>    /**<a name="line.41"></a>
-<span class="sourceLineNo">042</span>     * Native call to getComputedStyle.<a name="line.42"></a>
-<span class="sourceLineNo">043</span>     */<a name="line.43"></a>
-<span class="sourceLineNo">044</span>    protected static native String getComputedBackgroundColor(Element e)/*-{<a name="line.44"></a>
-<span class="sourceLineNo">045</span>        var cs = $wnd.document.defaultView.getComputedStyle(e, null);<a name="line.45"></a>
-<span class="sourceLineNo">046</span>        return cs.getPropertyValue('background-color');<a name="line.46"></a>
-<span class="sourceLineNo">047</span>    }-*/;<a name="line.47"></a>
-<span class="sourceLineNo">048</span><a name="line.48"></a>
-<span class="sourceLineNo">049</span>}<a name="line.49"></a>
+<span class="sourceLineNo">032</span>    /**<a name="line.32"></a>
+<span class="sourceLineNo">033</span>     * Returns first enum constant found..<a name="line.33"></a>
+<span class="sourceLineNo">034</span>     *<a name="line.34"></a>
+<span class="sourceLineNo">035</span>     * @param styleName    Space-separated list of styles<a name="line.35"></a>
+<span class="sourceLineNo">036</span>     * @param enumClass    Type of enum<a name="line.36"></a>
+<span class="sourceLineNo">037</span>     * @param defaultValue Default value of no match was found<a name="line.37"></a>
+<span class="sourceLineNo">038</span>     * @return First enum constant found or default value<a name="line.38"></a>
+<span class="sourceLineNo">039</span>     */<a name="line.39"></a>
+<span class="sourceLineNo">040</span>    public static &lt;E extends Enum&lt;? extends Style.HasCssName&gt;&gt; E fromStyleName(final String styleName,<a name="line.40"></a>
+<span class="sourceLineNo">041</span>                                                                               final Class&lt;E&gt; enumClass,<a name="line.41"></a>
+<span class="sourceLineNo">042</span>                                                                               final E defaultValue) {<a name="line.42"></a>
+<span class="sourceLineNo">043</span>        return EnumHelper.fromStyleName(styleName, enumClass, defaultValue, true);<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    }<a name="line.44"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>    public static String setupComputedBackgroundColor(Color color) {<a name="line.46"></a>
+<span class="sourceLineNo">047</span>        MaterialWidget temp = new MaterialWidget(Document.get().createDivElement());<a name="line.47"></a>
+<span class="sourceLineNo">048</span>        temp.setBackgroundColor(color);<a name="line.48"></a>
+<span class="sourceLineNo">049</span>        RootPanel.get().add(temp);<a name="line.49"></a>
+<span class="sourceLineNo">050</span>        String computed = getComputedBackgroundColor(temp.getElement()).toLowerCase();<a name="line.50"></a>
+<span class="sourceLineNo">051</span>        temp.removeFromParent();<a name="line.51"></a>
+<span class="sourceLineNo">052</span>        return computed;<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    }<a name="line.53"></a>
+<span class="sourceLineNo">054</span><a name="line.54"></a>
+<span class="sourceLineNo">055</span>    /**<a name="line.55"></a>
+<span class="sourceLineNo">056</span>     * Native call to getComputedStyle.<a name="line.56"></a>
+<span class="sourceLineNo">057</span>     */<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    protected static native String getComputedBackgroundColor(Element e)/*-{<a name="line.58"></a>
+<span class="sourceLineNo">059</span>        var cs = $wnd.document.defaultView.getComputedStyle(e, null);<a name="line.59"></a>
+<span class="sourceLineNo">060</span>        return cs.getPropertyValue('background-color');<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    }-*/;<a name="line.61"></a>
+<span class="sourceLineNo">062</span>}<a name="line.62"></a>
 
 
 

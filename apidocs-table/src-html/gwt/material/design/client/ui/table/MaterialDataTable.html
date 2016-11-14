@@ -157,9 +157,9 @@
 <span class="sourceLineNo">149</span>        $menu.find("li label").on("tap click", e -&gt; {<a name="line.149"></a>
 <span class="sourceLineNo">150</span>            JQueryElement $this = $(e.getCurrentTarget());<a name="line.150"></a>
 <span class="sourceLineNo">151</span><a name="line.151"></a>
-<span class="sourceLineNo">152</span>            String forBox = (String) $this.attr("for");<a name="line.152"></a>
+<span class="sourceLineNo">152</span>            String forBox = ((String) $this.attr("for")).replace(getViewId() + "-", "");<a name="line.152"></a>
 <span class="sourceLineNo">153</span>            if(Js.isTrue(forBox)) {<a name="line.153"></a>
-<span class="sourceLineNo">154</span>                JQueryElement thd = $("th#" + forBox + ",td#" + forBox);<a name="line.154"></a>
+<span class="sourceLineNo">154</span>                JQueryElement thd = $("th#" + forBox + ",td#" + forBox, this);<a name="line.154"></a>
 <span class="sourceLineNo">155</span>                boolean checked = $this.prev().is(":checked");<a name="line.155"></a>
 <span class="sourceLineNo">156</span><a name="line.156"></a>
 <span class="sourceLineNo">157</span>                thd.each((index, el) -&gt; {<a name="line.157"></a>
@@ -193,7 +193,7 @@
 <span class="sourceLineNo">185</span>        super.insertColumn(beforeIndex, col, header);<a name="line.185"></a>
 <span class="sourceLineNo">186</span><a name="line.186"></a>
 <span class="sourceLineNo">187</span>        int index = beforeIndex + getColumnOffset();<a name="line.187"></a>
-<span class="sourceLineNo">188</span>        String ref = "col" + index;<a name="line.188"></a>
+<span class="sourceLineNo">188</span>        String ref = getViewId() + "-col" + index;<a name="line.188"></a>
 <span class="sourceLineNo">189</span><a name="line.189"></a>
 <span class="sourceLineNo">190</span>        MaterialCheckBox toggleBox = new MaterialCheckBox(new ListItem().getElement());<a name="line.190"></a>
 <span class="sourceLineNo">191</span>        JQueryElement input = $(toggleBox).find("input");<a name="line.191"></a>
@@ -227,7 +227,7 @@
 <span class="sourceLineNo">219</span>    private void reindexToggles() {<a name="line.219"></a>
 <span class="sourceLineNo">220</span>        int colOffset = getColumnOffset();<a name="line.220"></a>
 <span class="sourceLineNo">221</span>        $("li", menu).each((index, e) -&gt; {<a name="line.221"></a>
-<span class="sourceLineNo">222</span>            String ref = "col" + ((Double)index + colOffset);<a name="line.222"></a>
+<span class="sourceLineNo">222</span>            String ref = getViewId() + "-col" + ((Double)index + colOffset);<a name="line.222"></a>
 <span class="sourceLineNo">223</span><a name="line.223"></a>
 <span class="sourceLineNo">224</span>            JQueryElement input = $(e).find("input");<a name="line.224"></a>
 <span class="sourceLineNo">225</span>            input.attr("id", ref);<a name="line.225"></a>

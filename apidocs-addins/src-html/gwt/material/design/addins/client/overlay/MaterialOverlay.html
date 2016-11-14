@@ -97,7 +97,7 @@
 <span class="sourceLineNo">089</span>     */<a name="line.89"></a>
 <span class="sourceLineNo">090</span>    public void open(MaterialWidget source) {<a name="line.90"></a>
 <span class="sourceLineNo">091</span>        this.source = source;<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        $("body").css("overflow", "hidden");<a name="line.92"></a>
+<span class="sourceLineNo">092</span>        $("body").attr("style", "overflow: hidden !important");<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        MaterialPathAnimator.animate(source.getElement(), getElement());<a name="line.93"></a>
 <span class="sourceLineNo">094</span>        OpenEvent.fire(this, this);<a name="line.94"></a>
 <span class="sourceLineNo">095</span>    }<a name="line.95"></a>
@@ -106,7 +106,7 @@
 <span class="sourceLineNo">098</span>     * Close the Overlay Panel with Path Animator applied<a name="line.98"></a>
 <span class="sourceLineNo">099</span>     */<a name="line.99"></a>
 <span class="sourceLineNo">100</span>    public void close() {<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        body().css("overflow", "auto");<a name="line.101"></a>
+<span class="sourceLineNo">101</span>        body().attr("style", "overflow: auto !important");<a name="line.101"></a>
 <span class="sourceLineNo">102</span>        MaterialPathAnimator.reverseAnimate(source.getElement(), getElement());<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        CloseEvent.fire(this, this);<a name="line.103"></a>
 <span class="sourceLineNo">104</span>    }<a name="line.104"></a>

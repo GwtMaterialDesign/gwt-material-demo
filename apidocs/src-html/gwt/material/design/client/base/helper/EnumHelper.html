@@ -43,28 +43,51 @@
 <span class="sourceLineNo">035</span>     * @param defaultValue Default value of no match was found<a name="line.35"></a>
 <span class="sourceLineNo">036</span>     * @return First enum constant found or default value<a name="line.36"></a>
 <span class="sourceLineNo">037</span>     */<a name="line.37"></a>
-<span class="sourceLineNo">038</span>    @SuppressWarnings("unchecked")<a name="line.38"></a>
-<span class="sourceLineNo">039</span>    public static &lt;E extends Enum&lt;? extends Style.HasCssName&gt;&gt; E fromStyleName(final String styleName,<a name="line.39"></a>
-<span class="sourceLineNo">040</span>                                                                               final Class&lt;E&gt; enumClass,<a name="line.40"></a>
-<span class="sourceLineNo">041</span>                                                                               final E defaultValue) {<a name="line.41"></a>
-<span class="sourceLineNo">042</span>        if (styleName == null || enumClass == null) {<a name="line.42"></a>
-<span class="sourceLineNo">043</span>            return defaultValue;<a name="line.43"></a>
-<span class="sourceLineNo">044</span>        }<a name="line.44"></a>
-<span class="sourceLineNo">045</span><a name="line.45"></a>
-<span class="sourceLineNo">046</span>        for (final Enum&lt;? extends Style.HasCssName&gt; constant : enumClass.getEnumConstants()) {<a name="line.46"></a>
-<span class="sourceLineNo">047</span>            final Style.HasCssName anEnum = (Style.HasCssName) constant;<a name="line.47"></a>
-<span class="sourceLineNo">048</span>            final String cssClass = anEnum.getCssName();<a name="line.48"></a>
-<span class="sourceLineNo">049</span><a name="line.49"></a>
-<span class="sourceLineNo">050</span>            if (cssClass != null &amp;&amp; StyleHelper.containsStyle(styleName, cssClass)) {<a name="line.50"></a>
-<span class="sourceLineNo">051</span>                return (E) anEnum;<a name="line.51"></a>
-<span class="sourceLineNo">052</span>            }<a name="line.52"></a>
-<span class="sourceLineNo">053</span>        }<a name="line.53"></a>
-<span class="sourceLineNo">054</span>        return defaultValue;<a name="line.54"></a>
-<span class="sourceLineNo">055</span>    }<a name="line.55"></a>
-<span class="sourceLineNo">056</span><a name="line.56"></a>
-<span class="sourceLineNo">057</span>    private EnumHelper() {<a name="line.57"></a>
-<span class="sourceLineNo">058</span>    }<a name="line.58"></a>
-<span class="sourceLineNo">059</span>}<a name="line.59"></a>
+<span class="sourceLineNo">038</span>    public static &lt;E extends Enum&lt;? extends Style.HasCssName&gt;&gt; E fromStyleName(final String styleName,<a name="line.38"></a>
+<span class="sourceLineNo">039</span>                                                                               final Class&lt;E&gt; enumClass,<a name="line.39"></a>
+<span class="sourceLineNo">040</span>                                                                               final E defaultValue) {<a name="line.40"></a>
+<span class="sourceLineNo">041</span>        return EnumHelper.fromStyleName(styleName, enumClass, defaultValue, false);<a name="line.41"></a>
+<span class="sourceLineNo">042</span>    }<a name="line.42"></a>
+<span class="sourceLineNo">043</span><a name="line.43"></a>
+<span class="sourceLineNo">044</span>    /**<a name="line.44"></a>
+<span class="sourceLineNo">045</span>     * Returns first enum constant found in at space-separated list of style names.<a name="line.45"></a>
+<span class="sourceLineNo">046</span>     *<a name="line.46"></a>
+<span class="sourceLineNo">047</span>     * @param styleName    Space-separated list of styles<a name="line.47"></a>
+<span class="sourceLineNo">048</span>     * @param enumClass    Type of enum<a name="line.48"></a>
+<span class="sourceLineNo">049</span>     * @param defaultValue Default value of no match was found<a name="line.49"></a>
+<span class="sourceLineNo">050</span>     * @return First enum constant found or default value<a name="line.50"></a>
+<span class="sourceLineNo">051</span>     */<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    @SuppressWarnings("unchecked")<a name="line.52"></a>
+<span class="sourceLineNo">053</span>    public static &lt;E extends Enum&lt;? extends Style.HasCssName&gt;&gt; E fromStyleName(final String styleName,<a name="line.53"></a>
+<span class="sourceLineNo">054</span>                                                                               final Class&lt;E&gt; enumClass,<a name="line.54"></a>
+<span class="sourceLineNo">055</span>                                                                               final E defaultValue,<a name="line.55"></a>
+<span class="sourceLineNo">056</span>                                                                               final boolean ignoreSpaces) {<a name="line.56"></a>
+<span class="sourceLineNo">057</span>        if (styleName == null || enumClass == null) {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>            return defaultValue;<a name="line.58"></a>
+<span class="sourceLineNo">059</span>        }<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>        for (final Enum&lt;? extends Style.HasCssName&gt; constant : enumClass.getEnumConstants()) {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>            final Style.HasCssName anEnum = (Style.HasCssName) constant;<a name="line.62"></a>
+<span class="sourceLineNo">063</span>            final String cssClass = anEnum.getCssName();<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>            if(cssClass != null) {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>                boolean contains;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>                if (ignoreSpaces) {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>                    contains = styleName.equals(cssClass);<a name="line.68"></a>
+<span class="sourceLineNo">069</span>                } else {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>                    contains = StyleHelper.containsStyle(styleName, cssClass);<a name="line.70"></a>
+<span class="sourceLineNo">071</span>                }<a name="line.71"></a>
+<span class="sourceLineNo">072</span>                if (contains) {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>                    return (E) anEnum;<a name="line.73"></a>
+<span class="sourceLineNo">074</span>                }<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            }<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        }<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        return defaultValue;<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
+<span class="sourceLineNo">079</span><a name="line.79"></a>
+<span class="sourceLineNo">080</span>    private EnumHelper() {<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    }<a name="line.81"></a>
+<span class="sourceLineNo">082</span>}<a name="line.82"></a>
 
 
 

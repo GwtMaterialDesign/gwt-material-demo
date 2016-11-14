@@ -89,7 +89,7 @@
 <span class="sourceLineNo">081</span>    private boolean hover = false;<a name="line.81"></a>
 <span class="sourceLineNo">082</span>    private boolean belowOrigin = false;<a name="line.82"></a>
 <span class="sourceLineNo">083</span>    private int gutter = 0;<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    private String alignment = Alignment.LEFT.getCssName();<a name="line.84"></a>
+<span class="sourceLineNo">084</span>    private Alignment alignment = Alignment.LEFT;<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    private List&lt;Widget&gt; children = new ArrayList&lt;&gt;();<a name="line.85"></a>
 <span class="sourceLineNo">086</span><a name="line.86"></a>
 <span class="sourceLineNo">087</span>    public MaterialDropDown() {<a name="line.87"></a>
@@ -98,9 +98,9 @@
 <span class="sourceLineNo">090</span>    }<a name="line.90"></a>
 <span class="sourceLineNo">091</span><a name="line.91"></a>
 <span class="sourceLineNo">092</span>    /**<a name="line.92"></a>
-<span class="sourceLineNo">093</span>     * Material Dropdown - adds a list item selection when button, link, icon button pressed.<a name="line.93"></a>
+<span class="sourceLineNo">093</span>     * Adds a list item selection when button, link, icon button pressed.<a name="line.93"></a>
 <span class="sourceLineNo">094</span>     *<a name="line.94"></a>
-<span class="sourceLineNo">095</span>     * @param activator - data-activates attribute name of your dropdown activator.<a name="line.95"></a>
+<span class="sourceLineNo">095</span>     * @param activator data-activates attribute name of your dropdown activator.<a name="line.95"></a>
 <span class="sourceLineNo">096</span>     */<a name="line.96"></a>
 <span class="sourceLineNo">097</span>    @UiConstructor<a name="line.97"></a>
 <span class="sourceLineNo">098</span>    public MaterialDropDown(String activator) {<a name="line.98"></a>
@@ -195,11 +195,11 @@
 <span class="sourceLineNo">187</span>     * Defines the edge the menu is aligned to. Default: 'left'<a name="line.187"></a>
 <span class="sourceLineNo">188</span>     */<a name="line.188"></a>
 <span class="sourceLineNo">189</span>    public void setAlignment(Alignment alignment) {<a name="line.189"></a>
-<span class="sourceLineNo">190</span>        this.alignment = alignment.getCssName();<a name="line.190"></a>
+<span class="sourceLineNo">190</span>        this.alignment = alignment;<a name="line.190"></a>
 <span class="sourceLineNo">191</span>    }<a name="line.191"></a>
 <span class="sourceLineNo">192</span><a name="line.192"></a>
 <span class="sourceLineNo">193</span>    public Alignment getAlignment() {<a name="line.193"></a>
-<span class="sourceLineNo">194</span>        return Alignment.fromStyleName(alignment);<a name="line.194"></a>
+<span class="sourceLineNo">194</span>        return alignment;<a name="line.194"></a>
 <span class="sourceLineNo">195</span>    }<a name="line.195"></a>
 <span class="sourceLineNo">196</span><a name="line.196"></a>
 <span class="sourceLineNo">197</span>    /**<a name="line.197"></a>
@@ -261,8 +261,8 @@
 <span class="sourceLineNo">253</span>        } else if (activatorElement == null) {<a name="line.253"></a>
 <span class="sourceLineNo">254</span>            activatorElement = DOMHelper.getElementByAttribute("data-activates", activator);<a name="line.254"></a>
 <span class="sourceLineNo">255</span>            if (activatorElement == null) {<a name="line.255"></a>
-<span class="sourceLineNo">256</span>                GWT.log("There is no activator element with id: '" + activator<a name="line.256"></a>
-<span class="sourceLineNo">257</span>                        + "' in the DOM, cannot instantiate MaterialDropDown without a data-activates.", new IllegalStateException());<a name="line.257"></a>
+<span class="sourceLineNo">256</span>                GWT.log("There is no activator element with id: '" + activator + "' in the DOM, " +<a name="line.256"></a>
+<span class="sourceLineNo">257</span>                    "cannot instantiate MaterialDropDown without a data-activates.", new IllegalStateException());<a name="line.257"></a>
 <span class="sourceLineNo">258</span>            }<a name="line.258"></a>
 <span class="sourceLineNo">259</span>        }<a name="line.259"></a>
 <span class="sourceLineNo">260</span><a name="line.260"></a>
@@ -285,7 +285,7 @@
 <span class="sourceLineNo">277</span>        options.hover = hover;<a name="line.277"></a>
 <span class="sourceLineNo">278</span>        options.gutter = gutter;<a name="line.278"></a>
 <span class="sourceLineNo">279</span>        options.belowOrigin = belowOrigin;<a name="line.279"></a>
-<span class="sourceLineNo">280</span>        options.alignment = alignment;<a name="line.280"></a>
+<span class="sourceLineNo">280</span>        options.alignment = alignment.getCssName();<a name="line.280"></a>
 <span class="sourceLineNo">281</span>        $(activator).dropdown(options);<a name="line.281"></a>
 <span class="sourceLineNo">282</span>    }<a name="line.282"></a>
 <span class="sourceLineNo">283</span><a name="line.283"></a>

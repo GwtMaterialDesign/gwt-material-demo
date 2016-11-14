@@ -97,7 +97,7 @@
 <span class="sourceLineNo">089</span>        super.onLoad();<a name="line.89"></a>
 <span class="sourceLineNo">090</span><a name="line.90"></a>
 <span class="sourceLineNo">091</span>        if (typeMixin.getType() != null) {<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            applyType(typeMixin.getType().getCssName(), getElement());<a name="line.92"></a>
+<span class="sourceLineNo">092</span>            applyType(typeMixin.getType(), getElement());<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        }<a name="line.93"></a>
 <span class="sourceLineNo">094</span>    }<a name="line.94"></a>
 <span class="sourceLineNo">095</span><a name="line.95"></a>
@@ -116,8 +116,8 @@
 <span class="sourceLineNo">108</span>        typeMixin.setType(type);<a name="line.108"></a>
 <span class="sourceLineNo">109</span>    }<a name="line.109"></a>
 <span class="sourceLineNo">110</span><a name="line.110"></a>
-<span class="sourceLineNo">111</span>    protected void applyType(String type, Element element) {<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        if (type.equals(NavBarType.SHRINK.getCssName())) {<a name="line.112"></a>
+<span class="sourceLineNo">111</span>    protected void applyType(NavBarType type, Element element) {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        if (type.equals(NavBarType.SHRINK)) {<a name="line.112"></a>
 <span class="sourceLineNo">113</span>            JsMaterialElement.initShrink(element, 300);<a name="line.113"></a>
 <span class="sourceLineNo">114</span>        } else {<a name="line.114"></a>
 <span class="sourceLineNo">115</span>            GWT.log("Default type of navbar was applied");<a name="line.115"></a>

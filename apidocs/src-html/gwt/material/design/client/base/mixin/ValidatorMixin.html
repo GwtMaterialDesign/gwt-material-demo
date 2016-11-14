@@ -169,7 +169,7 @@
 <span class="sourceLineNo">161</span>        Boolean oldValid = valid;<a name="line.161"></a>
 <span class="sourceLineNo">162</span>        valid = true;<a name="line.162"></a>
 <span class="sourceLineNo">163</span>        if (errorHandler != null &amp;&amp; !validators.isEmpty()) {<a name="line.163"></a>
-<span class="sourceLineNo">164</span>            List&lt;EditorError&gt; errors = new ArrayList&lt;EditorError&gt;();<a name="line.164"></a>
+<span class="sourceLineNo">164</span>            List&lt;EditorError&gt; errors = new ArrayList&lt;&gt;();<a name="line.164"></a>
 <span class="sourceLineNo">165</span>            for (ValidatorWrapper&lt;V&gt; wrapper : validators) {<a name="line.165"></a>
 <span class="sourceLineNo">166</span>                Validator&lt;V&gt; validator = wrapper.getValidator();<a name="line.166"></a>
 <span class="sourceLineNo">167</span>                List&lt;EditorError&gt; result = validator.validate(inputWidget, inputWidget.getValue());<a name="line.167"></a>

@@ -209,8 +209,8 @@
 <span class="sourceLineNo">201</span>        indicator.getElement().getStyle().setBackgroundColor("inherit");<a name="line.201"></a>
 <span class="sourceLineNo">202</span>        addPageSelectionHandler(event -&gt; {<a name="line.202"></a>
 <span class="sourceLineNo">203</span>            indicator.setText(indicatorTemplate<a name="line.203"></a>
-<span class="sourceLineNo">204</span>                    .replaceAll("\\{page\\}", String.valueOf(event.getPageTo()))<a name="line.204"></a>
-<span class="sourceLineNo">205</span>                    .replaceAll("\\{total\\}", String.valueOf(event.getTotalPage()))<a name="line.205"></a>
+<span class="sourceLineNo">204</span>                .replaceAll("\\{page\\}", String.valueOf(event.getPageTo()))<a name="line.204"></a>
+<span class="sourceLineNo">205</span>                .replaceAll("\\{total\\}", String.valueOf(event.getTotalPage()))<a name="line.205"></a>
 <span class="sourceLineNo">206</span>            );<a name="line.206"></a>
 <span class="sourceLineNo">207</span>        });<a name="line.207"></a>
 <span class="sourceLineNo">208</span>        return indicator;<a name="line.208"></a>
@@ -233,19 +233,19 @@
 <span class="sourceLineNo">225</span>    }<a name="line.225"></a>
 <span class="sourceLineNo">226</span><a name="line.226"></a>
 <span class="sourceLineNo">227</span>    protected void onPageSelection(int page) {<a name="line.227"></a>
-<span class="sourceLineNo">228</span>        this.currentPage = page;<a name="line.228"></a>
+<span class="sourceLineNo">228</span>        currentPage = page;<a name="line.228"></a>
 <span class="sourceLineNo">229</span><a name="line.229"></a>
-<span class="sourceLineNo">230</span>        if (this.currentPage &gt; calcShowingPageTo) {<a name="line.230"></a>
+<span class="sourceLineNo">230</span>        if (currentPage &gt; calcShowingPageTo) {<a name="line.230"></a>
 <span class="sourceLineNo">231</span>            moveNextPagesRange();<a name="line.231"></a>
 <span class="sourceLineNo">232</span>        }<a name="line.232"></a>
-<span class="sourceLineNo">233</span>        if (this.currentPage &lt; calcShowingPageFrom) {<a name="line.233"></a>
+<span class="sourceLineNo">233</span>        if (currentPage &lt; calcShowingPageFrom) {<a name="line.233"></a>
 <span class="sourceLineNo">234</span>            movePreviousPagesRange();<a name="line.234"></a>
 <span class="sourceLineNo">235</span>        }<a name="line.235"></a>
 <span class="sourceLineNo">236</span><a name="line.236"></a>
 <span class="sourceLineNo">237</span>        PageSelectionEvent event = new PageSelectionEvent();<a name="line.237"></a>
-<span class="sourceLineNo">238</span>        event.setPageFrom(this.currentPage);<a name="line.238"></a>
+<span class="sourceLineNo">238</span>        event.setPageFrom(currentPage);<a name="line.238"></a>
 <span class="sourceLineNo">239</span>        event.setPageTo(page);<a name="line.239"></a>
-<span class="sourceLineNo">240</span>        event.setTotalPage(this.calcTotalPages);<a name="line.240"></a>
+<span class="sourceLineNo">240</span>        event.setTotalPage(calcTotalPages);<a name="line.240"></a>
 <span class="sourceLineNo">241</span><a name="line.241"></a>
 <span class="sourceLineNo">242</span>        fireEvent(event);<a name="line.242"></a>
 <span class="sourceLineNo">243</span>    }<a name="line.243"></a>
@@ -329,53 +329,52 @@
 <span class="sourceLineNo">321</span>    }<a name="line.321"></a>
 <span class="sourceLineNo">322</span><a name="line.322"></a>
 <span class="sourceLineNo">323</span>    static class PagerListItem extends ListItem {<a name="line.323"></a>
-<span class="sourceLineNo">324</span><a name="line.324"></a>
-<span class="sourceLineNo">325</span>        private boolean fixed;<a name="line.325"></a>
-<span class="sourceLineNo">326</span>        private boolean enabled;<a name="line.326"></a>
-<span class="sourceLineNo">327</span><a name="line.327"></a>
-<span class="sourceLineNo">328</span>        public PagerListItem() {<a name="line.328"></a>
-<span class="sourceLineNo">329</span>            this(true);<a name="line.329"></a>
-<span class="sourceLineNo">330</span>        }<a name="line.330"></a>
-<span class="sourceLineNo">331</span><a name="line.331"></a>
-<span class="sourceLineNo">332</span>        public PagerListItem(boolean clickable) {<a name="line.332"></a>
-<span class="sourceLineNo">333</span>            if (clickable) {<a name="line.333"></a>
-<span class="sourceLineNo">334</span>                addStyleName(CssName.WAVES_EFFECT);<a name="line.334"></a>
-<span class="sourceLineNo">335</span>                sinkEvents(Event.ONCLICK | Event.TOUCHEVENTS);<a name="line.335"></a>
-<span class="sourceLineNo">336</span>            }<a name="line.336"></a>
-<span class="sourceLineNo">337</span>        }<a name="line.337"></a>
-<span class="sourceLineNo">338</span><a name="line.338"></a>
-<span class="sourceLineNo">339</span>        public boolean isFixed() {<a name="line.339"></a>
-<span class="sourceLineNo">340</span>            return fixed;<a name="line.340"></a>
-<span class="sourceLineNo">341</span>        }<a name="line.341"></a>
-<span class="sourceLineNo">342</span><a name="line.342"></a>
-<span class="sourceLineNo">343</span>        public void setFixed(boolean fixed) {<a name="line.343"></a>
-<span class="sourceLineNo">344</span>            this.fixed = fixed;<a name="line.344"></a>
-<span class="sourceLineNo">345</span>        }<a name="line.345"></a>
-<span class="sourceLineNo">346</span><a name="line.346"></a>
-<span class="sourceLineNo">347</span>        public void setActive(boolean active) {<a name="line.347"></a>
-<span class="sourceLineNo">348</span>            if (active) {<a name="line.348"></a>
-<span class="sourceLineNo">349</span>                addStyleName(CssName.ACTIVE);<a name="line.349"></a>
-<span class="sourceLineNo">350</span>            } else {<a name="line.350"></a>
-<span class="sourceLineNo">351</span>                removeStyleName(CssName.ACTIVE);<a name="line.351"></a>
-<span class="sourceLineNo">352</span>            }<a name="line.352"></a>
-<span class="sourceLineNo">353</span>        }<a name="line.353"></a>
-<span class="sourceLineNo">354</span><a name="line.354"></a>
-<span class="sourceLineNo">355</span>        @Override<a name="line.355"></a>
-<span class="sourceLineNo">356</span>        public boolean isEnabled() {<a name="line.356"></a>
-<span class="sourceLineNo">357</span>            return enabled;<a name="line.357"></a>
-<span class="sourceLineNo">358</span>        }<a name="line.358"></a>
-<span class="sourceLineNo">359</span><a name="line.359"></a>
-<span class="sourceLineNo">360</span>        @Override<a name="line.360"></a>
-<span class="sourceLineNo">361</span>        public void setEnabled(boolean enabled) {<a name="line.361"></a>
-<span class="sourceLineNo">362</span>            this.enabled = enabled;<a name="line.362"></a>
-<span class="sourceLineNo">363</span>            if (!enabled) {<a name="line.363"></a>
-<span class="sourceLineNo">364</span>                addStyleName(CssName.DISABLED);<a name="line.364"></a>
-<span class="sourceLineNo">365</span>            } else {<a name="line.365"></a>
-<span class="sourceLineNo">366</span>                removeStyleName(CssName.DISABLED);<a name="line.366"></a>
-<span class="sourceLineNo">367</span>            }<a name="line.367"></a>
-<span class="sourceLineNo">368</span>        }<a name="line.368"></a>
-<span class="sourceLineNo">369</span>    }<a name="line.369"></a>
-<span class="sourceLineNo">370</span>}<a name="line.370"></a>
+<span class="sourceLineNo">324</span>        private boolean fixed;<a name="line.324"></a>
+<span class="sourceLineNo">325</span>        private boolean enabled;<a name="line.325"></a>
+<span class="sourceLineNo">326</span><a name="line.326"></a>
+<span class="sourceLineNo">327</span>        public PagerListItem() {<a name="line.327"></a>
+<span class="sourceLineNo">328</span>            this(true);<a name="line.328"></a>
+<span class="sourceLineNo">329</span>        }<a name="line.329"></a>
+<span class="sourceLineNo">330</span><a name="line.330"></a>
+<span class="sourceLineNo">331</span>        public PagerListItem(boolean clickable) {<a name="line.331"></a>
+<span class="sourceLineNo">332</span>            if (clickable) {<a name="line.332"></a>
+<span class="sourceLineNo">333</span>                addStyleName(CssName.WAVES_EFFECT);<a name="line.333"></a>
+<span class="sourceLineNo">334</span>                sinkEvents(Event.ONCLICK | Event.TOUCHEVENTS);<a name="line.334"></a>
+<span class="sourceLineNo">335</span>            }<a name="line.335"></a>
+<span class="sourceLineNo">336</span>        }<a name="line.336"></a>
+<span class="sourceLineNo">337</span><a name="line.337"></a>
+<span class="sourceLineNo">338</span>        public boolean isFixed() {<a name="line.338"></a>
+<span class="sourceLineNo">339</span>            return fixed;<a name="line.339"></a>
+<span class="sourceLineNo">340</span>        }<a name="line.340"></a>
+<span class="sourceLineNo">341</span><a name="line.341"></a>
+<span class="sourceLineNo">342</span>        public void setFixed(boolean fixed) {<a name="line.342"></a>
+<span class="sourceLineNo">343</span>            this.fixed = fixed;<a name="line.343"></a>
+<span class="sourceLineNo">344</span>        }<a name="line.344"></a>
+<span class="sourceLineNo">345</span><a name="line.345"></a>
+<span class="sourceLineNo">346</span>        public void setActive(boolean active) {<a name="line.346"></a>
+<span class="sourceLineNo">347</span>            if (active) {<a name="line.347"></a>
+<span class="sourceLineNo">348</span>                addStyleName(CssName.ACTIVE);<a name="line.348"></a>
+<span class="sourceLineNo">349</span>            } else {<a name="line.349"></a>
+<span class="sourceLineNo">350</span>                removeStyleName(CssName.ACTIVE);<a name="line.350"></a>
+<span class="sourceLineNo">351</span>            }<a name="line.351"></a>
+<span class="sourceLineNo">352</span>        }<a name="line.352"></a>
+<span class="sourceLineNo">353</span><a name="line.353"></a>
+<span class="sourceLineNo">354</span>        @Override<a name="line.354"></a>
+<span class="sourceLineNo">355</span>        public boolean isEnabled() {<a name="line.355"></a>
+<span class="sourceLineNo">356</span>            return enabled;<a name="line.356"></a>
+<span class="sourceLineNo">357</span>        }<a name="line.357"></a>
+<span class="sourceLineNo">358</span><a name="line.358"></a>
+<span class="sourceLineNo">359</span>        @Override<a name="line.359"></a>
+<span class="sourceLineNo">360</span>        public void setEnabled(boolean enabled) {<a name="line.360"></a>
+<span class="sourceLineNo">361</span>            this.enabled = enabled;<a name="line.361"></a>
+<span class="sourceLineNo">362</span>            if (!enabled) {<a name="line.362"></a>
+<span class="sourceLineNo">363</span>                addStyleName(CssName.DISABLED);<a name="line.363"></a>
+<span class="sourceLineNo">364</span>            } else {<a name="line.364"></a>
+<span class="sourceLineNo">365</span>                removeStyleName(CssName.DISABLED);<a name="line.365"></a>
+<span class="sourceLineNo">366</span>            }<a name="line.366"></a>
+<span class="sourceLineNo">367</span>        }<a name="line.367"></a>
+<span class="sourceLineNo">368</span>    }<a name="line.368"></a>
+<span class="sourceLineNo">369</span>}<a name="line.369"></a>
 
 
 

@@ -27,108 +27,108 @@
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>package gwt.material.design.client.ui;<a name="line.20"></a>
 <span class="sourceLineNo">021</span><a name="line.21"></a>
-<span class="sourceLineNo">022</span>import com.google.gwt.event.dom.client.KeyCodes;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>import com.google.gwt.event.dom.client.KeyUpEvent;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import com.google.gwt.event.dom.client.KeyUpHandler;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import com.google.gwt.event.logical.shared.CloseEvent;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>import com.google.gwt.event.logical.shared.CloseHandler;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import com.google.gwt.event.logical.shared.HasCloseHandlers;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import com.google.gwt.user.client.ui.TextBox;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.base.HasActive;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.client.base.HasSearchHandlers;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import gwt.material.design.client.base.SearchObject;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>import gwt.material.design.client.constants.Color;<a name="line.33"></a>
-<span class="sourceLineNo">034</span>import gwt.material.design.client.constants.CssName;<a name="line.34"></a>
-<span class="sourceLineNo">035</span>import gwt.material.design.client.constants.IconType;<a name="line.35"></a>
-<span class="sourceLineNo">036</span>import gwt.material.design.client.constants.InputType;<a name="line.36"></a>
-<span class="sourceLineNo">037</span>import gwt.material.design.client.events.SearchFinishEvent;<a name="line.37"></a>
-<span class="sourceLineNo">038</span>import gwt.material.design.client.events.SearchNoResultEvent;<a name="line.38"></a>
-<span class="sourceLineNo">039</span>import gwt.material.design.client.ui.html.Label;<a name="line.39"></a>
-<span class="sourceLineNo">040</span><a name="line.40"></a>
-<span class="sourceLineNo">041</span>import java.util.ArrayList;<a name="line.41"></a>
-<span class="sourceLineNo">042</span>import java.util.List;<a name="line.42"></a>
-<span class="sourceLineNo">043</span><a name="line.43"></a>
-<span class="sourceLineNo">044</span>//@formatter:off<a name="line.44"></a>
-<span class="sourceLineNo">045</span><a name="line.45"></a>
-<span class="sourceLineNo">046</span>/**<a name="line.46"></a>
-<span class="sourceLineNo">047</span> * Material Search is a value box component that returs a result based on your search<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * &lt;p&gt;<a name="line.48"></a>
+<span class="sourceLineNo">022</span>import com.google.gwt.core.client.Scheduler;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.event.dom.client.KeyCodes;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.event.dom.client.KeyUpEvent;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.event.dom.client.KeyUpHandler;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.event.logical.shared.*;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import com.google.gwt.user.client.ui.TextBox;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.base.HasActive;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.base.HasSearchHandlers;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.client.base.SearchObject;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.client.constants.Color;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.client.constants.CssName;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import gwt.material.design.client.constants.IconType;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import gwt.material.design.client.constants.InputType;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import gwt.material.design.client.events.SearchFinishEvent;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import gwt.material.design.client.events.SearchNoResultEvent;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import gwt.material.design.client.ui.html.Label;<a name="line.38"></a>
+<span class="sourceLineNo">039</span><a name="line.39"></a>
+<span class="sourceLineNo">040</span>import java.util.ArrayList;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>import java.util.List;<a name="line.41"></a>
+<span class="sourceLineNo">042</span><a name="line.42"></a>
+<span class="sourceLineNo">043</span>import static gwt.material.design.jquery.client.api.JQuery.$;<a name="line.43"></a>
+<span class="sourceLineNo">044</span><a name="line.44"></a>
+<span class="sourceLineNo">045</span>//@formatter:off<a name="line.45"></a>
+<span class="sourceLineNo">046</span><a name="line.46"></a>
+<span class="sourceLineNo">047</span>/**<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * Material Search is a value box component that returs a result based on your search<a name="line.48"></a>
 <span class="sourceLineNo">049</span> * &lt;p&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * &lt;pre&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * {@code<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * &lt;m:MaterialSearch placeholder="Sample"/&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * }<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * &lt;/pre&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * &lt;p&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * &lt;h3&gt;Populating the search result objects&lt;/h3&gt;<a name="line.57"></a>
-<span class="sourceLineNo">058</span> * {@code<a name="line.58"></a>
-<span class="sourceLineNo">059</span> * &lt;p&gt;<a name="line.59"></a>
-<span class="sourceLineNo">060</span> * List&lt;SearchObject&gt; objects = new ArrayList&lt;&gt;();<a name="line.60"></a>
-<span class="sourceLineNo">061</span> * &lt;p&gt;<a name="line.61"></a>
-<span class="sourceLineNo">062</span> * private void onInitSearch() {<a name="line.62"></a>
-<span class="sourceLineNo">063</span> * objects.add(new SearchObject(IconType.POLYMER, "Pushpin", "#!pushpin"));<a name="line.63"></a>
-<span class="sourceLineNo">064</span> * objects.add(new SearchObject(IconType.POLYMER, "SideNavs", "#!sidenavs"));<a name="line.64"></a>
-<span class="sourceLineNo">065</span> * objects.add(new SearchObject(IconType.POLYMER, "Scrollspy", "#!scrollspy"));<a name="line.65"></a>
-<span class="sourceLineNo">066</span> * objects.add(new SearchObject(IconType.POLYMER, "Tabs", "#!tabs"));<a name="line.66"></a>
-<span class="sourceLineNo">067</span> * txtSearch.setListSearches(objects);<a name="line.67"></a>
-<span class="sourceLineNo">068</span> * }<a name="line.68"></a>
-<span class="sourceLineNo">069</span> * &lt;p&gt;<a name="line.69"></a>
-<span class="sourceLineNo">070</span> * }<a name="line.70"></a>
-<span class="sourceLineNo">071</span> * &lt;/p&gt;<a name="line.71"></a>
-<span class="sourceLineNo">072</span> *<a name="line.72"></a>
-<span class="sourceLineNo">073</span> * @author kevzlou7979<a name="line.73"></a>
-<span class="sourceLineNo">074</span> * @author Ben Dol<a name="line.74"></a>
-<span class="sourceLineNo">075</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!navbar"&gt;Material Search&lt;/a&gt;<a name="line.75"></a>
-<span class="sourceLineNo">076</span> */<a name="line.76"></a>
-<span class="sourceLineNo">077</span>//@formatter:on<a name="line.77"></a>
-<span class="sourceLineNo">078</span>public class MaterialSearch extends MaterialValueBox&lt;String&gt; implements HasCloseHandlers&lt;String&gt;, HasActive, HasSearchHandlers {<a name="line.78"></a>
-<span class="sourceLineNo">079</span><a name="line.79"></a>
-<span class="sourceLineNo">080</span>    private boolean initialized;<a name="line.80"></a>
+<span class="sourceLineNo">050</span> * &lt;p&gt;<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * &lt;pre&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * {@code<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * &lt;m:MaterialSearch placeholder="Sample"/&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * }<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * &lt;/pre&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * &lt;p&gt;<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * &lt;h3&gt;Populating the search result objects&lt;/h3&gt;<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * {@code<a name="line.59"></a>
+<span class="sourceLineNo">060</span> * &lt;p&gt;<a name="line.60"></a>
+<span class="sourceLineNo">061</span> * List&lt;SearchObject&gt; objects = new ArrayList&lt;&gt;();<a name="line.61"></a>
+<span class="sourceLineNo">062</span> * &lt;p&gt;<a name="line.62"></a>
+<span class="sourceLineNo">063</span> * private void onInitSearch() {<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * objects.add(new SearchObject(IconType.POLYMER, "Pushpin", "#!pushpin"));<a name="line.64"></a>
+<span class="sourceLineNo">065</span> * objects.add(new SearchObject(IconType.POLYMER, "SideNavs", "#!sidenavs"));<a name="line.65"></a>
+<span class="sourceLineNo">066</span> * objects.add(new SearchObject(IconType.POLYMER, "Scrollspy", "#!scrollspy"));<a name="line.66"></a>
+<span class="sourceLineNo">067</span> * objects.add(new SearchObject(IconType.POLYMER, "Tabs", "#!tabs"));<a name="line.67"></a>
+<span class="sourceLineNo">068</span> * txtSearch.setListSearches(objects);<a name="line.68"></a>
+<span class="sourceLineNo">069</span> * }<a name="line.69"></a>
+<span class="sourceLineNo">070</span> * &lt;p&gt;<a name="line.70"></a>
+<span class="sourceLineNo">071</span> * }<a name="line.71"></a>
+<span class="sourceLineNo">072</span> * &lt;/p&gt;<a name="line.72"></a>
+<span class="sourceLineNo">073</span> *<a name="line.73"></a>
+<span class="sourceLineNo">074</span> * @author kevzlou7979<a name="line.74"></a>
+<span class="sourceLineNo">075</span> * @author Ben Dol<a name="line.75"></a>
+<span class="sourceLineNo">076</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!navbar"&gt;Material Search&lt;/a&gt;<a name="line.76"></a>
+<span class="sourceLineNo">077</span> */<a name="line.77"></a>
+<span class="sourceLineNo">078</span>//@formatter:on<a name="line.78"></a>
+<span class="sourceLineNo">079</span>public class MaterialSearch extends MaterialValueBox&lt;String&gt; implements HasOpenHandlers&lt;String&gt;, HasCloseHandlers&lt;String&gt;,<a name="line.79"></a>
+<span class="sourceLineNo">080</span>        HasActive, HasSearchHandlers {<a name="line.80"></a>
 <span class="sourceLineNo">081</span><a name="line.81"></a>
-<span class="sourceLineNo">082</span>    private Label label = new Label();<a name="line.82"></a>
-<span class="sourceLineNo">083</span>    private MaterialIcon iconSearch = new MaterialIcon(IconType.SEARCH);<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    private MaterialIcon iconClose = new MaterialIcon(IconType.CLOSE);<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    /**<a name="line.86"></a>
-<span class="sourceLineNo">087</span>     * The list of search objects added to MaterialSearchResult panel to<a name="line.87"></a>
-<span class="sourceLineNo">088</span>     * display the lists of result items<a name="line.88"></a>
-<span class="sourceLineNo">089</span>     */<a name="line.89"></a>
-<span class="sourceLineNo">090</span>    private List&lt;SearchObject&gt; listSearches = new ArrayList&lt;&gt;();<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    /**<a name="line.91"></a>
-<span class="sourceLineNo">092</span>     * Used to determine the selected searches while matching the keyword to result<a name="line.92"></a>
-<span class="sourceLineNo">093</span>     */<a name="line.93"></a>
-<span class="sourceLineNo">094</span>    private List&lt;SearchObject&gt; tempSearches = new ArrayList&lt;&gt;();<a name="line.94"></a>
-<span class="sourceLineNo">095</span>    /**<a name="line.95"></a>
-<span class="sourceLineNo">096</span>     * Panel to display the result items<a name="line.96"></a>
-<span class="sourceLineNo">097</span>     */<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    private MaterialSearchResult searchResultPanel;<a name="line.98"></a>
-<span class="sourceLineNo">099</span>    /**<a name="line.99"></a>
-<span class="sourceLineNo">100</span>     * Link selected to determine easily during the selection event (up / down key events)<a name="line.100"></a>
-<span class="sourceLineNo">101</span>     */<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    private MaterialLink selectedLink;<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    /**<a name="line.103"></a>
-<span class="sourceLineNo">104</span>     * Gets the selected object after Search Finish event<a name="line.104"></a>
-<span class="sourceLineNo">105</span>     */<a name="line.105"></a>
-<span class="sourceLineNo">106</span>    private SearchObject selectedObject;<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    /**<a name="line.107"></a>
-<span class="sourceLineNo">108</span>     * -1 means that the selected index is not yet selected.<a name="line.108"></a>
-<span class="sourceLineNo">109</span>     * It will increment or decrement once trigger by key up / down events<a name="line.109"></a>
-<span class="sourceLineNo">110</span>     */<a name="line.110"></a>
-<span class="sourceLineNo">111</span>    private int curSel = -1;<a name="line.111"></a>
-<span class="sourceLineNo">112</span>    private boolean active;<a name="line.112"></a>
-<span class="sourceLineNo">113</span><a name="line.113"></a>
-<span class="sourceLineNo">114</span>    public MaterialSearch() {<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        super(new TextBox());<a name="line.115"></a>
-<span class="sourceLineNo">116</span>        setType(InputType.SEARCH);<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        label.add(iconSearch);<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        label.getElement().setAttribute("for", "search");<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        add(label);<a name="line.119"></a>
-<span class="sourceLineNo">120</span>        add(iconClose);<a name="line.120"></a>
-<span class="sourceLineNo">121</span>        iconClose.addMouseDownHandler(mouseDownEvent -&gt; {<a name="line.121"></a>
-<span class="sourceLineNo">122</span>            CloseEvent.fire(MaterialSearch.this, getText());<a name="line.122"></a>
-<span class="sourceLineNo">123</span>        });<a name="line.123"></a>
+<span class="sourceLineNo">082</span>    private boolean initialized;<a name="line.82"></a>
+<span class="sourceLineNo">083</span><a name="line.83"></a>
+<span class="sourceLineNo">084</span>    private Label label = new Label();<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    private MaterialIcon iconSearch = new MaterialIcon(IconType.SEARCH);<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    private MaterialIcon iconClose = new MaterialIcon(IconType.CLOSE);<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span>    /**<a name="line.88"></a>
+<span class="sourceLineNo">089</span>     * The list of search objects added to MaterialSearchResult panel to<a name="line.89"></a>
+<span class="sourceLineNo">090</span>     * display the lists of result items<a name="line.90"></a>
+<span class="sourceLineNo">091</span>     */<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    private List&lt;SearchObject&gt; listSearches = new ArrayList&lt;&gt;();<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    /**<a name="line.93"></a>
+<span class="sourceLineNo">094</span>     * Used to determine the selected searches while matching the keyword to result<a name="line.94"></a>
+<span class="sourceLineNo">095</span>     */<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    private List&lt;SearchObject&gt; tempSearches = new ArrayList&lt;&gt;();<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    /**<a name="line.97"></a>
+<span class="sourceLineNo">098</span>     * Panel to display the result items<a name="line.98"></a>
+<span class="sourceLineNo">099</span>     */<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    private MaterialSearchResult searchResultPanel;<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    /**<a name="line.101"></a>
+<span class="sourceLineNo">102</span>     * Link selected to determine easily during the selection event (up / down key events)<a name="line.102"></a>
+<span class="sourceLineNo">103</span>     */<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    private MaterialLink selectedLink;<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    /**<a name="line.105"></a>
+<span class="sourceLineNo">106</span>     * Gets the selected object after Search Finish event<a name="line.106"></a>
+<span class="sourceLineNo">107</span>     */<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    private SearchObject selectedObject;<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    /**<a name="line.109"></a>
+<span class="sourceLineNo">110</span>     * -1 means that the selected index is not yet selected.<a name="line.110"></a>
+<span class="sourceLineNo">111</span>     * It will increment or decrement once trigger by key up / down events<a name="line.111"></a>
+<span class="sourceLineNo">112</span>     */<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    private int curSel = -1;<a name="line.113"></a>
+<span class="sourceLineNo">114</span>    private boolean active;<a name="line.114"></a>
+<span class="sourceLineNo">115</span><a name="line.115"></a>
+<span class="sourceLineNo">116</span>    public MaterialSearch() {<a name="line.116"></a>
+<span class="sourceLineNo">117</span>        super(new TextBox());<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        setType(InputType.SEARCH);<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        label.add(iconSearch);<a name="line.119"></a>
+<span class="sourceLineNo">120</span>        label.getElement().setAttribute("for", "search");<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        add(label);<a name="line.121"></a>
+<span class="sourceLineNo">122</span>        add(iconClose);<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        iconClose.addMouseDownHandler(mouseDownEvent -&gt; CloseEvent.fire(MaterialSearch.this, getText()));<a name="line.123"></a>
 <span class="sourceLineNo">124</span>    }<a name="line.124"></a>
 <span class="sourceLineNo">125</span><a name="line.125"></a>
 <span class="sourceLineNo">126</span>    public MaterialSearch(String placeholder) {<a name="line.126"></a>
@@ -155,7 +155,7 @@
 <span class="sourceLineNo">147</span>        }<a name="line.147"></a>
 <span class="sourceLineNo">148</span><a name="line.148"></a>
 <span class="sourceLineNo">149</span>        if (!initialized) {<a name="line.149"></a>
-<span class="sourceLineNo">150</span>            // add keyup event to filter the searches<a name="line.150"></a>
+<span class="sourceLineNo">150</span>            // Add Key Up event to filter the searches<a name="line.150"></a>
 <span class="sourceLineNo">151</span>            addKeyUpHandler(new KeyUpHandler() {<a name="line.151"></a>
 <span class="sourceLineNo">152</span>                @Override<a name="line.152"></a>
 <span class="sourceLineNo">153</span>                public void onKeyUp(KeyUpEvent event) {<a name="line.153"></a>
@@ -217,7 +217,7 @@
 <span class="sourceLineNo">209</span>                        reset(selLink.getText());<a name="line.209"></a>
 <span class="sourceLineNo">210</span>                    }<a name="line.210"></a>
 <span class="sourceLineNo">211</span><a name="line.211"></a>
-<span class="sourceLineNo">212</span>                    // Fire an event if theres no search result<a name="line.212"></a>
+<span class="sourceLineNo">212</span>                    // Fire an event if there's no search result<a name="line.212"></a>
 <span class="sourceLineNo">213</span>                    if (searchResultPanel.getWidgetCount() == 0) {<a name="line.213"></a>
 <span class="sourceLineNo">214</span>                        SearchNoResultEvent.fire(MaterialSearch.this);<a name="line.214"></a>
 <span class="sourceLineNo">215</span>                    }<a name="line.215"></a>
@@ -251,119 +251,132 @@
 <span class="sourceLineNo">243</span>                    SearchFinishEvent.fire(MaterialSearch.this);<a name="line.243"></a>
 <span class="sourceLineNo">244</span>                    curSel = -1;<a name="line.244"></a>
 <span class="sourceLineNo">245</span>                    setText(keyword);<a name="line.245"></a>
-<span class="sourceLineNo">246</span>                    searchResultPanel.clear();<a name="line.246"></a>
-<span class="sourceLineNo">247</span>                }<a name="line.247"></a>
-<span class="sourceLineNo">248</span>            });<a name="line.248"></a>
-<span class="sourceLineNo">249</span><a name="line.249"></a>
-<span class="sourceLineNo">250</span>            initialized = true;<a name="line.250"></a>
-<span class="sourceLineNo">251</span>        }<a name="line.251"></a>
-<span class="sourceLineNo">252</span>    }<a name="line.252"></a>
-<span class="sourceLineNo">253</span><a name="line.253"></a>
-<span class="sourceLineNo">254</span>    @Override<a name="line.254"></a>
-<span class="sourceLineNo">255</span>    protected void onUnload() {<a name="line.255"></a>
-<span class="sourceLineNo">256</span>        super.onUnload();<a name="line.256"></a>
-<span class="sourceLineNo">257</span><a name="line.257"></a>
-<span class="sourceLineNo">258</span>        clear();<a name="line.258"></a>
-<span class="sourceLineNo">259</span>        setCurSel(-1);<a name="line.259"></a>
-<span class="sourceLineNo">260</span>    }<a name="line.260"></a>
-<span class="sourceLineNo">261</span><a name="line.261"></a>
-<span class="sourceLineNo">262</span>    protected void applyHighlightedItem(MaterialLink link) {<a name="line.262"></a>
-<span class="sourceLineNo">263</span>        link.addStyleName(CssName.HIGLIGHTED);<a name="line.263"></a>
-<span class="sourceLineNo">264</span>        setSelectedLink(link);<a name="line.264"></a>
-<span class="sourceLineNo">265</span>    }<a name="line.265"></a>
-<span class="sourceLineNo">266</span><a name="line.266"></a>
-<span class="sourceLineNo">267</span>    protected native void locateSearch(String location)/*-{<a name="line.267"></a>
-<span class="sourceLineNo">268</span>        $wnd.window.location.hash = location;<a name="line.268"></a>
-<span class="sourceLineNo">269</span>    }-*/;<a name="line.269"></a>
-<span class="sourceLineNo">270</span><a name="line.270"></a>
-<span class="sourceLineNo">271</span>    @Override<a name="line.271"></a>
-<span class="sourceLineNo">272</span>    public HandlerRegistration addCloseHandler(final CloseHandler&lt;String&gt; handler) {<a name="line.272"></a>
-<span class="sourceLineNo">273</span>        return addHandler((CloseHandler&lt;String&gt;) handler::onClose, CloseEvent.getType());<a name="line.273"></a>
-<span class="sourceLineNo">274</span>    }<a name="line.274"></a>
-<span class="sourceLineNo">275</span><a name="line.275"></a>
-<span class="sourceLineNo">276</span>    @Override<a name="line.276"></a>
-<span class="sourceLineNo">277</span>    public void setActive(boolean active) {<a name="line.277"></a>
-<span class="sourceLineNo">278</span>        this.active = active;<a name="line.278"></a>
-<span class="sourceLineNo">279</span>        if (active) {<a name="line.279"></a>
-<span class="sourceLineNo">280</span>            setTextColor(Color.BLACK);<a name="line.280"></a>
-<span class="sourceLineNo">281</span>            iconClose.setIconColor(Color.BLACK);<a name="line.281"></a>
-<span class="sourceLineNo">282</span>            iconSearch.setIconColor(Color.BLACK);<a name="line.282"></a>
-<span class="sourceLineNo">283</span>        } else {<a name="line.283"></a>
-<span class="sourceLineNo">284</span>            iconClose.setIconColor(Color.WHITE);<a name="line.284"></a>
-<span class="sourceLineNo">285</span>            iconSearch.setIconColor(Color.WHITE);<a name="line.285"></a>
-<span class="sourceLineNo">286</span>        }<a name="line.286"></a>
-<span class="sourceLineNo">287</span>    }<a name="line.287"></a>
-<span class="sourceLineNo">288</span><a name="line.288"></a>
-<span class="sourceLineNo">289</span>    @Override<a name="line.289"></a>
-<span class="sourceLineNo">290</span>    public boolean isActive() {<a name="line.290"></a>
-<span class="sourceLineNo">291</span>        return active;<a name="line.291"></a>
-<span class="sourceLineNo">292</span>    }<a name="line.292"></a>
-<span class="sourceLineNo">293</span><a name="line.293"></a>
-<span class="sourceLineNo">294</span>    public MaterialLink getSelectedLink() {<a name="line.294"></a>
-<span class="sourceLineNo">295</span>        return selectedLink;<a name="line.295"></a>
-<span class="sourceLineNo">296</span>    }<a name="line.296"></a>
-<span class="sourceLineNo">297</span><a name="line.297"></a>
-<span class="sourceLineNo">298</span>    public void setSelectedLink(MaterialLink selectedLink) {<a name="line.298"></a>
-<span class="sourceLineNo">299</span>        this.selectedLink = selectedLink;<a name="line.299"></a>
-<span class="sourceLineNo">300</span>    }<a name="line.300"></a>
-<span class="sourceLineNo">301</span><a name="line.301"></a>
-<span class="sourceLineNo">302</span>    public List&lt;SearchObject&gt; getListSearches() {<a name="line.302"></a>
-<span class="sourceLineNo">303</span>        return listSearches;<a name="line.303"></a>
-<span class="sourceLineNo">304</span>    }<a name="line.304"></a>
-<span class="sourceLineNo">305</span><a name="line.305"></a>
-<span class="sourceLineNo">306</span>    public void setListSearches(List&lt;SearchObject&gt; listSearches) {<a name="line.306"></a>
-<span class="sourceLineNo">307</span>        this.listSearches = listSearches;<a name="line.307"></a>
-<span class="sourceLineNo">308</span>    }<a name="line.308"></a>
-<span class="sourceLineNo">309</span><a name="line.309"></a>
-<span class="sourceLineNo">310</span>    public int getCurSel() {<a name="line.310"></a>
-<span class="sourceLineNo">311</span>        return curSel;<a name="line.311"></a>
-<span class="sourceLineNo">312</span>    }<a name="line.312"></a>
-<span class="sourceLineNo">313</span><a name="line.313"></a>
-<span class="sourceLineNo">314</span>    public void setCurSel(int curSel) {<a name="line.314"></a>
-<span class="sourceLineNo">315</span>        this.curSel = curSel;<a name="line.315"></a>
-<span class="sourceLineNo">316</span>    }<a name="line.316"></a>
-<span class="sourceLineNo">317</span><a name="line.317"></a>
-<span class="sourceLineNo">318</span>    public SearchObject getSelectedObject() {<a name="line.318"></a>
-<span class="sourceLineNo">319</span>        return selectedObject;<a name="line.319"></a>
-<span class="sourceLineNo">320</span>    }<a name="line.320"></a>
-<span class="sourceLineNo">321</span><a name="line.321"></a>
-<span class="sourceLineNo">322</span>    public void setSelectedObject(SearchObject selectedObject) {<a name="line.322"></a>
-<span class="sourceLineNo">323</span>        this.selectedObject = selectedObject;<a name="line.323"></a>
-<span class="sourceLineNo">324</span>    }<a name="line.324"></a>
-<span class="sourceLineNo">325</span><a name="line.325"></a>
-<span class="sourceLineNo">326</span>    /**<a name="line.326"></a>
-<span class="sourceLineNo">327</span>     * Gets the temporary search objects.<a name="line.327"></a>
-<span class="sourceLineNo">328</span>     */<a name="line.328"></a>
-<span class="sourceLineNo">329</span>    public List&lt;SearchObject&gt; getTempSearches() {<a name="line.329"></a>
-<span class="sourceLineNo">330</span>        return tempSearches;<a name="line.330"></a>
+<span class="sourceLineNo">246</span>                    $(valueBoxBase.getElement()).focus();<a name="line.246"></a>
+<span class="sourceLineNo">247</span>                    searchResultPanel.clear();<a name="line.247"></a>
+<span class="sourceLineNo">248</span>                }<a name="line.248"></a>
+<span class="sourceLineNo">249</span>            });<a name="line.249"></a>
+<span class="sourceLineNo">250</span><a name="line.250"></a>
+<span class="sourceLineNo">251</span>            initialized = true;<a name="line.251"></a>
+<span class="sourceLineNo">252</span>        }<a name="line.252"></a>
+<span class="sourceLineNo">253</span>    }<a name="line.253"></a>
+<span class="sourceLineNo">254</span><a name="line.254"></a>
+<span class="sourceLineNo">255</span>    @Override<a name="line.255"></a>
+<span class="sourceLineNo">256</span>    protected void onUnload() {<a name="line.256"></a>
+<span class="sourceLineNo">257</span>        super.onUnload();<a name="line.257"></a>
+<span class="sourceLineNo">258</span><a name="line.258"></a>
+<span class="sourceLineNo">259</span>        clear();<a name="line.259"></a>
+<span class="sourceLineNo">260</span>        setCurSel(-1);<a name="line.260"></a>
+<span class="sourceLineNo">261</span>    }<a name="line.261"></a>
+<span class="sourceLineNo">262</span><a name="line.262"></a>
+<span class="sourceLineNo">263</span>    protected void applyHighlightedItem(MaterialLink link) {<a name="line.263"></a>
+<span class="sourceLineNo">264</span>        link.addStyleName(CssName.HIGLIGHTED);<a name="line.264"></a>
+<span class="sourceLineNo">265</span>        setSelectedLink(link);<a name="line.265"></a>
+<span class="sourceLineNo">266</span>    }<a name="line.266"></a>
+<span class="sourceLineNo">267</span><a name="line.267"></a>
+<span class="sourceLineNo">268</span>    protected native void locateSearch(String location)/*-{<a name="line.268"></a>
+<span class="sourceLineNo">269</span>        $wnd.window.location.hash = location;<a name="line.269"></a>
+<span class="sourceLineNo">270</span>    }-*/;<a name="line.270"></a>
+<span class="sourceLineNo">271</span><a name="line.271"></a>
+<span class="sourceLineNo">272</span>    @Override<a name="line.272"></a>
+<span class="sourceLineNo">273</span>    public HandlerRegistration addCloseHandler(final CloseHandler&lt;String&gt; handler) {<a name="line.273"></a>
+<span class="sourceLineNo">274</span>        return addHandler((CloseHandler&lt;String&gt;) handler::onClose, CloseEvent.getType());<a name="line.274"></a>
+<span class="sourceLineNo">275</span>    }<a name="line.275"></a>
+<span class="sourceLineNo">276</span><a name="line.276"></a>
+<span class="sourceLineNo">277</span>    @Override<a name="line.277"></a>
+<span class="sourceLineNo">278</span>    public HandlerRegistration addOpenHandler(OpenHandler&lt;String&gt; handler) {<a name="line.278"></a>
+<span class="sourceLineNo">279</span>        return addHandler((OpenHandler&lt;String&gt;) handler::onOpen, OpenEvent.getType());<a name="line.279"></a>
+<span class="sourceLineNo">280</span>    }<a name="line.280"></a>
+<span class="sourceLineNo">281</span><a name="line.281"></a>
+<span class="sourceLineNo">282</span>    @Override<a name="line.282"></a>
+<span class="sourceLineNo">283</span>    public void setActive(boolean active) {<a name="line.283"></a>
+<span class="sourceLineNo">284</span>        this.active = active;<a name="line.284"></a>
+<span class="sourceLineNo">285</span>        if (active) {<a name="line.285"></a>
+<span class="sourceLineNo">286</span>            setTextColor(Color.BLACK);<a name="line.286"></a>
+<span class="sourceLineNo">287</span>            iconClose.setIconColor(Color.BLACK);<a name="line.287"></a>
+<span class="sourceLineNo">288</span>            iconSearch.setIconColor(Color.BLACK);<a name="line.288"></a>
+<span class="sourceLineNo">289</span>        } else {<a name="line.289"></a>
+<span class="sourceLineNo">290</span>            iconClose.setIconColor(Color.WHITE);<a name="line.290"></a>
+<span class="sourceLineNo">291</span>            iconSearch.setIconColor(Color.WHITE);<a name="line.291"></a>
+<span class="sourceLineNo">292</span>        }<a name="line.292"></a>
+<span class="sourceLineNo">293</span>    }<a name="line.293"></a>
+<span class="sourceLineNo">294</span><a name="line.294"></a>
+<span class="sourceLineNo">295</span>    @Override<a name="line.295"></a>
+<span class="sourceLineNo">296</span>    public boolean isActive() {<a name="line.296"></a>
+<span class="sourceLineNo">297</span>        return active;<a name="line.297"></a>
+<span class="sourceLineNo">298</span>    }<a name="line.298"></a>
+<span class="sourceLineNo">299</span><a name="line.299"></a>
+<span class="sourceLineNo">300</span>    /**<a name="line.300"></a>
+<span class="sourceLineNo">301</span>     * Programmatically open the search input field component<a name="line.301"></a>
+<span class="sourceLineNo">302</span>     */<a name="line.302"></a>
+<span class="sourceLineNo">303</span>    public void open() {<a name="line.303"></a>
+<span class="sourceLineNo">304</span>        setActive(true);<a name="line.304"></a>
+<span class="sourceLineNo">305</span>        Scheduler.get().scheduleDeferred(() -&gt; $(valueBoxBase.getElement()).focus());<a name="line.305"></a>
+<span class="sourceLineNo">306</span>        OpenEvent.fire(MaterialSearch.this, getText());<a name="line.306"></a>
+<span class="sourceLineNo">307</span>    }<a name="line.307"></a>
+<span class="sourceLineNo">308</span><a name="line.308"></a>
+<span class="sourceLineNo">309</span>    public MaterialLink getSelectedLink() {<a name="line.309"></a>
+<span class="sourceLineNo">310</span>        return selectedLink;<a name="line.310"></a>
+<span class="sourceLineNo">311</span>    }<a name="line.311"></a>
+<span class="sourceLineNo">312</span><a name="line.312"></a>
+<span class="sourceLineNo">313</span>    public void setSelectedLink(MaterialLink selectedLink) {<a name="line.313"></a>
+<span class="sourceLineNo">314</span>        this.selectedLink = selectedLink;<a name="line.314"></a>
+<span class="sourceLineNo">315</span>    }<a name="line.315"></a>
+<span class="sourceLineNo">316</span><a name="line.316"></a>
+<span class="sourceLineNo">317</span>    public List&lt;SearchObject&gt; getListSearches() {<a name="line.317"></a>
+<span class="sourceLineNo">318</span>        return listSearches;<a name="line.318"></a>
+<span class="sourceLineNo">319</span>    }<a name="line.319"></a>
+<span class="sourceLineNo">320</span><a name="line.320"></a>
+<span class="sourceLineNo">321</span>    public void setListSearches(List&lt;SearchObject&gt; listSearches) {<a name="line.321"></a>
+<span class="sourceLineNo">322</span>        this.listSearches = listSearches;<a name="line.322"></a>
+<span class="sourceLineNo">323</span>    }<a name="line.323"></a>
+<span class="sourceLineNo">324</span><a name="line.324"></a>
+<span class="sourceLineNo">325</span>    public int getCurSel() {<a name="line.325"></a>
+<span class="sourceLineNo">326</span>        return curSel;<a name="line.326"></a>
+<span class="sourceLineNo">327</span>    }<a name="line.327"></a>
+<span class="sourceLineNo">328</span><a name="line.328"></a>
+<span class="sourceLineNo">329</span>    public void setCurSel(int curSel) {<a name="line.329"></a>
+<span class="sourceLineNo">330</span>        this.curSel = curSel;<a name="line.330"></a>
 <span class="sourceLineNo">331</span>    }<a name="line.331"></a>
 <span class="sourceLineNo">332</span><a name="line.332"></a>
-<span class="sourceLineNo">333</span>    /**<a name="line.333"></a>
-<span class="sourceLineNo">334</span>     * This handler will be triggered when search is finish<a name="line.334"></a>
-<span class="sourceLineNo">335</span>     */<a name="line.335"></a>
-<span class="sourceLineNo">336</span>    @Override<a name="line.336"></a>
-<span class="sourceLineNo">337</span>    public HandlerRegistration addSearchFinishHandler(final SearchFinishEvent.SearchFinishHandler handler) {<a name="line.337"></a>
-<span class="sourceLineNo">338</span>        return addHandler(handler, SearchFinishEvent.TYPE);<a name="line.338"></a>
+<span class="sourceLineNo">333</span>    public SearchObject getSelectedObject() {<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        return selectedObject;<a name="line.334"></a>
+<span class="sourceLineNo">335</span>    }<a name="line.335"></a>
+<span class="sourceLineNo">336</span><a name="line.336"></a>
+<span class="sourceLineNo">337</span>    public void setSelectedObject(SearchObject selectedObject) {<a name="line.337"></a>
+<span class="sourceLineNo">338</span>        this.selectedObject = selectedObject;<a name="line.338"></a>
 <span class="sourceLineNo">339</span>    }<a name="line.339"></a>
 <span class="sourceLineNo">340</span><a name="line.340"></a>
 <span class="sourceLineNo">341</span>    /**<a name="line.341"></a>
-<span class="sourceLineNo">342</span>     * This handler will be triggered when there's no search result<a name="line.342"></a>
+<span class="sourceLineNo">342</span>     * Gets the temporary search objects.<a name="line.342"></a>
 <span class="sourceLineNo">343</span>     */<a name="line.343"></a>
-<span class="sourceLineNo">344</span>    @Override<a name="line.344"></a>
-<span class="sourceLineNo">345</span>    public HandlerRegistration addSearchNoResultHandler(final SearchNoResultEvent.SearchNoResultHandler handler) {<a name="line.345"></a>
-<span class="sourceLineNo">346</span>        return addHandler(handler, SearchNoResultEvent.TYPE);<a name="line.346"></a>
-<span class="sourceLineNo">347</span>    }<a name="line.347"></a>
-<span class="sourceLineNo">348</span><a name="line.348"></a>
-<span class="sourceLineNo">349</span>    public MaterialIcon getIconClose() {<a name="line.349"></a>
-<span class="sourceLineNo">350</span>        return iconClose;<a name="line.350"></a>
-<span class="sourceLineNo">351</span>    }<a name="line.351"></a>
-<span class="sourceLineNo">352</span><a name="line.352"></a>
-<span class="sourceLineNo">353</span>    public MaterialSearchResult getSearchResultPanel() {<a name="line.353"></a>
-<span class="sourceLineNo">354</span>        return searchResultPanel;<a name="line.354"></a>
-<span class="sourceLineNo">355</span>    }<a name="line.355"></a>
-<span class="sourceLineNo">356</span>}<a name="line.356"></a>
-<span class="sourceLineNo">357</span><a name="line.357"></a>
-<span class="sourceLineNo">358</span><a name="line.358"></a>
+<span class="sourceLineNo">344</span>    public List&lt;SearchObject&gt; getTempSearches() {<a name="line.344"></a>
+<span class="sourceLineNo">345</span>        return tempSearches;<a name="line.345"></a>
+<span class="sourceLineNo">346</span>    }<a name="line.346"></a>
+<span class="sourceLineNo">347</span><a name="line.347"></a>
+<span class="sourceLineNo">348</span>    /**<a name="line.348"></a>
+<span class="sourceLineNo">349</span>     * This handler will be triggered when search is finish<a name="line.349"></a>
+<span class="sourceLineNo">350</span>     */<a name="line.350"></a>
+<span class="sourceLineNo">351</span>    @Override<a name="line.351"></a>
+<span class="sourceLineNo">352</span>    public HandlerRegistration addSearchFinishHandler(final SearchFinishEvent.SearchFinishHandler handler) {<a name="line.352"></a>
+<span class="sourceLineNo">353</span>        return addHandler(handler, SearchFinishEvent.TYPE);<a name="line.353"></a>
+<span class="sourceLineNo">354</span>    }<a name="line.354"></a>
+<span class="sourceLineNo">355</span><a name="line.355"></a>
+<span class="sourceLineNo">356</span>    /**<a name="line.356"></a>
+<span class="sourceLineNo">357</span>     * This handler will be triggered when there's no search result<a name="line.357"></a>
+<span class="sourceLineNo">358</span>     */<a name="line.358"></a>
+<span class="sourceLineNo">359</span>    @Override<a name="line.359"></a>
+<span class="sourceLineNo">360</span>    public HandlerRegistration addSearchNoResultHandler(final SearchNoResultEvent.SearchNoResultHandler handler) {<a name="line.360"></a>
+<span class="sourceLineNo">361</span>        return addHandler(handler, SearchNoResultEvent.TYPE);<a name="line.361"></a>
+<span class="sourceLineNo">362</span>    }<a name="line.362"></a>
+<span class="sourceLineNo">363</span><a name="line.363"></a>
+<span class="sourceLineNo">364</span>    public MaterialIcon getIconClose() {<a name="line.364"></a>
+<span class="sourceLineNo">365</span>        return iconClose;<a name="line.365"></a>
+<span class="sourceLineNo">366</span>    }<a name="line.366"></a>
+<span class="sourceLineNo">367</span><a name="line.367"></a>
+<span class="sourceLineNo">368</span>    public MaterialSearchResult getSearchResultPanel() {<a name="line.368"></a>
+<span class="sourceLineNo">369</span>        return searchResultPanel;<a name="line.369"></a>
+<span class="sourceLineNo">370</span>    }<a name="line.370"></a>
+<span class="sourceLineNo">371</span>}<a name="line.371"></a>
 
 
 

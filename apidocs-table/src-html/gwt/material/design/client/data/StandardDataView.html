@@ -36,21 +36,24 @@
 <span class="sourceLineNo">028</span> */<a name="line.28"></a>
 <span class="sourceLineNo">029</span>public class StandardDataView&lt;T&gt; extends AbstractDataView&lt;T&gt; {<a name="line.29"></a>
 <span class="sourceLineNo">030</span><a name="line.30"></a>
-<span class="sourceLineNo">031</span>    public StandardDataView() {<a name="line.31"></a>
-<span class="sourceLineNo">032</span>    }<a name="line.32"></a>
-<span class="sourceLineNo">033</span><a name="line.33"></a>
-<span class="sourceLineNo">034</span>    public StandardDataView(String name) {<a name="line.34"></a>
-<span class="sourceLineNo">035</span>        super(name);<a name="line.35"></a>
-<span class="sourceLineNo">036</span>    }<a name="line.36"></a>
-<span class="sourceLineNo">037</span><a name="line.37"></a>
-<span class="sourceLineNo">038</span>    public StandardDataView(ProvidesKey&lt;T&gt; keyProvider) {<a name="line.38"></a>
-<span class="sourceLineNo">039</span>        super(keyProvider);<a name="line.39"></a>
-<span class="sourceLineNo">040</span>    }<a name="line.40"></a>
-<span class="sourceLineNo">041</span><a name="line.41"></a>
-<span class="sourceLineNo">042</span>    public StandardDataView(String name, ProvidesKey&lt;T&gt; keyProvider) {<a name="line.42"></a>
-<span class="sourceLineNo">043</span>        super(name, keyProvider);<a name="line.43"></a>
-<span class="sourceLineNo">044</span>    }<a name="line.44"></a>
-<span class="sourceLineNo">045</span>}<a name="line.45"></a>
+<span class="sourceLineNo">031</span>    private static int views = 0;<a name="line.31"></a>
+<span class="sourceLineNo">032</span><a name="line.32"></a>
+<span class="sourceLineNo">033</span>    public StandardDataView() {<a name="line.33"></a>
+<span class="sourceLineNo">034</span>        this("sdv" + ++views);<a name="line.34"></a>
+<span class="sourceLineNo">035</span>    }<a name="line.35"></a>
+<span class="sourceLineNo">036</span><a name="line.36"></a>
+<span class="sourceLineNo">037</span>    public StandardDataView(String name) {<a name="line.37"></a>
+<span class="sourceLineNo">038</span>        super(name);<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    }<a name="line.39"></a>
+<span class="sourceLineNo">040</span><a name="line.40"></a>
+<span class="sourceLineNo">041</span>    public StandardDataView(ProvidesKey&lt;T&gt; keyProvider) {<a name="line.41"></a>
+<span class="sourceLineNo">042</span>        super(keyProvider);<a name="line.42"></a>
+<span class="sourceLineNo">043</span>    }<a name="line.43"></a>
+<span class="sourceLineNo">044</span><a name="line.44"></a>
+<span class="sourceLineNo">045</span>    public StandardDataView(String name, ProvidesKey&lt;T&gt; keyProvider) {<a name="line.45"></a>
+<span class="sourceLineNo">046</span>        super(name, keyProvider);<a name="line.46"></a>
+<span class="sourceLineNo">047</span>    }<a name="line.47"></a>
+<span class="sourceLineNo">048</span>}<a name="line.48"></a>
 
 
 

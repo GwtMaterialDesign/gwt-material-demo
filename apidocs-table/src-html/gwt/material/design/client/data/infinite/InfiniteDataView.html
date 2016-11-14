@@ -218,7 +218,7 @@
 <span class="sourceLineNo">210</span>        });<a name="line.210"></a>
 <span class="sourceLineNo">211</span><a name="line.211"></a>
 <span class="sourceLineNo">212</span>        // Setup the scroll event handlers<a name="line.212"></a>
-<span class="sourceLineNo">213</span>        JQueryExtension.$(tableBody).scrollY(name, (e, scroll) -&gt;  onScrollY(e));<a name="line.213"></a>
+<span class="sourceLineNo">213</span>        JQueryExtension.$(tableBody).scrollY(id, (e, scroll) -&gt;  onScrollY());<a name="line.213"></a>
 <span class="sourceLineNo">214</span>    }<a name="line.214"></a>
 <span class="sourceLineNo">215</span><a name="line.215"></a>
 <span class="sourceLineNo">216</span>    @Override<a name="line.216"></a>
@@ -334,7 +334,7 @@
 <span class="sourceLineNo">326</span>        return tableBody.height() - topPanel.height() - headerRow.$this().height();<a name="line.326"></a>
 <span class="sourceLineNo">327</span>    }<a name="line.327"></a>
 <span class="sourceLineNo">328</span><a name="line.328"></a>
-<span class="sourceLineNo">329</span>    protected Object onScrollY(Object event) {<a name="line.329"></a>
+<span class="sourceLineNo">329</span>    protected Object onScrollY() {<a name="line.329"></a>
 <span class="sourceLineNo">330</span>        if(!rendering) {<a name="line.330"></a>
 <span class="sourceLineNo">331</span>            int index = (int) Math.ceil(tableBody.scrollTop() / getCalculatedRowHeight());<a name="line.331"></a>
 <span class="sourceLineNo">332</span>            if(index == 0 || index != viewIndex) {<a name="line.332"></a>
