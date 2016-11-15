@@ -111,6 +111,16 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 
+    @UiHandler("btnDeselectItem")
+    void onDeselectItem(ClickEvent e) {
+        if (docTree.getSelectedItem() == null) {
+            MaterialToast.fireToast("You must select an item first.");
+        } else {
+            MaterialToast.fireToast("Item " + docTree.getSelectedItem().getText() + " was deselected.");
+            docTree.deselectSelectedItem();
+        }
+    }
+
     @UiHandler("btnFinish")
     void onFinishModal(ClickEvent e) {
         MaterialTreeItem item = new MaterialTreeItem();
