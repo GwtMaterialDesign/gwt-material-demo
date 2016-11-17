@@ -30,10 +30,10 @@
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
                 &lt;!-- Addin Usage --><br/>
                 &lt;ma:splitpanel.MaterialSplitPanel height="500px"><br/>
-                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_2"><br/>
                 &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
                 &emsp;&lt;/m:MaterialPanel><br/>
-                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_3"><br/>
                 &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
                 &emsp;&lt;/m:MaterialPanel><br/>
                 &lt;/ma:splitpanel.MaterialSplitPanel><br/>
@@ -43,19 +43,19 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Introduction" description="Using MaterialSplitPanel you must require to wrap two columns inside for the splitting feature." />
             <ma:splitpanel.MaterialSplitPanel height="500px">
-                <m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2">
+                <m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_2">
                     <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
-                <m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3">
+                <m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_3">
                     <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
             </ma:splitpanel.MaterialSplitPanel>
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;m.addins:MaterialSplitPanel backgroundColor="BLACK" height="500px"><br/>
-                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_2"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_2"><br/>
                 &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/><br/>
                 &emsp;&lt;/m:MaterialPanel><br/>
-                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" backgroundColor="GREY_LIGHTEN_3"><br/>
+                &emsp;&lt;m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_3"><br/>
                 &emsp;&emsp;&lt;m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/><br/>
                 &emsp;&lt;/m:MaterialPanel><br/>
                 &lt;/m.addins:MaterialSplitPanel><br/>
