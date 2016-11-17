@@ -22,6 +22,8 @@ package gwt.material.design.demo.client.ui;
 
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.user.client.Timer;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.scrollfire.MaterialScrollfire;
 import gwt.material.design.client.base.MaterialWidget;
@@ -53,10 +55,7 @@ public class NavigatedView extends ViewImpl implements HasScrollspy {
         scrollspy.setTop(0);
         panel.add(scrollspy);
         scrollspy.addAttachHandler(attachEvent -> {
-            double top = scrollspy.getOffsetHeight() - 270;
-            double bottom = $("footer").offset().top - 660;
-            double offset = 0;
-            MaterialPushpin.apply(scrollspy, top, bottom, offset);
+            MaterialPushpin.apply(scrollspy, 300.0, 10000.0, 64.0);
         });
     }
 
