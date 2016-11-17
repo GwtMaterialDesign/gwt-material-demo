@@ -40,16 +40,8 @@ public class PushPinView extends ViewImpl implements PushPinPresenter.MyView {
     @Inject
     PushPinView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-<<<<<<< HEAD
+
         ThemeManager.register(source);
         MaterialPushpin.apply(source, 300.0, 64.0);
-=======
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-        MaterialPushpin.apply(target, (double) (source.getOffsetHeight() + 600));
->>>>>>> Update the demo to handle new table data sources.
     }
 }
