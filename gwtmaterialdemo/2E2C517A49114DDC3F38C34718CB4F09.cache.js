@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = 'D455497288C387D41E5636FE417CD20E';
+var $strongName = '2E2C517A49114DDC3F38C34718CB4F09';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -7262,7 +7262,7 @@ function $eventTargetsPopup(this$static, event_0){
   return false;
 }
 
-function $getOffsetHeight_0(this$static){
+function $getOffsetHeight(this$static){
   return $getPropertyInt(($clinit_DOM() , this$static.element_0), 'offsetHeight');
 }
 
@@ -8534,7 +8534,7 @@ _.onComplete = function onComplete_1(){
 }
 ;
 _.onStart = function onStart_0(){
-  this.offsetHeight_0 = $getOffsetHeight_0(this.curPanel);
+  this.offsetHeight_0 = $getOffsetHeight(this.curPanel);
   this.offsetWidth_0 = $getOffsetWidth(this.curPanel);
   $getElement(this.curPanel).style['overflow'] = 'hidden';
   $onUpdate(this, (1 + $wnd.Math.cos($intern_1)) / 2);
@@ -29245,7 +29245,7 @@ _.onFailure_0 = function onFailure_35(ex){
 }
 ;
 var Lgwt_material_design_demo_client_application_showcase_com_1gwtplatform_1mvp_1client_1DesktopGinjector_1DesktopGinjectorGinjector_1fragment$1$1_2_classLit = createForClass('gwt.material.design.demo.client.application.showcase', 'com_gwtplatform_mvp_client_DesktopGinjector_DesktopGinjectorGinjector_fragment/1/1', 774);
-function $lambda$0_31(this$static){
+function $lambda$0_30(this$static){
   animate_1(($clinit_Transition() , ZOOMOUT), this$static.btnFAB, $intern_2, 800, makeLambdaFunction(PathAnimatorShowcase$lambda$2$Type.prototype.call_6, PathAnimatorShowcase$lambda$2$Type, [this$static]), false);
   $setVisibility(this$static.btnFAB, ($clinit_Style$Visibility() , HIDDEN_1));
   $setOpacity(this$static.btnFAB, 0);
@@ -29288,7 +29288,7 @@ function PathAnimatorShowcase$lambda$0$Type($$outer_0){
 
 defineClass(2542, $wnd.Function, {}, PathAnimatorShowcase$lambda$0$Type);
 _.call_6 = function call_146(){
-  $lambda$0_31(this.$$outer_0);
+  $lambda$0_30(this.$$outer_0);
 }
 ;
 function PathAnimatorShowcase$lambda$1$Type($$outer_0){
