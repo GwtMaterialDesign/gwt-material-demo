@@ -20,7 +20,6 @@ package gwt.material.design.demo.client.application.components.pushpin;
  * #L%
  */
 
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
@@ -30,7 +29,6 @@ import gwt.material.design.client.ui.MaterialPushpin;
 import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
-
 
 public class PushPinView extends ViewImpl implements PushPinPresenter.MyView {
     interface Binder extends UiBinder<Widget, PushPinView> {
@@ -42,7 +40,16 @@ public class PushPinView extends ViewImpl implements PushPinPresenter.MyView {
     @Inject
     PushPinView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+<<<<<<< HEAD
         ThemeManager.register(source);
         MaterialPushpin.apply(source, 300.0, 64.0);
+=======
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+        MaterialPushpin.apply(target, (double) (source.getOffsetHeight() + 600));
+>>>>>>> Update the demo to handle new table data sources.
     }
 }

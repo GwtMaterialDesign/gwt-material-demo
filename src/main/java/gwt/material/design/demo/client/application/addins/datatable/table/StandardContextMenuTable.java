@@ -55,7 +55,6 @@ import java.util.List;
 
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
-
 public class StandardContextMenuTable extends Composite {
     public static class CustomCategoryComponent extends CategoryComponent {
         public CustomCategoryComponent(String category) {
@@ -191,9 +190,9 @@ public class StandardContextMenuTable extends Composite {
         // Generate 20 categories
         int rowIndex = 0;
         List<Person> people = new ArrayList<>();
-        for(int k = 1; k <= 10; k++){
+        for(int k = 1; k <= 5; k++){
             // Generate 100 rows
-            for(int i = 1; i <= 20; i++, rowIndex++){
+            for(int i = 1; i <= 10; i++, rowIndex++){
                 people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));            }
             }
         table.setRowData(0, people);

@@ -352,6 +352,6 @@
                 </demo:PrettyPre>
             </m:MaterialRow>
         </m:MaterialColumn>
-        <m:MaterialColumn ui:field="menuPanel" grid="s3" />
+        <m:MaterialColumn ui:field="menuPanel" grid="s3" backgroundColor="WHITE" />
     </m:MaterialRow>
 </ui:UiBinder>

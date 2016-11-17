@@ -77,7 +77,7 @@ public class PageTable extends Composite {
 
         initWidget(ourUiBinder.createAndBindUi(this));
 
-        dataSource = new ListDataSource<>(table);
+        dataSource = new ListDataSource<>();
         dataSource.add(0, people);
     }
 

@@ -25,6 +25,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.MaterialWidget;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.MaterialColumn;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialRow;
@@ -59,6 +60,11 @@ public class DataTableView extends NavigatedView implements DataTablePresenter.M
 
     @Override
     public void buildScrollSpy(List<Links> links, MaterialWidget panel) {
+        scrollspy.addAttachHandler(attachEvent -> {
+            scrollspy.setTop(80);
+            scrollspy.addStyleName("pinned");
+            scrollspy.setBackgroundColor(Color.WHITE);
+        });
         super.buildScrollSpy(links, panel);
     }
 }

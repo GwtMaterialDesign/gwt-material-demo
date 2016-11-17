@@ -23,17 +23,19 @@ package gwt.material.design.demo.client.application.addins.datatable.table.datas
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import gwt.material.design.client.data.DataSource;
 import gwt.material.design.client.data.component.CategoryComponent;
-import gwt.material.design.client.data.infinite.InfiniteDataSource;
-import gwt.material.design.client.data.infinite.InfiniteDataView;
+import gwt.material.design.client.data.loader.LoadCallback;
+import gwt.material.design.client.data.loader.LoadConfig;
+import gwt.material.design.client.data.loader.LoadResult;
 import gwt.material.design.demo.client.application.addins.datatable.table.People;
 import gwt.material.design.demo.client.application.addins.datatable.table.Person;
 import gwt.material.design.demo.client.application.addins.datatable.table.service.PersonServiceAsync;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class PersonDataSource extends InfiniteDataSource<Person> {
+public class PersonDataSource implements DataSource<Person> {
 
     private final PersonServiceAsync personService;
 
@@ -42,23 +44,39 @@ public class PersonDataSource extends InfiniteDataSource<Person> {
     }
 
     @Override
-    public void load(InfiniteDataView<Person> dataView, int startIndex, int viewSize, List<CategoryComponent> categories) {
-        List<String> categoryNames = null;
-        if(dataView.isUseCategories()) {
-            categoryNames = new ArrayList<>();
-            for (CategoryComponent category : categories) {
-                categoryNames.add(category.getCategory());
-            }
-        }
-        personService.getPeople(startIndex, viewSize, categoryNames, new AsyncCallback<People>() {
+    public void load(LoadConfig<Person> loadConfig, LoadCallback<Person> callback) {
+        List<CategoryComponent> categories = loadConfig.getOpenCategories();
+        List<String> categoryNames = categories.stream().map(CategoryComponent::getCategory).collect(Collectors.toList());
+
+        personService.getPeople(loadConfig.getOffset(), loadConfig.getLimit(), categoryNames,
+                new AsyncCallback<People>() {
             @Override
             public void onSuccess(People people) {
-                dataView.loaded(startIndex, people, people.getAbsoluteTotal(), true);
+                callback.onSuccess(new LoadResult<Person>() {
+                    @Override
+                    public List<Person> getData() {
+                        return people;
+                    }
+                    @Override
+                    public int getOffset() {
+                        return loadConfig.getOffset();
+                    }
+                    @Override
+                    public int getTotalLength() {
+                        return people.getAbsoluteTotal();
+                    }
+                });
             }
             @Override
             public void onFailure(Throwable throwable) {
                 GWT.log("Getting people async call failed.", throwable);
+                callback.onFailure(throwable);
             }
         });
+    }
+
+    @Override
+    public boolean useRemoteSort() {
+        return false;
     }
 }
