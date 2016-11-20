@@ -108,7 +108,7 @@
     
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Open / Close control" description="You can control programmatically the date picker. We added value change event with datepicker.close() upon triggering the event." />
-        <m:MaterialDatePicker ui:field="dpOpenClose" grid="s12" placeholder="birthdate" />
+        <m:MaterialDatePicker ui:field="dpOpenClose" grid="s12" placeholder="Birthdate" />
         <m:MaterialButton ui:field="btnOpen" text="Open DatePicker" />
         <demo:PrettyPre addStyleNames="lang-java">
           &emsp;dpOpenClose.open(); <br/>
@@ -150,10 +150,7 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Language Translations" description="With API we have supported 43 languages into the datepicker component."/>
         <m:MaterialRow>
-          <m:MaterialColumn grid="l4 m6 s12">
-            <m:MaterialLabel text="Select Language" fontSize="0.9em" textColor="GREY"/>
-            <m:MaterialListBox ui:field="lstLanguage"/>
-          </m:MaterialColumn>
+          <m:MaterialListBox ui:field="lstLanguage" placeholder="Select Language" grid="l4"/>
           <m:MaterialDatePicker ui:field="dpTranslation" placeholder="With Translation" grid="l4"/>
         </m:MaterialRow>
     

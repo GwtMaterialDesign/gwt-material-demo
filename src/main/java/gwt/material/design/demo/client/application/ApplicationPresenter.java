@@ -31,6 +31,7 @@ import com.gwtplatform.mvp.client.presenter.slots.PermanentSlot;
 import com.gwtplatform.mvp.client.proxy.NavigationEvent;
 import com.gwtplatform.mvp.client.proxy.NavigationHandler;
 import com.gwtplatform.mvp.client.proxy.Proxy;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.menu.MenuPresenter;
 
 import javax.inject.Inject;

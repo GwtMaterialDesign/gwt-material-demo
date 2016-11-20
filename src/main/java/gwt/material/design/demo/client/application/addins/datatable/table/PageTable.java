@@ -88,7 +88,7 @@ public class PageTable extends Composite {
         table.setVisibleRange(1, 10);
 
         pager = new MaterialDataPager<>(table, dataSource);
-        pager.setRowCountOptions(5, 10, 15, 20);
+        pager.setLimitOptions(5, 10, 15, 20);
         table.add(pager);
 
         // We will manually add this category otherwise categories
