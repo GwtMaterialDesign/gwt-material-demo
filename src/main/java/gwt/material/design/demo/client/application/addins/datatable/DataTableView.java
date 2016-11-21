@@ -57,14 +57,4 @@ public class DataTableView extends NavigatedView implements DataTablePresenter.M
         contextMenuTable.add(new StandardContextMenuTable());
         buildScrollSpy(ScrollspyHelper.getDataTable(), menuPanel);
     }
-
-    @Override
-    public void buildScrollSpy(List<Links> links, MaterialWidget panel) {
-        scrollspy.addAttachHandler(attachEvent -> {
-            scrollspy.setTop(80);
-            scrollspy.addStyleName("pinned");
-            scrollspy.setBackgroundColor(Color.WHITE);
-        });
-        super.buildScrollSpy(links, panel);
-    }
 }
