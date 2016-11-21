@@ -35,7 +35,7 @@
                 </m:MaterialCardContent>
 
                 <m:MaterialCardAction>
-                    <m:MaterialLink text="Demo" href="http://gwtmaterialdesign.github.io/gwt-material-template/snapshot/" target="_blank"/>
+                    <m:MaterialLink text="Demo" href="http://gwtmaterialdesign.github.io/gwt-material-starter/snapshot/" target="_blank"/>
                     <m:MaterialLink text="Source" href="https://github.com/GwtMaterialDesign/gwt-material-template" target="_blank"/>
                 </m:MaterialCardAction>
             </m:MaterialCard>
