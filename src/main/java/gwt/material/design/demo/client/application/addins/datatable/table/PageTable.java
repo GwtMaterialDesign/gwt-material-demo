@@ -61,7 +61,8 @@ public class PageTable extends Composite {
     @UiField
     MaterialDataTable<Person> table;
 
-    private MaterialDataPager pager;
+    private MaterialDataPager pager = new MaterialDataPager();
+
     private ListDataSource<Person> dataSource;
 
     public PageTable() {
@@ -79,6 +80,10 @@ public class PageTable extends Composite {
 
         dataSource = new ListDataSource<>();
         dataSource.add(0, people);
+
+        pager.setTable(table);
+        pager.setDataSource(dataSource);
+
     }
 
     @Override
@@ -86,9 +91,6 @@ public class PageTable extends Composite {
         super.onLoad();
 
         table.setVisibleRange(1, 10);
-
-        pager = new MaterialDataPager<>(table, dataSource);
-        pager.setLimitOptions(5, 10, 15, 20);
         table.add(pager);
 
         // We will manually add this category otherwise categories

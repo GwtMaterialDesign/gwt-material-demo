@@ -296,7 +296,7 @@
                 <demo:PrettyPre addStyleNames="lang-java">
                     MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
                 </demo:PrettyPre>
-                <m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+                <m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" url="http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
             </m:MaterialPanel>
         </g:HTMLPanel>
     </m:MaterialPanel>
