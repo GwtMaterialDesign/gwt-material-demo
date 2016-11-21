@@ -223,3 +223,7 @@ main .panel, main {
 #closeButton {
     margin: 15px 6px 6px;
 }
+
+table tbody tr td img {
+    max-width: initial !important;
+}
