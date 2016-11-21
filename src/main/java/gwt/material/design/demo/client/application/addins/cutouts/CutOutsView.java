@@ -30,6 +30,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.cutout.MaterialCutOut;
 import gwt.material.design.client.ui.MaterialIcon;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -47,6 +48,7 @@ public class CutOutsView extends ViewImpl implements CutOutsPresenter.MyView {
     @Inject
     CutOutsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        ThemeManager.register(cutout);
         cutout.addCloseHandler(closeEvent -> {
             MaterialToast.fireToast("Close Event Fired");
         });
