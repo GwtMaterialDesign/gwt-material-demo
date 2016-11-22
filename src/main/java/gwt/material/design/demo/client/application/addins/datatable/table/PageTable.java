@@ -20,7 +20,6 @@ package gwt.material.design.demo.client.application.addins.datatable.table;
  * #L%
  */
 
-
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.dom.client.Style.Position;
@@ -50,7 +49,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-
 public class PageTable extends Composite {
 
     interface PageGridUiBinder extends UiBinder<HTMLPanel, PageTable> {
@@ -61,7 +59,7 @@ public class PageTable extends Composite {
     @UiField
     MaterialDataTable<Person> table;
 
-    private MaterialDataPager pager = new MaterialDataPager();
+    private MaterialDataPager<Person> pager = new MaterialDataPager<>();
 
     private ListDataSource<Person> dataSource;
 
@@ -196,8 +194,9 @@ public class PageTable extends Composite {
                     @Override
                     public void run() {
                         // Clear the content first.
-                        MaterialWidget content = new MaterialWidget(
-                                rowExpand.getRow().find(".content").empty().asElement());
+                        JQueryElement element = rowExpand.getRow().find(".content").empty();
+                        // Assign the jquery element to a GMD Widget
+                        MaterialWidget content = new MaterialWidget(element);
 
                         // Add new content.
                         MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
