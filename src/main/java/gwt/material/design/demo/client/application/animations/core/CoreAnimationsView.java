@@ -151,12 +151,12 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     private void animate() {
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
-        MaterialAnimator.animate(transition, card, 1000);
+        MaterialAnimator.animate(transition, card, 0);
     }
 
     @UiHandler("btnAnimateInfinite")
     void onAnimateInfinite(ClickEvent e) {
-        MaterialAnimator.animate(Transition.PULSE, iconHeart, 1000, true);
+        MaterialAnimator.animate(Transition.PULSE, iconHeart, 0, true);
     }
 
     @UiHandler("btnStopAnimation")
