@@ -224,6 +224,6 @@ main .panel, main {
     margin: 15px 6px 6px;
 }
 
-nav .button-collapse i {
-    font-size: 1.5rem !important;
+table tbody tr td img {
+    max-width: initial !important;
 }
