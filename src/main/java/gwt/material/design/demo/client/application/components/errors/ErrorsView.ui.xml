@@ -38,7 +38,7 @@
     <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Validation" description="You can add validators and error handlers to input fields." />
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox ui:field="txtBox" placeholder="Email" validateOnBlur="true" allowBlank="false" />
+        &emsp;&lt;m:MaterialTextBox ui:field="txtBox" label="Email" validateOnBlur="true" allowBlank="false" />
       </demo:PrettyPre>
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;public class EmailValidator extends RegExValidator {<br/>
@@ -57,7 +57,7 @@
       </demo:PrettyPre>
     
       <m:MaterialRow paddingTop="10">
-        <m:MaterialTextBox ui:field="txtBoxValidator" placeholder="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
+        <m:MaterialTextBox ui:field="txtBoxValidator" label="Email" grid="s12 m12 l5" validateOnBlur="true" allowBlank="false"/>
       </m:MaterialRow>
       <m:MaterialRow>
         <m:MaterialButton ui:field="btnValidate" text="Validate" waves="LIGHT"/>
@@ -67,12 +67,12 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Allow Blank Property" description="Allow blank property is similar to not required property. By setting allowBlank='false' it means that your field is required." />
       <m:MaterialRow>
-        <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TextBox)" grid="s12"/>
-        <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (Text Area)" grid="s12"/>
-        <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (IntegerBox)" grid="s12"/>
-        <m:MaterialDoubleBox ui:field="doubleBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DoubleBox)" grid="s12"/>
-        <m:MaterialFloatBox ui:field="floatBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (FloatBox)" grid="s12"/>
-        <m:MaterialLongBox ui:field="longBoxValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (LongBox)" grid="s12"/>
+        <m:MaterialTextBox ui:field="txtBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (TextBox)" grid="s12"/>
+        <m:MaterialTextArea ui:field="txtAreaValidate" validateOnBlur="true" allowBlank="false" label="Required Value (Text Area)" grid="s12"/>
+        <m:MaterialIntegerBox ui:field="intBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (IntegerBox)" grid="s12"/>
+        <m:MaterialDoubleBox ui:field="doubleBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (DoubleBox)" grid="s12"/>
+        <m:MaterialFloatBox ui:field="floatBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (FloatBox)" grid="s12"/>
+        <m:MaterialLongBox ui:field="longBoxValidate" validateOnBlur="true" allowBlank="false" label="Required Value (LongBox)" grid="s12"/>
         <m:MaterialDatePicker ui:field="datePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (DatePicker)" grid="s12"/>
         <m.timepicker:MaterialTimePicker ui:field="timePickerValidate" validateOnBlur="true" allowBlank="false" placeholder="Required Value (TimePicker)" grid="s12"/>
         <m:MaterialButton ui:field="btnValidateAll" text="Validate" waves="LIGHT" />
