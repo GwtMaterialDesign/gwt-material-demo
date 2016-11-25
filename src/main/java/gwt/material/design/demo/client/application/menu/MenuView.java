@@ -78,12 +78,14 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        chipJava.setLetter("<>");
         chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
         chipJava.addClickHandler(clickEvent -> {
             String java = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".java";
             Window.open(java, "_blank", "");
         });
 
+        chipXml.setLetter("<>");
         chipXml.getElement().getStyle().setCursor(Style.Cursor.POINTER);
         chipXml.addClickHandler(clickEvent -> {
             String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
