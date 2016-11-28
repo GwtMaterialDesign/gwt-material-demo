@@ -91,7 +91,7 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup.'"/>
+      <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup."/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialWeather ui:field="weather" location="Makati, Philippines" />

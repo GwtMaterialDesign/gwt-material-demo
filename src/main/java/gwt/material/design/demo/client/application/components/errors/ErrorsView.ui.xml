@@ -148,7 +148,7 @@
       <!-- Text Area -->
       <m:MaterialRow>
         <m:MaterialTitle title="Text Area" />
-        <m:MaterialTextArea ui:field="txtArea" placeholder="About You" grid="s12 m12 l5" text="I Love Material Design"/>
+        <m:MaterialTextArea ui:field="txtArea" label="About You" grid="s12 m12 l5" text="I Love Material Design"/>
       </m:MaterialRow>
       <m:MaterialRow>
         <m:MaterialButton ui:field="btnErrorTxtArea" text="Error" backgroundColor="RED" waves="LIGHT"/>
@@ -161,7 +161,7 @@
       <!-- Text Box -->
       <m:MaterialRow>
         <m:MaterialTitle title="Text Box" />
-        <m:MaterialTextBox ui:field="txtBox" placeholder="First Name" grid="s12 m12 l5" text="Marjorie Matias"/>
+        <m:MaterialTextBox ui:field="txtBox" label="First Name" grid="s12 m12 l5" text="Marjorie Matias"/>
       </m:MaterialRow>
       <m:MaterialRow>
         <m:MaterialButton ui:field="btnErrorTxtBox" text="Error" backgroundColor="RED" waves="LIGHT"/>

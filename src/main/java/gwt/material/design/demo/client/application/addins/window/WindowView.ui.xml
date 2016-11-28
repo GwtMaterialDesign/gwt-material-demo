@@ -68,6 +68,21 @@
                 window.open();
             </m.demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Window with Overlay"/>
+            <m:MaterialButton ui:field="btnOpenWindowWithOverlay" text="Open with Overlay" textColor="WHITE" />
+            <ma:window.MaterialWindow ui:field="overlayWindow" overlay="true" width="50%" title="Documents">
+                <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
+                    <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
+                    <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
+                    <m:MaterialLabel text="Helps me escape from the reality I live in." fontSize="1.2em" />
+                </m:MaterialPanel>
+            </ma:window.MaterialWindow>
+            <m.demo:PrettyPre addStyleNames="lang-java">
+
+            </m.demo:PrettyPre>
+        </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>

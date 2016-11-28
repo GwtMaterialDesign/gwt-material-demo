@@ -44,7 +44,7 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
     }
 
     @UiField
-    MaterialWindow window, windowTab, styledWindow;
+    MaterialWindow window, windowTab, styledWindow, overlayWindow;
 
     @UiField
     MaterialRow headerPanel, tabsPanel;
@@ -67,6 +67,11 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
                 MaterialToast.fireToast("Closed : " + window.getTitle());
             }
         });
+    }
+
+    @UiHandler("btnOpenWindowWithOverlay")
+    void onOpenWindowWithOverlay(ClickEvent e) {
+        overlayWindow.open();
     }
 
     @UiHandler("btnOpenWindow")

@@ -62,7 +62,7 @@
                             <m:MaterialIcon iconType="FAST_REWIND" waves="DEFAULT" iconSize="SMALL" circle="true"/>
                         </m:MaterialColumn>
                         <m:MaterialColumn grid="s4 l4">
-                            <m:MaterialIcon ui:field="btnPause" visible="false" iconType="PAUSE" waves="DEFAULT" iconSize="SMALL" circle="true"/>
+                            <m:MaterialIcon ui:field="btnPause" iconType="PAUSE" waves="DEFAULT" iconSize="SMALL" circle="true"/>
                         </m:MaterialColumn>
                         <m:MaterialColumn grid="s4 l4">
                             <m:MaterialIcon iconType="FAST_FORWARD" waves="DEFAULT" iconSize="SMALL" circle="true"    />
