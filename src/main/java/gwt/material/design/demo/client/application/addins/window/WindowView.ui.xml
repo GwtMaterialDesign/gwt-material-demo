@@ -71,8 +71,9 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Window with Overlay"/>
+            <m:MaterialCheckBox ui:field="cbOverlay" text="With Overlay" />
             <m:MaterialButton ui:field="btnOpenWindowWithOverlay" text="Open with Overlay" textColor="WHITE" />
-            <ma:window.MaterialWindow ui:field="overlayWindow" overlay="true" width="50%" title="Documents">
+            <ma:window.MaterialWindow ui:field="overlayWindow" width="50%" title="Documents">
                 <m:MaterialPanel padding="32" textAlign="CENTER" height="300px">
                     <m:MaterialIcon iconType="HEADSET" iconColor="ORANGE" padding="24" iconSize="LARGE" circle="true" shadow="1"/>
                     <m:MaterialLabel text="I Love Music" marginTop="20" fontSize="2em" fontWeight="BOLD"/>
@@ -80,7 +81,7 @@
                 </m:MaterialPanel>
             </ma:window.MaterialWindow>
             <m.demo:PrettyPre addStyleNames="lang-java">
-
+                MaterialWindow.setOverlay(true); // Will apply all windows to have overlay
             </m.demo:PrettyPre>
         </m:MaterialRow>
     

@@ -32,6 +32,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.window.MaterialWindow;
+import gwt.material.design.client.ui.MaterialCheckBox;
 import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.ThemeManager;
@@ -48,6 +49,9 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
 
     @UiField
     MaterialRow headerPanel, tabsPanel;
+
+    @UiField
+    MaterialCheckBox cbOverlay;
 
     @Inject
     WindowView(Binder uiBinder) {
@@ -71,6 +75,7 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
 
     @UiHandler("btnOpenWindowWithOverlay")
     void onOpenWindowWithOverlay(ClickEvent e) {
+        MaterialWindow.setOverlay(cbOverlay.getValue());
         overlayWindow.open();
     }
 
