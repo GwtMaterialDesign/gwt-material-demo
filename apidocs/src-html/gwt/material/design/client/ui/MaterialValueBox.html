@@ -72,7 +72,7 @@
 <span class="sourceLineNo">064</span> * @author kevzlou7979<a name="line.64"></a>
 <span class="sourceLineNo">065</span> * @author Ben Dol<a name="line.65"></a>
 <span class="sourceLineNo">066</span> * @author paulux84<a name="line.66"></a>
-<span class="sourceLineNo">067</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!forms"&gt;Material TextBox&lt;/a&gt;<a name="line.67"></a>
+<span class="sourceLineNo">067</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#forms"&gt;Material TextBox&lt;/a&gt;<a name="line.67"></a>
 <span class="sourceLineNo">068</span> */<a name="line.68"></a>
 <span class="sourceLineNo">069</span>//@formatter:on<a name="line.69"></a>
 <span class="sourceLineNo">070</span>public class MaterialValueBox&lt;T&gt; extends AbstractValueWidget&lt;T&gt; implements HasChangeHandlers, HasName,<a name="line.70"></a>
@@ -81,673 +81,679 @@
 <span class="sourceLineNo">073</span><a name="line.73"></a>
 <span class="sourceLineNo">074</span>    private boolean initialized;<a name="line.74"></a>
 <span class="sourceLineNo">075</span><a name="line.75"></a>
-<span class="sourceLineNo">076</span>    private String placeholder;<a name="line.76"></a>
-<span class="sourceLineNo">077</span>    private InputType type = InputType.TEXT;<a name="line.77"></a>
-<span class="sourceLineNo">078</span><a name="line.78"></a>
-<span class="sourceLineNo">079</span>    private ValueBoxEditor&lt;T&gt; editor;<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    private Label label = new Label();<a name="line.80"></a>
-<span class="sourceLineNo">081</span>    private MaterialLabel lblName = new MaterialLabel();<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    private MaterialLabel lblError = new MaterialLabel();<a name="line.82"></a>
-<span class="sourceLineNo">083</span>    private MaterialIcon icon = new MaterialIcon();<a name="line.83"></a>
-<span class="sourceLineNo">084</span><a name="line.84"></a>
-<span class="sourceLineNo">085</span>    @Editor.Ignore<a name="line.85"></a>
-<span class="sourceLineNo">086</span>    protected ValueBoxBase&lt;T&gt; valueBoxBase;<a name="line.86"></a>
-<span class="sourceLineNo">087</span><a name="line.87"></a>
-<span class="sourceLineNo">088</span>    private final CounterMixin&lt;MaterialValueBox&lt;T&gt;&gt; counterMixin = new CounterMixin&lt;&gt;(this);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    private final ErrorMixin&lt;AbstractValueWidget, MaterialLabel&gt; errorMixin = new ErrorMixin&lt;&gt;(this, lblError, valueBoxBase);<a name="line.89"></a>
-<span class="sourceLineNo">090</span>    private ReadOnlyMixin&lt;MaterialValueBox, ValueBoxBase&gt; readOnlyMixin;<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    private FocusableMixin&lt;MaterialWidget&gt; focusableMixin;<a name="line.91"></a>
-<span class="sourceLineNo">092</span><a name="line.92"></a>
-<span class="sourceLineNo">093</span>    public class MaterialValueBoxEditor&lt;V&gt; extends ValueBoxEditor&lt;V&gt; {<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        private final ValueBoxBase&lt;V&gt; valueBoxBase;<a name="line.94"></a>
-<span class="sourceLineNo">095</span><a name="line.95"></a>
-<span class="sourceLineNo">096</span>        private MaterialValueBoxEditor(ValueBoxBase&lt;V&gt; valueBoxBase) {<a name="line.96"></a>
-<span class="sourceLineNo">097</span>            super(valueBoxBase);<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.valueBoxBase = valueBoxBase;<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        }<a name="line.99"></a>
-<span class="sourceLineNo">100</span><a name="line.100"></a>
-<span class="sourceLineNo">101</span>        @Override<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        public void setValue(V value) {<a name="line.102"></a>
-<span class="sourceLineNo">103</span>            super.setValue(value);<a name="line.103"></a>
-<span class="sourceLineNo">104</span>            if (valueBoxBase.getText() != null &amp;&amp; !valueBoxBase.getText().isEmpty()) {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>                label.addStyleName(CssName.ACTIVE);<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            } else {<a name="line.106"></a>
-<span class="sourceLineNo">107</span>                label.removeStyleName(CssName.ACTIVE);<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            }<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        }<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
-<span class="sourceLineNo">111</span><a name="line.111"></a>
-<span class="sourceLineNo">112</span>    protected MaterialValueBox() {<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        super(Document.get().createDivElement(), CssName.INPUT_FIELD);<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
-<span class="sourceLineNo">115</span><a name="line.115"></a>
-<span class="sourceLineNo">116</span>    public MaterialValueBox(ValueBoxBase&lt;T&gt; tValueBox) {<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        this();<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        initValueBox(tValueBox);<a name="line.118"></a>
-<span class="sourceLineNo">119</span>    }<a name="line.119"></a>
-<span class="sourceLineNo">120</span><a name="line.120"></a>
-<span class="sourceLineNo">121</span>    public void initValueBox(ValueBoxBase&lt;T&gt; tValueBox) {<a name="line.121"></a>
-<span class="sourceLineNo">122</span>        valueBoxBase = tValueBox;<a name="line.122"></a>
-<span class="sourceLineNo">123</span>        add(valueBoxBase);<a name="line.123"></a>
-<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
-<span class="sourceLineNo">125</span><a name="line.125"></a>
-<span class="sourceLineNo">126</span>    @Deprecated<a name="line.126"></a>
-<span class="sourceLineNo">127</span>    @UiChild(limit = 1)<a name="line.127"></a>
-<span class="sourceLineNo">128</span>    public void addValueBox(ValueBoxBase&lt;T&gt; widget) {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>        initValueBox(widget);<a name="line.129"></a>
-<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
-<span class="sourceLineNo">131</span><a name="line.131"></a>
-<span class="sourceLineNo">132</span>    @Override<a name="line.132"></a>
-<span class="sourceLineNo">133</span>    protected void onLoad() {<a name="line.133"></a>
-<span class="sourceLineNo">134</span>        super.onLoad();<a name="line.134"></a>
-<span class="sourceLineNo">135</span><a name="line.135"></a>
-<span class="sourceLineNo">136</span>        if (!initialized) {<a name="line.136"></a>
-<span class="sourceLineNo">137</span>            String id = DOM.createUniqueId();<a name="line.137"></a>
-<span class="sourceLineNo">138</span>            valueBoxBase.getElement().setId(id);<a name="line.138"></a>
-<span class="sourceLineNo">139</span>            label.getElement().setAttribute("for", id);<a name="line.139"></a>
-<span class="sourceLineNo">140</span><a name="line.140"></a>
-<span class="sourceLineNo">141</span>            // Make valueBoxBase the primary focus target<a name="line.141"></a>
-<span class="sourceLineNo">142</span>            getFocusableMixin().setUiObject(new MaterialWidget(valueBoxBase.getElement()));<a name="line.142"></a>
-<span class="sourceLineNo">143</span>            initialized = true;<a name="line.143"></a>
-<span class="sourceLineNo">144</span>        }<a name="line.144"></a>
-<span class="sourceLineNo">145</span>    }<a name="line.145"></a>
-<span class="sourceLineNo">146</span><a name="line.146"></a>
-<span class="sourceLineNo">147</span>    /**<a name="line.147"></a>
-<span class="sourceLineNo">148</span>     * Resets the textbox by removing its content and resetting visual state.<a name="line.148"></a>
-<span class="sourceLineNo">149</span>     */<a name="line.149"></a>
-<span class="sourceLineNo">150</span>    public void clear() {<a name="line.150"></a>
-<span class="sourceLineNo">151</span>        valueBoxBase.setText("");<a name="line.151"></a>
-<span class="sourceLineNo">152</span>        clearErrorOrSuccess();<a name="line.152"></a>
-<span class="sourceLineNo">153</span>        label.removeStyleName(CssName.ACTIVE);<a name="line.153"></a>
-<span class="sourceLineNo">154</span>    }<a name="line.154"></a>
-<span class="sourceLineNo">155</span><a name="line.155"></a>
-<span class="sourceLineNo">156</span>    public void removeErrorModifiers() {<a name="line.156"></a>
-<span class="sourceLineNo">157</span>        valueBoxBase.getElement().removeClassName(CssName.VALID);<a name="line.157"></a>
-<span class="sourceLineNo">158</span>        valueBoxBase.getElement().removeClassName(CssName.INVALID);<a name="line.158"></a>
-<span class="sourceLineNo">159</span>        lblName.removeStyleName("green-text");<a name="line.159"></a>
-<span class="sourceLineNo">160</span>        lblName.removeStyleName("red-text");<a name="line.160"></a>
-<span class="sourceLineNo">161</span>    }<a name="line.161"></a>
-<span class="sourceLineNo">162</span><a name="line.162"></a>
-<span class="sourceLineNo">163</span>    @Override<a name="line.163"></a>
-<span class="sourceLineNo">164</span>    protected FocusableMixin&lt;MaterialWidget&gt; getFocusableMixin() {<a name="line.164"></a>
-<span class="sourceLineNo">165</span>        if (focusableMixin == null) {<a name="line.165"></a>
-<span class="sourceLineNo">166</span>            focusableMixin = new FocusableMixin&lt;&gt;(new MaterialWidget(valueBoxBase.getElement()));<a name="line.166"></a>
-<span class="sourceLineNo">167</span>        }<a name="line.167"></a>
-<span class="sourceLineNo">168</span>        return focusableMixin;<a name="line.168"></a>
-<span class="sourceLineNo">169</span>    }<a name="line.169"></a>
-<span class="sourceLineNo">170</span><a name="line.170"></a>
-<span class="sourceLineNo">171</span>    @Override<a name="line.171"></a>
-<span class="sourceLineNo">172</span>    public String getText() {<a name="line.172"></a>
-<span class="sourceLineNo">173</span>        return valueBoxBase.getText();<a name="line.173"></a>
-<span class="sourceLineNo">174</span>    }<a name="line.174"></a>
-<span class="sourceLineNo">175</span><a name="line.175"></a>
-<span class="sourceLineNo">176</span>    @Override<a name="line.176"></a>
-<span class="sourceLineNo">177</span>    public void setText(String text) {<a name="line.177"></a>
-<span class="sourceLineNo">178</span>        valueBoxBase.setText(text);<a name="line.178"></a>
-<span class="sourceLineNo">179</span><a name="line.179"></a>
-<span class="sourceLineNo">180</span>        if (text != null &amp;&amp; !text.isEmpty()) {<a name="line.180"></a>
-<span class="sourceLineNo">181</span>            label.addStyleName(CssName.ACTIVE);<a name="line.181"></a>
-<span class="sourceLineNo">182</span>        }<a name="line.182"></a>
-<span class="sourceLineNo">183</span>    }<a name="line.183"></a>
-<span class="sourceLineNo">184</span><a name="line.184"></a>
-<span class="sourceLineNo">185</span>    @Override<a name="line.185"></a>
-<span class="sourceLineNo">186</span>    public String getPlaceholder() {<a name="line.186"></a>
-<span class="sourceLineNo">187</span>        return placeholder;<a name="line.187"></a>
-<span class="sourceLineNo">188</span>    }<a name="line.188"></a>
-<span class="sourceLineNo">189</span><a name="line.189"></a>
-<span class="sourceLineNo">190</span>    @Override<a name="line.190"></a>
-<span class="sourceLineNo">191</span>    public void setPlaceholder(String placeholder) {<a name="line.191"></a>
-<span class="sourceLineNo">192</span>        this.placeholder = placeholder;<a name="line.192"></a>
-<span class="sourceLineNo">193</span>        if (getType() != InputType.SEARCH) {<a name="line.193"></a>
-<span class="sourceLineNo">194</span>            lblName.setText(placeholder);<a name="line.194"></a>
-<span class="sourceLineNo">195</span>        } else {<a name="line.195"></a>
-<span class="sourceLineNo">196</span>            valueBoxBase.getElement().setAttribute("placeholder", placeholder);<a name="line.196"></a>
-<span class="sourceLineNo">197</span>        }<a name="line.197"></a>
+<span class="sourceLineNo">076</span>    private InputType type = InputType.TEXT;<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>    private ValueBoxEditor&lt;T&gt; editor;<a name="line.78"></a>
+<span class="sourceLineNo">079</span>    private Label label = new Label();<a name="line.79"></a>
+<span class="sourceLineNo">080</span>    private MaterialLabel lblError = new MaterialLabel();<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    private MaterialIcon icon = new MaterialIcon();<a name="line.81"></a>
+<span class="sourceLineNo">082</span><a name="line.82"></a>
+<span class="sourceLineNo">083</span>    @Editor.Ignore<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    protected ValueBoxBase&lt;T&gt; valueBoxBase;<a name="line.84"></a>
+<span class="sourceLineNo">085</span><a name="line.85"></a>
+<span class="sourceLineNo">086</span>    private final CounterMixin&lt;MaterialValueBox&lt;T&gt;&gt; counterMixin = new CounterMixin&lt;&gt;(this);<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    private final ErrorMixin&lt;AbstractValueWidget, MaterialLabel&gt; errorMixin = new ErrorMixin&lt;&gt;(this, lblError, valueBoxBase);<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    private ReadOnlyMixin&lt;MaterialValueBox, ValueBoxBase&gt; readOnlyMixin;<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    private FocusableMixin&lt;MaterialWidget&gt; focusableMixin;<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>    public class MaterialValueBoxEditor&lt;V&gt; extends ValueBoxEditor&lt;V&gt; {<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        private final ValueBoxBase&lt;V&gt; valueBoxBase;<a name="line.92"></a>
+<span class="sourceLineNo">093</span><a name="line.93"></a>
+<span class="sourceLineNo">094</span>        private MaterialValueBoxEditor(ValueBoxBase&lt;V&gt; valueBoxBase) {<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            super(valueBoxBase);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>            this.valueBoxBase = valueBoxBase;<a name="line.96"></a>
+<span class="sourceLineNo">097</span>        }<a name="line.97"></a>
+<span class="sourceLineNo">098</span><a name="line.98"></a>
+<span class="sourceLineNo">099</span>        @Override<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        public void setValue(V value) {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            super.setValue(value);<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            if (valueBoxBase.getText() != null &amp;&amp; !valueBoxBase.getText().isEmpty()) {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>                label.addStyleName(CssName.ACTIVE);<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            } else {<a name="line.104"></a>
+<span class="sourceLineNo">105</span>                label.removeStyleName(CssName.ACTIVE);<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            }<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        }<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span><a name="line.109"></a>
+<span class="sourceLineNo">110</span>    protected MaterialValueBox() {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        super(Document.get().createDivElement(), CssName.INPUT_FIELD);<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    }<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>    public MaterialValueBox(ValueBoxBase&lt;T&gt; tValueBox) {<a name="line.114"></a>
+<span class="sourceLineNo">115</span>        this();<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        initValueBox(tValueBox);<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    public void initValueBox(ValueBoxBase&lt;T&gt; tValueBox) {<a name="line.119"></a>
+<span class="sourceLineNo">120</span>        valueBoxBase = tValueBox;<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        add(valueBoxBase);<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
+<span class="sourceLineNo">123</span><a name="line.123"></a>
+<span class="sourceLineNo">124</span>    @Deprecated<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    @UiChild(limit = 1)<a name="line.125"></a>
+<span class="sourceLineNo">126</span>    public void addValueBox(ValueBoxBase&lt;T&gt; widget) {<a name="line.126"></a>
+<span class="sourceLineNo">127</span>        initValueBox(widget);<a name="line.127"></a>
+<span class="sourceLineNo">128</span>    }<a name="line.128"></a>
+<span class="sourceLineNo">129</span><a name="line.129"></a>
+<span class="sourceLineNo">130</span>    @Override<a name="line.130"></a>
+<span class="sourceLineNo">131</span>    protected void onLoad() {<a name="line.131"></a>
+<span class="sourceLineNo">132</span>        super.onLoad();<a name="line.132"></a>
+<span class="sourceLineNo">133</span><a name="line.133"></a>
+<span class="sourceLineNo">134</span>        if (!initialized) {<a name="line.134"></a>
+<span class="sourceLineNo">135</span>            String id = DOM.createUniqueId();<a name="line.135"></a>
+<span class="sourceLineNo">136</span>            valueBoxBase.getElement().setId(id);<a name="line.136"></a>
+<span class="sourceLineNo">137</span>            label.getElement().setAttribute("for", id);<a name="line.137"></a>
+<span class="sourceLineNo">138</span><a name="line.138"></a>
+<span class="sourceLineNo">139</span>            // Make valueBoxBase the primary focus target<a name="line.139"></a>
+<span class="sourceLineNo">140</span>            getFocusableMixin().setUiObject(new MaterialWidget(valueBoxBase.getElement()));<a name="line.140"></a>
+<span class="sourceLineNo">141</span>            initialized = true;<a name="line.141"></a>
+<span class="sourceLineNo">142</span>        }<a name="line.142"></a>
+<span class="sourceLineNo">143</span>    }<a name="line.143"></a>
+<span class="sourceLineNo">144</span><a name="line.144"></a>
+<span class="sourceLineNo">145</span>    /**<a name="line.145"></a>
+<span class="sourceLineNo">146</span>     * Resets the textbox by removing its content and resetting visual state.<a name="line.146"></a>
+<span class="sourceLineNo">147</span>     */<a name="line.147"></a>
+<span class="sourceLineNo">148</span>    public void clear() {<a name="line.148"></a>
+<span class="sourceLineNo">149</span>        valueBoxBase.setText("");<a name="line.149"></a>
+<span class="sourceLineNo">150</span>        clearErrorOrSuccess();<a name="line.150"></a>
+<span class="sourceLineNo">151</span>        label.removeStyleName(CssName.ACTIVE);<a name="line.151"></a>
+<span class="sourceLineNo">152</span>    }<a name="line.152"></a>
+<span class="sourceLineNo">153</span><a name="line.153"></a>
+<span class="sourceLineNo">154</span>    public void removeErrorModifiers() {<a name="line.154"></a>
+<span class="sourceLineNo">155</span>        valueBoxBase.getElement().removeClassName(CssName.VALID);<a name="line.155"></a>
+<span class="sourceLineNo">156</span>        valueBoxBase.getElement().removeClassName(CssName.INVALID);<a name="line.156"></a>
+<span class="sourceLineNo">157</span>        label.removeStyleName("green-text");<a name="line.157"></a>
+<span class="sourceLineNo">158</span>        label.removeStyleName("red-text");<a name="line.158"></a>
+<span class="sourceLineNo">159</span>    }<a name="line.159"></a>
+<span class="sourceLineNo">160</span><a name="line.160"></a>
+<span class="sourceLineNo">161</span>    @Override<a name="line.161"></a>
+<span class="sourceLineNo">162</span>    protected FocusableMixin&lt;MaterialWidget&gt; getFocusableMixin() {<a name="line.162"></a>
+<span class="sourceLineNo">163</span>        if (focusableMixin == null) {<a name="line.163"></a>
+<span class="sourceLineNo">164</span>            focusableMixin = new FocusableMixin&lt;&gt;(new MaterialWidget(valueBoxBase.getElement()));<a name="line.164"></a>
+<span class="sourceLineNo">165</span>        }<a name="line.165"></a>
+<span class="sourceLineNo">166</span>        return focusableMixin;<a name="line.166"></a>
+<span class="sourceLineNo">167</span>    }<a name="line.167"></a>
+<span class="sourceLineNo">168</span><a name="line.168"></a>
+<span class="sourceLineNo">169</span>    @Override<a name="line.169"></a>
+<span class="sourceLineNo">170</span>    public String getText() {<a name="line.170"></a>
+<span class="sourceLineNo">171</span>        return valueBoxBase.getText();<a name="line.171"></a>
+<span class="sourceLineNo">172</span>    }<a name="line.172"></a>
+<span class="sourceLineNo">173</span><a name="line.173"></a>
+<span class="sourceLineNo">174</span>    @Override<a name="line.174"></a>
+<span class="sourceLineNo">175</span>    public void setText(String text) {<a name="line.175"></a>
+<span class="sourceLineNo">176</span>        valueBoxBase.setText(text);<a name="line.176"></a>
+<span class="sourceLineNo">177</span><a name="line.177"></a>
+<span class="sourceLineNo">178</span>        if (text != null &amp;&amp; !text.isEmpty()) {<a name="line.178"></a>
+<span class="sourceLineNo">179</span>            label.addStyleName(CssName.ACTIVE);<a name="line.179"></a>
+<span class="sourceLineNo">180</span>        }<a name="line.180"></a>
+<span class="sourceLineNo">181</span>    }<a name="line.181"></a>
+<span class="sourceLineNo">182</span><a name="line.182"></a>
+<span class="sourceLineNo">183</span>    /**<a name="line.183"></a>
+<span class="sourceLineNo">184</span>     * Set the label of this field.<a name="line.184"></a>
+<span class="sourceLineNo">185</span>     * &lt;p&gt;<a name="line.185"></a>
+<span class="sourceLineNo">186</span>     * This will be displayed above the field when values are<a name="line.186"></a>
+<span class="sourceLineNo">187</span>     * assigned to the box, otherwise the value is displayed<a name="line.187"></a>
+<span class="sourceLineNo">188</span>     * inside the box.<a name="line.188"></a>
+<span class="sourceLineNo">189</span>     * &lt;/p&gt;<a name="line.189"></a>
+<span class="sourceLineNo">190</span>     */<a name="line.190"></a>
+<span class="sourceLineNo">191</span>    public void setLabel(String label) {<a name="line.191"></a>
+<span class="sourceLineNo">192</span>        this.label.setText(label);<a name="line.192"></a>
+<span class="sourceLineNo">193</span>    }<a name="line.193"></a>
+<span class="sourceLineNo">194</span><a name="line.194"></a>
+<span class="sourceLineNo">195</span>    @Override<a name="line.195"></a>
+<span class="sourceLineNo">196</span>    public String getPlaceholder() {<a name="line.196"></a>
+<span class="sourceLineNo">197</span>        return valueBoxBase.getElement().getAttribute("placeholder");<a name="line.197"></a>
 <span class="sourceLineNo">198</span>    }<a name="line.198"></a>
 <span class="sourceLineNo">199</span><a name="line.199"></a>
 <span class="sourceLineNo">200</span>    @Override<a name="line.200"></a>
-<span class="sourceLineNo">201</span>    public InputType getType() {<a name="line.201"></a>
-<span class="sourceLineNo">202</span>        return type;<a name="line.202"></a>
+<span class="sourceLineNo">201</span>    public void setPlaceholder(String placeholder) {<a name="line.201"></a>
+<span class="sourceLineNo">202</span>        valueBoxBase.getElement().setAttribute("placeholder", placeholder);<a name="line.202"></a>
 <span class="sourceLineNo">203</span>    }<a name="line.203"></a>
 <span class="sourceLineNo">204</span><a name="line.204"></a>
 <span class="sourceLineNo">205</span>    @Override<a name="line.205"></a>
-<span class="sourceLineNo">206</span>    public void setType(InputType type) {<a name="line.206"></a>
-<span class="sourceLineNo">207</span>        this.type = type;<a name="line.207"></a>
-<span class="sourceLineNo">208</span>        valueBoxBase.getElement().setAttribute("type", type.getType());<a name="line.208"></a>
-<span class="sourceLineNo">209</span>        if (getType() != InputType.SEARCH) {<a name="line.209"></a>
-<span class="sourceLineNo">210</span>            add(label);<a name="line.210"></a>
-<span class="sourceLineNo">211</span>            label.add(lblName);<a name="line.211"></a>
-<span class="sourceLineNo">212</span>            lblError.setVisible(false);<a name="line.212"></a>
-<span class="sourceLineNo">213</span>            add(lblError);<a name="line.213"></a>
-<span class="sourceLineNo">214</span>        }<a name="line.214"></a>
-<span class="sourceLineNo">215</span>    }<a name="line.215"></a>
-<span class="sourceLineNo">216</span><a name="line.216"></a>
-<span class="sourceLineNo">217</span>    @Override<a name="line.217"></a>
-<span class="sourceLineNo">218</span>    public HandlerRegistration addValueChangeHandler(final ValueChangeHandler&lt;T&gt; handler) {<a name="line.218"></a>
-<span class="sourceLineNo">219</span>        return valueBoxBase.addValueChangeHandler(event -&gt; {<a name="line.219"></a>
-<span class="sourceLineNo">220</span>            if (isEnabled()) {<a name="line.220"></a>
-<span class="sourceLineNo">221</span>                handler.onValueChange(event);<a name="line.221"></a>
-<span class="sourceLineNo">222</span>            }<a name="line.222"></a>
-<span class="sourceLineNo">223</span>        });<a name="line.223"></a>
-<span class="sourceLineNo">224</span>    }<a name="line.224"></a>
-<span class="sourceLineNo">225</span><a name="line.225"></a>
-<span class="sourceLineNo">226</span>    @Override<a name="line.226"></a>
-<span class="sourceLineNo">227</span>    public T getValue() {<a name="line.227"></a>
-<span class="sourceLineNo">228</span>        return valueBoxBase.getValue();<a name="line.228"></a>
-<span class="sourceLineNo">229</span>    }<a name="line.229"></a>
-<span class="sourceLineNo">230</span><a name="line.230"></a>
-<span class="sourceLineNo">231</span>    @Override<a name="line.231"></a>
-<span class="sourceLineNo">232</span>    public void setValue(T value, boolean fireEvents) {<a name="line.232"></a>
-<span class="sourceLineNo">233</span>        valueBoxBase.setValue(value, fireEvents);<a name="line.233"></a>
+<span class="sourceLineNo">206</span>    public InputType getType() {<a name="line.206"></a>
+<span class="sourceLineNo">207</span>        return type;<a name="line.207"></a>
+<span class="sourceLineNo">208</span>    }<a name="line.208"></a>
+<span class="sourceLineNo">209</span><a name="line.209"></a>
+<span class="sourceLineNo">210</span>    @Override<a name="line.210"></a>
+<span class="sourceLineNo">211</span>    public void setType(InputType type) {<a name="line.211"></a>
+<span class="sourceLineNo">212</span>        this.type = type;<a name="line.212"></a>
+<span class="sourceLineNo">213</span>        valueBoxBase.getElement().setAttribute("type", type.getType());<a name="line.213"></a>
+<span class="sourceLineNo">214</span>        if (getType() != InputType.SEARCH) {<a name="line.214"></a>
+<span class="sourceLineNo">215</span>            add(label);<a name="line.215"></a>
+<span class="sourceLineNo">216</span>            lblError.setVisible(false);<a name="line.216"></a>
+<span class="sourceLineNo">217</span>            add(lblError);<a name="line.217"></a>
+<span class="sourceLineNo">218</span>        }<a name="line.218"></a>
+<span class="sourceLineNo">219</span>    }<a name="line.219"></a>
+<span class="sourceLineNo">220</span><a name="line.220"></a>
+<span class="sourceLineNo">221</span>    @Override<a name="line.221"></a>
+<span class="sourceLineNo">222</span>    public HandlerRegistration addValueChangeHandler(final ValueChangeHandler&lt;T&gt; handler) {<a name="line.222"></a>
+<span class="sourceLineNo">223</span>        return valueBoxBase.addValueChangeHandler(event -&gt; {<a name="line.223"></a>
+<span class="sourceLineNo">224</span>            if (isEnabled()) {<a name="line.224"></a>
+<span class="sourceLineNo">225</span>                handler.onValueChange(event);<a name="line.225"></a>
+<span class="sourceLineNo">226</span>            }<a name="line.226"></a>
+<span class="sourceLineNo">227</span>        });<a name="line.227"></a>
+<span class="sourceLineNo">228</span>    }<a name="line.228"></a>
+<span class="sourceLineNo">229</span><a name="line.229"></a>
+<span class="sourceLineNo">230</span>    @Override<a name="line.230"></a>
+<span class="sourceLineNo">231</span>    public T getValue() {<a name="line.231"></a>
+<span class="sourceLineNo">232</span>        return valueBoxBase.getValue();<a name="line.232"></a>
+<span class="sourceLineNo">233</span>    }<a name="line.233"></a>
 <span class="sourceLineNo">234</span><a name="line.234"></a>
-<span class="sourceLineNo">235</span>        if (value != null &amp;&amp; !value.toString().isEmpty()) {<a name="line.235"></a>
-<span class="sourceLineNo">236</span>            label.addStyleName(CssName.ACTIVE);<a name="line.236"></a>
-<span class="sourceLineNo">237</span>        }<a name="line.237"></a>
-<span class="sourceLineNo">238</span>    }<a name="line.238"></a>
-<span class="sourceLineNo">239</span><a name="line.239"></a>
-<span class="sourceLineNo">240</span>    @Override<a name="line.240"></a>
-<span class="sourceLineNo">241</span>    public void setDirection(Direction direction) {<a name="line.241"></a>
-<span class="sourceLineNo">242</span>        valueBoxBase.setDirection(direction);<a name="line.242"></a>
-<span class="sourceLineNo">243</span>    }<a name="line.243"></a>
-<span class="sourceLineNo">244</span><a name="line.244"></a>
-<span class="sourceLineNo">245</span>    @Override<a name="line.245"></a>
-<span class="sourceLineNo">246</span>    public Direction getDirection() {<a name="line.246"></a>
-<span class="sourceLineNo">247</span>        return valueBoxBase.getDirection();<a name="line.247"></a>
-<span class="sourceLineNo">248</span>    }<a name="line.248"></a>
-<span class="sourceLineNo">249</span><a name="line.249"></a>
-<span class="sourceLineNo">250</span>    @Override<a name="line.250"></a>
-<span class="sourceLineNo">251</span>    public ValueBoxEditor&lt;T&gt; asEditor() {<a name="line.251"></a>
-<span class="sourceLineNo">252</span>        if (editor == null) {<a name="line.252"></a>
-<span class="sourceLineNo">253</span>            editor = new MaterialValueBoxEditor&lt;&gt;(valueBoxBase);<a name="line.253"></a>
-<span class="sourceLineNo">254</span>        }<a name="line.254"></a>
-<span class="sourceLineNo">255</span>        return editor;<a name="line.255"></a>
-<span class="sourceLineNo">256</span>    }<a name="line.256"></a>
-<span class="sourceLineNo">257</span><a name="line.257"></a>
-<span class="sourceLineNo">258</span>    @Override<a name="line.258"></a>
-<span class="sourceLineNo">259</span>    public DirectionEstimator getDirectionEstimator() {<a name="line.259"></a>
-<span class="sourceLineNo">260</span>        return valueBoxBase.getDirectionEstimator();<a name="line.260"></a>
-<span class="sourceLineNo">261</span>    }<a name="line.261"></a>
-<span class="sourceLineNo">262</span><a name="line.262"></a>
-<span class="sourceLineNo">263</span>    @Override<a name="line.263"></a>
-<span class="sourceLineNo">264</span>    public void setDirectionEstimator(boolean enabled) {<a name="line.264"></a>
-<span class="sourceLineNo">265</span>        valueBoxBase.setDirectionEstimator(enabled);<a name="line.265"></a>
-<span class="sourceLineNo">266</span>    }<a name="line.266"></a>
-<span class="sourceLineNo">267</span><a name="line.267"></a>
-<span class="sourceLineNo">268</span>    @Override<a name="line.268"></a>
-<span class="sourceLineNo">269</span>    public void setDirectionEstimator(DirectionEstimator directionEstimator) {<a name="line.269"></a>
-<span class="sourceLineNo">270</span>        valueBoxBase.setDirectionEstimator(directionEstimator);<a name="line.270"></a>
-<span class="sourceLineNo">271</span>    }<a name="line.271"></a>
-<span class="sourceLineNo">272</span><a name="line.272"></a>
-<span class="sourceLineNo">273</span>    @Override<a name="line.273"></a>
-<span class="sourceLineNo">274</span>    public void setName(String name) {<a name="line.274"></a>
-<span class="sourceLineNo">275</span>        valueBoxBase.setName(name);<a name="line.275"></a>
-<span class="sourceLineNo">276</span>    }<a name="line.276"></a>
-<span class="sourceLineNo">277</span><a name="line.277"></a>
-<span class="sourceLineNo">278</span>    @Override<a name="line.278"></a>
-<span class="sourceLineNo">279</span>    public String getName() {<a name="line.279"></a>
-<span class="sourceLineNo">280</span>        return valueBoxBase.getName();<a name="line.280"></a>
-<span class="sourceLineNo">281</span>    }<a name="line.281"></a>
-<span class="sourceLineNo">282</span><a name="line.282"></a>
-<span class="sourceLineNo">283</span>    @Override<a name="line.283"></a>
-<span class="sourceLineNo">284</span>    public HandlerRegistration addDragStartHandler(DragStartEvent.DragStartHandler handler) {<a name="line.284"></a>
-<span class="sourceLineNo">285</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.285"></a>
-<span class="sourceLineNo">286</span>            if (isEnabled()) {<a name="line.286"></a>
-<span class="sourceLineNo">287</span>                handler.onDragStart(event);<a name="line.287"></a>
-<span class="sourceLineNo">288</span>            }<a name="line.288"></a>
-<span class="sourceLineNo">289</span>        }, DragStartEvent.getType());<a name="line.289"></a>
-<span class="sourceLineNo">290</span>    }<a name="line.290"></a>
-<span class="sourceLineNo">291</span><a name="line.291"></a>
-<span class="sourceLineNo">292</span>    @Override<a name="line.292"></a>
-<span class="sourceLineNo">293</span>    public HandlerRegistration addDragMoveHandler(DragMoveEvent.DragMoveHandler handler) {<a name="line.293"></a>
-<span class="sourceLineNo">294</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.294"></a>
-<span class="sourceLineNo">295</span>            if (isEnabled()) {<a name="line.295"></a>
-<span class="sourceLineNo">296</span>                handler.onDragMove(event);<a name="line.296"></a>
-<span class="sourceLineNo">297</span>            }<a name="line.297"></a>
-<span class="sourceLineNo">298</span>        }, DragMoveEvent.getType());<a name="line.298"></a>
-<span class="sourceLineNo">299</span>    }<a name="line.299"></a>
-<span class="sourceLineNo">300</span><a name="line.300"></a>
-<span class="sourceLineNo">301</span>    @Override<a name="line.301"></a>
-<span class="sourceLineNo">302</span>    public HandlerRegistration addDragEndHandler(DragEndEvent.DragEndHandler handler) {<a name="line.302"></a>
-<span class="sourceLineNo">303</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.303"></a>
-<span class="sourceLineNo">304</span>            if (isEnabled()) {<a name="line.304"></a>
-<span class="sourceLineNo">305</span>                handler.onDragEnd(event);<a name="line.305"></a>
-<span class="sourceLineNo">306</span>            }<a name="line.306"></a>
-<span class="sourceLineNo">307</span>        }, DragEndEvent.getType());<a name="line.307"></a>
-<span class="sourceLineNo">308</span>    }<a name="line.308"></a>
-<span class="sourceLineNo">309</span><a name="line.309"></a>
-<span class="sourceLineNo">310</span>    @Override<a name="line.310"></a>
-<span class="sourceLineNo">311</span>    public HandlerRegistration addDropActivateHandler(DropActivateEvent.DropActivateHandler handler) {<a name="line.311"></a>
-<span class="sourceLineNo">312</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.312"></a>
-<span class="sourceLineNo">313</span>            if (isEnabled()) {<a name="line.313"></a>
-<span class="sourceLineNo">314</span>                handler.onDropActivate(event);<a name="line.314"></a>
-<span class="sourceLineNo">315</span>            }<a name="line.315"></a>
-<span class="sourceLineNo">316</span>        }, DropActivateEvent.getType());<a name="line.316"></a>
-<span class="sourceLineNo">317</span>    }<a name="line.317"></a>
-<span class="sourceLineNo">318</span><a name="line.318"></a>
-<span class="sourceLineNo">319</span>    @Override<a name="line.319"></a>
-<span class="sourceLineNo">320</span>    public HandlerRegistration addDragEnterHandler(DragEnterEvent.DragEnterHandler handler) {<a name="line.320"></a>
-<span class="sourceLineNo">321</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.321"></a>
-<span class="sourceLineNo">322</span>            if (isEnabled()) {<a name="line.322"></a>
-<span class="sourceLineNo">323</span>                handler.onDragEnter(event);<a name="line.323"></a>
-<span class="sourceLineNo">324</span>            }<a name="line.324"></a>
-<span class="sourceLineNo">325</span>        }, DragEnterEvent.getType());<a name="line.325"></a>
-<span class="sourceLineNo">326</span>    }<a name="line.326"></a>
-<span class="sourceLineNo">327</span><a name="line.327"></a>
-<span class="sourceLineNo">328</span>    @Override<a name="line.328"></a>
-<span class="sourceLineNo">329</span>    public HandlerRegistration addDragLeaveHandler(DragLeaveEvent.DragLeaveHandler handler) {<a name="line.329"></a>
-<span class="sourceLineNo">330</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.330"></a>
-<span class="sourceLineNo">331</span>            if (isEnabled()) {<a name="line.331"></a>
-<span class="sourceLineNo">332</span>                handler.onDragLeave(event);<a name="line.332"></a>
-<span class="sourceLineNo">333</span>            }<a name="line.333"></a>
-<span class="sourceLineNo">334</span>        }, DragLeaveEvent.getType());<a name="line.334"></a>
-<span class="sourceLineNo">335</span>    }<a name="line.335"></a>
-<span class="sourceLineNo">336</span><a name="line.336"></a>
-<span class="sourceLineNo">337</span>    @Override<a name="line.337"></a>
-<span class="sourceLineNo">338</span>    public HandlerRegistration addDragOverHandler(DragOverEvent.DragOverHandler handler) {<a name="line.338"></a>
-<span class="sourceLineNo">339</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.339"></a>
-<span class="sourceLineNo">340</span>            if (isEnabled()) {<a name="line.340"></a>
-<span class="sourceLineNo">341</span>                handler.onDragOver(event);<a name="line.341"></a>
-<span class="sourceLineNo">342</span>            }<a name="line.342"></a>
-<span class="sourceLineNo">343</span>        }, DragOverEvent.getType());<a name="line.343"></a>
-<span class="sourceLineNo">344</span>    }<a name="line.344"></a>
-<span class="sourceLineNo">345</span><a name="line.345"></a>
-<span class="sourceLineNo">346</span>    @Override<a name="line.346"></a>
-<span class="sourceLineNo">347</span>    public HandlerRegistration addDropDeactivateHandler(DropDeactivateEvent.DropDeactivateHandler handler) {<a name="line.347"></a>
-<span class="sourceLineNo">348</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.348"></a>
-<span class="sourceLineNo">349</span>            if (isEnabled()) {<a name="line.349"></a>
-<span class="sourceLineNo">350</span>                handler.onDropDeactivate(event);<a name="line.350"></a>
-<span class="sourceLineNo">351</span>            }<a name="line.351"></a>
-<span class="sourceLineNo">352</span>        }, DropDeactivateEvent.getType());<a name="line.352"></a>
-<span class="sourceLineNo">353</span>    }<a name="line.353"></a>
-<span class="sourceLineNo">354</span><a name="line.354"></a>
-<span class="sourceLineNo">355</span>    @Override<a name="line.355"></a>
-<span class="sourceLineNo">356</span>    public HandlerRegistration addDropHandler(DropEvent.DropHandler handler) {<a name="line.356"></a>
-<span class="sourceLineNo">357</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.357"></a>
-<span class="sourceLineNo">358</span>            if (isEnabled()) {<a name="line.358"></a>
-<span class="sourceLineNo">359</span>                handler.onDrop(event);<a name="line.359"></a>
-<span class="sourceLineNo">360</span>            }<a name="line.360"></a>
-<span class="sourceLineNo">361</span>        }, DropEvent.getType());<a name="line.361"></a>
-<span class="sourceLineNo">362</span>    }<a name="line.362"></a>
-<span class="sourceLineNo">363</span><a name="line.363"></a>
-<span class="sourceLineNo">364</span>    @Override<a name="line.364"></a>
-<span class="sourceLineNo">365</span>    public HandlerRegistration addKeyUpHandler(final KeyUpHandler handler) {<a name="line.365"></a>
-<span class="sourceLineNo">366</span>        return valueBoxBase.addDomHandler(event -&gt; {<a name="line.366"></a>
-<span class="sourceLineNo">367</span>            if (isEnabled()) {<a name="line.367"></a>
-<span class="sourceLineNo">368</span>                handler.onKeyUp(event);<a name="line.368"></a>
-<span class="sourceLineNo">369</span>            }<a name="line.369"></a>
-<span class="sourceLineNo">370</span>        }, KeyUpEvent.getType());<a name="line.370"></a>
-<span class="sourceLineNo">371</span>    }<a name="line.371"></a>
-<span class="sourceLineNo">372</span><a name="line.372"></a>
-<span class="sourceLineNo">373</span>    @Override<a name="line.373"></a>
-<span class="sourceLineNo">374</span>    public HandlerRegistration addChangeHandler(final ChangeHandler handler) {<a name="line.374"></a>
-<span class="sourceLineNo">375</span>        return valueBoxBase.addChangeHandler(event -&gt; {<a name="line.375"></a>
-<span class="sourceLineNo">376</span>            if (isEnabled()) {<a name="line.376"></a>
-<span class="sourceLineNo">377</span>                handler.onChange(event);<a name="line.377"></a>
-<span class="sourceLineNo">378</span>            }<a name="line.378"></a>
-<span class="sourceLineNo">379</span>        });<a name="line.379"></a>
-<span class="sourceLineNo">380</span>    }<a name="line.380"></a>
-<span class="sourceLineNo">381</span><a name="line.381"></a>
-<span class="sourceLineNo">382</span>    @Override<a name="line.382"></a>
-<span class="sourceLineNo">383</span>    public HandlerRegistration addFocusHandler(final FocusHandler handler) {<a name="line.383"></a>
-<span class="sourceLineNo">384</span>        return valueBoxBase.addFocusHandler(event -&gt; {<a name="line.384"></a>
-<span class="sourceLineNo">385</span>            if (isEnabled()) {<a name="line.385"></a>
-<span class="sourceLineNo">386</span>                handler.onFocus(event);<a name="line.386"></a>
-<span class="sourceLineNo">387</span>            }<a name="line.387"></a>
-<span class="sourceLineNo">388</span>        });<a name="line.388"></a>
-<span class="sourceLineNo">389</span>    }<a name="line.389"></a>
-<span class="sourceLineNo">390</span><a name="line.390"></a>
-<span class="sourceLineNo">391</span>    @Override<a name="line.391"></a>
-<span class="sourceLineNo">392</span>    public HandlerRegistration addBlurHandler(final BlurHandler handler) {<a name="line.392"></a>
-<span class="sourceLineNo">393</span>        return valueBoxBase.addBlurHandler(event -&gt; {<a name="line.393"></a>
-<span class="sourceLineNo">394</span>            if (isEnabled()) {<a name="line.394"></a>
-<span class="sourceLineNo">395</span>                handler.onBlur(event);<a name="line.395"></a>
-<span class="sourceLineNo">396</span>            }<a name="line.396"></a>
-<span class="sourceLineNo">397</span>        });<a name="line.397"></a>
-<span class="sourceLineNo">398</span>    }<a name="line.398"></a>
-<span class="sourceLineNo">399</span><a name="line.399"></a>
-<span class="sourceLineNo">400</span>    @Override<a name="line.400"></a>
-<span class="sourceLineNo">401</span>    public HandlerRegistration addGestureStartHandler(final GestureStartHandler handler) {<a name="line.401"></a>
-<span class="sourceLineNo">402</span>        return valueBoxBase.addGestureStartHandler(event -&gt; {<a name="line.402"></a>
-<span class="sourceLineNo">403</span>            if (isEnabled()) {<a name="line.403"></a>
-<span class="sourceLineNo">404</span>                handler.onGestureStart(event);<a name="line.404"></a>
-<span class="sourceLineNo">405</span>            }<a name="line.405"></a>
-<span class="sourceLineNo">406</span>        });<a name="line.406"></a>
-<span class="sourceLineNo">407</span>    }<a name="line.407"></a>
-<span class="sourceLineNo">408</span><a name="line.408"></a>
-<span class="sourceLineNo">409</span>    @Override<a name="line.409"></a>
-<span class="sourceLineNo">410</span>    public HandlerRegistration addGestureChangeHandler(final GestureChangeHandler handler) {<a name="line.410"></a>
-<span class="sourceLineNo">411</span>        return valueBoxBase.addGestureChangeHandler(event -&gt; {<a name="line.411"></a>
-<span class="sourceLineNo">412</span>            if (isEnabled()) {<a name="line.412"></a>
-<span class="sourceLineNo">413</span>                handler.onGestureChange(event);<a name="line.413"></a>
-<span class="sourceLineNo">414</span>            }<a name="line.414"></a>
-<span class="sourceLineNo">415</span>        });<a name="line.415"></a>
-<span class="sourceLineNo">416</span>    }<a name="line.416"></a>
-<span class="sourceLineNo">417</span><a name="line.417"></a>
-<span class="sourceLineNo">418</span>    @Override<a name="line.418"></a>
-<span class="sourceLineNo">419</span>    public HandlerRegistration addGestureEndHandler(final GestureEndHandler handler) {<a name="line.419"></a>
-<span class="sourceLineNo">420</span>        return valueBoxBase.addGestureEndHandler(event -&gt; {<a name="line.420"></a>
-<span class="sourceLineNo">421</span>            if (isEnabled()) {<a name="line.421"></a>
-<span class="sourceLineNo">422</span>                handler.onGestureEnd(event);<a name="line.422"></a>
-<span class="sourceLineNo">423</span>            }<a name="line.423"></a>
-<span class="sourceLineNo">424</span>        });<a name="line.424"></a>
-<span class="sourceLineNo">425</span>    }<a name="line.425"></a>
-<span class="sourceLineNo">426</span><a name="line.426"></a>
-<span class="sourceLineNo">427</span>    @Override<a name="line.427"></a>
-<span class="sourceLineNo">428</span>    public HandlerRegistration addKeyDownHandler(final KeyDownHandler handler) {<a name="line.428"></a>
-<span class="sourceLineNo">429</span>        return valueBoxBase.addKeyDownHandler(event -&gt; {<a name="line.429"></a>
-<span class="sourceLineNo">430</span>            if (isEnabled()) {<a name="line.430"></a>
-<span class="sourceLineNo">431</span>                handler.onKeyDown(event);<a name="line.431"></a>
-<span class="sourceLineNo">432</span>            }<a name="line.432"></a>
-<span class="sourceLineNo">433</span>        });<a name="line.433"></a>
-<span class="sourceLineNo">434</span>    }<a name="line.434"></a>
-<span class="sourceLineNo">435</span><a name="line.435"></a>
-<span class="sourceLineNo">436</span>    @Override<a name="line.436"></a>
-<span class="sourceLineNo">437</span>    public HandlerRegistration addKeyPressHandler(final KeyPressHandler handler) {<a name="line.437"></a>
-<span class="sourceLineNo">438</span>        return valueBoxBase.addKeyPressHandler(event -&gt; {<a name="line.438"></a>
-<span class="sourceLineNo">439</span>            if (isEnabled()) {<a name="line.439"></a>
-<span class="sourceLineNo">440</span>                handler.onKeyPress(event);<a name="line.440"></a>
-<span class="sourceLineNo">441</span>            }<a name="line.441"></a>
-<span class="sourceLineNo">442</span>        });<a name="line.442"></a>
-<span class="sourceLineNo">443</span>    }<a name="line.443"></a>
-<span class="sourceLineNo">444</span><a name="line.444"></a>
-<span class="sourceLineNo">445</span>    @Override<a name="line.445"></a>
-<span class="sourceLineNo">446</span>    public HandlerRegistration addMouseDownHandler(final MouseDownHandler handler) {<a name="line.446"></a>
-<span class="sourceLineNo">447</span>        return valueBoxBase.addMouseDownHandler(event -&gt; {<a name="line.447"></a>
-<span class="sourceLineNo">448</span>            if (isEnabled()) {<a name="line.448"></a>
-<span class="sourceLineNo">449</span>                handler.onMouseDown(event);<a name="line.449"></a>
-<span class="sourceLineNo">450</span>            }<a name="line.450"></a>
-<span class="sourceLineNo">451</span>        });<a name="line.451"></a>
-<span class="sourceLineNo">452</span>    }<a name="line.452"></a>
-<span class="sourceLineNo">453</span><a name="line.453"></a>
-<span class="sourceLineNo">454</span>    @Override<a name="line.454"></a>
-<span class="sourceLineNo">455</span>    public HandlerRegistration addMouseUpHandler(final MouseUpHandler handler) {<a name="line.455"></a>
-<span class="sourceLineNo">456</span>        return valueBoxBase.addMouseUpHandler(event -&gt; {<a name="line.456"></a>
-<span class="sourceLineNo">457</span>            if (isEnabled()) {<a name="line.457"></a>
-<span class="sourceLineNo">458</span>                handler.onMouseUp(event);<a name="line.458"></a>
-<span class="sourceLineNo">459</span>            }<a name="line.459"></a>
-<span class="sourceLineNo">460</span>        });<a name="line.460"></a>
-<span class="sourceLineNo">461</span>    }<a name="line.461"></a>
-<span class="sourceLineNo">462</span><a name="line.462"></a>
-<span class="sourceLineNo">463</span>    @Override<a name="line.463"></a>
-<span class="sourceLineNo">464</span>    public HandlerRegistration addMouseOutHandler(final MouseOutHandler handler) {<a name="line.464"></a>
-<span class="sourceLineNo">465</span>        return valueBoxBase.addMouseOutHandler(event -&gt; {<a name="line.465"></a>
-<span class="sourceLineNo">466</span>            if (isEnabled()) {<a name="line.466"></a>
-<span class="sourceLineNo">467</span>                handler.onMouseOut(event);<a name="line.467"></a>
-<span class="sourceLineNo">468</span>            }<a name="line.468"></a>
-<span class="sourceLineNo">469</span>        });<a name="line.469"></a>
-<span class="sourceLineNo">470</span>    }<a name="line.470"></a>
-<span class="sourceLineNo">471</span><a name="line.471"></a>
-<span class="sourceLineNo">472</span>    @Override<a name="line.472"></a>
-<span class="sourceLineNo">473</span>    public HandlerRegistration addMouseOverHandler(final MouseOverHandler handler) {<a name="line.473"></a>
-<span class="sourceLineNo">474</span>        return valueBoxBase.addMouseOverHandler(event -&gt; {<a name="line.474"></a>
-<span class="sourceLineNo">475</span>            if (isEnabled()) {<a name="line.475"></a>
-<span class="sourceLineNo">476</span>                handler.onMouseOver(event);<a name="line.476"></a>
-<span class="sourceLineNo">477</span>            }<a name="line.477"></a>
-<span class="sourceLineNo">478</span>        });<a name="line.478"></a>
-<span class="sourceLineNo">479</span>    }<a name="line.479"></a>
-<span class="sourceLineNo">480</span><a name="line.480"></a>
-<span class="sourceLineNo">481</span>    @Override<a name="line.481"></a>
-<span class="sourceLineNo">482</span>    public HandlerRegistration addMouseMoveHandler(final MouseMoveHandler handler) {<a name="line.482"></a>
-<span class="sourceLineNo">483</span>        return valueBoxBase.addMouseMoveHandler(event -&gt; {<a name="line.483"></a>
-<span class="sourceLineNo">484</span>            if (isEnabled()) {<a name="line.484"></a>
-<span class="sourceLineNo">485</span>                handler.onMouseMove(event);<a name="line.485"></a>
-<span class="sourceLineNo">486</span>            }<a name="line.486"></a>
-<span class="sourceLineNo">487</span>        });<a name="line.487"></a>
-<span class="sourceLineNo">488</span>    }<a name="line.488"></a>
-<span class="sourceLineNo">489</span><a name="line.489"></a>
-<span class="sourceLineNo">490</span>    @Override<a name="line.490"></a>
-<span class="sourceLineNo">491</span>    public HandlerRegistration addMouseWheelHandler(final MouseWheelHandler handler) {<a name="line.491"></a>
-<span class="sourceLineNo">492</span>        return valueBoxBase.addMouseWheelHandler(event -&gt; {<a name="line.492"></a>
-<span class="sourceLineNo">493</span>            if (isEnabled()) {<a name="line.493"></a>
-<span class="sourceLineNo">494</span>                handler.onMouseWheel(event);<a name="line.494"></a>
-<span class="sourceLineNo">495</span>            }<a name="line.495"></a>
-<span class="sourceLineNo">496</span>        });<a name="line.496"></a>
-<span class="sourceLineNo">497</span>    }<a name="line.497"></a>
-<span class="sourceLineNo">498</span><a name="line.498"></a>
-<span class="sourceLineNo">499</span>    @Override<a name="line.499"></a>
-<span class="sourceLineNo">500</span>    public HandlerRegistration addTouchStartHandler(final TouchStartHandler handler) {<a name="line.500"></a>
-<span class="sourceLineNo">501</span>        return valueBoxBase.addTouchStartHandler(event -&gt; {<a name="line.501"></a>
-<span class="sourceLineNo">502</span>            if (isEnabled()) {<a name="line.502"></a>
-<span class="sourceLineNo">503</span>                handler.onTouchStart(event);<a name="line.503"></a>
-<span class="sourceLineNo">504</span>            }<a name="line.504"></a>
-<span class="sourceLineNo">505</span>        });<a name="line.505"></a>
-<span class="sourceLineNo">506</span>    }<a name="line.506"></a>
-<span class="sourceLineNo">507</span><a name="line.507"></a>
-<span class="sourceLineNo">508</span>    @Override<a name="line.508"></a>
-<span class="sourceLineNo">509</span>    public HandlerRegistration addTouchMoveHandler(final TouchMoveHandler handler) {<a name="line.509"></a>
-<span class="sourceLineNo">510</span>        return valueBoxBase.addTouchMoveHandler(event -&gt; {<a name="line.510"></a>
-<span class="sourceLineNo">511</span>            if (isEnabled()) {<a name="line.511"></a>
-<span class="sourceLineNo">512</span>                handler.onTouchMove(event);<a name="line.512"></a>
-<span class="sourceLineNo">513</span>            }<a name="line.513"></a>
-<span class="sourceLineNo">514</span>        });<a name="line.514"></a>
-<span class="sourceLineNo">515</span>    }<a name="line.515"></a>
-<span class="sourceLineNo">516</span><a name="line.516"></a>
-<span class="sourceLineNo">517</span>    @Override<a name="line.517"></a>
-<span class="sourceLineNo">518</span>    public HandlerRegistration addTouchEndHandler(final TouchEndHandler handler) {<a name="line.518"></a>
-<span class="sourceLineNo">519</span>        return valueBoxBase.addTouchEndHandler(event -&gt; {<a name="line.519"></a>
-<span class="sourceLineNo">520</span>            if (isEnabled()) {<a name="line.520"></a>
-<span class="sourceLineNo">521</span>                handler.onTouchEnd(event);<a name="line.521"></a>
-<span class="sourceLineNo">522</span>            }<a name="line.522"></a>
-<span class="sourceLineNo">523</span>        });<a name="line.523"></a>
-<span class="sourceLineNo">524</span>    }<a name="line.524"></a>
-<span class="sourceLineNo">525</span><a name="line.525"></a>
-<span class="sourceLineNo">526</span>    @Override<a name="line.526"></a>
-<span class="sourceLineNo">527</span>    public HandlerRegistration addTouchCancelHandler(final TouchCancelHandler handler) {<a name="line.527"></a>
-<span class="sourceLineNo">528</span>        return valueBoxBase.addTouchCancelHandler(event -&gt; {<a name="line.528"></a>
-<span class="sourceLineNo">529</span>            if (isEnabled()) {<a name="line.529"></a>
-<span class="sourceLineNo">530</span>                handler.onTouchCancel(event);<a name="line.530"></a>
-<span class="sourceLineNo">531</span>            }<a name="line.531"></a>
-<span class="sourceLineNo">532</span>        });<a name="line.532"></a>
-<span class="sourceLineNo">533</span>    }<a name="line.533"></a>
-<span class="sourceLineNo">534</span><a name="line.534"></a>
-<span class="sourceLineNo">535</span>    @Override<a name="line.535"></a>
-<span class="sourceLineNo">536</span>    public HandlerRegistration addDoubleClickHandler(final DoubleClickHandler handler) {<a name="line.536"></a>
-<span class="sourceLineNo">537</span>        return valueBoxBase.addDoubleClickHandler(event -&gt; {<a name="line.537"></a>
-<span class="sourceLineNo">538</span>            if (isEnabled()) {<a name="line.538"></a>
-<span class="sourceLineNo">539</span>                handler.onDoubleClick(event);<a name="line.539"></a>
-<span class="sourceLineNo">540</span>            }<a name="line.540"></a>
-<span class="sourceLineNo">541</span>        });<a name="line.541"></a>
-<span class="sourceLineNo">542</span>    }<a name="line.542"></a>
-<span class="sourceLineNo">543</span><a name="line.543"></a>
-<span class="sourceLineNo">544</span>    @Override<a name="line.544"></a>
-<span class="sourceLineNo">545</span>    public HandlerRegistration addClickHandler(final ClickHandler handler) {<a name="line.545"></a>
-<span class="sourceLineNo">546</span>        return valueBoxBase.addClickHandler(event -&gt; {<a name="line.546"></a>
-<span class="sourceLineNo">547</span>            if (isEnabled()) {<a name="line.547"></a>
-<span class="sourceLineNo">548</span>                handler.onClick(event);<a name="line.548"></a>
-<span class="sourceLineNo">549</span>            }<a name="line.549"></a>
-<span class="sourceLineNo">550</span>        });<a name="line.550"></a>
-<span class="sourceLineNo">551</span>    }<a name="line.551"></a>
-<span class="sourceLineNo">552</span><a name="line.552"></a>
-<span class="sourceLineNo">553</span>    @Override<a name="line.553"></a>
-<span class="sourceLineNo">554</span>    public void setError(String error) {<a name="line.554"></a>
-<span class="sourceLineNo">555</span>        super.setError(error);<a name="line.555"></a>
+<span class="sourceLineNo">235</span>    @Override<a name="line.235"></a>
+<span class="sourceLineNo">236</span>    public void setValue(T value, boolean fireEvents) {<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        valueBoxBase.setValue(value, fireEvents);<a name="line.237"></a>
+<span class="sourceLineNo">238</span><a name="line.238"></a>
+<span class="sourceLineNo">239</span>        if (value != null &amp;&amp; !value.toString().isEmpty()) {<a name="line.239"></a>
+<span class="sourceLineNo">240</span>            label.addStyleName(CssName.ACTIVE);<a name="line.240"></a>
+<span class="sourceLineNo">241</span>        }<a name="line.241"></a>
+<span class="sourceLineNo">242</span>    }<a name="line.242"></a>
+<span class="sourceLineNo">243</span><a name="line.243"></a>
+<span class="sourceLineNo">244</span>    @Override<a name="line.244"></a>
+<span class="sourceLineNo">245</span>    public void setDirection(Direction direction) {<a name="line.245"></a>
+<span class="sourceLineNo">246</span>        valueBoxBase.setDirection(direction);<a name="line.246"></a>
+<span class="sourceLineNo">247</span>    }<a name="line.247"></a>
+<span class="sourceLineNo">248</span><a name="line.248"></a>
+<span class="sourceLineNo">249</span>    @Override<a name="line.249"></a>
+<span class="sourceLineNo">250</span>    public Direction getDirection() {<a name="line.250"></a>
+<span class="sourceLineNo">251</span>        return valueBoxBase.getDirection();<a name="line.251"></a>
+<span class="sourceLineNo">252</span>    }<a name="line.252"></a>
+<span class="sourceLineNo">253</span><a name="line.253"></a>
+<span class="sourceLineNo">254</span>    @Override<a name="line.254"></a>
+<span class="sourceLineNo">255</span>    public ValueBoxEditor&lt;T&gt; asEditor() {<a name="line.255"></a>
+<span class="sourceLineNo">256</span>        if (editor == null) {<a name="line.256"></a>
+<span class="sourceLineNo">257</span>            editor = new MaterialValueBoxEditor&lt;&gt;(valueBoxBase);<a name="line.257"></a>
+<span class="sourceLineNo">258</span>        }<a name="line.258"></a>
+<span class="sourceLineNo">259</span>        return editor;<a name="line.259"></a>
+<span class="sourceLineNo">260</span>    }<a name="line.260"></a>
+<span class="sourceLineNo">261</span><a name="line.261"></a>
+<span class="sourceLineNo">262</span>    @Override<a name="line.262"></a>
+<span class="sourceLineNo">263</span>    public DirectionEstimator getDirectionEstimator() {<a name="line.263"></a>
+<span class="sourceLineNo">264</span>        return valueBoxBase.getDirectionEstimator();<a name="line.264"></a>
+<span class="sourceLineNo">265</span>    }<a name="line.265"></a>
+<span class="sourceLineNo">266</span><a name="line.266"></a>
+<span class="sourceLineNo">267</span>    @Override<a name="line.267"></a>
+<span class="sourceLineNo">268</span>    public void setDirectionEstimator(boolean enabled) {<a name="line.268"></a>
+<span class="sourceLineNo">269</span>        valueBoxBase.setDirectionEstimator(enabled);<a name="line.269"></a>
+<span class="sourceLineNo">270</span>    }<a name="line.270"></a>
+<span class="sourceLineNo">271</span><a name="line.271"></a>
+<span class="sourceLineNo">272</span>    @Override<a name="line.272"></a>
+<span class="sourceLineNo">273</span>    public void setDirectionEstimator(DirectionEstimator directionEstimator) {<a name="line.273"></a>
+<span class="sourceLineNo">274</span>        valueBoxBase.setDirectionEstimator(directionEstimator);<a name="line.274"></a>
+<span class="sourceLineNo">275</span>    }<a name="line.275"></a>
+<span class="sourceLineNo">276</span><a name="line.276"></a>
+<span class="sourceLineNo">277</span>    @Override<a name="line.277"></a>
+<span class="sourceLineNo">278</span>    public void setName(String name) {<a name="line.278"></a>
+<span class="sourceLineNo">279</span>        valueBoxBase.setName(name);<a name="line.279"></a>
+<span class="sourceLineNo">280</span>    }<a name="line.280"></a>
+<span class="sourceLineNo">281</span><a name="line.281"></a>
+<span class="sourceLineNo">282</span>    @Override<a name="line.282"></a>
+<span class="sourceLineNo">283</span>    public String getName() {<a name="line.283"></a>
+<span class="sourceLineNo">284</span>        return valueBoxBase.getName();<a name="line.284"></a>
+<span class="sourceLineNo">285</span>    }<a name="line.285"></a>
+<span class="sourceLineNo">286</span><a name="line.286"></a>
+<span class="sourceLineNo">287</span>    @Override<a name="line.287"></a>
+<span class="sourceLineNo">288</span>    public HandlerRegistration addDragStartHandler(DragStartEvent.DragStartHandler handler) {<a name="line.288"></a>
+<span class="sourceLineNo">289</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.289"></a>
+<span class="sourceLineNo">290</span>            if (isEnabled()) {<a name="line.290"></a>
+<span class="sourceLineNo">291</span>                handler.onDragStart(event);<a name="line.291"></a>
+<span class="sourceLineNo">292</span>            }<a name="line.292"></a>
+<span class="sourceLineNo">293</span>        }, DragStartEvent.getType());<a name="line.293"></a>
+<span class="sourceLineNo">294</span>    }<a name="line.294"></a>
+<span class="sourceLineNo">295</span><a name="line.295"></a>
+<span class="sourceLineNo">296</span>    @Override<a name="line.296"></a>
+<span class="sourceLineNo">297</span>    public HandlerRegistration addDragMoveHandler(DragMoveEvent.DragMoveHandler handler) {<a name="line.297"></a>
+<span class="sourceLineNo">298</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.298"></a>
+<span class="sourceLineNo">299</span>            if (isEnabled()) {<a name="line.299"></a>
+<span class="sourceLineNo">300</span>                handler.onDragMove(event);<a name="line.300"></a>
+<span class="sourceLineNo">301</span>            }<a name="line.301"></a>
+<span class="sourceLineNo">302</span>        }, DragMoveEvent.getType());<a name="line.302"></a>
+<span class="sourceLineNo">303</span>    }<a name="line.303"></a>
+<span class="sourceLineNo">304</span><a name="line.304"></a>
+<span class="sourceLineNo">305</span>    @Override<a name="line.305"></a>
+<span class="sourceLineNo">306</span>    public HandlerRegistration addDragEndHandler(DragEndEvent.DragEndHandler handler) {<a name="line.306"></a>
+<span class="sourceLineNo">307</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.307"></a>
+<span class="sourceLineNo">308</span>            if (isEnabled()) {<a name="line.308"></a>
+<span class="sourceLineNo">309</span>                handler.onDragEnd(event);<a name="line.309"></a>
+<span class="sourceLineNo">310</span>            }<a name="line.310"></a>
+<span class="sourceLineNo">311</span>        }, DragEndEvent.getType());<a name="line.311"></a>
+<span class="sourceLineNo">312</span>    }<a name="line.312"></a>
+<span class="sourceLineNo">313</span><a name="line.313"></a>
+<span class="sourceLineNo">314</span>    @Override<a name="line.314"></a>
+<span class="sourceLineNo">315</span>    public HandlerRegistration addDropActivateHandler(DropActivateEvent.DropActivateHandler handler) {<a name="line.315"></a>
+<span class="sourceLineNo">316</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.316"></a>
+<span class="sourceLineNo">317</span>            if (isEnabled()) {<a name="line.317"></a>
+<span class="sourceLineNo">318</span>                handler.onDropActivate(event);<a name="line.318"></a>
+<span class="sourceLineNo">319</span>            }<a name="line.319"></a>
+<span class="sourceLineNo">320</span>        }, DropActivateEvent.getType());<a name="line.320"></a>
+<span class="sourceLineNo">321</span>    }<a name="line.321"></a>
+<span class="sourceLineNo">322</span><a name="line.322"></a>
+<span class="sourceLineNo">323</span>    @Override<a name="line.323"></a>
+<span class="sourceLineNo">324</span>    public HandlerRegistration addDragEnterHandler(DragEnterEvent.DragEnterHandler handler) {<a name="line.324"></a>
+<span class="sourceLineNo">325</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.325"></a>
+<span class="sourceLineNo">326</span>            if (isEnabled()) {<a name="line.326"></a>
+<span class="sourceLineNo">327</span>                handler.onDragEnter(event);<a name="line.327"></a>
+<span class="sourceLineNo">328</span>            }<a name="line.328"></a>
+<span class="sourceLineNo">329</span>        }, DragEnterEvent.getType());<a name="line.329"></a>
+<span class="sourceLineNo">330</span>    }<a name="line.330"></a>
+<span class="sourceLineNo">331</span><a name="line.331"></a>
+<span class="sourceLineNo">332</span>    @Override<a name="line.332"></a>
+<span class="sourceLineNo">333</span>    public HandlerRegistration addDragLeaveHandler(DragLeaveEvent.DragLeaveHandler handler) {<a name="line.333"></a>
+<span class="sourceLineNo">334</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.334"></a>
+<span class="sourceLineNo">335</span>            if (isEnabled()) {<a name="line.335"></a>
+<span class="sourceLineNo">336</span>                handler.onDragLeave(event);<a name="line.336"></a>
+<span class="sourceLineNo">337</span>            }<a name="line.337"></a>
+<span class="sourceLineNo">338</span>        }, DragLeaveEvent.getType());<a name="line.338"></a>
+<span class="sourceLineNo">339</span>    }<a name="line.339"></a>
+<span class="sourceLineNo">340</span><a name="line.340"></a>
+<span class="sourceLineNo">341</span>    @Override<a name="line.341"></a>
+<span class="sourceLineNo">342</span>    public HandlerRegistration addDragOverHandler(DragOverEvent.DragOverHandler handler) {<a name="line.342"></a>
+<span class="sourceLineNo">343</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.343"></a>
+<span class="sourceLineNo">344</span>            if (isEnabled()) {<a name="line.344"></a>
+<span class="sourceLineNo">345</span>                handler.onDragOver(event);<a name="line.345"></a>
+<span class="sourceLineNo">346</span>            }<a name="line.346"></a>
+<span class="sourceLineNo">347</span>        }, DragOverEvent.getType());<a name="line.347"></a>
+<span class="sourceLineNo">348</span>    }<a name="line.348"></a>
+<span class="sourceLineNo">349</span><a name="line.349"></a>
+<span class="sourceLineNo">350</span>    @Override<a name="line.350"></a>
+<span class="sourceLineNo">351</span>    public HandlerRegistration addDropDeactivateHandler(DropDeactivateEvent.DropDeactivateHandler handler) {<a name="line.351"></a>
+<span class="sourceLineNo">352</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.352"></a>
+<span class="sourceLineNo">353</span>            if (isEnabled()) {<a name="line.353"></a>
+<span class="sourceLineNo">354</span>                handler.onDropDeactivate(event);<a name="line.354"></a>
+<span class="sourceLineNo">355</span>            }<a name="line.355"></a>
+<span class="sourceLineNo">356</span>        }, DropDeactivateEvent.getType());<a name="line.356"></a>
+<span class="sourceLineNo">357</span>    }<a name="line.357"></a>
+<span class="sourceLineNo">358</span><a name="line.358"></a>
+<span class="sourceLineNo">359</span>    @Override<a name="line.359"></a>
+<span class="sourceLineNo">360</span>    public HandlerRegistration addDropHandler(DropEvent.DropHandler handler) {<a name="line.360"></a>
+<span class="sourceLineNo">361</span>        return valueBoxBase.addHandler(event -&gt; {<a name="line.361"></a>
+<span class="sourceLineNo">362</span>            if (isEnabled()) {<a name="line.362"></a>
+<span class="sourceLineNo">363</span>                handler.onDrop(event);<a name="line.363"></a>
+<span class="sourceLineNo">364</span>            }<a name="line.364"></a>
+<span class="sourceLineNo">365</span>        }, DropEvent.getType());<a name="line.365"></a>
+<span class="sourceLineNo">366</span>    }<a name="line.366"></a>
+<span class="sourceLineNo">367</span><a name="line.367"></a>
+<span class="sourceLineNo">368</span>    @Override<a name="line.368"></a>
+<span class="sourceLineNo">369</span>    public HandlerRegistration addKeyUpHandler(final KeyUpHandler handler) {<a name="line.369"></a>
+<span class="sourceLineNo">370</span>        return valueBoxBase.addDomHandler(event -&gt; {<a name="line.370"></a>
+<span class="sourceLineNo">371</span>            if (isEnabled()) {<a name="line.371"></a>
+<span class="sourceLineNo">372</span>                handler.onKeyUp(event);<a name="line.372"></a>
+<span class="sourceLineNo">373</span>            }<a name="line.373"></a>
+<span class="sourceLineNo">374</span>        }, KeyUpEvent.getType());<a name="line.374"></a>
+<span class="sourceLineNo">375</span>    }<a name="line.375"></a>
+<span class="sourceLineNo">376</span><a name="line.376"></a>
+<span class="sourceLineNo">377</span>    @Override<a name="line.377"></a>
+<span class="sourceLineNo">378</span>    public HandlerRegistration addChangeHandler(final ChangeHandler handler) {<a name="line.378"></a>
+<span class="sourceLineNo">379</span>        return valueBoxBase.addChangeHandler(event -&gt; {<a name="line.379"></a>
+<span class="sourceLineNo">380</span>            if (isEnabled()) {<a name="line.380"></a>
+<span class="sourceLineNo">381</span>                handler.onChange(event);<a name="line.381"></a>
+<span class="sourceLineNo">382</span>            }<a name="line.382"></a>
+<span class="sourceLineNo">383</span>        });<a name="line.383"></a>
+<span class="sourceLineNo">384</span>    }<a name="line.384"></a>
+<span class="sourceLineNo">385</span><a name="line.385"></a>
+<span class="sourceLineNo">386</span>    @Override<a name="line.386"></a>
+<span class="sourceLineNo">387</span>    public HandlerRegistration addFocusHandler(final FocusHandler handler) {<a name="line.387"></a>
+<span class="sourceLineNo">388</span>        return valueBoxBase.addFocusHandler(event -&gt; {<a name="line.388"></a>
+<span class="sourceLineNo">389</span>            if (isEnabled()) {<a name="line.389"></a>
+<span class="sourceLineNo">390</span>                handler.onFocus(event);<a name="line.390"></a>
+<span class="sourceLineNo">391</span>            }<a name="line.391"></a>
+<span class="sourceLineNo">392</span>        });<a name="line.392"></a>
+<span class="sourceLineNo">393</span>    }<a name="line.393"></a>
+<span class="sourceLineNo">394</span><a name="line.394"></a>
+<span class="sourceLineNo">395</span>    @Override<a name="line.395"></a>
+<span class="sourceLineNo">396</span>    public HandlerRegistration addBlurHandler(final BlurHandler handler) {<a name="line.396"></a>
+<span class="sourceLineNo">397</span>        return valueBoxBase.addBlurHandler(event -&gt; {<a name="line.397"></a>
+<span class="sourceLineNo">398</span>            if (isEnabled()) {<a name="line.398"></a>
+<span class="sourceLineNo">399</span>                handler.onBlur(event);<a name="line.399"></a>
+<span class="sourceLineNo">400</span>            }<a name="line.400"></a>
+<span class="sourceLineNo">401</span>        });<a name="line.401"></a>
+<span class="sourceLineNo">402</span>    }<a name="line.402"></a>
+<span class="sourceLineNo">403</span><a name="line.403"></a>
+<span class="sourceLineNo">404</span>    @Override<a name="line.404"></a>
+<span class="sourceLineNo">405</span>    public HandlerRegistration addGestureStartHandler(final GestureStartHandler handler) {<a name="line.405"></a>
+<span class="sourceLineNo">406</span>        return valueBoxBase.addGestureStartHandler(event -&gt; {<a name="line.406"></a>
+<span class="sourceLineNo">407</span>            if (isEnabled()) {<a name="line.407"></a>
+<span class="sourceLineNo">408</span>                handler.onGestureStart(event);<a name="line.408"></a>
+<span class="sourceLineNo">409</span>            }<a name="line.409"></a>
+<span class="sourceLineNo">410</span>        });<a name="line.410"></a>
+<span class="sourceLineNo">411</span>    }<a name="line.411"></a>
+<span class="sourceLineNo">412</span><a name="line.412"></a>
+<span class="sourceLineNo">413</span>    @Override<a name="line.413"></a>
+<span class="sourceLineNo">414</span>    public HandlerRegistration addGestureChangeHandler(final GestureChangeHandler handler) {<a name="line.414"></a>
+<span class="sourceLineNo">415</span>        return valueBoxBase.addGestureChangeHandler(event -&gt; {<a name="line.415"></a>
+<span class="sourceLineNo">416</span>            if (isEnabled()) {<a name="line.416"></a>
+<span class="sourceLineNo">417</span>                handler.onGestureChange(event);<a name="line.417"></a>
+<span class="sourceLineNo">418</span>            }<a name="line.418"></a>
+<span class="sourceLineNo">419</span>        });<a name="line.419"></a>
+<span class="sourceLineNo">420</span>    }<a name="line.420"></a>
+<span class="sourceLineNo">421</span><a name="line.421"></a>
+<span class="sourceLineNo">422</span>    @Override<a name="line.422"></a>
+<span class="sourceLineNo">423</span>    public HandlerRegistration addGestureEndHandler(final GestureEndHandler handler) {<a name="line.423"></a>
+<span class="sourceLineNo">424</span>        return valueBoxBase.addGestureEndHandler(event -&gt; {<a name="line.424"></a>
+<span class="sourceLineNo">425</span>            if (isEnabled()) {<a name="line.425"></a>
+<span class="sourceLineNo">426</span>                handler.onGestureEnd(event);<a name="line.426"></a>
+<span class="sourceLineNo">427</span>            }<a name="line.427"></a>
+<span class="sourceLineNo">428</span>        });<a name="line.428"></a>
+<span class="sourceLineNo">429</span>    }<a name="line.429"></a>
+<span class="sourceLineNo">430</span><a name="line.430"></a>
+<span class="sourceLineNo">431</span>    @Override<a name="line.431"></a>
+<span class="sourceLineNo">432</span>    public HandlerRegistration addKeyDownHandler(final KeyDownHandler handler) {<a name="line.432"></a>
+<span class="sourceLineNo">433</span>        return valueBoxBase.addKeyDownHandler(event -&gt; {<a name="line.433"></a>
+<span class="sourceLineNo">434</span>            if (isEnabled()) {<a name="line.434"></a>
+<span class="sourceLineNo">435</span>                handler.onKeyDown(event);<a name="line.435"></a>
+<span class="sourceLineNo">436</span>            }<a name="line.436"></a>
+<span class="sourceLineNo">437</span>        });<a name="line.437"></a>
+<span class="sourceLineNo">438</span>    }<a name="line.438"></a>
+<span class="sourceLineNo">439</span><a name="line.439"></a>
+<span class="sourceLineNo">440</span>    @Override<a name="line.440"></a>
+<span class="sourceLineNo">441</span>    public HandlerRegistration addKeyPressHandler(final KeyPressHandler handler) {<a name="line.441"></a>
+<span class="sourceLineNo">442</span>        return valueBoxBase.addKeyPressHandler(event -&gt; {<a name="line.442"></a>
+<span class="sourceLineNo">443</span>            if (isEnabled()) {<a name="line.443"></a>
+<span class="sourceLineNo">444</span>                handler.onKeyPress(event);<a name="line.444"></a>
+<span class="sourceLineNo">445</span>            }<a name="line.445"></a>
+<span class="sourceLineNo">446</span>        });<a name="line.446"></a>
+<span class="sourceLineNo">447</span>    }<a name="line.447"></a>
+<span class="sourceLineNo">448</span><a name="line.448"></a>
+<span class="sourceLineNo">449</span>    @Override<a name="line.449"></a>
+<span class="sourceLineNo">450</span>    public HandlerRegistration addMouseDownHandler(final MouseDownHandler handler) {<a name="line.450"></a>
+<span class="sourceLineNo">451</span>        return valueBoxBase.addMouseDownHandler(event -&gt; {<a name="line.451"></a>
+<span class="sourceLineNo">452</span>            if (isEnabled()) {<a name="line.452"></a>
+<span class="sourceLineNo">453</span>                handler.onMouseDown(event);<a name="line.453"></a>
+<span class="sourceLineNo">454</span>            }<a name="line.454"></a>
+<span class="sourceLineNo">455</span>        });<a name="line.455"></a>
+<span class="sourceLineNo">456</span>    }<a name="line.456"></a>
+<span class="sourceLineNo">457</span><a name="line.457"></a>
+<span class="sourceLineNo">458</span>    @Override<a name="line.458"></a>
+<span class="sourceLineNo">459</span>    public HandlerRegistration addMouseUpHandler(final MouseUpHandler handler) {<a name="line.459"></a>
+<span class="sourceLineNo">460</span>        return valueBoxBase.addMouseUpHandler(event -&gt; {<a name="line.460"></a>
+<span class="sourceLineNo">461</span>            if (isEnabled()) {<a name="line.461"></a>
+<span class="sourceLineNo">462</span>                handler.onMouseUp(event);<a name="line.462"></a>
+<span class="sourceLineNo">463</span>            }<a name="line.463"></a>
+<span class="sourceLineNo">464</span>        });<a name="line.464"></a>
+<span class="sourceLineNo">465</span>    }<a name="line.465"></a>
+<span class="sourceLineNo">466</span><a name="line.466"></a>
+<span class="sourceLineNo">467</span>    @Override<a name="line.467"></a>
+<span class="sourceLineNo">468</span>    public HandlerRegistration addMouseOutHandler(final MouseOutHandler handler) {<a name="line.468"></a>
+<span class="sourceLineNo">469</span>        return valueBoxBase.addMouseOutHandler(event -&gt; {<a name="line.469"></a>
+<span class="sourceLineNo">470</span>            if (isEnabled()) {<a name="line.470"></a>
+<span class="sourceLineNo">471</span>                handler.onMouseOut(event);<a name="line.471"></a>
+<span class="sourceLineNo">472</span>            }<a name="line.472"></a>
+<span class="sourceLineNo">473</span>        });<a name="line.473"></a>
+<span class="sourceLineNo">474</span>    }<a name="line.474"></a>
+<span class="sourceLineNo">475</span><a name="line.475"></a>
+<span class="sourceLineNo">476</span>    @Override<a name="line.476"></a>
+<span class="sourceLineNo">477</span>    public HandlerRegistration addMouseOverHandler(final MouseOverHandler handler) {<a name="line.477"></a>
+<span class="sourceLineNo">478</span>        return valueBoxBase.addMouseOverHandler(event -&gt; {<a name="line.478"></a>
+<span class="sourceLineNo">479</span>            if (isEnabled()) {<a name="line.479"></a>
+<span class="sourceLineNo">480</span>                handler.onMouseOver(event);<a name="line.480"></a>
+<span class="sourceLineNo">481</span>            }<a name="line.481"></a>
+<span class="sourceLineNo">482</span>        });<a name="line.482"></a>
+<span class="sourceLineNo">483</span>    }<a name="line.483"></a>
+<span class="sourceLineNo">484</span><a name="line.484"></a>
+<span class="sourceLineNo">485</span>    @Override<a name="line.485"></a>
+<span class="sourceLineNo">486</span>    public HandlerRegistration addMouseMoveHandler(final MouseMoveHandler handler) {<a name="line.486"></a>
+<span class="sourceLineNo">487</span>        return valueBoxBase.addMouseMoveHandler(event -&gt; {<a name="line.487"></a>
+<span class="sourceLineNo">488</span>            if (isEnabled()) {<a name="line.488"></a>
+<span class="sourceLineNo">489</span>                handler.onMouseMove(event);<a name="line.489"></a>
+<span class="sourceLineNo">490</span>            }<a name="line.490"></a>
+<span class="sourceLineNo">491</span>        });<a name="line.491"></a>
+<span class="sourceLineNo">492</span>    }<a name="line.492"></a>
+<span class="sourceLineNo">493</span><a name="line.493"></a>
+<span class="sourceLineNo">494</span>    @Override<a name="line.494"></a>
+<span class="sourceLineNo">495</span>    public HandlerRegistration addMouseWheelHandler(final MouseWheelHandler handler) {<a name="line.495"></a>
+<span class="sourceLineNo">496</span>        return valueBoxBase.addMouseWheelHandler(event -&gt; {<a name="line.496"></a>
+<span class="sourceLineNo">497</span>            if (isEnabled()) {<a name="line.497"></a>
+<span class="sourceLineNo">498</span>                handler.onMouseWheel(event);<a name="line.498"></a>
+<span class="sourceLineNo">499</span>            }<a name="line.499"></a>
+<span class="sourceLineNo">500</span>        });<a name="line.500"></a>
+<span class="sourceLineNo">501</span>    }<a name="line.501"></a>
+<span class="sourceLineNo">502</span><a name="line.502"></a>
+<span class="sourceLineNo">503</span>    @Override<a name="line.503"></a>
+<span class="sourceLineNo">504</span>    public HandlerRegistration addTouchStartHandler(final TouchStartHandler handler) {<a name="line.504"></a>
+<span class="sourceLineNo">505</span>        return valueBoxBase.addTouchStartHandler(event -&gt; {<a name="line.505"></a>
+<span class="sourceLineNo">506</span>            if (isEnabled()) {<a name="line.506"></a>
+<span class="sourceLineNo">507</span>                handler.onTouchStart(event);<a name="line.507"></a>
+<span class="sourceLineNo">508</span>            }<a name="line.508"></a>
+<span class="sourceLineNo">509</span>        });<a name="line.509"></a>
+<span class="sourceLineNo">510</span>    }<a name="line.510"></a>
+<span class="sourceLineNo">511</span><a name="line.511"></a>
+<span class="sourceLineNo">512</span>    @Override<a name="line.512"></a>
+<span class="sourceLineNo">513</span>    public HandlerRegistration addTouchMoveHandler(final TouchMoveHandler handler) {<a name="line.513"></a>
+<span class="sourceLineNo">514</span>        return valueBoxBase.addTouchMoveHandler(event -&gt; {<a name="line.514"></a>
+<span class="sourceLineNo">515</span>            if (isEnabled()) {<a name="line.515"></a>
+<span class="sourceLineNo">516</span>                handler.onTouchMove(event);<a name="line.516"></a>
+<span class="sourceLineNo">517</span>            }<a name="line.517"></a>
+<span class="sourceLineNo">518</span>        });<a name="line.518"></a>
+<span class="sourceLineNo">519</span>    }<a name="line.519"></a>
+<span class="sourceLineNo">520</span><a name="line.520"></a>
+<span class="sourceLineNo">521</span>    @Override<a name="line.521"></a>
+<span class="sourceLineNo">522</span>    public HandlerRegistration addTouchEndHandler(final TouchEndHandler handler) {<a name="line.522"></a>
+<span class="sourceLineNo">523</span>        return valueBoxBase.addTouchEndHandler(event -&gt; {<a name="line.523"></a>
+<span class="sourceLineNo">524</span>            if (isEnabled()) {<a name="line.524"></a>
+<span class="sourceLineNo">525</span>                handler.onTouchEnd(event);<a name="line.525"></a>
+<span class="sourceLineNo">526</span>            }<a name="line.526"></a>
+<span class="sourceLineNo">527</span>        });<a name="line.527"></a>
+<span class="sourceLineNo">528</span>    }<a name="line.528"></a>
+<span class="sourceLineNo">529</span><a name="line.529"></a>
+<span class="sourceLineNo">530</span>    @Override<a name="line.530"></a>
+<span class="sourceLineNo">531</span>    public HandlerRegistration addTouchCancelHandler(final TouchCancelHandler handler) {<a name="line.531"></a>
+<span class="sourceLineNo">532</span>        return valueBoxBase.addTouchCancelHandler(event -&gt; {<a name="line.532"></a>
+<span class="sourceLineNo">533</span>            if (isEnabled()) {<a name="line.533"></a>
+<span class="sourceLineNo">534</span>                handler.onTouchCancel(event);<a name="line.534"></a>
+<span class="sourceLineNo">535</span>            }<a name="line.535"></a>
+<span class="sourceLineNo">536</span>        });<a name="line.536"></a>
+<span class="sourceLineNo">537</span>    }<a name="line.537"></a>
+<span class="sourceLineNo">538</span><a name="line.538"></a>
+<span class="sourceLineNo">539</span>    @Override<a name="line.539"></a>
+<span class="sourceLineNo">540</span>    public HandlerRegistration addDoubleClickHandler(final DoubleClickHandler handler) {<a name="line.540"></a>
+<span class="sourceLineNo">541</span>        return valueBoxBase.addDoubleClickHandler(event -&gt; {<a name="line.541"></a>
+<span class="sourceLineNo">542</span>            if (isEnabled()) {<a name="line.542"></a>
+<span class="sourceLineNo">543</span>                handler.onDoubleClick(event);<a name="line.543"></a>
+<span class="sourceLineNo">544</span>            }<a name="line.544"></a>
+<span class="sourceLineNo">545</span>        });<a name="line.545"></a>
+<span class="sourceLineNo">546</span>    }<a name="line.546"></a>
+<span class="sourceLineNo">547</span><a name="line.547"></a>
+<span class="sourceLineNo">548</span>    @Override<a name="line.548"></a>
+<span class="sourceLineNo">549</span>    public HandlerRegistration addClickHandler(final ClickHandler handler) {<a name="line.549"></a>
+<span class="sourceLineNo">550</span>        return valueBoxBase.addClickHandler(event -&gt; {<a name="line.550"></a>
+<span class="sourceLineNo">551</span>            if (isEnabled()) {<a name="line.551"></a>
+<span class="sourceLineNo">552</span>                handler.onClick(event);<a name="line.552"></a>
+<span class="sourceLineNo">553</span>            }<a name="line.553"></a>
+<span class="sourceLineNo">554</span>        });<a name="line.554"></a>
+<span class="sourceLineNo">555</span>    }<a name="line.555"></a>
 <span class="sourceLineNo">556</span><a name="line.556"></a>
-<span class="sourceLineNo">557</span>        removeErrorModifiers();<a name="line.557"></a>
-<span class="sourceLineNo">558</span>        lblName.setStyleName("red-text");<a name="line.558"></a>
-<span class="sourceLineNo">559</span>        valueBoxBase.getElement().addClassName(CssName.INVALID);<a name="line.559"></a>
-<span class="sourceLineNo">560</span>    }<a name="line.560"></a>
-<span class="sourceLineNo">561</span><a name="line.561"></a>
-<span class="sourceLineNo">562</span>    @Override<a name="line.562"></a>
-<span class="sourceLineNo">563</span>    public void setSuccess(String success) {<a name="line.563"></a>
-<span class="sourceLineNo">564</span>        super.setSuccess(success);<a name="line.564"></a>
-<span class="sourceLineNo">565</span><a name="line.565"></a>
-<span class="sourceLineNo">566</span>        removeErrorModifiers();<a name="line.566"></a>
-<span class="sourceLineNo">567</span>        lblName.setStyleName("green-text");<a name="line.567"></a>
-<span class="sourceLineNo">568</span>        valueBoxBase.getElement().addClassName(CssName.VALID);<a name="line.568"></a>
-<span class="sourceLineNo">569</span>    }<a name="line.569"></a>
+<span class="sourceLineNo">557</span>    @Override<a name="line.557"></a>
+<span class="sourceLineNo">558</span>    public void setError(String error) {<a name="line.558"></a>
+<span class="sourceLineNo">559</span>        super.setError(error);<a name="line.559"></a>
+<span class="sourceLineNo">560</span><a name="line.560"></a>
+<span class="sourceLineNo">561</span>        removeErrorModifiers();<a name="line.561"></a>
+<span class="sourceLineNo">562</span>        label.setStyleName("red-text");<a name="line.562"></a>
+<span class="sourceLineNo">563</span>        label.addStyleName(CssName.ACTIVE);<a name="line.563"></a>
+<span class="sourceLineNo">564</span>        valueBoxBase.getElement().addClassName(CssName.INVALID);<a name="line.564"></a>
+<span class="sourceLineNo">565</span>    }<a name="line.565"></a>
+<span class="sourceLineNo">566</span><a name="line.566"></a>
+<span class="sourceLineNo">567</span>    @Override<a name="line.567"></a>
+<span class="sourceLineNo">568</span>    public void setSuccess(String success) {<a name="line.568"></a>
+<span class="sourceLineNo">569</span>        super.setSuccess(success);<a name="line.569"></a>
 <span class="sourceLineNo">570</span><a name="line.570"></a>
-<span class="sourceLineNo">571</span>    @Override<a name="line.571"></a>
-<span class="sourceLineNo">572</span>    public void clearErrorOrSuccess() {<a name="line.572"></a>
-<span class="sourceLineNo">573</span>        super.clearErrorOrSuccess();<a name="line.573"></a>
-<span class="sourceLineNo">574</span>        removeErrorModifiers();<a name="line.574"></a>
+<span class="sourceLineNo">571</span>        removeErrorModifiers();<a name="line.571"></a>
+<span class="sourceLineNo">572</span>        label.setStyleName("green-text");<a name="line.572"></a>
+<span class="sourceLineNo">573</span>        label.addStyleName(CssName.ACTIVE);<a name="line.573"></a>
+<span class="sourceLineNo">574</span>        valueBoxBase.getElement().addClassName(CssName.VALID);<a name="line.574"></a>
 <span class="sourceLineNo">575</span>    }<a name="line.575"></a>
 <span class="sourceLineNo">576</span><a name="line.576"></a>
 <span class="sourceLineNo">577</span>    @Override<a name="line.577"></a>
-<span class="sourceLineNo">578</span>    public MaterialIcon getIcon() {<a name="line.578"></a>
-<span class="sourceLineNo">579</span>        return icon;<a name="line.579"></a>
-<span class="sourceLineNo">580</span>    }<a name="line.580"></a>
-<span class="sourceLineNo">581</span><a name="line.581"></a>
-<span class="sourceLineNo">582</span>    @Override<a name="line.582"></a>
-<span class="sourceLineNo">583</span>    public void setIconType(IconType iconType) {<a name="line.583"></a>
-<span class="sourceLineNo">584</span>        icon.setIconType(iconType);<a name="line.584"></a>
-<span class="sourceLineNo">585</span>        icon.setIconPrefix(true);<a name="line.585"></a>
-<span class="sourceLineNo">586</span>        lblError.setPaddingLeft(44);<a name="line.586"></a>
-<span class="sourceLineNo">587</span>        insert(icon, 0);<a name="line.587"></a>
-<span class="sourceLineNo">588</span>    }<a name="line.588"></a>
-<span class="sourceLineNo">589</span><a name="line.589"></a>
-<span class="sourceLineNo">590</span>    @Override<a name="line.590"></a>
-<span class="sourceLineNo">591</span>    public void setIconPosition(IconPosition position) {<a name="line.591"></a>
-<span class="sourceLineNo">592</span>        icon.setIconPosition(position);<a name="line.592"></a>
-<span class="sourceLineNo">593</span>    }<a name="line.593"></a>
-<span class="sourceLineNo">594</span><a name="line.594"></a>
-<span class="sourceLineNo">595</span>    @Override<a name="line.595"></a>
-<span class="sourceLineNo">596</span>    public void setIconSize(IconSize size) {<a name="line.596"></a>
-<span class="sourceLineNo">597</span>        icon.setIconSize(size);<a name="line.597"></a>
-<span class="sourceLineNo">598</span>    }<a name="line.598"></a>
-<span class="sourceLineNo">599</span><a name="line.599"></a>
-<span class="sourceLineNo">600</span>    @Override<a name="line.600"></a>
-<span class="sourceLineNo">601</span>    public void setIconFontSize(double size, Style.Unit unit) {<a name="line.601"></a>
-<span class="sourceLineNo">602</span>        icon.setIconFontSize(size, unit);<a name="line.602"></a>
-<span class="sourceLineNo">603</span>    }<a name="line.603"></a>
-<span class="sourceLineNo">604</span><a name="line.604"></a>
-<span class="sourceLineNo">605</span>    @Override<a name="line.605"></a>
-<span class="sourceLineNo">606</span>    public void setIconColor(Color iconColor) {<a name="line.606"></a>
-<span class="sourceLineNo">607</span>        icon.setIconColor(iconColor);<a name="line.607"></a>
-<span class="sourceLineNo">608</span>    }<a name="line.608"></a>
-<span class="sourceLineNo">609</span><a name="line.609"></a>
-<span class="sourceLineNo">610</span>    @Override<a name="line.610"></a>
-<span class="sourceLineNo">611</span>    public void setIconPrefix(boolean prefix) {<a name="line.611"></a>
-<span class="sourceLineNo">612</span>        icon.setIconPrefix(prefix);<a name="line.612"></a>
-<span class="sourceLineNo">613</span>    }<a name="line.613"></a>
-<span class="sourceLineNo">614</span><a name="line.614"></a>
-<span class="sourceLineNo">615</span>    @Override<a name="line.615"></a>
-<span class="sourceLineNo">616</span>    public boolean isIconPrefix() {<a name="line.616"></a>
-<span class="sourceLineNo">617</span>        return icon.isIconPrefix();<a name="line.617"></a>
-<span class="sourceLineNo">618</span>    }<a name="line.618"></a>
-<span class="sourceLineNo">619</span><a name="line.619"></a>
-<span class="sourceLineNo">620</span>    @Override<a name="line.620"></a>
-<span class="sourceLineNo">621</span>    public void setLength(int length) {<a name="line.621"></a>
-<span class="sourceLineNo">622</span>        counterMixin.setLength(length);<a name="line.622"></a>
-<span class="sourceLineNo">623</span>    }<a name="line.623"></a>
-<span class="sourceLineNo">624</span><a name="line.624"></a>
-<span class="sourceLineNo">625</span>    @Override<a name="line.625"></a>
-<span class="sourceLineNo">626</span>    public int getLength() {<a name="line.626"></a>
-<span class="sourceLineNo">627</span>        return counterMixin.getLength();<a name="line.627"></a>
-<span class="sourceLineNo">628</span>    }<a name="line.628"></a>
-<span class="sourceLineNo">629</span><a name="line.629"></a>
-<span class="sourceLineNo">630</span>    @Editor.Ignore<a name="line.630"></a>
-<span class="sourceLineNo">631</span>    public ValueBoxBase&lt;T&gt; asValueBoxBase() {<a name="line.631"></a>
-<span class="sourceLineNo">632</span>        return valueBoxBase;<a name="line.632"></a>
-<span class="sourceLineNo">633</span>    }<a name="line.633"></a>
-<span class="sourceLineNo">634</span><a name="line.634"></a>
-<span class="sourceLineNo">635</span>    @Override<a name="line.635"></a>
-<span class="sourceLineNo">636</span>    public int getTabIndex() {<a name="line.636"></a>
-<span class="sourceLineNo">637</span>        return valueBoxBase.getTabIndex();<a name="line.637"></a>
-<span class="sourceLineNo">638</span>    }<a name="line.638"></a>
-<span class="sourceLineNo">639</span><a name="line.639"></a>
-<span class="sourceLineNo">640</span>    @Override<a name="line.640"></a>
-<span class="sourceLineNo">641</span>    public void setAccessKey(char key) {<a name="line.641"></a>
-<span class="sourceLineNo">642</span>        valueBoxBase.setAccessKey(key);<a name="line.642"></a>
-<span class="sourceLineNo">643</span>    }<a name="line.643"></a>
-<span class="sourceLineNo">644</span><a name="line.644"></a>
-<span class="sourceLineNo">645</span>    @Override<a name="line.645"></a>
-<span class="sourceLineNo">646</span>    public void setFocus(final boolean focused) {<a name="line.646"></a>
-<span class="sourceLineNo">647</span>        Scheduler.get().scheduleDeferred(() -&gt; {<a name="line.647"></a>
-<span class="sourceLineNo">648</span>            valueBoxBase.setFocus(focused);<a name="line.648"></a>
-<span class="sourceLineNo">649</span>            if (focused) {<a name="line.649"></a>
-<span class="sourceLineNo">650</span>                label.addStyleName(CssName.ACTIVE);<a name="line.650"></a>
-<span class="sourceLineNo">651</span>            } else {<a name="line.651"></a>
-<span class="sourceLineNo">652</span>                updateLabelActiveStyle();<a name="line.652"></a>
-<span class="sourceLineNo">653</span>            }<a name="line.653"></a>
-<span class="sourceLineNo">654</span>        });<a name="line.654"></a>
-<span class="sourceLineNo">655</span>    }<a name="line.655"></a>
-<span class="sourceLineNo">656</span><a name="line.656"></a>
-<span class="sourceLineNo">657</span>    /**<a name="line.657"></a>
-<span class="sourceLineNo">658</span>     * Updates the style of the field label according to the field value if the<a name="line.658"></a>
-<span class="sourceLineNo">659</span>     * field value is empty - null or "" - removes the label 'active' style else<a name="line.659"></a>
-<span class="sourceLineNo">660</span>     * will add the 'active' style to the field label.<a name="line.660"></a>
-<span class="sourceLineNo">661</span>     */<a name="line.661"></a>
-<span class="sourceLineNo">662</span>    protected void updateLabelActiveStyle() {<a name="line.662"></a>
-<span class="sourceLineNo">663</span>        if (this.valueBoxBase.getText() != null &amp;&amp; !this.valueBoxBase.getText().isEmpty()) {<a name="line.663"></a>
-<span class="sourceLineNo">664</span>            label.addStyleName(CssName.ACTIVE);<a name="line.664"></a>
-<span class="sourceLineNo">665</span>        } else {<a name="line.665"></a>
-<span class="sourceLineNo">666</span>            label.removeStyleName(CssName.ACTIVE);<a name="line.666"></a>
-<span class="sourceLineNo">667</span>        }<a name="line.667"></a>
-<span class="sourceLineNo">668</span>    }<a name="line.668"></a>
-<span class="sourceLineNo">669</span><a name="line.669"></a>
-<span class="sourceLineNo">670</span>    public String getSelectedText() {<a name="line.670"></a>
-<span class="sourceLineNo">671</span>        return valueBoxBase.getSelectedText();<a name="line.671"></a>
-<span class="sourceLineNo">672</span>    }<a name="line.672"></a>
-<span class="sourceLineNo">673</span><a name="line.673"></a>
-<span class="sourceLineNo">674</span>    public int getSelectionLength() {<a name="line.674"></a>
-<span class="sourceLineNo">675</span>        return valueBoxBase.getSelectionLength();<a name="line.675"></a>
-<span class="sourceLineNo">676</span>    }<a name="line.676"></a>
-<span class="sourceLineNo">677</span><a name="line.677"></a>
-<span class="sourceLineNo">678</span>    public void setSelectionRange(int pos, int length) {<a name="line.678"></a>
-<span class="sourceLineNo">679</span>        valueBoxBase.setSelectionRange(pos, length);<a name="line.679"></a>
-<span class="sourceLineNo">680</span>    }<a name="line.680"></a>
-<span class="sourceLineNo">681</span><a name="line.681"></a>
-<span class="sourceLineNo">682</span>    public ReadOnlyMixin&lt;MaterialValueBox, ValueBoxBase&gt; getReadOnlyMixin() {<a name="line.682"></a>
-<span class="sourceLineNo">683</span>        if (readOnlyMixin == null) {<a name="line.683"></a>
-<span class="sourceLineNo">684</span>            readOnlyMixin = new ReadOnlyMixin&lt;&gt;(this, valueBoxBase);<a name="line.684"></a>
-<span class="sourceLineNo">685</span>        }<a name="line.685"></a>
-<span class="sourceLineNo">686</span>        return readOnlyMixin;<a name="line.686"></a>
-<span class="sourceLineNo">687</span>    }<a name="line.687"></a>
-<span class="sourceLineNo">688</span><a name="line.688"></a>
-<span class="sourceLineNo">689</span>    @Override<a name="line.689"></a>
-<span class="sourceLineNo">690</span>    public void setReadOnly(boolean readOnly) {<a name="line.690"></a>
-<span class="sourceLineNo">691</span>        getReadOnlyMixin().setReadOnly(readOnly);<a name="line.691"></a>
-<span class="sourceLineNo">692</span>    }<a name="line.692"></a>
-<span class="sourceLineNo">693</span><a name="line.693"></a>
-<span class="sourceLineNo">694</span>    @Override<a name="line.694"></a>
-<span class="sourceLineNo">695</span>    public boolean isReadOnly() {<a name="line.695"></a>
-<span class="sourceLineNo">696</span>        return getReadOnlyMixin().isReadOnly();<a name="line.696"></a>
-<span class="sourceLineNo">697</span>    }<a name="line.697"></a>
-<span class="sourceLineNo">698</span><a name="line.698"></a>
-<span class="sourceLineNo">699</span>    @Override<a name="line.699"></a>
-<span class="sourceLineNo">700</span>    public void setToggleReadOnly(boolean toggle) {<a name="line.700"></a>
-<span class="sourceLineNo">701</span>        getReadOnlyMixin().setToggleReadOnly(toggle);<a name="line.701"></a>
-<span class="sourceLineNo">702</span>    }<a name="line.702"></a>
-<span class="sourceLineNo">703</span><a name="line.703"></a>
-<span class="sourceLineNo">704</span>    @Override<a name="line.704"></a>
-<span class="sourceLineNo">705</span>    public boolean isToggleReadOnly() {<a name="line.705"></a>
-<span class="sourceLineNo">706</span>        return getReadOnlyMixin().isToggleReadOnly();<a name="line.706"></a>
-<span class="sourceLineNo">707</span>    }<a name="line.707"></a>
-<span class="sourceLineNo">708</span><a name="line.708"></a>
-<span class="sourceLineNo">709</span>    public void setCursorPos(int pos) {<a name="line.709"></a>
-<span class="sourceLineNo">710</span>        valueBoxBase.setCursorPos(pos);<a name="line.710"></a>
-<span class="sourceLineNo">711</span>    }<a name="line.711"></a>
-<span class="sourceLineNo">712</span><a name="line.712"></a>
-<span class="sourceLineNo">713</span>    public void setAlignment(TextAlignment align) {<a name="line.713"></a>
-<span class="sourceLineNo">714</span>        valueBoxBase.setAlignment(align);<a name="line.714"></a>
-<span class="sourceLineNo">715</span>    }<a name="line.715"></a>
-<span class="sourceLineNo">716</span><a name="line.716"></a>
-<span class="sourceLineNo">717</span>    @Override<a name="line.717"></a>
-<span class="sourceLineNo">718</span>    public void setTabIndex(int tabIndex) {<a name="line.718"></a>
-<span class="sourceLineNo">719</span>        valueBoxBase.setTabIndex(tabIndex);<a name="line.719"></a>
-<span class="sourceLineNo">720</span>    }<a name="line.720"></a>
-<span class="sourceLineNo">721</span><a name="line.721"></a>
-<span class="sourceLineNo">722</span>    @Override<a name="line.722"></a>
-<span class="sourceLineNo">723</span>    public void setEnabled(boolean enabled) {<a name="line.723"></a>
-<span class="sourceLineNo">724</span>        super.setEnabled(enabled);<a name="line.724"></a>
-<span class="sourceLineNo">725</span>        valueBoxBase.setEnabled(enabled);<a name="line.725"></a>
+<span class="sourceLineNo">578</span>    public void clearErrorOrSuccess() {<a name="line.578"></a>
+<span class="sourceLineNo">579</span>        super.clearErrorOrSuccess();<a name="line.579"></a>
+<span class="sourceLineNo">580</span>        removeErrorModifiers();<a name="line.580"></a>
+<span class="sourceLineNo">581</span>    }<a name="line.581"></a>
+<span class="sourceLineNo">582</span><a name="line.582"></a>
+<span class="sourceLineNo">583</span>    @Override<a name="line.583"></a>
+<span class="sourceLineNo">584</span>    public MaterialIcon getIcon() {<a name="line.584"></a>
+<span class="sourceLineNo">585</span>        return icon;<a name="line.585"></a>
+<span class="sourceLineNo">586</span>    }<a name="line.586"></a>
+<span class="sourceLineNo">587</span><a name="line.587"></a>
+<span class="sourceLineNo">588</span>    @Override<a name="line.588"></a>
+<span class="sourceLineNo">589</span>    public void setIconType(IconType iconType) {<a name="line.589"></a>
+<span class="sourceLineNo">590</span>        icon.setIconType(iconType);<a name="line.590"></a>
+<span class="sourceLineNo">591</span>        icon.setIconPrefix(true);<a name="line.591"></a>
+<span class="sourceLineNo">592</span>        lblError.setPaddingLeft(44);<a name="line.592"></a>
+<span class="sourceLineNo">593</span>        insert(icon, 0);<a name="line.593"></a>
+<span class="sourceLineNo">594</span>    }<a name="line.594"></a>
+<span class="sourceLineNo">595</span><a name="line.595"></a>
+<span class="sourceLineNo">596</span>    @Override<a name="line.596"></a>
+<span class="sourceLineNo">597</span>    public void setIconPosition(IconPosition position) {<a name="line.597"></a>
+<span class="sourceLineNo">598</span>        icon.setIconPosition(position);<a name="line.598"></a>
+<span class="sourceLineNo">599</span>    }<a name="line.599"></a>
+<span class="sourceLineNo">600</span><a name="line.600"></a>
+<span class="sourceLineNo">601</span>    @Override<a name="line.601"></a>
+<span class="sourceLineNo">602</span>    public void setIconSize(IconSize size) {<a name="line.602"></a>
+<span class="sourceLineNo">603</span>        icon.setIconSize(size);<a name="line.603"></a>
+<span class="sourceLineNo">604</span>    }<a name="line.604"></a>
+<span class="sourceLineNo">605</span><a name="line.605"></a>
+<span class="sourceLineNo">606</span>    @Override<a name="line.606"></a>
+<span class="sourceLineNo">607</span>    public void setIconFontSize(double size, Style.Unit unit) {<a name="line.607"></a>
+<span class="sourceLineNo">608</span>        icon.setIconFontSize(size, unit);<a name="line.608"></a>
+<span class="sourceLineNo">609</span>    }<a name="line.609"></a>
+<span class="sourceLineNo">610</span><a name="line.610"></a>
+<span class="sourceLineNo">611</span>    @Override<a name="line.611"></a>
+<span class="sourceLineNo">612</span>    public void setIconColor(Color iconColor) {<a name="line.612"></a>
+<span class="sourceLineNo">613</span>        icon.setIconColor(iconColor);<a name="line.613"></a>
+<span class="sourceLineNo">614</span>    }<a name="line.614"></a>
+<span class="sourceLineNo">615</span><a name="line.615"></a>
+<span class="sourceLineNo">616</span>    @Override<a name="line.616"></a>
+<span class="sourceLineNo">617</span>    public void setIconPrefix(boolean prefix) {<a name="line.617"></a>
+<span class="sourceLineNo">618</span>        icon.setIconPrefix(prefix);<a name="line.618"></a>
+<span class="sourceLineNo">619</span>    }<a name="line.619"></a>
+<span class="sourceLineNo">620</span><a name="line.620"></a>
+<span class="sourceLineNo">621</span>    @Override<a name="line.621"></a>
+<span class="sourceLineNo">622</span>    public boolean isIconPrefix() {<a name="line.622"></a>
+<span class="sourceLineNo">623</span>        return icon.isIconPrefix();<a name="line.623"></a>
+<span class="sourceLineNo">624</span>    }<a name="line.624"></a>
+<span class="sourceLineNo">625</span><a name="line.625"></a>
+<span class="sourceLineNo">626</span>    @Override<a name="line.626"></a>
+<span class="sourceLineNo">627</span>    public void setLength(int length) {<a name="line.627"></a>
+<span class="sourceLineNo">628</span>        counterMixin.setLength(length);<a name="line.628"></a>
+<span class="sourceLineNo">629</span>    }<a name="line.629"></a>
+<span class="sourceLineNo">630</span><a name="line.630"></a>
+<span class="sourceLineNo">631</span>    @Override<a name="line.631"></a>
+<span class="sourceLineNo">632</span>    public int getLength() {<a name="line.632"></a>
+<span class="sourceLineNo">633</span>        return counterMixin.getLength();<a name="line.633"></a>
+<span class="sourceLineNo">634</span>    }<a name="line.634"></a>
+<span class="sourceLineNo">635</span><a name="line.635"></a>
+<span class="sourceLineNo">636</span>    @Editor.Ignore<a name="line.636"></a>
+<span class="sourceLineNo">637</span>    public ValueBoxBase&lt;T&gt; asValueBoxBase() {<a name="line.637"></a>
+<span class="sourceLineNo">638</span>        return valueBoxBase;<a name="line.638"></a>
+<span class="sourceLineNo">639</span>    }<a name="line.639"></a>
+<span class="sourceLineNo">640</span><a name="line.640"></a>
+<span class="sourceLineNo">641</span>    @Override<a name="line.641"></a>
+<span class="sourceLineNo">642</span>    public int getTabIndex() {<a name="line.642"></a>
+<span class="sourceLineNo">643</span>        return valueBoxBase.getTabIndex();<a name="line.643"></a>
+<span class="sourceLineNo">644</span>    }<a name="line.644"></a>
+<span class="sourceLineNo">645</span><a name="line.645"></a>
+<span class="sourceLineNo">646</span>    @Override<a name="line.646"></a>
+<span class="sourceLineNo">647</span>    public void setAccessKey(char key) {<a name="line.647"></a>
+<span class="sourceLineNo">648</span>        valueBoxBase.setAccessKey(key);<a name="line.648"></a>
+<span class="sourceLineNo">649</span>    }<a name="line.649"></a>
+<span class="sourceLineNo">650</span><a name="line.650"></a>
+<span class="sourceLineNo">651</span>    @Override<a name="line.651"></a>
+<span class="sourceLineNo">652</span>    public void setFocus(final boolean focused) {<a name="line.652"></a>
+<span class="sourceLineNo">653</span>        Scheduler.get().scheduleDeferred(() -&gt; {<a name="line.653"></a>
+<span class="sourceLineNo">654</span>            valueBoxBase.setFocus(focused);<a name="line.654"></a>
+<span class="sourceLineNo">655</span>            if (focused) {<a name="line.655"></a>
+<span class="sourceLineNo">656</span>                label.addStyleName(CssName.ACTIVE);<a name="line.656"></a>
+<span class="sourceLineNo">657</span>            } else {<a name="line.657"></a>
+<span class="sourceLineNo">658</span>                updateLabelActiveStyle();<a name="line.658"></a>
+<span class="sourceLineNo">659</span>            }<a name="line.659"></a>
+<span class="sourceLineNo">660</span>        });<a name="line.660"></a>
+<span class="sourceLineNo">661</span>    }<a name="line.661"></a>
+<span class="sourceLineNo">662</span><a name="line.662"></a>
+<span class="sourceLineNo">663</span>    /**<a name="line.663"></a>
+<span class="sourceLineNo">664</span>     * Updates the style of the field label according to the field value if the<a name="line.664"></a>
+<span class="sourceLineNo">665</span>     * field value is empty - null or "" - removes the label 'active' style else<a name="line.665"></a>
+<span class="sourceLineNo">666</span>     * will add the 'active' style to the field label.<a name="line.666"></a>
+<span class="sourceLineNo">667</span>     */<a name="line.667"></a>
+<span class="sourceLineNo">668</span>    protected void updateLabelActiveStyle() {<a name="line.668"></a>
+<span class="sourceLineNo">669</span>        if (this.valueBoxBase.getText() != null &amp;&amp; !this.valueBoxBase.getText().isEmpty()) {<a name="line.669"></a>
+<span class="sourceLineNo">670</span>            label.addStyleName(CssName.ACTIVE);<a name="line.670"></a>
+<span class="sourceLineNo">671</span>        } else {<a name="line.671"></a>
+<span class="sourceLineNo">672</span>            label.removeStyleName(CssName.ACTIVE);<a name="line.672"></a>
+<span class="sourceLineNo">673</span>        }<a name="line.673"></a>
+<span class="sourceLineNo">674</span>    }<a name="line.674"></a>
+<span class="sourceLineNo">675</span><a name="line.675"></a>
+<span class="sourceLineNo">676</span>    public String getSelectedText() {<a name="line.676"></a>
+<span class="sourceLineNo">677</span>        return valueBoxBase.getSelectedText();<a name="line.677"></a>
+<span class="sourceLineNo">678</span>    }<a name="line.678"></a>
+<span class="sourceLineNo">679</span><a name="line.679"></a>
+<span class="sourceLineNo">680</span>    public int getSelectionLength() {<a name="line.680"></a>
+<span class="sourceLineNo">681</span>        return valueBoxBase.getSelectionLength();<a name="line.681"></a>
+<span class="sourceLineNo">682</span>    }<a name="line.682"></a>
+<span class="sourceLineNo">683</span><a name="line.683"></a>
+<span class="sourceLineNo">684</span>    public void setSelectionRange(int pos, int length) {<a name="line.684"></a>
+<span class="sourceLineNo">685</span>        valueBoxBase.setSelectionRange(pos, length);<a name="line.685"></a>
+<span class="sourceLineNo">686</span>    }<a name="line.686"></a>
+<span class="sourceLineNo">687</span><a name="line.687"></a>
+<span class="sourceLineNo">688</span>    public ReadOnlyMixin&lt;MaterialValueBox, ValueBoxBase&gt; getReadOnlyMixin() {<a name="line.688"></a>
+<span class="sourceLineNo">689</span>        if (readOnlyMixin == null) {<a name="line.689"></a>
+<span class="sourceLineNo">690</span>            readOnlyMixin = new ReadOnlyMixin&lt;&gt;(this, valueBoxBase);<a name="line.690"></a>
+<span class="sourceLineNo">691</span>        }<a name="line.691"></a>
+<span class="sourceLineNo">692</span>        return readOnlyMixin;<a name="line.692"></a>
+<span class="sourceLineNo">693</span>    }<a name="line.693"></a>
+<span class="sourceLineNo">694</span><a name="line.694"></a>
+<span class="sourceLineNo">695</span>    @Override<a name="line.695"></a>
+<span class="sourceLineNo">696</span>    public void setReadOnly(boolean readOnly) {<a name="line.696"></a>
+<span class="sourceLineNo">697</span>        getReadOnlyMixin().setReadOnly(readOnly);<a name="line.697"></a>
+<span class="sourceLineNo">698</span>    }<a name="line.698"></a>
+<span class="sourceLineNo">699</span><a name="line.699"></a>
+<span class="sourceLineNo">700</span>    @Override<a name="line.700"></a>
+<span class="sourceLineNo">701</span>    public boolean isReadOnly() {<a name="line.701"></a>
+<span class="sourceLineNo">702</span>        return getReadOnlyMixin().isReadOnly();<a name="line.702"></a>
+<span class="sourceLineNo">703</span>    }<a name="line.703"></a>
+<span class="sourceLineNo">704</span><a name="line.704"></a>
+<span class="sourceLineNo">705</span>    @Override<a name="line.705"></a>
+<span class="sourceLineNo">706</span>    public void setToggleReadOnly(boolean toggle) {<a name="line.706"></a>
+<span class="sourceLineNo">707</span>        getReadOnlyMixin().setToggleReadOnly(toggle);<a name="line.707"></a>
+<span class="sourceLineNo">708</span>    }<a name="line.708"></a>
+<span class="sourceLineNo">709</span><a name="line.709"></a>
+<span class="sourceLineNo">710</span>    @Override<a name="line.710"></a>
+<span class="sourceLineNo">711</span>    public boolean isToggleReadOnly() {<a name="line.711"></a>
+<span class="sourceLineNo">712</span>        return getReadOnlyMixin().isToggleReadOnly();<a name="line.712"></a>
+<span class="sourceLineNo">713</span>    }<a name="line.713"></a>
+<span class="sourceLineNo">714</span><a name="line.714"></a>
+<span class="sourceLineNo">715</span>    public void setCursorPos(int pos) {<a name="line.715"></a>
+<span class="sourceLineNo">716</span>        valueBoxBase.setCursorPos(pos);<a name="line.716"></a>
+<span class="sourceLineNo">717</span>    }<a name="line.717"></a>
+<span class="sourceLineNo">718</span><a name="line.718"></a>
+<span class="sourceLineNo">719</span>    public void setAlignment(TextAlignment align) {<a name="line.719"></a>
+<span class="sourceLineNo">720</span>        valueBoxBase.setAlignment(align);<a name="line.720"></a>
+<span class="sourceLineNo">721</span>    }<a name="line.721"></a>
+<span class="sourceLineNo">722</span><a name="line.722"></a>
+<span class="sourceLineNo">723</span>    @Override<a name="line.723"></a>
+<span class="sourceLineNo">724</span>    public void setTabIndex(int tabIndex) {<a name="line.724"></a>
+<span class="sourceLineNo">725</span>        valueBoxBase.setTabIndex(tabIndex);<a name="line.725"></a>
 <span class="sourceLineNo">726</span>    }<a name="line.726"></a>
 <span class="sourceLineNo">727</span><a name="line.727"></a>
 <span class="sourceLineNo">728</span>    @Override<a name="line.728"></a>
-<span class="sourceLineNo">729</span>    public boolean isEnabled() {<a name="line.729"></a>
-<span class="sourceLineNo">730</span>        return valueBoxBase.isEnabled();<a name="line.730"></a>
-<span class="sourceLineNo">731</span>    }<a name="line.731"></a>
-<span class="sourceLineNo">732</span><a name="line.732"></a>
-<span class="sourceLineNo">733</span>    @Override<a name="line.733"></a>
-<span class="sourceLineNo">734</span>    protected ErrorMixin&lt;AbstractValueWidget, MaterialLabel&gt; getErrorMixin() {<a name="line.734"></a>
-<span class="sourceLineNo">735</span>        return errorMixin;<a name="line.735"></a>
-<span class="sourceLineNo">736</span>    }<a name="line.736"></a>
-<span class="sourceLineNo">737</span><a name="line.737"></a>
-<span class="sourceLineNo">738</span>    @Ignore<a name="line.738"></a>
-<span class="sourceLineNo">739</span>    public ValueBoxBase&lt;T&gt; getValueBoxBase() {<a name="line.739"></a>
-<span class="sourceLineNo">740</span>        return valueBoxBase;<a name="line.740"></a>
-<span class="sourceLineNo">741</span>    }<a name="line.741"></a>
-<span class="sourceLineNo">742</span>}<a name="line.742"></a>
+<span class="sourceLineNo">729</span>    public void setEnabled(boolean enabled) {<a name="line.729"></a>
+<span class="sourceLineNo">730</span>        super.setEnabled(enabled);<a name="line.730"></a>
+<span class="sourceLineNo">731</span>        valueBoxBase.setEnabled(enabled);<a name="line.731"></a>
+<span class="sourceLineNo">732</span>    }<a name="line.732"></a>
+<span class="sourceLineNo">733</span><a name="line.733"></a>
+<span class="sourceLineNo">734</span>    @Override<a name="line.734"></a>
+<span class="sourceLineNo">735</span>    public boolean isEnabled() {<a name="line.735"></a>
+<span class="sourceLineNo">736</span>        return valueBoxBase.isEnabled();<a name="line.736"></a>
+<span class="sourceLineNo">737</span>    }<a name="line.737"></a>
+<span class="sourceLineNo">738</span><a name="line.738"></a>
+<span class="sourceLineNo">739</span>    @Override<a name="line.739"></a>
+<span class="sourceLineNo">740</span>    protected ErrorMixin&lt;AbstractValueWidget, MaterialLabel&gt; getErrorMixin() {<a name="line.740"></a>
+<span class="sourceLineNo">741</span>        return errorMixin;<a name="line.741"></a>
+<span class="sourceLineNo">742</span>    }<a name="line.742"></a>
+<span class="sourceLineNo">743</span><a name="line.743"></a>
+<span class="sourceLineNo">744</span>    @Ignore<a name="line.744"></a>
+<span class="sourceLineNo">745</span>    public ValueBoxBase&lt;T&gt; getValueBoxBase() {<a name="line.745"></a>
+<span class="sourceLineNo">746</span>        return valueBoxBase;<a name="line.746"></a>
+<span class="sourceLineNo">747</span>    }<a name="line.747"></a>
+<span class="sourceLineNo">748</span>}<a name="line.748"></a>
 
 
 

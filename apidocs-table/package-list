@@ -5,6 +5,7 @@ gwt.material.design.client.data
 gwt.material.design.client.data.component
 gwt.material.design.client.data.factory
 gwt.material.design.client.data.infinite
+gwt.material.design.client.data.loader
 gwt.material.design.client.jquery
 gwt.material.design.client.js
 gwt.material.design.client.resources

@@ -48,7 +48,7 @@
 <span class="sourceLineNo">040</span> *<a name="line.40"></a>
 <span class="sourceLineNo">041</span> * @author kevzlou7979<a name="line.41"></a>
 <span class="sourceLineNo">042</span> * @author Ben Dol<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!collections"&gt;Material Collections&lt;/a&gt;<a name="line.43"></a>
+<span class="sourceLineNo">043</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#collections"&gt;Material Collections&lt;/a&gt;<a name="line.43"></a>
 <span class="sourceLineNo">044</span> */<a name="line.44"></a>
 <span class="sourceLineNo">045</span>//@formatter:on<a name="line.45"></a>
 <span class="sourceLineNo">046</span>public class MaterialCollectionItem extends MaterialWidget implements HasDismissible, HasAvatar, HasType&lt;CollectionType&gt;, HasActive {<a name="line.46"></a>
@@ -89,65 +89,66 @@
 <span class="sourceLineNo">081</span>        }<a name="line.81"></a>
 <span class="sourceLineNo">082</span>        if (handlerReg != null) {<a name="line.82"></a>
 <span class="sourceLineNo">083</span>            handlerReg.removeHandler();<a name="line.83"></a>
-<span class="sourceLineNo">084</span>        }<a name="line.84"></a>
-<span class="sourceLineNo">085</span>        handlerReg = addClickHandler(event -&gt; {<a name="line.85"></a>
-<span class="sourceLineNo">086</span>            for (Widget w : MaterialCollectionItem.this) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>                if (w instanceof MaterialCollectionSecondary) {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>                    for (Widget a : (MaterialCollectionSecondary) w) {<a name="line.88"></a>
-<span class="sourceLineNo">089</span>                        if (a instanceof HasValue) {<a name="line.89"></a>
-<span class="sourceLineNo">090</span>                            try {<a name="line.90"></a>
-<span class="sourceLineNo">091</span>                                @SuppressWarnings("unchecked")<a name="line.91"></a>
-<span class="sourceLineNo">092</span>                                HasValue&lt;Boolean&gt; cb = (HasValue&lt;Boolean&gt;) a;<a name="line.92"></a>
-<span class="sourceLineNo">093</span>                                if (cb.getValue()) {<a name="line.93"></a>
-<span class="sourceLineNo">094</span>                                    cb.setValue(false);<a name="line.94"></a>
-<span class="sourceLineNo">095</span>                                } else {<a name="line.95"></a>
-<span class="sourceLineNo">096</span>                                    cb.setValue(true);<a name="line.96"></a>
-<span class="sourceLineNo">097</span>                                }<a name="line.97"></a>
-<span class="sourceLineNo">098</span>                            } catch (ClassCastException ex) {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>                                // Ignore non-boolean has value handlers.<a name="line.99"></a>
-<span class="sourceLineNo">100</span>                            }<a name="line.100"></a>
-<span class="sourceLineNo">101</span>                        }<a name="line.101"></a>
-<span class="sourceLineNo">102</span>                    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span>                }<a name="line.103"></a>
-<span class="sourceLineNo">104</span>            }<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        });<a name="line.105"></a>
-<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
-<span class="sourceLineNo">107</span><a name="line.107"></a>
-<span class="sourceLineNo">108</span>    @Override<a name="line.108"></a>
-<span class="sourceLineNo">109</span>    public CollectionType getType() {<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        return typeMixin.getType();<a name="line.110"></a>
-<span class="sourceLineNo">111</span>    }<a name="line.111"></a>
-<span class="sourceLineNo">112</span><a name="line.112"></a>
-<span class="sourceLineNo">113</span>    @Override<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    public void setDismissible(boolean dismissible) {<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        dismissableMixin.setOn(dismissible);<a name="line.115"></a>
-<span class="sourceLineNo">116</span>    }<a name="line.116"></a>
-<span class="sourceLineNo">117</span><a name="line.117"></a>
-<span class="sourceLineNo">118</span>    @Override<a name="line.118"></a>
-<span class="sourceLineNo">119</span>    public boolean isDismissible() {<a name="line.119"></a>
-<span class="sourceLineNo">120</span>        return dismissableMixin.isOn();<a name="line.120"></a>
-<span class="sourceLineNo">121</span>    }<a name="line.121"></a>
-<span class="sourceLineNo">122</span><a name="line.122"></a>
-<span class="sourceLineNo">123</span>    @Override<a name="line.123"></a>
-<span class="sourceLineNo">124</span>    public void setAvatar(boolean avatar) {<a name="line.124"></a>
-<span class="sourceLineNo">125</span>        avatarMixin.setOn(avatar);<a name="line.125"></a>
-<span class="sourceLineNo">126</span>    }<a name="line.126"></a>
-<span class="sourceLineNo">127</span><a name="line.127"></a>
-<span class="sourceLineNo">128</span>    @Override<a name="line.128"></a>
-<span class="sourceLineNo">129</span>    public boolean isAvatar() {<a name="line.129"></a>
-<span class="sourceLineNo">130</span>        return avatarMixin.isOn();<a name="line.130"></a>
-<span class="sourceLineNo">131</span>    }<a name="line.131"></a>
-<span class="sourceLineNo">132</span><a name="line.132"></a>
-<span class="sourceLineNo">133</span>    @Override<a name="line.133"></a>
-<span class="sourceLineNo">134</span>    public void setActive(boolean active) {<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        activeMixin.setActive(active);<a name="line.135"></a>
-<span class="sourceLineNo">136</span>    }<a name="line.136"></a>
-<span class="sourceLineNo">137</span><a name="line.137"></a>
-<span class="sourceLineNo">138</span>    @Override<a name="line.138"></a>
-<span class="sourceLineNo">139</span>    public boolean isActive() {<a name="line.139"></a>
-<span class="sourceLineNo">140</span>        return activeMixin.isActive();<a name="line.140"></a>
-<span class="sourceLineNo">141</span>    }<a name="line.141"></a>
-<span class="sourceLineNo">142</span>}<a name="line.142"></a>
+<span class="sourceLineNo">084</span>            handlerReg = null;<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        }<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        handlerReg = addClickHandler(event -&gt; {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>            for (Widget w : MaterialCollectionItem.this) {<a name="line.87"></a>
+<span class="sourceLineNo">088</span>                if (w instanceof MaterialCollectionSecondary) {<a name="line.88"></a>
+<span class="sourceLineNo">089</span>                    for (Widget a : (MaterialCollectionSecondary) w) {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>                        if (a instanceof HasValue) {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                            try {<a name="line.91"></a>
+<span class="sourceLineNo">092</span>                                @SuppressWarnings("unchecked")<a name="line.92"></a>
+<span class="sourceLineNo">093</span>                                HasValue&lt;Boolean&gt; cb = (HasValue&lt;Boolean&gt;) a;<a name="line.93"></a>
+<span class="sourceLineNo">094</span>                                if (cb.getValue()) {<a name="line.94"></a>
+<span class="sourceLineNo">095</span>                                    cb.setValue(false);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>                                } else {<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                                    cb.setValue(true);<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                                }<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                            } catch (ClassCastException ex) {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>                                // Ignore non-boolean has value handlers.<a name="line.100"></a>
+<span class="sourceLineNo">101</span>                            }<a name="line.101"></a>
+<span class="sourceLineNo">102</span>                        }<a name="line.102"></a>
+<span class="sourceLineNo">103</span>                    }<a name="line.103"></a>
+<span class="sourceLineNo">104</span>                }<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            }<a name="line.105"></a>
+<span class="sourceLineNo">106</span>        });<a name="line.106"></a>
+<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
+<span class="sourceLineNo">108</span><a name="line.108"></a>
+<span class="sourceLineNo">109</span>    @Override<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    public CollectionType getType() {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>        return typeMixin.getType();<a name="line.111"></a>
+<span class="sourceLineNo">112</span>    }<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>    @Override<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public void setDismissible(boolean dismissible) {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        dismissableMixin.setOn(dismissible);<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    @Override<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    public boolean isDismissible() {<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        return dismissableMixin.isOn();<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
+<span class="sourceLineNo">123</span><a name="line.123"></a>
+<span class="sourceLineNo">124</span>    @Override<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    public void setAvatar(boolean avatar) {<a name="line.125"></a>
+<span class="sourceLineNo">126</span>        avatarMixin.setOn(avatar);<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    }<a name="line.127"></a>
+<span class="sourceLineNo">128</span><a name="line.128"></a>
+<span class="sourceLineNo">129</span>    @Override<a name="line.129"></a>
+<span class="sourceLineNo">130</span>    public boolean isAvatar() {<a name="line.130"></a>
+<span class="sourceLineNo">131</span>        return avatarMixin.isOn();<a name="line.131"></a>
+<span class="sourceLineNo">132</span>    }<a name="line.132"></a>
+<span class="sourceLineNo">133</span><a name="line.133"></a>
+<span class="sourceLineNo">134</span>    @Override<a name="line.134"></a>
+<span class="sourceLineNo">135</span>    public void setActive(boolean active) {<a name="line.135"></a>
+<span class="sourceLineNo">136</span>        activeMixin.setActive(active);<a name="line.136"></a>
+<span class="sourceLineNo">137</span>    }<a name="line.137"></a>
+<span class="sourceLineNo">138</span><a name="line.138"></a>
+<span class="sourceLineNo">139</span>    @Override<a name="line.139"></a>
+<span class="sourceLineNo">140</span>    public boolean isActive() {<a name="line.140"></a>
+<span class="sourceLineNo">141</span>        return activeMixin.isActive();<a name="line.141"></a>
+<span class="sourceLineNo">142</span>    }<a name="line.142"></a>
+<span class="sourceLineNo">143</span>}<a name="line.143"></a>
 
 
 

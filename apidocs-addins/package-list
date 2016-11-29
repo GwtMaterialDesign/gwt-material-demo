@@ -16,7 +16,6 @@ gwt.material.design.addins.client.combobox.events
 gwt.material.design.addins.client.combobox.js
 gwt.material.design.addins.client.cutout
 gwt.material.design.addins.client.dnd
-gwt.material.design.addins.client.dnd.base
 gwt.material.design.addins.client.dnd.constants
 gwt.material.design.addins.client.dnd.js
 gwt.material.design.addins.client.docviewer

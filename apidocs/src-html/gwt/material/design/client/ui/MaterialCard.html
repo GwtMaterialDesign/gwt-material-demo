@@ -46,8 +46,8 @@
 <span class="sourceLineNo">038</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.38"></a>
 <span class="sourceLineNo">039</span> * &lt;pre&gt;<a name="line.39"></a>
 <span class="sourceLineNo">040</span> * {@code &lt;!-- Basic Card --&gt;<a name="line.40"></a>
-<span class="sourceLineNo">041</span> * &lt;m:MaterialCard backgroundColor="blue-grey darken-1" grid="l3"&gt;<a name="line.41"></a>
-<span class="sourceLineNo">042</span> *   &lt;m:MaterialCardContent textColor="white"&gt;<a name="line.42"></a>
+<span class="sourceLineNo">041</span> * &lt;m:MaterialCard backgroundColor="BLUE_GREY_DARKEN_1" grid="l3"&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span> *   &lt;m:MaterialCardContent textColor="WHITE"&gt;<a name="line.42"></a>
 <span class="sourceLineNo">043</span> *     &lt;m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/&gt;<a name="line.43"></a>
 <span class="sourceLineNo">044</span> *     &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<a name="line.44"></a>
 <span class="sourceLineNo">045</span> *   &lt;/m:MaterialCardContent&gt;<a name="line.45"></a>
@@ -58,13 +58,13 @@
 <span class="sourceLineNo">050</span> * &lt;/m:MaterialCard&gt;<a name="line.50"></a>
 <span class="sourceLineNo">051</span> *<a name="line.51"></a>
 <span class="sourceLineNo">052</span> * &lt;!-- Image Card --&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * &lt;m:MaterialCard backgroundColor="white" grid="l3"&gt;<a name="line.53"></a>
+<span class="sourceLineNo">053</span> * &lt;m:MaterialCard backgroundColor="WHITE" grid="l3"&gt;<a name="line.53"></a>
 <span class="sourceLineNo">054</span> *   &lt;m:MaterialCardImage waves="LIGHT"&gt;<a name="line.54"></a>
 <span class="sourceLineNo">055</span> *     &lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/&gt;<a name="line.55"></a>
 <span class="sourceLineNo">056</span> *     &lt;m:MaterialCardTitle text="Sample" iconPosition="RIGHT"/&gt;<a name="line.56"></a>
 <span class="sourceLineNo">057</span> *   &lt;/m:MaterialCardImage&gt;<a name="line.57"></a>
 <span class="sourceLineNo">058</span> *<a name="line.58"></a>
-<span class="sourceLineNo">059</span> *   &lt;m:MaterialCardContent textColor="black"&gt;<a name="line.59"></a>
+<span class="sourceLineNo">059</span> *   &lt;m:MaterialCardContent textColor="BLACK"&gt;<a name="line.59"></a>
 <span class="sourceLineNo">060</span> *     &lt;m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." /&gt;<a name="line.60"></a>
 <span class="sourceLineNo">061</span> *   &lt;/m:MaterialCardContent&gt;<a name="line.61"></a>
 <span class="sourceLineNo">062</span> *<a name="line.62"></a>
@@ -98,7 +98,7 @@
 <span class="sourceLineNo">090</span> *<a name="line.90"></a>
 <span class="sourceLineNo">091</span> * @author kevzlou7979<a name="line.91"></a>
 <span class="sourceLineNo">092</span> * @author Ben Dol<a name="line.92"></a>
-<span class="sourceLineNo">093</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#!cards"&gt;Material Cards&lt;/a&gt;<a name="line.93"></a>
+<span class="sourceLineNo">093</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#cards"&gt;Material Cards&lt;/a&gt;<a name="line.93"></a>
 <span class="sourceLineNo">094</span> */<a name="line.94"></a>
 <span class="sourceLineNo">095</span>//@formatter:on<a name="line.95"></a>
 <span class="sourceLineNo">096</span>public class MaterialCard extends MaterialWidget implements HasAxis {<a name="line.96"></a>
@@ -108,7 +108,7 @@
 <span class="sourceLineNo">100</span>    protected HandlerRegistration orientationHandler;<a name="line.100"></a>
 <span class="sourceLineNo">101</span><a name="line.101"></a>
 <span class="sourceLineNo">102</span>    /**<a name="line.102"></a>
-<span class="sourceLineNo">103</span>     * Creates and empty card.<a name="line.103"></a>
+<span class="sourceLineNo">103</span>     * Creates an empty card.<a name="line.103"></a>
 <span class="sourceLineNo">104</span>     */<a name="line.104"></a>
 <span class="sourceLineNo">105</span>    public MaterialCard() {<a name="line.105"></a>
 <span class="sourceLineNo">106</span>        super(Document.get().createDivElement(), CssName.CARD);<a name="line.106"></a>
