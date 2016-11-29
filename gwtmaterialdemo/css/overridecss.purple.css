@@ -81,7 +81,7 @@ blockquote {
 }
 
 /** Window **/
-.window-overlay .window .window-toolbar {
+.window .window-toolbar {
     background-color: #9c27b0 !important;
 }
 
