@@ -26,7 +26,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type.'"/>
-      <m:MaterialCollapsible grid="s12 m6 l8">
+      <m:MaterialCollapsible>
         <!-- ITEM 1 -->
         <m:MaterialCollapsibleItem>
           <m:MaterialCollapsibleHeader>

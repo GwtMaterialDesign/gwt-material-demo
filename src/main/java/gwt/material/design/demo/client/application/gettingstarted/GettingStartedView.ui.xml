@@ -30,7 +30,7 @@
       <m:MaterialPanel addStyleNames="code">
         <m:MaterialTitle title="Setup using Maven Archetype" description="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure."/>
         <demo:PrettyPre addStyleNames="lang-xml-1">
-          &emsp;mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.0-rc2
+          &emsp;mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.0-rc3
         </demo:PrettyPre>
       </m:MaterialPanel>
       <m:MaterialPanel addStyleNames="code">
@@ -42,7 +42,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0-rc2&lt;/version><br/>
+          &emsp;&lt;version>2.0-rc3&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
         <m:MaterialRow>
@@ -52,7 +52,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0-rc2&lt;/version><br/>
+          &emsp;&lt;version>2.0-rc3&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
         <m:MaterialRow>
@@ -62,7 +62,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0-rc2&lt;/version><br/>
+          &emsp;&lt;version>2.0-rc3&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
   
@@ -73,7 +73,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-jquery&lt;/artifactId><br/>
-          &emsp;&lt;version>1.0-rc2&lt;/version><br/>
+          &emsp;&lt;version>1.0-rc3&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
   
@@ -84,7 +84,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-table&lt;/artifactId><br/>
-          &emsp;&lt;version>1.0-rc2&lt;/version><br/>
+          &emsp;&lt;version>1.0-rc3&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
       </m:MaterialPanel>
@@ -162,7 +162,7 @@
     </m:MaterialPanel>
   
     <m:MaterialPanel addStyleNames="code">
-      <m:MaterialTitle title="Themes" description="We created another project for gwtmaterial themes .See below the link of the repo."/>
+      <m:MaterialTitle title="Themes" description="We created another project for gwt material themes .See below the link of the repo."/>
       <m:MaterialLink href="https://github.com/GwtMaterialDesign/gwt-material-themes" text="Gwt Material Themes Github Repo" target="_blank" iconType="LINK" iconPosition="LEFT" textColor="BLUE"/>
       <m:MaterialTitle description="First: Make sure you are using GwtMaterialDesignBasic module (This will not load the materialize.css default file allowing you to customize your design.)" />
       <demo:PrettyPre addStyleNames="lang-xml-1">

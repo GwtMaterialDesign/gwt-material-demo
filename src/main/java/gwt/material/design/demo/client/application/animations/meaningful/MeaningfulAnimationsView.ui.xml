@@ -34,10 +34,14 @@
     <m:MaterialPanel>
         <g:HTMLPanel>
             <m:MaterialPanel addStyleNames="code">
-                <m:MaterialTitle title="Show Grid" description="You can add a transition staggered reveal effect for any Unordered List material widget with List Items."/>
+                <m:MaterialTitle title="Show Grid" description="We provided a delightful animation to display grid in your apps."/>
                 <demo:PrettyPre addStyleNames="lang-java">
-                    &emsp;@UiField MaterialRow rowCards;<br/>
-                    MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
+                    &emsp;MaterialAnimation gridAnimation = new MaterialAnimation();<br/>
+                    gridAnimation.setTransition(Transition.SHOW_GRID);<br/>
+                    gridAnimation.animate(gridPanel);<br/>
+                    // Close Grid<br/>
+                    gridAnimation.setTransition(Transition.CLOSE_GRID);<br/>
+                    gridAnimation.animate(gridPanel);
                 </demo:PrettyPre>
                 <demo:PrettyPre addStyleNames="lang-xml">
                     &emsp;&lt;m:MaterialRow ui:field="rowCards"><br/>
@@ -276,7 +280,9 @@
                 </demo:PrettyPre>
     
                 <demo:PrettyPre addStyleNames="lang-java">
-                    MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
+                   &emsp;MaterialAnimation gridAnimation = new MaterialAnimation();<br/>
+                    gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);<br/>
+                    gridAnimation.animate(listContainer);
                 </demo:PrettyPre>
     
                 <m.html:UnorderedList ui:field="listContainer">
@@ -294,9 +300,11 @@
                     &emsp;&lt;m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
                 </demo:PrettyPre>
                 <demo:PrettyPre addStyleNames="lang-java">
-                    MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
+                    &emsp;MaterialAnimation gridAnimation = new MaterialAnimation();<br/>
+                    gridAnimation.setTransition(Transition.FADE_IN_IMAGE);<br/>
+                    gridAnimation.animate(image);
                 </demo:PrettyPre>
-                <m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" resource="{res.image}"  caption="I love Material Design"/>
+                <m:MaterialImage addStyleNames="{style.block}" opacity="0" ui:field="image" url="http://www.topofandroid.com/wp-content/uploads/2015/05/Android-L-Material-Design-Wallpapers-5.png"  caption="I love Material Design"/>
             </m:MaterialPanel>
         </g:HTMLPanel>
     </m:MaterialPanel>

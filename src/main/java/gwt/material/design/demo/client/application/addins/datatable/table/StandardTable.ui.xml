@@ -26,16 +26,16 @@
 
   <g:HTMLPanel>
     <m:MaterialRow>
-      <m:MaterialColumn grid="s3" marginTop="28">
+      <m:MaterialColumn grid="s12 l3" marginTop="28">
         <m:MaterialCheckBox ui:field="cbCategories" type="FILLED" value="true" text="With Categories"/>
       </m:MaterialColumn>
-      <m:MaterialColumn grid="s3" marginTop="28">
+      <m:MaterialColumn grid="s12 l3" marginTop="28">
         <m:MaterialCheckBox ui:field="cbStickyHeader" type="FILLED" value="true" text="With Sticky Header"/>
       </m:MaterialColumn>
-      <m:MaterialColumn grid="s3" marginTop="28">
+      <m:MaterialColumn grid="s12 l3" marginTop="28">
         <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="true" text="With Row Expansion"/>
       </m:MaterialColumn>
-      <ma:combobox.MaterialComboBox grid="s3" ui:field="listSelectionType" hideSearch="false" label="Selection Type">
+      <ma:combobox.MaterialComboBox grid="s12 l3" ui:field="listSelectionType" hideSearch="false" label="Selection Type">
         <m:html.Option text="NONE" />
         <m:html.Option text="SINGLE" />
         <m:html.Option text="MULTIPLE" />

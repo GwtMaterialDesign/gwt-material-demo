@@ -45,8 +45,9 @@
             <m:MaterialTitle title="Introduction" description="Tree View component requires MaterialTree and MaterialTreeItem to build the component."/>
             <m:MaterialRow>
                 <m:MaterialColumn shadow="1" padding="0" grid="l4 m6 s12" height="500px" overflow="AUTO">
-                    <m:MaterialPanel ui:field="titlePanel" padding="8" height="40px">
+                    <m:MaterialPanel ui:field="titlePanel" backgroundColor="BLUE" padding="8" height="40px">
                         <m:MaterialLabel text="FOLDERS" textColor="WHITE" fontWeight="BOLD" float="LEFT"/>
+                        <m:MaterialIcon ui:field="btnDeselectItem" tooltip="Deselect selected item" iconType="CLEAR" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
                         <m:MaterialIcon ui:field="btnCollapse" tooltip="Collapse" iconType="VERTICAL_ALIGN_CENTER" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
                         <m:MaterialIcon ui:field="btnExpand" tooltip="Expand" iconType="ZOOM_OUT_MAP" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>
                         <m:MaterialIcon ui:field="btnDelete" visible="false" tooltip="Delete" iconType="DELETE" iconColor="WHITE" circle="true" waves="DEFAULT" float="RIGHT"/>

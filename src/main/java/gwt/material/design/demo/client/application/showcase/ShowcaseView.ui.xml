@@ -32,7 +32,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      z-index: 999;
+      z-index: 2;
       background: #fff;
     }
     .panel{
@@ -91,10 +91,10 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup.'"/>
+      <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup."/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
-          <m:MaterialWeather location="Makati, Philippines" color="BLUE"/>
+          <m:MaterialWeather ui:field="weather" location="Makati, Philippines" />
         </m:MaterialColumn>
       </m:MaterialRow>
   

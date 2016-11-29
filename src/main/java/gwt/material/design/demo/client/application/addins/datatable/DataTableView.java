@@ -23,18 +23,13 @@ package gwt.material.design.demo.client.application.addins.datatable;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
-import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.MaterialColumn;
 import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.demo.client.application.addins.datatable.table.*;
-import gwt.material.design.demo.client.application.dto.Links;
 import gwt.material.design.demo.client.application.dto.ScrollspyHelper;
 import gwt.material.design.demo.client.ui.NavigatedView;
 
 import javax.inject.Inject;
-import java.util.List;
 
 public class DataTableView extends NavigatedView implements DataTablePresenter.MyView {
     interface Binder extends UiBinder<Widget, DataTableView> {
@@ -55,10 +50,5 @@ public class DataTableView extends NavigatedView implements DataTablePresenter.M
         pagedTable.add(new PageTable());
         contextMenuTable.add(new StandardContextMenuTable());
         buildScrollSpy(ScrollspyHelper.getDataTable(), menuPanel);
-    }
-
-    @Override
-    public void buildScrollSpy(List<Links> links, MaterialWidget panel) {
-        super.buildScrollSpy(links, panel);
     }
 }

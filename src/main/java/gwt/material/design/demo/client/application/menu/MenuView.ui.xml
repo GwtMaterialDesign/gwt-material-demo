@@ -84,8 +84,8 @@
 				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="2.3em"/>
 				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
 				<m:MaterialPanel marginTop="20">
-					<m:MaterialChip ui:field="chipXml" textColor="WHITE" marginRight="12" letter="&lt;&gt;" text="XML" />
-					<m:MaterialChip ui:field="chipJava" textColor="WHITE" letter="&lt;&gt;" text="JAVA" />
+					<m:MaterialChip ui:field="chipXml" letter="X" textColor="WHITE" marginRight="12" text="XML" />
+					<m:MaterialChip ui:field="chipJava" letter="J" textColor="WHITE" text="JAVA" />
 				</m:MaterialPanel>
 			</m:MaterialPanel>
 		</m:MaterialPanel>
@@ -99,7 +99,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-rc2" textColor="WHITE"/>
+					<m:MaterialBadge text="2.0-rc3" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
@@ -212,7 +212,7 @@
 			<m:MaterialLink targetHistoryToken="{tokens.getCharts}" iconPosition="LEFT" iconType="INSERT_CHART" text="Material Charts" waves="DEFAULT" />
 		</m:MaterialSideNav>
 
-		<m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" fixed="false">
+		<m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" showOnAttach="false" fixed="false">
 			<m:MaterialLink><m:MaterialIcon iconType="POLYMER" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADJUST" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>

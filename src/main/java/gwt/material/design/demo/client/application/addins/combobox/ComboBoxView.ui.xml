@@ -46,11 +46,11 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Label and Placeholder" description="On Combo Box we have two types of labeling your component. They are label and placeholder." />
-                <combobox:MaterialComboBox ui:field="comboTimeZone2" multiple="true" label="This is label" placeholder="This is placeholder" />
+                <combobox:MaterialComboBox ui:field="comboTimeZone2" closeOnSelect="false" multiple="true" label="This is label" placeholder="This is placeholder" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="l12 m12 s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
-                    &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone2" multiple="true" label="This is label" placeholder="This is placeholder" />
+                    &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone2" closeOnSelect="false" multiple="true" label="This is label" placeholder="This is placeholder" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -108,11 +108,11 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Allow Clear" description="We added a built in clear icon to easily clear all items on Multiple Combobox" />
-                <combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" multiple="true" allowClear="true" />
+                <combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" closeOnSelect="false" multiple="true" allowClear="true" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
-                    &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" multiple="true" allowClear="true" />
+                    &emsp;&lt;combobox:MaterialComboBox ui:field="comboTimeZone3" placeholder="TimeZone" closeOnSelect="false" multiple="true" allowClear="true" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -143,11 +143,11 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Multiple Select" description="Just like Autocomplete you can have a capability to select ComboBox options multiple."/>
-                <combobox:MaterialComboBox multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
+                <combobox:MaterialComboBox closeOnSelect="false" multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
-                    &lt;combobox:MaterialComboBox multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
+                    &lt;combobox:MaterialComboBox closeOnSelect="false" multiple="true" ui:field="comboTimeZone4" placeholder="TimeZone"/>
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -193,11 +193,23 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Limit" description="You can set the item limit on multiple combobox."/>
-                <combobox:MaterialComboBox multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
+                <combobox:MaterialComboBox closeOnSelect="false" multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
-                    &emsp;&lt;combobox:MaterialComboBox multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
+                    &emsp;&lt;combobox:MaterialComboBox closeOnSelect="false" multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Close On Select" description="Allow or Prevent the dropdown from closing when a result is selected (Default : true)"/>
+                <combobox:MaterialComboBox closeOnSelect="false"  multiple="true" placeholder="Time Zone" ui:field="comboCloseOnSelect" />
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="s12">
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;combobox:MaterialComboBox closeOnSelect="false" multiple="true" placeholder="Time Zone" ui:field="comboCloseOnSelect" />
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -206,7 +218,7 @@
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Value Change Event" description="This event will be fired when changing values on combobox"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone8" />
-                <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone8_1" />
+                <combobox:MaterialComboBox placeholder="Time Zone" closeOnSelect="false" multiple="true" ui:field="comboTimeZone8_1" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
@@ -221,7 +233,7 @@
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Selection Event" description="This event will be fired when Selecting values on combobox"/>
                 <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeZone9" />
-                <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone9_1" />
+                <combobox:MaterialComboBox placeholder="Time Zone" closeOnSelect="false" multiple="true" ui:field="comboTimeZone9_1" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
@@ -235,7 +247,7 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Remove Item Event" description="This event will be fired when removing item/value on multiple combobox" />
-                <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone11" />
+                <combobox:MaterialComboBox placeholder="Time Zone" closeOnSelect="false" multiple="true" ui:field="comboTimeZone11" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
@@ -271,7 +283,7 @@
                 </demo:PrettyPre>
             </m:MaterialColumn>
             <m:MaterialColumn grid="l6 m6 s12">
-                <combobox:MaterialComboBox allowClear="true" placeholder="Time Zone" multiple="true" ui:field="comboTimeZone12_1" />
+                <combobox:MaterialComboBox allowClear="true" placeholder="Time Zone" closeOnSelect="false" multiple="true" ui:field="comboTimeZone12_1" />
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValues" text="Get Values" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
@@ -297,7 +309,7 @@
             </m:MaterialColumn>
 
             <m:MaterialColumn grid="l6 m6 s12">
-                <combobox:MaterialComboBox placeholder="Time Zone" multiple="true" ui:field="comboTimeZone14" />
+                <combobox:MaterialComboBox placeholder="Time Zone" closeOnSelect="false" multiple="true" ui:field="comboTimeZone14" />
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnSetValues" text="Set 'California' and 'Nevada'" />
                 <m:MaterialButton marginBottom="12" marginRight="12" ui:field="btnGetValues2" text="Get Values" />
             </m:MaterialColumn>

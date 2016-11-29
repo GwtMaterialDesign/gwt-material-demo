@@ -34,11 +34,16 @@
     </ui:style>
     <m:MaterialPanel>
         <m:MaterialPanel addStyleNames="code">
-            <m:MaterialTitle title="Usage" description="You can easily apply animation by calling MaterialAnimator.animate(Transition, Widget, Delay);"/>
+            <m:MaterialTitle title="Note" description="As of Version 2.0 we marked MaterialAnimator as Deprecated, instead we used MaterialAnimation for GMD Animation class" />
             <m:MaterialRow>
-                <m:MaterialColumn grid="s12 l6">
+                <m:MaterialColumn>
                     <demo:PrettyPre addStyleNames="lang-java">
-                        MaterialAnimator.animate(Transition.BOUNCE, card, 300);
+                        &emsp;MaterialAnimation animation = new MaterialAnimation();<br/>
+                        animation.setTransition(transition);<br/>
+                        animation.setDelayMillis(0);<br/>
+                        animation.setDurationMillis(1000);<br/>
+                        animation.setInfinite(false);<br/>
+                        animation.animate(card);
                     </demo:PrettyPre>
                     <m:MaterialCard ui:field="card">
                         <m:MaterialCardContent textColor="WHITE">
@@ -59,12 +64,16 @@
         <m:MaterialPanel addStyleNames="code">
             <m:MaterialTitle title="Infinite" description="You can easily set the animation infinite."/>
             <m:MaterialRow>
-                <m:MaterialColumn grid="s12 l6">
+                <m:MaterialColumn>
                     <demo:PrettyPre addStyleNames="lang-java">
-                        // Play Infinite Animation<br/>
-                        MaterialAnimator.animate(Transition.PULSE, heart, 1000, true);<br/>
-                        // Stop Infinite Animation <br/>
-                        MaterialAnimator.stopAnimation(heart);<br/>
+                        &emsp;MaterialAnimation infiniteAnimation = new MaterialAnimation();<br/>
+                        infiniteAnimation.setTransition(Transition.PULSE);<br/>
+                        infiniteAnimation.setDelayMillis(0);<br/>
+                        infiniteAnimation.setDurationMillis(1000);<br/>
+                        infiniteAnimation.setInfinite(true);<br/>
+                        infiniteAnimation.animate(iconHeart);<br/><br/>
+                        // To stop the infinite animation <br/>
+                        infiniteAnimation.stopAnimation();
                     </demo:PrettyPre>
                     <m:MaterialButton ui:field="iconHeart" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="FAVORITE" backgroundColor="PINK" />
                 </m:MaterialColumn>
@@ -76,36 +85,20 @@
         <m:MaterialPanel addStyleNames="code">
             <m:MaterialTitle title="Callback" description="Setting the callback after animation" />
             <m:MaterialRow>
-                <m:MaterialColumn grid="s12 l6">
+                <m:MaterialColumn>
                     <demo:PrettyPre addStyleNames="lang-java">
-                        &emsp;Runnable callback = new Runnable() {<br/>
-                        &emsp;@Override<br/>
-                        &emsp;public void run() {<br/>
-                        &emsp;&emsp;MaterialToast.fireToast("Animation is finished");<br/>
-                        &emsp;}<br/>
-                        };<br/>
-                        MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, callback);
+                        &emsp;MaterialAnimation animation = new MaterialAnimation();<br/>
+                        animation.setDelayMillis(0);<br/>
+                        animation.setDurationMillis(1000);<br/>
+                        animation.transition(Transition.FLIPINX);<br/>
+                        animation.animate(iconCallback, () -> {<br/>
+                        &emsp;MaterialToast.fireToast("Animation is finished");<br/>
+                        });
                     </demo:PrettyPre>
                     <m:MaterialButton ui:field="iconCallback" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="DIRECTIONS_BIKE" />
                 </m:MaterialColumn>
             </m:MaterialRow>
             <m:MaterialButton ui:field="btnAnimateCallback" text="Animate with Callback" textColor="WHITE"/>
-        </m:MaterialPanel>
-    
-        <m:MaterialPanel addStyleNames="code">
-            <m:MaterialTitle title="Stateful Animation" description="Stateful object holding animation details. Default behaviour is a bounce transition for 800ms." />
-            <m:MaterialRow>
-                <m:MaterialColumn grid="s12 l6">
-                    <demo:PrettyPre addStyleNames="lang-java">
-                        &emsp;new MaterialAnimation().durationMillis(1000)<br/>
-                        &emsp;.delayMillis(100)<br/>
-                        &emsp;.transition(Transition.WOBBLE)<br/>
-                        &emsp;.animate(iconState);
-                    </demo:PrettyPre>
-                    <m:MaterialButton ui:field="iconState" width="100px" height="100px" addStyleNames="{style.icon}" type="FLOATING" size="LARGE" iconType="POLYMER" backgroundColor="PURPLE" />
-                </m:MaterialColumn>
-            </m:MaterialRow>
-            <m:MaterialButton ui:field="btnAnimateStateful" text="Animate" textColor="WHITE"/>
         </m:MaterialPanel>
     </m:MaterialPanel>
 </ui:UiBinder>

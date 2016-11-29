@@ -33,7 +33,6 @@ import gwt.material.design.client.ui.MaterialCard;
 import gwt.material.design.client.ui.MaterialListBox;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 
 import javax.inject.Inject;
@@ -47,10 +46,12 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     MaterialCard card;
 
     @UiField
-    MaterialButton iconHeart, iconCallback, iconState;
+    MaterialButton iconHeart, iconCallback;
 
     @UiField
     MaterialListBox lstAnimations;
+
+    private MaterialAnimation infiniteAnimation;
 
     @Inject
     CoreAnimationsView(Binder uiBinder) {
@@ -151,31 +152,37 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     private void animate() {
         String value = lstAnimations.getSelectedValue();
         Transition transition = Transition.fromStyleName(value);
-        MaterialAnimator.animate(transition, card, 1000);
+        MaterialAnimation animation = new MaterialAnimation();
+        animation.setTransition(transition);
+        animation.setDelayMillis(0);
+        animation.setDurationMillis(1000);
+        animation.setInfinite(false);
+        animation.animate(card);
     }
 
     @UiHandler("btnAnimateInfinite")
     void onAnimateInfinite(ClickEvent e) {
-        MaterialAnimator.animate(Transition.PULSE, iconHeart, 1000, true);
+        infiniteAnimation = new MaterialAnimation();
+        infiniteAnimation.setDelayMillis(0);
+        infiniteAnimation.setTransition(Transition.PULSE);
+        infiniteAnimation.setDurationMillis(1000);
+        infiniteAnimation.setInfinite(true);
+        infiniteAnimation.animate(iconHeart);
     }
 
     @UiHandler("btnStopAnimation")
     void onStopAnimation(ClickEvent e) {
-        MaterialAnimator.stopAnimation(iconHeart);
+        infiniteAnimation.stopAnimation();
     }
 
     @UiHandler("btnAnimateCallback")
     void onCallback(ClickEvent e) {
-        MaterialAnimator.animate(Transition.FLIPINX, iconCallback, 200, () -> {
+        MaterialAnimation animation = new MaterialAnimation();
+        animation.setDelayMillis(0);
+        animation.setDurationMillis(1000);
+        animation.transition(Transition.FLIPINX);
+        animation.animate(iconCallback, () -> {
             MaterialToast.fireToast("Animation is finished");
         });
-    }
-
-    @UiHandler("btnAnimateStateful")
-    void onStateful(ClickEvent e) {
-        new MaterialAnimation().durationMillis(1000)
-                .delayMillis(100)
-                .transition(Transition.WOBBLE)
-                .animate(iconState);
     }
 }

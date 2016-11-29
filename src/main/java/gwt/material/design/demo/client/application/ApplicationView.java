@@ -51,6 +51,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         initWidget(uiBinder.createAndBindUi(this));
         ThemeManager.register(footer);
         ThemeManager.register(footerCopyRight, ThemeManager.DARKER_SHADE);
+        ThemeManager.initialize();
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
         DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));

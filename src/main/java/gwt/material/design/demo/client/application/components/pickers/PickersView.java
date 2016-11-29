@@ -72,7 +72,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
         dpOpenClose.addOpenHandler(event -> {
             if(event.getTarget().getValue() != null){
                 MaterialToast.fireToast("Opened Date Picker " + event.getTarget().getValue());
-            }else{
+            } else {
                 MaterialToast.fireToast("Opened Date Picker" );
             }
         });

@@ -132,7 +132,7 @@
           &emsp;&lt;m:MaterialNavBar><br/>
           &emsp;&emsp;&lt;-- Navbar content goes here --><br/>
           &emsp;&lt;/m:MaterialHeader><br/>
-          &lt;/m:MaterialHeader><br/>
+          &lt;/m:MaterialNavBar><br/>
         </demo:PrettyPre>
       </m:MaterialRow>
   </g:HTMLPanel>

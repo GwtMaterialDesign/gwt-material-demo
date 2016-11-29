@@ -248,8 +248,9 @@ public class CustomTable extends Composite {
                     @Override
                     public void run() {
                         // Clear the content first.
-                        MaterialWidget content = new MaterialWidget(
-                                rowExpand.getRow().find(".content").empty().asElement());
+                        JQueryElement element = rowExpand.getRow().find(".content").empty();
+                        // Assign the jquery element to a GMD Widget
+                        MaterialWidget content = new MaterialWidget(element);
 
                         // Add new content.
                         MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);

@@ -29,6 +29,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.client.ui.html.UnorderedList;
@@ -57,22 +58,30 @@ public class MeaningfulAnimationsView extends ViewImpl implements MeaningfulAnim
 
     @UiHandler("btnCloseGrid")
     void onCloseGrid(ClickEvent e) {
-        MaterialAnimator.animate(Transition.CLOSE_GRID, gridPanel, 0);
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.CLOSE_GRID);
+        gridAnimation.animate(gridPanel);
     }
 
     @UiHandler("btnShowGrid")
     void onShowGrid(ClickEvent e) {
-        MaterialAnimator.animate(Transition.SHOW_GRID, gridPanel, 0);
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.SHOW_GRID);
+        gridAnimation.animate(gridPanel);
     }
 
     @UiHandler("btnStaggered")
     void onStaggered(ClickEvent e) {
-        MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.SHOW_STAGGERED_LIST);
+        gridAnimation.animate(listContainer);
     }
 
     @UiHandler("btnFade")
     void onFade(ClickEvent e) {
-        MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
+        MaterialAnimation gridAnimation = new MaterialAnimation();
+        gridAnimation.setTransition(Transition.FADE_IN_IMAGE);
+        gridAnimation.animate(image);
     }
 
 }

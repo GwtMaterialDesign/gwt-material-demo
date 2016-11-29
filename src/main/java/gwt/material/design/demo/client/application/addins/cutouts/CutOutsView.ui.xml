@@ -41,7 +41,7 @@
             <m:MaterialIcon iconType="POLYMER" ui:field="btnCutOut"/>
     
             <!-- Material CutOut -->
-            <ma:cutout.MaterialCutOut ui:field="cutout" backgroundColor="BLUE" circle="true" opacity="0.8" textAlign="CENTER">
+            <ma:cutout.MaterialCutOut ui:field="cutout" circle="true" opacity="0.8" textAlign="CENTER">
                 <m:MaterialTitle title="New Feature" description="Description of your new Feature" textColor="WHITE"/>
                 <m:MaterialButton text="Close" ui:field="btnCutOutClose" textColor="BLUE" backgroundColor="WHITE"/>
             </ma:cutout.MaterialCutOut>

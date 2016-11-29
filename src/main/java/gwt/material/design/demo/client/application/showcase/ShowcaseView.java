@@ -29,6 +29,8 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialSplashScreen;
+import gwt.material.design.client.ui.MaterialWeather;
+import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
 
@@ -39,9 +41,14 @@ public class ShowcaseView extends ViewImpl implements ShowcasePresenter.MyView {
     @UiField
     MaterialSplashScreen splash;
 
+    @UiField
+    MaterialWeather weather;
+
     @Inject
     ShowcaseView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        ThemeManager.register(weather);
+        ThemeManager.register(splash);
     }
 
     @UiHandler("btnSplashScreen")

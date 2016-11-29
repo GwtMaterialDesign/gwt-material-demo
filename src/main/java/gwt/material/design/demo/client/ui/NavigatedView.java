@@ -38,7 +38,7 @@ import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class NavigatedView extends ViewImpl implements HasScrollspy {
 
-    MaterialScrollspy scrollspy = new MaterialScrollspy();
+    protected MaterialScrollspy scrollspy = new MaterialScrollspy();
     MaterialWidget panel;
 
     @Override

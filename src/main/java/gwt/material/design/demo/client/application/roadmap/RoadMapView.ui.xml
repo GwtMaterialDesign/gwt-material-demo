@@ -29,6 +29,19 @@
         }
     </ui:style>
     <m:MaterialRow marginTop="60">
+        <!-- 2.0-rc3 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.0-rc3" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="November 2016"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="RED" text="Performance Improvement on Addins" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
         <!-- 2.0-rc2 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">

@@ -36,48 +36,59 @@
   <m:MaterialRow>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
-      <m:MaterialTextBox placeholder="First Name" grid="s12"/>
-      <m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
+      <m:MaterialTextBox label="First Name" grid="s12"/>
+      <m:MaterialTextBox label="Email" iconType="ACCOUNT_CIRCLE" grid="s12"/>
       
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox placeholder="First Name" /><br/>
-        &lt;m:MaterialTextBox placeholder="Email" iconType="ACCOUNT_CIRCLE" /><br/>
+        &emsp;&lt;m:MaterialTextBox label="First Name" /><br/>
+        &lt;m:MaterialTextBox label="Email" iconType="ACCOUNT_CIRCLE" /><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Placeholder and Label" description="There are two types of showing labels to the textbox, the floating inline labels move to float above the field. While the other is called Placeholder or Hint Text which will be hidden once user types on the textbox."/>
+      <m:MaterialTextBox label="This is a label" grid="s12"/>
+      <m:MaterialTextBox placeholder="This is a placeholder" grid="s12"/>
+    
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialTextBox label="This is a label" grid="s12"/><br/>
+        &lt;m:MaterialTextBox placeholder="This is a placeholder" grid="s12"/>
       </demo:PrettyPre>
     </m:MaterialRow>
     
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Textarea" description="Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
-      <m:MaterialTextArea placeholder="Content" grid="s12"/>
-      <m:MaterialTextArea placeholder="About" iconType="FACE" grid="s12"/>
+      <m:MaterialTextArea label="Content" grid="s12"/>
+      <m:MaterialTextArea label="About" iconType="FACE" grid="s12"/>
       
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextArea placeholder="Content" /><br/>
-        &lt;m:MaterialTextArea ui:field="txtArea" placeholder="About" iconType="FACE"/><br/>
+        &emsp;&lt;m:MaterialTextArea label="Content" /><br/>
+        &lt;m:MaterialTextArea ui:field="txtArea" label="About" iconType="FACE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Textarea" description="Textareas use a resize policy that can be configured to suit your need. "/>
-      <m:MaterialTextArea ui:field="txtAreaAuto" placeholder="Using AUTO" resizeRule="AUTO" grid="s12"/>
+      <m:MaterialTextArea ui:field="txtAreaAuto" label="Using AUTO" resizeRule="AUTO" grid="s12"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;m:MaterialTextArea placeholder="Using AUTO" resizeRule="AUTO"/><br/>
+        &lt;m:MaterialTextArea label="Using AUTO" resizeRule="AUTO"/><br/>
       </demo:PrettyPre>
   
-      <m:MaterialTextArea ui:field="txtAreaFocus" placeholder="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
+      <m:MaterialTextArea ui:field="txtAreaFocus" label="Using FOCUS" resizeRule="FOCUS" grid="s12"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;m:MaterialTextArea placeholder="Using FOCUS" resizeRule="FOCUS"/><br/>
+        &lt;m:MaterialTextArea label="Using FOCUS" resizeRule="FOCUS"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Character Counter" description="Use a character counter in fields where a character restriction is in place."/>
-      <m:MaterialTextBox placeholder="Input Text" length="10" grid="s12"/>
-      <m:MaterialTextArea placeholder="Text Area" length="120" grid="s12"/>
+      <m:MaterialTextBox label="Input Text" length="10" grid="s12"/>
+      <m:MaterialTextArea label="Text Area" length="120" grid="s12"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox placeholder="Input Text" length="10"/><br/>
-        &lt;m:MaterialTextArea placeholder="Text Area" length="120"/><br/>
+        &emsp;&lt;m:MaterialTextBox label="Input Text" length="10"/><br/>
+        &lt;m:MaterialTextArea label="Text Area" length="120"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -85,24 +96,24 @@
       <!-- MaterialNumber boxes -->
       <m:MaterialTitle title="Number Value Box" description="We provided additional value boxes : Material Float, Integer, Double and Long boxes for specific data format." />
       <!-- Float box -->
-      <m:MaterialFloatBox ui:field="txtFloatBox" placeholder="Float value" grid="s12"/>
+      <m:MaterialFloatBox ui:field="txtFloatBox" label="Float value" grid="s12"/>
       <!-- Integer box -->
-      <m:MaterialIntegerBox ui:field="txtIntegerBox" placeholder="Integer value" grid="s12"/>
+      <m:MaterialIntegerBox ui:field="txtIntegerBox" label="Integer value" grid="s12"/>
       <!-- Double box -->
-      <m:MaterialDoubleBox ui:field="txtDoubleBox" placeholder="Double value" grid="s12"/>
+      <m:MaterialDoubleBox ui:field="txtDoubleBox" label="Double value" grid="s12"/>
       <!-- Long Box -->
-      <m:MaterialLongBox ui:field="txtLongBox" placeholder="Long value" grid="s12"/>
+      <m:MaterialLongBox ui:field="txtLongBox" label="Long value" grid="s12"/>
       <m.demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;!-- MaterialNumber boxes --><br/>
         &lt;m:MaterialTitle title="Number Value Box" description="We provided additional value boxes : Material Float, Integer, Double and Long boxes for specific data format." /><br/>
         &lt;!-- Float box --><br/>
-        &lt;m:MaterialFloatBox ui:field="txtFloatBox" placeholder="Float value"/><br/>
+        &lt;m:MaterialFloatBox ui:field="txtFloatBox" label="Float value"/><br/>
         &lt;!-- Integer box --><br/>
-        &lt;m:MaterialIntegerBox ui:field="txtIntegerBox" placeholder="Integer value"/><br/>
+        &lt;m:MaterialIntegerBox ui:field="txtIntegerBox" label="Integer value"/><br/>
         &lt;!-- Double box --><br/>
-        &lt;m:MaterialDoubleBox ui:field="txtDoubleBox" placeholder="Double value"/><br/>
+        &lt;m:MaterialDoubleBox ui:field="txtDoubleBox" label="Double value"/><br/>
         &lt;!-- Long Box --><br/>
-        &lt;m:MaterialLongBox ui:field="txtLongBox" placeholder="Long value"/><br/><br/><br/>
+        &lt;m:MaterialLongBox ui:field="txtLongBox" label="Long value"/><br/><br/><br/>
         
         <!-- Java Usage -->
         txtFloatBox.setValue(1000.25f);<br/>
@@ -114,45 +125,45 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Disabled Styles" description="You can disable any text field by adding enabled='false'"/>
-      <m:MaterialTextBox enabled="false" placeholder="TextBox" grid="s12"/>
-      <m:MaterialTextArea enabled="false" placeholder="TextArea" grid="s12"/>
-      <m:MaterialFloatBox enabled="false" placeholder="FloatBox" grid="s12"/>
-      <m:MaterialIntegerBox enabled="false" placeholder="IntegerBox" grid="s12"/>
-      <m:MaterialDoubleBox enabled="false" placeholder="DoubleBox" grid="s12"/>
-      <m:MaterialLongBox enabled="false" placeholder="LongBox" grid="s12"/>
+      <m:MaterialTextBox enabled="false" label="TextBox" grid="s12"/>
+      <m:MaterialTextArea enabled="false" label="TextArea" grid="s12"/>
+      <m:MaterialFloatBox enabled="false" label="FloatBox" grid="s12"/>
+      <m:MaterialIntegerBox enabled="false" label="IntegerBox" grid="s12"/>
+      <m:MaterialDoubleBox enabled="false" label="DoubleBox" grid="s12"/>
+      <m:MaterialLongBox enabled="false" label="LongBox" grid="s12"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox enabled="false" placeholder="TextBox" /><br/>
-        &lt;m:MaterialTextArea enabled="false" placeholder="TextArea" /><br/>
-        &lt;m:MaterialFloatBox enabled="false" placeholder="FloatBox"/><br/>
-        &lt;m:MaterialIntegerBox enabled="false" placeholder="IntegerBox"/><br/>
-        &lt;m:MaterialDoubleBox enabled="false" placeholder="DoubleBox"/><br/>
-        &lt;m:MaterialLongBox enabled="false" placeholder="LongBox"/><br/>
+        &emsp;&lt;m:MaterialTextBox enabled="false" label="TextBox" /><br/>
+        &lt;m:MaterialTextArea enabled="false" label="TextArea" /><br/>
+        &lt;m:MaterialFloatBox enabled="false" label="FloatBox"/><br/>
+        &lt;m:MaterialIntegerBox enabled="false" label="IntegerBox"/><br/>
+        &lt;m:MaterialDoubleBox enabled="false" label="DoubleBox"/><br/>
+        &lt;m:MaterialLongBox enabled="false" label="LongBox"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Read Only" description="Easily convert your editable fields to read mode." />
-      <m:MaterialTextBox readOnly="true" text="Some Value" placeholder="TextBox" grid="s12"/>
-      <m:MaterialTextArea readOnly="true" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa eget ex auctor tempus. Aenean vitae augue euismod, lacinia lectus ut, rhoncus enim. Sed vitae laoreet felis, eget ullamcorper nunc. Vivamus elit urna, varius et arcu vel, euismod auctor augue. Praesent scelerisque scelerisque libero sit amet euismod. Mauris eu est at felis feugiat tincidunt eu vel lectus. Ut pretium magna vitae massa sollicitudin, eu tincidunt sapien scelerisque. Maecenas gravida lorem non dui pretium, id vestibulum mi imperdiet. Fusce facilisis, dui nec ultrices molestie, nisi metus bibendum lacus, eget posuere est odio vitae nulla. Mauris laoreet non justo fringilla tempus. Mauris ut risus risus. Vivamus auctor accumsan gravida. Nam venenatis sapien nisl, quis accumsan odio dignissim non. Vestibulum aliquam semper condimentum. Suspendisse a eros elementum, dapibus quam in, aliquet lorem. Morbi mi dui, convallis at luctus ultricies, malesuada at leo. Morbi et turpis a ex vehicula ullamcorper. Vestibulum lacinia, orci eget elementum fermentum, lectus velit interdum erat, sit amet pharetra justo elit in tortor. Suspendisse ac vestibulum nisi.Nunc euismod metus nec elit sollicitudin blandit. Proin eleifend ex bibendum sodales blandit. Vestibulum varius pharetra arcu, sit amet pellentesque odio hendrerit nec. Integer faucibus imperdiet tortor a tempus. Sed accumsan condimentum nisl. Cras interdum sapien quis maximus commodo. Nulla malesuada imperdiet enim, non ornare elit auctor in. Fusce at ipsum eget turpis tincidunt maximus. Nunc sodales tortor nec tincidunt fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, blandit eu lacus nec, finibus tempus ligula." placeholder="TextArea" grid="s12"/>
-      <m:MaterialFloatBox ui:field="txtFloatRO" readOnly="true" placeholder="FloatBox" grid="s12"/>
-      <m:MaterialIntegerBox ui:field="txtIntegerRO" readOnly="true" placeholder="IntegerBox" grid="s12"/>
-      <m:MaterialDoubleBox ui:field="txtDoubleRO" readOnly="true" placeholder="DoubleBox" grid="s12"/>
-      <m:MaterialLongBox ui:field="txtLongRO" readOnly="true" placeholder="LongBox" grid="s12"/>
+      <m:MaterialTextBox readOnly="true" text="Some Value" label="TextBox" grid="s12"/>
+      <m:MaterialTextArea readOnly="true" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa eget ex auctor tempus. Aenean vitae augue euismod, lacinia lectus ut, rhoncus enim. Sed vitae laoreet felis, eget ullamcorper nunc. Vivamus elit urna, varius et arcu vel, euismod auctor augue. Praesent scelerisque scelerisque libero sit amet euismod. Mauris eu est at felis feugiat tincidunt eu vel lectus. Ut pretium magna vitae massa sollicitudin, eu tincidunt sapien scelerisque. Maecenas gravida lorem non dui pretium, id vestibulum mi imperdiet. Fusce facilisis, dui nec ultrices molestie, nisi metus bibendum lacus, eget posuere est odio vitae nulla. Mauris laoreet non justo fringilla tempus. Mauris ut risus risus. Vivamus auctor accumsan gravida. Nam venenatis sapien nisl, quis accumsan odio dignissim non. Vestibulum aliquam semper condimentum. Suspendisse a eros elementum, dapibus quam in, aliquet lorem. Morbi mi dui, convallis at luctus ultricies, malesuada at leo. Morbi et turpis a ex vehicula ullamcorper. Vestibulum lacinia, orci eget elementum fermentum, lectus velit interdum erat, sit amet pharetra justo elit in tortor. Suspendisse ac vestibulum nisi.Nunc euismod metus nec elit sollicitudin blandit. Proin eleifend ex bibendum sodales blandit. Vestibulum varius pharetra arcu, sit amet pellentesque odio hendrerit nec. Integer faucibus imperdiet tortor a tempus. Sed accumsan condimentum nisl. Cras interdum sapien quis maximus commodo. Nulla malesuada imperdiet enim, non ornare elit auctor in. Fusce at ipsum eget turpis tincidunt maximus. Nunc sodales tortor nec tincidunt fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, blandit eu lacus nec, finibus tempus ligula." label="TextArea" grid="s12"/>
+      <m:MaterialFloatBox ui:field="txtFloatRO" readOnly="true" label="FloatBox" grid="s12"/>
+      <m:MaterialIntegerBox ui:field="txtIntegerRO" readOnly="true" label="IntegerBox" grid="s12"/>
+      <m:MaterialDoubleBox ui:field="txtDoubleRO" readOnly="true" label="DoubleBox" grid="s12"/>
+      <m:MaterialLongBox ui:field="txtLongRO" readOnly="true" label="LongBox" grid="s12"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox readOnly="true" text="Some Value" placeholder="TextBox" grid="s12"/><br/>
+        &emsp;&lt;m:MaterialTextBox readOnly="true" text="Some Value" label="TextBox" grid="s12"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Toggle Read Only" description="Toggle your read only fields to editable fields." />
-      <m:MaterialTextBox readOnly="true" toggleReadOnly="true" text="Some Value" placeholder="TextBox" grid="s12"/>
-      <m:MaterialTextArea readOnly="true" toggleReadOnly="true" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa eget ex auctor tempus. Aenean vitae augue euismod, lacinia lectus ut, rhoncus enim. Sed vitae laoreet felis, eget ullamcorper nunc. Vivamus elit urna, varius et arcu vel, euismod auctor augue. Praesent scelerisque scelerisque libero sit amet euismod. Mauris eu est at felis feugiat tincidunt eu vel lectus. Ut pretium magna vitae massa sollicitudin, eu tincidunt sapien scelerisque. Maecenas gravida lorem non dui pretium, id vestibulum mi imperdiet. Fusce facilisis, dui nec ultrices molestie, nisi metus bibendum lacus, eget posuere est odio vitae nulla. Mauris laoreet non justo fringilla tempus. Mauris ut risus risus. Vivamus auctor accumsan gravida. Nam venenatis sapien nisl, quis accumsan odio dignissim non. Vestibulum aliquam semper condimentum. Suspendisse a eros elementum, dapibus quam in, aliquet lorem. Morbi mi dui, convallis at luctus ultricies, malesuada at leo. Morbi et turpis a ex vehicula ullamcorper. Vestibulum lacinia, orci eget elementum fermentum, lectus velit interdum erat, sit amet pharetra justo elit in tortor. Suspendisse ac vestibulum nisi.Nunc euismod metus nec elit sollicitudin blandit. Proin eleifend ex bibendum sodales blandit. Vestibulum varius pharetra arcu, sit amet pellentesque odio hendrerit nec. Integer faucibus imperdiet tortor a tempus. Sed accumsan condimentum nisl. Cras interdum sapien quis maximus commodo. Nulla malesuada imperdiet enim, non ornare elit auctor in. Fusce at ipsum eget turpis tincidunt maximus. Nunc sodales tortor nec tincidunt fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, blandit eu lacus nec, finibus tempus ligula." placeholder="TextArea" grid="s12"/>
-      <m:MaterialFloatBox ui:field="txtFloatTRO" readOnly="true" toggleReadOnly="true" placeholder="FloatBox" grid="s12"/>
-      <m:MaterialIntegerBox ui:field="txtIntegerTRO" readOnly="true" toggleReadOnly="true" placeholder="IntegerBox" grid="s12"/>
-      <m:MaterialDoubleBox ui:field="txtDoubleTRO" readOnly="true" toggleReadOnly="true" placeholder="DoubleBox" grid="s12"/>
-      <m:MaterialLongBox ui:field="txtLongTRO" readOnly="true" toggleReadOnly="true" placeholder="LongBox" grid="s12"/>
+      <m:MaterialTextBox readOnly="true" toggleReadOnly="true" text="Some Value" label="TextBox" grid="s12"/>
+      <m:MaterialTextArea readOnly="true" toggleReadOnly="true" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa eget ex auctor tempus. Aenean vitae augue euismod, lacinia lectus ut, rhoncus enim. Sed vitae laoreet felis, eget ullamcorper nunc. Vivamus elit urna, varius et arcu vel, euismod auctor augue. Praesent scelerisque scelerisque libero sit amet euismod. Mauris eu est at felis feugiat tincidunt eu vel lectus. Ut pretium magna vitae massa sollicitudin, eu tincidunt sapien scelerisque. Maecenas gravida lorem non dui pretium, id vestibulum mi imperdiet. Fusce facilisis, dui nec ultrices molestie, nisi metus bibendum lacus, eget posuere est odio vitae nulla. Mauris laoreet non justo fringilla tempus. Mauris ut risus risus. Vivamus auctor accumsan gravida. Nam venenatis sapien nisl, quis accumsan odio dignissim non. Vestibulum aliquam semper condimentum. Suspendisse a eros elementum, dapibus quam in, aliquet lorem. Morbi mi dui, convallis at luctus ultricies, malesuada at leo. Morbi et turpis a ex vehicula ullamcorper. Vestibulum lacinia, orci eget elementum fermentum, lectus velit interdum erat, sit amet pharetra justo elit in tortor. Suspendisse ac vestibulum nisi.Nunc euismod metus nec elit sollicitudin blandit. Proin eleifend ex bibendum sodales blandit. Vestibulum varius pharetra arcu, sit amet pellentesque odio hendrerit nec. Integer faucibus imperdiet tortor a tempus. Sed accumsan condimentum nisl. Cras interdum sapien quis maximus commodo. Nulla malesuada imperdiet enim, non ornare elit auctor in. Fusce at ipsum eget turpis tincidunt maximus. Nunc sodales tortor nec tincidunt fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, blandit eu lacus nec, finibus tempus ligula." label="TextArea" grid="s12"/>
+      <m:MaterialFloatBox ui:field="txtFloatTRO" readOnly="true" toggleReadOnly="true" label="FloatBox" grid="s12"/>
+      <m:MaterialIntegerBox ui:field="txtIntegerTRO" readOnly="true" toggleReadOnly="true" label="IntegerBox" grid="s12"/>
+      <m:MaterialDoubleBox ui:field="txtDoubleTRO" readOnly="true" toggleReadOnly="true" label="DoubleBox" grid="s12"/>
+      <m:MaterialLongBox ui:field="txtLongTRO" readOnly="true" toggleReadOnly="true" label="LongBox" grid="s12"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialTextBox readOnly="true" toggleReadOnly="true" text="Some Value" placeholder="TextBox" grid="s12"/><br/>
+        &emsp;&lt;m:MaterialTextBox readOnly="true" toggleReadOnly="true" text="Some Value" label="TextBox" grid="s12"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
