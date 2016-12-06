@@ -82,7 +82,7 @@ blockquote {
 
 /** Window **/
 .window .window-toolbar {
-    background-color: #ffc107 !important;
+    background-color: #ffc107;
 }
 
 /** Tree Item **/
