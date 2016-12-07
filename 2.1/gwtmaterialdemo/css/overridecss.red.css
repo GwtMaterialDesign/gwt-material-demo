@@ -1,0 +1,133 @@
+/** Blockquote **/
+blockquote {
+    border-left: 5px solid #ef5350 !important;
+}
+
+.multiValueSuggestBox-panel:focus {
+    border-bottom: 2px solid #ef5350 !important;
+}
+
+/** Image Slider **/
+.slider .indicators .indicator-item.active {
+    background-color: #f44336;
+}
+
+/**SCROLLSPY**/
+.table-of-contents a.active {
+    border-left: 2px solid #f44336 !important;
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #f44336 !important;
+}
+
+.progress div {
+    background-color: #e53935;
+}
+
+/**Time Picker**/
+.lolliclock-header {
+    background: #f44336 !important;
+}
+
+.lolliclock-active-button-background {
+    background-color: #f44336 !important;
+}
+
+.lolliclock-button {
+    color: #f44336 !important;
+}
+
+.lolliclock-canvas-bg {
+    fill: rgba(244, 67, 54, 0.25) !important
+}
+
+.lolliclock-canvas-fg {
+    fill: #f44336 !important;
+}
+
+.lolliclock-canvas line {
+    stroke: rgba(244, 67, 54, 0.5) !important;
+}
+
+.lolliclock-tick.active, .lolliclock-tick:hover {
+    background-color: #e57373 !important;
+}
+
+/** File Uploader **/
+.fileuploader .upload-label {
+    background-color: #f44336 !important;
+}
+
+.fileuploader .upload-label i {
+    background: #fff !important;
+    color: #f44336 !important;
+}
+
+.fileuploader.active {
+    background: #f44336 !important;
+}
+
+.fileuploader.active .upload-label {
+    color: #fff !important;
+}
+
+.preview-container .previews .zdrop-info .preview-icon {
+    color: #f44336 !important;
+}
+
+.preview-container .header {
+    background-color: #f44336 !important;
+}
+
+/** Window **/
+.window .window-toolbar {
+    background-color: #f44336;
+}
+
+/** Tree Item **/
+.tree-item i {
+    color: #f44336;
+}
+
+/** Stepper **/
+.stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
+    color: #f44336 !important;
+}
+
+.stepper .step > div:first-child .circle {
+    background: #f44336 !important;
+}
+
+/** Rich Editor **/
+.editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
+    background: #f44336 !important;
+}
+
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .note-link-btn:hover, .note-editor .modal .note-image-btn:hover {
+    background: #f44336 !important;
+}
+
+button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
+    background: #d8d8d7 !important;
+}
+
+/** Rating **/
+.material-rating {
+    color: #f44336;
+}
+
+/** Badge **/
+.badge {
+    background: #d32f2f;
+}
+
+/** Tabs **/
+.tabs {
+    background: #f44336;
+}
+
+/** Table **/
+.top-panel {
+    background: #c62828;
+}

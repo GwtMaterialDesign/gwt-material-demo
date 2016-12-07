@@ -1,0 +1,13 @@
+{
+  "background_color": "#1976d2",
+  "name": "GWT Material Design",
+  "short_name": "GWT Material",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
