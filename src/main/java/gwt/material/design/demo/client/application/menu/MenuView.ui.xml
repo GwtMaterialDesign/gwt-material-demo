@@ -158,6 +158,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getAvatar}" text="Avatar" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCarousel}" text="Carousel" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" waves="DEFAULT"/>

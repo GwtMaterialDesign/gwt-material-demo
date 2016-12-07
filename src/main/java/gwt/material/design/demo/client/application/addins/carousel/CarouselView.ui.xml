@@ -1,0 +1,262 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    
+    <m:MaterialPanel>
+        <!-- Single Item -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Single Item" description="By default carousel has only one item per navigation." />
+            <ma:carousel.MaterialCarousel textAlign="CENTER">
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER"><br/>
+                &emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;!-- Other Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Multiple Items -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Multiple Item" description="By adding slidesToShow='3', you can easily set the number of items to show.On the other hand slidesToScroll='3', sets the number of slides to scroll."/>
+            <ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>        
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Variable Width -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Variable Width" description="Allow any child that has different width sizes."/>
+            <ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3">
+                <m:MaterialPanel width="125px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="200px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="175px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="150px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="300px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="225px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="225px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="150px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="300px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="250px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="250px" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3"><br/>
+                &emsp;&lt;m:MaterialPanel width="125px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel width="200px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel width="175px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Adaptive Height-->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Adaptive Height" />
+            <ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" >
+                <m:MaterialPanel height="100px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="40">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="200px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="90">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="175px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="80">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="150px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="60">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="300px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="140">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+        </m:MaterialRow>
+
+        <!-- TODO Responsive -->
+
+        <!-- TODO Center Mode -->
+
+
+        <!-- Auto play -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Autoplay" />
+            <ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+        </m:MaterialRow>
+
+        <!-- Auto play -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Display control widgets" />
+            <ma:carousel.MaterialCarousel textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+        </m:MaterialRow>
+
+        <!-- Custom Implementations -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Custom Control Styles" />
+            <ma:carousel.MaterialCarousel m:id="custom-carousel" textAlign="CENTER" infinite="true">
+                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+            </ma:carousel.MaterialCarousel>
+        </m:MaterialRow>
+
+        <!-- Fade -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Fade" />
+            <ma:carousel.MaterialCarousel m:id="custom-carousel" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+            </ma:carousel.MaterialCarousel>
+        </m:MaterialRow>
+
+    </m:MaterialPanel>
+</ui:UiBinder>

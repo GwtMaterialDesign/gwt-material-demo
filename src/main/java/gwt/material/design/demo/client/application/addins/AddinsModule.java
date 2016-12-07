@@ -27,6 +27,7 @@ import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompl
 import gwt.material.design.demo.client.application.addins.avatar.AvatarModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
+import gwt.material.design.demo.client.application.addins.carousel.CarouselModule;
 import gwt.material.design.demo.client.application.addins.combobox.ComboBoxModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.datatable.DataTableModule;
@@ -83,5 +84,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new ComboBoxModule());
         install(new DataTableModule());
         install(new OverlayModule());
+        install(new CarouselModule());
     }
 }
