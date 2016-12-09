@@ -131,3 +131,12 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 .top-panel {
     background: #6a1b9a;
 }
+
+/** Carousel **/
+.slick-dots li {
+    background: rgba(156,39,176,.23);
+}
+
+.slick-dots li.slick-active {
+    background: #9c27b0;
+}

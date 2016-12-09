@@ -226,40 +226,4 @@ main .panel, main {
 
 table tbody tr td img {
     max-width: initial !important;
-}
-
-/** Custom Carousel **/
-/** Carousel dot container **/
-#custom-carousel .slick-dots {
-    margin-top: -40px;
-}
-
-/** Carousel dot item **/
-#custom-carousel .slick-dots li {
-    background: rgba(255,255,255,0.5);
-}
-
-/** Carousel active dot **/
-#custom-carousel .slick-dots li.slick-active {
-    background: white;
-}
-
-/** Carousel Next Arrow **/
-#custom-carousel .carousel-next-arrow {
-    background: transparent;
-    box-shadow: none;
-}
-
-/** Carousel Next Arrow **/
-#custom-carousel .carousel-next-arrow {
-    background: transparent;
-    box-shadow: none;
-    right: 12px;
-}
-
-/** Carousel Prev Arrow **/
-#custom-carousel .carousel-prev-arrow {
-    background: transparent;
-    box-shadow: none;
-    left: 12px;
-}
+} 
