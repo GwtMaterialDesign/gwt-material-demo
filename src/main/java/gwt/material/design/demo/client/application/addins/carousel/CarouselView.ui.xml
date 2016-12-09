@@ -171,7 +171,56 @@
             </demo:PrettyPre>
         </m:MaterialRow>
 
-        <!-- TODO Responsive -->
+        <!-- Responsive Mode -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Responsive Options" description="You can set specific options on any screen sizes."/>
+            <ma:carousel.MaterialCarousel ui:field="carouselResponsive" textAlign="CENTER">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;carouselResponsive.setSlidesToShow(5); <br/>
+                carouselResponsive.setSlidesToScroll(5); <br/><br/>
+
+                // Tablet Settings <br/>
+                JsCarouselOptions tabletSettings = new JsCarouselOptions(); <br/>
+                tabletSettings.slidesToShow = 2; <br/>
+                tabletSettings.slidesToScroll = 2; <br/>
+                carouselResponsive.setTabletSettings(tabletSettings); <br/><br/>
+
+                // Mobile Settings <br/>
+                JsCarouselOptions mobileSettings = new JsCarouselOptions(); <br/>
+                mobileSettings.slidesToShow = 1; <br/>
+                mobileSettings.slidesToScroll = 1; <br/>
+                carouselResponsive.setMobileSettings(mobileSettings);
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
 
         <!-- TODO Center Mode -->
 
@@ -317,15 +366,47 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
+            <m:MaterialRow addStyleNames="code">
+                <ma:carousel.MaterialCarousel ui:field="carouselEvents" type="IMAGE" textAlign="CENTER" infinite="true">
+                    <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                    <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                    <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+                </ma:carousel.MaterialCarousel>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;carouselEvents.addAfterChangeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("AfterChangeEvent : " + e.getCurrentSlide() + " Current Slide");<br/>
+                });<br/><br/>
+
+                carouselEvents.addBeforeChangeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("BeforeChangeEvent : " + e.getCurrentSlide() + "Current Slide " + e.getNextSlide() + " Next Slide");<br/>
+                });<br/><br/>
+
+                carouselEvents.addInitHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("InitEvent");<br/>
+                });<br/><br/>
+
+                carouselEvents.addDestroyHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("DestroyEvent");<br/>
+                });<br/><br/>
+
+                carouselEvents.addSwipeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("SwipeEvent : " + e.getDirection() + " Direction");<br/>
+                });
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
             <ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" edgeFriction="0">
-                <m:MaterialPanel textColor="WHITE" backgroundColor="CYAN">
-                    <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" />
-                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
-                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
-                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
-                    </m:MaterialColumn>
-                </m:MaterialPanel>
+                    <m:MaterialPanel textColor="WHITE" backgroundColor="CYAN">
+                        <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" />
+                        <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
+                            <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
+                            <m:MaterialLabel text="Give others access to any file or folder you choose" />
+                        </m:MaterialColumn>
+                    </m:MaterialPanel>
                 <m:MaterialPanel textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
                     <m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 l6 m6" />
                     <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
