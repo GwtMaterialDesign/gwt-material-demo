@@ -145,7 +145,7 @@
 
         <!-- Adaptive Height-->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Adaptive Height" />
+            <m:MaterialTitle title="Adaptive Height" description="Enables adaptive height for single slide horizontal carousels."/>
             <ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" >
                 <m:MaterialPanel height="100px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="40">
                     <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
@@ -163,6 +163,12 @@
                     <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
                 </m:MaterialPanel>
             </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" ><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
 
         <!-- TODO Responsive -->
@@ -172,7 +178,7 @@
 
         <!-- Auto play -->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Autoplay" />
+            <m:MaterialTitle title="Autoplay" description="Enabled autoplay with Slides. The default autoplay speed is 3000 ms or 3 seconds."/>
             <ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
@@ -202,11 +208,17 @@
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
                 </m:MaterialPanel>
             </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre>
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
 
         <!-- Auto play -->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Display control widgets" />
+            <m:MaterialTitle title="Display control widgets" description="You can control the visibility of control navigations by showDots='false', showArrow='false'."/>
             <ma:carousel.MaterialCarousel textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
@@ -236,27 +248,125 @@
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
                 </m:MaterialPanel>
             </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
 
         <!-- Custom Implementations -->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Custom Control Styles" />
-            <ma:carousel.MaterialCarousel m:id="custom-carousel" textAlign="CENTER" infinite="true">
+            <m:MaterialTitle title="Type Image" description="This Carousel type is good for image slider."/>
+            <ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" infinite="true">
                 <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                 <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                 <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
             </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="code">
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" infinite="true"><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
         </m:MaterialRow>
 
         <!-- Fade -->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Fade" />
-            <ma:carousel.MaterialCarousel m:id="custom-carousel" textAlign="CENTER" fade="true" infinite="true" speed="500">
+            <m:MaterialTitle title="Fade" description="Enable Fade Transition by calling fade='true'."/>
+            <ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500">
                 <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                 <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                 <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
             </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="code">
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500"><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+
+            </demo:PrettyPre>
         </m:MaterialRow>
 
+        <!-- Methods -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
+            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
+            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
+            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
+            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
+            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
+            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
+            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
+                carousel.next() // Navigates to the next slide <br/>
+                carousel.previous() // Navigates to the previous slide <br/>
+                carousel.pause() // Pauses autoplay <br/>
+                carousel.play() // Starts autoplay <br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
+            <ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" edgeFriction="0">
+                <m:MaterialPanel textColor="WHITE" backgroundColor="CYAN">
+                    <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" />
+                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
+                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
+                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialPanel>
+                <m:MaterialPanel textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
+                    <m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 l6 m6" />
+                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
+                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
+                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialPanel>
+                <m:MaterialPanel textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
+                    <m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 l6 m6" />
+                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
+                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
+                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" edgeFriction="0"><br/>
+                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="CYAN"><br/>
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1"><br/>
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 l6 m6" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1"><br/>
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 l6 m6" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

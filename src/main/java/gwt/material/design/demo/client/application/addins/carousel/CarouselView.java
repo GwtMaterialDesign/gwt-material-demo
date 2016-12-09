@@ -25,7 +25,9 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialCheckBox;
+import gwt.material.design.addins.client.carousel.MaterialCarousel;
+import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -34,9 +36,28 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
     interface Binder extends UiBinder<Widget, CarouselView> {
     }
 
+    @UiField
+    MaterialButton btnGetCurrentSlide, btnGoTo, btnNext, btnPrev, btnPause, btnPlay;
+
+    @UiField
+    MaterialCarousel carousel, onboard;
+
     @Inject
     CarouselView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        btnGetCurrentSlide.addClickHandler(e -> {
+            MaterialToast.fireToast(carousel.getCurrentSlideIndex() + " Current Slide Index");
+        });
+
+        btnGoTo.addClickHandler(e -> carousel.goToSlide(1));
+
+        btnNext.addClickHandler(e -> carousel.next());
+
+        btnPrev.addClickHandler(e -> carousel.previous());
+
+        btnPause.addClickHandler(e -> carousel.pause());
+
+        btnPlay.addClickHandler(e -> carousel.play());
     }
 
 }
