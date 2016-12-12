@@ -47,6 +47,11 @@
       </m:MaterialRow>
 
       <m:MaterialRow addStyleNames="code">
+          <m:MaterialTitle title="Years to Display" description="You can easily adjust how many years to display in listbox. Good for Birthdate" />
+          <m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" />
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Auto Close" description="Provides a way to automatically closes the datepicker after selecting dates." />
         <m:MaterialDatePicker ui:field="dpAutoClose" grid="s12" autoClose="true" placeholder="Date" />
         <demo:PrettyPre addStyleNames="lang-xml">
