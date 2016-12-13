@@ -221,10 +221,6 @@
             </demo:PrettyPre>
         </m:MaterialRow>
 
-
-        <!-- TODO Center Mode -->
-
-
         <!-- Auto play -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Autoplay" description="Enabled autoplay with Slides. The default autoplay speed is 3000 ms or 3 seconds."/>
@@ -305,16 +301,44 @@
             </demo:PrettyPre>
         </m:MaterialRow>
 
+        <!-- Add / Remove -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Add / Remove Slide" description="We provided a dynamic way to add / remove slide items into the carousel." />
+            <m:MaterialRow>
+                <m:MaterialButton margin="4" text="Add Slide" ui:field="btnAdd" />
+                <m:MaterialButton margin="4" text="Remove Slide" ui:field="btnRemove" />
+                <ma:carousel.MaterialCarousel ui:field="carouselDynamic" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                    <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                    <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                    <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+                </ma:carousel.MaterialCarousel>
+            </m:MaterialRow>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;btnAdd.addClickHandler(e -> { <br/>
+                &emsp;MaterialImage img = new MaterialImage("//i.imgur.com/8XlWy0H.png"); <br/>
+                &emsp;img.addClickHandler(e1 -> { <br/>
+                &emsp;&emsp;MaterialToast.fireToast("Clicked on Image"); <br/>
+                &emsp;}); <br/>
+                &emsp;carouselDynamic.add(img); <br/>
+                }); <br/><br/>
+
+                btnRemove.addClickHandler(e -> { <br/>
+                &emsp;carouselDynamic.remove(1); <br/>
+                }); <br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
         <!-- Custom Implementations -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type Image" description="This Carousel type is good for image slider."/>
-            <ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" infinite="true">
+            <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                 <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                 <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                 <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
             </ma:carousel.MaterialCarousel>
             <demo:PrettyPre addStyleNames="code">
-                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" infinite="true"><br/>
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true"><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
@@ -325,14 +349,14 @@
         <!-- Fade -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Fade" description="Enable Fade Transition by calling fade='true'."/>
-            <ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500">
+            <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
                 <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                 <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                 <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
             </ma:carousel.MaterialCarousel>
             
             <demo:PrettyPre addStyleNames="code">
-                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500"><br/>
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500"><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
                 &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
@@ -350,7 +374,7 @@
             <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
             <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
             <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
-            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" textAlign="CENTER" fade="true" infinite="true" speed="500">
+            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
                 <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                 <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                 <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
@@ -368,7 +392,7 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
             <m:MaterialRow addStyleNames="code">
-                <ma:carousel.MaterialCarousel ui:field="carouselEvents" type="IMAGE" textAlign="CENTER" infinite="true">
+                <ma:carousel.MaterialCarousel ui:field="carouselEvents" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                     <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
                     <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
                     <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
@@ -447,6 +471,68 @@
                 &emsp;&emsp;&lt;/m:MaterialColumn><br/>
                 &emsp;&lt;/m:MaterialPanel><br/>
                 &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Tab Navigation -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Carousel with Tabs" description="You can easily synchronize the carousel and tabs for better navigation." />
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTab ui:field="tab">
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 1" href="#tab1"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 2" href="#tab2"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 3" href="#tab3"/>
+                    </m:MaterialTabItem>
+                </m:MaterialTab>
+
+                <ma:carousel.MaterialCarousel ui:field="tabCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true">
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                    </m:MaterialPanel>
+                </ma:carousel.MaterialCarousel>
+            </m:MaterialRow>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialRow addStyleNames="code"><br/>
+                &emsp;&lt;m:MaterialTab ui:field="tab"><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 1" href="#tab1"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 2" href="#tab2"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 3" href="#tab3"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&lt;/m:MaterialTab><br/><br/>
+
+                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="tabCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true"><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;/ma:carousel.MaterialCarousel><br/>
+                &lt;/m:MaterialRow><br/>
+            </demo:PrettyPre>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;tabCarousel.setTabNavigation(tab);
             </demo:PrettyPre>
         </m:MaterialRow>
     </m:MaterialPanel>

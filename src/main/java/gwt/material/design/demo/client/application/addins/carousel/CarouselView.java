@@ -28,6 +28,8 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.carousel.MaterialCarousel;
 import gwt.material.design.addins.client.carousel.js.JsCarouselOptions;
 import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialTab;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
@@ -38,10 +40,13 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
     }
 
     @UiField
-    MaterialButton btnGetCurrentSlide, btnGoTo, btnNext, btnPrev, btnPause, btnPlay;
+    MaterialButton btnGetCurrentSlide, btnGoTo, btnNext, btnPrev, btnPause, btnPlay, btnAdd, btnRemove;
 
     @UiField
-    MaterialCarousel carousel,  carouselResponsive, onboard, carouselEvents;
+    MaterialCarousel carousel,  carouselResponsive, onboard, carouselEvents, tabCarousel, carouselDynamic;
+
+    @UiField
+    MaterialTab tab;
 
     @Inject
     CarouselView(Binder uiBinder) {
@@ -49,8 +54,6 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
         btnGetCurrentSlide.addClickHandler(e -> {
             MaterialToast.fireToast(carousel.getCurrentSlideIndex() + " Current Slide Index");
         });
-
-
 
         btnGoTo.addClickHandler(e -> carousel.goToSlide(1));
 
@@ -96,6 +99,20 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
 
         carouselEvents.addSwipeHandler(e -> {
             MaterialToast.fireToast("SwipeEvent : " + e.getDirection() + " Direction");
+        });
+
+        tabCarousel.setTabNavigation(tab);
+
+        btnAdd.addClickHandler(e -> {
+            MaterialImage img = new MaterialImage("//i.imgur.com/8XlWy0H.png");
+            img.addClickHandler(e1 -> {
+                MaterialToast.fireToast("Clicked on Image");
+            });
+            carouselDynamic.add(img);
+        });
+
+        btnRemove.addClickHandler(e -> {
+            carouselDynamic.remove(1);
         });
     }
 
