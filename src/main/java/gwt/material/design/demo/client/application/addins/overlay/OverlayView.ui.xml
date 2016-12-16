@@ -62,5 +62,45 @@
                 overla  yEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Overlay Closed"));
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Overlay Tabs" description="We have added another addin widget MaterialOverlayTab to group you overlays for minimize state." />
+            <m:MaterialPanel ui:field="panel" />
+            <demo:PrettyPre addStyleNames="lan-java">
+                &emsp;@UiField <br/>
+                MaterialPanel panel; <br/><br/>
+
+                MaterialOverlayTab overlayContainer = new MaterialOverlayTab(); <br/>
+                panel.add(overlayContainer); <br/>
+                for (int i = 1; i &lt;= 5; i++) { <br/>
+                MaterialOverlay overlay = new MaterialOverlay(); <br/>
+                overlay.setBackgroundColor(Color.WHITE); <br/>
+                overlay.setPadding(20); <br/><br/>
+
+                MaterialLabel lblLabel = new MaterialLabel("Some Description " + i); <br/>
+                lblLabel.setFontSize("1em"); <br/>
+                overlay.add(lblLabel); <br/><br/>
+
+                MaterialLabel lblTitle = new MaterialLabel("Overlay Title " + i); <br/>
+                lblTitle.setFontSize("2em"); <br/>
+                lblTitle.setFontWeight(Style.FontWeight.BOLD); <br/>
+                overlay.add(lblTitle); <br/><br/>
+
+                MaterialLabel lblNumber = new MaterialLabel(i + ""); <br/>
+                lblNumber.addStyleName("number"); <br/>
+                overlay.add(lblNumber); <br/><br/>
+
+                // Set the tab overlay for minimize function <br/>
+                overlay.setOverlayTab(overlayContainer); <br/>
+                panel.add(overlay); <br/><br/>
+
+                MaterialButton btnOpen = new MaterialButton("Open " + i); <br/>
+                btnOpen.setMargin(20); <br/>
+                btnOpen.addClickHandler(e -> { <br/>
+                &emsp;overlay.open(btnOpen); <br/>
+                }); <br/>
+                panel.add(btnOpen);
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>
