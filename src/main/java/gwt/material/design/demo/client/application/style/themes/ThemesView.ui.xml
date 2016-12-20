@@ -38,7 +38,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle description="Second: Checkout the theme project and add it to your build path. And define it on your app.gwt.xml file." />
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;inherits name="gwt.material.design.themes.GwtMaterialThemeBlue"/&gt;
+        &lt;inherits name="gwt.material.design.themes.ThemeBlue"/&gt;
       </demo:PrettyPre>
     </m:MaterialRow>
   </g:HTMLPanel>
