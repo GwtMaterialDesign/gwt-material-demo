@@ -28,6 +28,7 @@ import gwt.material.design.demo.client.application.addins.avatar.AvatarModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
 import gwt.material.design.demo.client.application.addins.carousel.CarouselModule;
+import gwt.material.design.demo.client.application.addins.circularprogress.CircularProgressModule;
 import gwt.material.design.demo.client.application.addins.combobox.ComboBoxModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.datatable.DataTableModule;
@@ -85,5 +86,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new DataTableModule());
         install(new OverlayModule());
         install(new CarouselModule());
+        install(new CircularProgressModule());
     }
 }
