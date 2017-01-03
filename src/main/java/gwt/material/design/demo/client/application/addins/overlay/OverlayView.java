@@ -46,7 +46,7 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
     MaterialOverlay overlay, overlayEvents;
 
     @UiField
-    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents;
+    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents, btnOverlayTab;
 
     @UiField
     MaterialPanel panel;

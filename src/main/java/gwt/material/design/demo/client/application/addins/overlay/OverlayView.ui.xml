@@ -65,6 +65,7 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Overlay Tabs" description="We have added another addin widget MaterialOverlayTab to group you overlays for minimize state." />
+            <m:MaterialButton ui:field="btnOverlayTab" iconType="APPS" type="FLOATING"/>
             <m:MaterialPanel ui:field="panel" />
             <demo:PrettyPre addStyleNames="lan-java">
                 &emsp;@UiField <br/>
