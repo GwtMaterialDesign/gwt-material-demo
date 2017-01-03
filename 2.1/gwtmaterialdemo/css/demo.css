@@ -227,8 +227,3 @@ main .panel, main {
 table tbody tr td img {
     max-width: initial !important;
 }
-
-.circle canvas {
-    max-width: 100%;
-    max-height: 100%;
-}
