@@ -108,7 +108,7 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
         <m:MaterialNavBar width="100%">
-          <m:MaterialNavBrand>App Name</m:MaterialNavBrand>
+          <m:MaterialNavBrand text="App Name"/>
           <m:MaterialNavSection position="RIGHT">
             <!--Activator -->
             <m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
@@ -124,7 +124,7 @@
         
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;m:MaterialNavBar width="100%"><br/>
-          &emsp;&lt;m:MaterialNavBrand><br />App Name&lt;/m:MaterialNavBrand><br/>
+          &emsp;&lt;m:MaterialNavBrand text="App Name" /><br/>
           &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
           &emsp;&emsp;&lt;!--Activator --><br/>
           &emsp;&emsp;&lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/><br/>

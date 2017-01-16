@@ -173,7 +173,12 @@
         &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
       </demo:PrettyPre>
     </g:HTMLPanel>
-  
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="ViewPort Helper" description="A helper class that detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
+      <m:MaterialLink ui:field="lblViewPort" />
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
       <m:MaterialTitle  description="Truncation - To truncate long lines of text in an ellipsis, add the class truncate to the tag which contains the text. See an exaple below of a header being truncated inside a card."/>
