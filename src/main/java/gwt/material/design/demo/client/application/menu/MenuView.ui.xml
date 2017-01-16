@@ -161,6 +161,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getCarousel}" text="Carousel" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCircularProgress}" text="Circular Progress" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCountUp}" text="Count Up" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" waves="DEFAULT"/>
