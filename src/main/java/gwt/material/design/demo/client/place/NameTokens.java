@@ -91,6 +91,7 @@ public class NameTokens {
     public static final String carousel = "carousel";
     public static final String circularProgress = "circularProgress";
     public static final String countUp = "countUp";
+    public static final String liveStamp = "liveStamp";
 
     public static String getAbout() {
         return about;
@@ -366,5 +367,9 @@ public class NameTokens {
 
     public static String getCountUp() {
         return countUp;
+    }
+
+    public static String getLiveStamp() {
+        return liveStamp;
     }
 }
