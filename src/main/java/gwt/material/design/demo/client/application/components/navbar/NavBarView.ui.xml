@@ -26,7 +26,7 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
         <m:MaterialNavBar width="100%">
-          <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT">Title</m:MaterialNavBrand>
+          <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title"/>
           <m:MaterialNavSection float="RIGHT">
             <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
             <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
