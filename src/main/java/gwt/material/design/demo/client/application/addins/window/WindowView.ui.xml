@@ -37,7 +37,7 @@
                 &lt;ma:window.MaterialWindow ui:field="window" width="50%" title="Documents">
             </demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Simple Window" description="Simple Window contains only header toolbar (Close, Max / Restore action buttons)."/>
             <m:MaterialButton ui:field="btnOpenWindow" text="Open Window" textColor="WHITE" />
@@ -58,7 +58,7 @@
                 &lt;/ma:window.MaterialWindow><br/>
             </m.demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Maximize Window"/>
             <m:MaterialButton ui:field="btnOpenMaximizedWindow" text="Open Maximized Window" textColor="WHITE" />
@@ -84,7 +84,7 @@
                 MaterialWindow.setOverlay(true); // Will apply all windows to have overlay
             </m.demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Window Styles" description="Just a regular window, you can set styles easily including width, height, toolbar color etc."/>
             <m:MaterialButton ui:field="btnOpenWindowStyles" text="Open Styled Window" textColor="WHITE" />
@@ -95,7 +95,7 @@
                     <m:MaterialLabel text="while ( ! ( succeed = try() ) );" textColor="WHITE" fontSize="1.2em" />
                 </m:MaterialPanel>
             </ma:window.MaterialWindow>
-            
+
             <m.demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;ma:window.MaterialWindow ui:field="styledWindow" backgroundColor="GREEN" toolbarColor="GREEN_DARKEN_1" width="70%" title="Styles"><br/>
                 &emsp;&lt;m:MaterialPanel padding="32" textAlign="CENTER" height="300px"><br/>
@@ -106,18 +106,18 @@
                 &lt;/ma:window.MaterialWindow><br/>
             </m.demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Open / Close Window" description="Just like modals, window dialog has programmatically functions for opening and closing the window"/>
             <demo:PrettyPre addStyleNames="lang-java">
                 // Opening Window<br/>
                 window.open();<br/><br/>
-    
+
                 // Closing Window<br/>
                 window.close();<br/>
             </demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Window Handlers" description="We built events for Window component : Open / Close Events" />
             <demo:PrettyPre addStyleNames="lang-java">
@@ -127,7 +127,7 @@
                 &emsp;&emsp;MaterialToast.fireToast("Opened : " + window.getTitle());<br/>
                 &emsp;}<br/>
                 });<br/><br/>
-    
+
                 window.addCloseHandler(new CloseHandler&lt;Boolean>() {<br/>
                 &emsp;@Override<br/>
                 &emsp;public void onClose(CloseEvent&lt;Boolean> event) {<br/>
@@ -136,7 +136,7 @@
                 });<br/>
             </demo:PrettyPre>
         </m:MaterialRow>
-    
+
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Window with tabs" />
             <m:MaterialButton ui:field="btnWindowTab" text="Open Window with Tab" textColor="WHITE"/>
@@ -175,8 +175,8 @@
                     <m:MaterialLabel text="Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep." fontSize="1.2em" />
                 </m:MaterialPanel>
             </ma:window.MaterialWindow>
-    
-            
+
+
             <m.demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;ma:window.MaterialWindow ui:field="windowTab" title="Window with Tabs" toolbarColor="BLUE_DARKEN_2"><br/>
                 &emsp;&lt;m:MaterialRow marginBottom="0" margin="0" padding="20" layoutPosition="RELATIVE" depth="1"><br/>

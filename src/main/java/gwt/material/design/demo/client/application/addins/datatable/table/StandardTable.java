@@ -297,7 +297,7 @@ public class StandardTable extends Composite {
 
         // Add a row double click handler, called when a row is double clicked.
         table.addRowDoubleClickHandler((e, mouseEvent, model, row) -> {
-           // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             Window.alert("Row Double Clicked: " + model.getId());
             return true;
         });

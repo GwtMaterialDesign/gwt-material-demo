@@ -56,6 +56,9 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
     @Inject
     WindowView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        MaterialWindow.setOverlay(cbOverlay.getValue());
+
         ThemeManager.register(headerPanel);
         ThemeManager.register(tabsPanel);
         window.addOpenHandler(new OpenHandler<Boolean>() {
@@ -75,7 +78,6 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
 
     @UiHandler("btnOpenWindowWithOverlay")
     void onOpenWindowWithOverlay(ClickEvent e) {
-        MaterialWindow.setOverlay(cbOverlay.getValue());
         overlayWindow.open();
     }
 

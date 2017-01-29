@@ -72,7 +72,7 @@
                     &lt;/m:MaterialNavBar><br/><br/>
     
                     &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="FIXED" closeOnClick="false"><br/>
-                    &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                    &emsp;&lt;m:MaterialNavBrand href="#Test" text="Title"><br/>
                     &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
@@ -124,7 +124,7 @@
                     &lt;/m:MaterialNavBar><br/><br/>
     
                     &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="CARD" closeOnClick="false"><br/>
-                    &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                    &emsp;&lt;m:MaterialNavBrand href="#Test" text="Title"/><br/>
                     &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
@@ -154,7 +154,7 @@
                     &lt;/m:MaterialNavBar><br/><br/>
     
                     &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="MINI" closeOnClick="false"><br/>
-                    &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                    &emsp;&lt;m:MaterialNavBrand href="#Test" text="Title"/><br/>
                     &emsp;&lt;m:MaterialIcon iconType="INBOX" iconColor="blue"/><br/>
                     &emsp;&lt;m:MaterialIcon iconType="STARS" iconColor="blue"/><br/>
                     &emsp;&lt;m:MaterialIcon iconType="SEND" iconColor="blue"/><br/>
@@ -184,7 +184,7 @@
                     &lt;/m:MaterialNavBar><br/><br/>
     
                     &lt;m:MaterialSideNav width="300" m:id="mysidebar" type="PUSH" closeOnClick="false"><br/>
-                    &emsp;&lt;m:MaterialNavBrand href="#Test">Title&lt;/m:MaterialNavBrand><br/>
+                    &emsp;&lt;m:MaterialNavBrand href="#Test" text="Title"><br/>
                     &emsp;&lt;m:MaterialLink iconType="INBOX" iconPosition="LEFT" textColor="blue"  text="Inbox" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="STARS" iconPosition="LEFT" textColor="grey"  text="Starred" /><br/>
                     &emsp;&lt;m:MaterialLink iconType="SEND" iconPosition="LEFT" textColor="grey"  text="Sent Mail" /><br/>
