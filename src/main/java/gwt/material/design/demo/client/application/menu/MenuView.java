@@ -174,6 +174,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#" + NameTokens.dnd));
         listSearches.add(new SearchObject(IconType.EXTENSION, "File Uploader", "#" + NameTokens.fileuploader));
         listSearches.add(new SearchObject(IconType.EXTENSION, "IconMorph", "#" + NameTokens.iconMorph));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Input Mask", "#" + NameTokens.inputMask));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Live Stamp", "#" + NameTokens.liveStamp));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Masonry", "#" + NameTokens.masonry));
         listSearches.add(new SearchObject(IconType.EXTENSION, "MenuBar", "#" + NameTokens.menubar));

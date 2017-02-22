@@ -92,6 +92,7 @@ public class NameTokens {
     public static final String circularProgress = "circularProgress";
     public static final String countUp = "countUp";
     public static final String liveStamp = "liveStamp";
+    public static final String inputMask = "inputMask";
 
     public static String getAbout() {
         return about;
@@ -371,5 +372,9 @@ public class NameTokens {
 
     public static String getLiveStamp() {
         return liveStamp;
+    }
+
+    public static String getInputMask() {
+        return inputMask;
     }
 }

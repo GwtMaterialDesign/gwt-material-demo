@@ -37,6 +37,7 @@ import gwt.material.design.demo.client.application.addins.dnd.DndModule;
 import gwt.material.design.demo.client.application.addins.docviewer.DocViewerModule;
 import gwt.material.design.demo.client.application.addins.fileuploader.FileUploaderModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
+import gwt.material.design.demo.client.application.addins.inputmask.InputMaskModule;
 import gwt.material.design.demo.client.application.addins.livestamp.LiveStampModule;
 import gwt.material.design.demo.client.application.addins.masonry.MasonryModule;
 import gwt.material.design.demo.client.application.addins.menubar.MenuBarModule;
@@ -91,5 +92,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new CircularProgressModule());
         install(new CountUpModule());
         install(new LiveStampModule());
+        install(new InputMaskModule());
     }
 }

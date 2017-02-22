@@ -168,6 +168,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getLiveStamp}" text="Live Stamp" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" waves="DEFAULT"/>
