@@ -74,6 +74,8 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     MaterialDatePicker datePickerValidate;
     @UiField
     MaterialTimePicker timePickerValidate;
+    @UiField
+    MaterialListBox listbox;
 
     @Inject
     ErrorsView(Binder uiBinder) {
@@ -249,5 +251,20 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnClearComboBox")
     void onClearComboBox(ClickEvent e) {
         combobox.clearErrorOrSuccess();
+    }
+
+    @UiHandler("btnErrorListBox")
+    void onErrorListBox(ClickEvent e) {
+        listbox.setError("This is an error message for ListBox.");
+    }
+
+    @UiHandler("btnSuccessListBox")
+    void onSuccessListBox(ClickEvent e) {
+        listbox.setSuccess("This is a success message for ListBox.");
+    }
+
+    @UiHandler("btnClearListBox")
+    void onClearListBox(ClickEvent e) {
+        listbox.clearErrorOrSuccess();
     }
 }

@@ -49,10 +49,12 @@
       <m:MaterialTitle title="Placeholder and Label" description="There are two types of showing labels to the textbox, the floating inline labels move to float above the field. While the other is called Placeholder or Hint Text which will be hidden once user types on the textbox."/>
       <m:MaterialTextBox label="This is a label" grid="s12"/>
       <m:MaterialTextBox placeholder="This is a placeholder" grid="s12"/>
+      <m:MaterialTextBox placeholder="This is an active textbox" label="This is a label" active="true" grid="s12" />
     
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialTextBox label="This is a label" grid="s12"/><br/>
-        &lt;m:MaterialTextBox placeholder="This is a placeholder" grid="s12"/>
+        &lt;m:MaterialTextBox placeholder="This is a placeholder" grid="s12"/><br/>
+        &lt;m:MaterialTextBox placeholder="This is an active textbox" label="This is a label" active="true" />
       </demo:PrettyPre>
     </m:MaterialRow>
     
