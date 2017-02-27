@@ -31,20 +31,20 @@
       <m:MaterialTitle title="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)"/>
   
       <m:MaterialRow>
-        <m:MaterialColumn grid="s12">
-          <m:MaterialTab ui:field="tab">
-            <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
-            </m:MaterialTabItem>
-            <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
-            </m:MaterialTabItem>
-            <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
-            </m:MaterialTabItem>
-          </m:MaterialTab>
+        <m:MaterialColumn>
+            <m:MaterialTab ui:field="tab">
+              <m:MaterialTabItem waves="YELLOW">
+                <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
+              </m:MaterialTabItem>
+              <m:MaterialTabItem waves="YELLOW">
+                <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
+              </m:MaterialTabItem>
+              <m:MaterialTabItem waves="YELLOW">
+                <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
+              </m:MaterialTabItem>
+            </m:MaterialTab>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn m:id="tab1" grid="s12">
           <m:MaterialLabel text="Tab 1 Content"/>
         </m:MaterialColumn>
@@ -234,6 +234,28 @@
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialTab type="ICON" shadow="1" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3" waves="YELLOW">
       </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="Selection Event" description="We have provided a selection event to easily get the selected index." />
+      <m:MaterialColumn grid="s12">
+        <m:MaterialTab ui:field="eventTab">
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" grid="s4">
+            <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
+          </m:MaterialTabItem>
+        </m:MaterialTab>
+
+        <demo:PrettyPre addStyleNames="lang-java">
+          eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+        </demo:PrettyPre>
+      </m:MaterialColumn>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">

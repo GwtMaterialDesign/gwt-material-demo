@@ -55,6 +55,28 @@
           &lt;/m:MaterialNavBar><br/>
         </demo:PrettyPre>
       </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="Selection Event" description="We have provided a selection event to easily get the selected index."/>
+      <m:MaterialNavBar width="100%">
+        <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
+        <m:MaterialNavSection ui:field="navSection" float="RIGHT">
+          <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
+          <m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+          <m:MaterialTooltip text="Menu">
+            <m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+          </m:MaterialTooltip>
+          <m:MaterialTooltip text="Starter">
+            <m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+          </m:MaterialTooltip>
+        </m:MaterialNavSection>
+      </m:MaterialNavBar>
+
+      <demo:PrettyPre addStyleNames="lang-java">
+        navSection.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+      </demo:PrettyPre>
+    </m:MaterialRow>
       
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Alignment" description="Add align='right' to your nav brand and align='left' to your nav section"/>

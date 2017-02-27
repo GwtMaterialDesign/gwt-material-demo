@@ -47,6 +47,19 @@
       </m:MaterialRow>
 
       <m:MaterialRow addStyleNames="code">
+          <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+          <m:MaterialTitle title="SELF / BODY Container" description="Set whether the parent of the root picker should be attached. For Modals it is good to use BODY instead of SELF container." />
+
+          <m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12"/>
+          <m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12"/>
+
+          <demo:PrettyPre addStyleNames="lang-xml">
+              &emsp;&lt;m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12"/><br/>
+              &lt;m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12"/><br/>
+          </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
           <m:MaterialTitle title="Years to Display" description="You can easily adjust how many years to display in listbox. Good for Birthdate" />
           <m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" />
           <demo:PrettyPre addStyleNames="lang-xml">
