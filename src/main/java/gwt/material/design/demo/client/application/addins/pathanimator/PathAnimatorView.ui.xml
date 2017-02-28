@@ -68,6 +68,7 @@
       </m:MaterialRow>
 
       <m:MaterialRow addStyleNames="code">
+        <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
         <m:MaterialTitle title="PathAnimator Options" description="We provided useful options to control your Path Animator duration."/>
         <m:MaterialRow>
           <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtDuration" label="Duration"/>

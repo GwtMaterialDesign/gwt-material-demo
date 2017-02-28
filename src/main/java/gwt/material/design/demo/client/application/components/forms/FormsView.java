@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.components.forms;
 
 
 import com.google.gwt.event.dom.client.ChangeEvent;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -39,7 +40,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialListBox lstOptions;
     @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown;
 
-    @UiField MaterialSwitch switch1, switch2;
+    @UiField MaterialSwitch switch1, switch2, switchSetValue;
     @UiField MaterialLabel lblRange;
     @UiField MaterialRange range;
 
@@ -110,6 +111,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             "fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec " +
             "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
             "blandit eu lacus nec, finibus tempus ligula.", true);
+
     }
 
     @UiHandler("lstOptions")
@@ -141,6 +143,34 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             cbGreen.setValue(false);
             cbBrown.setValue(false);
         }
+    }
+
+    @UiHandler("switchEvent")
+    void onSwitchEvent(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnSwitchValue")
+    void onSwitchValue(ClickEvent e) {
+        if (!switchSetValue.getValue()) {
+            switchSetValue.setValue(true);
+        } else {
+            switchSetValue.setValue(false);
+        }
+    }
+
+    @UiHandler("btnSwitchValueEvent")
+    void onSwitchValueEvent(ClickEvent e) {
+        if (!switchSetValue.getValue()) {
+            switchSetValue.setValue(true, true);
+        } else {
+            switchSetValue.setValue(false, true);
+        }
+    }
+
+    @UiHandler("switchSetValue")
+    void onSwitchSetValue(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
     }
 
     @UiHandler("range")
