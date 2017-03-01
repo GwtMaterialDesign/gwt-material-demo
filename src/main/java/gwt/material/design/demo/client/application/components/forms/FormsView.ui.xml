@@ -187,6 +187,27 @@
         &lt;/m:MaterialListBox>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="ListBox : setValue(value, fireEvents)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstSetValue">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+      </m:MaterialListBox>
+
+      <m:MaterialButton text="Set Value" ui:field="btnListBoxValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnListBoxValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        listbox.setValue(users.get(0), true); <br/>
+        // Set Value without firing the value change event <br/>
+        listbox.setValue(users.get(1));<br/>
+        listbox.setValue(users.get(1), false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="ChangeHandler" description="Add the code below to trigger any events on listbox"/>
@@ -316,6 +337,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
       <m:MaterialTitle title="Switch : Value Change Event" />
       <m:MaterialSwitch ui:field="switchEvent" onLabel="On" offLabel="Off" />
       <demo:PrettyPre addStyleNames="lang-java">
@@ -332,6 +354,7 @@
         &emsp;// Set Value with firing the value change event <br/>
         mSwitch.setValue(true, true); <br/>
         // Set Value without firing the value change event <br/>
+        mSwitch.setValue(true);<br/>
         mSwitch.setValue(true, false);
       </demo:PrettyPre>
     </m:MaterialRow>
@@ -352,6 +375,22 @@
         void onRange(ChangeEvent e) {<br/>
         &emsp;&emsp;lblRange.setText("Value: " + String.valueOf(range.getValue()));<br/>
         }
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="Range : setValue(value, fireEvents)"/>
+      <m:MaterialRange ui:field="rangeSetValue" min="10" max="500" value="250"/>
+
+      <m:MaterialButton text="Set Value" ui:field="btnRangeValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnRangeValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        range.setValue(20, true); <br/>
+        // Set Value without firing the value change event <br/>
+        range.setValue(50);<br/>
+        range.setValue(50, false);
       </demo:PrettyPre>
     </m:MaterialRow>
   </m:MaterialRow>

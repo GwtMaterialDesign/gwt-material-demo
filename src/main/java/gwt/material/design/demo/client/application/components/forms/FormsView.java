@@ -37,12 +37,12 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     interface Binder extends UiBinder<Widget, FormsView> {
     }
 
-    @UiField MaterialListBox lstOptions;
+    @UiField MaterialListBox lstOptions, lstSetValue;
     @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown;
 
     @UiField MaterialSwitch switch1, switch2, switchSetValue;
     @UiField MaterialLabel lblRange;
-    @UiField MaterialRange range;
+    @UiField MaterialRange range, rangeSetValue;
 
     @UiField MaterialTextArea txtAreaAuto;
     @UiField MaterialTextArea txtAreaFocus;
@@ -145,6 +145,21 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
         }
     }
 
+    @UiHandler("lstSetValue")
+    void onListBoxSetValue(ValueChangeEvent<String> e) {
+        MaterialToast.fireToast(e.getValue());
+    }
+
+    @UiHandler("btnListBoxValue")
+    void onListBoxValue(ClickEvent e) {
+        lstSetValue.setValue("Option 2");
+    }
+
+    @UiHandler("btnListBoxValueEvent")
+    void onListBoxValueEvent(ClickEvent e) {
+        lstSetValue.setValue("Option 3", true);
+    }
+
     @UiHandler("switchEvent")
     void onSwitchEvent(ValueChangeEvent<Boolean> e) {
         MaterialToast.fireToast("Value " + e.getValue());
@@ -175,6 +190,21 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
 
     @UiHandler("range")
     void onRange(ChangeEvent e) {
-        lblRange.setText("Value: " + String.valueOf(range.getValue()));
+        lblRange.setText("Value: " + rangeSetValue.getValue());
+    }
+
+    @UiHandler("rangeSetValue")
+    void onRangeSetValue(ValueChangeEvent<Integer> e) {
+        MaterialToast.fireToast("Value: " + e.getValue());
+    }
+
+    @UiHandler("btnRangeValue")
+    void onRangeValue(ClickEvent e) {
+        rangeSetValue.setValue(50);
+    }
+
+    @UiHandler("btnRangeValueEvent")
+    void onRangeValueEvent(ClickEvent e) {
+        rangeSetValue.setValue(20, true);
     }
 }
