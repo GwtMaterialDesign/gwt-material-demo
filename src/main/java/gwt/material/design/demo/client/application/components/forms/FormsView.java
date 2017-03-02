@@ -44,13 +44,13 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialLabel lblRange;
     @UiField MaterialRange range, rangeSetValue;
 
-    @UiField MaterialTextArea txtAreaAuto;
-    @UiField MaterialTextArea txtAreaFocus;
+    @UiField MaterialTextBox txtBoxValue;
+    @UiField MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
 
-    @UiField MaterialFloatBox txtFloatBox, txtFloatRO, txtFloatTRO;
-    @UiField MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO;
-    @UiField MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO;
-    @UiField MaterialLongBox txtLongBox, txtLongRO, txtLongTRO;
+    @UiField MaterialFloatBox txtFloatBox, txtFloatRO, txtFloatTRO, txtFloatValue;
+    @UiField MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO, txtIntegerValue;
+    @UiField MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO, txtDoubleValue;
+    @UiField MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
 
     @Inject
     FormsView(Binder uiBinder) {
@@ -58,15 +58,19 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
         txtFloatBox.setValue(1000.25f);
         txtFloatRO.setValue(1000.25f);
         txtFloatTRO.setValue(1000.25f);
+        txtFloatValue.setValue(1000.25f);
         txtIntegerBox.setValue(10);
         txtIntegerRO.setValue(10);
         txtIntegerTRO.setValue(10);
+        txtIntegerValue.setValue(10);
         txtDoubleBox.setValue(9999.90);
         txtDoubleRO.setValue(9999.90);
         txtDoubleTRO.setValue(9999.90);
+        txtDoubleValue.setValue(9999.90);
         txtLongBox.setValue((long) 1000.00);
         txtLongRO.setValue((long) 1000.00);
         txtLongTRO.setValue((long) 1000.00);
+        txtLongValue.setValue((long) 1000.00);
 
         txtAreaAuto.setValue("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat " +
             "lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa " +
@@ -119,6 +123,96 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
         MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
     }
 
+    @UiHandler("txtBoxValue")
+    void onTextBox(ValueChangeEvent<String> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextBoxValue")
+    void onTextBoxValue(ClickEvent e) {
+        txtBoxValue.setValue("Text Box");
+    }
+
+    @UiHandler("btnTextBoxValueEvent")
+    void onTextBoxValueEvent(ClickEvent e) {
+        txtBoxValue.setValue("Text Box 2", true);
+    }
+
+    @UiHandler("txtAreaValue")
+    void onTextArea(ValueChangeEvent<String> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextAreaValue")
+    void onTextAreaValue(ClickEvent e) {
+        txtAreaValue.setValue("Text Area");
+    }
+
+    @UiHandler("btnTextAreaValueEvent")
+    void onTextAreaValueEvent(ClickEvent e) {
+        txtAreaValue.setValue("Text Area 2", true);
+    }
+
+    @UiHandler("txtIntegerValue")
+    void onTextInteger(ValueChangeEvent<Integer> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextIntegerValue")
+    void onTextIntegerValue(ClickEvent e) {
+        txtIntegerValue.setValue(20000);
+    }
+
+    @UiHandler("btnTextIntegerValueEvent")
+    void onTextIntegerValueEvent(ClickEvent e) {
+        txtIntegerValue.setValue(1000, true);
+    }
+    
+    @UiHandler("txtLongValue")
+    void onTextLong(ValueChangeEvent<Long> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextLongValue")
+    void onTextLongValue(ClickEvent e) {
+        txtLongValue.setValue(20000l);
+    }
+
+    @UiHandler("btnTextLongValueEvent")
+    void onTextLongValueEvent(ClickEvent e) {
+        txtLongValue.setValue(1000l, true);
+    }
+
+    @UiHandler("txtDoubleValue")
+    void onTextDouble(ValueChangeEvent<Double> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextDoubleValue")
+    void onTextDoubleValue(ClickEvent e) {
+        txtDoubleValue.setValue(20.00);
+    }
+
+    @UiHandler("btnTextDoubleValueEvent")
+    void onTextDoubleValueEvent(ClickEvent e) {
+        txtDoubleValue.setValue(10.50, true);
+    }
+
+    @UiHandler("txtFloatValue")
+    void onTextFloat(ValueChangeEvent<Float> e) {
+        MaterialToast.fireToast("Value " + e.getValue());
+    }
+
+    @UiHandler("btnTextFloatValue")
+    void onTextFloatValue(ClickEvent e) {
+        txtFloatValue.setValue(20.00f);
+    }
+
+    @UiHandler("btnTextFloatValueEvent")
+    void onTextFloatValueEvent(ClickEvent e) {
+        txtFloatValue.setValue(10.50f, true);
+    }
+    
     @UiHandler("cbBox")
     void onCheckBox(ValueChangeEvent<Boolean> e) {
         if(e.getValue()) {
