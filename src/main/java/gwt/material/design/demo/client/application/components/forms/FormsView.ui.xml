@@ -170,7 +170,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="ValueChange Event" description="Easily convert your editable fields to read mode." />
+      <m:MaterialTitle title="ValueBox : setValue(value, fireEvents)"/>
       <m:MaterialTextBox ui:field="txtBoxValue" text="Some Value" label="TextBox" grid="s12"/>
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextBoxValue" marginRight="20" />
@@ -323,6 +323,22 @@
         &lt;m:MaterialRadioButton name="color" text="Brown" enabled="false" /><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="RadioButton : setValue(value, fireEvents)"/>
+      <m:MaterialRadioButton ui:field="radioValue" name="color" text="Radio Button"/>
+
+      <m:MaterialButton text="Set Value" ui:field="btnRadioValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnRadioValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        range.setValue(true, true); <br/>
+        // Set Value without firing the value change event <br/>
+        range.setValue(true);<br/>
+        range.setValue(true, false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Check Box" description="Checkboxes"/>
@@ -407,7 +423,7 @@
       <m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
       <m:MaterialLabel text="Min: 10"/>
       <m:MaterialLabel text="Min: 500"/>
-      <m:MaterialLabel ui:field="lblRange" text="Value: 25" paddingBottom="20"/>
+      <m:MaterialLabel ui:field="lblRange" text="Value: 250" paddingBottom="20"/>
       
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRange ui:field="range" min="10" max="50" value="25"/><br/>

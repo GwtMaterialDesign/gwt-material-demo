@@ -51,6 +51,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO, txtIntegerValue;
     @UiField MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO, txtDoubleValue;
     @UiField MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
+    @UiField MaterialRadioButton radioValue;
 
     @Inject
     FormsView(Binder uiBinder) {
@@ -212,7 +213,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     void onTextFloatValueEvent(ClickEvent e) {
         txtFloatValue.setValue(10.50f, true);
     }
-    
+
     @UiHandler("cbBox")
     void onCheckBox(ValueChangeEvent<Boolean> e) {
         if(e.getValue()) {
@@ -283,13 +284,13 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @UiHandler("range")
-    void onRange(ChangeEvent e) {
-        lblRange.setText("Value: " + rangeSetValue.getValue());
+    void onRange(ValueChangeEvent<Integer> e) {
+        lblRange.setText("Value: " + e.getValue());
     }
 
     @UiHandler("rangeSetValue")
     void onRangeSetValue(ValueChangeEvent<Integer> e) {
-        MaterialToast.fireToast("Value: " + e.getValue());
+        MaterialToast.fireToast("Value: " + rangeSetValue.getValue());
     }
 
     @UiHandler("btnRangeValue")
