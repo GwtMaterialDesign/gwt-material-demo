@@ -142,8 +142,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
         l = l - 2592000000L;      //1 Months in Milliseconds = 2592000000
         Date dd = new Date();
         dd.setTime(l);
-        dpValue.setPickerDate(JsDate.create(dd.getTime()), dpValue.getElement());
-        MaterialToast.fireToast("ADS");
+        dpValue.setPickerDate(JsDate.create(dd.getTime()), dpValue.getDateInput().getElement());
     }
 
     @UiHandler("btnDpValueEvent")

@@ -170,6 +170,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="ValueBox : setValue(value, fireEvents)"/>
       <m:MaterialTextBox ui:field="txtBoxValue" text="Some Value" label="TextBox" grid="s12"/>
       <m:MaterialRow>
@@ -231,7 +232,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="ListBox : setValue(value, fireEvents)"/>
       <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstSetValue">
         <m.html:Option text="Option 1"/>
@@ -325,7 +326,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="RadioButton : setValue(value, fireEvents)"/>
       <m:MaterialRadioButton ui:field="radioValue" name="color" text="Radio Button"/>
 
@@ -396,7 +397,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="Switch : Value Change Event" />
       <m:MaterialSwitch ui:field="switchEvent" onLabel="On" offLabel="Off" />
       <demo:PrettyPre addStyleNames="lang-java">
@@ -438,7 +439,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="Range : setValue(value, fireEvents)"/>
       <m:MaterialRange ui:field="rangeSetValue" min="10" max="500" value="250"/>
 

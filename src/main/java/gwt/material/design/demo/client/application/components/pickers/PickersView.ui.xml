@@ -100,7 +100,7 @@
       </m:MaterialRow>
 
       <m:MaterialRow addStyleNames="code">
-          <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+          <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
           <m:MaterialTitle title="DatePicker : setValue(value, fireEvents)"/>
 
           <m:MaterialDatePicker ui:field="dpValue" placeholder="DatePicker" grid="s12" />

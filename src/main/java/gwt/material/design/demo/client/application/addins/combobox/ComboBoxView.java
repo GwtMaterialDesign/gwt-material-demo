@@ -54,6 +54,9 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
                                  comboTimeZone15, comboTimeZone16, comboTimeZone17, comboCloseOnSelect;
 
     @UiField
+    MaterialComboBox<State> comboValue;
+
+    @UiField
     MaterialModal modal;
 
     private int dynamicIndex = 1;
@@ -84,6 +87,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         addStateItems(comboTimeZone14);
         addStateItems(comboTimeZone15);
         addStateItems(comboTimeZone17);
+        addStateItems(comboValue);
         addItemsWithoutGroup(comboCloseOnSelect);
 
         comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
@@ -189,6 +193,21 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         states.add(alabama);
         comboTimeZone14.setValues(states);
         comboTimeZone14.setEnabled(false);
+    }
+
+    @UiHandler("comboValue")
+    void onComboValue(ValueChangeEvent<State> e) {
+        MaterialToast.fireToast("Value : " + e.getValue().getName());
+    }
+
+    @UiHandler("btnComboValue")
+    void onClickComboValue(ClickEvent e) {
+        comboValue.setValue(comboValue.getValues().get(2), false);
+    }
+
+    @UiHandler("btnComboValueEvent")
+    void onComboValueEvent(ClickEvent e) {
+        comboValue.setValue(comboValue.getValues().get(0), true);
     }
 
     @UiHandler("btnGetValue2")
