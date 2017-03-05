@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '5B9A41C4CC490730F1ACD42D9A341D70';
+var $strongName = '0CE80BB09351AA72ECDCA954C7380734';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -13485,7 +13485,7 @@ function MaterialComboBox(){
   this.errorMixin = new ErrorMixin_0(this, this.lblError, this);
 }
 
-defineClass(110, 212, $intern_65, MaterialComboBox);
+defineClass(112, 212, $intern_65, MaterialComboBox);
 _.add_0 = function add_19(child){
   $add_16(this, child);
 }
@@ -13563,7 +13563,7 @@ _.hideSearch = false;
 _.initialized = false;
 _.limit = 0;
 _.selectedIndex_0 = 0;
-var Lgwt_material_design_addins_client_combobox_MaterialComboBox_2_classLit = createForClass('gwt.material.design.addins.client.combobox', 'MaterialComboBox', 110);
+var Lgwt_material_design_addins_client_combobox_MaterialComboBox_2_classLit = createForClass('gwt.material.design.addins.client.combobox', 'MaterialComboBox', 112);
 function MaterialComboBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
@@ -21406,8 +21406,8 @@ function $initialize_5(this$static){
     }
     for (w$iterator = new WidgetCollection$WidgetIterator(this$static.children_1); w$iterator.index_0 < w$iterator.this$01.size_0;) {
       w = $next_3(w$iterator);
-      if (instanceOf(w, 112)) {
-        handler = $addMouseDownHandler(castTo(w, 112), new MaterialTab$lambda$1$Type(this$static, w));
+      if (instanceOf(w, 111)) {
+        handler = $addMouseDownHandler(castTo(w, 111), new MaterialTab$lambda$1$Type(this$static, w));
         $add_24(this$static.handlers, handler);
       }
     }
@@ -21457,7 +21457,7 @@ function MaterialTabItem(){
   ListItem_1.call(this, stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['tab']));
 }
 
-defineClass(112, 50, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 24:1, 112:1, 50:1}, MaterialTabItem);
+defineClass(111, 50, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 24:1, 111:1, 50:1}, MaterialTabItem);
 _.onLoad = function onLoad_47(){
   $onLoad_0(this);
   try {
@@ -21473,7 +21473,7 @@ _.onLoad = function onLoad_47(){
   }
 }
 ;
-var Lgwt_material_design_client_ui_MaterialTabItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTabItem', 112);
+var Lgwt_material_design_client_ui_MaterialTabItem_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialTabItem', 111);
 function MaterialTitle(){
   Div.call(this);
   this.header = new Heading(($clinit_HeadingSize() , H4));
