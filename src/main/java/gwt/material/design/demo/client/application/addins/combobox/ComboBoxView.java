@@ -46,7 +46,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     @UiField
     MaterialComboBox<String> comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4,
-                             comboTimeZone6, comboTimeZone7;
+                             comboTimeZone6, comboTimeZone7, comboTimeHideSearch;
 
     @UiField
     MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10,
@@ -68,6 +68,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     }
 
     protected void populateTimeZones() {
+        addStringItems(comboTimeHideSearch);
         addStringItems(comboTimeZone);
         addStringItemsWithoutGroup(comboTimeZone1);
         addStringItemsWithoutGroup(comboTimeZone2);
