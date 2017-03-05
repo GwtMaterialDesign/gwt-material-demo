@@ -118,18 +118,6 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Hide Search" description="Set it to true if you want to disable the search field into the combobox"/>
-            <m:MaterialColumn grid="l6 m6 s12">
-                <combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeHideSearch" hideSearch="true" />
-            </m:MaterialColumn>
-            <m:MaterialColumn>
-                <demo:PrettyPre addStyleNames="lang-xml">
-                    &lt;combobox:MaterialComboBox placeholder="Time Zone" ui:field="comboTimeHideSearch" hideSearch="true" />
-                </demo:PrettyPre>
-            </m:MaterialColumn>
-        </m:MaterialRow>
-
-        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="With OptGroup" description="Just like on java way of adding optgroup, we have also added it on UiBinder way."/>
                 <combobox:MaterialComboBox ui:field="comboTimeZone" placeholder="TimeZone"/>
