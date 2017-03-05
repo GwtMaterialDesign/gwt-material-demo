@@ -31,7 +31,7 @@
       <m:MaterialTitle title="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)"/>
   
       <m:MaterialRow>
-        <m:MaterialColumn>
+        <m:MaterialColumn grid="s12">
             <m:MaterialTab ui:field="tab">
               <m:MaterialTabItem waves="YELLOW">
                 <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>

@@ -109,10 +109,10 @@
           <m:MaterialButton text="Set Value with Event" ui:field="btnDpValueEvent" />
           <demo:PrettyPre addStyleNames="lang-java">
               &emsp;// Set Value with firing the value change event <br/>
-              range.setValue(new Date(), true); <br/>
+              picker.setValue(new Date(), true); <br/>
               // Set Value without firing the value change event <br/>
-              range.setValue(new Date());<br/>
-              range.setValue(new Date(), false);
+              picker.setValue(new Date());<br/>
+              picker.setValue(new Date(), false);
           </demo:PrettyPre>
       </m:MaterialRow>
 
