@@ -22,8 +22,11 @@ package gwt.material.design.demo.client.application.components.navbar;
 
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialNavSection;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -31,8 +34,12 @@ public class NavBarView extends ViewImpl implements NavBarPresenter.MyView {
     interface Binder extends UiBinder<Widget, NavBarView> {
     }
 
+    @UiField
+    MaterialNavSection navSection;
+
     @Inject
     NavBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        navSection.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
     }
 }

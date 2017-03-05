@@ -124,7 +124,7 @@
         
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;m:MaterialNavBar width="100%"><br/>
-          &emsp;&lt;m:MaterialNavBrand text="App Name" /><br/>
+          &emsp;&lt;m:MaterialNavBrand text="App Name"/><br />
           &emsp;&lt;m:MaterialNavSection position="RIGHT"><br/>
           &emsp;&emsp;&lt;!--Activator --><br/>
           &emsp;&emsp;&lt;m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/><br/>

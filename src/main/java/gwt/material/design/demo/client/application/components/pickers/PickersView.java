@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.components.pickers;
  */
 
 
+import com.google.gwt.core.client.JsDate;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -45,7 +46,7 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     }
 
     @UiField
-    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents, dpTranslation, dpOpenClose, dpAutoClose;
+    MaterialDatePicker dp, dpFormat, dpLimit, dpClear, dpEvents, dpTranslation, dpOpenClose, dpAutoClose, dpBirthdate, dpValue;
 
     @UiField
     MaterialListBox lstLanguage;
@@ -86,6 +87,8 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
             MaterialToast.fireToast("Date Selected " + event.getValue());
         });
 
+        dpBirthdate.setDate(new Date(50, 1, 1));
+
         initLanguage();
     }
 
@@ -124,5 +127,27 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     @UiHandler("btnOpen")
     void onOpen(ClickEvent e) {
         dpOpenClose.open();
+    }
+
+    @UiHandler("dpValue")
+    void onDpValueChange(ValueChangeEvent<Date> e) {
+        MaterialToast.fireToast(e.getValue() + "");
+    }
+
+    @UiHandler("btnDpValue")
+    void onDpValue(ClickEvent e) {
+        //dpValue.setValue(new Date());
+        dpValue.setValue(new Date(), false);
+        Long l = new Date().getTime();
+        l = l - 2592000000L;      //1 Months in Milliseconds = 2592000000
+        Date dd = new Date();
+        dd.setTime(l);
+        dpValue.setPickerDate(JsDate.create(dd.getTime()), dpValue.getDateInput().getElement());
+    }
+
+    @UiHandler("btnDpValueEvent")
+    void onDpValueEvent(ClickEvent e) {
+        Date date = new Date(123,1,1);
+        dpValue.setValue(date, true);
     }
 }

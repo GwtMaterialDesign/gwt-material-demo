@@ -204,6 +204,10 @@ main .panel, main {
     margin-top: 0px !important;
 }
 
+.code div p.range-field {
+    margin-bottom: 0px;
+}
+
 .code div p {
     margin-bottom: 20px;
 }

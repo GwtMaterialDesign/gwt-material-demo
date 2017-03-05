@@ -26,6 +26,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialTab;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -34,7 +35,7 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     }
 
     @UiField
-    MaterialTab tab2;
+    MaterialTab tab2, eventTab;
 
     @Inject
     TabsView(Binder uiBinder) {
@@ -46,5 +47,6 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
         super.onAttach();
 
         tab2.setTabIndex(1);
+        eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
     }
 }

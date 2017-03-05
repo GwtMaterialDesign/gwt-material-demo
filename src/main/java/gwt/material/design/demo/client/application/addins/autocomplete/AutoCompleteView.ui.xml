@@ -107,6 +107,28 @@
                 });
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Autocomplete : setValue(value, fireEvents)"/>
+
+            <ma:autocomplete.MaterialAutoComplete ui:field="acValue" placeholder="Contacts" grid="s12"/>
+
+            <m:MaterialButton text="Set Value" ui:field="btnAcValue" marginRight="20" />
+            <m:MaterialButton text="Set Value with Event" ui:field="btnAcValueEvent" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Will not fire value change event.<br/>
+                List&lt;String> itemValues = new ArrayList&lt;>();<br/>
+                itemValues.add(getAllUsers().get(0).getName());<br/>
+                itemValues.add(getAllUsers().get(1).getName());<br/>
+                acValue.setItemValues(itemValues);<br/><br/>
+                // Will fire value change event.<br/>
+                List&lt;String> itemValues = new ArrayList&lt;>();<br/>
+                itemValues.add(getAllUsers().get(2).getName());<br/>
+                itemValues.add(getAllUsers().get(3).getName());<br/>
+                acValue.setItemValues(itemValues, true);<br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Clearing Items on Autocomplete" description="You can easily clear the Autocomplete List Items by calling autocomlete.clear()"/>

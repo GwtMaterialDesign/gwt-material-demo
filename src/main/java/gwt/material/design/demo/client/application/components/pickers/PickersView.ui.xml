@@ -47,6 +47,27 @@
       </m:MaterialRow>
 
       <m:MaterialRow addStyleNames="code">
+          <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+          <m:MaterialTitle title="SELF / BODY Container" description="Set whether the parent of the root picker should be attached. For Modals it is good to use BODY instead of SELF container." />
+
+          <m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12"/>
+          <m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12"/>
+
+          <demo:PrettyPre addStyleNames="lang-xml">
+              &emsp;&lt;m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12"/><br/>
+              &lt;m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12"/><br/>
+          </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
+          <m:MaterialTitle title="Years to Display" description="You can easily adjust how many years to display in listbox. Good for Birthdate" />
+          <m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" />
+          <demo:PrettyPre addStyleNames="lang-xml">
+              &lt;m:MaterialDatePicker ui:field="dpBirthdate" placeholder="Birthdate" selectionType="YEAR" yearsToDisplay="50" />
+          </demo:PrettyPre>
+      </m:MaterialRow>
+
+      <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Auto Close" description="Provides a way to automatically closes the datepicker after selecting dates." />
         <m:MaterialDatePicker ui:field="dpAutoClose" grid="s12" autoClose="true" placeholder="Date" />
         <demo:PrettyPre addStyleNames="lang-xml">
@@ -77,7 +98,24 @@
           dp.getDate();
         </demo:PrettyPre>
       </m:MaterialRow>
-    
+
+      <m:MaterialRow addStyleNames="code">
+          <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+          <m:MaterialTitle title="DatePicker : setValue(value, fireEvents)"/>
+
+          <m:MaterialDatePicker ui:field="dpValue" placeholder="DatePicker" grid="s12" />
+
+          <m:MaterialButton text="Set Value" ui:field="btnDpValue" marginRight="20" />
+          <m:MaterialButton text="Set Value with Event" ui:field="btnDpValueEvent" />
+          <demo:PrettyPre addStyleNames="lang-java">
+              &emsp;// Set Value with firing the value change event <br/>
+              picker.setValue(new Date(), true); <br/>
+              // Set Value without firing the value change event <br/>
+              picker.setValue(new Date());<br/>
+              picker.setValue(new Date(), false);
+          </demo:PrettyPre>
+      </m:MaterialRow>
+
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Formats" description="You can set the format of the date picker by adding format='FORMAT'"/>
         <m:MaterialDatePicker ui:field="dpFormat" grid="s12" placeholder="Custom Format" format="Yehey yyyy mm dd"/>
