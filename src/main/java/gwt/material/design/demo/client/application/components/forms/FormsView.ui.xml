@@ -336,10 +336,10 @@
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;// Set Value with firing the value change event <br/>
-        range.setValue(true, true); <br/>
+        radio.setValue(true, true); <br/>
         // Set Value without firing the value change event <br/>
-        range.setValue(true);<br/>
-        range.setValue(true, false);
+        radio.setValue(false);<br/>
+        radio.setValue(false, false);
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -380,6 +380,24 @@
         &lt;m:MaterialCheckBox ui:field="cbCyan" text="Cyan" type="FILLED"/><br/>
         &lt;m:MaterialCheckBox ui:field="cbGreen" text="Green" type="FILLED"/><br/>
         &lt;m:MaterialCheckBox ui:field="cbBrown" text="Brown" type="FILLED"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="CheckBox : setValue(value, fireEvents)"/>
+      <m:MaterialCheckBox ui:field="cbValue" text="CheckBox"/>
+
+      <m:MaterialRow>
+        <m:MaterialButton text="Set Value" ui:field="btnCbValue" marginRight="20" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnCbValueEvent" />
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        checkBox.setValue(true, true); <br/>
+        // Set Value without firing the value change event <br/>
+        checkBox.setValue(false);<br/>
+        checkBox.setValue(false, false);
       </demo:PrettyPre>
     </m:MaterialRow>
   

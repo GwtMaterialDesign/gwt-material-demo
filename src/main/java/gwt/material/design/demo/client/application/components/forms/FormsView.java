@@ -38,7 +38,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     }
 
     @UiField MaterialListBox lstOptions, lstSetValue;
-    @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown;
+    @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown, cbValue;
 
     @UiField MaterialSwitch switch1, switch2, switchSetValue;
     @UiField MaterialLabel lblRange;
@@ -238,6 +238,21 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             cbGreen.setValue(false);
             cbBrown.setValue(false);
         }
+    }
+
+    @UiHandler("cbValue")
+    void onCheckValue(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value : " + e.getValue());
+    }
+
+    @UiHandler("btnCbValue")
+    void onClickCbValue(ClickEvent e) {
+        cbValue.setValue(true);
+    }
+
+    @UiHandler("btnCbValueEvent")
+    void onClickCbValueEvent(ClickEvent e) {
+        cbValue.setValue(false, true);
     }
 
     @UiHandler("lstSetValue")
