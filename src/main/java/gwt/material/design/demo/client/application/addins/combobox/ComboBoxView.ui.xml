@@ -56,6 +56,29 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Placeholder : Singe Selection" description="Note that because browsers assume the first option element is selected in non-multi-value select boxes an empty first option element must be provided for the placeholder to work." />
+            <m:MaterialColumn grid="l6 m6 s12">
+                <combobox:MaterialComboBox placeholder="This is a placeholder" allowClear="true">
+                    <m:html.Option text="" />
+                    <m:html.Option text="Item 1" />
+                    <m:html.Option text="Item 2" />
+                    <m:html.Option text="Item 3" />
+                </combobox:MaterialComboBox>
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="l12 m12 s12">
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;combobox:MaterialComboBox placeholder="This is a placeholder" allowClear="true"><br/>
+                    &emsp;&lt;m:html.Option text="" /><br/>
+                    &emsp;&lt;m:html.Option text="Item 1" /><br/>
+                    &emsp;&lt;m:html.Option text="Item 2" /><br/>
+                    &emsp;&lt;m:html.Option text="Item 3" /><br/>
+                    &lt;/combobox:MaterialComboBox><br/>
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l12 m12 s12">
                 <m:MaterialTitle title="Java : Adding Options" description="Populating your data can be done using java. By calling combobox.addItem(String, T)" />
                 <demo:PrettyPre marginTop="12" addStyleNames="lang-xml">
