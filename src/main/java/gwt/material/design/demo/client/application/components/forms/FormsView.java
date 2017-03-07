@@ -255,6 +255,21 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
         lstSetValue.setValue("Option 3", true);
     }
 
+    @UiHandler("radioValue")
+    void onRadioValue(ValueChangeEvent<Boolean> e) {
+        MaterialToast.fireToast("Value : " + e.getValue());
+    }
+
+    @UiHandler("btnRadioValue")
+    void onClickRadioValue(ClickEvent e) {
+        radioValue.setValue(true);
+    }
+
+    @UiHandler("btnRadioValueEvent")
+    void onClickRadioValueEvent(ClickEvent e) {
+        radioValue.setValue(false, true);
+    }
+
     @UiHandler("switchEvent")
     void onSwitchEvent(ValueChangeEvent<Boolean> e) {
         MaterialToast.fireToast("Value " + e.getValue());
