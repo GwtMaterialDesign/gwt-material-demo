@@ -140,3 +140,9 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 .slick-dots li.slick-active {
     background: #9c27b0;
 }
+
+/** ComboBox **/
+ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
+    border: 2px solid #9c27b0;
+    background-color: #9c27b0;
+}
