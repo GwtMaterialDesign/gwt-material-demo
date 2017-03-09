@@ -21,8 +21,11 @@ package gwt.material.design.demo.client.application.addins.fileuploader;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.fileuploader.MaterialFileUploader;
@@ -38,7 +41,7 @@ public class FileUploaderView extends ViewImpl implements FileUploaderPresenter.
     }
 
     @UiField
-    MaterialFileUploader uploader;
+    MaterialFileUploader uploader, uploaderEnable;
 
     @Inject
     FileUploaderView(Binder uiBinder) {
@@ -108,5 +111,10 @@ public class FileUploaderView extends ViewImpl implements FileUploaderPresenter.
                 MaterialToast.fireToast("Event : Max Files Reached (" + event.getTarget().getName() + ")");
             }
         });
+    }
+
+    @UiHandler("switchEnable")
+    void onSwitchEnable(ValueChangeEvent<Boolean> e) {
+        uploaderEnable.setEnabled(e.getValue());
     }
 }

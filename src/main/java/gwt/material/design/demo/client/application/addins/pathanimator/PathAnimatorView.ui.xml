@@ -33,7 +33,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Markup Definition" description="FIRST , Set your source and target components."/>
-        <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;!-- Source Component --><br/>
           &lt;m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="BLUE" size="LARGE" /><br/><br/>
   
@@ -47,7 +47,7 @@
   
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Source Logic" description="SECOND , Add an event into your source component and inside that method you need to call MaterialPathAnimator.animate() method."/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        <demo:PrettyPre addStyleNames="lang-java">
           &emsp;// Transforming from Source to Target<br/>
           @UiHandler("btnSource")<br/>
           void onSource(ClickEvent e) {<br/>
@@ -58,7 +58,7 @@
   
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Target Logic" description="THIRD , In order to go to the original position of Source component from Target component. You need to set the resting styles of target component and call MaterialPathAnimator.animate() method to apply the deslightful animation."/>
-        <demo:PrettyPre addStyleNames="lang-java z-depth-1">
+        <demo:PrettyPre addStyleNames="lang-java">
           &emsp;// Transforming from Target to Source using reverseAnimate() method.<br/>
           @UiHandler("btnClose")<br/>
           void onClose(ClickEvent e) {<br/>
@@ -66,7 +66,41 @@
           }
         </demo:PrettyPre>
       </m:MaterialRow>
-  
+
+      <m:MaterialRow addStyleNames="code">
+        <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+        <m:MaterialTitle title="PathAnimator Options" description="We provided useful options to control your Path Animator duration."/>
+        <m:MaterialRow>
+          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtDuration" label="Duration"/>
+          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtTargetShowDuration" label="Target Show Duration"/>
+          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtExtraTransitionDuration" label="Extra Transition Duration"/>
+        </m:MaterialRow>
+
+        <demo:PrettyPre addStyleNames="lang-java">
+          &emsp;MaterialPathAnimator animator = new MaterialPathAnimator(); <br/>
+          animator.setSourceElement(btnOptionSource.getElement()); <br/>
+          animator.setTargetElement(panelWithOptions.getElement()); <br/>
+          animator.setDuration(txtDuration.getValue()); <br/>
+          animator.setTargetShowDuration(txtTargetShowDuration.getValue()); <br/>
+          animator.setExtraTransitionDuration(txtExtraTransitionDuration.getValue()); <br/>
+          animator.animate();
+        </demo:PrettyPre>
+
+        <m:MaterialButton ui:field="btnOptionSource" text="With Options" backgroundColor="BLUE" size="LARGE" />
+
+        <m:MaterialRow>
+          <m:MaterialCard ui:field="panelWithOptions" backgroundColor="PINK_DARKEN_1" grid="l4" opacity="0">
+            <m:MaterialCardContent textColor="WHITE">
+              <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
+              <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
+            </m:MaterialCardContent>
+            <m:MaterialCardAction>
+              <m:MaterialLink ui:field="btnCloseWithOptions" text="Turn it back" iconType="POLYMER"/>
+            </m:MaterialCardAction>
+          </m:MaterialCard>
+        </m:MaterialRow>
+      </m:MaterialRow>
+
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="1. Button to Overlay Panel" description="Source Component : MaterialButton and Target Component : MaterialOverlay"/>
         <m:MaterialButton ui:field="btnSource1" text="Meaningful Transitions" backgroundColor="BLUE" size="LARGE" />
@@ -127,7 +161,7 @@
             <m:MaterialIcon ui:field="btnSource4" iconType="DELETE" paddingLeft="12" paddingRight="12"/>
           </m:MaterialNavSection>
         </m:MaterialNavBar>
-  
+
         <ma:overlay.MaterialOverlay ui:field="panelTarget1" visibility="HIDDEN" textAlign="CENTER" backgroundColor="BLUE" opacity="0" >
           <m:MaterialTitle addStyleNames="{style.title}" textColor="WHITE" title="Meaningful transitions" description="Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy."/>
           <m:MaterialButton ui:field="btnClose1" text="Back to Main Page" backgroundColor="BLUE_LIGHTEN_2" textColor="WHITE" size="LARGE" />

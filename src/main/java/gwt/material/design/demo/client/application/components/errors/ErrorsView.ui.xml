@@ -188,5 +188,24 @@
         <m:MaterialButton ui:field="btnClearComboBox" text="Clear" waves="LIGHT"/>
       </m:MaterialRow>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <!-- ListBox -->
+      <m:MaterialRow>
+        <m:MaterialTitle title="List Box" />
+        <m:MaterialColumn grid="s12 m12 l5" >
+          <m:MaterialListBox ui:field="listbox" placeholder="Select Your choice">
+            <m:html.Option text="Option 1"/>
+            <m:html.Option text="Option 2"/>
+            <m:html.Option text="Option 3"/>
+          </m:MaterialListBox>
+        </m:MaterialColumn>
+      </m:MaterialRow>
+      <m:MaterialRow>
+        <m:MaterialButton ui:field="btnErrorListBox" text="Error" backgroundColor="RED" waves="LIGHT"/>
+        <m:MaterialButton ui:field="btnSuccessListBox" text="Success" backgroundColor="GREEN" waves="LIGHT"/>
+        <m:MaterialButton ui:field="btnClearListBox" text="Clear" waves="LIGHT"/>
+      </m:MaterialRow>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

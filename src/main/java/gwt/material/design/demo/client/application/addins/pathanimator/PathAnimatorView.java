@@ -38,13 +38,13 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     }
 
     @UiField
-    MaterialButton btnSource1, btnSource3;
+    MaterialButton btnOptionSource, btnSource1, btnSource3;
 
     @UiField
-    MaterialCard card, panelTarget3;
+    MaterialCard card, panelTarget3, panelWithOptions;
 
     @UiField
-    MaterialLink btnSource2;
+    MaterialLink btnSource2, btnCloseWithOptions;
 
     @UiField
     MaterialIcon btnSource4;
@@ -56,9 +56,37 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     @UiField
     MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
 
+    @UiField
+    MaterialDoubleBox txtDuration, txtTargetShowDuration, txtExtraTransitionDuration;
+
+    private MaterialPathAnimator animator = new MaterialPathAnimator();
+
     @Inject
     PathAnimatorView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        txtDuration.setValue(0.3);
+        txtDuration.setHelperText("Duration (in seconds) of animation. Default is 0.3 seconds.");
+
+        txtTargetShowDuration.setValue(0.0);
+        txtTargetShowDuration.setHelperText("Duration (in seconds) of targetElement to become visible, if hidden initially. The library will automatically try to figure this out from the element's computed styles. Default is 0 seconds.");
+
+        txtExtraTransitionDuration.setValue(1.0);
+        txtExtraTransitionDuration.setHelperText("Extra duration (in seconds) of targetElement to provide visual continuity between the animation and the rendering of the targetElement. Default is 1 second");
+    }
+
+    @UiHandler("btnCloseWithOptions")
+    void onCloseWithOptions(ClickEvent e) {
+        animator.reverseAnimate();
+    }
+
+    @UiHandler("btnOptionSource")
+    void onOptionSource(ClickEvent e) {
+        animator.setSourceElement(btnOptionSource.getElement());
+        animator.setTargetElement(panelWithOptions.getElement());
+        animator.setDuration(txtDuration.getValue());
+        animator.setTargetShowDuration(txtTargetShowDuration.getValue());
+        animator.setExtraTransitionDuration(txtExtraTransitionDuration.getValue());
+        animator.animate();
     }
 
     @UiHandler("btnSource1")

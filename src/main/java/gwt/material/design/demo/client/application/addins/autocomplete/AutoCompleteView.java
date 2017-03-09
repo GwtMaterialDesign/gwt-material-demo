@@ -49,7 +49,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acListType, acListLimit, acModal;
+    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue;
 
     @UiField
     MaterialModal modal;
@@ -60,18 +60,21 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         UserOracle oracle = new UserOracle();
         oracle.addContacts(getAllUsers());
         acList.setSuggestions(oracle);
+        acValue.setSuggestions(oracle);
         acList.addSelectionHandler(new SelectionHandler<SuggestOracle.Suggestion>() {
             @Override
             public void onSelection(SelectionEvent<SuggestOracle.Suggestion> event) {
                 MaterialToast.fireToast(event.getSelectedItem().getDisplayString() + " Selected");
             }
         });
-        acList.addValueChangeHandler(new ValueChangeHandler<List<? extends SuggestOracle.Suggestion>>() {
-            @Override
-            public void onValueChange(ValueChangeEvent<List<? extends SuggestOracle.Suggestion>> event) {
-                for(SuggestOracle.Suggestion user : event.getValue()){
-                    MaterialToast.fireToast("Value : " + user.getDisplayString());
-                }
+        acList.addValueChangeHandler(event -> {
+            for(SuggestOracle.Suggestion user : event.getValue()){
+                MaterialToast.fireToast("Value : " + user.getDisplayString());
+            }
+        });
+        acValue.addValueChangeHandler(event -> {
+            for(SuggestOracle.Suggestion user : event.getValue()){
+                MaterialToast.fireToast("Value : " + user.getDisplayString());
             }
         });
         acListType.setSuggestions(oracle);
@@ -90,6 +93,22 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         for(User user : getSelectedUsers()){
             MaterialToast.fireToast(user.getName());
         }
+    }
+
+    @UiHandler("btnAcValue")
+    void onAcValue(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(0).getName());
+        itemValues.add(getAllUsers().get(1).getName());
+        acValue.setItemValues(itemValues);
+    }
+
+    @UiHandler("btnAcValueEvent")
+    void onAcValueEvent(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(2).getName());
+        itemValues.add(getAllUsers().get(3).getName());
+        acValue.setItemValues(itemValues, true);
     }
 
     public List<User> getSelectedUsers() {

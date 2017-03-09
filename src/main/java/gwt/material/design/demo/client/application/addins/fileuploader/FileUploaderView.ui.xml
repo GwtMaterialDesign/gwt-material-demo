@@ -48,6 +48,24 @@
                 &lt;/ma:fileuploader.MaterialFileUploader><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Disable Uploader" description="You can easily disable the file uploader by calling enable='false'" />
+            <m:MaterialSwitch ui:field="switchEnable" onLabel="Enable" offLabel="Disable" />
+            <ma:fileuploader.MaterialFileUploader ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
+                <ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
+            </ma:fileuploader.MaterialFileUploader>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="uploader" enabled="false" url="/uploadServlet" maxFileSize="20" shadow="1"><br/>
+                &emsp;&lt;ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" /><br/>
+                &lt;/ma:fileuploader.MaterialFileUploader><br/><br/>
+
+                // For java<br/>
+                uploader.setEnabled(false);
+            </demo:PrettyPre>
+        </m:MaterialRow>
     
         <g:HTMLPanel addStyleNames="code">
             <m:MaterialTitle title="Properties" />
