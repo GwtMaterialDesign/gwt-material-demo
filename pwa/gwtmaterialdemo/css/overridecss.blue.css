@@ -1,0 +1,148 @@
+/** Blockquote **/
+blockquote {
+    border-left: 5px solid #42A5F5 !important;
+}
+
+.multiValueSuggestBox-panel:focus {
+    border-bottom: 2px solid #42A5F5 !important;
+}
+
+/** Image Slider **/
+.slider .indicators .indicator-item.active {
+    background-color: #2196f3;
+}
+
+/**SCROLLSPY**/
+.table-of-contents a.active {
+    border-left: 2px solid #2196f3 !important;
+}
+
+.table-of-contents a:hover {
+    border-left: 1px solid #2196f3 !important;
+}
+
+.progress div {
+    background-color: #1e88e5;
+}
+
+/**Time Picker**/
+.lolliclock-header {
+    background: #2196f3 !important;
+}
+
+.lolliclock-active-button-background {
+    background-color: #2196f3 !important;
+}
+
+.lolliclock-button {
+    color: #2196f3 !important;
+}
+
+.lolliclock-canvas-bg {
+    fill: rgba(33, 150, 243, 0.25) !important;
+}
+
+.lolliclock-canvas-fg {
+    fill: #2196f3 !important;
+}
+
+.lolliclock-canvas line {
+    stroke: rgba(33, 150, 243, 0.5) !important;
+}
+
+.lolliclock-tick.active, .lolliclock-tick:hover {
+    background-color: #64b5f6 !important;
+}
+
+/** File Uploader **/
+.fileuploader .upload-label {
+    background-color: #2196f3 !important;
+}
+
+.fileuploader .upload-label i {
+    background: #fff !important;
+    color: #2196f3 !important;
+}
+
+.fileuploader.active {
+    background: #2196f3 !important;
+}
+
+.fileuploader.active .upload-label {
+    color: #fff !important;
+}
+
+.preview-container .previews .zdrop-info .preview-icon {
+    color: #2196f3 !important;
+}
+
+.preview-container .header {
+    background-color: #2196f3 !important;
+}
+
+/** Window **/
+.window .window-toolbar {
+    background-color: #2196f3;
+}
+
+/** Tree Item **/
+.tree-item i {
+    color: #2196f3;
+}
+
+/** Stepper **/
+.stepper .step.success > div:first-child i, .stepper .step.success .title, .stepper .step.success .description {
+    color: #2196f3 !important;
+}
+
+.stepper .step > div:first-child .circle {
+    background: #2196f3 !important;
+}
+
+/** Rich Editor **/
+.editorDialogs .modal .btn, .editorDialogs .modal .btn-large, .note-editor .modal .btn, .note-editor .modal .btn-large {
+    background: #2196f3 !important;
+}
+
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .modal-footer .note-link-btn:hover, .note-editor .modal .modal-footer .note-image-btn:hover {
+    background: #2196f3 !important;
+}
+
+button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.btn.disabled:hover {
+    background: #d8d8d7 !important;
+}
+
+/** Rating **/
+.material-rating {
+    color: #2196f3;
+}
+
+/** Badge **/
+.badge {
+    background: #1976d2;
+}
+
+/** Tabs **/
+.tabs {
+    background: #2196f3;
+}
+
+/** Table **/
+.top-panel {
+    background: #1565c0;
+}
+
+/** Carousel **/
+.slick-dots li {
+    background: rgba(33,150,243,0.23);
+}
+
+.slick-dots li.slick-active {
+    background: #2196F3;
+}
+
+/** ComboBox **/
+ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
+    border: 2px solid #2196f3;
+    background-color: #2196f3;
+}
