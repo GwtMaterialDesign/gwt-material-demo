@@ -46,6 +46,7 @@ gwt.material.design.addins.client.splitpanel.constants
 gwt.material.design.addins.client.splitpanel.js
 gwt.material.design.addins.client.stepper
 gwt.material.design.addins.client.stepper.base
+gwt.material.design.addins.client.stepper.constants
 gwt.material.design.addins.client.stepper.events
 gwt.material.design.addins.client.subheader
 gwt.material.design.addins.client.subheader.constants

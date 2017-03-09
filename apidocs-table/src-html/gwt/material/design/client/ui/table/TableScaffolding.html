@@ -92,17 +92,18 @@
 <span class="sourceLineNo">084</span>     * @param container the base container for the scaffolding.<a name="line.84"></a>
 <span class="sourceLineNo">085</span>     */<a name="line.85"></a>
 <span class="sourceLineNo">086</span>    protected void apply(HasWidgets container) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        container.add(topPanel);<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        container.add(tableBody);<a name="line.88"></a>
-<span class="sourceLineNo">089</span><a name="line.89"></a>
-<span class="sourceLineNo">090</span>        topPanel.add(infoPanel);<a name="line.90"></a>
-<span class="sourceLineNo">091</span>        topPanel.add(toolPanel);<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        tableBody.add(table);<a name="line.92"></a>
-<span class="sourceLineNo">093</span><a name="line.93"></a>
-<span class="sourceLineNo">094</span>        table.addHead(new MaterialWidget(DOM.createElement("thead")));<a name="line.94"></a>
-<span class="sourceLineNo">095</span>        table.addBody(new MaterialWidget(DOM.createElement("tbody")));<a name="line.95"></a>
-<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
-<span class="sourceLineNo">097</span>}<a name="line.97"></a>
+<span class="sourceLineNo">087</span>        container.clear();<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        container.add(topPanel);<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        container.add(tableBody);<a name="line.89"></a>
+<span class="sourceLineNo">090</span><a name="line.90"></a>
+<span class="sourceLineNo">091</span>        topPanel.add(infoPanel);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        topPanel.add(toolPanel);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        tableBody.add(table);<a name="line.93"></a>
+<span class="sourceLineNo">094</span><a name="line.94"></a>
+<span class="sourceLineNo">095</span>        table.addHead(new MaterialWidget(DOM.createElement("thead")));<a name="line.95"></a>
+<span class="sourceLineNo">096</span>        table.addBody(new MaterialWidget(DOM.createElement("tbody")));<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    }<a name="line.97"></a>
+<span class="sourceLineNo">098</span>}<a name="line.98"></a>
 
 
 
