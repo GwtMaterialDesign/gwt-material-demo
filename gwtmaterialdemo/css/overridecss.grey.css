@@ -82,7 +82,7 @@ blockquote {
 
 /** Window **/
 .window .window-toolbar {
-    background-color: #9e9e9e !important;
+    background-color: #9e9e9e;
 }
 
 /** Tree Item **/
@@ -130,4 +130,10 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 /** Table **/
 .top-panel {
     background: #424242;
+}
+
+/** ComboBox **/
+ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
+    border: 2px solid #9e9e9e;
+    background-color: #9e9e9e;
 }
