@@ -131,3 +131,9 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 .top-panel {
     background: #c62828;
 }
+
+/** ComboBox **/
+ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
+    border: 2px solid #f44336;
+    background-color: #f44336;
+}
