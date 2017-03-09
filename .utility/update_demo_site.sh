@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "release_2.1" ]; then
+if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "pwa" ]; then
 
 if [[ -z "$GH_TOKEN" ]]; then
 echo -e "GH_TOKEN is not set"
@@ -24,23 +24,23 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GwtMaterialDemo directories from git.
-if [[ -d ./2.1/gwtmaterialdemo ]]; then
-git rm -rf ./2.1/gwtmaterialdemo
+if [[ -d ./pwa/gwtmaterialdemo ]]; then
+git rm -rf ./pwa/gwtmaterialdemo
 fi
-if [[ -f ./2.1/index.html ]]; then
-git rm -rf ./2.1/index.html
+if [[ -f ./pwa/index.html ]]; then
+git rm -rf ./pwa/index.html
 fi
-if [[ -d ./2.1/META-INF ]]; then
-git rm -rf ./2.1/META-INF
+if [[ -d ./pwa/META-INF ]]; then
+git rm -rf ./pwa/META-INF
 fi
-if [[ -d ./2.1/WEB-INF ]]; then
-git rm -rf ./2.1/WEB-INF
+if [[ -d ./pwa/WEB-INF ]]; then
+git rm -rf ./pwa/WEB-INF
 fi
 
 # copy the new GwtMaterialDemo the snapshot dir.
-unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./2.1/
-rm -rf ./2.1/META-INF
-rm -rf ./2.1/WEB-INF
+unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./pwa/
+rm -rf ./pwa/META-INF
+rm -rf ./pwa/WEB-INF
 
 git add -f .
 git commit -m "Auto-push demo to gh-pages successful. (Travis build: $TRAVIS_BUILD_NUMBER)"

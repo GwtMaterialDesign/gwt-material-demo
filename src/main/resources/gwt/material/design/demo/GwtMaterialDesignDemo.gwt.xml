@@ -57,7 +57,9 @@
     <source path='client'/>
     <source path='shared'/>
 
+    <!-- PWA Configuration -->
     <set-configuration-property name="manifest" value="manifest.json" />
+    <set-configuration-property name="serviceWorker" value="service-worker.js" />
 
     <set-configuration-property name="gin.ginjector.modules"
                                 value="gwt.material.design.demo.client.gin.ClientModule"/>
