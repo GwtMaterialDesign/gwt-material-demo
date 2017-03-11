@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '924CDA5999B3A54F9CB06F5F664BCD56';
+var $strongName = '10E06985B2F3E96FF78659D8B37101CD';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -16246,7 +16246,7 @@ function MaterialSplitPanel(){
 }
 
 defineClass(183, 24, $intern_64, MaterialSplitPanel);
-_.onLoad = function onLoad_25(){
+_.onLoad = function onLoad_26(){
   $onLoad_0(this);
   $initSplitter(this);
 }
@@ -16562,7 +16562,7 @@ function MaterialSwipeablePanel(){
 }
 
 defineClass(405, 24, $intern_64, MaterialSwipeablePanel);
-_.onLoad = function onLoad_28(){
+_.onLoad = function onLoad_29(){
   var w, w$iterator;
   $onLoad_0(this);
   for (w$iterator = new WidgetCollection$WidgetIterator(this.children_1); w$iterator.index_0 < w$iterator.this$01.size_0;) {
@@ -16749,7 +16749,7 @@ _.insert = function insert_8(child, beforeIndex){
   $insert_4(this.content_0, child, beforeIndex);
 }
 ;
-_.onLoad = function onLoad_32(){
+_.onLoad = function onLoad_33(){
   $onLoad_0(this);
   if (!this.initialized) {
     $setStyleName(this.toolbar_0, 'window-toolbar');
@@ -16991,7 +16991,7 @@ _.isEnabled = function isEnabled_7(){
   return !this.inputElem.disabled;
 }
 ;
-_.onLoad = function onLoad_33(){
+_.onLoad = function onLoad_34(){
   $clinit_DOM();
   this.inputElem.__listener = this , undefined;
 }
@@ -20516,7 +20516,7 @@ function MaterialCheckBox(){
 }
 
 defineClass(82, 432, $intern_97, MaterialCheckBox);
-_.onLoad = function onLoad_34(){
+_.onLoad = function onLoad_35(){
   $clinit_DOM();
   this.inputElem.__listener = this;
   this.element_0.style['display'] = (this.element_0.style.display != 'none'?($clinit_Style$Display() , BLOCK):($clinit_Style$Display() , NONE)).getCssName();
@@ -20601,7 +20601,7 @@ _.add_0 = function add_34(child){
   $add_28(this, child);
 }
 ;
-_.onLoad = function onLoad_35(){
+_.onLoad = function onLoad_36(){
   $onLoad_0(this);
   $setAttribute(($clinit_DOM() , this.element_0), 'data-collapsible', this.accordion?'accordion':'expandable');
   this.activeIndex != -1 && !this.activeWidget && $setActive_2(this, this.activeIndex);
@@ -20841,7 +20841,7 @@ function MaterialCollectionItem(){
 }
 
 defineClass(57, 24, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 42:1, 39:1, 24:1, 57:1}, MaterialCollectionItem);
-_.onLoad = function onLoad_36(){
+_.onLoad = function onLoad_37(){
   $onLoad_0(this);
   $wnd.initDismissableCollection();
 }
@@ -20962,7 +20962,7 @@ _.add_0 = function add_38(child){
   $add_32(this, child);
 }
 ;
-_.onLoad = function onLoad_38(){
+_.onLoad = function onLoad_39(){
   $onLoad_0(this);
   $initialize_3(this);
 }
@@ -21093,7 +21093,7 @@ function MaterialImage_0(){
 }
 
 defineClass(40, 24, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 186:1, 42:1, 39:1, 24:1, 40:1}, MaterialImage, MaterialImage_0);
-_.onLoad = function onLoad_40(){
+_.onLoad = function onLoad_41(){
   $onLoad_0(this);
   $wnd.$('.materialboxed').materialbox();
 }
@@ -21224,7 +21224,7 @@ _.isEnabled = function isEnabled_9(){
   return $isEnabled(this.listBox);
 }
 ;
-_.onLoad = function onLoad_41(){
+_.onLoad = function onLoad_42(){
   $onLoad_0(this);
   if (!this.initialized) {
     $wnd.$($getElement(this.listBox)).change(makeLambdaFunction(MaterialListValueBox$lambda$0$Type.prototype.call_3, MaterialListValueBox$lambda$0$Type, [this]));
@@ -21425,7 +21425,7 @@ _.clear_0 = function clear_21(){
   $clear_1(this.div);
 }
 ;
-_.onLoad = function onLoad_42(){
+_.onLoad = function onLoad_43(){
   $onLoad_0(this);
   !!this.typeMixin.type_0 && $applyType(castTo(this.typeMixin.type_0, 291), ($clinit_DOM() , this.element_0));
   !!$wnd.$('#' + $getActivates(this.activatesMixin)).get(0) && $insert_4(this.div, this.navMenu, 0);
@@ -21452,7 +21452,7 @@ _.add_0 = function add_43(child){
   $add_19(this, new ListItem_0(child));
 }
 ;
-_.onLoad = function onLoad_43(){
+_.onLoad = function onLoad_44(){
   var widget, widget$iterator;
   $onLoad_0(this);
   for (widget$iterator = new WidgetCollection$WidgetIterator(this.children_1); widget$iterator.index_0 < widget$iterator.this$01.size_0;) {
@@ -21570,7 +21570,7 @@ function MaterialSearch(){
 }
 
 defineClass(577, 159, $intern_81, MaterialSearch);
-_.onLoad = function onLoad_47(){
+_.onLoad = function onLoad_48(){
   $onLoad_1(this);
   if (!this.searchResultPanel || !this.searchResultPanel.attached) {
     this.searchResultPanel = new MaterialSearchResult;
@@ -21911,7 +21911,7 @@ _.insert_0 = function insert_9(child, container, beforeIndex, domInsert){
   $insert_5(this, $wrap(this, child), container, beforeIndex, domInsert);
 }
 ;
-_.onLoad = function onLoad_48(){
+_.onLoad = function onLoad_49(){
   $onLoad_0(this);
   $initialize_5(this);
   if (this.showOnAttach != null) {
@@ -22066,7 +22066,7 @@ _.setValue_0 = function setValue_17(value_0){
   $setValue_19(this, value_0, false);
 }
 ;
-_.onLoad = function onLoad_50(){
+_.onLoad = function onLoad_51(){
   $onLoad_0(this);
   if (!this.initialized) {
     $add_14(this.label_0, this.offLabel);
@@ -22166,7 +22166,7 @@ function MaterialTab(){
 }
 
 defineClass(189, 120, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 42:1, 39:1, 24:1, 189:1, 120:1}, MaterialTab);
-_.onLoad = function onLoad_51(){
+_.onLoad = function onLoad_52(){
   $onLoad_0(this);
   $initialize_6(this);
   this.indicator = new MaterialWidget_0($wnd.$(($clinit_DOM() , this.element_0)).find('.indicator').get(0));
@@ -22216,7 +22216,7 @@ function MaterialTabItem(){
 }
 
 defineClass(107, 51, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 42:1, 39:1, 24:1, 107:1, 51:1}, MaterialTabItem);
-_.onLoad = function onLoad_52(){
+_.onLoad = function onLoad_53(){
   $onLoad_0(this);
   try {
     this.parent_0 = castTo(this.parent_1, 189);
@@ -31477,7 +31477,7 @@ function PrettyPre(){
 }
 
 defineClass(17, 2112, $intern_65, PrettyPre);
-_.onLoad = function onLoad_62(){
+_.onLoad = function onLoad_63(){
   $onLoad_0(this);
   $wnd.prettyPrint();
 }
