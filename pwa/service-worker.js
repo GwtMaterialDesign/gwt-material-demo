@@ -7,8 +7,7 @@ var filesToCache = [
     'gwtmaterialdemo/css/overridecss.css',
     'gwtmaterialdemo/css/animation.css',
     'gwtmaterialdemo/css/material-icons.css',
-    'gwtmaterialdemo/css/materialize.min.css',
-    'http://127.0.0.1:9876/gwtmaterialdemo/DC647EC9EC7418315821F533440AC11C.cache.js'
+    'gwtmaterialdemo/css/materialize.min.css'
 ];
 
 self.addEventListener('install', function(e) {
