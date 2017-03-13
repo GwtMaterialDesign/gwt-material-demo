@@ -133,7 +133,7 @@
     <m:MaterialTitle title="Avatar"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR">
-        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+        <m:MaterialImage url="https://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -164,7 +164,7 @@
     <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
+      &emsp;&emsp;&lt;m:MaterialImage url="https://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
@@ -178,7 +178,7 @@
     <m:MaterialTitle title="Dismissable"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
+        <m:MaterialImage url="https://materializecss.com/images/yuna.jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -209,7 +209,7 @@
     <demo:PrettyPre addStyleNames="lang-xml">
       &emsp;&lt;m:MaterialCollection><br/>
       &emsp;&lt;m:MaterialCollectionItem type="AVATAR" dismissible="true"><br/>
-      &emsp;&emsp;&lt;m:MaterialImage url="http://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
+      &emsp;&emsp;&lt;m:MaterialImage url="https://materializecss.com/images/yuna.jpg" type="CIRCLE"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Title" fontSize="2em"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>

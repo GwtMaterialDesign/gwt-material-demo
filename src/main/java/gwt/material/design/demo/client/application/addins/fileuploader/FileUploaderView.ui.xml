@@ -79,13 +79,13 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Flexible Integration" description="MaterialFileUploader can be use on any widgets to control the upload process." />
-            <m:MaterialImage url="http://i.imgur.com/GrM6eIz.gif" />
+            <m:MaterialImage url="https://i.imgur.com/GrM6eIz.gif" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialRow><br/>
                 &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="cardUploader" acceptedFiles="image/*" grid="l4" url="/fileupload" preview="false" maxFileSize="20" shadow="0" clickable="cardUpload"><br/>
                 &emsp;&emsp;&lt;m:MaterialCard><br/>
                 &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
-                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage ui:field="imgPreview" url="http://demo.geekslabs.com/materialize/v3.1/images/gallary/33.jpg" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage ui:field="imgPreview" url="https://demo.geekslabs.com/materialize/v3.1/images/gallary/33.jpg" /><br/>
                 &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
                 &emsp;&emsp;&emsp;&lt;m:MaterialCardContent layoutPosition="RELATIVE"><br/>
                 &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblName" text="Sample.png" fontSize="1.5em"/><br/>

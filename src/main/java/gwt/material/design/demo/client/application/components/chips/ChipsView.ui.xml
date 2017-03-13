@@ -75,24 +75,24 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contactâ€™s name, sees the contactâ€™s addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
       <m:MaterialRow>
-        <m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
-        <m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
-        <m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
+        <m:MaterialChip url="https://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        <m:MaterialChip url="https://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
+        <m:MaterialChip url="https://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
+        &emsp;&lt;m:MaterialChip url="https://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip url="https://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip url="https://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
-      <m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+      <m:MaterialChip ui:field="chip" url="https://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
       <m:MaterialChip ui:field="chipClick" text="Click Me" />
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &emsp;&lt;m:MaterialChip ui:field="chip" url="https://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
         &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
       </demo:PrettyPre>
       <demo:PrettyPre addStyleNames="lang-java">

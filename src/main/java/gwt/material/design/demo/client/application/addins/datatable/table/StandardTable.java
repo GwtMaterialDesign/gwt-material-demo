@@ -212,7 +212,7 @@ public class StandardTable extends Composite {
         for(int k = 1; k <= 5; k++){
             // Generate 100 rows
             for(int i = 1; i <= 5; i++, rowIndex++){
-                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
+                people.add(new Person(i, "https://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
             }
         }
         table.setRowData(0, people);

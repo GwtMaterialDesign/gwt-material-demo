@@ -7,7 +7,8 @@ var filesToCache = [
     'gwtmaterialdemo/css/overridecss.css',
     'gwtmaterialdemo/css/animation.css',
     'gwtmaterialdemo/css/material-icons.css',
-    'gwtmaterialdemo/css/materialize.min.css'
+    'gwtmaterialdemo/css/materialize.min.css',
+    'image/launcher-icon.png'
 ];
 
 self.addEventListener('install', function(e) {

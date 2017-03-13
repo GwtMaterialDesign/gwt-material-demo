@@ -110,7 +110,7 @@
       <m:MaterialRow addStyleNames="code">
         <!-- Shrink Type -->
         <m:MaterialTitle title="Shrink Type" description="Scaling on Material NavBrand Logo (either image or text) with delightful animation "/>
-        <m:MaterialImage url="http://oi63.tinypic.com/dqnpy1.jpg"/>
+        <m:MaterialImage url="https://oi63.tinypic.com/dqnpy1.jpg"/>
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;m:MaterialNavBar type="SHRINK"><br/>
           &emsp;&emsp;&lt;-- NavBar Contents here --><br/>

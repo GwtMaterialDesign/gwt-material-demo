@@ -30,8 +30,10 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.base.pwa.PwaManager;
 import gwt.material.design.client.ui.MaterialFooter;
 import gwt.material.design.client.ui.MaterialFooterCopyright;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.ThemeManager;
 
 import javax.inject.Inject;
@@ -55,6 +57,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
         DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));
+
+        // Detect whether the app is running online / not.
+        if (!PwaManager.getInstance().isOnline()) {
+            MaterialToast.fireToast("No Internet Connection");
+        }
     }
 
     @UiHandler("imgGPlus")

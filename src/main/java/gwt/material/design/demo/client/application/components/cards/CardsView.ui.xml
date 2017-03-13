@@ -97,7 +97,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
@@ -114,7 +114,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
@@ -135,7 +135,7 @@
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
         &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample"/><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -150,7 +150,7 @@
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
         &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -173,7 +173,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -190,7 +190,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -207,7 +207,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -224,7 +224,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
       
             <m:MaterialCardContent textColor="BLACK">
@@ -243,7 +243,7 @@
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
         &emsp;&lt;m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL"><br/>
         &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardImage><br/>
 
         &emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -265,7 +265,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -287,7 +287,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -309,7 +309,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -331,7 +331,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif"/>
+              <m:MaterialImage url="https://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
