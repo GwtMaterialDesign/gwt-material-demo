@@ -92,7 +92,7 @@
 
 		<m:MaterialSideNav ui:field="sideNav" m:id="sideBar" type="PUSH" width="250" closeOnClick="false" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
-				<m:MaterialImage width="100%" url="http://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
+				<m:MaterialImage width="100%" url="https://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About"/>
