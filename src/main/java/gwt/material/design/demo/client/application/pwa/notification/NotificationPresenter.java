@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.pushpin;
+package gwt.material.design.demo.client.application.pwa.notification;
 
 /*
  * #%L
@@ -27,25 +27,22 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
-import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class PushPinPresenter extends Presenter<PushPinPresenter.MyView, PushPinPresenter.MyProxy> {
+public class NotificationPresenter extends Presenter<NotificationPresenter.MyView, NotificationPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @NameToken(NameTokens.pushPin)
+    @NameToken(NameTokens.notification)
     @ProxyCodeSplit
-    interface MyProxy extends ProxyPlace<PushPinPresenter> {
+    interface MyProxy extends ProxyPlace<NotificationPresenter> {
     }
 
-    public static final NestedSlot SLOT_PUSHPIN = new NestedSlot();
-
     @Inject
-    PushPinPresenter(
+    NotificationPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
@@ -56,7 +53,8 @@ public class PushPinPresenter extends Presenter<PushPinPresenter.MyView, PushPin
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("PushNotification Pin", "Pushpin is our fixed positioning plugin. You can check out our live examples: the fixed Table of Contents on the right.", "components/pushpin/PushPinView", this);
-    }
 
+        SetPageTitleEvent.fire("Notification",
+                "Notification", "", this);
+    }
 }

@@ -93,6 +93,9 @@ public class NameTokens {
     public static final String countUp = "countUp";
     public static final String liveStamp = "liveStamp";
     public static final String inputMask = "inputMask";
+    public static final String installable = "installable";
+    public static final String serviceworker = "serviceworker";
+    public static final String notification = "notification";
 
     public static String getAbout() {
         return about;
@@ -376,5 +379,17 @@ public class NameTokens {
 
     public static String getInputMask() {
         return inputMask;
+    }
+
+    public static String getInstallable() {
+        return installable;
+    }
+
+    public static String getServiceworker() {
+        return serviceworker;
+    }
+
+    public static String getNotification() {
+        return notification;
     }
 }

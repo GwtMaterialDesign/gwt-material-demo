@@ -30,7 +30,7 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.base.pwa.PwaManager;
+import gwt.material.design.client.pwa.PwaManager;
 import gwt.material.design.client.ui.MaterialFooter;
 import gwt.material.design.client.ui.MaterialFooterCopyright;
 import gwt.material.design.client.ui.MaterialToast;

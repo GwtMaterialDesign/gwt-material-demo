@@ -204,6 +204,19 @@
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
+				<!-- PROGRESSIVE WEB APPS (PWA) -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="PWA" iconType="STARS"/>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getInstallable}" text="Installable" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getServiceworker}" text="Service Worker" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getNotification}" text="Push Notifications" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
 			</m:MaterialCollapsible>
 			<!-- ROADMAPS -->
 			<m:MaterialLink targetHistoryToken="{tokens.getRoadmap}" iconPosition="LEFT" iconType="TIMELINE" text="Roadmap" waves="DEFAULT" />
