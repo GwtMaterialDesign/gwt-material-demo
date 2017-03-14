@@ -56,28 +56,28 @@
   
       <m:MaterialSlider ui:field="slider" fullscreen="false">
         <m:MaterialSlideItem>
-          <m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
+          <m:MaterialImage url="https://i.imgur.com/BHj2Jfj.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
+          <m:MaterialImage url="https://i.imgur.com/YQqcICi.jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
+          <m:MaterialImage url="https://i.imgur.com/Kkz8RYM.jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
+          <m:MaterialImage url="https://i.imgur.com/1iGriGD.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
@@ -87,7 +87,7 @@
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialSlider ui:field="slider" fullscreen="false"><br/><br/>
         &emsp;&lt;m:MaterialSlideItem><br/>
-        &emsp;&emsp;&lt;m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="https://i.imgur.com/BHj2Jfj.jpg"/><br/>
         &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
         &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
@@ -103,7 +103,7 @@
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialSlider ui:field="slider" fullscreen="true"><br/><br/>
         &emsp;&lt;m:MaterialSlideItem><br/>
-        &emsp;&emsp;&lt;m:MaterialImage url="https://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="https://i.imgur.com/BHj2Jfj.jpg"/><br/>
         &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
         &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
