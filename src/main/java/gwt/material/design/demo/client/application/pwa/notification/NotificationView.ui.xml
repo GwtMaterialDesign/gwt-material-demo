@@ -25,28 +25,80 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Simple Push Notification" />
+      <m:MaterialTitle title="Simple Push Notification" description="Provides a simple way to notify your users."/>
       <m:MaterialButton ui:field="btnNotify" text="Notify"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;PushNotification.create("Gwt Material Design");
+      </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Options" />
       <m:MaterialButton ui:field="btnNotifyOptions" text="Notify with Options"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;PushNotificationOptions options = new PushNotificationOptions();<br/>
+        options.body = "I love GWT Material";<br/>
+        options.icon = "https://i.imgur.com/VaBxpGj.png";<br/>
+        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";<br/>
+        options.timeout = 4000;<br/>
+        PushNotification.create("Gwt Material Design", options);
+      </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Callbacks" />
       <m:MaterialButton ui:field="btnNotifyCallbacks" text="Notify with Options"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;PushNotificationOptions options = new PushNotificationOptions();<br/>
+        options.body = "I love GWT Material";<br/>
+        options.icon = "https://i.imgur.com/VaBxpGj.png";<br/>
+        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";<br/>
+        options.timeout = 4000;<br/>
+        options.onClick = () -> {<br/>
+        &emsp;MaterialToast.fireToast("Clicked");<br/>
+        };<br/>
+        options.onClose = () -> {<br/>
+        &emsp;MaterialToast.fireToast("Closed");<br/>
+        };<br/>
+        options.onError = () -> {<br/>
+        &emsp;MaterialToast.fireToast("Errored");<br/>
+        };<br/>
+        options.onShow = () -> {<br/>
+        &emsp;MaterialToast.fireToast("Showed");<br/>
+        };<br/>
+        PushNotification.create("Gwt Material Design", options);
+      </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Require Interaction" />
       <m:MaterialButton ui:field="btnNotifyInteraction" text="Require Interaction (TRUE)"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;PushNotificationOptions options = new PushNotificationOptions();<br/>
+        options.body = "I love GWT Material";<br/>
+        options.icon = "https://i.imgur.com/VaBxpGj.png";<br/>
+        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";<br/>
+        options.timeout = 4000;<br/>
+        options.requireInteraction = true;<br/>
+        PushNotification.create("Gwt Material Design", options);
+      </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Count" />
       <m:MaterialButton ui:field="btnCount" text="Count Opened Notifications"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;MaterialToast.fireToast(PushNotification.count() + " notification(s) opened");
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Clear" description="Clear all opened notifications"/>
+      <m:MaterialButton ui:field="btnShow" marginRight="12" text="Show Notification" />
+      <m:MaterialButton ui:field="btnClear" type="FLAT" text="Clear All" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;PushNotification.clear();
+      </demo:PrettyPre>
     </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>

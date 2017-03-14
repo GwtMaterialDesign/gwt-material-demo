@@ -93,4 +93,14 @@ public class NotificationView extends ViewImpl implements NotificationPresenter.
     void onCountNofications(ClickEvent e) {
         MaterialToast.fireToast(PushNotification.count() + " notification(s) opened");
     }
+
+    @UiHandler("btnShow")
+    void onShow(ClickEvent e) {
+        PushNotification.create("Gwt Material Design");
+    }
+
+    @UiHandler("btnClear")
+    void onClose(ClickEvent e) {
+        PushNotification.clear();
+    }
 }

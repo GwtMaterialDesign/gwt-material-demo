@@ -25,7 +25,49 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialLabel text="Under maintenanced" />
+      <m:MaterialTitle title="Create the manifest.json" description="Into your webapp directory create a manifest.json and provide your app information. Also add the designated icon resources with corresponding sizes." />
+      <m:MaterialLink display="BLOCK" target="_blank" href="https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/" text="More Details" iconType="LINK" textColor="BLUE" />
+      <m:MaterialColumn grid="s12 m6 l6">
+        <demo:PrettyPre addStyleNames="lang-javascript">
+          {<br/>
+          &emsp;"short_name": "AirHorner",<br/>
+          &emsp;"name": "Kinlan's AirHorner of Infamy",<br/>
+          &emsp;"icons": [<br/>
+          &emsp;&emsp;{<br/>
+          &emsp;&emsp;&emsp;"src": "launcher-icon-1x.png",<br/>
+          &emsp;&emsp;&emsp;"type": "image/png",<br/>
+          &emsp;&emsp; &emsp;"sizes": "48x48"<br/>
+          &emsp;&emsp;},<br/>
+          &emsp;&emsp;{<br/>
+          &emsp;&emsp;&emsp;"src": "launcher-icon-2x.png",<br/>
+          &emsp;&emsp;&emsp;"type": "image/png",<br/>
+          &emsp;&emsp;&emsp;"sizes": "96x96"<br/>
+          &emsp;&emsp;},<br/>
+          &emsp;&emsp;{<br/>
+          &emsp;&emsp;&emsp;"src": "launcher-icon-4x.png",<br/>
+          &emsp;&emsp;&emsp;"type": "image/png",<br/>
+          &emsp;&emsp;&emsp;"sizes": "192x192"<br/>
+          &emsp;&emsp;}<br/>
+          ],<br/>
+          &emsp;"start_url": "index.html?launcher=true"<br/>
+          }
+        </demo:PrettyPre>
+      </m:MaterialColumn>
+      <m:MaterialColumn grid="s12 m6 l6">
+        <m:MaterialImage url="https://i.imgur.com/DjMPdNE.png" />
+      </m:MaterialColumn>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Link to GWT" description="Last Step is to link your manifest.json into your GWT *App.xml file." />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;set-configuration-property name="manifest" value="manifest.json" />
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Demo" description="Here's a sample screenshot how to enable Add to Homescreen into your mobile device" />
+      <m:MaterialImage url="https://cloud.githubusercontent.com/assets/3138071/23882061/3f830d0a-0899-11e7-8702-1f75275c6524.gif" />
     </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>
