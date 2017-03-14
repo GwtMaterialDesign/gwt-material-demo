@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '0D1938F2976C15878947722C1F1200A6';
+var $strongName = '5B8013D65F0929A3BB3ED907CF1927C0';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -20163,7 +20163,7 @@ function matchMedia_0(query){
 }
 
 function $configure(){
-  var head, linkManifest;
+  var head, linkManifest, head_0, metaThemeColor;
   if (!initialized_0) {
     head = $doc.getElementsByTagName('head')[0];
     linkManifest = $doc.createElement('link');
@@ -20171,6 +20171,11 @@ function $configure(){
     linkManifest.setAttribute('href', 'manifest.json');
     head.appendChild(linkManifest);
     $wnd.navigator.serviceWorker != null?$wnd.navigator.serviceWorker.register('service-worker.js').then(makeLambdaFunction(PwaManager$lambda$0$Type.prototype.call_11, PwaManager$lambda$0$Type, [])):($clinit_GWT() , $clinit_GWT());
+    head_0 = $doc.getElementsByTagName('head')[0];
+    metaThemeColor = $doc.createElement('meta');
+    metaThemeColor.setAttribute('name', 'theme-color');
+    metaThemeColor.setAttribute('content', '#1565c0');
+    head_0.appendChild(metaThemeColor);
     initialized_0 = true;
   }
 }
