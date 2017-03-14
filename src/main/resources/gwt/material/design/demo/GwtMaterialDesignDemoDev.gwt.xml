@@ -33,6 +33,7 @@
     <!-- PWA Configuration -->
     <set-configuration-property name="manifest" value="manifest.json" />
     <set-configuration-property name="serviceWorker" value="service-worker.js" />
+    <set-configuration-property name="metaThemeColor" value="#1565c0" />
 
     <set-property name="gwt.logging.logLevel" value="ALL" />
     <set-property name="gwt.logging.developmentModeHandler" value="ENABLED" />
