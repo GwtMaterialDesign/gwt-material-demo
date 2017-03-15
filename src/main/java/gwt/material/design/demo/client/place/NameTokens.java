@@ -96,6 +96,7 @@ public class NameTokens {
     public static final String installable = "installable";
     public static final String serviceworker = "serviceworker";
     public static final String notification = "notification";
+    public static final String pwagettingstarted = "pwagettingstarted";
 
     public static String getAbout() {
         return about;
@@ -391,5 +392,9 @@ public class NameTokens {
 
     public static String getNotification() {
         return notification;
+    }
+
+    public static String getPwagettingstarted() {
+        return pwagettingstarted;
     }
 }

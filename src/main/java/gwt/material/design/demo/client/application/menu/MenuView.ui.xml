@@ -211,6 +211,7 @@
 					</m:MaterialCollapsibleHeader>
 					<m:MaterialCollapsibleBody>
 						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getPwagettingstarted}" text="Getting Started" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInstallable}" text="Installable" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getServiceworker}" text="Service Worker" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getNotification}" text="Push Notifications" waves="DEFAULT"/>

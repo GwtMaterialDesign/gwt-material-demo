@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.pwa;
+package gwt.material.design.demo.client.application.pwa.gettingstarted;
 
 /*
  * #%L
@@ -21,19 +21,12 @@ package gwt.material.design.demo.client.application.pwa;
  */
 
 
-import com.google.gwt.inject.client.AbstractGinModule;
-import gwt.material.design.demo.client.application.pwa.gettingstarted.PwaGettingStartedModule;
-import gwt.material.design.demo.client.application.pwa.installable.InstallableModule;
-import gwt.material.design.demo.client.application.pwa.notification.NotificationModule;
-import gwt.material.design.demo.client.application.pwa.serviceworker.ServiceWorkerModule;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class PwaModule extends AbstractGinModule {
-
+public class PwaGettingStartedModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        install(new InstallableModule());
-        install(new NotificationModule());
-        install(new ServiceWorkerModule());
-        install(new PwaGettingStartedModule());
+        bindPresenter(PwaGettingStartedPresenter.class, PwaGettingStartedPresenter.MyView.class,
+            PwaGettingStartedView.class, PwaGettingStartedPresenter.MyProxy.class);
     }
 }

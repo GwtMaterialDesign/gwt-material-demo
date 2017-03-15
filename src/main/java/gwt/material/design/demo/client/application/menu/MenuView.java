@@ -132,9 +132,10 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.CLOUD_DOWNLOAD, "Getting Started", "#" + NameTokens.gettingstarted));
 
         // Components
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA Getting Started", "#" + NameTokens.pwagettingstarted));
         listSearches.add(new SearchObject(IconType.POLYMER, "PWA Installable", "#" + NameTokens.installable));
         listSearches.add(new SearchObject(IconType.POLYMER, "PWA Service Worker", "#" + NameTokens.serviceworker));
-        listSearches.add(new SearchObject(IconType.POLYMER, "PWA PushNotification Notifications", "#" + NameTokens.notification));
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA PushNotification", "#" + NameTokens.notification));
 
         // Components
         listSearches.add(new SearchObject(IconType.POLYMER, "Badges", "#" + NameTokens.badges));
