@@ -57,5 +57,22 @@
         <m:MaterialLink text="WEB PUSH NOTIFICATIONS" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#notification" target="_blank" />
       </m:MaterialTitle>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="PWA Manager : Controls" description="With the PWA Manager, you can easily configure / control on service workers and manifest." />
+      <m:MaterialButton text="Get Service Worker" ui:field="btnGetServiceWorker" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;MaterialToast.fireToast("Script URL : " + PwaManager.getInstance().getServiceWorker().scriptURL);<br/>
+        MaterialToast.fireToast("State : " + PwaManager.getInstance().getServiceWorker().state);
+      </demo:PrettyPre>
+      <m:MaterialButton text="Unload PWA Feature" ui:field="btnUnregisterPwa" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().unLoad();
+      </demo:PrettyPre>
+      <m:MaterialButton text="Reload PWA Feature" ui:field="btnReloadPwa" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().load();
+      </demo:PrettyPre>
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

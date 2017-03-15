@@ -21,9 +21,13 @@ package gwt.material.design.demo.client.application.pwa.gettingstarted;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -34,5 +38,21 @@ public class PwaGettingStartedView extends ViewImpl implements PwaGettingStarted
     @Inject
     PwaGettingStartedView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("btnGetServiceWorker")
+    void getServiceWorker(ClickEvent e) {
+        MaterialToast.fireToast("Script URL : " + PwaManager.getInstance().getServiceWorker().scriptURL);
+        MaterialToast.fireToast("State : " + PwaManager.getInstance().getServiceWorker().state);
+    }
+
+    @UiHandler("btnUnregisterPwa")
+    void unregisterPWA(ClickEvent e) {
+        PwaManager.getInstance().unLoad();
+    }
+
+    @UiHandler("btnReloadPwa")
+    void reloadPWA(ClickEvent e) {
+        PwaManager.getInstance().reload();
     }
 }

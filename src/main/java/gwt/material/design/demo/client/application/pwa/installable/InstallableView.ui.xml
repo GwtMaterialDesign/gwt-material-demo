@@ -69,5 +69,10 @@
       <m:MaterialTitle title="Demo" description="Here's a sample screenshot how to enable Add to Homescreen into your mobile device" />
       <m:MaterialImage url="https://cloud.githubusercontent.com/assets/3138071/23882061/3f830d0a-0899-11e7-8702-1f75275c6524.gif" />
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Tool : Manifest Generator" description="Click the link below to generate manifest easily." />
+      <m:MaterialAnchorButton text="Link to Generator Tool" href="https://tomitm.github.io/appmanifest/" target="_blank" />
+    </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>

@@ -29,7 +29,22 @@
         }
     </ui:style>
     <m:MaterialRow marginTop="60">
-        <!-- 2.0-rc3 -->
+        <!-- 2.1 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.1" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="On Going"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Progressive Web Apps" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Installable Manifest" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Service Worker" margin="4"/>
+                    <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Push Notifications" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+        <!-- 2.0-rc4 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="2.0-rc4" textColor="BLACK"/>

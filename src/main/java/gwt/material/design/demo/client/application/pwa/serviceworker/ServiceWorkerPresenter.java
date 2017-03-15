@@ -55,6 +55,6 @@ public class ServiceWorkerPresenter extends Presenter<ServiceWorkerPresenter.MyV
         super.onReveal();
 
         SetPageTitleEvent.fire("ServiceWorker",
-                "ServiceWorker", "", this);
+                "A service worker is a script that your browser runs in the background, separate from a web page, opening the door to features that don't need a web page or user interaction. ", "pwa/serviceworker/ServiceWorkerView", this);
     }
 }

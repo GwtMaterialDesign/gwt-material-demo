@@ -21,9 +21,14 @@ package gwt.material.design.demo.client.application.pwa.serviceworker;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.pwa.serviceworker.Navigator;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -34,5 +39,20 @@ public class ServiceWorkerView extends ViewImpl implements ServiceWorkerPresente
     @Inject
     ServiceWorkerView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("btnGetScope")
+    void getScope(ClickEvent e) {
+        MaterialToast.fireToast(Navigator.serviceWorker.controller.scriptURL);
+    }
+
+    @UiHandler("btnGetState")
+    void getState(ClickEvent e) {
+        MaterialToast.fireToast(Navigator.serviceWorker.controller.state);
+    }
+
+    @UiHandler("btnUnregister")
+    void unregister(ClickEvent e) {
+        PwaManager.getInstance().unRegisterServiceWorker();
     }
 }
