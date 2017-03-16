@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = 'ABB9D4B54B1E81B3E420845E0E607B0E';
+var $strongName = 'FC88D21942957F56246E83BB6DD90F71';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -5652,7 +5652,7 @@ function OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(html){
   this.html_0 = html;
 }
 
-defineClass(13, 1, $intern_28, OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml);
+defineClass(12, 1, $intern_28, OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml);
 _.asString = function asString(){
   return this.html_0;
 }
@@ -5668,7 +5668,7 @@ _.hashCode_0 = function hashCode_5(){
   return getHashCode_1(this.html_0);
 }
 ;
-var Lcom_google_gwt_safehtml_shared_OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml', 13);
+var Lcom_google_gwt_safehtml_shared_OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml', 12);
 function $appendEscaped(this$static, text_0){
   $append_4(this$static.sb, htmlEscape(text_0));
   return this$static;
