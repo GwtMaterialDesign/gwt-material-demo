@@ -43,12 +43,12 @@ public class ServiceWorkerView extends ViewImpl implements ServiceWorkerPresente
 
     @UiHandler("btnGetScope")
     void getScope(ClickEvent e) {
-        MaterialToast.fireToast(Navigator.serviceWorker.controller.scriptURL);
+        MaterialToast.fireToast(PwaManager.getInstance().getServiceWorker().scriptURL);
     }
 
     @UiHandler("btnGetState")
     void getState(ClickEvent e) {
-        MaterialToast.fireToast(Navigator.serviceWorker.controller.state);
+        MaterialToast.fireToast(PwaManager.getInstance().getServiceWorker().state);
     }
 
     @UiHandler("btnUnregister")

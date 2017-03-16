@@ -26,7 +26,9 @@
   <m:MaterialPanel>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Create your service-worker.js" description="Click the link below and download / copy the file and put it under your webapp directory." />
-      <m:MaterialAnchorButton text="Link to File" href="https://gist.github.com/kevzlou7979/ad8eb8a779fc6faa0c7b4b3c9108c3c5" target="_blank" />
+      <m:MaterialRow>
+        <m:MaterialAnchorButton text="Link to File" href="https://gist.github.com/kevzlou7979/ad8eb8a779fc6faa0c7b4b3c9108c3c5" target="_blank" />
+      </m:MaterialRow>
       <m:MaterialImage url="https://i.imgur.com/WI8PPiB.png" />
     </m:MaterialRow>
 
@@ -38,9 +40,19 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Service Worker : Helper Method API" description="We build a built-in helper methods to access Service Worker API" />
       <m:MaterialButton text="Get Scope" ui:field="btnGetScope" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().getServiceWorker().scriptURL
+      </demo:PrettyPre>
       <m:MaterialButton text="Get State" ui:field="btnGetState" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().getServiceWorker().state
+      </demo:PrettyPre>
       <m:MaterialButton text="Unregister Service Worker" ui:field="btnUnregister" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().unRegisterServiceWorker();
+      </demo:PrettyPre>
     </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>
