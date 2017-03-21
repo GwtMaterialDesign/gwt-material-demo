@@ -332,4 +332,34 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     void onRangeValueEvent(ClickEvent e) {
         rangeSetValue.setValue(20, true);
     }
+    
+    @UiHandler("btnTextBoxGetValue") 
+    void textBoxGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtBoxValue.getValue());
+    }
+
+    @UiHandler("btnTextAreaGetValue")
+    void textAreaGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtAreaValue.getValue());
+    }
+
+    @UiHandler("btnTextIntegerGetValue")
+    void textIntegerGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtIntegerValue.getValue() + "");
+    }
+
+    @UiHandler("btnTextLongGetValue")
+    void textLongGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtLongValue.getValue() + "");
+    }
+    
+    @UiHandler("btnTextDoubleGetValue")
+    void textDoubleGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtDoubleValue.getValue() + "");
+    }
+
+    @UiHandler("btnTextFloatGetValue")
+    void textFloatGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtFloatValue.getValue() + "");
+    }
 }
