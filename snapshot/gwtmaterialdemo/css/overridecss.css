@@ -291,6 +291,7 @@ table .gwt-CheckBox label {
 		overflow: auto !important;
 	}
 }
+
 /**SIDEBAR **/
 .side-nav li > div {
 	width: 100%;
@@ -805,6 +806,9 @@ footer.fixed{
 
 .navmenu-permanent, .drag-target, #sidenav-overlay{
 	visibility: hidden !important;
+}
+.side-nav.fixed.open {
+	left: 0 !important;
 }
 @media screen and (max-width: 992px) {
 	.side-nav.fixed, .side-nav.card {
