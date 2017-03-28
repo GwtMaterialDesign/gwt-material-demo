@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '958A20C24E2A8FB308A2A3781DEED667';
+var $strongName = '8AEC719C1E9035276DDED0AB1351905D';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -2597,13 +2597,6 @@ function $getPropertyInt(this$static, name_0){
 
 function $getPropertyString(this$static, name_0){
   return this$static[name_0] == null?null:String(this$static[name_0]);
-}
-
-function $hasClassName(this$static, className){
-  var idx;
-  className = trimClassName(className);
-  idx = indexOfName(this$static.className || '', className);
-  return idx != -1;
 }
 
 function $removeAttribute(this$static, name_0){
@@ -15577,12 +15570,16 @@ function MaterialSplitPanel(){
 defineClass(179, 25, $intern_64, MaterialSplitPanel);
 _.onLoad = function onLoad_20(){
   $onLoad_0(this);
-  $initSplitter(this);
+  if (!this.initialized) {
+    $initSplitter(this);
+    this.initialized = true;
+  }
 }
 ;
 _.barPosition = 0;
 _.bottomMax = 0;
 _.bottomMin = 0;
+_.initialized = false;
 _.leftMax = 0;
 _.leftMin = 0;
 _.rightMax = 0;
@@ -18810,7 +18807,7 @@ function $clinit_ShowOn(){
   SHOW_ON_LARGE = new ShowOn('SHOW_ON_LARGE', 1, 'show-on-large');
   SHOW_ON_MED = new ShowOn('SHOW_ON_MED', 2, 'show-on-medium');
   SHOW_ON_MED_UP = new ShowOn('SHOW_ON_MED_UP', 3, 'show-on-medium-and-up');
-  SHOW_ON_MED_DOWN = new ShowOn('SHOW_ON_MED_DOWN', 4, 'hide-on-medium-and-up');
+  SHOW_ON_MED_DOWN = new ShowOn('SHOW_ON_MED_DOWN', 4, 'show-on-medium-and-down');
   NONE_7 = new ShowOn('NONE', 5, '');
 }
 
@@ -20829,7 +20826,6 @@ function MaterialNavBar(){
   $add_14(this, this.div);
   $setFontSize(this.navMenu, 2.7, ($clinit_Style$Unit() , EM));
   $addStyleName(this.navMenu, 'button-collapse');
-  $setHideOn(this.navMenu, ($clinit_HideOn() , HIDE_ON_LARGE));
   $getElement(this.navMenu).style['display'] = '';
   $setCircle(this.navMenu);
   $setWaves(this.navMenu, ($clinit_WavesType() , LIGHT));
@@ -20852,7 +20848,7 @@ _.onLoad = function onLoad_38(){
   $onLoad_0(this);
   !!this.typeMixin.type_0 && $applyType(castTo(this.typeMixin.type_0, 286), ($clinit_DOM() , this.element_0));
   sideNavElement = $wnd.$('#' + $getActivates(this.activatesMixin)).get(0);
-  sideNavElement?$hasClassName(sideNavElement, 'fixed') || $setVisible_0(this.navMenu, false):$setVisible_0(this.navMenu, true);
+  !sideNavElement?$setVisible_0(this.navMenu, false):$setVisible_0(this.navMenu, true);
 }
 ;
 _.setActivates = function setActivates_2(activates){
@@ -21169,12 +21165,13 @@ function $applyTransition(elem, width_0, duration){
 }
 
 function $initialize_4(this$static){
-  var element, options, style, type_0;
+  var element, navMenu, options, type_0;
   try {
     this$static.activator = getElementByAttribute_0($getElement((!this$static.idMixin && (this$static.idMixin = new IdMixin(this$static)) , this$static.idMixin).uiObject).id);
+    navMenu = new MaterialWidget_0(this$static.activator);
     if (!$isOn(this$static.fixedMixin)) {
-      style = this$static.activator.getAttribute('style') || '';
-      this$static.alwaysShowActivator?$setAttribute(this$static.activator, 'style', style + '; display: block !important'):$setAttribute(this$static.activator, 'style', style + '; display: none !important');
+      $setShowOn(navMenu, ($clinit_ShowOn() , SHOW_ON_MED_DOWN));
+      this$static.alwaysShowActivator?$setShowOn(navMenu, SHOW_ON_LARGE):$setHideOn(navMenu, ($clinit_HideOn() , HIDE_ON_LARGE));
       $removeClassName(this$static.activator, 'navmenu-permanent');
     }
   }
@@ -21221,6 +21218,7 @@ function $lambda$2_9(this$static){
 }
 
 function $lambda$3_4(this$static, width_1){
+  !this$static.alwaysShowActivator && !this$static.open_0 && matchMedia_0('all and (min-width: 992px)') && $wnd.$(this$static.activator).sideNav('show');
   $pushElements(this$static, this$static.open_0, width_1);
   return $clinit_Boolean() , $clinit_Boolean() , true;
 }
