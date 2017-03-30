@@ -212,7 +212,7 @@
 			<m:MaterialLink targetHistoryToken="{tokens.getCharts}" iconPosition="LEFT" iconType="INSERT_CHART" text="Material Charts" waves="DEFAULT" />
 		</m:MaterialSideNav>
 
-		<m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" showOnAttach="false" fixed="false">
+		<m:MaterialSideNav ui:field="rightSideNav" m:id="rightSideBar" type="MINI" edge="RIGHT" closeOnClick="true" showOnAttach="false">
 			<m:MaterialLink><m:MaterialIcon iconType="POLYMER" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADJUST" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
