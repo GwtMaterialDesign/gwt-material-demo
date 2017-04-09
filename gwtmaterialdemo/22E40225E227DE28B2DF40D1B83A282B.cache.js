@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = 'CC4824F8C59CEEC09C5C4796F58EC3F2';
+var $strongName = '22E40225E227DE28B2DF40D1B83A282B';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 95:1, 59:1, 68:1}, $intern_5 = {117:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = 65535, $intern_9 = {4:1, 36:1, 8:1}, $intern_10 = {93:1, 44:1, 4:1, 32:1, 26:1}, $intern_11 = {89:1, 44:1, 4:1, 32:1, 26:1}, $intern_12 = {231:1, 44:1, 4:1, 32:1, 26:1}, $intern_13 = {191:1, 44:1, 4:1, 32:1, 26:1}, $intern_14 = {44:1, 192:1, 4:1, 32:1, 26:1}, $intern_15 = {44:1, 193:1, 4:1, 32:1, 26:1}, $intern_16 = {135:1, 4:1, 32:1, 26:1}, $intern_17 = {44:1, 272:1, 4:1, 32:1, 26:1}, $intern_18 = 2412, $intern_19 = {16:1}, $intern_20 = {252:1, 4:1, 95:1, 59:1, 68:1}, $intern_21 = {4:1, 32:1, 97:1}, $intern_22 = 4194303, $intern_23 = 1048575, $intern_24 = 4194304, $intern_25 = 17592186044416, $intern_26 = 524288, $intern_27 = -17592186044416, $intern_28 = -2147483648, $intern_29 = {331:1, 4:1}, $intern_30 = {29:1, 28:1}, $intern_31 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 21:1}, $intern_32 = 2425, $intern_33 = {31:1, 16:1, 30:1, 29:1, 125:1, 19:1, 28:1, 21:1}, $intern_34 = 16384, $intern_35 = 65536, $intern_36 = 1048576, $intern_37 = 16777216, $intern_38 = 33554432, $intern_39 = 67108864, $intern_40 = {31:1, 16:1, 30:1, 29:1, 35:1, 19:1, 28:1, 21:1}, $intern_41 = {31:1, 16:1, 30:1, 29:1, 35:1, 371:1, 19:1, 28:1, 21:1}, $intern_42 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 21:1}, $intern_43 = {31:1, 16:1, 30:1, 300:1, 29:1, 35:1, 19:1, 28:1, 21:1}, $intern_44 = {31:1, 16:1, 30:1, 29:1, 35:1, 19:1, 122:1, 28:1, 21:1}, $intern_45 = {245:1, 14:1}, $intern_46 = {267:1, 14:1}, $intern_47 = {14:1, 2388:1}, $intern_48 = {71:1, 14:1}, $intern_49 = {103:1}, $intern_50 = {31:1, 16:1, 30:1, 29:1, 35:1, 371:1, 19:1, 273:1, 28:1, 21:1}, $intern_51 = {163:1, 14:1}, $intern_52 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 19:1, 28:1, 21:1}, $intern_53 = {2389:1, 14:1}, $intern_54 = {201:1, 4:1, 32:1, 26:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 122:1, 28:1, 21:1}, $intern_56 = {227:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {157:1, 14:1}, $intern_60 = {329:1}, $intern_61 = {71:1, 14:1, 16:1, 2364:1}, $intern_62 = 2420, $intern_63 = {16:1, 64:1, 62:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_66 = {167:1, 14:1}, $intern_67 = {27:1, 14:1}, $intern_68 = {451:1, 14:1}, $intern_69 = 4000, $intern_70 = {14:1, 2373:1}, $intern_71 = {14:1, 2380:1}, $intern_72 = {14:1, 2374:1}, $intern_73 = {14:1, 2375:1}, $intern_74 = {14:1, 2376:1}, $intern_75 = {14:1, 2377:1}, $intern_76 = {14:1, 2378:1}, $intern_77 = {14:1, 2379:1}, $intern_78 = {14:1, 2381:1}, $intern_79 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 118:1}, $intern_80 = {453:1, 14:1}, $intern_81 = {449:1, 14:1}, $intern_82 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1}, $intern_83 = {14:1, 2384:1}, $intern_84 = {14:1, 2383:1}, $intern_85 = {614:1, 14:1}, $intern_86 = {452:1, 14:1}, $intern_87 = {2387:1, 14:1}, $intern_88 = {2386:1, 14:1}, $intern_89 = {2385:1, 14:1}, $intern_90 = 2409, $intern_91 = {103:1, 101:1}, $intern_92 = {4:1, 103:1, 101:1, 299:1}, $intern_93 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 24:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 19:1, 28:1, 21:1, 82:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 172:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 182:1, 39:1, 38:1, 25:1, 146:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 160:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 139:1, 118:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 18:1}, $intern_100 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 217:1}, $intern_101 = {330:1, 14:1}, $intern_102 = {168:1, 14:1}, $intern_103 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 50:1}, $intern_104 = {300:1, 35:1, 19:1}, $intern_105 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 81:1}, $intern_106 = {16:1, 40:1}, $intern_107 = {16:1, 40:1, 64:1, 62:1}, $intern_108 = {80:1}, $intern_109 = {226:1}, $intern_110 = {4:1, 95:1, 99:1, 59:1, 68:1}, $intern_111 = {189:1}, $intern_112 = 2414, $intern_113 = {103:1, 162:1}, $intern_114 = {4:1, 103:1, 162:1}, $intern_115 = {4:1, 189:1}, $intern_116 = {4:1, 32:1, 26:1, 216:1}, $intern_117 = 2410, $intern_118 = {4:1, 8:1, 612:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 95:1, 59:1, 68:1}, $intern_5 = {117:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = 65535, $intern_9 = {4:1, 36:1, 8:1}, $intern_10 = {93:1, 44:1, 4:1, 32:1, 26:1}, $intern_11 = {89:1, 44:1, 4:1, 32:1, 26:1}, $intern_12 = {231:1, 44:1, 4:1, 32:1, 26:1}, $intern_13 = {191:1, 44:1, 4:1, 32:1, 26:1}, $intern_14 = {44:1, 192:1, 4:1, 32:1, 26:1}, $intern_15 = {44:1, 193:1, 4:1, 32:1, 26:1}, $intern_16 = {135:1, 4:1, 32:1, 26:1}, $intern_17 = {44:1, 272:1, 4:1, 32:1, 26:1}, $intern_18 = 2412, $intern_19 = {16:1}, $intern_20 = {253:1, 4:1, 95:1, 59:1, 68:1}, $intern_21 = {4:1, 32:1, 97:1}, $intern_22 = 4194303, $intern_23 = 1048575, $intern_24 = 4194304, $intern_25 = 17592186044416, $intern_26 = 524288, $intern_27 = -17592186044416, $intern_28 = -2147483648, $intern_29 = {331:1, 4:1}, $intern_30 = {29:1, 28:1}, $intern_31 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 21:1}, $intern_32 = 2425, $intern_33 = {31:1, 16:1, 30:1, 29:1, 125:1, 19:1, 28:1, 21:1}, $intern_34 = 16384, $intern_35 = 65536, $intern_36 = 1048576, $intern_37 = 16777216, $intern_38 = 33554432, $intern_39 = 67108864, $intern_40 = {31:1, 16:1, 30:1, 29:1, 35:1, 19:1, 28:1, 21:1}, $intern_41 = {31:1, 16:1, 30:1, 29:1, 35:1, 371:1, 19:1, 28:1, 21:1}, $intern_42 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 21:1}, $intern_43 = {31:1, 16:1, 30:1, 300:1, 29:1, 35:1, 19:1, 28:1, 21:1}, $intern_44 = {31:1, 16:1, 30:1, 29:1, 35:1, 19:1, 122:1, 28:1, 21:1}, $intern_45 = {246:1, 14:1}, $intern_46 = {267:1, 14:1}, $intern_47 = {14:1, 2388:1}, $intern_48 = {71:1, 14:1}, $intern_49 = {103:1}, $intern_50 = {31:1, 16:1, 30:1, 29:1, 35:1, 371:1, 19:1, 273:1, 28:1, 21:1}, $intern_51 = {163:1, 14:1}, $intern_52 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 19:1, 28:1, 21:1}, $intern_53 = {2389:1, 14:1}, $intern_54 = {201:1, 4:1, 32:1, 26:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 122:1, 28:1, 21:1}, $intern_56 = {227:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {157:1, 14:1}, $intern_60 = {329:1}, $intern_61 = {71:1, 14:1, 16:1, 2364:1}, $intern_62 = 2420, $intern_63 = {16:1, 64:1, 62:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_66 = {167:1, 14:1}, $intern_67 = {27:1, 14:1}, $intern_68 = {451:1, 14:1}, $intern_69 = 4000, $intern_70 = {14:1, 2373:1}, $intern_71 = {14:1, 2380:1}, $intern_72 = {14:1, 2374:1}, $intern_73 = {14:1, 2375:1}, $intern_74 = {14:1, 2376:1}, $intern_75 = {14:1, 2377:1}, $intern_76 = {14:1, 2378:1}, $intern_77 = {14:1, 2379:1}, $intern_78 = {14:1, 2381:1}, $intern_79 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 118:1}, $intern_80 = {453:1, 14:1}, $intern_81 = {449:1, 14:1}, $intern_82 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1}, $intern_83 = {14:1, 2384:1}, $intern_84 = {14:1, 2383:1}, $intern_85 = {614:1, 14:1}, $intern_86 = {452:1, 14:1}, $intern_87 = {2387:1, 14:1}, $intern_88 = {2386:1, 14:1}, $intern_89 = {2385:1, 14:1}, $intern_90 = 2409, $intern_91 = {103:1, 101:1}, $intern_92 = {4:1, 103:1, 101:1, 299:1}, $intern_93 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 24:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 19:1, 28:1, 21:1, 82:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 172:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 182:1, 39:1, 38:1, 25:1, 146:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 98:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 160:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 139:1, 118:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 18:1}, $intern_100 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 217:1}, $intern_101 = {330:1, 14:1}, $intern_102 = {168:1, 14:1}, $intern_103 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 50:1}, $intern_104 = {300:1, 35:1, 19:1}, $intern_105 = {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 81:1}, $intern_106 = {16:1, 40:1}, $intern_107 = {16:1, 40:1, 64:1, 62:1}, $intern_108 = {80:1}, $intern_109 = {226:1}, $intern_110 = {4:1, 95:1, 99:1, 59:1, 68:1}, $intern_111 = {189:1}, $intern_112 = 2414, $intern_113 = {103:1, 162:1}, $intern_114 = {4:1, 103:1, 162:1}, $intern_115 = {4:1, 189:1}, $intern_116 = {4:1, 32:1, 26:1, 216:1}, $intern_117 = 2410, $intern_118 = {4:1, 8:1, 612:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function setGwtProperty(propertyName, propertyValue){
   typeof window === 'object' && typeof window['$gwt'] === 'object' && (window['$gwt'][propertyName] = propertyValue);
@@ -3892,7 +3892,7 @@ function BlurEvent(){
 
 defineClass(1715, 2426, {}, BlurEvent);
 _.dispatch = function dispatch(handler){
-  castTo(handler, 245).onBlur(this);
+  castTo(handler, 246).onBlur(this);
 }
 ;
 _.getAssociatedType_0 = function getAssociatedType_0(){
@@ -4358,7 +4358,7 @@ function $fireEvent(this$static, event_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 252)) {
+    if (instanceOf($e0, 253)) {
       e = $e0;
       throw toJs(new UmbrellaException_0(e.causes));
     }
@@ -4383,12 +4383,12 @@ function HandlerManager_0(source, fireInReverseOrder){
   this.source = source;
 }
 
-defineClass(248, 1, $intern_19, HandlerManager, HandlerManager_0);
+defineClass(249, 1, $intern_19, HandlerManager, HandlerManager_0);
 _.fireEvent_0 = function fireEvent_1(event_0){
   $fireEvent(this, event_0);
 }
 ;
-var Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 248);
+var Lcom_google_gwt_event_shared_HandlerManager_2_classLit = createForClass('com.google.gwt.event.shared', 'HandlerManager', 249);
 function $defer(this$static, command){
   !this$static.deferredDeltas && (this$static.deferredDeltas = new ArrayList);
   $add_24(this$static.deferredDeltas, command);
@@ -4595,13 +4595,13 @@ function makeMessage(causes){
   return b.string;
 }
 
-defineClass(252, 59, $intern_20, UmbrellaException);
-var Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit = createForClass('com.google.web.bindery.event.shared', 'UmbrellaException', 252);
+defineClass(253, 59, $intern_20, UmbrellaException);
+var Lcom_google_web_bindery_event_shared_UmbrellaException_2_classLit = createForClass('com.google.web.bindery.event.shared', 'UmbrellaException', 253);
 function UmbrellaException_0(causes){
   UmbrellaException.call(this, causes);
 }
 
-defineClass(390, 252, $intern_20, UmbrellaException_0);
+defineClass(390, 253, $intern_20, UmbrellaException_0);
 var Lcom_google_gwt_event_shared_UmbrellaException_2_classLit = createForClass('com.google.gwt.event.shared', 'UmbrellaException', 390);
 function throwIfNull(name_0, value_0){
   if (null == value_0) {
@@ -5633,8 +5633,8 @@ function SafeHtmlBuilder(){
   this.sb = new StringBuilder;
 }
 
-defineClass(238, 1, {}, SafeHtmlBuilder);
-var Lcom_google_gwt_safehtml_shared_SafeHtmlBuilder_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'SafeHtmlBuilder', 238);
+defineClass(239, 1, {}, SafeHtmlBuilder);
+var Lcom_google_gwt_safehtml_shared_SafeHtmlBuilder_2_classLit = createForClass('com.google.gwt.safehtml.shared', 'SafeHtmlBuilder', 239);
 function SafeHtmlString(html){
   if (html == null) {
     throw toJs(new NullPointerException_0('html is null'));
@@ -6596,7 +6596,7 @@ function Window$WindowHandlers(){
   HandlerManager.call(this, null);
 }
 
-defineClass(379, 248, $intern_19, Window$WindowHandlers);
+defineClass(379, 249, $intern_19, Window$WindowHandlers);
 var Lcom_google_gwt_user_client_Window$WindowHandlers_2_classLit = createForClass('com.google.gwt.user.client', 'Window/WindowHandlers', 379);
 function $eventGetTypeInt(eventType){
   switch (eventType) {
@@ -9833,12 +9833,12 @@ function ColumnType(enum$name, enum$ordinal, name_0){
 
 function values_16(){
   $clinit_ColumnType();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_googlecode_gwt_charts_client_ColumnType_2_classLit, 1), $intern_9, 244, 0, [STRING, NUMBER, BOOLEAN, DATE, DATETIME, TIMEOFDAY]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_googlecode_gwt_charts_client_ColumnType_2_classLit, 1), $intern_9, 245, 0, [STRING, NUMBER, BOOLEAN, DATE, DATETIME, TIMEOFDAY]);
 }
 
-defineClass(244, 26, {244:1, 4:1, 32:1, 26:1}, ColumnType);
+defineClass(245, 26, {245:1, 4:1, 32:1, 26:1}, ColumnType);
 var BOOLEAN, DATE, DATETIME, NUMBER, STRING, TIMEOFDAY;
-var Lcom_googlecode_gwt_charts_client_ColumnType_2_classLit = createForEnum('com.googlecode.gwt.charts.client', 'ColumnType', 244, Ljava_lang_Enum_2_classLit, values_16);
+var Lcom_googlecode_gwt_charts_client_ColumnType_2_classLit = createForEnum('com.googlecode.gwt.charts.client', 'ColumnType', 245, Ljava_lang_Enum_2_classLit, values_16);
 function $addColumn_0(this$static, type_0, label_0){
   return $addColumn_1(this$static, type_0.name_0, label_0);
 }
@@ -11786,12 +11786,12 @@ function NotifyingAsyncCallback$State(enum$name, enum$ordinal){
 
 function values_22(){
   $clinit_NotifyingAsyncCallback$State();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_gwtplatform_mvp_client_proxy_NotifyingAsyncCallback$State_2_classLit, 1), $intern_9, 250, 0, [UNKNOWN, INITIALIZED, LOADING_0, SUCCEEDED, FAILED]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_gwtplatform_mvp_client_proxy_NotifyingAsyncCallback$State_2_classLit, 1), $intern_9, 251, 0, [UNKNOWN, INITIALIZED, LOADING_0, SUCCEEDED, FAILED]);
 }
 
-defineClass(250, 26, {250:1, 4:1, 32:1, 26:1}, NotifyingAsyncCallback$State);
+defineClass(251, 26, {251:1, 4:1, 32:1, 26:1}, NotifyingAsyncCallback$State);
 var FAILED, INITIALIZED, LOADING_0, SUCCEEDED, UNKNOWN;
-var Lcom_gwtplatform_mvp_client_proxy_NotifyingAsyncCallback$State_2_classLit = createForEnum('com.gwtplatform.mvp.client.proxy', 'NotifyingAsyncCallback/State', 250, Ljava_lang_Enum_2_classLit, values_22);
+var Lcom_gwtplatform_mvp_client_proxy_NotifyingAsyncCallback$State_2_classLit = createForEnum('com.gwtplatform.mvp.client.proxy', 'NotifyingAsyncCallback/State', 251, Ljava_lang_Enum_2_classLit, values_22);
 function $equals_0(this$static, o){
   var nameToken, nameToken$array, nameToken$index, nameToken$max, place;
   if (instanceOf(o, 61)) {
@@ -12413,8 +12413,8 @@ function $nameToken(this$static, nameToken){
 function PlaceRequest$Builder(){
 }
 
-defineClass(251, 1, {}, PlaceRequest$Builder);
-var Lcom_gwtplatform_mvp_shared_proxy_PlaceRequest$Builder_2_classLit = createForClass('com.gwtplatform.mvp.shared.proxy', 'PlaceRequest/Builder', 251);
+defineClass(252, 1, {}, PlaceRequest$Builder);
+var Lcom_gwtplatform_mvp_shared_proxy_PlaceRequest$Builder_2_classLit = createForClass('com.gwtplatform.mvp.shared.proxy', 'PlaceRequest/Builder', 252);
 function TokenFormatException(message){
   RuntimeException_0.call(this, message);
 }
@@ -14878,7 +14878,7 @@ function MaterialMasonry(){
   $add_17(this, this.sizerDiv);
 }
 
-defineClass(255, 11, $intern_64, MaterialMasonry);
+defineClass(256, 11, $intern_64, MaterialMasonry);
 _.add_0 = function add_20(child){
   $add_17(this, child);
 }
@@ -14917,7 +14917,7 @@ _.originLeft = false;
 _.originTop = false;
 _.percentPosition = false;
 _.transitionDuration = 0;
-var Lgwt_material_design_addins_client_masonry_MaterialMasonry_2_classLit = createForClass('gwt.material.design.addins.client.masonry', 'MaterialMasonry', 255);
+var Lgwt_material_design_addins_client_masonry_MaterialMasonry_2_classLit = createForClass('gwt.material.design.addins.client.masonry', 'MaterialMasonry', 256);
 function MaterialMasonry$lambda$0$Type($$outer_0, e_1){
   this.$$outer_0 = $$outer_0;
   this.e_1 = e_1;
@@ -17444,12 +17444,12 @@ function HeadingSize(enum$name, enum$ordinal, size_0){
 
 function values_42(){
   $clinit_HeadingSize();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_HeadingSize_2_classLit, 1), $intern_9, 240, 0, [H1, H2, H3, H4, H5, H6]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_HeadingSize_2_classLit, 1), $intern_9, 241, 0, [H1, H2, H3, H4, H5, H6]);
 }
 
-defineClass(240, 26, {240:1, 4:1, 32:1, 26:1}, HeadingSize);
+defineClass(241, 26, {241:1, 4:1, 32:1, 26:1}, HeadingSize);
 var H1, H2, H3, H4, H5, H6;
-var Lgwt_material_design_client_constants_HeadingSize_2_classLit = createForEnum('gwt.material.design.client.constants', 'HeadingSize', 240, Ljava_lang_Enum_2_classLit, values_42);
+var Lgwt_material_design_client_constants_HeadingSize_2_classLit = createForEnum('gwt.material.design.client.constants', 'HeadingSize', 241, Ljava_lang_Enum_2_classLit, values_42);
 function $clinit_HideOn(){
   $clinit_HideOn = emptyMethod;
   HIDE_ON_SMALL = new HideOn('HIDE_ON_SMALL', 0, 'hide-on-small-only');
@@ -17517,16 +17517,16 @@ function IconSize(enum$name, enum$ordinal, cssClass){
 
 function values_45(){
   $clinit_IconSize();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_IconSize_2_classLit, 1), $intern_9, 239, 0, [TINY, SMALL, MEDIUM_0, LARGE_0]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_IconSize_2_classLit, 1), $intern_9, 240, 0, [TINY, SMALL, MEDIUM_0, LARGE_0]);
 }
 
-defineClass(239, 26, {44:1, 239:1, 116:1, 4:1, 32:1, 26:1}, IconSize);
+defineClass(240, 26, {44:1, 240:1, 116:1, 4:1, 32:1, 26:1}, IconSize);
 _.getCssName = function getCssName_85(){
   return this.cssClass;
 }
 ;
 var LARGE_0, MEDIUM_0, SMALL, TINY;
-var Lgwt_material_design_client_constants_IconSize_2_classLit = createForEnum('gwt.material.design.client.constants', 'IconSize', 239, Ljava_lang_Enum_2_classLit, values_45);
+var Lgwt_material_design_client_constants_IconSize_2_classLit = createForEnum('gwt.material.design.client.constants', 'IconSize', 240, Ljava_lang_Enum_2_classLit, values_45);
 function $clinit_IconType(){
   $clinit_IconType = emptyMethod;
   DEFAULT_3 = new IconType('DEFAULT', 0, '');
@@ -18604,16 +18604,16 @@ function ShowOn(enum$name, enum$ordinal, cssClass){
 
 function values_56(){
   $clinit_ShowOn();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_ShowOn_2_classLit, 1), $intern_9, 241, 0, [SHOW_ON_SMALL, SHOW_ON_LARGE, SHOW_ON_MED, SHOW_ON_MED_UP, SHOW_ON_MED_DOWN, NONE_7]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_ShowOn_2_classLit, 1), $intern_9, 242, 0, [SHOW_ON_SMALL, SHOW_ON_LARGE, SHOW_ON_MED, SHOW_ON_MED_UP, SHOW_ON_MED_DOWN, NONE_7]);
 }
 
-defineClass(241, 26, {44:1, 142:1, 241:1, 116:1, 4:1, 32:1, 26:1}, ShowOn);
+defineClass(242, 26, {44:1, 142:1, 242:1, 116:1, 4:1, 32:1, 26:1}, ShowOn);
 _.getCssName = function getCssName_95(){
   return this.cssClass;
 }
 ;
 var NONE_7, SHOW_ON_LARGE, SHOW_ON_MED, SHOW_ON_MED_DOWN, SHOW_ON_MED_UP, SHOW_ON_SMALL;
-var Lgwt_material_design_client_constants_ShowOn_2_classLit = createForEnum('gwt.material.design.client.constants', 'ShowOn', 241, Ljava_lang_Enum_2_classLit, values_56);
+var Lgwt_material_design_client_constants_ShowOn_2_classLit = createForEnum('gwt.material.design.client.constants', 'ShowOn', 242, Ljava_lang_Enum_2_classLit, values_56);
 function $clinit_SideNavType(){
   $clinit_SideNavType = emptyMethod;
   FIXED_2 = new SideNavType('FIXED', 0, 'fixed');
@@ -19782,13 +19782,13 @@ function MaterialCollapsibleBody(){
   MaterialWidget_1.call(this, $doc.createElement('div'), stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['collapsible-body']));
 }
 
-defineClass(106, 25, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 246:1, 106:1}, MaterialCollapsibleBody);
+defineClass(106, 25, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 247:1, 106:1}, MaterialCollapsibleBody);
 _.add_0 = function add_34(child){
   $add_28(this, child);
 }
 ;
 _.remove_0 = function remove_25(w){
-  instanceOf(w, 246) && castTo(w, 246).setParent(null);
+  instanceOf(w, 247) && castTo(w, 247).setParent(null);
   return $remove_1(this, w);
 }
 ;
@@ -19798,7 +19798,7 @@ _.setParent = function setParent(parent_0){
   for (child$iterator = new WidgetCollection$WidgetIterator(this.children_1); child$iterator.index_0 < child$iterator.this$01.size_0;) {
     child = $next_3(child$iterator);
     $checkActiveState(this, child);
-    instanceOf(child, 246) && castTo(child, 246).setParent(parent_0);
+    instanceOf(child, 247) && castTo(child, 247).setParent(parent_0);
   }
 }
 ;
@@ -19862,7 +19862,7 @@ function $setParent_0(this$static, parent_0){
   this$static.parent_0 = parent_0;
   for (child$iterator = new WidgetCollection$WidgetIterator(this$static.children_1); child$iterator.index_0 < child$iterator.this$01.size_0;) {
     child = $next_3(child$iterator);
-    instanceOf(child, 246) && castTo(child, 246).setParent(parent_0);
+    instanceOf(child, 247) && castTo(child, 247).setParent(parent_0);
   }
 }
 
@@ -19871,7 +19871,7 @@ function MaterialCollapsibleItem(){
   new ProgressMixin(this);
 }
 
-defineClass(85, 198, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 246:1, 85:1}, MaterialCollapsibleItem);
+defineClass(85, 198, {31:1, 16:1, 30:1, 37:1, 29:1, 35:1, 19:1, 28:1, 21:1, 183:1, 182:1, 39:1, 38:1, 25:1, 247:1, 85:1}, MaterialCollapsibleItem);
 _.add_0 = function add_36(child){
   $add_30(this, child);
 }
@@ -19881,7 +19881,7 @@ _.createElement_0 = function createElement_4(){
 }
 ;
 _.remove_0 = function remove_26(w){
-  instanceOf(w, 246) && castTo(w, 246).setParent(null);
+  instanceOf(w, 247) && castTo(w, 247).setParent(null);
   equals_Ljava_lang_Object__Z__devirtual$(w, this.body_0)?(this.body_0 = null):equals_Ljava_lang_Object__Z__devirtual$(w, this.header) && (this.header = null);
   return $remove_1(this, w);
 }
@@ -20464,8 +20464,8 @@ function MaterialListBox(){
   MaterialListValueBox.call(this);
 }
 
-defineClass(235, 404, $intern_65, MaterialListBox);
-var Lgwt_material_design_client_ui_MaterialListBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialListBox', 235);
+defineClass(236, 404, $intern_65, MaterialListBox);
+var Lgwt_material_design_client_ui_MaterialListBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialListBox', 236);
 function MaterialListValueBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
@@ -21866,8 +21866,8 @@ function Label_0(){
   MaterialWidget_0.call(this, ($clinit_DOM() , $doc.createElement('label')));
 }
 
-defineClass(234, 25, $intern_64, Label_0);
-var Lgwt_material_design_client_ui_html_Label_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Label', 234);
+defineClass(235, 25, $intern_64, Label_0);
+var Lgwt_material_design_client_ui_html_Label_2_classLit = createForClass('gwt.material.design.client.ui.html', 'Label', 235);
 function $getValue_5(this$static){
   return ($clinit_DOM() , this$static.element_0).value;
 }
@@ -26062,8 +26062,8 @@ _.delayedBind = function delayedBind_59(baseGinjector){
 var Lgwt_material_design_demo_client_application_apps_AppsPresenterMyProxyImpl$WrappedProxy_2_classLit = createForClass('gwt.material.design.demo.client.application.apps', 'AppsPresenterMyProxyImpl/WrappedProxy', 944);
 function $populateApps(this$static){
   var app, app$iterator, apps;
-  for (app$iterator = new ArrayList$1((apps = new ArrayList , $add_24(apps, new Apps('gwt-material-channel', 'kevzlou7979', 'https://avatars1.githubusercontent.com/u/3138071?v=3&s=30', 'http://gwt-material-channel.appspot.com/', 'http://i.imgur.com/3ROA1Bz.png', ($clinit_Color() , RED))) , $add_24(apps, new Apps('Feel Vision', 'gilberto', 'https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30', 'https://feel-vision.appspot.com', 'http://i.imgur.com/G37VTJj.png', GREEN)) , $add_24(apps, new Apps('My Money', 'Werner Kok', 'https://avatars1.githubusercontent.com/wkok?v=3&s=30', 'https://appadvice.com/app/my-money-expense-tracker/1073455420', 'http://i.imgur.com/w9UVW2H.png', BLUE)) , $add_24(apps, new Apps('TripWeGo', 'Julien Guibert', 'https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128', 'http://www.tripwego.com/', 'http://i.imgur.com/BkWWPFr.png', BLACK)) , $add_24(apps, new Apps('Follow Chess', 'Asim Pereira', 'https://lh3.googleusercontent.com/-nLDflwTMqQY/AAAAAAAAAAI/AAAAAAAAG7U/7CowZmu0Tbg/s60-p-rw-no/photo.jpg', 'https://live.followchess.com/', 'http://i.imgur.com/50i7vZq.png', ORANGE)) , apps)); app$iterator.i < app$iterator.this$01.array.length;) {
-    app = castTo($next_7(app$iterator), 256);
+  for (app$iterator = new ArrayList$1((apps = new ArrayList , $add_24(apps, new Apps('Take It', 'Andrey Kurbanov', 'https://lh4.googleusercontent.com/-U1vyJFhSQ1c/AAAAAAAAAAI/AAAAAAAABxk/DfJoe_JD2Fo/w80-h80/photo.jpg', 'https://derzhika.ru/', 'http://i.imgur.com/n1dSMgL.jpg', ($clinit_Color() , DEEP_ORANGE))) , $add_24(apps, new Apps('gwt-material-channel', 'kevzlou7979', 'https://avatars1.githubusercontent.com/u/3138071?v=3&s=30', 'http://gwt-material-channel.appspot.com/', 'http://i.imgur.com/3ROA1Bz.png', RED)) , $add_24(apps, new Apps('Feel Vision', 'gilberto', 'https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30', 'https://feel-vision.appspot.com', 'http://i.imgur.com/G37VTJj.png', GREEN)) , $add_24(apps, new Apps('My Money', 'Werner Kok', 'https://avatars1.githubusercontent.com/wkok?v=3&s=30', 'https://appadvice.com/app/my-money-expense-tracker/1073455420', 'http://i.imgur.com/w9UVW2H.png', BLUE)) , $add_24(apps, new Apps('TripWeGo', 'Julien Guibert', 'https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128', 'http://www.tripwego.com/', 'http://i.imgur.com/BkWWPFr.png', BLACK)) , $add_24(apps, new Apps('Follow Chess', 'Asim Pereira', 'https://lh3.googleusercontent.com/-nLDflwTMqQY/AAAAAAAAAAI/AAAAAAAAG7U/7CowZmu0Tbg/s60-p-rw-no/photo.jpg', 'https://live.followchess.com/', 'http://i.imgur.com/50i7vZq.png', ORANGE)) , apps)); app$iterator.i < app$iterator.this$01.array.length;) {
+    app = castTo($next_7(app$iterator), 234);
     $add_17(this$static.appRow, new AppCard(app));
   }
 }
@@ -28592,8 +28592,8 @@ function Apps(name_0, owner, ownerImage, link_0, image, color_0){
   this.color_0 = color_0;
 }
 
-defineClass(256, 1, {256:1, 4:1}, Apps);
-var Lgwt_material_design_demo_client_application_dto_Apps_2_classLit = createForClass('gwt.material.design.demo.client.application.dto', 'Apps', 256);
+defineClass(234, 1, {234:1, 4:1}, Apps);
+var Lgwt_material_design_demo_client_application_dto_Apps_2_classLit = createForClass('gwt.material.design.demo.client.application.dto', 'Apps', 234);
 function getAllUsers(){
   var list;
   list = new ArrayList;
@@ -31922,8 +31922,8 @@ function AbstractMap$SimpleEntry(key, value_0){
   this.value_0 = value_0;
 }
 
-defineClass(249, 305, {305:1, 249:1, 84:1}, AbstractMap$SimpleEntry);
-var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 249);
+defineClass(250, 305, {305:1, 250:1, 84:1}, AbstractMap$SimpleEntry);
+var Ljava_util_AbstractMap$SimpleEntry_2_classLit = createForClass('java.util', 'AbstractMap/SimpleEntry', 250);
 defineClass(2418, 1, {84:1});
 _.equals_0 = function equals_49(other){
   var entry;
@@ -33114,7 +33114,7 @@ function $containsKey_1(this$static, key){
 
 function $get_10(this$static, key){
   var entry;
-  entry = castTo($get_7(this$static.map_0, key), 253);
+  entry = castTo($get_7(this$static.map_0, key), 254);
   if (entry) {
     $recordAccess(this$static, entry);
     return entry.value_0;
@@ -33124,7 +33124,7 @@ function $get_10(this$static, key){
 
 function $put_4(this$static, key, value_0){
   var newEntry, old, oldValue;
-  old = castTo($get_7(this$static.map_0, key), 253);
+  old = castTo($get_7(this$static.map_0, key), 254);
   if (!old) {
     newEntry = new LinkedHashMap$ChainEntry_0(this$static, key, value_0);
     $put_1(this$static.map_0, key, newEntry);
@@ -33147,7 +33147,7 @@ function $recordAccess(this$static, entry){
 
 function $remove_24(this$static, key){
   var entry;
-  entry = castTo($remove_17(this$static.map_0, key), 253);
+  entry = castTo($remove_17(this$static.map_0, key), 254);
   if (entry) {
     $remove_25(entry);
     return entry.value_0;
@@ -33229,8 +33229,8 @@ function LinkedHashMap$ChainEntry_0(this$0, key, value_0){
   AbstractMap$SimpleEntry.call(this, key, value_0);
 }
 
-defineClass(253, 249, {305:1, 249:1, 253:1, 84:1}, LinkedHashMap$ChainEntry, LinkedHashMap$ChainEntry_0);
-var Ljava_util_LinkedHashMap$ChainEntry_2_classLit = createForClass('java.util', 'LinkedHashMap/ChainEntry', 253);
+defineClass(254, 250, {305:1, 250:1, 254:1, 84:1}, LinkedHashMap$ChainEntry, LinkedHashMap$ChainEntry_0);
+var Ljava_util_LinkedHashMap$ChainEntry_2_classLit = createForClass('java.util', 'LinkedHashMap/ChainEntry', 254);
 function $contains_3(this$static, o){
   if (instanceOf(o, 84)) {
     return $containsEntry(this$static.this$01, castTo(o, 84));
@@ -33773,7 +33773,7 @@ function TreeMap$Node(key, value_0){
   this.isRed = true;
 }
 
-defineClass(285, 249, {305:1, 249:1, 84:1, 285:1}, TreeMap$Node);
+defineClass(285, 250, {305:1, 250:1, 84:1, 285:1}, TreeMap$Node);
 _.isRed = false;
 var Ljava_util_TreeMap$Node_2_classLit = createForClass('java.util', 'TreeMap/Node', 285);
 function TreeMap$State(){
