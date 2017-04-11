@@ -71,9 +71,9 @@
         <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
         <m:MaterialTitle title="PathAnimator Options" description="We provided useful options to control your Path Animator duration."/>
         <m:MaterialRow>
-          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtDuration" label="Duration"/>
-          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtTargetShowDuration" label="Target Show Duration"/>
-          <m:MaterialDoubleBox grid="s12 m4 l4" ui:field="txtExtraTransitionDuration" label="Extra Transition Duration"/>
+          <m:MaterialIntegerBox grid="s12 m4 l4" ui:field="txtDuration" label="Duration"/>
+          <m:MaterialIntegerBox grid="s12 m4 l4" ui:field="txtTargetShowDuration" label="Target Show Duration"/>
+          <m:MaterialIntegerBox grid="s12 m4 l4" ui:field="txtExtraTransitionDuration" label="Extra Transition Duration"/>
         </m:MaterialRow>
 
         <demo:PrettyPre addStyleNames="lang-java">

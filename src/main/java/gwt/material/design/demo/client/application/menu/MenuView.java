@@ -57,6 +57,8 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
+
 class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresenter.MyView {
     private String link;
 
@@ -93,21 +95,16 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
-        sideNav.addHandler(new SideNavPushHandler() {
-            @Override
-            public void onPush(SideNavPushEvent event) {
-                int duration = event.getDuration();
-                int width = event.getWidth();
 
-                Style style = navBar.getElement().getStyle();
-                style.setProperty("transition", duration + "ms");
-                style.setProperty("mozTransition", duration + "ms");
-                style.setProperty("webkitTransition", duration + "ms");
+        sideNav.addOpeningHandler(event -> {
+            $(navBar).css("width","calc(100% - " + sideNav.getWidth() + "px)");
+            $(navBarSearch).css("width","calc(100% - " + sideNav.getWidth() + "px)");
+        });
 
-                navBar.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
-                navBarSearch.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
-            }
-        }, SideNavPushEvent.TYPE);
+        sideNav.addClosingHandler(event -> {
+            $(navBar).css("width", "100%");
+            $(navBarSearch).css("width", "100%");
+        });
 
         // search close event
         txtSearch.addCloseHandler(event -> {
