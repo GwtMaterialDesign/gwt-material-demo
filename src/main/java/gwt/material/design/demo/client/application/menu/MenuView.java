@@ -60,11 +60,12 @@ import java.util.List;
 import static gwt.material.design.jquery.client.api.JQuery.$;
 
 class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresenter.MyView {
-    private String link;
 
     interface Binder extends UiBinder<Widget, MenuView> {
     }
 
+    private String link;
+    private String specification;
     private List<SearchObject> listSearches = new ArrayList<>();
 
     @UiField MaterialHeader header;
@@ -74,7 +75,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     @UiField MaterialLabel title, description;
     @UiField MaterialSearch txtSearch;
     @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
-    @UiField MaterialChip chipXml, chipJava;
+    @UiField MaterialChip chipXml, chipJava, chipSpecification;
 
     @Inject
     MenuView(Binder uiBinder) {
@@ -91,10 +92,16 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
             String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
             Window.open(xml, "_blank", "");
         });
+        chipSpecification.getElement().getStyle().setCursor(Style.Cursor.POINTER);
+        chipSpecification.addClickHandler(clickEvent -> {
+            Window.open(specification, "_blank", "");
+        });
         ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipSpecification, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(chipSpecification.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
 
         sideNav.addOpeningHandler(event -> {
             $(navBar).css("width","calc(100% - " + sideNav.getWidth() + "px)");
@@ -236,10 +243,11 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     }
 
     @Override
-    public void setPageTitle(String title, String description, String link) {
+    public void setPageTitle(String title, String description, String link, String specification) {
         this.title.setText(title);
         this.description.setText(description);
         this.link = link;
+        this.specification = specification;
 
         if (link.isEmpty()) {
             chipJava.setVisible(false);
@@ -247,6 +255,12 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         } else {
             chipJava.setVisible(true);
             chipXml.setVisible(true);
+        }
+
+        if (specification.isEmpty()) {
+            chipSpecification.setVisible(false);
+        } else {
+            chipSpecification.setVisible(true);
         }
 
         MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);

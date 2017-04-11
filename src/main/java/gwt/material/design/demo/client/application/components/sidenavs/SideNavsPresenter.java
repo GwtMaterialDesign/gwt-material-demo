@@ -60,7 +60,7 @@ public class SideNavsPresenter extends Presenter<SideNavsPresenter.MyView, SideN
         SetPageTitleEvent.fire("SideNavs", "Scrollspy is a jQuery plugin that tracks certain elements " +
                 "and which element the user's screen is currently centered on. Our main demo of this is our " +
                 "table of contents on every documentation page to the right. Clicking on these links will also " +
-                "scroll the page to that element.", "components/sidenavs/SideNavsView", this);
+                "scroll the page to that element.", "components/sidenavs/SideNavsView", "https://material.io/guidelines/patterns/navigation-drawer.html", this);
     }
 
 }

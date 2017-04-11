@@ -54,7 +54,7 @@ public class OverlayPresenter extends Presenter<OverlayPresenter.MyView, Overlay
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Overlay", "Provides a meaningful transition of source widget to popup or overlay panel.", "addins/scrollfire/OverlayView", this);
+        SetPageTitleEvent.fire("Overlay", "Provides a meaningful transition of source widget to popup or overlay panel.", "addins/scrollfire/OverlayView", "", this);
     }
 
 }

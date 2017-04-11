@@ -53,7 +53,7 @@ public class BubblePresenter extends Presenter<BubblePresenter.MyView, BubblePre
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Bubble", "Addin component for chat module, it display a good bubble view of messages withing the chat module.", "addins/bubble/BubbleView", this);
+        SetPageTitleEvent.fire("Bubble", "Addin component for chat module, it display a good bubble view of messages withing the chat module.", "addins/bubble/BubbleView", "", this);
     }
 
 }

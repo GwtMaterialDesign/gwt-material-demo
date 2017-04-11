@@ -55,7 +55,7 @@ public class AutoCompletePresenter extends Presenter<AutoCompletePresenter.MyVie
         super.onReveal();
 
         SetPageTitleEvent.fire("Autocomplete", "Autocompletes are best way for selecting item easily and " +
-                "grouped them into chips for later search based on item values.", "addins/autocomplete/AutoCompleteView", this);
+                "grouped them into chips for later search based on item values.", "addins/autocomplete/AutoCompleteView", "", this);
     }
 
 }

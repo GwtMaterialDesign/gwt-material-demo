@@ -53,7 +53,7 @@ public class PathAnimatorPresenter extends Presenter<PathAnimatorPresenter.MyVie
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Path Animator", "Custom component that provides meaningfull transition between two elements to show visual continuity.", "addins/pathanimator/PathAnimatorView", this);
+        SetPageTitleEvent.fire("Path Animator", "Custom component that provides meaningfull transition between two elements to show visual continuity.", "addins/pathanimator/PathAnimatorView", "", this);
     }
 
 }

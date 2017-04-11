@@ -82,7 +82,8 @@
 				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
 				<m:MaterialPanel marginTop="20">
 					<m:MaterialChip ui:field="chipXml" letter="X" textColor="WHITE" marginRight="12" text="XML" />
-					<m:MaterialChip ui:field="chipJava" letter="J" textColor="WHITE" text="JAVA" />
+					<m:MaterialChip ui:field="chipJava" letter="J" textColor="WHITE" text="JAVA" marginRight="12" />
+					<m:MaterialChip ui:field="chipSpecification" letter="S" textColor="WHITE" text="SPECIFICATION" />
 				</m:MaterialPanel>
 			</m:MaterialPanel>
 		</m:MaterialPanel>

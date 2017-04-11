@@ -32,7 +32,7 @@ public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> impleme
     SetPageTitleHandler {
 
     interface MyView extends View, HasUiHandlers<MenuUiHandlers> {
-        void setPageTitle(String title, String description, String link);
+        void setPageTitle(String title, String description, String link, String specification);
     }
 
     @Inject
@@ -51,6 +51,6 @@ public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> impleme
 
     @Override
     public void onSetPageTitle(SetPageTitleEvent event) {
-        getView().setPageTitle(event.getTitle(), event.getDescription(), event.getLink());
+        getView().setPageTitle(event.getTitle(), event.getDescription(), event.getLink(), event.getSpecification());
     }
 }

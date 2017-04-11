@@ -56,7 +56,7 @@ public class SteppersPresenter extends Presenter<SteppersPresenter.MyView, Stepp
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Steppers", "Steppers convey progress through numbered steps. They may also be used for navigation.", "addins/steppers/SteppersView", this);
+        SetPageTitleEvent.fire("Steppers", "Steppers convey progress through numbered steps. They may also be used for navigation.", "addins/steppers/SteppersView", "https://material.io/guidelines/components/steppers.html", this);
     }
 
 }

@@ -55,6 +55,6 @@ public class RoadMapPresenter extends Presenter<RoadMapPresenter.MyView, RoadMap
         super.onReveal();
 
         SetPageTitleEvent.fire("RoadMap",
-                "Lists of material widgets from 1.0 until the latest release of gwt-material.", "", this);
+                "Lists of material widgets from 1.0 until the latest release of gwt-material.", "", "", this);
     }
 }
