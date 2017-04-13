@@ -53,6 +53,6 @@ public class CollectionsPresenter extends Presenter<CollectionsPresenter.MyView,
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Collections", "Collections allow you to group list objects together.", "components/collections/CollectionsView", this);
+        SetPageTitleEvent.fire("Collections", "Collections allow you to group list objects together.", "components/collections/CollectionsView", "https://material.io/guidelines/components/lists-controls.html#lists-controls-types-of-menu-controls", this);
     }
 }

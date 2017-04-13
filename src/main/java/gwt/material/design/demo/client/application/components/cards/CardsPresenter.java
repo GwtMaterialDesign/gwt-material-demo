@@ -52,6 +52,6 @@ public class CardsPresenter extends Presenter<CardsPresenter.MyView, CardsPresen
 
         SetPageTitleEvent.fire("Cards", "Cards are a convenient means of displaying content composed of different types " +
             "of objects. They are also well-suited for presenting similar objects whose size or supported actions " +
-            "can vary considerably, like photos with captions of variable length.","components/cards/CardsView", this);
+            "can vary considerably, like photos with captions of variable length.","components/cards/CardsView", "https://material.io/guidelines/components/cards.html", this);
     }
 }

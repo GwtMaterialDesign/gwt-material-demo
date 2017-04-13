@@ -53,7 +53,7 @@ public class CoreAnimationsPresenter extends Presenter<CoreAnimationsPresenter.M
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Core Animations", "We used AnimateCSS to built our core animations.", "animations/core/CoreAnimationsView", this);
+        SetPageTitleEvent.fire("Core Animations", "We used AnimateCSS to built our core animations.", "animations/core/CoreAnimationsView", "", this);
     }
 
 }

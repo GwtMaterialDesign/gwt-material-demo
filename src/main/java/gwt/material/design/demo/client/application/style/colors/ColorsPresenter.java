@@ -55,6 +55,6 @@ public class ColorsPresenter extends Presenter<ColorsPresenter.MyView, ColorsPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Colors",
-                "Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights. Material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.", "", this);
+                "Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights. Material takes cues from contemporary architecture, road signs, pavement marking tape, and athletic courts. Color should be unexpected and vibrant.", "", "https://material.io/guidelines/style/color.html", this);
     }
 }

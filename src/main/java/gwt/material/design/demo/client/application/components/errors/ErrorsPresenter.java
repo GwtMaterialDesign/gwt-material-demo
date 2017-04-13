@@ -55,6 +55,6 @@ public class ErrorsPresenter extends Presenter<ErrorsPresenter.MyView, ErrorsPre
 
         SetPageTitleEvent.fire("Errors", "Errors occur when an app fails to complete what is expected, " +
             "such as: 1. The app does not understand user input,2. The system or app fails , 3. A user " +
-            "intends to run incompatible operations concurrently", "components/errors/ErrorsView", this);
+            "intends to run incompatible operations concurrently", "components/errors/ErrorsView", "https://material.io/guidelines/patterns/errors.html#", this);
     }
 }

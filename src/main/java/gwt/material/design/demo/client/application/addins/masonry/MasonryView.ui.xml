@@ -138,7 +138,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Transition Duration" description="You can set how fast the transition of masonry by settung it's duration, if set to 0 then no transition will be applied." />
-            <ma:masonry.MaterialMasonry grid="l12 s12 m12" transitionDuration="0">
+            <ma:masonry.MaterialMasonry grid="l12 s12 m12" duration="0">
                 <m:MaterialColumn grid="l2 s12 m6" backgroundColor="BLUE_LIGHTEN_1" height="200px" waves="DEFAULT" padding="0"/>
                 <m:MaterialColumn grid="l3 s12 m6" backgroundColor="GREY_LIGHTEN_2" height="400px" waves="DEFAULT" padding="0"/>
                 <m:MaterialColumn grid="l3 s12 m6" backgroundColor="YELLOW_LIGHTEN_3" height="200px" waves="DEFAULT" padding="0"/>
@@ -150,7 +150,7 @@
                 <m:MaterialColumn grid="l1 s12 m6" backgroundColor="GREEN_ACCENT_1" height="200px" waves="DEFAULT" padding="0"/>
             </ma:masonry.MaterialMasonry>
             <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" transitionDuration="0"><br/>
+                &emsp;&lt;ma:masonry.MaterialMasonry grid="l6 s12 m12" duration="0"><br/>
                 &emsp;&lt;!-- Column content here --><br/>
                 &lt;/ma:masonry.MaterialMasonry><br/>
             </demo:PrettyPre>

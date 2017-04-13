@@ -53,7 +53,7 @@ public class MeaningfulAnimationsPresenter extends Presenter<MeaningfulAnimation
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Meaningful Animations", "Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy.", "animations/meaningful/MeaningfulAnimationsView", this);
+        SetPageTitleEvent.fire("Meaningful Animations", "Motion design can effectively guide the user’s attention in ways that both inform and delight. Use motion to smoothly transport users between navigational contexts, explain changes in the arrangement of elements on a screen, and reinforce element hierarchy.", "animations/meaningful/MeaningfulAnimationsView", "", this);
     }
 
 }

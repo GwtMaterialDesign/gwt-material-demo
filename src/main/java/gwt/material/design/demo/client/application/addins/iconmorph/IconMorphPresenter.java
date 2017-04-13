@@ -53,6 +53,6 @@ public class IconMorphPresenter extends Presenter<IconMorphPresenter.MyView, Ico
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Icon Morph", "Provides visual continuity by morphing two material icons.", "addins/iconmorph/IconMorph", this);
+        SetPageTitleEvent.fire("Icon Morph", "Provides visual continuity by morphing two material icons.", "addins/iconmorph/IconMorph", "https://material.io/guidelines/motion/creative-customization.html#creative-customization-icons", this);
     }
 }

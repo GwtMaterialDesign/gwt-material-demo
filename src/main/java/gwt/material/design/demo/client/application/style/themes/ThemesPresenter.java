@@ -54,6 +54,6 @@ public class ThemesPresenter extends Presenter<ThemesPresenter.MyView, ThemesPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Theming",
-                "Learn how to easily start using GWT Material Design in your app.", "", this);
+                "Learn how to easily start using GWT Material Design in your app.", "", "", this);
     }
 }

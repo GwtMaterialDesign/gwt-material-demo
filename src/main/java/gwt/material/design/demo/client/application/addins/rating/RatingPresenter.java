@@ -52,7 +52,7 @@ public class RatingPresenter extends Presenter<RatingPresenter.MyView, RatingPre
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Rating", " MaterialRating is the component used by the 5-star rating system, for example, allowing users to easily express their opinion about a product, review, video and so on. ", "addins/rating/RatingView", this);
+        SetPageTitleEvent.fire("Rating", " MaterialRating is the component used by the 5-star rating system, for example, allowing users to easily express their opinion about a product, review, video and so on. ", "addins/rating/RatingView", "", this);
     }
 
 }
