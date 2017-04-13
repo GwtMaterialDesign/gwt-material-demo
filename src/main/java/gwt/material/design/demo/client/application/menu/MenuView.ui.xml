@@ -101,6 +101,18 @@
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
+				<!-- STYLE AND LAYOUTS -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink iconPosition="LEFT" iconType="ROUNDED_CORNER" text="Patterns" />
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getPatternsSidenav}" text="SideNav Patterns" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getPatternsGoogle}" text="Google Patterns" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
 				<!-- COMPONENTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">

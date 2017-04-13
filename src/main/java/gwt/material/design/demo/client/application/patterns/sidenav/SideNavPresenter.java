@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.sidenavs;
+package gwt.material.design.demo.client.application.patterns.sidenav;
 
 /*
  * #%L
@@ -27,37 +27,29 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.presenter.slots.NestedSlot;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class SideNavsPresenter extends Presenter<SideNavsPresenter.MyView, SideNavsPresenter.MyProxy> {
-    interface MyView extends View {
+public class SideNavPresenter extends Presenter<SideNavPresenter.MyView, SideNavPresenter.MyProxy> {
+    public interface MyView extends View {
     }
 
-    @NameToken(NameTokens.sidenavs)
     @ProxyStandard
-    interface MyProxy extends ProxyPlace<SideNavsPresenter> {
+    @NameToken(NameTokens.patternsSidenav)
+    public interface MyProxy extends ProxyPlace<SideNavPresenter> {
     }
-
-    public static final NestedSlot SLOT_SIDENAVS = new NestedSlot();
 
     @Inject
-    SideNavsPresenter(
-            EventBus eventBus,
-            MyView view,
-            MyProxy proxy) {
+    SideNavPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
-
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("SideNavs", "Also called as App Navigation Drawer provides a better side navigation w", "components/sidenavs/SideNavsView", "https://material.io/guidelines/patterns/navigation-drawer.html", this);
+        SetPageTitleEvent.fire("SideNav Patterns", "A Collection of Sidenav types with different look and feel.", "", "", this);
     }
-
 }

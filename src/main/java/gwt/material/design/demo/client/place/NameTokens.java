@@ -88,6 +88,8 @@ public class NameTokens {
     public static final String combobox = "combobox";
     public static final String datatable = "datatable";
     public static final String overlay = "overlay";
+    public static final String patternsGoogle = "patterns_google";
+    public static final String patternsSidenav = "patterns_sidenav";
 
     public static String getAbout() {
         return about;
@@ -351,5 +353,13 @@ public class NameTokens {
 
     public static String getOverlay() {
         return overlay;
+    }
+
+    public static String getPatternsGoogle() {
+        return patternsGoogle;
+    }
+
+    public static String getPatternsSidenav() {
+        return patternsSidenav;
     }
 }
