@@ -79,6 +79,11 @@ public class SideNavView extends ViewImpl implements SideNavPresenter.MyView {
                 "http://i.imgur.com/ZR0HsfA.gif",
                 generateDemoLink("mini_expandable"),
                 generateResizer("mini_expandable"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Mini Expandable Sidenav", "Added a little variation from icon only to drawer sidenav.",
+                "http://i.imgur.com/ZR0HsfA.gif",
+                generateDemoLink("mini_expandable"),
+                generateResizer("mini_expandable"))));
     }
 
     protected String generateResizer(String type) {
