@@ -89,14 +89,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
             navBar.setVisible(false);
         });
 
-        sideNav.addOpeningHandler(event -> {
-            $(header).css("width", "calc(100% - " + sideNav.getWidth() + "px)");
-        });
-
-        sideNav.addClosingHandler(event -> {
-            $(header).css("width", "100%");
-        });
-
         initThemes();
         initSearches();
     }
