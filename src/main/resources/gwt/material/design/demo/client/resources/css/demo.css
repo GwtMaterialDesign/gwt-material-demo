@@ -84,11 +84,13 @@ nav{
     main .container, header .waterfall{
         padding: 24px !important;
     }
-    header {
-        width: 100% !important;
-    }
     .panel {
         padding: 0px !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    header {
+        width: 100% !important;
     }
 }
 /* Tablets and up */
