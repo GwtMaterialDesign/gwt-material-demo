@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gwt.material.design.demo.client.application.patterns;
+package gwt.material.design.demo.client.application.dto;
 
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.MaterialAnchorButton;
@@ -32,7 +32,7 @@ public class PatternItem extends MaterialRow {
 
     private MaterialTitle title = new MaterialTitle("Some Title", "Description");
     private MaterialImage image = new MaterialImage("");
-    private MaterialAnchorButton resizer = new MaterialAnchorButton("Resizer");
+    private MaterialAnchorButton source = new MaterialAnchorButton("Source");
     private MaterialAnchorButton demo = new MaterialAnchorButton("Demo");
 
     public PatternItem(PatternDto dto) {
@@ -45,7 +45,7 @@ public class PatternItem extends MaterialRow {
     protected void build() {
         super.build();
         add(title);
-        add(resizer);
+        add(source);
         add(demo);
         add(image);
         addStyleName("code");
@@ -54,12 +54,13 @@ public class PatternItem extends MaterialRow {
     public void setPatternItem(PatternDto dto) {
         title.setTitle(dto.getTitle());
         title.setDescription(dto.getDescription());
+        image.setMarginTop(20);
         image.setUrl(dto.getUrl());
-        resizer.setHref(dto.getResizer());
-        resizer.setBackgroundColor(Color.WHITE);
-        resizer.setTextColor(Color.BLACK);
-        resizer.setMarginRight(20);
-        resizer.setTarget("_blank");
+        source.setHref(dto.getSource());
+        source.setBackgroundColor(Color.WHITE);
+        source.setTextColor(Color.BLACK);
+        source.setMarginRight(20);
+        source.setTarget("_blank");
         demo.setHref(dto.getDemo());
         demo.setTarget("_blank");
     }

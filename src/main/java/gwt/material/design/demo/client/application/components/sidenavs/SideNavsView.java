@@ -23,9 +23,11 @@ package gwt.material.design.demo.client.application.components.sidenavs;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialPanel;
+import gwt.material.design.demo.client.application.dto.PatternDto;
+import gwt.material.design.demo.client.application.dto.PatternItem;
 
 import javax.inject.Inject;
 
@@ -34,8 +36,72 @@ public class SideNavsView extends ViewImpl implements SideNavsPresenter.MyView {
     interface Binder extends UiBinder<Widget, SideNavsView> {
     }
 
+    @UiField
+    MaterialPanel patternPanel;
+
     @Inject
     SideNavsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        buildPanel();
+    }
+
+    protected void buildPanel() {
+        patternPanel.add(new PatternItem(new PatternDto("Fixed Sidenav", "It is the default type for Sidenav component, which has a permanent structure and opened by default.",
+                "https://i.imgur.com/FG8zdzn.gif",
+                generateDemoLink("fixed"),
+                generateSource("sidenavfixed/FixedSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Drawer Sidenav", "It's a persistent type of sidenav which can be opened (Adds also an overlay on top of the page) / closed. This type of sidenav is hidden by default.",
+                "https://i.imgur.com/IgfPnXo.gif",
+                generateDemoLink("drawer"),
+                generateSource("sidenavdrawer/DrawerSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Drawer with Header Sidenav", "The same structure as the Drawer Sidenav, the only difference is that the it overlays together with the header navbar.",
+                "https://i.imgur.com/yZQH1iq.gif",
+                generateDemoLink("drawer_header"),
+                generateSource("sidenavdrawerheader/DrawerHeaderSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Push Sidenav", "It's a persistent type of sidenav which can be opened / closed. It pushes the entire page including the header / footer / main components when opening the sidenav.",
+                "https://i.imgur.com/rIktoKt.gif",
+                generateDemoLink("push"),
+                generateSource("sidenavpush/PushSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Push with Header Sidenav", "The same structure as the Push Sidenav, the only difference is that the header is fixed and cannot push , only the main / footer components are pushed when opening the sidenav.",
+                "https://i.imgur.com/AtGh0Vb.gif",
+                generateDemoLink("push_header"),
+                generateSource("sidenavpushheader/PushHeaderSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Card Sidenav", "It adds a delightful shadow on this sidenav container, this sidenav is good for few sidenav link items.",
+                "https://i.imgur.com/DjqKg1X.gif",
+                generateDemoLink("card"),
+                generateSource("sidenavcard/CardSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Mini Sidenav", "Mini Variant / Icon Only sidenav is good for wide page content plus a section wherein you can easily navigate the sidenav menu.",
+                "https://i.imgur.com/XMtfBsr.gif",
+                generateDemoLink("mini"),
+                generateSource("sidenavmini/MiniSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Mini Expandable Sidenav", "Added a little variation from icon only to drawer sidenav.",
+                "https://i.imgur.com/ZR0HsfA.gif",
+                generateDemoLink("mini_expandable"),
+                generateSource("sidenavminiexpand/MiniExpandSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Edge (Right)", "Sidenavs also can be placed on the RIGHT Edge of the page for other usecase.",
+                "https://i.imgur.com/FuYq68d.gif",
+                generateDemoLink("edge"),
+                generateSource("sidenavedge/EdgeSideNavView.ui.xml"))));
+
+        patternPanel.add(new PatternItem(new PatternDto("Collapsible Items", "Using collapsible component you can add easily a sub menu into your sidenav.",
+                "http://i.imgur.com/aTrfz70.gif",
+                generateDemoLink("colaps"),
+                generateSource("sidenavcollapsible/CollapsibleSideNavView.ui.xml"))));
+    }
+
+    protected String generateSource(String type) {
+        return "https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/" + type;
+    }
+
+    protected String generateDemoLink(String type) {
+        return "https://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#sidenav_" + type;
     }
 }

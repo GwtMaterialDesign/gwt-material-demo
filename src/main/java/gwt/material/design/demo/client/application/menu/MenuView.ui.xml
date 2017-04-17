@@ -65,8 +65,8 @@
 		}
 	</ui:style>
 
-	<m:MaterialHeader ui:field="header">
-		<m:MaterialNavBar ui:field="navBar" type="FIXED" backgroundColor="BLUE_DARKEN_2" activates="sideBar" textColor="WHITE">
+	<m:MaterialHeader ui:field="header" layoutPosition="FIXED" top="0" width="100%" depth="999">
+		<m:MaterialNavBar ui:field="navBar" backgroundColor="BLUE" activates="sideBar" textColor="WHITE">
 			<m:MaterialLink ui:field="btnMiniMenu" iconType="MENU" showOn="SHOW_ON_LARGE" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
 			<m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
 			<ma:combobox.MaterialComboBox ui:field="comboThemes" textColor="WHITE" label="Select Theme" marginRight="12" width="120px" float="RIGHT"/>
@@ -76,19 +76,7 @@
 			<m:MaterialSearch ui:field="txtSearch" placeholder="Component" backgroundColor="WHITE" iconColor="BLACK" active="true" shadow="1"/>
 		</m:MaterialNavBar>
 
-		<m:MaterialPanel ui:field="titlePanel" backgroundColor="BLUE" textColor="WHITE"  marginTop="56" padding="56" shadow="1">
-			<m:MaterialPanel ui:field="panel">
-				<m:MaterialLabel ui:field="title" text="GWT-Material" fontSize="2.3em"/>
-				<m:MaterialLabel ui:field="description" text="A Material Design look and feel for GWT Apps plus Phonegap." fontSize="1.1em"/>
-				<m:MaterialPanel marginTop="20">
-					<m:MaterialChip ui:field="chipXml" letter="X" textColor="WHITE" marginRight="12" text="XML" />
-					<m:MaterialChip ui:field="chipJava" letter="J" textColor="WHITE" text="JAVA" marginRight="12" />
-					<m:MaterialChip ui:field="chipSpecification" letter="S" textColor="WHITE" text="SPECIFICATION" />
-				</m:MaterialPanel>
-			</m:MaterialPanel>
-		</m:MaterialPanel>
-
-		<m:MaterialPushSideNav ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
+		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
 				<m:MaterialImage width="100%" url="http://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
@@ -101,18 +89,6 @@
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
-				<!-- STYLE AND LAYOUTS -->
-				<m:MaterialCollapsibleItem>
-					<m:MaterialCollapsibleHeader waves="DEFAULT">
-						<m:MaterialLink iconPosition="LEFT" iconType="ROUNDED_CORNER" text="Patterns" />
-					</m:MaterialCollapsibleHeader>
-					<m:MaterialCollapsibleBody>
-						<m.html:UnorderedList>
-							<m:MaterialLink targetHistoryToken="{tokens.getPatternsSidenav}" text="SideNav Patterns" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getPatternsGoogle}" text="Google Patterns" waves="DEFAULT"/>
-						</m.html:UnorderedList>
-					</m:MaterialCollapsibleBody>
-				</m:MaterialCollapsibleItem>
 				<!-- COMPONENTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -220,13 +196,13 @@
 			<m:MaterialLink targetHistoryToken="{tokens.getTemplates}" iconPosition="LEFT" iconType="DASHBOARD" text="Templates" waves="DEFAULT" />
 			<!-- CHARTS -->
 			<m:MaterialLink targetHistoryToken="{tokens.getCharts}" iconPosition="LEFT" iconType="INSERT_CHART" text="Material Charts" waves="DEFAULT" />
-		</m:MaterialPushSideNav>
+		</m:MaterialSideNavPush>
 
-		<m:MaterialMiniSideNav ui:field="rightSideNav" m:id="rightSideBar" edge="RIGHT" closeOnClick="true" showOnAttach="false">
+		<m:MaterialSideNavMini ui:field="rightSideNav" m:id="rightSideBar" edge="RIGHT" closeOnClick="true" showOnAttach="false">
 			<m:MaterialLink><m:MaterialIcon iconType="POLYMER" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="ADJUST" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
 			<m:MaterialLink><m:MaterialIcon iconType="BATTERY_STD" circle="true" waves="LIGHT" padding="0" /></m:MaterialLink>
-		</m:MaterialMiniSideNav>
+		</m:MaterialSideNavMini>
 	</m:MaterialHeader>
 </ui:UiBinder>

@@ -84,6 +84,9 @@ nav{
     main .container, header .waterfall{
         padding: 24px !important;
     }
+    header {
+        width: 100% !important;
+    }
     .panel {
         padding: 0px !important;
     }

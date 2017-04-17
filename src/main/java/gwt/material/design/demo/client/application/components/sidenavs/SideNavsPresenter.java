@@ -57,7 +57,7 @@ public class SideNavsPresenter extends Presenter<SideNavsPresenter.MyView, SideN
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("SideNavs", "Also called as App Navigation Drawer provides a better side navigation w", "components/sidenavs/SideNavsView", "https://material.io/guidelines/patterns/navigation-drawer.html", this);
+        SetPageTitleEvent.fire("SideNavs", "Also called navigation drawer - it slides in from the left and contains the navigation destinations for your app.", "components/sidenavs/SideNavsView", "https://material.io/guidelines/patterns/navigation-drawer.html", this);
     }
 
 }

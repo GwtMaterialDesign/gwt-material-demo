@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gwt.material.design.demo.client.application.patterns;
+package gwt.material.design.demo.client.application.dto;
 
 /**
  * Created by kevzl on 4/13/2017.
@@ -28,14 +28,14 @@ public class PatternDto {
     private String description;
     private String url;
     private String demo;
-    private String resizer;
+    private String source;
 
-    public PatternDto(String title, String description, String url, String demo, String resizer) {
+    public PatternDto(String title, String description, String url, String demo, String source) {
         this.title = title;
         this.description = description;
         this.url = url;
         this.demo = demo;
-        this.resizer = resizer;
+        this.source = source;
     }
 
     public String getTitle() {
@@ -70,11 +70,11 @@ public class PatternDto {
         this.demo = demo;
     }
 
-    public String getResizer() {
-        return resizer;
+    public String getSource() {
+        return source;
     }
 
-    public void setResizer(String resizer) {
-        this.resizer = resizer;
+    public void setSource(String source) {
+        this.source = source;
     }
 }
