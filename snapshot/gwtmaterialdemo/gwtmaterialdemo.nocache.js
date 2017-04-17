@@ -366,6 +366,8 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/materialize.min.css');
     installOneStylesheet('css/overridecss.css');
+    installOneStylesheet('css/materialize.blue.css');
+    installOneStylesheet('css/overridecss.blue.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
