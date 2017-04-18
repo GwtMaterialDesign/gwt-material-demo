@@ -64,7 +64,7 @@
                 </blockquote>
             </g:HTMLPanel>
     
-            <m:MaterialPanel ui:field="patternPanel" />
+            <m:MaterialPanel ui:field="typePanel" />
         </g:HTMLPanel>
     </m:MaterialPanel>
 </ui:UiBinder>

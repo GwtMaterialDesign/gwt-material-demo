@@ -28,14 +28,14 @@ import gwt.material.design.client.ui.MaterialTitle;
 /**
  * Created by kevzl on 4/13/2017.
  */
-public class PatternItem extends MaterialRow {
+public class DemoImagePanel extends MaterialRow {
 
     private MaterialTitle title = new MaterialTitle("Some Title", "Description");
     private MaterialImage image = new MaterialImage("");
     private MaterialAnchorButton source = new MaterialAnchorButton("Source");
     private MaterialAnchorButton demo = new MaterialAnchorButton("Demo");
 
-    public PatternItem(PatternDto dto) {
+    public DemoImagePanel(DemoImageDTO dto) {
         super();
         build();
         setPatternItem(dto);
@@ -51,7 +51,7 @@ public class PatternItem extends MaterialRow {
         addStyleName("code");
     }
 
-    public void setPatternItem(PatternDto dto) {
+    public void setPatternItem(DemoImageDTO dto) {
         title.setTitle(dto.getTitle());
         title.setDescription(dto.getDescription());
         image.setMarginTop(20);

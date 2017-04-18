@@ -177,6 +177,7 @@
 					</m:MaterialCollapsibleHeader>
 					<m:MaterialCollapsibleBody>
 						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getBlueprint}" text="BluePrint" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getColors}" text="Colors" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getGrid}" text="Grid" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getHelper}" text="Helper" waves="DEFAULT"/>

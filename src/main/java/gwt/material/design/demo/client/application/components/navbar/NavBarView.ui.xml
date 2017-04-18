@@ -106,49 +106,11 @@
           &lt;/m:MaterialNavBar><br/>
         </demo:PrettyPre>
       </m:MaterialRow>
-      
+
+      <m:MaterialPanel ui:field="typePanel" />
+
       <m:MaterialRow addStyleNames="code">
-        <!-- Shrink Type -->
-        <m:MaterialTitle title="Shrink Type" description="Scaling on Material NavBrand Logo (either image or text) with delightful animation "/>
-        <m:MaterialImage url="http://oi63.tinypic.com/dqnpy1.jpg"/>
-        <demo:PrettyPre addStyleNames="lang-xml">
-          &emsp;&lt;m:MaterialNavBar type="SHRINK"><br/>
-          &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-          &lt;/m:MaterialNavBar><br/>
-        </demo:PrettyPre>
-    
-        <!-- Fixed Type -->
-        <m:MaterialTitle title="Fixed Type" description="You can make your navbar fixed by adding: type='FIXED'"/>
-    
-        <m:MaterialRow>
-          <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072886/d4bb530e-6279-11e5-93ae-e3d8622a1236.gif"/>
-          <m:MaterialColumn grid="s12 m12 l8">
-            <g:HTMLPanel>
-              <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;m:MaterialNavBar type="FIXED"><br/>
-                &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-                &lt;/m:MaterialNavBar><br/>
-              </demo:PrettyPre>
-            </g:HTMLPanel>
-          </m:MaterialColumn>
-        </m:MaterialRow>
-    
-    
-        <m:MaterialTitle title="Tall Type" description="You can make your navbar fixed by adding: type='TALL'"/>
-        <m:MaterialRow>
-          <m:MaterialImage grid="s12 m12 l4" url="https://cloud.githubusercontent.com/assets/3138071/10072883/d2121638-6279-11e5-8e84-5fbcec8148f5.PNG"/>
-          <m:MaterialColumn grid="s12 m12 l8">
-            <g:HTMLPanel>
-              <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;m:MaterialNavBar type="TALL"><br/>
-                &emsp;&emsp;&lt;-- NavBar Contents here --><br/>
-                &lt;/m:MaterialNavBar><br/>
-              </demo:PrettyPre>
-            </g:HTMLPanel>
-          </m:MaterialColumn>
-        </m:MaterialRow>
-    
-        <m:MaterialTitle title="MaterialHeader Usage" description="If you are using an open sidenav you are required to use MaterialHeader to contain your navBar component for padding-left usage. And add into your style this : header, main, footer { padding-left: 200px } wherein 200px is the width of your sidenav."/>
+        <m:MaterialTitle title="Note" description="It is mandatory to wrap your MaterialNavBar with MaterialHeader to have a better and correct behavior of your navbar."/>
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;m:MaterialHeader><br/>
           &emsp;&lt;m:MaterialNavBar><br/>
@@ -156,6 +118,7 @@
           &emsp;&lt;/m:MaterialHeader><br/>
           &lt;/m:MaterialNavBar><br/>
         </demo:PrettyPre>
+        <m:MaterialAnchorButton text="See Blue Print" href="#blueprint" target="_blank" />
       </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

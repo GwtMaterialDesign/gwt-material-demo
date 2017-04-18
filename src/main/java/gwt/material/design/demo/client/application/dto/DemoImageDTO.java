@@ -22,7 +22,7 @@ package gwt.material.design.demo.client.application.dto;
 /**
  * Created by kevzl on 4/13/2017.
  */
-public class PatternDto {
+public class DemoImageDTO {
 
     private String title;
     private String description;
@@ -30,7 +30,7 @@ public class PatternDto {
     private String demo;
     private String source;
 
-    public PatternDto(String title, String description, String url, String demo, String source) {
+    public DemoImageDTO(String title, String description, String url, String demo, String source) {
         this.title = title;
         this.description = description;
         this.url = url;

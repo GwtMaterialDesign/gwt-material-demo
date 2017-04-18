@@ -88,6 +88,7 @@ public class NameTokens {
     public static final String combobox = "combobox";
     public static final String datatable = "datatable";
     public static final String overlay = "overlay";
+    public static final String blueprint = "blueprint";
 
     public static String getAbout() {
         return about;
@@ -351,5 +352,9 @@ public class NameTokens {
 
     public static String getOverlay() {
         return overlay;
+    }
+
+    public static String getBlueprint() {
+        return blueprint;
     }
 }
