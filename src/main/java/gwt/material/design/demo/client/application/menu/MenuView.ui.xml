@@ -66,7 +66,7 @@
 
 	<m:MaterialPanel>
 		<m:MaterialHeader ui:field="header" width="100%">
-			<m:MaterialNavBar ui:field="navBar" backgroundColor="BLUE" activates="sideBar" textColor="WHITE">
+			<m:MaterialNavBar ui:field="navBar" width="100%" backgroundColor="BLUE" activates="sideBar" textColor="WHITE">
 				<m:MaterialLink ui:field="btnMiniMenu" iconType="MENU" showOn="SHOW_ON_LARGE" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
 				<m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
 				<ma:combobox.MaterialComboBox ui:field="comboThemes" textColor="WHITE" label="Select Theme" marginRight="12" width="120px" float="RIGHT"/>
