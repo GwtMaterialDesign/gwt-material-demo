@@ -120,5 +120,41 @@
             &lt;/m:MaterialFAB><br/>
         </demo:PrettyPre>
 
+
+        <m:MaterialTitle title="FAB Java code example"/>
+
+       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+public class Fab extends Composite {
+    public Fab() {
+	MaterialFAB fab = new MaterialFAB();
+	// initial button to be initially displayed
+	MaterialButton btnInitial = new MaterialButton();
+	btnInitial.setIconType(IconType.ADD);
+	btnInitial.setType(ButtonType.FLOATING);
+	btnInitial.setSize(ButtonSize.LARGE);
+	btnInitial.setBackgroundColor("red");
+	fab.add(btnInitial);
+	// Fab list will hide all buttons attached on it
+	MaterialFABList fabList = new MaterialFABList();
+	// Item 1
+	MaterialButton btnItem1 = new MaterialButton();
+	btnItem1.setType(ButtonType.FLOATING);
+	btnItem1.setIconType(IconType.ACCESS_ALARMS);
+	btnItem1.setBackgroundColor("blue");
+	fabList.add(btnItem1);
+	// Item 2
+	MaterialButton btnItem2 = new MaterialButton();
+	btnItem2.setType(ButtonType.FLOATING);
+	btnItem2.setIconType(IconType.AC_UNIT);
+	btnItem2.setBackgroundColor("purple");
+	fabList.add(btnItem2);
+	fab.add(fabList);
+
+	initWidget(fab);
+    }
+        </demo:PrettyPre>
+        And then in Your view use just:
+        `widget.add(new Fab());`
+        
     </g:HTMLPanel>
 </ui:UiBinder>
