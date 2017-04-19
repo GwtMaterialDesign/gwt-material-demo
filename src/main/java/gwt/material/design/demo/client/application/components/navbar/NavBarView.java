@@ -63,6 +63,17 @@ public class NavBarView extends ViewImpl implements NavBarPresenter.MyView {
                 generateDemoLink("tall"),
                 generateSource("navbartall/TallNavBarView.ui.xml"))));
 
+        typePanel.add(new DemoImagePanel(new DemoImageDTO("Extended NavBar", "Using MaterialNavContent - you can easily attached any component for the extension of your MaterialNavBar",
+                "http://i.imgur.com/bUYC6qs.png",
+                generateDemoLink("extend"),
+                generateSource("navbarextend/ExtendNavBarView.ui.xml"))));
+
+
+        typePanel.add(new DemoImagePanel(new DemoImageDTO("Tabs in NavBar", "You can easily add tabs for secondary navigation on MaterialNavBar by attaching it on MaterialNavContent",
+                "http://i.imgur.com/7c3AGBs.png",
+                generateDemoLink("tabs"),
+                generateSource("navbartab/TabNavBarView.ui.xml"))));
+
         typePanel.add(new DemoImagePanel(new DemoImageDTO("Shrinkable NavBar", "Provides a delightful scrolling effect when expanding or shrinking the navbar.",
                 "http://i.imgur.com/tHUDgqB.gif",
                 generateDemoLink("shrink"),
