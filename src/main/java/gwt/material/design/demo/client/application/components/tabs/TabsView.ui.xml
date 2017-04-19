@@ -29,7 +29,6 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)"/>
-  
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
             <m:MaterialTab ui:field="tab">
@@ -82,6 +81,36 @@
         &emsp;&emsp;&lt;m:MaterialLabel text="Tab 3 Content"/><br/>
         &emsp;&lt;/m:MaterialColumn><br/>
         &lt;/m:MaterialRow><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Fit Tab Item" description="By disabling the FLEX property , tab item would fit with the given width of the text" />
+      <m:MaterialRow>
+        <m:MaterialTab>
+          <m:MaterialTabItem waves="LIGHT" flex="NONE">
+            <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" flex="NONE">
+            <m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/>
+          </m:MaterialTabItem>
+          <m:MaterialTabItem waves="YELLOW" flex="NONE">
+            <m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/>
+          </m:MaterialTabItem>
+        </m:MaterialTab>
+      </m:MaterialRow>
+      <demo:PrettyPre addStyleNames="code">
+        &emsp;&lt;m:MaterialTab backgroundColor="PURPLE" indicatorColor="PINK"><br/>
+          &emsp;&lt;m:MaterialTabItem waves="LIGHT" flex="NONE"><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/><br/>
+        &emsp;&lt;/m:MaterialTabItem><br/>
+        &emsp;&lt;m:MaterialTabItem waves="YELLOW" flex="NONE"><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Tab 2" href="#tab2" textColor="WHITE"/><br/>
+        &emsp;&lt;/m:MaterialTabItem><br/>
+        &emsp;&lt;m:MaterialTabItem waves="YELLOW" flex="NONE"><br/>
+        &emsp;&emsp;&lt;m:MaterialLink text="Tab 3" href="#tab3" textColor="WHITE"/><br/>
+        &emsp;&lt;/m:MaterialTabItem><br/>
+        &lt;/m:MaterialTab><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
