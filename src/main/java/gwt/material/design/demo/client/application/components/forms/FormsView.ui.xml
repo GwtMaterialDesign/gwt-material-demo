@@ -225,6 +225,12 @@
         <m.html:Option text="Option 2"/>
         <m.html:Option text="Option 3"/>
         <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
       </m:MaterialListBox>
       
       <demo:PrettyPre addStyleNames="lang-xml">
@@ -235,6 +241,40 @@
           &emsp;&lt;m.html:Option text="Option 4"/><br/>
         &lt;/m:MaterialListBox>
       </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Add Option" description="You can easily add an item by calling addItem(Item)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstAddOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Add New Option" ui:field="btnAddNewOption" />
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Remove Option" description="You can easily remove an item by calling removeItem(0)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstRemoveOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Remove Option" ui:field="btnRemoveOption" />
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
