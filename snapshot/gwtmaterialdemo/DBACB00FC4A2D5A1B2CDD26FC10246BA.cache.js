@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = 'FDBE215A52F96DF539F5E39911EF1D32';
+var $strongName = 'DBACB00FC4A2D5A1B2CDD26FC10246BA';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -20853,7 +20853,7 @@ function MaterialListValueBox$lambda$3$Type(){
 
 defineClass(2640, $wnd.Function, {}, MaterialListValueBox$lambda$3$Type);
 _.call_1 = function call_86(arg0, arg1){
-  return arg0.preventDefault() , $clinit_Boolean() , $clinit_Boolean() , true;
+  return 'ontouchstart' in document.documentElement || arg0.preventDefault() , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
 function $close_4(this$static, e){
