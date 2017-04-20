@@ -71,7 +71,7 @@ public class NavBarView extends ViewImpl implements NavBarPresenter.MyView {
 
         typePanel.add(new DemoImagePanel(new DemoImageDTO("Tabs in NavBar", "You can easily add tabs for secondary navigation on MaterialNavBar by attaching it on MaterialNavContent",
                 "http://i.imgur.com/7c3AGBs.png",
-                generateDemoLink("tabs"),
+                generateDemoLink("tab"),
                 generateSource("navbartab/TabNavBarView.ui.xml"))));
 
         typePanel.add(new DemoImagePanel(new DemoImageDTO("Shrinkable NavBar", "Provides a delightful scrolling effect when expanding or shrinking the navbar.",
