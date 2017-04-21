@@ -40,6 +40,7 @@ import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.ThemeManager;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 import gwt.material.design.themes.amber.ThemeAmber;
 import gwt.material.design.themes.blue.ThemeBlue;
@@ -88,6 +89,9 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
             navBarSearch.setVisible(true);
             navBar.setVisible(false);
         });
+
+        sideNav.addOpenedHandler(event -> getUiHandlers().setContentPush());
+        sideNav.addClosedHandler(event -> getUiHandlers().setContentPush());
 
         initThemes();
         initSearches();

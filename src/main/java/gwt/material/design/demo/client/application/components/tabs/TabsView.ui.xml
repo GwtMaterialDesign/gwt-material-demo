@@ -31,7 +31,7 @@
       <m:MaterialTitle title="Introduction" description="You can add a Label as a Tab Item and for contents any Material Widget can be added as a Tab Content (e.g MaterialTopNav)"/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-            <m:MaterialTab ui:field="tab">
+            <m:MaterialTab ui:field="tabIntro">
               <m:MaterialTabItem waves="YELLOW">
                 <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
               </m:MaterialTabItem>
@@ -87,7 +87,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Fit Tab Item" description="By disabling the FLEX property , tab item would fit with the given width of the text" />
       <m:MaterialRow>
-        <m:MaterialTab>
+        <m:MaterialTab ui:field="tabFit">
           <m:MaterialTabItem waves="LIGHT" flex="NONE">
             <m:MaterialLink text="Tab 1" href="#tabFit1" textColor="WHITE"/>
           </m:MaterialTabItem>
@@ -128,7 +128,7 @@
       <m:MaterialTitle title="Disabled Tab Item" />
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab type="ICON" shadow="1">
+          <m:MaterialTab ui:field="tabBasic" type="ICON" shadow="1">
             <m:MaterialTabItem grid="s4">
               <m:MaterialLink iconType="PHONE" text="Recents" href="#tab51" textColor="WHITE"/>
             </m:MaterialTabItem>
@@ -164,7 +164,7 @@
   
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab ui:field="tab2" indicatorColor="YELLOW">
+          <m:MaterialTab ui:field="tabSetIndex" indicatorColor="YELLOW">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink text="Tab 1" href="#tab21" textColor="WHITE"/>
             </m:MaterialTabItem>
@@ -203,7 +203,7 @@
 
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab ui:field="tabIndex" indicatorColor="YELLOW">
+          <m:MaterialTab ui:field="tabGetIndex" indicatorColor="YELLOW">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink text="Tab 1" href="#tab211" textColor="WHITE"/>
             </m:MaterialTabItem>
@@ -238,7 +238,7 @@
       <m:MaterialTitle title="Tabs with Icons" description="You can add icons by setting the type='ICON' on MaterialTab.">
         <m:MaterialRow>
           <m:MaterialColumn grid="s12">
-            <m:MaterialTab shadow="1" type="ICON" indicatorColor="YELLOW">
+            <m:MaterialTab ui:field="tabIcons" shadow="1" type="ICON" indicatorColor="YELLOW">
               <m:MaterialTabItem waves="YELLOW" grid="s4">
                 <m:MaterialLink iconType="PHONE" text="Recents" href="#tab31" textColor="WHITE"/>
               </m:MaterialTabItem>
@@ -282,7 +282,7 @@
       <m:MaterialTitle title="Changing Indicator Color"/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
-          <m:MaterialTab type="ICON" shadow="1" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
+          <m:MaterialTab ui:field="tabIndicatorColor" type="ICON" shadow="1" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink iconType="PHONE" text="Recents" href="#tab41" textColor="WHITE"/>
             </m:MaterialTabItem>
@@ -313,9 +313,21 @@
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="resize() API" description="For specific usecase, whenever you use a sidenav. In order to recalculate the width of the tab indicator, please call tab.resize() for the workaround." />
+      <m:MaterialAnchorButton text="Source" textColor="BLACK" backgroundColor="WHITE" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/navbartabspush" />
+      <m:MaterialAnchorButton text="Demo" target="_blank" href="https://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#navbar_tab_push" />
+      <m:MaterialImage url="http://i.imgur.com/cDM9FRE.gif" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;sidenav.addOpenedHandler(event -> tab.resize());<br/>
+        sidenav.addClosedHandler(event -> tab.resize());
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
       <m:MaterialTitle title="Selection Event" description="We have provided a selection event to easily get the selected index." />
       <m:MaterialColumn grid="s12">
-        <m:MaterialTab ui:field="eventTab">
+        <m:MaterialTab ui:field="tabEvents">
           <m:MaterialTabItem waves="YELLOW" grid="s4">
             <m:MaterialLink text="Tab 1" href="#tab1" textColor="WHITE"/>
           </m:MaterialTabItem>
@@ -337,7 +349,7 @@
       <m:MaterialTitle title="Controlling the width of Tabs" description="By wrapping tabs into columns you canset it's grid."/>
       <m:MaterialRow backgroundColor="GREEN" shadow="1">
         <m:MaterialColumn grid="l4 m6 s12">
-          <m:MaterialTab type="ICON" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
+          <m:MaterialTab ui:field="tabControlWidth" type="ICON" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink text="Recents" href="#tab41" textColor="WHITE"/>
             </m:MaterialTabItem>

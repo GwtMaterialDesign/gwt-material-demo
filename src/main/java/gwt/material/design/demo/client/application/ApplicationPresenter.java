@@ -32,6 +32,7 @@ import com.gwtplatform.mvp.client.proxy.NavigationEvent;
 import com.gwtplatform.mvp.client.proxy.NavigationHandler;
 import com.gwtplatform.mvp.client.proxy.Proxy;
 import gwt.material.design.demo.client.application.menu.MenuPresenter;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 
 import javax.inject.Inject;

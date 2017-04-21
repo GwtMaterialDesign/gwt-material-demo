@@ -25,8 +25,10 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 
 public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> implements MenuUiHandlers {
+
 
     interface MyView extends View, HasUiHandlers<MenuUiHandlers> {
 
@@ -42,5 +44,10 @@ public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> impleme
     @Override
     protected void onBind() {
         super.onBind();
+    }
+
+    @Override
+    public void setContentPush() {
+        ContentPushEvent.fire(this);
     }
 }
