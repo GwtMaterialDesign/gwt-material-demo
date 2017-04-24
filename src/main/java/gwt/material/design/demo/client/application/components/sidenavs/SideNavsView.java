@@ -95,6 +95,11 @@ public class SideNavsView extends ViewImpl implements SideNavsPresenter.MyView {
                 "http://i.imgur.com/aTrfz70.gif",
                 generateDemoLink("colaps"),
                 generateSource("sidenavcollapsible/CollapsibleSideNavView.ui.xml"))));
+
+        typePanel.add(new DemoImagePanel(new DemoImageDTO("SideNav Content", "A component inside SideNav which you can place any plain contents like input fields, picture, labesl and description.",
+                "http://i.imgur.com/21DoL6L.gif",
+                generateDemoLink("content"),
+                generateSource("sidenavcontent/SideNavContentView.ui.xml"))));
     }
 
     protected String generateSource(String type) {
