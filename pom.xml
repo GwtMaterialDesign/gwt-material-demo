@@ -35,7 +35,6 @@
         <gwtp.version>1.5.3</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.0-SNAPSHOT</gwt-material.version>
-        <gwt-material-table.version>1.0-SNAPSHOT</gwt-material-table.version>
 
         <gwt.style>PRETTY</gwt.style>
 
@@ -267,7 +266,7 @@
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-table</artifactId>
-            <version>${gwt-material-table.version}</version>
+            <version>${gwt-material.version}</version>
         </dependency>
 
         <!-- App Engine -->
