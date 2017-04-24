@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.0";
-var $strongName = '72931136F2D58571BB5A29DC8C49DD27';
+var $strongName = '17D6DBDE2A69827FC3ACDDC277DF3F9B';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 91:1, 67:1, 69:1}, $intern_5 = {116:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = {4:1, 36:1, 8:1}, $intern_9 = {95:1, 44:1, 4:1, 33:1, 27:1}, $intern_10 = {90:1, 44:1, 4:1, 33:1, 27:1}, $intern_11 = {235:1, 44:1, 4:1, 33:1, 27:1}, $intern_12 = {196:1, 44:1, 4:1, 33:1, 27:1}, $intern_13 = {44:1, 197:1, 4:1, 33:1, 27:1}, $intern_14 = {44:1, 198:1, 4:1, 33:1, 27:1}, $intern_15 = {134:1, 4:1, 33:1, 27:1}, $intern_16 = {44:1, 275:1, 4:1, 33:1, 27:1}, $intern_17 = 2452, $intern_18 = {16:1}, $intern_19 = {256:1, 4:1, 91:1, 67:1, 69:1}, $intern_20 = {4:1, 33:1, 101:1}, $intern_21 = 4194303, $intern_22 = 1048575, $intern_23 = 4194304, $intern_24 = 17592186044416, $intern_25 = 524288, $intern_26 = -17592186044416, $intern_27 = -2147483648, $intern_28 = {334:1, 4:1}, $intern_29 = {29:1, 28:1}, $intern_30 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 21:1}, $intern_31 = 2465, $intern_32 = {31:1, 16:1, 30:1, 29:1, 125:1, 19:1, 28:1, 21:1}, $intern_33 = 16384, $intern_34 = 65536, $intern_35 = 1048576, $intern_36 = 16777216, $intern_37 = 33554432, $intern_38 = 67108864, $intern_39 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 28:1, 21:1}, $intern_40 = {31:1, 16:1, 30:1, 29:1, 34:1, 374:1, 19:1, 28:1, 21:1}, $intern_41 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 21:1}, $intern_42 = {31:1, 16:1, 30:1, 302:1, 29:1, 34:1, 19:1, 28:1, 21:1}, $intern_43 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 122:1, 28:1, 21:1}, $intern_44 = {249:1, 13:1}, $intern_45 = {270:1, 13:1}, $intern_46 = {13:1, 2428:1}, $intern_47 = {73:1, 13:1}, $intern_48 = {104:1}, $intern_49 = {31:1, 16:1, 30:1, 29:1, 34:1, 374:1, 19:1, 276:1, 28:1, 21:1}, $intern_50 = {168:1, 13:1}, $intern_51 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 19:1, 28:1, 21:1}, $intern_52 = {2429:1, 13:1}, $intern_53 = {205:1, 4:1, 33:1, 27:1}, $intern_54 = {4:1, 212:1, 69:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 122:1, 28:1, 21:1}, $intern_56 = {232:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {156:1, 13:1}, $intern_60 = {332:1}, $intern_61 = {73:1, 13:1, 16:1, 2404:1}, $intern_62 = 2460, $intern_63 = {16:1, 64:1, 62:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_66 = {167:1, 13:1}, $intern_67 = {26:1, 13:1}, $intern_68 = {454:1, 13:1}, $intern_69 = {13:1, 620:1}, $intern_70 = 4000, $intern_71 = {13:1, 2413:1}, $intern_72 = {13:1, 2420:1}, $intern_73 = {13:1, 2414:1}, $intern_74 = {13:1, 2415:1}, $intern_75 = {13:1, 2416:1}, $intern_76 = {13:1, 2417:1}, $intern_77 = {13:1, 2418:1}, $intern_78 = {13:1, 2419:1}, $intern_79 = {13:1, 2421:1}, $intern_80 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 117:1}, $intern_81 = {456:1, 13:1}, $intern_82 = {452:1, 13:1}, $intern_83 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1}, $intern_84 = {13:1, 2424:1}, $intern_85 = {13:1, 2423:1}, $intern_86 = {622:1, 13:1}, $intern_87 = {455:1, 13:1}, $intern_88 = {2427:1, 13:1}, $intern_89 = {2426:1, 13:1}, $intern_90 = {2425:1, 13:1}, $intern_91 = 2449, $intern_92 = {104:1, 99:1}, $intern_93 = {4:1, 104:1, 99:1, 301:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 22:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 19:1, 28:1, 21:1, 85:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 623:1, 39:1, 38:1, 25:1, 174:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 186:1, 39:1, 38:1, 25:1, 146:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 163:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 140:1, 117:1}, $intern_100 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 18:1}, $intern_101 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 222:1}, $intern_102 = {333:1, 13:1}, $intern_103 = {170:1, 13:1}, $intern_104 = {13:1, 626:1}, $intern_105 = {13:1, 627:1}, $intern_106 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 50:1}, $intern_107 = {302:1, 34:1, 19:1}, $intern_108 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 58:1}, $intern_109 = {16:1, 40:1}, $intern_110 = {16:1, 40:1, 64:1, 62:1}, $intern_111 = {79:1}, $intern_112 = {231:1}, $intern_113 = {4:1, 91:1, 98:1, 67:1, 69:1}, $intern_114 = 65535, $intern_115 = {194:1}, $intern_116 = 2454, $intern_117 = {104:1, 166:1}, $intern_118 = {4:1, 104:1, 166:1}, $intern_119 = {4:1, 104:1, 99:1}, $intern_120 = {4:1, 194:1}, $intern_121 = {4:1, 33:1, 27:1, 221:1}, $intern_122 = 2450, $intern_123 = {4:1, 8:1, 619:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 91:1, 67:1, 69:1}, $intern_5 = {116:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = {4:1, 36:1, 8:1}, $intern_9 = {95:1, 44:1, 4:1, 33:1, 27:1}, $intern_10 = {90:1, 44:1, 4:1, 33:1, 27:1}, $intern_11 = {235:1, 44:1, 4:1, 33:1, 27:1}, $intern_12 = {197:1, 44:1, 4:1, 33:1, 27:1}, $intern_13 = {44:1, 198:1, 4:1, 33:1, 27:1}, $intern_14 = {44:1, 199:1, 4:1, 33:1, 27:1}, $intern_15 = {134:1, 4:1, 33:1, 27:1}, $intern_16 = {44:1, 275:1, 4:1, 33:1, 27:1}, $intern_17 = 2452, $intern_18 = {16:1}, $intern_19 = {256:1, 4:1, 91:1, 67:1, 69:1}, $intern_20 = {4:1, 33:1, 101:1}, $intern_21 = 4194303, $intern_22 = 1048575, $intern_23 = 4194304, $intern_24 = 17592186044416, $intern_25 = 524288, $intern_26 = -17592186044416, $intern_27 = -2147483648, $intern_28 = {334:1, 4:1}, $intern_29 = {29:1, 28:1}, $intern_30 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 21:1}, $intern_31 = 2465, $intern_32 = {31:1, 16:1, 30:1, 29:1, 125:1, 19:1, 28:1, 21:1}, $intern_33 = 16384, $intern_34 = 65536, $intern_35 = 1048576, $intern_36 = 16777216, $intern_37 = 33554432, $intern_38 = 67108864, $intern_39 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 28:1, 21:1}, $intern_40 = {31:1, 16:1, 30:1, 29:1, 34:1, 374:1, 19:1, 28:1, 21:1}, $intern_41 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 21:1}, $intern_42 = {31:1, 16:1, 30:1, 302:1, 29:1, 34:1, 19:1, 28:1, 21:1}, $intern_43 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 122:1, 28:1, 21:1}, $intern_44 = {249:1, 13:1}, $intern_45 = {270:1, 13:1}, $intern_46 = {13:1, 2428:1}, $intern_47 = {73:1, 13:1}, $intern_48 = {104:1}, $intern_49 = {31:1, 16:1, 30:1, 29:1, 34:1, 374:1, 19:1, 276:1, 28:1, 21:1}, $intern_50 = {168:1, 13:1}, $intern_51 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 19:1, 28:1, 21:1}, $intern_52 = {2429:1, 13:1}, $intern_53 = {206:1, 4:1, 33:1, 27:1}, $intern_54 = {4:1, 213:1, 69:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 122:1, 28:1, 21:1}, $intern_56 = {232:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {156:1, 13:1}, $intern_60 = {332:1}, $intern_61 = {73:1, 13:1, 16:1, 2404:1}, $intern_62 = 2460, $intern_63 = {16:1, 64:1, 62:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1}, $intern_66 = {167:1, 13:1}, $intern_67 = {26:1, 13:1}, $intern_68 = {454:1, 13:1}, $intern_69 = {13:1, 620:1}, $intern_70 = 4000, $intern_71 = {13:1, 2413:1}, $intern_72 = {13:1, 2420:1}, $intern_73 = {13:1, 2414:1}, $intern_74 = {13:1, 2415:1}, $intern_75 = {13:1, 2416:1}, $intern_76 = {13:1, 2417:1}, $intern_77 = {13:1, 2418:1}, $intern_78 = {13:1, 2419:1}, $intern_79 = {13:1, 2421:1}, $intern_80 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 117:1}, $intern_81 = {456:1, 13:1}, $intern_82 = {452:1, 13:1}, $intern_83 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1}, $intern_84 = {13:1, 2424:1}, $intern_85 = {13:1, 2423:1}, $intern_86 = {622:1, 13:1}, $intern_87 = {455:1, 13:1}, $intern_88 = {2427:1, 13:1}, $intern_89 = {2426:1, 13:1}, $intern_90 = {2425:1, 13:1}, $intern_91 = 2449, $intern_92 = {104:1, 99:1}, $intern_93 = {4:1, 104:1, 99:1, 301:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 22:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 19:1, 28:1, 21:1, 85:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 623:1, 39:1, 38:1, 25:1, 174:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 186:1, 39:1, 38:1, 25:1, 146:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 100:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 163:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 140:1, 117:1}, $intern_100 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 18:1}, $intern_101 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 222:1}, $intern_102 = {333:1, 13:1}, $intern_103 = {170:1, 13:1}, $intern_104 = {13:1, 626:1}, $intern_105 = {13:1, 627:1}, $intern_106 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 50:1}, $intern_107 = {302:1, 34:1, 19:1}, $intern_108 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 39:1, 38:1, 25:1, 58:1}, $intern_109 = {16:1, 40:1}, $intern_110 = {16:1, 40:1, 64:1, 62:1}, $intern_111 = {79:1}, $intern_112 = {231:1}, $intern_113 = {4:1, 91:1, 98:1, 67:1, 69:1}, $intern_114 = 65535, $intern_115 = {195:1}, $intern_116 = 2454, $intern_117 = {104:1, 166:1}, $intern_118 = {4:1, 104:1, 166:1}, $intern_119 = {4:1, 104:1, 99:1}, $intern_120 = {4:1, 195:1}, $intern_121 = {4:1, 33:1, 27:1, 221:1}, $intern_122 = 2450, $intern_123 = {4:1, 8:1, 619:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function setGwtProperty(propertyName, propertyValue){
   typeof window === 'object' && typeof window['$gwt'] === 'object' && (window['$gwt'][propertyName] = propertyValue);
@@ -1284,7 +1284,7 @@ function TreeitemRoleImpl(){
 defineClass(2172, 68, {}, TreeitemRoleImpl);
 var Lcom_google_gwt_aria_client_TreeitemRoleImpl_2_classLit = createForClass('com.google.gwt.aria.client', 'TreeitemRoleImpl', 2172);
 function $$init(this$static){
-  this$static.stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 213, 0, 0, 1);
+  this$static.stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 214, 0, 0, 1);
 }
 
 function $addSuppressed(this$static, exception){
@@ -2449,7 +2449,7 @@ _.getStackTrace = function getStackTrace(t){
   var i, length_0, stack_0, stackTrace;
   stack_0 = ($clinit_StackTraceCreator() , t && t['fnStack']?t['fnStack']:[]);
   length_0 = stack_0.length;
-  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 213, length_0, 0, 1);
+  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 214, length_0, 0, 1);
   for (i = 0; i < length_0; i++) {
     stackTrace[i] = new StackTraceElement(stack_0[i], null, -1);
   }
@@ -2509,7 +2509,7 @@ _.createSte = function createSte(fileName, method, line, col){
 _.getStackTrace = function getStackTrace_0(t){
   var addIndex, i, length_0, stack_0, stackTrace, ste, e;
   stack_0 = ($clinit_StackTraceCreator() , e = t.backingJsObject , e && e.stack?e.stack.split('\n'):[]);
-  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 213, 0, 0, 1);
+  stackTrace = initUnidimensionalArray(Ljava_lang_StackTraceElement_2_classLit, $intern_3, 214, 0, 0, 1);
   addIndex = 0;
   length_0 = stack_0.length;
   if (length_0 == 0) {
@@ -3451,17 +3451,17 @@ function Style$FontWeight(enum$name, enum$ordinal){
 
 function values_3(){
   $clinit_Style$FontWeight();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$FontWeight_2_classLit, 1), $intern_8, 196, 0, [NORMAL, BOLD, BOLDER, LIGHTER]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$FontWeight_2_classLit, 1), $intern_8, 197, 0, [NORMAL, BOLD, BOLDER, LIGHTER]);
 }
 
-defineClass(196, 27, $intern_12);
+defineClass(197, 27, $intern_12);
 var BOLD, BOLDER, LIGHTER, NORMAL;
-var Lcom_google_gwt_dom_client_Style$FontWeight_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/FontWeight', 196, Ljava_lang_Enum_2_classLit, values_3);
+var Lcom_google_gwt_dom_client_Style$FontWeight_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/FontWeight', 197, Ljava_lang_Enum_2_classLit, values_3);
 function Style$FontWeight$1(){
   Style$FontWeight.call(this, 'NORMAL', 0);
 }
 
-defineClass(1264, 196, $intern_12, Style$FontWeight$1);
+defineClass(1264, 197, $intern_12, Style$FontWeight$1);
 _.getCssName = function getCssName_39(){
   return 'normal';
 }
@@ -3471,7 +3471,7 @@ function Style$FontWeight$2(){
   Style$FontWeight.call(this, 'BOLD', 1);
 }
 
-defineClass(1265, 196, $intern_12, Style$FontWeight$2);
+defineClass(1265, 197, $intern_12, Style$FontWeight$2);
 _.getCssName = function getCssName_40(){
   return 'bold';
 }
@@ -3481,7 +3481,7 @@ function Style$FontWeight$3(){
   Style$FontWeight.call(this, 'BOLDER', 2);
 }
 
-defineClass(1266, 196, $intern_12, Style$FontWeight$3);
+defineClass(1266, 197, $intern_12, Style$FontWeight$3);
 _.getCssName = function getCssName_41(){
   return 'bolder';
 }
@@ -3491,7 +3491,7 @@ function Style$FontWeight$4(){
   Style$FontWeight.call(this, 'LIGHTER', 3);
 }
 
-defineClass(1267, 196, $intern_12, Style$FontWeight$4);
+defineClass(1267, 197, $intern_12, Style$FontWeight$4);
 _.getCssName = function getCssName_42(){
   return 'lighter';
 }
@@ -3511,17 +3511,17 @@ function Style$Overflow(enum$name, enum$ordinal){
 
 function values_5(){
   $clinit_Style$Overflow();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Overflow_2_classLit, 1), $intern_8, 197, 0, [VISIBLE, HIDDEN_0, SCROLL, AUTO_0]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Overflow_2_classLit, 1), $intern_8, 198, 0, [VISIBLE, HIDDEN_0, SCROLL, AUTO_0]);
 }
 
-defineClass(197, 27, $intern_13);
+defineClass(198, 27, $intern_13);
 var AUTO_0, HIDDEN_0, SCROLL, VISIBLE;
-var Lcom_google_gwt_dom_client_Style$Overflow_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow', 197, Ljava_lang_Enum_2_classLit, values_5);
+var Lcom_google_gwt_dom_client_Style$Overflow_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Overflow', 198, Ljava_lang_Enum_2_classLit, values_5);
 function Style$Overflow$1(){
   Style$Overflow.call(this, 'VISIBLE', 0);
 }
 
-defineClass(1277, 197, $intern_13, Style$Overflow$1);
+defineClass(1277, 198, $intern_13, Style$Overflow$1);
 _.getCssName = function getCssName_52(){
   return 'visible';
 }
@@ -3531,7 +3531,7 @@ function Style$Overflow$2(){
   Style$Overflow.call(this, 'HIDDEN', 1);
 }
 
-defineClass(1278, 197, $intern_13, Style$Overflow$2);
+defineClass(1278, 198, $intern_13, Style$Overflow$2);
 _.getCssName = function getCssName_53(){
   return 'hidden';
 }
@@ -3541,7 +3541,7 @@ function Style$Overflow$3(){
   Style$Overflow.call(this, 'SCROLL', 2);
 }
 
-defineClass(1279, 197, $intern_13, Style$Overflow$3);
+defineClass(1279, 198, $intern_13, Style$Overflow$3);
 _.getCssName = function getCssName_54(){
   return 'scroll';
 }
@@ -3551,7 +3551,7 @@ function Style$Overflow$4(){
   Style$Overflow.call(this, 'AUTO', 3);
 }
 
-defineClass(1280, 197, $intern_13, Style$Overflow$4);
+defineClass(1280, 198, $intern_13, Style$Overflow$4);
 _.getCssName = function getCssName_55(){
   return 'auto';
 }
@@ -3571,17 +3571,17 @@ function Style$Position(enum$name, enum$ordinal){
 
 function values_6(){
   $clinit_Style$Position();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Position_2_classLit, 1), $intern_8, 198, 0, [STATIC, RELATIVE, ABSOLUTE, FIXED]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_dom_client_Style$Position_2_classLit, 1), $intern_8, 199, 0, [STATIC, RELATIVE, ABSOLUTE, FIXED]);
 }
 
-defineClass(198, 27, $intern_14);
+defineClass(199, 27, $intern_14);
 var ABSOLUTE, FIXED, RELATIVE, STATIC;
-var Lcom_google_gwt_dom_client_Style$Position_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position', 198, Ljava_lang_Enum_2_classLit, values_6);
+var Lcom_google_gwt_dom_client_Style$Position_2_classLit = createForEnum('com.google.gwt.dom.client', 'Style/Position', 199, Ljava_lang_Enum_2_classLit, values_6);
 function Style$Position$1(){
   Style$Position.call(this, 'STATIC', 0);
 }
 
-defineClass(1281, 198, $intern_14, Style$Position$1);
+defineClass(1281, 199, $intern_14, Style$Position$1);
 _.getCssName = function getCssName_56(){
   return 'static';
 }
@@ -3591,7 +3591,7 @@ function Style$Position$2(){
   Style$Position.call(this, 'RELATIVE', 1);
 }
 
-defineClass(1282, 198, $intern_14, Style$Position$2);
+defineClass(1282, 199, $intern_14, Style$Position$2);
 _.getCssName = function getCssName_57(){
   return 'relative';
 }
@@ -3601,7 +3601,7 @@ function Style$Position$3(){
   Style$Position.call(this, 'ABSOLUTE', 2);
 }
 
-defineClass(1283, 198, $intern_14, Style$Position$3);
+defineClass(1283, 199, $intern_14, Style$Position$3);
 _.getCssName = function getCssName_58(){
   return 'absolute';
 }
@@ -3611,7 +3611,7 @@ function Style$Position$4(){
   Style$Position.call(this, 'FIXED', 3);
 }
 
-defineClass(1284, 198, $intern_14, Style$Position$4);
+defineClass(1284, 199, $intern_14, Style$Position$4);
 _.getCssName = function getCssName_59(){
   return 'fixed';
 }
@@ -4510,12 +4510,12 @@ function $doRemoveNow(this$static, type_0, source, handler){
   var l, removed, sourceMap;
   l = $getHandlerList(this$static, type_0, source);
   removed = l.remove_2(handler);
-  removed && l.isEmpty_0() && (sourceMap = castTo($get_7(this$static.map_0, type_0), 194) , castTo(sourceMap.remove_4(source), 99) , sourceMap.isEmpty_0() && $remove_17(this$static.map_0, type_0) , undefined);
+  removed && l.isEmpty_0() && (sourceMap = castTo($get_7(this$static.map_0, type_0), 195) , castTo(sourceMap.remove_4(source), 99) , sourceMap.isEmpty_0() && $remove_17(this$static.map_0, type_0) , undefined);
 }
 
 function $ensureHandlerList(this$static, type_0, source){
   var handlers, sourceMap;
-  sourceMap = castTo($get_7(this$static.map_0, type_0), 194);
+  sourceMap = castTo($get_7(this$static.map_0, type_0), 195);
   if (!sourceMap) {
     sourceMap = new HashMap;
     $put_1(this$static.map_0, type_0, sourceMap);
@@ -4542,7 +4542,7 @@ function $getDispatchList(this$static, type_0, source){
 
 function $getHandlerList(this$static, type_0, source){
   var handlers, sourceMap;
-  sourceMap = castTo($get_7(this$static.map_0, type_0), 194);
+  sourceMap = castTo($get_7(this$static.map_0, type_0), 195);
   if (!sourceMap) {
     return $clinit_Collections() , $clinit_Collections() , EMPTY_LIST;
   }
@@ -7245,7 +7245,7 @@ function SimplePanel_0(elem){
   $setElement_0(this, ($clinit_DOM() , elem));
 }
 
-defineClass(218, 2464, $intern_42, SimplePanel);
+defineClass(219, 2464, $intern_42, SimplePanel);
 _.add_0 = function add_5(w){
   $add_5(this, w);
 }
@@ -7274,7 +7274,7 @@ _.setWidget_0 = function setWidget_0(w){
   $setWidget(this, w);
 }
 ;
-var Lcom_google_gwt_user_client_ui_SimplePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'SimplePanel', 218);
+var Lcom_google_gwt_user_client_ui_SimplePanel_2_classLit = createForClass('com.google.gwt.user.client.ui', 'SimplePanel', 219);
 function $addAutoHidePartner(this$static, partner){
   !this$static.autoHidePartners && (this$static.autoHidePartners = new ArrayList);
   $add_24(this$static.autoHidePartners, partner);
@@ -7469,7 +7469,7 @@ function $updateHandlers(this$static){
   }
 }
 
-defineClass(410, 218, $intern_42);
+defineClass(410, 219, $intern_42);
 _.getContainerElement = function getContainerElement_1(){
   return $clinit_DOM() , $getFirstChildElement(this.element_0);
 }
@@ -7596,7 +7596,7 @@ function createTD(styleName){
   return tdElem;
 }
 
-defineClass(2062, 218, $intern_42, DecoratorPanel);
+defineClass(2062, 219, $intern_42, DecoratorPanel);
 _.getContainerElement = function getContainerElement_2(){
   return $getContainerElement(this);
 }
@@ -9521,35 +9521,35 @@ function ValueBoxBase$TextAlignment(enum$name, enum$ordinal){
 
 function values_14(){
   $clinit_ValueBoxBase$TextAlignment();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, 1), $intern_8, 205, 0, [CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, 1), $intern_8, 206, 0, [CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1]);
 }
 
-defineClass(205, 27, $intern_53);
+defineClass(206, 27, $intern_53);
 var CENTER_1, JUSTIFY_0, LEFT_1, RIGHT_1;
-var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment', 205, Ljava_lang_Enum_2_classLit, values_14);
+var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment', 206, Ljava_lang_Enum_2_classLit, values_14);
 function ValueBoxBase$TextAlignment$1(){
   ValueBoxBase$TextAlignment.call(this, 'CENTER', 0);
 }
 
-defineClass(1833, 205, $intern_53, ValueBoxBase$TextAlignment$1);
+defineClass(1833, 206, $intern_53, ValueBoxBase$TextAlignment$1);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$1_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/1', 1833, Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, null);
 function ValueBoxBase$TextAlignment$2(){
   ValueBoxBase$TextAlignment.call(this, 'JUSTIFY', 1);
 }
 
-defineClass(1834, 205, $intern_53, ValueBoxBase$TextAlignment$2);
+defineClass(1834, 206, $intern_53, ValueBoxBase$TextAlignment$2);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$2_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/2', 1834, Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, null);
 function ValueBoxBase$TextAlignment$3(){
   ValueBoxBase$TextAlignment.call(this, 'LEFT', 2);
 }
 
-defineClass(1835, 205, $intern_53, ValueBoxBase$TextAlignment$3);
+defineClass(1835, 206, $intern_53, ValueBoxBase$TextAlignment$3);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$3_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/3', 1835, Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, null);
 function ValueBoxBase$TextAlignment$4(){
   ValueBoxBase$TextAlignment.call(this, 'RIGHT', 3);
 }
 
-defineClass(1836, 205, $intern_53, ValueBoxBase$TextAlignment$4);
+defineClass(1836, 206, $intern_53, ValueBoxBase$TextAlignment$4);
 var Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment$4_2_classLit = createForEnum('com.google.gwt.user.client.ui', 'ValueBoxBase/TextAlignment/4', 1836, Lcom_google_gwt_user_client_ui_ValueBoxBase$TextAlignment_2_classLit, null);
 function $add_12(this$static, w){
   $insert_3(this$static, w, this$static.size_0);
@@ -9778,9 +9778,9 @@ function Error_0(message, cause){
   Throwable.call(this, message, cause);
 }
 
-defineClass(212, 69, $intern_54);
-var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 212);
-defineClass(164, 212, $intern_54);
+defineClass(213, 69, $intern_54);
+var Ljava_lang_Error_2_classLit = createForClass('java.lang', 'Error', 213);
+defineClass(164, 213, $intern_54);
 var Ljava_lang_AssertionError_2_classLit = createForClass('java.lang', 'AssertionError', 164);
 function UserAgentAsserter$UserAgentAssertionError(runtimeValue){
   Error_0.call(this, 'Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.' == null?'null':toString_8('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.'), instanceOf('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 69)?castTo('Possible problem with your *.gwt.xml module file.\nThe compile time user.agent value (safari) does not match the runtime user.agent value (' + runtimeValue + ').\n' + 'Expect more errors.', 69):null);
@@ -10076,7 +10076,7 @@ function create_3(){
 
 function $ajaxKeys(this$static){
   var args;
-  args = castTo($getStringValue(this$static.cache, 'ajaxKeys'), 194);
+  args = castTo($getStringValue(this$static.cache, 'ajaxKeys'), 195);
   if (!args) {
     args = new LinkedHashMap;
     args.put('localhost:8080', 'ABQIAAAAG8LzhtshQCjpSshU_uJjmxTwM0brOpm-All5BF6PoaKBxRWWERTZER2lJ4GnsG8nvhKLOQ20degaEQ');
@@ -12316,7 +12316,7 @@ function RevealContentEvent(type_0, content_0){
 
 defineClass(1610, $intern_17, {}, RevealContentEvent);
 _.dispatch = function dispatch_37(handler){
-  $dispatch_5(this, castTo(handler, 195));
+  $dispatch_5(this, castTo(handler, 196));
 }
 ;
 _.getAssociatedType = function getAssociatedType_38(){
@@ -12329,8 +12329,8 @@ function RevealContentHandler(eventBus, proxy){
   this.proxy = proxy;
 }
 
-defineClass(195, 1, {13:1, 195:1}, RevealContentHandler);
-var Lcom_gwtplatform_mvp_client_proxy_RevealContentHandler_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'RevealContentHandler', 195);
+defineClass(196, 1, {13:1, 196:1}, RevealContentHandler);
+var Lcom_gwtplatform_mvp_client_proxy_RevealContentHandler_2_classLit = createForClass('com.gwtplatform.mvp.client.proxy', 'RevealContentHandler', 196);
 function RevealContentHandler$1($anonymous0, val$revealContentEvent){
   this.val$revealContentEvent3 = val$revealContentEvent;
   NotifyingAsyncCallback.call(this, $anonymous0);
@@ -12971,7 +12971,7 @@ function AbstractValueWidget_0(element, initialClass){
   $$init_1(this);
 }
 
-defineClass(215, 25, $intern_65);
+defineClass(216, 25, $intern_65);
 _.setValue_0 = function setValue_2(value_0){
   this.setValue_1(value_0, false);
 }
@@ -12980,7 +12980,7 @@ _.setValue_1 = function setValue_3(value_0, fireEvents){
   fireEvents && fire_5(this, value_0);
 }
 ;
-var Lgwt_material_design_client_base_AbstractValueWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractValueWidget', 215);
+var Lgwt_material_design_client_base_AbstractValueWidget_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractValueWidget', 216);
 function $clinit_MaterialAutoComplete(){
   $clinit_MaterialAutoComplete = emptyMethod;
   !startupState && (startupState = new StartupState$DebugState);
@@ -13206,7 +13206,7 @@ function MaterialAutoComplete(){
   $add_14(this, this.panel);
 }
 
-defineClass(277, 215, $intern_65, MaterialAutoComplete);
+defineClass(277, 216, $intern_65, MaterialAutoComplete);
 _.getValue_0 = function getValue_5(){
   return new ArrayList_1(new AbstractMap$1(this.suggestionMap));
 }
@@ -13474,6 +13474,7 @@ function $build_1(this$static){
   jsComboBox.on('select2:unselect', makeLambdaFunction(MaterialComboBox$lambda$3$Type.prototype.call_0, MaterialComboBox$lambda$3$Type, [this$static]));
   jsComboBox.on('select2:open', makeLambdaFunction(MaterialComboBox$lambda$4$Type.prototype.call_1, MaterialComboBox$lambda$4$Type, [this$static]));
   jsComboBox.on('select2:close', makeLambdaFunction(MaterialComboBox$lambda$5$Type.prototype.call_1, MaterialComboBox$lambda$5$Type, [this$static]));
+  !!(!this$static.colorsMixin_0 && (this$static.colorsMixin_0 = new ColorsMixin(this$static)) , this$static.colorsMixin_0).textColor && $wnd.$(($clinit_DOM() , this$static.element_0)).find('.select2-selection__rendered').css('color', (!this$static.colorsMixin_0 && (this$static.colorsMixin_0 = new ColorsMixin(this$static)) , this$static.colorsMixin_0).textColor.cssClass);
 }
 
 function $buildOption(text_0, value_0){
@@ -13531,7 +13532,7 @@ function $getValue_0(this$static){
       return $clinit_Collections() , new Collections$SingletonList($get_6(this$static.values, index_0));
     }
   }
-  return null;
+  return new ArrayList;
 }
 
 function $getValuesKeyIndex(this$static){
@@ -13610,7 +13611,7 @@ function MaterialComboBox(){
   this.errorMixin = new ErrorMixin_0(this, this.errorLabel, this);
 }
 
-defineClass(111, 215, $intern_65, MaterialComboBox);
+defineClass(111, 216, $intern_65, MaterialComboBox);
 _.getValue_0 = function getValue_6(){
   return $getValue_0(this);
 }
@@ -13734,8 +13735,8 @@ _.getName = function getName_18(){
 _.getText = function getText_9(){
   var builder;
   builder = new StringBuilder;
-  builder.string += ".select2-container{box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2{width:100%!important}.select2-container .select2-selection--single{box-sizing:border-box;cursor:pointer;display:block;height:28px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{box-sizing:border-box;cursor:pointer;display:block;min-height:32px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{box-sizing:border-box;border:none;font-size:100%;margin-top:5px;padding:0;width:inherit!important;padding-left:0!important}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:#fff;border:1px solid #aaa;border-radius:4px;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:0}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;box-sizing:border-box;margin-bottom:0}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear,.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-hidden-accessible{border:0!important;clip:rect(0 0 0 0)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important}.select2-container--classic .select2-results>.select2-results__options,.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444!important}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-size:2em;font-weight:400;color:#b5b5b5}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#ccc}.select2-container--default .select2-selection--single .select2-selection__arrow{position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent;border-style:solid;border-width:7px 4px 0;height:0;left:50%;margin-left:2px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{color:rgba(0,0,0,.3);cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border-bottom:1px solid rgba(0,0,0,.14)}.select2-container--disabled .select2-selection__rendered{color:rgba(0,0,0,.4)!important}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #000;border-width:7px 4px;top:30%}.select2-container--default .select2-selection--multiple{cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#ccc;margin-top:5px;float:left}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;margin-top:0;margin-right:10px;font-size:2em;margin-bottom:-4px;color:#9e9e9e!important}.select2-container--default .select2-selection--multiple .select2-selection__choice{cursor:default;float:left;margin-right:5px;margin-top:5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{font-size:20px;font-weight:300;float:right;color:rgba(0,0,0,.6);line-height:28px;padding-left:8px;cursor:pointer}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-search--inline,.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__placeholder{float:right}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--disabled .select2-selection--multiple{color:rgba(0,0,0,.3);cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border-bottom:1px solid rgba(0,0,0,.14)}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__arrow b{border-color:#b9b9b9 transparent transparent}.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--above .select2-selection--single{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--below .select2-selection--single{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:0 0;border:none;outline:0;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top,#fff 50%,#eee 100%);background-image:-o-linear-gradient(top,#fff 50%,#eee 100%);background-image:linear-gradient(to bottom,#fff 50%,#eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:700;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#ccc}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:none;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top,#eee 50%,#ccc 100%);background-image:-o-linear-gradient(top,#eee 50%,#ccc 100%);background-image:linear-gradient(to bottom,#eee 50%,#ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent;border-style:solid;border-width:7px 4px 0;height:0;left:50%;margin-left:2px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__arrow{border:none;border-right:1px solid #aaa;border-radius:4px 0 0 4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:0 0;border:none}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888;border-width:0 4px 5px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:none;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top,#fff 0,#eee 50%);background-image:-o-linear-gradient(top,#fff 0,#eee 50%);background-image:linear-gradient(to bottom,#fff 0,#eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top,#eee 50%,#fff 100%);background-image:-o-linear-gradient(top,#eee 50%,#fff 100%);background-image:linear-gradient(to bottom,#eee 50%,#fff 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:#fff;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:700;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice{float:right;margin-left:5px;margin-right:auto}.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:#fff;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:none}.select2-container--classic .select2-dropdown--below{border-top:none}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:#fff}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}.select2-container--default .select2-selection--multiple,.select2-container--default .select2-selection--single,.select2-container--default.select2-container--focus .select2-selection--multiple{height:46px;border:none;border-bottom:1px solid #9e9e9e;border-radius:0;outline:0}.select2-container--default .select2-selection--multiple,.select2-container--default.select2-container--focus .select2-selection--multiple{height:auto}.select2-container--default .select2-search--inline .select2-search__field{height:30px}.select2-container--default .select2-selection--multiple input{margin:0}.select2-container--default .select2-selection--multiple .select2-selection__choice{display:inline-block;height:32px;font-size:13px;font-weight:500;color:rgba(0,0,0,.6);line-height:32px;padding:0 12px;border-radius:16px;background-color:#e4e4e4}.select2-container--default .select2-selection--single .select2-selection__rendered{line-height:46px;padding-left:0}.select2-container--default .select2-selection--single .select2-selection__arrow{height:46px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:rgba(0,0,0,1) transparent transparent}.select2-container--open .select2-dropdown--above,.select2-container--open .select2-dropdown--below{border:none;box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)}.select2-results__option{padding:1rem}.select2-container--default .select2-search--dropdown .select2-search__field{border-top:none;border-right:none;border-left:none}.field-error .select2-selection,.field-success .select2-selection,.read-only.combobox .select2-selection{border:none!i";
-  builder.string += "mportant}.select2-container--default .select2-results__option--highlighted[aria-selected],div.tagsinput span.tag{background-color:#eee;transition:.3s ease}.select2label{left:0!important;font-size:.8rem!important;transform:translateY(-140%)}.combobox{margin-bottom:16px}.select2-container--default{font-size:1rem}.field-success .select2label{color:#4caf50!important}.field-error .select2label{color:#f44336!important}.col.combobox .select2label{left:12px!important}.read-only.combobox .select2-selection__arrow{display:none!important}.read-only .select2-selection__rendered{color:#000!important}header nav .select2-container--default .select2-selection--single .select2-selection__rendered{color:#fff!important}header nav .select2-container--default .select2-selection--multiple,header nav .select2-container--default .select2-selection--single,header nav .select2-container--default.select2-container--focus .select2-selection--multiple{border-bottom:none}header nav .select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#fff transparent transparent}header nav .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #fff}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]){position:relative;padding-left:3rem!important}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]):before{content:'';position:absolute;z-index:0;border-radius:1px;transition:.2s;margin:1rem;width:0;height:0;border:3px solid transparent;left:6px;top:10px;-webkit-transform:rotateZ(37deg);transform:rotateZ(37deg);-webkit-transform-origin:20% 40%;transform-origin:100% 100%}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]):after{height:20px;width:20px;background-color:transparent;border:2px solid #5a5a5a;top:0;content:'';left:0;position:absolute;transition:border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;z-index:1;border-radius:2px;margin:1rem}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:after{top:0;width:20px;height:20px;border:2px solid #26a69a;background-color:#26a69a;z-index:0}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:before{top:2px;left:1px;width:8px;height:13px;border-top:2px solid transparent;border-left:2px solid transparent;border-right:2px solid #fff;border-bottom:2px solid #fff;-webkit-transform:rotateZ(37deg);transform:rotateZ(37deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%;z-index:1}";
+  builder.string += ".select2-container{box-sizing:border-box;display:inline-block;margin:0;position:relative;vertical-align:middle}.select2{width:100%!important}.select2-container .select2-selection--single{box-sizing:border-box;cursor:pointer;display:block;height:28px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--single .select2-selection__rendered{display:block;padding-left:8px;padding-right:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-selection--single .select2-selection__clear{position:relative}.select2-container[dir=rtl] .select2-selection--single .select2-selection__rendered{padding-right:8px;padding-left:20px}.select2-container .select2-selection--multiple{box-sizing:border-box;cursor:pointer;display:block;min-height:32px;user-select:none;-webkit-user-select:none}.select2-container .select2-selection--multiple .select2-selection__rendered{display:inline-block;overflow:hidden;padding-left:8px;text-overflow:ellipsis;white-space:nowrap}.select2-container .select2-search--inline{float:left}.select2-container .select2-search--inline .select2-search__field{box-sizing:border-box;border:none;font-size:100%;margin-top:5px;padding:0;width:inherit!important;padding-left:0!important}.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-dropdown{background-color:#fff;border:1px solid #aaa;border-radius:4px;box-sizing:border-box;display:block;position:absolute;left:-100000px;width:100%;z-index:1051}.select2-results{display:block}.select2-results__options{list-style:none;margin:0;padding:0}.select2-results__option{user-select:none;-webkit-user-select:none}.select2-results__option[aria-selected]{cursor:pointer}.select2-container--open .select2-dropdown{left:0}.select2-container--open .select2-dropdown--above{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--open .select2-dropdown--below{border-top-left-radius:0;border-top-right-radius:0}.select2-search--dropdown{display:block;padding:0}.select2-search--dropdown .select2-search__field{padding:4px;width:100%;box-sizing:border-box;margin-bottom:0}.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button{-webkit-appearance:none}.select2-search--dropdown.select2-search--hide{display:none}.select2-close-mask{border:0;margin:0;padding:0;display:block;position:fixed;left:0;top:0;min-height:100%;min-width:100%;height:auto;width:auto;opacity:0;z-index:99;background-color:#fff;filter:alpha(opacity=0)}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear,.select2-container--default.select2-container--disabled .select2-selection__choice__remove{display:none}.select2-hidden-accessible{border:0!important;clip:rect(0 0 0 0)!important;height:1px!important;margin:-1px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important}.select2-container--classic .select2-results>.select2-results__options,.select2-container--default .select2-results>.select2-results__options{max-height:200px;overflow-y:auto}.select2-container--default .select2-selection--single .select2-selection__rendered{color:#444}.select2-container--default .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-size:2em;font-weight:400;color:#b5b5b5}.select2-container--default .select2-selection--single .select2-selection__placeholder{color:#ccc}.select2-container--default .select2-selection--single .select2-selection__arrow{position:absolute;top:1px;right:1px;width:20px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent;border-style:solid;border-width:7px 4px 0;height:0;left:50%;margin-left:2px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__clear{float:left}.select2-container--default[dir=rtl] .select2-selection--single .select2-selection__arrow{left:1px;right:auto}.select2-container--default.select2-container--disabled .select2-selection--single{color:rgba(0,0,0,.3);cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border-bottom:1px solid rgba(0,0,0,.14)}.select2-container--disabled .select2-selection__rendered{color:rgba(0,0,0,.4)!important}.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #000;border-width:7px 4px;top:30%}.select2-container--default .select2-selection--multiple{cursor:text}.select2-container--default .select2-selection--multiple .select2-selection__rendered{box-sizing:border-box;list-style:none;margin:0;padding:0 5px;width:100%}.select2-container--default .select2-selection--multiple .select2-selection__placeholder{color:#ccc;margin-top:5px;float:left}.select2-container--default .select2-selection--multiple .select2-selection__clear{cursor:pointer;float:right;margin-top:0;margin-right:10px;font-size:2em;margin-bottom:-4px;color:#9e9e9e!important}.select2-container--default .select2-selection--multiple .select2-selection__choice{cursor:default;float:left;margin-right:5px;margin-top:5px}.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{font-size:20px;font-weight:300;float:right;color:rgba(0,0,0,.6);line-height:28px;padding-left:8px;cursor:pointer}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-search--inline,.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice,.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__placeholder{float:right}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice{margin-left:5px;margin-right:auto}.select2-container--default[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--default.select2-container--disabled .select2-selection--multiple{color:rgba(0,0,0,.3);cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;border-bottom:1px solid rgba(0,0,0,.14)}.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__arrow b{border-color:#b9b9b9 transparent transparent}.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--above .select2-selection--single{border-top-left-radius:0;border-top-right-radius:0}.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,.select2-container--default.select2-container--open.select2-container--below .select2-selection--single{border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--default .select2-search--dropdown .select2-search__field{border:1px solid #aaa}.select2-container--default .select2-search--inline .select2-search__field{background:0 0;border:none;outline:0;box-shadow:none;-webkit-appearance:textfield}.select2-container--default .select2-results__option[role=group]{padding:0}.select2-container--default .select2-results__option[aria-disabled=true]{color:#999}.select2-container--default .select2-results__option[aria-selected=true]{background-color:#ddd}.select2-container--default .select2-results__option .select2-results__option{padding-left:1em}.select2-container--default .select2-results__option .select2-results__option .select2-results__group{padding-left:0}.select2-container--default .select2-results__option .select2-results__option .select2-results__option{margin-left:-1em;padding-left:2em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-2em;padding-left:3em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-3em;padding-left:4em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-4em;padding-left:5em}.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option{margin-left:-5em;padding-left:6em}.select2-container--default .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic .select2-selection--single{background-color:#f7f7f7;border:1px solid #aaa;border-radius:4px;outline:0;background-image:-webkit-linear-gradient(top,#fff 50%,#eee 100%);background-image:-o-linear-gradient(top,#fff 50%,#eee 100%);background-image:linear-gradient(to bottom,#fff 50%,#eee 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic .select2-selection--single:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--single .select2-selection__rendered{color:#444;line-height:28px}.select2-container--classic .select2-selection--single .select2-selection__clear{cursor:pointer;float:right;font-weight:700;margin-right:10px}.select2-container--classic .select2-selection--single .select2-selection__placeholder{color:#ccc}.select2-container--classic .select2-selection--single .select2-selection__arrow{background-color:#ddd;border:none;border-left:1px solid #aaa;border-top-right-radius:4px;border-bottom-right-radius:4px;height:26px;position:absolute;top:1px;right:1px;width:20px;background-image:-webkit-linear-gradient(top,#eee 50%,#ccc 100%);background-image:-o-linear-gradient(top,#eee 50%,#ccc 100%);background-image:linear-gradient(to bottom,#eee 50%,#ccc 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0)}.select2-container--classic .select2-selection--single .select2-selection__arrow b{border-color:#888 transparent transparent;border-style:solid;border-width:7px 4px 0;height:0;left:50%;margin-left:2px;margin-top:-2px;position:absolute;top:50%;width:0}.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__clear{float:left}.select2-container--classic[dir=rtl] .select2-selection--single .select2-selection__arrow{border:none;border-right:1px solid #aaa;border-radius:4px 0 0 4px;left:1px;right:auto}.select2-container--classic.select2-container--open .select2-selection--single{border:1px solid #5897fb}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow{background:0 0;border:none}.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #888;border-width:0 4px 5px}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single{border-top:none;border-top-left-radius:0;border-top-right-radius:0;background-image:-webkit-linear-gradient(top,#fff 0,#eee 50%);background-image:-o-linear-gradient(top,#fff 0,#eee 50%);background-image:linear-gradient(to bottom,#fff 0,#eee 50%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0)}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0;background-image:-webkit-linear-gradient(top,#eee 50%,#fff 100%);background-image:-o-linear-gradient(top,#eee 50%,#fff 100%);background-image:linear-gradient(to bottom,#eee 50%,#fff 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0)}.select2-container--classic .select2-selection--multiple{background-color:#fff;border:1px solid #aaa;border-radius:4px;cursor:text;outline:0}.select2-container--classic .select2-selection--multiple:focus{border:1px solid #5897fb}.select2-container--classic .select2-selection--multiple .select2-selection__rendered{list-style:none;margin:0;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__clear{display:none}.select2-container--classic .select2-selection--multiple .select2-selection__choice{background-color:#e4e4e4;border:1px solid #aaa;border-radius:4px;cursor:default;float:left;margin-right:5px;margin-top:5px;padding:0 5px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove{color:#888;cursor:pointer;display:inline-block;font-weight:700;margin-right:2px}.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover{color:#555}.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice{float:right;margin-left:5px;margin-right:auto}.select2-container--classic[dir=rtl] .select2-selection--multiple .select2-selection__choice__remove{margin-left:2px;margin-right:auto}.select2-container--classic.select2-container--open .select2-selection--multiple{border:1px solid #5897fb}.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple{border-top:none;border-top-left-radius:0;border-top-right-radius:0}.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple{border-bottom:none;border-bottom-left-radius:0;border-bottom-right-radius:0}.select2-container--classic .select2-search--dropdown .select2-search__field{border:1px solid #aaa;outline:0}.select2-container--classic .select2-search--inline .select2-search__field{outline:0;box-shadow:none}.select2-container--classic .select2-dropdown{background-color:#fff;border:1px solid transparent}.select2-container--classic .select2-dropdown--above{border-bottom:none}.select2-container--classic .select2-dropdown--below{border-top:none}.select2-container--classic .select2-results__option[role=group]{padding:0}.select2-container--classic .select2-results__option[aria-disabled=true]{color:grey}.select2-container--classic .select2-results__option--highlighted[aria-selected]{background-color:#3875d7;color:#fff}.select2-container--classic .select2-results__group{cursor:default;display:block;padding:6px}.select2-container--classic.select2-container--open .select2-dropdown{border-color:#5897fb}.select2-container--default .select2-selection--multiple,.select2-container--default .select2-selection--single,.select2-container--default.select2-container--focus .select2-selection--multiple{height:46px;border:none;border-bottom:1px solid #9e9e9e;border-radius:0;outline:0}.select2-container--default .select2-selection--multiple,.select2-container--default.select2-container--focus .select2-selection--multiple{height:auto}.select2-container--default .select2-search--inline .select2-search__field{height:30px}.select2-container--default .select2-selection--multiple input{margin:0}.select2-container--default .select2-selection--multiple .select2-selection__choice{display:inline-block;height:32px;font-size:13px;font-weight:500;color:rgba(0,0,0,.6);line-height:32px;padding:0 12px;border-radius:16px;background-color:#e4e4e4}.select2-container--default .select2-selection--single .select2-selection__rendered{line-height:46px;padding-left:0}.select2-container--default .select2-selection--single .select2-selection__arrow{height:46px}.select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:rgba(0,0,0,1) transparent transparent}.select2-container--open .select2-dropdown--above,.select2-container--open .select2-dropdown--below{border:none;box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)}.select2-results__option{padding:1rem}.select2-container--default .select2-search--dropdown .select2-search__field{border-top:none;border-right:none;border-left:none}.field-error .select2-selection,.field-success .select2-selection,.read-only.combobox .select2-selection{border:none!important}.";
+  builder.string += "select2-container--default .select2-results__option--highlighted[aria-selected],div.tagsinput span.tag{background-color:#eee;transition:.3s ease}.select2label{left:0!important;font-size:.8rem!important;transform:translateY(-140%)}.combobox{margin-bottom:16px}.select2-container--default{font-size:1rem}.field-success .select2label{color:#4caf50!important}.field-error .select2label{color:#f44336!important}.col.combobox .select2label{left:12px!important}.read-only.combobox .select2-selection__arrow{display:none!important}.read-only .select2-selection__rendered{color:#000!important}header nav .select2-container--default .select2-selection--single .select2-selection__rendered{color:#fff!important}header nav .select2-container--default .select2-selection--multiple,header nav .select2-container--default .select2-selection--single,header nav .select2-container--default.select2-container--focus .select2-selection--multiple{border-bottom:none}header nav .select2-container--default .select2-selection--single .select2-selection__arrow b{border-color:#fff transparent transparent}header nav .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{border-color:transparent transparent #fff}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]){position:relative;padding-left:3rem!important}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]):before{content:'';position:absolute;z-index:0;border-radius:1px;transition:.2s;margin:1rem;width:0;height:0;border:3px solid transparent;left:6px;top:10px;-webkit-transform:rotateZ(37deg);transform:rotateZ(37deg);-webkit-transform-origin:20% 40%;transform-origin:100% 100%}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group]):after{height:20px;width:20px;background-color:transparent;border:2px solid #5a5a5a;top:0;content:'';left:0;position:absolute;transition:border .25s,background-color .25s,width .2s .1s,height .2s .1s,top .2s .1s,left .2s .1s;z-index:1;border-radius:2px;margin:1rem}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:after{top:0;width:20px;height:20px;border:2px solid #26a69a;background-color:#26a69a;z-index:0}ul.select2-results__options[aria-multiselectable=true] li.select2-results__option:not([role=group])[aria-selected=true]:before{top:2px;left:1px;width:8px;height:13px;border-top:2px solid transparent;border-left:2px solid transparent;border-right:2px solid #fff;border-bottom:2px solid #fff;-webkit-transform:rotateZ(37deg);transform:rotateZ(37deg);-webkit-transform-origin:100% 100%;transform-origin:100% 100%;z-index:1}";
   return builder.string;
 }
 ;
@@ -13781,8 +13782,8 @@ _.getName = function getName_20(){
 _.getText = function getText_11(){
   var builder;
   builder = new StringBuilder;
-  builder.string += '.select2-container {\n    box-sizing: border-box;\n    display: inline-block;\n    margin: 0;\n    position: relative;\n    vertical-align: middle\n}\n\n.select2 {\n    width: 100% !important;\n}\n\n.select2-container .select2-selection--single {\n    box-sizing: border-box;\n    cursor: pointer;\n    display: block;\n    height: 28px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-container .select2-selection--single .select2-selection__rendered {\n    display: block;\n    padding-left: 8px;\n    padding-right: 20px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap\n}\n\n.select2-container .select2-selection--single .select2-selection__clear {\n    position: relative\n}\n\n.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {\n    padding-right: 8px;\n    padding-left: 20px\n}\n\n.select2-container .select2-selection--multiple {\n    box-sizing: border-box;\n    cursor: pointer;\n    display: block;\n    min-height: 32px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-container .select2-selection--multiple .select2-selection__rendered {\n    display: inline-block;\n    overflow: hidden;\n    padding-left: 8px;\n    text-overflow: ellipsis;\n    white-space: nowrap\n}\n\n.select2-container .select2-search--inline {\n    float: left\n}\n\n.select2-container .select2-search--inline .select2-search__field {\n    box-sizing: border-box;\n    border: none;\n    font-size: 100%;\n    margin-top: 5px;\n    padding: 0;\n    width: inherit !important;\n    padding-left: 0px !important;\n}\n\n.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {\n    -webkit-appearance: none\n}\n\n.select2-dropdown {\n    background-color: white;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    box-sizing: border-box;\n    display: block;\n    position: absolute;\n    left: -100000px;\n    width: 100%;\n    z-index: 1051\n}\n\n.select2-results {\n    display: block\n}\n\n.select2-results__options {\n    list-style: none;\n    margin: 0;\n    padding: 0\n}\n\n.select2-results__option {\n    padding: 6px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-results__option[aria-selected] {\n    cursor: pointer\n}\n\n.select2-container--open .select2-dropdown {\n    left: 0\n}\n\n.select2-container--open .select2-dropdown--above {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--open .select2-dropdown--below {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-search--dropdown {\n    display: block;\n    padding: 0px\n}\n\n.select2-search--dropdown .select2-search__field {\n    padding: 4px;\n    width: 100%;\n    box-sizing: border-box;\n    margin-bottom: 0px;\n}\n\n.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {\n    -webkit-appearance: none\n}\n\n.select2-search--dropdown.select2-search--hide {\n    display: none\n}\n\n.select2-close-mask {\n    border: 0;\n    margin: 0;\n    padding: 0;\n    display: block;\n    position: fixed;\n    left: 0;\n    top: 0;\n    min-height: 100%;\n    min-width: 100%;\n    height: auto;\n    width: auto;\n    opacity: 0;\n    z-index: 99;\n    background-color: #fff;\n    filter: alpha(opacity=0)\n}\n\n.select2-hidden-accessible {\n    border: 0 !important;\n    clip: rect(0 0 0 0) !important;\n    height: 1px !important;\n    margin: -1px !important;\n    overflow: hidden !important;\n    padding: 0 !important;\n    position: absolute !important;\n    width: 1px !important\n}\n\n.select2-container--default .select2-selection--single {\n    border: 1px solid #aaa;\n    border-radius: 4px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__rendered {\n    color: #444 !important;\n    line-height: 28px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    font-size: 2em;\n    font-weight: normal;\n    color: #b5b5b5;\n}\n\n.select2-container--default .select2-selection--single .select2-selection__placeholder {\n    color: #cccccc\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow {\n    height: 26px;\n    position: absolute;\n    top: 1px;\n    right: 1px;\n    width: 20px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: #888 transparent transparent transparent;\n    border-style: solid;\n    border-width: 7px 4px 0;\n    height: 0;\n    left: 50%;\n    margin-left: 2px;\n    margin-top: -2px;\n    position: absolute;\n    top: 50%;\n    width: 0\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {\n    float: left\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {\n    left: 1px;\n    right: auto\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single {\n    color: rgba(0, 0, 0, 0.3);\n    cursor: default;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.14);\n}\n\n.select2-container--disabled .select2-selection__rendered {\n    color: rgba(0, 0, 0, 0.4) !important;\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {\n    display: none\n}\n\n.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #000;\n    border-width: 7px 4px;\n    top: 30%;\n}\n\n.select2-container--default .select2-selection--multiple {\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: text\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__rendered {\n    box-sizing: border-box;\n    list-style: none;\n    margin: 0;\n    padding: 0 5px;\n    width: 100%\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__placeholder {\n    color: #cccccc;\n    margin-top: 5px;\n    float: left\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    margin-top: 0px;\n    margin-right: 10px;\n    font-size: 2em;\n    margin-bottom: -4px;\n    color: #9e9e9e !important;\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice {\n    background-color: #e4e4e4;\n    border-radius: 4px;\n    cursor: default;\n    float: left;\n    margin-right: 5px;\n    margin-top: 5px;\n    padding: 0 5px\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {\n    font-size: 20px;\n    font-weight: 300;\n    float: right;\n    color: rgba(0, 0, 0, 0.6);\n    line-height: 28px;\n    padding-left: 8px;\n    cursor: pointer;\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {\n    float: right\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    margin-left: 5px;\n    margin-right: auto\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {\n    margin-left: 2px;\n    margin-right: auto\n}\n\n.select2-container--default.select2-container--focus .select2-selection--multiple {\n    border: solid #000 1px;\n    outline: 0\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--multiple {\n    color: rgba(0, 0, 0, 0.3);\n    cursor: default;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.14);\n}\n\n.select2-container--default.select2-container--disabled .select2-selection__choice__remove {\n    display: none\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__arrow b {\n    border-color: rgb(185, 185, 185) transparent transparent;\n}\n\n.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--default .select2-search--dropdown .select2-search__field {\n    border: 1px solid #aaa\n}\n\n.select2-container--default .select2-search--inline .select2-search__field {\n    background: transparent;\n    border: none;\n    outline: 0;\n    box-shadow: none;\n    -webkit-appearance: textfield\n}\n\n.select2-container--default .select2-results > .select2-results__options {\n    max-height: 200px;\n    overflow-y: auto\n}\n\n.select2-container--default .select2-results__option[role=group] {\n    padding: 0\n}\n\n.select2-container--default .select2-results__option[aria-disabled=true] {\n    color: #999\n}\n\n.select2-container--default .select2-results__option[aria-selected=true] {\n    background-color: #ddd\n}\n\n.select2-container--default .select2-results__option .select2-results__option {\n    padding-left: 1em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__group {\n    padding-left: 0\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -1em;\n    padding-left: 2em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -2em;\n    padding-left: 3em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -3em;\n    padding-left: 4em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -4em;\n    padding-left: 5em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -5em;\n    padding-left: 6em\n}\n\n.select2-container--default .select2-results__option--highlighted[aria-selected] {\n    background-color: #5897fb;\n}\n\n.select2-container--default .select2-results__group {\n    cursor: default;\n    display: block;\n    padding: 6px\n}\n\n.select2-container--classic .select2-selection--single {\n    background-color: #f7f7f7;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    outline: 0;\n    background-image: -webkit-linear-gradient(top, #fff 50%, #eee 100%);\n    background-image: -o-linear-gradient(top, #fff 50%, #eee 100%);\n    background-image: linear-gradient(to bottom, #fff 50%, #eee 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFFFF\', endColorstr=\'#FFEEEEEE\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--single:focus {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__rendered {\n    color: #444;\n    line-height: 28px\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    font-weight: bold;\n    margin-right: 10px\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__placeholder {\n    color: #cccccc\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__arrow {\n    background-color: #ddd;\n    border: none;\n    border-left: 1px solid #aaa;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    height: 26px;\n    position: absolute;\n    top: 1px;\n    right: 1px;\n    width: 20px;\n    background-image: -webkit-linear-gradient(top, #eee 50%, #ccc 100%);\n    background-image: -o-linear-gradient(top, #eee 50%, #ccc 100%);\n    background-image: linear-gradient(to bottom, #eee 50%, #ccc 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFEEEEEE\', endColorstr=\'#FFCCCCCC\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__arrow b {\n    border-color: #888 transparent transparent transparent;\n    border-style: solid;\n    border-width: 7px 4px 0;\n    height: 0;\n    left: 50%;\n    margin-left: 2px;\n    margin-top: -2px;\n    position: absolute;\n    top: 50%;\n    width: 0\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {\n    float: left\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {\n    border: none;\n    border-right: 1px solid #aaa;\n    border-radius: 0;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n    left: 1px;\n    right: auto\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {\n    background: transparent;\n    border: none\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #888 transparent;\n    border-width: 0 4px 5px 4px\n}\n\n.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0;\n    background-image: -webkit-linear-gradient(top, #fff 0%, #eee 50%);\n    background-image: -o-linear-gradient(top, #fff 0%, #eee 50%);\n    background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFFFF\', endColorstr=\'#FFEEEEEE\', GradientType=0)\n}\n\n.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0;\n    background-image: -webkit-linear-gradient(top, #eee 50%, #fff 100%);\n    background-image: -o-linear-gradient(top, #eee 50%, #fff 100%);\n    background-image: linear-gradient(to bottom, #eee 50%, #fff 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFEEEEEE\', endColorstr=\'#FFFFFFFF\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--multiple {\n    background-color: white;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: text;\n    outline: 0\n}\n\n.select2-container--classic .select2-selection--multiple:focus {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__rendered {\n    list-style: none;\n    margin: 0;\n    padding: 0 5px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__clear {\n    display: none\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice {\n    background-color: #e4e4e4;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: default;\n    float: left;\n    margin-right: 5px;\n    margin-top: 5px;\n    padding: 0 5px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {\n    color: #888;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: bold;\n    margin-right: 2px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {\n    color: #555\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    float: right\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    margin-left: 5px;\n    margin-right: auto\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {\n    margin-left: 2px;\n    margin-right: aut';
-  builder.string += 'o\n}\n\n.select2-container--classic.select2-container--open .select2-selection--multiple {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--classic .select2-search--dropdown .select2-search__field {\n    border: 1px solid #aaa;\n    outline: 0\n}\n\n.select2-container--classic .select2-search--inline .select2-search__field {\n    outline: 0;\n    box-shadow: none\n}\n\n.select2-container--classic .select2-dropdown {\n    background-color: #fff;\n    border: 1px solid transparent\n}\n\n.select2-container--classic .select2-dropdown--above {\n    border-bottom: none\n}\n\n.select2-container--classic .select2-dropdown--below {\n    border-top: none\n}\n\n.select2-container--classic .select2-results > .select2-results__options {\n    max-height: 200px;\n    overflow-y: auto\n}\n\n.select2-container--classic .select2-results__option[role=group] {\n    padding: 0\n}\n\n.select2-container--classic .select2-results__option[aria-disabled=true] {\n    color: grey\n}\n\n.select2-container--classic .select2-results__option--highlighted[aria-selected] {\n    background-color: #3875d7;\n    color: #fff\n}\n\n.select2-container--classic .select2-results__group {\n    cursor: default;\n    display: block;\n    padding: 6px\n}\n\n.select2-container--classic.select2-container--open .select2-dropdown {\n    border-color: #5897fb\n}\n\n.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {\n    height: 46px;\n    border: none;\n    border-bottom: 1px solid #9e9e9e;\n    border-radius: 0;\n    outline: 0\n}\n\n.select2-container--default .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--multiple {\n    height: auto\n}\n\n.select2-container--default .select2-search--inline .select2-search__field {\n    height: 30px\n}\n\n.select2-container--default .select2-selection--multiple input {\n    margin: 0\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice {\n    display: inline-block;\n    height: 32px;\n    font-size: 13px;\n    font-weight: 500;\n    color: rgba(0, 0, 0, 0.6);\n    line-height: 32px;\n    padding: 0 12px;\n    border-radius: 16px;\n    background-color: #e4e4e4;\n}\n\n.select2-container--default .select2-selection--single .select2-selection__rendered {\n    line-height: 46px;\n    padding-left: 0\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow {\n    height: 46px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: rgba(0, 0, 0, 1) transparent transparent\n}\n\n.select2-container--open .select2-dropdown--above, .select2-container--open .select2-dropdown--below {\n    border: none;\n    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n}\n\n.select2-results__option {\n    padding: 1rem\n}\n\n.select2-container--default .select2-search--dropdown .select2-search__field {\n    border-top: none;\n    border-right: none;\n    border-left: none\n}\n\n.select2-container--default .select2-results__option--highlighted[aria-selected], div.tagsinput span.tag {\n    background-color: #eeeeee;\n    transition: 0.3s ease;\n}\n\n.select2label {\n    left: 0 !important;\n    font-size: 0.8rem !important;\n    transform: translateY(-140%);\n}\n\n.combobox {\n    margin-bottom: 16px;\n}\n\n.field-success .select2-selection, .field-error .select2-selection {\n    border: none !important;\n}\n.select2-container--default {\n    font-size: 1rem;\n}\n\n.field-success .select2label {\n    color: #4caf50 !important;\n}\n\n.field-error .select2label {\n    color: #f44336 !important;\n}\n\n.col.combobox .select2label {\n    left: 12px !important;\n}\n\n.read-only.combobox .select2-selection {\n    border: none !important;\n}\n\n.read-only.combobox .select2-selection__arrow {\n    display: none !important;\n}\n\n.read-only .select2-selection__rendered {\n    color: #000 !important;\n}\n\n/** Added support inside NavBar **/\nheader nav .select2-container--default .select2-selection--single .select2-selection__rendered {\n    color: #fff !important;\n}\n\nheader nav .select2-container--default .select2-selection--multiple,\nheader nav .select2-container--default .select2-selection--single,\nheader nav .select2-container--default.select2-container--focus .select2-selection--multiple {\n    border-bottom: none;\n}\n\nheader nav .select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: rgb(255, 255, 255) transparent transparent;\n}\n\nheader nav .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #fff;\n}\n\n/** Improve the multiple option to display it as checkbox option **/\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]) {\n    position: relative;\n    padding-left: 3rem !important;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):before {\n    content: \'\';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 18px;\n    height: 18px;\n    z-index: 0;\n    border: 2px solid #5a5a5a;\n    border-radius: 1px;\n    margin-top: 2px;\n    transition: .2s;\n    margin: 1rem;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):before {\n    width: 0;\n    height: 0;\n    border: 3px solid transparent;\n    left: 6px;\n    top: 10px;\n    -webkit-transform: rotateZ(37deg);\n    transform: rotateZ(37deg);\n    -webkit-transform-origin: 20% 40%;\n    transform-origin: 100% 100%;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):after {\n    height: 20px;\n    width: 20px;\n    background-color: transparent;\n    border: 2px solid #5a5a5a;\n    top: 0px;\n    z-index: 0;\n    content: \'\';\n    left: 0;\n    position: absolute;\n    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;\n    z-index: 1;\n    border-radius: 2px;\n    margin: 1rem;\n}\n/** Selected **/\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {\n    top: 0;\n    width: 20px;\n    height: 20px;\n    border: 2px solid #26a69a;\n    background-color: #26a69a;\n    z-index: 0;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:before {\n    top: 2px;\n    left: 1px;\n    width: 8px;\n    height: 13px;\n    border-top: 2px solid transparent;\n    border-left: 2px solid transparent;\n    border-right: 2px solid #fff;\n    border-bottom: 2px solid #fff;\n    -webkit-transform: rotateZ(37deg);\n    transform: rotateZ(37deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    z-index: 1;\n}';
+  builder.string += '.select2-container {\n    box-sizing: border-box;\n    display: inline-block;\n    margin: 0;\n    position: relative;\n    vertical-align: middle\n}\n\n.select2 {\n    width: 100% !important;\n}\n\n.select2-container .select2-selection--single {\n    box-sizing: border-box;\n    cursor: pointer;\n    display: block;\n    height: 28px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-container .select2-selection--single .select2-selection__rendered {\n    display: block;\n    padding-left: 8px;\n    padding-right: 20px;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap\n}\n\n.select2-container .select2-selection--single .select2-selection__clear {\n    position: relative\n}\n\n.select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {\n    padding-right: 8px;\n    padding-left: 20px\n}\n\n.select2-container .select2-selection--multiple {\n    box-sizing: border-box;\n    cursor: pointer;\n    display: block;\n    min-height: 32px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-container .select2-selection--multiple .select2-selection__rendered {\n    display: inline-block;\n    overflow: hidden;\n    padding-left: 8px;\n    text-overflow: ellipsis;\n    white-space: nowrap\n}\n\n.select2-container .select2-search--inline {\n    float: left\n}\n\n.select2-container .select2-search--inline .select2-search__field {\n    box-sizing: border-box;\n    border: none;\n    font-size: 100%;\n    margin-top: 5px;\n    padding: 0;\n    width: inherit !important;\n    padding-left: 0px !important;\n}\n\n.select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {\n    -webkit-appearance: none\n}\n\n.select2-dropdown {\n    background-color: white;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    box-sizing: border-box;\n    display: block;\n    position: absolute;\n    left: -100000px;\n    width: 100%;\n    z-index: 1051\n}\n\n.select2-results {\n    display: block\n}\n\n.select2-results__options {\n    list-style: none;\n    margin: 0;\n    padding: 0\n}\n\n.select2-results__option {\n    padding: 6px;\n    user-select: none;\n    -webkit-user-select: none\n}\n\n.select2-results__option[aria-selected] {\n    cursor: pointer\n}\n\n.select2-container--open .select2-dropdown {\n    left: 0\n}\n\n.select2-container--open .select2-dropdown--above {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--open .select2-dropdown--below {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-search--dropdown {\n    display: block;\n    padding: 0px\n}\n\n.select2-search--dropdown .select2-search__field {\n    padding: 4px;\n    width: 100%;\n    box-sizing: border-box;\n    margin-bottom: 0px;\n}\n\n.select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {\n    -webkit-appearance: none\n}\n\n.select2-search--dropdown.select2-search--hide {\n    display: none\n}\n\n.select2-close-mask {\n    border: 0;\n    margin: 0;\n    padding: 0;\n    display: block;\n    position: fixed;\n    left: 0;\n    top: 0;\n    min-height: 100%;\n    min-width: 100%;\n    height: auto;\n    width: auto;\n    opacity: 0;\n    z-index: 99;\n    background-color: #fff;\n    filter: alpha(opacity=0)\n}\n\n.select2-hidden-accessible {\n    border: 0 !important;\n    clip: rect(0 0 0 0) !important;\n    height: 1px !important;\n    margin: -1px !important;\n    overflow: hidden !important;\n    padding: 0 !important;\n    position: absolute !important;\n    width: 1px !important\n}\n\n.select2-container--default .select2-selection--single {\n    border: 1px solid #aaa;\n    border-radius: 4px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__rendered {\n    color: #444;\n    line-height: 28px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    font-size: 2em;\n    font-weight: normal;\n    color: #b5b5b5;\n}\n\n.select2-container--default .select2-selection--single .select2-selection__placeholder {\n    color: #cccccc\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow {\n    height: 26px;\n    position: absolute;\n    top: 1px;\n    right: 1px;\n    width: 20px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: #888 transparent transparent transparent;\n    border-style: solid;\n    border-width: 7px 4px 0;\n    height: 0;\n    left: 50%;\n    margin-left: 2px;\n    margin-top: -2px;\n    position: absolute;\n    top: 50%;\n    width: 0\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__clear {\n    float: left\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {\n    left: 1px;\n    right: auto\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single {\n    color: rgba(0, 0, 0, 0.3);\n    cursor: default;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.14);\n}\n\n.select2-container--disabled .select2-selection__rendered {\n    color: rgba(0, 0, 0, 0.4) !important;\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__clear {\n    display: none\n}\n\n.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #000;\n    border-width: 7px 4px;\n    top: 30%;\n}\n\n.select2-container--default .select2-selection--multiple {\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: text\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__rendered {\n    box-sizing: border-box;\n    list-style: none;\n    margin: 0;\n    padding: 0 5px;\n    width: 100%\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__placeholder {\n    color: #cccccc;\n    margin-top: 5px;\n    float: left\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    margin-top: 0px;\n    margin-right: 10px;\n    font-size: 2em;\n    margin-bottom: -4px;\n    color: #9e9e9e !important;\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice {\n    background-color: #e4e4e4;\n    border-radius: 4px;\n    cursor: default;\n    float: left;\n    margin-right: 5px;\n    margin-top: 5px;\n    padding: 0 5px\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {\n    font-size: 20px;\n    font-weight: 300;\n    float: right;\n    color: rgba(0, 0, 0, 0.6);\n    line-height: 28px;\n    padding-left: 8px;\n    cursor: pointer;\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__placeholder, .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-search--inline {\n    float: right\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    margin-left: 5px;\n    margin-right: auto\n}\n\n.select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {\n    margin-left: 2px;\n    margin-right: auto\n}\n\n.select2-container--default.select2-container--focus .select2-selection--multiple {\n    border: solid #000 1px;\n    outline: 0\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--multiple {\n    color: rgba(0, 0, 0, 0.3);\n    cursor: default;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.14);\n}\n\n.select2-container--default.select2-container--disabled .select2-selection__choice__remove {\n    display: none\n}\n\n.select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__arrow b {\n    border-color: rgb(185, 185, 185) transparent transparent;\n}\n\n.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--default .select2-search--dropdown .select2-search__field {\n    border: 1px solid #aaa\n}\n\n.select2-container--default .select2-search--inline .select2-search__field {\n    background: transparent;\n    border: none;\n    outline: 0;\n    box-shadow: none;\n    -webkit-appearance: textfield\n}\n\n.select2-container--default .select2-results > .select2-results__options {\n    max-height: 200px;\n    overflow-y: auto\n}\n\n.select2-container--default .select2-results__option[role=group] {\n    padding: 0\n}\n\n.select2-container--default .select2-results__option[aria-disabled=true] {\n    color: #999\n}\n\n.select2-container--default .select2-results__option[aria-selected=true] {\n    background-color: #ddd\n}\n\n.select2-container--default .select2-results__option .select2-results__option {\n    padding-left: 1em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__group {\n    padding-left: 0\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -1em;\n    padding-left: 2em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -2em;\n    padding-left: 3em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -3em;\n    padding-left: 4em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -4em;\n    padding-left: 5em\n}\n\n.select2-container--default .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option .select2-results__option {\n    margin-left: -5em;\n    padding-left: 6em\n}\n\n.select2-container--default .select2-results__option--highlighted[aria-selected] {\n    background-color: #5897fb;\n}\n\n.select2-container--default .select2-results__group {\n    cursor: default;\n    display: block;\n    padding: 6px\n}\n\n.select2-container--classic .select2-selection--single {\n    background-color: #f7f7f7;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    outline: 0;\n    background-image: -webkit-linear-gradient(top, #fff 50%, #eee 100%);\n    background-image: -o-linear-gradient(top, #fff 50%, #eee 100%);\n    background-image: linear-gradient(to bottom, #fff 50%, #eee 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFFFF\', endColorstr=\'#FFEEEEEE\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--single:focus {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__rendered {\n    color: #444;\n    line-height: 28px\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__clear {\n    cursor: pointer;\n    float: right;\n    font-weight: bold;\n    margin-right: 10px\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__placeholder {\n    color: #cccccc\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__arrow {\n    background-color: #ddd;\n    border: none;\n    border-left: 1px solid #aaa;\n    border-top-right-radius: 4px;\n    border-bottom-right-radius: 4px;\n    height: 26px;\n    position: absolute;\n    top: 1px;\n    right: 1px;\n    width: 20px;\n    background-image: -webkit-linear-gradient(top, #eee 50%, #ccc 100%);\n    background-image: -o-linear-gradient(top, #eee 50%, #ccc 100%);\n    background-image: linear-gradient(to bottom, #eee 50%, #ccc 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFEEEEEE\', endColorstr=\'#FFCCCCCC\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--single .select2-selection__arrow b {\n    border-color: #888 transparent transparent transparent;\n    border-style: solid;\n    border-width: 7px 4px 0;\n    height: 0;\n    left: 50%;\n    margin-left: 2px;\n    margin-top: -2px;\n    position: absolute;\n    top: 50%;\n    width: 0\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__clear {\n    float: left\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--single .select2-selection__arrow {\n    border: none;\n    border-right: 1px solid #aaa;\n    border-radius: 0;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n    left: 1px;\n    right: auto\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow {\n    background: transparent;\n    border: none\n}\n\n.select2-container--classic.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #888 transparent;\n    border-width: 0 4px 5px 4px\n}\n\n.select2-container--classic.select2-container--open.select2-container--above .select2-selection--single {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0;\n    background-image: -webkit-linear-gradient(top, #fff 0%, #eee 50%);\n    background-image: -o-linear-gradient(top, #fff 0%, #eee 50%);\n    background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFFFFFFF\', endColorstr=\'#FFEEEEEE\', GradientType=0)\n}\n\n.select2-container--classic.select2-container--open.select2-container--below .select2-selection--single {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0;\n    background-image: -webkit-linear-gradient(top, #eee 50%, #fff 100%);\n    background-image: -o-linear-gradient(top, #eee 50%, #fff 100%);\n    background-image: linear-gradient(to bottom, #eee 50%, #fff 100%);\n    background-repeat: repeat-x;\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#FFEEEEEE\', endColorstr=\'#FFFFFFFF\', GradientType=0)\n}\n\n.select2-container--classic .select2-selection--multiple {\n    background-color: white;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: text;\n    outline: 0\n}\n\n.select2-container--classic .select2-selection--multiple:focus {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__rendered {\n    list-style: none;\n    margin: 0;\n    padding: 0 5px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__clear {\n    display: none\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice {\n    background-color: #e4e4e4;\n    border: 1px solid #aaa;\n    border-radius: 4px;\n    cursor: default;\n    float: left;\n    margin-right: 5px;\n    margin-top: 5px;\n    padding: 0 5px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove {\n    color: #888;\n    cursor: pointer;\n    display: inline-block;\n    font-weight: bold;\n    margin-right: 2px\n}\n\n.select2-container--classic .select2-selection--multiple .select2-selection__choice__remove:hover {\n    color: #555\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    float: right\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {\n    margin-left: 5px;\n    margin-right: auto\n}\n\n.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice__remove {\n    margin-left: 2px;\n    margin-right: auto\n}\n\n.selec';
+  builder.string += 't2-container--classic.select2-container--open .select2-selection--multiple {\n    border: 1px solid #5897fb\n}\n\n.select2-container--classic.select2-container--open.select2-container--above .select2-selection--multiple {\n    border-top: none;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0\n}\n\n.select2-container--classic.select2-container--open.select2-container--below .select2-selection--multiple {\n    border-bottom: none;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0\n}\n\n.select2-container--classic .select2-search--dropdown .select2-search__field {\n    border: 1px solid #aaa;\n    outline: 0\n}\n\n.select2-container--classic .select2-search--inline .select2-search__field {\n    outline: 0;\n    box-shadow: none\n}\n\n.select2-container--classic .select2-dropdown {\n    background-color: #fff;\n    border: 1px solid transparent\n}\n\n.select2-container--classic .select2-dropdown--above {\n    border-bottom: none\n}\n\n.select2-container--classic .select2-dropdown--below {\n    border-top: none\n}\n\n.select2-container--classic .select2-results > .select2-results__options {\n    max-height: 200px;\n    overflow-y: auto\n}\n\n.select2-container--classic .select2-results__option[role=group] {\n    padding: 0\n}\n\n.select2-container--classic .select2-results__option[aria-disabled=true] {\n    color: grey\n}\n\n.select2-container--classic .select2-results__option--highlighted[aria-selected] {\n    background-color: #3875d7;\n    color: #fff\n}\n\n.select2-container--classic .select2-results__group {\n    cursor: default;\n    display: block;\n    padding: 6px\n}\n\n.select2-container--classic.select2-container--open .select2-dropdown {\n    border-color: #5897fb\n}\n\n.select2-container--default .select2-selection--multiple, .select2-container--default .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {\n    height: 46px;\n    border: none;\n    border-bottom: 1px solid #9e9e9e;\n    border-radius: 0;\n    outline: 0\n}\n\n.select2-container--default .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--multiple {\n    height: auto\n}\n\n.select2-container--default .select2-search--inline .select2-search__field {\n    height: 30px\n}\n\n.select2-container--default .select2-selection--multiple input {\n    margin: 0\n}\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice {\n    display: inline-block;\n    height: 32px;\n    font-size: 13px;\n    font-weight: 500;\n    color: rgba(0, 0, 0, 0.6);\n    line-height: 32px;\n    padding: 0 12px;\n    border-radius: 16px;\n    background-color: #e4e4e4;\n}\n\n.select2-container--default .select2-selection--single .select2-selection__rendered {\n    line-height: 46px;\n    padding-left: 0\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow {\n    height: 46px\n}\n\n.select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: rgba(0, 0, 0, 1) transparent transparent\n}\n\n.select2-container--open .select2-dropdown--above, .select2-container--open .select2-dropdown--below {\n    border: none;\n    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n}\n\n.select2-results__option {\n    padding: 1rem\n}\n\n.select2-container--default .select2-search--dropdown .select2-search__field {\n    border-top: none;\n    border-right: none;\n    border-left: none\n}\n\n.select2-container--default .select2-results__option--highlighted[aria-selected], div.tagsinput span.tag {\n    background-color: #eeeeee;\n    transition: 0.3s ease;\n}\n\n.select2label {\n    left: 0 !important;\n    font-size: 0.8rem !important;\n    transform: translateY(-140%);\n}\n\n.combobox {\n    margin-bottom: 16px;\n}\n\n.field-success .select2-selection, .field-error .select2-selection {\n    border: none !important;\n}\n.select2-container--default {\n    font-size: 1rem;\n}\n\n.field-success .select2label {\n    color: #4caf50 !important;\n}\n\n.field-error .select2label {\n    color: #f44336 !important;\n}\n\n.col.combobox .select2label {\n    left: 12px !important;\n}\n\n.read-only.combobox .select2-selection {\n    border: none !important;\n}\n\n.read-only.combobox .select2-selection__arrow {\n    display: none !important;\n}\n\n.read-only .select2-selection__rendered {\n    color: #000 !important;\n}\n\n/** Added support inside NavBar **/\nheader nav .select2-container--default .select2-selection--single .select2-selection__rendered {\n    color: #fff !important;\n}\n\nheader nav .select2-container--default .select2-selection--multiple,\nheader nav .select2-container--default .select2-selection--single,\nheader nav .select2-container--default.select2-container--focus .select2-selection--multiple {\n    border-bottom: none;\n}\n\nheader nav .select2-container--default .select2-selection--single .select2-selection__arrow b {\n    border-color: rgb(255, 255, 255) transparent transparent;\n}\n\nheader nav .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {\n    border-color: transparent transparent #fff;\n}\n\n/** Improve the multiple option to display it as checkbox option **/\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]) {\n    position: relative;\n    padding-left: 3rem !important;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):before {\n    content: \'\';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 18px;\n    height: 18px;\n    z-index: 0;\n    border: 2px solid #5a5a5a;\n    border-radius: 1px;\n    margin-top: 2px;\n    transition: .2s;\n    margin: 1rem;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):before {\n    width: 0;\n    height: 0;\n    border: 3px solid transparent;\n    left: 6px;\n    top: 10px;\n    -webkit-transform: rotateZ(37deg);\n    transform: rotateZ(37deg);\n    -webkit-transform-origin: 20% 40%;\n    transform-origin: 100% 100%;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"]):after {\n    height: 20px;\n    width: 20px;\n    background-color: transparent;\n    border: 2px solid #5a5a5a;\n    top: 0px;\n    z-index: 0;\n    content: \'\';\n    left: 0;\n    position: absolute;\n    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;\n    z-index: 1;\n    border-radius: 2px;\n    margin: 1rem;\n}\n/** Selected **/\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {\n    top: 0;\n    width: 20px;\n    height: 20px;\n    border: 2px solid #26a69a;\n    background-color: #26a69a;\n    z-index: 0;\n}\n\nul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:before {\n    top: 2px;\n    left: 1px;\n    width: 8px;\n    height: 13px;\n    border-top: 2px solid transparent;\n    border-left: 2px solid transparent;\n    border-right: 2px solid #fff;\n    border-bottom: 2px solid #fff;\n    -webkit-transform: rotateZ(37deg);\n    transform: rotateZ(37deg);\n    -webkit-transform-origin: 100% 100%;\n    transform-origin: 100% 100%;\n    z-index: 1;\n}';
   return builder.string;
 }
 ;
@@ -15872,7 +15873,7 @@ function AbstractButton_2(initialClass){
   this.initialClasses = initialClass;
 }
 
-defineClass(203, 25, $intern_83);
+defineClass(204, 25, $intern_83);
 _.setActivates = function setActivates(activates){
   $setActivates(this, activates);
 }
@@ -15881,7 +15882,7 @@ _.setText = function setText(text_0){
   $setText_3(this, text_0);
 }
 ;
-var Lgwt_material_design_client_base_AbstractButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractButton', 203);
+var Lgwt_material_design_client_base_AbstractButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractButton', 204);
 function $$init_3(this$static){
   this$static.icon_0 = new MaterialIcon;
 }
@@ -15917,7 +15918,7 @@ function AbstractIconButton_1(initialClass){
   this.initialClasses = initialClass;
 }
 
-defineClass(190, 203, $intern_83);
+defineClass(190, 204, $intern_83);
 var Lgwt_material_design_client_base_AbstractIconButton_2_classLit = createForClass('gwt.material.design.client.base', 'AbstractIconButton', 190);
 var swipeableCss, swipeableJs;
 function MaterialSwipeableClientBundle_default_InlineClientBundleGenerator$1(){
@@ -16427,7 +16428,7 @@ function AbstractTextWidget(element){
   AbstractValueWidget.call(this, element);
 }
 
-defineClass(2060, 215, $intern_65);
+defineClass(2060, 216, $intern_65);
 _.getValue_0 = function getValue_10(){
   return ($clinit_DOM() , this.element_0).textContent;
 }
@@ -16805,7 +16806,7 @@ function getMeasurementValue(value_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 214)) {
+    if (instanceOf($e0, 215)) {
       return null;
     }
      else 
@@ -16965,8 +16966,8 @@ function ColorsMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(219, 114, {}, ColorsMixin);
-var Lgwt_material_design_client_base_mixin_ColorsMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ColorsMixin', 219);
+defineClass(193, 114, {}, ColorsMixin);
+var Lgwt_material_design_client_base_mixin_ColorsMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'ColorsMixin', 193);
 function CounterMixin(widget){
   AbstractMixin.call(this, widget);
 }
@@ -17857,16 +17858,16 @@ function HideOn(enum$name, enum$ordinal, cssClass){
 
 function values_44(){
   $clinit_HideOn();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_HideOn_2_classLit, 1), $intern_8, 217, 0, [HIDE_ON_SMALL, HIDE_ON_SMALL_DOWN, HIDE_ON_MED, HIDE_ON_MED_DOWN, HIDE_ON_MED_UP, HIDE_ON_LARGE, NONE_6]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_HideOn_2_classLit, 1), $intern_8, 218, 0, [HIDE_ON_SMALL, HIDE_ON_SMALL_DOWN, HIDE_ON_MED, HIDE_ON_MED_DOWN, HIDE_ON_MED_UP, HIDE_ON_LARGE, NONE_6]);
 }
 
-defineClass(217, 27, {44:1, 148:1, 217:1, 121:1, 4:1, 33:1, 27:1}, HideOn);
+defineClass(218, 27, {44:1, 148:1, 218:1, 121:1, 4:1, 33:1, 27:1}, HideOn);
 _.getCssName = function getCssName_83(){
   return this.cssClass;
 }
 ;
 var HIDE_ON_LARGE, HIDE_ON_MED, HIDE_ON_MED_DOWN, HIDE_ON_MED_UP, HIDE_ON_SMALL, HIDE_ON_SMALL_DOWN, NONE_6;
-var Lgwt_material_design_client_constants_HideOn_2_classLit = createForEnum('gwt.material.design.client.constants', 'HideOn', 217, Ljava_lang_Enum_2_classLit, values_44);
+var Lgwt_material_design_client_constants_HideOn_2_classLit = createForEnum('gwt.material.design.client.constants', 'HideOn', 218, Ljava_lang_Enum_2_classLit, values_44);
 function $clinit_IconPosition(){
   $clinit_IconPosition = emptyMethod;
   NONE_7 = new IconPosition('NONE', 0, '');
@@ -18998,16 +18999,16 @@ function SideNavType(enum$name, enum$ordinal, cssClass){
 
 function values_57(){
   $clinit_SideNavType();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_SideNavType_2_classLit, 1), $intern_8, 208, 0, [FIXED_1, PUSH, PUSH_WITH_HEADER, MINI, MINI_WITH_EXPAND, DRAWER, DRAWER_WITH_HEADER, CARD]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_SideNavType_2_classLit, 1), $intern_8, 209, 0, [FIXED_1, PUSH, PUSH_WITH_HEADER, MINI, MINI_WITH_EXPAND, DRAWER, DRAWER_WITH_HEADER, CARD]);
 }
 
-defineClass(208, 27, {44:1, 148:1, 208:1, 121:1, 4:1, 33:1, 27:1}, SideNavType);
+defineClass(209, 27, {44:1, 148:1, 209:1, 121:1, 4:1, 33:1, 27:1}, SideNavType);
 _.getCssName = function getCssName_95(){
   return this.cssClass;
 }
 ;
 var CARD, DRAWER, DRAWER_WITH_HEADER, FIXED_1, MINI, MINI_WITH_EXPAND, PUSH, PUSH_WITH_HEADER;
-var Lgwt_material_design_client_constants_SideNavType_2_classLit = createForEnum('gwt.material.design.client.constants', 'SideNavType', 208, Ljava_lang_Enum_2_classLit, values_57);
+var Lgwt_material_design_client_constants_SideNavType_2_classLit = createForEnum('gwt.material.design.client.constants', 'SideNavType', 209, Ljava_lang_Enum_2_classLit, values_57);
 function $clinit_TextAlign(){
   $clinit_TextAlign = emptyMethod;
   DEFAULT_7 = new TextAlign('DEFAULT', 0, '');
@@ -19052,16 +19053,16 @@ function WavesType(enum$name, enum$ordinal, cssClass){
 
 function values_61(){
   $clinit_WavesType();
-  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_WavesType_2_classLit, 1), $intern_8, 207, 0, [DEFAULT_8, LIGHT, RED_1, YELLOW_1, ORANGE_0, PURPLE_0, GREEN_1, TEAL_0]);
+  return stampJavaTypeInfo(getClassLiteralForArray(Lgwt_material_design_client_constants_WavesType_2_classLit, 1), $intern_8, 208, 0, [DEFAULT_8, LIGHT, RED_1, YELLOW_1, ORANGE_0, PURPLE_0, GREEN_1, TEAL_0]);
 }
 
-defineClass(207, 27, {44:1, 121:1, 207:1, 4:1, 33:1, 27:1}, WavesType);
+defineClass(208, 27, {44:1, 121:1, 208:1, 4:1, 33:1, 27:1}, WavesType);
 _.getCssName = function getCssName_99(){
   return this.cssClass;
 }
 ;
 var DEFAULT_8, GREEN_1, LIGHT, ORANGE_0, PURPLE_0, RED_1, TEAL_0, YELLOW_1;
-var Lgwt_material_design_client_constants_WavesType_2_classLit = createForEnum('gwt.material.design.client.constants', 'WavesType', 207, Ljava_lang_Enum_2_classLit, values_61);
+var Lgwt_material_design_client_constants_WavesType_2_classLit = createForEnum('gwt.material.design.client.constants', 'WavesType', 208, Ljava_lang_Enum_2_classLit, values_61);
 function $equals_1(this$static, o){
   var elem, elem$iterator, elemOther, iterOther, other;
   if (o === this$static) {
@@ -19244,7 +19245,7 @@ function ArrayList_1(c){
   insertTo_0(this.array, 0, c.toArray_0());
 }
 
-defineClass(43, $intern_91, $intern_93, ArrayList, ArrayList_0, ArrayList_1);
+defineClass(42, $intern_91, $intern_93, ArrayList, ArrayList_0, ArrayList_1);
 _.add_3 = function add_29(index_0, o){
   $add_23(this, index_0, o);
 }
@@ -19305,7 +19306,7 @@ _.toArray_1 = function toArray_3(out){
   return $toArray_0(this, out);
 }
 ;
-var Ljava_util_ArrayList_2_classLit = createForClass('java.util', 'ArrayList', 43);
+var Ljava_util_ArrayList_2_classLit = createForClass('java.util', 'ArrayList', 42);
 function $clinit_ClearActiveEvent(){
   $clinit_ClearActiveEvent = emptyMethod;
   TYPE_61 = new GwtEvent$Type;
@@ -19905,7 +19906,7 @@ function MaterialCardContent(){
 defineClass(48, 25, $intern_64, MaterialCardContent);
 var Lgwt_material_design_client_ui_MaterialCardContent_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialCardContent', 48);
 function $add_26(this$static, child){
-  instanceOf(child, 42) && setStyleName(child.getStyleElement(), 'activator', true);
+  instanceOf(child, 43) && setStyleName(child.getStyleElement(), 'activator', true);
   $add_1(this$static, child, ($clinit_DOM() , this$static.element_0));
 }
 
@@ -20208,7 +20209,7 @@ function MaterialCollapsibleItem(){
   new ProgressMixin(this);
 }
 
-defineClass(87, 203, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 250:1, 87:1}, MaterialCollapsibleItem);
+defineClass(87, 204, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 250:1, 87:1}, MaterialCollapsibleItem);
 _.add_0 = function add_36(child){
   $add_30(this, child);
 }
@@ -20380,7 +20381,7 @@ function MaterialValueBox_0(tValueBox){
   $add_14(this, this.valueBoxBase);
 }
 
-defineClass(163, 215, $intern_98);
+defineClass(163, 216, $intern_98);
 _.build = function build(){
   var id_0;
   if (!this.initialized_0) {
@@ -20603,7 +20604,7 @@ function MaterialIcon_0(iconType){
   $setInnerText(($clinit_DOM() , this.element_0), iconType.cssClass);
 }
 
-defineClass(35, 203, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 35:1}, MaterialIcon, MaterialIcon_0);
+defineClass(35, 204, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 186:1, 39:1, 38:1, 25:1, 35:1}, MaterialIcon, MaterialIcon_0);
 _.createElement_0 = function createElement_5(){
   return $doc.createElement('i');
 }
@@ -20629,7 +20630,7 @@ function MaterialImage_0(){
   $setUrl_3(this.imageMixin, '');
 }
 
-defineClass(42, 25, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 39:1, 38:1, 25:1, 42:1}, MaterialImage, MaterialImage_0);
+defineClass(43, 25, {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 21:1, 187:1, 39:1, 38:1, 25:1, 43:1}, MaterialImage, MaterialImage_0);
 _.onLoad = function onLoad_36(){
   $onLoad_0(this);
   $wnd.$('.materialboxed').materialbox();
@@ -20639,7 +20640,7 @@ _.setActivates = function setActivates_1(activates){
   $setAttribute_0(this.activatesMixin, activates);
 }
 ;
-var Lgwt_material_design_client_ui_MaterialImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialImage', 42);
+var Lgwt_material_design_client_ui_MaterialImage_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialImage', 43);
 function $setType_9(this$static, inputType){
   $setAttribute(($clinit_DOM() , this$static.element_0), 'type', inputType.type_0);
 }
@@ -20777,7 +20778,7 @@ function MaterialListValueBox(){
   this.toggleOldMixin = new ToggleStyleMixin(this.listBox, 'browser-default');
 }
 
-defineClass(407, 215, $intern_65, MaterialListValueBox);
+defineClass(407, 216, $intern_65, MaterialListValueBox);
 _.clear_0 = function clear_19(){
   $clear_10(this);
 }
@@ -20819,8 +20820,8 @@ function MaterialListBox(){
   MaterialListValueBox.call(this);
 }
 
-defineClass(206, 407, $intern_65, MaterialListBox);
-var Lgwt_material_design_client_ui_MaterialListBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialListBox', 206);
+defineClass(207, 407, $intern_65, MaterialListBox);
+var Lgwt_material_design_client_ui_MaterialListBox_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialListBox', 207);
 function MaterialListValueBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
@@ -21422,7 +21423,7 @@ function $setWidth_1(this$static, width_0){
 
 function $wrap(this$static, child){
   var isNotSelectable, listItem, widget;
-  if (instanceOf(child, 42)) {
+  if (instanceOf(child, 43)) {
     ($clinit_DOM() , child.element_0).style['border'] = '1px solid #e9e9e9';
     child.element_0.style['textAlign'] = 'center';
   }
@@ -32033,8 +32034,8 @@ function NumberFormatException(message){
   IllegalArgumentException_0.call(this, message);
 }
 
-defineClass(214, 80, {4:1, 91:1, 80:1, 214:1, 67:1, 69:1}, NumberFormatException);
-var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 214);
+defineClass(215, 80, {4:1, 91:1, 80:1, 215:1, 67:1, 69:1}, NumberFormatException);
+var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 215);
 function StackTraceElement(methodName, fileName, lineNumber){
   this.className_0 = 'Unknown';
   this.methodName = methodName;
@@ -32042,11 +32043,11 @@ function StackTraceElement(methodName, fileName, lineNumber){
   this.lineNumber = lineNumber;
 }
 
-defineClass(213, 1, {4:1, 213:1}, StackTraceElement);
+defineClass(214, 1, {4:1, 214:1}, StackTraceElement);
 _.equals_0 = function equals_45(other){
   var st;
-  if (instanceOf(other, 213)) {
-    st = castTo(other, 213);
+  if (instanceOf(other, 214)) {
+    st = castTo(other, 214);
     return this.lineNumber == st.lineNumber && equals_57(this.methodName, st.methodName) && equals_57(this.className_0, st.className_0) && equals_57(this.fileName, st.fileName);
   }
   return false;
@@ -32061,7 +32062,7 @@ _.toString_0 = function toString_27(){
 }
 ;
 _.lineNumber = 0;
-var Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 213);
+var Ljava_lang_StackTraceElement_2_classLit = createForClass('java.lang', 'StackTraceElement', 214);
 function $charAt_0(this$static, index_0){
   return this$static.charCodeAt(index_0);
 }
@@ -32271,10 +32272,10 @@ function $equals_3(this$static, obj){
   if (obj === this$static) {
     return true;
   }
-  if (!instanceOf(obj, 194)) {
+  if (!instanceOf(obj, 195)) {
     return false;
   }
-  otherMap = castTo(obj, 194);
+  otherMap = castTo(obj, 195);
   if (this$static.size_1() != otherMap.size_1()) {
     return false;
   }
