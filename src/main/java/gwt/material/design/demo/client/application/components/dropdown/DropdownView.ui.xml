@@ -28,10 +28,10 @@
       <g:HTMLPanel addStyleNames="code">
         <m:MaterialTitle title="Dropdown Properties"/>
         <blockquote>
-          <p>activator - name of your dropdown, a unique name needs for the activator to set it e.g activates='dropdown_name'</p>
-          <p>constraintWidth - Does not change width of dropdown to that of the activator</p>
-          <p>belowOrigin - displays dropdown below the button</p>
-          <p>hover - If sets to true, when you hover to your activator, dropdown component will be shown.</p>
+          <p><b>activator</b> - name of your dropdown, a unique name needs for the activator to set it e.g activates='dropdown_name'</p>
+          <p><b>constraintWidth</b> - Does not change width of dropdown to that of the activator</p>
+          <p><b>belowOrigin</b> - displays dropdown below the button</p>
+          <p><b>hover</b> - If sets to true, when you hover to your activator, dropdown component will be shown.</p>
         </blockquote>
       </g:HTMLPanel>
   
