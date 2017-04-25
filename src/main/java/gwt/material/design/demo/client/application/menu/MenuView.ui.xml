@@ -27,10 +27,6 @@
 
 	<ui:style>
 		@external .sidebar, .nav-wrapper, .select2-selection__rendered;
-		.select2-selection__rendered {
-			color: white !important;
-		}
-
 		.sidebar {
 			padding: 10% !important;
 			font-size: 1em;
