@@ -132,7 +132,7 @@
           <m:MaterialButton ui:field="btnProgress" text="Show Progress"/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard>
+          <m:MaterialCard ui:field="loaderCard">
             <m:MaterialCardContent padding="0" ui:field="cardContent">
               <m:MaterialRow marginBottom="0" padding="12">
                 <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>

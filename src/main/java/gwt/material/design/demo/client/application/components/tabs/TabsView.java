@@ -60,14 +60,14 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
 
     @Override
     public void recalculateTabs() {
-        tabBasic.resize();
-        tabIntro.resize();
-        tabSetIndex.resize();
-        tabIcons.resize();
-        tabIndicatorColor.resize();
-        tabControlWidth.resize();
-        tabEvents.resize();
-        tabGetIndex.resize();
-        tabFit.resize();
+        tabBasic.reinitialize();
+        tabIntro.reinitialize();
+        tabSetIndex.reinitialize();
+        tabIcons.reinitialize();
+        tabIndicatorColor.reinitialize();
+        tabControlWidth.reinitialize();
+        tabEvents.reinitialize();
+        tabGetIndex.reinitialize();
+        tabFit.reinitialize();
     }
 }
