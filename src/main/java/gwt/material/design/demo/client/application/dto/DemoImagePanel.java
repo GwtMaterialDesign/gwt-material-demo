@@ -43,7 +43,6 @@ public class DemoImagePanel extends MaterialRow {
 
     @Override
     protected void build() {
-        super.build();
         add(title);
         add(source);
         add(demo);

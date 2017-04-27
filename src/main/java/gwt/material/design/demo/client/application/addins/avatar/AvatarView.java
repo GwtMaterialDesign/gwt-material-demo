@@ -51,6 +51,6 @@ public class AvatarView extends ViewImpl implements AvatarPresenter.MyView {
     @UiHandler("txtAvatarName")
     void onUpdateAvatar(KeyUpEvent e) {
         avatar.setName(txtAvatarName.getText());
-        avatar.initialize();
+        avatar.reinitialize();
     }
 }
