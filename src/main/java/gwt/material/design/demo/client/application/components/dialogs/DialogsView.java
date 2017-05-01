@@ -37,11 +37,46 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     }
 
     @UiField
-    MaterialModal modal, modalFixed, modalBottomSheet, modalClosable;
+    MaterialModal modal, modalFixed, modalBottomSheet, modalClosable, modalEvents,
+            modal1, modal2, modal3;
+
 
     @Inject
     DialogsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        modalEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
+        modalEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+    }
+
+    @UiHandler("btnOpenModal1")
+    void onOpenModal1(ClickEvent e) {
+        modal1.open();
+    }
+
+    @UiHandler("btnOpenModal2")
+    void onOpenModal2(ClickEvent e) {
+        modal2.open();
+    }
+
+    @UiHandler("btnOpenModal3")
+    void onOpenModal3(ClickEvent e) {
+        modal3.open();
+    }
+
+    @UiHandler("btnCloseModal1")
+    void onCloseModal1(ClickEvent e) {
+        modal1.close();
+    }
+
+    @UiHandler("btnCloseModal2")
+    void onCloseModal2(ClickEvent e) {
+        modal2.close();
+    }
+
+    @UiHandler("btnCloseModal3")
+    void onCloseModal3(ClickEvent e) {
+        modal3.close();
     }
 
     @UiHandler("btnToast")
@@ -93,9 +128,19 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
         modalClosable.open();
     }
 
+    @UiHandler("btnEvents")
+    void onEvents(ClickEvent e) {
+        modalEvents.open();
+    }
+
     @UiHandler("btnCloseModal")
     void onCloseModal(ClickEvent e){
         modal.close();
+    }
+
+    @UiHandler("btnCloseModalEvents")
+    void onCloseEvents(ClickEvent e) {
+        modalEvents.close();
     }
 
     @UiHandler("btnCloseFixedModal")
