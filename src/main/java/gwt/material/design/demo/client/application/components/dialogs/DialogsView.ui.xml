@@ -170,6 +170,10 @@
         </m:MaterialModalFooter>
       </m:MaterialModal>
       <m:MaterialButton text="Modal with Events" ui:field="btnEvents" waves="LIGHT"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;modalEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));<br/>
+        modalEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+      </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">

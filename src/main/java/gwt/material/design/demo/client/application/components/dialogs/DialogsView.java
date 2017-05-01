@@ -47,6 +47,14 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
         modalEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
         modalEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+
+        modal1.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 1 - Open"));
+        modal2.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 2 - Open"));
+        modal3.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 3 - Open"));
+
+        modal1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 1 - Closed"));
+        modal2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 2 - Closed"));
+        modal3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 3 - Closed"));
     }
 
     @UiHandler("btnOpenModal1")
