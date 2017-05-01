@@ -24,7 +24,7 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">  
-        <m:MaterialTitle title="Date Picker"  description="Material Datepicker"/>
+        <m:MaterialTitle title="Basic"  description="You can easily add placeholder to indicate a label into your datepicker."/>
         <m:MaterialDatePicker placeholder="Date" grid="s12"/>
     
         <demo:PrettyPre addStyleNames="lang-xml">

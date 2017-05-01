@@ -115,8 +115,7 @@
         &lt;!-- Double box --><br/>
         &lt;m:MaterialDoubleBox ui:field="txtDoubleBox" label="Double value"/><br/>
         &lt;!-- Long Box --><br/>
-        &lt;m:MaterialLongBox ui:field="txtLongBox" label="Long value"/><br/><br/><br/>
-        
+        &lt;m:MaterialLongBox ui:field="txtLongBox" label="Long value"/><br/><br/>
         <!-- Java Usage -->
         txtFloatBox.setValue(1000.25f);<br/>
         txtIntegerBox.setValue(10);<br/>

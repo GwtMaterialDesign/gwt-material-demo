@@ -349,7 +349,7 @@
       <m:MaterialTitle title="Controlling the width of Tabs" description="By wrapping tabs into columns you canset it's grid."/>
       <m:MaterialRow backgroundColor="GREEN">
         <m:MaterialColumn grid="l4 m6 s12">
-          <m:MaterialTab ui:field="tabControlWidth" shadow="1" type="ICON" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
+          <m:MaterialTab ui:field="tabControlWidth" type="ICON" backgroundColor="GREEN" indicatorColor="GREEN_LIGHTEN_3">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
               <m:MaterialLink text="Recents" href="#tab41" textColor="WHITE"/>
             </m:MaterialTabItem>

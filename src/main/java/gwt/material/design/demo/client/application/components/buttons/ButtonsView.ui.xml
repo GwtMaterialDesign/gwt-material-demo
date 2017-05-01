@@ -100,14 +100,14 @@
       <m:MaterialIcon margin="8" iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/>
   
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"//><br/>
-        &lt;m:MaterialIcon iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"//><br/>
-        &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"//><br/>
+        &emsp;&lt;m:MaterialIcon iconType="MENU" iconColor="BLUE" waves="DEFAULT" circle="true"/><br/>
+        &lt;m:MaterialIcon iconType="FAVORITE" iconColor="RED" waves="DEFAULT" enabled="false" circle="true"/><br/>
+        &lt;m:MaterialIcon iconType="MORE_VERT" iconColor="GREY" waves="DEFAULT" circle="true"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Disabled" description="When you set disabled='true' All events will be disabled."/>
+      <m:MaterialTitle title="Disabled" description="When you set enabled='false' All events will be disabled."/>
       <m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" size="LARGE" enabled="false"/>
       <m:MaterialButton margin="8" text="Button" iconType="POLYMER" iconPosition="LEFT" enabled="false"/>
       <m:MaterialButton margin="8" text="Button" type="FLAT" enabled="false"/>

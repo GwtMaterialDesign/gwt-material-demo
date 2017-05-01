@@ -25,7 +25,7 @@
   <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Links ,Icons, and Waves" description="Based on material links you can add icons, link with icons or link only and apply ripple effect by adding waves attribute."/>
-        <m:MaterialNavBar width="100%">
+        <m:MaterialNavBar>
           <m:MaterialNavBrand marginLeft="60" href="#Test" float="LEFT" text="Title" />
           <m:MaterialNavSection float="RIGHT">
             <m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/>
@@ -40,7 +40,7 @@
         </m:MaterialNavBar>
     
         <demo:PrettyPre addStyleNames="lang-xml">
-          &emsp;&lt;m:MaterialNavBar width="100%"><br/><br/>
+          &emsp;&lt;m:MaterialNavBar><br/><br/>
           &emsp;&lt;m:MaterialNavBrand href="#Test" float="LEFT" text="App Title"/><br/>
           &emsp;&lt;m:MaterialNavSection float="RIGHT"><br/>
           &emsp;&emsp;&lt;m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/><br/>
