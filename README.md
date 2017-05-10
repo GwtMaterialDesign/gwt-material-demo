@@ -33,5 +33,5 @@ Demo application to show the features of the [gwt-material](https://github.com/G
 
 If you want to contribute, visit us at https://gitter.im/GwtMaterialDesign/gwt-material
 
-##Follow Us
+## Follow Us
 <a href="https://plus.google.com/u/0/communities/108005250093449814286"> Google Plus</a>
