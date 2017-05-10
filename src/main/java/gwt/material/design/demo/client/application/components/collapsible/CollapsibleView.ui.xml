@@ -25,7 +25,7 @@
   <m:MaterialPanel>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type.'"/>
+      <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type."/>
       <m:MaterialCollapsible>
         <!-- ITEM 1 -->
         <m:MaterialCollapsibleItem>
@@ -74,7 +74,7 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Expandable" description="You can set the accordion type by adding an attribute accordion='false'"/>
+      <m:MaterialTitle title="Expandable" description="You can set the expandable type by adding an attribute accordion='false'"/>
       <m:MaterialCollapsible accordion="false">
         <!-- ITEM 1 -->
         <m:MaterialCollapsibleItem>

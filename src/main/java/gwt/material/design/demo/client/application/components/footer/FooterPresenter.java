@@ -55,6 +55,6 @@ public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPre
 
         SetPageTitleEvent.fire("Footer", "Footers are a great way to organize a lot of site navigation and " +
             "information at the end of a page. This is where the user will look once hes finished scrolling " +
-            "through the current page or is looking for additional information about your website.", "components/footer/FooterView", this);
+            "through the current page or is looking for additional information about your website.", "components/footer/FooterView", "", this);
     }
 }

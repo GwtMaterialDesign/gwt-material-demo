@@ -31,7 +31,7 @@
     <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;txtBox.setError("Please provide your name");<br/>
-        txtBox.setError("Your username is available");
+        txtBox.setSuccess("Your username is available");
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -122,7 +122,7 @@
       <!-- Range -->
       <m:MaterialRow>
         <m:MaterialTitle title="Range" />
-        <m:MaterialRange ui:field="range" grid="s12 m12 l5" />
+        <m:MaterialRange min="0" max="100" value="50" ui:field="range" grid="s12 m12 l5" />
       </m:MaterialRow>
       <m:MaterialRow>
         <m:MaterialButton ui:field="btnErrorRange" text="Error" backgroundColor="RED" waves="LIGHT"/>

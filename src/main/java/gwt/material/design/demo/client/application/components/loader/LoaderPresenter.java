@@ -55,6 +55,6 @@ public class LoaderPresenter extends Presenter<LoaderPresenter.MyView, LoaderPre
 
         SetPageTitleEvent.fire("Loaders", "If you have content that will take a long time to load, you " +
             "should give the user feedback. For this reason we provide a number activity + progress " +
-            "indicators.", "components/loader/LoaderView", this);
+            "indicators.", "components/loader/LoaderView", "https://material.io/guidelines/components/progress-activity.html#", this);
     }
 }

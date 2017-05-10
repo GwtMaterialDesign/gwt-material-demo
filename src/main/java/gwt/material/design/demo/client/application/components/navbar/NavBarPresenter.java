@@ -55,6 +55,6 @@ public class NavBarPresenter extends Presenter<NavBarPresenter.MyView, NavBarPre
 
         SetPageTitleEvent.fire("NavBar", "The navbar is fully contained by an HTML5 Nav tag. Inside a recommended " +
             "container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. " +
-            "You can align these links to the left or right.", "components/navbar/NavBarView", this);
+            "You can align these links to the left or right.", "components/navbar/NavBarView", "https://material.io/guidelines/components/toolbars.html#", this);
     }
 }

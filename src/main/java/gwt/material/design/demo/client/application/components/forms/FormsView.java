@@ -37,7 +37,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     interface Binder extends UiBinder<Widget, FormsView> {
     }
 
-    @UiField MaterialListBox lstOptions, lstSetValue;
+    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions;
     @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown, cbValue;
 
     @UiField MaterialSwitch switch1, switch2, switchSetValue;
@@ -117,6 +117,17 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
             "blandit eu lacus nec, finibus tempus ligula.", true);
 
+    }
+
+    @UiHandler("btnAddNewOption")
+    void addOption(ClickEvent e) {
+        lstAddOptions.addItem("Item added");
+        lstAddOptions.setSelectedIndex(lstAddOptions.getItemCount() - 1);
+    }
+
+    @UiHandler("btnRemoveOption")
+    void removeOption(ClickEvent e) {
+        lstRemoveOptions.removeItem(0);
     }
 
     @UiHandler("lstOptions")
@@ -331,5 +342,35 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiHandler("btnRangeValueEvent")
     void onRangeValueEvent(ClickEvent e) {
         rangeSetValue.setValue(20, true);
+    }
+    
+    @UiHandler("btnTextBoxGetValue") 
+    void textBoxGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtBoxValue.getValue());
+    }
+
+    @UiHandler("btnTextAreaGetValue")
+    void textAreaGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtAreaValue.getValue());
+    }
+
+    @UiHandler("btnTextIntegerGetValue")
+    void textIntegerGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtIntegerValue.getValue() + "");
+    }
+
+    @UiHandler("btnTextLongGetValue")
+    void textLongGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtLongValue.getValue() + "");
+    }
+    
+    @UiHandler("btnTextDoubleGetValue")
+    void textDoubleGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtDoubleValue.getValue() + "");
+    }
+
+    @UiHandler("btnTextFloatGetValue")
+    void textFloatGetValue(ClickEvent e) {
+        MaterialToast.fireToast(txtFloatValue.getValue() + "");
     }
 }

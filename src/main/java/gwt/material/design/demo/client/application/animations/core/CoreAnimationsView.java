@@ -154,8 +154,8 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
         Transition transition = Transition.fromStyleName(value);
         MaterialAnimation animation = new MaterialAnimation();
         animation.setTransition(transition);
-        animation.setDelayMillis(0);
-        animation.setDurationMillis(1000);
+        animation.setDelay(0);
+        animation.setDuration(1000);
         animation.setInfinite(false);
         animation.animate(card);
     }
@@ -163,9 +163,9 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     @UiHandler("btnAnimateInfinite")
     void onAnimateInfinite(ClickEvent e) {
         infiniteAnimation = new MaterialAnimation();
-        infiniteAnimation.setDelayMillis(0);
+        infiniteAnimation.setDelay(0);
         infiniteAnimation.setTransition(Transition.PULSE);
-        infiniteAnimation.setDurationMillis(1000);
+        infiniteAnimation.setDuration(1000);
         infiniteAnimation.setInfinite(true);
         infiniteAnimation.animate(iconHeart);
     }
@@ -178,8 +178,8 @@ public class CoreAnimationsView extends ViewImpl implements CoreAnimationsPresen
     @UiHandler("btnAnimateCallback")
     void onCallback(ClickEvent e) {
         MaterialAnimation animation = new MaterialAnimation();
-        animation.setDelayMillis(0);
-        animation.setDurationMillis(1000);
+        animation.setDelay(0);
+        animation.setDuration(1000);
         animation.transition(Transition.FLIPINX);
         animation.animate(iconCallback, () -> {
             MaterialToast.fireToast("Animation is finished");

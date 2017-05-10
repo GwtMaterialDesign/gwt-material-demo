@@ -29,11 +29,14 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class TabsPresenter extends Presenter<TabsPresenter.MyView, TabsPresenter.MyProxy> {
+public class TabsPresenter extends Presenter<TabsPresenter.MyView, TabsPresenter.MyProxy> implements ContentPushEvent.ContentPushHandler {
+
     interface MyView extends View {
+        void recalculateTabs();
     }
 
     @NameToken(NameTokens.tabs)
@@ -47,6 +50,7 @@ public class TabsPresenter extends Presenter<TabsPresenter.MyView, TabsPresenter
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        addRegisteredHandler(ContentPushEvent.TYPE, this);
     }
 
     @Override
@@ -55,6 +59,11 @@ public class TabsPresenter extends Presenter<TabsPresenter.MyView, TabsPresenter
 
         SetPageTitleEvent.fire("Tabs", "The tabs structure consists of an unordered list of tabs that have " +
             "hashes corresponding to tab ids. Then when you click on each tab, only the container with the " +
-            "corresponding tab id will become visible.", "components/tabs/TabsView", this);
+            "corresponding tab id will become visible.", "components/tabs/TabsView", "https://material.io/guidelines/components/tabs.html", this);
+    }
+
+    @Override
+    public void onContentPush(ContentPushEvent event) {
+        getView().recalculateTabs();
     }
 }

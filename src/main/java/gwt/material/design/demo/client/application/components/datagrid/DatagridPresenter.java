@@ -55,6 +55,6 @@ public class DatagridPresenter extends Presenter<DatagridPresenter.MyView, Datag
 
         SetPageTitleEvent.fire("Data Grid", "DataGrid or Tables are a nice way to organize a lot of data. " +
             "We provide a few utility classes to help you style your table as easily as possible. In addition, " +
-            "to improve mobile experience, all tables on mobile-screen widths are centered automatically.", null, this);
+            "to improve mobile experience, all tables on mobile-screen widths are centered automatically.", "",null, this);
     }
 }

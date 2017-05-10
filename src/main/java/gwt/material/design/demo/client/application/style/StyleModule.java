@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.style;
 
 
 import com.google.gwt.inject.client.AbstractGinModule;
+import gwt.material.design.demo.client.application.style.blueprint.BluePrintModule;
 import gwt.material.design.demo.client.application.style.colors.ColorsModule;
 import gwt.material.design.demo.client.application.style.grid.GridModule;
 import gwt.material.design.demo.client.application.style.helper.HelperModule;
@@ -39,5 +40,6 @@ public class StyleModule extends AbstractGinModule {
         install(new IconsModule());
         install(new ShadowModule());
         install(new ThemesModule());
+        install(new BluePrintModule());
     }
 }

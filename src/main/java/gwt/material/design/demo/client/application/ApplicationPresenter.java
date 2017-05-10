@@ -31,14 +31,17 @@ import com.gwtplatform.mvp.client.presenter.slots.PermanentSlot;
 import com.gwtplatform.mvp.client.proxy.NavigationEvent;
 import com.gwtplatform.mvp.client.proxy.NavigationHandler;
 import com.gwtplatform.mvp.client.proxy.Proxy;
-import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.menu.MenuPresenter;
+import gwt.material.design.demo.client.event.ContentPushEvent;
+import gwt.material.design.demo.client.event.SetPageTitleEvent;
 
 import javax.inject.Inject;
 
 public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
-        implements NavigationHandler {
+        implements NavigationHandler, SetPageTitleEvent.SetPageTitleHandler {
+
     public interface MyView extends View {
+        void setPageTitle(String title, String description, String link, String specification);
     }
 
     public static final PermanentSlot<MenuPresenter> SLOT_MENU = new PermanentSlot<>();
@@ -64,6 +67,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         setInSlot(SLOT_MENU, menuPresenter);
 
         addRegisteredHandler(NavigationEvent.getType(), this);
+        addRegisteredHandler(SetPageTitleEvent.TYPE, this);
     }
 
     @Override
@@ -74,5 +78,10 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     @Override
     public void onNavigation(NavigationEvent navigationEvent) {
         Window.scrollTo(0, 0);
+    }
+
+    @Override
+    public void onSetPageTitle(SetPageTitleEvent event) {
+        getView().setPageTitle(event.getTitle(), event.getDescription(), event.getLink(), event.getSpecification());
     }
 }

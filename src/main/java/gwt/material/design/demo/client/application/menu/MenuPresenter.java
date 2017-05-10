@@ -25,14 +25,13 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
-import gwt.material.design.demo.client.event.SetPageTitleEvent;
-import gwt.material.design.demo.client.event.SetPageTitleEvent.SetPageTitleHandler;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 
-public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> implements MenuUiHandlers,
-    SetPageTitleHandler {
+public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> implements MenuUiHandlers {
+
 
     interface MyView extends View, HasUiHandlers<MenuUiHandlers> {
-        void setPageTitle(String title, String description, String link);
+
     }
 
     @Inject
@@ -45,12 +44,10 @@ public class MenuPresenter extends PresenterWidget<MenuPresenter.MyView> impleme
     @Override
     protected void onBind() {
         super.onBind();
-
-        addRegisteredHandler(SetPageTitleEvent.TYPE, this);
     }
 
     @Override
-    public void onSetPageTitle(SetPageTitleEvent event) {
-        getView().setPageTitle(event.getTitle(), event.getDescription(), event.getLink());
+    public void setContentPush() {
+        ContentPushEvent.fire(this);
     }
 }

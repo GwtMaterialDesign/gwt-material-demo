@@ -56,6 +56,6 @@ public class ChipsPresenter extends Presenter<ChipsPresenter.MyView, ChipsPresen
         SetPageTitleEvent.fire("Chips", "Chips represent complex entities in small blocks, such as " +
             "a contact. They can contain a photo, short title string, and brief information. Chips are " +
             "manipulated through drag-and-drop. Touching them invokes the full view in a card or full screen " +
-            "view or invokes a menu of options related to that chip's entity.", "components/chips/ChipsView", this);
+            "view or invokes a menu of options related to that chip's entity.", "components/chips/ChipsView", "https://material.io/guidelines/components/chips.html", this);
     }
 }

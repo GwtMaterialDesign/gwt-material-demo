@@ -40,6 +40,7 @@ import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.ThemeManager;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 import gwt.material.design.themes.amber.ThemeAmber;
 import gwt.material.design.themes.blue.ThemeBlue;
@@ -57,57 +58,25 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
+import static gwt.material.design.jquery.client.api.JQuery.$;
+
 class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresenter.MyView {
-    private String link;
 
     interface Binder extends UiBinder<Widget, MenuView> {
     }
+
 
     private List<SearchObject> listSearches = new ArrayList<>();
 
     @UiField MaterialHeader header;
     @UiField MaterialNavBar navBar, navBarSearch;
     @UiField MaterialSideNav sideNav;
-    @UiField MaterialPanel panel, titlePanel;
-    @UiField MaterialLabel title, description;
     @UiField MaterialSearch txtSearch;
     @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
-    @UiField MaterialChip chipXml, chipJava;
 
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
-        chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
-        chipJava.addClickHandler(clickEvent -> {
-            String java = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".java";
-            Window.open(java, "_blank", "");
-        });
-
-        chipXml.getElement().getStyle().setCursor(Style.Cursor.POINTER);
-        chipXml.addClickHandler(clickEvent -> {
-            String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
-            Window.open(xml, "_blank", "");
-        });
-        ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
-        ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
-        sideNav.addHandler(new SideNavPushHandler() {
-            @Override
-            public void onPush(SideNavPushEvent event) {
-                int duration = event.getDuration();
-                int width = event.getWidth();
-
-                Style style = navBar.getElement().getStyle();
-                style.setProperty("transition", duration + "ms");
-                style.setProperty("mozTransition", duration + "ms");
-                style.setProperty("webkitTransition", duration + "ms");
-
-                navBar.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
-                navBarSearch.getElement().getStyle().setProperty("width", "calc(100% - "+width+"px)");
-            }
-        }, SideNavPushEvent.TYPE);
 
         // search close event
         txtSearch.addCloseHandler(event -> {
@@ -120,6 +89,10 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
             navBarSearch.setVisible(true);
             navBar.setVisible(false);
         });
+
+        sideNav.addOpenedHandler(event -> getUiHandlers().setContentPush());
+        sideNav.addClosedHandler(event -> getUiHandlers().setContentPush());
+
         initThemes();
         initSearches();
     }
@@ -217,11 +190,10 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     protected void initThemes() {
         ThemeManager.initialize();
         ThemeManager.register(navBar, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(titlePanel);
         buildThemeList();
-        comboThemes.setValue(ThemeManager.getBundle());
+        comboThemes.setSingleValue(ThemeManager.getBundle());
         comboThemes.addValueChangeHandler(event -> {
-            ThemeManager.loadTheme(event.getValue());
+            ThemeManager.loadTheme(comboThemes.getSingleValue());
         });
     }
 
@@ -236,24 +208,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         comboThemes.addItem("Purple", ThemePurple.INSTANCE);
         comboThemes.addItem("Red", ThemeRed.INSTANCE);
         comboThemes.addItem("Yellow", ThemeYellow.INSTANCE);
-    }
-
-    @Override
-    public void setPageTitle(String title, String description, String link) {
-        this.title.setText(title);
-        this.description.setText(description);
-        this.link = link;
-
-        if (link.isEmpty()) {
-            chipJava.setVisible(false);
-            chipXml.setVisible(false);
-        } else {
-            chipJava.setVisible(true);
-            chipXml.setVisible(true);
-        }
-
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.description, 1000);
     }
 
     @UiHandler("btnSearch")

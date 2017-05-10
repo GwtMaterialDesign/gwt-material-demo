@@ -40,8 +40,8 @@
                     <demo:PrettyPre addStyleNames="lang-java">
                         &emsp;MaterialAnimation animation = new MaterialAnimation();<br/>
                         animation.setTransition(transition);<br/>
-                        animation.setDelayMillis(0);<br/>
-                        animation.setDurationMillis(1000);<br/>
+                        animation.setDelay(0);<br/>
+                        animation.setDuration(1000);<br/>
                         animation.setInfinite(false);<br/>
                         animation.animate(card);
                     </demo:PrettyPre>
@@ -68,8 +68,8 @@
                     <demo:PrettyPre addStyleNames="lang-java">
                         &emsp;MaterialAnimation infiniteAnimation = new MaterialAnimation();<br/>
                         infiniteAnimation.setTransition(Transition.PULSE);<br/>
-                        infiniteAnimation.setDelayMillis(0);<br/>
-                        infiniteAnimation.setDurationMillis(1000);<br/>
+                        infiniteAnimation.setDelay(0);<br/>
+                        infiniteAnimation.setDuration(1000);<br/>
                         infiniteAnimation.setInfinite(true);<br/>
                         infiniteAnimation.animate(iconHeart);<br/><br/>
                         // To stop the infinite animation <br/>
@@ -88,8 +88,8 @@
                 <m:MaterialColumn>
                     <demo:PrettyPre addStyleNames="lang-java">
                         &emsp;MaterialAnimation animation = new MaterialAnimation();<br/>
-                        animation.setDelayMillis(0);<br/>
-                        animation.setDurationMillis(1000);<br/>
+                        animation.setDelay(0);<br/>
+                        animation.setDuration(1000);<br/>
                         animation.transition(Transition.FLIPINX);<br/>
                         animation.animate(iconCallback, () -> {<br/>
                         &emsp;MaterialToast.fireToast("Animation is finished");<br/>

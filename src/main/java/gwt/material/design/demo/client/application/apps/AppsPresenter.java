@@ -53,6 +53,6 @@ public class AppsPresenter extends Presenter<AppsPresenter.MyView, AppsPresenter
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Apps", "Apps built with gwt-material. Submit now your apps in Gitter Channel or contact me thru email at kevzlou7979@gmail.com", "", this);
+        SetPageTitleEvent.fire("Apps", "Apps built with gwt-material. Submit now your apps in Gitter Channel or contact me thru email at kevzlou7979@gmail.com", "", "", this);
     }
 }

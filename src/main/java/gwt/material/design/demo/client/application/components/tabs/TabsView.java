@@ -21,8 +21,10 @@ package gwt.material.design.demo.client.application.components.tabs;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialTab;
@@ -31,11 +33,12 @@ import gwt.material.design.client.ui.MaterialToast;
 import javax.inject.Inject;
 
 public class TabsView extends ViewImpl implements TabsPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, TabsView> {
     }
 
     @UiField
-    MaterialTab tab2, eventTab;
+    MaterialTab tabBasic, tabIntro, tabSetIndex, tabIcons, tabIndicatorColor, tabControlWidth, tabEvents, tabGetIndex, tabFit;
 
     @Inject
     TabsView(Binder uiBinder) {
@@ -46,7 +49,25 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     protected void onAttach() {
         super.onAttach();
 
-        tab2.setTabIndex(1);
-        eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+        tabSetIndex.setTabIndex(1);
+        tabEvents.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+    }
+
+    @UiHandler("btnGetTabIndex")
+    void getTabIndex(ClickEvent e) {
+        MaterialToast.fireToast(tabGetIndex.getTabIndex() + "");
+    }
+
+    @Override
+    public void recalculateTabs() {
+        tabBasic.reinitialize();
+        tabIntro.reinitialize();
+        tabSetIndex.reinitialize();
+        tabIcons.reinitialize();
+        tabIndicatorColor.reinitialize();
+        tabControlWidth.reinitialize();
+        tabEvents.reinitialize();
+        tabGetIndex.reinitialize();
+        tabFit.reinitialize();
     }
 }
