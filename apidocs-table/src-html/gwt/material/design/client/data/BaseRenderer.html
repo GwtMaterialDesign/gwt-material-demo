@@ -278,26 +278,28 @@
 <span class="sourceLineNo">270</span>    public void setExpectedRowHeight(int expectedRowHeight) {<a name="line.270"></a>
 <span class="sourceLineNo">271</span>        if(expectedRowHeight &lt; 33) {<a name="line.271"></a>
 <span class="sourceLineNo">272</span>            logger.warning("Expected row height must be 33px or higher, setting row height to 33px.");<a name="line.272"></a>
-<span class="sourceLineNo">273</span>        }<a name="line.273"></a>
-<span class="sourceLineNo">274</span>        this.expectedRowHeight = expectedRowHeight;<a name="line.274"></a>
-<span class="sourceLineNo">275</span>    }<a name="line.275"></a>
-<span class="sourceLineNo">276</span><a name="line.276"></a>
-<span class="sourceLineNo">277</span>    @Override<a name="line.277"></a>
-<span class="sourceLineNo">278</span>    public void calculateRowHeight(RowComponent&lt;T&gt; row) {<a name="line.278"></a>
-<span class="sourceLineNo">279</span>        TableRow element = row.getElement();<a name="line.279"></a>
-<span class="sourceLineNo">280</span>        if(element != null) {<a name="line.280"></a>
-<span class="sourceLineNo">281</span>            int rowHeight = element.$this().outerHeight(true);<a name="line.281"></a>
-<span class="sourceLineNo">282</span>            if (rowHeight &gt; 0 &amp;&amp; rowHeight != calculatedRowHeight) {<a name="line.282"></a>
-<span class="sourceLineNo">283</span>                calculatedRowHeight = rowHeight;<a name="line.283"></a>
-<span class="sourceLineNo">284</span>            }<a name="line.284"></a>
-<span class="sourceLineNo">285</span>        }<a name="line.285"></a>
-<span class="sourceLineNo">286</span>    }<a name="line.286"></a>
-<span class="sourceLineNo">287</span><a name="line.287"></a>
-<span class="sourceLineNo">288</span>    @Override<a name="line.288"></a>
-<span class="sourceLineNo">289</span>    public int getCalculatedRowHeight() {<a name="line.289"></a>
-<span class="sourceLineNo">290</span>        return calculatedRowHeight;<a name="line.290"></a>
-<span class="sourceLineNo">291</span>    }<a name="line.291"></a>
-<span class="sourceLineNo">292</span>}<a name="line.292"></a>
+<span class="sourceLineNo">273</span>            this.expectedRowHeight = 33;<a name="line.273"></a>
+<span class="sourceLineNo">274</span>        } else {<a name="line.274"></a>
+<span class="sourceLineNo">275</span>            this.expectedRowHeight = expectedRowHeight;<a name="line.275"></a>
+<span class="sourceLineNo">276</span>        }<a name="line.276"></a>
+<span class="sourceLineNo">277</span>    }<a name="line.277"></a>
+<span class="sourceLineNo">278</span><a name="line.278"></a>
+<span class="sourceLineNo">279</span>    @Override<a name="line.279"></a>
+<span class="sourceLineNo">280</span>    public void calculateRowHeight(RowComponent&lt;T&gt; row) {<a name="line.280"></a>
+<span class="sourceLineNo">281</span>        TableRow element = row.getElement();<a name="line.281"></a>
+<span class="sourceLineNo">282</span>        if(element != null) {<a name="line.282"></a>
+<span class="sourceLineNo">283</span>            int rowHeight = element.$this().outerHeight(true);<a name="line.283"></a>
+<span class="sourceLineNo">284</span>            if (rowHeight &gt; 0 &amp;&amp; rowHeight != calculatedRowHeight) {<a name="line.284"></a>
+<span class="sourceLineNo">285</span>                calculatedRowHeight = rowHeight;<a name="line.285"></a>
+<span class="sourceLineNo">286</span>            }<a name="line.286"></a>
+<span class="sourceLineNo">287</span>        }<a name="line.287"></a>
+<span class="sourceLineNo">288</span>    }<a name="line.288"></a>
+<span class="sourceLineNo">289</span><a name="line.289"></a>
+<span class="sourceLineNo">290</span>    @Override<a name="line.290"></a>
+<span class="sourceLineNo">291</span>    public int getCalculatedRowHeight() {<a name="line.291"></a>
+<span class="sourceLineNo">292</span>        return calculatedRowHeight;<a name="line.292"></a>
+<span class="sourceLineNo">293</span>    }<a name="line.293"></a>
+<span class="sourceLineNo">294</span>}<a name="line.294"></a>
 
 
 

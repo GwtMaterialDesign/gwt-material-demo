@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>/*<a name="line.1"></a>
+<span class="sourceLineNo">002</span> * #%L<a name="line.2"></a>
+<span class="sourceLineNo">003</span> * GwtMaterial<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * %%<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * Copyright (C) 2015 - 2017 GwtMaterialDesign<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * %%<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * Licensed under the Apache License, Version 2.0 (the "License");<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * you may not use this file except in compliance with the License.<a name="line.8"></a>
+<span class="sourceLineNo">009</span> * You may obtain a copy of the License at<a name="line.9"></a>
+<span class="sourceLineNo">010</span> * <a name="line.10"></a>
+<span class="sourceLineNo">011</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * <a name="line.12"></a>
+<span class="sourceLineNo">013</span> * Unless required by applicable law or agreed to in writing, software<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.15"></a>
+<span class="sourceLineNo">016</span> * See the License for the specific language governing permissions and<a name="line.16"></a>
+<span class="sourceLineNo">017</span> * limitations under the License.<a name="line.17"></a>
+<span class="sourceLineNo">018</span> * #L%<a name="line.18"></a>
+<span class="sourceLineNo">019</span> */<a name="line.19"></a>
+<span class="sourceLineNo">020</span>package gwt.material.design.client.ui;<a name="line.20"></a>
+<span class="sourceLineNo">021</span><a name="line.21"></a>
+<span class="sourceLineNo">022</span>import com.google.web.bindery.event.shared.HandlerRegistration;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import gwt.material.design.client.base.HasShrinkableNavBarHandlers;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import gwt.material.design.client.constants.NavBarType;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import gwt.material.design.client.events.NavBarExpandEvent;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import gwt.material.design.client.events.NavBarShrinkEvent;<a name="line.26"></a>
+<span class="sourceLineNo">027</span><a name="line.27"></a>
+<span class="sourceLineNo">028</span>import static gwt.material.design.jquery.client.api.JQuery.$;<a name="line.28"></a>
+<span class="sourceLineNo">029</span><a name="line.29"></a>
+<span class="sourceLineNo">030</span>//@formatter:off<a name="line.30"></a>
+<span class="sourceLineNo">031</span><a name="line.31"></a>
+<span class="sourceLineNo">032</span>/**<a name="line.32"></a>
+<span class="sourceLineNo">033</span> * It's an extension to {@link MaterialNavBar} that provides<a name="line.33"></a>
+<span class="sourceLineNo">034</span> * a delightful shrink capabilities when scrolling the page content.<a name="line.34"></a>
+<span class="sourceLineNo">035</span> * &lt;p&gt;<a name="line.35"></a>
+<span class="sourceLineNo">036</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.36"></a>
+<span class="sourceLineNo">037</span> * &lt;pre&gt;<a name="line.37"></a>
+<span class="sourceLineNo">038</span> * {@code<a name="line.38"></a>
+<span class="sourceLineNo">039</span> * &lt;m:MaterialNavBarShrink backgroundColor="BLUE" &gt;<a name="line.39"></a>
+<span class="sourceLineNo">040</span> *     &lt;m:MaterialNavBrand href="#Test" position="LEFT"  text="Title" /&gt;<a name="line.40"></a>
+<span class="sourceLineNo">041</span> *     &lt;m:MaterialNavSection position="RIGHT"&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span> *         &lt;m:MaterialLink  iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account"  textColor="WHITE" waves="LIGHT"/&gt;<a name="line.42"></a>
+<span class="sourceLineNo">043</span> *         &lt;m:MaterialLink  iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span> *         &lt;m:MaterialLink  iconType="SEARCH" tooltip="Menu" textColor="WHITE" waves="LIGHT"/&gt;<a name="line.44"></a>
+<span class="sourceLineNo">045</span> *          &lt;m:MaterialLink  iconType="MORE_VERT" tooltip="Starter" textColor="WHITE" waves="LIGHT"/&gt;<a name="line.45"></a>
+<span class="sourceLineNo">046</span> *     &lt;/m:MaterialNavSection&gt;<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;/m:MaterialNavBar&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * }<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * &lt;pre&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * @author kevzlou7979<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * @author Ben Dol<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#navbar"&gt;Material Nav Bar&lt;/a&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * @see &lt;a href="https://material.io/guidelines/components/toolbars.html#"&gt;Material Design Specification&lt;/a&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * @see &lt;a href="https://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#navbar_shrink"&gt;Pattern Shrink&lt;/a&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> */<a name="line.55"></a>
+<span class="sourceLineNo">056</span>//@formatter:on<a name="line.56"></a>
+<span class="sourceLineNo">057</span>public class MaterialNavBarShrink extends MaterialNavBar implements HasShrinkableNavBarHandlers {<a name="line.57"></a>
+<span class="sourceLineNo">058</span><a name="line.58"></a>
+<span class="sourceLineNo">059</span>    private int offset = 300;<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public MaterialNavBarShrink() {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        super();<a name="line.62"></a>
+<span class="sourceLineNo">063</span>        setInitialClasses(NavBarType.SHRINK.getCssName());<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    }<a name="line.64"></a>
+<span class="sourceLineNo">065</span><a name="line.65"></a>
+<span class="sourceLineNo">066</span>    @Override<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    protected void build() {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        super.build();<a name="line.68"></a>
+<span class="sourceLineNo">069</span>        $("header").css("position", "fixed");<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        $("header").css("width", "100%");<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        final boolean[] fired = {false};<a name="line.71"></a>
+<span class="sourceLineNo">072</span>        window().off().on("scroll", (e, param1) -&gt; {<a name="line.72"></a>
+<span class="sourceLineNo">073</span>            int distanceY = window().scrollTop();<a name="line.73"></a>
+<span class="sourceLineNo">074</span><a name="line.74"></a>
+<span class="sourceLineNo">075</span>            if (distanceY &gt; offset) {<a name="line.75"></a>
+<span class="sourceLineNo">076</span>                $(getElement()).addClass("smaller");<a name="line.76"></a>
+<span class="sourceLineNo">077</span>                if (!fired[0]) {<a name="line.77"></a>
+<span class="sourceLineNo">078</span>                    NavBarShrinkEvent.fire(this);<a name="line.78"></a>
+<span class="sourceLineNo">079</span>                    fired[0] = true;<a name="line.79"></a>
+<span class="sourceLineNo">080</span>                }<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            } else {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>                if ($(getElement()).hasClass("smaller")) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>                    $(getElement()).removeClass("smaller");<a name="line.83"></a>
+<span class="sourceLineNo">084</span>                    NavBarExpandEvent.fire(this);<a name="line.84"></a>
+<span class="sourceLineNo">085</span>                    fired[0] = false;<a name="line.85"></a>
+<span class="sourceLineNo">086</span>                }<a name="line.86"></a>
+<span class="sourceLineNo">087</span>            }<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            return true;<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        });<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    }<a name="line.90"></a>
+<span class="sourceLineNo">091</span><a name="line.91"></a>
+<span class="sourceLineNo">092</span>    @Override<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    public HandlerRegistration addExpandHandler(NavBarExpandEvent.NavBarExpandHandler handler) {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        return addHandler(handler, NavBarExpandEvent.TYPE);<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    }<a name="line.95"></a>
+<span class="sourceLineNo">096</span><a name="line.96"></a>
+<span class="sourceLineNo">097</span>    @Override<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    public HandlerRegistration addShrinkHandler(NavBarShrinkEvent.NavBarShrinkHandler handler) {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        return addHandler(handler, NavBarShrinkEvent.TYPE);<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
+<span class="sourceLineNo">101</span><a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public int getOffset() {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        return offset;<a name="line.103"></a>
+<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
+<span class="sourceLineNo">105</span><a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public void setOffset(int offset) {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        this.offset = offset;<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span>}<a name="line.109"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

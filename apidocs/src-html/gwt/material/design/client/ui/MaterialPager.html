@@ -96,7 +96,7 @@
 <span class="sourceLineNo">088</span>        initialize();<a name="line.88"></a>
 <span class="sourceLineNo">089</span>    }<a name="line.89"></a>
 <span class="sourceLineNo">090</span><a name="line.90"></a>
-<span class="sourceLineNo">091</span>    private void initialize() {<a name="line.91"></a>
+<span class="sourceLineNo">091</span>    protected void initialize() {<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        if (!calcInitialized) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>            calcTotalPages = total / pageSize + (((double) total % (double) pageSize) &gt; 0 ? 1 : 0);<a name="line.93"></a>
 <span class="sourceLineNo">094</span><a name="line.94"></a>
@@ -373,7 +373,11 @@
 <span class="sourceLineNo">365</span>            }<a name="line.365"></a>
 <span class="sourceLineNo">366</span>        }<a name="line.366"></a>
 <span class="sourceLineNo">367</span>    }<a name="line.367"></a>
-<span class="sourceLineNo">368</span>}<a name="line.368"></a>
+<span class="sourceLineNo">368</span><a name="line.368"></a>
+<span class="sourceLineNo">369</span>    public MaterialChip getIndicator() {<a name="line.369"></a>
+<span class="sourceLineNo">370</span>        return indicator;<a name="line.370"></a>
+<span class="sourceLineNo">371</span>    }<a name="line.371"></a>
+<span class="sourceLineNo">372</span>}<a name="line.372"></a>
 
 
 

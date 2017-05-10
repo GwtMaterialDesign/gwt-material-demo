@@ -83,58 +83,50 @@
 <span class="sourceLineNo">075</span>    }<a name="line.75"></a>
 <span class="sourceLineNo">076</span><a name="line.76"></a>
 <span class="sourceLineNo">077</span>    @Override<a name="line.77"></a>
-<span class="sourceLineNo">078</span>    protected void onLoad() {<a name="line.78"></a>
-<span class="sourceLineNo">079</span>        super.onLoad();<a name="line.79"></a>
-<span class="sourceLineNo">080</span><a name="line.80"></a>
-<span class="sourceLineNo">081</span>        if (getName() != null) {<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            initialize();<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        }<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    /**<a name="line.86"></a>
-<span class="sourceLineNo">087</span>     * Get the name of the avatar.<a name="line.87"></a>
-<span class="sourceLineNo">088</span>     */<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    public String getName() {<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        return name;<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
-<span class="sourceLineNo">092</span><a name="line.92"></a>
-<span class="sourceLineNo">093</span>    /**<a name="line.93"></a>
-<span class="sourceLineNo">094</span>     * Set the name of the avatar and hashed it using md5 js library to<a name="line.94"></a>
-<span class="sourceLineNo">095</span>     * pass it into jdenticon avatar process.<a name="line.95"></a>
-<span class="sourceLineNo">096</span>     */<a name="line.96"></a>
-<span class="sourceLineNo">097</span>    public void setName(String name) {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        this.name = name;<a name="line.98"></a>
-<span class="sourceLineNo">099</span>    }<a name="line.99"></a>
-<span class="sourceLineNo">100</span><a name="line.100"></a>
-<span class="sourceLineNo">101</span>    @Override<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    public void setWidth(String width) {<a name="line.102"></a>
-<span class="sourceLineNo">103</span>        getElement().setAttribute("width", width);<a name="line.103"></a>
-<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
-<span class="sourceLineNo">105</span><a name="line.105"></a>
-<span class="sourceLineNo">106</span>    @Override<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    public void setHeight(String height) {<a name="line.107"></a>
-<span class="sourceLineNo">108</span>        getElement().setAttribute("height", height);<a name="line.108"></a>
-<span class="sourceLineNo">109</span>    }<a name="line.109"></a>
-<span class="sourceLineNo">110</span><a name="line.110"></a>
-<span class="sourceLineNo">111</span>    /**<a name="line.111"></a>
-<span class="sourceLineNo">112</span>     * Generate hash code - needed by jdenticon to generate avatar.<a name="line.112"></a>
-<span class="sourceLineNo">113</span>     */<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    protected String generateHashCode(String value) {<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        return JsAvatar.md5(value);<a name="line.115"></a>
-<span class="sourceLineNo">116</span>    }<a name="line.116"></a>
-<span class="sourceLineNo">117</span><a name="line.117"></a>
-<span class="sourceLineNo">118</span>    /**<a name="line.118"></a>
-<span class="sourceLineNo">119</span>     * Initialize the avatar process - useful when trying to update your avatar<a name="line.119"></a>
-<span class="sourceLineNo">120</span>     */<a name="line.120"></a>
-<span class="sourceLineNo">121</span>    public void initialize() {<a name="line.121"></a>
-<span class="sourceLineNo">122</span>        getElement().setAttribute("data-jdenticon-hash", generateHashCode(getName()));<a name="line.122"></a>
-<span class="sourceLineNo">123</span>        update();<a name="line.123"></a>
-<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
-<span class="sourceLineNo">125</span><a name="line.125"></a>
-<span class="sourceLineNo">126</span>    protected void update() {<a name="line.126"></a>
-<span class="sourceLineNo">127</span>        JsAvatar.jdenticon();<a name="line.127"></a>
-<span class="sourceLineNo">128</span>    }<a name="line.128"></a>
-<span class="sourceLineNo">129</span>}<a name="line.129"></a>
+<span class="sourceLineNo">078</span>    protected void initialize() {<a name="line.78"></a>
+<span class="sourceLineNo">079</span>        if (getName() != null) {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            getElement().setAttribute("data-jdenticon-hash", generateHashCode(getName()));<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            JsAvatar.jdenticon();<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        }<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span>    @Override<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    public void reinitialize() {<a name="line.86"></a>
+<span class="sourceLineNo">087</span>        initialize();<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    }<a name="line.88"></a>
+<span class="sourceLineNo">089</span><a name="line.89"></a>
+<span class="sourceLineNo">090</span>    /**<a name="line.90"></a>
+<span class="sourceLineNo">091</span>     * Get the name of the avatar.<a name="line.91"></a>
+<span class="sourceLineNo">092</span>     */<a name="line.92"></a>
+<span class="sourceLineNo">093</span>    public String getName() {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        return name;<a name="line.94"></a>
+<span class="sourceLineNo">095</span>    }<a name="line.95"></a>
+<span class="sourceLineNo">096</span><a name="line.96"></a>
+<span class="sourceLineNo">097</span>    /**<a name="line.97"></a>
+<span class="sourceLineNo">098</span>     * Set the name of the avatar and hashed it using md5 js library to<a name="line.98"></a>
+<span class="sourceLineNo">099</span>     * pass it into jdenticon avatar process.<a name="line.99"></a>
+<span class="sourceLineNo">100</span>     */<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    public void setName(String name) {<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        this.name = name;<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    }<a name="line.103"></a>
+<span class="sourceLineNo">104</span><a name="line.104"></a>
+<span class="sourceLineNo">105</span>    @Override<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public void setWidth(String width) {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        getElement().setAttribute("width", width);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span><a name="line.109"></a>
+<span class="sourceLineNo">110</span>    @Override<a name="line.110"></a>
+<span class="sourceLineNo">111</span>    public void setHeight(String height) {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        getElement().setAttribute("height", height);<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    /**<a name="line.115"></a>
+<span class="sourceLineNo">116</span>     * Generate hash code - needed by jdenticon to generate avatar.<a name="line.116"></a>
+<span class="sourceLineNo">117</span>     */<a name="line.117"></a>
+<span class="sourceLineNo">118</span>    protected String generateHashCode(String value) {<a name="line.118"></a>
+<span class="sourceLineNo">119</span>        return JsAvatar.md5(value);<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
+<span class="sourceLineNo">121</span>}<a name="line.121"></a>
 
 
 

@@ -164,14 +164,14 @@
 <span class="sourceLineNo">156</span>    /**<a name="line.156"></a>
 <span class="sourceLineNo">157</span>     * Check whether there are excess rows to be rendered with given limit<a name="line.157"></a>
 <span class="sourceLineNo">158</span>     */<a name="line.158"></a>
-<span class="sourceLineNo">159</span>    protected boolean isExcess() {<a name="line.159"></a>
+<span class="sourceLineNo">159</span>    public boolean isExcess() {<a name="line.159"></a>
 <span class="sourceLineNo">160</span>        return totalRows % limit &gt; 0;<a name="line.160"></a>
 <span class="sourceLineNo">161</span>    }<a name="line.161"></a>
 <span class="sourceLineNo">162</span><a name="line.162"></a>
 <span class="sourceLineNo">163</span>    /**<a name="line.163"></a>
 <span class="sourceLineNo">164</span>     * Check whether the pager is on the last currentPage.<a name="line.164"></a>
 <span class="sourceLineNo">165</span>     */<a name="line.165"></a>
-<span class="sourceLineNo">166</span>    protected boolean isLastPage() {<a name="line.166"></a>
+<span class="sourceLineNo">166</span>    public boolean isLastPage() {<a name="line.166"></a>
 <span class="sourceLineNo">167</span>        return currentPage == (totalRows / limit) + 1;<a name="line.167"></a>
 <span class="sourceLineNo">168</span>    }<a name="line.168"></a>
 <span class="sourceLineNo">169</span><a name="line.169"></a>
@@ -242,7 +242,7 @@
 <span class="sourceLineNo">234</span>        iconNext.setEnabled(true);<a name="line.234"></a>
 <span class="sourceLineNo">235</span>        iconPrev.setEnabled(true);<a name="line.235"></a>
 <span class="sourceLineNo">236</span><a name="line.236"></a>
-<span class="sourceLineNo">237</span>        if (isLastPage() || currentPage == (totalRows / limit)) {<a name="line.237"></a>
+<span class="sourceLineNo">237</span>        if (!isNext()) {<a name="line.237"></a>
 <span class="sourceLineNo">238</span>            iconNext.setEnabled(false);<a name="line.238"></a>
 <span class="sourceLineNo">239</span>        }<a name="line.239"></a>
 <span class="sourceLineNo">240</span><a name="line.240"></a>
@@ -266,7 +266,23 @@
 <span class="sourceLineNo">258</span>    public void setDataSource(DataSource&lt;T&gt; dataSource) {<a name="line.258"></a>
 <span class="sourceLineNo">259</span>        this.dataSource = dataSource;<a name="line.259"></a>
 <span class="sourceLineNo">260</span>    }<a name="line.260"></a>
-<span class="sourceLineNo">261</span>}<a name="line.261"></a>
+<span class="sourceLineNo">261</span><a name="line.261"></a>
+<span class="sourceLineNo">262</span>    public int getOffset() {<a name="line.262"></a>
+<span class="sourceLineNo">263</span>        return offset;<a name="line.263"></a>
+<span class="sourceLineNo">264</span>    }<a name="line.264"></a>
+<span class="sourceLineNo">265</span><a name="line.265"></a>
+<span class="sourceLineNo">266</span>    public int getLimit() {<a name="line.266"></a>
+<span class="sourceLineNo">267</span>        return limit;<a name="line.267"></a>
+<span class="sourceLineNo">268</span>    }<a name="line.268"></a>
+<span class="sourceLineNo">269</span><a name="line.269"></a>
+<span class="sourceLineNo">270</span>    public int getTotalRows() {<a name="line.270"></a>
+<span class="sourceLineNo">271</span>        return totalRows;<a name="line.271"></a>
+<span class="sourceLineNo">272</span>    }<a name="line.272"></a>
+<span class="sourceLineNo">273</span><a name="line.273"></a>
+<span class="sourceLineNo">274</span>    public int[] getLimitOptions() {<a name="line.274"></a>
+<span class="sourceLineNo">275</span>        return limitOptions;<a name="line.275"></a>
+<span class="sourceLineNo">276</span>    }<a name="line.276"></a>
+<span class="sourceLineNo">277</span>}<a name="line.277"></a>
 
 
 
