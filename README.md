@@ -1,6 +1,6 @@
 <img src="http://i.imgur.com/EL4vCgx.png"/>
 
-#gwt-material-demo
+# gwt-material-demo
  
 [![Build Status](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo.svg?branch=master)](https://travis-ci.org/GwtMaterialDesign/gwt-material-demo)
 
