@@ -26,6 +26,10 @@ nav{
     width: calc(100% - 240px);
 }
 
+nav .button-collapse i {
+    font-size: 24px !important;
+}
+
 /* Styles for Affix/sidebar shamelessly copied from http://getbootstrap.com/assets/css/docs.css */
 
 /* By default it's not affixed in mobile views, so undo that */
@@ -86,6 +90,11 @@ nav{
     }
     .panel {
         padding: 0px !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    header {
+        width: 100% !important;
     }
 }
 /* Tablets and up */
