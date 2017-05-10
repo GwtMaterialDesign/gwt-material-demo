@@ -53,6 +53,7 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
+        versions.add(new Version("2.0-rc5", "May 2017", Version.VersionLink.CORE_2_0_RC5.getName(), Version.VersionLink.ADDINS_2_0_RC5.getName(), Version.VersionLink.THEME_2_0_RC5.getName(), Version.VersionLink.JQUERY_2_0_RC5.getName(), Version.VersionLink.TABLE_2_0_RC5.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc4", "March 2017", Version.VersionLink.CORE_2_0_RC4.getName(), Version.VersionLink.ADDINS_2_0_RC4.getName(), Version.VersionLink.THEME_2_0_RC4.getName(), Version.VersionLink.JQUERY_1_0_RC4.getName(), Version.VersionLink.TABLE_1_0_RC4.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc3", "November 2016", Version.VersionLink.CORE_2_0_RC3.getName(), Version.VersionLink.ADDINS_2_0_RC3.getName(), Version.VersionLink.THEME_2_0_RC3.getName(), Version.VersionLink.JQUERY_1_0_RC3.getName(), Version.VersionLink.TABLE_1_0_RC3.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc3", "November 2016", Version.VersionLink.CORE_2_0_RC3.getName(), Version.VersionLink.ADDINS_2_0_RC3.getName(), Version.VersionLink.THEME_2_0_RC3.getName(), Version.VersionLink.JQUERY_1_0_RC3.getName(), Version.VersionLink.TABLE_1_0_RC3.getName(), Color.GREEN));
