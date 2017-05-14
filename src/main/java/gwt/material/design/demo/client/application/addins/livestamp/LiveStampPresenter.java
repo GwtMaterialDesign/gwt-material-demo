@@ -53,6 +53,6 @@ public class LiveStampPresenter extends Presenter<LiveStampPresenter.MyView, Liv
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Live Stamp", "The livestamp will update automatically as time goes by", "addins/menubar/LiveStampView", this);
+        SetPageTitleEvent.fire("Live Stamp", "The livestamp will update automatically as time goes by", "addins/menubar/LiveStampView", null, this);
     }
 }

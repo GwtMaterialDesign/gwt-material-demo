@@ -53,6 +53,6 @@ public class InputMaskPresenter extends Presenter<InputMaskPresenter.MyView, Inp
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Input Mask", "An inputmask helps the user with the input by ensuring a predefined format. This can be useful for dates, numerics, phone numbers etc...", "addins/inputmask/InputMask", this);
+        SetPageTitleEvent.fire("Input Mask", "An inputmask helps the user with the input by ensuring a predefined format. This can be useful for dates, numerics, phone numbers etc...", "addins/inputmask/InputMask",null, this);
     }
 }

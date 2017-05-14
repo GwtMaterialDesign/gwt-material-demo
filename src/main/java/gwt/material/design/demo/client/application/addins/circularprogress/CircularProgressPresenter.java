@@ -52,7 +52,7 @@ public class CircularProgressPresenter extends Presenter<CircularProgressPresent
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Circular Progress", "", "addins/circularprogress/CircularProgressView", this);
+        SetPageTitleEvent.fire("Circular Progress", "", "addins/circularprogress/CircularProgressView", null, this);
     }
 }
 
