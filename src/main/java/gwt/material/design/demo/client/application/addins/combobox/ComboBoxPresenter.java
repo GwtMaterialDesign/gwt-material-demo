@@ -52,7 +52,7 @@ public class ComboBoxPresenter extends Presenter<ComboBoxPresenter.MyView, Combo
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("ComboBox", "Material ComboBox gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.", "addins/combobox/ComboBoxView", this);
+        SetPageTitleEvent.fire("ComboBox", "Material ComboBox gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options.", "addins/combobox/ComboBoxView", "", this);
     }
 }
 

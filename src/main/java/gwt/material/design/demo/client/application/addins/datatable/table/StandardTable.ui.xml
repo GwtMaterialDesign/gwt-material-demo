@@ -35,18 +35,16 @@
       <m:MaterialColumn grid="s12 l3" marginTop="28">
         <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="true" text="With Row Expansion"/>
       </m:MaterialColumn>
-      <ma:combobox.MaterialComboBox grid="s12 l3" ui:field="listSelectionType" hideSearch="false" label="Selection Type">
-        <m:html.Option text="NONE" />
-        <m:html.Option text="SINGLE" />
-        <m:html.Option text="MULTIPLE" />
-      </ma:combobox.MaterialComboBox>
+      <ma:combobox.MaterialComboBox grid="s12 l3" ui:field="listSelectionType" hideSearch="false" label="Selection Type" />
     </m:MaterialRow>
     <m.table:MaterialDataTable ui:field="table"
                                shadow="1"
+                               rowHeight="60"
                                height="calc(100vh - 131px)"
                                useStickyHeader="true"
                                useCategories="true"
                                useRowExpansion="true"
                                selectionType="SINGLE"/>
+
   </g:HTMLPanel>
 </ui:UiBinder>

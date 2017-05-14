@@ -53,6 +53,7 @@ public class DataHelper {
 
     public static List<Version> getAllVersions() {
         List<Version> versions = new ArrayList<>();
+        versions.add(new Version("2.0-rc5", "May 2017", Version.VersionLink.CORE_2_0_RC5.getName(), Version.VersionLink.ADDINS_2_0_RC5.getName(), Version.VersionLink.THEME_2_0_RC5.getName(), Version.VersionLink.JQUERY_2_0_RC5.getName(), Version.VersionLink.TABLE_2_0_RC5.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc4", "March 2017", Version.VersionLink.CORE_2_0_RC4.getName(), Version.VersionLink.ADDINS_2_0_RC4.getName(), Version.VersionLink.THEME_2_0_RC4.getName(), Version.VersionLink.JQUERY_1_0_RC4.getName(), Version.VersionLink.TABLE_1_0_RC4.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc3", "November 2016", Version.VersionLink.CORE_2_0_RC3.getName(), Version.VersionLink.ADDINS_2_0_RC3.getName(), Version.VersionLink.THEME_2_0_RC3.getName(), Version.VersionLink.JQUERY_1_0_RC3.getName(), Version.VersionLink.TABLE_1_0_RC3.getName(), Color.GREEN));
         versions.add(new Version("2.0-rc3", "November 2016", Version.VersionLink.CORE_2_0_RC3.getName(), Version.VersionLink.ADDINS_2_0_RC3.getName(), Version.VersionLink.THEME_2_0_RC3.getName(), Version.VersionLink.JQUERY_1_0_RC3.getName(), Version.VersionLink.TABLE_1_0_RC3.getName(), Color.GREEN));
@@ -78,10 +79,12 @@ public class DataHelper {
 
     public static List<Apps> getAllApps() {
         List<Apps> apps = new ArrayList<>();
+        apps.add(new Apps("Take It", "Andrey Kurbanov", "https://lh4.googleusercontent.com/-U1vyJFhSQ1c/AAAAAAAAAAI/AAAAAAAABxk/DfJoe_JD2Fo/w80-h80/photo.jpg", "https://derzhika.ru/", "http://i.imgur.com/n1dSMgL.jpg", Color.DEEP_ORANGE));
         apps.add(new Apps("gwt-material-channel", "kevzlou7979", "https://avatars1.githubusercontent.com/u/3138071?v=3&s=30", "http://gwt-material-channel.appspot.com/", "http://i.imgur.com/3ROA1Bz.png", Color.RED));
         apps.add(new Apps("Feel Vision", "gilberto", "https://avatars1.githubusercontent.com/gilberto-torrezan?v=3&s=30", "https://feel-vision.appspot.com", "http://i.imgur.com/G37VTJj.png", Color.GREEN));
-        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://managemy.net/money/login.html", "http://i.imgur.com/w9UVW2H.png", Color.BLUE));
-        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://tripwego-gwt-material.appspot.com/", "http://i.imgur.com/BkWWPFr.png", Color.BLACK));
+        apps.add(new Apps("My Money", "Werner Kok", "https://avatars1.githubusercontent.com/wkok?v=3&s=30", "https://appadvice.com/app/my-money-expense-tracker/1073455420", "http://i.imgur.com/w9UVW2H.png", Color.BLUE));
+        apps.add(new Apps("TripWeGo", "Julien Guibert", "https://avatars2.githubusercontent.com/guibertjulien?v=3&s=128", "http://www.tripwego.com/", "http://i.imgur.com/BkWWPFr.png", Color.BLACK));
+        apps.add(new Apps("Follow Chess", "Asim Pereira", "https://lh3.googleusercontent.com/-nLDflwTMqQY/AAAAAAAAAAI/AAAAAAAAG7U/7CowZmu0Tbg/s60-p-rw-no/photo.jpg", "https://live.followchess.com/", "http://i.imgur.com/50i7vZq.png", Color.ORANGE));
         return apps;
     }
 

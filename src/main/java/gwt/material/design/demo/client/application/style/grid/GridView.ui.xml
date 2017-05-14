@@ -195,5 +195,12 @@
         &lt;m:MaterialDivider/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="NEW TOOL" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
+      <m:MaterialTitle title="Resizer" description="An interactive viewer that helps designers test material design breakpoints across desktop, mobile, and tablet." />
+      <g:Frame url="https://material.io/resizer/" width="100%" height="700px" />
+    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

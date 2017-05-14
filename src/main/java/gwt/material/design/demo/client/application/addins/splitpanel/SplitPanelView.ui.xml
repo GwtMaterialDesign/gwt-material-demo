@@ -94,6 +94,9 @@
                     <m:MaterialTitle textAlign="CENTER" title="Right Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
             </ma:splitpanel.MaterialSplitPanel>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Horizontal Thichness" description="You can also set the horizontal bar thickness of your split panel."/>
             <ma:splitpanel.MaterialSplitPanel axis="VERTICAL" thickness="12" backgroundColor="BLUE" height="500px">
                 <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2">

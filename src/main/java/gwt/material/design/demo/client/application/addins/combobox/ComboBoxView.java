@@ -38,6 +38,7 @@ import gwt.material.design.demo.client.application.dto.TimeZone;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
@@ -91,7 +92,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         addItemsWithoutGroup(comboCloseOnSelect);
 
         comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
-            MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+            MaterialToast.fireToast("Event: ValueChange State : " + comboTimeZone8.getSingleValue().getName() + " Value: " + comboTimeZone8.getSingleValue().getValue());
         });
 
         comboTimeZone8_1.addValueChangeHandler(valueChangeEvent -> {
@@ -100,14 +101,18 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
             }
         });
 
-        comboTimeZone9.addValueChangeHandler(valueChangeEvent -> {
-            MaterialToast.fireToast("Event: Select State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());
+        comboTimeZone9.addSelectionHandler(selectionEvent -> {
+            MaterialToast.fireToast("Event: Select State : " + comboTimeZone9.getSingleValue().getName() + " Value: " +  comboTimeZone9.getSingleValue().getValue());
         });
 
-        comboTimeZone9_1.addValueChangeHandler(valueChangeEvent -> {
-            for(State state : comboTimeZone9_1.getSelectedValues()) {
-                MaterialToast.fireToast("Event: ValueChange State : " + state.getName() + " Value: " + state.getValue());
+        comboTimeZone9_1.addSelectionHandler(selectionEvent -> {
+            for (State state : selectionEvent.getSelectedValues()) {
+                MaterialToast.fireToast("Event: Select State : " + state.getName() + " Value: " + state.getValue());
             }
+        });
+
+        comboValue.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Value : " + comboValue.getSingleValue().getName());
         });
 
         comboTimeZone10.addOpenHandler(openEvent -> {
@@ -119,7 +124,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         });
 
         comboTimeZone11.addRemoveItemHandler(event -> {
-            MaterialToast.fireToast("Removed: " + event.getTarget().getName());
+            MaterialToast.fireToast("Removed: " + event.getSelectedValues());
         });
     }
 
@@ -168,7 +173,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     @UiHandler("btnGetValue")
     void onGetValue(ClickEvent e) {
-        MaterialToast.fireToast(comboTimeZone12.getSelectedValue().getName());
+        MaterialToast.fireToast(comboTimeZone12.getSingleValue().getName());
     }
 
     @UiHandler("btnGetValues")
@@ -181,7 +186,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     @UiHandler("btnSetValue")
     void onSetCalifornia(ClickEvent e) {
         State california = comboTimeZone13.getValues().get(2);
-        comboTimeZone13.setValue(california);
+        comboTimeZone13.setSingleValue(california);
     }
 
     @UiHandler("btnSetValues")
@@ -195,24 +200,19 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         comboTimeZone14.setEnabled(false);
     }
 
-    @UiHandler("comboValue")
-    void onComboValue(ValueChangeEvent<State> e) {
-        MaterialToast.fireToast("Value : " + e.getValue().getName());
-    }
-
     @UiHandler("btnComboValue")
     void onClickComboValue(ClickEvent e) {
-        comboValue.setValue(comboValue.getValues().get(2), false);
+        comboValue.setSingleValue(comboValue.getValues().get(2), false);
     }
 
     @UiHandler("btnComboValueEvent")
     void onComboValueEvent(ClickEvent e) {
-        comboValue.setValue(comboValue.getValues().get(0), true);
+        comboValue.setSingleValue(comboValue.getValues().get(0), true);
     }
 
     @UiHandler("btnGetValue2")
     void onGetValue2(ClickEvent e) {
-        MaterialToast.fireToast(comboTimeZone13.getSelectedValue().getName());
+        MaterialToast.fireToast(comboTimeZone13.getSingleValue().getName());
     }
 
     @UiHandler("btnGetValues2")
@@ -236,7 +236,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     void onAddOption(ClickEvent e) {
         State newState = new State("Item " + dynamicIndex, "I" + dynamicIndex);
         comboTimeZone16.addItem(newState.getName(), newState);
-        comboTimeZone16.setValue(newState);
+        comboTimeZone16.setSingleValue(newState);
         dynamicIndex ++;
     }
 

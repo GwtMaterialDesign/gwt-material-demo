@@ -216,7 +216,7 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Limit" description="You can set the item limit on multiple combobox."/>
-                <combobox:MaterialComboBox closeOnSelect="false" multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
+                <combobox:MaterialComboBox closeOnSelect="true" multiple="true" limit="2" placeholder="Time Zone" ui:field="comboTimeZone7" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
@@ -245,8 +245,19 @@
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
-                    &emsp;comboTimeZone8.addValueChangeHandler(valueChangeEvent -> { <br/>
-                    &emsp;MaterialToast.fireToast("Event: ValueChange State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());<br/>
+                    &emsp;// For Single Selection<br/>
+                    comboTimeZone8.addValueChangeHandler(valueChangeEvent -> { <br/>
+                    &emsp;MaterialToast.fireToast("Event: ValueChange State : " + comboTimeZone8.getSingleValue().getName() + " Value: " + valueChangeEvent.getSingleValue().getValue());<br/>
+                    });
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="s12">
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;// For Multiple Selection<br/>
+                    &emsp;comboTimeZone8_1.addValueChangeHandler(valueChangeEvent -> { <br/>
+                    &emsp;&emsp;for(State state : comboTimeZone8_1.getSelectedValues()) {<br/>
+                    &emsp;&emsp;&emsp;MaterialToast.fireToast("Event: ValueChange State : " + state.getName() + " Value: " + state.getValue());<br/>
+                    &emsp;&emsp;}<br/>
                     });
                 </demo:PrettyPre>
             </m:MaterialColumn>
@@ -260,8 +271,19 @@
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
-                    &emsp;comboTimeZone9.addValueChangeHandler(valueChangeEvent -> { <br/>
-                    &emsp;MaterialToast.fireToast("Event: Select State : " + valueChangeEvent.getValue().getName() + " Value: " + valueChangeEvent.getValue().getValue());<br/>
+                    //For Single Selection <br/>
+                    comboTimeZone9.addSelectionHandler(selectionEvent -> {<br/>
+                    &emsp;MaterialToast.fireToast("Event: Select State : " + comboTimeZone9.getSingleValue().getName() + " Value: " +  comboTimeZone9.getSingleValue().getValue());<br/>
+                    });
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="s12">
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;//For Multiple Selection <br/>
+                    comboTimeZone9_1.addSelectionHandler(selectionEvent -> {<br/>
+                    &emsp;for (State state : selectionEvent.getSelectedValues()) {<br/>
+                    &emsp;&emsp;MaterialToast.fireToast("Event: Select State : " + state.getName() + " Value: " + state.getValue());<br/>
+                    &emsp;}<br/>
                     });
                 </demo:PrettyPre>
             </m:MaterialColumn>
@@ -302,7 +324,7 @@
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// For simple combobox<br/>
-                    combobox.getSelectedValues()
+                    combobox.getSingleValue() // Returns single value
                 </demo:PrettyPre>
             </m:MaterialColumn>
             <m:MaterialColumn grid="l6 m6 s12">
@@ -312,7 +334,7 @@
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// For multiple combobox<br/>
-                    combobox.getSelectedValues()
+                    combobox.getSelectedValues() // Returns lists of values
                 </demo:PrettyPre>
             </m:MaterialColumn>
         </m:MaterialRow>
@@ -326,8 +348,9 @@
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-java">
-                    &emsp;State california = comboTimeZone.getValues().get(2);<br/>
-                    comboTimeZone.setValue(california);
+                    &emsp;// For Single Selection<br/>
+                    State california = comboTimeZone13.getValues().get(2);<br/>
+                    combo.setSingleValue(california);
                 </demo:PrettyPre>
             </m:MaterialColumn>
 
@@ -358,10 +381,10 @@
             <m:MaterialButton text="Set Value with Event" ui:field="btnComboValueEvent" />
             <demo:PrettyPre addStyleNames="lang-java">
                 // Will not fire an event<br/>
-                comboValue.setValue(comboValue.getValues().get(2));<br/>
-                comboValue.setValue(comboValue.getValues().get(2), false);<br/><br/>
+                comboValue.setSingleValue(comboValue.getValues().get(2));<br/>
+                comboValue.setSingleValue(comboValue.getValues().get(2), false);<br/><br/>
                 // Will fire an event<br/>
-                comboValue.setValue(comboValue.getValues().get(0), true);<br/>
+                comboValue.setSingleValue(comboValue.getValues().get(0), true);<br/>
             </demo:PrettyPre>
         </m:MaterialRow>
 
@@ -395,7 +418,7 @@
                     State newState = new State("Item " + dynamicIndex, "I" + dynamicIndex);<br/>
                     comboTimeZone16.addItem(newState.getName(), newState);<br/>
                     comboTimeZone16.initialize();<br/>
-                    comboTimeZone16.setValue(newState);<br/>
+                    comboTimeZone16.setSingleValue(newState);<br/>
                     dynamicIndex ++;
                 </demo:PrettyPre>
             </m:MaterialColumn>

@@ -96,6 +96,53 @@
         &lt;/m:MaterialSlider><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Material Slider : Options" description="You can set the duration / interval in milliseconds of Material Slider easily."/>
+
+      <m:MaterialSlider duration="300" interval="1000">
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
+          <m:MaterialSlideCaption textAlign="LEFT">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
+          <m:MaterialSlideCaption textAlign="RIGHT">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+
+        <m:MaterialSlideItem>
+          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
+          <m:MaterialSlideCaption textAlign="CENTER">
+            <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
+          </m:MaterialSlideCaption>
+        </m:MaterialSlideItem>
+      </m:MaterialSlider>
+
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &lt;m:MaterialSlider ui:field="slider" duration="300" interval="1000"><br/><br/>
+        &emsp;&lt;m:MaterialSlideItem><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
+        &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
+        &emsp;&lt;/m:MaterialSlideItem><br/>
+        &emsp;&lt;--Other Items here --><br/><br/>
+        &lt;/m:MaterialSlider><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Material Slider Fullscreen" description="Just add fullscreen='true' on MaterialSlide to make the slider fullscreen"/>

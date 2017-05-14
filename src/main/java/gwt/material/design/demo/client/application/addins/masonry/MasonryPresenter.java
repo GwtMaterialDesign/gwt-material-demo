@@ -52,7 +52,7 @@ public class MasonryPresenter extends Presenter<MasonryPresenter.MyView, Masonry
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Masonry", "Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. ", "addins/masonry/MasonryView", this);
+        SetPageTitleEvent.fire("Masonry", "Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall. ", "addins/masonry/MasonryView", "", this);
     }
 
 }

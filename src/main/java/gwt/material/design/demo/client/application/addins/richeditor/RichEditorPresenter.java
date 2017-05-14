@@ -53,7 +53,7 @@ public class RichEditorPresenter extends Presenter<RichEditorPresenter.MyView, R
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Rich Editor", "Provides a great Rich Editor with amazing options built with Material Design Look and Feel.", "addins/richeditor/RichEditorView", this);
+        SetPageTitleEvent.fire("Rich Editor", "Provides a great Rich Editor with amazing options built with Material Design Look and Feel.", "addins/richeditor/RichEditorView", "", this);
     }
 
 }

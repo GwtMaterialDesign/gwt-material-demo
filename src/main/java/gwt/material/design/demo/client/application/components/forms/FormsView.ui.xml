@@ -115,8 +115,7 @@
         &lt;!-- Double box --><br/>
         &lt;m:MaterialDoubleBox ui:field="txtDoubleBox" label="Double value"/><br/>
         &lt;!-- Long Box --><br/>
-        &lt;m:MaterialLongBox ui:field="txtLongBox" label="Long value"/><br/><br/><br/>
-        
+        &lt;m:MaterialLongBox ui:field="txtLongBox" label="Long value"/><br/><br/>
         <!-- Java Usage -->
         txtFloatBox.setValue(1000.25f);<br/>
         txtIntegerBox.setValue(10);<br/>
@@ -175,32 +174,38 @@
       <m:MaterialTextBox ui:field="txtBoxValue" text="Some Value" label="TextBox" grid="s12"/>
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextBoxValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextBoxValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextBoxValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextBoxGetValue" />
       </m:MaterialRow>
       <m:MaterialTextArea ui:field="txtAreaValue" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam mauris, accumsan placerat lectus ac, tincidunt mattis nisl. Ut efficitur massa in libero gravida tincidunt. Vestibulum eget massa eget ex auctor tempus. Aenean vitae augue euismod, lacinia lectus ut, rhoncus enim. Sed vitae laoreet felis, eget ullamcorper nunc. Vivamus elit urna, varius et arcu vel, euismod auctor augue. Praesent scelerisque scelerisque libero sit amet euismod. Mauris eu est at felis feugiat tincidunt eu vel lectus. Ut pretium magna vitae massa sollicitudin, eu tincidunt sapien scelerisque. Maecenas gravida lorem non dui pretium, id vestibulum mi imperdiet. Fusce facilisis, dui nec ultrices molestie, nisi metus bibendum lacus, eget posuere est odio vitae nulla. Mauris laoreet non justo fringilla tempus. Mauris ut risus risus. Vivamus auctor accumsan gravida. Nam venenatis sapien nisl, quis accumsan odio dignissim non. Vestibulum aliquam semper condimentum. Suspendisse a eros elementum, dapibus quam in, aliquet lorem. Morbi mi dui, convallis at luctus ultricies, malesuada at leo. Morbi et turpis a ex vehicula ullamcorper. Vestibulum lacinia, orci eget elementum fermentum, lectus velit interdum erat, sit amet pharetra justo elit in tortor. Suspendisse ac vestibulum nisi.Nunc euismod metus nec elit sollicitudin blandit. Proin eleifend ex bibendum sodales blandit. Vestibulum varius pharetra arcu, sit amet pellentesque odio hendrerit nec. Integer faucibus imperdiet tortor a tempus. Sed accumsan condimentum nisl. Cras interdum sapien quis maximus commodo. Nulla malesuada imperdiet enim, non ornare elit auctor in. Fusce at ipsum eget turpis tincidunt maximus. Nunc sodales tortor nec tincidunt fringilla. Quisque sollicitudin ipsum at dolor faucibus, ultricies convallis ipsum convallis. Donec consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, blandit eu lacus nec, finibus tempus ligula." label="TextArea" grid="s12"/>
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextAreaValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextAreaValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextAreaValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextAreaGetValue" />
       </m:MaterialRow>
       <m:MaterialIntegerBox grid="s12" ui:field="txtIntegerValue" label="Integer Box" />
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextIntegerValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextIntegerValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextIntegerValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextIntegerGetValue" />
       </m:MaterialRow>
       <m:MaterialLongBox grid="s12" ui:field="txtLongValue" label="Long Box" />
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextLongValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextLongValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextLongValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextLongGetValue" />
       </m:MaterialRow>
       <m:MaterialDoubleBox grid="s12" ui:field="txtDoubleValue" label="Double Box" />
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextDoubleValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextDoubleValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextDoubleValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextDoubleGetValue" />
       </m:MaterialRow>
       <m:MaterialFloatBox grid="s12" ui:field="txtFloatValue" label="Float Box" />
       <m:MaterialRow>
         <m:MaterialButton text="Set Value" ui:field="btnTextFloatValue" marginRight="20" />
-        <m:MaterialButton text="Set Value with Event" ui:field="btnTextFloatValueEvent" />
+        <m:MaterialButton text="Set Value with Event" ui:field="btnTextFloatValueEvent" marginRight="20" />
+        <m:MaterialButton text="Get Value" ui:field="btnTextFloatGetValue" />
       </m:MaterialRow>
 
       <demo:PrettyPre addStyleNames="lang-java">
@@ -219,6 +224,12 @@
         <m.html:Option text="Option 2"/>
         <m.html:Option text="Option 3"/>
         <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
       </m:MaterialListBox>
       
       <demo:PrettyPre addStyleNames="lang-xml">
@@ -229,6 +240,40 @@
           &emsp;&lt;m.html:Option text="Option 4"/><br/>
         &lt;/m:MaterialListBox>
       </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Add Option" description="You can easily add an item by calling addItem(Item)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstAddOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Add New Option" ui:field="btnAddNewOption" />
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Remove Option" description="You can easily remove an item by calling removeItem(0)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstRemoveOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Remove Option" ui:field="btnRemoveOption" />
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">

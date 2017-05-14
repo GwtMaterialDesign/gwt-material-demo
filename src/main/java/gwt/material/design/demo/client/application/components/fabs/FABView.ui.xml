@@ -75,7 +75,6 @@
     
             <demo:PrettyPre addStyleNames="lang-java">
                 &emsp;@UiField MaterialFAB fab;<br/><br/>
-    
                 fab.open();<br/>
                 fab.close();<br/>
             </demo:PrettyPre>

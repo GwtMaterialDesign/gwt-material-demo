@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.menu;
+package gwt.material.design.demo.client.application.style.blueprint;
 
 /*
  * #%L
@@ -21,9 +21,18 @@ package gwt.material.design.demo.client.application.menu;
  */
 
 
-import com.gwtplatform.mvp.client.UiHandlers;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.gwtplatform.mvp.client.ViewImpl;
 
-interface MenuUiHandlers extends UiHandlers {
+import javax.inject.Inject;
 
-    void setContentPush();
+public class BluePrintView extends ViewImpl implements BluePrintPresenter.MyView {
+    interface Binder extends UiBinder<Widget, BluePrintView> {
+    }
+
+    @Inject
+    BluePrintView(Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

@@ -52,6 +52,6 @@ public class BadgesPresenter extends Presenter<BadgesPresenter.MyView, BadgesPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Badges", "Badges can notify you that there are new or unread messages or " +
-            "notifications. Add the new class to the badge to give it the background.", "components/badges/BadgesView", this);
+            "notifications. A badge can be both a notifier that there are additional items associated with an object and an indicator of how many items there are.", "components/badges/BadgesView", "", this);
     }
 }

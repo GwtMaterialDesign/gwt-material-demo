@@ -29,7 +29,24 @@
         }
     </ui:style>
     <m:MaterialRow marginTop="60">
-        <!-- 2.0-rc3 -->
+        <!-- 2.0-rc5 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.0-rc5" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="May 2017"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="GREEN" text="Transition Duration" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="WHITE" letterBackgroundColor="GREEN" text="MD Spec" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="GREEN" text="BluePrint" margin="4"/>
+                    <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="GREEN" text="SideNav 2.0" margin="4"/>
+                    <m:MaterialChip letter="N" letterColor="WHITE" letterBackgroundColor="GREEN" text="NavBar 2.0" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
+        <!-- 2.0-rc4 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
                 <m:MaterialCardTitle text="2.0-rc4" textColor="BLACK"/>

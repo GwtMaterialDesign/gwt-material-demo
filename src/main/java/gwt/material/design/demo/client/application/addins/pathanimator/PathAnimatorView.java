@@ -57,21 +57,21 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
 
     @UiField
-    MaterialDoubleBox txtDuration, txtTargetShowDuration, txtExtraTransitionDuration;
+    MaterialIntegerBox txtDuration, txtTargetShowDuration, txtExtraTransitionDuration;
 
     private MaterialPathAnimator animator = new MaterialPathAnimator();
 
     @Inject
     PathAnimatorView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        txtDuration.setValue(0.3);
-        txtDuration.setHelperText("Duration (in seconds) of animation. Default is 0.3 seconds.");
+        txtDuration.setValue(300);
+        txtDuration.setHelperText("Duration (in milliseconds) of animation. Default is 3000 ms.");
 
-        txtTargetShowDuration.setValue(0.0);
-        txtTargetShowDuration.setHelperText("Duration (in seconds) of targetElement to become visible, if hidden initially. The library will automatically try to figure this out from the element's computed styles. Default is 0 seconds.");
+        txtTargetShowDuration.setValue(0);
+        txtTargetShowDuration.setHelperText("Duration (in milliseconds) of targetElement to become visible, if hidden initially. The library will automatically try to figure this out from the element's computed styles. Default is 0 ms.");
 
-        txtExtraTransitionDuration.setValue(1.0);
-        txtExtraTransitionDuration.setHelperText("Extra duration (in seconds) of targetElement to provide visual continuity between the animation and the rendering of the targetElement. Default is 1 second");
+        txtExtraTransitionDuration.setValue(1000);
+        txtExtraTransitionDuration.setHelperText("Extra duration (in milliseconds) of targetElement to provide visual continuity between the animation and the rendering of the targetElement. Default is 1000ms");
     }
 
     @UiHandler("btnCloseWithOptions")

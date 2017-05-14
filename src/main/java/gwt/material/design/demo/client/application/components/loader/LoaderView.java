@@ -29,10 +29,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.constants.ProgressType;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialCardContent;
-import gwt.material.design.client.ui.MaterialLoader;
-import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -42,6 +39,9 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiField
     MaterialNavBar navBar;
+
+    @UiField
+    MaterialCard loaderCard;
 
     @UiField
     MaterialCardContent cardContent;
@@ -56,7 +56,7 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiHandler("btnLoader")
     void onShowLoaderSpecific(ClickEvent e) {
-        MaterialLoader.showLoading(true, cardContent);
+        MaterialLoader.showLoading(true, loaderCard);
         btnProgress.setEnabled(false);
         Timer timer = new Timer() {
             @Override

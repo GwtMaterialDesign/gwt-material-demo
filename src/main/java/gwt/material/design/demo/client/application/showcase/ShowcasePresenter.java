@@ -52,6 +52,6 @@ public class ShowcasePresenter extends Presenter<ShowcasePresenter.MyView, Showc
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Showcase", "Great Example showcases about the implementation of Material Design in GWT", "", this);
+        SetPageTitleEvent.fire("Showcase", "Great Example showcases about the implementation of Material Design in GWT", "", "", this);
     }
 }

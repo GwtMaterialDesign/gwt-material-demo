@@ -52,7 +52,7 @@ public class DocViewerPresenter extends Presenter<DocViewerPresenter.MyView, Doc
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Doc Viewer", "A document viewer for your word, excel, powerpoint, pdf and other supported file types Note that this viewer only work with public files.", "addins/docviewer/DocViewerView", this);
+        SetPageTitleEvent.fire("Doc Viewer", "A document viewer for your word, excel, powerpoint, pdf and other supported file types Note that this viewer only work with public files.", "addins/docviewer/DocViewerView", "", this);
     }
 
 }

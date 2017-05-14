@@ -55,6 +55,6 @@ public class ChartsPresenter extends Presenter<ChartsPresenter.MyView, ChartsPre
         super.onReveal();
 
         SetPageTitleEvent.fire("Material Charts", "Using GWT Charts Library , we tried to do couple of Material Design " +
-                "Charts based on Design Options on each respective chart libraries.", "charts/ChartsView", this);
+                "Charts based on Design Options on each respective chart libraries.", "charts/ChartsView", "", this);
     }
 }

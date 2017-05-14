@@ -93,6 +93,7 @@ public class NameTokens {
     public static final String countUp = "countUp";
     public static final String liveStamp = "liveStamp";
     public static final String inputMask = "inputMask";
+    public static final String blueprint = "blueprint";
 
     public static String getAbout() {
         return about;
@@ -376,5 +377,9 @@ public class NameTokens {
 
     public static String getInputMask() {
         return inputMask;
+    }
+
+    public static String getBlueprint() {
+        return blueprint;
     }
 }

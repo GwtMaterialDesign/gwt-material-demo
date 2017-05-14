@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.menu;
+package gwt.material.design.demo.client.application.style.blueprint;
 
 /*
  * #%L
@@ -21,9 +21,11 @@ package gwt.material.design.demo.client.application.menu;
  */
 
 
-import com.gwtplatform.mvp.client.UiHandlers;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-interface MenuUiHandlers extends UiHandlers {
-
-    void setContentPush();
+public class BluePrintModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(BluePrintPresenter.class, BluePrintPresenter.MyView.class, BluePrintView.class, BluePrintPresenter.MyProxy.class);
+    }
 }

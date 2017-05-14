@@ -86,7 +86,7 @@
                 <p><b>restart()</b> - Restarts the video stream from the camera. The user is requested again by the browser to allow the application to use the camera.</p>
                 <p><b>setPauseOnUnload(boolean pauseOnUnload)</b> - Sets if the camera capture should pause when the widget is unloaded.</p>
                 <p><b>isPauseOnUnload()</b> - Returns if the camera capture should pause when the widget is unloaded.</p>
-                <p><b>isSupported()</b> - ests if the browser supports the Streams API. This should be called before creating any MaterialCameraCapture widgets to avoid errors on the browser.</p>
+                <p><b>isSupported()</b> - Sets if the browser supports the Streams API. This should be called before creating any MaterialCameraCapture widgets to avoid errors on the browser.</p>
             </blockquote>
         </g:HTMLPanel>
     </g:HTMLPanel>

@@ -74,7 +74,7 @@
     </m:MaterialCollection>
   
     <demo:PrettyPre addStyleNames="lang-xml">
-      &emsp;&lt;m:MaterialCollection header="Header Title" active="2">
+      &emsp;&lt;m:MaterialCollection header="Header Title" active="2"><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 1"/>&lt;/m:MaterialCollectionItem><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 2"/>&lt;/m:MaterialCollectionItem><br/>
       &emsp;&lt;m:MaterialCollectionItem>&lt;m:MaterialLabel text="Collecton 3"/>&lt;/m:MaterialCollectionItem><br/>
@@ -214,7 +214,7 @@
       &emsp;&emsp;&lt;m:MaterialLabel text="First Line"/><br/>
       &emsp;&emsp;&lt;m:MaterialLabel text="Second Line"/><br/>
       &emsp;&lt;/m:MaterialCollectionItem><br/>
-      &emsp;&lt;-- Other Collection items here -->
+      &emsp;&lt;-- Other Collection items here --><br/>
       &lt;/m:MaterialCollection><br/>
     </demo:PrettyPre>
   </m:MaterialRow>
