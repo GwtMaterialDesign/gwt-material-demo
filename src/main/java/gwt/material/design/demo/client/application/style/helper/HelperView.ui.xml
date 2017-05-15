@@ -229,7 +229,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialImage url="https//assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -246,7 +246,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialImage url="https//assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -263,7 +263,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialImage url="https//assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   

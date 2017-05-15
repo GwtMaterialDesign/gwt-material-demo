@@ -75,7 +75,7 @@
 
 		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
-				<m:MaterialImage width="100%" url="http://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
+				<m:MaterialImage width="100%" url="https://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About"/>
@@ -185,6 +185,20 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+				<!-- PROGRESSIVE WEB APPS (PWA) -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="PWA" iconType="STARS"/>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getPwagettingstarted}" text="Getting Started" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInstallable}" text="Installable" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getServiceworker}" text="Service Worker" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getNotification}" text="Push Notifications" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>

@@ -118,7 +118,6 @@
           &emsp;&lt;/m:MaterialHeader><br/>
           &lt;/m:MaterialNavBar><br/>
         </demo:PrettyPre>
-        <m:MaterialAnchorButton text="See Blue Print" href="#blueprint" target="_blank" />
       </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

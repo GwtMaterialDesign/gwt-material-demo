@@ -48,7 +48,7 @@
         <m:MaterialColumn grid="l5 s12 m5">
             <m:MaterialCard backgroundColor="WHITE" textColor="WHITE">
                 <m:MaterialCardImage waves="LIGHT">
-                    <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
+                    <m:MaterialImage url="https://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
                 </m:MaterialCardImage>
                 <m:MaterialCardContent backgroundColor="BLUE_GREY_DARKEN_3" layoutPosition="RELATIVE" padding="0">
                     <m:MaterialRow padding="24" margin="0" height="132px">

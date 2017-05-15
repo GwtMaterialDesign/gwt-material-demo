@@ -208,7 +208,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="http://poponandon.com/wp-content/uploads/2013/04/onerepublic-native-review-2013.jpg"/>
+                            <m:MaterialImage url="https ://i.imgur.com/fmdAWO1.png"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -239,7 +239,7 @@
                 <m:MaterialColumn grid="l4 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2014/02/pharrell-williams-girl-album-cover.jpg"/>
+                            <m:MaterialImage url="https://thatgrapejuice.net/wp-content/uploads/2014/02/pharrell-williams-girl-album-cover.jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">

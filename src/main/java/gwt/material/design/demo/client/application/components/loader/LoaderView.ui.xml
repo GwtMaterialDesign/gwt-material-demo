@@ -162,7 +162,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialImage url="https://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>
