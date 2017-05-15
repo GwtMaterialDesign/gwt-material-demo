@@ -27,7 +27,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.pwa.PwaManager;
-import gwt.material.design.client.pwa.serviceworker.Navigator;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;

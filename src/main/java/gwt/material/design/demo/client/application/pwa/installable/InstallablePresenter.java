@@ -55,6 +55,6 @@ public class InstallablePresenter extends Presenter<InstallablePresenter.MyView,
         super.onReveal();
 
         SetPageTitleEvent.fire("Installable",
-                "Installable Feature consists of web app manifest - is a JSON file that gives you the ability to control how your web app or site appears to the user in areas where they would expect to see native apps  (for example, a mobile device's home screen), direct what the user can launch, and define its appearance at launch.", "pwa/installable/InstallableView", this);
+                "Installable Feature consists of web app manifest - is a JSON file that gives you the ability to control how your web app or site appears to the user in areas where they would expect to see native apps  (for example, a mobile device's home screen), direct what the user can launch, and define its appearance at launch.", "pwa/installable/InstallableView", null, this);
     }
 }
