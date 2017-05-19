@@ -295,6 +295,14 @@ function gwtmaterialdemo(){
   function getCompiledCodeFilename(){
     var answers = [];
     var softPermutationId = 0;
+    function unflattenKeylistIntoAnswers(propValArray, value_0){
+      var answer = answers;
+      for (var i = 0, n = propValArray.length - 1; i < n; ++i) {
+        answer = answer[propValArray[i]] || (answer[propValArray[i]] = []);
+      }
+      answer[propValArray[n]] = value_0;
+    }
+
     var values = [];
     var providers = [];
     function computePropValue(propName){
@@ -312,6 +320,38 @@ function gwtmaterialdemo(){
       throw null;
     }
 
+    providers['user.agent'] = function(){
+      var ua = navigator.userAgent.toLowerCase();
+      var docMode = $doc_0.documentMode;
+      if (function(){
+        return ua.indexOf('webkit') != -1;
+      }
+      ())
+        return 'safari';
+      if (function(){
+        return ua.indexOf('msie') != -1 && (docMode >= 10 && docMode < 11);
+      }
+      ())
+        return 'ie10';
+      if (function(){
+        return ua.indexOf('msie') != -1 && (docMode >= 9 && docMode < 11);
+      }
+      ())
+        return 'ie9';
+      if (function(){
+        return ua.indexOf('msie') != -1 && (docMode >= 8 && docMode < 11);
+      }
+      ())
+        return 'ie8';
+      if (function(){
+        return ua.indexOf('gecko') != -1 || docMode >= 11;
+      }
+      ())
+        return 'gecko1_8';
+      return '';
+    }
+    ;
+    values['user.agent'] = {'gecko1_8':0, 'ie10':1, 'ie8':2, 'ie9':3, 'safari':4};
     __gwt_isKnownPropertyValue = function(propName, propValue){
       return propValue in values[propName];
     }
@@ -334,7 +374,10 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      strongName = 'C61BC0E4A82E58C7F861042DCAE66605';
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'B9DDC5B13517E8BE95487F0ABF5C55FA');
+      unflattenKeylistIntoAnswers(['ie10'], 'C0A8CB90D25D1A98CBE5532232232BE7');
+      unflattenKeylistIntoAnswers(['safari'], 'E984646E89CB0ECBB1E6BBF836C2B045');
+      strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
         softPermutationId = parseInt(strongName.substring(idx + 1), 10);
@@ -362,10 +405,12 @@ function gwtmaterialdemo(){
     }
 
     sendStats('loadExternalRefs', 'begin');
-    installOneStylesheet('css/overridecss.css');
     installOneStylesheet('css/animation.css');
     installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/materialize.min.css');
+    installOneStylesheet('css/overridecss.css');
+    installOneStylesheet('css/materialize.blue.css');
+    installOneStylesheet('css/overridecss.blue.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
