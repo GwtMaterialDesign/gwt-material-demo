@@ -423,54 +423,54 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
-            <ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" edgeFriction="0">
-                    <m:MaterialPanel textColor="WHITE" backgroundColor="CYAN">
-                        <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" />
-                        <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
-                            <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
-                            <m:MaterialLabel text="Give others access to any file or folder you choose" />
-                        </m:MaterialColumn>
-                    </m:MaterialPanel>
-                <m:MaterialPanel textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
-                    <m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 l6 m6" />
-                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
-                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
-                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
+            <ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
+                <m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
+                    <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 m6 l12" />
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
                     </m:MaterialColumn>
-                </m:MaterialPanel>
-                <m:MaterialPanel textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
-                    <m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 l6 m6" />
-                    <m:MaterialColumn grid="s12 l6 m6" marginTop="40">
-                        <m:MaterialLabel fontSize="2em" text="Share with Anyone" />
-                        <m:MaterialLabel text="Give others access to any file or folder you choose" />
+                </m:MaterialRow>
+                <m:MaterialRow textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
+                    <m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 m6 l12" />
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
                     </m:MaterialColumn>
-                </m:MaterialPanel>
+                </m:MaterialRow>
+                <m:MaterialRow textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
+                    <m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 m6 l12" />
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialRow>
             </ma:carousel.MaterialCarousel>
 
             <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" edgeFriction="0"><br/>
-                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="CYAN"><br/>
-                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 l6 m6" /><br/>
-                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
-                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-                &emsp;&lt;/m:MaterialPanel><br/>
-                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1"><br/>
-                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 l6 m6" /><br/>
-                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
-                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-                &emsp;&lt;/m:MaterialPanel><br/>
-                &emsp;&lt;m:MaterialPanel textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1"><br/>
-                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 l6 m6" /><br/>
-                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 l6 m6" marginTop="40"><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="2em" text="Share with Anyone" /><br/>
-                &emsp;&emsp;&emsp;&lt;m:MaterialLabel text="Give others access to any file or folder you choose" /><br/>
-                &emsp;&emsp;&lt;/m:MaterialColumn><br/>
-                &emsp;&lt;/m:MaterialPanel><br/>
-                &lt;/ma:carousel.MaterialCarousel><br/>
+                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" edgeFriction="0">
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &lt;/ma:carousel.MaterialCarousel>
             </demo:PrettyPre>
         </m:MaterialRow>
 
