@@ -160,6 +160,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="FullScreen Modal" description="You can easily maximize / set to full screen your Modal by setting fullscreen='true' before opening the modal." />
       <m:MaterialButton ui:field="openFullscreenModal" text="Open Modal in fullscreen" />
       <m:MaterialModal ui:field="modalFullScreen" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
