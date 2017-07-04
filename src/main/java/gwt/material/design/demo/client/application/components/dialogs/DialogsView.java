@@ -38,7 +38,7 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
 
     @UiField
     MaterialModal modal, modalFixed, modalBottomSheet, modalClosable, modalEvents,
-            modal1, modal2, modal3;
+            modal1, modal2, modal3, modalFullScreen;
 
 
     @Inject
@@ -55,6 +55,22 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
         modal1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 1 - Closed"));
         modal2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 2 - Closed"));
         modal3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 3 - Closed"));
+    }
+
+    @UiHandler("openFullscreenModal")
+    void onOpenFullScreenModal(ClickEvent e) {
+        modalFullScreen.setFullscreen(true);
+        modalFullScreen.open();
+    }
+
+    @UiHandler("turnOffFullscreen")
+    void turnOffFullScreen(ClickEvent e) {
+        modalFullScreen.setFullscreen(false);
+    }
+
+    @UiHandler("closeFullscreenModal")
+    void closeFullScreen(ClickEvent e) {
+        modalFullScreen.close();
     }
 
     @UiHandler("btnOpenModal1")
