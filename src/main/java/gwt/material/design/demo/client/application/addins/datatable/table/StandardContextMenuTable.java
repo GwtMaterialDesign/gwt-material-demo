@@ -114,7 +114,7 @@ public class StandardContextMenuTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
             }
             @Override
@@ -125,7 +125,7 @@ public class StandardContextMenuTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getLastName().compareToIgnoreCase(o2.getData().getLastName());
             }
             @Override
@@ -136,15 +136,15 @@ public class StandardContextMenuTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public boolean isNumeric() {
+            public boolean numeric() {
                 return true;
             }
             @Override
-            public HideOn getHideOn() {
+            public HideOn hideOn() {
                 return HideOn.HIDE_ON_MED_DOWN;
             }
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
             }
             @Override
@@ -157,7 +157,7 @@ public class StandardContextMenuTable extends Composite {
             final int index = i;
             table.addColumn(new TextColumn<Person>() {
                 @Override
-                public Comparator<? super RowComponent<Person>> getSortComparator() {
+                public Comparator<? super RowComponent<Person>> sortComparator() {
                     return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
                 }
                 @Override
@@ -171,7 +171,7 @@ public class StandardContextMenuTable extends Composite {
         // You can add any handler to the column cells widget.
         table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
             @Override
-            public TextAlign getTextAlign() {
+            public TextAlign textAlign() {
                 return TextAlign.CENTER;
             }
             @Override
