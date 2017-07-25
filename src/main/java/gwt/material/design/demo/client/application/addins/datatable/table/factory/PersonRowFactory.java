@@ -20,6 +20,7 @@ package gwt.material.design.demo.client.application.addins.datatable.table.facto
  * #L%
  */
 
+import gwt.material.design.client.data.DataView;
 import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.data.factory.RowComponentFactory;
 import gwt.material.design.demo.client.application.addins.datatable.table.Person;
@@ -27,9 +28,9 @@ import gwt.material.design.demo.client.application.addins.datatable.table.Person
 public class PersonRowFactory extends RowComponentFactory<Person> {
 
     @Override
-    public RowComponent<Person> generate(Person model) {
+    public RowComponent<Person> generate(DataView dataView, Person model) {
         // We won't change the way it loads the RowComponent
-        return super.generate(model);
+        return super.generate(dataView, model);
     }
 
     @Override

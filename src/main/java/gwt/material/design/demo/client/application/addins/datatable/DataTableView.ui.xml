@@ -114,7 +114,7 @@
                 <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;table.addColumn(new TextColumn&lt;Person>() {<br/>
                     &emsp;@Override<br/>
-                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> getSortComparator() {<br/>
+                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> sortComparator() {<br/>
                     &emsp;&emsp;return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());<br/>
                     &emsp;}<br/>
                     &emsp;@Override<br/>
