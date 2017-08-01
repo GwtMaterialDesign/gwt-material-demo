@@ -48,6 +48,7 @@
             </m:MaterialRow>
     
             <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
                 <m:MaterialTitle scrollspy="standard_table" title="Standard Table" description="You can filter any options below." />
                 <m:MaterialPanel ui:field="standardTablePanel" />
             </m:MaterialRow>
@@ -67,6 +68,7 @@
             </m:MaterialRow>
     
             <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
                 <m:MaterialTitle scrollspy="datatable_events" title="DataTable Events" />
                 <g:HTMLPanel>
                     <blockquote>
@@ -81,7 +83,9 @@
                         <p><b>Row Short Press Event - </b>Add a row short press handler, called when a row is short pressed.</p>
                         <p><b>Selection Event - </b>Add a selection handler, called when a row is selected</p>
                         <p><b>Row Context Menu - </b>Add a row context menu handler, called when user right click a row to open context menu.</p>
-                    </blockquote>
+
+                        <p><b>Rendered Event - </b>Add a row context menu handler, called when user right click a row to open context menu.</p>
+                        <p><b>Components Rendered Event - </b>Called each time when components are rendered, which includes sorting renders and refreshView() renders.</p></blockquote>
                 </g:HTMLPanel>
             </m:MaterialRow>
     
@@ -92,6 +96,22 @@
                 </demo:PrettyPre>
                 <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/factory/PersonRowFactory.java" target="_blank" text="Link to Person Row Factory" />
             </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+                <m:MaterialTitle scrollspy="row_api" title="updateRow(model) and getRowByModel(model)" description="Using these Row Apis, you can now easily access the update / refresh the row realtime and also get the row component." />
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;// Get the Row <br/>
+                    table.getByModelRow(person); <br/><br/>
+
+                    // Update the row model <br/>
+                    Person firstPerson = people.get(0); <br/>
+                    firstPerson.setFirstName(firstName); <br/>
+                    firstPerson.setLastName(lastName); <br/>
+                    firstPerson.setEmail(email); <br/>
+                    table.updateRow(firstPerson);
+                </demo:PrettyPre>
+            </m:MaterialRow>
     
             <m:MaterialRow addStyleNames="code">
                 <m:MaterialTitle scrollspy="category_factory" title="Category Factory" description="If we want to generate all our categories using CustomCategoryComponent We can define our own CategoryComponentFactory. There we can define our own CategoryComponent implementations." />
@@ -100,7 +120,40 @@
                 </demo:PrettyPre>
                 <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/factory/CustomCategoryFactory.java" target="_blank" text="Link to Category Factory" />
             </m:MaterialRow>
-    
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+                <m:MaterialTitle scrollspy="adding_categories" title="Adding Categories" description="You can easily add categories by calling table.addCategory(String)." />
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;String newCategory = "New Category"; <br/>
+                    table.addCategory(newCategory);
+                </demo:PrettyPre>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+                <m:MaterialTitle scrollspy="category_thead" title="Adding Category Columns" description="You can easily add columns inside the Category Subheader." />
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;public static class CustomCategoryComponent extends CategoryComponent { <br/>
+                    &emsp;public CustomCategoryComponent(String category) { <br/>
+                    &emsp;&emsp;super(category); <br/>
+                    &emsp;} <br/><br/>
+
+                    &emsp;@Override <br/>
+                    &emsp;protected void render(TableSubHeader subheader) { <br/>
+                    &emsp;&emsp;super.render(subheader); <br/><br/>
+
+                    &emsp;&emsp;subheader.setOpenIcon(IconType.FOLDER_OPEN); <br/>
+                    &emsp;&emsp;subheader.setCloseIcon(IconType.FOLDER); <br/><br/>
+
+                    &emsp;&emsp;TableHeader badgeTh = new TableHeader(); <br/>
+                    &emsp;&emsp;badgeTh.add(new MaterialBadge("Some badge")); <br/>
+                    &emsp;&emsp;subheader.add(badgeTh); <br/>
+                    &emsp;} <br/>
+                    }
+                </demo:PrettyPre>
+            </m:MaterialRow>
+
             <m:MaterialRow addStyleNames="code">
                 <m:MaterialTitle scrollspy="renderer" title="Renderer" description="It is possible to create your own custom renderer per table When you use the BaseRenderer you can override certain draw methods to create elements the way you would like." />
                 <demo:PrettyPre addStyleNames="lang-java">
@@ -114,7 +167,7 @@
                 <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;table.addColumn(new TextColumn&lt;Person>() {<br/>
                     &emsp;@Override<br/>
-                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> getSortComparator() {<br/>
+                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> sortComparator() {<br/>
                     &emsp;&emsp;return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());<br/>
                     &emsp;}<br/>
                     &emsp;@Override<br/>
@@ -142,6 +195,29 @@
                     &emsp;&emsp;return profile;<br/>
                     &emsp;}<br/>
                     });
+                </demo:PrettyPre>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+                <m:MaterialTitle scrollspy="columns_auto_sort" title="Auto Sort Columns" description="Make this column auto sort on rendering, if multiple columns are auto sorting it will be based on the first one set to auto sort." />
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;table.addColumn(new TextColumn&lt;Person>() { <br/>
+                    &emsp;@Override <br/>
+                    &emsp;public boolean autoSort() { <br/>
+                    &emsp;&emsp;return true; <br/>
+                    &emsp;} <br/><br/>
+
+                    &emsp;@Override <br/>
+                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> sortComparator() { <br/>
+                    &emsp;&emsp;return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName()); <br/>
+                    &emsp;} <br/><br/>
+
+                    &emsp;@Override <br/>
+                    &emsp;public String getValue(Person object) { <br/>
+                    &emsp;&emsp;return object.getFirstName(); <br/>
+                    &emsp;} <br/>
+                    }, "First Name");
                 </demo:PrettyPre>
             </m:MaterialRow>
     

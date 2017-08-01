@@ -208,7 +208,7 @@ main .panel, main {
     margin-bottom: 12px;
 }
 
-.code div h4 {
+.code > div:not(.empty-state) h4 {
     font-size: 1.2em;
     margin-top: 0px !important;
 }

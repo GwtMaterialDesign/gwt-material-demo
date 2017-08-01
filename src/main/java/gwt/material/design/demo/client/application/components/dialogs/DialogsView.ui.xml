@@ -160,6 +160,28 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="FullScreen Modal" description="You can easily maximize / set to full screen your Modal by setting fullscreen='true' before opening the modal." />
+      <m:MaterialButton ui:field="openFullscreenModal" text="Open Modal in fullscreen" />
+      <m:MaterialModal ui:field="modalFullScreen" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialModalContent>
+          <m:MaterialTitle title="Full Screen Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialModalContent>
+        <m:MaterialModalFooter>
+          <m:MaterialButton text="Exit Full Screen" ui:field="turnOffFullscreen" />
+          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="closeFullscreenModal"/>
+        </m:MaterialModalFooter>
+      </m:MaterialModal>
+
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Turn on Fullscreen Mode<br/>
+        modal.setFullscreen(true);<br/>
+        // Turn off Fullscreen Mode<br/>
+        modal.setFullscreen(false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Modal : Events" description="We have provided an open / close events for modal component." />
       <m:MaterialModal ui:field="modalEvents" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
         <m:MaterialModalContent>

@@ -111,7 +111,7 @@ public class PageTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
             }
             @Override
@@ -122,7 +122,7 @@ public class PageTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getLastName().compareToIgnoreCase(o2.getData().getLastName());
             }
             @Override
@@ -133,15 +133,15 @@ public class PageTable extends Composite {
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public boolean isNumeric() {
+            public boolean numeric() {
                 return true;
             }
             @Override
-            public HideOn getHideOn() {
+            public HideOn hideOn() {
                 return HideOn.HIDE_ON_MED_DOWN;
             }
             @Override
-            public Comparator<? super RowComponent<Person>> getSortComparator() {
+            public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
             }
             @Override
@@ -154,7 +154,7 @@ public class PageTable extends Composite {
             final int index = i;
             table.addColumn(new TextColumn<Person>() {
                 @Override
-                public Comparator<? super RowComponent<Person>> getSortComparator() {
+                public Comparator<? super RowComponent<Person>> sortComparator() {
                     return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
                 }
                 @Override
@@ -168,7 +168,7 @@ public class PageTable extends Composite {
         // You can add any handler to the column cells widget.
         table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
             @Override
-            public TextAlign getTextAlign() {
+            public TextAlign textAlign() {
                 return TextAlign.CENTER;
             }
             @Override
@@ -186,46 +186,44 @@ public class PageTable extends Composite {
         table.addRowExpandHandler((e, rowExpand) -> {
             JQueryElement section = rowExpand.getOverlay();
 
-            if(rowExpand.isExpand()) {
-                // Fake Async Task
-                // This is demonstrating a fake asynchronous call to load
-                // the data inside the expansion element.
-                new Timer() {
-                    @Override
-                    public void run() {
-                        // Clear the content first.
-                        JQueryElement element = rowExpand.getRow().find(".content").empty();
-                        // Assign the jquery element to a GMD Widget
-                        MaterialWidget content = new MaterialWidget(element);
+            // Fake Async Task
+            // This is demonstrating a fake asynchronous call to load
+            // the data inside the expansion element.
+            new Timer() {
+                @Override
+                public void run() {
+                    // Clear the content first.
+                    JQueryElement element = rowExpand.getRow().find(".content").empty();
+                    // Assign the jquery element to a GMD Widget
+                    MaterialWidget content = new MaterialWidget(element);
 
-                        // Add new content.
-                        MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
-                        badge.getElement().getStyle().setPosition(Position.RELATIVE);
-                        badge.getElement().getStyle().setRight(0, Unit.PX);
-                        badge.setFontSize(12, Unit.PX);
-                        content.add(badge);
+                    // Add new content.
+                    MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
+                    badge.getElement().getStyle().setPosition(Position.RELATIVE);
+                    badge.getElement().getStyle().setRight(0, Unit.PX);
+                    badge.setFontSize(12, Unit.PX);
+                    content.add(badge);
 
-                        MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
-                                new MaterialIcon(IconType.FULLSCREEN));
-                        content.add(btn);
+                    MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
+                            new MaterialIcon(IconType.FULLSCREEN));
+                    content.add(btn);
 
-                        MaterialTextBox textBox = new MaterialTextBox();
-                        textBox.setText(" from an asynchronous");
-                        textBox.setGwtDisplay(Display.INLINE_TABLE);
-                        textBox.setWidth("200px");
-                        content.add(textBox);
+                    MaterialTextBox textBox = new MaterialTextBox();
+                    textBox.setText(" from an asynchronous");
+                    textBox.setGwtDisplay(Display.INLINE_TABLE);
+                    textBox.setWidth("200px");
+                    content.add(textBox);
 
-                        MaterialIcon icon = new MaterialIcon(IconType.CALL);
-                        icon.getElement().getStyle().setPosition(Position.RELATIVE);
-                        icon.getElement().getStyle().setTop(12, Unit.PX);
-                        content.add(icon);
+                    MaterialIcon icon = new MaterialIcon(IconType.CALL);
+                    icon.getElement().getStyle().setPosition(Position.RELATIVE);
+                    icon.getElement().getStyle().setTop(12, Unit.PX);
+                    content.add(icon);
 
-                        // Hide the expansion elements overlay section.
-                        // The overlay is retrieved using EowExpand#getOverlay()
-                        section.css("display", "none");
-                    }
-                }.schedule(2000);
-            }
+                    // Hide the expansion elements overlay section.
+                    // The overlay is retrieved using EowExpand#getOverlay()
+                    section.css("display", "none");
+                }
+            }.schedule(2000);
             return true;
         });
 
