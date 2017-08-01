@@ -29,6 +29,23 @@
         }
     </ui:style>
     <m:MaterialRow marginTop="60">
+        <!-- 2.0-rc6 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.0-rc6" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="July 2017"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="E" letterColor="WHITE" letterBackgroundColor="GREEN" text="EmptyState" margin="4"/>
+                    <m:MaterialChip letter="G" letterColor="WHITE" letterBackgroundColor="GREEN" text="GWT 2.8.1" margin="4"/>
+                    <m:MaterialChip letter="L" letterColor="WHITE" letterBackgroundColor="GREEN" text="LeafValueEditor" margin="4"/>
+                    <m:MaterialChip letter="C" letterColor="WHITE" letterBackgroundColor="GREEN" text="ComboBox - Tags support" margin="4"/>
+                    <m:MaterialChip letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="DataTable - API Updates" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
         <!-- 2.0-rc5 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">

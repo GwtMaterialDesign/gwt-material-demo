@@ -37,10 +37,14 @@ public class ScrollspyHelper {
         links.add(Links.DT_BASIC_PROPERTIES);
         links.add(Links.DT_EVENTS);
         links.add(Links.DT_ROW_FACTORY);
+        links.add(Links.DT_ROW_API);
         links.add(Links.DT_CATEGORY_FACTORY);
+        links.add(Links.DT_ADDING_CATEGORIES);
+        links.add(Links.DT_ADDING_CATEGORY_COLUMNS);
         links.add(Links.DT_RENDERER);
         links.add(Links.DT_ADDING_COLUMNS);
         links.add(Links.DT_ADDING_COLUMNS_MATERIAL);
+        links.add(Links.DT_AUTO_SORT_COLUMNS);
         links.add(Links.DT_SET_VISIBLE_RANGE);
         links.add(Links.DT_SET_ROW_DATA);
         links.add(Links.DT_FIELD_UPDATER);

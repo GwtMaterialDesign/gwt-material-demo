@@ -24,6 +24,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style.Display;
 import com.google.gwt.dom.client.Style.Position;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -40,6 +41,8 @@ import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.table.MaterialDataTable;
+import gwt.material.design.client.ui.table.TableHeader;
+import gwt.material.design.client.ui.table.TableRow;
 import gwt.material.design.client.ui.table.TableSubHeader;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
@@ -78,6 +81,8 @@ public class StandardTable extends Composite {
     @UiField
     MaterialComboBox<SelectionType> listSelectionType;
 
+    private List<Person> people;
+
     public StandardTable() {
         initWidget(ourUiBinder.createAndBindUi(this));
     }
@@ -85,6 +90,8 @@ public class StandardTable extends Composite {
     @Override
     protected void onLoad() {
         super.onLoad();
+
+        generatePeople();
 
         // Populate the ComboBox value
         listSelectionType.addItem("NONE", SelectionType.NONE);
@@ -112,9 +119,7 @@ public class StandardTable extends Composite {
         // If we want to generate all our categories using CustomCategoryComponent
         // We can define our own CategoryComponentFactory. There we can define our
         // own CategoryComponent implementations.
-        table.setCategoryFactory(new
-
-                CustomCategoryFactory());
+        table.setCategoryFactory(new CustomCategoryFactory());
 
         // It is possible to create your own custom renderer per table
         // When you use the BaseRenderer you can override certain draw
@@ -245,19 +250,6 @@ public class StandardTable extends Composite {
         // Set the visible range of the table for  pager (later)
         table.setVisibleRange(0, 2001);
 
-        // Generate 20 categories
-        int rowIndex = 0;
-        List<Person> people = new ArrayList<>();
-        for (
-                int k = 1;
-                k <= 5; k++)
-
-        {
-            // Generate 100 rows
-            for (int i = 1; i <= 5; i++, rowIndex++) {
-                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i, "Category " + k));
-            }
-        }
         table.setRowData(0, people);
 
         // Here we are adding a row expansion handler.
@@ -352,7 +344,7 @@ public class StandardTable extends Composite {
         table.addRowDoubleClickHandler((e, mouseEvent, model, row) ->
 
         {
-            // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             Window.alert("Row Double Clicked: " + model.getId());
             return true;
         });
@@ -365,7 +357,7 @@ public class StandardTable extends Composite {
         table.addRowLongPressHandler((e, mouseEvent, model, row) ->
 
         {
-            //GWT.log("Row Long Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Long Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             return true;
         });
 
@@ -373,9 +365,38 @@ public class StandardTable extends Composite {
         table.addRowShortPressHandler((e, mouseEvent, model, row) ->
 
         {
-            //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             return true;
         });
+
+        // Add rendered handler, called when 'setRowData' calls finish rendering. Guaranteed to only be called once from the data set render, ignoring sort renders and refreshView renders.
+        table.addRenderedHandler(e -> {
+            GWT.log("Table Rendered");
+            return true;
+        });
+
+        // Add components rendered handler, Called each time when components are rendered, which includes sorting renders and refreshView() renders.
+        table.addComponentsRenderedHandler(e -> {
+            GWT.log("Components Rendered");
+            return true;
+        });
+    }
+
+    protected void generatePeople() {
+        people = new ArrayList<>();
+        // Generate 5 categories
+        int rowIndex = 0;
+
+        for (
+                int k = 1;
+                k <= 5; k++)
+
+        {
+            // Generate 5 rows
+            for (int i = 1; i <= 5; i++, rowIndex++) {
+                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i, "Category " + k));
+            }
+        }
     }
 
     @UiHandler("cbCategories")
@@ -409,5 +430,35 @@ public class StandardTable extends Composite {
         }
         table.setRedraw(true);
         table.refreshView();
+    }
+
+    @UiHandler("getFirstRow")
+    void onGetFirstRow(ClickEvent e) {
+        MaterialToast.fireToast("FIRST ROW: " + table.getRow(0).getData().getFirstName());
+    }
+
+    @UiHandler("updateFirstRow")
+    void onUpdateFirstRow(ClickEvent e) {
+        String firstName = "John";
+        String lastName = "Doe";
+        String email = "john.doe@gmail.com";
+
+        if (people.get(0) != null) {
+            Person firstPerson = people.get(0);
+            firstPerson.setFirstName(firstName);
+            firstPerson.setLastName(lastName);
+            firstPerson.setEmail(email);
+            table.updateRow(firstPerson);
+
+            MaterialToast.fireToast("Updated first row : " + firstName + " " + lastName);
+        } else {
+            MaterialToast.fireToast("Can not find the first person.");
+        }
+    }
+
+    @UiHandler("disabledFirstRow")
+    void onDisableFirstRow(ClickEvent e) {
+        TableRow tableRow = table.getRow(people.get(0)).getWidget();
+        tableRow.setEnabled(false);
     }
 }
