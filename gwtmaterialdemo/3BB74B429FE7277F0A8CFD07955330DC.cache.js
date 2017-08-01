@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.1";
-var $strongName = 'DF10B3757CA9C5D14EB85D941BBFE793';
+var $strongName = '3BB74B429FE7277F0A8CFD07955330DC';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -22,7 +22,7 @@ var $stats = $wnd.__gwtStatsEvent ? function(a) {
 return $wnd.__gwtStatsEvent && $wnd.__gwtStatsEvent(a);
 } : null;
 var $sessionId = $wnd.__gwtStatsSessionId ? $wnd.__gwtStatsSessionId : null;
-var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 93:1, 67:1, 69:1}, $intern_5 = {119:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = 65535, $intern_9 = {4:1, 36:1, 8:1}, $intern_10 = {96:1, 45:1, 4:1, 33:1, 27:1}, $intern_11 = {92:1, 45:1, 4:1, 33:1, 27:1}, $intern_12 = {238:1, 45:1, 4:1, 33:1, 27:1}, $intern_13 = {201:1, 45:1, 4:1, 33:1, 27:1}, $intern_14 = {45:1, 202:1, 4:1, 33:1, 27:1}, $intern_15 = {45:1, 203:1, 4:1, 33:1, 27:1}, $intern_16 = {134:1, 4:1, 33:1, 27:1}, $intern_17 = {45:1, 281:1, 4:1, 33:1, 27:1}, $intern_18 = 2490, $intern_19 = {16:1}, $intern_20 = {264:1, 4:1, 93:1, 67:1, 69:1}, $intern_21 = {4:1, 33:1, 102:1}, $intern_22 = 4194303, $intern_23 = 1048575, $intern_24 = 4194304, $intern_25 = 17592186044416, $intern_26 = 524288, $intern_27 = -17592186044416, $intern_28 = -2147483648, $intern_29 = {341:1, 4:1}, $intern_30 = {29:1, 28:1}, $intern_31 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 20:1}, $intern_32 = 2503, $intern_33 = {31:1, 16:1, 30:1, 29:1, 129:1, 19:1, 28:1, 20:1}, $intern_34 = 16384, $intern_35 = 65536, $intern_36 = 1048576, $intern_37 = 16777216, $intern_38 = 33554432, $intern_39 = 67108864, $intern_40 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 28:1, 20:1}, $intern_41 = {31:1, 16:1, 30:1, 29:1, 34:1, 379:1, 19:1, 28:1, 20:1}, $intern_42 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 20:1}, $intern_43 = {31:1, 16:1, 30:1, 307:1, 29:1, 34:1, 19:1, 28:1, 20:1}, $intern_44 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 123:1, 28:1, 20:1}, $intern_45 = {257:1, 12:1}, $intern_46 = {276:1, 12:1}, $intern_47 = {12:1, 2465:1}, $intern_48 = {75:1, 12:1}, $intern_49 = {107:1}, $intern_50 = {31:1, 16:1, 30:1, 29:1, 34:1, 379:1, 19:1, 282:1, 28:1, 20:1}, $intern_51 = {150:1, 12:1}, $intern_52 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 19:1, 28:1, 20:1}, $intern_53 = {2466:1, 12:1}, $intern_54 = {209:1, 4:1, 33:1, 27:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 123:1, 28:1, 20:1}, $intern_56 = {234:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {143:1, 12:1}, $intern_60 = {339:1}, $intern_61 = {75:1, 12:1, 16:1, 2441:1}, $intern_62 = 2498, $intern_63 = {16:1, 63:1, 61:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1}, $intern_66 = {170:1, 12:1}, $intern_67 = {26:1, 12:1}, $intern_68 = {461:1, 12:1}, $intern_69 = {12:1, 632:1}, $intern_70 = 4000, $intern_71 = {12:1, 2450:1}, $intern_72 = {12:1, 2457:1}, $intern_73 = {12:1, 2451:1}, $intern_74 = {12:1, 2452:1}, $intern_75 = {12:1, 2453:1}, $intern_76 = {12:1, 2454:1}, $intern_77 = {12:1, 2455:1}, $intern_78 = {12:1, 2456:1}, $intern_79 = {12:1, 2458:1}, $intern_80 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 120:1}, $intern_81 = {463:1, 12:1}, $intern_82 = {459:1, 12:1}, $intern_83 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1}, $intern_84 = {12:1, 2461:1}, $intern_85 = {12:1, 2460:1}, $intern_86 = {633:1, 12:1}, $intern_87 = {462:1, 12:1}, $intern_88 = {2464:1, 12:1}, $intern_89 = {2463:1, 12:1}, $intern_90 = {2462:1, 12:1}, $intern_91 = 2487, $intern_92 = {107:1, 98:1}, $intern_93 = {4:1, 107:1, 98:1, 306:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1, 22:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 19:1, 28:1, 20:1, 86:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 191:1, 39:1, 38:1, 24:1, 147:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 166:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 140:1, 120:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1, 18:1}, $intern_100 = {340:1, 12:1}, $intern_101 = {149:1, 12:1}, $intern_102 = {12:1, 637:1}, $intern_103 = {12:1, 638:1}, $intern_104 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 53:1}, $intern_105 = {307:1, 34:1, 19:1}, $intern_106 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 64:1}, $intern_107 = {16:1, 41:1}, $intern_108 = {16:1, 41:1, 63:1, 61:1}, $intern_109 = {79:1}, $intern_110 = {233:1}, $intern_111 = {4:1, 93:1, 100:1, 67:1, 69:1}, $intern_112 = {199:1}, $intern_113 = 2492, $intern_114 = {107:1, 179:1}, $intern_115 = {4:1, 107:1, 179:1}, $intern_116 = {4:1, 107:1, 98:1}, $intern_117 = {4:1, 199:1}, $intern_118 = {4:1, 33:1, 27:1, 225:1}, $intern_119 = 2488, $intern_120 = {4:1, 8:1, 631:1};
+var $intern_0 = 2147483647, $intern_1 = 3.141592653589793, $intern_2 = 1000, $intern_3 = {4:1, 8:1}, $intern_4 = {4:1, 93:1, 67:1, 69:1}, $intern_5 = {119:1, 4:1}, $intern_6 = {4:1}, $intern_7 = 2000, $intern_8 = 65535, $intern_9 = {4:1, 36:1, 8:1}, $intern_10 = {96:1, 45:1, 4:1, 33:1, 27:1}, $intern_11 = {92:1, 45:1, 4:1, 33:1, 27:1}, $intern_12 = {238:1, 45:1, 4:1, 33:1, 27:1}, $intern_13 = {201:1, 45:1, 4:1, 33:1, 27:1}, $intern_14 = {45:1, 202:1, 4:1, 33:1, 27:1}, $intern_15 = {45:1, 203:1, 4:1, 33:1, 27:1}, $intern_16 = {134:1, 4:1, 33:1, 27:1}, $intern_17 = {45:1, 281:1, 4:1, 33:1, 27:1}, $intern_18 = 2490, $intern_19 = {16:1}, $intern_20 = {264:1, 4:1, 93:1, 67:1, 69:1}, $intern_21 = {4:1, 33:1, 102:1}, $intern_22 = 4194303, $intern_23 = 1048575, $intern_24 = 4194304, $intern_25 = 17592186044416, $intern_26 = 524288, $intern_27 = -17592186044416, $intern_28 = -2147483648, $intern_29 = {341:1, 4:1}, $intern_30 = {29:1, 28:1}, $intern_31 = {31:1, 16:1, 30:1, 29:1, 19:1, 28:1, 20:1}, $intern_32 = 2503, $intern_33 = {31:1, 16:1, 30:1, 29:1, 129:1, 19:1, 28:1, 20:1}, $intern_34 = 16384, $intern_35 = 65536, $intern_36 = 1048576, $intern_37 = 16777216, $intern_38 = 33554432, $intern_39 = 67108864, $intern_40 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 28:1, 20:1}, $intern_41 = {31:1, 16:1, 30:1, 29:1, 34:1, 379:1, 19:1, 28:1, 20:1}, $intern_42 = {31:1, 16:1, 30:1, 37:1, 29:1, 19:1, 28:1, 20:1}, $intern_43 = {31:1, 16:1, 30:1, 307:1, 29:1, 34:1, 19:1, 28:1, 20:1}, $intern_44 = {31:1, 16:1, 30:1, 29:1, 34:1, 19:1, 123:1, 28:1, 20:1}, $intern_45 = {257:1, 12:1}, $intern_46 = {276:1, 12:1}, $intern_47 = {12:1, 2465:1}, $intern_48 = {75:1, 12:1}, $intern_49 = {107:1}, $intern_50 = {31:1, 16:1, 30:1, 29:1, 34:1, 379:1, 19:1, 282:1, 28:1, 20:1}, $intern_51 = {150:1, 12:1}, $intern_52 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 19:1, 28:1, 20:1}, $intern_53 = {2466:1, 12:1}, $intern_54 = {209:1, 4:1, 33:1, 27:1}, $intern_55 = {31:1, 16:1, 30:1, 29:1, 19:1, 123:1, 28:1, 20:1}, $intern_56 = {234:1}, $intern_57 = {16:1, 19:1, 55:1}, $intern_58 = {19:1}, $intern_59 = {143:1, 12:1}, $intern_60 = {339:1}, $intern_61 = {75:1, 12:1, 16:1, 2441:1}, $intern_62 = 2498, $intern_63 = {16:1, 63:1, 61:1}, $intern_64 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1}, $intern_65 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1}, $intern_66 = {170:1, 12:1}, $intern_67 = {26:1, 12:1}, $intern_68 = {461:1, 12:1}, $intern_69 = {12:1, 632:1}, $intern_70 = 4000, $intern_71 = {12:1, 2450:1}, $intern_72 = {12:1, 2457:1}, $intern_73 = {12:1, 2451:1}, $intern_74 = {12:1, 2452:1}, $intern_75 = {12:1, 2453:1}, $intern_76 = {12:1, 2454:1}, $intern_77 = {12:1, 2455:1}, $intern_78 = {12:1, 2456:1}, $intern_79 = {12:1, 2458:1}, $intern_80 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 120:1}, $intern_81 = {463:1, 12:1}, $intern_82 = {459:1, 12:1}, $intern_83 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1}, $intern_84 = {12:1, 2461:1}, $intern_85 = {12:1, 2460:1}, $intern_86 = {633:1, 12:1}, $intern_87 = {462:1, 12:1}, $intern_88 = {2464:1, 12:1}, $intern_89 = {2463:1, 12:1}, $intern_90 = {2462:1, 12:1}, $intern_91 = 2487, $intern_92 = {107:1, 98:1}, $intern_93 = {4:1, 107:1, 98:1, 306:1}, $intern_94 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1, 22:1}, $intern_95 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 19:1, 28:1, 20:1, 86:1}, $intern_96 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 191:1, 39:1, 38:1, 24:1, 147:1}, $intern_97 = {31:1, 16:1, 30:1, 37:1, 99:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 166:1}, $intern_98 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 140:1, 120:1}, $intern_99 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 192:1, 191:1, 39:1, 38:1, 24:1, 18:1}, $intern_100 = {340:1, 12:1}, $intern_101 = {149:1, 12:1}, $intern_102 = {12:1, 637:1}, $intern_103 = {12:1, 638:1}, $intern_104 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 53:1}, $intern_105 = {307:1, 34:1, 19:1}, $intern_106 = {31:1, 16:1, 30:1, 37:1, 29:1, 34:1, 19:1, 28:1, 20:1, 39:1, 38:1, 24:1, 64:1}, $intern_107 = {16:1, 41:1}, $intern_108 = {16:1, 41:1, 63:1, 61:1}, $intern_109 = {80:1}, $intern_110 = {233:1}, $intern_111 = {4:1, 93:1, 100:1, 67:1, 69:1}, $intern_112 = {199:1}, $intern_113 = 2492, $intern_114 = {107:1, 179:1}, $intern_115 = {4:1, 107:1, 179:1}, $intern_116 = {4:1, 107:1, 98:1}, $intern_117 = {4:1, 199:1}, $intern_118 = {4:1, 33:1, 27:1, 225:1}, $intern_119 = 2488, $intern_120 = {4:1, 8:1, 631:1};
 var _, prototypesByTypeId_0, initFnList_0, permutationId = -1;
 function setGwtProperty(propertyName, propertyValue){
   typeof window === 'object' && typeof window['$gwt'] === 'object' && (window['$gwt'][propertyName] = propertyValue);
@@ -1668,7 +1668,7 @@ _.removeTag = false;
 var Lcom_google_gwt_core_client_ScriptInjector$FromUrl_2_classLit = createForClass('com.google.gwt.core.client', 'ScriptInjector/FromUrl', 480);
 function $clinit_AsyncFragmentLoader(){
   $clinit_AsyncFragmentLoader = emptyMethod;
-  BROWSER_LOADER = new AsyncFragmentLoader(46, stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, []), new ScriptTagLoadingStrategy);
+  BROWSER_LOADER = new AsyncFragmentLoader(46, stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, []), new ScriptTagLoadingStrategy);
 }
 
 function $clearRequestsAlreadyLoaded(this$static){
@@ -1741,7 +1741,7 @@ function $onLoadImpl(this$static, fragment){
     for (callback$array = callbacks , callback$index = 0 , callback$max = callbacks.length; callback$index < callback$max; ++callback$index) {
       callback = callback$array[callback$index];
       try {
-        castTo(callback, 79).onSuccess_0();
+        castTo(callback, 80).onSuccess_0();
       }
        catch ($e0) {
         $e0 = toJava($e0);
@@ -1764,7 +1764,7 @@ function $runAsyncImpl(this$static, fragment, callback){
     return;
   }
   callbacks = this$static.allCallbacks[fragment];
-  callbacks == null && (callbacks = this$static.allCallbacks[fragment] = initUnidimensionalArray(Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit, $intern_3, 79, 0, 0, 1));
+  callbacks == null && (callbacks = this$static.allCallbacks[fragment] = initUnidimensionalArray(Lcom_google_gwt_core_client_RunAsyncCallback_2_classLit, $intern_3, 80, 0, 0, 1));
   setCheck(callbacks, callbacks.length, callback);
   !!this$static.pendingDownloadErrorHandlers[fragment] || $inject_1(this$static, fragment, new AsyncFragmentLoader$1(this$static, fragment));
 }
@@ -1802,7 +1802,7 @@ function AsyncFragmentLoader(numEntries, initialLoadSequence, loadingStrategy){
   numEntriesPlusOne = numEntries + 1;
   this.allCallbacks = initUnidimensionalArray(Ljava_lang_Object_2_classLit, $intern_3, 8, numEntriesPlusOne, 3, 2);
   this.requestedExclusives = new AsyncFragmentLoader$BoundedIntQueue(numEntriesPlusOne);
-  this.isLoaded_0 = initUnidimensionalArray(Z_classLit, $intern_6, 111, numEntriesPlusOne, 16, 1);
+  this.isLoaded_0 = initUnidimensionalArray(Z_classLit, $intern_6, 112, numEntriesPlusOne, 16, 1);
   this.pendingDownloadErrorHandlers = initUnidimensionalArray(Lcom_google_gwt_core_client_impl_AsyncFragmentLoader$LoadTerminatedHandler_2_classLit, $intern_3, 465, numEntriesPlusOne, 0, 1);
 }
 
@@ -1836,7 +1836,7 @@ _.loadTerminated = function loadTerminated(reason){
     this.this$01.allCallbacks[this.val$fragment2] = null;
     for (callback$index = 0 , callback$max = callbacks.length; callback$index < callback$max; ++callback$index) {
       callback = callbacks[callback$index];
-      castTo(callback, 79).onFailure_0(reason);
+      castTo(callback, 80).onFailure_0(reason);
     }
   }
 }
@@ -1865,7 +1865,7 @@ function $size(this$static){
 }
 
 function AsyncFragmentLoader$BoundedIntQueue(maxPuts){
-  this.array = initUnidimensionalArray(I_classLit, $intern_5, 111, maxPuts, 15, 1);
+  this.array = initUnidimensionalArray(I_classLit, $intern_5, 112, maxPuts, 15, 1);
 }
 
 defineClass(464, 1, {}, AsyncFragmentLoader$BoundedIntQueue);
@@ -8299,7 +8299,7 @@ function MultiWordSuggestOracle(){
   this.tree = new PrefixTree;
   this.toCandidates = new HashMap;
   this.toRealSuggestions = new HashMap;
-  this.whitespaceChars = initUnidimensionalArray(C_classLit, $intern_6, 111, ' '.length, 15, 1);
+  this.whitespaceChars = initUnidimensionalArray(C_classLit, $intern_6, 112, ' '.length, 15, 1);
   for (i = 0; i < ' '.length; i++) {
     this.whitespaceChars[i] = ' '.charCodeAt(i);
   }
@@ -9575,7 +9575,7 @@ function WidgetCollection$WidgetIterator(this$0){
   this.this$01 = this$0;
 }
 
-defineClass(110, 1, {}, WidgetCollection$WidgetIterator);
+defineClass(111, 1, {}, WidgetCollection$WidgetIterator);
 _.next_1 = function next_4(){
   return $next_3(this);
 }
@@ -9589,7 +9589,7 @@ _.remove_1 = function remove_14(){
 }
 ;
 _.index_0 = 0;
-var Lcom_google_gwt_user_client_ui_WidgetCollection$WidgetIterator_2_classLit = createForClass('com.google.gwt.user.client.ui', 'WidgetCollection/WidgetIterator', 110);
+var Lcom_google_gwt_user_client_ui_WidgetCollection$WidgetIterator_2_classLit = createForClass('com.google.gwt.user.client.ui', 'WidgetCollection/WidgetIterator', 111);
 function $clinit_ClippedImageImpl(){
   var key, global;
   $clinit_ClippedImageImpl = emptyMethod;
@@ -13425,7 +13425,7 @@ function MaterialComboBox(){
   this.errorMixin = new ErrorMixin_0(this, this.errorLabel, this);
 }
 
-defineClass(112, 220, $intern_65, MaterialComboBox);
+defineClass(110, 220, $intern_65, MaterialComboBox);
 _.getValue_0 = function getValue_6(){
   return $getValue_0(this);
 }
@@ -13513,7 +13513,7 @@ _.multiple = false;
 _.selectedIndex_0 = 0;
 _.suppressChangeEvent = false;
 _.tags = false;
-var Lgwt_material_design_addins_client_combobox_MaterialComboBox_2_classLit = createForClass('gwt.material.design.addins.client.combobox', 'MaterialComboBox', 112);
+var Lgwt_material_design_addins_client_combobox_MaterialComboBox_2_classLit = createForClass('gwt.material.design.addins.client.combobox', 'MaterialComboBox', 110);
 function MaterialComboBox$lambda$0$Type($$outer_0){
   this.$$outer_0 = $$outer_0;
 }
@@ -16680,7 +16680,7 @@ function getMeasurementUnit(value_0){
   }
    catch ($e0) {
     $e0 = toJava($e0);
-    if (instanceOf($e0, 80)) {
+    if (instanceOf($e0, 81)) {
       return null;
     }
      else 
@@ -19778,8 +19778,8 @@ function MaterialBadge(){
   Span_0.call(this, $doc.createElement('span'), stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['badge', 'sideBarBadge']));
 }
 
-defineClass(83, 71, $intern_64, MaterialBadge);
-var Lgwt_material_design_client_ui_MaterialBadge_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialBadge', 83);
+defineClass(78, 71, $intern_64, MaterialBadge);
+var Lgwt_material_design_client_ui_MaterialBadge_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialBadge', 78);
 function MaterialBreadcrumb(){
   AbstractIconButton_1.call(this, stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['breadcrumb']));
 }
@@ -31135,8 +31135,8 @@ function $getOptions(){
 
 function MaterialAreaChart(){
   var chartLoader;
-  this.values = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [165, 135, 157, 139, 136]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [938, 1120, 1167, 1110, 691]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [522, 599, 587, 615, 629]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [998, 1268, 807, 968, 1026]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [450, 288, 397, 215, 366])]);
-  this.valuesInitial = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [1167, 1110, 938, 1120, 691]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [135, 165, 165, 157, 136]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [450, 288, 397, 215, 366]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [522, 599, 587, 615, 629]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [998, 1268, 807, 968, 1026])]);
+  this.values = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [165, 135, 157, 139, 136]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [938, 1120, 1167, 1110, 691]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [522, 599, 587, 615, 629]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [998, 1268, 807, 968, 1026]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [450, 288, 397, 215, 366])]);
+  this.valuesInitial = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [1167, 1110, 938, 1120, 691]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [135, 165, 165, 157, 136]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [450, 288, 397, 215, 366]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [522, 599, 587, 615, 629]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [998, 1268, 807, 968, 1026])]);
   this.countries = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['Bolivia', 'Ecuador', 'Madagascar', 'Papua Guinea', 'Rwanda']);
   this.months = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['2004/05', '2005/06', '2006/07', '2007/08', '2008/09']);
   $initWidget(this, $build_f_MaterialColumn1_1(new MaterialAreaChart_MaterialAreaChartUiBinderImpl$Widgets(this)));
@@ -31273,9 +31273,9 @@ function $getOptions_0(){
 function MaterialBarChart(){
   var chartLoader;
   this.countries = stampJavaTypeInfo(getClassLiteralForArray(Ljava_lang_String_2_classLit, 1), $intern_3, 2, 6, ['Austria', 'Bulgaria', 'Denmark', 'Greece']);
-  this.years = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [2003, 2004, 2005]);
-  this.values = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [1336060, 1538156, 1576579]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [400361, 366849, 440514]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [1001582, 1119450, 993360]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [997974, 941795, 930593])]);
-  this.valuesInitial = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [1538156, 1336060, 1576579]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [366849, 400361, 440514]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [1001582, 993360, 1119450]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 111, 15, [941795, 997974, 930593])]);
+  this.years = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [2003, 2004, 2005]);
+  this.values = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [1336060, 1538156, 1576579]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [400361, 366849, 440514]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [1001582, 1119450, 993360]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [997974, 941795, 930593])]);
+  this.valuesInitial = stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 2), $intern_3, 119, 0, [stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [1538156, 1336060, 1576579]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [366849, 400361, 440514]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [1001582, 993360, 1119450]), stampJavaTypeInfo(getClassLiteralForArray(I_classLit, 1), $intern_5, 112, 15, [941795, 997974, 930593])]);
   $initWidget(this, $build_f_MaterialColumn1_2(new MaterialBarChart_MaterialBarChartUiBinderImpl$Widgets(this)));
   chartLoader = new ChartLoader(stampJavaTypeInfo(getClassLiteralForArray(Lcom_googlecode_gwt_charts_client_ChartPackage_2_classLit, 1), $intern_9, 155, 0, [($clinit_ChartPackage() , CORECHART)]));
   $loadApi(chartLoader, new MaterialBarChart$1(this));
@@ -32136,8 +32136,8 @@ function IllegalArgumentException_0(message){
   RuntimeException_0.call(this, message);
 }
 
-defineClass(80, 67, {4:1, 93:1, 80:1, 67:1, 69:1}, IllegalArgumentException, IllegalArgumentException_0);
-var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 80);
+defineClass(81, 67, {4:1, 93:1, 81:1, 67:1, 69:1}, IllegalArgumentException, IllegalArgumentException_0);
+var Ljava_lang_IllegalArgumentException_2_classLit = createForClass('java.lang', 'IllegalArgumentException', 81);
 function IllegalStateException(){
   RuntimeException.call(this);
 }
@@ -32226,7 +32226,7 @@ function NumberFormatException(message){
   IllegalArgumentException_0.call(this, message);
 }
 
-defineClass(219, 80, {4:1, 93:1, 80:1, 219:1, 67:1, 69:1}, NumberFormatException);
+defineClass(219, 81, {4:1, 93:1, 81:1, 219:1, 67:1, 69:1}, NumberFormatException);
 var Ljava_lang_NumberFormatException_2_classLit = createForClass('java.lang', 'NumberFormatException', 219);
 function StackTraceElement(methodName, fileName, lineNumber){
   this.className_0 = 'Unknown';
