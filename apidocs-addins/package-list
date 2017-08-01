@@ -19,6 +19,7 @@ gwt.material.design.addins.client.dnd
 gwt.material.design.addins.client.dnd.constants
 gwt.material.design.addins.client.dnd.js
 gwt.material.design.addins.client.docviewer
+gwt.material.design.addins.client.emptystate
 gwt.material.design.addins.client.fileuploader
 gwt.material.design.addins.client.fileuploader.base
 gwt.material.design.addins.client.fileuploader.constants
