@@ -82,7 +82,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-rc5" textColor="WHITE"/>
+					<m:MaterialBadge text="2.0-rc6" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
@@ -149,6 +149,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getEmptyStates}" text="Empty States" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT"/>

@@ -33,23 +33,23 @@
                                selectionType="MULTIPLE"/>
 
     <ma:popupmenu.MaterialPopupMenu ui:field="popupMenu">
-      <m:MaterialLink padding="12" display="BLOCK" text="Copy" iconType="CONTENT_COPY" textColor="BLACK"/>
-      <m:MaterialLink padding="12" display="BLOCK" text="Paste" iconType="CONTENT_PASTE" textColor="BLACK"/>
-      <m:MaterialLink padding="12" display="BLOCK" text="Rename" iconType="EDIT" textColor="BLACK"/>
+      <m:MaterialLink display="BLOCK" text="Copy" iconType="CONTENT_COPY" textColor="BLACK"/>
+      <m:MaterialLink display="BLOCK" text="Paste" iconType="CONTENT_PASTE" textColor="BLACK"/>
+      <m:MaterialLink display="BLOCK" text="Rename" iconType="EDIT" textColor="BLACK"/>
 
       <!-- Second level -->
-      <m:MaterialLink activates="moveTo" padding="12" display="BLOCK" text="Move To ..." iconType="MOVE_TO_INBOX" textColor="BLACK" >
+      <m:MaterialLink activates="moveTo" display="BLOCK" text="Move To ..." iconType="MOVE_TO_INBOX" textColor="BLACK" >
         <m:MaterialDropDown activator="moveTo" hover="true" belowOrigin="true">
-          <m:MaterialLink padding="12" display="BLOCK" text="Private" iconType="CONTENT_COPY" textColor="BLACK"/>
-          <m:MaterialLink padding="12" display="BLOCK" text="Public" iconType="CONTENT_PASTE" textColor="BLACK"/>
-          <m:MaterialLink padding="12" display="BLOCK" text="Shared" iconType="EDIT" textColor="BLACK"/>
+          <m:MaterialLink display="BLOCK" text="Private" iconType="CONTENT_COPY" textColor="BLACK"/>
+          <m:MaterialLink display="BLOCK" text="Public" iconType="CONTENT_PASTE" textColor="BLACK"/>
+          <m:MaterialLink display="BLOCK" text="Shared" iconType="EDIT" textColor="BLACK"/>
 
           <!-- Third level -->
-          <m:MaterialLink activates="others" padding="12" display="BLOCK" text="Others" iconType="DEVICES_OTHER" textColor="BLACK" >
+          <m:MaterialLink activates="others" display="BLOCK" text="Others" iconType="DEVICES_OTHER" textColor="BLACK" >
             <m:MaterialDropDown activator="others" hover="true" belowOrigin="true">
-              <m:MaterialLink padding="12" display="BLOCK" iconColor="PURPLE" text="Phone" iconType="PHONE" textColor="BLACK"/>
-              <m:MaterialLink padding="12" display="BLOCK" iconColor="GREEN" text="Tablet" iconType="TABLET" textColor="BLACK"/>
-              <m:MaterialLink padding="12" display="BLOCK" iconColor="BLUE" text="Laptop" iconType="LAPTOP" textColor="BLACK"/>
+              <m:MaterialLink display="BLOCK" iconColor="PURPLE" text="Phone" iconType="PHONE" textColor="BLACK"/>
+              <m:MaterialLink display="BLOCK" iconColor="GREEN" text="Tablet" iconType="TABLET" textColor="BLACK"/>
+              <m:MaterialLink display="BLOCK" iconColor="BLUE" text="Laptop" iconType="LAPTOP" textColor="BLACK"/>
             </m:MaterialDropDown>
           </m:MaterialLink>
 

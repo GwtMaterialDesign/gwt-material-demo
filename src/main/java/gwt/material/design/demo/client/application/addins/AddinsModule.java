@@ -35,6 +35,7 @@ import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.datatable.DataTableModule;
 import gwt.material.design.demo.client.application.addins.dnd.DndModule;
 import gwt.material.design.demo.client.application.addins.docviewer.DocViewerModule;
+import gwt.material.design.demo.client.application.addins.emptystates.EmptyStatesModule;
 import gwt.material.design.demo.client.application.addins.fileuploader.FileUploaderModule;
 import gwt.material.design.demo.client.application.addins.iconmorph.IconMorphModule;
 import gwt.material.design.demo.client.application.addins.inputmask.InputMaskModule;
@@ -88,6 +89,7 @@ public class AddinsModule extends AbstractGinModule {
         install(new ComboBoxModule());
         install(new DataTableModule());
         install(new OverlayModule());
+        install(new EmptyStatesModule());
         install(new CarouselModule());
         install(new CircularProgressModule());
         install(new CountUpModule());

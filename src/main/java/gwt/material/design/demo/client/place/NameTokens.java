@@ -88,6 +88,7 @@ public class NameTokens {
     public static final String combobox = "combobox";
     public static final String datatable = "datatable";
     public static final String overlay = "overlay";
+    public static final String emptystates = "emptystates";
     public static final String carousel = "carousel";
     public static final String circularProgress = "circularProgress";
     public static final String countUp = "countUp";
@@ -401,5 +402,9 @@ public class NameTokens {
 
     public static String getBlueprint() {
         return blueprint;
+    }
+
+    public static String getEmptyStates() {
+        return emptystates;
     }
 }
