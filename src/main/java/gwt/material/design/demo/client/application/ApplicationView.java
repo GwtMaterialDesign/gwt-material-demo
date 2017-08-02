@@ -31,6 +31,7 @@ import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.pwa.PwaManager;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
@@ -91,6 +92,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.register(chipSpecification, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipSpecification.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(titlePanel);
+
+        PwaManager.getInstance().load();
     }
 
     @UiHandler("imgGPlus")
