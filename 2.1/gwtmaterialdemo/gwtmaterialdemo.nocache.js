@@ -92,12 +92,15 @@ function gwtmaterialdemo(){
         callback();
         return;
       }
-      function onBodyDone(){
+      function checkBodyDone(){
         if (!bodyDone) {
+          if (!isBodyLoaded()) {
+            return;
+          }
           bodyDone = true;
           callback();
           if ($doc_0.removeEventListener) {
-            $doc_0.removeEventListener('DOMContentLoaded', onBodyDone, false);
+            $doc_0.removeEventListener('readystatechange', checkBodyDone, false);
           }
           if (onBodyDoneTimerId) {
             clearInterval(onBodyDoneTimerId);
@@ -106,14 +109,12 @@ function gwtmaterialdemo(){
       }
 
       if ($doc_0.addEventListener) {
-        $doc_0.addEventListener('DOMContentLoaded', onBodyDone, false);
+        $doc_0.addEventListener('readystatechange', checkBodyDone, false);
       }
       var onBodyDoneTimerId = setInterval(function(){
-        if (isBodyLoaded()) {
-          onBodyDone();
-        }
+        checkBodyDone();
       }
-      , 50);
+      , 10);
     }
 
     function installCode(code_0){
@@ -374,9 +375,9 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['ie10'], '49AF08709A568284E7C7A1FAE8E80166');
-      unflattenKeylistIntoAnswers(['gecko1_8'], '618613AB0E2AECB6C00826C66435B2C8');
-      unflattenKeylistIntoAnswers(['safari'], 'EAFE1F9FAD81FAB33F57D04C897656E6');
+      unflattenKeylistIntoAnswers(['safari'], '705114B7B1659C3FB6582D8053DE5377');
+      unflattenKeylistIntoAnswers(['ie10'], 'A2DF85EF09373FD69C8BD59C04385220');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'B5194B209415537CB2522A26C940C066');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
