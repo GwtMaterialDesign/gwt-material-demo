@@ -312,6 +312,19 @@
             <version>1</version>
         </dependency>
 
+        <!-- Selenium Testing thru Browserstack -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.9.10</version>
+        </dependency>
+
         <!-- GWT -->
         <dependency>
             <groupId>com.google.gwt</groupId>
