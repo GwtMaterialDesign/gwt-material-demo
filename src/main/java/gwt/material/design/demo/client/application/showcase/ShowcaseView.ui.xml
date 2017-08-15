@@ -209,11 +209,5 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
-    <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="GWT Material Phonegap" description="Phonegap Integration with GWT Material Wrapper is now available. Feel free to download the Android Release and give us feedback."/>
-      <m:MaterialAnchorButton href="http://gwt-material.appspot.com/bin/gwtmaterial.apk" target="_blank" textColor="WHITE" waves="LIGHT"  text="Download APK File"/>
-      <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material-phonegap" target="_blank" textColor="WHITE" waves="LIGHT"  text="Source"/>
-    </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>
