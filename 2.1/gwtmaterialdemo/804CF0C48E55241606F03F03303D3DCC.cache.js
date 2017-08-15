@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.1";
-var $strongName = 'E0D372437DC178B04099CFE6569FD6A8';
+var $strongName = '804CF0C48E55241606F03F03303D3DCC';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -17843,7 +17843,7 @@ function EnabledMixin(widget){
   AbstractMixin.call(this, widget);
 }
 
-defineClass(80, 117, {}, EnabledMixin);
+defineClass(79, 117, {}, EnabledMixin);
 _.setUiObject = function setUiObject_0(uiObject){
   $setUiObject_0(this, castTo(uiObject, 20));
 }
@@ -17856,7 +17856,7 @@ _.setEnabled = function setEnabled_10(enabled){
   $setEnabled_4(this, enabled);
 }
 ;
-var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 80);
+var Lgwt_material_design_client_base_mixin_EnabledMixin_2_classLit = createForClass('gwt.material.design.client.base.mixin', 'EnabledMixin', 79);
 function EnabledMixin$lambda$0$Type($$outer_0, enabled_1){
   this.$$outer_0 = $$outer_0;
   this.enabled_1 = enabled_1;
@@ -20791,12 +20791,12 @@ function MaterialAnchorButton_0(text_0){
   AbstractIconButton_0.call(this, ($clinit_ButtonType() , RAISED), text_0);
 }
 
-defineClass(73, 200, $intern_85, MaterialAnchorButton, MaterialAnchorButton_0);
+defineClass(74, 200, $intern_85, MaterialAnchorButton, MaterialAnchorButton_0);
 _.createElement_0 = function createElement_1(){
   return $doc.createElement('a');
 }
 ;
-var Lgwt_material_design_client_ui_MaterialAnchorButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialAnchorButton', 73);
+var Lgwt_material_design_client_ui_MaterialAnchorButton_2_classLit = createForClass('gwt.material.design.client.ui', 'MaterialAnchorButton', 74);
 function $$init_7(this$static){
   this$static.textMixin = new TextMixin(this$static);
 }
@@ -21346,7 +21346,7 @@ function $add_32(this$static, child){
 }
 
 function $initialize_5(this$static, activator){
-  var options;
+  var options, parent_0;
   options = new $wnd.Object;
   options.constrain_width = this$static.constrainWidth;
   options.inDuration = this$static.inDuration;
@@ -21356,6 +21356,8 @@ function $initialize_5(this$static, activator){
   options.belowOrigin = this$static.belowOrigin;
   options.alignment = this$static.alignment_0.cssClass;
   $wnd.$(activator).dropdown(options);
+  parent_0 = this$static.parent_1;
+  instanceOf(parent_0, 34) && castTo(parent_0, 34).setEnabled(!$getElement(castTo((!this$static.enabledMixin && (this$static.enabledMixin = new EnabledMixin(this$static)) , this$static.enabledMixin).uiObject, 20)).hasAttribute('disabled'));
 }
 
 function MaterialDropDown(){
@@ -21399,13 +21401,14 @@ _.initialize_0 = function initialize_20(){
   $initialize_5(this, this.activatorElement);
 }
 ;
+_.onUnload = function onUnload_16(){
+  this.initialize = false;
+}
+;
 _.setEnabled = function setEnabled_14(enabled){
-  var parent_0;
   $setEnabled_4((!this.enabledMixin && (this.enabledMixin = new EnabledMixin(this)) , this.enabledMixin), enabled);
-  if (this.initialize) {
-    parent_0 = this.parent_1;
-    instanceOf(parent_0, 34) && castTo(parent_0, 34).setEnabled(enabled);
-  }
+  $wnd.$(this.activatorElement).dropdown('remove');
+  $initialize_5(this, this.activatorElement);
 }
 ;
 _.belowOrigin = false;
@@ -21695,7 +21698,7 @@ _.onLoad = function onLoad_25(){
   $onLoad_0(this);
 }
 ;
-_.onUnload = function onUnload_17(){
+_.onUnload = function onUnload_18(){
   this.initialize = false;
   if (this.valueChangeHandler) {
     $removeHandler(this.valueChangeHandler.real);
@@ -22002,7 +22005,7 @@ _.onLoad = function onLoad_27(){
   $build_7(this);
 }
 ;
-_.onUnload = function onUnload_18(){
+_.onUnload = function onUnload_19(){
   var hr, hr$iterator;
   this.initialize = false;
   for (hr$iterator = new ArrayList$1(this.handlers); hr$iterator.i < hr$iterator.this$01.array.length;) {
@@ -22141,7 +22144,7 @@ _.onLoad = function onLoad_30(){
   $build_8(this);
 }
 ;
-_.onUnload = function onUnload_19(){
+_.onUnload = function onUnload_20(){
   this.initialize = false;
   $clear_5(this);
   this.curSel = -1;
@@ -22500,7 +22503,7 @@ _.onOpening = function onOpening(){
   $fireEvent_0(this, new SideNavOpeningEvent);
 }
 ;
-_.onUnload = function onUnload_20(){
+_.onUnload = function onUnload_21(){
   this.initialize = false;
   $wnd.$('#sidenav-overlay').remove();
   this.activator = null;
@@ -24043,8 +24046,8 @@ function $build_f_HTMLPanel1(this$static){
   $get_0(this$static.domId2Element);
   __attachRecord__.origParent?$insertBefore(__attachRecord__.origParent, __attachRecord__.element, __attachRecord__.origSibling):orphan(__attachRecord__.element);
   $addAndReplaceElement(f_HTMLPanel1, (menu = new HTMLPanel((sb = new StringBuilder , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb.string)).html_0) , this$static.owner.menu = menu , menu), $get_0(this$static.domId0Element));
-  $addAndReplaceElement(f_HTMLPanel1, (f_MaterialContainer2 = new MaterialContainer , $add_14(f_MaterialContainer2, (titlePanel = new MaterialPanel , $add_14(titlePanel, (panel = new MaterialPanel , $add_14(panel, (title_0 = new MaterialLabel , $setFontSize_2(title_0.fontSizeMixin, '2.3em') , $setText_8(title_0.textMixin, 'GWT-Material') , this$static.owner.title_0 = title_0 , title_0)) , $add_14(panel, (description = new MaterialLabel , $setFontSize_2(description.fontSizeMixin, '1.1em') , $setText_8(description.textMixin, 'A Material Design look and feel for GWT Apps plus Phonegap.') , this$static.owner.description_0 = description , description)) , $add_14(panel, (f_MaterialPanel3 = new MaterialPanel , $add_14(f_MaterialPanel3, (chipXml = new MaterialChip , chipXml.element_0.style['margin'] = ($clinit_Style$Unit() , '6.0px') , $setLetter(chipXml.letterMixin, 'X') , $setText_9(chipXml.chipLabel, 'XML') , $add_14(chipXml, chipXml.chipLabel) , $setTextColor(chipXml, ($clinit_Color() , WHITE)) , this$static.owner.chipXml = chipXml , chipXml)) , $add_14(f_MaterialPanel3, (chipJava = new MaterialChip , chipJava.element_0.style['margin'] = '6.0px' , $setLetter(chipJava.letterMixin, 'J') , $setText_9(chipJava.chipLabel, 'JAVA') , $add_14(chipJava, chipJava.chipLabel) , $setTextColor(chipJava, WHITE) , this$static.owner.chipJava = chipJava , chipJava)) , $add_14(f_MaterialPanel3, (chipSpecification = new MaterialChip , chipSpecification.element_0.style['margin'] = '6.0px' , $setLetter(chipSpecification.letterMixin, 'S') , $setText_9(chipSpecification.chipLabel, 'SPECIFICATION') , $add_14(chipSpecification, chipSpecification.chipLabel) , $setTextColor(chipSpecification, WHITE) , this$static.owner.chipSpecification = chipSpecification , chipSpecification)) , f_MaterialPanel3.element_0.style['marginTop'] = '20.0px' , f_MaterialPanel3)) , panel)) , titlePanel.element_0.style['padding'] = '56.0px' , $setBackgroundColor(titlePanel, BLUE) , $setShadow_0((!titlePanel.shadowMixin && (titlePanel.shadowMixin = new ShadowMixin(titlePanel)) , titlePanel.shadowMixin), 1) , $setTextColor(titlePanel, WHITE) , titlePanel.element_0.style['marginTop'] = '56.0px' , this$static.owner.titlePanel = titlePanel , titlePanel)) , $add_14(f_MaterialContainer2, (main = new HTMLPanel((sb_0 = new StringBuilder , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html_0) , setStyleName(main.element_0, 'BY3IKFC-c-c', true) , setStyleName(main.element_0, 'panel', true) , this$static.owner.main_0 = main , main)) , $add_14(f_MaterialContainer2, (f_MaterialPanel4 = new MaterialPanel , $add_14(f_MaterialPanel4, new HTMLPanel((sb_1 = new StringBuilder , sb_1.string += "<input name='IL_IN_TAG' type='hidden' value='1'>" , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html_0)) , f_MaterialPanel4)) , f_MaterialContainer2), $get_0(this$static.domId1Element));
-  $addAndReplaceElement(f_HTMLPanel1, (footer = new MaterialFooter , $add_33(footer, (f_MaterialRow6 = new MaterialRow , $add_14(f_MaterialRow6, (f_MaterialColumn7 = new MaterialColumn , $add_14(f_MaterialColumn7, (f_HTMLPanel8 = new HTMLPanel($html4(this$static.domId3).html_0) , __attachRecord___0 = attachToDom(f_HTMLPanel8.element_0) , $get_0(this$static.domId3Element) , __attachRecord___0.origParent?$insertBefore(__attachRecord___0.origParent, __attachRecord___0.element, __attachRecord___0.origSibling):orphan(__attachRecord___0.element) , $addAndReplaceElement(f_HTMLPanel8, (f_MaterialTitle9 = new MaterialTitle , $setText_13(f_MaterialTitle9.paragraph, 'Any amount would help support and continue development on this project and is greatly appreciated.') , $setInnerHTML($getElement(f_MaterialTitle9.header), ($clinit_SafeHtmlUtils() , (new SafeHtmlString(htmlEscape('Support Us'))).html_0)) , $setTextColor(f_MaterialTitle9, WHITE) , f_MaterialTitle9), $get_0(this$static.domId3Element)) , f_HTMLPanel8)) , $setGrid_0((!f_MaterialColumn7.gridMixin && (f_MaterialColumn7.gridMixin = new GridMixin(f_MaterialColumn7)) , f_MaterialColumn7.gridMixin), 's12 m4 m4') , f_MaterialColumn7)) , $add_14(f_MaterialRow6, (f_MaterialColumn10 = new MaterialColumn , $add_14(f_MaterialColumn10, (f_MaterialTitle11 = new MaterialTitle , $setText_13(f_MaterialTitle11.paragraph, 'We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration.') , $setInnerHTML($getElement(f_MaterialTitle11.header), (new SafeHtmlString(htmlEscape('Join The Discussion'))).html_0) , $setTextColor(f_MaterialTitle11, WHITE) , f_MaterialTitle11)) , $add_14(f_MaterialColumn10, (f_MaterialAnchorButton12 = new MaterialAnchorButton , $setWaves(f_MaterialAnchorButton12, ($clinit_WavesType() , LIGHT)) , $setText_9(f_MaterialAnchorButton12.span_1, 'CHAT') , f_MaterialAnchorButton12.span_1.attached || $add_14(f_MaterialAnchorButton12, f_MaterialAnchorButton12.span_1) , f_MaterialAnchorButton12.element_0.setAttribute('href', 'https://gitter.im/GwtMaterialDesign/gwt-material') , $setTextColor(f_MaterialAnchorButton12, WHITE) , f_MaterialAnchorButton12.element_0.setAttribute('target', '_blank') , f_MaterialAnchorButton12)) , $setGrid_0((!f_MaterialColumn10.gridMixin && (f_MaterialColumn10.gridMixin = new GridMixin(f_MaterialColumn10)) , f_MaterialColumn10.gridMixin), 's12 m4 l4') , f_MaterialColumn10)) , $add_14(f_MaterialRow6, (f_MaterialColumn13 = new MaterialColumn , $add_14(f_MaterialColumn13, (f_MaterialTitle14 = new MaterialTitle , $setText_13(f_MaterialTitle14.paragraph, 'Download, fork, pull, file issues, and more at the official GWT Material repo on Github.') , $setInnerHTML($getElement(f_MaterialTitle14.header), (new SafeHtmlString(htmlEscape('Github'))).html_0) , $setTextColor(f_MaterialTitle14, WHITE) , f_MaterialTitle14)) , $add_14(f_MaterialColumn13, (f_MaterialAnchorButton15 = new MaterialAnchorButton , $setWaves(f_MaterialAnchorButton15, LIGHT) , $setText_9(f_MaterialAnchorButton15.span_1, 'Github') , f_MaterialAnchorButton15.span_1.attached || $add_14(f_MaterialAnchorButton15, f_MaterialAnchorButton15.span_1) , f_MaterialAnchorButton15.element_0.setAttribute('href', 'https://github.com/GwtMaterialDesign/gwt-material/') , $setTextColor(f_MaterialAnchorButton15, WHITE) , f_MaterialAnchorButton15.element_0.setAttribute('target', '_blank') , f_MaterialAnchorButton15)) , $add_0(f_MaterialColumn13, (f_MaterialTooltip16 = new MaterialTooltip , $add_41(f_MaterialTooltip16, (imgGPlus = new MaterialImage , setStyleName(imgGPlus.element_0, 'BY3IKFC-c-b', true) , $setResource_1(imgGPlus, ($clinit_MaterialResources_default_InlineClientBundleGenerator() , $clinit_MaterialResources_default_InlineClientBundleGenerator$gplusInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator() , gplus)) , $addClickHandler(imgGPlus, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1) , imgGPlus)) , f_MaterialTooltip16.text_0 = 'Visit our Community' , $getElement(f_MaterialTooltip16.widget).setAttribute('data-tooltip', 'Visit our Community') , $setPosition_4(f_MaterialTooltip16, ($clinit_Position() , RIGHT_9)) , f_MaterialTooltip16)) , $setGrid_0((!f_MaterialColumn13.gridMixin && (f_MaterialColumn13.gridMixin = new GridMixin(f_MaterialColumn13)) , f_MaterialColumn13.gridMixin), 's12 m4 l4') , f_MaterialColumn13)) , f_MaterialRow6)) , $add_33(footer, (footerCopyRight = new MaterialFooterCopyright , $add_34(footerCopyRight, (f_MaterialLabel17 = new MaterialLabel , $setText_8(f_MaterialLabel17.textMixin, '\xA9 2017 Copyright GWT Material') , f_MaterialLabel17)) , setStyleName(footerCopyRight.element_0, 'footer-copyright', true) , this$static.owner.footerCopyRight = footerCopyRight , footerCopyRight)) , setStyleName(footer.element_0, 'BY3IKFC-c-a', true) , this$static.owner.footer = footer , footer), $get_0(this$static.domId2Element));
+  $addAndReplaceElement(f_HTMLPanel1, (f_MaterialContainer2 = new MaterialContainer , $add_14(f_MaterialContainer2, (titlePanel = new MaterialPanel , $add_14(titlePanel, (panel = new MaterialPanel , $add_14(panel, (title_0 = new MaterialLabel , $setFontSize_2(title_0.fontSizeMixin, '2.3em') , $setText_8(title_0.textMixin, 'GWT-Material') , this$static.owner.title_0 = title_0 , title_0)) , $add_14(panel, (description = new MaterialLabel , $setFontSize_2(description.fontSizeMixin, '1.1em') , $setText_8(description.textMixin, 'A Material Design look and feel for GWT Apps.') , this$static.owner.description_0 = description , description)) , $add_14(panel, (f_MaterialPanel3 = new MaterialPanel , $add_14(f_MaterialPanel3, (chipXml = new MaterialChip , chipXml.element_0.style['margin'] = ($clinit_Style$Unit() , '6.0px') , $setLetter(chipXml.letterMixin, 'X') , $setText_9(chipXml.chipLabel, 'XML') , $add_14(chipXml, chipXml.chipLabel) , $setTextColor(chipXml, ($clinit_Color() , WHITE)) , this$static.owner.chipXml = chipXml , chipXml)) , $add_14(f_MaterialPanel3, (chipJava = new MaterialChip , chipJava.element_0.style['margin'] = '6.0px' , $setLetter(chipJava.letterMixin, 'J') , $setText_9(chipJava.chipLabel, 'JAVA') , $add_14(chipJava, chipJava.chipLabel) , $setTextColor(chipJava, WHITE) , this$static.owner.chipJava = chipJava , chipJava)) , $add_14(f_MaterialPanel3, (chipSpecification = new MaterialChip , chipSpecification.element_0.style['margin'] = '6.0px' , $setLetter(chipSpecification.letterMixin, 'S') , $setText_9(chipSpecification.chipLabel, 'SPECIFICATION') , $add_14(chipSpecification, chipSpecification.chipLabel) , $setTextColor(chipSpecification, WHITE) , this$static.owner.chipSpecification = chipSpecification , chipSpecification)) , f_MaterialPanel3.element_0.style['marginTop'] = '20.0px' , f_MaterialPanel3)) , panel)) , titlePanel.element_0.style['padding'] = '56.0px' , $setBackgroundColor(titlePanel, BLUE) , $setShadow_0((!titlePanel.shadowMixin && (titlePanel.shadowMixin = new ShadowMixin(titlePanel)) , titlePanel.shadowMixin), 1) , $setTextColor(titlePanel, WHITE) , titlePanel.element_0.style['marginTop'] = '56.0px' , this$static.owner.titlePanel = titlePanel , titlePanel)) , $add_14(f_MaterialContainer2, (main = new HTMLPanel((sb_0 = new StringBuilder , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_0.string)).html_0) , setStyleName(main.element_0, 'BY3IKFC-c-c', true) , setStyleName(main.element_0, 'panel', true) , this$static.owner.main_0 = main , main)) , $add_14(f_MaterialContainer2, (f_MaterialPanel4 = new MaterialPanel , $add_14(f_MaterialPanel4, new HTMLPanel((sb_1 = new StringBuilder , sb_1.string += "<input name='IL_IN_TAG' type='hidden' value='1'>" , new OnlyToBeUsedInGeneratedCodeStringBlessedAsSafeHtml(sb_1.string)).html_0)) , f_MaterialPanel4)) , f_MaterialContainer2), $get_0(this$static.domId1Element));
+  $addAndReplaceElement(f_HTMLPanel1, (footer = new MaterialFooter , $add_33(footer, (f_MaterialRow6 = new MaterialRow , $add_14(f_MaterialRow6, (f_MaterialColumn7 = new MaterialColumn , $add_14(f_MaterialColumn7, (f_HTMLPanel8 = new HTMLPanel($html4(this$static.domId3).html_0) , __attachRecord___0 = attachToDom(f_HTMLPanel8.element_0) , $get_0(this$static.domId3Element) , __attachRecord___0.origParent?$insertBefore(__attachRecord___0.origParent, __attachRecord___0.element, __attachRecord___0.origSibling):orphan(__attachRecord___0.element) , $addAndReplaceElement(f_HTMLPanel8, (f_MaterialTitle9 = new MaterialTitle , $setText_13(f_MaterialTitle9.paragraph, 'Any amount would help support and continue development on this project and is greatly appreciated.') , $setInnerHTML($getElement(f_MaterialTitle9.header), ($clinit_SafeHtmlUtils() , (new SafeHtmlString(htmlEscape('Support Us'))).html_0)) , $setTextColor(f_MaterialTitle9, WHITE) , f_MaterialTitle9), $get_0(this$static.domId3Element)) , f_HTMLPanel8)) , $setGrid_0((!f_MaterialColumn7.gridMixin && (f_MaterialColumn7.gridMixin = new GridMixin(f_MaterialColumn7)) , f_MaterialColumn7.gridMixin), 's12 m4 m4') , f_MaterialColumn7)) , $add_14(f_MaterialRow6, (f_MaterialColumn10 = new MaterialColumn , $add_14(f_MaterialColumn10, (f_MaterialTitle11 = new MaterialTitle , $setText_13(f_MaterialTitle11.paragraph, 'We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design.') , $setInnerHTML($getElement(f_MaterialTitle11.header), (new SafeHtmlString(htmlEscape('Join The Discussion'))).html_0) , $setTextColor(f_MaterialTitle11, WHITE) , f_MaterialTitle11)) , $add_14(f_MaterialColumn10, (f_MaterialAnchorButton12 = new MaterialAnchorButton , $setWaves(f_MaterialAnchorButton12, ($clinit_WavesType() , LIGHT)) , $setText_9(f_MaterialAnchorButton12.span_1, 'CHAT') , f_MaterialAnchorButton12.span_1.attached || $add_14(f_MaterialAnchorButton12, f_MaterialAnchorButton12.span_1) , f_MaterialAnchorButton12.element_0.setAttribute('href', 'https://gitter.im/GwtMaterialDesign/gwt-material') , $setTextColor(f_MaterialAnchorButton12, WHITE) , f_MaterialAnchorButton12.element_0.setAttribute('target', '_blank') , f_MaterialAnchorButton12)) , $setGrid_0((!f_MaterialColumn10.gridMixin && (f_MaterialColumn10.gridMixin = new GridMixin(f_MaterialColumn10)) , f_MaterialColumn10.gridMixin), 's12 m4 l4') , f_MaterialColumn10)) , $add_14(f_MaterialRow6, (f_MaterialColumn13 = new MaterialColumn , $add_14(f_MaterialColumn13, (f_MaterialTitle14 = new MaterialTitle , $setText_13(f_MaterialTitle14.paragraph, 'Download, fork, pull, file issues, and more at the official GWT Material repo on Github.') , $setInnerHTML($getElement(f_MaterialTitle14.header), (new SafeHtmlString(htmlEscape('Github'))).html_0) , $setTextColor(f_MaterialTitle14, WHITE) , f_MaterialTitle14)) , $add_14(f_MaterialColumn13, (f_MaterialAnchorButton15 = new MaterialAnchorButton , $setWaves(f_MaterialAnchorButton15, LIGHT) , $setText_9(f_MaterialAnchorButton15.span_1, 'Github') , f_MaterialAnchorButton15.span_1.attached || $add_14(f_MaterialAnchorButton15, f_MaterialAnchorButton15.span_1) , f_MaterialAnchorButton15.element_0.setAttribute('href', 'https://github.com/GwtMaterialDesign/gwt-material/') , $setTextColor(f_MaterialAnchorButton15, WHITE) , f_MaterialAnchorButton15.element_0.setAttribute('target', '_blank') , f_MaterialAnchorButton15)) , $add_0(f_MaterialColumn13, (f_MaterialTooltip16 = new MaterialTooltip , $add_41(f_MaterialTooltip16, (imgGPlus = new MaterialImage , setStyleName(imgGPlus.element_0, 'BY3IKFC-c-b', true) , $setResource_1(imgGPlus, ($clinit_MaterialResources_default_InlineClientBundleGenerator() , $clinit_MaterialResources_default_InlineClientBundleGenerator$gplusInitializer() , $clinit_MaterialResources_default_InlineClientBundleGenerator() , gplus)) , $addClickHandler(imgGPlus, this$static.handlerMethodWithNameVeryUnlikelyToCollideWithUserFieldNames1) , imgGPlus)) , f_MaterialTooltip16.text_0 = 'Visit our Community' , $getElement(f_MaterialTooltip16.widget).setAttribute('data-tooltip', 'Visit our Community') , $setPosition_4(f_MaterialTooltip16, ($clinit_Position() , RIGHT_9)) , f_MaterialTooltip16)) , $setGrid_0((!f_MaterialColumn13.gridMixin && (f_MaterialColumn13.gridMixin = new GridMixin(f_MaterialColumn13)) , f_MaterialColumn13.gridMixin), 's12 m4 l4') , f_MaterialColumn13)) , f_MaterialRow6)) , $add_33(footer, (footerCopyRight = new MaterialFooterCopyright , $add_34(footerCopyRight, (f_MaterialLabel17 = new MaterialLabel , $setText_8(f_MaterialLabel17.textMixin, '\xA9 2017 Copyright GWT Material') , f_MaterialLabel17)) , setStyleName(footerCopyRight.element_0, 'footer-copyright', true) , this$static.owner.footerCopyRight = footerCopyRight , footerCopyRight)) , setStyleName(footer.element_0, 'BY3IKFC-c-a', true) , this$static.owner.footer = footer , footer), $get_0(this$static.domId2Element));
   return f_HTMLPanel1;
 }
 
@@ -24131,7 +24134,7 @@ function AboutPresenter(eventBus, view, proxy){
 defineClass(869, 57, $intern_56, AboutPresenter);
 _.onReveal = function onReveal_1(){
   $clinit_SetPageTitleEvent();
-  $fireEvent_1(this, new SetPageTitleEvent('GWT Material', 'A Material Design look and feel for GWT Apps plus Phonegap.', '', ''));
+  $fireEvent_1(this, new SetPageTitleEvent('GWT Material', 'A Material Design look and feel for GWT Apps.', '', ''));
 }
 ;
 var Lgwt_material_design_demo_client_application_about_AboutPresenter_2_classLit = createForClass('gwt.material.design.demo.client.application.about', 'AboutPresenter', 869);
