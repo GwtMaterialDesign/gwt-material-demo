@@ -1,7 +1,7 @@
 package gwt.material.design.demo.selenium.test.base;
 
 import gwt.material.design.demo.selenium.test.constants.Elements;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -13,13 +13,14 @@ import java.util.List;
  */
 public class BaseSeleniumTest extends AbstractSeleniumTest {
 
-    public BaseSeleniumTest(WebDriverManager driver, String component) {
-        super(driver, component);
+    public BaseSeleniumTest(WebDriverManager manager, String component) {
+        super(manager);
         searchComponent(component);
     }
 
     public BaseSeleniumTest(WebDriverManager manager) {
         super(manager);
+        runTests();
     }
 
     @Override
@@ -58,7 +59,7 @@ public class BaseSeleniumTest extends AbstractSeleniumTest {
     }
 
     protected void closeSearch() {
-        findElement(Elements.SEARCH_CLOSE_ICON).click();
+        click(Elements.SEARCH_CLOSE_ICON);
     }
 
     protected void submitSearch() {
@@ -67,5 +68,19 @@ public class BaseSeleniumTest extends AbstractSeleniumTest {
 
     protected List<WebElement> getResultItems() {
         return getSearchResultPanel().findElements(By.cssSelector("a"));
+    }
+
+    protected void scrollToSection(int index) {
+        scrollTo(findSection(index));
+    }
+
+    protected WebElement getAppTitle() {
+        return findElement(Elements.APP_TITLE);
+    }
+
+
+    // It is a 1-based index
+    protected WebElement findSection(int index) {
+        return findElement(Elements.SHOWCASE_SECTION + ":nth-child(" + index + ")");
     }
 }

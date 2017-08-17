@@ -19,10 +19,11 @@
  */
 package gwt.material.design.demo.selenium.test;
 
-import gwt.material.design.demo.selenium.test.constants.TestPlatform;
 import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 import gwt.material.design.demo.selenium.test.constants.Config;
-import gwt.material.design.demo.selenium.test.ui.GlobalFunctionalityTest;
+import gwt.material.design.demo.selenium.test.constants.TestPlatform;
+import gwt.material.design.demo.selenium.test.site.SiteNavigationFeatureTest;
+import gwt.material.design.demo.selenium.test.site.SiteSearchFeatureTest;
 import gwt.material.design.demo.selenium.test.ui.TabsTest;
 import junit.framework.TestSuite;
 import org.testng.annotations.AfterTest;
@@ -49,9 +50,14 @@ public class GmdSeleniumTestSuite extends TestSuite {
         manager.load(Config.BASE_URL);
     }
 
-    @Test(description = "Checking Global Functionality")
-    public void testGlobal() {
-        new GlobalFunctionalityTest(manager);
+    @Test(description = "Checking Site Navigation")
+    public void testSiteNavigation() {
+        new SiteNavigationFeatureTest(manager);
+    }
+
+    @Test(description = "Checking Site Search Feature")
+    public void testSiteSearchFeature() {
+        new SiteSearchFeatureTest(manager);
     }
 
     @Test(description = "Checking Tabs")

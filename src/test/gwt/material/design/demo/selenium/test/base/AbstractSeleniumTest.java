@@ -22,6 +22,7 @@ package gwt.material.design.demo.selenium.test.base;
 import gwt.material.design.demo.selenium.test.constants.Config;
 import gwt.material.design.demo.selenium.test.constants.Elements;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -37,10 +38,6 @@ public abstract class AbstractSeleniumTest {
     protected WebDriver driver;
     protected String gmdUrl;
     protected WebDriverWait wait;
-
-    public AbstractSeleniumTest(WebDriverManager driver, String component) {
-        this(driver);
-    }
 
     public AbstractSeleniumTest(WebDriverManager manager) {
         this.gmdUrl = manager.getBaseUrl();
@@ -60,44 +57,51 @@ public abstract class AbstractSeleniumTest {
         driver.get(url);
     }
 
-    protected void click(String cssSelector) {
-        findElement(cssSelector).click();
+    protected void navigateTo(String href) {
+        findElement("a[href='#" + href + "']").click();
     }
 
-    protected void sendKeys(String text, String cssSelector) {
-        findElement(cssSelector).sendKeys(text);
+    protected void click(String selector) {
+        findElement(selector).click();
     }
 
-    protected void scrollToSection(int index) {
-        scrollTo(findSection(index));
-    }
-
-    protected WebElement getAppTitle() {
-        return findElement(Elements.APP_TITLE);
-    }
-
-    protected void waitUntilDisplayed(String cssSelector) {
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
-    }
-
-    // It is a 1-based index
-    protected WebElement findSection(int index) {
-        return findElement(Elements.SHOWCASE_SECTION + ":nth-child("+ index + ")");
+    protected void sendKeys(CharSequence text, String selector) {
+        findElement(selector).sendKeys(text);
     }
 
     protected WebElement findElement(String selector) {
-        waitUntilDisplayed(selector);
-        return driver.findElement(By.cssSelector(selector));
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(selector)));
+            return driver.findElement(By.cssSelector(selector));
+        } catch (NoSuchElementException e) {
+            return null;
+        }
     }
 
     protected boolean isTextMatch(String selector, String text) {
-        wait.until(ExpectedConditions.textToBe(By.cssSelector(selector), text));
-        WebElement element = findElement(selector);
-        return element.getText().equals(text);
+        try {
+            wait.until(ExpectedConditions.textToBe(By.cssSelector(selector), text));
+            return findElement(selector).getText().equals(text);
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 
-    protected boolean isDisplayed(WebElement element) {
-        return element.isDisplayed();
+    protected boolean isCssPropertyValueMatch(String selector, String property, String value) {
+        try {
+            wait.until(ExpectedConditions.attributeContains(By.cssSelector(selector), property, value));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    protected boolean isVisible(String selector) {
+        return isCssPropertyValueMatch(selector, "display", "block");
+    }
+
+    protected boolean hasChildElements(String selector) {
+        return findElement(selector).findElements(By.xpath(".//*")).size() != 0;
     }
 
     protected void reload() {

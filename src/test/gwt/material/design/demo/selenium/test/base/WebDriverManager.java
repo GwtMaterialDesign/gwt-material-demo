@@ -28,6 +28,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * A Web Driver manager that setups the {@link gwt.material.design.demo.selenium.test.constants.TestPlatform} as testing
+ * environment and loads the Base Url
+ */
 public class WebDriverManager {
 
     private String baseUrl;

@@ -21,9 +21,9 @@ package gwt.material.design.demo.selenium.test.ui;
 
 import gwt.material.design.demo.selenium.test.base.BaseSeleniumTest;
 import gwt.material.design.demo.selenium.test.base.WebDriverManager;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class TabsTest extends BaseSeleniumTest {
 
@@ -58,19 +58,7 @@ public class TabsTest extends BaseSeleniumTest {
     }
 
     protected void checkBasic() {
-        // Check the first tab
-        WebElement firstTabItem = findTabItem(1, 1);
-        WebElement secondTabItem = findTabItem(1, 2);
-        WebElement thirdTabItem = findTabItem(1, 3);
 
-        // Navigate to second tab item
-        Assert.assertNotNull(secondTabItem);
-        secondTabItem.click();
-
-        // Check the active tab item
-        Assert.assertFalse(isActive(firstTabItem));
-        Assert.assertFalse(isActive(thirdTabItem));
-        Assert.assertTrue(isActive(secondTabItem));
     }
 
     protected boolean isActive(WebElement element) {
