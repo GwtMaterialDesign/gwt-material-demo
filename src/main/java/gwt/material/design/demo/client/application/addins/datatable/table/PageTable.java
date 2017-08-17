@@ -82,12 +82,6 @@ public class PageTable extends Composite {
         pager.setTable(table);
         pager.setDataSource(dataSource);
 
-    }
-
-    @Override
-    protected void onLoad() {
-        super.onLoad();
-
         table.setVisibleRange(1, 10);
         table.add(pager);
 
@@ -236,7 +230,7 @@ public class PageTable extends Composite {
         // Add a sort column handler, called when a user sorts a column.
         table.addSortColumnHandler((e, sortContext, columnIndex) -> {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 
@@ -260,7 +254,7 @@ public class PageTable extends Composite {
 
         // Add a row double click handler, called when a row is double clicked.
         table.addRowDoubleClickHandler((e, mouseEvent, model, row) -> {
-           // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             Window.alert("Row Double Clicked: " + model.getId());
             return true;
         });

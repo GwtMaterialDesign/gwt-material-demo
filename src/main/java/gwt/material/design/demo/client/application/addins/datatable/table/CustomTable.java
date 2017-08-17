@@ -78,11 +78,7 @@ public class CustomTable extends Composite {
 
     public CustomTable() {
         initWidget(ourUiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onLoad() {
-        super.onLoad();
         // Setting table title
         table.getTableTitle().setText("My Custom Table");
 
@@ -290,7 +286,7 @@ public class CustomTable extends Composite {
         // Add a sort column handler, called when a user sorts a column.
         table.addSortColumnHandler((e, sortContext, columnIndex) -> {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 

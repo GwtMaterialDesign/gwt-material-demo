@@ -63,21 +63,17 @@ public class InfiniteTable extends Composite {
                 InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
 
         initWidget(ourUiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onLoad() {
-        super.onLoad();
         table.getTableTitle().setText("Infinite Table");
         // Load the categories from the server
-        table.setLoadMask(true);
+        table.getView().setLoadMask(true);
         personService.getCategories(new AsyncCallback<List<String>>() {
             @Override
             public void onSuccess(List<String> categories) {
                 for(String category : categories) {
                     table.addCategory(new CategoryComponent(category));
                 }
-                table.setLoadMask(false);
+                table.getView().setLoadMask(false);
             }
             @Override
             public void onFailure(Throwable throwable) {
@@ -143,7 +139,7 @@ public class InfiniteTable extends Composite {
 
         table.addSortColumnHandler((e, sortContext, columnIndex) -> {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 
@@ -157,7 +153,7 @@ public class InfiniteTable extends Composite {
             // Since we aren't using categories for this table
             // we will forcefully invoke a table refresh that
             // sends a request for data.
-            table.refreshView();
+            table.getView().refresh();
         }
     }
 
@@ -170,8 +166,8 @@ public class InfiniteTable extends Composite {
             table.setUseCategories(false);
             GWT.log("Categories not checked");
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     private void updateSelectedRows(int size) {

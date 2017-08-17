@@ -85,11 +85,6 @@ public class StandardTable extends Composite {
 
     public StandardTable() {
         initWidget(ourUiBinder.createAndBindUi(this));
-    }
-
-    @Override
-    protected void onLoad() {
-        super.onLoad();
 
         generatePeople();
 
@@ -100,8 +95,8 @@ public class StandardTable extends Composite {
 
         listSelectionType.addValueChangeHandler(e -> {
             table.setSelectionType(e.getValue().get(0));
-            table.setRedraw(true);
-            table.refreshView();
+            table.getView().setRedraw(true);
+            table.getView().refresh();
         });
 
         // We will manually add this category otherwise categories
@@ -112,9 +107,7 @@ public class StandardTable extends Composite {
         // We will define our own person row factory to generate the
         // category name. This can be used to generate your own
         // RowComponent's too, if custom functionality is required.
-        table.setRowFactory(new
-
-                PersonRowFactory());
+        table.setRowFactory(new PersonRowFactory());
 
         // If we want to generate all our categories using CustomCategoryComponent
         // We can define our own CategoryComponentFactory. There we can define our
@@ -126,9 +119,7 @@ public class StandardTable extends Composite {
         // methods to create elements the way you would like.
         table.setRenderer(new CustomRenderer<>());
 
-        table.addColumn(new WidgetColumn<Person, MaterialImage>()
-
-        {
+        table.addColumn(new WidgetColumn<Person, MaterialImage>() {
             @Override
             public MaterialImage getValue(Person object) {
                 MaterialImage profile = new MaterialImage();
@@ -145,9 +136,7 @@ public class StandardTable extends Composite {
 
         // Now we will add our tables columns.
         // There are a number of methods that can provide custom column configurations.
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
@@ -159,9 +148,7 @@ public class StandardTable extends Composite {
             }
         }, "First Name");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getLastName().compareToIgnoreCase(o2.getData().getLastName());
@@ -173,9 +160,7 @@ public class StandardTable extends Composite {
             }
         }, "Last Name");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getEmail().compareToIgnoreCase(o2.getData().getEmail());
@@ -187,9 +172,7 @@ public class StandardTable extends Composite {
             }
         }, "Email");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public boolean numeric() {
                 return true;
@@ -211,10 +194,7 @@ public class StandardTable extends Composite {
             }
         }, "Phone");
 
-        table.addColumn(new WidgetColumn<Person, MaterialComboBox>()
-
-        {
-
+        table.addColumn(new WidgetColumn<Person, MaterialComboBox>() {
             @Override
             public MaterialComboBox getValue(Person object) {
                 MaterialComboBox<String> comboBox = new MaterialComboBox<>();
@@ -229,9 +209,7 @@ public class StandardTable extends Composite {
 
         // Example of a widget column!
         // You can add any handler to the column cells widget.
-        table.addColumn(new WidgetColumn<Person, MaterialBadge>()
-
-        {
+        table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
             @Override
             public TextAlign textAlign() {
                 return TextAlign.CENTER;
@@ -254,9 +232,7 @@ public class StandardTable extends Composite {
 
         // Here we are adding a row expansion handler.
         // This is invoked when a row is expanded.
-        table.addRowExpandHandler((e, rowExpand) ->
-
-        {
+        table.addRowExpandHandler((e, rowExpand) -> {
             JQueryElement section = rowExpand.getOverlay();
 
             // Fake Async Task
@@ -300,50 +276,38 @@ public class StandardTable extends Composite {
         });
 
         // Add a row select handler, called when a user selects a row.
-        table.addRowSelectHandler((e, model, elem, selected) ->
-
-        {
+        table.addRowSelectHandler((e, model, elem, selected) -> {
             GWT.log(model.getId() + ": " + selected);
             return true;
         });
 
         // Add a sort column handler, called when a user sorts a column.
-        table.addSortColumnHandler((e, sortContext, columnIndex) ->
-
-        {
+        table.addSortColumnHandler((e, sortContext, columnIndex) -> {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 
         // Add a row count change handler, called when the row count changes.
-        table.addRowCountChangeHandler((e, newCount, isExact) ->
-
-        {
+        table.addRowCountChangeHandler((e, newCount, isExact) -> {
             GWT.log("Row Count Changed: " + newCount + ", isExact: " + isExact);
             return true;
         });
 
         // Add category opened handler, called when a category is opened.
-        table.addCategoryOpenedHandler((e, categoryName) ->
-
-        {
+        table.addCategoryOpenedHandler((e, categoryName) -> {
             GWT.log("Category Opened: " + categoryName);
             return true;
         });
 
         // Add category closed handler, called when a category is closed.
-        table.addCategoryClosedHandler((e, categoryName) ->
-
-        {
+        table.addCategoryClosedHandler((e, categoryName) -> {
             GWT.log("Category Closed: " + categoryName);
             return true;
         });
 
         // Add a row double click handler, called when a row is double clicked.
-        table.addRowDoubleClickHandler((e, mouseEvent, model, row) ->
-
-        {
+        table.addRowDoubleClickHandler((e, mouseEvent, model, row) -> {
             GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             Window.alert("Row Double Clicked: " + model.getId());
             return true;
@@ -354,17 +318,13 @@ public class StandardTable extends Composite {
         table.setLongPressDuration(400);
 
         // Add a row long press handler, called when a row is long pressed.
-        table.addRowLongPressHandler((e, mouseEvent, model, row) ->
-
-        {
+        table.addRowLongPressHandler((e, mouseEvent, model, row) -> {
             GWT.log("Row Long Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             return true;
         });
 
         // Add a row short press handler, called when a row is short pressed.
-        table.addRowShortPressHandler((e, mouseEvent, model, row) ->
-
-        {
+        table.addRowShortPressHandler((e, mouseEvent, model, row) -> {
             GWT.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
             return true;
         });
@@ -387,11 +347,7 @@ public class StandardTable extends Composite {
         // Generate 5 categories
         int rowIndex = 0;
 
-        for (
-                int k = 1;
-                k <= 5; k++)
-
-        {
+        for (int k = 1; k <= 5; k++) {
             // Generate 5 rows
             for (int i = 1; i <= 5; i++, rowIndex++) {
                 people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i, "Category " + k));
@@ -406,8 +362,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseCategories(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("cbStickyHeader")
@@ -417,8 +373,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseStickyHeader(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("cbRowExpansion")
@@ -428,8 +384,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseRowExpansion(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("getFirstRow")
