@@ -19,13 +19,13 @@
  */
 package gwt.material.design.demo.selenium.test.ui;
 
-import gwt.material.design.demo.selenium.test.base.AbstractSeleniumTest;
+import gwt.material.design.demo.selenium.test.base.BaseSeleniumTest;
 import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class TabsTest extends AbstractSeleniumTest {
+public class TabsTest extends BaseSeleniumTest {
 
 
     public TabsTest(WebDriverManager driver) {

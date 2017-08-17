@@ -19,28 +19,33 @@
  */
 package gwt.material.design.demo.selenium.test.base;
 
-import org.junit.Assert;
+import gwt.material.design.demo.selenium.test.constants.Config;
+import gwt.material.design.demo.selenium.test.constants.Elements;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+/**
+ * An abstract util class that wraps and reassemble each WebDriver api methods
+ * to build a reusable wrapper.
+ */
 public abstract class AbstractSeleniumTest {
 
     protected WebDriver driver;
     protected String gmdUrl;
+    protected WebDriverWait wait;
 
     public AbstractSeleniumTest(WebDriverManager driver, String component) {
         this(driver);
-        searchComponent(component);
     }
 
     public AbstractSeleniumTest(WebDriverManager manager) {
         this.gmdUrl = manager.getBaseUrl();
         this.driver = manager.getDriver();
+        wait = new WebDriverWait(driver, Config.EXPLICIT_WAITING_TIME);
     }
 
     protected abstract void runTests();
@@ -67,34 +72,32 @@ public abstract class AbstractSeleniumTest {
         scrollTo(findSection(index));
     }
 
-    protected void searchComponent(String component) {
-        waitUntilDisplayed("header nav .nav-wrapper a:nth-child(3)");
-
-        WebElement searchIcon = findElement("header nav .nav-wrapper a:nth-child(3)");
-        Assert.assertNotNull(searchIcon);
-        searchIcon.click();
-
-        WebElement searchInput = findElement("header nav .nav-wrapper .input-field input[type=search]");
-        Assert.assertNotNull(searchInput);
-        searchInput.sendKeys(component);
-        searchInput.sendKeys(Keys.ENTER);
-
-        runTests();
+    protected WebElement getAppTitle() {
+        return findElement(Elements.APP_TITLE);
     }
 
     protected void waitUntilDisplayed(String cssSelector) {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssSelector)));
     }
 
     // It is a 1-based index
     protected WebElement findSection(int index) {
-        return findElement(".code:nth-child("+ index + ")");
+        return findElement(Elements.SHOWCASE_SECTION + ":nth-child("+ index + ")");
     }
 
     protected WebElement findElement(String selector) {
         waitUntilDisplayed(selector);
         return driver.findElement(By.cssSelector(selector));
+    }
+
+    protected boolean isTextMatch(String selector, String text) {
+        wait.until(ExpectedConditions.textToBe(By.cssSelector(selector), text));
+        WebElement element = findElement(selector);
+        return element.getText().equals(text);
+    }
+
+    protected boolean isDisplayed(WebElement element) {
+        return element.isDisplayed();
     }
 
     protected void reload() {

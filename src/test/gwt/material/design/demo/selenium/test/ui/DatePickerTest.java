@@ -19,10 +19,10 @@
  */
 package gwt.material.design.demo.selenium.test.ui;
 
-import gwt.material.design.demo.selenium.test.base.AbstractSeleniumTest;
+import gwt.material.design.demo.selenium.test.base.BaseSeleniumTest;
 import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 
-public class DatePickerTest extends AbstractSeleniumTest {
+public class DatePickerTest extends BaseSeleniumTest {
 
     public DatePickerTest(WebDriverManager driver) {
         super(driver, "Date Picker");

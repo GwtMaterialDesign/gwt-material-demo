@@ -19,7 +19,7 @@
  */
 package gwt.material.design.demo.selenium.test;
 
-import gwt.material.design.demo.selenium.test.base.TestPlatform;
+import gwt.material.design.demo.selenium.test.constants.TestPlatform;
 import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 import gwt.material.design.demo.selenium.test.constants.Config;
 import gwt.material.design.demo.selenium.test.ui.GlobalFunctionalityTest;

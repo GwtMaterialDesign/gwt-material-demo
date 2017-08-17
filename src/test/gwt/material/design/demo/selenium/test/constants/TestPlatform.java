@@ -17,7 +17,7 @@
  * limitations under the License.
  * #L%
  */
-package gwt.material.design.demo.selenium.test.base;
+package gwt.material.design.demo.selenium.test.constants;
 
 public enum TestPlatform {
 

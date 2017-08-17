@@ -28,4 +28,5 @@ public interface Config {
     String BROWSER_NAME = "chrome";
     String BROWSER_VERSION = "60";
     String PLATFORM = "any";
+    int EXPLICIT_WAITING_TIME = 5;
 }
