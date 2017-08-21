@@ -20,11 +20,14 @@
 package gwt.material.design.demo.selenium.test.base;
 
 import gwt.material.design.demo.selenium.test.constants.Elements;
-import org.testng.Assert;
+import gwt.material.design.demo.selenium.test.constants.TestPlatform;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 
+import java.net.MalformedURLException;
 import java.util.List;
 
 /**
@@ -32,26 +35,15 @@ import java.util.List;
  */
 public class BaseSeleniumTest extends AbstractSeleniumTest {
 
-    public BaseSeleniumTest(WebDriverManager manager, String component) {
-        super(manager);
-        searchComponent(component);
-    }
-
-    public BaseSeleniumTest(WebDriverManager manager) {
-        super(manager);
-        runTests();
-    }
-
-    @Override
-    protected void runTests() {
-
+    @BeforeTest(description = "Launching up browser and opening the GMD Demo")
+    public void setup() throws MalformedURLException {
+        setup(TestPlatform.LOCAL);
     }
 
     protected void searchComponent(String component) {
         openSearch();
         typeSearch(component);
         submitSearch();
-        runTests();
     }
 
     protected WebElement getSearchInput() {

@@ -20,18 +20,14 @@
 package gwt.material.design.demo.selenium.test.site;
 
 import gwt.material.design.demo.selenium.test.base.BaseSeleniumTest;
-import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 import gwt.material.design.demo.selenium.test.constants.Elements;
 import org.junit.Assert;
+import org.junit.Test;
 
 public class SiteNavigationFeatureTest extends BaseSeleniumTest {
 
-    public SiteNavigationFeatureTest(WebDriverManager manager) {
-        super(manager);
-    }
-
-    @Override
-    protected void runTests() {
+    @Test
+    public void testNavigation() {
         // Check if by default the sidenav is opened
         // Take note mobile devices will probably closed by default
         if (!isSideNavOpen(Elements.SIDENAV_LEFT, "left")) {

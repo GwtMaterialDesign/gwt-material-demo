@@ -20,41 +20,52 @@
 package gwt.material.design.demo.selenium.test.base;
 
 import gwt.material.design.demo.selenium.test.constants.Config;
-import gwt.material.design.demo.selenium.test.constants.Elements;
+import gwt.material.design.demo.selenium.test.constants.TestPlatform;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import java.net.MalformedURLException;
 
 /**
  * An abstract util class that wraps and reassemble each WebDriver api methods
  * to build a reusable wrapper.
  */
-public abstract class AbstractSeleniumTest {
+public class AbstractSeleniumTest {
 
-    protected WebDriver driver;
-    protected String gmdUrl;
     protected WebDriverWait wait;
 
-    public AbstractSeleniumTest(WebDriverManager manager) {
-        this.gmdUrl = manager.getBaseUrl();
-        this.driver = manager.getDriver();
-        wait = new WebDriverWait(driver, Config.EXPLICIT_WAITING_TIME);
+    private WebDriverManager manager = new WebDriverManager();
+
+    protected void setup(TestPlatform testPlatform) throws MalformedURLException {
+        if (testPlatform == TestPlatform.BROWSERSTACK) {
+            manager.setUpBrowserStack();
+        } else {
+            manager.setupLocal();
+        }
+        manager.load(Config.BASE_URL);
+
+        wait = new WebDriverWait(manager.getDriver(), Config.EXPLICIT_WAITING_TIME);
     }
 
-    protected abstract void runTests();
+    @AfterTest
+    public void finish() {
+        manager.getDriver().quit();
+    }
 
     protected void scrollTo(WebElement element) {
-        Actions actions = new Actions(driver);
+        Actions actions = new Actions(manager.getDriver());
         actions.moveToElement(element);
         actions.perform();
     }
 
     protected void visit(String url) {
-        driver.get(url);
+        manager.getDriver().get(url);
     }
 
     protected void navigateTo(String href) {
@@ -72,7 +83,7 @@ public abstract class AbstractSeleniumTest {
     protected WebElement findElement(String selector) {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(selector)));
-            return driver.findElement(By.cssSelector(selector));
+            return manager.getDriver().findElement(By.cssSelector(selector));
         } catch (NoSuchElementException e) {
             return null;
         }
@@ -104,7 +115,15 @@ public abstract class AbstractSeleniumTest {
         return findElement(selector).findElements(By.xpath(".//*")).size() != 0;
     }
 
+    public void waitUntilElementHidden(String selector) {
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(selector)));
+    }
+
+    protected void waitUntilPageLoad(String url) {
+        wait.until(ExpectedConditions.urlContains(url));
+    }
+
     protected void reload() {
-        driver.get(gmdUrl);
+        manager.getDriver().get(Config.BASE_URL);
     }
 }

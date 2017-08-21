@@ -19,54 +19,18 @@
  */
 package gwt.material.design.demo.selenium.test;
 
-import gwt.material.design.demo.selenium.test.base.WebDriverManager;
-import gwt.material.design.demo.selenium.test.constants.Config;
-import gwt.material.design.demo.selenium.test.constants.TestPlatform;
 import gwt.material.design.demo.selenium.test.site.SiteNavigationFeatureTest;
 import gwt.material.design.demo.selenium.test.site.SiteSearchFeatureTest;
-import gwt.material.design.demo.selenium.test.ui.TabsTest;
 import junit.framework.TestSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
-import java.net.MalformedURLException;
-
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+        SiteNavigationFeatureTest.class,
+        SiteSearchFeatureTest.class
+})
 public class GmdSeleniumTestSuite extends TestSuite {
 
-    private WebDriverManager manager = new WebDriverManager();
 
-    @BeforeTest(description = "Launching up browser and opening the GMD Demo")
-    public void setup() throws MalformedURLException {
-        setup(TestPlatform.LOCAL);
-    }
-
-    protected void setup(TestPlatform testPlatform) throws MalformedURLException {
-        if (testPlatform == TestPlatform.BROWSERSTACK) {
-            manager.setUpBrowserStack();
-        } else {
-            manager.setupLocal();
-        }
-        manager.load(Config.BASE_URL);
-    }
-
-    @Test(description = "Checking Site Navigation")
-    public void testSiteNavigation() {
-        new SiteNavigationFeatureTest(manager);
-    }
-
-    @Test(description = "Checking Site Search Feature")
-    public void testSiteSearchFeature() {
-        new SiteSearchFeatureTest(manager);
-    }
-
-    @Test(description = "Checking Tabs")
-    public void testTabs() throws MalformedURLException {
-        new TabsTest(manager);
-    }
-
-    @AfterTest
-    public void finish() {
-        manager.getDriver().quit();
-    }
 }

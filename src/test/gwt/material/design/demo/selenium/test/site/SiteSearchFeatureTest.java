@@ -20,8 +20,8 @@
 package gwt.material.design.demo.selenium.test.site;
 
 import gwt.material.design.demo.selenium.test.base.BaseSeleniumTest;
-import gwt.material.design.demo.selenium.test.base.WebDriverManager;
 import gwt.material.design.demo.selenium.test.constants.Elements;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -29,12 +29,8 @@ import org.testng.Assert;
 
 public class SiteSearchFeatureTest extends BaseSeleniumTest {
 
-    public SiteSearchFeatureTest(WebDriverManager manager) {
-        super(manager, "About");
-    }
-
-    @Override
-    protected void runTests() {
+    @Test
+    public void testSearch() {
         // Search Getting Started
         typeSearch("Getting Started");
         Assert.assertTrue(hasChildElements(Elements.SEARCH_RESULT));
