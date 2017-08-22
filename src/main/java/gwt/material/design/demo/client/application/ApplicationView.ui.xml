@@ -99,7 +99,7 @@
       </m:MaterialRow>
 
       <m:MaterialFooterCopyright ui:field="footerCopyRight" addStyleNames="footer-copyright">
-        <m:MaterialLabel text="© 2017 Copyright GWT Material" />
+        <m:MaterialLabel ui:field="footerCopyRightLabel" />
       </m:MaterialFooterCopyright>
     </m:MaterialFooter>
   </g:HTMLPanel>
