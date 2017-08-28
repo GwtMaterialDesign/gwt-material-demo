@@ -31,6 +31,7 @@ import gwt.material.design.demo.client.application.addins.carousel.CarouselModul
 import gwt.material.design.demo.client.application.addins.circularprogress.CircularProgressModule;
 import gwt.material.design.demo.client.application.addins.combobox.ComboBoxModule;
 import gwt.material.design.demo.client.application.addins.countup.CountUpModule;
+import gwt.material.design.demo.client.application.addins.cropper.ImageCropperModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
 import gwt.material.design.demo.client.application.addins.datatable.DataTableModule;
 import gwt.material.design.demo.client.application.addins.dnd.DndModule;
@@ -95,5 +96,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new CountUpModule());
         install(new LiveStampModule());
         install(new InputMaskModule());
+        install(new ImageCropperModule());
     }
 }

@@ -99,6 +99,7 @@ public class NameTokens {
     public static final String serviceworker = "serviceworker";
     public static final String notification = "notification";
     public static final String pwagettingstarted = "pwagettingstarted";
+    public static final String imageCropper = "imageCropper";
 
     public static String getAbout() {
         return about;
@@ -406,5 +407,9 @@ public class NameTokens {
 
     public static String getEmptyStates() {
         return emptystates;
+    }
+
+    public static String getImageCropper() {
+        return imageCropper;
     }
 }
