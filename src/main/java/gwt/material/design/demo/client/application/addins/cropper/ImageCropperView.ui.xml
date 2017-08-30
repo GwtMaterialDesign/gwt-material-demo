@@ -25,9 +25,10 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
-            <ma:image.MaterialImageCropper url="https://i.imgur.com/CiPPh6h.jpg" ui:field="cropper" />
+            <ma:cropper.MaterialImageCropper url="https://i.imgur.com/CiPPh6h.jpg" ui:field="cropper" />
             <m:MaterialImage ui:field="croppedImage" />
             <m:MaterialButton text="Crop" ui:field="crop"/>
+            <m:MaterialButton text="Rorate" ui:field="rotate" />
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

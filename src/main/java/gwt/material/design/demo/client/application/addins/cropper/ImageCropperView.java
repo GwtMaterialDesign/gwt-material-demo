@@ -27,8 +27,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.addins.client.image.MaterialImageCropper;
-import gwt.material.design.addins.client.image.constants.Type;
+import gwt.material.design.addins.client.cropper.MaterialImageCropper;
+import gwt.material.design.addins.client.cropper.constants.Type;
 import gwt.material.design.client.ui.MaterialImage;
 
 import javax.inject.Inject;
@@ -55,5 +55,10 @@ public class ImageCropperView extends ViewImpl implements ImageCropperPresenter.
     @UiHandler("crop")
     void crop(ClickEvent e) {
         cropper.crop(Type.BASE64);
+    }
+
+    @UiHandler("rotate")
+    void rotate(ClickEvent e) {
+        cropper.rotate(90);
     }
 }
