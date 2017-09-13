@@ -208,28 +208,28 @@
       <m:MaterialRow ui:field="dynamicTabsRow"/>
 
       <demo:PrettyPre addStyleNames="lang-java">
-        @UiField<br/>
-        MaterialTab dynamicTabs;<br/><br/>
+              @UiField<br/>
+              MaterialTab dynamicTabs;<br/><br/>
 
-        @UiField<br/>
-        MaterialRow dynamicRow;<br/><br/>
+              @UiField<br/>
+              MaterialRow dynamicRow;<br/><br/>
 
-        MaterialTabItem item = new MaterialTabItem();<br/>
-        item.setWaves(WavesType.DEFAULT);<br/>
-        MaterialLink link = new MaterialLink("Tab " + index);<br/>
-        link.setTextColor(Color.WHITE);<br/>
-        link.setHref("#dynamicTab" + index);<br/>
-        item.add(link);<br/><br/>
+              MaterialTabItem item = new MaterialTabItem();<br/>
+              item.setWaves(WavesType.DEFAULT);<br/>
+              MaterialLink link = new MaterialLink("Tab "  index);<br/>
+              link.setTextColor(Color.WHITE);<br/>
+              link.setHref("#dynamicTab"  index);<br/>
+              item.add(link);<br/><br/>
 
-        // Adding a simple content<br/>
-        MaterialLabel content = new MaterialLabel("Content " + index);<br/>
-        content.setId("dynamicTab" + index);<br/>
-        dynamicRow.add(content);<br/><br/>
+              // Adding a simple content<br/>
+              MaterialLabel content = new MaterialLabel("Content "  index);<br/>
+              content.setId("dynamicTab"  index);<br/>
+              dynamicRow.add(content);<br/><br/>
 
-        // Adding the MaterialTabItem into MaterialTab::dynamicTab<br/>
-        dynamicTabs.add(item);
-      </demo:PrettyPre>
-    </m:MaterialRow>
+              // Adding the MaterialTabItem into MaterialTab::dynamicTab<br/>
+              dynamicTabs.add(item);
+            </demo:PrettyPre>
+          </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Get Tab Index Method" description="By calling this method, you can easily get the selected tab index."/>
@@ -373,7 +373,7 @@
         </m:MaterialTab>
 
         <demo:PrettyPre addStyleNames="lang-java">
-          eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+          eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem()  " Selected Index"));
         </demo:PrettyPre>
       </m:MaterialColumn>
     </m:MaterialRow>

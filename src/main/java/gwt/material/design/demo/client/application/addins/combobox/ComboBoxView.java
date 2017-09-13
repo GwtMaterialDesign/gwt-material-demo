@@ -47,7 +47,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     @UiField
     MaterialComboBox<String> comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4,
-                             comboTimeZone6, comboTimeZone7;
+                             comboTimeZone6, comboTimeZone7, comboTags, comboTagsMultiple;
 
     @UiField
     MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10,
@@ -90,6 +90,8 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         addStateItems(comboTimeZone17);
         addStateItems(comboValue);
         addItemsWithoutGroup(comboCloseOnSelect);
+        addStringItems(comboTags);
+        addStringItems(comboTagsMultiple);
 
         comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
             MaterialToast.fireToast("Event: ValueChange State : " + comboTimeZone8.getSingleValue().getName() + " Value: " + comboTimeZone8.getSingleValue().getValue());

@@ -175,37 +175,10 @@
     </g:HTMLPanel>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="ViewPort Helper" description="A helper class that detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
+      <m:MaterialTitle title="ViewPort" description="Easily detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
       <m:MaterialLink ui:field="lblViewPort" />
       <demo:PrettyPre addStyleNames="lang-java" marginTop="40">
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_SMALL)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Mobile Small"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_MEDIUM)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Mobile Medium"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_LARGE)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Mobile Large"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.TABLET)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Tablet"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.TABLET_ANDROID); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Laptop"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.LAPTOP); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP_LARGE)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Laptop Large"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.LAPTOP); <br/>
-        } <br/><br/>
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP_4K)) { <br/>
-        &emsp;lblViewPort.setText("ViewPort : Laptop 4K"); <br/>
-        &emsp;lblViewPort.setIconType(IconType.LAPTOP); <br/>
-        } <br/>
+
       </demo:PrettyPre>
     </m:MaterialRow>
 

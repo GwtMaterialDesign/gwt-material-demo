@@ -39,9 +39,9 @@
   
       <demo:PrettyPre addStyleNames="lang-java">
         // Show Loader<br/>
-        MaterialLoader.showLoading(true);<br/><br/>
+        MaterialLoader.loading(true);<br/><br/>
         // Hide Loader<br/>
-        MaterialLoader.showLoading(false);<br/>
+        MaterialLoader.loading(false);<br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -51,10 +51,10 @@
   
       <demo:PrettyPre addStyleNames="lang-java">
         // Show Progress<br/>
-        MaterialLoader.showProgress(true);<br/><br/>
+        MaterialLoader.progress(true);<br/><br/>
   
         // Hide Progress<br/>
-        MaterialLoader.showProgress(false);<br/>
+        MaterialLoader.progress(false);<br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -178,7 +178,7 @@
         &emsp;Timer timer = new Timer() {<br/>
         &emsp;&emsp;@Override<br/>
         &emsp;&emsp;public void run() {<br/>
-        &emsp;&emsp;&emsp;MaterialLoader.showLoading(true, cardContent);<br/>
+        &emsp;&emsp;&emsp;MaterialLoader.loading(true, cardContent);<br/>
         &emsp;&emsp;}<br/>
         &emsp;};<br/>
         &emsp;timer.schedule(2000);<br/>
@@ -189,7 +189,7 @@
         &emsp;Timer timer = new Timer() {<br/>
         &emsp;&emsp;@Override<br/>
         &emsp;&emsp;public void run() {<br/>
-        &emsp;&emsp;&emsp;MaterialLoader.showProgress(true, cardContent);<br/>
+        &emsp;&emsp;&emsp;MaterialLoader.progress(true, cardContent);<br/>
         &emsp;&emsp;}<br/>
         &emsp;};<br/>
         &emsp;timer.schedule(2000);<br/>

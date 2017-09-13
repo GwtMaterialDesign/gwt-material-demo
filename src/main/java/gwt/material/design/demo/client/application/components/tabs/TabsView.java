@@ -32,8 +32,6 @@ import gwt.material.design.client.constants.WavesType;
 import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TabsView extends ViewImpl implements TabsPresenter.MyView {
 
@@ -72,7 +70,7 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     void addTab(ClickEvent e) {
         index++;
         dynamicTabs.add(newTabItem(index));
-        dynamicTabs.setTabIndex(index-1);
+        dynamicTabs.setTabIndex(index - 1);
     }
 
     @Override

@@ -226,6 +226,20 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialColumn grid="l6 m6 s12">
+                <m:MaterialTitle title="Tag Support" description="Note that when tagging is enabled the user can select from pre-existing options or create a new tag by picking the first choice, which is what the user has typed into the search box so far."/>
+                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" multiple="true" ui:field="comboTagsMultiple" />
+                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" ui:field="comboTags" />
+            </m:MaterialColumn>
+            <m:MaterialColumn grid="s12">
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;combobox:MaterialComboBox tags="true" closeOnSelect="false" multiple="true" placeholder="Time Zone" />
+                </demo:PrettyPre>
+            </m:MaterialColumn>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialColumn grid="l6 m6 s12">
                 <m:MaterialTitle title="Close On Select" description="Allow or Prevent the dropdown from closing when a result is selected (Default : true)"/>
                 <combobox:MaterialComboBox closeOnSelect="false"  multiple="true" placeholder="Time Zone" ui:field="comboCloseOnSelect" />

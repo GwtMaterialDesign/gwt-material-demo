@@ -25,9 +25,9 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.base.helper.ViewPortHelper;
+import gwt.material.design.client.base.viewport.Resolution;
+import gwt.material.design.client.base.viewport.ViewPort;
 import gwt.material.design.client.constants.IconType;
-import com.google.gwt.user.client.Window;
 import gwt.material.design.client.ui.MaterialLink;
 
 import javax.inject.Inject;
@@ -42,40 +42,44 @@ public class HelperView extends ViewImpl implements HelperPresenter.MyView {
     @Inject
     HelperView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
         detectViewPort();
-        Window.addResizeHandler(resizeEvent -> {
-            detectViewPort();
-        });
     }
 
     protected void detectViewPort() {
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_SMALL)) {
+        ViewPort.when(Resolution.MOBILE_SMALL).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Mobile Small");
             lblViewPort.setIconType(IconType.PHONE_ANDROID);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_MEDIUM)) {
+        });
+
+        ViewPort.when(Resolution.MOBILE_MEDIUM).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Mobile Medium");
             lblViewPort.setIconType(IconType.PHONE_ANDROID);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.MOBILE_LARGE)) {
+        });
+
+        ViewPort.when(Resolution.MOBILE_LARGE).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Mobile Large");
             lblViewPort.setIconType(IconType.PHONE_ANDROID);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.TABLET)) {
+        });
+
+        ViewPort.when(Resolution.TABLET).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Tablet");
             lblViewPort.setIconType(IconType.TABLET_ANDROID);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP)) {
+        });
+
+        ViewPort.when(Resolution.LAPTOP).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Laptop");
             lblViewPort.setIconType(IconType.LAPTOP);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP_LARGE)) {
+        });
+
+        ViewPort.when(Resolution.LAPTOP_LARGE).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Laptop Large");
             lblViewPort.setIconType(IconType.LAPTOP);
-        }
-        if (ViewPortHelper.matchMedia(ViewPortHelper.ViewPort.LAPTOP_4K)) {
+        });
+
+        ViewPort.when(Resolution.LAPTOP_4K).then(viewPortChange -> {
             lblViewPort.setText("ViewPort : Laptop 4K");
             lblViewPort.setIconType(IconType.LAPTOP);
-        }
+        });
     }
 }

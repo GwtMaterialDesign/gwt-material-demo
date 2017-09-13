@@ -85,7 +85,7 @@
 
         <m:MaterialColumn grid="s12 m4 l4">
           <m:MaterialTitle textColor="WHITE" title="Join The Discussion"
-                           description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design."/>
+                           description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design"/>
           <m:MaterialAnchorButton href="https://gitter.im/GwtMaterialDesign/gwt-material" target="_blank" text="CHAT" waves="LIGHT" textColor="WHITE"/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m4 l4">
