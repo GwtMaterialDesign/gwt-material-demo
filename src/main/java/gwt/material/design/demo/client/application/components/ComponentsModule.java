@@ -29,7 +29,6 @@ import gwt.material.design.demo.client.application.components.cards.CardsModule;
 import gwt.material.design.demo.client.application.components.chips.ChipsModule;
 import gwt.material.design.demo.client.application.components.collapsible.CollapsibleModule;
 import gwt.material.design.demo.client.application.components.collections.CollectionsModule;
-import gwt.material.design.demo.client.application.components.datagrid.DatagridModule;
 import gwt.material.design.demo.client.application.components.dialogs.DialogsModule;
 import gwt.material.design.demo.client.application.components.dropdown.DropdownModule;
 import gwt.material.design.demo.client.application.components.errors.ErrorsModule;
@@ -57,7 +56,6 @@ public class ComponentsModule extends AbstractGinModule {
         install(new ChipsModule());
         install(new CollapsibleModule());
         install(new CollectionsModule());
-        install(new DatagridModule());
         install(new DialogsModule());
         install(new DropdownModule());
         install(new ErrorsModule());

@@ -100,8 +100,8 @@ public class StandardTable extends Composite {
 
         listSelectionType.addValueChangeHandler(e -> {
             table.setSelectionType(e.getValue().get(0));
-            table.setRedraw(true);
-            table.refreshView();
+            table.getView().setRedraw(true);
+            table.getView().refresh();
         });
 
         // We will manually add this category otherwise categories
@@ -312,7 +312,7 @@ public class StandardTable extends Composite {
 
         {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 
@@ -406,8 +406,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseCategories(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("cbStickyHeader")
@@ -417,8 +417,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseStickyHeader(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("cbRowExpansion")
@@ -428,8 +428,8 @@ public class StandardTable extends Composite {
         } else {
             table.setUseRowExpansion(false);
         }
-        table.setRedraw(true);
-        table.refreshView();
+        table.getView().setRedraw(true);
+        table.getView().refresh();
     }
 
     @UiHandler("getFirstRow")

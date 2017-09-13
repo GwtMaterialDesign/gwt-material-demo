@@ -91,19 +91,6 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Weather" description="Custom Material Weather made with OpenWeatherMap API with JSON technology no more server side to setup."/>
-      <m:MaterialRow>
-        <m:MaterialColumn grid="s12 m6 l6">
-          <m:MaterialWeather ui:field="weather" location="Makati, Philippines" />
-        </m:MaterialColumn>
-      </m:MaterialRow>
-  
-      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &lt;m:MaterialWeather location="Makati, Philippines" color="BLUE"/>
-      </demo:PrettyPre>
-    </m:MaterialRow>
-  
-    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Parallax" description="Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling. Check out the demo to get a better idea of it.'"/>
   
       <m:MaterialPanel addStyleNames="{style.parallax_demo}" m:id="parallax_demo">
@@ -208,12 +195,6 @@
         &emsp;&lt;/m:MaterialColumn><br/>
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
-    </m:MaterialRow>
-  
-    <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="GWT Material Phonegap" description="Phonegap Integration with GWT Material Wrapper is now available. Feel free to download the Android Release and give us feedback."/>
-      <m:MaterialAnchorButton href="http://gwt-material.appspot.com/bin/gwtmaterial.apk" target="_blank" textColor="WHITE" waves="LIGHT"  text="Download APK File"/>
-      <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material-phonegap" target="_blank" textColor="WHITE" waves="LIGHT"  text="Source"/>
     </m:MaterialRow>
   </g:HTMLPanel>
 </ui:UiBinder>

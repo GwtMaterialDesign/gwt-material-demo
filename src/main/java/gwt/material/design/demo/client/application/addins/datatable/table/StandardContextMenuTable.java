@@ -250,7 +250,7 @@ public class StandardContextMenuTable extends Composite {
         // Add a sort column handler, called when a user sorts a column.
         table.addSortColumnHandler((e, sortContext, columnIndex) -> {
             GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
-            table.refreshView();
+            table.getView().refresh();
             return true;
         });
 

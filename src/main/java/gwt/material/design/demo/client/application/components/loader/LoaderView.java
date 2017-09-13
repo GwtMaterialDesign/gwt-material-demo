@@ -56,13 +56,13 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiHandler("btnLoader")
     void onShowLoaderSpecific(ClickEvent e) {
-        MaterialLoader.showLoading(true, loaderCard);
+        MaterialLoader.loading(true, loaderCard);
         btnProgress.setEnabled(false);
         Timer timer = new Timer() {
             @Override
             public void run() {
                 btnProgress.setEnabled(true);
-                MaterialLoader.showLoading(false);
+                MaterialLoader.loading(false);
             }
         };
         timer.schedule(2000);
@@ -70,13 +70,13 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiHandler("btnProgress")
     void onShowProgressSpecific(ClickEvent e) {
-        MaterialLoader.showProgress(true, cardContent);
+        MaterialLoader.progress(true, cardContent);
         btnLoader.setEnabled(false);
         Timer timer = new Timer() {
             @Override
             public void run() {
                 btnLoader.setEnabled(true);
-                MaterialLoader.showProgress(false);
+                MaterialLoader.progress(false);
             }
         };
         timer.schedule(2000);
@@ -84,11 +84,11 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiHandler("btnShowLoader")
     void onShowLoader(ClickEvent e) {
-        MaterialLoader.showLoading(true);
+        MaterialLoader.loading(true);
         Timer t = new Timer() {
             @Override
             public void run() {
-                MaterialLoader.showLoading(false);
+                MaterialLoader.loading(false);
             }
         };
         t.schedule(3000);
@@ -96,11 +96,11 @@ public class LoaderView extends ViewImpl implements LoaderPresenter.MyView {
 
     @UiHandler("btnShowProgress")
     void onShowProgress(ClickEvent e) {
-        MaterialLoader.showProgress(true);
+        MaterialLoader.progress(true);
         Timer t = new Timer() {
             @Override
             public void run() {
-                MaterialLoader.showProgress(false);
+                MaterialLoader.progress(false);
             }
         };
         t.schedule(3000);

@@ -32,7 +32,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.ThemeManager;
 
@@ -119,7 +119,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             chipSpecification.setVisible(true);
         }
 
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.description, 1000);
+        new MaterialAnimation().transition(Transition.BOUNCEINLEFT).animate(this.title);
+        new MaterialAnimation().transition(Transition.BOUNCEINLEFT).animate(this.description);
     }
 }

@@ -22,17 +22,14 @@ package gwt.material.design.demo.client.application.components.search;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.CloseEvent;
-import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.SearchObject;
-import gwt.material.design.client.events.SearchFinishEvent;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
@@ -85,7 +82,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
         txtSearch.addSearchFinishHandler(event -> {
             // Get the selected search object
             Hero hero = (Hero)txtSearch.getSelectedObject();
-            MaterialAnimator.animate(Transition.ZOOMIN, imgHero, 0);
+            new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
             imgHero.setResource(hero.getResource());
             lblName.setText(hero.getName());
             lblDescription.setText(hero.getDescription());

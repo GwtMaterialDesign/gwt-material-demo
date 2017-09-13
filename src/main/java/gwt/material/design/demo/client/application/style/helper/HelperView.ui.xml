@@ -173,6 +173,14 @@
         &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
       </demo:PrettyPre>
     </g:HTMLPanel>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="ViewPort" description="Easily detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
+      <m:MaterialLink ui:field="lblViewPort" />
+      <demo:PrettyPre addStyleNames="lang-java" marginTop="40">
+
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
