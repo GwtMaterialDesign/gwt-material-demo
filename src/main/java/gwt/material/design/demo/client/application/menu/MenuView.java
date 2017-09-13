@@ -146,6 +146,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Empty States", "#" + NameTokens.emptystates));
         listSearches.add(new SearchObject(IconType.EXTENSION, "File Uploader", "#" + NameTokens.fileuploader));
         listSearches.add(new SearchObject(IconType.EXTENSION, "IconMorph", "#" + NameTokens.iconMorph));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Image Copper", "#" + NameTokens.imageCropper));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Input Mask", "#" + NameTokens.inputMask));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Live Stamp", "#" + NameTokens.liveStamp));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Masonry", "#" + NameTokens.masonry));
@@ -156,6 +157,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Rich Editor", "#" + NameTokens.richeditor));
         listSearches.add(new SearchObject(IconType.EXTENSION, "ScrollFire", "#" + NameTokens.scrollfire));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Split Panel", "#" + NameTokens.splitpanel));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Signature Pad", "#" + NameTokens.signaturePad));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Subheader", "#" + NameTokens.subheaders));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Steppers", "#" + NameTokens.steppers));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Swipeable", "#" + NameTokens.swipeable));

@@ -48,6 +48,7 @@ import gwt.material.design.demo.client.application.addins.pathanimator.PathAnima
 import gwt.material.design.demo.client.application.addins.rating.RatingModule;
 import gwt.material.design.demo.client.application.addins.richeditor.RichEditorModule;
 import gwt.material.design.demo.client.application.addins.scrollfire.ScrollFireModule;
+import gwt.material.design.demo.client.application.addins.signature.SignaturePadModule;
 import gwt.material.design.demo.client.application.addins.splitpanel.SplitPanelModule;
 import gwt.material.design.demo.client.application.addins.steppers.SteppersModule;
 import gwt.material.design.demo.client.application.addins.subheaders.SubHeadersModule;
@@ -97,5 +98,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new LiveStampModule());
         install(new InputMaskModule());
         install(new ImageCropperModule());
+        install(new SignaturePadModule());
     }
 }

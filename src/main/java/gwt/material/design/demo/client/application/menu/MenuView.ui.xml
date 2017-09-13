@@ -152,6 +152,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getEmptyStates}" text="Empty States" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getImageCropper}" text="Image Cropper" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getLiveStamp}" text="Live Stamp" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" waves="DEFAULT"/>
@@ -161,6 +162,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getRating}" text="Rating" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollfire}" text="Scroll Fire" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getSignaturePad}" text="Signature Pad" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSplitpanel}" text="Split Panel" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" waves="DEFAULT"/>
