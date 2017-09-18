@@ -199,8 +199,8 @@ public class StandardContextMenuTable extends Composite {
 
         // Here we are adding a row expansion handler.
         // This is invoked when a row is expanded.
-        table.addRowExpandHandler((e, rowExpand) -> {
-            JQueryElement section = rowExpand.getOverlay();
+        table.addRowExpandingHandler(event -> {
+            JQueryElement section = event.getExpansion().getOverlay();
 
             // Fake Async Task
             // This is demonstrating a fake asynchronous call to load
@@ -210,7 +210,7 @@ public class StandardContextMenuTable extends Composite {
                 public void run() {
                     // Clear the content first.
                     MaterialWidget content = new MaterialWidget(
-                            rowExpand.getRow().find(".content").empty().asElement());
+                        event.getExpansion().getRow().find(".content").empty().asElement());
 
                     // Add new content.
                     MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
@@ -238,45 +238,33 @@ public class StandardContextMenuTable extends Composite {
                     section.css("display", "none");
                 }
             }.schedule(2000);
-            return true;
         });
 
         // Add a row select handler, called when a user selects a row.
-        table.addRowSelectHandler((e, model, elem, selected) -> {
-            GWT.log(model.getId() + ": " + selected);
-            return true;
+        table.addRowSelectHandler(event -> {
+            GWT.log(event.getModel().getId() + ": " + event.isSelected());
         });
 
         // Add a sort column handler, called when a user sorts a column.
-        table.addSortColumnHandler((e, sortContext, columnIndex) -> {
-            GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
+        table.addColumnSortHandler(event -> {
+            GWT.log("Sorted: " + event.getSortContext().getSortDir() + ", columnIndex: " + event.getColumnIndex());
             table.getView().refresh();
-            return true;
-        });
-
-        // Add a row count change handler, called when the row count changes.
-        table.addRowCountChangeHandler((e, newCount, isExact) -> {
-            GWT.log("Row Count Changed: " + newCount + ", isExact: " + isExact);
-            return true;
         });
 
         // Add category opened handler, called when a category is opened.
-        table.addCategoryOpenedHandler((e, categoryName) -> {
-            GWT.log("Category Opened: " + categoryName);
-            return true;
+        table.addCategoryOpenedHandler(event -> {
+            GWT.log("Category Opened: " + event.getName());
         });
 
         // Add category closed handler, called when a category is closed.
-        table.addCategoryClosedHandler((e, categoryName) -> {
-            GWT.log("Category Closed: " + categoryName);
-            return true;
+        table.addCategoryClosedHandler(event -> {
+            GWT.log("Category Closed: " + event.getName());
         });
 
         // Add a row double click handler, called when a row is double clicked.
-        table.addRowDoubleClickHandler((e, mouseEvent, model, row) -> {
+        table.addRowDoubleClickHandler(event -> {
            // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
-            Window.alert("Row Double Clicked: " + model.getId());
-            return true;
+            Window.alert("Row Double Clicked: " + event.getModel().getId());
         });
 
         // Configure the tables long press duration configuration.
@@ -284,15 +272,13 @@ public class StandardContextMenuTable extends Composite {
         table.setLongPressDuration(400);
 
         // Add a row long press handler, called when a row is long pressed.
-        table.addRowLongPressHandler((e, mouseEvent, model, row) -> {
+        table.addRowLongPressHandler(event -> {
             //GWT.log("Row Long Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
-            return true;
         });
 
         // Add a row short press handler, called when a row is short pressed.
-        table.addRowShortPressHandler((e, mouseEvent, model, row) -> {
+        table.addRowShortPressHandler(event -> {
             //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
-            return true;
         });
 
         popupMenu.addSelectionHandler(selectionEvent -> {
@@ -302,14 +288,13 @@ public class StandardContextMenuTable extends Composite {
             }
         });
 
-        table.addRowContextMenuHandler((e, mouseEvent, model, row) -> {
+        table.addRowContextMenuHandler(event -> {
             // Firing Row Context will automatically select the row where it was right clicked
-            table.selectRow($(row).asElement(), true);
-            popupMenu.setSelected(model);
+            table.selectRow($(event.getRow()).asElement(), true);
+            popupMenu.setSelected(event.getModel());
             // Get the PageX and getPageY
-            popupMenu.setPopupPosition(mouseEvent.getPageX(), mouseEvent.getPageY());
+            popupMenu.setPopupPosition(event.getMouseEvent().getPageX(), event.getMouseEvent().getPageY());
             popupMenu.open();
-            return true;
         });
 
         // Added access to ToolPanel to add icon widget

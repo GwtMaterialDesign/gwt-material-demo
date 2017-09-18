@@ -131,22 +131,19 @@ public class InfiniteTable extends Composite {
             }
         }, "Phone");
 
-        table.addRowSelectHandler((e, model, elem, selected) -> {
+        table.addRowSelectHandler(event -> {
             updateSelectedRows(table.getSelectedRowModels(false).size());
-            GWT.log(model.getId() + ": " + selected);
-            return true;
+            GWT.log(event.getModel().getId() + ": " + event.isSelected());
         });
 
-        table.addSortColumnHandler((e, sortContext, columnIndex) -> {
-            GWT.log("Sorted: " + sortContext.getSortDir() + ", columnIndex: " + columnIndex);
+        table.addColumnSortHandler(event -> {
+            GWT.log("Sorted: " + event.getSortContext().getSortDir() + ", columnIndex: " + event.getColumnIndex());
             table.getView().refresh();
-            return true;
         });
 
-        table.addSelectAllHandler((e, models, elems, selected) -> {
+        table.addSelectAllHandler(event -> {
             updateSelectedRows(table.getSelectedRowModels(false).size());
-            GWT.log("Selected["+selected+"]: " + models.size() + " models");
-            return true;
+            GWT.log("Selected["+event.isSelected()+"]: " + event.getModels().size() + " models");
         });
 
         if(!table.isUseCategories()) {
