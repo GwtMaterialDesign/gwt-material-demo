@@ -41,6 +41,29 @@
 
   <g:HTMLPanel>
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Container" description="The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content." />
+      <m:MaterialButton ui:field="toggleContainer" text="Toggle Container" marginBottom="20" />
+      <m:MaterialPanel padding="20" backgroundColor="GREY_LIGHTEN_3">
+        <m:MaterialPanel ui:field="container" containerEnabled="true">
+          <m:MaterialRow>
+            <m:MaterialColumn grid="s4" offset="s4" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+          </m:MaterialRow>
+          <m:MaterialRow>
+            <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+          </m:MaterialRow>
+          <m:MaterialRow>
+            <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+          </m:MaterialRow>
+          <m:MaterialRow>
+            <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+          </m:MaterialRow>
+          <m:MaterialRow>
+            <m:MaterialColumn grid="s12" backgroundColor="GREY_LIGHTEN_2" padding="12" />
+          </m:MaterialRow>
+        </m:MaterialPanel>
+      </m:MaterialPanel>
+    </m:MaterialRow>
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="12 Columns" description="Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width."/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s1" addStyleNames="{style.grid}"><m.html:Span addStyleNames="flow-text"> 1 </m.html:Span>  </m:MaterialColumn>
