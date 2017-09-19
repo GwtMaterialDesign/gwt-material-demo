@@ -30,7 +30,6 @@
                                useLoadOverlay="false"
                                useStickyHeader="true"
                                useCategories="true"
-                               indexOffset="20"
                                selectionType="MULTIPLE"/>
   </g:HTMLPanel>
 </ui:UiBinder>
