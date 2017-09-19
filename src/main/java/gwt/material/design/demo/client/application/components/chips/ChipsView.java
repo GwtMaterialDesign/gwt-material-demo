@@ -44,16 +44,16 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
     ChipsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        chip.getIcon().addClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                MaterialToast.fireToast(chip.getText());
-            }
-        });
+        chip.addCloseHandler(closeEvent -> MaterialToast.fireToast("Event: Closed"));
     }
 
     @UiHandler("chipClick")
     void onClickChip(ClickEvent e) {
         MaterialToast.fireToast("You clicked me");
+    }
+
+    @UiHandler("closeChip")
+    void closeChip(ClickEvent e) {
+        chip.close();
     }
 }

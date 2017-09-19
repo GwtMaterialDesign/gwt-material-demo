@@ -26,7 +26,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Simple Chip" description="If you want just text only chip, you can use this for autocomplete textbox and search capability"/>
       <m:MaterialRow>
-        <m:MaterialChip margin="8" text="Default" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" tooltip="Sample" tooltipPosition="BOTTOM" text="Default" iconType="CLOSE"/>
         <m:MaterialChip margin="8" text="Apple" backgroundColor="RED" textColor="WHITE" iconType="CLOSE"/>
         <m:MaterialChip margin="8" text="ORANGE" backgroundColor="ORANGE" textColor="WHITE"  iconType="CLOSE"/>
         <m:MaterialChip margin="8" text="Banana" backgroundColor="AMBER" textColor="WHITE" iconType="CLOSE"/>
@@ -88,9 +88,16 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
-      <m:MaterialChip margin="8" ui:field="chip" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
-      <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
-  
+       <m:MaterialButton ui:field="closeChip" text="Close Chip" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Close the chip <br/>
+        chip.close();
+      </demo:PrettyPre>
+      <m:MaterialRow>
+        <m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
+      </m:MaterialRow>
+
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialChip ui:field="chip" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
         &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
