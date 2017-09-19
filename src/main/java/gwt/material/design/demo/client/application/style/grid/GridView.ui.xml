@@ -62,6 +62,10 @@
           </m:MaterialRow>
         </m:MaterialPanel>
       </m:MaterialPanel>
+
+      <demo:PrettyPre addStyleNames="code">
+        &emsp;&lt;m:MaterialPanel containerEnabled="true" />
+      </demo:PrettyPre>
     </m:MaterialRow>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="12 Columns" description="Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width."/>
