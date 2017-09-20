@@ -93,7 +93,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.register(chipSpecification.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(titlePanel);
 
-        PwaManager.getInstance().load();
+        PwaManager.getInstance()
+                .setServiceWorkerUrl("service-worker.js")
+                .setWebManifestUrl("manifest.json")
+                .setThemeColor("#1565c0")
+                .load();
     }
 
     @UiHandler("imgGPlus")
