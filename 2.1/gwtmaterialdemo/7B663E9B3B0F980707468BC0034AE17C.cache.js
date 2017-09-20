@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.1";
-var $strongName = '2AE1F0BBA9631BC9C47AF7A73918103F';
+var $strongName = '7B663E9B3B0F980707468BC0034AE17C';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -20676,27 +20676,59 @@ function $clinit_PwaManager(){
   instance_3 = new PwaManager;
 }
 
-function $load_2(this$static){
-  if (!initialized_0) {
-    this$static.headElement = $doc.getElementsByTagName('head')[0];
-    this$static.manifestElement = $doc.createElement('link');
+function $injectManifest(this$static, manifestUrl){
+  if (manifestUrl != null && manifestUrl.length != 0) {
+    if (!this$static.manifestElement) {
+      this$static.manifestElement = $doc.createElement('link');
+      $appendChild(this$static.headElement, this$static.manifestElement);
+    }
     this$static.manifestElement.setAttribute('rel', 'manifest');
-    this$static.manifestElement.setAttribute('href', 'manifest.json');
-    $appendChild(this$static.headElement, this$static.manifestElement);
-    $wnd.navigator.serviceWorker != null?$wnd.navigator.serviceWorker.register('service-worker.js').then(makeLambdaFunction(PwaManager$lambda$0$Type.prototype.call_12, PwaManager$lambda$0$Type, [])):($clinit_GWT() , $clinit_GWT());
-    this$static.themeColorElement = $doc.createElement('meta');
-    this$static.themeColorElement.setAttribute('name', 'theme-color');
-    this$static.themeColorElement.setAttribute('content', '#1565c0');
-    $appendChild(this$static.headElement, this$static.themeColorElement);
-    initialized_0 = true;
+    $setAttribute(this$static.manifestElement, 'href', manifestUrl);
   }
+}
+
+function $injectMetaThemeColor(this$static, themeColor){
+  if (themeColor != null && themeColor.length != 0) {
+    if (!this$static.themeColorElement) {
+      this$static.themeColorElement = $doc.createElement('meta');
+      $appendChild(this$static.headElement, this$static.themeColorElement);
+    }
+    this$static.themeColorElement.setAttribute('name', 'theme-color');
+    $setAttribute(this$static.themeColorElement, 'content', themeColor);
+  }
+}
+
+function $load_2(this$static){
+  !this$static.headElement && (this$static.headElement = $doc.getElementsByTagName('head')[0]);
+  $injectManifest(this$static, this$static.manifestUrl);
+  $injectMetaThemeColor(this$static, this$static.themeColor);
+  $loadServiceWorker(this$static.serviceWorkerUrl);
+}
+
+function $loadServiceWorker(serviceWorkerUrl){
+  serviceWorkerUrl != null && $wnd.navigator.serviceWorker != null?$wnd.navigator.serviceWorker.register(serviceWorkerUrl).then(makeLambdaFunction(PwaManager$lambda$0$Type.prototype.call_12, PwaManager$lambda$0$Type, [])):($clinit_GWT() , $clinit_GWT());
+}
+
+function $setServiceWorkerUrl(this$static){
+  this$static.serviceWorkerUrl = 'service-worker.js';
+  return this$static;
+}
+
+function $setThemeColor(this$static){
+  this$static.themeColor = '#1565c0';
+  return this$static;
+}
+
+function $setWebManifestUrl(this$static){
+  this$static.manifestUrl = 'manifest.json';
+  return this$static;
 }
 
 function PwaManager(){
 }
 
 defineClass(1770, 1, {}, PwaManager);
-var initialized_0 = false, instance_3;
+var instance_3;
 var Lgwt_material_design_client_pwa_PwaManager_2_classLit = createForClass('gwt.material.design.client.pwa', 'PwaManager', 1770);
 function PwaManager$lambda$0$Type(){
 }
@@ -24279,7 +24311,7 @@ function ApplicationView(){
   register_0(this.chipSpecification, 1);
   register_0(this.chipSpecification.letterMixin.span_0, 2);
   register(this.titlePanel);
-  $load_2(($clinit_PwaManager() , $clinit_PwaManager() , instance_3));
+  $load_2($setThemeColor($setWebManifestUrl($setServiceWorkerUrl(($clinit_PwaManager() , $clinit_PwaManager() , instance_3)))));
 }
 
 defineClass(1082, 60, {19:1, 2625:1}, ApplicationView);
