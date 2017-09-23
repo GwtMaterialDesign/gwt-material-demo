@@ -1,4 +1,4 @@
-var cacheName = 'GMD Demo PWA';
+var cacheName = 'gwt-material-demo-v1';
 var filesToCache = [
     'index.html',
     'manifest.json',
