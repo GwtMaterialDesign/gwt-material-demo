@@ -1,6 +1,5 @@
 var cacheName = 'gwt-material-demo-v1';
 var filesToCache = [
-    '/',
     'index.html',
     'manifest.json',
     'service-worker.js',
