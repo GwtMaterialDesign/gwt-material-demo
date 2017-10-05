@@ -103,7 +103,6 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
     void onChange(ValueChangeEvent<String> event) {
         DatePickerLanguage lang = languages.get(lstLanguage.getSelectedIndex());
         dpTranslation.setLanguage(lang);
-        dpTranslation.reinitialize();
     }
 
     @UiHandler("btnSetDate")
@@ -123,6 +122,11 @@ public class PickersView extends ViewImpl implements PickersPresenter.MyView {
 
     @UiHandler("btnClear")
     void onDpClear(ClickEvent e) { dpClear.clear(); }
+
+    @UiHandler("btnGetValue")
+    void onDpGetValue(ClickEvent e) {
+        MaterialToast.fireToast(dpClear.getValue() + "");
+    }
 
     @UiHandler("btnOpen")
     void onOpen(ClickEvent e) {

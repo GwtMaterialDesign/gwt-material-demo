@@ -86,7 +86,7 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="setDate() and getDate()"/>
         <m:MaterialDatePicker ui:field="dp" grid="s12" placeholder="Date" selectionType="YEAR"/>
-        <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" />
+        <m:MaterialButton ui:field="btnSetDate" text="Set Date to January 1 2016" marginRight="20" />
         <m:MaterialButton ui:field="btnGetDate" text="Get the date" />
     
         <demo:PrettyPre addStyleNames="lang-java">
@@ -138,7 +138,10 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Clear()" description="Clearing the value of datepicker."/>
         <m:MaterialDatePicker ui:field="dpClear" grid="s12" placeholder="Birthday" />
-        <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" />
+        <m:MaterialRow>
+            <m:MaterialButton ui:field="btnClear" text="Clear" iconType="CLEAR" marginRight="20"/>
+            <m:MaterialButton ui:field="btnGetValue" text="Get Value" />
+        </m:MaterialRow>
         <demo:PrettyPre addStyleNames="lang-java">
           datePicker.clear();
         </demo:PrettyPre>

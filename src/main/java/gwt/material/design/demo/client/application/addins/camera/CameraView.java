@@ -22,8 +22,10 @@ package gwt.material.design.demo.client.application.addins.camera;
 
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.camera.MaterialCameraCapture;
 
 import javax.inject.Inject;
 
@@ -32,9 +34,14 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
     interface Binder extends UiBinder<Widget, CameraView> {
     }
 
+    @UiField
+    MaterialCameraCapture camera;
+
     @Inject
     CameraView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        camera.getVideo().setWidth("100%");
     }
 
 }
