@@ -86,6 +86,11 @@ public class TimePickersView extends ViewImpl implements TimePickersPresenter.My
         tpClear.clear();
     }
 
+    @UiHandler("btnGetValue")
+    void onGetValue(ClickEvent e) {
+        MaterialToast.fireToast(tpClear.getValue() + "");
+    }
+
     @UiHandler("btnOpen")
     void onOpen(ClickEvent e) {
         tpOpenClose.open();

@@ -84,12 +84,13 @@
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Clear and Insert Text" />
-            <m:MaterialButton ui:field="btnClear" text="Clear" waves="DEFAULT"/>
-            <m:MaterialButton ui:field="btnInsertText" text="Insert Material Design" waves="DEFAULT"/>
+            <m:MaterialTitle title="Reset and Insert Text" />
+            <m:MaterialButton ui:field="btnClear" text="Reset" waves="DEFAULT" marginRight="12"/>
+            <m:MaterialButton ui:field="btnInsertText" text="Insert Material Design" waves="DEFAULT" marginRight="12"/>
+            <m:MaterialButton ui:field="getValue" text="Get Value" waves="DEFAULT"/>
             <ma:richeditor.MaterialRichEditor ui:field="clearRichEditor" />
             <demo:PrettyPre addStyleNames="lang-java">
-                &emsp;richEditor.clear(); // Clearing the rich editor <br/>
+                &emsp;richEditor.reset(); // Clearing the rich editor <br/>
                 richEditor.insertText("Material Design"); // Inserting text into rich editor <br/>
             </demo:PrettyPre>
         </m:MaterialRow>

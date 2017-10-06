@@ -129,7 +129,8 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
             <ma:timepicker.MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" grid="s12"/>
-            <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
+            <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" margin="12" />
+            <m:MaterialButton ui:field="btnGetValue" text="Get Value" />
             <demo:PrettyPre addStyleNames="lang-java">
                 timepick.clear();
             </demo:PrettyPre>

@@ -87,6 +87,15 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
         clearRichEditor.insertText("Material Design");
     }
 
+    @UiHandler("getValue")
+    void onGetValue(ClickEvent e) {
+        String value = clearRichEditor.getValue();
+        if (value.isEmpty()) {
+            value = "Empty";
+        }
+        MaterialToast.fireToast(value);
+    }
+
     @UiHandler("btnSetHTML")
     void onSetHTML(ClickEvent e) {
         richEditor.setHTML(txtHTML.getText());
