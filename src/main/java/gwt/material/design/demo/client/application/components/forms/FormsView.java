@@ -37,7 +37,7 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     interface Binder extends UiBinder<Widget, FormsView> {
     }
 
-    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions;
+    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
     @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown, cbValue;
 
     @UiField MaterialSwitch switch1, switch2, switchSetValue;
@@ -117,6 +117,18 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
             "blandit eu lacus nec, finibus tempus ligula.", true);
 
+    }
+
+    @UiHandler("addItems")
+    void onAddItems(ClickEvent e) {
+        for (int i = 1; i <= 100; i++) {
+            lstLazy.addItem("Item " + i, false);
+        }
+    }
+
+    @UiHandler("reload")
+    void reload(ClickEvent e) {
+        lstLazy.reload();
     }
 
     @UiHandler("btnAddNewOption")

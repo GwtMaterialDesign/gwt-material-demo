@@ -27,6 +27,7 @@ import gwt.material.design.demo.client.application.animations.AnimationsModule;
 import gwt.material.design.demo.client.application.apps.AppsModule;
 import gwt.material.design.demo.client.application.charts.ChartsModule;
 import gwt.material.design.demo.client.application.components.ComponentsModule;
+import gwt.material.design.demo.client.application.datatable.DataTableModule;
 import gwt.material.design.demo.client.application.gettingstarted.GettingStartedModule;
 import gwt.material.design.demo.client.application.menu.MenuModule;
 import gwt.material.design.demo.client.application.roadmap.RoadMapModule;
@@ -52,5 +53,6 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ComponentsModule());
         install(new StyleModule());
         install(new ChartsModule());
+        install(new DataTableModule());
     }
 }

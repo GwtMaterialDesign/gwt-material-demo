@@ -22,14 +22,13 @@ package gwt.material.design.demo.client.application.addins;
 
 
 import com.google.gwt.inject.client.AbstractGinModule;
-import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import gwt.material.design.demo.client.application.addins.autocomplete.AutoCompleteModule;
 import gwt.material.design.demo.client.application.addins.avatar.AvatarModule;
 import gwt.material.design.demo.client.application.addins.bubble.BubbleModule;
 import gwt.material.design.demo.client.application.addins.camera.CameraModule;
 import gwt.material.design.demo.client.application.addins.combobox.ComboBoxModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
-import gwt.material.design.demo.client.application.addins.datatable.DataTableModule;
+import gwt.material.design.demo.client.application.datatable.DataTableModule;
 import gwt.material.design.demo.client.application.addins.dnd.DndModule;
 import gwt.material.design.demo.client.application.addins.docviewer.DocViewerModule;
 import gwt.material.design.demo.client.application.addins.emptystates.EmptyStatesModule;
@@ -82,7 +81,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new AvatarModule());
         install(new RatingModule());
         install(new ComboBoxModule());
-        install(new DataTableModule());
         install(new OverlayModule());
         install(new EmptyStatesModule());
     }

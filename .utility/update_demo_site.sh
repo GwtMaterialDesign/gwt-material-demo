@@ -24,23 +24,23 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GwtMaterialDemo directories from git.
-if [[ -d ./snapshot/gwtmaterialdemo ]]; then
-git rm -rf ./snapshot/gwtmaterialdemo
+if [[ -d ./rework/gwtmaterialdemo ]]; then
+git rm -rf ./rework/gwtmaterialdemo
 fi
-if [[ -f ./snapshot/index.html ]]; then
-git rm -rf ./snapshot/index.html
+if [[ -f ./rework/index.html ]]; then
+git rm -rf ./rework/index.html
 fi
-if [[ -d ./snapshot/META-INF ]]; then
-git rm -rf ./snapshot/META-INF
+if [[ -d ./rework/META-INF ]]; then
+git rm -rf ./rework/META-INF
 fi
-if [[ -d ./snapshot/snapshot/WEB-INF ]]; then
-git rm -rf ./snapshot/snapshot/WEB-INF
+if [[ -d ./rework/snapshot/WEB-INF ]]; then
+git rm -rf ./rework/snapshot/WEB-INF
 fi
 
 # copy the new GwtMaterialDemo the snapshot dir.
-unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./snapshot/
-rm -rf ./snapshot/META-INF
-rm -rf ./snapshot/WEB-INF
+unzip -u $TRAVIS_BUILD_DIR/target/gwt-material-demo-*.war -d ./rework/
+rm -rf ./rework/META-INF
+rm -rf ./rework/WEB-INF
 
 git add -f .
 git commit -m "Auto-push demo to gh-pages successful. (Travis build: $TRAVIS_BUILD_NUMBER)"

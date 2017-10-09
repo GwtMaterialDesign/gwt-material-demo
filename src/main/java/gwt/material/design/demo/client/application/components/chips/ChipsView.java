@@ -22,7 +22,6 @@ package gwt.material.design.demo.client.application.components.chips;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -38,13 +37,11 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
     }
 
     @UiField
-    MaterialChip chip;
+    MaterialChip chip, preventChip;
 
     @Inject
     ChipsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-
-        chip.addCloseHandler(closeEvent -> MaterialToast.fireToast("Event: Closed"));
     }
 
     @UiHandler("chipClick")

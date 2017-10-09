@@ -82,7 +82,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-SNAPSHOT" textColor="WHITE"/>
+					<m:MaterialBadge text="2.0-Rework" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
@@ -130,6 +130,23 @@
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
+
+				<!-- DATA TABLE -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="DataTable" iconType="VIEW_LIST"/>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getStandardDataTable}" text="Standard" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInfiniteDataTable}" text="Infinite" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getPagedDataTable}" text="Paged" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCustomDataTable}" text="Customized" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getContextMenuDataTable}" text="Context Menu" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+
 				<!-- ADDINS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -143,7 +160,6 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getEmptyStates}" text="Empty States" waves="DEFAULT"/>
