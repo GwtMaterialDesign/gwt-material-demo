@@ -125,10 +125,10 @@
 
             <m:MaterialRow addStyleNames="code">
                 <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
-                <m:MaterialTitle scrollspy="row_api" title="updateRow(model) and getRowByModel(model)" description="Using these Row Apis, you can now easily access the update / refresh the row realtime and also get the row component." />
+                <m:MaterialTitle scrollspy="row_api" title="updateRow(model) and getRowByModel(model)" description="Using these Row API's, you can now easily access the update / refresh the row in real-time and also get the row component." />
                 <demo:PrettyPre addStyleNames="lang-java">
                     &emsp;// Get the Row <br/>
-                    table.getByModelRow(person); <br/><br/>
+                    table.getRowByModel(person); <br/><br/>
 
                     // Update the row model <br/>
                     Person firstPerson = people.get(0); <br/>
@@ -276,8 +276,8 @@
             <m:MaterialRow addStyleNames="code">
                 <m:MaterialTitle scrollspy="refresh_redraw" title="Refreshing and Redrawing the table" description="When Updating fields (Specially when using textbox) on DataTable you can refresh the datable easily." />
                 <demo:PrettyPre addStyleNames="lang-java">
-                    &emsp;table.setRedraw(true); <br/>
-                    table.refreshView();
+                    &emsp;table.getView().setRedraw(true); <br/>
+                    table.getView().refresh();
                 </demo:PrettyPre>
             </m:MaterialRow>
         </m:MaterialColumn>
