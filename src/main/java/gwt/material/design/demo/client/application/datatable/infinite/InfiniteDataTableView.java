@@ -182,7 +182,7 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
         if(size <= 0) {
             table.getTableTitle().setText("Table Title");
             table.getScaffolding().getTopPanel().removeStyleName("active-header");
-        }else {
+        } else {
             table.getScaffolding().getTopPanel().addStyleName("active-header");
             table.getTableTitle().setText(size + word + "selected ");
         }

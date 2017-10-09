@@ -58,7 +58,7 @@ public class FakePersonService implements PersonServiceAsync {
     @Override
     public void getPeople(int startIndex, int viewSize, List<String> categories, AsyncCallback<People> async) {
         List<Person> flatData = new ArrayList<>();
-        if(categories == null) {
+        if(categories == null || categories.isEmpty()) {
             // Load all data
             for(String category : FakePersonService.categories) {
                 flatData.addAll(peopleMap.get(category));
