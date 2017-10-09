@@ -71,22 +71,7 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
 
         table.clearRowsAndCategories(true);
 
-        // Load the categories from the server
-        table.getView().setLoadMask(true);
-
-        personService.getCategories(new AsyncCallback<List<String>>() {
-            @Override
-            public void onSuccess(List<String> categories) {
-                for(String category : categories) {
-                    table.addCategory(new CategoryComponent(category));
-                }
-                table.getView().setLoadMask(false);
-            }
-            @Override
-            public void onFailure(Throwable throwable) {
-                GWT.log("Getting people categories async call failed.", throwable);
-            }
-        });
+        loadCategories();
 
         // Add an image profile on each category rows
         table.addColumn(new WidgetColumn<Person, MaterialImage>() {
@@ -161,17 +146,40 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
         }
     }
 
+    protected void loadCategories() {
+        // Load the categories from the server
+        table.getView().setLoadMask(true);
+
+        personService.getCategories(new AsyncCallback<List<String>>() {
+            @Override
+            public void onSuccess(List<String> categories) {
+                for(String category : categories) {
+                    table.addCategory(new CategoryComponent(category));
+                }
+                table.getView().setLoadMask(false);
+            }
+            @Override
+            public void onFailure(Throwable throwable) {
+                GWT.log("Getting people categories async call failed.", throwable);
+            }
+        });
+    }
+
     @UiHandler("cbCategories")
     void onCategories(ValueChangeEvent<Boolean> e) {
         if(e.getValue()) {
-            table.setUseCategories(true);
             GWT.log("Categories checked");
+
+            table.setUseCategories(true);
+            table.clearRowsAndCategories(true);
+            loadCategories();
         } else {
-            table.setUseCategories(false);
             GWT.log("Categories not checked");
+
+            table.setUseCategories(false);
+            table.getView().setRedraw(true);
+            table.getView().refresh();
         }
-        table.getView().setRedraw(true);
-        table.getView().refresh();
     }
 
     private void updateSelectedRows(int size) {
