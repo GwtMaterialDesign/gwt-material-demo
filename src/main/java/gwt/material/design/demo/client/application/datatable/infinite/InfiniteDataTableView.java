@@ -61,17 +61,6 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
                 InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
 
         initWidget(uiBinder.createAndBindUi(this));
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        table.getTableTitle().setText("Infinite Table");
-
-        table.clearRowsAndCategories(true);
-
-        loadCategories();
 
         // Add an image profile on each category rows
         table.addColumn(new WidgetColumn<Person, MaterialImage>() {
@@ -137,13 +126,17 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
             updateSelectedRows(table.getSelectedRowModels(false).size());
             GWT.log("Selected["+event.isSelected()+"]: " + event.getModels().size() + " models");
         });
+    }
 
-        if(!table.isUseCategories()) {
-            // Since we aren't using categories for this table
-            // we will forcefully invoke a table refresh that
-            // sends a request for data.
-            table.getView().refresh();
-        }
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        table.getTableTitle().setText("Infinite Table");
+
+        table.clearRowsAndCategories(true);
+
+        loadCategories();
     }
 
     protected void loadCategories() {

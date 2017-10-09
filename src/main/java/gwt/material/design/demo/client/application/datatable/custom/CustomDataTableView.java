@@ -57,16 +57,7 @@ public class CustomDataTableView extends NavigatedView implements CustomDataTabl
     @Inject
     CustomDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        loadDataTable();
-    }
-
-    protected void loadDataTable() {
         // TODO Issue with the onload / unload update
         /*// Setting table title
         table.getTableTitle().setText("My Custom Table");

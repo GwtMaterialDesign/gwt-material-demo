@@ -83,16 +83,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
     @Inject
     StandardDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        loadDataTable();
-    }
-
-    protected void loadDataTable() {
         generatePeople();
 
         // Populate the ComboBox value
@@ -114,9 +105,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         // We will define our own person row factory to generate the
         // category name. This can be used to generate your own
         // RowComponent's too, if custom functionality is required.
-        table.setRowFactory(new
-
-                PersonRowFactory());
+        table.setRowFactory(new PersonRowFactory());
 
         // If we want to generate all our categories using CustomCategoryComponent
         // We can define our own CategoryComponentFactory. There we can define our
@@ -128,9 +117,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         // methods to create elements the way you would like.
         table.setRenderer(new CustomRenderer<>());
 
-        table.addColumn(new WidgetColumn<Person, MaterialImage>()
-
-        {
+        table.addColumn(new WidgetColumn<Person, MaterialImage>() {
             @Override
             public MaterialImage getValue(Person object) {
                 MaterialImage profile = new MaterialImage();
@@ -147,9 +134,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
 
         // Now we will add our tables columns.
         // There are a number of methods that can provide custom column configurations.
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
@@ -161,9 +146,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "First Name");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getLastName().compareToIgnoreCase(o2.getData().getLastName());
@@ -175,9 +158,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "Last Name");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getEmail().compareToIgnoreCase(o2.getData().getEmail());
@@ -189,9 +170,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "Email");
 
-        table.addColumn(new TextColumn<Person>()
-
-        {
+        table.addColumn(new TextColumn<Person>() {
             @Override
             public boolean numeric() {
                 return true;
@@ -213,10 +192,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "Phone");
 
-        table.addColumn(new WidgetColumn<Person, MaterialComboBox>()
-
-        {
-
+        table.addColumn(new WidgetColumn<Person, MaterialComboBox>() {
             @Override
             public MaterialComboBox getValue(Person object) {
                 MaterialComboBox<String> comboBox = new MaterialComboBox<>();
@@ -231,9 +207,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
 
         // Example of a widget column!
         // You can add any handler to the column cells widget.
-        table.addColumn(new WidgetColumn<Person, MaterialBadge>()
-
-        {
+        table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
             @Override
             public TextAlign textAlign() {
                 return TextAlign.CENTER;

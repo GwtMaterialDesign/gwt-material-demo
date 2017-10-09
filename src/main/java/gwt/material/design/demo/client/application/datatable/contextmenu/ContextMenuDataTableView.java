@@ -63,16 +63,7 @@ public class ContextMenuDataTableView extends NavigatedView implements ContextMe
     @Inject
     ContextMenuDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        loadDataTable();
-    }
-
-    protected void loadDataTable() {
         // We will manually add this category otherwise categories
         // can be loaded on the fly with HasDataCategory, or a custom
         // RowComponentFactory as demonstrated below
@@ -174,7 +165,7 @@ public class ContextMenuDataTableView extends NavigatedView implements ContextMe
         // Generate 20 categories
         int rowIndex = 0;
         List<Person> people = new ArrayList<>();
-        for(int k = 1; k <= 5; k++){
+        for(int k = 1; k <= 2; k++){
             // Generate 100 rows
             for(int i = 1; i <= 10; i++, rowIndex++){
                 people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));            }

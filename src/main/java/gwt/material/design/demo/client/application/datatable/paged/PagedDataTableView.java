@@ -66,16 +66,7 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
     @Inject
     PagedDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        loadDataTable();
-    }
-
-    protected void loadDataTable() {
         // Generate 20 categories
         int rowIndex = 1;
         List<Person> people = new ArrayList<>();
