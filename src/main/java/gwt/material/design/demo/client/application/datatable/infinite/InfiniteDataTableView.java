@@ -52,12 +52,27 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
     // we are faking the service on the client side to avoid requiring a web server.
     private PersonServiceAsync personService = GWT.create(FakePersonService.class);
 
-    @UiField
+    @UiField(provided = true)
     MaterialInfiniteDataTable<Person> table;
 
     @Inject
     InfiniteDataTableView(Binder uiBinder) {
+        table = new MaterialInfiniteDataTable<>(20,
+                InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
+
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        table.getTableTitle().setText("Infinite Table");
+
+        table.clearRowsAndCategories(true);
+
+        // Load the categories from the server
+        table.getView().setLoadMask(true);
 
         personService.getCategories(new AsyncCallback<List<String>>() {
             @Override
@@ -72,23 +87,6 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
                 GWT.log("Getting people categories async call failed.", throwable);
             }
         });
-
-        table = new MaterialInfiniteDataTable<>(20,
-                InfiniteDataView.DYNAMIC_VIEW, new PersonDataSource(personService));
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        loadDataTable();
-    }
-
-    protected void loadDataTable() {
-        table.getTableTitle().setText("Infinite Table");
-        // Load the categories from the server
-        table.getView().setLoadMask(true);
-
 
         // Add an image profile on each category rows
         table.addColumn(new WidgetColumn<Person, MaterialImage>() {
@@ -165,10 +163,10 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
 
     @UiHandler("cbCategories")
     void onCategories(ValueChangeEvent<Boolean> e) {
-        if(e.getValue()){
+        if(e.getValue()) {
             table.setUseCategories(true);
             GWT.log("Categories checked");
-        }else{
+        } else {
             table.setUseCategories(false);
             GWT.log("Categories not checked");
         }
