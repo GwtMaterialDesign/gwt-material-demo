@@ -29,6 +29,7 @@
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="MaterialNote 1.2.1" link="https://github.com/Cerealkillerway/materialNote" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>

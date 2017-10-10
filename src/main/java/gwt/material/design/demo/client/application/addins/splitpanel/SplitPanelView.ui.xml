@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="TouchSplitterJQuery 0.5.1" link="https://github.com/colelawrence/Touch-Splitter-jQuery" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>

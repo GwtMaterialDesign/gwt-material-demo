@@ -37,7 +37,7 @@ public class ChipsView extends ViewImpl implements ChipsPresenter.MyView {
     }
 
     @UiField
-    MaterialChip chip, preventChip;
+    MaterialChip chip;
 
     @Inject
     ChipsView(Binder uiBinder) {

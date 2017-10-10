@@ -26,6 +26,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
@@ -58,8 +59,7 @@ public class CustomDataTableView extends NavigatedView implements CustomDataTabl
     CustomDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        // TODO Issue with the onload / unload update
-        /*// Setting table title
+       // Setting table title
         table.getTableTitle().setText("My Custom Table");
 
         //Adding / removing table toolpanel action buttons / icons
@@ -68,7 +68,7 @@ public class CustomDataTableView extends NavigatedView implements CustomDataTabl
         // Add two buttons
         panel.add(new MaterialIcon(IconType.FAVORITE));
         panel.add(new MaterialIcon(IconType.DELETE));
-        panel.add(new MaterialIcon(IconType.MESSAGE));*/
+        panel.add(new MaterialIcon(IconType.MESSAGE));
 
         // We will manually add this category otherwise categories
         // can be loaded on the fly with HasDataCategory, or a custom
