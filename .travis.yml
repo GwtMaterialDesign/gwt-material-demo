@@ -7,7 +7,7 @@ cache:
   - $HOME/.m2
 before_install:
 # install the gwt-material library before we build the demo
-- git clone -b rework/201709_mk https://github.com/GwtMaterialDesign/gwt-material.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material.git
 - cd gwt-material
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
@@ -17,12 +17,12 @@ before_install:
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
 # install the gwt-material-addins library
-- git clone -b rework/201709_mk https://github.com/GwtMaterialDesign/gwt-material-addins.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material-addins.git
 - cd gwt-material-addins
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
 # install the gwt-material-table library before we build the demo
-- git clone -b rework/201710bd_onload https://github.com/GwtMaterialDesign/gwt-material-table.git
+- git clone -b release_2.0 https://github.com/GwtMaterialDesign/gwt-material-table.git
 - cd gwt-material-table
 - mvn install -DskipTests=true -DdryRun=true
 - cd ..
