@@ -20,7 +20,6 @@ package gwt.material.design.demo.client.application.datatable.contextmenu;
  * #L%
  */
 
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ContextMenuDataTableModule extends AbstractPresenterModule {
