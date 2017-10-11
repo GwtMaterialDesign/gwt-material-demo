@@ -354,6 +354,18 @@
         &lt;/m:MaterialListBox><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="ListBox : Lazyload"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstLazy" />
+      <m:MaterialButton ui:field="addItems" text="ADD 100 Items" marginRight="12" />
+      <m:MaterialButton ui:field="reload" text="Reload" />
+
+      <demo:PrettyPre addStyleNames="lang-java">
+
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Radio Button" description="Radio Buttons are used when the user must make only one selection out of a group of items"/>

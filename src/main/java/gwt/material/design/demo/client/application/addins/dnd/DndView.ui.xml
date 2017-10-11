@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Introduction" />
+            <demo:ExternalLibrary text="InteractJs 1.2.6" link="https://github.com/taye/interact.js"/>
             <m:MaterialPanel backgroundColor="GREY_LIGHTEN_4" padding="10">
                 <m:MaterialPanel ui:field="panel" margin="10" textAlign="CENTER" paddingTop="50" backgroundColor="WHITE" waves="DEFAULT" width="150px" height="150px" shadow="1">
                     <m:MaterialIcon iconType="TOUCH_APP" iconSize="SMALL" />

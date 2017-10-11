@@ -58,19 +58,8 @@ public class WindowView extends ViewImpl implements WindowPresenter.MyView {
         initWidget(uiBinder.createAndBindUi(this));
         ThemeManager.register(headerPanel);
         ThemeManager.register(tabsPanel);
-        window.addOpenHandler(new OpenHandler<Boolean>() {
-            @Override
-            public void onOpen(OpenEvent<Boolean> event) {
-                MaterialToast.fireToast("Opened : " + window.getTitle());
-            }
-        });
-
-        window.addCloseHandler(new CloseHandler<Boolean>() {
-            @Override
-            public void onClose(CloseEvent<Boolean> event) {
-                MaterialToast.fireToast("Closed : " + window.getTitle());
-            }
-        });
+        window.addOpenHandler(event -> MaterialToast.fireToast("Opened : " + window.getTitle()));
+        window.addCloseHandler(event -> MaterialToast.fireToast("Closed : " + window.getTitle()));
     }
 
     @UiHandler("btnOpenWindowWithOverlay")

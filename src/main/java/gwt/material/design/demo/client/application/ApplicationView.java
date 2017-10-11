@@ -86,11 +86,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             Window.open(specification, "_blank", "");
         });
         ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipXml.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipJava.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipSpecification, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipSpecification.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipSpecification.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(titlePanel);
 
         PwaManager.getInstance()

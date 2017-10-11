@@ -86,7 +86,11 @@ public class NameTokens {
     public static final String avatar = "avatar";
     public static final String rating = "rating";
     public static final String combobox = "combobox";
-    public static final String datatable = "datatable";
+    public static final String standardDataTable = "standard_datatable";
+    public static final String infiniteDataTable = "infinite_datatable";
+    public static final String pagedDataTable = "paged_datatable";
+    public static final String customDataTable = "custom_datatable";
+    public static final String contextMenuDataTable = "context_menu_datatable";
     public static final String overlay = "overlay";
     public static final String emptystates = "emptystates";
     public static final String carousel = "carousel";
@@ -358,8 +362,24 @@ public class NameTokens {
         return combobox;
     }
 
-    public static String getDatatable() {
-        return datatable;
+    public static String getStandardDataTable() {
+        return standardDataTable;
+    }
+
+    public static String getInfiniteDataTable() {
+        return infiniteDataTable;
+    }
+
+    public static String getPagedDataTable() {
+        return pagedDataTable;
+    }
+
+    public static String getCustomDataTable() {
+        return customDataTable;
+    }
+
+    public static String getContextMenuDataTable() {
+        return contextMenuDataTable;
     }
 
     public static String getOverlay() {

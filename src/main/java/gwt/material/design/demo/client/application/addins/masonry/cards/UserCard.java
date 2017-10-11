@@ -27,6 +27,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Random;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.masonry.MaterialMasonry;
@@ -49,12 +50,19 @@ public class UserCard extends Composite {
 
     private MaterialMasonry rowCards;
 
+    private int[] items = new int[]{200,100,150};
+
+    public int getRandomHeight(){
+        return items[Random.nextInt(items.length)];
+    }
+
     public UserCard(User user, final MaterialMasonry rowCards) {
         initWidget(uiBinder.createAndBindUi(this));
         imgUser.setUrl(user.getPicture());
         lblName.setText(user.getName());
         lblEmail.setText(user.getEmail());
         this.rowCards = rowCards;
+        setHeight(getRandomHeight() + "px");
     }
 
     @UiHandler("btnRemove")

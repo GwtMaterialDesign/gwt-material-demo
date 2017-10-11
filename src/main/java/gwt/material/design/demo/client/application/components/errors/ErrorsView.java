@@ -143,6 +143,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         acList.setSuccess("This is a success message for autocomplete");
     }
 
+    @UiHandler("btnHelper")
+    void onHelper(ClickEvent e) {
+        acList.setHelperText("This is a helper text for autocomplete");
+    }
+
     @UiHandler("btnClear")
     void onClear(ClickEvent e) {
         acList.clearErrorOrSuccess();
@@ -156,6 +161,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessDp")
     void onSuccessDp(ClickEvent e) {
         dp.setSuccess("This is a success message for date picker.");
+    }
+
+    @UiHandler("btnHelperDp")
+    void onHelperDp(ClickEvent e) {
+        dp.setHelperText("This is a helper text for date picker.");
     }
 
     @UiHandler("btnClearDp")
@@ -173,6 +183,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         range.setSuccess("This is a success message for range.");
     }
 
+    @UiHandler("btnHelperRange")
+    void onHelperRange(ClickEvent e) {
+        range.setHelperText("This is a helper text for range");
+    }
+
     @UiHandler("btnClearRange")
     void onClearRange(ClickEvent e) {
         range.clearErrorOrSuccess();
@@ -186,6 +201,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessSwitch")
     void onSuccessSwitch(ClickEvent e) {
         sw.setSuccess("This is a success message for switch.");
+    }
+
+    @UiHandler("btnHelperSwitch")
+    void onHelperSwitch(ClickEvent e) {
+        sw.setHelperText("This is a helper text for switch");
     }
 
     @UiHandler("btnClearSwitch")
@@ -203,6 +223,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         txtArea.setSuccess("This is a success message text area.");
     }
 
+    @UiHandler("btnHelperTxtArea")
+    void onHelperTxtArea(ClickEvent e) {
+        txtArea.setHelperText("This is a helper text for text area.");
+    }
+
     @UiHandler("btnClearTxtArea")
     void onClearTxtArea(ClickEvent e) {
         txtArea.clearErrorOrSuccess();
@@ -216,6 +241,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessTxtBox")
     void onSuccessTxtBox(ClickEvent e) {
         txtBox.setSuccess("This is a success message for text box.");
+    }
+
+    @UiHandler("btnHelperTxtBox")
+    void onHelperTxtBox(ClickEvent e) {
+        txtBox.setHelperText("This is a helper text for text box.");
     }
 
     @UiHandler("btnClearTxtBox")
@@ -233,6 +263,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         tp.setSuccess("This is a success message for time picker.");
     }
 
+    @UiHandler("btnHelperTime")
+    void onHelperTime(ClickEvent e) {
+        tp.setHelperText("This is a helper text for time picker.");
+    }
+
     @UiHandler("btnClearTime")
     void onClearTime(ClickEvent e) {
         tp.clearErrorOrSuccess();
@@ -248,6 +283,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
         combobox.setSuccess("This is a success message for ComboBox.");
     }
 
+    @UiHandler("btnHelperComboBox")
+    void onHelperComboBox(ClickEvent e) {
+        combobox.setHelperText("This is a helper text for ComboBox.");
+    }
+
     @UiHandler("btnClearComboBox")
     void onClearComboBox(ClickEvent e) {
         combobox.clearErrorOrSuccess();
@@ -261,6 +301,11 @@ public class ErrorsView extends ViewImpl implements ErrorsPresenter.MyView {
     @UiHandler("btnSuccessListBox")
     void onSuccessListBox(ClickEvent e) {
         listbox.setSuccess("This is a success message for ListBox.");
+    }
+
+    @UiHandler("btnHelperListBox")
+    void onHelperListBox(ClickEvent e) {
+        listbox.setHelperText("This is a helper text for ListBox.");
     }
 
     @UiHandler("btnClearListBox")

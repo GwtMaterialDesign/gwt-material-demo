@@ -37,17 +37,12 @@ public class DemoImagePanel extends MaterialRow {
 
     public DemoImagePanel(DemoImageDTO dto) {
         super();
-        build();
-        setPatternItem(dto);
-    }
-
-    @Override
-    protected void build() {
         add(title);
         add(source);
         add(demo);
         add(image);
         addStyleName("code");
+        setPatternItem(dto);
     }
 
     public void setPatternItem(DemoImageDTO dto) {

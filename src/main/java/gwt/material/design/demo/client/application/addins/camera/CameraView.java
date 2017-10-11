@@ -21,9 +21,15 @@ package gwt.material.design.demo.client.application.addins.camera;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.camera.MaterialCameraCapture;
+import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialRow;
 
 import javax.inject.Inject;
 
@@ -32,9 +38,36 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
     interface Binder extends UiBinder<Widget, CameraView> {
     }
 
+    @UiField
+    MaterialCameraCapture camera;
+
+    @UiField
+    MaterialImage imageCapture;
+
+    @UiField
+    MaterialRow imageCapturedPanel;
+
     @Inject
     CameraView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        camera.getVideo().setWidth("100%");
     }
 
+    @UiHandler("play")
+    void play(ClickEvent e) {
+        camera.play();
+    }
+
+    @UiHandler("pause")
+    void pause(ClickEvent e) {
+        camera.pause();
+    }
+
+    @UiHandler("capture")
+    void capture(ClickEvent e) {
+        String url = camera.captureToDataURL();
+        imageCapture.setUrl(url);
+        imageCapturedPanel.setVisible(true);
+    }
 }

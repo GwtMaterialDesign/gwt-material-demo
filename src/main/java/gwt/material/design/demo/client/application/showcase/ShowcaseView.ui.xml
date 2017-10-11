@@ -66,14 +66,14 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialSplashScreen ui:field="splash" textColor="WHITE" textAlign="CENTER">
+      <m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER">
         <m:MaterialImage resource="{res.ic_splash}" width="300px"/>
         <m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" />
       </m:MaterialSplashScreen>
       <m:MaterialTitle title="SplashScreen" />
       <m:MaterialButton ui:field="btnSplashScreen" waves="LIGHT" text="Demo" />
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
-        &emsp;&lt;m:MaterialSplashScreen ui:field="splash" textColor="WHITE" textAlign="CENTER"><br/>
+        &emsp;&lt;m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER"><br/>
         &emsp;&lt;m:MaterialImage resource="{res.ic_splash}" width="300px"/><br/>
         &emsp;&lt;m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" /><br/>
         &lt;/m:MaterialSplashScreen><br/>

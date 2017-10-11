@@ -20,11 +20,9 @@
 package gwt.material.design.demo.client;
 
 import com.google.gwt.user.client.Cookies;
-import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.MaterialToast;
-import gwt.material.design.demo.client.application.addins.datatable.table.Person;
 import gwt.material.design.themes.amber.ThemeAmber;
 import gwt.material.design.themes.blue.ThemeBlue;
 import gwt.material.design.themes.brown.ThemeBrown;

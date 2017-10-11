@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="Masonry 4.0.0" link="https://github.com/desandro/masonry" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
@@ -274,14 +275,16 @@
                 &lt;/ma:masonry.MaterialMasonry><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
-    
         <m:MaterialRow addStyleNames="code">
             <m:MaterialRow>
                 <m:MaterialTitle title="Dynamic Adding and Removing" description="You can easily add / remove items with transition animations and reload the masonry easily."/>
                 <m:MaterialButton ui:field="btnAddItem" margin="12" text="Add New Item" />
-                <ma:masonry.MaterialMasonry ui:field="dynamicMasonry" />
+                <m:MaterialButton ui:field="btnClearAll" margin="12" text="Clear" />
+                <m:MaterialButton ui:field="btnInsertTo" margin="12" text="Insert to second slot" />
+                <m:MaterialButton ui:field="btnRemoveLast" margin="12" text="Remove Last" />
+                <ma:masonry.MaterialMasonry ui:field="dynamicMasonry" originTop="true" />
             </m:MaterialRow>
-    
+
             <demo:PrettyPre addStyleNames="lang-java">
                 &emsp;//Populate your data source to masonry using UserCard<br/>
                 masonry.clear();<br/>
@@ -289,17 +292,17 @@
                 &emsp;masonry.add(new UserCard(user));<br/>
                 }
             </demo:PrettyPre>
-    
+
             <demo:PrettyPre addStyleNames="lang-java">
                 &emsp;// Dynamic adding<br/>
                 masonry.add(new UserCard(user));<br/>
             </demo:PrettyPre>
-    
+
             <demo:PrettyPre addStyleNames="lang-java">
                 &emsp;// Dynamic inserting<br/>
                 masonry.insert(new UserCard(user), 3));<br/>
             </demo:PrettyPre>
-    
+
             <demo:PrettyPre addStyleNames="lang-java">
                 &emsp;// Dynamic Removing<br/>
                 masonry.remove(usercard);<br/>

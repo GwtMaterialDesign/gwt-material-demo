@@ -129,6 +129,13 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.PLAY_CIRCLE_OUTLINE, "Core Animations", "#" + NameTokens.coreAnimations));
         listSearches.add(new SearchObject(IconType.PLAY_CIRCLE_OUTLINE, "Meaningful", "#" + NameTokens.meaningful));
 
+        // DATA TABLE
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Standard DataTable", "#" + NameTokens.standardDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Infinite DataTable", "#" + NameTokens.infiniteDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Paged DataTable", "#" + NameTokens.pagedDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Custom DataTable", "#" + NameTokens.customDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Context Menu DataTable", "#" + NameTokens.contextMenuDataTable));
+
         // Addins
         listSearches.add(new SearchObject(IconType.EXTENSION, "Autocomplete", "#" + NameTokens.autocomplete));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Avatar", "#" + NameTokens.avatar));
@@ -140,7 +147,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "ComboBox", "#" + NameTokens.combobox));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Count Up", "#" + NameTokens.countUp));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#" + NameTokens.cutouts));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Data Table", "#" + NameTokens.datatable));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Doc Viewer", "#" + NameTokens.docviewer));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#" + NameTokens.dnd));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Empty States", "#" + NameTokens.emptystates));

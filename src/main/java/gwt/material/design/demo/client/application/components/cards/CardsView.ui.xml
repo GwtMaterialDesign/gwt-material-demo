@@ -171,7 +171,7 @@
       <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
       <m:MaterialRow>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
@@ -188,7 +188,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
@@ -205,7 +205,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
@@ -222,7 +222,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
             </m:MaterialCardImage>
@@ -241,7 +241,7 @@
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
-        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL"><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE"><br/>
         &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardImage><br/>
@@ -263,7 +263,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Mobile" description="Open this card on a mobile device to test." />
       <m:MaterialColumn grid="l6 m6 s12">
-        <m:MaterialCard backgroundColor="WHITE" axis="HORIZONTAL" detectOrientation="true">
+        <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
             <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
           </m:MaterialCardImage>
