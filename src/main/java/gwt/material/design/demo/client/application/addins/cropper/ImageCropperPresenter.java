@@ -52,7 +52,7 @@ public class ImageCropperPresenter extends Presenter<ImageCropperPresenter.MyVie
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Image Cropper", "TODO", "addins/cropper/ImageCropperView", null, this);
+        SetPageTitleEvent.fire("Image Cropper", "TODO", "addins/cropper/ImageCropperView", "", this);
     }
 }
 

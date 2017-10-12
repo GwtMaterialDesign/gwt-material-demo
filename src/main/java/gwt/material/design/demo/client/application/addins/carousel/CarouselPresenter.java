@@ -53,6 +53,6 @@ public class CarouselPresenter extends Presenter<CarouselPresenter.MyView, Carou
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Carousel", "Our Carousel is a robust and versatile component that can be an image slider, to an item carousel, to an onboarding experience. It is touch enabled making it especially smooth to use on mobile.", "addins/camera/CarouselView", null, this);
+        SetPageTitleEvent.fire("Carousel", "Our Carousel is a robust and versatile component that can be an image slider, to an item carousel, to an onboarding experience. It is touch enabled making it especially smooth to use on mobile.", "addins/camera/CarouselView", "", this);
     }
 }

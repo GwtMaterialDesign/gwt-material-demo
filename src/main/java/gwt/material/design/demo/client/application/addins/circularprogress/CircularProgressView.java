@@ -57,8 +57,8 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
     }
 
     protected void buildCircularDynamic(MaterialCircularProgress progress) {
-        progress.addCircularProgressEvent(event -> {
-            int percent = (int) (event.getStep()  * 100.0);
+        progress.addProgressHandler(event -> {
+            int percent = (int) (event.getProgress()  * 100.0);
             progress.setText(percent + "%");
         });
     }
@@ -66,6 +66,7 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
     @UiHandler("btnSet50")
     void onSet50(ClickEvent e) {
         circValues.setValue(0.5);
+        circValues.reload();
     }
 
     @UiHandler("btnGetValue")

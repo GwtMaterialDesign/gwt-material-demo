@@ -52,7 +52,7 @@ public class CountUpPresenter extends Presenter<CountUpPresenter.MyView, CountUp
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Count Up", "Animates a numerical value by counting it up with delightful animations.", "addins/combobox/CountUpView", null, this);
+        SetPageTitleEvent.fire("Count Up", "Animates a numerical value by counting it up with delightful animations.", "addins/combobox/CountUpView", "", this);
     }
 }
 

@@ -27,10 +27,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.carousel.MaterialCarousel;
 import gwt.material.design.addins.client.carousel.js.JsCarouselOptions;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialImage;
-import gwt.material.design.client.ui.MaterialTab;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -47,6 +44,9 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
 
     @UiField
     MaterialTab tab;
+
+    @UiField
+    MaterialRow container;
 
     @Inject
     CarouselView(Binder uiBinder) {
@@ -69,13 +69,13 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
         carouselResponsive.setSlidesToScroll(5);
 
         // Tablet Settings
-        JsCarouselOptions tabletSettings = new JsCarouselOptions();
+        JsCarouselOptions tabletSettings = JsCarouselOptions.create();
         tabletSettings.slidesToShow = 2;
         tabletSettings.slidesToScroll = 2;
         carouselResponsive.setTabletSettings(tabletSettings);
 
         // Mobile Settings
-        JsCarouselOptions mobileSettings = new JsCarouselOptions();
+        JsCarouselOptions mobileSettings = JsCarouselOptions.create();
         mobileSettings.slidesToShow = 1;
         mobileSettings.slidesToScroll = 1;
         carouselResponsive.setMobileSettings(mobileSettings);
@@ -116,4 +116,11 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
         });
     }
 
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        carousel.removeFromParent();
+        container.add(carousel);
+    }
 }

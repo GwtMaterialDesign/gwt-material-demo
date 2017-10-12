@@ -57,11 +57,11 @@ public class InputMaskView extends ViewImpl implements InputMaskPresenter.MyView
 
     @UiHandler("btnUnmask")
     void unmask(ClickEvent e) {
-        unmask.unmask();
+        unmask.unload();
     }
 
     @UiHandler("btnMask")
     void mask(ClickEvent e) {
-        unmask.mask("000.000.000.000");
+        unmask.load("000.000.000.000");
     }
 }

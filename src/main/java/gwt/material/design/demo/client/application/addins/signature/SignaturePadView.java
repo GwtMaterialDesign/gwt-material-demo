@@ -145,6 +145,6 @@ public class SignaturePadView extends ViewImpl implements SignaturePadPresenter.
 
     @Override
     public void resizeSignaturePad() {
-        signaturePad.reinitialize();
+        signaturePad.reload();
     }
 }

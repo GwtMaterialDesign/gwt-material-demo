@@ -24,6 +24,29 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     
     <m:MaterialPanel>
+        <!-- Methods -->
+        <m:MaterialRow ui:field="container" addStyleNames="code">
+            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
+            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
+            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
+            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
+            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
+            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
+            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
+            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
+                carousel.next() // Navigates to the next slide <br/>
+                carousel.previous() // Navigates to the previous slide <br/>
+                carousel.pause() // Pauses autoplay <br/>
+                carousel.play() // Starts autoplay <br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
         <!-- Single Item -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Single Item" description="By default carousel has only one item per navigation." />
@@ -365,30 +388,6 @@
             </demo:PrettyPre>
         </m:MaterialRow>
 
-        <!-- Methods -->
-        <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
-            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
-            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
-            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
-            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
-            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
-            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
-            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
-                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
-                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
-                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
-            </ma:carousel.MaterialCarousel>
-
-            <demo:PrettyPre addStyleNames="lang-java">
-                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
-                carousel.next() // Navigates to the next slide <br/>
-                carousel.previous() // Navigates to the previous slide <br/>
-                carousel.pause() // Pauses autoplay <br/>
-                carousel.play() // Starts autoplay <br/>
-            </demo:PrettyPre>
-        </m:MaterialRow>
-
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
             <m:MaterialRow addStyleNames="code">
@@ -423,7 +422,7 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
-            <ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
+            <ma:carousel.MaterialCarousel visible="false" ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
                 <m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
                     <m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 m6 l12" />
                     <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
