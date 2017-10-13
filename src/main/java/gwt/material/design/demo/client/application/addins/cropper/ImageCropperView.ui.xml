@@ -25,10 +25,57 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
-            <ma:cropper.MaterialImageCropper url="https://i.imgur.com/CiPPh6h.jpg" ui:field="cropper" />
-            <m:MaterialImage ui:field="croppedImage" />
-            <m:MaterialButton text="Crop" ui:field="crop"/>
-            <m:MaterialButton text="Rorate" ui:field="rotate" />
+            <demo:ExternalLibrary text="Croppie 2.5.0" link="https://github.com/Foliotek/Croppie" marginBottom="40"/>
+            <m:MaterialRow>
+                <ma:cropper.MaterialImageCropper url="https://i.imgur.com/CiPPh6h.jpg" ui:field="cropper" />
+            </m:MaterialRow>
+
+            <!-- ViewPort -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboViewPortWidth" label="ViewPort Width" grid="s12 m6 l6" />
+                <ma:combobox.MaterialComboBox ui:field="comboViewPortHeight" label="ViewPort Height" grid="s12 m6 l6" />
+            </m:MaterialRow>
+
+            <!-- Boundary -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboBoundaryWidth" label="Boundary Width" grid="s12 m6 l6" />
+                <ma:combobox.MaterialComboBox ui:field="comboBoundaryHeight" label="Boundary Height" grid="s12 m6 l6" />
+            </m:MaterialRow>
+
+            <!-- Boolean Options -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialCheckBox ui:field="enableZoom" type="FILLED" value="true" text="Enable Zoom" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableResize" type="FILLED" value="true" text="Resize" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableMouseWheelZoom" type="FILLED" value="true" text="Mouse Wheel Zoom" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialCheckBox ui:field="showZoomer" type="FILLED" value="true" text="Show Zoomer Slider" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableOrientation" type="FILLED" value="true" text="Orientation" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enforceBoundary" type="FILLED" value="true" text="Enforce Boundary" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboShape" label="Shape" />
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialColumn grid="s12 m6 l6">
+                    <m:MaterialButton text="Crop" ui:field="crop" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s12 m6 l6">
+                    <m:MaterialButton text="Rotate" ui:field="rotate" width="100%"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
         </m:MaterialRow>
+
+        <m:MaterialModal ui:field="modal">
+            <m:MaterialModalContent textAlign="CENTER">
+                <m:MaterialImage ui:field="croppedImage" />
+            </m:MaterialModalContent>
+            <m:MaterialModalFooter>
+                <m:MaterialButton ui:field="close" type="FLAT" text="Close" waves="DEFAULT" />
+            </m:MaterialModalFooter>
+        </m:MaterialModal>
     </m:MaterialPanel>
 </ui:UiBinder>

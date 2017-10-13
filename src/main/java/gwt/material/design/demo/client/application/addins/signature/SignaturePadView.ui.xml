@@ -30,6 +30,7 @@
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Demo" />
+            <demo:ExternalLibrary text="SignaturePad 2.3.0" link="https://github.com/szimek/signature_pad" marginBottom="40"/>
 
             <!-- SIGNATURE PAD -->
             <ma:signature.MaterialSignaturePad ui:field="signaturePad" dotSize="12" grid="s9" height="300px" penColor="black" border="1px solid #e9e9e9" />

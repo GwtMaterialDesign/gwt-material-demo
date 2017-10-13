@@ -100,22 +100,9 @@ public class SignaturePadView extends ViewImpl implements SignaturePadPresenter.
         comboThrottle.addValueChangeHandler(e -> signaturePad.setThrottle(e.getValue().get(0)));
         comboVelocity.addValueChangeHandler(e -> signaturePad.setVelocityFilterWeight(e.getValue().get(0)));
 
-        signaturePad.addBeginSignatureHandler(event -> {
-            eventCol.add(new MaterialLabel("Event : Begin Signature Event fired"));
-            scrollDown();
-        });
-        signaturePad.addEndSignatureHandler(event -> {
-            eventCol.add(new MaterialLabel("Event : End Signature Event fired"));
-            scrollDown();
-        });
-        signaturePad.addClearSignatureHandler(event -> {
-            eventCol.add(new MaterialLabel("Event : Clear Signature Event fired"));
-            scrollDown();
-        });
-    }
-
-    protected void scrollDown() {
-        $(eventCol.getElement()).scrollTop((int) $(eventCol.getElement()).prop("scrollHeight"));
+        signaturePad.addBeginSignatureHandler(event -> eventCol.add(new MaterialLabel("Event : Begin Signature Event fired")));
+        signaturePad.addEndSignatureHandler(event -> eventCol.add(new MaterialLabel("Event : End Signature Event fired")));
+        signaturePad.addClearSignatureHandler(event -> eventCol.add(new MaterialLabel("Event : Clear Signature Event fired")));
     }
 
     @UiHandler("png")

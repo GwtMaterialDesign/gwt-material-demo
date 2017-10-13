@@ -24,6 +24,8 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
+            <demo:ExternalLibrary text="CountUpJs 1.9.0" link="https://github.com/inorganik/countUp.js" marginBottom="40"/>
+
             <ma:countup.MaterialCountUp value="0.00" ui:field="countUp" startValue="50.01" endValue="99.99" decimals="2" fontSize="5em" fontWeight="LIGHTER"/>
             <m:MaterialRow>
                 <m:MaterialDoubleBox ui:field="txtStart" label="Start Value" value="50.01" grid="s3" />

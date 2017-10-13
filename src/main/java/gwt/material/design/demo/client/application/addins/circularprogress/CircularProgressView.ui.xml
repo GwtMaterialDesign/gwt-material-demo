@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic" description="You can easily set the value and design the fille color of the circular progress" />
+            <demo:ExternalLibrary text="jquery-circle-progress 1.2.2" link="https://github.com/kottenator/jquery-circle-progress" marginBottom="40"/>
             <!-- Default -->
             <ma:circularprogress.MaterialCircularProgress value="0.3" grid="s12 m4 l3"/>
             <!-- Fill Color -->
@@ -99,7 +100,7 @@
         </m:MaterialRow>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Responsive" description="You can use css to make the circular progress responsive" />
-            <ma:circularprogress.MaterialCircularProgress value="0.45" thickness="20" addStyleNames="circle" size="1000" grid="s12 m4 l3"/>
+            <ma:circularprogress.MaterialCircularProgress value="0.45" responsive="true" thickness="20" addStyleNames="circle" grid="s12 m4 l3"/>
             <demo:PrettyPre addStyleNames="lang-xml" grid="s12">
                 &emsp;&lt;-- XML Declaration --> <br/>
                 &lt;ma:circularprogress.MaterialCircularProgress value="0.45" thickness="20" addStyleNames="circle" size="1000" grid="s12 m4 l3"/>

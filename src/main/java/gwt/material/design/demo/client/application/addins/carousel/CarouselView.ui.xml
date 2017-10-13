@@ -24,32 +24,10 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     
     <m:MaterialPanel>
-        <!-- Methods -->
-        <m:MaterialRow ui:field="container" addStyleNames="code">
-            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
-            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
-            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
-            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
-            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
-            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
-            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
-            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
-                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
-                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
-                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
-            </ma:carousel.MaterialCarousel>
-
-            <demo:PrettyPre addStyleNames="lang-java">
-                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
-                carousel.next() // Navigates to the next slide <br/>
-                carousel.previous() // Navigates to the previous slide <br/>
-                carousel.pause() // Pauses autoplay <br/>
-                carousel.play() // Starts autoplay <br/>
-            </demo:PrettyPre>
-        </m:MaterialRow>
         <!-- Single Item -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Single Item" description="By default carousel has only one item per navigation." />
+            <demo:ExternalLibrary text="SlickJs 1.6.0" link="https://github.com/kenwheeler/slick" marginBottom="40"/>
             <ma:carousel.MaterialCarousel textAlign="CENTER">
                 <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
@@ -470,6 +448,30 @@
                 &emsp;&emsp;&lt;/m:MaterialColumn>
                 &emsp;&lt;/m:MaterialRow>
                 &lt;/ma:carousel.MaterialCarousel>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Methods -->
+        <m:MaterialRow ui:field="container" addStyleNames="code">
+            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
+            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
+            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
+            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
+            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
+            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
+            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
+            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <m:MaterialImage url="//i.imgur.com/8XlWy0H.png" />
+                <m:MaterialImage url="//i.imgur.com/dQdwYhS.png" />
+                <m:MaterialImage url="//i.imgur.com/TTAG5CS.png" />
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
+                carousel.next() // Navigates to the next slide <br/>
+                carousel.previous() // Navigates to the previous slide <br/>
+                carousel.pause() // Pauses autoplay <br/>
+                carousel.play() // Starts autoplay <br/>
             </demo:PrettyPre>
         </m:MaterialRow>
 

@@ -25,7 +25,7 @@
 
 	<ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
 
-	<ui:style>
+	<ui:style>Men
 		@external .sidebar, .nav-wrapper, .select2-selection__rendered;
 		.sidebar {
 			padding: 10% !important;
@@ -82,7 +82,7 @@
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-Rework" textColor="WHITE"/>
+					<m:MaterialBadge text="2.1" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
@@ -158,19 +158,31 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getAvatar}" text="Avatar" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getCarousel}" text="Carousel" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getCircularProgress}" text="Circular Progress" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCarousel}" text="Carousel" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getCircularProgress}" text="Circular Progress" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getCountUp}" text="Count Up" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCountUp}" text="Count Up" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getEmptyStates}" text="Empty States" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getImageCropper}" text="Image Cropper" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getLiveStamp}" text="Live Stamp" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getImageCropper}" text="Image Cropper" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getLiveStamp}" text="Live Stamp" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getOverlay}" text="Overlay" waves="DEFAULT"/>
@@ -178,7 +190,9 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getRating}" text="Rating" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollfire}" text="Scroll Fire" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getSignaturePad}" text="Signature Pad" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getSignaturePad}" text="Signature Pad" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getSplitpanel}" text="Split Panel" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" waves="DEFAULT"/>
@@ -210,7 +224,9 @@
 				<!-- PROGRESSIVE WEB APPS (PWA) -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
-						<m:MaterialLink text="PWA" iconType="STARS"/>
+						<m:MaterialLink text="PWA" iconType="STARS">
+							<m:MaterialBadge text="NEW" textColor="WHITE"/>
+						</m:MaterialLink>
 					</m:MaterialCollapsibleHeader>
 					<m:MaterialCollapsibleBody>
 						<m.html:UnorderedList>

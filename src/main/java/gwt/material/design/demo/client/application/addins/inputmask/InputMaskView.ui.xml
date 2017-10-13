@@ -26,6 +26,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic Examples" />
+            <demo:ExternalLibrary text="jQuery-Mask-Plugin 1.14.10" link="https://github.com/Foliotek/Croppie" marginBottom="40"/>
             <m:MaterialRow>
                 <ma:inputmask.MaterialInputMask label="Phone Number" placeholder="eg: 000-00-0000000" mask="000-00-0000000" grid="s12 m4 l4"/>
                 <ma:inputmask.MaterialInputMask label="Phone with Odd" placeholder="eg: (00) 0000-0000" mask="(00) 0000-0000" grid="s12 m4 l4"/>

@@ -26,6 +26,7 @@
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Default" description="Wait half a minute - the livestamp will update automatically" />
+            <demo:ExternalLibrary text="LiveStamp 1.1.2" link="https://github.com/mattbradley/livestampjs" marginBottom="40"/>
             <m:MaterialLink textColor="GREY" iconType="ACCESS_TIME" text="You discovered MaterialLiveStamp " float="LEFT"/>
             <ma:livestamp.MaterialLiveStamp float="LEFT" fontWeight="BOLD" marginLeft="8"/>
             <demo:PrettyPre addStyleNames="code" marginTop="80">
