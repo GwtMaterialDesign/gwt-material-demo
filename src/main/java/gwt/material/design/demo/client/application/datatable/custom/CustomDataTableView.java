@@ -289,17 +289,4 @@ public class CustomDataTableView extends NavigatedView implements CustomDataTabl
             //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
         });
     }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        //Adding / removing table toolpanel action buttons / icons
-        Panel panel = table.getScaffolding().getToolPanel();
-        panel.clear();
-        // Add two buttons
-        panel.add(new MaterialIcon(IconType.FAVORITE));
-        panel.add(new MaterialIcon(IconType.DELETE));
-        panel.add(new MaterialIcon(IconType.MESSAGE));
-    }
 }
