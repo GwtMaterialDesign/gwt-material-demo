@@ -29,7 +29,7 @@ import gwt.material.design.addins.client.scrollfire.MaterialScrollfire;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialToast;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.client.ui.html.UnorderedList;
 
@@ -56,12 +56,8 @@ public class ScrollFireView extends ViewImpl implements ScrollFirePresenter.MyVi
         MaterialScrollfire.apply(panel.getElement(), () -> {
             MaterialToast.fireToast("Toasted");
         });
-        MaterialScrollfire.apply(listContainer.getElement(), () -> {
-            MaterialAnimator.animate(Transition.SHOW_STAGGERED_LIST, listContainer, 0);
-        });
-        MaterialScrollfire.apply(image.getElement(), () -> {
-            MaterialAnimator.animate(Transition.FADE_IN_IMAGE, image, 0);
-        });
+        MaterialScrollfire.apply(listContainer.getElement(), () -> new MaterialAnimation().transition(Transition.SHOW_STAGGERED_LIST).animate(listContainer));
+        MaterialScrollfire.apply(image.getElement(), () -> new MaterialAnimation().transition(Transition.FADE_IN_IMAGE).animate(image));
 
     }
 }

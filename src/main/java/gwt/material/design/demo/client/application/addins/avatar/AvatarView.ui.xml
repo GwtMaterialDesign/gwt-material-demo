@@ -26,6 +26,7 @@
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="JDenticon 1.3.2" link="https://github.com/dmester/jdenticon"/>
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
@@ -37,21 +38,24 @@
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="initialize()" description="You can easily update the avatar during textbox key up events." />
+            <m:MaterialTitle title="setValue() and setDimension()" description="You can easily update the avatar during textbox key up events." />
             <m:MaterialRow>
                 <m:MaterialColumn grid="l6 m6 s12">
-                    <m:MaterialCard padding="20" marginTop="100" height="200px" textAlign="CENTER">
-                        <ma:avatar.MaterialAvatar ui:field="avatar" backgroundColor="WHITE" marginTop="-100" name="marjorie" width="150" height="150" shadow="1" circle="true" />
-                        <m:MaterialTextBox ui:field="txtAvatarName" grid="s12" placeholder="Avatar Name" text="marjorie"/>
-                    </m:MaterialCard>
+                    <m:MaterialRow>
+                        <m:MaterialRow textAlign="CENTER">
+                            <ma:avatar.MaterialAvatar ui:field="avatar" backgroundColor="WHITE" name="marjorie" width="150" height="150" shadow="1" circle="true" />
+                        </m:MaterialRow>
+                        <m:MaterialTextBox ui:field="txtAvatarName" grid="s12" label="Avatar Name" text="marjorie"/>
+                        <ma:combobox.MaterialComboBox ui:field="dimensions" textAlign="LEFT" label="Dimension" grid="s12" />
+                        <m:MaterialRow>
+                            <m:MaterialCheckBox ui:field="autoReload" text="Auto Reload" value="true" grid="s6" />
+                            <m:MaterialButton ui:field="reload" text="Reload" grid="s6" />
+                        </m:MaterialRow>
+                    </m:MaterialRow>
                 </m:MaterialColumn>
             </m:MaterialRow>
             <demo:PrettyPre addStyleNames="lang-java">
-                &emsp;@UiHandler("txtAvatarName")<br/>
-                void onUpdateAvatar(KeyUpEvent e) {<br/>
-                &emsp;avatar.setName(txtAvatarName.getText());<br/>
-                &emsp;avatar.initialize();<br/>
-                }
+
             </demo:PrettyPre>
         </m:MaterialRow>
     </g:HTMLPanel>

@@ -27,8 +27,9 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialTab;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.constants.Color;
+import gwt.material.design.client.constants.WavesType;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -38,11 +39,18 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     }
 
     @UiField
-    MaterialTab tabBasic, tabIntro, tabSetIndex, tabIcons, tabIndicatorColor, tabControlWidth, tabEvents, tabGetIndex, tabFit;
+    MaterialTab tabBasic, tabIntro, tabSetIndex, tabIcons, tabIndicatorColor, tabControlWidth, tabEvents, tabGetIndex, tabFit, dynamicTabs;
+
+    @UiField
+    MaterialRow dynamicTabsRow;
+
+    private int index = 0;
 
     @Inject
     TabsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        buildDynamicTab();
     }
 
     @Override
@@ -58,16 +66,45 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
         MaterialToast.fireToast(tabGetIndex.getTabIndex() + "");
     }
 
+    @UiHandler("addTab")
+    void addTab(ClickEvent e) {
+        index++;
+        dynamicTabs.add(newTabItem(index));
+        dynamicTabs.setTabIndex(index - 1);
+    }
+
     @Override
     public void recalculateTabs() {
-        tabBasic.reinitialize();
-        tabIntro.reinitialize();
-        tabSetIndex.reinitialize();
-        tabIcons.reinitialize();
-        tabIndicatorColor.reinitialize();
-        tabControlWidth.reinitialize();
-        tabEvents.reinitialize();
-        tabGetIndex.reinitialize();
-        tabFit.reinitialize();
+        tabBasic.reload();
+        tabIntro.reload();
+        tabSetIndex.reload();
+        tabIcons.reload();
+        tabIndicatorColor.reload();
+        tabControlWidth.reload();
+        tabEvents.reload();
+        tabGetIndex.reload();
+        tabFit.reload();
+        dynamicTabs.reload();
+    }
+
+    protected void buildDynamicTab() {
+        dynamicTabs.addSelectionHandler(selectionEvent -> MaterialToast.fireToast("Selected " + selectionEvent.getSelectedItem()));
+        for (int i = 1; i <= 2; i++) {
+            dynamicTabs.add(newTabItem(i));
+            index = i;
+        }
+    }
+
+    protected MaterialTabItem newTabItem(int index) {
+        MaterialTabItem item = new MaterialTabItem();
+        item.setWaves(WavesType.DEFAULT);
+        MaterialLink link = new MaterialLink("Tab " + index);
+        link.setTextColor(Color.WHITE);
+        link.setHref("#dynamicTab" + index);
+        item.add(link);
+        MaterialLabel content = new MaterialLabel("Content " + index);
+        content.setId("dynamicTab" + index);
+        dynamicTabsRow.add(content);
+        return item;
     }
 }

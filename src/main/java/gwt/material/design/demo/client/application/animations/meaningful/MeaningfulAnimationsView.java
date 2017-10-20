@@ -30,7 +30,6 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialRow;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.client.ui.html.UnorderedList;
 

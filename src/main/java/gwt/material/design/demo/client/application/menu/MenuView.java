@@ -21,26 +21,20 @@ package gwt.material.design.demo.client.application.menu;
  */
 
 
-import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.CloseEvent;
-import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.events.SideNavPushEvent;
-import gwt.material.design.client.events.SideNavPushEvent.SideNavPushHandler;
-import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
-import gwt.material.design.client.ui.animate.Transition;
+import gwt.material.design.client.ui.MaterialHeader;
+import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialSearch;
+import gwt.material.design.client.ui.MaterialSideNav;
 import gwt.material.design.demo.client.ThemeManager;
-import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 import gwt.material.design.themes.amber.ThemeAmber;
 import gwt.material.design.themes.blue.ThemeBlue;
@@ -57,8 +51,6 @@ import gwt.material.design.themes.yellow.ThemeYellow;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
-
-import static gwt.material.design.jquery.client.api.JQuery.$;
 
 class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresenter.MyView {
 
@@ -131,6 +123,13 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.PLAY_CIRCLE_OUTLINE, "Core Animations", "#" + NameTokens.coreAnimations));
         listSearches.add(new SearchObject(IconType.PLAY_CIRCLE_OUTLINE, "Meaningful", "#" + NameTokens.meaningful));
 
+        // DATA TABLE
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Standard DataTable", "#" + NameTokens.standardDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Infinite DataTable", "#" + NameTokens.infiniteDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Paged DataTable", "#" + NameTokens.pagedDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Custom DataTable", "#" + NameTokens.customDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Context Menu DataTable", "#" + NameTokens.contextMenuDataTable));
+
         // Addins
         listSearches.add(new SearchObject(IconType.EXTENSION, "Autocomplete", "#" + NameTokens.autocomplete));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Avatar", "#" + NameTokens.avatar));
@@ -139,7 +138,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Camera", "#" + NameTokens.camera));
         listSearches.add(new SearchObject(IconType.EXTENSION, "ComboBox", "#" + NameTokens.combobox));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#" + NameTokens.cutouts));
-        listSearches.add(new SearchObject(IconType.EXTENSION, "Data Table", "#" + NameTokens.datatable));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Doc Viewer", "#" + NameTokens.docviewer));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#" + NameTokens.dnd));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Empty States", "#" + NameTokens.emptystates));

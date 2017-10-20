@@ -173,6 +173,47 @@
         &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
       </demo:PrettyPre>
     </g:HTMLPanel>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="ViewPort" description="Easily detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
+      <m:MaterialLink ui:field="lblViewPort" />
+      <demo:PrettyPre addStyleNames="lang-java" marginTop="40">
+        ViewPort.when(Resolution.MOBILE_SMALL).then(viewPortChange -> { <br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Small");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.MOBILE_MEDIUM).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Medium");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.MOBILE_LARGE).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Large");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.TABLET).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Tablet");<br/>
+        &emsp;lblViewPort.setIconType(IconType.TABLET_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP_LARGE).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop Large");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP_4K).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop 4K");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>

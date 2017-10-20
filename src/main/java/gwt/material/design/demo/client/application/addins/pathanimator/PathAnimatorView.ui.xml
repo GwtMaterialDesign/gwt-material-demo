@@ -33,6 +33,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Markup Definition" description="FIRST , Set your source and target components."/>
+        <demo:ExternalLibrary text="CTAJs 0.3.2" link="https://github.com/chinchang/cta.js" />
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;!-- Source Component --><br/>
           &lt;m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="BLUE" size="LARGE" /><br/><br/>

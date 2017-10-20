@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="Select2 4.0.3" link="https://github.com/select2/select2" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
@@ -227,10 +228,17 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
-            <m:MaterialColumn grid="l6 m6 s12">
-                <m:MaterialTitle title="Tag Support" description="Note that when tagging is enabled the user can select from pre-existing options or create a new tag by picking the first choice, which is what the user has typed into the search box so far."/>
-                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" multiple="true" ui:field="comboTagsMultiple" />
-                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" ui:field="comboTags" />
+            <m:MaterialColumn grid="l12 m12 s12">
+                <m:MaterialTitle title="Tag Support" description="Note that when tagging is enabled the user can select from pre-existing options or create a new tag by picking the first choice, which is what the user has typed into the search box so far. Also Tag support will only work on String generic Params."/>
+                <m:MaterialRow>
+                    <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" multiple="true" ui:field="comboTagsMultiple" grid="s12 m6 l6"/>
+                </m:MaterialRow>
+                <m:MaterialButton ui:field="btnTagMultiGetValue" text="Get Value" />
+
+                <m:MaterialRow>
+                    <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" ui:field="comboTags" grid="s12 m6 l6" />
+                </m:MaterialRow>
+                <m:MaterialButton ui:field="btnTagGetValue" text="Get Value" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
