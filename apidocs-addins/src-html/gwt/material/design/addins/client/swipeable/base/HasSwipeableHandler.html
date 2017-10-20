@@ -29,22 +29,44 @@
 <span class="sourceLineNo">021</span><a name="line.21"></a>
 <span class="sourceLineNo">022</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.22"></a>
 <span class="sourceLineNo">023</span>import com.google.gwt.event.shared.HasHandlers;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import gwt.material.design.addins.client.swipeable.events.SwipeLeftEvent;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import gwt.material.design.addins.client.swipeable.events.SwipeRightEvent;<a name="line.25"></a>
-<span class="sourceLineNo">026</span><a name="line.26"></a>
-<span class="sourceLineNo">027</span>public interface HasSwipeableHandler&lt;T&gt; extends HasHandlers {<a name="line.27"></a>
-<span class="sourceLineNo">028</span><a name="line.28"></a>
-<span class="sourceLineNo">029</span>    /**<a name="line.29"></a>
-<span class="sourceLineNo">030</span>     * Add swipe left handler.<a name="line.30"></a>
-<span class="sourceLineNo">031</span>     */<a name="line.31"></a>
-<span class="sourceLineNo">032</span>    HandlerRegistration addSwipeLeftHandler(SwipeLeftEvent.SwipeLeftHandler&lt;T&gt; handler);<a name="line.32"></a>
-<span class="sourceLineNo">033</span><a name="line.33"></a>
-<span class="sourceLineNo">034</span>    /**<a name="line.34"></a>
-<span class="sourceLineNo">035</span>     * Add swipe right handler.<a name="line.35"></a>
-<span class="sourceLineNo">036</span>     */<a name="line.36"></a>
-<span class="sourceLineNo">037</span>    HandlerRegistration addSwipeRightHandler(SwipeRightEvent.SwipeRightHandler&lt;T&gt; handler);<a name="line.37"></a>
-<span class="sourceLineNo">038</span><a name="line.38"></a>
-<span class="sourceLineNo">039</span>}<a name="line.39"></a>
+<span class="sourceLineNo">024</span>import gwt.material.design.addins.client.swipeable.events.*;<a name="line.24"></a>
+<span class="sourceLineNo">025</span><a name="line.25"></a>
+<span class="sourceLineNo">026</span>/**<a name="line.26"></a>
+<span class="sourceLineNo">027</span> * @author kevzlou7979<a name="line.27"></a>
+<span class="sourceLineNo">028</span> */<a name="line.28"></a>
+<span class="sourceLineNo">029</span>public interface HasSwipeableHandler&lt;T&gt; extends HasHandlers {<a name="line.29"></a>
+<span class="sourceLineNo">030</span><a name="line.30"></a>
+<span class="sourceLineNo">031</span>    /**<a name="line.31"></a>
+<span class="sourceLineNo">032</span>     * Add swipe left handler.<a name="line.32"></a>
+<span class="sourceLineNo">033</span>     */<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    HandlerRegistration addSwipeLeftHandler(SwipeLeftEvent.SwipeLeftHandler&lt;T&gt; handler);<a name="line.34"></a>
+<span class="sourceLineNo">035</span><a name="line.35"></a>
+<span class="sourceLineNo">036</span>    /**<a name="line.36"></a>
+<span class="sourceLineNo">037</span>     * Add swipe right handler.<a name="line.37"></a>
+<span class="sourceLineNo">038</span>     */<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    HandlerRegistration addSwipeRightHandler(SwipeRightEvent.SwipeRightHandler&lt;T&gt; handler);<a name="line.39"></a>
+<span class="sourceLineNo">040</span><a name="line.40"></a>
+<span class="sourceLineNo">041</span>    /**<a name="line.41"></a>
+<span class="sourceLineNo">042</span>     * Add on start swipe left handler.<a name="line.42"></a>
+<span class="sourceLineNo">043</span>     */<a name="line.43"></a>
+<span class="sourceLineNo">044</span>    HandlerRegistration addOnStartSwipeLeftHandler(OnStartSwipeLeftEvent.OnStartSwipeLeftHandler&lt;T&gt; handler);<a name="line.44"></a>
+<span class="sourceLineNo">045</span><a name="line.45"></a>
+<span class="sourceLineNo">046</span>    /**<a name="line.46"></a>
+<span class="sourceLineNo">047</span>     * Add on start swipe right handler.<a name="line.47"></a>
+<span class="sourceLineNo">048</span>     */<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    HandlerRegistration addOnStartSwipeRightHandler(OnStartSwipeRightEvent.OnStartSwipeRightHandler&lt;T&gt; handler);<a name="line.49"></a>
+<span class="sourceLineNo">050</span><a name="line.50"></a>
+<span class="sourceLineNo">051</span>    /**<a name="line.51"></a>
+<span class="sourceLineNo">052</span>     *  Add on end swipe left handler.<a name="line.52"></a>
+<span class="sourceLineNo">053</span>     */<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    HandlerRegistration addOnEndSwipeLeftHandler(OnEndSwipeLeftEvent.OnEndSwipeLeftHandler&lt;T&gt; handler);<a name="line.54"></a>
+<span class="sourceLineNo">055</span><a name="line.55"></a>
+<span class="sourceLineNo">056</span>    /**<a name="line.56"></a>
+<span class="sourceLineNo">057</span>     *  Add on end swipe right handler.<a name="line.57"></a>
+<span class="sourceLineNo">058</span>     */<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    HandlerRegistration addOnEndSwipeRightHandler(OnEndSwipeRightEvent.OnEndSwipeRightHandler&lt;T&gt; handler);<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span>}<a name="line.61"></a>
 
 
 

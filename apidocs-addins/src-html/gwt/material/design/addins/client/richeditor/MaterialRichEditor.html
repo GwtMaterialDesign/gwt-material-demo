@@ -27,133 +27,133 @@
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>package gwt.material.design.addins.client.richeditor;<a name="line.20"></a>
 <span class="sourceLineNo">021</span><a name="line.21"></a>
-<span class="sourceLineNo">022</span>import com.google.gwt.dom.client.Element;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>import com.google.gwt.event.dom.client.BlurEvent;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>import com.google.gwt.event.dom.client.FocusEvent;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>import com.google.gwt.event.dom.client.KeyDownEvent;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>import com.google.gwt.event.dom.client.KeyUpEvent;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>import com.google.gwt.event.logical.shared.HasValueChangeHandlers;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import com.google.gwt.event.logical.shared.ValueChangeEvent;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import com.google.gwt.safehtml.shared.SafeHtmlUtils;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.addins.client.MaterialAddins;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import gwt.material.design.addins.client.richeditor.base.HasPasteHandlers;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>import gwt.material.design.addins.client.richeditor.base.MaterialRichEditorBase;<a name="line.33"></a>
-<span class="sourceLineNo">034</span>import gwt.material.design.addins.client.richeditor.base.constants.RichEditorEvents;<a name="line.34"></a>
-<span class="sourceLineNo">035</span>import gwt.material.design.addins.client.richeditor.events.PasteEvent;<a name="line.35"></a>
-<span class="sourceLineNo">036</span>import gwt.material.design.addins.client.richeditor.js.JsRichEditor;<a name="line.36"></a>
-<span class="sourceLineNo">037</span>import gwt.material.design.addins.client.richeditor.js.JsRichEditorOptions;<a name="line.37"></a>
-<span class="sourceLineNo">038</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.38"></a>
-<span class="sourceLineNo">039</span>import gwt.material.design.client.ui.MaterialModal;<a name="line.39"></a>
-<span class="sourceLineNo">040</span>import gwt.material.design.client.ui.MaterialModalContent;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>import gwt.material.design.jquery.client.api.JQueryElement;<a name="line.41"></a>
-<span class="sourceLineNo">042</span><a name="line.42"></a>
-<span class="sourceLineNo">043</span>import static gwt.material.design.addins.client.richeditor.js.JsRichEditor.$;<a name="line.43"></a>
-<span class="sourceLineNo">044</span><a name="line.44"></a>
-<span class="sourceLineNo">045</span>//@formatter:off<a name="line.45"></a>
-<span class="sourceLineNo">046</span><a name="line.46"></a>
-<span class="sourceLineNo">047</span>/**<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * Provides a great Rich Editor with amazing options built with Material Design Look and Feel<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * &lt;p&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * &lt;pre&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * {@code<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * }<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * &lt;/pre&gt;<a name="line.55"></a>
+<span class="sourceLineNo">022</span>import com.google.gwt.dom.client.Document;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Element;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>import com.google.gwt.event.dom.client.BlurEvent;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>import com.google.gwt.event.dom.client.FocusEvent;<a name="line.25"></a>
+<span class="sourceLineNo">026</span>import com.google.gwt.event.dom.client.KeyDownEvent;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import com.google.gwt.event.dom.client.KeyUpEvent;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>import com.google.gwt.event.logical.shared.HasValueChangeHandlers;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import com.google.gwt.event.logical.shared.ValueChangeEvent;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import com.google.gwt.safehtml.shared.SafeHtmlUtils;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import com.google.gwt.user.client.ui.HasHTML;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.addins.client.MaterialAddins;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import gwt.material.design.addins.client.base.constants.AddinsCssName;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import gwt.material.design.addins.client.richeditor.base.HasPasteHandlers;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import gwt.material.design.addins.client.richeditor.base.ToolBarManager;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import gwt.material.design.addins.client.richeditor.base.constants.RichEditorEvents;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import gwt.material.design.addins.client.richeditor.base.constants.ToolbarButton;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import gwt.material.design.addins.client.richeditor.events.PasteEvent;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>import gwt.material.design.addins.client.richeditor.js.JsRichEditor;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>import gwt.material.design.addins.client.richeditor.js.JsRichEditorOptions;<a name="line.41"></a>
+<span class="sourceLineNo">042</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.42"></a>
+<span class="sourceLineNo">043</span>import gwt.material.design.client.base.AbstractValueWidget;<a name="line.43"></a>
+<span class="sourceLineNo">044</span>import gwt.material.design.client.base.HasPlaceholder;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>import gwt.material.design.client.base.JsLoader;<a name="line.45"></a>
+<span class="sourceLineNo">046</span>import gwt.material.design.client.ui.MaterialModal;<a name="line.46"></a>
+<span class="sourceLineNo">047</span>import gwt.material.design.client.ui.MaterialModalContent;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>import gwt.material.design.jquery.client.api.JQueryElement;<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>import static gwt.material.design.addins.client.richeditor.js.JsRichEditor.$;<a name="line.50"></a>
+<span class="sourceLineNo">051</span><a name="line.51"></a>
+<span class="sourceLineNo">052</span>//@formatter:off<a name="line.52"></a>
+<span class="sourceLineNo">053</span><a name="line.53"></a>
+<span class="sourceLineNo">054</span>/**<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * Provides a great Rich Editor with amazing options built with Material Design Look and Feel<a name="line.55"></a>
 <span class="sourceLineNo">056</span> * &lt;p&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.57"></a>
+<span class="sourceLineNo">057</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.57"></a>
 <span class="sourceLineNo">058</span> * &lt;pre&gt;<a name="line.58"></a>
 <span class="sourceLineNo">059</span> * {@code<a name="line.59"></a>
-<span class="sourceLineNo">060</span> * &lt;ma:MaterialRichEditor placeholder="Type anything in here..."/&gt;<a name="line.60"></a>
+<span class="sourceLineNo">060</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.60"></a>
 <span class="sourceLineNo">061</span> * }<a name="line.61"></a>
 <span class="sourceLineNo">062</span> * &lt;/pre&gt;<a name="line.62"></a>
-<span class="sourceLineNo">063</span> *<a name="line.63"></a>
-<span class="sourceLineNo">064</span> * @author kevzlou7979<a name="line.64"></a>
-<span class="sourceLineNo">065</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#richeditor"&gt;Material Rich Editor&lt;/a&gt;<a name="line.65"></a>
-<span class="sourceLineNo">066</span> */<a name="line.66"></a>
-<span class="sourceLineNo">067</span>//@formatter:on<a name="line.67"></a>
-<span class="sourceLineNo">068</span>public class MaterialRichEditor extends MaterialRichEditorBase implements HasValueChangeHandlers&lt;String&gt;, HasPasteHandlers {<a name="line.68"></a>
-<span class="sourceLineNo">069</span><a name="line.69"></a>
-<span class="sourceLineNo">070</span>    static {<a name="line.70"></a>
-<span class="sourceLineNo">071</span>        if (MaterialAddins.isDebug()) {<a name="line.71"></a>
-<span class="sourceLineNo">072</span>            MaterialDesignBase.injectDebugJs(MaterialRichEditorDebugClientBundle.INSTANCE.richEditorDebugJs());<a name="line.72"></a>
-<span class="sourceLineNo">073</span>            MaterialDesignBase.injectCss(MaterialRichEditorDebugClientBundle.INSTANCE.richEditorDebugCss());<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        } else {<a name="line.74"></a>
-<span class="sourceLineNo">075</span>            MaterialDesignBase.injectJs(MaterialRichEditorClientBundle.INSTANCE.richEditorJs());<a name="line.75"></a>
-<span class="sourceLineNo">076</span>            MaterialDesignBase.injectCss(MaterialRichEditorClientBundle.INSTANCE.richEditorCss());<a name="line.76"></a>
-<span class="sourceLineNo">077</span>        }<a name="line.77"></a>
-<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
-<span class="sourceLineNo">079</span><a name="line.79"></a>
-<span class="sourceLineNo">080</span>    private boolean toggleFullScreen = true;<a name="line.80"></a>
-<span class="sourceLineNo">081</span><a name="line.81"></a>
-<span class="sourceLineNo">082</span>    public MaterialRichEditor() {<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        super();<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    public MaterialRichEditor(String placeholder) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        this();<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        setPlaceholder(placeholder);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    }<a name="line.89"></a>
-<span class="sourceLineNo">090</span><a name="line.90"></a>
-<span class="sourceLineNo">091</span>    public MaterialRichEditor(String placeholder, String value) {<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        this(placeholder);<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        setValue(value);<a name="line.93"></a>
-<span class="sourceLineNo">094</span>    }<a name="line.94"></a>
+<span class="sourceLineNo">063</span> * &lt;p&gt;<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.64"></a>
+<span class="sourceLineNo">065</span> * &lt;pre&gt;<a name="line.65"></a>
+<span class="sourceLineNo">066</span> * {@code<a name="line.66"></a>
+<span class="sourceLineNo">067</span> * &lt;ma:MaterialRichEditor placeholder="Type anything in here..."/&gt;<a name="line.67"></a>
+<span class="sourceLineNo">068</span> * }<a name="line.68"></a>
+<span class="sourceLineNo">069</span> * &lt;/pre&gt;<a name="line.69"></a>
+<span class="sourceLineNo">070</span> *<a name="line.70"></a>
+<span class="sourceLineNo">071</span> * @author kevzlou7979<a name="line.71"></a>
+<span class="sourceLineNo">072</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#richeditor"&gt;Material Rich Editor&lt;/a&gt;<a name="line.72"></a>
+<span class="sourceLineNo">073</span> * @see &lt;a href="https://github.com/Cerealkillerway/materialNote"&gt;1.2.1&lt;/a&gt;<a name="line.73"></a>
+<span class="sourceLineNo">074</span> */<a name="line.74"></a>
+<span class="sourceLineNo">075</span>//@formatter:on<a name="line.75"></a>
+<span class="sourceLineNo">076</span>public class MaterialRichEditor extends AbstractValueWidget&lt;String&gt; implements JsLoader, HasValueChangeHandlers&lt;String&gt;, HasPasteHandlers, HasPlaceholder, HasHTML  {<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>    static {<a name="line.78"></a>
+<span class="sourceLineNo">079</span>        if (MaterialAddins.isDebug()) {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            MaterialDesignBase.injectDebugJs(MaterialRichEditorDebugClientBundle.INSTANCE.richEditorDebugJs());<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            MaterialDesignBase.injectCss(MaterialRichEditorDebugClientBundle.INSTANCE.richEditorDebugCss());<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        } else {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            MaterialDesignBase.injectJs(MaterialRichEditorClientBundle.INSTANCE.richEditorJs());<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            MaterialDesignBase.injectCss(MaterialRichEditorClientBundle.INSTANCE.richEditorCss());<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        }<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    }<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span><a name="line.88"></a>
+<span class="sourceLineNo">089</span>    private String html;<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    private ToolBarManager manager = new ToolBarManager();<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    private boolean toggleFullScreen = true;<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    private JsRichEditorOptions options = JsRichEditorOptions.create();<a name="line.92"></a>
+<span class="sourceLineNo">093</span><a name="line.93"></a>
+<span class="sourceLineNo">094</span>    private HandlerRegistration handlerRegistration;<a name="line.94"></a>
 <span class="sourceLineNo">095</span><a name="line.95"></a>
-<span class="sourceLineNo">096</span>    @Override<a name="line.96"></a>
-<span class="sourceLineNo">097</span>    protected void initialize() {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        JsRichEditor jsRichEditor = $(getElement());<a name="line.98"></a>
+<span class="sourceLineNo">096</span>    public MaterialRichEditor() {<a name="line.96"></a>
+<span class="sourceLineNo">097</span>        super(Document.get().createDivElement(), AddinsCssName.EDITOR);<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    }<a name="line.98"></a>
 <span class="sourceLineNo">099</span><a name="line.99"></a>
-<span class="sourceLineNo">100</span>        JsRichEditorOptions options = new JsRichEditorOptions();<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        // Set up the toolbar items<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        Object[][] toolbar = new Object[][]{};<a name="line.102"></a>
-<span class="sourceLineNo">103</span>        toolbar[0] = new Object[]{"style", extractOptions(getStyleOptions())};<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        toolbar[1] = new Object[]{"para", extractOptions(getParaOptions())};<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        toolbar[2] = new Object[]{"height", extractOptions(getHeightOptions())};<a name="line.105"></a>
-<span class="sourceLineNo">106</span>        toolbar[3] = new Object[]{"undo", extractOptions(getUndoOptions())};<a name="line.106"></a>
-<span class="sourceLineNo">107</span>        toolbar[4] = new Object[]{"fonts", extractOptions(getFontOptions())};<a name="line.107"></a>
-<span class="sourceLineNo">108</span>        toolbar[5] = new Object[]{"color", extractOptions(getColorOptions())};<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        toolbar[6] = new Object[]{"ckMedia", extractOptions(getCkMediaOptions())};<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        toolbar[7] = new Object[]{"misc", extractOptions(getMiscOptions())};<a name="line.110"></a>
-<span class="sourceLineNo">111</span><a name="line.111"></a>
-<span class="sourceLineNo">112</span>        // Other important options<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        options.toolbar = toolbar;<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        options.airMode = isAirMode();<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        options.disableDragAndDrop = isDisableDragAndDrop();<a name="line.115"></a>
-<span class="sourceLineNo">116</span>        options.followingToolbar = false;<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        options.placeholder = getPlaceholder();<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        options.height = getHeight();<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        options.minHeight = 200;<a name="line.119"></a>
-<span class="sourceLineNo">120</span>        options.defaultBackColor = "#777";<a name="line.120"></a>
-<span class="sourceLineNo">121</span>        options.defaultTextColor = "#fff";<a name="line.121"></a>
-<span class="sourceLineNo">122</span><a name="line.122"></a>
-<span class="sourceLineNo">123</span>        jsRichEditor.materialnote(options);<a name="line.123"></a>
-<span class="sourceLineNo">124</span><a name="line.124"></a>
-<span class="sourceLineNo">125</span>        // Events<a name="line.125"></a>
-<span class="sourceLineNo">126</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_BLUR, event -&gt; {<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            fireEvent(new BlurEvent() {<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            });<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            return true;<a name="line.129"></a>
-<span class="sourceLineNo">130</span>        });<a name="line.130"></a>
-<span class="sourceLineNo">131</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_FOCUS, event -&gt; {<a name="line.131"></a>
-<span class="sourceLineNo">132</span>            fireEvent(new FocusEvent() {<a name="line.132"></a>
-<span class="sourceLineNo">133</span>            });<a name="line.133"></a>
-<span class="sourceLineNo">134</span>            return true;<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        });<a name="line.135"></a>
-<span class="sourceLineNo">136</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_KEYUP, event -&gt; {<a name="line.136"></a>
-<span class="sourceLineNo">137</span>            fireEvent(new KeyUpEvent() {<a name="line.137"></a>
-<span class="sourceLineNo">138</span>            });<a name="line.138"></a>
-<span class="sourceLineNo">139</span>            return true;<a name="line.139"></a>
-<span class="sourceLineNo">140</span>        });<a name="line.140"></a>
-<span class="sourceLineNo">141</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_KEYDOWN, event -&gt; {<a name="line.141"></a>
-<span class="sourceLineNo">142</span>            fireEvent(new KeyDownEvent() {<a name="line.142"></a>
-<span class="sourceLineNo">143</span>            });<a name="line.143"></a>
-<span class="sourceLineNo">144</span>            return true;<a name="line.144"></a>
-<span class="sourceLineNo">145</span>        });<a name="line.145"></a>
-<span class="sourceLineNo">146</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_PASTE, event -&gt; {<a name="line.146"></a>
-<span class="sourceLineNo">147</span>            fireEvent(new PasteEvent() {<a name="line.147"></a>
-<span class="sourceLineNo">148</span>            });<a name="line.148"></a>
+<span class="sourceLineNo">100</span>    public MaterialRichEditor(String placeholder) {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>        this();<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        setPlaceholder(placeholder);<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    }<a name="line.103"></a>
+<span class="sourceLineNo">104</span><a name="line.104"></a>
+<span class="sourceLineNo">105</span>    public MaterialRichEditor(String placeholder, String value) {<a name="line.105"></a>
+<span class="sourceLineNo">106</span>        this(placeholder);<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        setValue(value);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span><a name="line.109"></a>
+<span class="sourceLineNo">110</span>    @Override<a name="line.110"></a>
+<span class="sourceLineNo">111</span>    protected void onLoad() {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        super.onLoad();<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>        load();<a name="line.114"></a>
+<span class="sourceLineNo">115</span><a name="line.115"></a>
+<span class="sourceLineNo">116</span>        setHTML(html);<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    @Override<a name="line.119"></a>
+<span class="sourceLineNo">120</span>    public void load() {<a name="line.120"></a>
+<span class="sourceLineNo">121</span><a name="line.121"></a>
+<span class="sourceLineNo">122</span>        JsRichEditor jsRichEditor = $(getElement());<a name="line.122"></a>
+<span class="sourceLineNo">123</span><a name="line.123"></a>
+<span class="sourceLineNo">124</span>        options.toolbar = manager.getToolbars();<a name="line.124"></a>
+<span class="sourceLineNo">125</span>        options.placeholder = getPlaceholder();<a name="line.125"></a>
+<span class="sourceLineNo">126</span>        options.height = getHeight();<a name="line.126"></a>
+<span class="sourceLineNo">127</span><a name="line.127"></a>
+<span class="sourceLineNo">128</span>        jsRichEditor.materialnote(options);<a name="line.128"></a>
+<span class="sourceLineNo">129</span><a name="line.129"></a>
+<span class="sourceLineNo">130</span>        // Events<a name="line.130"></a>
+<span class="sourceLineNo">131</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_BLUR, event -&gt; {<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            fireEvent(new BlurEvent() {});<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            return true;<a name="line.133"></a>
+<span class="sourceLineNo">134</span>        });<a name="line.134"></a>
+<span class="sourceLineNo">135</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_FOCUS, event -&gt; {<a name="line.135"></a>
+<span class="sourceLineNo">136</span>            fireEvent(new FocusEvent() {});<a name="line.136"></a>
+<span class="sourceLineNo">137</span>            return true;<a name="line.137"></a>
+<span class="sourceLineNo">138</span>        });<a name="line.138"></a>
+<span class="sourceLineNo">139</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_KEYUP, event -&gt; {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>            fireEvent(new KeyUpEvent() {});<a name="line.140"></a>
+<span class="sourceLineNo">141</span>            return true;<a name="line.141"></a>
+<span class="sourceLineNo">142</span>        });<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_KEYDOWN, event -&gt; {<a name="line.143"></a>
+<span class="sourceLineNo">144</span>            fireEvent(new KeyDownEvent() {});<a name="line.144"></a>
+<span class="sourceLineNo">145</span>            return true;<a name="line.145"></a>
+<span class="sourceLineNo">146</span>        });<a name="line.146"></a>
+<span class="sourceLineNo">147</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_PASTE, event -&gt; {<a name="line.147"></a>
+<span class="sourceLineNo">148</span>            fireEvent(new PasteEvent() {});<a name="line.148"></a>
 <span class="sourceLineNo">149</span>            return true;<a name="line.149"></a>
 <span class="sourceLineNo">150</span>        });<a name="line.150"></a>
 <span class="sourceLineNo">151</span>        jsRichEditor.on(RichEditorEvents.MATERIALNOTE_CHANGE, event -&gt; {<a name="line.151"></a>
@@ -168,87 +168,258 @@
 <span class="sourceLineNo">160</span>    protected void onUnload() {<a name="line.160"></a>
 <span class="sourceLineNo">161</span>        super.onUnload();<a name="line.161"></a>
 <span class="sourceLineNo">162</span><a name="line.162"></a>
-<span class="sourceLineNo">163</span>        // Perform tear down on materialnote<a name="line.163"></a>
-<span class="sourceLineNo">164</span>        JsRichEditor jsRichEditor = $(getElement());<a name="line.164"></a>
-<span class="sourceLineNo">165</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_BLUR);<a name="line.165"></a>
-<span class="sourceLineNo">166</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_FOCUS);<a name="line.166"></a>
-<span class="sourceLineNo">167</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_KEYUP);<a name="line.167"></a>
-<span class="sourceLineNo">168</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_KEYDOWN);<a name="line.168"></a>
-<span class="sourceLineNo">169</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_PASTE);<a name="line.169"></a>
-<span class="sourceLineNo">170</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_CHANGE);<a name="line.170"></a>
-<span class="sourceLineNo">171</span>        jsRichEditor.destroy();<a name="line.171"></a>
-<span class="sourceLineNo">172</span>    }<a name="line.172"></a>
-<span class="sourceLineNo">173</span><a name="line.173"></a>
-<span class="sourceLineNo">174</span>    protected void checkContainer() {<a name="line.174"></a>
-<span class="sourceLineNo">175</span>        if (getParent() instanceof MaterialModal) {<a name="line.175"></a>
-<span class="sourceLineNo">176</span>            MaterialModal modal = (MaterialModal) getParent();<a name="line.176"></a>
-<span class="sourceLineNo">177</span>            adjustFullScreen(modal);<a name="line.177"></a>
-<span class="sourceLineNo">178</span>            adjustNestedModals(modal);<a name="line.178"></a>
-<span class="sourceLineNo">179</span>        } else if (getParent() instanceof MaterialModalContent) {<a name="line.179"></a>
-<span class="sourceLineNo">180</span>            MaterialModal modal = (MaterialModal) getParent().getParent();<a name="line.180"></a>
-<span class="sourceLineNo">181</span>            adjustFullScreen(modal);<a name="line.181"></a>
-<span class="sourceLineNo">182</span>            adjustNestedModals(modal);<a name="line.182"></a>
-<span class="sourceLineNo">183</span>        }<a name="line.183"></a>
-<span class="sourceLineNo">184</span>    }<a name="line.184"></a>
-<span class="sourceLineNo">185</span><a name="line.185"></a>
-<span class="sourceLineNo">186</span>    protected void adjustNestedModals(MaterialModal modal) {<a name="line.186"></a>
-<span class="sourceLineNo">187</span>        modal.addOpenHandler(openEvent -&gt; modal.setDepth(9999));<a name="line.187"></a>
-<span class="sourceLineNo">188</span>    }<a name="line.188"></a>
-<span class="sourceLineNo">189</span><a name="line.189"></a>
-<span class="sourceLineNo">190</span>    protected void adjustFullScreen(MaterialModal modal) {<a name="line.190"></a>
-<span class="sourceLineNo">191</span>        getEditor().find("div[data-event='fullscreen']").off("click").on("click", (e, param1) -&gt; {<a name="line.191"></a>
-<span class="sourceLineNo">192</span>            modal.setFullscreen(toggleFullScreen);<a name="line.192"></a>
-<span class="sourceLineNo">193</span>            if (toggleFullScreen) {<a name="line.193"></a>
-<span class="sourceLineNo">194</span>                toggleFullScreen = false;<a name="line.194"></a>
-<span class="sourceLineNo">195</span>            } else {<a name="line.195"></a>
-<span class="sourceLineNo">196</span>                toggleFullScreen = true;<a name="line.196"></a>
-<span class="sourceLineNo">197</span>            }<a name="line.197"></a>
-<span class="sourceLineNo">198</span>            return true;<a name="line.198"></a>
-<span class="sourceLineNo">199</span>        });<a name="line.199"></a>
-<span class="sourceLineNo">200</span>    }<a name="line.200"></a>
-<span class="sourceLineNo">201</span><a name="line.201"></a>
-<span class="sourceLineNo">202</span>    public JQueryElement getEditor() {<a name="line.202"></a>
-<span class="sourceLineNo">203</span>        return $(getElement()).next(".note-editor");<a name="line.203"></a>
-<span class="sourceLineNo">204</span>    }<a name="line.204"></a>
-<span class="sourceLineNo">205</span><a name="line.205"></a>
-<span class="sourceLineNo">206</span>    /**<a name="line.206"></a>
-<span class="sourceLineNo">207</span>     * Insert custom text inside the note zone.<a name="line.207"></a>
-<span class="sourceLineNo">208</span>     */<a name="line.208"></a>
-<span class="sourceLineNo">209</span>    public void insertText(String text) {<a name="line.209"></a>
-<span class="sourceLineNo">210</span>        insertText(getElement(), text);<a name="line.210"></a>
-<span class="sourceLineNo">211</span>    }<a name="line.211"></a>
-<span class="sourceLineNo">212</span><a name="line.212"></a>
-<span class="sourceLineNo">213</span>    /**<a name="line.213"></a>
-<span class="sourceLineNo">214</span>     * Insert custom text inside the note zone.<a name="line.214"></a>
-<span class="sourceLineNo">215</span>     */<a name="line.215"></a>
-<span class="sourceLineNo">216</span>    protected void insertText(Element e, String text) {<a name="line.216"></a>
-<span class="sourceLineNo">217</span>        $(e).materialnote("insertText", SafeHtmlUtils.fromString(text).asString());<a name="line.217"></a>
+<span class="sourceLineNo">163</span>        unload();<a name="line.163"></a>
+<span class="sourceLineNo">164</span>    }<a name="line.164"></a>
+<span class="sourceLineNo">165</span><a name="line.165"></a>
+<span class="sourceLineNo">166</span>    @Override<a name="line.166"></a>
+<span class="sourceLineNo">167</span>    public void unload() {<a name="line.167"></a>
+<span class="sourceLineNo">168</span>        JsRichEditor jsRichEditor = $(getElement());<a name="line.168"></a>
+<span class="sourceLineNo">169</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_BLUR);<a name="line.169"></a>
+<span class="sourceLineNo">170</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_FOCUS);<a name="line.170"></a>
+<span class="sourceLineNo">171</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_KEYUP);<a name="line.171"></a>
+<span class="sourceLineNo">172</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_KEYDOWN);<a name="line.172"></a>
+<span class="sourceLineNo">173</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_PASTE);<a name="line.173"></a>
+<span class="sourceLineNo">174</span>        jsRichEditor.off(RichEditorEvents.MATERIALNOTE_CHANGE);<a name="line.174"></a>
+<span class="sourceLineNo">175</span>        jsRichEditor.destroy();<a name="line.175"></a>
+<span class="sourceLineNo">176</span>    }<a name="line.176"></a>
+<span class="sourceLineNo">177</span><a name="line.177"></a>
+<span class="sourceLineNo">178</span>    @Override<a name="line.178"></a>
+<span class="sourceLineNo">179</span>    public void reload() {<a name="line.179"></a>
+<span class="sourceLineNo">180</span>        unload();<a name="line.180"></a>
+<span class="sourceLineNo">181</span>        load();<a name="line.181"></a>
+<span class="sourceLineNo">182</span>    }<a name="line.182"></a>
+<span class="sourceLineNo">183</span><a name="line.183"></a>
+<span class="sourceLineNo">184</span>    public ToolbarButton[] getStyleOptions() {<a name="line.184"></a>
+<span class="sourceLineNo">185</span>        return manager.getStyleOptions();<a name="line.185"></a>
+<span class="sourceLineNo">186</span>    }<a name="line.186"></a>
+<span class="sourceLineNo">187</span><a name="line.187"></a>
+<span class="sourceLineNo">188</span>    public void setStyleOptions(ToolbarButton... styleOptions) {<a name="line.188"></a>
+<span class="sourceLineNo">189</span>        manager.setStyleOptions(styleOptions);<a name="line.189"></a>
+<span class="sourceLineNo">190</span>    }<a name="line.190"></a>
+<span class="sourceLineNo">191</span><a name="line.191"></a>
+<span class="sourceLineNo">192</span>    public ToolbarButton[] getFontOptions() {<a name="line.192"></a>
+<span class="sourceLineNo">193</span>        return manager.getFontOptions();<a name="line.193"></a>
+<span class="sourceLineNo">194</span>    }<a name="line.194"></a>
+<span class="sourceLineNo">195</span><a name="line.195"></a>
+<span class="sourceLineNo">196</span>    public void setFontOptions(ToolbarButton... fontOptions) {<a name="line.196"></a>
+<span class="sourceLineNo">197</span>        manager.setFontOptions(fontOptions);<a name="line.197"></a>
+<span class="sourceLineNo">198</span>    }<a name="line.198"></a>
+<span class="sourceLineNo">199</span><a name="line.199"></a>
+<span class="sourceLineNo">200</span>    public ToolbarButton[] getColorOptions() {<a name="line.200"></a>
+<span class="sourceLineNo">201</span>        return manager.getColorOptions();<a name="line.201"></a>
+<span class="sourceLineNo">202</span>    }<a name="line.202"></a>
+<span class="sourceLineNo">203</span><a name="line.203"></a>
+<span class="sourceLineNo">204</span>    public void setColorOptions(ToolbarButton... colorOptions) {<a name="line.204"></a>
+<span class="sourceLineNo">205</span>        manager.setColorOptions(colorOptions);<a name="line.205"></a>
+<span class="sourceLineNo">206</span>    }<a name="line.206"></a>
+<span class="sourceLineNo">207</span><a name="line.207"></a>
+<span class="sourceLineNo">208</span>    public ToolbarButton[] getUndoOptions() {<a name="line.208"></a>
+<span class="sourceLineNo">209</span>        return manager.getUndoOptions();<a name="line.209"></a>
+<span class="sourceLineNo">210</span>    }<a name="line.210"></a>
+<span class="sourceLineNo">211</span><a name="line.211"></a>
+<span class="sourceLineNo">212</span>    public void setUndoOptions(ToolbarButton... undoOptions) {<a name="line.212"></a>
+<span class="sourceLineNo">213</span>        manager.setUndoOptions(undoOptions);<a name="line.213"></a>
+<span class="sourceLineNo">214</span>    }<a name="line.214"></a>
+<span class="sourceLineNo">215</span><a name="line.215"></a>
+<span class="sourceLineNo">216</span>    public ToolbarButton[] getCkMediaOptions() {<a name="line.216"></a>
+<span class="sourceLineNo">217</span>        return manager.getCkMediaOptions();<a name="line.217"></a>
 <span class="sourceLineNo">218</span>    }<a name="line.218"></a>
 <span class="sourceLineNo">219</span><a name="line.219"></a>
-<span class="sourceLineNo">220</span>    /**<a name="line.220"></a>
-<span class="sourceLineNo">221</span>     * Insert custom HTML inside the note zone.<a name="line.221"></a>
-<span class="sourceLineNo">222</span>     */<a name="line.222"></a>
-<span class="sourceLineNo">223</span>    public void pasteHTML(String html) {<a name="line.223"></a>
-<span class="sourceLineNo">224</span>        pasteHTML(getElement(), html);<a name="line.224"></a>
-<span class="sourceLineNo">225</span>    }<a name="line.225"></a>
-<span class="sourceLineNo">226</span><a name="line.226"></a>
-<span class="sourceLineNo">227</span>    /**<a name="line.227"></a>
-<span class="sourceLineNo">228</span>     * Insert custom HTML inside the note zone with JSNI function.<a name="line.228"></a>
-<span class="sourceLineNo">229</span>     */<a name="line.229"></a>
-<span class="sourceLineNo">230</span>    protected void pasteHTML(Element e, String html) {<a name="line.230"></a>
-<span class="sourceLineNo">231</span>        $(e).materialnote("pasteHTML", html);<a name="line.231"></a>
-<span class="sourceLineNo">232</span>    }<a name="line.232"></a>
-<span class="sourceLineNo">233</span><a name="line.233"></a>
-<span class="sourceLineNo">234</span>    @Override<a name="line.234"></a>
-<span class="sourceLineNo">235</span>    public void clear() {<a name="line.235"></a>
-<span class="sourceLineNo">236</span>        $(getElement()).materialnote("reset");<a name="line.236"></a>
-<span class="sourceLineNo">237</span>    }<a name="line.237"></a>
-<span class="sourceLineNo">238</span><a name="line.238"></a>
-<span class="sourceLineNo">239</span>    @Override<a name="line.239"></a>
-<span class="sourceLineNo">240</span>    public HandlerRegistration addPasteHandler(final PasteEvent.PasteHandler handler) {<a name="line.240"></a>
-<span class="sourceLineNo">241</span>        return addHandler(handler, PasteEvent.TYPE);<a name="line.241"></a>
+<span class="sourceLineNo">220</span>    public void setCkMediaOptions(ToolbarButton... ckMediaOptions) {<a name="line.220"></a>
+<span class="sourceLineNo">221</span>        manager.setCkMediaOptions(ckMediaOptions);<a name="line.221"></a>
+<span class="sourceLineNo">222</span>    }<a name="line.222"></a>
+<span class="sourceLineNo">223</span><a name="line.223"></a>
+<span class="sourceLineNo">224</span>    public ToolbarButton[] getMiscOptions() {<a name="line.224"></a>
+<span class="sourceLineNo">225</span>        return manager.getMiscOptions();<a name="line.225"></a>
+<span class="sourceLineNo">226</span>    }<a name="line.226"></a>
+<span class="sourceLineNo">227</span><a name="line.227"></a>
+<span class="sourceLineNo">228</span>    public void setMiscOptions(ToolbarButton... miscOptions) {<a name="line.228"></a>
+<span class="sourceLineNo">229</span>        manager.setMiscOptions(miscOptions);<a name="line.229"></a>
+<span class="sourceLineNo">230</span>    }<a name="line.230"></a>
+<span class="sourceLineNo">231</span><a name="line.231"></a>
+<span class="sourceLineNo">232</span>    public ToolbarButton[] getParaOptions() {<a name="line.232"></a>
+<span class="sourceLineNo">233</span>        return manager.getParaOptions();<a name="line.233"></a>
+<span class="sourceLineNo">234</span>    }<a name="line.234"></a>
+<span class="sourceLineNo">235</span><a name="line.235"></a>
+<span class="sourceLineNo">236</span>    public void setParaOptions(ToolbarButton... paraOptions) {<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        manager.setParaOptions(paraOptions);<a name="line.237"></a>
+<span class="sourceLineNo">238</span>    }<a name="line.238"></a>
+<span class="sourceLineNo">239</span><a name="line.239"></a>
+<span class="sourceLineNo">240</span>    public ToolbarButton[] getHeightOptions() {<a name="line.240"></a>
+<span class="sourceLineNo">241</span>        return manager.getHeightOptions();<a name="line.241"></a>
 <span class="sourceLineNo">242</span>    }<a name="line.242"></a>
-<span class="sourceLineNo">243</span>}<a name="line.243"></a>
+<span class="sourceLineNo">243</span><a name="line.243"></a>
+<span class="sourceLineNo">244</span>    public void setHeightOptions(ToolbarButton... heightOptions) {<a name="line.244"></a>
+<span class="sourceLineNo">245</span>        manager.setHeightOptions(heightOptions);<a name="line.245"></a>
+<span class="sourceLineNo">246</span>    }<a name="line.246"></a>
+<span class="sourceLineNo">247</span><a name="line.247"></a>
+<span class="sourceLineNo">248</span>    protected void checkContainer() {<a name="line.248"></a>
+<span class="sourceLineNo">249</span>        if (getParent() instanceof MaterialModal) {<a name="line.249"></a>
+<span class="sourceLineNo">250</span>            MaterialModal modal = (MaterialModal) getParent();<a name="line.250"></a>
+<span class="sourceLineNo">251</span>            adjustFullScreen(modal);<a name="line.251"></a>
+<span class="sourceLineNo">252</span>            adjustNestedModals(modal);<a name="line.252"></a>
+<span class="sourceLineNo">253</span>        } else if (getParent() instanceof MaterialModalContent) {<a name="line.253"></a>
+<span class="sourceLineNo">254</span>            MaterialModal modal = (MaterialModal) getParent().getParent();<a name="line.254"></a>
+<span class="sourceLineNo">255</span>            adjustFullScreen(modal);<a name="line.255"></a>
+<span class="sourceLineNo">256</span>            adjustNestedModals(modal);<a name="line.256"></a>
+<span class="sourceLineNo">257</span>        }<a name="line.257"></a>
+<span class="sourceLineNo">258</span>    }<a name="line.258"></a>
+<span class="sourceLineNo">259</span><a name="line.259"></a>
+<span class="sourceLineNo">260</span>    protected void adjustNestedModals(MaterialModal modal) {<a name="line.260"></a>
+<span class="sourceLineNo">261</span>        registerHandler(modal.addOpenHandler(openEvent -&gt; modal.setDepth(9999)));<a name="line.261"></a>
+<span class="sourceLineNo">262</span>    }<a name="line.262"></a>
+<span class="sourceLineNo">263</span><a name="line.263"></a>
+<span class="sourceLineNo">264</span>    protected void adjustFullScreen(MaterialModal modal) {<a name="line.264"></a>
+<span class="sourceLineNo">265</span>        getEditor().find("div[data-event='fullscreen']").off("click").on("click", (e, param1) -&gt; {<a name="line.265"></a>
+<span class="sourceLineNo">266</span>            modal.setFullscreen(toggleFullScreen);<a name="line.266"></a>
+<span class="sourceLineNo">267</span>            if (toggleFullScreen) {<a name="line.267"></a>
+<span class="sourceLineNo">268</span>                toggleFullScreen = false;<a name="line.268"></a>
+<span class="sourceLineNo">269</span>            } else {<a name="line.269"></a>
+<span class="sourceLineNo">270</span>                toggleFullScreen = true;<a name="line.270"></a>
+<span class="sourceLineNo">271</span>            }<a name="line.271"></a>
+<span class="sourceLineNo">272</span>            return true;<a name="line.272"></a>
+<span class="sourceLineNo">273</span>        });<a name="line.273"></a>
+<span class="sourceLineNo">274</span>    }<a name="line.274"></a>
+<span class="sourceLineNo">275</span><a name="line.275"></a>
+<span class="sourceLineNo">276</span>    public JQueryElement getEditor() {<a name="line.276"></a>
+<span class="sourceLineNo">277</span>        return $(getElement()).next(".note-editor");<a name="line.277"></a>
+<span class="sourceLineNo">278</span>    }<a name="line.278"></a>
+<span class="sourceLineNo">279</span><a name="line.279"></a>
+<span class="sourceLineNo">280</span>    /**<a name="line.280"></a>
+<span class="sourceLineNo">281</span>     * Insert custom text inside the note zone.<a name="line.281"></a>
+<span class="sourceLineNo">282</span>     */<a name="line.282"></a>
+<span class="sourceLineNo">283</span>    public void insertText(String text) {<a name="line.283"></a>
+<span class="sourceLineNo">284</span>        insertText(getElement(), text);<a name="line.284"></a>
+<span class="sourceLineNo">285</span>    }<a name="line.285"></a>
+<span class="sourceLineNo">286</span><a name="line.286"></a>
+<span class="sourceLineNo">287</span>    /**<a name="line.287"></a>
+<span class="sourceLineNo">288</span>     * Insert custom text inside the note zone.<a name="line.288"></a>
+<span class="sourceLineNo">289</span>     */<a name="line.289"></a>
+<span class="sourceLineNo">290</span>    protected void insertText(Element e, String text) {<a name="line.290"></a>
+<span class="sourceLineNo">291</span>        $(e).materialnote("insertText", SafeHtmlUtils.fromString(text).asString());<a name="line.291"></a>
+<span class="sourceLineNo">292</span>    }<a name="line.292"></a>
+<span class="sourceLineNo">293</span><a name="line.293"></a>
+<span class="sourceLineNo">294</span>    /**<a name="line.294"></a>
+<span class="sourceLineNo">295</span>     * Insert custom HTML inside the note zone.<a name="line.295"></a>
+<span class="sourceLineNo">296</span>     */<a name="line.296"></a>
+<span class="sourceLineNo">297</span>    public void pasteHTML(String html) {<a name="line.297"></a>
+<span class="sourceLineNo">298</span>        pasteHTML(getElement(), html);<a name="line.298"></a>
+<span class="sourceLineNo">299</span>    }<a name="line.299"></a>
+<span class="sourceLineNo">300</span><a name="line.300"></a>
+<span class="sourceLineNo">301</span>    /**<a name="line.301"></a>
+<span class="sourceLineNo">302</span>     * Insert custom HTML inside the note zone.<a name="line.302"></a>
+<span class="sourceLineNo">303</span>     */<a name="line.303"></a>
+<span class="sourceLineNo">304</span>    protected void pasteHTML(Element e, String html) {<a name="line.304"></a>
+<span class="sourceLineNo">305</span>        $(e).materialnote("pasteHTML", html);<a name="line.305"></a>
+<span class="sourceLineNo">306</span>    }<a name="line.306"></a>
+<span class="sourceLineNo">307</span><a name="line.307"></a>
+<span class="sourceLineNo">308</span>    /**<a name="line.308"></a>
+<span class="sourceLineNo">309</span>     * Reset the Rich Editor component<a name="line.309"></a>
+<span class="sourceLineNo">310</span>     */<a name="line.310"></a>
+<span class="sourceLineNo">311</span>    public void reset() {<a name="line.311"></a>
+<span class="sourceLineNo">312</span>        $(getElement()).materialnote("reset");<a name="line.312"></a>
+<span class="sourceLineNo">313</span>    }<a name="line.313"></a>
+<span class="sourceLineNo">314</span><a name="line.314"></a>
+<span class="sourceLineNo">315</span>    @Override<a name="line.315"></a>
+<span class="sourceLineNo">316</span>    public void clear() {<a name="line.316"></a>
+<span class="sourceLineNo">317</span>        super.clear();<a name="line.317"></a>
+<span class="sourceLineNo">318</span>        reset();<a name="line.318"></a>
+<span class="sourceLineNo">319</span>    }<a name="line.319"></a>
+<span class="sourceLineNo">320</span><a name="line.320"></a>
+<span class="sourceLineNo">321</span>    public boolean isAirMode() {<a name="line.321"></a>
+<span class="sourceLineNo">322</span>        return options.airMode;<a name="line.322"></a>
+<span class="sourceLineNo">323</span>    }<a name="line.323"></a>
+<span class="sourceLineNo">324</span><a name="line.324"></a>
+<span class="sourceLineNo">325</span>    public void setAirMode(boolean airMode) {<a name="line.325"></a>
+<span class="sourceLineNo">326</span>        options.airMode = airMode;<a name="line.326"></a>
+<span class="sourceLineNo">327</span>    }<a name="line.327"></a>
+<span class="sourceLineNo">328</span><a name="line.328"></a>
+<span class="sourceLineNo">329</span>    /**<a name="line.329"></a>
+<span class="sourceLineNo">330</span>     * Check if the dnd for rich editor is enabled / disabled<a name="line.330"></a>
+<span class="sourceLineNo">331</span>     */<a name="line.331"></a>
+<span class="sourceLineNo">332</span>    public boolean isDisableDragAndDrop() {<a name="line.332"></a>
+<span class="sourceLineNo">333</span>        return options.disableDragAndDrop;<a name="line.333"></a>
+<span class="sourceLineNo">334</span>    }<a name="line.334"></a>
+<span class="sourceLineNo">335</span><a name="line.335"></a>
+<span class="sourceLineNo">336</span>    /**<a name="line.336"></a>
+<span class="sourceLineNo">337</span>     * If true, disable the ability to drag and drop items to rich editor<a name="line.337"></a>
+<span class="sourceLineNo">338</span>     */<a name="line.338"></a>
+<span class="sourceLineNo">339</span>    public void setDisableDragAndDrop(boolean disableDragAndDrop) {<a name="line.339"></a>
+<span class="sourceLineNo">340</span>        options.disableDragAndDrop = disableDragAndDrop;<a name="line.340"></a>
+<span class="sourceLineNo">341</span>    }<a name="line.341"></a>
+<span class="sourceLineNo">342</span><a name="line.342"></a>
+<span class="sourceLineNo">343</span>    @Override<a name="line.343"></a>
+<span class="sourceLineNo">344</span>    public String getPlaceholder() {<a name="line.344"></a>
+<span class="sourceLineNo">345</span>        return options.placeholder;<a name="line.345"></a>
+<span class="sourceLineNo">346</span>    }<a name="line.346"></a>
+<span class="sourceLineNo">347</span><a name="line.347"></a>
+<span class="sourceLineNo">348</span>    @Override<a name="line.348"></a>
+<span class="sourceLineNo">349</span>    public void setPlaceholder(String placeholder) {<a name="line.349"></a>
+<span class="sourceLineNo">350</span>        options.placeholder = placeholder;<a name="line.350"></a>
+<span class="sourceLineNo">351</span>    }<a name="line.351"></a>
+<span class="sourceLineNo">352</span><a name="line.352"></a>
+<span class="sourceLineNo">353</span>    public String getHeight() {<a name="line.353"></a>
+<span class="sourceLineNo">354</span>        String height = getElement().getStyle().getHeight();<a name="line.354"></a>
+<span class="sourceLineNo">355</span>        if (height == null || height.isEmpty()) {<a name="line.355"></a>
+<span class="sourceLineNo">356</span>            height = "550px";<a name="line.356"></a>
+<span class="sourceLineNo">357</span>        }<a name="line.357"></a>
+<span class="sourceLineNo">358</span>        return height;<a name="line.358"></a>
+<span class="sourceLineNo">359</span>    }<a name="line.359"></a>
+<span class="sourceLineNo">360</span><a name="line.360"></a>
+<span class="sourceLineNo">361</span>    @Override<a name="line.361"></a>
+<span class="sourceLineNo">362</span>    public String getHTML() {<a name="line.362"></a>
+<span class="sourceLineNo">363</span>        return getHTMLCode(getElement());<a name="line.363"></a>
+<span class="sourceLineNo">364</span>    }<a name="line.364"></a>
+<span class="sourceLineNo">365</span><a name="line.365"></a>
+<span class="sourceLineNo">366</span>    @Override<a name="line.366"></a>
+<span class="sourceLineNo">367</span>    public void setHTML(final String html) {<a name="line.367"></a>
+<span class="sourceLineNo">368</span>        this.html = html;<a name="line.368"></a>
+<span class="sourceLineNo">369</span><a name="line.369"></a>
+<span class="sourceLineNo">370</span>        if (handlerRegistration != null) {<a name="line.370"></a>
+<span class="sourceLineNo">371</span>            handlerRegistration.removeHandler();<a name="line.371"></a>
+<span class="sourceLineNo">372</span>            handlerRegistration = null;<a name="line.372"></a>
+<span class="sourceLineNo">373</span>        }<a name="line.373"></a>
+<span class="sourceLineNo">374</span><a name="line.374"></a>
+<span class="sourceLineNo">375</span>        if (!isAttached() &amp;&amp; html != null) {<a name="line.375"></a>
+<span class="sourceLineNo">376</span>            handlerRegistration = registerHandler(addAttachHandler(e -&gt; setHTMLCode(getElement(), html)));<a name="line.376"></a>
+<span class="sourceLineNo">377</span>        } else {<a name="line.377"></a>
+<span class="sourceLineNo">378</span>            setHTMLCode(getElement(), html);<a name="line.378"></a>
+<span class="sourceLineNo">379</span>        }<a name="line.379"></a>
+<span class="sourceLineNo">380</span>    }<a name="line.380"></a>
+<span class="sourceLineNo">381</span><a name="line.381"></a>
+<span class="sourceLineNo">382</span>    @Override<a name="line.382"></a>
+<span class="sourceLineNo">383</span>    public String getText() {<a name="line.383"></a>
+<span class="sourceLineNo">384</span>        return getHTML();<a name="line.384"></a>
+<span class="sourceLineNo">385</span>    }<a name="line.385"></a>
+<span class="sourceLineNo">386</span><a name="line.386"></a>
+<span class="sourceLineNo">387</span>    @Override<a name="line.387"></a>
+<span class="sourceLineNo">388</span>    public void setText(String text) {<a name="line.388"></a>
+<span class="sourceLineNo">389</span>        setHTML(text);<a name="line.389"></a>
+<span class="sourceLineNo">390</span>    }<a name="line.390"></a>
+<span class="sourceLineNo">391</span><a name="line.391"></a>
+<span class="sourceLineNo">392</span>    protected String getHTMLCode(Element e) {<a name="line.392"></a>
+<span class="sourceLineNo">393</span>        return $(e).code();<a name="line.393"></a>
+<span class="sourceLineNo">394</span>    }<a name="line.394"></a>
+<span class="sourceLineNo">395</span><a name="line.395"></a>
+<span class="sourceLineNo">396</span>    protected void setHTMLCode(Element e, String html) {<a name="line.396"></a>
+<span class="sourceLineNo">397</span>        $(e).code(html);<a name="line.397"></a>
+<span class="sourceLineNo">398</span>    }<a name="line.398"></a>
+<span class="sourceLineNo">399</span><a name="line.399"></a>
+<span class="sourceLineNo">400</span>    @Override<a name="line.400"></a>
+<span class="sourceLineNo">401</span>    public String getValue() {<a name="line.401"></a>
+<span class="sourceLineNo">402</span>        return getHTML();<a name="line.402"></a>
+<span class="sourceLineNo">403</span>    }<a name="line.403"></a>
+<span class="sourceLineNo">404</span><a name="line.404"></a>
+<span class="sourceLineNo">405</span>    @Override<a name="line.405"></a>
+<span class="sourceLineNo">406</span>    public void setValue(String value, boolean fireEvents) {<a name="line.406"></a>
+<span class="sourceLineNo">407</span>        setHTML(value);<a name="line.407"></a>
+<span class="sourceLineNo">408</span>    }<a name="line.408"></a>
+<span class="sourceLineNo">409</span><a name="line.409"></a>
+<span class="sourceLineNo">410</span>    @Override<a name="line.410"></a>
+<span class="sourceLineNo">411</span>    public HandlerRegistration addPasteHandler(final PasteEvent.PasteHandler handler) {<a name="line.411"></a>
+<span class="sourceLineNo">412</span>        return addHandler(handler, PasteEvent.TYPE);<a name="line.412"></a>
+<span class="sourceLineNo">413</span>    }<a name="line.413"></a>
+<span class="sourceLineNo">414</span>}<a name="line.414"></a>
 
 
 

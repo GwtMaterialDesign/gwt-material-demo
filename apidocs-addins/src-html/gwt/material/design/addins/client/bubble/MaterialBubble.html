@@ -33,100 +33,134 @@
 <span class="sourceLineNo">025</span>import gwt.material.design.addins.client.bubble.js.JsBubbleOptions;<a name="line.25"></a>
 <span class="sourceLineNo">026</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>import gwt.material.design.client.base.HasPosition;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.base.helper.ColorHelper;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.client.constants.Color;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import gwt.material.design.client.constants.Position;<a name="line.32"></a>
-<span class="sourceLineNo">033</span><a name="line.33"></a>
-<span class="sourceLineNo">034</span>import static gwt.material.design.addins.client.bubble.js.JsBubble.$;<a name="line.34"></a>
-<span class="sourceLineNo">035</span><a name="line.35"></a>
-<span class="sourceLineNo">036</span>//@formatter:off<a name="line.36"></a>
-<span class="sourceLineNo">037</span><a name="line.37"></a>
-<span class="sourceLineNo">038</span>/**<a name="line.38"></a>
-<span class="sourceLineNo">039</span> * Bubble component used on chat module<a name="line.39"></a>
-<span class="sourceLineNo">040</span> * &lt;p&gt;<a name="line.40"></a>
-<span class="sourceLineNo">041</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.41"></a>
-<span class="sourceLineNo">042</span> * &lt;pre&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * {@code<a name="line.43"></a>
-<span class="sourceLineNo">044</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.44"></a>
-<span class="sourceLineNo">045</span> * }<a name="line.45"></a>
-<span class="sourceLineNo">046</span> * &lt;/pre&gt;<a name="line.46"></a>
-<span class="sourceLineNo">047</span> * &lt;p&gt;<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * &lt;pre&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * {@code<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * &lt;ma:bubble.MaterialBubble backgroundColor="white darken-1" position="LEFT" float="LEFT"&gt;<a name="line.51"></a>
-<span class="sourceLineNo">052</span> *   &lt;m:MaterialLabel text="I love Material Design"/&gt;<a name="line.52"></a>
-<span class="sourceLineNo">053</span> *   &lt;m:MaterialLabel text="Dec 12, 2015" fontSize="0.8" textColor="grey"/&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> * &lt;/ma:bubble.MaterialBubble&gt;<a name="line.54"></a>
-<span class="sourceLineNo">055</span> * }<a name="line.55"></a>
-<span class="sourceLineNo">056</span> * &lt;/pre&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> *<a name="line.57"></a>
-<span class="sourceLineNo">058</span> * @author kevzlou7979<a name="line.58"></a>
-<span class="sourceLineNo">059</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#bubble"&gt;Material Bubble&lt;/a&gt;<a name="line.59"></a>
-<span class="sourceLineNo">060</span> */<a name="line.60"></a>
-<span class="sourceLineNo">061</span>//@formatter:on<a name="line.61"></a>
-<span class="sourceLineNo">062</span>public class MaterialBubble extends MaterialWidget implements HasPosition {<a name="line.62"></a>
-<span class="sourceLineNo">063</span><a name="line.63"></a>
-<span class="sourceLineNo">064</span>    private MaterialWidget triangle = new MaterialWidget(Document.get().createDivElement());<a name="line.64"></a>
-<span class="sourceLineNo">065</span>    private CssNameMixin&lt;MaterialWidget, Position&gt; positionMixin;<a name="line.65"></a>
-<span class="sourceLineNo">066</span><a name="line.66"></a>
-<span class="sourceLineNo">067</span>    static {<a name="line.67"></a>
-<span class="sourceLineNo">068</span>        if (MaterialAddins.isDebug()) {<a name="line.68"></a>
-<span class="sourceLineNo">069</span>            MaterialDesignBase.injectDebugJs(MaterialBubbleDebugClientBundle.INSTANCE.bubbleJsDebug());<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            MaterialDesignBase.injectCss(MaterialBubbleDebugClientBundle.INSTANCE.bubbleCssDebug());<a name="line.70"></a>
-<span class="sourceLineNo">071</span>        } else {<a name="line.71"></a>
-<span class="sourceLineNo">072</span>            MaterialDesignBase.injectJs(MaterialBubbleClientBundle.INSTANCE.bubbleJs());<a name="line.72"></a>
-<span class="sourceLineNo">073</span>            MaterialDesignBase.injectCss(MaterialBubbleClientBundle.INSTANCE.bubbleCss());<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        }<a name="line.74"></a>
-<span class="sourceLineNo">075</span>    }<a name="line.75"></a>
-<span class="sourceLineNo">076</span><a name="line.76"></a>
-<span class="sourceLineNo">077</span>    public MaterialBubble() {<a name="line.77"></a>
-<span class="sourceLineNo">078</span>        super(Document.get().createSpanElement(), AddinsCssName.BUBBLE);<a name="line.78"></a>
-<span class="sourceLineNo">079</span>        triangle.setStyleName(AddinsCssName.TRIANGLE);<a name="line.79"></a>
-<span class="sourceLineNo">080</span>        positionMixin = new CssNameMixin&lt;&gt;(triangle);<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        positionMixin.setCssName(Position.LEFT);<a name="line.81"></a>
-<span class="sourceLineNo">082</span>        add(triangle);<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        setShadow(1);<a name="line.83"></a>
-<span class="sourceLineNo">084</span>    }<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    public MaterialBubble(Color textColor, Color backgroundColor) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        this();<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        setTextColor(textColor);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        setBackgroundColor(backgroundColor);<a name="line.89"></a>
-<span class="sourceLineNo">090</span>    }<a name="line.90"></a>
-<span class="sourceLineNo">091</span><a name="line.91"></a>
-<span class="sourceLineNo">092</span>    public MaterialBubble(Color textColor, Color backgroundColor, Position position) {<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        this(textColor, backgroundColor);<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        setPosition(position);<a name="line.94"></a>
-<span class="sourceLineNo">095</span>    }<a name="line.95"></a>
-<span class="sourceLineNo">096</span><a name="line.96"></a>
-<span class="sourceLineNo">097</span>    /**<a name="line.97"></a>
-<span class="sourceLineNo">098</span>     * Initialize the bubble component.<a name="line.98"></a>
-<span class="sourceLineNo">099</span>     */<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    protected void initialize() {<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        JsBubbleOptions options = new JsBubbleOptions();<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        options.position = getPosition().getCssName();<a name="line.102"></a>
-<span class="sourceLineNo">103</span>        options.color = ColorHelper.setupComputedBackgroundColor(getBackgroundColor());<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        $(getElement()).bubble(options);<a name="line.104"></a>
-<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
-<span class="sourceLineNo">106</span><a name="line.106"></a>
-<span class="sourceLineNo">107</span>    @Override<a name="line.107"></a>
-<span class="sourceLineNo">108</span>    public Position getPosition() {<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        return positionMixin.getCssName();<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
-<span class="sourceLineNo">111</span><a name="line.111"></a>
-<span class="sourceLineNo">112</span>    @Override<a name="line.112"></a>
-<span class="sourceLineNo">113</span>    public void setPosition(Position position) {<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        positionMixin.setCssName(position);<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        initialize();<a name="line.115"></a>
-<span class="sourceLineNo">116</span>    }<a name="line.116"></a>
-<span class="sourceLineNo">117</span><a name="line.117"></a>
-<span class="sourceLineNo">118</span>    public MaterialWidget getTriangle() {<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        return triangle;<a name="line.119"></a>
-<span class="sourceLineNo">120</span>    }<a name="line.120"></a>
-<span class="sourceLineNo">121</span>}<a name="line.121"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.client.base.JsLoader;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.client.base.helper.ColorHelper;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.client.base.mixin.CssNameMixin;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.client.constants.Color;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.client.constants.Position;<a name="line.33"></a>
+<span class="sourceLineNo">034</span><a name="line.34"></a>
+<span class="sourceLineNo">035</span>import static gwt.material.design.addins.client.bubble.js.JsBubble.$;<a name="line.35"></a>
+<span class="sourceLineNo">036</span><a name="line.36"></a>
+<span class="sourceLineNo">037</span>//@formatter:off<a name="line.37"></a>
+<span class="sourceLineNo">038</span><a name="line.38"></a>
+<span class="sourceLineNo">039</span>/**<a name="line.39"></a>
+<span class="sourceLineNo">040</span> * Bubble component used on chat module<a name="line.40"></a>
+<span class="sourceLineNo">041</span> * &lt;p&gt;<a name="line.41"></a>
+<span class="sourceLineNo">042</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.42"></a>
+<span class="sourceLineNo">043</span> * &lt;pre&gt;<a name="line.43"></a>
+<span class="sourceLineNo">044</span> * {@code<a name="line.44"></a>
+<span class="sourceLineNo">045</span> * xmlns:ma='urn:import:gwt.material.design.addins.client'<a name="line.45"></a>
+<span class="sourceLineNo">046</span> * }<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;/pre&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * &lt;p&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * &lt;pre&gt;<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * {@code<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * &lt;ma:bubble.MaterialBubble backgroundColor="white darken-1" position="LEFT" float="LEFT"&gt;<a name="line.52"></a>
+<span class="sourceLineNo">053</span> *   &lt;m:MaterialLabel text="I love Material Design"/&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span> *   &lt;m:MaterialLabel text="Dec 12, 2015" fontSize="0.8" textColor="grey"/&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * &lt;/ma:bubble.MaterialBubble&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * }<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * &lt;/pre&gt;<a name="line.57"></a>
+<span class="sourceLineNo">058</span> *<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * @author kevzlou7979<a name="line.59"></a>
+<span class="sourceLineNo">060</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#bubble"&gt;Material Bubble&lt;/a&gt;<a name="line.60"></a>
+<span class="sourceLineNo">061</span> */<a name="line.61"></a>
+<span class="sourceLineNo">062</span>//@formatter:on<a name="line.62"></a>
+<span class="sourceLineNo">063</span>public class MaterialBubble extends MaterialWidget implements JsLoader, HasPosition {<a name="line.63"></a>
+<span class="sourceLineNo">064</span><a name="line.64"></a>
+<span class="sourceLineNo">065</span>    private MaterialWidget triangle = new MaterialWidget(Document.get().createDivElement());<a name="line.65"></a>
+<span class="sourceLineNo">066</span>    private CssNameMixin&lt;MaterialWidget, Position&gt; positionMixin;<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    private JsBubbleOptions options = new JsBubbleOptions();<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>    static {<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        if (MaterialAddins.isDebug()) {<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            MaterialDesignBase.injectDebugJs(MaterialBubbleDebugClientBundle.INSTANCE.bubbleJsDebug());<a name="line.71"></a>
+<span class="sourceLineNo">072</span>            MaterialDesignBase.injectCss(MaterialBubbleDebugClientBundle.INSTANCE.bubbleCssDebug());<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        } else {<a name="line.73"></a>
+<span class="sourceLineNo">074</span>            MaterialDesignBase.injectJs(MaterialBubbleClientBundle.INSTANCE.bubbleJs());<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            MaterialDesignBase.injectCss(MaterialBubbleClientBundle.INSTANCE.bubbleCss());<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        }<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    }<a name="line.77"></a>
+<span class="sourceLineNo">078</span><a name="line.78"></a>
+<span class="sourceLineNo">079</span>    public MaterialBubble() {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>        super(Document.get().createSpanElement(), AddinsCssName.BUBBLE);<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        triangle.setStyleName(AddinsCssName.TRIANGLE);<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        getPositionMixin().setCssName(Position.LEFT);<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        add(triangle);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        setShadow(1);<a name="line.84"></a>
+<span class="sourceLineNo">085</span>    }<a name="line.85"></a>
+<span class="sourceLineNo">086</span><a name="line.86"></a>
+<span class="sourceLineNo">087</span>    public MaterialBubble(Color textColor, Color backgroundColor) {<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        this();<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        setTextColor(textColor);<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        setBackgroundColor(backgroundColor);<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>    public MaterialBubble(Color textColor, Color backgroundColor, Position position) {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        this(textColor, backgroundColor);<a name="line.94"></a>
+<span class="sourceLineNo">095</span>        setPosition(position);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
+<span class="sourceLineNo">097</span><a name="line.97"></a>
+<span class="sourceLineNo">098</span>    @Override<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    protected void onLoad() {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        super.onLoad();<a name="line.100"></a>
+<span class="sourceLineNo">101</span><a name="line.101"></a>
+<span class="sourceLineNo">102</span>        load();<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    }<a name="line.103"></a>
+<span class="sourceLineNo">104</span><a name="line.104"></a>
+<span class="sourceLineNo">105</span>    @Override<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    public void load() {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        $(getElement()).bubble(options);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    }<a name="line.108"></a>
+<span class="sourceLineNo">109</span><a name="line.109"></a>
+<span class="sourceLineNo">110</span>    @Override<a name="line.110"></a>
+<span class="sourceLineNo">111</span>    protected void onUnload() {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        super.onUnload();<a name="line.112"></a>
+<span class="sourceLineNo">113</span><a name="line.113"></a>
+<span class="sourceLineNo">114</span>        unload();<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
+<span class="sourceLineNo">116</span><a name="line.116"></a>
+<span class="sourceLineNo">117</span>    @Override<a name="line.117"></a>
+<span class="sourceLineNo">118</span>    public void unload() {}<a name="line.118"></a>
+<span class="sourceLineNo">119</span><a name="line.119"></a>
+<span class="sourceLineNo">120</span>    @Override<a name="line.120"></a>
+<span class="sourceLineNo">121</span>    public void reload() {<a name="line.121"></a>
+<span class="sourceLineNo">122</span>        unload();<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        load();<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    }<a name="line.124"></a>
+<span class="sourceLineNo">125</span><a name="line.125"></a>
+<span class="sourceLineNo">126</span>    @Override<a name="line.126"></a>
+<span class="sourceLineNo">127</span>    public void setBackgroundColor(Color bgColor) {<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        super.setBackgroundColor(bgColor);<a name="line.128"></a>
+<span class="sourceLineNo">129</span>        options.color = ColorHelper.setupComputedBackgroundColor(bgColor);<a name="line.129"></a>
+<span class="sourceLineNo">130</span>        reload();<a name="line.130"></a>
+<span class="sourceLineNo">131</span>    }<a name="line.131"></a>
+<span class="sourceLineNo">132</span><a name="line.132"></a>
+<span class="sourceLineNo">133</span>    @Override<a name="line.133"></a>
+<span class="sourceLineNo">134</span>    public Position getPosition() {<a name="line.134"></a>
+<span class="sourceLineNo">135</span>        return options.position != null ? Position.fromStyleName(options.position) : null;<a name="line.135"></a>
+<span class="sourceLineNo">136</span>    }<a name="line.136"></a>
+<span class="sourceLineNo">137</span><a name="line.137"></a>
+<span class="sourceLineNo">138</span>    @Override<a name="line.138"></a>
+<span class="sourceLineNo">139</span>    public void setPosition(Position position) {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        options.position = position.getCssName();<a name="line.140"></a>
+<span class="sourceLineNo">141</span>        getPositionMixin().setCssName(position);<a name="line.141"></a>
+<span class="sourceLineNo">142</span>        reload();<a name="line.142"></a>
+<span class="sourceLineNo">143</span>    }<a name="line.143"></a>
+<span class="sourceLineNo">144</span><a name="line.144"></a>
+<span class="sourceLineNo">145</span>    public MaterialWidget getTriangle() {<a name="line.145"></a>
+<span class="sourceLineNo">146</span>        return triangle;<a name="line.146"></a>
+<span class="sourceLineNo">147</span>    }<a name="line.147"></a>
+<span class="sourceLineNo">148</span><a name="line.148"></a>
+<span class="sourceLineNo">149</span>    protected CssNameMixin&lt;MaterialWidget, Position&gt; getPositionMixin() {<a name="line.149"></a>
+<span class="sourceLineNo">150</span>        if (positionMixin == null) {<a name="line.150"></a>
+<span class="sourceLineNo">151</span>            positionMixin = new CssNameMixin&lt;&gt;(triangle);<a name="line.151"></a>
+<span class="sourceLineNo">152</span>        }<a name="line.152"></a>
+<span class="sourceLineNo">153</span>        return positionMixin;<a name="line.153"></a>
+<span class="sourceLineNo">154</span>    }<a name="line.154"></a>
+<span class="sourceLineNo">155</span>}<a name="line.155"></a>
 
 
 

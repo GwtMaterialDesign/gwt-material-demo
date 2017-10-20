@@ -79,57 +79,63 @@
 <span class="sourceLineNo">071</span>        if (lblPlaceholder != null) {<a name="line.71"></a>
 <span class="sourceLineNo">072</span>            lblPlaceholder.removeStyleName("green-text");<a name="line.72"></a>
 <span class="sourceLineNo">073</span>            lblPlaceholder.addStyleName("red-text");<a name="line.73"></a>
-<span class="sourceLineNo">074</span>        }<a name="line.74"></a>
-<span class="sourceLineNo">075</span>    }<a name="line.75"></a>
-<span class="sourceLineNo">076</span><a name="line.76"></a>
-<span class="sourceLineNo">077</span>    @Override<a name="line.77"></a>
-<span class="sourceLineNo">078</span>    public void setSuccess(String success) {<a name="line.78"></a>
-<span class="sourceLineNo">079</span>        if (textObject != null) {<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            textObject.setText(success);<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            textObject.addStyleName(CssName.FIELD_SUCCESS_LABEL);<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            textObject.removeStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            textObject.removeStyleName(CssName.FIELD_ERROR_LABEL);<a name="line.83"></a>
-<span class="sourceLineNo">084</span>            textObject.setVisible(true);<a name="line.84"></a>
-<span class="sourceLineNo">085</span>        }<a name="line.85"></a>
-<span class="sourceLineNo">086</span>        if (target != null) {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            target.addStyleName(CssName.FIELD_SUCCESS);<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            target.removeStyleName(CssName.FIELD_ERROR);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        }<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        if (lblPlaceholder != null) {<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            lblPlaceholder.removeStyleName("red-text");<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            lblPlaceholder.addStyleName("green-text");<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        }<a name="line.93"></a>
-<span class="sourceLineNo">094</span>    }<a name="line.94"></a>
-<span class="sourceLineNo">095</span><a name="line.95"></a>
-<span class="sourceLineNo">096</span>    @Override<a name="line.96"></a>
-<span class="sourceLineNo">097</span>    public void setHelperText(String helperText) {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        this.helperText = helperText;<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        clearErrorOrSuccess();<a name="line.99"></a>
+<span class="sourceLineNo">074</span>            if (error != null &amp;&amp; !error.isEmpty()) {<a name="line.74"></a>
+<span class="sourceLineNo">075</span>                lblPlaceholder.addStyleName(CssName.ACTIVE);<a name="line.75"></a>
+<span class="sourceLineNo">076</span>            }<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        }<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    }<a name="line.78"></a>
+<span class="sourceLineNo">079</span><a name="line.79"></a>
+<span class="sourceLineNo">080</span>    @Override<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    public void setSuccess(String success) {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        if (textObject != null) {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            textObject.setText(success);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            textObject.addStyleName(CssName.FIELD_SUCCESS_LABEL);<a name="line.84"></a>
+<span class="sourceLineNo">085</span>            textObject.removeStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.85"></a>
+<span class="sourceLineNo">086</span>            textObject.removeStyleName(CssName.FIELD_ERROR_LABEL);<a name="line.86"></a>
+<span class="sourceLineNo">087</span>            textObject.setVisible(true);<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        }<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        if (target != null) {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            target.addStyleName(CssName.FIELD_SUCCESS);<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            target.removeStyleName(CssName.FIELD_ERROR);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        }<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        if (lblPlaceholder != null) {<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            lblPlaceholder.removeStyleName("red-text");<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            lblPlaceholder.addStyleName("green-text");<a name="line.95"></a>
+<span class="sourceLineNo">096</span>            if (success != null &amp;&amp; !success.isEmpty()) {<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                lblPlaceholder.addStyleName(CssName.ACTIVE);<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            }<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        }<a name="line.99"></a>
 <span class="sourceLineNo">100</span>    }<a name="line.100"></a>
 <span class="sourceLineNo">101</span><a name="line.101"></a>
 <span class="sourceLineNo">102</span>    @Override<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public void clearErrorOrSuccess() {<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        if (textObject != null) {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>            textObject.setText(helperText == null ? "" : helperText);<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            if (helperText != null) {<a name="line.106"></a>
-<span class="sourceLineNo">107</span>                textObject.addStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            } else {<a name="line.108"></a>
-<span class="sourceLineNo">109</span>                textObject.removeStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.109"></a>
-<span class="sourceLineNo">110</span>            }<a name="line.110"></a>
-<span class="sourceLineNo">111</span>            textObject.removeStyleName(CssName.FIELD_ERROR_LABEL);<a name="line.111"></a>
-<span class="sourceLineNo">112</span>            textObject.removeStyleName(CssName.FIELD_SUCCESS_LABEL);<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            textObject.setVisible(helperText != null);<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        }<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        if (target != null) {<a name="line.115"></a>
-<span class="sourceLineNo">116</span>            target.removeStyleName(CssName.FIELD_ERROR);<a name="line.116"></a>
-<span class="sourceLineNo">117</span>            target.removeStyleName(CssName.FIELD_SUCCESS);<a name="line.117"></a>
-<span class="sourceLineNo">118</span>        }<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        if (lblPlaceholder != null) {<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            lblPlaceholder.removeStyleName("red-text");<a name="line.120"></a>
-<span class="sourceLineNo">121</span>            lblPlaceholder.removeStyleName("green-text");<a name="line.121"></a>
-<span class="sourceLineNo">122</span>        }<a name="line.122"></a>
-<span class="sourceLineNo">123</span>    }<a name="line.123"></a>
-<span class="sourceLineNo">124</span>}<a name="line.124"></a>
+<span class="sourceLineNo">103</span>    public void setHelperText(String helperText) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        this.helperText = helperText;<a name="line.104"></a>
+<span class="sourceLineNo">105</span>        clearErrorOrSuccess();<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
+<span class="sourceLineNo">107</span><a name="line.107"></a>
+<span class="sourceLineNo">108</span>    @Override<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    public void clearErrorOrSuccess() {<a name="line.109"></a>
+<span class="sourceLineNo">110</span>        if (textObject != null) {<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            textObject.setText(helperText == null ? "" : helperText);<a name="line.111"></a>
+<span class="sourceLineNo">112</span>            if (helperText != null) {<a name="line.112"></a>
+<span class="sourceLineNo">113</span>                textObject.addStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.113"></a>
+<span class="sourceLineNo">114</span>            } else {<a name="line.114"></a>
+<span class="sourceLineNo">115</span>                textObject.removeStyleName(CssName.FIELD_HELPER_LABEL);<a name="line.115"></a>
+<span class="sourceLineNo">116</span>            }<a name="line.116"></a>
+<span class="sourceLineNo">117</span>            textObject.removeStyleName(CssName.FIELD_ERROR_LABEL);<a name="line.117"></a>
+<span class="sourceLineNo">118</span>            textObject.removeStyleName(CssName.FIELD_SUCCESS_LABEL);<a name="line.118"></a>
+<span class="sourceLineNo">119</span>            textObject.setVisible(helperText != null);<a name="line.119"></a>
+<span class="sourceLineNo">120</span>        }<a name="line.120"></a>
+<span class="sourceLineNo">121</span>        if (target != null) {<a name="line.121"></a>
+<span class="sourceLineNo">122</span>            target.removeStyleName(CssName.FIELD_ERROR);<a name="line.122"></a>
+<span class="sourceLineNo">123</span>            target.removeStyleName(CssName.FIELD_SUCCESS);<a name="line.123"></a>
+<span class="sourceLineNo">124</span>        }<a name="line.124"></a>
+<span class="sourceLineNo">125</span>        if (lblPlaceholder != null) {<a name="line.125"></a>
+<span class="sourceLineNo">126</span>            lblPlaceholder.removeStyleName("red-text");<a name="line.126"></a>
+<span class="sourceLineNo">127</span>            lblPlaceholder.removeStyleName("green-text");<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        }<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
+<span class="sourceLineNo">130</span>}<a name="line.130"></a>
 
 
 

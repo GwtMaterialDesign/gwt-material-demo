@@ -4,6 +4,7 @@ gwt.material.design.client.base.error
 gwt.material.design.client.base.helper
 gwt.material.design.client.base.mixin
 gwt.material.design.client.base.validator
+gwt.material.design.client.base.viewport
 gwt.material.design.client.constants
 gwt.material.design.client.events
 gwt.material.design.client.js

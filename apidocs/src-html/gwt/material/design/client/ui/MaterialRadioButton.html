@@ -98,19 +98,21 @@
 <span class="sourceLineNo">090</span><a name="line.90"></a>
 <span class="sourceLineNo">091</span>    @Override<a name="line.91"></a>
 <span class="sourceLineNo">092</span>    public RadioButtonType getType() {<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        return typeMixin.getType();<a name="line.93"></a>
+<span class="sourceLineNo">093</span>        return getTypeMixin().getType();<a name="line.93"></a>
 <span class="sourceLineNo">094</span>    }<a name="line.94"></a>
 <span class="sourceLineNo">095</span><a name="line.95"></a>
 <span class="sourceLineNo">096</span>    @Override<a name="line.96"></a>
 <span class="sourceLineNo">097</span>    public void setType(RadioButtonType type) {<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        if (typeMixin == null) {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>            // Since the input element handles the type styles,<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            // we need to override the mixin.<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            typeMixin = new CssTypeMixin&lt;&gt;(new TypeWidget&lt;&gt;(DOM.getChild(getElement(), 0)));<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        }<a name="line.102"></a>
-<span class="sourceLineNo">103</span>        typeMixin.setType(type);<a name="line.103"></a>
-<span class="sourceLineNo">104</span>    }<a name="line.104"></a>
-<span class="sourceLineNo">105</span>}<a name="line.105"></a>
+<span class="sourceLineNo">098</span>        getTypeMixin().setType(type);<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    }<a name="line.99"></a>
+<span class="sourceLineNo">100</span><a name="line.100"></a>
+<span class="sourceLineNo">101</span>    protected CssTypeMixin&lt;RadioButtonType, TypeWidget&lt;RadioButtonType&gt;&gt; getTypeMixin() {<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        if (typeMixin == null) {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>            typeMixin = new CssTypeMixin&lt;&gt;(new TypeWidget&lt;&gt;(DOM.getChild(getElement(), 0)));<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        }<a name="line.104"></a>
+<span class="sourceLineNo">105</span>        return typeMixin;<a name="line.105"></a>
+<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
+<span class="sourceLineNo">107</span>}<a name="line.107"></a>
 
 
 

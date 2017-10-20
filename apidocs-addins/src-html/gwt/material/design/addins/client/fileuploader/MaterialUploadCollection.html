@@ -51,108 +51,103 @@
 <span class="sourceLineNo">043</span>    private MaterialProgress progress = new MaterialProgress();<a name="line.43"></a>
 <span class="sourceLineNo">044</span><a name="line.44"></a>
 <span class="sourceLineNo">045</span>    public MaterialUploadCollection() {<a name="line.45"></a>
-<span class="sourceLineNo">046</span>        build();<a name="line.46"></a>
-<span class="sourceLineNo">047</span>    }<a name="line.47"></a>
-<span class="sourceLineNo">048</span><a name="line.48"></a>
-<span class="sourceLineNo">049</span>    @Override<a name="line.49"></a>
-<span class="sourceLineNo">050</span>    protected void build() {<a name="line.50"></a>
-<span class="sourceLineNo">051</span>        // Element property<a name="line.51"></a>
-<span class="sourceLineNo">052</span>        setStyleName(AddinsCssName.PREVIEWS);<a name="line.52"></a>
-<span class="sourceLineNo">053</span>        addStyleName(CssName.CARD);<a name="line.53"></a>
+<span class="sourceLineNo">046</span>        // Element property<a name="line.46"></a>
+<span class="sourceLineNo">047</span>        setStyleName(AddinsCssName.PREVIEWS);<a name="line.47"></a>
+<span class="sourceLineNo">048</span>        addStyleName(CssName.CARD);<a name="line.48"></a>
+<span class="sourceLineNo">049</span><a name="line.49"></a>
+<span class="sourceLineNo">050</span>        // Collection Item property that contain the upload info, progress bar and action panel<a name="line.50"></a>
+<span class="sourceLineNo">051</span>        item.setId(AddinsCssName.ZDROP_TEMPLATE);<a name="line.51"></a>
+<span class="sourceLineNo">052</span>        item.addStyleName(AddinsCssName.CLEARHACK + " " + CssName.VALIGN_WRAPPER + " " + AddinsCssName.ITEM_TEMPLATE);<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        add(item);<a name="line.53"></a>
 <span class="sourceLineNo">054</span><a name="line.54"></a>
-<span class="sourceLineNo">055</span>        // Collection Item property that contain the upload info, progress bar and action panel<a name="line.55"></a>
-<span class="sourceLineNo">056</span>        item.setId(AddinsCssName.ZDROP_TEMPLATE);<a name="line.56"></a>
-<span class="sourceLineNo">057</span>        item.addStyleName(AddinsCssName.CLEARHACK + " " + CssName.VALIGN_WRAPPER + " " + AddinsCssName.ITEM_TEMPLATE);<a name="line.57"></a>
-<span class="sourceLineNo">058</span>        add(item);<a name="line.58"></a>
+<span class="sourceLineNo">055</span>        // Upload Information<a name="line.55"></a>
+<span class="sourceLineNo">056</span>        dropInfo.addStyleName(CssName.LEFT + " " + AddinsCssName.PV + " " + AddinsCssName.ZDROP_INFO);<a name="line.56"></a>
+<span class="sourceLineNo">057</span>        dropInfo.setDataAttribute("data-dz-thumbnail", "");<a name="line.57"></a>
+<span class="sourceLineNo">058</span>        item.add(dropInfo);<a name="line.58"></a>
 <span class="sourceLineNo">059</span><a name="line.59"></a>
-<span class="sourceLineNo">060</span>        // Upload Information<a name="line.60"></a>
-<span class="sourceLineNo">061</span>        dropInfo.addStyleName(CssName.LEFT + " " + AddinsCssName.PV + " " + AddinsCssName.ZDROP_INFO);<a name="line.61"></a>
-<span class="sourceLineNo">062</span>        dropInfo.setDataAttribute("data-dz-thumbnail", "");<a name="line.62"></a>
-<span class="sourceLineNo">063</span>        item.add(dropInfo);<a name="line.63"></a>
-<span class="sourceLineNo">064</span><a name="line.64"></a>
-<span class="sourceLineNo">065</span>        // Upload Information - Upload Name info<a name="line.65"></a>
-<span class="sourceLineNo">066</span>        nameWrapper.add(name);<a name="line.66"></a>
-<span class="sourceLineNo">067</span>        name.setTruncate(true);<a name="line.67"></a>
-<span class="sourceLineNo">068</span>        name.setWidth("200px");<a name="line.68"></a>
-<span class="sourceLineNo">069</span>        name.setDataAttribute("data-dz-name", "");<a name="line.69"></a>
-<span class="sourceLineNo">070</span>        nameWrapper.add(size);<a name="line.70"></a>
-<span class="sourceLineNo">071</span>        size.setDataAttribute("data-dz-size", "");<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        dropInfo.add(nameWrapper);<a name="line.72"></a>
-<span class="sourceLineNo">073</span><a name="line.73"></a>
-<span class="sourceLineNo">074</span>        previewIcon.setFloat(Style.Float.LEFT);<a name="line.74"></a>
-<span class="sourceLineNo">075</span>        previewIcon.addStyleName(AddinsCssName.PREVIEW_ICON);<a name="line.75"></a>
-<span class="sourceLineNo">076</span>        dropInfo.add(previewIcon);<a name="line.76"></a>
-<span class="sourceLineNo">077</span><a name="line.77"></a>
-<span class="sourceLineNo">078</span>        // Upload Information - Progress bar indication of upload queues<a name="line.78"></a>
-<span class="sourceLineNo">079</span>        progress.setType(ProgressType.DETERMINATE);<a name="line.79"></a>
-<span class="sourceLineNo">080</span>        progress.getWidget(0).getElement().setAttribute("data-dz-uploadprogress", "");<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        progress.setPercent(0);<a name="line.81"></a>
-<span class="sourceLineNo">082</span>        dropInfo.add(progress);<a name="line.82"></a>
-<span class="sourceLineNo">083</span><a name="line.83"></a>
-<span class="sourceLineNo">084</span>        // Upload Information - Error message<a name="line.84"></a>
-<span class="sourceLineNo">085</span>        errorWrapper.setStyleName(AddinsCssName.DZ_ERROR_MESSAGE);<a name="line.85"></a>
-<span class="sourceLineNo">086</span>        errorMessage.setDataAttribute("data-dz-errormessage", "");<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        errorMessage.setId(AddinsCssName.ERROR_MESSAGE);<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        errorWrapper.add(errorMessage);<a name="line.88"></a>
-<span class="sourceLineNo">089</span>        dropInfo.add(errorWrapper);<a name="line.89"></a>
-<span class="sourceLineNo">090</span><a name="line.90"></a>
-<span class="sourceLineNo">091</span>        // Secondary Action Panel<a name="line.91"></a>
-<span class="sourceLineNo">092</span>        btnClear.setId(AddinsCssName.DZ_REMOVE);<a name="line.92"></a>
-<span class="sourceLineNo">093</span>        btnClear.setBackgroundColor(Color.TRANSPARENT);<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        btnClear.setShadow(0);<a name="line.94"></a>
-<span class="sourceLineNo">095</span>        btnClear.setCircle(true);<a name="line.95"></a>
-<span class="sourceLineNo">096</span>        btnClear.setTextColor(Color.WHITE);<a name="line.96"></a>
-<span class="sourceLineNo">097</span>        btnClear.addStyleName(AddinsCssName.PH);<a name="line.97"></a>
-<span class="sourceLineNo">098</span>        btnClear.setIconType(IconType.CLEAR);<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        btnClear.setDataAttribute("data-dz-remove", "");<a name="line.99"></a>
-<span class="sourceLineNo">100</span>        secondaryAction.add(btnClear);<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        item.add(secondaryAction);<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span><a name="line.103"></a>
-<span class="sourceLineNo">104</span>    public MaterialCollectionItem getItem() {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        return item;<a name="line.105"></a>
-<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
-<span class="sourceLineNo">107</span><a name="line.107"></a>
-<span class="sourceLineNo">108</span>    public MaterialWidget getDropInfo() {<a name="line.108"></a>
-<span class="sourceLineNo">109</span>        return dropInfo;<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
-<span class="sourceLineNo">111</span><a name="line.111"></a>
-<span class="sourceLineNo">112</span>    public MaterialWidget getNameWrapper() {<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        return nameWrapper;<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
-<span class="sourceLineNo">115</span><a name="line.115"></a>
-<span class="sourceLineNo">116</span>    public MaterialWidget getErrorWrapper() {<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        return errorWrapper;<a name="line.117"></a>
-<span class="sourceLineNo">118</span>    }<a name="line.118"></a>
-<span class="sourceLineNo">119</span><a name="line.119"></a>
-<span class="sourceLineNo">120</span>    public Span getName() {<a name="line.120"></a>
-<span class="sourceLineNo">121</span>        return name;<a name="line.121"></a>
-<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
-<span class="sourceLineNo">123</span><a name="line.123"></a>
-<span class="sourceLineNo">124</span>    public Span getSize() {<a name="line.124"></a>
-<span class="sourceLineNo">125</span>        return size;<a name="line.125"></a>
-<span class="sourceLineNo">126</span>    }<a name="line.126"></a>
-<span class="sourceLineNo">127</span><a name="line.127"></a>
-<span class="sourceLineNo">128</span>    public Span getErrorMessage() {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>        return errorMessage;<a name="line.129"></a>
-<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
-<span class="sourceLineNo">131</span><a name="line.131"></a>
-<span class="sourceLineNo">132</span>    public MaterialCollectionSecondary getSecondaryAction() {<a name="line.132"></a>
-<span class="sourceLineNo">133</span>        return secondaryAction;<a name="line.133"></a>
-<span class="sourceLineNo">134</span>    }<a name="line.134"></a>
-<span class="sourceLineNo">135</span><a name="line.135"></a>
-<span class="sourceLineNo">136</span>    public MaterialButton getBtnClear() {<a name="line.136"></a>
-<span class="sourceLineNo">137</span>        return btnClear;<a name="line.137"></a>
-<span class="sourceLineNo">138</span>    }<a name="line.138"></a>
-<span class="sourceLineNo">139</span><a name="line.139"></a>
-<span class="sourceLineNo">140</span>    public MaterialIcon getPreviewIcon() {<a name="line.140"></a>
-<span class="sourceLineNo">141</span>        return previewIcon;<a name="line.141"></a>
-<span class="sourceLineNo">142</span>    }<a name="line.142"></a>
-<span class="sourceLineNo">143</span><a name="line.143"></a>
-<span class="sourceLineNo">144</span>    public MaterialProgress getProgress() {<a name="line.144"></a>
-<span class="sourceLineNo">145</span>        return progress;<a name="line.145"></a>
-<span class="sourceLineNo">146</span>    }<a name="line.146"></a>
-<span class="sourceLineNo">147</span>}<a name="line.147"></a>
+<span class="sourceLineNo">060</span>        // Upload Information - Upload Name info<a name="line.60"></a>
+<span class="sourceLineNo">061</span>        nameWrapper.add(name);<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        name.setTruncate(true);<a name="line.62"></a>
+<span class="sourceLineNo">063</span>        name.setWidth("200px");<a name="line.63"></a>
+<span class="sourceLineNo">064</span>        name.setDataAttribute("data-dz-name", "");<a name="line.64"></a>
+<span class="sourceLineNo">065</span>        nameWrapper.add(size);<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        size.setDataAttribute("data-dz-size", "");<a name="line.66"></a>
+<span class="sourceLineNo">067</span>        dropInfo.add(nameWrapper);<a name="line.67"></a>
+<span class="sourceLineNo">068</span><a name="line.68"></a>
+<span class="sourceLineNo">069</span>        previewIcon.setFloat(Style.Float.LEFT);<a name="line.69"></a>
+<span class="sourceLineNo">070</span>        previewIcon.addStyleName(AddinsCssName.PREVIEW_ICON);<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        dropInfo.add(previewIcon);<a name="line.71"></a>
+<span class="sourceLineNo">072</span><a name="line.72"></a>
+<span class="sourceLineNo">073</span>        // Upload Information - Progress bar indication of upload queues<a name="line.73"></a>
+<span class="sourceLineNo">074</span>        progress.setType(ProgressType.DETERMINATE);<a name="line.74"></a>
+<span class="sourceLineNo">075</span>        progress.getWidget(0).getElement().setAttribute("data-dz-uploadprogress", "");<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        progress.setPercent(0);<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        dropInfo.add(progress);<a name="line.77"></a>
+<span class="sourceLineNo">078</span><a name="line.78"></a>
+<span class="sourceLineNo">079</span>        // Upload Information - Error message<a name="line.79"></a>
+<span class="sourceLineNo">080</span>        errorWrapper.setStyleName(AddinsCssName.DZ_ERROR_MESSAGE);<a name="line.80"></a>
+<span class="sourceLineNo">081</span>        errorMessage.setDataAttribute("data-dz-errormessage", "");<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        errorMessage.setId(AddinsCssName.ERROR_MESSAGE);<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        errorWrapper.add(errorMessage);<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        dropInfo.add(errorWrapper);<a name="line.84"></a>
+<span class="sourceLineNo">085</span><a name="line.85"></a>
+<span class="sourceLineNo">086</span>        // Secondary Action Panel<a name="line.86"></a>
+<span class="sourceLineNo">087</span>        btnClear.setId(AddinsCssName.DZ_REMOVE);<a name="line.87"></a>
+<span class="sourceLineNo">088</span>        btnClear.setBackgroundColor(Color.TRANSPARENT);<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        btnClear.setShadow(0);<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        btnClear.setCircle(true);<a name="line.90"></a>
+<span class="sourceLineNo">091</span>        btnClear.setTextColor(Color.WHITE);<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        btnClear.addStyleName(AddinsCssName.PH);<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        btnClear.setIconType(IconType.CLEAR);<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        btnClear.setDataAttribute("data-dz-remove", "");<a name="line.94"></a>
+<span class="sourceLineNo">095</span>        secondaryAction.add(btnClear);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>        item.add(secondaryAction);<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    }<a name="line.97"></a>
+<span class="sourceLineNo">098</span><a name="line.98"></a>
+<span class="sourceLineNo">099</span>    public MaterialCollectionItem getItem() {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        return item;<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    }<a name="line.101"></a>
+<span class="sourceLineNo">102</span><a name="line.102"></a>
+<span class="sourceLineNo">103</span>    public MaterialWidget getDropInfo() {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        return dropInfo;<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
+<span class="sourceLineNo">106</span><a name="line.106"></a>
+<span class="sourceLineNo">107</span>    public MaterialWidget getNameWrapper() {<a name="line.107"></a>
+<span class="sourceLineNo">108</span>        return nameWrapper;<a name="line.108"></a>
+<span class="sourceLineNo">109</span>    }<a name="line.109"></a>
+<span class="sourceLineNo">110</span><a name="line.110"></a>
+<span class="sourceLineNo">111</span>    public MaterialWidget getErrorWrapper() {<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        return errorWrapper;<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public Span getName() {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        return name;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    public Span getSize() {<a name="line.119"></a>
+<span class="sourceLineNo">120</span>        return size;<a name="line.120"></a>
+<span class="sourceLineNo">121</span>    }<a name="line.121"></a>
+<span class="sourceLineNo">122</span><a name="line.122"></a>
+<span class="sourceLineNo">123</span>    public Span getErrorMessage() {<a name="line.123"></a>
+<span class="sourceLineNo">124</span>        return errorMessage;<a name="line.124"></a>
+<span class="sourceLineNo">125</span>    }<a name="line.125"></a>
+<span class="sourceLineNo">126</span><a name="line.126"></a>
+<span class="sourceLineNo">127</span>    public MaterialCollectionSecondary getSecondaryAction() {<a name="line.127"></a>
+<span class="sourceLineNo">128</span>        return secondaryAction;<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
+<span class="sourceLineNo">130</span><a name="line.130"></a>
+<span class="sourceLineNo">131</span>    public MaterialButton getBtnClear() {<a name="line.131"></a>
+<span class="sourceLineNo">132</span>        return btnClear;<a name="line.132"></a>
+<span class="sourceLineNo">133</span>    }<a name="line.133"></a>
+<span class="sourceLineNo">134</span><a name="line.134"></a>
+<span class="sourceLineNo">135</span>    public MaterialIcon getPreviewIcon() {<a name="line.135"></a>
+<span class="sourceLineNo">136</span>        return previewIcon;<a name="line.136"></a>
+<span class="sourceLineNo">137</span>    }<a name="line.137"></a>
+<span class="sourceLineNo">138</span><a name="line.138"></a>
+<span class="sourceLineNo">139</span>    public MaterialProgress getProgress() {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        return progress;<a name="line.140"></a>
+<span class="sourceLineNo">141</span>    }<a name="line.141"></a>
+<span class="sourceLineNo">142</span>}<a name="line.142"></a>
 
 
 

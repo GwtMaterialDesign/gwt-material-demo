@@ -3,12 +3,14 @@ gwt.material.design.client.base
 gwt.material.design.client.base.constants
 gwt.material.design.client.data
 gwt.material.design.client.data.component
+gwt.material.design.client.data.events
 gwt.material.design.client.data.factory
 gwt.material.design.client.data.infinite
 gwt.material.design.client.data.loader
 gwt.material.design.client.jquery
 gwt.material.design.client.js
 gwt.material.design.client.resources
+gwt.material.design.client.ui
 gwt.material.design.client.ui.pager
 gwt.material.design.client.ui.table
 gwt.material.design.client.ui.table.cell

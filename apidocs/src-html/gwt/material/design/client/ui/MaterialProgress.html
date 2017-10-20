@@ -58,90 +58,99 @@
 <span class="sourceLineNo">050</span> */<a name="line.50"></a>
 <span class="sourceLineNo">051</span>public class MaterialProgress extends Div implements HasType&lt;ProgressType&gt; {<a name="line.51"></a>
 <span class="sourceLineNo">052</span><a name="line.52"></a>
-<span class="sourceLineNo">053</span>    private Div fillContainer = new Div();<a name="line.53"></a>
-<span class="sourceLineNo">054</span>    private double percent = 0;<a name="line.54"></a>
+<span class="sourceLineNo">053</span>    private double percent = 0;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    private Div fillContainer = new Div();<a name="line.54"></a>
 <span class="sourceLineNo">055</span><a name="line.55"></a>
-<span class="sourceLineNo">056</span>    private final ColorsMixin&lt;Div&gt; colorsMixin = new ColorsMixin&lt;&gt;(fillContainer);<a name="line.56"></a>
-<span class="sourceLineNo">057</span>    private final CssTypeMixin&lt;ProgressType, MaterialProgress&gt; typeMixin = new CssTypeMixin&lt;&gt;(this, fillContainer);<a name="line.57"></a>
+<span class="sourceLineNo">056</span>    private ColorsMixin&lt;Div&gt; fillColorMixin;<a name="line.56"></a>
+<span class="sourceLineNo">057</span>    private CssTypeMixin&lt;ProgressType, MaterialProgress&gt; typeMixin;<a name="line.57"></a>
 <span class="sourceLineNo">058</span><a name="line.58"></a>
 <span class="sourceLineNo">059</span>    public MaterialProgress() {<a name="line.59"></a>
 <span class="sourceLineNo">060</span>        super(CssName.PROGRESS);<a name="line.60"></a>
-<span class="sourceLineNo">061</span>        build();<a name="line.61"></a>
-<span class="sourceLineNo">062</span>    }<a name="line.62"></a>
-<span class="sourceLineNo">063</span><a name="line.63"></a>
-<span class="sourceLineNo">064</span>    public MaterialProgress(ProgressType type) {<a name="line.64"></a>
-<span class="sourceLineNo">065</span>        this();<a name="line.65"></a>
-<span class="sourceLineNo">066</span>        setType(type);<a name="line.66"></a>
-<span class="sourceLineNo">067</span>    }<a name="line.67"></a>
-<span class="sourceLineNo">068</span><a name="line.68"></a>
-<span class="sourceLineNo">069</span>    public MaterialProgress(ProgressType type, Double percent) {<a name="line.69"></a>
-<span class="sourceLineNo">070</span>        this(type);<a name="line.70"></a>
-<span class="sourceLineNo">071</span>        setPercent(percent);<a name="line.71"></a>
-<span class="sourceLineNo">072</span>    }<a name="line.72"></a>
-<span class="sourceLineNo">073</span><a name="line.73"></a>
-<span class="sourceLineNo">074</span>    @Override<a name="line.74"></a>
-<span class="sourceLineNo">075</span>    protected void build() {<a name="line.75"></a>
-<span class="sourceLineNo">076</span>        getElement().getStyle().setMargin(0, Unit.PX);<a name="line.76"></a>
-<span class="sourceLineNo">077</span>        add(fillContainer);<a name="line.77"></a>
-<span class="sourceLineNo">078</span>        setType(ProgressType.INDETERMINATE);<a name="line.78"></a>
+<span class="sourceLineNo">061</span>        getElement().getStyle().setMargin(0, Unit.PX);<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        add(fillContainer);<a name="line.62"></a>
+<span class="sourceLineNo">063</span>        setType(ProgressType.INDETERMINATE);<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    }<a name="line.64"></a>
+<span class="sourceLineNo">065</span><a name="line.65"></a>
+<span class="sourceLineNo">066</span>    public MaterialProgress(ProgressType type) {<a name="line.66"></a>
+<span class="sourceLineNo">067</span>        this();<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        setType(type);<a name="line.68"></a>
+<span class="sourceLineNo">069</span>    }<a name="line.69"></a>
+<span class="sourceLineNo">070</span><a name="line.70"></a>
+<span class="sourceLineNo">071</span>    public MaterialProgress(ProgressType type, Double percent) {<a name="line.71"></a>
+<span class="sourceLineNo">072</span>        this(type);<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        setPercent(percent);<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    }<a name="line.74"></a>
+<span class="sourceLineNo">075</span><a name="line.75"></a>
+<span class="sourceLineNo">076</span>    @Override<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    public void setType(ProgressType type) {<a name="line.77"></a>
+<span class="sourceLineNo">078</span>        getTypeMixin().setType(type);<a name="line.78"></a>
 <span class="sourceLineNo">079</span>    }<a name="line.79"></a>
 <span class="sourceLineNo">080</span><a name="line.80"></a>
 <span class="sourceLineNo">081</span>    @Override<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    public void setType(ProgressType type) {<a name="line.82"></a>
-<span class="sourceLineNo">083</span>        typeMixin.setType(type);<a name="line.83"></a>
+<span class="sourceLineNo">082</span>    public ProgressType getType() {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>        return getTypeMixin().getType();<a name="line.83"></a>
 <span class="sourceLineNo">084</span>    }<a name="line.84"></a>
 <span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    @Override<a name="line.86"></a>
-<span class="sourceLineNo">087</span>    public ProgressType getType() {<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        return typeMixin.getType();<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    }<a name="line.89"></a>
-<span class="sourceLineNo">090</span><a name="line.90"></a>
-<span class="sourceLineNo">091</span>    /**<a name="line.91"></a>
-<span class="sourceLineNo">092</span>     * Get progress width as percent unit<a name="line.92"></a>
-<span class="sourceLineNo">093</span>     */<a name="line.93"></a>
-<span class="sourceLineNo">094</span>    public double getPercent() {<a name="line.94"></a>
-<span class="sourceLineNo">095</span>        return percent;<a name="line.95"></a>
-<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
-<span class="sourceLineNo">097</span><a name="line.97"></a>
-<span class="sourceLineNo">098</span>    /**<a name="line.98"></a>
-<span class="sourceLineNo">099</span>     * Set progress width as percent unit.<a name="line.99"></a>
-<span class="sourceLineNo">100</span>     * If percent is greater than 100 then reset the progress in the maximum value (100%)<a name="line.100"></a>
-<span class="sourceLineNo">101</span>     * If percent is less than 0 then reset the progress in the minimum value (0%)<a name="line.101"></a>
-<span class="sourceLineNo">102</span>     */<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public void setPercent(double percent) {<a name="line.103"></a>
-<span class="sourceLineNo">104</span><a name="line.104"></a>
-<span class="sourceLineNo">105</span>        if (percent &gt; 100) {<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            percent = 100;<a name="line.106"></a>
-<span class="sourceLineNo">107</span>        }<a name="line.107"></a>
-<span class="sourceLineNo">108</span><a name="line.108"></a>
-<span class="sourceLineNo">109</span>        if (percent &lt; 0) {<a name="line.109"></a>
-<span class="sourceLineNo">110</span>            percent = 0;<a name="line.110"></a>
-<span class="sourceLineNo">111</span>        }<a name="line.111"></a>
-<span class="sourceLineNo">112</span><a name="line.112"></a>
-<span class="sourceLineNo">113</span>        this.percent = percent;<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        fillContainer.getElement().getStyle().setWidth(percent, Unit.PCT);<a name="line.114"></a>
-<span class="sourceLineNo">115</span>    }<a name="line.115"></a>
-<span class="sourceLineNo">116</span><a name="line.116"></a>
-<span class="sourceLineNo">117</span>    /**<a name="line.117"></a>
-<span class="sourceLineNo">118</span>     * Get the progress bar color.<a name="line.118"></a>
-<span class="sourceLineNo">119</span>     */<a name="line.119"></a>
-<span class="sourceLineNo">120</span>    public Color getColor() {<a name="line.120"></a>
-<span class="sourceLineNo">121</span>        return colorsMixin.getBackgroundColor();<a name="line.121"></a>
-<span class="sourceLineNo">122</span>    }<a name="line.122"></a>
-<span class="sourceLineNo">123</span><a name="line.123"></a>
-<span class="sourceLineNo">124</span>    /**<a name="line.124"></a>
-<span class="sourceLineNo">125</span>     * Set the color of the progress bar.<a name="line.125"></a>
-<span class="sourceLineNo">126</span>     *<a name="line.126"></a>
-<span class="sourceLineNo">127</span>     * @param color String value of the color.<a name="line.127"></a>
-<span class="sourceLineNo">128</span>     */<a name="line.128"></a>
-<span class="sourceLineNo">129</span>    public void setColor(Color color) {<a name="line.129"></a>
-<span class="sourceLineNo">130</span>        colorsMixin.setBackgroundColor(color);<a name="line.130"></a>
-<span class="sourceLineNo">131</span>    }<a name="line.131"></a>
-<span class="sourceLineNo">132</span><a name="line.132"></a>
-<span class="sourceLineNo">133</span>    public Div getFillContainer() {<a name="line.133"></a>
-<span class="sourceLineNo">134</span>        return fillContainer;<a name="line.134"></a>
-<span class="sourceLineNo">135</span>    }<a name="line.135"></a>
-<span class="sourceLineNo">136</span>}<a name="line.136"></a>
+<span class="sourceLineNo">086</span>    /**<a name="line.86"></a>
+<span class="sourceLineNo">087</span>     * Get progress width as percent unit<a name="line.87"></a>
+<span class="sourceLineNo">088</span>     */<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    public double getPercent() {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        return percent;<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>    /**<a name="line.93"></a>
+<span class="sourceLineNo">094</span>     * Set progress width as percent unit.<a name="line.94"></a>
+<span class="sourceLineNo">095</span>     * If percent is greater than 100 then reset the progress in the maximum value (100%)<a name="line.95"></a>
+<span class="sourceLineNo">096</span>     * If percent is less than 0 then reset the progress in the minimum value (0%)<a name="line.96"></a>
+<span class="sourceLineNo">097</span>     */<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    public void setPercent(double percent) {<a name="line.98"></a>
+<span class="sourceLineNo">099</span><a name="line.99"></a>
+<span class="sourceLineNo">100</span>        if (percent &gt; 100) {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            percent = 100;<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        }<a name="line.102"></a>
+<span class="sourceLineNo">103</span><a name="line.103"></a>
+<span class="sourceLineNo">104</span>        if (percent &lt; 0) {<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            percent = 0;<a name="line.105"></a>
+<span class="sourceLineNo">106</span>        }<a name="line.106"></a>
+<span class="sourceLineNo">107</span><a name="line.107"></a>
+<span class="sourceLineNo">108</span>        this.percent = percent;<a name="line.108"></a>
+<span class="sourceLineNo">109</span>        fillContainer.getElement().getStyle().setWidth(percent, Unit.PCT);<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
+<span class="sourceLineNo">111</span><a name="line.111"></a>
+<span class="sourceLineNo">112</span>    /**<a name="line.112"></a>
+<span class="sourceLineNo">113</span>     * Get the progress bar color.<a name="line.113"></a>
+<span class="sourceLineNo">114</span>     */<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public Color getColor() {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        return getFillColorMixin().getBackgroundColor();<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    /**<a name="line.119"></a>
+<span class="sourceLineNo">120</span>     * Set the color of the progress bar.<a name="line.120"></a>
+<span class="sourceLineNo">121</span>     *<a name="line.121"></a>
+<span class="sourceLineNo">122</span>     * @param color String value of the color.<a name="line.122"></a>
+<span class="sourceLineNo">123</span>     */<a name="line.123"></a>
+<span class="sourceLineNo">124</span>    public void setColor(Color color) {<a name="line.124"></a>
+<span class="sourceLineNo">125</span>        getFillColorMixin().setBackgroundColor(color);<a name="line.125"></a>
+<span class="sourceLineNo">126</span>    }<a name="line.126"></a>
+<span class="sourceLineNo">127</span><a name="line.127"></a>
+<span class="sourceLineNo">128</span>    public Div getFillContainer() {<a name="line.128"></a>
+<span class="sourceLineNo">129</span>        return fillContainer;<a name="line.129"></a>
+<span class="sourceLineNo">130</span>    }<a name="line.130"></a>
+<span class="sourceLineNo">131</span><a name="line.131"></a>
+<span class="sourceLineNo">132</span>    protected ColorsMixin&lt;Div&gt; getFillColorMixin() {<a name="line.132"></a>
+<span class="sourceLineNo">133</span>        if (fillColorMixin == null) {<a name="line.133"></a>
+<span class="sourceLineNo">134</span>            fillColorMixin = new ColorsMixin&lt;&gt;(fillContainer);<a name="line.134"></a>
+<span class="sourceLineNo">135</span>        }<a name="line.135"></a>
+<span class="sourceLineNo">136</span>        return fillColorMixin;<a name="line.136"></a>
+<span class="sourceLineNo">137</span>    }<a name="line.137"></a>
+<span class="sourceLineNo">138</span><a name="line.138"></a>
+<span class="sourceLineNo">139</span>    protected CssTypeMixin&lt;ProgressType, MaterialProgress&gt; getTypeMixin() {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        if (typeMixin == null) {<a name="line.140"></a>
+<span class="sourceLineNo">141</span>            typeMixin = new CssTypeMixin&lt;&gt;(this, fillContainer);<a name="line.141"></a>
+<span class="sourceLineNo">142</span>        }<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        return typeMixin;<a name="line.143"></a>
+<span class="sourceLineNo">144</span>    }<a name="line.144"></a>
+<span class="sourceLineNo">145</span>}<a name="line.145"></a>
 
 
 

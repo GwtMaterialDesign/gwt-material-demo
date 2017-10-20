@@ -28,264 +28,285 @@
 <span class="sourceLineNo">020</span>package gwt.material.design.addins.client.masonry;<a name="line.20"></a>
 <span class="sourceLineNo">021</span><a name="line.21"></a>
 <span class="sourceLineNo">022</span>import com.google.gwt.dom.client.Document;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>import com.google.gwt.dom.client.Element;<a name="line.23"></a>
+<span class="sourceLineNo">023</span>import com.google.gwt.event.shared.HandlerRegistration;<a name="line.23"></a>
 <span class="sourceLineNo">024</span>import com.google.gwt.user.client.ui.IsWidget;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>import com.google.gwt.user.client.ui.Widget;<a name="line.25"></a>
 <span class="sourceLineNo">026</span>import gwt.material.design.addins.client.MaterialAddins;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>import gwt.material.design.addins.client.base.constants.AddinsCssName;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>import gwt.material.design.addins.client.masonry.js.JsMasonryOptions;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.29"></a>
-<span class="sourceLineNo">030</span>import gwt.material.design.client.base.HasDurationTransition;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>import gwt.material.design.client.constants.CssName;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>import gwt.material.design.client.ui.MaterialRow;<a name="line.33"></a>
-<span class="sourceLineNo">034</span><a name="line.34"></a>
-<span class="sourceLineNo">035</span>import static gwt.material.design.addins.client.masonry.js.JsMasonry.$;<a name="line.35"></a>
-<span class="sourceLineNo">036</span><a name="line.36"></a>
-<span class="sourceLineNo">037</span>//@formatter:off<a name="line.37"></a>
-<span class="sourceLineNo">038</span><a name="line.38"></a>
-<span class="sourceLineNo">039</span>/**<a name="line.39"></a>
-<span class="sourceLineNo">040</span> * Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall.<a name="line.40"></a>
-<span class="sourceLineNo">041</span> * &lt;p&gt;<a name="line.41"></a>
-<span class="sourceLineNo">042</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.42"></a>
-<span class="sourceLineNo">043</span> * &lt;pre&gt;<a name="line.43"></a>
-<span class="sourceLineNo">044</span> * {@code<a name="line.44"></a>
-<span class="sourceLineNo">045</span> * xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'<a name="line.45"></a>
-<span class="sourceLineNo">046</span> * }<a name="line.46"></a>
-<span class="sourceLineNo">047</span> * &lt;/pre&gt;<a name="line.47"></a>
-<span class="sourceLineNo">048</span> * &lt;p&gt;<a name="line.48"></a>
-<span class="sourceLineNo">049</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.49"></a>
-<span class="sourceLineNo">050</span> * &lt;pre&gt;<a name="line.50"></a>
-<span class="sourceLineNo">051</span> * {<a name="line.51"></a>
-<span class="sourceLineNo">052</span> * @code<a name="line.52"></a>
-<span class="sourceLineNo">053</span> * &lt;m.addins:MaterialMasonry&gt;<a name="line.53"></a>
-<span class="sourceLineNo">054</span> *     &lt;m:MaterialColumn grid="l1" padding="4" backgroundColor="blue" height="200px"&gt;<a name="line.54"></a>
-<span class="sourceLineNo">055</span> *         &lt;m:MaterialLabel text="1"/&gt;<a name="line.55"></a>
-<span class="sourceLineNo">056</span> *     &lt;/m:MaterialColumn&gt;<a name="line.56"></a>
-<span class="sourceLineNo">057</span> *     &amp;lt;-- Other columns here --&gt;<a name="line.57"></a>
-<span class="sourceLineNo">058</span> * &lt;/m.addins:MaterialMasonry&gt;<a name="line.58"></a>
-<span class="sourceLineNo">059</span> * }<a name="line.59"></a>
-<span class="sourceLineNo">060</span> * &lt;/pre&gt;<a name="line.60"></a>
-<span class="sourceLineNo">061</span> *<a name="line.61"></a>
-<span class="sourceLineNo">062</span> * @author kevzlou7979<a name="line.62"></a>
-<span class="sourceLineNo">063</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#masonry"&gt;Material Masonry&lt;/a&gt;<a name="line.63"></a>
-<span class="sourceLineNo">064</span> */<a name="line.64"></a>
-<span class="sourceLineNo">065</span>//@formatter:on<a name="line.65"></a>
-<span class="sourceLineNo">066</span>public class MaterialMasonry extends MaterialRow implements HasDurationTransition {<a name="line.66"></a>
-<span class="sourceLineNo">067</span><a name="line.67"></a>
-<span class="sourceLineNo">068</span>    static {<a name="line.68"></a>
-<span class="sourceLineNo">069</span>        if (MaterialAddins.isDebug()) {<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            MaterialDesignBase.injectDebugJs(MaterialMasonryDebugClientBundle.INSTANCE.masonryJsDebug());<a name="line.70"></a>
-<span class="sourceLineNo">071</span>            MaterialDesignBase.injectDebugJs(MaterialMasonryDebugClientBundle.INSTANCE.imageLoadedJsDebug());<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        } else {<a name="line.72"></a>
-<span class="sourceLineNo">073</span>            MaterialDesignBase.injectJs(MaterialMasonryClientBundle.INSTANCE.masonryJs());<a name="line.73"></a>
-<span class="sourceLineNo">074</span>            MaterialDesignBase.injectJs(MaterialMasonryClientBundle.INSTANCE.imageLoadedJs());<a name="line.74"></a>
-<span class="sourceLineNo">075</span>        }<a name="line.75"></a>
-<span class="sourceLineNo">076</span>    }<a name="line.76"></a>
-<span class="sourceLineNo">077</span><a name="line.77"></a>
-<span class="sourceLineNo">078</span>    private String itemSelector = ".col";<a name="line.78"></a>
-<span class="sourceLineNo">079</span>    private boolean percentPosition = true;<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    private boolean originLeft = true;<a name="line.80"></a>
-<span class="sourceLineNo">081</span>    private boolean originTop = true;<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    private int duration = 400;<a name="line.82"></a>
-<span class="sourceLineNo">083</span><a name="line.83"></a>
-<span class="sourceLineNo">084</span>    private MaterialWidget sizerDiv = new MaterialWidget(Document.get().createDivElement());<a name="line.84"></a>
-<span class="sourceLineNo">085</span><a name="line.85"></a>
-<span class="sourceLineNo">086</span>    public MaterialMasonry() {<a name="line.86"></a>
-<span class="sourceLineNo">087</span>        super(Document.get().createDivElement(), AddinsCssName.MASONRY, CssName.ROW);<a name="line.87"></a>
-<span class="sourceLineNo">088</span><a name="line.88"></a>
-<span class="sourceLineNo">089</span>        build();<a name="line.89"></a>
-<span class="sourceLineNo">090</span>    }<a name="line.90"></a>
-<span class="sourceLineNo">091</span><a name="line.91"></a>
-<span class="sourceLineNo">092</span>    @Override<a name="line.92"></a>
-<span class="sourceLineNo">093</span>    protected void build() {<a name="line.93"></a>
-<span class="sourceLineNo">094</span>        enableFeature(Feature.ONLOAD_ADD_QUEUE, true);<a name="line.94"></a>
-<span class="sourceLineNo">095</span>        sizerDiv.setWidth("8.3333%");<a name="line.95"></a>
-<span class="sourceLineNo">096</span>        sizerDiv.setStyleName(AddinsCssName.COL_SIZER);<a name="line.96"></a>
-<span class="sourceLineNo">097</span>        add(sizerDiv);<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    }<a name="line.98"></a>
-<span class="sourceLineNo">099</span><a name="line.99"></a>
-<span class="sourceLineNo">100</span>    @Override<a name="line.100"></a>
-<span class="sourceLineNo">101</span>    protected void initialize() {<a name="line.101"></a>
-<span class="sourceLineNo">102</span>        initMasonryJs(getElement());<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    }<a name="line.103"></a>
-<span class="sourceLineNo">104</span><a name="line.104"></a>
-<span class="sourceLineNo">105</span>    protected void initMasonryJs(Element e) {<a name="line.105"></a>
-<span class="sourceLineNo">106</span>        window().ready(() -&gt; $(e).imagesLoaded(() -&gt; $(e).masonry(getMasonryOptions())));<a name="line.106"></a>
-<span class="sourceLineNo">107</span>    }<a name="line.107"></a>
+<span class="sourceLineNo">028</span>import gwt.material.design.addins.client.masonry.events.HasMasonryHandler;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>import gwt.material.design.addins.client.masonry.events.LayoutCompleteEvent;<a name="line.29"></a>
+<span class="sourceLineNo">030</span>import gwt.material.design.addins.client.masonry.events.MasonryEvents;<a name="line.30"></a>
+<span class="sourceLineNo">031</span>import gwt.material.design.addins.client.masonry.events.RemoveCompleteEvent;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>import gwt.material.design.addins.client.masonry.js.JsMasonry;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>import gwt.material.design.addins.client.masonry.js.JsMasonryOptions;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>import gwt.material.design.client.MaterialDesignBase;<a name="line.34"></a>
+<span class="sourceLineNo">035</span>import gwt.material.design.client.base.HasDurationTransition;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>import gwt.material.design.client.base.JsLoader;<a name="line.36"></a>
+<span class="sourceLineNo">037</span>import gwt.material.design.client.base.MaterialWidget;<a name="line.37"></a>
+<span class="sourceLineNo">038</span>import gwt.material.design.client.constants.CssName;<a name="line.38"></a>
+<span class="sourceLineNo">039</span>import gwt.material.design.client.ui.MaterialRow;<a name="line.39"></a>
+<span class="sourceLineNo">040</span><a name="line.40"></a>
+<span class="sourceLineNo">041</span>import static gwt.material.design.addins.client.masonry.js.JsMasonry.$;<a name="line.41"></a>
+<span class="sourceLineNo">042</span><a name="line.42"></a>
+<span class="sourceLineNo">043</span>//@formatter:off<a name="line.43"></a>
+<span class="sourceLineNo">044</span><a name="line.44"></a>
+<span class="sourceLineNo">045</span>/**<a name="line.45"></a>
+<span class="sourceLineNo">046</span> * Masonry works by placing elements in optimal position based on available vertical space, sort of like a mason fitting stones in a wall.<a name="line.46"></a>
+<span class="sourceLineNo">047</span> * &lt;p&gt;<a name="line.47"></a>
+<span class="sourceLineNo">048</span> * &lt;h3&gt;XML Namespace Declaration&lt;/h3&gt;<a name="line.48"></a>
+<span class="sourceLineNo">049</span> * &lt;pre&gt;<a name="line.49"></a>
+<span class="sourceLineNo">050</span> * {@code<a name="line.50"></a>
+<span class="sourceLineNo">051</span> * xmlns:m.addins='urn:import:gwt.material.design.addins.client.ui'<a name="line.51"></a>
+<span class="sourceLineNo">052</span> * }<a name="line.52"></a>
+<span class="sourceLineNo">053</span> * &lt;/pre&gt;<a name="line.53"></a>
+<span class="sourceLineNo">054</span> * &lt;p&gt;<a name="line.54"></a>
+<span class="sourceLineNo">055</span> * &lt;h3&gt;UiBinder Usage:&lt;/h3&gt;<a name="line.55"></a>
+<span class="sourceLineNo">056</span> * &lt;pre&gt;<a name="line.56"></a>
+<span class="sourceLineNo">057</span> * {<a name="line.57"></a>
+<span class="sourceLineNo">058</span> * @code<a name="line.58"></a>
+<span class="sourceLineNo">059</span> * &lt;m.addins:MaterialMasonry&gt;<a name="line.59"></a>
+<span class="sourceLineNo">060</span> *     &lt;m:MaterialColumn grid="l1" padding="4" backgroundColor="blue" height="200px"&gt;<a name="line.60"></a>
+<span class="sourceLineNo">061</span> *         &lt;m:MaterialLabel text="1"/&gt;<a name="line.61"></a>
+<span class="sourceLineNo">062</span> *     &lt;/m:MaterialColumn&gt;<a name="line.62"></a>
+<span class="sourceLineNo">063</span> *     &amp;lt;-- Other columns here --&gt;<a name="line.63"></a>
+<span class="sourceLineNo">064</span> * &lt;/m.addins:MaterialMasonry&gt;<a name="line.64"></a>
+<span class="sourceLineNo">065</span> * }<a name="line.65"></a>
+<span class="sourceLineNo">066</span> * &lt;/pre&gt;<a name="line.66"></a>
+<span class="sourceLineNo">067</span> *<a name="line.67"></a>
+<span class="sourceLineNo">068</span> * @author kevzlou7979<a name="line.68"></a>
+<span class="sourceLineNo">069</span> * @see &lt;a href="http://gwtmaterialdesign.github.io/gwt-material-demo/#masonry"&gt;Material Masonry&lt;/a&gt;<a name="line.69"></a>
+<span class="sourceLineNo">070</span> * @see &lt;a href="https://github.com/desandro/masonry"&gt;Masonry 4.0.0&lt;/a&gt;<a name="line.70"></a>
+<span class="sourceLineNo">071</span> */<a name="line.71"></a>
+<span class="sourceLineNo">072</span>//@formatter:on<a name="line.72"></a>
+<span class="sourceLineNo">073</span>public class MaterialMasonry extends MaterialRow implements JsLoader, HasDurationTransition, HasMasonryHandler {<a name="line.73"></a>
+<span class="sourceLineNo">074</span><a name="line.74"></a>
+<span class="sourceLineNo">075</span>    static {<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        if (MaterialAddins.isDebug()) {<a name="line.76"></a>
+<span class="sourceLineNo">077</span>            MaterialDesignBase.injectDebugJs(MaterialMasonryDebugClientBundle.INSTANCE.masonryJsDebug());<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            MaterialDesignBase.injectDebugJs(MaterialMasonryDebugClientBundle.INSTANCE.imageLoadedJsDebug());<a name="line.78"></a>
+<span class="sourceLineNo">079</span>        } else {<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            MaterialDesignBase.injectJs(MaterialMasonryClientBundle.INSTANCE.masonryJs());<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            MaterialDesignBase.injectJs(MaterialMasonryClientBundle.INSTANCE.imageLoadedJs());<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        }<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span>    private MaterialWidget sizerDiv = new MaterialWidget(Document.get().createDivElement());<a name="line.85"></a>
+<span class="sourceLineNo">086</span>    private JsMasonryOptions options = JsMasonryOptions.create();<a name="line.86"></a>
+<span class="sourceLineNo">087</span>    private JsMasonry masonryElement;<a name="line.87"></a>
+<span class="sourceLineNo">088</span>    private Widget target;<a name="line.88"></a>
+<span class="sourceLineNo">089</span><a name="line.89"></a>
+<span class="sourceLineNo">090</span>    public MaterialMasonry() {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>        super(Document.get().createDivElement(), AddinsCssName.MASONRY, CssName.ROW);<a name="line.91"></a>
+<span class="sourceLineNo">092</span><a name="line.92"></a>
+<span class="sourceLineNo">093</span>        sizerDiv.setWidth("8.3333%");<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        sizerDiv.setStyleName(AddinsCssName.COL_SIZER);<a name="line.94"></a>
+<span class="sourceLineNo">095</span>        add(sizerDiv);<a name="line.95"></a>
+<span class="sourceLineNo">096</span>    }<a name="line.96"></a>
+<span class="sourceLineNo">097</span><a name="line.97"></a>
+<span class="sourceLineNo">098</span>    @Override<a name="line.98"></a>
+<span class="sourceLineNo">099</span>    protected void onLoad() {<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        super.onLoad();<a name="line.100"></a>
+<span class="sourceLineNo">101</span><a name="line.101"></a>
+<span class="sourceLineNo">102</span>        load();<a name="line.102"></a>
+<span class="sourceLineNo">103</span><a name="line.103"></a>
+<span class="sourceLineNo">104</span>        masonryElement.on(MasonryEvents.REMOVE_COMPLETE, (e, param1) -&gt; {<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            RemoveCompleteEvent.fire(this, target);<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            return true;<a name="line.106"></a>
+<span class="sourceLineNo">107</span>        });<a name="line.107"></a>
 <span class="sourceLineNo">108</span><a name="line.108"></a>
-<span class="sourceLineNo">109</span>    protected JsMasonryOptions getMasonryOptions() {<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        JsMasonryOptions options = new JsMasonryOptions();<a name="line.110"></a>
-<span class="sourceLineNo">111</span>        options.itemSelector = ".masonry &gt; " + getItemSelector();<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        options.percentPosition = isPercentPosition();<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        options.columnWidth = "." + AddinsCssName.COL_SIZER;<a name="line.113"></a>
-<span class="sourceLineNo">114</span>        options.originLeft = isOriginLeft();<a name="line.114"></a>
-<span class="sourceLineNo">115</span>        options.originTop = isOriginTop();<a name="line.115"></a>
-<span class="sourceLineNo">116</span>        options.transitionDuration = getDuration() + "ms";<a name="line.116"></a>
-<span class="sourceLineNo">117</span>        return options;<a name="line.117"></a>
-<span class="sourceLineNo">118</span>    }<a name="line.118"></a>
-<span class="sourceLineNo">119</span><a name="line.119"></a>
-<span class="sourceLineNo">120</span>    @Override<a name="line.120"></a>
-<span class="sourceLineNo">121</span>    public boolean remove(IsWidget child) {<a name="line.121"></a>
-<span class="sourceLineNo">122</span>        Widget widget = (Widget) child;<a name="line.122"></a>
-<span class="sourceLineNo">123</span>        remove(widget.getElement());<a name="line.123"></a>
+<span class="sourceLineNo">109</span>        masonryElement.on(MasonryEvents.LAYOUT_COMPLETE, (e, param1) -&gt; {<a name="line.109"></a>
+<span class="sourceLineNo">110</span>            LayoutCompleteEvent.fire(this);<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            return true;<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        });<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    @Override<a name="line.115"></a>
+<span class="sourceLineNo">116</span>    public void load() {<a name="line.116"></a>
+<span class="sourceLineNo">117</span>        masonryElement = $(getElement());<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        masonryElement.imagesLoaded(() -&gt; masonryElement.masonry(options));<a name="line.118"></a>
+<span class="sourceLineNo">119</span>    }<a name="line.119"></a>
+<span class="sourceLineNo">120</span><a name="line.120"></a>
+<span class="sourceLineNo">121</span>    @Override<a name="line.121"></a>
+<span class="sourceLineNo">122</span>    protected void onUnload() {<a name="line.122"></a>
+<span class="sourceLineNo">123</span>        super.onUnload();<a name="line.123"></a>
 <span class="sourceLineNo">124</span><a name="line.124"></a>
-<span class="sourceLineNo">125</span>        if (isInitialize()) {<a name="line.125"></a>
-<span class="sourceLineNo">126</span>            initialize();<a name="line.126"></a>
-<span class="sourceLineNo">127</span>        }<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        return true;<a name="line.128"></a>
-<span class="sourceLineNo">129</span>    }<a name="line.129"></a>
-<span class="sourceLineNo">130</span><a name="line.130"></a>
-<span class="sourceLineNo">131</span>    @Override<a name="line.131"></a>
-<span class="sourceLineNo">132</span>    public boolean remove(Widget w) {<a name="line.132"></a>
-<span class="sourceLineNo">133</span>        return this.remove((IsWidget) w);<a name="line.133"></a>
-<span class="sourceLineNo">134</span>    }<a name="line.134"></a>
-<span class="sourceLineNo">135</span><a name="line.135"></a>
-<span class="sourceLineNo">136</span>    @Override<a name="line.136"></a>
-<span class="sourceLineNo">137</span>    public boolean remove(int index) {<a name="line.137"></a>
-<span class="sourceLineNo">138</span>        remove(getWidget(index).getElement());<a name="line.138"></a>
-<span class="sourceLineNo">139</span>        return true;<a name="line.139"></a>
-<span class="sourceLineNo">140</span>    }<a name="line.140"></a>
-<span class="sourceLineNo">141</span><a name="line.141"></a>
-<span class="sourceLineNo">142</span>    /**<a name="line.142"></a>
-<span class="sourceLineNo">143</span>     * Remove the item with Masonry support<a name="line.143"></a>
-<span class="sourceLineNo">144</span>     */<a name="line.144"></a>
-<span class="sourceLineNo">145</span>    protected void remove(Element e) {<a name="line.145"></a>
-<span class="sourceLineNo">146</span>        if (isInitialize()) {<a name="line.146"></a>
-<span class="sourceLineNo">147</span>            $(getElement()).masonry(getMasonryOptions()).masonry("remove", e).masonry("layout");<a name="line.147"></a>
-<span class="sourceLineNo">148</span>        }<a name="line.148"></a>
+<span class="sourceLineNo">125</span>        unload();<a name="line.125"></a>
+<span class="sourceLineNo">126</span>    }<a name="line.126"></a>
+<span class="sourceLineNo">127</span><a name="line.127"></a>
+<span class="sourceLineNo">128</span>    @Override<a name="line.128"></a>
+<span class="sourceLineNo">129</span>    public void unload() {<a name="line.129"></a>
+<span class="sourceLineNo">130</span>        if (masonryElement != null) {<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            masonryElement.masonry("destroy");<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            masonryElement.off(MasonryEvents.REMOVE_COMPLETE);<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            masonryElement.off(MasonryEvents.LAYOUT_COMPLETE);<a name="line.133"></a>
+<span class="sourceLineNo">134</span>        }<a name="line.134"></a>
+<span class="sourceLineNo">135</span>    }<a name="line.135"></a>
+<span class="sourceLineNo">136</span><a name="line.136"></a>
+<span class="sourceLineNo">137</span>    @Override<a name="line.137"></a>
+<span class="sourceLineNo">138</span>    public void reload() {<a name="line.138"></a>
+<span class="sourceLineNo">139</span>        // reload items and layout specific to masonry plugin<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        if (masonryElement != null) {<a name="line.140"></a>
+<span class="sourceLineNo">141</span>            layout();<a name="line.141"></a>
+<span class="sourceLineNo">142</span>            reloadItems();<a name="line.142"></a>
+<span class="sourceLineNo">143</span>        }<a name="line.143"></a>
+<span class="sourceLineNo">144</span>    }<a name="line.144"></a>
+<span class="sourceLineNo">145</span><a name="line.145"></a>
+<span class="sourceLineNo">146</span>    @Override<a name="line.146"></a>
+<span class="sourceLineNo">147</span>    public boolean remove(Widget w) {<a name="line.147"></a>
+<span class="sourceLineNo">148</span>        return remove((IsWidget) w);<a name="line.148"></a>
 <span class="sourceLineNo">149</span>    }<a name="line.149"></a>
 <span class="sourceLineNo">150</span><a name="line.150"></a>
 <span class="sourceLineNo">151</span>    @Override<a name="line.151"></a>
-<span class="sourceLineNo">152</span>    public void clear() {<a name="line.152"></a>
-<span class="sourceLineNo">153</span>        for (Widget widget : getChildren()) {<a name="line.153"></a>
-<span class="sourceLineNo">154</span>            remove(widget.getElement());<a name="line.154"></a>
-<span class="sourceLineNo">155</span>        }<a name="line.155"></a>
-<span class="sourceLineNo">156</span>    }<a name="line.156"></a>
-<span class="sourceLineNo">157</span><a name="line.157"></a>
-<span class="sourceLineNo">158</span>    @Override<a name="line.158"></a>
-<span class="sourceLineNo">159</span>    public void add(Widget child) {<a name="line.159"></a>
-<span class="sourceLineNo">160</span>        super.add(child);<a name="line.160"></a>
-<span class="sourceLineNo">161</span>        reinitialize();<a name="line.161"></a>
-<span class="sourceLineNo">162</span>    }<a name="line.162"></a>
-<span class="sourceLineNo">163</span><a name="line.163"></a>
-<span class="sourceLineNo">164</span>    @Override<a name="line.164"></a>
-<span class="sourceLineNo">165</span>    protected void add(Widget child, com.google.gwt.user.client.Element container) {<a name="line.165"></a>
-<span class="sourceLineNo">166</span>        super.add(child, container);<a name="line.166"></a>
-<span class="sourceLineNo">167</span>        reinitialize();<a name="line.167"></a>
-<span class="sourceLineNo">168</span>    }<a name="line.168"></a>
-<span class="sourceLineNo">169</span><a name="line.169"></a>
-<span class="sourceLineNo">170</span>    @Override<a name="line.170"></a>
-<span class="sourceLineNo">171</span>    protected void insert(Widget child, com.google.gwt.user.client.Element container, int beforeIndex, boolean domInsert) {<a name="line.171"></a>
-<span class="sourceLineNo">172</span>        super.insert(child, container, beforeIndex, domInsert);<a name="line.172"></a>
-<span class="sourceLineNo">173</span>        reinitialize();<a name="line.173"></a>
-<span class="sourceLineNo">174</span>    }<a name="line.174"></a>
-<span class="sourceLineNo">175</span><a name="line.175"></a>
-<span class="sourceLineNo">176</span>    @Override<a name="line.176"></a>
-<span class="sourceLineNo">177</span>    public void insert(Widget child, int beforeIndex) {<a name="line.177"></a>
-<span class="sourceLineNo">178</span>        super.insert(child, beforeIndex);<a name="line.178"></a>
-<span class="sourceLineNo">179</span>        reinitialize();<a name="line.179"></a>
-<span class="sourceLineNo">180</span>    }<a name="line.180"></a>
-<span class="sourceLineNo">181</span><a name="line.181"></a>
-<span class="sourceLineNo">182</span>    /**<a name="line.182"></a>
-<span class="sourceLineNo">183</span>     * Reload the layout effective only when adding and inserting items<a name="line.183"></a>
-<span class="sourceLineNo">184</span>     */<a name="line.184"></a>
-<span class="sourceLineNo">185</span>    @Override<a name="line.185"></a>
-<span class="sourceLineNo">186</span>    public void reinitialize() {<a name="line.186"></a>
-<span class="sourceLineNo">187</span>        if (isInitialize()) {<a name="line.187"></a>
-<span class="sourceLineNo">188</span>            reinitializeItem();<a name="line.188"></a>
-<span class="sourceLineNo">189</span>            layout();<a name="line.189"></a>
-<span class="sourceLineNo">190</span>        }<a name="line.190"></a>
-<span class="sourceLineNo">191</span>    }<a name="line.191"></a>
-<span class="sourceLineNo">192</span><a name="line.192"></a>
-<span class="sourceLineNo">193</span>    /**<a name="line.193"></a>
-<span class="sourceLineNo">194</span>     * Reload all items inside the masonry<a name="line.194"></a>
-<span class="sourceLineNo">195</span>     */<a name="line.195"></a>
-<span class="sourceLineNo">196</span>    public void reinitializeItem() {<a name="line.196"></a>
-<span class="sourceLineNo">197</span>        $(getElement()).masonry(getMasonryOptions()).masonry("reloadItems");<a name="line.197"></a>
-<span class="sourceLineNo">198</span>    }<a name="line.198"></a>
-<span class="sourceLineNo">199</span><a name="line.199"></a>
-<span class="sourceLineNo">200</span>    /**<a name="line.200"></a>
-<span class="sourceLineNo">201</span>     * Layout remaining item elements<a name="line.201"></a>
-<span class="sourceLineNo">202</span>     */<a name="line.202"></a>
-<span class="sourceLineNo">203</span>    public void layout() {<a name="line.203"></a>
-<span class="sourceLineNo">204</span>        $(getElement()).masonry(getMasonryOptions()).masonry("layout");<a name="line.204"></a>
-<span class="sourceLineNo">205</span>    }<a name="line.205"></a>
-<span class="sourceLineNo">206</span><a name="line.206"></a>
-<span class="sourceLineNo">207</span>    /**<a name="line.207"></a>
-<span class="sourceLineNo">208</span>     * Get the item selector.<a name="line.208"></a>
-<span class="sourceLineNo">209</span>     */<a name="line.209"></a>
-<span class="sourceLineNo">210</span>    public String getItemSelector() {<a name="line.210"></a>
-<span class="sourceLineNo">211</span>        return itemSelector;<a name="line.211"></a>
-<span class="sourceLineNo">212</span>    }<a name="line.212"></a>
-<span class="sourceLineNo">213</span><a name="line.213"></a>
-<span class="sourceLineNo">214</span>    /**<a name="line.214"></a>
-<span class="sourceLineNo">215</span>     * Specifies which child elements will be used as item elements in the<a name="line.215"></a>
-<span class="sourceLineNo">216</span>     * layout.It's .col by default for grid components.<a name="line.216"></a>
-<span class="sourceLineNo">217</span>     */<a name="line.217"></a>
-<span class="sourceLineNo">218</span>    public void setItemSelector(String itemSelector) {<a name="line.218"></a>
-<span class="sourceLineNo">219</span>        this.itemSelector = itemSelector;<a name="line.219"></a>
-<span class="sourceLineNo">220</span>    }<a name="line.220"></a>
-<span class="sourceLineNo">221</span><a name="line.221"></a>
-<span class="sourceLineNo">222</span>    /**<a name="line.222"></a>
-<span class="sourceLineNo">223</span>     * Get the percent position boolean value.<a name="line.223"></a>
-<span class="sourceLineNo">224</span>     */<a name="line.224"></a>
-<span class="sourceLineNo">225</span>    public boolean isPercentPosition() {<a name="line.225"></a>
-<span class="sourceLineNo">226</span>        return percentPosition;<a name="line.226"></a>
-<span class="sourceLineNo">227</span>    }<a name="line.227"></a>
-<span class="sourceLineNo">228</span><a name="line.228"></a>
-<span class="sourceLineNo">229</span>    /**<a name="line.229"></a>
-<span class="sourceLineNo">230</span>     * Sets item positions in percent values, rather than pixel values. percentPosition: true works<a name="line.230"></a>
-<span class="sourceLineNo">231</span>     * well with percent-width items, as items will not transition their position on resize.<a name="line.231"></a>
-<span class="sourceLineNo">232</span>     */<a name="line.232"></a>
-<span class="sourceLineNo">233</span>    public void setPercentPosition(boolean percentPosition) {<a name="line.233"></a>
-<span class="sourceLineNo">234</span>        this.percentPosition = percentPosition;<a name="line.234"></a>
-<span class="sourceLineNo">235</span>    }<a name="line.235"></a>
-<span class="sourceLineNo">236</span><a name="line.236"></a>
-<span class="sourceLineNo">237</span>    /**<a name="line.237"></a>
-<span class="sourceLineNo">238</span>     * Get the boolean value of origin left.<a name="line.238"></a>
-<span class="sourceLineNo">239</span>     */<a name="line.239"></a>
-<span class="sourceLineNo">240</span>    public boolean isOriginLeft() {<a name="line.240"></a>
-<span class="sourceLineNo">241</span>        return originLeft;<a name="line.241"></a>
-<span class="sourceLineNo">242</span>    }<a name="line.242"></a>
-<span class="sourceLineNo">243</span><a name="line.243"></a>
-<span class="sourceLineNo">244</span>    /**<a name="line.244"></a>
-<span class="sourceLineNo">245</span>     * Controls the horizontal flow of the layout. By default, item elements start positioning at the<a name="line.245"></a>
-<span class="sourceLineNo">246</span>     * left, with originLeft: true. Set originLeft: false for right-to-left layouts.<a name="line.246"></a>
-<span class="sourceLineNo">247</span>     */<a name="line.247"></a>
-<span class="sourceLineNo">248</span>    public void setOriginLeft(boolean originLeft) {<a name="line.248"></a>
-<span class="sourceLineNo">249</span>        this.originLeft = originLeft;<a name="line.249"></a>
-<span class="sourceLineNo">250</span>    }<a name="line.250"></a>
-<span class="sourceLineNo">251</span><a name="line.251"></a>
-<span class="sourceLineNo">252</span>    /**<a name="line.252"></a>
-<span class="sourceLineNo">253</span>     * Get the boolean value of origin top.<a name="line.253"></a>
-<span class="sourceLineNo">254</span>     */<a name="line.254"></a>
-<span class="sourceLineNo">255</span>    public boolean isOriginTop() {<a name="line.255"></a>
-<span class="sourceLineNo">256</span>        return originTop;<a name="line.256"></a>
-<span class="sourceLineNo">257</span>    }<a name="line.257"></a>
-<span class="sourceLineNo">258</span><a name="line.258"></a>
-<span class="sourceLineNo">259</span>    /**<a name="line.259"></a>
-<span class="sourceLineNo">260</span>     * Controls the vertical flow of the layout. By default, item elements start positioning at the top,<a name="line.260"></a>
-<span class="sourceLineNo">261</span>     * with originTop: true. Set originTop: false for bottom-up layouts. It’s like Tetris<a name="line.261"></a>
-<span class="sourceLineNo">262</span>     */<a name="line.262"></a>
-<span class="sourceLineNo">263</span>    public void setOriginTop(boolean originTop) {<a name="line.263"></a>
-<span class="sourceLineNo">264</span>        this.originTop = originTop;<a name="line.264"></a>
-<span class="sourceLineNo">265</span>    }<a name="line.265"></a>
-<span class="sourceLineNo">266</span><a name="line.266"></a>
-<span class="sourceLineNo">267</span>    public MaterialWidget getSizerDiv() {<a name="line.267"></a>
-<span class="sourceLineNo">268</span>        return sizerDiv;<a name="line.268"></a>
-<span class="sourceLineNo">269</span>    }<a name="line.269"></a>
-<span class="sourceLineNo">270</span><a name="line.270"></a>
-<span class="sourceLineNo">271</span>    @Override<a name="line.271"></a>
-<span class="sourceLineNo">272</span>    public void setDuration(int duration) {<a name="line.272"></a>
-<span class="sourceLineNo">273</span>        this.duration = duration;<a name="line.273"></a>
-<span class="sourceLineNo">274</span>    }<a name="line.274"></a>
-<span class="sourceLineNo">275</span><a name="line.275"></a>
-<span class="sourceLineNo">276</span>    @Override<a name="line.276"></a>
-<span class="sourceLineNo">277</span>    public int getDuration() {<a name="line.277"></a>
-<span class="sourceLineNo">278</span>        return duration;<a name="line.278"></a>
-<span class="sourceLineNo">279</span>    }<a name="line.279"></a>
-<span class="sourceLineNo">280</span>}<a name="line.280"></a>
+<span class="sourceLineNo">152</span>    public boolean remove(int index) {<a name="line.152"></a>
+<span class="sourceLineNo">153</span>        remove(getWidget(index));<a name="line.153"></a>
+<span class="sourceLineNo">154</span>        return true;<a name="line.154"></a>
+<span class="sourceLineNo">155</span>    }<a name="line.155"></a>
+<span class="sourceLineNo">156</span><a name="line.156"></a>
+<span class="sourceLineNo">157</span>    @Override<a name="line.157"></a>
+<span class="sourceLineNo">158</span>    public boolean remove(IsWidget child) {<a name="line.158"></a>
+<span class="sourceLineNo">159</span>        Widget widget = (Widget) child;<a name="line.159"></a>
+<span class="sourceLineNo">160</span>        masonryRemove(widget);<a name="line.160"></a>
+<span class="sourceLineNo">161</span>        reload();<a name="line.161"></a>
+<span class="sourceLineNo">162</span>        return true;<a name="line.162"></a>
+<span class="sourceLineNo">163</span>    }<a name="line.163"></a>
+<span class="sourceLineNo">164</span><a name="line.164"></a>
+<span class="sourceLineNo">165</span>    /**<a name="line.165"></a>
+<span class="sourceLineNo">166</span>     * Remove the item with Masonry support<a name="line.166"></a>
+<span class="sourceLineNo">167</span>     */<a name="line.167"></a>
+<span class="sourceLineNo">168</span>    protected void masonryRemove(Widget target) {<a name="line.168"></a>
+<span class="sourceLineNo">169</span>        this.target = target;<a name="line.169"></a>
+<span class="sourceLineNo">170</span>        $(getElement()).masonry(options).masonry("remove", target.getElement());<a name="line.170"></a>
+<span class="sourceLineNo">171</span>    }<a name="line.171"></a>
+<span class="sourceLineNo">172</span><a name="line.172"></a>
+<span class="sourceLineNo">173</span>    @Override<a name="line.173"></a>
+<span class="sourceLineNo">174</span>    public void clear() {<a name="line.174"></a>
+<span class="sourceLineNo">175</span>        for (Widget widget : getChildren()) {<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            remove(widget);<a name="line.176"></a>
+<span class="sourceLineNo">177</span>        }<a name="line.177"></a>
+<span class="sourceLineNo">178</span>    }<a name="line.178"></a>
+<span class="sourceLineNo">179</span><a name="line.179"></a>
+<span class="sourceLineNo">180</span>    @Override<a name="line.180"></a>
+<span class="sourceLineNo">181</span>    public void add(Widget child) {<a name="line.181"></a>
+<span class="sourceLineNo">182</span>        super.add(child);<a name="line.182"></a>
+<span class="sourceLineNo">183</span>        reload();<a name="line.183"></a>
+<span class="sourceLineNo">184</span>    }<a name="line.184"></a>
+<span class="sourceLineNo">185</span><a name="line.185"></a>
+<span class="sourceLineNo">186</span>    @Override<a name="line.186"></a>
+<span class="sourceLineNo">187</span>    protected void add(Widget child, com.google.gwt.user.client.Element container) {<a name="line.187"></a>
+<span class="sourceLineNo">188</span>        super.add(child, container);<a name="line.188"></a>
+<span class="sourceLineNo">189</span>        reload();<a name="line.189"></a>
+<span class="sourceLineNo">190</span>    }<a name="line.190"></a>
+<span class="sourceLineNo">191</span><a name="line.191"></a>
+<span class="sourceLineNo">192</span>    @Override<a name="line.192"></a>
+<span class="sourceLineNo">193</span>    protected void insert(Widget child, com.google.gwt.user.client.Element container, int beforeIndex, boolean domInsert) {<a name="line.193"></a>
+<span class="sourceLineNo">194</span>        super.insert(child, container, beforeIndex, domInsert);<a name="line.194"></a>
+<span class="sourceLineNo">195</span>        reload();<a name="line.195"></a>
+<span class="sourceLineNo">196</span>    }<a name="line.196"></a>
+<span class="sourceLineNo">197</span><a name="line.197"></a>
+<span class="sourceLineNo">198</span>    @Override<a name="line.198"></a>
+<span class="sourceLineNo">199</span>    public void insert(Widget child, int beforeIndex) {<a name="line.199"></a>
+<span class="sourceLineNo">200</span>        super.insert(child, beforeIndex);<a name="line.200"></a>
+<span class="sourceLineNo">201</span>        reload();<a name="line.201"></a>
+<span class="sourceLineNo">202</span>    }<a name="line.202"></a>
+<span class="sourceLineNo">203</span><a name="line.203"></a>
+<span class="sourceLineNo">204</span>    /**<a name="line.204"></a>
+<span class="sourceLineNo">205</span>     * Reload all items inside the masonry<a name="line.205"></a>
+<span class="sourceLineNo">206</span>     */<a name="line.206"></a>
+<span class="sourceLineNo">207</span>    protected void reloadItems() {<a name="line.207"></a>
+<span class="sourceLineNo">208</span>        masonryElement.masonry(options).masonry("reloadItems");<a name="line.208"></a>
+<span class="sourceLineNo">209</span>    }<a name="line.209"></a>
+<span class="sourceLineNo">210</span><a name="line.210"></a>
+<span class="sourceLineNo">211</span>    /**<a name="line.211"></a>
+<span class="sourceLineNo">212</span>     * Layout remaining item elements<a name="line.212"></a>
+<span class="sourceLineNo">213</span>     */<a name="line.213"></a>
+<span class="sourceLineNo">214</span>    protected void layout() {<a name="line.214"></a>
+<span class="sourceLineNo">215</span>        masonryElement.masonry(options).masonry("layout");<a name="line.215"></a>
+<span class="sourceLineNo">216</span>    }<a name="line.216"></a>
+<span class="sourceLineNo">217</span><a name="line.217"></a>
+<span class="sourceLineNo">218</span>    /**<a name="line.218"></a>
+<span class="sourceLineNo">219</span>     * Get the item selector.<a name="line.219"></a>
+<span class="sourceLineNo">220</span>     */<a name="line.220"></a>
+<span class="sourceLineNo">221</span>    public String getItemSelector() {<a name="line.221"></a>
+<span class="sourceLineNo">222</span>        return options.itemSelector;<a name="line.222"></a>
+<span class="sourceLineNo">223</span>    }<a name="line.223"></a>
+<span class="sourceLineNo">224</span><a name="line.224"></a>
+<span class="sourceLineNo">225</span>    /**<a name="line.225"></a>
+<span class="sourceLineNo">226</span>     * Specifies which child elements will be used as item elements in the<a name="line.226"></a>
+<span class="sourceLineNo">227</span>     * layout.It's .col by default for grid components.<a name="line.227"></a>
+<span class="sourceLineNo">228</span>     */<a name="line.228"></a>
+<span class="sourceLineNo">229</span>    public void setItemSelector(String itemSelector) {<a name="line.229"></a>
+<span class="sourceLineNo">230</span>        options.itemSelector = itemSelector;<a name="line.230"></a>
+<span class="sourceLineNo">231</span>    }<a name="line.231"></a>
+<span class="sourceLineNo">232</span><a name="line.232"></a>
+<span class="sourceLineNo">233</span>    /**<a name="line.233"></a>
+<span class="sourceLineNo">234</span>     * Get the percent position boolean value.<a name="line.234"></a>
+<span class="sourceLineNo">235</span>     */<a name="line.235"></a>
+<span class="sourceLineNo">236</span>    public boolean isPercentPosition() {<a name="line.236"></a>
+<span class="sourceLineNo">237</span>        return options.percentPosition;<a name="line.237"></a>
+<span class="sourceLineNo">238</span>    }<a name="line.238"></a>
+<span class="sourceLineNo">239</span><a name="line.239"></a>
+<span class="sourceLineNo">240</span>    /**<a name="line.240"></a>
+<span class="sourceLineNo">241</span>     * Sets item positions in percent values, rather than pixel values. percentPosition: true works<a name="line.241"></a>
+<span class="sourceLineNo">242</span>     * well with percent-width items, as items will not transition their position on resize.<a name="line.242"></a>
+<span class="sourceLineNo">243</span>     */<a name="line.243"></a>
+<span class="sourceLineNo">244</span>    public void setPercentPosition(boolean percentPosition) {<a name="line.244"></a>
+<span class="sourceLineNo">245</span>        options.percentPosition = percentPosition;<a name="line.245"></a>
+<span class="sourceLineNo">246</span>    }<a name="line.246"></a>
+<span class="sourceLineNo">247</span><a name="line.247"></a>
+<span class="sourceLineNo">248</span>    /**<a name="line.248"></a>
+<span class="sourceLineNo">249</span>     * Get the boolean value of origin left.<a name="line.249"></a>
+<span class="sourceLineNo">250</span>     */<a name="line.250"></a>
+<span class="sourceLineNo">251</span>    public boolean isOriginLeft() {<a name="line.251"></a>
+<span class="sourceLineNo">252</span>        return options.originLeft;<a name="line.252"></a>
+<span class="sourceLineNo">253</span>    }<a name="line.253"></a>
+<span class="sourceLineNo">254</span><a name="line.254"></a>
+<span class="sourceLineNo">255</span>    /**<a name="line.255"></a>
+<span class="sourceLineNo">256</span>     * Controls the horizontal flow of the layout. By default, item elements start positioning at the<a name="line.256"></a>
+<span class="sourceLineNo">257</span>     * left, with originLeft: true. Set originLeft: false for right-to-left layouts.<a name="line.257"></a>
+<span class="sourceLineNo">258</span>     */<a name="line.258"></a>
+<span class="sourceLineNo">259</span>    public void setOriginLeft(boolean originLeft) {<a name="line.259"></a>
+<span class="sourceLineNo">260</span>        options.originLeft = originLeft;<a name="line.260"></a>
+<span class="sourceLineNo">261</span>    }<a name="line.261"></a>
+<span class="sourceLineNo">262</span><a name="line.262"></a>
+<span class="sourceLineNo">263</span>    /**<a name="line.263"></a>
+<span class="sourceLineNo">264</span>     * Get the boolean value of origin top.<a name="line.264"></a>
+<span class="sourceLineNo">265</span>     */<a name="line.265"></a>
+<span class="sourceLineNo">266</span>    public boolean isOriginTop() {<a name="line.266"></a>
+<span class="sourceLineNo">267</span>        return options.originTop;<a name="line.267"></a>
+<span class="sourceLineNo">268</span>    }<a name="line.268"></a>
+<span class="sourceLineNo">269</span><a name="line.269"></a>
+<span class="sourceLineNo">270</span>    /**<a name="line.270"></a>
+<span class="sourceLineNo">271</span>     * Controls the vertical flow of the layout. By default, item elements start positioning at the top,<a name="line.271"></a>
+<span class="sourceLineNo">272</span>     * with originTop: true. Set originTop: false for bottom-up layouts. It’s like Tetris<a name="line.272"></a>
+<span class="sourceLineNo">273</span>     */<a name="line.273"></a>
+<span class="sourceLineNo">274</span>    public void setOriginTop(boolean originTop) {<a name="line.274"></a>
+<span class="sourceLineNo">275</span>        options.originTop = originTop;<a name="line.275"></a>
+<span class="sourceLineNo">276</span>    }<a name="line.276"></a>
+<span class="sourceLineNo">277</span><a name="line.277"></a>
+<span class="sourceLineNo">278</span>    public MaterialWidget getSizerDiv() {<a name="line.278"></a>
+<span class="sourceLineNo">279</span>        return sizerDiv;<a name="line.279"></a>
+<span class="sourceLineNo">280</span>    }<a name="line.280"></a>
+<span class="sourceLineNo">281</span><a name="line.281"></a>
+<span class="sourceLineNo">282</span>    @Override<a name="line.282"></a>
+<span class="sourceLineNo">283</span>    public void setDuration(int duration) {<a name="line.283"></a>
+<span class="sourceLineNo">284</span>        options.transitionDuration = duration + "ms";<a name="line.284"></a>
+<span class="sourceLineNo">285</span>    }<a name="line.285"></a>
+<span class="sourceLineNo">286</span><a name="line.286"></a>
+<span class="sourceLineNo">287</span>    @Override<a name="line.287"></a>
+<span class="sourceLineNo">288</span>    public int getDuration() {<a name="line.288"></a>
+<span class="sourceLineNo">289</span>        return options.transitionDuration != null ? Integer.parseInt(options.transitionDuration.replace("ms", "")) : 0;<a name="line.289"></a>
+<span class="sourceLineNo">290</span>    }<a name="line.290"></a>
+<span class="sourceLineNo">291</span><a name="line.291"></a>
+<span class="sourceLineNo">292</span>    @Override<a name="line.292"></a>
+<span class="sourceLineNo">293</span>    public HandlerRegistration addLayoutCompleteHandler(LayoutCompleteEvent.LayoutCompleteHandler handler) {<a name="line.293"></a>
+<span class="sourceLineNo">294</span>        return addHandler(handler, LayoutCompleteEvent.TYPE);<a name="line.294"></a>
+<span class="sourceLineNo">295</span>    }<a name="line.295"></a>
+<span class="sourceLineNo">296</span><a name="line.296"></a>
+<span class="sourceLineNo">297</span>    @Override<a name="line.297"></a>
+<span class="sourceLineNo">298</span>    public HandlerRegistration addRemoveCompleteHandler(RemoveCompleteEvent.RemoveCompleteHandler handler) {<a name="line.298"></a>
+<span class="sourceLineNo">299</span>        return addHandler(handler, RemoveCompleteEvent.TYPE);<a name="line.299"></a>
+<span class="sourceLineNo">300</span>    }<a name="line.300"></a>
+<span class="sourceLineNo">301</span>}<a name="line.301"></a>
 
 
 

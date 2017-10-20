@@ -103,24 +103,29 @@
 <span class="sourceLineNo">095</span>    }<a name="line.95"></a>
 <span class="sourceLineNo">096</span><a name="line.96"></a>
 <span class="sourceLineNo">097</span>    @Override<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    public void setIconPrefix(boolean prefix) {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        icon.setIconPrefix(prefix);<a name="line.99"></a>
+<span class="sourceLineNo">098</span>    public Color getIconColor() {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        return icon.getIconColor();<a name="line.99"></a>
 <span class="sourceLineNo">100</span>    }<a name="line.100"></a>
 <span class="sourceLineNo">101</span><a name="line.101"></a>
 <span class="sourceLineNo">102</span>    @Override<a name="line.102"></a>
-<span class="sourceLineNo">103</span>    public boolean isIconPrefix() {<a name="line.103"></a>
-<span class="sourceLineNo">104</span>        return icon.isIconPrefix();<a name="line.104"></a>
+<span class="sourceLineNo">103</span>    public void setIconPrefix(boolean prefix) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        icon.setIconPrefix(prefix);<a name="line.104"></a>
 <span class="sourceLineNo">105</span>    }<a name="line.105"></a>
 <span class="sourceLineNo">106</span><a name="line.106"></a>
-<span class="sourceLineNo">107</span>    /**<a name="line.107"></a>
-<span class="sourceLineNo">108</span>     * Ensure the icon is attached in slot 0.<a name="line.108"></a>
-<span class="sourceLineNo">109</span>     */<a name="line.109"></a>
-<span class="sourceLineNo">110</span>    protected void ensureIconAttached() {<a name="line.110"></a>
-<span class="sourceLineNo">111</span>        if (icon != null &amp;&amp; !icon.isAttached()) {<a name="line.111"></a>
-<span class="sourceLineNo">112</span>            insert(icon, 0);<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        }<a name="line.113"></a>
-<span class="sourceLineNo">114</span>    }<a name="line.114"></a>
-<span class="sourceLineNo">115</span>}<a name="line.115"></a>
+<span class="sourceLineNo">107</span>    @Override<a name="line.107"></a>
+<span class="sourceLineNo">108</span>    public boolean isIconPrefix() {<a name="line.108"></a>
+<span class="sourceLineNo">109</span>        return icon.isIconPrefix();<a name="line.109"></a>
+<span class="sourceLineNo">110</span>    }<a name="line.110"></a>
+<span class="sourceLineNo">111</span><a name="line.111"></a>
+<span class="sourceLineNo">112</span>    /**<a name="line.112"></a>
+<span class="sourceLineNo">113</span>     * Ensure the icon is attached in slot 0.<a name="line.113"></a>
+<span class="sourceLineNo">114</span>     */<a name="line.114"></a>
+<span class="sourceLineNo">115</span>    protected void ensureIconAttached() {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        if (icon != null &amp;&amp; !icon.isAttached()) {<a name="line.116"></a>
+<span class="sourceLineNo">117</span>            insert(icon, 0);<a name="line.117"></a>
+<span class="sourceLineNo">118</span>        }<a name="line.118"></a>
+<span class="sourceLineNo">119</span>    }<a name="line.119"></a>
+<span class="sourceLineNo">120</span>}<a name="line.120"></a>
 
 
 
