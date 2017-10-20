@@ -29,6 +29,22 @@
         }
     </ui:style>
     <m:MaterialRow marginTop="60">
+        <!-- 2.0-rc7 -->
+        <m:MaterialCard grid="s12 l8" offset="l2" >
+            <m:MaterialCardContent grid="s12 l3">
+                <m:MaterialCardTitle text="2.0-rc7" textColor="BLACK"/>
+                <m:MaterialLabel textColor="GREY" text="October 2017"/>
+            </m:MaterialCardContent>
+            <m:MaterialCardAction grid="s12 l9" padding="12"  backgroundColor="GREY_LIGHTEN_3" addStyleNames="{style.horizontalCard}">
+                <m:MaterialPanel>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Bug Fixes" margin="4"/>
+                    <m:MaterialChip letter="T" letterColor="WHITE" letterBackgroundColor="GREEN" text="Unit Tests - 2693 total" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Reworked loading mechanism" margin="4"/>
+                    <m:MaterialChip letter="R" letterColor="WHITE" letterBackgroundColor="GREEN" text="Removed deprecated api's" margin="4"/>
+                    <m:MaterialChip letter="E" letterColor="WHITE" letterBackgroundColor="GREEN" text="Enhancements and Clean ups" margin="4"/>
+                </m:MaterialPanel>
+            </m:MaterialCardAction>
+        </m:MaterialCard>
         <!-- 2.0-rc6 -->
         <m:MaterialCard grid="s12 l8" offset="l2" >
             <m:MaterialCardContent grid="s12 l3">
