@@ -28,6 +28,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialListBox;
 import gwt.material.design.client.ui.MaterialToast;
 
@@ -37,11 +38,45 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
     interface Binder extends UiBinder<Widget, ListBoxView> {
     }
 
-    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
+    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy, lstAllowBlank;
+
+    @UiField
+    MaterialButton allowBlankSetValue;
 
     @Inject
     ListBoxView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        generateAllowBlankItems(lstAllowBlank);
+    }
+
+    @UiHandler("cbAllowBlank")
+    void allowBlank(ValueChangeEvent<Boolean> event) {
+        allowBlankSetValue.setVisible(event.getValue());
+        lstAllowBlank.setAllowBlank(event.getValue());
+        generateAllowBlankItems(lstAllowBlank);
+    }
+
+    protected void generateAllowBlankItems(MaterialListBox listBox) {
+        listBox.clear();
+        for (int i = 1; i <= 5; i++) {
+            listBox.addItem("Option " + i);
+        }
+        lstAllowBlank.reload();
+    }
+
+    @UiHandler("allowBlankGetValue")
+    void allowBlankGetValue(ClickEvent e) {
+        if (lstAllowBlank.getValue() == null || lstAllowBlank.getValue().isEmpty()) {
+            MaterialToast.fireToast("Null");
+        } else {
+            MaterialToast.fireToast(lstAllowBlank.getValue());
+        }
+    }
+
+    @UiHandler("allowBlankSetValue")
+    void allowBlankSetValue(ClickEvent e) {
+        lstAllowBlank.setValue(null);
     }
 
     @UiHandler("addItems")
