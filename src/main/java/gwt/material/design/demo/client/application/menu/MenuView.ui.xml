@@ -86,6 +86,7 @@
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
+
 				<!-- COMPONENTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -97,6 +98,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getButtons}" text="Buttons" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBreadcrumbs}" text="Breadcrumb" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getCards}" text="Cards" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getCheckbox}" text="CheckBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getChips}" text="Chips" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCollections}" text="Collections" waves="DEFAULT"/>
@@ -104,17 +106,21 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getDialogs}" text="Dialogs" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getErrors}" text="Errors" waves="DEFAULT" />
-							<m:MaterialLink targetHistoryToken="{tokens.getForms}" text="Forms" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getFabs}" text="FAB" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFooter}" text="Footer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getListbox}" text="ListBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getPushPin}" text="Pushpin" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getRadiobutton}" text="Radio Button" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getRange}" text="Range" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSearch}" text="Search" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getSwitches}" text="Switches" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getTextfields}" text="TextFields" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>

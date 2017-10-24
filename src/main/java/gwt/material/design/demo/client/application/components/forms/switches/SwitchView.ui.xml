@@ -1,0 +1,64 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+  <m:MaterialRow>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Switches" />
+      <m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/>
+      <m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/>
+      <m:MaterialSwitch enabled="false" value="true" grid="l0"/>
+      <m:MaterialSwitch enabled="false" grid="l0"/>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/><br/>
+        &lt;m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/><br/>
+        &lt;m:MaterialSwitch enabled="false" value="true" grid="l0"/><br/>
+        &lt;m:MaterialSwitch enabled="false" grid="l0"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Switch : Value Change Event" />
+      <m:MaterialSwitch ui:field="switchEvent" onLabel="On" offLabel="Off" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiHandler("mSwitch") <br/>
+        void onValueChange(ValueChangeEvent&lt;Boolean> e) { <br/>
+        &emsp;MaterialToast.fireToast("Value " + e.getValue()); <br/>
+        }
+      </demo:PrettyPre>
+      <m:MaterialTitle title="Switch : setValue(value, fireEvents)" />
+      <m:MaterialSwitch ui:field="switchSetValue" onLabel="On" offLabel="Off" />
+      <m:MaterialButton text="Set Value" ui:field="btnSwitchValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnSwitchValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        mSwitch.setValue(true, true); <br/>
+        // Set Value without firing the value change event <br/>
+        mSwitch.setValue(true);<br/>
+        mSwitch.setValue(true, false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  </m:MaterialRow>
+</ui:UiBinder>
