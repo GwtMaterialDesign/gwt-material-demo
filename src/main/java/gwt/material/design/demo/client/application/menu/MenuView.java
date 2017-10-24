@@ -100,6 +100,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.POLYMER, "Badges", "#" + NameTokens.badges));
         listSearches.add(new SearchObject(IconType.POLYMER, "Buttons", "#" + NameTokens.buttons));
         listSearches.add(new SearchObject(IconType.POLYMER, "Cards", "#" + NameTokens.cards));
+        listSearches.add(new SearchObject(IconType.POLYMER, "CheckBox", "#" + NameTokens.checkbox));
         listSearches.add(new SearchObject(IconType.POLYMER, "Chips", "#" + NameTokens.chips));
         listSearches.add(new SearchObject(IconType.POLYMER, "Collapsible", "#" + NameTokens.collapsible));
         listSearches.add(new SearchObject(IconType.POLYMER, "Collections", "#" + NameTokens.collections));
@@ -107,17 +108,21 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.POLYMER, "Dialogs", "#" + NameTokens.dialogs));
         listSearches.add(new SearchObject(IconType.POLYMER, "Dropdown", "#" + NameTokens.dropdown));
         listSearches.add(new SearchObject(IconType.POLYMER, "Errors", "#" + NameTokens.errors));
-        listSearches.add(new SearchObject(IconType.POLYMER, "Forms", "#" + NameTokens.forms));
         listSearches.add(new SearchObject(IconType.POLYMER, "FAB", "#" + NameTokens.fabs));
         listSearches.add(new SearchObject(IconType.POLYMER, "Footer", "#" + NameTokens.footer));
         listSearches.add(new SearchObject(IconType.POLYMER, "Loaders", "#" + NameTokens.loader));
+        listSearches.add(new SearchObject(IconType.POLYMER, "ListBox", "#" + NameTokens.listbox));
         listSearches.add(new SearchObject(IconType.POLYMER, "Media", "#" + NameTokens.media));
         listSearches.add(new SearchObject(IconType.POLYMER, "NavBar", "#" + NameTokens.navbar));
         listSearches.add(new SearchObject(IconType.POLYMER, "PushPin", "#" + NameTokens.pushPin));
+        listSearches.add(new SearchObject(IconType.POLYMER, "Radio Button", "#" + NameTokens.radiobutton));
+        listSearches.add(new SearchObject(IconType.POLYMER, "Range", "#" + NameTokens.range));
         listSearches.add(new SearchObject(IconType.POLYMER, "Search", "#" + NameTokens.search));
         listSearches.add(new SearchObject(IconType.POLYMER, "SideNavs", "#" + NameTokens.sidenavs));
         listSearches.add(new SearchObject(IconType.POLYMER, "Scrollspy", "#" + NameTokens.scrollspy));
+        listSearches.add(new SearchObject(IconType.POLYMER, "Switches", "#" + NameTokens.switches));
         listSearches.add(new SearchObject(IconType.POLYMER, "Tabs", "#" + NameTokens.tabs));
+        listSearches.add(new SearchObject(IconType.POLYMER, "TextFields", "#" + NameTokens.textfields));
 
         // Animations
         listSearches.add(new SearchObject(IconType.PLAY_CIRCLE_OUTLINE, "Core Animations", "#" + NameTokens.coreAnimations));

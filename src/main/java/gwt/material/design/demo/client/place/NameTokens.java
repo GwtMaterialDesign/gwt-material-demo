@@ -94,6 +94,12 @@ public class NameTokens {
     public static final String overlay = "overlay";
     public static final String blueprint = "blueprint";
     public static final String emptystates = "emptystates";
+    public static final String textfields = "textfields";
+    public static final String listbox = "listbox";
+    public static final String radiobutton = "radiobutton";
+    public static final String checkbox = "checkbox";
+    public static final String switches = "switches";
+    public static final String range = "range";
 
     public static String getAbout() {
         return about;
@@ -381,5 +387,33 @@ public class NameTokens {
 
     public static String getEmptyStates() {
         return emptystates;
+    }
+
+    public static String getEmptystates() {
+        return emptystates;
+    }
+
+    public static String getTextfields() {
+        return textfields;
+    }
+
+    public static String getListbox() {
+        return listbox;
+    }
+
+    public static String getRadiobutton() {
+        return radiobutton;
+    }
+
+    public static String getCheckbox() {
+        return checkbox;
+    }
+
+    public static String getSwitches() {
+        return switches;
+    }
+
+    public static String getRange() {
+        return range;
     }
 }
