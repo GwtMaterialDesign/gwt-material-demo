@@ -12,7 +12,7 @@ blockquote {
     background-color: #f44336;
 }
 
-/** Scrollspy **/
+/**SCROLLSPY**/
 .table-of-contents a.active {
     border-left: 2px solid #f44336 !important;
 }
@@ -21,12 +21,11 @@ blockquote {
     border-left: 1px solid #f44336 !important;
 }
 
-/** Progress **/
 .progress div {
     background-color: #e53935;
 }
 
-/** Time Picker **/
+/**Time Picker**/
 .lolliclock-header {
     background: #f44336 !important;
 }
@@ -105,7 +104,7 @@ blockquote {
     background: #f44336 !important;
 }
 
-.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover, .note-editor .modal .file-field .btn:hover, .note-editor .modal .note-link-btn:hover, .note-editor .modal .note-image-btn:hover {
+.editorDialogs .modal .btn-large:hover, .editorDialogs .modal .btn:hover, .note-editor .modal .btn-large:hover, .note-editor .modal .btn:hover, .note-editor .modal .btn.modal-close:hover,.note-editor .modal .file-field .btn:hover, .note-editor .modal .note-link-btn:hover, .note-editor .modal .note-image-btn:hover {
     background: #f44336 !important;
 }
 
