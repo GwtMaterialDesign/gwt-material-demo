@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.forms;
+package gwt.material.design.demo.client.application.components.forms.switches;
 
 /*
  * #%L
@@ -31,17 +31,17 @@ import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresenter.MyProxy> {
+public class SwitchPresenter extends Presenter<SwitchPresenter.MyView, SwitchPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @NameToken(NameTokens.forms)
+    @NameToken(NameTokens.switches)
     @ProxyCodeSplit
-    interface MyProxy extends ProxyPlace<FormsPresenter> {
+    interface MyProxy extends ProxyPlace<SwitchPresenter> {
     }
 
     @Inject
-    FormsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+    SwitchPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
@@ -49,8 +49,6 @@ public class FormsPresenter extends Presenter<FormsPresenter.MyView, FormsPresen
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Forms", "Forms are the standard way to receive user inputted data. " +
-            "The transitions and smoothness of these elements are very important because of the inherent " +
-            "user interaction associated with forms.", "components/forms/FormsView", "https://material.io/guidelines/components/text-fields.html", this);
+        SetPageTitleEvent.fire("Switch", "On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button.", "components/forms/switches/SwitchView", "https://material.io/guidelines/components/selection-controls.html#selection-controls-switch", this);
     }
 }

@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.forms;
+package gwt.material.design.demo.client.application.components.forms.textfields;
 
 /*
  * #%L
@@ -21,7 +21,6 @@ package gwt.material.design.demo.client.application.components.forms;
  */
 
 
-import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -33,16 +32,9 @@ import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
-public class FormsView extends ViewImpl implements FormsPresenter.MyView {
-    interface Binder extends UiBinder<Widget, FormsView> {
+public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView {
+    interface Binder extends UiBinder<Widget, TextFieldView> {
     }
-
-    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
-    @UiField MaterialCheckBox cbBoxAll, cbBox, cbBlue, cbRed, cbCyan, cbGreen, cbBrown, cbValue;
-
-    @UiField MaterialSwitch switch1, switch2, switchSetValue;
-    @UiField MaterialLabel lblRange;
-    @UiField MaterialRange range, rangeSetValue;
 
     @UiField MaterialTextBox txtBoxValue;
     @UiField MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
@@ -51,10 +43,9 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiField MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO, txtIntegerValue;
     @UiField MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO, txtDoubleValue;
     @UiField MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
-    @UiField MaterialRadioButton radioValue;
 
     @Inject
-    FormsView(Binder uiBinder) {
+    TextFieldView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         txtFloatBox.setValue(1000.25f);
         txtFloatRO.setValue(1000.25f);
@@ -117,34 +108,6 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
             "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
             "blandit eu lacus nec, finibus tempus ligula.", true);
 
-    }
-
-    @UiHandler("addItems")
-    void onAddItems(ClickEvent e) {
-        for (int i = 1; i <= 100; i++) {
-            lstLazy.addItem("Item " + i, false);
-        }
-    }
-
-    @UiHandler("reload")
-    void reload(ClickEvent e) {
-        lstLazy.reload();
-    }
-
-    @UiHandler("btnAddNewOption")
-    void addOption(ClickEvent e) {
-        lstAddOptions.addItem("Item added");
-        lstAddOptions.setSelectedIndex(lstAddOptions.getItemCount() - 1);
-    }
-
-    @UiHandler("btnRemoveOption")
-    void removeOption(ClickEvent e) {
-        lstRemoveOptions.removeItem(0);
-    }
-
-    @UiHandler("lstOptions")
-    void onChangeListBox(ValueChangeEvent<String> e) {
-        MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
     }
 
     @UiHandler("txtBoxValue")
@@ -235,125 +198,6 @@ public class FormsView extends ViewImpl implements FormsPresenter.MyView {
     @UiHandler("btnTextFloatValueEvent")
     void onTextFloatValueEvent(ClickEvent e) {
         txtFloatValue.setValue(10.50f, true);
-    }
-
-    @UiHandler("cbBox")
-    void onCheckBox(ValueChangeEvent<Boolean> e) {
-        if(e.getValue()) {
-            cbBox.setText("CheckBox 1: true");
-        } else {
-            cbBox.setText("CheckBox 1: false");
-        }
-    }
-
-    @UiHandler("cbBoxAll")
-    void onCheckAll(ValueChangeEvent<Boolean> e) {
-        if(e.getValue()) {
-            cbBlue.setValue(true);
-            cbRed.setValue(true);
-            cbCyan.setValue(true);
-            cbGreen.setValue(true);
-            cbBrown.setValue(true);
-        } else {
-            cbBlue.setValue(false);
-            cbRed.setValue(false);
-            cbCyan.setValue(false);
-            cbGreen.setValue(false);
-            cbBrown.setValue(false);
-        }
-    }
-
-    @UiHandler("cbValue")
-    void onCheckValue(ValueChangeEvent<Boolean> e) {
-        MaterialToast.fireToast("Value : " + e.getValue());
-    }
-
-    @UiHandler("btnCbValue")
-    void onClickCbValue(ClickEvent e) {
-        cbValue.setValue(true);
-    }
-
-    @UiHandler("btnCbValueEvent")
-    void onClickCbValueEvent(ClickEvent e) {
-        cbValue.setValue(false, true);
-    }
-
-    @UiHandler("lstSetValue")
-    void onListBoxSetValue(ValueChangeEvent<String> e) {
-        MaterialToast.fireToast(e.getValue());
-    }
-
-    @UiHandler("btnListBoxValue")
-    void onListBoxValue(ClickEvent e) {
-        lstSetValue.setValue("Option 2");
-    }
-
-    @UiHandler("btnListBoxValueEvent")
-    void onListBoxValueEvent(ClickEvent e) {
-        lstSetValue.setValue("Option 3", true);
-    }
-
-    @UiHandler("radioValue")
-    void onRadioValue(ValueChangeEvent<Boolean> e) {
-        MaterialToast.fireToast("Value : " + e.getValue());
-    }
-
-    @UiHandler("btnRadioValue")
-    void onClickRadioValue(ClickEvent e) {
-        radioValue.setValue(true);
-    }
-
-    @UiHandler("btnRadioValueEvent")
-    void onClickRadioValueEvent(ClickEvent e) {
-        radioValue.setValue(false, true);
-    }
-
-    @UiHandler("switchEvent")
-    void onSwitchEvent(ValueChangeEvent<Boolean> e) {
-        MaterialToast.fireToast("Value " + e.getValue());
-    }
-
-    @UiHandler("btnSwitchValue")
-    void onSwitchValue(ClickEvent e) {
-        if (!switchSetValue.getValue()) {
-            switchSetValue.setValue(true);
-        } else {
-            switchSetValue.setValue(false);
-        }
-    }
-
-    @UiHandler("btnSwitchValueEvent")
-    void onSwitchValueEvent(ClickEvent e) {
-        if (!switchSetValue.getValue()) {
-            switchSetValue.setValue(true, true);
-        } else {
-            switchSetValue.setValue(false, true);
-        }
-    }
-
-    @UiHandler("switchSetValue")
-    void onSwitchSetValue(ValueChangeEvent<Boolean> e) {
-        MaterialToast.fireToast("Value " + e.getValue());
-    }
-
-    @UiHandler("range")
-    void onRange(ValueChangeEvent<Integer> e) {
-        lblRange.setText("Value: " + e.getValue());
-    }
-
-    @UiHandler("rangeSetValue")
-    void onRangeSetValue(ValueChangeEvent<Integer> e) {
-        MaterialToast.fireToast("Value: " + rangeSetValue.getValue());
-    }
-
-    @UiHandler("btnRangeValue")
-    void onRangeValue(ClickEvent e) {
-        rangeSetValue.setValue(50);
-    }
-
-    @UiHandler("btnRangeValueEvent")
-    void onRangeValueEvent(ClickEvent e) {
-        rangeSetValue.setValue(20, true);
     }
     
     @UiHandler("btnTextBoxGetValue") 

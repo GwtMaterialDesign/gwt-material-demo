@@ -46,7 +46,11 @@ public class PersonDataSource implements DataSource<Person> {
     @Override
     public void load(LoadConfig<Person> loadConfig, LoadCallback<Person> callback) {
         List<CategoryComponent> categories = loadConfig.getOpenCategories();
-        List<String> categoryNames = categories.stream().map(CategoryComponent::getName).collect(Collectors.toList());
+
+        List<String> categoryNames = null;
+        if(categories != null) {
+            categoryNames = categories.stream().map(CategoryComponent::getName).collect(Collectors.toList());
+        }
 
         personService.getPeople(loadConfig.getOffset(), loadConfig.getLimit(), categoryNames,
                 new AsyncCallback<People>() {

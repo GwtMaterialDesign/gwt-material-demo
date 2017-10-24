@@ -26,6 +26,14 @@
 
     </script>-->
 
+    <!-- Gitter Chat - Embed -->
+    <script>
+        ((window.gitter = {}).chat = {}).options = {
+            room: 'GwtMaterialDesign/gwt-material'
+        };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
     <script type="text/javascript" language="javascript" src="gwtmaterialdemo/gwtmaterialdemo.nocache.js"></script>
 </head>
 
@@ -40,6 +48,12 @@
     </div>
 </noscript>
 <style type="text/css">
+    .gitter-open-chat-button, .gitter-open-chat-button:visited {
+        background: #2465c0;
+    }
+    aside.gitter-chat-embed {
+        z-index: 9999;
+    }
     .splash-overlay {
         top: 0;
         left: 0;
@@ -90,5 +104,6 @@
         <div class="indeterminate"></div>
     </div>
 </div>
+
 </body>
 </html>

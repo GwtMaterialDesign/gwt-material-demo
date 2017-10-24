@@ -62,14 +62,6 @@ public class CustomDataTableView extends NavigatedView implements CustomDataTabl
        // Setting table title
         table.getTableTitle().setText("My Custom Table");
 
-        //Adding / removing table toolpanel action buttons / icons
-        Panel panel = table.getScaffolding().getToolPanel();
-        panel.clear();
-        // Add two buttons
-        panel.add(new MaterialIcon(IconType.FAVORITE));
-        panel.add(new MaterialIcon(IconType.DELETE));
-        panel.add(new MaterialIcon(IconType.MESSAGE));
-
         // We will manually add this category otherwise categories
         // can be loaded on the fly with HasDataCategory, or a custom
         // RowComponentFactory as demonstrated below

@@ -21,12 +21,23 @@ package gwt.material.design.demo.client.application.components.forms;
  */
 
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.google.gwt.inject.client.AbstractGinModule;
+import gwt.material.design.demo.client.application.components.forms.checkbox.CheckBoxModule;
+import gwt.material.design.demo.client.application.components.forms.listbox.ListBoxModule;
+import gwt.material.design.demo.client.application.components.forms.radiobutton.RadioButtonModule;
+import gwt.material.design.demo.client.application.components.forms.range.RangeModule;
+import gwt.material.design.demo.client.application.components.forms.switches.SwitchModule;
+import gwt.material.design.demo.client.application.components.forms.textfields.TextFieldModule;
 
-public class FormsModule extends AbstractPresenterModule {
+public class FormsModule extends AbstractGinModule {
+
     @Override
     protected void configure() {
-        bindPresenter(FormsPresenter.class, FormsPresenter.MyView.class,
-            FormsView.class, FormsPresenter.MyProxy.class);
+        install(new TextFieldModule());
+        install(new ListBoxModule());
+        install(new RadioButtonModule());
+        install(new CheckBoxModule());
+        install(new SwitchModule());
+        install(new RangeModule());
     }
 }

@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.datatable.contextmenu;
+package gwt.material.design.demo.client.application.components.forms.radiobutton;
 
 /*
  * #%L
@@ -20,11 +20,13 @@ package gwt.material.design.demo.client.application.datatable.contextmenu;
  * #L%
  */
 
+
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class ContextMenuDataTableModule extends AbstractPresenterModule {
+public class RadioButtonModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(ContextMenuDataTablePresenter.class, ContextMenuDataTablePresenter.MyView.class, ContextMenuDataTableView.class, ContextMenuDataTablePresenter.MyProxy.class);
+        bindPresenter(RadioButtonPresenter.class, RadioButtonPresenter.MyView.class,
+            RadioButtonView.class, RadioButtonPresenter.MyProxy.class);
     }
 }

@@ -1,0 +1,61 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+  <m:MaterialRow>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Range" />
+      <m:MaterialRange ui:field="range" min="10" max="500" value="250"/>
+      <m:MaterialLabel text="Min: 10"/>
+      <m:MaterialLabel text="Min: 500"/>
+      <m:MaterialLabel ui:field="lblRange" text="Value: 250" paddingBottom="20"/>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialRange ui:field="range" min="10" max="50" value="25"/><br/>
+      </demo:PrettyPre>
+  
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiHandler("range")<br/>
+        void onRange(ChangeEvent e) {<br/>
+        &emsp;&emsp;lblRange.setText("Value: " + String.valueOf(range.getValue()));<br/>
+        }
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Range : setValue(value, fireEvents)"/>
+      <m:MaterialRange ui:field="rangeSetValue" min="10" max="500" value="250"/>
+
+      <m:MaterialButton text="Set Value" ui:field="btnRangeValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnRangeValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        range.setValue(20, true); <br/>
+        // Set Value without firing the value change event <br/>
+        range.setValue(50);<br/>
+        range.setValue(50, false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  </m:MaterialRow>
+</ui:UiBinder>

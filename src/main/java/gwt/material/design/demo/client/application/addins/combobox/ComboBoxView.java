@@ -251,4 +251,16 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     void onCloseModal(ClickEvent e) {
         modal.close();
     }
+
+    @UiHandler("btnTagMultiGetValue")
+    void onTagMultiGetValue(ClickEvent e) {
+        for (String value : comboTagsMultiple.getValue()) {
+            MaterialToast.fireToast(value);
+        }
+    }
+
+    @UiHandler("btnTagGetValue")
+    void onTagGetValue(ClickEvent e) {
+        MaterialToast.fireToast(comboTags.getSingleValue());
+    }
 }
