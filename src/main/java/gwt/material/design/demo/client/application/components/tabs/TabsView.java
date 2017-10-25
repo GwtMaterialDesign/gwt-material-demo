@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.components.tabs;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -44,6 +45,9 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     @UiField
     MaterialRow dynamicTabsRow;
 
+    @UiField
+    MaterialListBox lstTabIds;
+
     private int index = 0;
 
     @Inject
@@ -57,12 +61,19 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
     protected void onAttach() {
         super.onAttach();
 
+        buildListTabIds();
+
         tabSetIndex.setTabIndex(1);
         tabEvents.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
     }
 
+    @UiHandler("lstTabIds")
+    void selectTab(ValueChangeEvent<String> e) {
+        tabGetIndex.selectTab(e.getValue());
+    }
+
     @UiHandler("btnGetTabIndex")
-    void getTabIndex(ClickEvent e) {
+    void getTabInde1x(ClickEvent e) {
         MaterialToast.fireToast(tabGetIndex.getTabIndex() + "");
     }
 
@@ -85,6 +96,13 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
         tabGetIndex.reload();
         tabFit.reload();
         dynamicTabs.reload();
+    }
+
+    protected void buildListTabIds() {
+        lstTabIds.clear();
+        for (int i = 1; i <= 3; i++) {
+            lstTabIds.addItem("item" + i, "Tab Item" + i);
+        }
     }
 
     protected void buildDynamicTab() {
