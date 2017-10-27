@@ -26,9 +26,10 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type."/>
+      <m:MaterialButton text="SET ACTIVE" ui:field="setActive" />
       <m:MaterialCollapsible>
         <!-- ITEM 1 -->
-        <m:MaterialCollapsibleItem>
+        <m:MaterialCollapsibleItem ui:field="item">
           <m:MaterialCollapsibleHeader>
             <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
           </m:MaterialCollapsibleHeader>

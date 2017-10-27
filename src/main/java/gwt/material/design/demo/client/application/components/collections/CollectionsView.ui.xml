@@ -29,7 +29,7 @@
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Basic"/>
       <m:MaterialCollection>
-        <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 1"/></m:MaterialCollectionItem>
+        <m:MaterialCollectionItem><m:MaterialLink text="Badges Test" targetHistoryToken="badges"/></m:MaterialCollectionItem>
         <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 2"/></m:MaterialCollectionItem>
         <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 3"/></m:MaterialCollectionItem>
         <m:MaterialCollectionItem><m:MaterialLabel text="Collecton 4"/></m:MaterialCollectionItem>
@@ -330,7 +330,7 @@
   <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Single Action Checkboxes"/>
     <m:MaterialCollection>
-      <m:MaterialCollectionItem type="CHECKBOX" waves="DEFAULT">
+      <m:MaterialCollectionItem ui:field="itemClick" type="CHECKBOX" waves="DEFAULT">
         <m:MaterialLabel text="Item 1"/>
         <m:MaterialCollectionSecondary>
           <m:MaterialCheckBox value="false" type="FILLED"/>

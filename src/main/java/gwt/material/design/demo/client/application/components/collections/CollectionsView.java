@@ -53,4 +53,9 @@ public class CollectionsView extends ViewImpl implements CollectionsPresenter.My
     void onData(ClickEvent e) {
         MaterialToast.fireToast("Data Usage");
     }
+
+    @UiHandler("itemClick")
+    void itemClick(ClickEvent e) {
+        MaterialToast.fireToast("DKO");
+    }
 }

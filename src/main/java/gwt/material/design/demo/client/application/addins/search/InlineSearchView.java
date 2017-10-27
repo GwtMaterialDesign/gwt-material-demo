@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.collapsible;
+package gwt.material.design.demo.client.application.addins.search;
 
 /*
  * #%L
@@ -25,49 +25,33 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import com.gwtplatform.mvp.client.ViewWithUiHandlers;
-import gwt.material.design.client.ui.MaterialCollapsible;
-import gwt.material.design.client.ui.MaterialCollapsibleItem;
+import gwt.material.design.addins.client.search.ExpandableInlineSearch;
+import gwt.material.design.client.ui.MaterialIcon;
+import gwt.material.design.client.ui.MaterialLink;
 
 import javax.inject.Inject;
 
-public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.MyView {
-    interface Binder extends UiBinder<Widget, CollapsibleView> {
+
+public class InlineSearchView extends ViewImpl implements InlineSearchPresenter.MyView {
+
+    interface Binder extends UiBinder<Widget, InlineSearchView> {
     }
 
     @UiField
-    MaterialCollapsible colaps;
+    MaterialLink openSearch;
 
     @UiField
-    MaterialCollapsibleItem item;
+    ExpandableInlineSearch expandableInline;
 
     @Inject
-    CollapsibleView(Binder uiBinder) {
+    InlineSearchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-
-    }
-
-    @UiHandler("setActive")
-    void setActive(ClickEvent e) {
-        item.setActive(true);
-    }
-
-    @UiHandler("open")
-    void onOpen(ClickEvent e) {
-        colaps.open(2);
-    }
-
-    @UiHandler("close")
-    void onClose(ClickEvent e) {
-        colaps.close(2);
+    @UiHandler("openSearch")
+    void openSearch(ClickEvent e) {
+        expandableInline.open();
     }
 }

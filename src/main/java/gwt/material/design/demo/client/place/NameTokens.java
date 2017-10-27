@@ -111,6 +111,7 @@ public class NameTokens {
     public static final String checkbox = "checkbox";
     public static final String switches = "switches";
     public static final String range = "range";
+    public static final String inlineSearch = "inline_search";
 
     public static String getAbout() {
         return about;
@@ -470,5 +471,9 @@ public class NameTokens {
 
     public static String getRange() {
         return range;
+    }
+
+    public static String getInlineSearch() {
+        return inlineSearch;
     }
 }
