@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.addins.search;
+package gwt.material.design.demo.client.application.incubator.language;
 
 /*
  * #%L
@@ -26,32 +26,16 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialIcon;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.incubator.client.search.ExpandableInlineSearch;
+import gwt.material.design.incubator.client.alert.Alert;
 
-import javax.inject.Inject;
-
-
-public class InlineSearchView extends ViewImpl implements InlineSearchPresenter.MyView {
-
-    interface Binder extends UiBinder<Widget, InlineSearchView> {
+public class LanguageSelectorView extends ViewImpl implements LanguageSelectorPresenter.MyView {
+    public interface Binder extends UiBinder<Widget, LanguageSelectorView> {
     }
-
-    @UiField
-    MaterialLink openSearch;
-
-    @UiField
-    ExpandableInlineSearch expandableInline;
 
     @Inject
-    InlineSearchView(Binder uiBinder) {
+    LanguageSelectorView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
-
-    @UiHandler("openSearch")
-    void openSearch(ClickEvent e) {
-        expandableInline.open();
     }
 }

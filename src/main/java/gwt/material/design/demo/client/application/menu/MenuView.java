@@ -177,6 +177,17 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Waterfall", "#" + NameTokens.waterfall));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Window", "#" + NameTokens.window));
 
+        // Incubator
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Alert", "#" + NameTokens.alert));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Async", "#" + NameTokens.async));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Language", "#" + NameTokens.languageSelector));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "LoadingState", "#" + NameTokens.loadingState));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Progress Line Bar", "#" + NameTokens.progressLineBar));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Recaptcha", "#" + NameTokens.recaptcha));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Search", "#" + NameTokens.search));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Timer", "#" + NameTokens.timer));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Toggle", "#" + NameTokens.toggle));
+
         // Style And Layout
         listSearches.add(new SearchObject(IconType.STYLE, "Colors", "#" + NameTokens.colors));
         listSearches.add(new SearchObject(IconType.STYLE, "Grid", "#" + NameTokens.grid));

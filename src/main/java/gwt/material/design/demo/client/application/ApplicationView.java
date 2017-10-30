@@ -45,6 +45,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     private String link;
     private String specification;
+    private final String THEME_COLOR = "#1565c0";
+    private final String MANIFEST_URL = "manifest.json";
+    private final String SERVICE_WORKER_URL = "service-worker.js";
 
     @UiField HTMLPanel menu;
     @UiField HTMLPanel main;
@@ -94,9 +97,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.register(titlePanel);
 
         PwaManager.getInstance()
-                .setServiceWorkerUrl("service-worker.js")
-                .setWebManifestUrl("manifest.json")
-                .setThemeColor("#1565c0")
+                .setThemeColor(THEME_COLOR)
+                .setWebManifest(MANIFEST_URL)
+                .setServiceWorker(SERVICE_WORKER_URL)
                 .load();
     }
 

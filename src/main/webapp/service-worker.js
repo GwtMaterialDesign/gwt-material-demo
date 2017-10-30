@@ -1,4 +1,4 @@
-var cacheName = 'gwt-material-demo-v1';
+var cacheName = 'gwt-material-demo-v12';
 var filesToCache = [
     'index.html',
     'manifest.json',
@@ -8,6 +8,9 @@ var filesToCache = [
     'gwtmaterialdemo/css/animation.css',
     'gwtmaterialdemo/css/material-icons.css',
     'gwtmaterialdemo/css/materialize.min.css',
+    'gwtmaterialdemo/font/roboto/Roboto-Bold.woff2',
+    'gwtmaterialdemo/font/roboto/Roboto-Bold.woff',
+    'gwtmaterialdemo/font/roboto/Roboto-Bold.ttf',
     'image/launcher-icon-1x.png',
     'image/launcher-icon-2x.png',
     'image/launcher-icon-4x.png'
@@ -45,4 +48,10 @@ self.addEventListener('fetch', function(e) {
             return response || fetch(e.request);
         })
     );
+});
+
+self.addEventListener('message', function(e) {
+    if (e.data == 'skipWaiting') {
+        self.skipWaiting();
+    }
 });

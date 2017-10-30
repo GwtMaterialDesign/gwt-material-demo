@@ -62,7 +62,7 @@
 
 	<m:MaterialPanel>
 		<m:MaterialHeader ui:field="header" width="100%">
-			<m:MaterialNavBar ui:field="navBar" width="100%" backgroundColor="BLUE" activates="sideBar" textColor="WHITE">
+			<m:MaterialNavBar ui:field="navBar" width="100%" backgroundColor="RED" activates="sideBar" textColor="WHITE">
 				<m:MaterialLink ui:field="btnMiniMenu" iconType="MENU" showOn="SHOW_ON_LARGE" addStyleNames="button-collapse" activates="rightSideBar" float="RIGHT" circle="true" waves="LIGHT" width="64px" textAlign="CENTER" iconPosition="NONE"/>
 				<m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
 				<ma:combobox.MaterialComboBox ui:field="comboThemes" textColor="WHITE" label="Select Theme" marginRight="12" width="120px" float="RIGHT"/>
@@ -210,6 +210,31 @@
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
+
+
+				<!-- Incubator -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="Incubator" iconType="ARCHIVE">
+							<m:MaterialBadge text="Beta" textColor="WHITE"/>
+						</m:MaterialLink>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getAlert}" text="Alert" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getAsync}" text="Async" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getLanguageSelector}" text="Language Selector" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getLoadingState}" text="Loading State" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getProgressLineBar}" text="Progress Line Bar" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getRecaptcha}" text="Recaptcha" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getWalkthrough}" text="Walkthrough" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+
 				<!-- STYLE AND LAYOUTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">

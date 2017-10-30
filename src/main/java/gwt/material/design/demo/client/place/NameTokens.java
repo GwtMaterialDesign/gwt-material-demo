@@ -111,7 +111,18 @@ public class NameTokens {
     public static final String checkbox = "checkbox";
     public static final String switches = "switches";
     public static final String range = "range";
+
+    // Incubator Widgets
+    public static final String alert = "alert";
+    public static final String async = "async";
+    public static final String languageSelector = "language_selector";
+    public static final String loadingState = "loading_state";
+    public static final String progressLineBar = "progress_line_bar";
+    public static final String recaptcha = "recaptcha";
     public static final String inlineSearch = "inline_search";
+    public static final String timer = "timer";
+    public static final String toggle = "toggle";
+    public static final String walkthrough = "walkthrough";
 
     public static String getAbout() {
         return about;
@@ -473,7 +484,43 @@ public class NameTokens {
         return range;
     }
 
+    public static String getAlert() {
+        return alert;
+    }
+
+    public static String getAsync() {
+        return async;
+    }
+
+    public static String getLanguageSelector() {
+        return languageSelector;
+    }
+
+    public static String getLoadingState() {
+        return loadingState;
+    }
+
+    public static String getProgressLineBar() {
+        return progressLineBar;
+    }
+
+    public static String getRecaptcha() {
+        return recaptcha;
+    }
+
     public static String getInlineSearch() {
         return inlineSearch;
+    }
+
+    public static String getTimer() {
+        return timer;
+    }
+
+    public static String getToggle() {
+        return toggle;
+    }
+
+    public static String getWalkthrough() {
+        return walkthrough;
     }
 }

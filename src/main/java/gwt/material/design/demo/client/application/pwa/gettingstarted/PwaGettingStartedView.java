@@ -42,13 +42,13 @@ public class PwaGettingStartedView extends ViewImpl implements PwaGettingStarted
 
     @UiHandler("btnGetServiceWorker")
     void getServiceWorker(ClickEvent e) {
-        MaterialToast.fireToast("Script URL : " + PwaManager.getInstance().getServiceWorker().scriptURL);
-        MaterialToast.fireToast("State : " + PwaManager.getInstance().getServiceWorker().state);
+        MaterialToast.fireToast("Script URL : " + PwaManager.getInstance().getServiceWorkerManager().getServiceWorker().scriptURL);
+        MaterialToast.fireToast("State : " + PwaManager.getInstance().getServiceWorkerManager().getServiceWorker().state);
     }
 
     @UiHandler("btnUnregisterPwa")
     void unregisterPWA(ClickEvent e) {
-        PwaManager.getInstance().unLoad();
+        PwaManager.getInstance().unload();
     }
 
     @UiHandler("btnReloadPwa")

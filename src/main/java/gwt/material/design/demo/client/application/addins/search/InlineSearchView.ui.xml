@@ -23,6 +23,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
@@ -33,7 +34,7 @@
             <m:MaterialNavBar>
                 <m:MaterialNavBrand text="App Title" paddingLeft="16" />
                 <m:MaterialNavSection>
-                    <ma:search.InlineSearch ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
+                    <incubator:search.InlineSearch ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialRow>
@@ -44,7 +45,7 @@
                 <m:MaterialNavBrand text="App Title" paddingLeft="16" />
                 <m:MaterialNavSection float="RIGHT">
                     <m:MaterialLink iconType="SEARCH" ui:field="openSearch"/>
-                    <ma:search.ExpandableInlineSearch ui:field="expandableInline" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
+                    <incubator:search.ExpandableInlineSearch ui:field="expandableInline" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
         </m:MaterialRow>

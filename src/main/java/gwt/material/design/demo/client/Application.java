@@ -24,7 +24,6 @@ package gwt.material.design.demo.client;
 import com.google.gwt.core.client.GWT;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.PreBootstrapper;
-import gwt.material.design.client.pwa.PwaManager;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -48,6 +47,6 @@ public class Application implements Bootstrapper {
 
     @Override
     public void onBootstrap() {
-        PwaManager.getInstance().load();
+
     }
 }

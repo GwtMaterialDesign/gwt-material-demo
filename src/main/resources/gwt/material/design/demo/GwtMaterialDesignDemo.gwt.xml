@@ -48,6 +48,7 @@
     <inherits name="gwt.material.design.themes.ThemeRedResources"/>
     <inherits name="gwt.material.design.themes.ThemeYellowResources"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
+    <inherits name="gwt.material.design.incubator.AddinsIncubatorDebug"/>
     <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
 
     <inherits name="com.googlecode.gwt.charts.Charts"/>
