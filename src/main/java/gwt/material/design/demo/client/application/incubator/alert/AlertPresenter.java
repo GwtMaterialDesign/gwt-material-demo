@@ -50,6 +50,6 @@ public class AlertPresenter extends Presenter<AlertPresenter.MyView, AlertPresen
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Alert (Beta)", "Show or hide an alert toasts into your app.", "", "", this);
+        SetPageTitleEvent.fire("Alert", "Show or hide an alert toasts into your app.", "", "", this);
     }
 }
