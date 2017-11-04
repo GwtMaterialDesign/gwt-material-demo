@@ -6,13 +6,13 @@
 
 Demo application to show the features of the [gwt-material](https://github.com/GwtMaterialDesign/gwt-material) library.
 
-### Release 2.0-rc7 Demo
+### Release 2.0 Demo
 [http://gwtmaterialdesign.github.io/gwt-material-demo](http://gwtmaterialdesign.github.io/gwt-material-demo)
 ```xml
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
-    <version>2.0-rc7</version>
+    <version>2.0</version>
 </dependency>
 ```
 
@@ -22,7 +22,7 @@ Demo application to show the features of the [gwt-material](https://github.com/G
 <dependency>
     <groupId>com.github.gwtmaterialdesign</groupId>
     <artifactId>gwt-material-demo</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.1-SNAPSHOT</version>
 </dependency>
 ```
 
