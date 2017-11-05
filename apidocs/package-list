@@ -8,6 +8,13 @@ gwt.material.design.client.base.viewport
 gwt.material.design.client.constants
 gwt.material.design.client.events
 gwt.material.design.client.js
+gwt.material.design.client.pwa
+gwt.material.design.client.pwa.base
+gwt.material.design.client.pwa.manifest
+gwt.material.design.client.pwa.pushnotifications
+gwt.material.design.client.pwa.serviceworker
+gwt.material.design.client.pwa.serviceworker.constants
+gwt.material.design.client.pwa.theme
 gwt.material.design.client.resources
 gwt.material.design.client.ui
 gwt.material.design.client.ui.animate
