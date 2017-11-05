@@ -226,6 +226,11 @@ button.disabled:hover, i.disabled:hover {
     padding: 2rem;
 }
 
+.collapsible li.active .collapsible-body .input-field label {
+    font-size: 0.8rem;
+    transform: translateY(-140%); }
+}
+
 .collapsible-header > i {
     font-size: 1.4rem !important;
     line-height: 2.5rem !important;
@@ -469,6 +474,10 @@ footer.fixed {
     left: 0 !important;
 }
 
+.col .input-field label {
+    left: 0px;
+}
+
 .row > .input-field label {
     left: 0.75rem !important;
 }
@@ -675,7 +684,7 @@ nav.pinned {
 }
 
 .search-result a span {
-    margin-left: 28px;
+    margin-left: 0px;
 }
 
 .search-result a:hover, .search-result a.higlighted {
@@ -986,6 +995,7 @@ i[class*="waves-"].material-icons {
     .input-field input[type=search] {
         width: calc(100% - 10rem) !important;
         margin-bottom: 0 !important;
+        padding-left: 0px !important;
     }
 
     .input-field input[type=search] + label {

@@ -375,9 +375,9 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['safari'], '58B5D77348BAE89314BC560528CB4650');
-      unflattenKeylistIntoAnswers(['ie10'], '7347FC17D8D1C8E53AFEEEE53C39B120');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'D1F3BF4F27D79CABF53BF95E055DC20B');
+      unflattenKeylistIntoAnswers(['gecko1_8'], '34E35A7435FCD1BD3359C95845B9CABA');
+      unflattenKeylistIntoAnswers(['safari'], '4595CE8B10C4C48CB42D62AF196EB48A');
+      unflattenKeylistIntoAnswers(['ie10'], 'B4D7B68EFEB424453F06AF8512138A53');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -410,8 +410,26 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/materialize.min.css');
     installOneStylesheet('css/overridecss.css');
-    installOneStylesheet('css/materialize.blue.css');
-    installOneStylesheet('css/overridecss.blue.css');
+    installOneStylesheet('css/materialize.blue.min.css');
+    installOneStylesheet('css/overridecss.blue.min.css');
+    installOneStylesheet('css/materialize.amber.min.css');
+    installOneStylesheet('css/overridecss.amber.min.css');
+    installOneStylesheet('css/materialize.brown.min.css');
+    installOneStylesheet('css/overridecss.brown.min.css');
+    installOneStylesheet('css/materialize.green.min.css');
+    installOneStylesheet('css/overridecss.green.min.css');
+    installOneStylesheet('css/materialize.grey.min.css');
+    installOneStylesheet('css/overridecss.grey.min.css');
+    installOneStylesheet('css/materialize.orange.min.css');
+    installOneStylesheet('css/overridecss.orange.min.css');
+    installOneStylesheet('css/materialize.pink.min.css');
+    installOneStylesheet('css/overridecss.pink.min.css');
+    installOneStylesheet('css/materialize.purple.min.css');
+    installOneStylesheet('css/overridecss.purple.min.css');
+    installOneStylesheet('css/materialize.red.min.css');
+    installOneStylesheet('css/overridecss.red.min.css');
+    installOneStylesheet('css/materialize.yellow.min.css');
+    installOneStylesheet('css/overridecss.yellow.min.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
