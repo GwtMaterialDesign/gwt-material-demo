@@ -34,6 +34,7 @@ public class Version implements Serializable {
     public enum VersionLink{
 
         // FOR gwt-material Core
+        CORE_2_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0"),
         CORE_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc7"),
         CORE_2_0_RC6("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc6"),
         CORE_2_0_RC5("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material/2.0-rc5"),
@@ -70,6 +71,7 @@ public class Version implements Serializable {
         THEME_2_0_RC5("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc5"),
         THEME_2_0_RC6("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc6"),
         THEME_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0-rc7"),
+        THEME_2_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-themes/2.0"),
 
         // FOR gwt-material Addins
         ADDINS_1_5_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/1.5.0"),
@@ -84,6 +86,7 @@ public class Version implements Serializable {
         ADDINS_2_0_RC5("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc5"),
         ADDINS_2_0_RC6("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc6"),
         ADDINS_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0-rc7"),
+        ADDINS_2_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-addins/2.0"),
 
         // FOR gwt-material JQuery
         JQUERY_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/1.0-rc1"),
@@ -93,6 +96,7 @@ public class Version implements Serializable {
         JQUERY_2_0_RC5("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/2.0-rc5"),
         JQUERY_2_0_RC6("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/2.0-rc6"),
         JQUERY_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/2.0-rc7"),
+        JQUERY_2_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-jquery/2.0"),
 
         // FOR gwt-material Table
         TABLE_1_0_RC1("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc1"),
@@ -101,7 +105,8 @@ public class Version implements Serializable {
         TABLE_1_0_RC4("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/1.0-rc4"),
         TABLE_2_0_RC5("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/2.0-rc5"),
         TABLE_2_0_RC6("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/2.0-rc6"),
-        TABLE_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/2.0-rc7");
+        TABLE_2_0_RC7("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/2.0-rc7"),
+        TABLE_2_0("http://mvnrepository.com/artifact/com.github.gwtmaterialdesign/gwt-material-table/2.0");
 
         String name;
         VersionLink(String name) {
