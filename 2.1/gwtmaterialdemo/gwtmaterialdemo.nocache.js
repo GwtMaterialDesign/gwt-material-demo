@@ -406,10 +406,10 @@ function gwtmaterialdemo(){
     }
 
     sendStats('loadExternalRefs', 'begin');
-    installOneStylesheet('css/animation.css');
+    installOneStylesheet('css/animation.min.css');
     installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/materialize.min.css');
-    installOneStylesheet('css/overridecss.css');
+    installOneStylesheet('css/overridecss.min.css');
     installOneStylesheet('css/materialize.blue.min.css');
     installOneStylesheet('css/overridecss.blue.min.css');
     installOneStylesheet('css/materialize.amber.min.css');
@@ -430,6 +430,8 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/overridecss.red.min.css');
     installOneStylesheet('css/materialize.yellow.min.css');
     installOneStylesheet('css/overridecss.yellow.min.css');
+    installOneStylesheet('css/animation.css');
+    installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
