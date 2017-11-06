@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-demo</artifactId>
-    <packaging>war</packaging>
+    <packaging>gwt-app</packaging>
     <version>2.1-SNAPSHOT</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
@@ -32,7 +32,7 @@
 
         <!-- GWT -->
         <gwt.version>2.8.1</gwt.version>
-        <gwtp.version>1.5.3</gwtp.version>
+        <gwtp.version>1.6</gwtp.version>
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.1-SNAPSHOT</gwt-material.version>
 
@@ -64,6 +64,7 @@
         </resources>
 
         <plugins>
+            <!-- License Plugin -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>license-maven-plugin</artifactId>
@@ -88,6 +89,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Java Doc Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -112,20 +115,8 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.2</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>display-dependency-updates</goal>
-                            <goal>display-plugin-updates</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <version>${maven-compiler-plugin.version}</version>
@@ -140,7 +131,8 @@
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
             </plugin>
-            <!-- Skips the GWTTestCases during Junit Testing -->
+
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -155,47 +147,28 @@
                 </configuration>
             </plugin>
 
-            <!-- GWT -->
+            <!-- GWT Maven (TBroyer Plugin) -->
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>net.ltgt.gwt.maven</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt.version}</version>
-
+                <version>${tbroyer.version}</version>
+                <extensions>true</extensions>
                 <configuration>
-                    <strict>true</strict>
-                    <testTimeOut>180</testTimeOut>
-                    <mode>htmlunit</mode>
-
-                    <!-- Switch to a suite to run tests faster -->
-                    <!-- <includes>**/*GwtTestSuite.java</includes> -->
-                    <!-- <excludes>**/*GwtTest.java</excludes> -->
-                    <includes>**/*GwtTest.java</includes>
-
-                    <copyWebapp>true</copyWebapp>
-                    <hostedWebapp>${webappDirectory}</hostedWebapp>
-
-                    <!--Might be needed later for appengine-->
-                    <!--<server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>-->
-                    <!--<appEngineVersion>${appengine.version}</appEngineVersion>-->
-                    <!--<appEngineHome>${gae.home}</appEngineHome>-->
-                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.home}</extraJvmArgs>-->
-                    <!--<extraJvmArgs>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=20</extraJvmArgs>-->
-                    <!--<port>8888</port>-->
-
-                    <extraJvmArgs>-Xmx1g</extraJvmArgs>
-                    <logLevel>INFO</logLevel>
-                    <style>${gwt.style}</style>
-                    <compileReport>true</compileReport>
-                    <compilerMetrics>true</compilerMetrics>
-
-                    <runTarget>index.html</runTarget>
-                    <modules>
-                        <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
-                    </modules>
-
-                    <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
-                    <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
+                    <moduleName>gwt.material.design.demo.GwtMaterialDesignDemo</moduleName>
+                    <moduleShortName>gwt.material.design.demo</moduleShortName>
+                    <failOnError>true</failOnError>
+                    <sourceLevel>1.8</sourceLevel>
+                    <compilerArgs>
+                        <arg>-compileReport</arg>
+                        <arg>-XcompilerMetrics</arg>
+                    </compilerArgs>
+                    <warDir>${webappDirectory}</warDir>
+                    <classpathScope>compileruntime</classpathScope>
+                    <startupUrls>
+                        <startupUrl>index.html</startupUrl>
+                    </startupUrls>
                 </configuration>
+
 
                 <!--Replaced the existing executions block-->
                 <executions>
@@ -216,6 +189,29 @@
                 <!--</goals>-->
                 <!--</execution>-->
                 <!--</executions>-->
+            </plugin>
+
+            <!-- Copy webapp content to deploy folder -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${webappDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/webapp</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -252,21 +248,25 @@
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-addins</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-table</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- App Engine -->
@@ -315,25 +315,12 @@
         <!-- GWT -->
         <dependency>
             <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-servlet</artifactId>
-            <version>${gwt.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-codeserver</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-dev</artifactId>
-            <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -406,18 +393,23 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
+                        <groupId>net.ltgt.gwt.maven</groupId>
                         <artifactId>gwt-maven-plugin</artifactId>
-                        <version>${gwt.version}</version>
+                        <version>${tbroyer.version}</version>
+                        <extensions>true</extensions>
                         <configuration>
-                            <modules>
-                                <module>gwt.material.design.demo.GwtMaterialDesignDemoDev</module>
-                            </modules>
+                            <moduleName>gwt.material.design.demo.GwtMaterialDesignDemoDev</moduleName>
                             <draftCompile combine.self="override">true</draftCompile>
-                            <optimizationLevel combine.self="override">0</optimizationLevel>
-                            <disableCastChecking combine.self="override">false</disableCastChecking>
-                            <disableClassMetadata combine.self="override">false</disableClassMetadata>
                         </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>
+                                        compile
+                                    </goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>
