@@ -375,9 +375,9 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['gecko1_8'], '34E35A7435FCD1BD3359C95845B9CABA');
-      unflattenKeylistIntoAnswers(['safari'], '4595CE8B10C4C48CB42D62AF196EB48A');
-      unflattenKeylistIntoAnswers(['ie10'], 'B4D7B68EFEB424453F06AF8512138A53');
+      unflattenKeylistIntoAnswers(['safari'], '4D11EF9009D87F8A2839D183C288B230');
+      unflattenKeylistIntoAnswers(['gecko1_8'], 'D93C48CD463036E035CBBFA4DFDD53A2');
+      unflattenKeylistIntoAnswers(['ie10'], 'FFCE2FE2438D2CFC4D94451F78966BCE');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
@@ -430,8 +430,6 @@ function gwtmaterialdemo(){
     installOneStylesheet('css/overridecss.red.min.css');
     installOneStylesheet('css/materialize.yellow.min.css');
     installOneStylesheet('css/overridecss.yellow.min.css');
-    installOneStylesheet('css/animation.css');
-    installOneStylesheet('css/material-icons.css');
     installOneStylesheet('css/demo.css');
     installOneStylesheet('css/prettify.css');
     sendStats('loadExternalRefs', 'end');
