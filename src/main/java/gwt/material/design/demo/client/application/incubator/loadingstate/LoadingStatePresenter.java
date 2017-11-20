@@ -50,6 +50,6 @@ public class LoadingStatePresenter extends Presenter<LoadingStatePresenter.MyVie
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Loading State (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("App Loading State", "Provides a widget transition between two internal blocks / panel to provide a delighful loading states.", "incubator/loadingstate/LoadingStateView", "", this);
     }
 }

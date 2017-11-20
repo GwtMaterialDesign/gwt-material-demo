@@ -50,6 +50,6 @@ public class LanguageSelectorPresenter extends Presenter<LanguageSelectorPresent
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Language Selector (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Language Selector", "It's a dropdown component with predefined functionality to set your App's Language Selection.", "incubator/language/LanguageSelector", "", this);
     }
 }

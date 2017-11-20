@@ -26,30 +26,34 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
 public class InlineSearchPresenter extends Presenter<InlineSearchPresenter.MyView, InlineSearchPresenter.MyProxy> {
-    public interface MyView extends View {
+
+    interface MyView extends View {
+
     }
 
-    @ProxyStandard
     @NameToken(NameTokens.inlineSearch)
-    public interface MyProxy extends ProxyPlace<InlineSearchPresenter> {
+    @ProxyCodeSplit
+    interface MyProxy extends ProxyPlace<InlineSearchPresenter> {
     }
 
     @Inject
-    InlineSearchPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+    InlineSearchPresenter(
+            EventBus eventBus,
+            MyView view,
+            MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
-
-        SetPageTitleEvent.fire("Inline Search (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Inline Search", "Extending MaterialSearch component that be inlined in the navigation bar.", "addins/signature/InlineSearchView", "", this);
     }
 }

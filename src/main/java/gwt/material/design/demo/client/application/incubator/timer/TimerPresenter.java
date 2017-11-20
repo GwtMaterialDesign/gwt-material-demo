@@ -50,6 +50,6 @@ public class TimerPresenter extends Presenter<TimerPresenter.MyView, TimerPresen
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Timer (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Timer Progress", "Custom implementation of Timer Progress that provides an infinite visualization that goes back and forth on it's progress container.", "incubator/timer/TimerView", "", this);
     }
 }

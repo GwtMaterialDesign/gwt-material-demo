@@ -17,15 +17,21 @@
   limitations under the License.
   #L%
   -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:incubator="urn:import:gwt.material.design.incubator.client">
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
-
+            <m:MaterialTitle title="Basic Usage" />
+            <incubator:recaptcha.ReCaptcha ui:field="recaptcha" siteKey="6LeZSRIUAAAAAE3JdZpdi6shhA87ZUG4U2ICsGlJ"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;incubator:recaptcha.ReCaptcha ui:field="recaptcha" siteKey="6LeZSRIUAAAAAE3JdZpdi6shhA87ZUG4U2ICsGlJ"/>
+            </demo:PrettyPre>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

@@ -230,7 +230,6 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getWalkthrough}" text="Walkthrough" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>

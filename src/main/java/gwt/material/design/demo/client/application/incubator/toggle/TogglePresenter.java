@@ -50,6 +50,6 @@ public class TogglePresenter extends Presenter<TogglePresenter.MyView, TogglePre
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Toggle (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Toggle Buttons", "A toggle button allows the user to change a setting between two states. ", "incubator/toggle/ToggleView", "", this);
     }
 }

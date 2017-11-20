@@ -22,17 +22,36 @@ package gwt.material.design.demo.client.application.incubator.progress;
 
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.demo.client.application.incubator.loadingstate.LoadingStatePresenter;
+import gwt.material.design.incubator.client.progress.ProgressLineBar;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProgressLineBarView extends ViewImpl implements ProgressLineBarPresenter.MyView {
     public interface Binder extends UiBinder<Widget, ProgressLineBarView> {
     }
 
+    @UiField
+    ProgressLineBar<Integer> progressLineBar;
+
     @Inject
     ProgressLineBarView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        for (int i = 0; i <= 10; i++) {
+            progressLineBar.addOption(i);
+        }
+
+        List<Integer> values = new ArrayList<>();
+        for (int i = 0; i <= 5; i++) {
+            values.add(i);
+        }
+
+        progressLineBar.setValues(values);
     }
 }
