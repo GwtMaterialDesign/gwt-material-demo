@@ -28,14 +28,15 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.pwa.manifest.js.AppInstaller;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.ThemeManager;
+import gwt.material.design.demo.client.ui.InstallBannerFallbackOverlay;
 
 import javax.inject.Inject;
 
@@ -48,6 +49,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     private final String THEME_COLOR = "#1565c0";
     private final String MANIFEST_URL = "manifest.json";
     private final String SERVICE_WORKER_URL = "service-worker.js";
+    private AppInstaller appInstaller;
 
     @UiField HTMLPanel menu;
     @UiField HTMLPanel main;
@@ -61,7 +63,10 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     MaterialLabel title, description;
 
     @UiField
-    MaterialChip chipXml, chipJava, chipSpecification;
+    MaterialChip chipXml, chipJava, chipSpecification, chipInstallApp;
+
+    @UiField
+    InstallBannerFallbackOverlay installAppOverlay;
 
     @Inject
     ApplicationView(Binder uiBinder) {
@@ -71,7 +76,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.initialize();
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
-        DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));
 
         chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
         chipJava.addClickHandler(clickEvent -> {
@@ -88,19 +92,36 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         chipSpecification.addClickHandler(clickEvent -> {
             Window.open(specification, "_blank", "");
         });
+        chipInstallApp.getElement().getStyle().setCursor(Style.Cursor.POINTER);
+
         ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipXml.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipJava.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipSpecification, ThemeManager.DARKER_SHADE);
         ThemeManager.register(chipSpecification.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipInstallApp, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(chipInstallApp.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
+
         ThemeManager.register(titlePanel);
 
+        // Initializing the PWA Feature
         PwaManager.getInstance()
                 .setThemeColor(THEME_COLOR)
                 .setWebManifest(MANIFEST_URL)
                 .setServiceWorker(SERVICE_WORKER_URL)
                 .load();
+
+        // Removing the splashscreen once the no-cache.js is available
+        DOM.getElementById("splashscreen").removeFromParent();
+
+        // Install App Banner
+        appInstaller = new AppInstaller(() -> installAppOverlay.open());
+    }
+
+    @UiHandler("chipInstallApp")
+    void onInstallApp(ClickEvent e) {
+        appInstaller.prompt();
     }
 
     @UiHandler("imgGPlus")
