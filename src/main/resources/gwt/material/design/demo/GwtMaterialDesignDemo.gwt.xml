@@ -37,16 +37,16 @@
     <!--GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialWithJQuery"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
-    <inherits name="gwt.material.design.themes.ThemeAmber"/>
-    <inherits name="gwt.material.design.themes.ThemeBlue"/>
-    <inherits name="gwt.material.design.themes.ThemeBrown"/>
-    <inherits name="gwt.material.design.themes.ThemeGreen"/>
-    <inherits name="gwt.material.design.themes.ThemeGrey"/>
-    <inherits name="gwt.material.design.themes.ThemeOrange"/>
-    <inherits name="gwt.material.design.themes.ThemePink"/>
-    <inherits name="gwt.material.design.themes.ThemePurple"/>
-    <inherits name="gwt.material.design.themes.ThemeRed"/>
-    <inherits name="gwt.material.design.themes.ThemeYellow"/>
+    <inherits name="gwt.material.design.themes.ThemeAmberResources"/>
+    <inherits name="gwt.material.design.themes.ThemeBlueResources"/>
+    <inherits name="gwt.material.design.themes.ThemeBrownResources"/>
+    <inherits name="gwt.material.design.themes.ThemeGreenResources"/>
+    <inherits name="gwt.material.design.themes.ThemeGreyResources"/>
+    <inherits name="gwt.material.design.themes.ThemeOrangeResources"/>
+    <inherits name="gwt.material.design.themes.ThemePinkResources"/>
+    <inherits name="gwt.material.design.themes.ThemePurpleResources"/>
+    <inherits name="gwt.material.design.themes.ThemeRedResources"/>
+    <inherits name="gwt.material.design.themes.ThemeYellowResources"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
     <inherits name="gwt.material.design.incubator.AddinsIncubator"/>
     <inherits name="gwt.material.design.GwtMaterialTable"/>
