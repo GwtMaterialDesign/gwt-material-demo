@@ -1,6 +1,6 @@
 #!/bin/bash
 set -ev
-if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "rework/tbroyer_mk1117" ]; then
+if [ "$TRAVIS_JDK_VERSION" == "oraclejdk8" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "rew" ]; then
 
 if [[ -z "$GH_TOKEN" ]]; then
 echo -e "GH_TOKEN is not set"
@@ -24,17 +24,8 @@ git clone --quiet --branch=gh-pages https://$GH_TOKEN@github.com/GwtMaterialDesi
 cd gh-pages
 
 # remove the GwtMaterialDemo directories from git.
-if [[ -d ./pwa/gwtmaterialdemo ]]; then
-git rm -rf ./pwa/gwtmaterialdemo
-fi
-if [[ -f ./pwa/index.html ]]; then
-git rm -rf ./pwa/index.html
-fi
-if [[ -d ./pwa/META-INF ]]; then
-git rm -rf ./pwa/META-INF
-fi
-if [[ -d ./pwa/WEB-INF ]]; then
-git rm -rf ./pwa/WEB-INF
+if [[ -d ./pwa/ ]]; then
+git rm -rf ./pwa/
 fi
 
 # copy the new GwtMaterialDemo the snapshot dir.
