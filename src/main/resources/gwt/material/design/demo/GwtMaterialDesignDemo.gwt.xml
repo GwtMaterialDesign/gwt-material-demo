@@ -47,12 +47,11 @@
     <inherits name="gwt.material.design.themes.ThemePurple"/>
     <inherits name="gwt.material.design.themes.ThemeRed"/>
     <inherits name="gwt.material.design.themes.ThemeYellow"/>
-    <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
-    <inherits name="gwt.material.design.incubator.AddinsIncubatorDebug"/>
-    <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
+    <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
+    <inherits name="gwt.material.design.incubator.AddinsIncubator"/>
+    <inherits name="gwt.material.design.GwtMaterialTable"/>
 
     <inherits name="com.googlecode.gwt.charts.Charts"/>
-
     <inherits name="gwt.material.design.demo.client.Resources"/>
 
     <!-- Specify the paths for translatable code-->
@@ -61,7 +60,4 @@
 
     <set-configuration-property name="gin.ginjector.modules"
                                 value="gwt.material.design.demo.client.gin.ClientModule"/>
-
-    <!-- allow Super Dev Mode -->
-    <add-linker name="xsiframe"/>
 </module>

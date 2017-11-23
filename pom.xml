@@ -36,12 +36,9 @@
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.1-SNAPSHOT</gwt-material.version>
 
-        <gwt.style>PRETTY</gwt.style>
-
         <!-- Maven -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <appengine.version>1.9.24</appengine.version>
         <junit.version>4.12</junit.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
@@ -126,6 +123,8 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
+
+            <!-- GPG Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -155,6 +154,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <moduleName>gwt.material.design.demo.GwtMaterialDesignDemo</moduleName>
+                    <skipModule>true</skipModule>
                     <style>OBFUSCATED</style>
                     <logLevel>INFO</logLevel>
                     <sourceLevel>1.8</sourceLevel>
@@ -183,6 +183,7 @@
             <!-- Copy webapp content to deploy folder -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
@@ -297,37 +298,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- App Engine -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-endpoints</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-
-        <!-- Testing -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-labs</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-testing</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -387,36 +357,6 @@
 
     <profiles>
         <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.google.appengine</groupId>
-                        <artifactId>appengine-maven-plugin</artifactId>
-                        <version>${appengine.version}</version>
-                        <configuration>
-                            <enableJarClasses>false</enableJarClasses>
-                            <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
-                            <!-- address>0.0.0.0</address>
-                            <port>8080</port -->
-                            <!-- Comment in the below snippet to enable local debugging with a remove debugger
-                            like those included with Eclipse or IntelliJ -->
-                            <!-- jvmFlags>
-                            <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
-                            </jvmFlags -->
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>endpoints_get_discovery_doc</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
             <id>dev</id>
             <build>
                 <plugins>
@@ -432,9 +372,7 @@
                         <executions>
                             <execution>
                                 <goals>
-                                    <goal>
-                                        compile
-                                    </goal>
+                                    <goal>compile</goal>
                                 </goals>
                             </execution>
                         </executions>
