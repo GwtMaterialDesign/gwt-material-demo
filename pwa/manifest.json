@@ -3,23 +3,28 @@
   "short_name": "GMD Demo",
   "icons": [
     {
-      "src": "image/launcher-icon-1x.png",
+      "src": "launcher-icons/launcher1x.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "image/launcher-icon-2x.png",
+      "src": "launcher-icons/launcher2x.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "image/launcher-icon-4x.png",
+      "src": "launcher-icons/launcher4x.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "launcher-icons/launcher5x.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
+  "start_url": "/",
+  "display": "fullscreen",
   "background_color": "#2196f3",
   "theme_color": "#1565c0"
 }
