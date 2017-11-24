@@ -21,6 +21,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
@@ -36,7 +37,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Basic" description="Here are the basic layers / layout structure of any GMD Applications."/>
-        <m:MaterialImage url="http://i.imgur.com/pHyxYDn.gif" />
+        <m:MaterialImage url="/images/arc.gif" />
       </m:MaterialRow>
     </g:HTMLPanel>
   </m:MaterialPanel>

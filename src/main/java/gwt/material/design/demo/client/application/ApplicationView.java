@@ -25,7 +25,6 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -51,11 +50,15 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     private final String SERVICE_WORKER_URL = "service-worker.js";
     private AppInstaller appInstaller;
 
-    @UiField HTMLPanel menu;
-    @UiField HTMLPanel main;
+    @UiField
+    HTMLPanel menu;
+    @UiField
+    HTMLPanel main;
 
-    @UiField MaterialFooter footer;
-    @UiField MaterialFooterCopyright footerCopyRight;
+    @UiField
+    MaterialFooter footer;
+    @UiField
+    MaterialFooterCopyright footerCopyRight;
 
     @UiField
     MaterialPanel panel, titlePanel;
@@ -71,11 +74,17 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @Inject
     ApplicationView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        bindSlot(ApplicationPresenter.SLOT_MENU, menu);
+        bindSlot(ApplicationPresenter.SLOT_MAIN, main);
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
         ThemeManager.register(footer);
         ThemeManager.register(footerCopyRight, ThemeManager.DARKER_SHADE);
         ThemeManager.initialize();
-        bindSlot(ApplicationPresenter.SLOT_MENU, menu);
-        bindSlot(ApplicationPresenter.SLOT_MAIN, main);
 
         chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
         chipJava.addClickHandler(clickEvent -> {
@@ -88,10 +97,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
             Window.open(xml, "_blank", "");
         });
+
         chipSpecification.getElement().getStyle().setCursor(Style.Cursor.POINTER);
-        chipSpecification.addClickHandler(clickEvent -> {
-            Window.open(specification, "_blank", "");
-        });
+        chipSpecification.addClickHandler(clickEvent -> Window.open(specification, "_blank", ""));
         chipInstallApp.getElement().getStyle().setCursor(Style.Cursor.POINTER);
 
         ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
@@ -112,9 +120,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 .setServiceWorker(SERVICE_WORKER_URL)
                 .load();
 
-        // Removing the splashscreen once the no-cache.js is available
-        DOM.getElementById("splashscreen").removeFromParent();
-
         // Install App Banner
         appInstaller = new AppInstaller(() -> installAppOverlay.open());
     }
@@ -125,7 +130,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     @UiHandler("imgGPlus")
-    void onGPlus(ClickEvent e){
+    void onGPlus(ClickEvent e) {
         Window.open("https://plus.google.com/communities/108005250093449814286", "", "_blank");
     }
 

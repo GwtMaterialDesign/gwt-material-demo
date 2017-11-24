@@ -163,7 +163,7 @@
                 <m:MaterialColumn grid="l6 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="https://13thflooroffice.files.wordpress.com/2013/06/kodaline_in-a-perfect-world-packshot-1000.jpg"/>
+                            <m:MaterialImage url="/images/kodalin.jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -179,7 +179,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="TEAL_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="http://img2.ymlp344.net/tx3p_fosterthepeoplecoverblast.jpg"/>
+                            <m:MaterialImage url="/images/foster.jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -194,7 +194,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PURPLE_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="https://s3.amazonaws.com/rapgenius/Ellie-Goulding-Halcyon-Days-2013-1200x1200.png"/>
+                            <m:MaterialImage url="/images/ellie.png"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -209,7 +209,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="https ://i.imgur.com/fmdAWO1.png"/>
+                            <m:MaterialImage url="/images/onerepublic.png"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -225,7 +225,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="RED_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="http://cdn.pitchfork.com/news/49944/3490b02b.jpg"/>
+                            <m:MaterialImage url="/images/rca.jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -240,7 +240,7 @@
                 <m:MaterialColumn grid="l4 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="https://thatgrapejuice.net/wp-content/uploads/2014/02/pharrell-williams-girl-album-cover.jpg"/>
+                            <m:MaterialImage url="/images/william-parrel.jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">

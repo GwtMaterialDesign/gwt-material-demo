@@ -61,7 +61,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="https://camo.githubusercontent.com/fd44a45d475a7ccff65305dab9507ede1130b521/687474703a2f2f692e696d6775722e636f6d2f706661725147742e676966"/>
+                    <m:MaterialImage url="/images/g-plus-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -78,7 +78,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="https://camo.githubusercontent.com/c2a8dd8837c322cad255f2357426acd2404bac0a/687474703a2f2f692e696d6775722e636f6d2f5378684d7639322e676966"/>
+                    <m:MaterialImage url="/images/contact-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -95,7 +95,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="https://camo.githubusercontent.com/9df0351340b8fc12350389abe9410d57712ec108/687474703a2f2f692e696d6775722e636f6d2f304d474c61596f2e676966"/>
+                    <m:MaterialImage url="/images/drive-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -112,7 +112,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="https://camo.githubusercontent.com/e8135b9ee89260249589f718886b4baac0a383f6/687474703a2f2f692e696d6775722e636f6d2f763146324f6f792e676966"/>
+                    <m:MaterialImage url="/images/inbox-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>

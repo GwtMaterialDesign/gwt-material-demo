@@ -66,6 +66,11 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
 
         // search close event
         txtSearch.addCloseHandler(event -> {

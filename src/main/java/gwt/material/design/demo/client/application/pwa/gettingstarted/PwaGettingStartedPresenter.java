@@ -55,6 +55,6 @@ public class PwaGettingStartedPresenter extends Presenter<PwaGettingStartedPrese
         super.onReveal();
 
         SetPageTitleEvent.fire("PWA Getting Started",
-                "A new way to deliver amazing user experiences on the web.", "pwa/PwaGettingStarted/PwaGettingStartedView", null, this);
+                "A new way to deliver amazing user experiences on the web.", "pwa/PwaGettingStarted/PwaGettingStartedView", "", this);
     }
 }

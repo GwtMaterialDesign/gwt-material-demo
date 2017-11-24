@@ -21,6 +21,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
      xmlns:g="urn:import:com.google.gwt.user.client.ui"
      xmlns:m="urn:import:gwt.material.design.client.ui"
+     xmlns:ma="urn:import:gwt.material.design.addins.client"
      xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
      xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
 
@@ -97,7 +98,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <m:MaterialImage url="/images/card.png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
@@ -114,7 +115,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
+              <m:MaterialImage url="/images/card.png"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
@@ -173,7 +174,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -190,7 +191,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -207,7 +208,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -224,7 +225,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
       
             <m:MaterialCardContent textColor="BLACK">
@@ -265,7 +266,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            <m:MaterialImage url="/images/wind-mill.gif"/>
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -287,7 +288,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -309,7 +310,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png"/>
+              <m:MaterialImage url="/images/shoes.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -331,7 +332,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif"/>
+              <m:MaterialImage url="/images/md.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -359,7 +360,7 @@
           <m:MaterialCard>
             <m:MaterialCardContent>
               <m:MaterialRow marginBottom="0">
-                <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <m:MaterialImage url="/images/profile.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -374,7 +375,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
+              <m:MaterialImage url="/images/boat.png"/>
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -386,7 +387,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialImage url="/images/yuna.jpg" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>
@@ -446,10 +447,10 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
+              <m:MaterialImage url="/images/card-1.png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
             </m:MaterialCardContent>
@@ -462,10 +463,10 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
+              <m:MaterialImage url="/images/card-2.png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="King Leonidas and the 300 Spartans"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
             </m:MaterialCardContent>
@@ -478,10 +479,10 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
+              <m:MaterialImage url="/images/card-3.png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="RESEARCH"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
             </m:MaterialCardContent>
@@ -494,10 +495,10 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="BLACK">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
+              <m:MaterialImage url="/images/card-4.png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="A few of my Favorite Words"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
             </m:MaterialCardContent>
@@ -571,7 +572,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -593,7 +594,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -615,7 +616,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -637,7 +638,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -659,7 +660,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -681,7 +682,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -703,7 +704,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -725,7 +726,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -747,7 +748,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -769,7 +770,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <m:MaterialImage url="/images/card.png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
