@@ -1,32 +1,20 @@
-var cacheName = 'cache_1511438227843';
+var cacheName = 'cache_1511520465431';
 var filesToCache = [  
-'global/font/Roboto-Regular.eot',
-
-'global/font/Roboto-Regular.ttf',
-
-'global/font/Roboto-Regular.woff',
-
-'global/font/Roboto-Regular.woff2',
-
-'global/global.min.css',
-
-'global/global.min.js',
-
 'gwtmaterialdemo/06A22D53875638503B79647130D4868F.cache.png',
-
-'gwtmaterialdemo/33C1FCEF505BA82116B2A572DE3378C1.cache.js',
 
 'gwtmaterialdemo/4A1C0A0A07EBF767892C988B32D7A0A6.cache.png',
 
 'gwtmaterialdemo/555658365BE76B83A647D3073DF836AE.cache.png',
 
+'gwtmaterialdemo/777528B58D4A12319811F818746583E0.cache.js',
+
 'gwtmaterialdemo/8458EF0D5043A3F382F07271560AADF4.cache.gif',
+
+'gwtmaterialdemo/84EA3189FF7F87FDDAE347F059449FF6.cache.js',
 
 'gwtmaterialdemo/86238EB437C3F5071441823516CD20C4.cache.png',
 
-'gwtmaterialdemo/98591B4BCBD13281D9C9E61934A4A266.cache.js',
-
-'gwtmaterialdemo/9CE3EE0B7E770520DDDF37FA956D097D.cache.js',
+'gwtmaterialdemo/939A6F7E748C96B70E00DA72BBD2E939.cache.js',
 
 'gwtmaterialdemo/B29F460C11B2F3D670103A9E584D053D.cache.gif',
 
@@ -134,395 +122,395 @@ var filesToCache = [
 
 'gwtmaterialdemo/css/prettify.css',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/1.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/1.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/10.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/10.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/11.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/11.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/12.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/12.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/13.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/13.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/14.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/14.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/15.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/15.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/16.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/16.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/17.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/17.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/18.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/18.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/19.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/19.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/2.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/2.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/20.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/20.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/21.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/21.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/22.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/22.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/23.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/23.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/24.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/24.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/25.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/25.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/26.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/26.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/27.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/27.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/28.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/28.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/29.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/29.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/3.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/3.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/30.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/30.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/31.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/31.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/32.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/32.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/33.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/33.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/34.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/34.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/35.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/35.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/36.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/36.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/37.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/37.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/38.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/38.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/39.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/39.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/4.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/4.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/40.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/40.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/41.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/41.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/42.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/42.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/43.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/43.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/44.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/44.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/45.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/45.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/46.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/46.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/47.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/47.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/48.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/48.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/49.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/49.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/5.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/5.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/50.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/50.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/51.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/51.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/52.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/52.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/53.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/53.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/54.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/54.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/55.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/55.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/56.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/56.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/57.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/57.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/58.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/58.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/59.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/59.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/6.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/6.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/60.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/60.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/61.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/61.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/62.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/62.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/63.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/63.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/64.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/64.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/65.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/65.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/7.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/7.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/8.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/8.cache.js',
 
-'gwtmaterialdemo/deferredjs/33C1FCEF505BA82116B2A572DE3378C1/9.cache.js',
+'gwtmaterialdemo/deferredjs/777528B58D4A12319811F818746583E0/9.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/1.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/1.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/10.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/10.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/11.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/11.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/12.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/12.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/13.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/13.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/14.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/14.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/15.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/15.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/16.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/16.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/17.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/17.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/18.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/18.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/19.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/19.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/2.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/2.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/20.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/20.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/21.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/21.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/22.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/22.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/23.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/23.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/24.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/24.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/25.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/25.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/26.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/26.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/27.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/27.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/28.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/28.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/29.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/29.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/3.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/3.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/30.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/30.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/31.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/31.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/32.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/32.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/33.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/33.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/34.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/34.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/35.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/35.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/36.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/36.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/37.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/37.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/38.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/38.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/39.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/39.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/4.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/4.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/40.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/40.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/41.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/41.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/42.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/42.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/43.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/43.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/44.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/44.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/45.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/45.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/46.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/46.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/47.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/47.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/48.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/48.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/49.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/49.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/5.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/5.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/50.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/50.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/51.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/51.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/52.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/52.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/53.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/53.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/54.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/54.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/55.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/55.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/56.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/56.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/57.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/57.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/58.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/58.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/59.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/59.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/6.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/6.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/60.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/60.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/61.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/61.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/62.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/62.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/63.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/63.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/64.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/64.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/65.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/65.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/7.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/7.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/8.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/8.cache.js',
 
-'gwtmaterialdemo/deferredjs/98591B4BCBD13281D9C9E61934A4A266/9.cache.js',
+'gwtmaterialdemo/deferredjs/84EA3189FF7F87FDDAE347F059449FF6/9.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/1.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/1.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/10.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/10.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/11.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/11.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/12.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/12.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/13.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/13.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/14.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/14.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/15.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/15.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/16.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/16.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/17.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/17.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/18.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/18.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/19.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/19.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/2.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/2.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/20.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/20.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/21.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/21.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/22.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/22.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/23.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/23.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/24.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/24.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/25.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/25.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/26.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/26.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/27.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/27.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/28.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/28.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/29.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/29.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/3.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/3.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/30.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/30.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/31.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/31.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/32.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/32.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/33.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/33.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/34.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/34.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/35.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/35.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/36.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/36.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/37.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/37.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/38.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/38.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/39.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/39.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/4.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/4.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/40.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/40.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/41.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/41.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/42.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/42.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/43.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/43.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/44.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/44.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/45.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/45.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/46.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/46.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/47.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/47.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/48.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/48.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/49.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/49.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/5.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/5.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/50.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/50.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/51.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/51.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/52.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/52.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/53.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/53.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/54.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/54.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/55.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/55.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/56.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/56.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/57.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/57.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/58.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/58.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/59.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/59.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/6.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/6.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/60.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/60.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/61.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/61.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/62.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/62.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/63.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/63.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/64.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/64.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/65.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/65.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/7.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/7.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/8.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/8.cache.js',
 
-'gwtmaterialdemo/deferredjs/9CE3EE0B7E770520DDDF37FA956D097D/9.cache.js',
+'gwtmaterialdemo/deferredjs/939A6F7E748C96B70E00DA72BBD2E939/9.cache.js',
 
 'gwtmaterialdemo/font/material-icons/MaterialIcons-Regular.eot',
 
@@ -566,6 +554,102 @@ var filesToCache = [
 
 'gwtmaterialdemo/gwtmaterialdemo.nocache.js',
 
+'gwtmaterialdemo/js/prettify.min.js',
+
+'gwtmaterialdemo/js/sidecar.v1.min.js',
+
+'images/add-to-homescreen.gif',
+
+'images/air.png',
+
+'images/arc.gif',
+
+'images/boat.png',
+
+'images/candy-icons.gif',
+
+'images/card-1.png',
+
+'images/card-2.png',
+
+'images/card-3.png',
+
+'images/card-4.png',
+
+'images/card.png',
+
+'images/cat.jpeg',
+
+'images/contact-pattern.gif',
+
+'images/dnd-upload.gif',
+
+'images/drive-pattern.gif',
+
+'images/ellie.png',
+
+'images/g-plus-pattern.gif',
+
+'images/ic_bold.png',
+
+'images/ic_front.png',
+
+'images/ic_metaphor.png',
+
+'images/ic_motion.png',
+
+'images/inbox-pattern.gif',
+
+'images/install-arrow.png',
+
+'images/lady.jpeg',
+
+'images/logo-orig.png',
+
+'images/logo.png',
+
+'images/md-card-ripple.gif',
+
+'images/md.gif',
+
+'images/onboard-1.png',
+
+'images/onboard-2.png',
+
+'images/onboard-3.png',
+
+'images/onerepublic.png',
+
+'images/pwa-engaging.png',
+
+'images/pwa-fast.png',
+
+'images/pwa-intro.png',
+
+'images/pwa-reliable.png',
+
+'images/service-worker-2.png',
+
+'images/service-worker.png',
+
+'images/shoes.png',
+
+'images/slide-1.png',
+
+'images/slide-2.png',
+
+'images/slide-3.png',
+
+'images/tab.gif',
+
+'images/waterfall-large.gif',
+
+'images/waterfall.gif',
+
+'images/william-parrel-2.png',
+
+'images/wind-mill.gif',
+
 'index.html',
 
 'launcher-icons/launcher1x.png',
@@ -574,9 +658,7 @@ var filesToCache = [
 
 'launcher-icons/launcher4x.png',
 
-'launcher-icons/launcher5x.png',
-
-'prettify/prettify.min.js'
+'launcher-icons/launcher5x.png'
     ];
 
 
