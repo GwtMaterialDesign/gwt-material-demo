@@ -25,7 +25,7 @@
      xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
      xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
 
-  <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+  <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
   <ui:style>
     .rowCards{
@@ -98,7 +98,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
@@ -115,7 +115,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
@@ -174,7 +174,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/wind-mill.gif"/>
+              <m:MaterialImage resource="{res.windMill}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -191,7 +191,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/wind-mill.gif"/>
+              <m:MaterialImage resource="{res.windMill}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -208,7 +208,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/wind-mill.gif"/>
+              <m:MaterialImage resource="{res.windMill}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -225,7 +225,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/wind-mill.gif"/>
+              <m:MaterialImage resource="{res.windMill}"/>
             </m:MaterialCardImage>
       
             <m:MaterialCardContent textColor="BLACK">
@@ -266,7 +266,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="/images/wind-mill.gif"/>
+            <m:MaterialImage resource="{res.windMill}"/>
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -288,7 +288,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/wind-mill.gif"/>
+              <m:MaterialImage resource="{res.windMill}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -310,7 +310,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/shoes.png"/>
+              <m:MaterialImage resource="{res.shoes}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -332,7 +332,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/md.gif"/>
+              <m:MaterialImage resource="{res.md}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -360,7 +360,7 @@
           <m:MaterialCard>
             <m:MaterialCardContent>
               <m:MaterialRow marginBottom="0">
-                <m:MaterialImage url="/images/profile.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <m:MaterialImage resource="{res.profile}" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -375,7 +375,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/boat.png"/>
+              <m:MaterialImage resource="{res.boat}"/>
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -387,7 +387,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage url="/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialImage resource="{res.yuna}" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>
@@ -447,7 +447,7 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/card-1.png"/>
+              <m:MaterialImage resource="{res.card1}"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -463,7 +463,7 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/card-2.png"/>
+              <m:MaterialImage resource="{res.card2}"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -479,7 +479,7 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/card-3.png"/>
+              <m:MaterialImage resource="{res.card3}"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -495,7 +495,7 @@
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="BLACK">
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/card-4.png"/>
+              <m:MaterialImage resource="{res.card4}"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -572,7 +572,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -594,7 +594,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -616,7 +616,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -638,7 +638,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -660,7 +660,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -682,7 +682,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -704,7 +704,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -726,7 +726,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -748,7 +748,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -770,7 +770,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">

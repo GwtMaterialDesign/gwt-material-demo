@@ -189,6 +189,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Search", "#" + NameTokens.search));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Timer", "#" + NameTokens.timer));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Toggle", "#" + NameTokens.toggle));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "WebP", "#" + NameTokens.webpImage));
 
         // Style And Layout
         listSearches.add(new SearchObject(IconType.STYLE, "Colors", "#" + NameTokens.colors));

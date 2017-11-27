@@ -33,6 +33,9 @@
       padding-left: 0 !important;
     }
   </ui:style>
+
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
   <g:HTMLPanel>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Circular" />
@@ -136,7 +139,7 @@
           <m:MaterialCard ui:field="loaderCard">
             <m:MaterialCardContent padding="0" ui:field="cardContent">
               <m:MaterialRow marginBottom="0" padding="12">
-                <m:MaterialImage url="/images/profile.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <m:MaterialImage resource="{res.profile}" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -151,7 +154,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <m:MaterialImage url="/images/boat.png"/>
+              <m:MaterialImage resource="{res.boat}"/>
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -163,7 +166,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage url="/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <m:MaterialImage resource="{res.yuna}" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>

@@ -22,6 +22,9 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
+    
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Usage" />
@@ -163,7 +166,7 @@
                 <m:MaterialColumn grid="l6 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/kodalin.jpg"/>
+                            <m:MaterialImage resource="{res.kodalin}"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -179,7 +182,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="TEAL_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/foster.jpg"/>
+                            <m:MaterialImage resource="{res.foster}"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -194,7 +197,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PURPLE_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/ellie.png"/>
+                            <m:MaterialImage resource="{res.ellie}"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -209,7 +212,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/onerepublic.png"/>
+                            <m:MaterialImage resource="{res.oneRepublic}"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -225,7 +228,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="RED_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/rca.jpg"/>
+                            <m:MaterialImage resource="{res.rca}"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -240,7 +243,7 @@
                 <m:MaterialColumn grid="l4 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <m:MaterialImage url="/images/william-parrel.jpg"/>
+                            <m:MaterialImage resource="{res.williamParrel}" />
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">

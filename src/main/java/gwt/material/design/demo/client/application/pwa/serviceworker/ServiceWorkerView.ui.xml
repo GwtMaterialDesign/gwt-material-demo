@@ -24,13 +24,16 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
   <m:MaterialPanel>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Create your service-worker.js" description="Click the link below and download / copy the file and put it under your webapp directory." />
       <m:MaterialRow>
         <m:MaterialAnchorButton text="Link to File" href="https://gist.github.com/kevzlou7979/ad8eb8a779fc6faa0c7b4b3c9108c3c5" target="_blank" />
       </m:MaterialRow>
-      <m:MaterialImage url="/images/service-worker.png"/>
+      <m:MaterialImage resource="{res.serviceWorker}"/>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">

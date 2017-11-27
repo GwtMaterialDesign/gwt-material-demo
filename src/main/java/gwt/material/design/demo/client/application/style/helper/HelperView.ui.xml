@@ -42,6 +42,8 @@
     }
   </ui:style>
 
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
   <g:HTMLPanel>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Alignment" description="Vertical Align - You can easily vertically center things by adding the class valign-wrapper to the container holding the items you want to vertically align."/>
@@ -236,7 +238,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -253,7 +255,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -270,7 +272,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="/images/card.png"/>
+              <m:MaterialImage resource="{res.card}"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   

@@ -356,7 +356,7 @@
       <m:MaterialTitle title="resize() API" description="For specific usecase, whenever you use a sidenav. In order to recalculate the width of the tab indicator, please call tab.resize() for the workaround." />
       <m:MaterialAnchorButton text="Source" textColor="BLACK" backgroundColor="WHITE" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/navbartabspush" />
       <m:MaterialAnchorButton text="Demo" target="_blank" href="https://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#navbar_tab_push" />
-      <m:MaterialImage marginTop="20" url="/images/tab.gif" />
+      <m:MaterialImage marginTop="20" resource="{res.tab}" />
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;sidenav.addOpenedHandler(event -> tab.resize());<br/>
         sidenav.addClosedHandler(event -> tab.resize());

@@ -23,8 +23,7 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
 
-    <ui:style>
-    </ui:style>
+    <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
@@ -54,7 +53,7 @@
                     <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -84,7 +83,7 @@
                     <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -114,7 +113,7 @@
                     <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -144,7 +143,7 @@
                     <ma:subheader.MaterialSubHeader text="Archived Messages" textColor="PINK"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -220,7 +219,7 @@
                     <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -243,7 +242,7 @@
                     <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -266,7 +265,7 @@
                     <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <m:MaterialImage url="/images/yuna.jpg" type="CIRCLE"/>
+                            <m:MaterialImage resource="{res.yuna}" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>

@@ -37,7 +37,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Basic" description="Here are the basic layers / layout structure of any GMD Applications."/>
-        <m:MaterialImage url="/images/arc.gif" />
+        <m:MaterialImage resource="{res.arc}" />
       </m:MaterialRow>
     </g:HTMLPanel>
   </m:MaterialPanel>

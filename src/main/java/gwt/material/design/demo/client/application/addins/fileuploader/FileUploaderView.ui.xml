@@ -23,6 +23,9 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
@@ -80,7 +83,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Flexible Integration" description="MaterialFileUploader can be use on any widgets to control the upload process." />
-            <m:MaterialImage url="/images/dnd-upload.gif" />
+            <m:MaterialImage resource="{res.dndUpload}" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialRow><br/>
                 &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="cardUploader" acceptedFiles="image/*" grid="l4" url="/fileupload" preview="false" maxFileSize="20" shadow="0" clickable="cardUpload"><br/>
