@@ -27,6 +27,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.pwa.PwaManager;
@@ -76,6 +77,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         initWidget(uiBinder.createAndBindUi(this));
         bindSlot(ApplicationPresenter.SLOT_MENU, menu);
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
+
+        // Initializing the PWA Feature
+        PwaManager.getInstance()
+                .setThemeColor(THEME_COLOR)
+                .setWebManifest(MANIFEST_URL)
+                .setServiceWorker(SERVICE_WORKER_URL)
+                .load();
+
+        // Install App Banner
+        appInstaller = new AppInstaller(() -> installAppOverlay.open());
     }
 
     @Override
@@ -112,16 +123,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.register(chipInstallApp.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
 
         ThemeManager.register(titlePanel);
-
-        // Initializing the PWA Feature
-        PwaManager.getInstance()
-                .setThemeColor(THEME_COLOR)
-                .setWebManifest(MANIFEST_URL)
-                .setServiceWorker(SERVICE_WORKER_URL)
-                .load();
-
-        // Install App Banner
-        appInstaller = new AppInstaller(() -> installAppOverlay.open());
     }
 
     @UiHandler("chipInstallApp")
