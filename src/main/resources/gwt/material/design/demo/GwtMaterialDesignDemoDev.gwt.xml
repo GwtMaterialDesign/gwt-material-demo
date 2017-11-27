@@ -45,6 +45,4 @@
     <set-configuration-property name="compiler.enum.obfuscate.names" value="false" />
 
     <set-configuration-property name="CssResource.style" value="pretty"/>
-
-    <collapse-all-properties value="true" />
 </module>

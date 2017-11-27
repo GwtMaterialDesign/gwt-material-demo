@@ -26,7 +26,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/template_starter.gif"/>
+                    <m:MaterialImage url="images/template_starter.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -43,7 +43,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/template_wrenx.gif"/>
+                    <m:MaterialImage url="images/template_wrenx.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -59,7 +59,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/g-plus-pattern.gif"/>
+                    <m:MaterialImage url="images/g-plus-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -76,7 +76,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/contact-pattern.gif"/>
+                    <m:MaterialImage url="images/contact-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -93,7 +93,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/drive-pattern.gif"/>
+                    <m:MaterialImage url="images/drive-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>
@@ -110,7 +110,7 @@
         <m:MaterialColumn grid="s12 l4 m4">
             <m:MaterialCard backgroundColor="WHITE" >
                 <m:MaterialCardImage waves="LIGHT" width="100%">
-                    <m:MaterialImage url="/images/inbox-pattern.gif"/>
+                    <m:MaterialImage url="images/inbox-pattern.gif"/>
                 </m:MaterialCardImage>
 
                 <m:MaterialCardContent>

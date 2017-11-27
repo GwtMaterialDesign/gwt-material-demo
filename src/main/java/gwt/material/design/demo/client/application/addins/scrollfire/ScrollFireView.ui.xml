@@ -49,7 +49,7 @@
                 <m.html:ListItem opacity="0"><m:MaterialTitle title="List Item" description="List Item"/></m.html:ListItem>
             </m.html:UnorderedList>
     
-            <ma:webp.MaterialWebpImage opacity="0" ui:field="image" url="/images/image.webp" fallbackExtension="png" caption="I love Material Design"/>
+            <ma:webp.MaterialWebpImage opacity="0" ui:field="image" url="images/image.webp" fallbackExtension="png" caption="I love Material Design"/>
         </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

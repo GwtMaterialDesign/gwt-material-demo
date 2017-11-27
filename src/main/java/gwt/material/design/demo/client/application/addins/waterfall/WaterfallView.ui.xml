@@ -90,12 +90,12 @@
                 &emsp;navBrand.setOpacity(1); <br/>
                 });
             </demo:PrettyPre>
-            <m:MaterialImage url="/images/waterfall-large.gif"/>
+            <m:MaterialImage url="images/waterfall-large.gif"/>
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Mobile Version"/>
-            <m:MaterialImage url="/images/waterfall.gif"/>
+            <m:MaterialImage url="images/waterfall.gif"/>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

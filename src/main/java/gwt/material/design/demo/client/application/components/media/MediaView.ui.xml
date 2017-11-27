@@ -29,7 +29,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key."/>
-      <m:MaterialImage url="/images/candy-icons.gif"  type="MATERIALBOXED"/>
+      <m:MaterialImage url="images/candy-icons.gif"  type="MATERIALBOXED"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialImage url="https://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/><br/>
@@ -38,7 +38,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute."/>
-      <m:MaterialImage url="/images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+      <m:MaterialImage url="images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialImage url="https://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
@@ -59,28 +59,28 @@
   
       <m:MaterialSlider ui:field="slider" fullscreen="false">
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/blue.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/grey.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/grey.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/light-blue.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/light-blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/pink.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/pink.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
@@ -106,28 +106,28 @@
 
       <m:MaterialSlider ui:field="optionSlider" duration="300" interval="1000">
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/blue.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/grey.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/grey.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/light-blue.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/light-blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="/images/pink.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="images/pink.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>

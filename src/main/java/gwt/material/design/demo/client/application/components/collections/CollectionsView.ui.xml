@@ -138,7 +138,7 @@
     <m:MaterialTitle title="Avatar"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR">
-        <client:webp.MaterialWebpImage url="/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
+        <client:webp.MaterialWebpImage url="images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -183,7 +183,7 @@
     <m:MaterialTitle title="Dismissable"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <client:webp.MaterialWebpImage url="/images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
+        <client:webp.MaterialWebpImage url="images/lady.webp" fallbackExtension="jpeg" type="CIRCLE"/>
         <m:MaterialLabel text="Title" fontSize="2em"/>
         <m:MaterialLabel text="First Line"/>
         <m:MaterialLabel text="Second Line"/>
@@ -228,7 +228,7 @@
     <m:MaterialTitle title="3 line item"/>
     <m:MaterialCollection >
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <client:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <client:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -237,7 +237,7 @@
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -246,7 +246,7 @@
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -255,7 +255,7 @@
         </m:MaterialCollectionSecondary>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="Brunch this weekend?" fontSize="1.2em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
@@ -284,7 +284,7 @@
     <m:MaterialTitle title="2 line item"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.4em"/>
         <m:MaterialLabel text="I'll be in your neighborhood doing errands"/>
       </m:MaterialCollectionItem>
@@ -305,12 +305,12 @@
     <m:MaterialTitle title="2 line item, long paragraph (see on mobile)"/>
     <m:MaterialCollection>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
         <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
       </m:MaterialCollectionItem>
       <m:MaterialCollectionItem type="AVATAR" dismissible="true">
-        <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+        <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
         <m:MaterialLabel text="Min Li Chan" fontSize="1.2em"/>
         <m:MaterialLabel text="Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."/>
       </m:MaterialCollectionItem>

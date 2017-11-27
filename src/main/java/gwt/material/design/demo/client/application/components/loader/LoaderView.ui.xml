@@ -139,7 +139,7 @@
           <m:MaterialCard ui:field="loaderCard">
             <m:MaterialCardContent padding="0" ui:field="cardContent">
               <m:MaterialRow marginBottom="0" padding="12">
-                <client:webp.MaterialWebpImage url="/images/profile.webp" fallbackExtension="jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <client:webp.MaterialWebpImage url="images/profile.webp" fallbackExtension="jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -154,7 +154,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <client:webp.MaterialWebpImage url="/images/boat.webp" fallbackExtension="png" />
+              <client:webp.MaterialWebpImage url="images/boat.webp" fallbackExtension="png" />
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -166,7 +166,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <client:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" circle="true" width="40px" height="40px"/>
+                  <client:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>

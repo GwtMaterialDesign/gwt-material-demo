@@ -54,7 +54,7 @@
                     <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -84,7 +84,7 @@
                     <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -114,7 +114,7 @@
                     <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -144,7 +144,7 @@
                     <ma:subheader.MaterialSubHeader text="Archived Messages" textColor="PINK"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -220,7 +220,7 @@
                     <ma:subheader.MaterialSubHeader text="Unread Messages" textColor="PURPLE"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -243,7 +243,7 @@
                     <ma:subheader.MaterialSubHeader text="Late Messages" textColor="RED"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>
@@ -266,7 +266,7 @@
                     <ma:subheader.MaterialSubHeader text="Read Messages" textColor="GREY"/>
                     <m:MaterialCollection>
                         <m:MaterialCollectionItem type="AVATAR">
-                            <ma:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
+                            <ma:webp.MaterialWebpImage url="images/yuna.webp" fallbackExtension="jpg" type="CIRCLE"/>
                             <m:MaterialLabel text="Title" fontSize="2em"/>
                             <m:MaterialLabel text="First Line"/>
                             <m:MaterialLabel text="Second Line"/>

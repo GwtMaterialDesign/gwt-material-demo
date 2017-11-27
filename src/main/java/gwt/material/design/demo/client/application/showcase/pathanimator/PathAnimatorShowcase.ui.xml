@@ -51,7 +51,7 @@
         <m:MaterialColumn grid="l5 s12 m5">
             <m:MaterialCard backgroundColor="WHITE" textColor="WHITE">
                 <m:MaterialCardImage waves="LIGHT">
-                    <ma:webp.MaterialWebpImage url="/images/william-parrel-2.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="images/william-parrel-2.webp" fallbackExtension="png"/>
                 </m:MaterialCardImage>
                 <m:MaterialCardContent backgroundColor="BLUE_GREY_DARKEN_3" layoutPosition="RELATIVE" padding="0">
                     <m:MaterialRow padding="24" margin="0" height="132px">
@@ -74,7 +74,7 @@
                     </m:MaterialRow>
                 </m:MaterialCardContent>
                 <m:MaterialCardAction backgroundColor="BLUE_GREY" height="88px" overflow="HIDDEN">
-                    <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="/images/lady.jpeg"/>
+                    <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="images/lady.jpeg"/>
                     <m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/>
                 </m:MaterialCardAction>
             </m:MaterialCard>
