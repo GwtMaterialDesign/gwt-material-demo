@@ -24,6 +24,7 @@
 						 xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
 
 	<ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
+	<ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
 	<ui:style>
 		@external .sidebar, .nav-wrapper, .select2-selection__rendered;
@@ -75,7 +76,7 @@
 
 		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
-				<m:MaterialImage width="100%" url="/images/logo-orig.png" addStyleNames="{style.logo}"/>
+				<m:MaterialImage width="100%" url="{res.logo}" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About"/>
