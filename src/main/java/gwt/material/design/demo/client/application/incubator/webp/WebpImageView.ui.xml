@@ -22,14 +22,15 @@
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:incubator="urn:import:gwt.material.design.incubator.client"
              xmlns:toggle="urn:import:gwt.material.design.incubator.client.toggle"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic and Fallback Support" description="With the latest trend on Image types, webp brings a performance optimization into your web app. We provided a fallback support for other browsers. Try to test to other browsers for viewing and noticing the fallback." />
-            <incubator:webp.WebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/webp.webp" fallbackUrl="https://gwtmaterialdesign.github.io/gwt-material-demo/png.png" />
+            <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/webp.webp" fallbackUrl="https://gwtmaterialdesign.github.io/gwt-material-demo/png.png" />
 
             <demo:PrettyPre>
                 &emsp;&lt;incubator:webp.WebpImage url="image.webp" fallbackUrl="image.png" /><br/><br/>
@@ -46,7 +47,7 @@
                     <m:MaterialLabel text="JPEG file : 43.84 KB" />
                 </m:MaterialColumn>
                 <m:MaterialColumn grid="s6 l4 m4">
-                    <incubator:webp.WebpImage url="https://www.gstatic.com/webp/gallery/1.sm.webp" fallbackUrl="https://www.gstatic.com/webp/gallery/1.sm.jpg" />
+                    <client:webp.MaterialWebpImage url="https://www.gstatic.com/webp/gallery/1.sm.webp" fallbackUrl="https://www.gstatic.com/webp/gallery/1.sm.jpg" />
                     <m:MaterialLabel text="WebP file : 29.61 KB" />
                 </m:MaterialColumn>
             </m:MaterialRow>

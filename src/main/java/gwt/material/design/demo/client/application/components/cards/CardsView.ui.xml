@@ -19,11 +19,12 @@
   -->
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-     xmlns:g="urn:import:com.google.gwt.user.client.ui"
-     xmlns:m="urn:import:gwt.material.design.client.ui"
-     xmlns:ma="urn:import:gwt.material.design.addins.client"
-     xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
-     xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
   <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
@@ -91,14 +92,14 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Card Image" />
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
@@ -115,7 +116,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
@@ -166,7 +167,7 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <!-- Horizontal Card implementation -->
       <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
@@ -174,7 +175,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.windMill}"/>
+              <m:MaterialImage url="/images/wind-mill.gif" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -191,7 +192,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.windMill}"/>
+              <m:MaterialImage url="/images/wind-mill.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -208,7 +209,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.windMill}"/>
+              <m:MaterialImage url="/images/wind-mill.gif" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -225,14 +226,14 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.windMill}"/>
+              <m:MaterialImage url="/images/wind-mill.gif" />
             </m:MaterialCardImage>
-      
+
             <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
-      
+
             <m:MaterialCardAction>
               <m:MaterialLink iconType="SHARE" textColor="BLACK" />
               <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
@@ -266,7 +267,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage resource="{res.windMill}"/>
+            <m:MaterialImage url="/images/wind-mill.gif" />
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -288,7 +289,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.windMill}"/>
+              <m:MaterialImage url="/images/wind-mill.gif" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -310,7 +311,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.shoes}"/>
+              <client:webp.MaterialWebpImage url="/images/shoes.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -332,7 +333,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.md}"/>
+              <m:MaterialImage url="/images/md.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -352,7 +353,7 @@
         </m:MaterialColumn>
       </m:MaterialRow>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Complex Example" description="You can reorganize your card elements freely." />
       <m:MaterialRow>
@@ -360,7 +361,7 @@
           <m:MaterialCard>
             <m:MaterialCardContent>
               <m:MaterialRow marginBottom="0">
-                <m:MaterialImage resource="{res.profile}" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <client:webp.MaterialWebpImage url="/images/profile.webp" fallbackExtension="jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -375,7 +376,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <m:MaterialImage resource="{res.boat}"/>
+              <client:webp.MaterialWebpImage url="/images/boat.webp" fallbackExtension="png" />
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -387,7 +388,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage resource="{res.yuna}" circle="true" width="40px" height="40px"/>
+                  <client:webp.MaterialWebpImage url="/images/yuna.webp" fallbackExtension="jpg" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>
@@ -396,7 +397,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRow><br/>
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
@@ -441,13 +442,13 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage resource="{res.card1}"/>
+              <client:webp.MaterialWebpImage url="/images/card-1.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -459,11 +460,11 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage resource="{res.card2}"/>
+              <client:webp.MaterialWebpImage url="/images/card-2.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -475,11 +476,11 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage resource="{res.card3}"/>
+              <client:webp.MaterialWebpImage url="/images/card-3.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -491,11 +492,11 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="BLACK">
             <m:MaterialCardImage>
-              <m:MaterialImage resource="{res.card4}"/>
+              <client:webp.MaterialWebpImage url="/images/card-4.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
               <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="/images/profile.jpg" circle="true" width="32px" height="32px" />
@@ -528,11 +529,11 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
       <showcase:PathAnimatorShowcase />
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialCard backgroundColor="WHITE" textColor="WHITE"><br/>
         &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
@@ -550,7 +551,7 @@
         &lt;/m:MaterialCard><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Grid Card Animation" />
       <demo:PrettyPre addStyleNames="lang-java">
@@ -572,7 +573,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -594,7 +595,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -616,7 +617,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -638,7 +639,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -660,7 +661,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -682,7 +683,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -704,7 +705,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -726,7 +727,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -748,7 +749,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -770,7 +771,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage resource="{res.card}"/>
+              <client:webp.MaterialWebpImage url="/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">

@@ -21,9 +21,9 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:ma="urn:import:gwt.material.design.addins.client"
-             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
   <g:HTMLPanel>
     <g:HTMLPanel addStyleNames="row code">
       <m:MaterialTitle title="Introduction" description="Progressive Web Apps are user experiences that have the reach of the web, and are:" >
@@ -34,11 +34,11 @@
         <b>Fast</b> - Respond quickly to user interactions with silky smooth animations and no janky scrolling. <br/>
         <b>Engaging</b> - Feel like a natural app on the device, with an immersive user experience.
       </blockquote>
-      <m:MaterialImage grid="col m6 l6 s12" url="/images/pwa-intro.png" />
+      <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="/images/pwa-intro.webp" fallbackExtension="png" />
     </g:HTMLPanel>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialImage grid="col m6 l6 s12" url="/images/pwa-reliable.png" />
+      <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="/images/pwa-reliable.webp" fallbackExtension="png" />
       <m:MaterialTitle grid="col m6 l6 s12" title="Reliable" description="When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.A service worker is like a client-side proxy, written in JavaScript and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users." >
         <m:MaterialLink text="SERVICE WORKER" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#serviceworker" target="_blank" />
       </m:MaterialTitle>
@@ -48,11 +48,11 @@
       <m:MaterialTitle grid="col m6 l6 s12" title="Fast" description="53% of users will abandon a site if it takes longer than 3 seconds to load! And once loaded, they expect them to be fast, no janky scrolling or slow to respond interfaces.">
         <m:MaterialLink text="LEARN MORE" href="https://developers.google.com/web/fundamentals/performance/" target="_blank" />
       </m:MaterialTitle>
-      <m:MaterialImage grid="col m6 l6 s12" url="/images/pwa-fast.png"/>
+      <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="/images/pwa-fast.webp" fallbackExtension="png"/>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialImage grid="col m6 l6 s12" url="/images/pwa-engaging.png" />
+      <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="/images/pwa-engaging.webp" fallbackExtension="png" />
       <m:MaterialTitle grid="col m6 l6 s12" title="Engaging" description="Progressive Web Apps are installable and live on the users home screen, without the need for an app store. They offer an immersive full screen experience with help from a web app manifest file and can even re-engage users with web push notifications.The Web App Manifest allows you to control how your app appears and how it's launched. You can specify icons for the home screen and splash screen which is shown while the app is loading. Which page is loaded when the app is launched, screen orientation, even whether to show the browser chrome or not.">
         <m:MaterialLink text="WEB APP MANIFEST" marginRight="40" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#installable" target="_blank" />
         <m:MaterialLink text="WEB PUSH NOTIFICATIONS" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#notification" target="_blank" />
