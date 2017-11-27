@@ -60,4 +60,6 @@
 
     <set-configuration-property name="gin.ginjector.modules"
                                 value="gwt.material.design.demo.client.gin.ClientModule"/>
+
+    <collapse-all-properties value="true" />
 </module>
