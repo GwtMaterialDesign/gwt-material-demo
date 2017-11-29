@@ -43,7 +43,7 @@
     
           <m:MaterialRow padding="32" textAlign="CENTER">
               <m:MaterialColumn grid="l6 m6 s12" offset="l3 m3 l0">
-                  <client:webp.MaterialWebpImage ui:field="imgHero" url="images/batman.webp" fallbackExtension="png" circle="true" shadow="1"/>
+                  <client:webp.MaterialWebpImage ui:field="imgHero" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.webp" fallbackExtension="png" circle="true" shadow="1"/>
                   <m:MaterialLabel ui:field="lblName" text="Batman" fontSize="2em"/>
                   <m:MaterialLabel ui:field="lblDescription" text="Batman's secret identity is Bruce Wayne, an American billionaire, playboy, philanthropist, and owner of Wayne Enterprises. After witnessing the murder of his parents as a child, he swore revenge on criminals, an oath tempered by a sense of justice. Wayne trains himself both physically and intellectually and crafts a bat-inspired persona to fight crime."/>
                   <m:MaterialRow offset="l3 m3 l0" grid="l6 m6 s12" marginTop="20">

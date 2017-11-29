@@ -98,7 +98,7 @@
                            description="Download, fork, pull, file issues, and more at the official GWT Material repo on Github."/>
           <m:MaterialAnchorButton href="https://github.com/GwtMaterialDesign/gwt-material/" target="_blank" text="Github" waves="LIGHT" textColor="WHITE"/>
           <m:MaterialTooltip text="Visit our Community" position="RIGHT">
-            <ma:webp.MaterialWebpImage ui:field="imgGPlus" url="images/gplus.webp" fallbackExtension="png" addStyleNames="{style.gplus}"/>
+            <ma:webp.MaterialWebpImage ui:field="imgGPlus" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/gplus.webp" fallbackExtension="png" addStyleNames="{style.gplus}"/>
           </m:MaterialTooltip>
         </m:MaterialColumn>
       </m:MaterialRow>

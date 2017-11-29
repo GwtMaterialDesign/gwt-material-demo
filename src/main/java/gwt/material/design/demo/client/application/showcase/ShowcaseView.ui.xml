@@ -69,7 +69,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER">
-        <client:webp.MaterialWebpImage url="images/ic_splash.webp" fallbackExtension="png" width="300px"/>
+        <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ic_splash.webp" fallbackExtension="png" width="300px"/>
         <m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" />
       </m:MaterialSplashScreen>
       <m:MaterialTitle title="SplashScreen" />
@@ -97,19 +97,19 @@
   
       <m:MaterialPanel addStyleNames="{style.parallax_demo}" m:id="parallax_demo">
         <m:MaterialParallax height="300px">
-          <client:webp.MaterialWebpImage url="images/io1.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
   
         <m:MaterialParallax height="300px">
-          <client:webp.MaterialWebpImage url="images/io1.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
   
         <m:MaterialParallax height="300px">
-          <client:webp.MaterialWebpImage url="images/io1.webp" fallbackExtension="jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
@@ -139,7 +139,7 @@
         <m:MaterialColumn grid="s12 m8 l6" offset="l4" >
           <m:MaterialPanel shadow="1" addStyleNames="{style.panel}">
             <m:MaterialPanel addStyleNames="{style.fieldPanel}">
-              <client:webp.MaterialWebpImage url="images/yuna-medium.webp" fallbackExtension="jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna-medium.webp" fallbackExtension="jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
               <m:MaterialTextBox type="EMAIL" placeholder="Email"/>
               <m:MaterialTextBox type="PASSWORD" placeholder="Password" />
               <m:MaterialButton ui:field="btnLogin" waves="LIGHT" text="Log In" width="100%"/>

@@ -239,7 +239,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <ma:webp.MaterialWebpImage url="images/card.webp" fallbackExtension="png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -256,7 +256,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <ma:webp.MaterialWebpImage url="images/card.webp" fallbackExtension="png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -273,7 +273,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <ma:webp.MaterialWebpImage url="images/card.webp" fallbackExtension="png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   

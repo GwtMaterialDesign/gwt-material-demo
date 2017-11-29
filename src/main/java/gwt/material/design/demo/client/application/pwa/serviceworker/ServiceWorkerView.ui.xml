@@ -32,7 +32,7 @@
       <m:MaterialRow>
         <m:MaterialAnchorButton text="Link to File" href="https://gist.github.com/kevzlou7979/ad8eb8a779fc6faa0c7b4b3c9108c3c5" target="_blank" />
       </m:MaterialRow>
-      <client:webp.MaterialWebpImage url="/images/service-worker.webp" fallbackExtension="png"/>
+      <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/service-worker.webp" fallbackExtension="png"/>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">

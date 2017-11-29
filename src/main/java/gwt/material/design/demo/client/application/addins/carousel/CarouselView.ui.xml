@@ -312,9 +312,9 @@
                 <m:MaterialButton margin="4" text="Add Slide" ui:field="btnAdd" />
                 <m:MaterialButton margin="4" text="Remove Slide" ui:field="btnRemove" />
                 <ma:carousel.MaterialCarousel ui:field="carouselDynamic" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
-                    <ma:webp.MaterialWebpImage url="images/slide-1.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="images/slide-2.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="images/slide-3.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
                 </ma:carousel.MaterialCarousel>
             </m:MaterialRow>
 
@@ -337,9 +337,9 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type Image" description="This Carousel type is good for image slider."/>
             <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
-                <ma:webp.MaterialWebpImage url="images/slide-1.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-2.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-3.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
             </ma:carousel.MaterialCarousel>
             <demo:PrettyPre addStyleNames="code">
                 &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true"><br/>
@@ -354,9 +354,9 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Fade" description="Enable Fade Transition by calling fade='true'."/>
             <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
-                <ma:webp.MaterialWebpImage url="images/slide-1.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-2.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-3.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
             </ma:carousel.MaterialCarousel>
             
             <demo:PrettyPre addStyleNames="code">
@@ -373,9 +373,9 @@
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
             <m:MaterialRow addStyleNames="code">
                 <ma:carousel.MaterialCarousel ui:field="carouselEvents" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
-                    <ma:webp.MaterialWebpImage url="images/slide-1.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="images/slide-2.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="images/slide-3.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
                 </ma:carousel.MaterialCarousel>
             </m:MaterialRow>
             <demo:PrettyPre addStyleNames="lang-xml">
@@ -405,21 +405,21 @@
             <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
             <ma:carousel.MaterialCarousel visible="false" ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
                 <m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
-                    <ma:webp.MaterialWebpImage url="images/onboard-1.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-1.webp" fallbackExtension="png" grid="s12 m6 l12"/>
                     <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
                         <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
                         <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
-                    <ma:webp.MaterialWebpImage url="images/onboard-2.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-2.webp" fallbackExtension="png" grid="s12 m6 l12"/>
                     <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
                         <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
                         <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
                     </m:MaterialColumn>
                 </m:MaterialRow>
                 <m:MaterialRow textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
-                    <ma:webp.MaterialWebpImage url="images/onboard-3.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-3.webp" fallbackExtension="png" grid="s12 m6 l12"/>
                     <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
                         <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
                         <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
@@ -464,9 +464,9 @@
             <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
             <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
             <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
-                <ma:webp.MaterialWebpImage url="images/slide-1.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-2.webp" fallbackExtension="png"/>
-                <ma:webp.MaterialWebpImage url="images/slide-3.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
             </ma:carousel.MaterialCarousel>
 
             <demo:PrettyPre addStyleNames="lang-java">

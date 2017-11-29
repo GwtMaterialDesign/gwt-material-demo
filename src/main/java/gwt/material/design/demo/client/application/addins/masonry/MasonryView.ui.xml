@@ -167,7 +167,7 @@
                 <m:MaterialColumn grid="l6 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="GREY_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/kodalin.webp" fallbackExtension="jpg" />
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/kodalin.webp" fallbackExtension="jpg" />
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -183,7 +183,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="TEAL_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/foster.webp" fallbackExtension="jpg"/>
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/foster.webp" fallbackExtension="jpg"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -198,7 +198,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PURPLE_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/ellie.webp" fallbackExtension="png"/>
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ellie.webp" fallbackExtension="png"/>
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -213,7 +213,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="PINK_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/onerepublic.webp" fallbackExtension="png" />
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onerepublic.webp" fallbackExtension="png" />
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -229,7 +229,7 @@
                 <m:MaterialColumn grid="l2 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="RED_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/rca.webp" fallbackExtension="jpg" />
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/rca.webp" fallbackExtension="jpg" />
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">
@@ -244,7 +244,7 @@
                 <m:MaterialColumn grid="l4 s12 m6" padding="4">
                     <m:MaterialCard marginBottom="0" marginTop="0" backgroundColor="AMBER_DARKEN_1">
                         <m:MaterialCardImage waves="DEFAULT">
-                            <ma:webp.MaterialWebpImage url="images/william-parrel.webp" fallbackExtension="jpg" />
+                            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/william-parrel.webp" fallbackExtension="jpg" />
                         </m:MaterialCardImage>
     
                         <m:MaterialCardContent textColor="BLACK">

@@ -56,9 +56,9 @@
                     <ma:tree.MaterialTree ui:field="docTree">
                         <ma:tree.MaterialTreeItem iconType="FOLDER" text="Documents">
                             <ma:tree.MaterialTreeItem iconType="IMAGE" text="Images">
-                                <ma:tree.MaterialTreeItem url="images/flash.webp" fallbackExtension="png" text="flash.jpg" />
-                                <ma:tree.MaterialTreeItem url="images/superman.webp" fallbackExtension="png" text="superman.jpg" />
-                                <ma:tree.MaterialTreeItem url="images/batman.webp" fallbackExtension="png" text="batman.jpg" />
+                                <ma:tree.MaterialTreeItem url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/flash.webp" fallbackExtension="png" text="flash.jpg" />
+                                <ma:tree.MaterialTreeItem url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/superman.webp" fallbackExtension="png" text="superman.jpg" />
+                                <ma:tree.MaterialTreeItem url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/batman.webp" fallbackExtension="png" text="batman.jpg" />
                             </ma:tree.MaterialTreeItem>
                             <ma:tree.MaterialTreeItem iconType="VIDEO_LIBRARY" text="Videos">
                                 <ma:tree.MaterialTreeItem iconType="MUSIC_VIDEO" text="Animations">

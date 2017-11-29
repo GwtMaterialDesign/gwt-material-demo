@@ -37,7 +37,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Basic" description="Here are the basic layers / layout structure of any GMD Applications."/>
-        <client:webp.MaterialWebpImage url="images/arc.webp" fallbackExtension="png"/>
+        <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/arc.webp" fallbackExtension="png"/>
       </m:MaterialRow>
     </g:HTMLPanel>
   </m:MaterialPanel>

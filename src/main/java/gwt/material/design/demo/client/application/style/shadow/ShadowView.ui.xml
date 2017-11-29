@@ -56,7 +56,7 @@
   
       <g:HTMLPanel addStyleNames="code">
         <m:MaterialTitle title="Any Material Elements" description="You can directly add shadows on any material widgets by adding: addStyleNames='z-depth-1' to the ui binder widget. "/>
-        <ma:webp.MaterialWebpImage url="images/image.webp" fallbackExtension="png" addStyleNames="z-depth-1"/>
+        <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/image.webp" fallbackExtension="png" addStyleNames="z-depth-1"/>
   
         <demo:PrettyPre addStyleNames="lang-xml">
           &lt;m:MaterialImage resource="{res.image}" addStyleNames="z-depth-1"/>

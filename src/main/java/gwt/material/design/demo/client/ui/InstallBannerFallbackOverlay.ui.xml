@@ -28,7 +28,7 @@
 	<ma:overlay.MaterialOverlay ui:field="overlay" textColor="WHITE" style="background: rgba(33, 150, 243, 0.8)">
 		<m:MaterialRow>
 			<m:MaterialColumn grid="s10 m4 l4" offset="s1 m4 l4" paddingTop="120" layoutPosition="RELATIVE">
-				<ma:webp.MaterialWebpImage url="images/install-arrow.webp" fallbackExtension="png" layoutPosition="ABSOLUTE" top="44" right="0"/>
+				<ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/install-arrow.webp" fallbackExtension="png" layoutPosition="ABSOLUTE" top="44" right="0"/>
 				<m:MaterialLabel fontSize="1.4em" marginBottom="8" fontWeight="BOLD" text="Add GMD to Homescreen" />
 				<m:MaterialLabel fontSize="1.2em" text="Tap to brink your browser menu and select Add to homescreen to pin the GMD Web App" />
 				<m:MaterialButton ui:field="gotIt" waves="DEFAULT" marginTop="12" textColor="BLACK" backgroundColor="WHITE" text="Got It!" />

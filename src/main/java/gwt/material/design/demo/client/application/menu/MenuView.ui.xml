@@ -76,7 +76,7 @@
 
 		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
-				<ma:webp.MaterialWebpImage width="100%" url="images/logo.webp" fallbackExtension="png" addStyleNames="{style.logo}"/>
+				<ma:webp.MaterialWebpImage width="100%" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/logo.webp" fallbackExtension="png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About"/>
@@ -207,6 +207,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTree}" text="Tree View" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getWaterfall}" text="Waterfall" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getWebpImage}" text="Webp" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getWindow}" text="Window" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
@@ -231,7 +232,6 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getWebpImage}" text="Webp" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>

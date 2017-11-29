@@ -83,7 +83,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Flexible Integration" description="MaterialFileUploader can be use on any widgets to control the upload process." />
-            <m:MaterialImage url="images/dnd-upload.gif" />
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/dnd-upload.gif" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialRow><br/>
                 &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="cardUploader" acceptedFiles="image/*" grid="l4" url="/fileupload" preview="false" maxFileSize="20" shadow="0" clickable="cardUpload"><br/>

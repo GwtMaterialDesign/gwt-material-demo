@@ -31,7 +31,6 @@ import gwt.material.design.demo.client.application.incubator.recaptcha.Recaptcha
 import gwt.material.design.demo.client.application.incubator.search.InlineSearchModule;
 import gwt.material.design.demo.client.application.incubator.timer.TimerModule;
 import gwt.material.design.demo.client.application.incubator.toggle.ToggleModule;
-import gwt.material.design.demo.client.application.incubator.webp.WebpImageModule;
 
 public class IncubatorModule extends AbstractPresenterModule {
 
@@ -46,6 +45,5 @@ public class IncubatorModule extends AbstractPresenterModule {
         install(new InlineSearchModule());
         install(new TimerModule());
         install(new ToggleModule());
-        install(new WebpImageModule());
     }
 }

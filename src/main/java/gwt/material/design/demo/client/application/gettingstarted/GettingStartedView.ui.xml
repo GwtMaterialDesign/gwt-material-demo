@@ -241,7 +241,7 @@
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialTitle title="Starter Template"  description="You can copy and paste the UI Binder Code of this starter template into your app to know how GWT Material works with basic Nav Bar, Side Bar, Fixed Footer, and Container works."/>
-          <client:webp.MaterialWebpImage url="images/starter.webp" fallbackExtension="png" type="MATERIALBOXED"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/starter.webp" fallbackExtension="png" type="MATERIALBOXED"/>
           <m:MaterialButton ui:field="btnDemoStarter" text="Demo" iconType="SEARCH" iconPosition="RIGHT"/>
           <m:MaterialButton ui:field="btnSourceStarter" text="Source" iconType="FILE_DOWNLOAD" iconPosition="RIGHT"/>
         </m:MaterialColumn>

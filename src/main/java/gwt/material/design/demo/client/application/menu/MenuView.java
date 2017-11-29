@@ -177,6 +177,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Time Picker", "#" + NameTokens.timepickers));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Tree View", "#" + NameTokens.tree));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Waterfall", "#" + NameTokens.waterfall));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "WebP", "#" + NameTokens.webpImage));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Window", "#" + NameTokens.window));
 
         // Incubator
@@ -189,7 +190,6 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Search", "#" + NameTokens.search));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Timer", "#" + NameTokens.timer));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Toggle", "#" + NameTokens.toggle));
-        listSearches.add(new SearchObject(IconType.ARCHIVE, "WebP", "#" + NameTokens.webpImage));
 
         // Style And Layout
         listSearches.add(new SearchObject(IconType.STYLE, "Colors", "#" + NameTokens.colors));

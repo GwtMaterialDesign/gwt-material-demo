@@ -59,7 +59,7 @@
         </demo:PrettyPre>
       </m:MaterialColumn>
       <m:MaterialColumn grid="s12 m6 l6">
-        <client:webp.MaterialWebpImage url="images/service-worker-2.webp" fallbackExtension="png"/>
+        <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/service-worker-2.webp" fallbackExtension="png"/>
       </m:MaterialColumn>
     </m:MaterialRow>
 
@@ -72,7 +72,7 @@
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Demo" description="Here's a sample screenshot how to enable Add to Homescreen into your mobile device" />
-      <m:MaterialImage url="images/add-to-homescreen.gif" />
+      <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/add-to-homescreen.gif" />
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
