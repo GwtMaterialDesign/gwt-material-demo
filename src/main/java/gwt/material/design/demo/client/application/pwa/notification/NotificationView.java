@@ -21,14 +21,9 @@ package gwt.material.design.demo.client.application.pwa.notification;
  */
 
 
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.pwa.pushnotifications.PushNotification;
-import gwt.material.design.client.pwa.pushnotifications.PushNotificationOptions;
-import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -39,68 +34,5 @@ public class NotificationView extends ViewImpl implements NotificationPresenter.
     @Inject
     NotificationView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-    }
-
-    @UiHandler("btnNotify")
-    void onNotify(ClickEvent e) {
-        PushNotification.create("Gwt Material Design");
-    }
-
-    @UiHandler("btnNotifyOptions")
-    void onNotifyOptions(ClickEvent e) {
-        PushNotificationOptions options = new PushNotificationOptions();
-        options.body = "I love GWT Material";
-        options.icon = "https://i.imgur.com/VaBxpGj.png";
-        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";
-        options.timeout = 4000;
-        PushNotification.create("Gwt Material Design", options);
-    }
-
-    @UiHandler("btnNotifyCallbacks")
-    void onNotifyCallbacks(ClickEvent e) {
-        PushNotificationOptions options = new PushNotificationOptions();
-        options.body = "I love GWT Material";
-        options.icon = "https://i.imgur.com/VaBxpGj.png";
-        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";
-        options.timeout = 4000;
-        options.onClick = () -> {
-            MaterialToast.fireToast("Clicked");
-        };
-        options.onClose = () -> {
-            MaterialToast.fireToast("Closed");
-        };
-        options.onError = () -> {
-            MaterialToast.fireToast("Errored");
-        };
-        options.onShow = () -> {
-            MaterialToast.fireToast("Showed");
-        };
-        PushNotification.create("Gwt Material Design", options);
-    }
-
-    @UiHandler("btnNotifyInteraction")
-    void onNotifyInteraction(ClickEvent e) {
-        PushNotificationOptions options = new PushNotificationOptions();
-        options.body = "I love GWT Material";
-        options.icon = "https://i.imgur.com/VaBxpGj.png";
-        options.link = "https://gwtmaterialdesign.github.io/gwt-material-demo";
-        options.timeout = 4000;
-        options.requireInteraction = true;
-        PushNotification.create("Gwt Material Design", options);
-    }
-
-    @UiHandler("btnCount")
-    void onCountNofications(ClickEvent e) {
-        MaterialToast.fireToast(PushNotification.count() + " notification(s) opened");
-    }
-
-    @UiHandler("btnShow")
-    void onShow(ClickEvent e) {
-        PushNotification.create("Gwt Material Design");
-    }
-
-    @UiHandler("btnClear")
-    void onClose(ClickEvent e) {
-        PushNotification.clear();
     }
 }

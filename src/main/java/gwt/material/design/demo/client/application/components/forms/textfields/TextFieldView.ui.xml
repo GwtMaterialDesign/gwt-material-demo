@@ -160,6 +160,17 @@
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="ReturnValueAsNull" description="With this attribute set to true a call to getValue() returns null when the validator obtained by createBlankValidator() recognizes the value as blank. You can use this attribute for non-mandatory input fields that have @Pattern constraint, like an e-mail or phone input. This way you avoid the @Pattern#regexp being matched against an empty string when your user does not enter a value into such input."/>
+      <m:MaterialTextBox ui:field="txtBoxAsNullValue" label="TextBox" grid="s12"/>
+      <m:MaterialSwitch ui:field="switchAsNullValue" onLabel="As Null" offLabel="As Empty" grid="s12" />
+      <m:MaterialButton text="Get Value" ui:field="getValueAsNull" margin="12"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialTextBox ui:field="txtBoxAsNullValue" returnBlankAsNull="true" label="TextBox" grid="s12"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="ValueBox : setValue(value, fireEvents)"/>
       <m:MaterialTextBox ui:field="txtBoxValue" text="Some Value" label="TextBox" grid="s12"/>
       <m:MaterialRow>
