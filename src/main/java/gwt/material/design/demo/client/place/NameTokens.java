@@ -111,6 +111,7 @@ public class NameTokens {
     public static final String checkbox = "checkbox";
     public static final String switches = "switches";
     public static final String range = "range";
+    public static final String infinitescroll = "infinitescroll";
 
     // Incubator Widgets
     public static final String alert = "alert";
@@ -522,5 +523,9 @@ public class NameTokens {
 
     public static String getWalkthrough() {
         return walkthrough;
+    }
+
+    public static String getInfinitescroll() {
+        return infinitescroll;
     }
 }

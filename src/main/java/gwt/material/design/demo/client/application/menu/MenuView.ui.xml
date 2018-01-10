@@ -228,6 +228,10 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getProgressLineBar}" text="Progress Line Bar" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRecaptcha}" text="Recaptcha" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
+                            <m:MaterialLink targetHistoryToken="{tokens.getInfinitescroll}" text="Infinite Scroll"
+                                            waves="DEFAULT">
+                                <m:MaterialBadge text="NEW" textColor="WHITE"/>
+                            </m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getWalkthrough}" text="Walkthrough" waves="DEFAULT"/>
