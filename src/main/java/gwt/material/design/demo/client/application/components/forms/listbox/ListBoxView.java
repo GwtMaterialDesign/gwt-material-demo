@@ -44,13 +44,12 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
     MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
 
     @UiField
-    MaterialListValueBox<Hero> lstValueBox, lstValueBoxMultiple, lstEmptyPlacehoder, lstFocusAndBlur;
+    MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
 
     @Inject
     ListBoxView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        buildListHeroes(lstValueBoxMultiple);
         buildListHeroes(lstValueBox);
         buildListHeroes(lstEmptyPlacehoder);
 
