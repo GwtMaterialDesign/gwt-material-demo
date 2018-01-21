@@ -50,6 +50,28 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Using MaterialListValueBox" description="You can easily set the generic param with your desired object into the MaterialListValueBox." />
+      <m:MaterialListValueBox ui:field="lstValueBox" placeholder="Choose your hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;// UiBinder<br/>
+        &lt;m:MaterialListValueBox ui:field="lstIntegerListBox" placeholder="Choose your hero" grid="s12"/>
+      </demo:PrettyPre>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Java <br/>
+        @UiField <br/>
+        MaterialListValueBox&lt;Hero> lstIntegerListBox; <br/><br/>
+
+        for (Hero hero : DataHelper.getAllHeroes()) { <br/>
+        &emsp;lstIntegerListBox.addItem(hero, hero.getName()); <br/>
+        } <br/><br/>
+
+        lstIntegerListBox.addValueChangeHandler(valueChangeEvent -> { <br/>
+        &emsp;MaterialToast.fireToast("VALUE: " + valueChangeEvent.getValue().getName()); <br/>
+        });
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Add Option" description="You can easily add an item by calling addItem(Item)"/>
       <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstAddOptions">
         <m.html:Option text="Option 1"/>
@@ -173,6 +195,31 @@
         &emsp;&lt;m.html:Option text="Option 3"/><br/>
         &emsp;&lt;m.html:Option text="Option 4"/><br/>
         &lt;/m:MaterialListBox><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Empty Placeholder" />
+      <m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Focus and Blur Handlers" />
+      <m:MaterialListValueBox ui:field="lstFocusAndBlur" placeholder="Select your Hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;lstOptions.addFocusHandler(focusEvent -> { <br/>
+        &emsp;MaterialToast.fireToast("FOCUSED");<br/>
+        });<br/><br/>
+
+        lstOptions.addBlurHandler(blurEvent -> {<br/>
+        &emsp;MaterialToast.fireToast("BLURRED");<br/>
+        });
       </demo:PrettyPre>
     </m:MaterialRow>
 

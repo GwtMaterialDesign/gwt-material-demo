@@ -30,7 +30,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.application.dto.DataHelper;
+import gwt.material.design.demo.client.application.dto.Hero;
 
 import javax.inject.Inject;
 
@@ -41,6 +45,10 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
     @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy, lstAllowBlank;
 
     @UiField
+    MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
+
+
+    @UiField
     MaterialButton allowBlankSetValue;
 
     @Inject
@@ -48,6 +56,28 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
         initWidget(uiBinder.createAndBindUi(this));
 
         generateAllowBlankItems(lstAllowBlank);
+
+        buildListHeroes(lstValueBox);
+        buildListHeroes(lstEmptyPlacehoder);
+
+        lstFocusAndBlur.addFocusHandler(focusEvent -> MaterialToast.fireToast("Focus Event Fired"));
+        lstFocusAndBlur.addBlurHandler(blurEvent -> MaterialToast.fireToast("Blur Event Fired"));
+        buildListHeroes(lstFocusAndBlur);
+
+        lstOptions.addFocusHandler(focusEvent -> {
+            MaterialToast.fireToast("FOCUSED");
+        });
+
+        lstOptions.addBlurHandler(blurEvent -> {
+            MaterialToast.fireToast("BLURRED");
+        });
+    }
+
+    protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {
+        listBox.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast("VALUE [ " + valueChangeEvent.getValue().getName() + " ]"));
+        for (Hero hero : DataHelper.getAllHeroes()) {
+            listBox.addItem(hero, hero.getName());
+        }
     }
 
     @UiHandler("cbAllowBlank")
