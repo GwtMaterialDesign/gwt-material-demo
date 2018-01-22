@@ -3,7 +3,7 @@ var __gwtModuleFunction = $wnd.gwtmaterialdemo;
 var $sendStats = __gwtModuleFunction.__sendStats;
 $sendStats('moduleStartup', 'moduleEvalStart');
 var $gwt_version = "2.8.1";
-var $strongName = 'F0B75977849DF585C2BBB644D96C521F';
+var $strongName = 'CE7A6ECA1CC43806EBF0B8D63A171016';
 var $gwt = {};
 var $doc = $wnd.document;
 var $moduleName, $moduleBase;
@@ -23495,7 +23495,7 @@ function $load_18(this$static){
   $wnd.$($getElement(this$static.listBox)).material_select(makeLambdaFunction(MaterialListValueBox$lambda$1$Type.prototype.call_10, MaterialListValueBox$lambda$1$Type, []));
   listBoxElement.change(makeLambdaFunction(MaterialListValueBox$lambda$2$Type.prototype.call_4, MaterialListValueBox$lambda$2$Type, [this$static]));
   selectDropdown = listBoxElement.siblings('input.select-dropdown');
-  selectDropdown.mousedown(makeLambdaFunction(MaterialListValueBox$lambda$3$Type.prototype.call_4, MaterialListValueBox$lambda$3$Type, [listBoxElement]));
+  selectDropdown.mousedown(makeLambdaFunction(MaterialListValueBox$lambda$3$Type.prototype.call_11, MaterialListValueBox$lambda$3$Type, [listBoxElement]));
   selectDropdown.blur(makeLambdaFunction(MaterialListValueBox$lambda$4$Type.prototype.call_4, MaterialListValueBox$lambda$4$Type, [this$static]));
   selectDropdown.focus(makeLambdaFunction(MaterialListValueBox$lambda$5$Type.prototype.call_4, MaterialListValueBox$lambda$5$Type, [this$static]));
   this$static.loaded = true;
@@ -23655,7 +23655,7 @@ function MaterialListValueBox$lambda$3$Type(listBoxElement_0){
 }
 
 defineClass(2981, $wnd.Function, {}, MaterialListValueBox$lambda$3$Type);
-_.call_4 = function call_122(arg0, arg1){
+_.call_11 = function call_122(arg0, arg1){
   return $wnd.$("input[data-activates!='" + this.listBoxElement_0.attr('data-activates') + "'].select-dropdown").trigger('close', ($clinit_Boolean() , $clinit_Boolean() , true)) , $clinit_Boolean() , $clinit_Boolean() , true;
 }
 ;
