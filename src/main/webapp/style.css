@@ -23,6 +23,11 @@ pre {
 	color: #999;
 }
 
+/** DatePicker formatting rules **/
+table.format-table tr td {
+    padding: 20px;
+}
+
 /** Example rules used by the template application (remove for your app) */
 h1 {
   font-size: 2em;
