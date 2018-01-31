@@ -38,10 +38,11 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
     }
 
     @UiField
-    MaterialOverlay overlay, overlayEvents;
+    MaterialOverlay overlay, overlayEvents, overlayParent, overlayChild, overlayChild2;
 
     @UiField
-    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents;
+    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents,
+            btnCloseParent, btnOpenChild, btnOpenParent, btnCloseChild, btnOpenChild2, btnCloseChild2;
 
     @Inject
     OverlayView(Binder uiBinder) {
@@ -60,5 +61,12 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
 
         btnOpenOverlayEvents.addClickHandler(clickEvent -> overlayEvents.open(btnOpenOverlayEvents));
         btnCloseOverlayEvents.addClickHandler(e -> overlayEvents.close());
+
+        btnOpenParent.addClickHandler(clickEvent -> overlayParent.open(btnOpenParent));
+        btnOpenChild.addClickHandler(clickEvent -> overlayChild.open(btnOpenChild));
+        btnCloseParent.addClickHandler(clickEvent -> overlayParent.close());
+        btnCloseChild.addClickHandler(clickEvent -> overlayChild.close());
+        btnOpenChild2.addClickHandler(clickEvent -> overlayChild2.open(btnOpenChild2));
+        btnCloseChild2.addClickHandler(clickEvent -> overlayChild2.close());
     }
 }
