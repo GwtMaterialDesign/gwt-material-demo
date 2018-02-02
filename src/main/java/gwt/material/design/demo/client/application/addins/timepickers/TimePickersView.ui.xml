@@ -41,7 +41,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Disabled Styles" description="You can disable your time picker by adding enabled='false'"/>
-            <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" enabled="false" grid="s12"/>
+            <ma:timepicker.MaterialTimePicker waves="DEFAULT" placeholder="Snooze Time" enabled="false" grid="s12"/>
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
@@ -134,6 +134,14 @@
             <m:MaterialButton ui:field="btnGetValue" text="Get Value" />
             <demo:PrettyPre addStyleNames="lang-java">
                 timepick.clear();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Language Support" description="Change the Footer Cancel and Ok texts." />
+            <ma:timepicker.MaterialTimePicker cancelText="Kanselahin" okText="Tapos na" placeholder="Snooze Time" grid="s12"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:timepicker.MaterialTimePicker cancelText="Kanselahin" okText="Tapos na" placeholder="Snooze Time" grid="s12"/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </m:MaterialPanel>

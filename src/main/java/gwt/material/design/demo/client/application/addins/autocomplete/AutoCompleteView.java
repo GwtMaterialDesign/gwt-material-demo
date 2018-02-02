@@ -80,6 +80,10 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
         acModal.setSuggestions(oracle);
+
+        acListType.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast("Value: " + valueChangeEvent.getValue().get(0).getDisplayString());
+        });
     }
 
 
@@ -148,5 +152,28 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     @UiHandler("btnClose")
     void onClose(ClickEvent e) {
         modal.close();
+    }
+
+    @UiHandler("getTextValue")
+    void getTextValue(ClickEvent e) {
+        if (acListType.getItemBox().getText().isEmpty()) {
+            MaterialToast.fireToast("Value is empty");
+        } else {
+            MaterialToast.fireToast(acListType.getItemBox().getText() + "");
+        }
+    }
+
+    @UiHandler("setTextValue")
+    void setTextValue(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(0).getName());
+        acListType.setItemValues(itemValues);
+    }
+
+    @UiHandler("setTextValueEvent")
+    void setTextValueEvent(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(1).getName());
+        acListType.setItemValues(itemValues, true);
     }
 }

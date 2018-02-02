@@ -22,7 +22,7 @@ package gwt.material.design.demo.client.application.addins.timepickers;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.*;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -41,7 +41,7 @@ public class TimePickersView extends ViewImpl implements TimePickersPresenter.My
     }
 
     @UiField
-    MaterialTimePicker tpEvents, tpClear, tpOpenClose, tpValue;
+    MaterialTimePicker tpEvents, tpClear, tpOpenClose, tpValue  ;
 
     @Inject
     TimePickersView(Binder uiBinder) {

@@ -144,8 +144,27 @@
                     <ma:autocomplete.MaterialAutoComplete ui:field="acListType" type="TEXT" limit="1" placeholder="Contacts" grid="s12"/>
                 </m:MaterialColumn>
             </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12">
+                    <m:MaterialButton text="Get Value" marginRight="12" ui:field="getTextValue" />
+                    <m:MaterialButton text="Set Value" marginRight="12" ui:field="setTextValue" />
+                    <m:MaterialButton text="Set Value with Event" ui:field="setTextValueEvent" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
             <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;!-- UiBinder Definition --> <br/>
                 &emsp;&lt;ma:autocomplete.MaterialAutoComplete type="TEXT" limit="1" placeholder="States" />
+            </demo:PrettyPre>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &lt;!-- Setting Value --> <br/>
+                List&lt;String> itemValues = new ArrayList&lt;>(); <br/>
+                itemValues.add(getAllUsers().get(0).getName()); <br/>
+                acListType.setItemValues(itemValues); <br/><br/>
+                
+                &lt;!-- Getting Value --> <br/>
+                List&lt;String> itemValues = new ArrayList&lt;>(); <br/>
+                itemValues.add(getAllUsers().get(1).getName()); <br/>
+                acListType.setItemValues(itemValues, true);
             </demo:PrettyPre>
         </m:MaterialRow>
     

@@ -39,7 +39,7 @@
     
             <m:MaterialRow>
                 <m:MaterialColumn grid="l6 m6 s12">
-                    <combobox:MaterialComboBox ui:field="comboTimeZone1" placeholder="TimeZone" />
+                    <combobox:MaterialComboBox width="100%"  ui:field="comboTimeZone1" placeholder="TimeZone" />
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialRow>
@@ -459,5 +459,44 @@
             </m:MaterialModal>
         </m:MaterialRow>
 
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Scroll To Top" description="You can set easily the position of ComboBox dropdown results scroll position to top."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12">
+                    <combobox:MaterialComboBox label="Time Zone" ui:field="comboElements" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;comboElements.addOpenHandler(event -> { <br/>
+                    &emsp;comboElements.scrollTop(0); <br/>
+                    });
+                </demo:PrettyPre>
+            </m:MaterialRow>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Provide your Custom Message Text" description="This is good for Language support so that you can easily control the text object in your combobox.."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12">
+                    <combobox:MaterialComboBox label="Time Zone" limit="2" multiple="true" ui:field="comboLanguge" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;LanguageOptions languageOptions = new LanguageOptions(); <br/>
+                    languageOptions.setNoResults(param1 -> "Walang Resulta..."); <br/>
+                    languageOptions.setErrorLoading(param1 -> "May problema..."); <br/>
+                    languageOptions.setInputTooLong(param1 -> "Ang inyong inilagay ay sobrang haba..."); <br/>
+                    languageOptions.setInputTooShort(param1 -> "Ang inyong inilagay ay sobrang liit..."); <br/>
+                    languageOptions.setLoadingMore(param1 -> "Nagloload pa..."); <br/>
+                    languageOptions.setMaximumSelected(param1 -> "Maximum na ang inyong iniligay...");<br/>
+                    languageOptions.setSearching(param1 -> "Kasalukyang hinahanap..."); <br/>
+                    comboLanguge.setLanguage(languageOptions);
+                </demo:PrettyPre>
+            </m:MaterialRow>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

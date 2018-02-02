@@ -21,6 +21,8 @@ package gwt.material.design.demo.client.application.addins.combobox;
  */
 
 
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -29,6 +31,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
+import gwt.material.design.addins.client.combobox.js.LanguageOptions;
 import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.html.OptGroup;
@@ -38,7 +41,6 @@ import gwt.material.design.demo.client.application.dto.TimeZone;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
@@ -47,12 +49,12 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
 
     @UiField
     MaterialComboBox<String> comboTimeZone, comboTimeZone1, comboTimeZone2, comboTimeZone3, comboTimeZone4,
-                             comboTimeZone6, comboTimeZone7, comboTags, comboTagsMultiple;
+                             comboTimeZone6, comboTimeZone7, comboTags, comboTagsMultiple, comboElements;
 
     @UiField
     MaterialComboBox<State> comboTimeZone8, comboTimeZone8_1, comboTimeZone9, comboTimeZone9_1, comboTimeZone10,
                                  comboTimeZone11, comboTimeZone12, comboTimeZone12_1, comboTimeZone13, comboTimeZone14,
-                                 comboTimeZone15, comboTimeZone16, comboTimeZone17, comboCloseOnSelect;
+                                 comboTimeZone15, comboTimeZone16, comboTimeZone17, comboCloseOnSelect, comboLanguge;
 
     @UiField
     MaterialComboBox<State> comboValue;
@@ -76,6 +78,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         addStringItems(comboTimeZone4);
         addStringItems(comboTimeZone6);
         addStringItems(comboTimeZone7);
+        addStringItemsWithoutGroup(comboElements);
         addStateItems(comboTimeZone8);
         addStateItems(comboTimeZone8_1);
         addItemsWithoutGroup(comboTimeZone9);
@@ -92,6 +95,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         addItemsWithoutGroup(comboCloseOnSelect);
         addStringItems(comboTags);
         addStringItems(comboTagsMultiple);
+        addStateItems(comboLanguge);
 
         comboTimeZone8.addValueChangeHandler(valueChangeEvent -> {
             MaterialToast.fireToast("Event: ValueChange State : " + comboTimeZone8.getSingleValue().getName() + " Value: " + comboTimeZone8.getSingleValue().getValue());
@@ -128,6 +132,20 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         comboTimeZone11.addRemoveItemHandler(event -> {
             MaterialToast.fireToast("Removed: " + event.getSelectedValues());
         });
+
+        comboElements.addOpenHandler(event -> {
+            comboElements.scrollTop(0);
+        });
+
+        LanguageOptions languageOptions = new LanguageOptions();
+        languageOptions.setNoResults(param1 -> "Walang Resulta...");
+        languageOptions.setErrorLoading(param1 -> "May problema...");
+        languageOptions.setInputTooLong(param1 -> "Ang inyong inilagay ay sobrang haba...");
+        languageOptions.setInputTooShort(param1 -> "Ang inyong inilagay ay sobrang liit...");
+        languageOptions.setLoadingMore(param1 -> "Nagloload pa...");
+        languageOptions.setMaximumSelected(param1 -> "Maximum na ang inyong iniligay...");
+        languageOptions.setSearching(param1 -> "Kasalukyang hinahanap...");
+        comboLanguge.setLanguage(languageOptions);
     }
 
     protected void addStringItemsWithoutGroup(MaterialComboBox<String> box) {
