@@ -43,10 +43,11 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
     }
 
     @UiField
-    MaterialOverlay overlay, overlayEvents;
+    MaterialOverlay overlay, overlayEvents, overlayParent, overlayChild, overlayChild2;
 
     @UiField
-    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents, btnOverlayTab;
+    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents, btnOverlayTab,
+            btnCloseParent, btnOpenChild, btnOpenParent, btnCloseChild, btnOpenChild2, btnCloseChild2;
 
     @UiField
     MaterialPanel panel;
@@ -68,6 +69,13 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
 
         btnOpenOverlayEvents.addClickHandler(clickEvent -> overlayEvents.open(btnOpenOverlayEvents));
         btnCloseOverlayEvents.addClickHandler(e -> overlayEvents.close());
+
+        btnOpenParent.addClickHandler(clickEvent -> overlayParent.open(btnOpenParent));
+        btnOpenChild.addClickHandler(clickEvent -> overlayChild.open(btnOpenChild));
+        btnCloseParent.addClickHandler(clickEvent -> overlayParent.close());
+        btnCloseChild.addClickHandler(clickEvent -> overlayChild.close());
+        btnOpenChild2.addClickHandler(clickEvent -> overlayChild2.open(btnOpenChild2));
+        btnCloseChild2.addClickHandler(clickEvent -> overlayChild2.close());
 
         /**
          * TODO Overlay Container minimize sample
