@@ -29,7 +29,10 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialListBox;
+import gwt.material.design.client.ui.MaterialListValueBox;
 import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.demo.client.application.dto.DataHelper;
+import gwt.material.design.demo.client.application.dto.Hero;
 
 import javax.inject.Inject;
 
@@ -37,11 +40,37 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
     interface Binder extends UiBinder<Widget, ListBoxView> {
     }
 
-    @UiField MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
+    @UiField
+    MaterialListBox lstOptions, lstSetValue, lstAddOptions, lstRemoveOptions, lstLazy;
+
+    @UiField
+    MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
 
     @Inject
     ListBoxView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        buildListHeroes(lstValueBox);
+        buildListHeroes(lstEmptyPlacehoder);
+
+        lstFocusAndBlur.addFocusHandler(focusEvent -> MaterialToast.fireToast("Focus Event Fired"));
+        lstFocusAndBlur.addBlurHandler(blurEvent -> MaterialToast.fireToast("Blur Event Fired"));
+        buildListHeroes(lstFocusAndBlur);
+
+        lstOptions.addFocusHandler(focusEvent -> {
+            MaterialToast.fireToast("FOCUSED");
+        });
+
+        lstOptions.addBlurHandler(blurEvent -> {
+            MaterialToast.fireToast("BLURRED");
+        });
+    }
+
+    protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {
+        listBox.addValueChangeHandler(valueChangeEvent -> MaterialToast.fireToast("VALUE [ " + valueChangeEvent.getValue().getName() + " ]"));
+        for (Hero hero : DataHelper.getAllHeroes()) {
+            listBox.addItem(hero, hero.getName());
+        }
     }
 
     @UiHandler("addItems")

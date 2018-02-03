@@ -47,7 +47,6 @@ public class FileUploaderView extends ViewImpl implements FileUploaderPresenter.
     FileUploaderView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-
         uploader.addAddedFileHandler(new AddedFileEvent.AddedFileHandler<UploadFile>() {
             @Override
             public void onAddedFile(AddedFileEvent<UploadFile> event) {

@@ -62,5 +62,46 @@
                 overla  yEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Overlay Closed"));
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Nested Overlays" description="You can provide multiple child overlay in order to create a modal-like structure."/>
+
+            <!-- Parent 1 -->
+            <ma:overlay.MaterialOverlay ui:field="overlayParent" overflow="AUTO" backgroundColor="BLUE" textAlign="CENTER" textColor="WHITE" depth="999">
+                <m:MaterialLabel textAlign="CENTER" text="This is an overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                <m:MaterialButton ui:field="btnOpenChild" text="Open Overlay" />
+                <m:MaterialButton ui:field="btnCloseParent" text="Close Overlay" />
+            </ma:overlay.MaterialOverlay>
+            <m:MaterialButton ui:field="btnOpenParent" text="Open Overlay" />
+
+            <!-- Child 1 -->
+            <ma:overlay.MaterialOverlay ui:field="overlayChild" overflow="AUTO" backgroundColor="INDIGO" relativeToWindow="true" textAlign="CENTER" depth="999" textColor="WHITE">
+                <m:MaterialLabel textAlign="CENTER" text="This is a child overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                <m:MaterialButton ui:field="btnOpenChild2" backgroundColor="INDIGO_ACCENT_1" text="Open Child" />
+                <m:MaterialButton ui:field="btnCloseChild" backgroundColor="INDIGO_ACCENT_1" text="Close Overlay" />
+
+                <!-- Child 2 -->
+                <ma:overlay.MaterialOverlay ui:field="overlayChild2" overflow="AUTO" relativeToWindow="true" backgroundColor="PINK" textAlign="CENTER" depth="999" textColor="WHITE">
+                    <m:MaterialLabel textAlign="CENTER" text="This is a Second child overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                    <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                    <m:MaterialButton ui:field="btnCloseChild2" backgroundColor="PINK_ACCENT_1" text="Close Overlay" />
+                </ma:overlay.MaterialOverlay>
+            </ma:overlay.MaterialOverlay>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;&lt;!-- Parent --><br/>
+                &lt;ma:overlay.MaterialOverlay ui:field="parent"><br/><br/>
+
+                &emsp;&lt;!-- Child 1 --><br/>
+                &emsp;&lt;ma:overlay.MaterialOverlay ui:field="child1"><br/><br/>
+
+                &emsp;&emsp;&lt;!-- Child 2 --><br/>
+                &emsp;&emsp;&lt;ma:overlay.MaterialOverlay ui:field="child2"/><br/>
+                &emsp;&lt;/ma:overlay.MaterialOverlay><br/>
+                &lt;/ma:overlay.MaterialOverlay>
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

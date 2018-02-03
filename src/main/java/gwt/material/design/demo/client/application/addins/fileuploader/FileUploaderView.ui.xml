@@ -54,7 +54,7 @@
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
             <m:MaterialTitle title="Disable Uploader" description="You can easily disable the file uploader by calling enable='false'" />
             <m:MaterialSwitch ui:field="switchEnable" onLabel="Enable" offLabel="Disable" />
-            <ma:fileuploader.MaterialFileUploader ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
+            <ma:fileuploader.MaterialFileUploader waves="DEFAULT" ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
                 <ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
             </ma:fileuploader.MaterialFileUploader>
 
@@ -171,6 +171,41 @@
                 &emsp;&lt;servlet-name><br/>fileUploaderServlet&lt;/servlet-name><br/>
                 &emsp;&lt;url-pattern><br/>/fileupload&lt;/url-pattern><br/>
                 &lt;/servlet-mapping><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Language Support" description="Dropzone will let you handle the text messages being thrown by it's core api easily." />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Defaults to "Drop files here to upload" <br/>
+                uploader.setDictDefaultMessage("Mag-drop ng mga file dito upang mag-upload"); <br/><br/>
+
+                // Defaults to "Your browser does not support drag'n'drop file uploads." <br/>
+                uploader.setDictFallbackMessage("Hindi sinusuportahan ng iyong browser ang drag'n'drop upload file."); <br/><br/>
+
+                // Defaults to "Your browser does not support drag'n'drop file uploads." <br/>
+                uploader.setDictFallbackText("Mangyaring gamitin ang form ng fallback sa ibaba upang i-upload ang iyong mga file tulad ng sa mga lumang araw."); <br/><br/>
+
+                // Defaults to "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB." <br/>
+                uploader.setDictFileTooBig("Ang file ay masyadong malaki ({{filesize}} MiB). Max filesize: {{maxFilesize}} MiB."); <br/><br/>
+
+                // Defaults to "You can't upload files of this type." <br/>
+                uploader.setDictInvalidFileType("Hindi ka maaaring mag-upload ng mga file ng ganitong uri."); <br/><br/>
+
+                // Defaults to "Server responded with {{statusCode}} code." <br/>
+                uploader.setDictResponseError("Tumugon ang server sa code na {{statusCode}}."); <br/><br/>
+
+                // Defaults to "Cancel upload" <br/>
+                uploader.setDictCancelUpload("Kanselahin ang pag-upload"); <br/><br/>
+
+                // Defaults to "Are you sure you want to cancel this upload?" <br/>
+                uploader.setDictCancelUploadConfirmation("Sigurado ka bang gusto mong kanselahin ang pag-upload na ito?"); <br/><br/>
+
+                // Defaults to "Remove file" <br/>
+                uploader.setDictRemoveFile("Alisin ang file"); <br/><br/>
+
+                // Defaults to "You can not upload any more files." <br/>
+                uploader.setDictMaxFilesExceeded("Hindi ka maaaring mag-upload ng higit pang mga file."); <br/><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </g:HTMLPanel>
