@@ -103,16 +103,31 @@
 <span class="sourceLineNo">095</span>            obj.addStyleName(CssName.DISABLED);<a name="line.95"></a>
 <span class="sourceLineNo">096</span>            obj.getElement().setAttribute(DISABLED, "");<a name="line.96"></a>
 <span class="sourceLineNo">097</span>        }<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    }<a name="line.98"></a>
-<span class="sourceLineNo">099</span><a name="line.99"></a>
-<span class="sourceLineNo">100</span>    public boolean isPropagateToChildren() {<a name="line.100"></a>
-<span class="sourceLineNo">101</span>        return propagateToChildren;<a name="line.101"></a>
-<span class="sourceLineNo">102</span>    }<a name="line.102"></a>
-<span class="sourceLineNo">103</span><a name="line.103"></a>
-<span class="sourceLineNo">104</span>    public void setPropagateToChildren(boolean propagateToChildren) {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>        this.propagateToChildren = propagateToChildren;<a name="line.105"></a>
-<span class="sourceLineNo">106</span>    }<a name="line.106"></a>
-<span class="sourceLineNo">107</span>}<a name="line.107"></a>
+<span class="sourceLineNo">098</span><a name="line.98"></a>
+<span class="sourceLineNo">099</span>        updateWaves(enabled, obj);<a name="line.99"></a>
+<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
+<span class="sourceLineNo">101</span><a name="line.101"></a>
+<span class="sourceLineNo">102</span>    public void updateWaves(boolean enabled, UIObject obj) {<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        if (obj instanceof MaterialWidget) {<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            MaterialWidget widget = (MaterialWidget) obj;<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            if (enabled) {<a name="line.105"></a>
+<span class="sourceLineNo">106</span>                if (widget.getWaves() != null) {<a name="line.106"></a>
+<span class="sourceLineNo">107</span>                    widget.getElement().addClassName(CssName.WAVES_EFFECT);<a name="line.107"></a>
+<span class="sourceLineNo">108</span>                }<a name="line.108"></a>
+<span class="sourceLineNo">109</span>            } else {<a name="line.109"></a>
+<span class="sourceLineNo">110</span>                widget.getElement().removeClassName(CssName.WAVES_EFFECT);<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            }<a name="line.111"></a>
+<span class="sourceLineNo">112</span>        }<a name="line.112"></a>
+<span class="sourceLineNo">113</span>    }<a name="line.113"></a>
+<span class="sourceLineNo">114</span><a name="line.114"></a>
+<span class="sourceLineNo">115</span>    public boolean isPropagateToChildren() {<a name="line.115"></a>
+<span class="sourceLineNo">116</span>        return propagateToChildren;<a name="line.116"></a>
+<span class="sourceLineNo">117</span>    }<a name="line.117"></a>
+<span class="sourceLineNo">118</span><a name="line.118"></a>
+<span class="sourceLineNo">119</span>    public void setPropagateToChildren(boolean propagateToChildren) {<a name="line.119"></a>
+<span class="sourceLineNo">120</span>        this.propagateToChildren = propagateToChildren;<a name="line.120"></a>
+<span class="sourceLineNo">121</span>    }<a name="line.121"></a>
+<span class="sourceLineNo">122</span>}<a name="line.122"></a>
 
 
 
