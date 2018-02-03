@@ -375,9 +375,9 @@ function gwtmaterialdemo(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['safari'], 'AF740C85AB318767315159C7553F90B2');
-      unflattenKeylistIntoAnswers(['gecko1_8'], 'B1B8DAEE5A80D8DBEDECD09DFEA32B9E');
-      unflattenKeylistIntoAnswers(['ie10'], 'EF8F8E1777B71AFF8453FADC1A3F8198');
+      unflattenKeylistIntoAnswers(['safari'], '39FBAE6A5D7E50798E5F93A0F001C2F2');
+      unflattenKeylistIntoAnswers(['gecko1_8'], '79C9B9E2D97EA4D840E04AC134D93CC1');
+      unflattenKeylistIntoAnswers(['ie10'], 'F95C00AB85D1E80A0F399A6AFA3AD640');
       strongName = answers[computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {
