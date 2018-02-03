@@ -167,6 +167,26 @@
                 acListType.setItemValues(itemValues, true);
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Dynamic Loading" description="You can load your data dynamically by calling autocomplete.setSuggestions(suggestions)"/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s12 m12 l6">
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acDynamic" placeholder="Contacts" grid="s12"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s12">
+                    <m:MaterialButton text="Load Suggestions" ui:field="loadSuggestions"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler("loadSuggestions") <br/>
+                void loadSuggestions(ClickEvent e) { <br/>
+                &emsp;UserOracle oracle = new UserOracle(); <br/>
+                &emsp;oracle.addContacts(getAllUsers()); <br/>
+                &emsp;autocomplete.setSuggestions(oracle); <br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Limiting Items" description="You can limit the autocomplete items by adding limit='2' attribute."/>

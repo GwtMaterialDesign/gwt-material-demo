@@ -49,7 +49,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue;
+    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue, acDynamic;
 
     @UiField
     MaterialModal modal;
@@ -77,15 +77,26 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
                 MaterialToast.fireToast("Value : " + user.getDisplayString());
             }
         });
+        acDynamic.addValueChangeHandler(event -> {
+            for(SuggestOracle.Suggestion user : event.getValue()){
+                MaterialToast.fireToast("Value : " + user.getDisplayString());
+            }
+        });
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
         acModal.setSuggestions(oracle);
 
-        acListType.addValueChangeHandler(valueChangeEvent -> {
-            MaterialToast.fireToast("Value: " + valueChangeEvent.getValue().get(0).getDisplayString());
+        acListType.addValueChangeHandler(event -> {
+            MaterialToast.fireToast("Value : " + acListType.getItemBox().getText());
         });
     }
 
+    @UiHandler("loadSuggestions")
+    void loadSuggestions(ClickEvent e) {
+        UserOracle oracle = new UserOracle();
+        oracle.addContacts(getAllUsers());
+        acDynamic.setSuggestions(oracle);
+    }
 
     @UiHandler("btnClear")
     void onClear(ClickEvent e) {
