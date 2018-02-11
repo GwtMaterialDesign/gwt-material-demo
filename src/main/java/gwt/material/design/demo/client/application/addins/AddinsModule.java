@@ -32,8 +32,6 @@ import gwt.material.design.demo.client.application.addins.combobox.ComboBoxModul
 import gwt.material.design.demo.client.application.addins.countup.CountUpModule;
 import gwt.material.design.demo.client.application.addins.cropper.ImageCropperModule;
 import gwt.material.design.demo.client.application.addins.cutouts.CutOutsModule;
-import gwt.material.design.demo.client.application.addins.search.InlineSearchModule;
-import gwt.material.design.demo.client.application.datatable.DataTableModule;
 import gwt.material.design.demo.client.application.addins.dnd.DndModule;
 import gwt.material.design.demo.client.application.addins.docviewer.DocViewerModule;
 import gwt.material.design.demo.client.application.addins.emptystates.EmptyStatesModule;
@@ -56,6 +54,7 @@ import gwt.material.design.demo.client.application.addins.swipeable.SwipeableMod
 import gwt.material.design.demo.client.application.addins.timepickers.TimePickersModule;
 import gwt.material.design.demo.client.application.addins.treeview.TreeViewModule;
 import gwt.material.design.demo.client.application.addins.waterfall.WaterfallModule;
+import gwt.material.design.demo.client.application.addins.webp.WebpImageModule;
 import gwt.material.design.demo.client.application.addins.window.WindowModule;
 
 /**
@@ -98,6 +97,6 @@ public class AddinsModule extends AbstractGinModule {
         install(new InputMaskModule());
         install(new ImageCropperModule());
         install(new SignaturePadModule());
-        install(new InlineSearchModule());
+        install(new WebpImageModule());
     }
 }

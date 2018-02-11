@@ -50,6 +50,6 @@ public class AlertPresenter extends Presenter<AlertPresenter.MyView, AlertPresen
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Alert", "Show or hide an alert toasts into your app.", "", "", this);
+        SetPageTitleEvent.fire("Alert", "Advance usage of error handling wherein you can easily set the type of toast with predefined states (ERROR, INFORMATION and WARNING).", "incubator/alert/AlertView", "", this);
     }
 }

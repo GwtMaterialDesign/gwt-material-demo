@@ -50,6 +50,6 @@ public class RecaptchaPresenter extends Presenter<RecaptchaPresenter.MyView, Rec
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Recaptcha (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Recaptcha", "Provides a Google Recaptcha Api to protect internet users from spam and abuse wherever they go.", "incubator/recaptcha/RecaptchView", "", this);
     }
 }

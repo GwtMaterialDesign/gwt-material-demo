@@ -33,6 +33,7 @@ import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
+import gwt.material.design.addins.client.webp.MaterialWebpImage;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -49,7 +50,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     MaterialSearch txtSearch;
 
     @UiField
-    MaterialImage imgHero;
+    MaterialWebpImage imgHero;
 
     @UiField
     MaterialLabel lblName, lblDescription;
@@ -83,7 +84,8 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
             // Get the selected search object
             Hero hero = (Hero)txtSearch.getSelectedObject();
             new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
-            imgHero.setResource(hero.getResource());
+            imgHero.setUrl(hero.getImageUrl());
+            imgHero.setFallbackExtension("png");
             lblName.setText(hero.getName());
             lblDescription.setText(hero.getDescription());
             MaterialToast.fireToast("Search Finish Event was fired");

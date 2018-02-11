@@ -66,6 +66,11 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
 
         // search close event
         txtSearch.addCloseHandler(event -> {
@@ -172,6 +177,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Time Picker", "#" + NameTokens.timepickers));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Tree View", "#" + NameTokens.tree));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Waterfall", "#" + NameTokens.waterfall));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "WebP", "#" + NameTokens.webpImage));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Window", "#" + NameTokens.window));
 
         // Incubator

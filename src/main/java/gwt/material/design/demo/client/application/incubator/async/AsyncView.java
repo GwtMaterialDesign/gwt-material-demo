@@ -21,17 +21,42 @@ package gwt.material.design.demo.client.application.incubator.async;
  */
 
 
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialSwitch;
+import gwt.material.design.incubator.client.async.AsyncButton;
 
 public class AsyncView extends ViewImpl implements AsyncPresenter.MyView {
     public interface Binder extends UiBinder<Widget, AsyncView> {
     }
 
+    @UiField
+    AsyncButton async;
+
+    @UiField
+    MaterialSwitch errorSuccess;
+
     @Inject
     AsyncView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("async")
+    void onAsync(ClickEvent e) {
+        async.loading("Loading your data...");
+        Scheduler.get().scheduleFixedDelay(() -> {
+            if (errorSuccess.getValue()) {
+                async.success("Successfully Loaded");
+            } else {
+                async.error("Failed to load");
+            }
+            return false;
+        }, 3000);
     }
 }

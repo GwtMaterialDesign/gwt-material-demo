@@ -50,6 +50,6 @@ public class ProgressLineBarPresenter extends Presenter<ProgressLineBarPresenter
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Progress Line Bar (Beta)", "TODO", "", "", this);
+        SetPageTitleEvent.fire("Progress Line Bar", "Provides a better representation of a progress bar using blocks to fill up the active slots.", "incubator/progress/ProgressLineBarView", "", this);
     }
 }

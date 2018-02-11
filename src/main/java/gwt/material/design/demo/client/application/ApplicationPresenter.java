@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application;
  */
 
 
+import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -64,8 +65,10 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     protected void onBind() {
         super.onBind();
 
-        setInSlot(SLOT_MENU, menuPresenter);
+        // Removing the splashscreen once the no-cache.js is available
+        DOM.getElementById("splashscreen").removeFromParent();
 
+        setInSlot(SLOT_MENU, menuPresenter);
         addRegisteredHandler(NavigationEvent.getType(), this);
         addRegisteredHandler(SetPageTitleEvent.TYPE, this);
     }

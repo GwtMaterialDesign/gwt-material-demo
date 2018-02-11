@@ -123,6 +123,7 @@ public class NameTokens {
     public static final String timer = "timer";
     public static final String toggle = "toggle";
     public static final String walkthrough = "walkthrough";
+    public static final String webpImage = "webp";
 
     public static String getAbout() {
         return about;
@@ -523,4 +524,6 @@ public class NameTokens {
     public static String getWalkthrough() {
         return walkthrough;
     }
+
+    public static String getWebpImage() { return webpImage; }
 }

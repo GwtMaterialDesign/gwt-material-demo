@@ -55,6 +55,6 @@ public class NotificationPresenter extends Presenter<NotificationPresenter.MyVie
         super.onReveal();
 
         SetPageTitleEvent.fire("Push Notifications",
-                "Push messaging provides a simple and effective way to re-engage with your users", "pwa/notification/NotificationView", null, this);
+                "Push messaging provides a simple and effective way to re-engage with your users", "pwa/notification/NotificationView", "", this);
     }
 }

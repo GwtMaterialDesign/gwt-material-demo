@@ -1,0 +1,59 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic and Fallback Support" description="With the latest trend on Image types, webp brings a performance optimization into your web app. We provided a fallback support for other browsers. Try to test to other browsers for viewing and noticing the fallback." />
+            <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/webp.webp" fallbackUrl="https://gwtmaterialdesign.github.io/gwt-material-demo/png.png" />
+
+            <demo:PrettyPre>
+                &emsp;&lt;ma:webp.MaterialWebpImage url="image.webp" fallbackUrl="image.png" /><br/><br/>
+                or<br/>
+                &emsp;&lt;ma:webp.MaterialWebpImage url="image.webp" fallbackExtension="png" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Comparison" description="Below are the basic file size comparison between webP and png image types."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="s6 l4 m4">
+                    <m:MaterialImage url="https://www.gstatic.com/webp/gallery/1.sm.jpg" />
+                    <m:MaterialLabel text="JPEG file : 43.84 KB" />
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s6 l4 m4">
+                    <ma:webp.MaterialWebpImage url="https://www.gstatic.com/webp/gallery/1.sm.webp" fallbackUrl="https://www.gstatic.com/webp/gallery/1.sm.jpg" />
+                    <m:MaterialLabel text="WebP file : 29.61 KB" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Conversion" description="You can convert your existing Image files to webp. See link below" />
+            <m:MaterialLink href="https://webp-converter.com/" text="Online Webp Converter" target="_blank" iconType="LINK"/>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>
