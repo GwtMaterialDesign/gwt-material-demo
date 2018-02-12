@@ -53,10 +53,10 @@
                                  description="Note: Frozen columns does not support useStickyHeader and side='RIGHT' at the moment. Stay tune for any updates on this features."/>
                 <m:MaterialRow>
                     <m:MaterialColumn grid="s12 l3" marginTop="28">
-                        <m:MaterialCheckBox ui:field="cbCategories" type="FILLED" value="true" text="With Categories"/>
+                        <m:MaterialCheckBox ui:field="cbCategories" type="FILLED" value="false" text="With Categories"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s12 l3" marginTop="28">
-                        <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="true"
+                        <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="false"
                                             text="With Row Expansion"/>
                     </m:MaterialColumn>
                     <ma:combobox.MaterialComboBox grid="s12 l3" ui:field="listSelectionType" hideSearch="false"
@@ -86,7 +86,7 @@
             </m:MaterialRow>
 
             <m:MaterialRow addStyleNames="code">
-                <m:MaterialTitle title="Prerequisites"
+                <m:MaterialTitle title="Notice"
                                  description="Some caveat you must do first before implementing the frozen column in the datatable"/>
                 <m:MaterialCollection>
                     <m:MaterialCollectionItem>
@@ -98,6 +98,46 @@
                                         display="INLINE_BLOCK"/>
                     </m:MaterialCollectionItem>
                 </m:MaterialCollection>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTitle title="Frozen Properties"
+                                 description="The row cells that are made frozen will no longer follow the rules of the tables row. This means that all the cells positioning of content needs to be manually set up. Here is the configuration to your column."/>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;table.addColumn(new TextColumn&lt;Person>() {
+                    <br/>
+                    &emsp;@Override
+                    <br/>
+                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> sortComparator() {
+                    <br/>
+                    &emsp;&emsp;return (o1, o2) ->
+                    o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp;@Override
+                    <br/>
+                    &emsp;public String getValue(Person object) {
+                    <br/>
+                    &emsp;&emsp;return object.getFirstName();
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp;@Override
+                    &emsp;public FrozenProperties frozenProperties() {
+                    <br/>
+                    &emsp;&emsp;FrozenProperties frozenProperties = new FrozenProperties("100px", "60px");
+                    <br/>
+                    &emsp;&emsp;return frozenProperties;
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    }, "First Name");
+                </demo:PrettyPre>
             </m:MaterialRow>
         </m:MaterialColumn>
     </m:MaterialRow>

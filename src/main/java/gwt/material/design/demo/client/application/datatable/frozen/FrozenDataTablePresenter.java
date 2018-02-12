@@ -44,7 +44,7 @@ public class FrozenDataTablePresenter extends Presenter<FrozenDataTablePresenter
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Frozen DataTable", "TODO", "datatable/FrozenDataTableView", "https://material.io/guidelines/components/data-tables.html", this);
+        SetPageTitleEvent.fire("Frozen DataTable", "Provided a frozen column that has a x-scroll content for horizontal scrolling. For now we just support the LEFT Side Column freezing.", "datatable/FrozenDataTableView", "https://material.io/guidelines/components/data-tables.html", this);
     }
 
     interface MyView extends View {

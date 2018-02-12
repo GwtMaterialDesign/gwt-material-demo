@@ -178,6 +178,21 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "Phone");
 
+        for (int i = 0; i < 10; i++) {
+            final int index = i;
+            table.addColumn(new TextColumn<Person>() {
+                @Override
+                public Comparator<? super RowComponent<Person>> sortComparator() {
+                    return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
+                }
+
+                @Override
+                public String getValue(Person object) {
+                    return object.getPhone() + " " + index;
+                }
+            }, "Column " + index);
+        }
+
         // Set the visible range of the table for  pager (later)
         table.setVisibleRange(0, 2001);
 

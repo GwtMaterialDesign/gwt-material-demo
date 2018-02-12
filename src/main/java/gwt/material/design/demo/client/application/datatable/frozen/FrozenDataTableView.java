@@ -155,7 +155,7 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
             }
         }, "Email");
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 20; i++) {
             final int index = i;
             table.addColumn(new TextColumn<Person>() {
                 @Override

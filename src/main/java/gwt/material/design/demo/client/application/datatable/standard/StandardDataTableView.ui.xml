@@ -21,7 +21,6 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
-             xmlns:table="urn:import:gwt.material.design.demo.client.application.datatable.table"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
     <m:MaterialRow>
@@ -145,6 +144,91 @@
                     &emsp;table.setCategoryFactory(new CustomCategoryFactory());
                 </demo:PrettyPre>
                 <m:MaterialLink iconType="LINK" href="https://github.com/GwtMaterialDesign/gwt-material-table-sample/blob/master/src/main/java/gwt/material/design/sample/client/ui/factory/CustomCategoryFactory.java" target="_blank" text="Link to Category Factory" />
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTitle scrollspy="category_factory" title="Custom Category Component"
+                                 description="You can easily define / add any component into your Category Subheader by extending this class."/>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;public class CustomCategoryComponent extends CategoryComponent {
+                    <br/>
+                    <br/>
+
+                    &emsp;public CustomCategoryComponent(String name) {
+                    <br/>
+                    &emsp;&emsp;&emsp;super(name);
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp;public CustomCategoryComponent(String name, boolean openByDefault) {
+                    <br/>
+                    &emsp;&emsp;&emsp;super(name, openByDefault);
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp; @Override
+                    <br/>
+                    &emsp;protected void render(TableSubHeader subheader) {
+                    <br/>
+                    &emsp;&emsp;&emsp;super.render(subheader);
+                    <br/>
+                    <br/>
+
+                    &emsp;&emsp;&emsp;subheader.getNameTh().setPaddingLeft(20);
+                    <br/>
+                    <br/>
+
+                    &emsp;&emsp;&emsp;// Here you can define any element attach to the Category Component SubHeader
+                    <br/>
+                    &emsp;&emsp;&emsp;TableHeader newHeader = new TableHeader();
+                    <br/>
+                    &emsp;&emsp;&emsp;newHeader.setPaddingLeft(40);
+                    <br/>
+                    &emsp;&emsp;&emsp;newHeader.add(new MaterialBadge("$1,000"));
+                    <br/>
+                    &emsp;&emsp;&emsp;subheader.add(newHeader);
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    }
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    &emsp;// Then once you've set it up, go to your CustomCategoryFactory and return
+                    <br/>
+                    &emsp;// your newly defined CustomCategoryComponent
+                    <br/>
+                    <br/>
+
+                    &emsp;&emsp;public class CustomCategoryFactory extends CategoryComponentFactory {
+                    <br/>
+                    <br/>
+
+                    &emsp;&emsp;&emsp;@Override
+                    <br/>
+                    &emsp;&emsp;&emsp;public CategoryComponent generate(DataView dataView, String categoryName) {
+                    <br/>
+                    &emsp;&emsp;&emsp;&emsp;CategoryComponent category = super.generate(dataView, categoryName);
+                    <br/>
+                    <br/>
+
+                    &emsp;&emsp;&emsp;&emsp;if(!(category instanceof OrphanCategoryComponent)) {
+                    <br/>
+                    &emsp;&emsp;&emsp;&emsp;;&emsp;category = new CustomCategoryComponent(categoryName);
+                    <br/>
+                    &emsp;&emsp;&emsp;&emsp;}
+                    <br/>
+                    &emsp;&emsp;&emsp;return category;
+                    <br/>
+                    &emsp;&emsp;}
+                    <br/>
+                    }
+                </demo:PrettyPre>
             </m:MaterialRow>
 
             <m:MaterialRow addStyleNames="code">
