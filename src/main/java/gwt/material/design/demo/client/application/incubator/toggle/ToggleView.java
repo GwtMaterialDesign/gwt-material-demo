@@ -37,15 +37,15 @@ public class ToggleView extends ViewImpl implements TogglePresenter.MyView {
     }
 
     @UiField
-    GroupToggleButton groupToggle;
+    GroupToggleButton<Integer> groupToggle;
 
     @Inject
     ToggleView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        groupToggle.setFirstToggleText("1");
-        groupToggle.setSecondToggleText("2");
-        groupToggle.setThirdToggleText("3");
+        groupToggle.addItem(1);
+        groupToggle.addItem(2);
+        groupToggle.addItem(3);
     }
 
     @UiHandler("groupToggle")
@@ -55,6 +55,6 @@ public class ToggleView extends ViewImpl implements TogglePresenter.MyView {
 
     @UiHandler("getIndex")
     void getIndex(ClickEvent e) {
-        MaterialToast.fireToast("Selected Index : " + groupToggle.getActive());
+        MaterialToast.fireToast("Selected Index : " + groupToggle.getValue().get(0));
     }
 }

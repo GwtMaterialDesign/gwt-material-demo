@@ -32,7 +32,10 @@ import gwt.material.design.addins.client.popupmenu.MaterialPopupMenu;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.*;
 import gwt.material.design.client.data.component.RowComponent;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialBadge;
+import gwt.material.design.client.ui.MaterialIcon;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.table.MaterialDataTable;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
@@ -187,26 +190,14 @@ public class ContextMenuDataTableView extends NavigatedView implements ContextMe
                     MaterialWidget content = new MaterialWidget(
                             event.getExpansion().getRow().find(".content").empty().asElement());
 
-                    // Add new content.
-                    MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
-                    badge.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    badge.getElement().getStyle().setRight(0, Style.Unit.PX);
-                    badge.setFontSize(12, Style.Unit.PX);
-                    content.add(badge);
+                    MaterialLabel title = new MaterialLabel("Expansion Row Panel");
+                    title.setFontSize("1.6em");
+                    title.setDisplay(Display.BLOCK);
+                    MaterialLabel description = new MaterialLabel("This content was made from asynchronous call");
 
-                    MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED, new MaterialIcon(IconType.FULLSCREEN));
-                    content.add(btn);
-
-                    MaterialTextBox textBox = new MaterialTextBox();
-                    textBox.setText(" from an asynchronous");
-                    textBox.setGwtDisplay(Style.Display.INLINE_TABLE);
-                    textBox.setWidth("200px");
-                    content.add(textBox);
-
-                    MaterialIcon icon = new MaterialIcon(IconType.CALL);
-                    icon.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    icon.getElement().getStyle().setTop(12, Style.Unit.PX);
-                    content.add(icon);
+                    content.setPadding(20);
+                    content.add(title);
+                    content.add(description);
 
                     // Hide the expansion elements overlay section.
                     // The overlay is retrieved using EowExpand#getOverlay()

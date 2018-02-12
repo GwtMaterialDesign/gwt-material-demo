@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.datatable.paged;
+package gwt.material.design.demo.client.application.datatable.frozen;
 
 /*
  * #%L
@@ -21,28 +21,30 @@ package gwt.material.design.demo.client.application.datatable.paged;
  */
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.Display;
-import gwt.material.design.client.constants.HideOn;
-import gwt.material.design.client.constants.TextAlign;
-import gwt.material.design.client.data.ListDataSource;
+import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.data.SelectionType;
+import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
-import gwt.material.design.client.ui.MaterialBadge;
 import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.pager.MaterialDataPager;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.table.MaterialDataTable;
+import gwt.material.design.client.ui.table.TableRow;
+import gwt.material.design.client.ui.table.TableSubHeader;
+import gwt.material.design.client.ui.table.cell.FrozenProperties;
 import gwt.material.design.client.ui.table.cell.TextColumn;
-import gwt.material.design.client.ui.table.cell.WidgetColumn;
 import gwt.material.design.demo.client.application.datatable.table.Person;
+import gwt.material.design.demo.client.application.datatable.table.factory.CustomCategoryFactory;
 import gwt.material.design.demo.client.application.datatable.table.factory.PersonRowFactory;
 import gwt.material.design.demo.client.application.datatable.table.renderer.CustomRenderer;
 import gwt.material.design.demo.client.ui.NavigatedView;
@@ -53,39 +55,29 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class PagedDataTableView extends NavigatedView implements PagedDataTablePresenter.MyView {
-    interface Binder extends UiBinder<Widget, PagedDataTableView> {
-    }
-
+public class FrozenDataTableView extends NavigatedView implements FrozenDataTablePresenter.MyView {
     @UiField
     MaterialDataTable<Person> table;
-
-    private MaterialDataPager<Person> pager = new MaterialDataPager<>();
-
-    private ListDataSource<Person> dataSource;
+    @UiField
+    MaterialComboBox<SelectionType> listSelectionType;
+    private List<Person> people;
 
     @Inject
-    PagedDataTableView(Binder uiBinder) {
+    FrozenDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        // Generate 20 categories
-        int rowIndex = 1;
-        List<Person> people = new ArrayList<>();
-        for(int k = 1; k <= 10; k++){
-            // Generate 100 rows
-            for(int i = 1; i <= 10; i++, rowIndex++){
-                people.add(new Person(i, "https//joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
-            }
-        }
+        generatePeople();
 
-        dataSource = new ListDataSource<>();
-        dataSource.add(0, people);
+        // Populate the ComboBox value
+        listSelectionType.addItem("SINGLE", SelectionType.SINGLE);
+        listSelectionType.addItem("MULTIPLE", SelectionType.MULTIPLE);
+        listSelectionType.addItem("NONE", SelectionType.NONE);
 
-        pager.setTable(table);
-        pager.setDataSource(dataSource);
-
-        table.setVisibleRange(1, 10);
-        table.add(pager);
+        listSelectionType.addValueChangeHandler(e -> {
+            table.setSelectionType(e.getValue().get(0));
+            table.getView().setRedraw(true);
+            table.getView().refresh();
+        });
 
         // We will manually add this category otherwise categories
         // can be loaded on the fly with HasDataCategory, or a custom
@@ -97,6 +89,11 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         // RowComponent's too, if custom functionality is required.
         table.setRowFactory(new PersonRowFactory());
 
+        // If we want to generate all our categories using CustomCategoryComponent
+        // We can define our own CategoryComponentFactory. There we can define our
+        // own CategoryComponent implementations.
+        table.setCategoryFactory(new CustomCategoryFactory());
+
         // It is possible to create your own custom renderer per table
         // When you use the BaseRenderer you can override certain draw
         // methods to create elements the way you would like.
@@ -104,15 +101,21 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
 
         // Now we will add our tables columns.
         // There are a number of methods that can provide custom column configurations.
-
         table.addColumn(new TextColumn<Person>() {
             @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
             }
+
             @Override
             public String getValue(Person object) {
                 return object.getFirstName();
+            }
+
+            @Override
+            public FrozenProperties frozenProperties() {
+                FrozenProperties frozenProperties = new FrozenProperties("100px", "60px");
+                return frozenProperties;
             }
         }, "First Name");
 
@@ -121,38 +124,45 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
             public Comparator<? super RowComponent<Person>> sortComparator() {
                 return (o1, o2) -> o1.getData().getLastName().compareToIgnoreCase(o2.getData().getLastName());
             }
+
             @Override
             public String getValue(Person object) {
                 return object.getLastName();
+            }
+
+            @Override
+            public FrozenProperties frozenProperties() {
+                FrozenProperties frozenProperties = new FrozenProperties("100px", "60px");
+                return frozenProperties;
             }
         }, "Last Name");
 
         table.addColumn(new TextColumn<Person>() {
             @Override
-            public boolean numeric() {
-                return true;
-            }
-            @Override
-            public HideOn hideOn() {
-                return HideOn.HIDE_ON_MED_DOWN;
-            }
-            @Override
             public Comparator<? super RowComponent<Person>> sortComparator() {
-                return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
+                return (o1, o2) -> o1.getData().getEmail().compareToIgnoreCase(o2.getData().getEmail());
             }
+
             @Override
             public String getValue(Person object) {
-                return object.getPhone();
+                return object.getEmail();
             }
-        }, "Phone");
 
-        for(int i = 0; i < 8; i++) {
+            @Override
+            public FrozenProperties frozenProperties() {
+                FrozenProperties frozenProperties = new FrozenProperties("100px", "60px");
+                return frozenProperties;
+            }
+        }, "Email");
+
+        for (int i = 0; i < 8; i++) {
             final int index = i;
             table.addColumn(new TextColumn<Person>() {
                 @Override
                 public Comparator<? super RowComponent<Person>> sortComparator() {
                     return (o1, o2) -> o1.getData().getPhone().compareToIgnoreCase(o2.getData().getPhone());
                 }
+
                 @Override
                 public String getValue(Person object) {
                     return object.getPhone() + " " + index;
@@ -160,22 +170,10 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
             }, "Column " + index);
         }
 
-        // Example of a widget column!
-        // You can add any handler to the column cells widget.
-        table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
-            @Override
-            public TextAlign textAlign() {
-                return TextAlign.CENTER;
-            }
-            @Override
-            public MaterialBadge getValue(Person object) {
-                MaterialBadge badge = new MaterialBadge();
-                badge.setText("badge " + object.getId());
-                badge.setBackgroundColor(Color.BLUE);
-                badge.setLayoutPosition(Style.Position.RELATIVE);
-                return badge;
-            }
-        });
+        // Set the visible range of the table for  pager (later)
+        table.setVisibleRange(0, 2001);
+
+        table.setRowData(0, people);
 
         // Here we are adding a row expansion handler.
         // This is invoked when a row is expanded.
@@ -231,7 +229,7 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
 
         // Add a row double click handler, called when a row is double clicked.
         table.addRowDoubleClickHandler(event -> {
-            // GWT.log("Row Double Clicked: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Double Clicked: " + event.getModel().getId() + ", x:" + event.getMouseEvent().getPageX() + ", y: " + event.getMouseEvent().getPageY());
             Window.alert("Row Double Clicked: " + event.getModel().getId());
         });
 
@@ -241,22 +239,106 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
 
         // Add a row long press handler, called when a row is long pressed.
         table.addRowLongPressHandler(event -> {
-            //GWT.log("Row Long Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Long Pressed: " + event.getModel().getId() + ", x:" + event.getMouseEvent().getPageX() + ", y: " + event.getMouseEvent().getPageY());
         });
 
         // Add a row short press handler, called when a row is short pressed.
         table.addRowShortPressHandler(event -> {
-            //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+            GWT.log("Row Short Pressed: " + event.getModel().getId() + ", x:" + event.getMouseEvent().getPageX() + ", y: " + event.getMouseEvent().getPageY());
+        });
+
+        // Add rendered handler, called when 'setRowData' calls finish rendering.
+        // Guaranteed to only be called once from the data set render, ignoring sort renders and refreshView renders.
+        table.addRenderedHandler(e -> {
+            GWT.log("Table Rendered");
+        });
+
+        // Add components rendered handler, Called each time when components are rendered,
+        // which includes sorting renders and refreshView() renders.
+        table.addComponentsRenderedHandler(e -> {
+            GWT.log("Components Rendered");
         });
     }
 
-    @UiHandler("btnGotoFirstPage")
-    void onGotoFirstPage(ClickEvent e) {
-        pager.firstPage();
+    protected void generatePeople() {
+        people = new ArrayList<>();
+        // Generate 5 categories
+        int rowIndex = 0;
+
+        for (int k = 1; k <= 5; k++) {
+            // Generate 5 rows
+            for (int i = 1; i <= 5; i++, rowIndex++) {
+                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i, "Category " + k));
+            }
+        }
     }
 
-    @UiHandler("btnGotoLastPage")
-    void onGotoLastPage(ClickEvent e) {
-        pager.lastPage();
+    @UiHandler("cbCategories")
+    void onCategories(ValueChangeEvent<Boolean> e) {
+        if (e.getValue()) {
+            table.setUseCategories(true);
+        } else {
+            table.setUseCategories(false);
+        }
+        table.getView().setRedraw(true);
+        table.getView().refresh();
+    }
+
+    @UiHandler("cbRowExpansion")
+    void onRowExpansion(ValueChangeEvent<Boolean> e) {
+        if (e.getValue()) {
+            table.setUseRowExpansion(true);
+        } else {
+            table.setUseRowExpansion(false);
+        }
+        table.getView().setRedraw(true);
+        table.getView().refresh();
+    }
+
+    @UiHandler("getFirstRow")
+    void onGetFirstRow(ClickEvent e) {
+        MaterialToast.fireToast("FIRST ROW: " + table.getRow(0).getData().getFirstName());
+    }
+
+    @UiHandler("updateFirstRow")
+    void onUpdateFirstRow(ClickEvent e) {
+        String firstName = "John";
+        String lastName = "Doe";
+        String email = "john.doe@gmail.com";
+
+        if (people.get(0) != null) {
+            Person firstPerson = people.get(0);
+            firstPerson.setFirstName(firstName);
+            firstPerson.setLastName(lastName);
+            firstPerson.setEmail(email);
+            table.updateRow(firstPerson);
+
+            MaterialToast.fireToast("Updated first row : " + firstName + " " + lastName);
+        } else {
+            MaterialToast.fireToast("Can not find the first person.");
+        }
+    }
+
+    @UiHandler("disabledFirstRow")
+    void onDisableFirstRow(ClickEvent e) {
+        TableRow tableRow = table.getRow(people.get(0)).getWidget();
+        tableRow.setEnabled(false);
+    }
+
+    interface Binder extends UiBinder<Widget, FrozenDataTableView> {
+    }
+
+    public static class CustomCategoryComponent extends CategoryComponent {
+        public CustomCategoryComponent(String category) {
+            super(category);
+        }
+
+        @Override
+        protected void render(TableSubHeader subheader) {
+            super.render(subheader);
+
+            subheader.setOpenIcon(IconType.FOLDER_OPEN);
+            subheader.setCloseIcon(IconType.FOLDER);
+        }
     }
 }

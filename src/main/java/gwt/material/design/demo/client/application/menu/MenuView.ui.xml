@@ -19,10 +19,9 @@
   -->
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-						 xmlns:m="urn:import:gwt.material.design.client.ui"
-			 			 xmlns:ma="urn:import:gwt.material.design.addins.client"
-                         xmlns:incubator="urn:import:gwt.material.design.incubator.client"
-						 xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+			 xmlns:ma="urn:import:gwt.material.design.addins.client"
+			 xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
 
 	<ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
 
@@ -74,7 +73,8 @@
 			</m:MaterialNavBar>
 		</m:MaterialHeader>
 
-		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
+		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true"
+							   showOnAttach="false">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
 				<ma:webp.MaterialWebpImage width="100%" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/logo.webp" fallbackExtension="png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
@@ -148,6 +148,10 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getStandardDataTable}" text="Standard" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInfiniteDataTable}" text="Infinite" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getPagedDataTable}" text="Paged" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getFrozenDataTable}" text="Frozen"
+											waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getCustomDataTable}" text="Customized" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getContextMenuDataTable}" text="Context Menu" waves="DEFAULT"/>
 						</m.html:UnorderedList>

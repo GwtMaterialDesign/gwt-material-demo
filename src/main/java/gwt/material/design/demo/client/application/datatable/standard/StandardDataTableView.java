@@ -21,7 +21,6 @@ package gwt.material.design.demo.client.application.datatable.standard;
  */
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -32,16 +31,18 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.*;
+import gwt.material.design.client.constants.Display;
+import gwt.material.design.client.constants.HideOn;
+import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.data.SelectionType;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.table.MaterialDataTable;
 import gwt.material.design.client.ui.table.TableRow;
 import gwt.material.design.client.ui.table.TableSubHeader;
 import gwt.material.design.client.ui.table.cell.TextColumn;
-import gwt.material.design.client.ui.table.cell.WidgetColumn;
 import gwt.material.design.demo.client.application.datatable.table.Person;
 import gwt.material.design.demo.client.application.datatable.table.factory.CustomCategoryFactory;
 import gwt.material.design.demo.client.application.datatable.table.factory.PersonRowFactory;
@@ -87,9 +88,9 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         generatePeople();
 
         // Populate the ComboBox value
-        listSelectionType.addItem("NONE", SelectionType.NONE);
         listSelectionType.addItem("SINGLE", SelectionType.SINGLE);
         listSelectionType.addItem("MULTIPLE", SelectionType.MULTIPLE);
+        listSelectionType.addItem("NONE", SelectionType.NONE);
 
         listSelectionType.addValueChangeHandler(e -> {
             table.setSelectionType(e.getValue().get(0));
@@ -116,21 +117,6 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         // When you use the BaseRenderer you can override certain draw
         // methods to create elements the way you would like.
         table.setRenderer(new CustomRenderer<>());
-
-        table.addColumn(new WidgetColumn<Person, MaterialImage>() {
-            @Override
-            public MaterialImage getValue(Person object) {
-                MaterialImage profile = new MaterialImage();
-                profile.setUrl(object.getPicture());
-                profile.setWidth("40px");
-                profile.setHeight("40px");
-                profile.setPadding(4);
-                profile.setMarginTop(8);
-                profile.setBackgroundColor(Color.GREY_LIGHTEN_2);
-                profile.setCircle(true);
-                return profile;
-            }
-        });
 
         // Now we will add our tables columns.
         // There are a number of methods that can provide custom column configurations.
@@ -192,37 +178,6 @@ public class StandardDataTableView extends NavigatedView implements StandardData
             }
         }, "Phone");
 
-        table.addColumn(new WidgetColumn<Person, MaterialComboBox>() {
-            @Override
-            public MaterialComboBox getValue(Person object) {
-                MaterialComboBox<String> comboBox = new MaterialComboBox<>();
-                comboBox.addItem("State 1", "State 1");
-                comboBox.addItem("State 2", "State 2");
-                comboBox.addItem("State 3", "State 3");
-                comboBox.addItem("State 4", "State 4");
-                comboBox.addItem("State 5", "State 5");
-                return comboBox;
-            }
-        });
-
-        // Example of a widget column!
-        // You can add any handler to the column cells widget.
-        table.addColumn(new WidgetColumn<Person, MaterialBadge>() {
-            @Override
-            public TextAlign textAlign() {
-                return TextAlign.CENTER;
-            }
-
-            @Override
-            public MaterialBadge getValue(Person object) {
-                MaterialBadge badge = new MaterialBadge();
-                badge.setText("badge " + object.getId());
-                badge.setBackgroundColor(Color.BLUE);
-                badge.setLayoutPosition(Style.Position.RELATIVE);
-                return badge;
-            }
-        });
-
         // Set the visible range of the table for  pager (later)
         table.setVisibleRange(0, 2001);
 
@@ -243,27 +198,14 @@ public class StandardDataTableView extends NavigatedView implements StandardData
                     MaterialWidget content = new MaterialWidget(
                             event.getExpansion().getRow().find(".content").empty().asElement());
 
-                    // Add new content.
-                    MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
-                    badge.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    badge.getElement().getStyle().setRight(0, Style.Unit.PX);
-                    badge.setFontSize(12, Style.Unit.PX);
-                    content.add(badge);
+                    MaterialLabel title = new MaterialLabel("Expansion Row Panel");
+                    title.setFontSize("1.6em");
+                    title.setDisplay(Display.BLOCK);
+                    MaterialLabel description = new MaterialLabel("This content was made from asynchronous call");
 
-                    MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
-                            new MaterialIcon(IconType.FULLSCREEN));
-                    content.add(btn);
-
-                    MaterialTextBox textBox = new MaterialTextBox();
-                    textBox.setText(" from an asynchronous");
-                    textBox.setGwtDisplay(Style.Display.INLINE_TABLE);
-                    textBox.setWidth("200px");
-                    content.add(textBox);
-
-                    MaterialIcon icon = new MaterialIcon(IconType.CALL);
-                    icon.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    icon.getElement().getStyle().setTop(12, Style.Unit.PX);
-                    content.add(icon);
+                    content.setPadding(20);
+                    content.add(title);
+                    content.add(description);
 
                     // Hide the expansion elements overlay section.
                     // The overlay is retrieved using EowExpand#getOverlay()

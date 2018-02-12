@@ -88,6 +88,7 @@ public class NameTokens {
     public static final String combobox = "combobox";
     public static final String standardDataTable = "standard_datatable";
     public static final String infiniteDataTable = "infinite_datatable";
+    public static final String frozenDataTable = "frozen_datatable";
     public static final String pagedDataTable = "paged_datatable";
     public static final String customDataTable = "custom_datatable";
     public static final String contextMenuDataTable = "context_menu_datatable";
@@ -388,6 +389,8 @@ public class NameTokens {
     public static String getInfiniteDataTable() {
         return infiniteDataTable;
     }
+
+    public static String getFrozenDataTable() { return frozenDataTable; }
 
     public static String getPagedDataTable() {
         return pagedDataTable;
