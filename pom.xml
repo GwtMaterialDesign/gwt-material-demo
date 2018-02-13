@@ -159,8 +159,8 @@
                     <logLevel>INFO</logLevel>
                     <sourceLevel>1.8</sourceLevel>
                     <jvmArgs>
-                        <jvmArg>-Xmx1g</jvmArg>
-                        <jvmArg>-Xms1g</jvmArg>
+                        <jvmArg>-Xmx2g</jvmArg>
+                        <jvmArg>-Xms2g</jvmArg>
                         <jvmArg>-XX:CompileThreshold=7000</jvmArg>
                     </jvmArgs>
                     <optimize>9</optimize>

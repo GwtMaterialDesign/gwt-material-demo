@@ -33,6 +33,7 @@ import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.data.HasCategories;
 import gwt.material.design.client.data.SelectionType;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
@@ -329,8 +330,8 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
     }
 
     public static class CustomCategoryComponent extends CategoryComponent {
-        public CustomCategoryComponent(String category) {
-            super(category);
+        public CustomCategoryComponent(HasCategories parent, String category) {
+            super(parent, category);
         }
 
         @Override

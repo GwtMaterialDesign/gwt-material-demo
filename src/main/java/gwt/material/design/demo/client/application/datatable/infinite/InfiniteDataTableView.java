@@ -147,7 +147,7 @@ public class InfiniteDataTableView extends NavigatedView implements InfiniteData
             @Override
             public void onSuccess(List<String> categories) {
                 for(String category : categories) {
-                    table.addCategory(new CategoryComponent(category));
+                    table.addCategory(new CategoryComponent(table, category));
                 }
                 table.getView().setLoadMask(false);
             }
