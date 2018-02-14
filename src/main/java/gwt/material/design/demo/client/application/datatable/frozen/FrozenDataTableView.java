@@ -34,6 +34,7 @@ import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.data.HasCategories;
+import gwt.material.design.client.data.RowExpansion;
 import gwt.material.design.client.data.SelectionType;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.RowComponent;
@@ -179,7 +180,13 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
         // Here we are adding a row expansion handler.
         // This is invoked when a row is expanded.
         table.addRowExpandingHandler(event -> {
-            JQueryElement section = event.getExpansion().getOverlay();
+            RowExpansion<Person> expansion = event.getExpansion();
+            JQueryElement section = expansion.getOverlay();
+
+            // For frozen columns we will need to define the height of our expansion.
+            // Since the frozen column requires us to use 'absolute' positioning the height
+            // must be defined.
+            expansion.setHeight("80px");
 
             // Fake Async Task
             // This is demonstrating a fake asynchronous call to load
@@ -189,7 +196,7 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
                 public void run() {
                     // Clear the content first.
                     MaterialWidget content = new MaterialWidget(
-                            event.getExpansion().getRow().find(".content").empty().asElement());
+                        expansion.getContent().empty().asElement());
 
                     MaterialLabel title = new MaterialLabel("Expansion Row Panel");
                     title.setFontSize("1.6em");

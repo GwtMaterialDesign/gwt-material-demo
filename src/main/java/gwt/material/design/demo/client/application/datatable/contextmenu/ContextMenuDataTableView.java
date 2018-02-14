@@ -188,7 +188,7 @@ public class ContextMenuDataTableView extends NavigatedView implements ContextMe
                 public void run() {
                     // Clear the content first.
                     MaterialWidget content = new MaterialWidget(
-                            event.getExpansion().getRow().find(".content").empty().asElement());
+                            event.getExpansion().getContent().empty().asElement());
 
                     MaterialLabel title = new MaterialLabel("Expansion Row Panel");
                     title.setFontSize("1.6em");
