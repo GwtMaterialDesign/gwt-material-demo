@@ -80,7 +80,7 @@
                                            rowHeight="60"
                                            height="400px"
                                            useStickyHeader="false"
-                                           useCategories="false"
+                                           useCategories="true"
                                            useRowExpansion="false"
                                            selectionType="SINGLE"/>
             </m:MaterialRow>
