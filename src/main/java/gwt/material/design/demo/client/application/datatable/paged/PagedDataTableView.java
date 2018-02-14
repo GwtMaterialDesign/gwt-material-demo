@@ -182,16 +182,16 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         table.addRowExpandingHandler(event -> {
             JQueryElement section = event.getExpansion().getOverlay();
 
+            // Clear the content first.
+            MaterialWidget content = new MaterialWidget(
+                event.getExpansion().getContent().empty().asElement());
+
             // Fake Async Task
             // This is demonstrating a fake asynchronous call to load
             // the data inside the expansion element.
             new Timer() {
                 @Override
                 public void run() {
-                    // Clear the content first.
-                    MaterialWidget content = new MaterialWidget(
-                        event.getExpansion().getContent().empty().asElement());
-
                     MaterialLabel title = new MaterialLabel("Expansion Row Panel");
                     title.setFontSize("1.6em");
                     title.setDisplay(Display.BLOCK);

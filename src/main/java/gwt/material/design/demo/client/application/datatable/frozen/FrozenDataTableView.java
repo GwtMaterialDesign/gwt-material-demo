@@ -183,6 +183,10 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
             RowExpansion<Person> expansion = event.getExpansion();
             JQueryElement section = expansion.getOverlay();
 
+            // Clear the content first.
+            MaterialWidget content = new MaterialWidget(
+                event.getExpansion().getContent().empty().asElement());
+
             // For frozen columns we will need to define the height of our expansion.
             // Since the frozen column requires us to use 'absolute' positioning the height
             // must be defined.
@@ -194,10 +198,6 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
             new Timer() {
                 @Override
                 public void run() {
-                    // Clear the content first.
-                    MaterialWidget content = new MaterialWidget(
-                        expansion.getContent().empty().asElement());
-
                     MaterialLabel title = new MaterialLabel("Expansion Row Panel");
                     title.setFontSize("1.6em");
                     title.setDisplay(Display.BLOCK);
