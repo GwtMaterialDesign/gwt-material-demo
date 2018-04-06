@@ -21,16 +21,25 @@ package gwt.material.design.demo.client.application.style.helper;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.base.viewport.Resolution;
 import gwt.material.design.client.base.viewport.ViewPort;
 import gwt.material.design.client.constants.IconType;
+import gwt.material.design.client.constants.OffsetPosition;
 import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialPanel;
+import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
+
+import static gwt.material.design.jquery.client.api.JQuery.$;
 
 public class HelperView extends ViewImpl implements HelperPresenter.MyView {
     interface Binder extends UiBinder<Widget, HelperView> {
@@ -39,10 +48,20 @@ public class HelperView extends ViewImpl implements HelperPresenter.MyView {
     @UiField
     MaterialLink lblViewPort;
 
+    @UiField
+    MaterialPanel container, target;
+
+    @UiField
+    MaterialLink scrollScope;
+
+    @UiField
+    MaterialRow scrollHelperPanel;
+
     @Inject
     HelperView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        setupScrolling();
         detectViewPort();
     }
 
@@ -81,5 +100,41 @@ public class HelperView extends ViewImpl implements HelperPresenter.MyView {
             lblViewPort.setText("ViewPort : Laptop 4K");
             lblViewPort.setIconType(IconType.LAPTOP);
         });
+    }
+
+    protected ScrollHelper scrollHelper = new ScrollHelper();
+
+    protected void setupScrolling() {
+        scrollHelper.setContainer(container);
+
+        $(container).on("scroll", (e, param1) -> {
+
+            if (scrollHelper.isInViewPort(target)) {
+                scrollScope.setText("Visible inside the ViewPort");
+                scrollScope.setIconType(IconType.VISIBILITY);
+            } else {
+                scrollScope.setText("Out of ViewPort Scope");
+                scrollScope.setIconType(IconType.VISIBILITY_OFF);
+            }
+            return false;
+        });
+    }
+
+    @UiHandler("scrollToTop")
+    void scrollToTop(ClickEvent e) {
+        scrollHelper.setOffsetPosition(OffsetPosition.TOP);
+        scrollHelper.scrollTo(target);
+    }
+
+    @UiHandler("scrollToMiddle")
+    void scrollToMiddle(ClickEvent e) {
+        scrollHelper.setOffsetPosition(OffsetPosition.MIDDLE);
+        scrollHelper.scrollTo(target);
+    }
+
+    @UiHandler("scrollToBottom")
+    void scrollToBottom(ClickEvent e) {
+        scrollHelper.setOffsetPosition(OffsetPosition.BOTTOM);
+        scrollHelper.scrollTo(target);
     }
 }

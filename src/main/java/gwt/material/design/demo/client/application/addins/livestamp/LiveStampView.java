@@ -41,7 +41,7 @@ public class LiveStampView extends ViewImpl implements LiveStampPresenter.MyView
     @Inject
     LiveStampView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        liveStampPast.setDate(new Date(115, 2, 1));
-        liveStampFuture.setDate(new Date(125, 2, 1));
+        //liveStampPast.setDate(new Date(115, 2, 1));
+       // liveStampFuture.setDate(new Date(125, 2, 1));
     }
 }

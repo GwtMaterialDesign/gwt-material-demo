@@ -219,6 +219,28 @@
       </demo:PrettyPre>
     </m:MaterialRow>
 
+    <m:MaterialRow addStyleNames="code" ui:field="scrollHelperPanel">
+      <m:MaterialTitle title="ScrollHelper" description="A utility class for Scrolling capabilities" />
+
+      <m:MaterialButton text="Scroll To Top (Element)" ui:field="scrollToTop"/>
+      <m:MaterialButton text="Scroll To Middle (Element)" ui:field="scrollToMiddle"/>
+      <m:MaterialButton text="Scroll To Bottom (Element)" ui:field="scrollToBottom"/>
+      <m:MaterialLink iconType="VISIBILITY" ui:field="scrollScope" text="Out of ViewPort Scope" display="BLOCK" marginTop="40" marginBottom="40"/>
+      <m:MaterialPanel ui:field="container" grid="s12 m6 l4" height="400px" overflow="AUTO" backgroundColor="GREY_LIGHTEN_3">
+        <m:MaterialPanel ui:field="target" width="200px" height="200px" backgroundColor="BLUE" marginTop="500" marginBottom="500"/>
+      </m:MaterialPanel>
+
+      <demo:PrettyPre addStyleNames="lang java">
+        // Smooth Scrolling <br/>
+        ScrollHelper scrollHelper = new ScrollHelper()<br/>
+        scrollHelper.setContainer(container); <br/>
+        scrollHelper.setOffsetPosition(
+        scrollHelper.scrollTo(target); <br/><br/>
+        // Viewport Scope Detection <br/>
+        scrollHelper.isInViewPort(target)
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
       <m:MaterialTitle  description="Truncation - To truncate long lines of text in an ellipsis, add the class truncate to the tag which contains the text. See an exaple below of a header being truncated inside a card."/>
@@ -295,7 +317,7 @@
       </demo:PrettyPre>
     </m:MaterialRow>
   
-    <m:MaterialRow addStyleNames="code">
+    <m:MaterialRow addStyleNames="code" ui:field="truncate">
       <m:MaterialTitle title="Truncate" description="If you have very long texts you can truncate it by adding truncate='true'"/>
       <m:MaterialLabel truncate="true" text="This is a very very very long long text." fontSize="3em" width="300px"/>
     </m:MaterialRow>

@@ -32,6 +32,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.pwa.PwaManager;
 import gwt.material.design.client.pwa.manifest.js.AppInstaller;
+import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
@@ -82,7 +83,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         PwaManager.getInstance()
                 .setThemeColor(THEME_COLOR)
                 .setWebManifest(MANIFEST_URL)
-                .setServiceWorker(SERVICE_WORKER_URL)
+                .setServiceWorker(new ServiceWorkerManager(SERVICE_WORKER_URL))
                 .load();
 
         // Install App Banner
