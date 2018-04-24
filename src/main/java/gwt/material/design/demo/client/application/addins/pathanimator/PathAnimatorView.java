@@ -38,7 +38,7 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     }
 
     @UiField
-    MaterialButton btnOptionSource, btnSource1, btnSource3;
+    MaterialButton btnOptionSource, btnSource1, btnSource3, toScrolledElement;
 
     @UiField
     MaterialCard card, panelTarget3, panelWithOptions;
@@ -48,6 +48,9 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
 
     @UiField
     MaterialIcon btnSource4;
+
+    @UiField
+    MaterialRow scrolledTarget;
 
     @UiField
     MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2,
@@ -72,6 +75,13 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
 
         txtExtraTransitionDuration.setValue(1000);
         txtExtraTransitionDuration.setHelperText("Extra duration (in milliseconds) of targetElement to provide visual continuity between the animation and the rendering of the targetElement. Default is 1000ms");
+    }
+
+    @UiHandler("toScrolledElement")
+    void toScrolledElement(ClickEvent e) {
+        animator.setSourceElement(toScrolledElement.getElement());
+        animator.setTargetElement(card.getElement());
+        animator.animate();
     }
 
     @UiHandler("btnCloseWithOptions")

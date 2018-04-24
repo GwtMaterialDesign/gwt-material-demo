@@ -31,7 +31,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 
 public class PathAnimatorShowcase extends Composite {
@@ -58,7 +58,7 @@ public class PathAnimatorShowcase extends Composite {
 
     public PathAnimatorShowcase() {
         initWidget(uiBinder.createAndBindUi(this));
-        MaterialAnimator.animate(Transition.BOUNCEINDOWN, btnFAB, 400);
+        new MaterialAnimation().transition(Transition.BOUNCEINDOWN).animate(btnFAB);
     }
 
     @UiHandler("btnFAB")
@@ -66,7 +66,7 @@ public class PathAnimatorShowcase extends Composite {
         // Execute the opening callback once the fab is clicked
         MaterialPathAnimator.animate(btnFAB.getElement(), musicPanel.getElement(), () -> {
             // Hide the fab with zoom out animation
-            MaterialAnimator.animate(Transition.ZOOMOUT, btnFAB, 1000);
+            new MaterialAnimation().transition(Transition.ZOOMOUT).animate(btnFAB);
             btnFAB.setVisibility(Style.Visibility.HIDDEN);
             btnFAB.setOpacity(0);
 
@@ -76,7 +76,7 @@ public class PathAnimatorShowcase extends Composite {
 
             // Setting the music label with Bounce up animation
             lblMusic.setText("Pharell Williams / Love Yourself to Dance");
-            MaterialAnimator.animate(Transition.BOUNCEINUP, lblMusic, 1000);
+            new MaterialAnimation().transition(Transition.BOUNCEINUP).animate(lblMusic);
 
             // Setting the image of the artist
             imgMusic.setUrl("http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png");
@@ -88,7 +88,7 @@ public class PathAnimatorShowcase extends Composite {
         // Execute the close callback animation
         MaterialPathAnimator.reverseAnimate(btnFAB.getElement(), musicPanel.getElement(), () -> {
             // Setting the visibility of the FAB for reverse animation
-            MaterialAnimator.animate(Transition.ZOOMIN, btnFAB, 1000);
+            new MaterialAnimation().transition(Transition.ZOOMIN).animate(btnFAB);
             btnFAB.setVisibility(Style.Visibility.VISIBLE);
             btnFAB.setOpacity(1);
 
@@ -98,7 +98,7 @@ public class PathAnimatorShowcase extends Composite {
 
             // Setting the previous music label with Bounce down animation
             lblMusic.setText("Lady Gaga / Telephone");
-            MaterialAnimator.animate(Transition.BOUNCEINDOWN, lblMusic, 1000);
+            new MaterialAnimation().transition(Transition.BOUNCEINDOWN).animate(lblMusic);
 
             // Setting the image of the artist
             imgMusic.setUrl("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG");

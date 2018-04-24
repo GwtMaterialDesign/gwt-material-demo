@@ -1,0 +1,239 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+
+  <m:MaterialRow>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialListBox placeholder="ListBox">
+          &emsp;&lt;m.html:Option text="Option 1"/><br/>
+          &emsp;&lt;m.html:Option text="Option 2"/><br/>
+          &emsp;&lt;m.html:Option text="Option 3"/><br/>
+          &emsp;&lt;m.html:Option text="Option 4"/><br/>
+        &lt;/m:MaterialListBox>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Using MaterialListValueBox" description="You can easily set the generic param with your desired object into the MaterialListValueBox." />
+      <m:MaterialListValueBox ui:field="lstValueBox" placeholder="Choose your hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;// UiBinder<br/>
+        &lt;m:MaterialListValueBox ui:field="lstIntegerListBox" placeholder="Choose your hero" grid="s12"/>
+      </demo:PrettyPre>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Java <br/>
+        @UiField <br/>
+        MaterialListValueBox&lt;Hero> lstIntegerListBox; <br/><br/>
+
+        for (Hero hero : DataHelper.getAllHeroes()) { <br/>
+        &emsp;lstIntegerListBox.addItem(hero, hero.getName()); <br/>
+        } <br/><br/>
+
+        lstIntegerListBox.addValueChangeHandler(valueChangeEvent -> { <br/>
+        &emsp;MaterialToast.fireToast("VALUE: " + valueChangeEvent.getValue().getName()); <br/>
+        });
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Add Option" description="You can easily add an item by calling addItem(Item)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstAddOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Add New Option" ui:field="btnAddNewOption" />
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Remove Option" description="You can easily remove an item by calling removeItem(0)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstRemoveOptions">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+        <m.html:Option text="Option 5"/>
+        <m.html:Option text="Option 6"/>
+        <m.html:Option text="Option 7"/>
+        <m.html:Option text="Option 8"/>
+        <m.html:Option text="Option 9"/>
+        <m.html:Option text="Option 10"/>
+      </m:MaterialListBox>
+      <m:MaterialButton text="Remove Option" ui:field="btnRemoveOption" />
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="ListBox : setValue(value, fireEvents)"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstSetValue">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+      </m:MaterialListBox>
+
+      <m:MaterialButton text="Set Value" ui:field="btnListBoxValue" marginRight="20" />
+      <m:MaterialButton text="Set Value with Event" ui:field="btnListBoxValueEvent" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;// Set Value with firing the value change event <br/>
+        listbox.setValue(users.get(0), true); <br/>
+        // Set Value without firing the value change event <br/>
+        listbox.setValue(users.get(1));<br/>
+        listbox.setValue(users.get(1), false);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Value Change Handler" description="Add the code below to trigger any events on listbox"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;@UiHandler("lstOptions")
+        void onChangeListBox(ValueChangeEvent&lt;String> e) {
+        &emsp;MaterialToast.fireToast("Selected Index: " + lstOptions.getSelectedIndex());
+        }
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Allow Blank" />
+      <m:MaterialListBox ui:field="lstAllowBlank" placeholder="Allow Blank ListBox" />
+      <m:MaterialRow>
+        <m:MaterialCheckBox ui:field="cbAllowBlank" text="Allow Blank" />
+      </m:MaterialRow>
+      <m:MaterialButton ui:field="allowBlankGetValue" text="Get Value" marginRight="12" />
+      <m:MaterialButton ui:field="allowBlankSetValue" text="Set To Null" visible="false" />
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;m:MaterialListBox ui:field="lstAllowBlank" placeholder="Allow Blank ListBox" allowBlank="true" />
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Old Browser List Box" description="You can add an attribute old='true' to get the browser default listbox."/>
+      <m:MaterialListBox old="true">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+      </m:MaterialListBox>
+      
+      <demo:PrettyPre addStyleNames="lang-xml java">
+        &emsp;&lt;m:MaterialListBox old="true"><br/>
+        &emsp;&lt;m.html:Option text="Option 1"/><br/>
+        &emsp;&lt;m.html:Option text="Option 2"/><br/>
+        &emsp;&lt;m.html:Option text="Option 3"/><br/>
+        &emsp;&lt;m.html:Option text="Option 4"/><br/>
+        &lt;/m:MaterialListBox>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Disabled Styles" description="You can also add an attribute disabled='true' to the select element to make the whole thing disabled. Or if you add disabled to the options, the individual options will be unselectable."/>
+      <m:MaterialListBox  enabled="false">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+      </m:MaterialListBox>
+      <m:MaterialListBox  old="true" enabled="false">
+        <m.html:Option text="Option 1"/>
+        <m.html:Option text="Option 2"/>
+        <m.html:Option text="Option 3"/>
+        <m.html:Option text="Option 4"/>
+      </m:MaterialListBox>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialListBox  old="true" enabled="false"><br/>
+        &emsp;&lt;m.html:Option text="Option 1"/><br/>
+        &emsp;&lt;m.html:Option text="Option 2"/><br/>
+        &emsp;&lt;m.html:Option text="Option 3"/><br/>
+        &emsp;&lt;m.html:Option text="Option 4"/><br/><br/>
+        &emsp;&lt;m:MaterialListBox  old="true" enabled="false"><br/>
+        &emsp;&lt;m.html:Option text="Option 1"/><br/>
+        &emsp;&lt;m.html:Option text="Option 2"/><br/>
+        &emsp;&lt;m.html:Option text="Option 3"/><br/>
+        &emsp;&lt;m.html:Option text="Option 4"/><br/>
+        &lt;/m:MaterialListBox><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Empty Placeholder" />
+      <m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialListValueBox ui:field="lstEmptyPlacehoder" emptyPlaceHolder="Select your Hero"/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="Focus and Blur Handlers" />
+      <m:MaterialListValueBox ui:field="lstFocusAndBlur" placeholder="Select your Hero" grid="s12"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;lstOptions.addFocusHandler(focusEvent -> { <br/>
+        &emsp;MaterialToast.fireToast("FOCUSED");<br/>
+        });<br/><br/>
+
+        lstOptions.addBlurHandler(blurEvent -> {<br/>
+        &emsp;MaterialToast.fireToast("BLURRED");<br/>
+        });
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+      <m:MaterialTitle title="ListBox : Lazyload"/>
+      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstLazy" />
+      <m:MaterialButton ui:field="addItems" text="ADD 100 Items" marginRight="12" />
+      <m:MaterialButton ui:field="reload" text="Reload" />
+
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;listBox.addItem(value, false); // second param (reload) <br/>
+        lsitBox.reload();
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  </m:MaterialRow>
+</ui:UiBinder>

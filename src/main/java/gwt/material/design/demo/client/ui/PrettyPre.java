@@ -20,13 +20,19 @@ package gwt.material.design.demo.client.ui;
  * #L%
  */
 
+import gwt.material.design.client.MaterialDesign;
 import gwt.material.design.client.ui.html.Pre;
+import gwt.material.design.demo.client.resources.MaterialResources;
 import gwt.material.design.demo.client.ui.constants.Styles;
 
 /**
  * @author Sven Jacobs
  */
 public class PrettyPre extends Pre {
+
+    static {
+        MaterialDesign.injectJs(MaterialResources.INSTANCE.prettyfyJs());
+    }
 
     public PrettyPre() {
         addStyleName(Styles.PRETTYPRINT);

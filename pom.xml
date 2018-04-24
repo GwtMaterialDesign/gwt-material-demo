@@ -4,14 +4,14 @@
     <parent>
         <artifactId>gwt-material-parent</artifactId>
         <groupId>com.github.gwtmaterialdesign</groupId>
-        <version>2.0-rc6</version>
+        <version>2.1-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-demo</artifactId>
     <packaging>war</packaging>
-    <version>2.0-rc6</version>
+    <version>2.1-SNAPSHOT</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
 
@@ -32,16 +32,13 @@
 
         <!-- GWT -->
         <gwt.version>2.8.1</gwt.version>
-        <gwtp.version>1.5.3</gwtp.version>
+        <gwtp.version>1.6</gwtp.version>
         <gin.version>2.1.2</gin.version>
-        <gwt-material.version>2.0-rc6</gwt-material.version>
-
-        <gwt.style>PRETTY</gwt.style>
+        <gwt-material.version>2.1-SNAPSHOT</gwt-material.version>
 
         <!-- Maven -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
-        <appengine.version>1.9.24</appengine.version>
         <junit.version>4.12</junit.version>
         <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
@@ -64,6 +61,7 @@
         </resources>
 
         <plugins>
+            <!-- License Plugin -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>license-maven-plugin</artifactId>
@@ -88,6 +86,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- Java Doc Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -112,35 +112,26 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.2</version>
-                <executions>
-                    <execution>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>display-dependency-updates</goal>
-                            <goal>display-plugin-updates</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <version>${maven-compiler-plugin.version}</version>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!-- GPG Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
             </plugin>
-            <!-- Skips the GWTTestCases during Junit Testing -->
+
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -155,67 +146,101 @@
                 </configuration>
             </plugin>
 
-            <!-- GWT -->
+            <!-- GWT Maven (TBroyer Plugin) -->
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>net.ltgt.gwt.maven</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt.version}</version>
-
+                <version>${tbroyer.version}</version>
+                <extensions>true</extensions>
                 <configuration>
-                    <strict>true</strict>
-                    <testTimeOut>180</testTimeOut>
-                    <mode>htmlunit</mode>
-
-                    <!-- Switch to a suite to run tests faster -->
-                    <!-- <includes>**/*GwtTestSuite.java</includes> -->
-                    <!-- <excludes>**/*GwtTest.java</excludes> -->
-                    <includes>**/*GwtTest.java</includes>
-
-                    <copyWebapp>true</copyWebapp>
-                    <hostedWebapp>${webappDirectory}</hostedWebapp>
-
-                    <!--Might be needed later for appengine-->
-                    <!--<server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>-->
-                    <!--<appEngineVersion>${appengine.version}</appEngineVersion>-->
-                    <!--<appEngineHome>${gae.home}</appEngineHome>-->
-                    <!--<extraJvmArgs>-Dappengine.sdk.root=${gae.home}</extraJvmArgs>-->
-                    <!--<extraJvmArgs>-Ddatastore.default_high_rep_job_policy_unapplied_job_pct=20</extraJvmArgs>-->
-                    <!--<port>8888</port>-->
-
-                    <extraJvmArgs>-Xmx1g</extraJvmArgs>
+                    <moduleName>gwt.material.design.demo.GwtMaterialDesignDemo</moduleName>
+                    <skipModule>true</skipModule>
+                    <style>OBFUSCATED</style>
                     <logLevel>INFO</logLevel>
-                    <style>${gwt.style}</style>
-                    <compileReport>true</compileReport>
-                    <compilerMetrics>true</compilerMetrics>
-
-                    <runTarget>index.html</runTarget>
-                    <modules>
-                        <module>gwt.material.design.demo.GwtMaterialDesignDemo</module>
-                    </modules>
-
-                    <!-- mvn gwt:run-codeserver - won't have to use the bookmarklet -->
-                    <launcherDir>${project.build.directory}/${project.build.finalName}</launcherDir>
+                    <sourceLevel>1.8</sourceLevel>
+                    <jvmArgs>
+                        <jvmArg>-Xmx2g</jvmArg>
+                        <jvmArg>-Xms2g</jvmArg>
+                        <jvmArg>-XX:CompileThreshold=7000</jvmArg>
+                    </jvmArgs>
+                    <optimize>9</optimize>
+                    <compilerArgs>
+                        <compilerArg>-compileReport</compilerArg>
+                        <compilerArg>-XcompilerMetrics</compilerArg>
+                    </compilerArgs>
+                    <classpathScope>compile+runtime</classpathScope>
+                    <failOnError>true</failOnError>
                 </configuration>
-
-                <!--Replaced the existing executions block-->
                 <executions>
                     <execution>
                         <goals>
                             <goal>compile</goal>
-                            <goal>test</goal>
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
 
-                <!--<executions>-->
-                <!--<execution>-->
-                <!--<phase>compile</phase>-->
-                <!--<goals>-->
-                <!--<goal>clean</goal>-->
-                <!--<goal>compile</goal>-->
-                <!--</goals>-->
-                <!--</execution>-->
-                <!--</executions>-->
+            <!-- Copy webapp content to deploy folder -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${webappDirectory}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/webapp</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Service Worker Generator -->
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>install node and npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                        <phase>generate-resources</phase>
+                        <configuration>
+                            <nodeVersion>v9.0.0</nodeVersion>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm install</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <phase>generate-resources</phase>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm generate</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <arguments>run-script generate ${project.build.finalName}</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -252,52 +277,25 @@
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-themes</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-addins</artifactId>
             <version>${gwt-material.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.gwtmaterialdesign</groupId>
             <artifactId>gwt-material-table</artifactId>
             <version>${gwt-material.version}</version>
-        </dependency>
-
-        <!-- App Engine -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-endpoints</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-
-        <!-- Testing -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-labs</artifactId>
-            <version>${appengine.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-testing</artifactId>
-            <version>${appengine.version}</version>
-            <scope>test</scope>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -315,25 +313,12 @@
         <!-- GWT -->
         <dependency>
             <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-servlet</artifactId>
-            <version>${gwt.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
-            <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.gwt</groupId>
             <artifactId>gwt-codeserver</artifactId>
-            <version>${gwt.version}</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-dev</artifactId>
-            <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -372,52 +357,25 @@
 
     <profiles>
         <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.google.appengine</groupId>
-                        <artifactId>appengine-maven-plugin</artifactId>
-                        <version>${appengine.version}</version>
-                        <configuration>
-                            <enableJarClasses>false</enableJarClasses>
-                            <!-- Comment in the below snippet to bind to all IPs instead of just localhost -->
-                            <!-- address>0.0.0.0</address>
-                            <port>8080</port -->
-                            <!-- Comment in the below snippet to enable local debugging with a remove debugger
-                            like those included with Eclipse or IntelliJ -->
-                            <!-- jvmFlags>
-                            <jvmFlag>-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n</jvmFlag>
-                            </jvmFlags -->
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>endpoints_get_discovery_doc</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
             <id>dev</id>
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
+                        <groupId>net.ltgt.gwt.maven</groupId>
                         <artifactId>gwt-maven-plugin</artifactId>
-                        <version>${gwt.version}</version>
+                        <version>${tbroyer.version}</version>
+                        <extensions>true</extensions>
                         <configuration>
-                            <modules>
-                                <module>gwt.material.design.demo.GwtMaterialDesignDemoDev</module>
-                            </modules>
+                            <moduleName>gwt.material.design.demo.GwtMaterialDesignDemoDev</moduleName>
                             <draftCompile combine.self="override">true</draftCompile>
-                            <optimizationLevel combine.self="override">0</optimizationLevel>
-                            <disableCastChecking combine.self="override">false</disableCastChecking>
-                            <disableClassMetadata combine.self="override">false</disableClassMetadata>
                         </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>compile</goal>
+                                </goals>
+                            </execution>
+                        </executions>
                     </plugin>
                 </plugins>
             </build>

@@ -1,13 +1,30 @@
 {
-  "background_color": "#1976d2",
-  "name": "GWT Material Design",
-  "short_name": "GWT Material",
-  "display": "fullscreen",
+  "name": "Gwt Material Demo",
+  "short_name": "GMD Demo",
   "icons": [
     {
-      "src": "logo.png",
-      "sizes": "144x144",
-      "type": "image/png"
+      "src": "launcher-icons/launcher1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "launcher-icons/launcher2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "launcher-icons/launcher4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "launcher-icons/launcher5x.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
-  ]
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#2196f3",
+  "theme_color": "#1565c0"
 }

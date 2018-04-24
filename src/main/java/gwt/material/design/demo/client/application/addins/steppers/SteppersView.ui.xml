@@ -47,7 +47,7 @@
     
         <m:MaterialPanel addStyleNames="code">
             <m:MaterialTitle title="Vertical Steppers" description="Vertical steppers are designed for narrow screen sizes. They are ideal for mobile." />
-            <ma:stepper.MaterialStepper ui:field="stepper">
+            <ma:stepper.MaterialStepper ui:field="stepper" axis="VERTICAL">
                 <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
                     <m:MaterialButton ui:field="btnContinue1" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>

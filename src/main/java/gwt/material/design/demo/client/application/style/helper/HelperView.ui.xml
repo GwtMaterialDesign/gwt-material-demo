@@ -20,6 +20,8 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <ui:style>
@@ -40,6 +42,8 @@
       padding: 10px;
     }
   </ui:style>
+
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
   <g:HTMLPanel>
     <m:MaterialRow addStyleNames="code">
@@ -173,7 +177,70 @@
         &emsp;&lt;m:MaterialPanel showOn="SHOW_ON_MED_DOWN"/>
       </demo:PrettyPre>
     </g:HTMLPanel>
-  
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="ViewPort" description="Easily detects the browser size viewport on Resize Event. Try it yourself, resize the browser to see it's use."/>
+      <m:MaterialLink ui:field="lblViewPort" />
+      <demo:PrettyPre addStyleNames="lang-java" marginTop="40">
+        ViewPort.when(Resolution.MOBILE_SMALL).then(viewPortChange -> { <br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Small");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.MOBILE_MEDIUM).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Medium");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.MOBILE_LARGE).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Mobile Large");<br/>
+        &emsp;lblViewPort.setIconType(IconType.PHONE_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.TABLET).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Tablet");<br/>
+        &emsp;lblViewPort.setIconType(IconType.TABLET_ANDROID);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP_LARGE).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop Large");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+
+        ViewPort.when(Resolution.LAPTOP_4K).then(viewPortChange -> {<br/>
+        &emsp;lblViewPort.setText("ViewPort : Laptop 4K");<br/>
+        &emsp;lblViewPort.setIconType(IconType.LAPTOP);<br/>
+        });<br/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code" ui:field="scrollHelperPanel">
+      <m:MaterialTitle title="ScrollHelper" description="A utility class for Scrolling capabilities" />
+
+      <m:MaterialButton text="Scroll To Top (Element)" ui:field="scrollToTop"/>
+      <m:MaterialButton text="Scroll To Middle (Element)" ui:field="scrollToMiddle"/>
+      <m:MaterialButton text="Scroll To Bottom (Element)" ui:field="scrollToBottom"/>
+      <m:MaterialLink iconType="VISIBILITY" ui:field="scrollScope" text="Out of ViewPort Scope" display="BLOCK" marginTop="40" marginBottom="40"/>
+      <m:MaterialPanel ui:field="container" grid="s12 m6 l4" height="400px" overflow="AUTO" backgroundColor="GREY_LIGHTEN_3">
+        <m:MaterialPanel ui:field="target" width="200px" height="200px" backgroundColor="BLUE" marginTop="500" marginBottom="500"/>
+      </m:MaterialPanel>
+
+      <demo:PrettyPre addStyleNames="lang java">
+        // Smooth Scrolling <br/>
+        ScrollHelper scrollHelper = new ScrollHelper()<br/>
+        scrollHelper.setContainer(container); <br/>
+        scrollHelper.setOffsetPosition(
+        scrollHelper.scrollTo(target); <br/><br/>
+        // Viewport Scope Detection <br/>
+        scrollHelper.isInViewPort(target)
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Formatting" description="These classes help format various content on your site."/>
       <m:MaterialTitle  description="Truncation - To truncate long lines of text in an ellipsis, add the class truncate to the tag which contains the text. See an exaple below of a header being truncated inside a card."/>
@@ -194,7 +261,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -211,7 +278,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -228,7 +295,7 @@
         <m:MaterialColumn grid="l4 s12">
           <m:MaterialCard backgroundColor="WHITE" hoverable="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
   
@@ -250,7 +317,7 @@
       </demo:PrettyPre>
     </m:MaterialRow>
   
-    <m:MaterialRow addStyleNames="code">
+    <m:MaterialRow addStyleNames="code" ui:field="truncate">
       <m:MaterialTitle title="Truncate" description="If you have very long texts you can truncate it by adding truncate='true'"/>
       <m:MaterialLabel truncate="true" text="This is a very very very long long text." fontSize="3em" width="300px"/>
     </m:MaterialRow>

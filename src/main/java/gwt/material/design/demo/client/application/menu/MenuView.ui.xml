@@ -19,9 +19,9 @@
   -->
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-						 xmlns:m="urn:import:gwt.material.design.client.ui"
-			 			 xmlns:ma="urn:import:gwt.material.design.addins.client"
-						 xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
+			 xmlns:m="urn:import:gwt.material.design.client.ui"
+			 xmlns:ma="urn:import:gwt.material.design.addins.client"
+			 xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
 
 	<ui:with field="tokens" type="gwt.material.design.demo.client.place.NameTokens"/>
 
@@ -73,19 +73,21 @@
 			</m:MaterialNavBar>
 		</m:MaterialHeader>
 
-		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
+		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true"
+                               showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
-				<m:MaterialImage width="100%" url="http://i.imgur.com/VaBxpGj.png" addStyleNames="{style.logo}"/>
+				<ma:webp.MaterialWebpImage width="100%" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/logo.webp" fallbackExtension="png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getAbout}" iconPosition="LEFT" iconType="INFO_OUTLINE" text="About"/>
 			</m.html:ListItem>
 			<m.html:ListItem waves="DEFAULT">
 				<m:MaterialLink targetHistoryToken="{tokens.getGettingstarted}" iconPosition="LEFT" iconType="CLOUD_DOWNLOAD" text="Getting Started">
-					<m:MaterialBadge text="2.0-rc6" textColor="WHITE"/>
+					<m:MaterialBadge text="2.1" textColor="WHITE"/>
 				</m:MaterialLink>
 			</m.html:ListItem>
 			<m:MaterialCollapsible>
+
 				<!-- COMPONENTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -97,6 +99,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getButtons}" text="Buttons" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBreadcrumbs}" text="Breadcrumb" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getCards}" text="Cards" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getCheckbox}" text="CheckBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getChips}" text="Chips" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getCollapsible}" text="Collapsible" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCollections}" text="Collections" waves="DEFAULT"/>
@@ -104,17 +107,21 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getDialogs}" text="Dialogs" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getDropdown}" text="Dropdown" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getErrors}" text="Errors" waves="DEFAULT" />
-							<m:MaterialLink targetHistoryToken="{tokens.getForms}" text="Forms" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getFabs}" text="FAB" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFooter}" text="Footer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getLoader}" text="Loaders" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getListbox}" text="ListBox" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMedia}" text="Media" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getNavbar}" text="NavBar" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getPushPin}" text="Pushpin" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getRadiobutton}" text="Radio Button" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getRange}" text="Range" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSearch}" text="Search" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getSidenavs}" text="SideNavs" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollspy}" text="Scrollspy" waves="DEFAULT" />
+							<m:MaterialLink targetHistoryToken="{tokens.getSwitches}" text="Switches" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTabs}" text="Tabs" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getTextfields}" text="TextFields" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
@@ -130,6 +137,27 @@
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
+
+				<!-- DATA TABLE -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="DataTable" iconType="VIEW_LIST"/>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getStandardDataTable}" text="Standard" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInfiniteDataTable}" text="Infinite" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getPagedDataTable}" text="Paged" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getFrozenDataTable}" text="Frozen"
+											waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getCustomDataTable}" text="Customized" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getContextMenuDataTable}" text="Context Menu" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+
 				<!-- ADDINS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -141,14 +169,31 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getAvatar}" text="Avatar" waves="DEFAULT" />
 							<m:MaterialLink targetHistoryToken="{tokens.getBubble}" text="Bubble" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getCamera}" text="Camera" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCarousel}" text="Carousel" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getCircularProgress}" text="Circular Progress" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getCombobox}" text="ComboBox" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getCountUp}" text="Count Up" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getCutouts}" text="CutOut" waves="DEFAULT"/>
-							<m:MaterialLink targetHistoryToken="{tokens.getDatatable}" text="Data Table" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDocviewer}" text="Doc Viewer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getDnd}" text="Drag and Drop" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getEmptyStates}" text="Empty States" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getFileuploader}" text="File Uploader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getIconMorph}" text="Icon Morph" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getImageCropper}" text="Image Cropper" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getInputMask}" text="Input Mask" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
+							<m:MaterialLink targetHistoryToken="{tokens.getLiveStamp}" text="Live Stamp" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getMasonry}" text="Masonry" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getMenubar}" text="Menu Bar" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getOverlay}" text="Overlay" waves="DEFAULT"/>
@@ -156,6 +201,9 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getRating}" text="Rating" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRicheditor}" text="Rich Editor" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getScrollfire}" text="Scroll Fire" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getSignaturePad}" text="Signature Pad" waves="DEFAULT">
+								<m:MaterialBadge text="NEW" textColor="WHITE"/>
+							</m:MaterialLink>
 							<m:MaterialLink targetHistoryToken="{tokens.getSplitpanel}" text="Split Panel" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSubheaders}" text="Subheader" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getSteppers}" text="Steppers" waves="DEFAULT"/>
@@ -163,10 +211,35 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getTimepickers}" text="Time Picker" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTree}" text="Tree View" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getWaterfall}" text="Waterfall" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getWebpImage}" text="Webp" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getWindow}" text="Window" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>
+
+
+				<!-- Incubator -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="Incubator" iconType="ARCHIVE">
+							<m:MaterialBadge text="Beta" textColor="WHITE"/>
+						</m:MaterialLink>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getAlert}" text="Alert" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getAsync}" text="Async" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getLanguageSelector}" text="Language Selector" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getLoadingState}" text="Loading State" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getProgressLineBar}" text="Progress Line Bar" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getRecaptcha}" text="Recaptcha" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+
 				<!-- STYLE AND LAYOUTS -->
 				<m:MaterialCollapsibleItem>
 					<m:MaterialCollapsibleHeader waves="DEFAULT">
@@ -181,6 +254,22 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getIcons}" text="Icons" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getShadow}" text="Shadow" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getThemes}" text="Theming" waves="DEFAULT"/>
+						</m.html:UnorderedList>
+					</m:MaterialCollapsibleBody>
+				</m:MaterialCollapsibleItem>
+				<!-- PROGRESSIVE WEB APPS (PWA) -->
+				<m:MaterialCollapsibleItem>
+					<m:MaterialCollapsibleHeader waves="DEFAULT">
+						<m:MaterialLink text="PWA" iconType="STARS">
+							<m:MaterialBadge text="NEW" textColor="WHITE"/>
+						</m:MaterialLink>
+					</m:MaterialCollapsibleHeader>
+					<m:MaterialCollapsibleBody>
+						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getPwagettingstarted}" text="Getting Started" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInstallable}" text="Installable" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getServiceworker}" text="Service Worker" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getNotification}" text="Push Notifications" waves="DEFAULT"/>
 						</m.html:UnorderedList>
 					</m:MaterialCollapsibleBody>
 				</m:MaterialCollapsibleItem>

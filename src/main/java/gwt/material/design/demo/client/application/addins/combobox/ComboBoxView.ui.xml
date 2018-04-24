@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="Select2 4.0.3" link="https://github.com/select2/select2" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
@@ -38,7 +39,7 @@
     
             <m:MaterialRow>
                 <m:MaterialColumn grid="l6 m6 s12">
-                    <combobox:MaterialComboBox ui:field="comboTimeZone1" placeholder="TimeZone" />
+                    <combobox:MaterialComboBox width="100%"  ui:field="comboTimeZone1" placeholder="TimeZone" />
                 </m:MaterialColumn>
             </m:MaterialRow>
         </m:MaterialRow>
@@ -227,10 +228,17 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
-            <m:MaterialColumn grid="l6 m6 s12">
-                <m:MaterialTitle title="Tag Support" description="Note that when tagging is enabled the user can select from pre-existing options or create a new tag by picking the first choice, which is what the user has typed into the search box so far."/>
-                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" multiple="true" ui:field="comboTagsMultiple" />
-                <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" ui:field="comboTags" />
+            <m:MaterialColumn grid="l12 m12 s12">
+                <m:MaterialTitle title="Tag Support" description="Note that when tagging is enabled the user can select from pre-existing options or create a new tag by picking the first choice, which is what the user has typed into the search box so far. Also Tag support will only work on String generic Params."/>
+                <m:MaterialRow>
+                    <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" multiple="true" ui:field="comboTagsMultiple" grid="s12 m6 l6"/>
+                </m:MaterialRow>
+                <m:MaterialButton ui:field="btnTagMultiGetValue" text="Get Value" />
+
+                <m:MaterialRow>
+                    <combobox:MaterialComboBox closeOnSelect="true" tags="true" placeholder="Time Zone" ui:field="comboTags" grid="s12 m6 l6" />
+                </m:MaterialRow>
+                <m:MaterialButton ui:field="btnTagGetValue" text="Get Value" />
             </m:MaterialColumn>
             <m:MaterialColumn grid="s12">
                 <demo:PrettyPre addStyleNames="lang-xml">
@@ -451,5 +459,44 @@
             </m:MaterialModal>
         </m:MaterialRow>
 
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Scroll To Top" description="You can set easily the position of ComboBox dropdown results scroll position to top."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12">
+                    <combobox:MaterialComboBox label="Time Zone" ui:field="comboElements" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;comboElements.addOpenHandler(event -> { <br/>
+                    &emsp;comboElements.scrollTop(0); <br/>
+                    });
+                </demo:PrettyPre>
+            </m:MaterialRow>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
+            <m:MaterialTitle title="Provide your Custom Message Text" description="This is good for Language support so that you can easily control the text object in your combobox.."/>
+            <m:MaterialRow>
+                <m:MaterialColumn grid="l6 m6 s12">
+                    <combobox:MaterialComboBox label="Time Zone" limit="2" multiple="true" ui:field="comboLanguge" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;LanguageOptions languageOptions = new LanguageOptions(); <br/>
+                    languageOptions.setNoResults(param1 -> "Walang Resulta..."); <br/>
+                    languageOptions.setErrorLoading(param1 -> "May problema..."); <br/>
+                    languageOptions.setInputTooLong(param1 -> "Ang inyong inilagay ay sobrang haba..."); <br/>
+                    languageOptions.setInputTooShort(param1 -> "Ang inyong inilagay ay sobrang liit..."); <br/>
+                    languageOptions.setLoadingMore(param1 -> "Nagloload pa..."); <br/>
+                    languageOptions.setMaximumSelected(param1 -> "Maximum na ang inyong iniligay...");<br/>
+                    languageOptions.setSearching(param1 -> "Kasalukyang hinahanap..."); <br/>
+                    comboLanguge.setLanguage(languageOptions);
+                </demo:PrettyPre>
+            </m:MaterialRow>
+        </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

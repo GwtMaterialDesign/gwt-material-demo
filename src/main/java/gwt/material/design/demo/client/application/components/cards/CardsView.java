@@ -28,7 +28,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialRow;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 
 import javax.inject.Inject;
@@ -46,6 +46,6 @@ public class CardsView extends ViewImpl implements CardsPresenter.MyView {
 
     @UiHandler("btnShow")
     void onShow(ClickEvent e) {
-        MaterialAnimator.animate(Transition.SHOW_GRID, rowCards, 0);
+        new MaterialAnimation().transition(Transition.SHOW_GRID).animate(rowCards);
     }
 }

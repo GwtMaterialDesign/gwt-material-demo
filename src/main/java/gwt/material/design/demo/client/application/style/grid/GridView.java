@@ -21,9 +21,13 @@ package gwt.material.design.demo.client.application.style.grid;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialPanel;
 
 import javax.inject.Inject;
 
@@ -31,8 +35,16 @@ public class GridView extends ViewImpl implements GridPresenter.MyView {
     interface Binder extends UiBinder<Widget, GridView> {
     }
 
+    @UiField
+    MaterialPanel container;
+
     @Inject
     GridView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("toggleContainer")
+    void toggleContainer(ClickEvent e) {
+        container.setContainerEnabled(!container.isContainerEnabed());
     }
 }

@@ -36,7 +36,7 @@ public class Hero extends SearchObject {
 
     public Hero() {}
 
-    public Hero(ImageResource imgProfile, String name, String description, int power) {
+    public Hero(String imgProfile, String name, String description, int power) {
         super(imgProfile, name);
         this.name = name;
         this.description = description;

@@ -21,33 +21,36 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
+  
   <g:HTMLPanel>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Material Box" description="Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged. Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key."/>
-      <m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/>
+      <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/candy-icons.gif"  type="MATERIALBOXED"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;m:MaterialImage url="http://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/><br/>
+        &lt;m:MaterialImage url="https://assets.materialup.com/uploads/0587e4a8-6a46-4e27-b8bf-836e4350fe82/candycons.gif"  type="MATERIALBOXED"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Captions" description="It is very easy to add a short caption to your photo. Just add the caption as a caption attribute."/>
-      <m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+      <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md-card-ripple.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;m:MaterialImage url="http://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
+        &lt;m:MaterialImage url="https://assets.materialup.com/uploads/449089f1-22d5-473f-9de6-59ef04e9de2b/personal-card-material-design-animation.gif"  type="MATERIALBOXED" caption="I love Material Design"/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Responsive Videos" description="We provide a container for Embedded Videos that resizes them responsively."/>
-      <m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+      <m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &lt;m:MaterialVideo url="http://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
+        &lt;m:MaterialVideo url="https://www.youtube.com/embed/Q8TXgCzxEnw?rel=0"/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -56,28 +59,28 @@
   
       <m:MaterialSlider ui:field="slider" fullscreen="false">
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
-  
+
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
@@ -87,7 +90,7 @@
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialSlider ui:field="slider" fullscreen="false"><br/><br/>
         &emsp;&lt;m:MaterialSlideItem><br/>
-        &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="https://i.imgur.com/BHj2Jfj.jpg"/><br/>
         &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
         &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>
@@ -101,35 +104,38 @@
       <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
       <m:MaterialTitle title="Material Slider : Options" description="You can set the duration / interval in milliseconds of Material Slider easily."/>
 
-      <m:MaterialSlider duration="300" interval="1000">
+      <m:MaterialSlider ui:field="optionSlider" duration="300" interval="1000">
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-coffee.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-skiing.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-manicure.jpg"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.webp" fallbackExtension="jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
       </m:MaterialSlider>
+
+      <m:MaterialButton text="START" ui:field="start" />
+      <m:MaterialButton text="PAUSE" ui:field="pause" type="FLAT" waves="DEFAULT" />
 
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialSlider ui:field="slider" duration="300" interval="1000"><br/><br/>
@@ -142,6 +148,14 @@
         &emsp;&lt;--Other Items here --><br/><br/>
         &lt;/m:MaterialSlider><br/>
       </demo:PrettyPre>
+
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Pause the slider <br/>
+        slider.pause(); <br/><br/>
+
+        // Start the slider <br/>
+        slider.start();
+      </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
@@ -150,7 +164,7 @@
       <demo:PrettyPre addStyleNames="lang-xml">
         &lt;m:MaterialSlider ui:field="slider" fullscreen="true"><br/><br/>
         &emsp;&lt;m:MaterialSlideItem><br/>
-        &emsp;&emsp;&lt;m:MaterialImage url="http://mayastepien.nl/googlecalendar/google-drinks.jpg"/><br/>
+        &emsp;&emsp;&lt;m:MaterialImage url="https://i.imgur.com/BHj2Jfj.jpg"/><br/>
         &emsp;&emsp;&lt;m:MaterialSlideCaption textAlign="CENTER"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/><br/>
         &emsp;&emsp;&lt;/m:MaterialSlideCaption><br/>

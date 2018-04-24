@@ -22,20 +22,18 @@ package gwt.material.design.demo.client.application.components.search;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.event.logical.shared.CloseEvent;
-import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.SearchObject;
-import gwt.material.design.client.events.SearchFinishEvent;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
+import gwt.material.design.addins.client.webp.MaterialWebpImage;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -52,7 +50,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     MaterialSearch txtSearch;
 
     @UiField
-    MaterialImage imgHero;
+    MaterialWebpImage imgHero;
 
     @UiField
     MaterialLabel lblName, lblDescription;
@@ -85,8 +83,9 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
         txtSearch.addSearchFinishHandler(event -> {
             // Get the selected search object
             Hero hero = (Hero)txtSearch.getSelectedObject();
-            MaterialAnimator.animate(Transition.ZOOMIN, imgHero, 0);
-            imgHero.setResource(hero.getResource());
+            new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
+            imgHero.setUrl(hero.getImageUrl());
+            imgHero.setFallbackExtension("png");
             lblName.setText(hero.getName());
             lblDescription.setText(hero.getDescription());
             MaterialToast.fireToast("Search Finish Event was fired");

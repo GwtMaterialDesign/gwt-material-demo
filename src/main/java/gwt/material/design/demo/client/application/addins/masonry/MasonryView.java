@@ -28,6 +28,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.masonry.MaterialMasonry;
+import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.masonry.cards.UserCard;
 import gwt.material.design.demo.client.application.dto.DataHelper;
@@ -42,6 +43,8 @@ public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
     @UiField
     MaterialMasonry dynamicMasonry;
 
+    int totalItems;
+
     @Inject
     MasonryView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -49,14 +52,34 @@ public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
     }
 
     private void buildDynamicMasonry() {
-        dynamicMasonry.clear();
         for(User user : DataHelper.getAllUsers()) {
             dynamicMasonry.add(new UserCard(user, dynamicMasonry));
         }
+        totalItems = dynamicMasonry.getWidgetCount();
+        dynamicMasonry.reload();
     }
 
     @UiHandler("btnAddItem")
     void onAddItem(ClickEvent e) {
+        totalItems++;
         dynamicMasonry.add(new UserCard(DataHelper.getAllUsers().get(0), dynamicMasonry));
     }
+
+    @UiHandler("btnClearAll")
+    void clearAll(ClickEvent e) {
+        dynamicMasonry.clear();
+    }
+
+    @UiHandler("btnInsertTo")
+    void inserTo(ClickEvent e) {
+        UserCard userCard = new UserCard(DataHelper.getAllUsers().get(0), dynamicMasonry);
+        dynamicMasonry.insert(userCard, 2);
+    }
+
+    @UiHandler("btnRemoveLast")
+    void removeLast(ClickEvent e) {
+        totalItems--;
+        dynamicMasonry.remove(totalItems);
+    }
+
 }

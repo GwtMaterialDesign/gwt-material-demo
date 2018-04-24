@@ -49,7 +49,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue;
+    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue, acDynamic;
 
     @UiField
     MaterialModal modal;
@@ -77,11 +77,26 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
                 MaterialToast.fireToast("Value : " + user.getDisplayString());
             }
         });
+        acDynamic.addValueChangeHandler(event -> {
+            for(SuggestOracle.Suggestion user : event.getValue()){
+                MaterialToast.fireToast("Value : " + user.getDisplayString());
+            }
+        });
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
         acModal.setSuggestions(oracle);
+
+        acListType.addValueChangeHandler(event -> {
+            MaterialToast.fireToast("Value : " + acListType.getItemBox().getText());
+        });
     }
 
+    @UiHandler("loadSuggestions")
+    void loadSuggestions(ClickEvent e) {
+        UserOracle oracle = new UserOracle();
+        oracle.addContacts(getAllUsers());
+        acDynamic.setSuggestions(oracle);
+    }
 
     @UiHandler("btnClear")
     void onClear(ClickEvent e) {
@@ -148,5 +163,28 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     @UiHandler("btnClose")
     void onClose(ClickEvent e) {
         modal.close();
+    }
+
+    @UiHandler("getTextValue")
+    void getTextValue(ClickEvent e) {
+        if (acListType.getItemBox().getText().isEmpty()) {
+            MaterialToast.fireToast("Value is empty");
+        } else {
+            MaterialToast.fireToast(acListType.getItemBox().getText() + "");
+        }
+    }
+
+    @UiHandler("setTextValue")
+    void setTextValue(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(0).getName());
+        acListType.setItemValues(itemValues);
+    }
+
+    @UiHandler("setTextValueEvent")
+    void setTextValueEvent(ClickEvent e) {
+        List<String> itemValues = new ArrayList<>();
+        itemValues.add(getAllUsers().get(1).getName());
+        acListType.setItemValues(itemValues, true);
     }
 }

@@ -26,9 +26,10 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Accordion" description="MaterialCollapsible defaults to accordion expansion type."/>
+      <m:MaterialButton text="SET ACTIVE" ui:field="setActive" />
       <m:MaterialCollapsible>
         <!-- ITEM 1 -->
-        <m:MaterialCollapsibleItem>
+        <m:MaterialCollapsibleItem ui:field="item">
           <m:MaterialCollapsibleHeader>
             <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
           </m:MaterialCollapsibleHeader>
@@ -70,6 +71,52 @@
         &emsp;&lt;!-- Other Collapsible items here --><br/>
   
         &lt;/m:MaterialCollapsible><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="open(index) and close(index)" description="Provide a one-based index to open collapsible item."/>
+      <m:MaterialCollapsible ui:field="colaps">
+        <!-- ITEM 1 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="First" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 2 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Second" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+        <!-- ITEM 3 -->
+        <m:MaterialCollapsibleItem>
+          <m:MaterialCollapsibleHeader>
+            <m:MaterialLink text="Third" iconType="POLYMER" iconPosition="LEFT" textColor="BLACK"/>
+          </m:MaterialCollapsibleHeader>
+          <m:MaterialCollapsibleBody>
+            <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+          </m:MaterialCollapsibleBody>
+        </m:MaterialCollapsibleItem>
+      </m:MaterialCollapsible>
+
+      <m:MaterialRow paddingTop="20">
+        <m:MaterialButton text="open(2)" ui:field="open" marginRight="20"/>
+        <m:MaterialButton text="close(2)" ui:field="close" />
+      </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-java">
+        // will open second collapsible item <br/>
+        colaps.open(2); <br/><br/>
+
+        // will close second collapsible item <br/>
+        colaps.close(2);
       </demo:PrettyPre>
     </m:MaterialRow>
   

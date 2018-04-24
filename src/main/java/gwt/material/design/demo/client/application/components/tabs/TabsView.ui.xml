@@ -198,36 +198,76 @@
       </demo:PrettyPre>
     </m:MaterialRow>
 
+    <m:MaterialRow addStyleNames="code" >
+      <m:MaterialTitle title="Dynamic Tabs" description="Note: Currently we dont support scrollable tabs. In the future we will implement it. So be smart for how many tabs you are going to implement." />
+      
+      <m:MaterialButton ui:field="addTab" text="Add other Tab" marginBottom="20" />
+      
+      <m:MaterialTab ui:field="dynamicTabs" indicatorColor="YELLOW" shadow="1" />
+      
+      <m:MaterialRow ui:field="dynamicTabsRow"/>
+      
+      <demo:PrettyPre addStyleNames="lang-java">
+        @UiField<br/>
+        MaterialTab dynamicTabs;<br/><br/>
+
+        @UiField<br/>
+        MaterialRow dynamicRow;<br/><br/>
+
+        MaterialTabItem item = new MaterialTabItem();<br/>
+        item.setWaves(WavesType.DEFAULT);<br/>
+        MaterialLink link = new MaterialLink("Tab "  index);<br/>
+        link.setTextColor(Color.WHITE);<br/>
+        link.setHref("#dynamicTab"  index);<br/>
+        item.add(link);<br/><br/>
+
+        // Adding a simple content<br/>
+        MaterialLabel content = new MaterialLabel("Content "  index);<br/>
+        content.setId("dynamicTab"  index);<br/>
+        dynamicRow.add(content);<br/><br/>
+
+        // Adding the MaterialTabItem into MaterialTab::dynamicTab<br/>
+        dynamicTabs.add(item);
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Get Tab Index Method" description="By calling this method, you can easily get the selected tab index."/>
+      <m:MaterialTitle title="getTabIndex() and selecTab(tabId)" description="By calling this method, you can easily get the selected tab index."/>
+
+      <m:MaterialRow>
+        <m:MaterialColumn grid="s12 m4 l4">
+          <m:MaterialListBox ui:field="lstTabIds" placeholder="Select Tab" />
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12 m3 l3">
+          <m:MaterialButton ui:field="btnGetTabIndex" marginTop="20" text="Get Tab Index" />
+        </m:MaterialColumn>
+      </m:MaterialRow>
 
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
           <m:MaterialTab ui:field="tabGetIndex" shadow="1" indicatorColor="YELLOW">
             <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 1" href="#tab211" textColor="WHITE"/>
+              <m:MaterialLink text="Tab Item 1" href="#item1" textColor="WHITE"/>
             </m:MaterialTabItem>
             <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 2" href="#tab221" textColor="WHITE"/>
+              <m:MaterialLink text="Tab Item 2" href="#item2" textColor="WHITE"/>
             </m:MaterialTabItem>
             <m:MaterialTabItem waves="YELLOW" grid="s4">
-              <m:MaterialLink text="Tab 3" href="#tab231" textColor="WHITE"/>
+              <m:MaterialLink text="Tab Item 3" href="#item3" textColor="WHITE"/>
             </m:MaterialTabItem>
           </m:MaterialTab>
         </m:MaterialColumn>
 
-        <m:MaterialColumn m:id="tab211" grid="s12">
+        <m:MaterialColumn m:id="item1" grid="s12">
           <m:MaterialLabel text="Tab 1 Content"/>
         </m:MaterialColumn>
-        <m:MaterialColumn m:id="tab221" grid="s12">
+        <m:MaterialColumn m:id="item2" grid="s12">
           <m:MaterialLabel text="Tab 2 Content"/>
         </m:MaterialColumn>
-        <m:MaterialColumn m:id="tab231" grid="s12">
+        <m:MaterialColumn m:id="item3" grid="s12">
           <m:MaterialLabel text="Tab 3 Content"/>
         </m:MaterialColumn>
       </m:MaterialRow>
-
-      <m:MaterialButton ui:field="btnGetTabIndex" text="Get Tab Index" />
 
       <demo:PrettyPre addStyleNames="lang-java">
         tab.getTabIndex()
@@ -316,7 +356,7 @@
       <m:MaterialTitle title="resize() API" description="For specific usecase, whenever you use a sidenav. In order to recalculate the width of the tab indicator, please call tab.resize() for the workaround." />
       <m:MaterialAnchorButton text="Source" textColor="BLACK" backgroundColor="WHITE" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-patterns/tree/release_2.0/src/main/java/com/github/gwtmaterialdesign/client/application/navbartabspush" />
       <m:MaterialAnchorButton text="Demo" target="_blank" href="https://gwtmaterialdesign.github.io/gwt-material-patterns/snapshot/#navbar_tab_push" />
-      <m:MaterialImage marginTop="20" url="http://i.imgur.com/cDM9FRE.gif" />
+      <m:MaterialImage marginTop="20" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/tab.gif" />
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;sidenav.addOpenedHandler(event -> tab.resize());<br/>
         sidenav.addClosedHandler(event -> tab.resize());
@@ -340,7 +380,7 @@
         </m:MaterialTab>
 
         <demo:PrettyPre addStyleNames="lang-java">
-          eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
+          eventTab.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem()  " Selected Index"));
         </demo:PrettyPre>
       </m:MaterialColumn>
     </m:MaterialRow>

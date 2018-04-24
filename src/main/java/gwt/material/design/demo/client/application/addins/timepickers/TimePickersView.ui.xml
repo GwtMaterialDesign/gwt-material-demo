@@ -25,6 +25,7 @@
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage"/>
+            <demo:ExternalLibrary text="ClockPicker 0.0.7" link="https://github.com/weareoutman/clockpicker" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
                 xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
@@ -40,7 +41,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Disabled Styles" description="You can disable your time picker by adding enabled='false'"/>
-            <ma:timepicker.MaterialTimePicker placeholder="Snooze Time" enabled="false" grid="s12"/>
+            <ma:timepicker.MaterialTimePicker waves="DEFAULT" placeholder="Snooze Time" enabled="false" grid="s12"/>
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
@@ -129,9 +130,18 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Clear()" description="Clear your time picker value" />
             <ma:timepicker.MaterialTimePicker ui:field="tpClear" placeholder="Snooze Time" grid="s12"/>
-            <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" />
+            <m:MaterialButton iconType="REFRESH" ui:field="btnClear" text="Clear" margin="12" />
+            <m:MaterialButton ui:field="btnGetValue" text="Get Value" />
             <demo:PrettyPre addStyleNames="lang-java">
                 timepick.clear();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Language Support" description="Change the Footer Cancel and Ok texts." />
+            <ma:timepicker.MaterialTimePicker cancelText="Kanselahin" okText="Tapos na" placeholder="Snooze Time" grid="s12"/>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:timepicker.MaterialTimePicker cancelText="Kanselahin" okText="Tapos na" placeholder="Snooze Time" grid="s12"/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </m:MaterialPanel>

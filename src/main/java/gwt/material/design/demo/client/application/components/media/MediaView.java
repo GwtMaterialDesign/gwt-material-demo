@@ -38,7 +38,7 @@ public class MediaView extends ViewImpl implements MediaPresenter.MyView {
     interface Binder extends UiBinder<Widget, MediaView> {
     }
 
-    @UiField MaterialSlider slider;
+    @UiField MaterialSlider slider, optionSlider;
     @UiField MaterialButton fullscreenBtn;
 
     @Inject
@@ -49,6 +49,16 @@ public class MediaView extends ViewImpl implements MediaPresenter.MyView {
     @UiHandler("fullscreenBtn")
     protected void fullscreenBtnClick(ClickEvent e) {
         setFullscreen(fullscreenBtn.getText().equals("Fullscreen Slider"));
+    }
+
+    @UiHandler("start")
+    void start(ClickEvent e) {
+        optionSlider.start();
+    }
+
+    @UiHandler("pause")
+    void pause(ClickEvent e) {
+        optionSlider.pause();
     }
 
     private void setFullscreen(boolean fullscreen) {

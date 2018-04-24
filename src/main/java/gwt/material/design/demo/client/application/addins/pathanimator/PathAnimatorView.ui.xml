@@ -33,6 +33,7 @@
     <g:HTMLPanel>
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Markup Definition" description="FIRST , Set your source and target components."/>
+        <demo:ExternalLibrary text="CTAJs 0.3.2" link="https://github.com/chinchang/cta.js" />
         <demo:PrettyPre addStyleNames="lang-xml">
           &emsp;&lt;!-- Source Component --><br/>
           &lt;m:MaterialButton ui:field="btnSource" text="Meaningful Transitions" backgroundColor="BLUE" size="LARGE" /><br/><br/>
@@ -152,8 +153,13 @@
           <m:MaterialColumn ui:field="col7" grid="s12 l2" backgroundColor="PINK" height="200px"/>
         </m:MaterialRow>
       </m:MaterialRow>
-  
+
       <m:MaterialRow addStyleNames="code">
+        <m:MaterialTitle title="Out scope target element" description="We provided a better UX Solution for out of scope target elements before applying the path animation"/>
+        <m:MaterialButton ui:field="toScrolledElement" text="Path Animate to out of scope element" />
+      </m:MaterialRow>
+  
+      <m:MaterialRow addStyleNames="code" ui:field="scrolledTarget">
         <m:MaterialTitle title="5. Material Icon to Overlay Panel (Vice versa)" description="Source Component : MaterialIcon and Target Component : MaterialOverlay."/>
         <m:MaterialNavBar backgroundColor="BLUE" paddingLeft="12" width="100%">
           <m:MaterialNavBrand text="App Name"/>

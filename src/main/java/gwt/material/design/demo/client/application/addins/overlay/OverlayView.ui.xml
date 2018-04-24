@@ -62,5 +62,87 @@
                 overla  yEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Overlay Closed"));
             </demo:PrettyPre>
         </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Nested Overlays" description="You can provide multiple child overlay in order to create a modal-like structure."/>
+
+            <!-- Parent 1 -->
+            <ma:overlay.MaterialOverlay ui:field="overlayParent" overflow="AUTO" backgroundColor="BLUE" textAlign="CENTER" textColor="WHITE" depth="999">
+                <m:MaterialLabel textAlign="CENTER" text="This is an overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                <m:MaterialButton ui:field="btnOpenChild" text="Open Overlay" />
+                <m:MaterialButton ui:field="btnCloseParent" text="Close Overlay" />
+            </ma:overlay.MaterialOverlay>
+            <m:MaterialButton ui:field="btnOpenParent" text="Open Overlay" />
+
+            <!-- Child 1 -->
+            <ma:overlay.MaterialOverlay ui:field="overlayChild" overflow="AUTO" backgroundColor="INDIGO" relativeToWindow="true" textAlign="CENTER" depth="999" textColor="WHITE">
+                <m:MaterialLabel textAlign="CENTER" text="This is a child overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                <m:MaterialButton ui:field="btnOpenChild2" backgroundColor="INDIGO_ACCENT_1" text="Open Child" />
+                <m:MaterialButton ui:field="btnCloseChild" backgroundColor="INDIGO_ACCENT_1" text="Close Overlay" />
+
+                <!-- Child 2 -->
+                <ma:overlay.MaterialOverlay ui:field="overlayChild2" overflow="AUTO" relativeToWindow="true" backgroundColor="PINK" textAlign="CENTER" depth="999" textColor="WHITE">
+                    <m:MaterialLabel textAlign="CENTER" text="This is a Second child overlay" marginTop="120" fontWeight="LIGHTER" fontSize="2em" />
+                    <m:MaterialLabel textAlign="CENTER" text="Some content goes here" marginBottom="40" />
+                    <m:MaterialButton ui:field="btnCloseChild2" backgroundColor="PINK_ACCENT_1" text="Close Overlay" />
+                </ma:overlay.MaterialOverlay>
+            </ma:overlay.MaterialOverlay>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;&lt;!-- Parent --><br/>
+                &lt;ma:overlay.MaterialOverlay ui:field="parent"><br/><br/>
+
+                &emsp;&lt;!-- Child 1 --><br/>
+                &emsp;&lt;ma:overlay.MaterialOverlay ui:field="child1"><br/><br/>
+
+                &emsp;&emsp;&lt;!-- Child 2 --><br/>
+                &emsp;&emsp;&lt;ma:overlay.MaterialOverlay ui:field="child2"/><br/>
+                &emsp;&lt;/ma:overlay.MaterialOverlay><br/>
+                &lt;/ma:overlay.MaterialOverlay>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Overlay Tabs" description="We have added another addin widget MaterialOverlayTab to group you overlays for minimize state." />
+            <m:MaterialButton ui:field="btnOverlayTab" iconType="APPS" type="FLOATING"/>
+            <m:MaterialPanel ui:field="panel" />
+            <demo:PrettyPre addStyleNames="lan-java">
+                &emsp;@UiField <br/>
+                MaterialPanel panel; <br/><br/>
+
+                MaterialOverlayTab overlayContainer = new MaterialOverlayTab(); <br/>
+                panel.add(overlayContainer); <br/>
+                for (int i = 1; i &lt;= 5; i++) { <br/>
+                MaterialOverlay overlay = new MaterialOverlay(); <br/>
+                overlay.setBackgroundColor(Color.WHITE); <br/>
+                overlay.setPadding(20); <br/><br/>
+
+                MaterialLabel lblLabel = new MaterialLabel("Some Description " + i); <br/>
+                lblLabel.setFontSize("1em"); <br/>
+                overlay.add(lblLabel); <br/><br/>
+
+                MaterialLabel lblTitle = new MaterialLabel("Overlay Title " + i); <br/>
+                lblTitle.setFontSize("2em"); <br/>
+                lblTitle.setFontWeight(Style.FontWeight.BOLD); <br/>
+                overlay.add(lblTitle); <br/><br/>
+
+                MaterialLabel lblNumber = new MaterialLabel(i + ""); <br/>
+                lblNumber.addStyleName("number"); <br/>
+                overlay.add(lblNumber); <br/><br/>
+
+                // Set the tab overlay for minimize function <br/>
+                overlay.setOverlayTab(overlayContainer); <br/>
+                panel.add(overlay); <br/><br/>
+
+                MaterialButton btnOpen = new MaterialButton("Open " + i); <br/>
+                btnOpen.setMargin(20); <br/>
+                btnOpen.addClickHandler(e -> { <br/>
+                &emsp;overlay.open(btnOpen); <br/>
+                }); <br/>
+                panel.add(btnOpen);
+            </demo:PrettyPre>
+        </m:MaterialRow>
     </g:HTMLPanel>
 </ui:UiBinder>

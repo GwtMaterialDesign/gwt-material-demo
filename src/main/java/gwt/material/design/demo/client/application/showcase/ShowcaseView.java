@@ -41,14 +41,9 @@ public class ShowcaseView extends ViewImpl implements ShowcasePresenter.MyView {
     @UiField
     MaterialSplashScreen splash;
 
-    @UiField
-    MaterialWeather weather;
-
     @Inject
     ShowcaseView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        ThemeManager.register(weather);
-        ThemeManager.register(splash);
     }
 
     @UiHandler("btnSplashScreen")

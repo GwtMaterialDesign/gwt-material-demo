@@ -19,9 +19,12 @@
   -->
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
              xmlns:m.addins="urn:import:gwt.material.design.addins.client">
 
+    <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
     <ui:style>
         .fav{
@@ -48,7 +51,7 @@
         <m:MaterialColumn grid="l5 s12 m5">
             <m:MaterialCard backgroundColor="WHITE" textColor="WHITE">
                 <m:MaterialCardImage waves="LIGHT">
-                    <m:MaterialImage url="http://thatgrapejuice.net/wp-content/uploads/2013/08/pharrell-williams-that-grape-juice.png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/william-parrel-2.webp" fallbackExtension="png"/>
                 </m:MaterialCardImage>
                 <m:MaterialCardContent backgroundColor="BLUE_GREY_DARKEN_3" layoutPosition="RELATIVE" padding="0">
                     <m:MaterialRow padding="24" margin="0" height="132px">
@@ -71,7 +74,7 @@
                     </m:MaterialRow>
                 </m:MaterialCardContent>
                 <m:MaterialCardAction backgroundColor="BLUE_GREY" height="88px" overflow="HIDDEN">
-                    <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG"/>
+                    <m:MaterialImage ui:field="imgMusic" grid="l2" width="72px" height="48px" addStyleNames="circle" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/lady.jpeg"/>
                     <m:MaterialLabel ui:field="lblMusic" grid="l8" paddingTop="12" text="Lady Gaga / Telephone" fontSize="1.2em" addStyleNames="truncate"/>
                 </m:MaterialCardAction>
             </m:MaterialCard>

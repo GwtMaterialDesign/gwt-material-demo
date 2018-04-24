@@ -25,16 +25,19 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.pwa.PwaManager;
+import gwt.material.design.client.pwa.manifest.js.AppInstaller;
+import gwt.material.design.client.pwa.serviceworker.ServiceWorkerManager;
 import gwt.material.design.client.ui.*;
-import gwt.material.design.client.ui.animate.MaterialAnimator;
+import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.ThemeManager;
+import gwt.material.design.demo.client.ui.InstallBannerFallbackOverlay;
 
 import javax.inject.Inject;
 import java.util.Date;
@@ -47,12 +50,20 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     private String link;
     private String specification;
+    private final String THEME_COLOR = "#1565c0";
+    private final String MANIFEST_URL = "manifest.json";
+    private final String SERVICE_WORKER_URL = "service-worker.js";
+    private AppInstaller appInstaller;
 
-    @UiField HTMLPanel menu;
-    @UiField HTMLPanel main;
+    @UiField
+    HTMLPanel menu;
+    @UiField
+    HTMLPanel main;
 
-    @UiField MaterialFooter footer;
-    @UiField MaterialFooterCopyright footerCopyRight;
+    @UiField
+    MaterialFooter footer;
+    @UiField
+    MaterialFooterCopyright footerCopyRight;
 
     @UiField
     MaterialPanel panel, titlePanel;
@@ -60,19 +71,38 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     MaterialLabel title, description;
 
     @UiField
-    MaterialChip chipXml, chipJava, chipSpecification;
+    MaterialChip chipXml, chipJava, chipSpecification, chipInstallApp;
+
     @UiField
     MaterialLabel footerCopyRightLabel;
+  
+    @UiField
+    InstallBannerFallbackOverlay installAppOverlay;
 
     @Inject
     ApplicationView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+        bindSlot(ApplicationPresenter.SLOT_MENU, menu);
+        bindSlot(ApplicationPresenter.SLOT_MAIN, main);
+
+        // Initializing the PWA Feature
+        PwaManager.getInstance()
+                .setThemeColor(THEME_COLOR)
+                .setWebManifest(MANIFEST_URL)
+                .setServiceWorker(new ServiceWorkerManager(SERVICE_WORKER_URL))
+                .load();
+
+        // Install App Banner
+        appInstaller = new AppInstaller(() -> installAppOverlay.open());
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
         ThemeManager.register(footer);
         ThemeManager.register(footerCopyRight, ThemeManager.DARKER_SHADE);
         ThemeManager.initialize();
-        bindSlot(ApplicationPresenter.SLOT_MENU, menu);
-        bindSlot(ApplicationPresenter.SLOT_MAIN, main);
-        DOM.removeChild(RootPanel.getBodyElement(), DOM.getElementById("splashscreen"));
 
         chipJava.getElement().getStyle().setCursor(Style.Cursor.POINTER);
         chipJava.addClickHandler(clickEvent -> {
@@ -85,23 +115,32 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             String xml = "https://github.com/GwtMaterialDesign/gwt-material-demo/tree/master/src/main/java/gwt/material/design/demo/client/application/" + link + ".ui.xml";
             Window.open(xml, "_blank", "");
         });
+
         chipSpecification.getElement().getStyle().setCursor(Style.Cursor.POINTER);
-        chipSpecification.addClickHandler(clickEvent -> {
-            Window.open(specification, "_blank", "");
-        });
+        chipSpecification.addClickHandler(clickEvent -> Window.open(specification, "_blank", ""));
+        chipInstallApp.getElement().getStyle().setCursor(Style.Cursor.POINTER);
+
         ThemeManager.register(chipXml, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipXml.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipXml.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipJava, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipJava.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipJava.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
         ThemeManager.register(chipSpecification, ThemeManager.DARKER_SHADE);
-        ThemeManager.register(chipSpecification.getLetterMixin().getSpan(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipSpecification.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
+        ThemeManager.register(chipInstallApp, ThemeManager.DARKER_SHADE);
+        ThemeManager.register(chipInstallApp.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
+
         ThemeManager.register(titlePanel);
 
         footerCopyRightLabel.setText("© " + getFormat("yyyy").format(new Date()) + " Copyright GWT Material");
     }
 
+    @UiHandler("chipInstallApp")
+    void onInstallApp(ClickEvent e) {
+        appInstaller.prompt();
+    }
+
     @UiHandler("imgGPlus")
-    void onGPlus(ClickEvent e){
+    void onGPlus(ClickEvent e) {
         Window.open("https://plus.google.com/communities/108005250093449814286", "", "_blank");
     }
 
@@ -126,7 +165,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             chipSpecification.setVisible(true);
         }
 
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.title, 1000);
-        MaterialAnimator.animate(Transition.BOUNCEINLEFT, this.description, 1000);
+        new MaterialAnimation().transition(Transition.BOUNCEINLEFT).animate(this.title);
+        new MaterialAnimation().transition(Transition.BOUNCEINLEFT).animate(this.description);
     }
 }

@@ -1,0 +1,60 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic Usage" />
+            <m:MaterialNavBar>
+                <m:MaterialNavBrand text="GMD App" paddingLeft="20"/>
+                <m:MaterialNavSection float="RIGHT" hideOn="NONE">
+                    <incubator:language.LanguageSelector ui:field="languageSelector"/>
+                </m:MaterialNavSection>
+            </m:MaterialNavBar>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;incubator:language.LanguageSelector ui:field="languageSelector"/>
+            </demo:PrettyPre>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Populating your Languages into the selector component.<br/>
+                List&lt;Language> languages = new ArrayList&lt;>();<br/>
+                Language en = new Language("English", "en", "//i.imgur.com/hh6QPCC.png");<br/>
+                Language fr = new Language("French", "fr", "//i.imgur.com/r8JPSqC.png");<br/>
+                Language da = new Language("Danish", "da", "//i.imgur.com/JDnEQy5.png");<br/>
+                Language de = new Language("German", "de", "//i.imgur.com/QGcvgzR.png");<br/><br/>
+
+                languages.add(en);<br/>
+                languages.add(fr);<br/>
+                languages.add(da);<br/>
+                languages.add(de);<br/>
+                return languages;<br/><br/>
+
+                languageSelector.setLanguages(getLanguages());
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>
