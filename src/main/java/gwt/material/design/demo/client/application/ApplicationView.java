@@ -40,6 +40,9 @@ import gwt.material.design.demo.client.ThemeManager;
 import gwt.material.design.demo.client.ui.InstallBannerFallbackOverlay;
 
 import javax.inject.Inject;
+import java.util.Date;
+
+import static com.google.gwt.i18n.client.DateTimeFormat.getFormat;
 
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     public interface Binder extends UiBinder<Widget, ApplicationView> {
@@ -70,6 +73,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField
     MaterialChip chipXml, chipJava, chipSpecification, chipInstallApp;
 
+    @UiField
+    MaterialLabel footerCopyRightLabel;
+  
     @UiField
     InstallBannerFallbackOverlay installAppOverlay;
 
@@ -124,6 +130,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         ThemeManager.register(chipInstallApp.getLetterLabel(), ThemeManager.LIGHTER_SHADE);
 
         ThemeManager.register(titlePanel);
+
+        footerCopyRightLabel.setText("© " + getFormat("yyyy").format(new Date()) + " Copyright GWT Material");
     }
 
     @UiHandler("chipInstallApp")
