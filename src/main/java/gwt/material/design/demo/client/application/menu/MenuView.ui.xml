@@ -73,8 +73,7 @@
 			</m:MaterialNavBar>
 		</m:MaterialHeader>
 
-		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true"
-                               showOnAttach="true">
+		<m:MaterialSideNavPush ui:field="sideNav" m:id="sideBar" width="280" allowBodyScroll="true" showOnAttach="true">
 			<m.html:ListItem waves="DEFAULT" paddingBottom="22">
 				<ma:webp.MaterialWebpImage width="100%" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/logo.webp" fallbackExtension="png" addStyleNames="{style.logo}"/>
 			</m.html:ListItem>

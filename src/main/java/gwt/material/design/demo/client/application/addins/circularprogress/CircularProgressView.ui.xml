@@ -43,6 +43,10 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
+            <ma:circularprogress.MaterialCircularProgress ui:field="circContinuos" grid="s12 m4 l3"/>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="You can easily set up event listeners to Circular Progress."/>
             <ma:circularprogress.MaterialCircularProgress ui:field="circEvents" value="1.0" thickness="20" size="200" grid="s12 m4 l3"/>
             <demo:PrettyPre addStyleNames="lang-java">

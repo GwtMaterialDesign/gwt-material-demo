@@ -31,13 +31,13 @@
 
             <ma:inputmask.MaterialIntegerInputMask ui:field="maskInteger" mask="000-00-000" label="Integer" grid="s12"/>
 
-            <ma:inputmask.MaterialDoubleInputMask ui:field="maskDouble" mask="000-00-00000.00" label="Double" grid="s12"/>
+            <ma:inputmask.MaterialDoubleInputMask ui:field="maskDouble" mask="000-00-00000" label="Double" grid="s12"/>
 
-            <ma:inputmask.MaterialFloatInputMask ui:field="maskFloat" mask="000-00-0000.000" label="Float" grid="s12"/>
+            <ma:inputmask.MaterialFloatInputMask ui:field="maskFloat" mask="000-00-0000" label="Float" grid="s12"/>
 
             <ma:inputmask.MaterialLongInputMask ui:field="maskLong" mask="000-00-0000000" label="Long" grid="s12"/>
 
-            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="dd/mm/yyyy" placeholder="dd/mm/yyyy" autoValidate="true" label="Date" grid="s12"/>
+            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="dd/MM/yyyy" autoValidate="true" label="Date" grid="s12"/>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">

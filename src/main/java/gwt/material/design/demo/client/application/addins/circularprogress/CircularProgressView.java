@@ -25,6 +25,7 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.circularprogress.MaterialCircularProgress;
@@ -38,7 +39,9 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
     }
 
     @UiField
-    MaterialCircularProgress circLabel, circLabel2, circLabel3, circStartAngle, circStartAngle2, circEvents, circValues;
+    MaterialCircularProgress circLabel, circLabel2, circLabel3, circContinuos, circStartAngle, circStartAngle2, circEvents, circValues;
+
+    private int i = 1;
 
     @Inject
     CircularProgressView(Binder uiBinder) {
@@ -54,11 +57,33 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
         circEvents.addStartHandler(event -> MaterialToast.fireToast("Started"));
         circEvents.addCompleteHandler(event -> MaterialToast.fireToast("Completed"));
         buildCircularDynamic(circEvents);
+
+
+        buildCircularContinuos();
+    }
+
+    protected void buildCircularContinuos() {
+        Timer timer = new Timer() {
+            @Override
+            public void run() {
+
+                double total = (i * 100) / 5;
+
+                circContinuos.update(total / 100);
+
+                if (i >= 5) {
+                    MaterialToast.fireToast("Finished");
+                    cancel();
+                }
+                i++;
+            }
+        };
+        timer.scheduleRepeating(1000);
     }
 
     protected void buildCircularDynamic(MaterialCircularProgress progress) {
         progress.addProgressHandler(event -> {
-            int percent = (int) (event.getProgress()  * 100.0);
+            int percent = (int) (event.getProgress() * 100.0);
             progress.setText(percent + "%");
         });
     }

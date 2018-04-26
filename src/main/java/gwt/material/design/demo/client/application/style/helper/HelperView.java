@@ -30,12 +30,10 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.helper.ScrollHelper;
 import gwt.material.design.client.base.viewport.Resolution;
 import gwt.material.design.client.base.viewport.ViewPort;
+import gwt.material.design.client.constants.DatePickerLanguage;
 import gwt.material.design.client.constants.IconType;
 import gwt.material.design.client.constants.OffsetPosition;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialPanel;
-import gwt.material.design.client.ui.MaterialRow;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 

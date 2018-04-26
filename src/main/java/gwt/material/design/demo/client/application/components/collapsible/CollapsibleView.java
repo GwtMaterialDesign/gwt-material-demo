@@ -29,8 +29,7 @@ import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
-import gwt.material.design.client.ui.MaterialCollapsible;
-import gwt.material.design.client.ui.MaterialCollapsibleItem;
+import gwt.material.design.client.ui.*;
 
 import javax.inject.Inject;
 
@@ -39,7 +38,7 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
     }
 
     @UiField
-    MaterialCollapsible colaps;
+    MaterialCollapsible colaps, expandable;
 
     @UiField
     MaterialCollapsibleItem item;
@@ -47,13 +46,32 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
     @Inject
     CollapsibleView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        colaps.addCollapseHandler(event -> {
+            MaterialToast.fireToast("CollapseEvent fired: " + getCollaseText(event.getTarget()));
+        });
+
+        expandable.addCollapseHandler(event -> {
+            MaterialToast.fireToast("CollapseEvent fired: " + getCollaseText(event.getTarget()));
+        });
+
+        colaps.addExpandHandler(event -> {
+            MaterialToast.fireToast("ExpandEvent fired: " + getCollaseText(event.getTarget()));
+        });
+
+        expandable.addExpandHandler(event -> {
+            MaterialToast.fireToast("ExpandEvent fired: " + getCollaseText(event.getTarget()));
+        });
     }
 
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-
+    protected String getCollaseText(MaterialCollapsibleItem target) {
+        MaterialCollapsibleHeader header = target.getHeader();
+        if (header.getChildren().size() != 0) {
+            if (header.getChildren().get(0) instanceof MaterialLink) {
+                return ((MaterialLink) header.getChildren().get(0)).getText();
+            }
+        }
+        return "No text";
     }
 
     @UiHandler("setActive")

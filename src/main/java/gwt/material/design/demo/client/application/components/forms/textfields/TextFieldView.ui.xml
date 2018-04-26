@@ -24,6 +24,12 @@
              xmlns:m.demo="urn:import:gwt.material.design.demo.client.ui">
 
   <m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialBigDecimalBox ui:field="bigDecimal" placeholder="Test"/>
+      <m:MaterialButton ui:field="getValue" text="Get Value" />
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="TextBox" description="Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. "/>
       <m:MaterialTextBox label="First Name" grid="s12"/>

@@ -36,8 +36,8 @@ public class CustomCategoryComponent extends CategoryComponent {
     }
 
     @Override
-    protected void render(TableSubHeader subheader) {
-        super.render(subheader);
+    protected void render(TableSubHeader subheader, int column) {
+        super.render(subheader, column);
 
         subheader.getNameTh().setPaddingLeft(20);
 

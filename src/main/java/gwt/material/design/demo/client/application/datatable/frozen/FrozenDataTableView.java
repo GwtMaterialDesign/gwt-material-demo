@@ -342,8 +342,8 @@ public class FrozenDataTableView extends NavigatedView implements FrozenDataTabl
         }
 
         @Override
-        protected void render(TableSubHeader subheader) {
-            super.render(subheader);
+        protected void render(TableSubHeader subheader, int column) {
+            super.render(subheader, column);
 
             subheader.setOpenIcon(IconType.FOLDER_OPEN);
             subheader.setCloseIcon(IconType.FOLDER);

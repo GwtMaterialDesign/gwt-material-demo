@@ -58,6 +58,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     @Inject
     SearchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
         // Add Open Handler
         txtSearch.addOpenHandler(openEvent -> {
             navBar.setVisible(false);
@@ -78,6 +79,8 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
             objects.add(hero);
         }
         txtSearch.setListSearches(objects);
+
+        txtSearch.setSelectedObject(objects.get(3));
 
         // Add Finish Handler
         txtSearch.addSearchFinishHandler(event -> {

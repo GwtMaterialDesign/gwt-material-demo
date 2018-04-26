@@ -49,6 +49,8 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO, txtDoubleValue;
     @UiField
     MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
+    @UiField
+    MaterialBigDecimalBox bigDecimal;
 
     @Inject
     TextFieldView(Binder uiBinder) {
@@ -114,6 +116,11 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                 "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
                 "blandit eu lacus nec, finibus tempus ligula.", true);
 
+    }
+
+    @UiHandler("getValue")
+    void getValue(ClickEvent e) {
+        MaterialToast.fireToast(bigDecimal.getValue()  + "");
     }
 
     @UiHandler("txtBoxValue")

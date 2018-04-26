@@ -30,6 +30,7 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
+import gwt.material.design.addins.client.overlay.MaterialOverlay;
 import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.HideOn;
@@ -66,8 +67,8 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         }
 
         @Override
-        protected void render(TableSubHeader subheader) {
-            super.render(subheader);
+        protected void render(TableSubHeader subheader, int column) {
+            super.render(subheader, column);
 
             subheader.setOpenIcon(IconType.FOLDER_OPEN);
             subheader.setCloseIcon(IconType.FOLDER);
@@ -81,6 +82,9 @@ public class StandardDataTableView extends NavigatedView implements StandardData
     MaterialComboBox<SelectionType> listSelectionType;
 
     private List<Person> people;
+
+    @UiField
+    MaterialOverlay overlay;
 
     @Inject
     StandardDataTableView(Binder uiBinder) {
@@ -233,6 +237,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         // Add a row select handler, called when a user selects a row.
         table.addRowSelectHandler(event -> {
             GWT.log(event.getModel().getId() + ": " + event.isSelected());
+            overlay.open(event.getRow());
         });
 
         // Add a sort column handler, called when a user sorts a column.
@@ -358,5 +363,10 @@ public class StandardDataTableView extends NavigatedView implements StandardData
     void onDisableFirstRow(ClickEvent e) {
         TableRow tableRow = table.getRow(people.get(0)).getWidget();
         tableRow.setEnabled(false);
+    }
+
+    @UiHandler("close")
+    void close(ClickEvent e) {
+        overlay.close();
     }
 }

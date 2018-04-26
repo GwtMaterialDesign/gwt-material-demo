@@ -77,6 +77,12 @@
           <m:MaterialIntegerBox grid="s12 m4 l4" ui:field="txtExtraTransitionDuration" label="Extra Transition Duration"/>
         </m:MaterialRow>
 
+        <m:MaterialRow>
+          <m:MaterialCheckBox ui:field="withBackground" text="With Background" />
+          <m:MaterialCheckBox ui:field="withBorder" text="With Border" />
+          <m:MaterialCheckBox ui:field="withShadow" text="With Shadow" />
+        </m:MaterialRow>
+
         <demo:PrettyPre addStyleNames="lang-java">
           &emsp;MaterialPathAnimator animator = new MaterialPathAnimator(); <br/>
           animator.setSourceElement(btnOptionSource.getElement()); <br/>
@@ -84,14 +90,19 @@
           animator.setDuration(txtDuration.getValue()); <br/>
           animator.setTargetShowDuration(txtTargetShowDuration.getValue()); <br/>
           animator.setExtraTransitionDuration(txtExtraTransitionDuration.getValue()); <br/>
+          // To access the bridge element and stylize it. <br/>
+          animator.setShadow(5); <br/>
+          animator.setBackgroundColor(Color.RED); <br/>
+          animator.setStyleProperty("color", "red"); <br/>
+          // Call to perform path animation <br/>
           animator.animate();
         </demo:PrettyPre>
 
         <m:MaterialButton ui:field="btnOptionSource" text="With Options" backgroundColor="BLUE" size="LARGE" />
 
         <m:MaterialRow>
-          <m:MaterialCard ui:field="panelWithOptions" backgroundColor="PINK_DARKEN_1" grid="l4" opacity="0">
-            <m:MaterialCardContent textColor="WHITE">
+          <m:MaterialCard ui:field="panelWithOptions" backgroundColor="WHITE" grid="l4" opacity="0">
+            <m:MaterialCardContent textColor="BLACK">
               <m:MaterialCardTitle text="Sample" iconType="POLYMER" iconPosition="RIGHT"/>
               <m:MaterialLabel text="I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively." />
             </m:MaterialCardContent>

@@ -122,7 +122,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Expandable" description="You can set the expandable type by adding an attribute accordion='false'"/>
-      <m:MaterialCollapsible accordion="false">
+      <m:MaterialCollapsible ui:field="expandable" accordion="false">
         <!-- ITEM 1 -->
         <m:MaterialCollapsibleItem>
           <m:MaterialCollapsibleHeader>

@@ -28,7 +28,7 @@
   </ui:style>
 
   <g:HTMLPanel ui:field="panel">
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page."/>
       <m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
@@ -140,12 +140,14 @@
         <m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
         <m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
         <m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
+        <m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/>
       </m:MaterialRow>
   
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
         &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
         &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED"/><br/>
+        &lt;m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   </g:HTMLPanel>
