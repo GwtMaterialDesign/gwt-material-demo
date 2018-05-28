@@ -1,3 +1,11 @@
+/** InputField - Outlined **/
+.input-field.outlined input:focus,
+.input-field.outlined textarea:focus,
+.input-field.outlined input.picker__input--active {
+    border: 2px solid #ffa726;
+    box-shadow: none;
+}
+
 /** Blockquote **/
 blockquote {
     border-left: 5px solid #ffa726 !important;
@@ -53,6 +61,13 @@ blockquote {
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
     background-color: #ffb74d !important;
+}
+
+/** TimePicker - Outlined **/
+.input-field.outlined.timepicker input:focus,
+.input-field.outlined.timepicker input.valid{
+    border: 2px solid #ffa726;
+    box-shadow: none;
 }
 
 /** File Uploader **/
@@ -146,4 +161,9 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
 ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
     border: 2px solid #ff9800;
     background-color: #ff9800;
+}
+
+.input-field.outlined.combobox .select2-container--open .select2-selection {
+    border: 2px solid #ffa726;
+    box-shadow: none;
 }
