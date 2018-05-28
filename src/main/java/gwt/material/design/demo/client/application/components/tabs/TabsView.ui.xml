@@ -161,7 +161,7 @@
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Set Tab Index Method" description="By calling this method, you can easily preselect a tab index. Note the index will start at 1."/>
-
+      <m:MaterialButton text="Set Tab Index to 2" margin="8" ui:field="setTabIndex"/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12">
           <m:MaterialTab ui:field="tabSetIndex" shadow="1" indicatorColor="YELLOW">
@@ -275,7 +275,7 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Tabs with Icons" description="You can add icons by setting the type='ICON' on MaterialTab.">
+      <m:MaterialTitle title="Tabs with Icons" description="You can add icons by setting the type='ICON' on MaterialTab." />
         <m:MaterialRow>
           <m:MaterialColumn grid="s12">
             <m:MaterialTab ui:field="tabIcons" shadow="1" type="ICON" indicatorColor="YELLOW">
@@ -301,7 +301,6 @@
             <m:MaterialLabel text="Tab 3 Content"/>
           </m:MaterialColumn>
         </m:MaterialRow>
-      </m:MaterialTitle>
 
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialTab type="ICON" shadow="1" indicatorColor="YELLOW"><br/>

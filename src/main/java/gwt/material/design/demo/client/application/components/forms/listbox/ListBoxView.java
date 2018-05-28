@@ -31,7 +31,6 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialListBox;
 import gwt.material.design.client.ui.MaterialListValueBox;
-import gwt.material.design.client.ui.MaterialListValueBox;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
@@ -46,7 +45,6 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
 
     @UiField
     MaterialListValueBox<Hero> lstValueBox, lstEmptyPlacehoder, lstFocusAndBlur;
-
 
     @UiField
     MaterialButton allowBlankSetValue;
@@ -70,6 +68,10 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
 
         lstOptions.addBlurHandler(blurEvent -> {
             MaterialToast.fireToast("BLURRED");
+        });
+
+        lstOptions.addValueChangeHandler(valueChangeEvent -> {
+            MaterialToast.fireToast(valueChangeEvent.getValue());
         });
     }
 

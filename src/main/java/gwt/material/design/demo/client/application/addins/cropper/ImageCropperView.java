@@ -105,7 +105,7 @@ public class ImageCropperView extends ViewImpl implements ImageCropperPresenter.
 
     @UiHandler("rotate")
     void rotate(ClickEvent e) {
-        cropper.rotate(-180);
+        cropper.rotate(270);
     }
 
     @UiHandler("enableZoom")

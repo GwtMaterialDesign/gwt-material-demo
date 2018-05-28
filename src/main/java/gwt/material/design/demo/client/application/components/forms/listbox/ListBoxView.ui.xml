@@ -26,7 +26,7 @@
   <m:MaterialRow>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
-      <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstOptions">
+      <m:MaterialListBox placeholder="ListBox" grid="s12" multipleSelect="true" ui:field="lstOptions">
         <m.html:Option text="Option 1"/>
         <m.html:Option text="Option 2"/>
         <m.html:Option text="Option 3"/>

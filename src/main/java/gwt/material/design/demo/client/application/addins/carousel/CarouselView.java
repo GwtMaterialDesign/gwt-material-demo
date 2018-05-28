@@ -21,8 +21,10 @@ package gwt.material.design.demo.client.application.addins.carousel;
  */
 
 
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.carousel.MaterialCarousel;
@@ -33,6 +35,7 @@ import javax.inject.Inject;
 
 
 public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, CarouselView> {
     }
 
@@ -40,7 +43,8 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
     MaterialButton btnGetCurrentSlide, btnGoTo, btnNext, btnPrev, btnPause, btnPlay, btnAdd, btnRemove;
 
     @UiField
-    MaterialCarousel carousel,  carouselResponsive, onboard, carouselEvents, tabCarousel, carouselDynamic;
+    MaterialCarousel singleItemCarousel, multipleItemCarousel, variableWidthCarousel, adaptiveHeightCarousel, autoplayCarousel,
+            displayControlCarousel, imageTypeCarousel, fadeCarousel, methodsCarousel, carouselResponsiveCarousel, onboardCarousel, eventsCarousel, tabsCarousel, dynamicCarousel;
 
     @UiField
     MaterialTab tab;
@@ -52,75 +56,105 @@ public class CarouselView extends ViewImpl implements CarouselPresenter.MyView {
     CarouselView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
         btnGetCurrentSlide.addClickHandler(e -> {
-            MaterialToast.fireToast(carousel.getCurrentSlideIndex() + " Current Slide Index");
+            MaterialToast.fireToast(methodsCarousel.getCurrentSlideIndex() + " Current Slide Index");
         });
 
-        btnGoTo.addClickHandler(e -> carousel.goToSlide(1));
+        btnGoTo.addClickHandler(e -> methodsCarousel.goToSlide(1));
 
-        btnNext.addClickHandler(e -> carousel.next());
+        btnNext.addClickHandler(e -> methodsCarousel.next());
 
-        btnPrev.addClickHandler(e -> carousel.previous());
+        btnPrev.addClickHandler(e -> methodsCarousel.previous());
 
-        btnPause.addClickHandler(e -> carousel.pause());
+        btnPause.addClickHandler(e -> methodsCarousel.pause());
 
-        btnPlay.addClickHandler(e -> carousel.play());
+        btnPlay.addClickHandler(e -> methodsCarousel.play());
 
-        carouselResponsive.setSlidesToShow(5);
-        carouselResponsive.setSlidesToScroll(5);
+        carouselResponsiveCarousel.setSlidesToShow(5);
+        carouselResponsiveCarousel.setSlidesToScroll(5);
 
         // Tablet Settings
         JsCarouselOptions tabletSettings = JsCarouselOptions.create();
         tabletSettings.slidesToShow = 2;
         tabletSettings.slidesToScroll = 2;
-        carouselResponsive.setTabletSettings(tabletSettings);
+        carouselResponsiveCarousel.setTabletSettings(tabletSettings);
 
         // Mobile Settings
         JsCarouselOptions mobileSettings = JsCarouselOptions.create();
         mobileSettings.slidesToShow = 1;
         mobileSettings.slidesToScroll = 1;
-        carouselResponsive.setMobileSettings(mobileSettings);
+        carouselResponsiveCarousel.setMobileSettings(mobileSettings);
 
         /** EVENTS **/
-        carouselEvents.addAfterChangeHandler(e -> {
+        eventsCarousel.addAfterChangeHandler(e -> {
             MaterialToast.fireToast("AfterChangeEvent : " + e.getCurrentSlide() + " Current Slide");
         });
 
-        carouselEvents.addBeforeChangeHandler(e -> {
-            MaterialToast.fireToast("BeforeChangeEvent : " + e.getCurrentSlide() + "Current Slide " + e.getNextSlide() + " Next Slide") ;
+        eventsCarousel.addBeforeChangeHandler(e -> {
+            MaterialToast.fireToast("BeforeChangeEvent : " + e.getCurrentSlide() + "Current Slide " + e.getNextSlide() + " Next Slide");
         });
 
-        carouselEvents.addInitHandler(e -> {
+        eventsCarousel.addInitHandler(e -> {
             MaterialToast.fireToast("InitEvent");
         });
 
-        carouselEvents.addDestroyHandler(e -> {
+        eventsCarousel.addDestroyHandler(e -> {
             MaterialToast.fireToast("DestroyEvent");
         });
 
-        carouselEvents.addSwipeHandler(e -> {
+        eventsCarousel.addSwipeHandler(e -> {
             MaterialToast.fireToast("SwipeEvent : " + e.getDirection() + " Direction");
         });
 
-        tabCarousel.setTabNavigation(tab);
+        tabsCarousel.setTabNavigation(tab);
 
         btnAdd.addClickHandler(e -> {
             MaterialImage img = new MaterialImage("//i.imgur.com/8XlWy0H.png");
             img.addClickHandler(e1 -> {
                 MaterialToast.fireToast("Clicked on Image");
             });
-            carouselDynamic.add(img);
+            dynamicCarousel.add(img);
         });
 
         btnRemove.addClickHandler(e -> {
-            carouselDynamic.remove(1);
+            dynamicCarousel.remove(1);
         });
+    }
+
+    @UiHandler("displayOnboard")
+    void displayOnboard(ClickEvent e) {
+        onboardCarousel.goToSlide(0);
+        onboardCarousel.setVisible(true);
+    }
+
+    @UiHandler("hideOnboard")
+    void hideOnboard(ClickEvent e) {
+        onboardCarousel.setVisible(false);
     }
 
     @Override
     protected void onAttach() {
         super.onAttach();
 
-        carousel.removeFromParent();
-        container.add(carousel);
+        methodsCarousel.removeFromParent();
+        container.add(methodsCarousel);
+    }
+
+    @Override
+    public void reloadCarousels() {
+        singleItemCarousel.reload();
+        multipleItemCarousel.reload();
+        variableWidthCarousel.reload();
+        adaptiveHeightCarousel.reload();
+        autoplayCarousel.reload();
+        displayControlCarousel.reload();
+        imageTypeCarousel.reload();
+        fadeCarousel.reload();
+        methodsCarousel.reload();
+        carouselResponsiveCarousel.reload();
+        onboardCarousel.reload();
+        eventsCarousel.reload();
+        tabsCarousel.reload();
+        dynamicCarousel.reload();
+
     }
 }

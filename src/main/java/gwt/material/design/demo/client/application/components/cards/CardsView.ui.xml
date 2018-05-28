@@ -175,7 +175,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -192,7 +192,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -209,7 +209,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -226,7 +226,7 @@
         <m:MaterialColumn grid="l6 m6 s12">
           <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -267,7 +267,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -569,7 +569,7 @@
         &lt;/m:MaterialRow ui:field="rowCards"><br/>
       </demo:PrettyPre>
       <m:MaterialButton ui:field="btnShow" text="Show Cards" backgroundColor="WHITE" textColor="BLACK"/>
-      <m:MaterialRow ui:field="rowCards" addStyleNames="{style.rowCards}">
+      <m:MaterialRow ui:field="rowCards" layoutPosition="RELATIVE" addStyleNames="{style.rowCards}">
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">

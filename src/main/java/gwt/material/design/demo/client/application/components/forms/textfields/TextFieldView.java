@@ -28,9 +28,17 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
+import gwt.material.design.addins.client.combobox.MaterialComboBox;
+import gwt.material.design.client.base.HasError;
+import gwt.material.design.client.base.HasFieldTypes;
 import gwt.material.design.client.ui.*;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
+import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView {
     interface Binder extends UiBinder<Widget, TextFieldView> {
@@ -43,14 +51,27 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
 
     @UiField
     MaterialFloatBox txtFloatBox, txtFloatRO, txtFloatTRO, txtFloatValue;
+
     @UiField
     MaterialIntegerBox txtIntegerBox, txtIntegerRO, txtIntegerTRO, txtIntegerValue;
+
     @UiField
     MaterialDoubleBox txtDoubleBox, txtDoubleRO, txtDoubleTRO, txtDoubleValue;
+
     @UiField
     MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
+
     @UiField
-    MaterialBigDecimalBox bigDecimal;
+    MaterialComboBox<String> combo, combo2, combo3, combo4;
+
+    @UiField
+    MaterialListValueBox<FieldState>  defaultStates, filledStates, outlinedStates, alignedLabelStates;
+
+    @UiField
+    MaterialRow defaultStatesRow, filledStatesRow, outlinedStatesRow, alignedLabelStatesRow;
+
+    @UiField
+    MaterialAutoComplete acDefault, acFilled, acOutlined, acAlignedLabel;
 
     @Inject
     TextFieldView(Binder uiBinder) {
@@ -116,11 +137,89 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                 "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
                 "blandit eu lacus nec, finibus tempus ligula.", true);
 
+        generateComboBox(combo);
+        generateComboBox(combo2);
+        generateComboBox(combo3);
+        generateComboBox(combo4);
+
+        setupFieldStates(defaultStates, defaultStatesRow);
+        setupFieldStates(filledStates, filledStatesRow);
+        setupFieldStates(outlinedStates, outlinedStatesRow);
+        setupFieldStates(alignedLabelStates, alignedLabelStatesRow);
+
+        UserOracle oracle = new UserOracle();
+        oracle.addContacts(getAllUsers());
+        acDefault.setSuggestions(oracle);
+        acFilled.setSuggestions(oracle);
+        acOutlined.setSuggestions(oracle);
+        acAlignedLabel.setSuggestions(oracle);
     }
 
-    @UiHandler("getValue")
-    void getValue(ClickEvent e) {
-        MaterialToast.fireToast(bigDecimal.getValue()  + "");
+    protected void setupFieldStates(MaterialListValueBox<FieldState> listValueBox, MaterialRow targetRow) {
+        listValueBox.addItem(FieldState.DEFAULT, "Default");
+        listValueBox.addItem(FieldState.ERROR, "Error");
+        listValueBox.addItem(FieldState.SUCCESS, "Success");
+        listValueBox.addItem(FieldState.HELPER, "Helper");
+
+        listValueBox.addValueChangeHandler(valueChangeEvent -> {
+            switch (valueChangeEvent.getValue()) {
+                case ERROR:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasError) {
+                            ((HasError) w).setError(FieldState.ERROR.getMessage());
+                        }
+                    }
+                    break;
+                case SUCCESS:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasError) {
+                            ((HasError) w).setSuccess(FieldState.SUCCESS.getMessage());
+                        }
+                    }
+                    break;
+                case HELPER:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasError) {
+                            ((HasError) w).setHelperText(FieldState.HELPER.getMessage());
+                        }
+                    }
+                    break;
+                case DEFAULT:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasError) {
+                            ((HasError) w).clearErrorOrSuccess();
+                            ((HasError) w).setHelperText(null);
+                        }
+                    }
+                    break;
+            }
+        });
+    }
+
+    private void generateComboBox(MaterialComboBox<String> combo) {
+        combo.addItem("Option 1");
+        combo.addItem("Option 2");
+        combo.addItem("Option 3");
+    }
+
+    @UiHandler("validateDefault")
+    void validateDefault(ClickEvent e) {
+        defaultStatesRow.validate();
+    }
+
+    @UiHandler("validateFilled")
+    void validateFilled(ClickEvent e) {
+        filledStatesRow.validate();
+    }
+
+    @UiHandler("validateOutlined")
+    void validateOutlined(ClickEvent e) {
+        outlinedStatesRow.validate();
+    }
+
+    @UiHandler("validateAlignedLabel")
+    void validateAlignedLabel(ClickEvent e) {
+        alignedLabelStatesRow.validate();
     }
 
     @UiHandler("txtBoxValue")
@@ -260,5 +359,21 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     void switchAsNullValue(ValueChangeEvent<Boolean> event) {
         txtBoxAsNullValue.clear();
         txtBoxAsNullValue.setReturnBlankAsNull(event.getValue());
+    }
+
+    public List<User> getAllUsers() {
+        List<User> list = new ArrayList<>();
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg", User.Position.DEVELOPER, true, "Luis Hoppe", "luis@mail.com", "123123123", "718-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/yassiryahya/128.jpg", User.Position.DEVELOPER, true, "Irwin Mueller", "irwin@mail.com", "123123123", "718-432-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lebinoclard/128.jpg", User.Position.DEVELOPER, true, "Levin Card", "levin@mail.com", "123123123", "432-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/lmjabreu/128.jpg", User.Position.DEVELOPER, false, "Dr. Cassie Keeling", "cassie@mail.com", "123123123", "432-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/ariil/128.jpg", User.Position.DEVELOPER, false, "Dr. Madelynn Schamberger", "madelyn@mail.com", "123123123", "543-555-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/devankoshal/128.jpg", User.Position.MARKETING, false, "Dominique Schmidt", "dom@mail.com", "123123123", "718-657-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/karthipanraj/128.jpg", User.Position.CTO, false, "Rowland Heller", "rowland@mail.com", "123123123", "718-765-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/GavicoInd/128.jpg", User.Position.CEO, false, "Quincy Schimmel", "quincy@mail.com", "123123123", "46-555-876", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg", User.Position.MARKETING, false, "Tierra VonRueden", "tierra@mail.com", "123123123", "654-56-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/kimcool/128.jpg", User.Position.MARKETING, false, "Travis Larson", "travis@mail.com", "123123123", "465-456-7654", "Makati City, Philippines", "Gwt Material"));
+        list.add(new User("https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg", User.Position.MARKETING, false, "Clint Heller", "clint@mail.com", "123123123", "645-555-65", "Makati City, Philippines", "Gwt Material"));
+        return list;
     }
 }

@@ -46,6 +46,9 @@
             <m:MaterialRow marginBottom="0">
                 <m:MaterialColumn grid="s12" height="100%" padding="0" shadow="1" layoutPosition="RELATIVE">
                     <ma:camera.MaterialCameraCapture ui:field="camera" width="100%" height="100%"/>
+                    <m:MaterialPanel ui:field="notSupportedPanel" display="NONE">
+                        <m:MaterialLabel text="Camera is not supported by your browser" />
+                    </m:MaterialPanel>
                     <m:MaterialRow marginBottom="0" backgroundColor="BLACK" padding="20" width="100%" layoutPosition="ABSOLUTE" bottom="0">
                         <m:MaterialColumn grid="l4 m4 s12" offset="l4 m4" textAlign="CENTER">
                             <m:MaterialButton ui:field="play" type="FLOATING" marginRight="8" iconType="PLAY_ARROW" waves="DEFAULT" backgroundColor="WHITE" iconColor="BLACK" />

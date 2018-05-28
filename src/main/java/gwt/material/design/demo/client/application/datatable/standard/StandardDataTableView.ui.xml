@@ -24,10 +24,6 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
     <m:MaterialRow>
-        <ma:overlay.MaterialOverlay ui:field="overlay" backgroundColor="WHITE">
-            <m:MaterialLabel text="SAMPLE" />
-            <m:MaterialButton ui:field="close" text="Close" />
-        </ma:overlay.MaterialOverlay>
         <m:MaterialColumn addStyleNames="s12">
             <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle scrollspy="datatable_usage" title="Usage" />

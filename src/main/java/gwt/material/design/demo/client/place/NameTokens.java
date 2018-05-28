@@ -114,6 +114,7 @@ public class NameTokens {
     public static final String range = "range";
 
     // Incubator Widgets
+    public static final String addressLookup = "address_lookup";
     public static final String alert = "alert";
     public static final String async = "async";
     public static final String languageSelector = "language_selector";

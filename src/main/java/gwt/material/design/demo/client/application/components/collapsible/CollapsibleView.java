@@ -79,6 +79,11 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
         item.setActive(true);
     }
 
+    @UiHandler("setActiveExpandable")
+    void setActiveExpandable(ClickEvent e) {
+        expandable.setActive(1);
+    }
+
     @UiHandler("open")
     void onOpen(ClickEvent e) {
         colaps.open(2);

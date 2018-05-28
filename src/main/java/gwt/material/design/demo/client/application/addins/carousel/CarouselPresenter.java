@@ -29,11 +29,15 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class CarouselPresenter extends Presenter<CarouselPresenter.MyView, CarouselPresenter.MyProxy> {
+public class CarouselPresenter extends Presenter<CarouselPresenter.MyView, CarouselPresenter.MyProxy>
+        implements ContentPushEvent.ContentPushHandler {
+
     interface MyView extends View {
+        void reloadCarousels();
     }
 
     @NameToken(NameTokens.carousel)
@@ -47,6 +51,7 @@ public class CarouselPresenter extends Presenter<CarouselPresenter.MyView, Carou
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        addRegisteredHandler(ContentPushEvent.TYPE, this);
 
     }
 
@@ -54,5 +59,10 @@ public class CarouselPresenter extends Presenter<CarouselPresenter.MyView, Carou
     protected void onReveal() {
         super.onReveal();
         SetPageTitleEvent.fire("Carousel", "Our Carousel is a robust and versatile component that can be an image slider, to an item carousel, to an onboarding experience. It is touch enabled making it especially smooth to use on mobile.", "addins/camera/CarouselView", "", this);
+    }
+
+    @Override
+    public void onContentPush(ContentPushEvent event) {
+        getView().reloadCarousels();
     }
 }

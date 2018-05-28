@@ -34,7 +34,8 @@ import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class SignaturePadPresenter extends Presenter<SignaturePadPresenter.MyView, SignaturePadPresenter.MyProxy> implements ContentPushEvent.ContentPushHandler {
+public class SignaturePadPresenter extends Presenter<SignaturePadPresenter.MyView, SignaturePadPresenter.MyProxy>
+        implements ContentPushEvent.ContentPushHandler {
 
     interface MyView extends View {
         void resizeSignaturePad();

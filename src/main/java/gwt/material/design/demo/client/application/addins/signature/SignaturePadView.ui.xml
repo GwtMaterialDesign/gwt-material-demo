@@ -28,7 +28,7 @@
     <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
     <g:HTMLPanel>
-        <m:MaterialRow addStyleNames="code">
+        <m:MaterialRow addStyleNames="code row">
             <m:MaterialTitle title="Demo" />
             <demo:ExternalLibrary text="SignaturePad 2.3.0" link="https://github.com/szimek/signature_pad" marginBottom="40"/>
 

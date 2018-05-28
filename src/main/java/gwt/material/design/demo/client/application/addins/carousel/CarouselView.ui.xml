@@ -31,7 +31,7 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Single Item" description="By default carousel has only one item per navigation." />
             <demo:ExternalLibrary text="SlickJs 1.6.0" link="https://github.com/kenwheeler/slick" marginBottom="40"/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER">
+            <ma:carousel.MaterialCarousel ui:field="singleItemCarousel" textAlign="CENTER">
                 <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                 </m:MaterialPanel>
@@ -64,7 +64,7 @@
         <!-- Multiple Items -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Multiple Item" description="By adding slidesToShow='3', you can easily set the number of items to show.On the other hand slidesToScroll='3', sets the number of slides to scroll."/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3">
+            <ma:carousel.MaterialCarousel ui:field="multipleItemCarousel" textAlign="CENTER" slidesToShow="3" slidesToScroll="3">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                 </m:MaterialPanel>
@@ -103,7 +103,7 @@
         <!-- Variable Width -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Variable Width" description="Allow any child that has different width sizes."/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3">
+            <ma:carousel.MaterialCarousel ui:field="variableWidthCarousel" textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3">
                 <m:MaterialPanel width="125px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
                 </m:MaterialPanel>
@@ -150,7 +150,7 @@
         <!-- Adaptive Height-->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Adaptive Height" description="Enables adaptive height for single slide horizontal carousels."/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" >
+            <ma:carousel.MaterialCarousel ui:field="adaptiveHeightCarousel" textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" >
                 <m:MaterialPanel height="100px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="40">
                     <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
                 </m:MaterialPanel>
@@ -178,7 +178,7 @@
         <!-- Responsive Mode -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Responsive Options" description="You can set specific options on any screen sizes."/>
-            <ma:carousel.MaterialCarousel ui:field="carouselResponsive" textAlign="CENTER">
+            <ma:carousel.MaterialCarousel ui:field="carouselResponsiveCarousel" textAlign="CENTER">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                 </m:MaterialPanel>
@@ -228,7 +228,7 @@
         <!-- Auto play -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Autoplay" description="Enabled autoplay with Slides. The default autoplay speed is 3000 ms or 3 seconds."/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true">
+            <ma:carousel.MaterialCarousel ui:field="autoplayCarousel" textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                 </m:MaterialPanel>
@@ -268,7 +268,7 @@
         <!-- Auto play -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Display control widgets" description="You can control the visibility of control navigations by showDots='false', showArrow='false'."/>
-            <ma:carousel.MaterialCarousel textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true">
+            <ma:carousel.MaterialCarousel ui:field="displayControlCarousel" textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true">
                 <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
                     <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                 </m:MaterialPanel>
@@ -311,7 +311,7 @@
             <m:MaterialRow>
                 <m:MaterialButton margin="4" text="Add Slide" ui:field="btnAdd" />
                 <m:MaterialButton margin="4" text="Remove Slide" ui:field="btnRemove" />
-                <ma:carousel.MaterialCarousel ui:field="carouselDynamic" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                <ma:carousel.MaterialCarousel ui:field="dynamicCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
@@ -336,7 +336,7 @@
         <!-- Custom Implementations -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type Image" description="This Carousel type is good for image slider."/>
-            <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+            <ma:carousel.MaterialCarousel ui:field="imageTypeCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
@@ -353,7 +353,7 @@
         <!-- Fade -->
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Fade" description="Enable Fade Transition by calling fade='true'."/>
-            <ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+            <ma:carousel.MaterialCarousel ui:field="fadeCarousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
@@ -372,7 +372,7 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
             <m:MaterialRow addStyleNames="code">
-                <ma:carousel.MaterialCarousel ui:field="carouselEvents" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                <ma:carousel.MaterialCarousel ui:field="eventsCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
@@ -403,7 +403,8 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
-            <ma:carousel.MaterialCarousel visible="false" ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
+            <m:MaterialButton text="Display OnBoard" ui:field="displayOnboard" waves="DEFAULT"/>
+            <ma:carousel.MaterialCarousel ui:field="onboardCarousel" visible="false" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
                 <m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-1.webp" fallbackExtension="png" grid="s12 m6 l12"/>
                     <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
@@ -425,6 +426,9 @@
                         <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
                     </m:MaterialColumn>
                 </m:MaterialRow>
+                <ma:carousel.MaterialCarouselFixedItem m:id="demo-carousel-fixed" textAlign="CENTER">
+                    <m:MaterialButton text="Hide Onboard" ui:field="hideOnboard" waves="DEFAULT"/>
+                </ma:carousel.MaterialCarouselFixedItem>
             </ma:carousel.MaterialCarousel>
 
             <demo:PrettyPre addStyleNames="lang-xml">
@@ -463,7 +467,7 @@
             <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
             <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
             <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
-            <ma:carousel.MaterialCarousel ui:field="carousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+            <ma:carousel.MaterialCarousel ui:field="methodsCarousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
                 <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
@@ -494,7 +498,7 @@
                     </m:MaterialTabItem>
                 </m:MaterialTab>
 
-                <ma:carousel.MaterialCarousel ui:field="tabCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true">
+                <ma:carousel.MaterialCarousel ui:field="tabsCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true">
                     <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
                         <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
                     </m:MaterialPanel>

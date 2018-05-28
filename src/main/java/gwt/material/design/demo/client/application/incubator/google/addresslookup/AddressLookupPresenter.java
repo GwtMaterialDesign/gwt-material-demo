@@ -1,4 +1,4 @@
-package gwt.material.design.demo.client.application.components.footer;
+package gwt.material.design.demo.client.application.incubator.google.addresslookup;
 
 /*
  * #%L
@@ -26,46 +26,30 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
+import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
-import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPresenter.MyProxy>
-        implements ContentPushEvent.ContentPushHandler{
-
-    interface MyView extends View {
-        void resetFooter();
+public class AddressLookupPresenter extends Presenter<AddressLookupPresenter.MyView, AddressLookupPresenter.MyProxy> {
+    public interface MyView extends View {
     }
 
-    @NameToken(NameTokens.footer)
-    @ProxyCodeSplit
-    interface MyProxy extends ProxyPlace<FooterPresenter> {
-
+    @ProxyStandard
+    @NameToken(NameTokens.addressLookup)
+    public interface MyProxy extends ProxyPlace<AddressLookupPresenter> {
     }
 
     @Inject
-    FooterPresenter(
-        EventBus eventBus,
-        MyView view,
-        MyProxy proxy) {
+    AddressLookupPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
-        addRegisteredHandler(ContentPushEvent.TYPE, this);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Footer", "Footers are a great way to organize a lot of site navigation and " +
-            "information at the end of a page. This is where the user will look once hes finished scrolling " +
-            "through the current page or is looking for additional information about your website.", "components/footer/FooterView", "", this);
-    }
-
-    @Override
-    public void onContentPush(ContentPushEvent event) {
-        getView().resetFooter();
+            SetPageTitleEvent.fire("Address Lookup", "Address Lookup / AddressLookup is a feature of the Google Places library in the Maps JavaScript API. You can use autocomplete to give your applications the type-ahead-search behavior of the Google Maps search field. When a user starts typing an address, autocomplete will fill in the rest.", "incubator/async/AddressLookupView", "", this);
     }
 }

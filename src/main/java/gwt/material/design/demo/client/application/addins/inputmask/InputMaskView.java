@@ -23,7 +23,6 @@ package gwt.material.design.demo.client.application.addins.inputmask;
 
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -41,7 +40,7 @@ public class InputMaskView extends ViewImpl implements InputMaskPresenter.MyView
     }
 
     @UiField
-    MaterialInputMask maskCleanValue, maskValue, unmask;
+    MaterialTextInputMask maskCleanValue, maskValue, unmask;
 
     @Inject
     InputMaskView(Binder uiBinder) {
@@ -95,12 +94,12 @@ public class InputMaskView extends ViewImpl implements InputMaskPresenter.MyView
 
     @UiHandler("btnGetCleanValue")
     void getCleanValue(ClickEvent e) {
-        //MaterialToast.fireToast(maskCleanValue.getCleanValue());
+        MaterialToast.fireToast(maskCleanValue.getCleanValue());
     }
 
     @UiHandler("btnGetValue")
     void getValue(ClickEvent e) {
-       // MaterialToast.fireToast(maskValue.getValue());
+        MaterialToast.fireToast(maskValue.getValue());
     }
 
     @UiHandler("btnUnmask")

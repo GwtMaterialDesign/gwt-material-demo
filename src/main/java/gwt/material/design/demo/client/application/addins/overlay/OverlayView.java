@@ -110,6 +110,7 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
                 overlay.open(btnOpen);
             });
             panel.add(btnOpen);
+            overlayContainer.setActivator(btnOverlayTab);
         }
     }
 }

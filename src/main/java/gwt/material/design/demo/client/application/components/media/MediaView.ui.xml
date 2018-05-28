@@ -59,28 +59,28 @@
   
       <m:MaterialSlider ui:field="slider" fullscreen="false">
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
   
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
@@ -106,28 +106,28 @@
 
       <m:MaterialSlider ui:field="optionSlider" duration="300" interval="1000">
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/blue.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/grey.jpg"/>
           <m:MaterialSlideCaption textAlign="LEFT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/light-blue.jpg"/>
           <m:MaterialSlideCaption textAlign="RIGHT">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>
         </m:MaterialSlideItem>
 
         <m:MaterialSlideItem>
-          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.webp" fallbackExtension="jpg"/>
+          <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pink.jpg"/>
           <m:MaterialSlideCaption textAlign="CENTER">
             <m:MaterialTitle title="This is our big Tagline" description="Here's our small slogan."/>
           </m:MaterialSlideCaption>

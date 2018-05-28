@@ -80,14 +80,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         bindSlot(ApplicationPresenter.SLOT_MAIN, main);
 
         // Initializing the PWA Feature
-        PwaManager.getInstance()
-                .setThemeColor(THEME_COLOR)
-                .setWebManifest(MANIFEST_URL)
-                .setServiceWorker(new ServiceWorkerManager(SERVICE_WORKER_URL))
-                .load();
-
-        // Install App Banner
-        appInstaller = new AppInstaller(() -> installAppOverlay.open());
+        if (PwaManager.isPwaSupported()) {
+            PwaManager.getInstance()
+                    .setThemeColor(THEME_COLOR)
+                    .setWebManifest(MANIFEST_URL)
+                    .setServiceWorker(new ServiceWorkerManager(SERVICE_WORKER_URL))
+                    .load();
+            appInstaller = new AppInstaller(() -> installAppOverlay.open());
+        } else {
+            MaterialToast.fireToast("PWA features are not supported into your browser");
+        }
     }
 
     @Override

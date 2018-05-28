@@ -24,22 +24,6 @@
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
     <m:MaterialPanel>
-
-        <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Types" description="We supported type safe Input Masks" />
-            <ma:inputmask.MaterialTextInputMask ui:field="maskString" mask="000-00-0000000" label="String" grid="s12"/>
-
-            <ma:inputmask.MaterialIntegerInputMask ui:field="maskInteger" mask="000-00-000" label="Integer" grid="s12"/>
-
-            <ma:inputmask.MaterialDoubleInputMask ui:field="maskDouble" mask="000-00-00000" label="Double" grid="s12"/>
-
-            <ma:inputmask.MaterialFloatInputMask ui:field="maskFloat" mask="000-00-0000" label="Float" grid="s12"/>
-
-            <ma:inputmask.MaterialLongInputMask ui:field="maskLong" mask="000-00-0000000" label="Long" grid="s12"/>
-
-            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="dd/MM/yyyy" autoValidate="true" label="Date" grid="s12"/>
-        </m:MaterialRow>
-
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic Examples" />
             <demo:ExternalLibrary text="jQuery-Mask-Plugin 1.14.10" link="https://github.com/Foliotek/Croppie" marginBottom="40"/>
@@ -117,6 +101,21 @@
                 &lt;ma:inputmask.MaterialInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" selectOnFocus="true" grid="s12 m4 l4"/><br/>
                 &lt;ma:inputmask.MaterialInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" selectOnFocus="true" grid="s12 m4 l4"/><br/>
             </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Types" description="We supported type safe Input Masks" />
+            <ma:inputmask.MaterialTextInputMask ui:field="maskString" placeholder="eg. A0A-1A1" mask="S0S-0S0" label="String" grid="s12"/>
+
+            <ma:inputmask.MaterialIntegerInputMask ui:field="maskInteger" mask="000-00-000" label="Integer" grid="s12"/>
+
+            <ma:inputmask.MaterialDoubleInputMask ui:field="maskDouble" mask="000-00-00000" label="Double" grid="s12"/>
+
+            <ma:inputmask.MaterialFloatInputMask ui:field="maskFloat" mask="000-00-0000" label="Float" grid="s12"/>
+
+            <ma:inputmask.MaterialLongInputMask ui:field="maskLong" mask="000-00-0000000" label="Long" grid="s12"/>
+
+            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="MM/dd/yyyy" autoValidate="true" label="Date" grid="s12"/>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">

@@ -83,9 +83,6 @@ public class StandardDataTableView extends NavigatedView implements StandardData
 
     private List<Person> people;
 
-    @UiField
-    MaterialOverlay overlay;
-
     @Inject
     StandardDataTableView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -237,7 +234,6 @@ public class StandardDataTableView extends NavigatedView implements StandardData
         // Add a row select handler, called when a user selects a row.
         table.addRowSelectHandler(event -> {
             GWT.log(event.getModel().getId() + ": " + event.isSelected());
-            overlay.open(event.getRow());
         });
 
         // Add a sort column handler, called when a user sorts a column.
@@ -296,7 +292,7 @@ public class StandardDataTableView extends NavigatedView implements StandardData
 
         for (int k = 1; k <= 5; k++) {
             // Generate 5 rows
-            for (int i = 1; i <= 5; i++, rowIndex++) {
+            for (int i = 1; i <= 40; i++, rowIndex++) {
                 people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i, "Category " + k));
             }
         }
@@ -363,10 +359,5 @@ public class StandardDataTableView extends NavigatedView implements StandardData
     void onDisableFirstRow(ClickEvent e) {
         TableRow tableRow = table.getRow(people.get(0)).getWidget();
         tableRow.setEnabled(false);
-    }
-
-    @UiHandler("close")
-    void close(ClickEvent e) {
-        overlay.close();
     }
 }
