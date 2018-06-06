@@ -21,13 +21,16 @@ package gwt.material.design.demo.client.application.incubator.recaptcha;
  */
 
 
+import com.google.gwt.core.client.Callback;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.demo.client.application.incubator.progress.ProgressLineBarPresenter;
-import gwt.material.design.incubator.client.recaptcha.ReCaptcha;
+import gwt.material.design.client.api.ApiRegistry;
+import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.incubator.client.google.recaptcha.ReCaptcha;
+import gwt.material.design.incubator.client.google.recaptcha.api.RecaptchaApi;
 
 public class RecaptchaView extends ViewImpl implements RecaptchaPresenter.MyView {
     public interface Binder extends UiBinder<Widget, RecaptchaView> {
@@ -39,5 +42,19 @@ public class RecaptchaView extends ViewImpl implements RecaptchaPresenter.MyView
     @Inject
     RecaptchaView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        // Load the Api
+        RecaptchaApi recaptchaApi = new RecaptchaApi("6LeZSRIUAAAAAE3JdZpdi6shhA87ZUG4U2ICsGlJ");
+        ApiRegistry.register(recaptchaApi, new Callback<Void, Exception>() {
+            @Override
+            public void onFailure(Exception reason) {
+                MaterialToast.fireToast(reason.getMessage());
+            }
+
+            @Override
+            public void onSuccess(Void result) {
+                recaptcha.load(recaptchaApi);
+            }
+        });
     }
 }

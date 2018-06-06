@@ -190,7 +190,8 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Language", "#" + NameTokens.languageSelector));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "LoadingState", "#" + NameTokens.loadingState));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Progress Line Bar", "#" + NameTokens.progressLineBar));
-        listSearches.add(new SearchObject(IconType.ARCHIVE, "Recaptcha", "#" + NameTokens.recaptcha));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "(Google) Recaptcha", "#" + NameTokens.recaptcha));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "(Google) AddessLookup", "#" + NameTokens.addressLookup));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Search", "#" + NameTokens.search));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Timer", "#" + NameTokens.timer));
         listSearches.add(new SearchObject(IconType.ARCHIVE, "Toggle", "#" + NameTokens.toggle));

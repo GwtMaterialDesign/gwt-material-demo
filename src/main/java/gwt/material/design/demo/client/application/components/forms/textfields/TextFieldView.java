@@ -26,12 +26,15 @@ import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.HasEnabled;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.HasError;
 import gwt.material.design.client.base.HasFieldTypes;
+import gwt.material.design.client.base.HasReadOnly;
+import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
@@ -160,6 +163,10 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         listValueBox.addItem(FieldState.ERROR, "Error");
         listValueBox.addItem(FieldState.SUCCESS, "Success");
         listValueBox.addItem(FieldState.HELPER, "Helper");
+        // TODO Fixed styles on the following states below
+        /*listValueBox.addItem(FieldState.READ_ONLY, "ReadOnly");
+        listValueBox.addItem(FieldState.TOGGLE_READ_ONLY, "Toggle Readonly");
+        listValueBox.addItem(FieldState.DISABLED, "Disabled");*/
 
         listValueBox.addValueChangeHandler(valueChangeEvent -> {
             switch (valueChangeEvent.getValue()) {
@@ -189,6 +196,33 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                         if (w instanceof HasFieldTypes && w instanceof HasError) {
                             ((HasError) w).clearErrorOrSuccess();
                             ((HasError) w).setHelperText(null);
+                        }
+                        if (w instanceof HasReadOnly) {
+                            ((HasReadOnly) w).setReadOnly(false);
+                        }
+                        if (w instanceof HasEnabled) {
+                            ((HasEnabled) w).setEnabled(true);
+                        }
+                    }
+                    break;
+                case READ_ONLY:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasReadOnly) {
+                            ((HasReadOnly) w).setReadOnly(true);
+                        }
+                    }
+                    break;
+                case TOGGLE_READ_ONLY:
+                    for (Widget w : targetRow) {
+                        if (w instanceof HasReadOnly) {
+                            ((HasReadOnly) w).setToggleReadOnly(true);
+                        }
+                    }
+                    break;
+                case DISABLED:
+                    for (Widget w : targetRow) {
+                        if (w instanceof MaterialWidget) {
+                            ((MaterialWidget) w).setEnabled(false);
                         }
                     }
                     break;

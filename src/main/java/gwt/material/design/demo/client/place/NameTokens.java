@@ -530,4 +530,8 @@ public class NameTokens {
     }
 
     public static String getWebpImage() { return webpImage; }
+
+    public static String getAddressLookup() {
+        return addressLookup;
+    }
 }

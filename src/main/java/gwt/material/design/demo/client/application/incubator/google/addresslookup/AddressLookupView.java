@@ -22,21 +22,19 @@ package gwt.material.design.demo.client.application.incubator.google.addresslook
 
 
 import com.google.gwt.core.client.Callback;
-import com.google.gwt.geolocation.client.Position;
-import com.google.gwt.geolocation.client.PositionError;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.js.Navigator;
+import gwt.material.design.client.api.ApiRegistry;
 import gwt.material.design.client.ui.MaterialTextBox;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.incubator.client.google.addresslookup.AddressLookup;
+import gwt.material.design.incubator.client.google.addresslookup.api.AddressLookupApi;
 import gwt.material.design.incubator.client.google.addresslookup.constants.AddressComponentType;
 import gwt.material.design.incubator.client.google.addresslookup.constants.AddressType;
 import gwt.material.design.incubator.client.google.addresslookup.js.options.AddressLookupOptions;
-import gwt.material.design.incubator.client.google.addresslookup.js.options.LatLngBounds;
 import gwt.material.design.incubator.client.google.addresslookup.js.options.result.GeocoderAddressComponent;
 
 public class AddressLookupView extends ViewImpl implements AddressLookupPresenter.MyView {
@@ -53,6 +51,20 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
     AddressLookupView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
+        // Loading API
+        ApiRegistry.register(new AddressLookupApi("AIzaSyCcFsjlqr-DR6acrZ8xZKhXNGxeS3nDmIE"), new Callback<Void, Exception>() {
+            @Override
+            public void onFailure(Exception exception) {
+                MaterialToast.fireToast(exception.getMessage());
+            }
+
+            @Override
+            public void onSuccess(Void aVoid) {
+                addressLookup.load();
+            }
+        });
+
+        // Lookup Demo
         AddressLookupOptions option = AddressLookupOptions.create();
         option.setTypes(AddressType.ADDRESS);
 
@@ -67,21 +79,6 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
         });
     }
 
-    protected void geolocate() {
-        Navigator.geolocation.getCurrentPosition(new Callback<Position, PositionError>() {
-            @Override
-            public void onFailure(PositionError positionError) {
-                MaterialToast.fireToast(positionError.getMessage());
-            }
-
-            @Override
-            public void onSuccess(Position position) {
-                /*LatLngBounds bounds = new LatLngBounds(position.getCoordinates().getLatitude(), position.getCoordinates().getLongitude());
-                addressLookupGeolocate.setBounds();*/
-            }
-        });
-    }
-
     protected void setComponent(MaterialTextBox textBox, GeocoderAddressComponent addressComponent) {
         if (addressComponent != null) {
             textBox.setText(addressComponent.getLongName());
@@ -89,5 +86,4 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
             textBox.setText("-");
         }
     }
-
 }

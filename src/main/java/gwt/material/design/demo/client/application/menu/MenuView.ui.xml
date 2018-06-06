@@ -226,6 +226,7 @@
 					</m:MaterialCollapsibleHeader>
 					<m:MaterialCollapsibleBody>
 						<m.html:UnorderedList>
+							<m:MaterialLink targetHistoryToken="{tokens.getAddressLookup}" text="Address Lookup" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getAlert}" text="Alert" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getAsync}" text="Async" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getLanguageSelector}" text="Language Selector" waves="DEFAULT"/>
