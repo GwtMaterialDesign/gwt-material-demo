@@ -205,7 +205,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                         }
                     }
                     break;
-                case READ_ONLY:
+                /*case READ_ONLY:
                     for (Widget w : targetRow) {
                         if (w instanceof HasReadOnly) {
                             ((HasReadOnly) w).setReadOnly(true);
@@ -225,7 +225,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                             ((MaterialWidget) w).setEnabled(false);
                         }
                     }
-                    break;
+                    break;*/
             }
         });
     }

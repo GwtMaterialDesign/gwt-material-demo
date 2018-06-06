@@ -25,6 +25,10 @@ public enum  FieldState {
     ERROR("This is an error"),
     SUCCESS("This is a success message"),
     HELPER("Some helper message");
+    /*READ_ONLY(""),
+    DISABLED(""),
+    TOGGLE_READ_ONLY("");*/
+
 
     private String message;
 
