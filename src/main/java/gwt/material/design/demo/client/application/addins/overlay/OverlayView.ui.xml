@@ -64,7 +64,7 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Nested Overlays" description="You can provide multiple child overlay in order to create a modal-like structure."/>
+            <m:MaterialTitle title="Nested Overlays" description="You can provide multiple child overlay in order to create a dialog-like structure."/>
 
             <!-- Parent 1 -->
             <ma:overlay.MaterialOverlay ui:field="overlayParent" overflow="AUTO" backgroundColor="BLUE" textAlign="CENTER" textColor="WHITE" depth="999">

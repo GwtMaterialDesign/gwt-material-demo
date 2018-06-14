@@ -300,7 +300,7 @@
                     <m:MaterialChip letter="D" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="DataGrid" margin="4"/>
                     <m:MaterialChip letter="C" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Chips" margin="4"/>
                     <m:MaterialChip letter="A" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Autocomplete" margin="4"/>
-                    <m:MaterialChip letter="M" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Modals" margin="4"/>
+                    <m:MaterialChip letter="M" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Dialogs" margin="4"/>
                     <m:MaterialChip letter="T" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Transitions" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>

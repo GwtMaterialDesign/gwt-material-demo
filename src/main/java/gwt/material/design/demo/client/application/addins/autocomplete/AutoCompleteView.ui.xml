@@ -201,27 +201,27 @@
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Inside Modal" description="You can build your overlay inside the modal" />
-            <m:MaterialButton ui:field="btnOpenModal" text="Open Modal" textColor="WHITE" waves="DEFAULT"/>
-            <m:MaterialModal ui:field="modal">
-                <m:MaterialModalContent>
+            <m:MaterialTitle title="Inside Dialog" description="You can build your overlay inside the dialog" />
+            <m:MaterialButton ui:field="btnOpenDialog" text="Open Dialog" textColor="WHITE" waves="DEFAULT"/>
+            <m:MaterialDialog ui:field="dialog">
+                <m:MaterialDialogContent>
                     <m:MaterialTitle title="Select contacts" description="Some description here..."/>
-                    <ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts" grid="s12"/>
-                </m:MaterialModalContent>
-                <m:MaterialModalFooter textAlign="RIGHT">
+                    <ma:autocomplete.MaterialAutoComplete ui:field="acDialog" placeholder="Contacts" grid="s12"/>
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter textAlign="RIGHT">
                     <m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/>
-                </m:MaterialModalFooter>
-            </m:MaterialModal>
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
             <demo:PrettyPre addStyleNames="lang-xml">
-                &emsp;&lt;m:MaterialModal ui:field="modal"><br/>
-                &emsp;&lt;m:MaterialModalContent><br/>
+                &emsp;&lt;m:MaterialDialog ui:field="dialog"><br/>
+                &emsp;&lt;m:MaterialDialogContent><br/>
                 &emsp;&lt;m:MaterialTitle title="Select contacts" description="Some description here..."/><br/>
-                &emsp;&lt;ma:autocomplete.MaterialAutoComplete ui:field="acModal" placeholder="Contacts"/><br/>
-                &emsp;&lt;/m:MaterialModalContent><br/>
-                &emsp;&lt;m:MaterialModalFooter textAlign="RIGHT"><br/>
+                &emsp;&lt;ma:autocomplete.MaterialAutoComplete ui:field="acDialog" placeholder="Contacts"/><br/>
+                &emsp;&lt;/m:MaterialDialogContent><br/>
+                &emsp;&lt;m:MaterialDialogFooter textAlign="RIGHT"><br/>
                 &emsp;&lt;m:MaterialButton ui:field="btnClose" text="Close" type="FLAT" textColor="BLACK" waves="DEFAULT"/><br/>
-                &emsp;&lt;/m:MaterialModalFooter><br/>
-                &lt;/m:MaterialModal><br/>
+                &emsp;&lt;/m:MaterialDialogFooter><br/>
+                &lt;/m:MaterialDialog><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </g:HTMLPanel>

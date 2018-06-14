@@ -447,16 +447,16 @@
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Modal Integration" description="You can easily put your combobox inside modal easily" />
-            <m:MaterialButton text="Open Modal" ui:field="btnOpenModal" />
-            <m:MaterialModal ui:field="modal" dismissible="true">
-                <m:MaterialModalContent>
+            <m:MaterialTitle title="Dialog Integration" description="You can easily put your combobox inside dialog easily" />
+            <m:MaterialButton text="Open Dialog" ui:field="btnOpenDialog" />
+            <m:MaterialDialog ui:field="dialog" dismissible="true">
+                <m:MaterialDialogContent>
                     <combobox:MaterialComboBox label="Please provide your timezone" placeholder="Value" ui:field="comboTimeZone17"/>
-                </m:MaterialModalContent>
-                <m:MaterialModalFooter>
-                    <m:MaterialButton ui:field="btnCloseModal" text="Close" />
-                </m:MaterialModalFooter>
-            </m:MaterialModal>
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton ui:field="btnCloseDialog" text="Close" />
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">

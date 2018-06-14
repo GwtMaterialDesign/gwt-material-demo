@@ -48,7 +48,7 @@
 
       <m:MaterialRow addStyleNames="code">
           <m:MaterialBadge text="NEW FEATURE" textColor="BLUE" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="BLUE_LIGHTEN_5" />
-          <m:MaterialTitle title="SELF / BODY Container" description="Set whether the parent of the root picker should be attached. For Modals it is good to use BODY instead of SELF container." />
+          <m:MaterialTitle title="SELF / BODY Container" description="Set whether the parent of the root picker should be attached. For Dialogs it is good to use BODY instead of SELF container." />
 
           <m:MaterialDatePicker  placeholder="Picker attached on it's own (SELF)" container="SELF" selectionType="YEAR" grid="s12"/>
           <m:MaterialDatePicker  placeholder="Picker attached on root (BODY)" container="BODY" selectionType="YEAR" grid="s12"/>

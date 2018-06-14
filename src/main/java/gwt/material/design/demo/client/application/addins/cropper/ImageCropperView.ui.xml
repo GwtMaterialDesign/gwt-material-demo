@@ -69,13 +69,13 @@
             </m:MaterialRow>
         </m:MaterialRow>
 
-        <m:MaterialModal ui:field="modal">
-            <m:MaterialModalContent textAlign="CENTER">
+        <m:MaterialDialog ui:field="dialog">
+            <m:MaterialDialogContent textAlign="CENTER">
                 <m:MaterialImage ui:field="croppedImage" />
-            </m:MaterialModalContent>
-            <m:MaterialModalFooter>
+            </m:MaterialDialogContent>
+            <m:MaterialDialogFooter>
                 <m:MaterialButton ui:field="close" type="FLAT" text="Close" waves="DEFAULT" />
-            </m:MaterialModalFooter>
-        </m:MaterialModal>
+            </m:MaterialDialogFooter>
+        </m:MaterialDialog>
     </m:MaterialPanel>
 </ui:UiBinder>

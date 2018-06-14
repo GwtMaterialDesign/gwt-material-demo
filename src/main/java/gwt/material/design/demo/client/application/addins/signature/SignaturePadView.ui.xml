@@ -69,15 +69,15 @@
                 </m:MaterialColumn>
             </m:MaterialRow>
 
-            <m:MaterialModal ui:field="dataModal" dismissible="true">
-                <m:MaterialModalContent>
+            <m:MaterialDialog ui:field="dataDialog" dismissible="true">
+                <m:MaterialDialogContent>
                     <m:MaterialTitle title="Image Data" description="Below are the generated image for the Signature Pad." />
                     <m:MaterialImage ui:field="imageData" width="100%" minWidth="200px" backgroundColor="GREY_LIGHTEN_3" />
-                </m:MaterialModalContent>
-                <m:MaterialModalFooter>
-                    <m:MaterialButton ui:field="closeModal" type="FLAT" text="Close" />
-                </m:MaterialModalFooter>
-            </m:MaterialModal>
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton ui:field="closeDialog" type="FLAT" text="Close" />
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
 
             <demo:PrettyPre addStyleNames="code lang-xml">
                 &lt;ma:signature.MaterialSignaturePad ui:field="signaturePad" dotSize="12" grid="s9" height="300px" penColor="black" border="1px solid #e9e9e9" />

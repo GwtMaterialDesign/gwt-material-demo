@@ -66,7 +66,7 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
+      <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or dialog."/>
       <m:MaterialButton margin="8" text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" />
       <m:MaterialButton margin="8" text="Primary (No Waves)" textColor="BLUE" type="FLAT" />
       <m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />

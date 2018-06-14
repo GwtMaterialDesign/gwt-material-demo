@@ -57,7 +57,7 @@ public class SignaturePadView extends ViewImpl implements SignaturePadPresenter.
     MaterialImage imageData;
 
     @UiField
-    MaterialModal dataModal;
+    MaterialDialog dataDialog;
 
     @UiField
     MaterialComboBox<Double> comboDotSize, comboMinWidth, comboMaxWidth, comboVelocity;
@@ -107,7 +107,7 @@ public class SignaturePadView extends ViewImpl implements SignaturePadPresenter.
 
     @UiHandler("png")
     void saveAsPng(ClickEvent e) {
-        dataModal.open();
+        dataDialog.open();
         imageData.setUrl(signaturePad.toDataUrl());
     }
 
@@ -116,9 +116,9 @@ public class SignaturePadView extends ViewImpl implements SignaturePadPresenter.
         signaturePad.clear();
     }
 
-    @UiHandler("closeModal")
-    void closeModal(ClickEvent e) {
-        dataModal.close();
+    @UiHandler("closeDialog")
+    void closeDialog(ClickEvent e) {
+        dataDialog.close();
     }
 
     protected void chooseColor(MaterialColumn widget) {

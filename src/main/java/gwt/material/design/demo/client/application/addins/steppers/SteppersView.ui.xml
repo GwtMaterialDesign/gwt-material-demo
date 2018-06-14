@@ -217,12 +217,12 @@
         </m:MaterialPanel>
     
         <m:MaterialPanel addStyleNames="code">
-            <!-- Steppers inside modal -->
-            <m:MaterialTitle title="Modal Steppers" description="You can put your Steppers inside a card component by adding shadow='1'"/>
-            <m:MaterialButton ui:field="btnModal" text="Open Modal" waves="DEFAULT" textColor="WHITE"  />
-            <m:MaterialModal ui:field="modalStepper" dismissible="false" inDuration="500" outDuration="500">
-              <m:MaterialModalContent>
-                <ma:stepper.MaterialStepper ui:field="stepperModal">
+            <!-- Steppers inside dialog -->
+            <m:MaterialTitle title="Dialog Steppers" description="You can put your Steppers inside a card component by adding shadow='1'"/>
+            <m:MaterialButton ui:field="btnDialog" text="Open Dialog" waves="DEFAULT" textColor="WHITE"  />
+            <m:MaterialDialog ui:field="dialogStepper" dismissible="false" inDuration="500" outDuration="500">
+              <m:MaterialDialogContent>
+                <ma:stepper.MaterialStepper ui:field="stepperDialog">
                   <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
                     <m:MaterialPanel width="100%" addStyleNames="{style.block}" backgroundColor="GREY_LIGHTEN_2"/>
                     <m:MaterialButton ui:field="btnContinue31" text="Continue to Step 2" grid="l4" marginTop="12"  textColor="WHITE" waves="DEFAULT"/>
@@ -239,17 +239,17 @@
                     <m:MaterialButton ui:field="btnPrev33" text="Cancel" grid="l4" marginTop="12" type="FLAT" waves="DEFAULT"/>
                   </ma:stepper.MaterialStep>
                 </ma:stepper.MaterialStepper>
-              </m:MaterialModalContent>
-            </m:MaterialModal>
+              </m:MaterialDialogContent>
+            </m:MaterialDialog>
             
             <demo:PrettyPre marginTop="100" addStyleNames="lang-xml">
-              &emsp;&lt;m:MaterialModal ui:field="modalStepper" dismissable="false" inDuration="500" outDuration="500"><br/>
-              &emsp;&lt;m:MaterialModalContent><br/>
-              &emsp;&emsp;&lt;ma:stepper.MaterialStepper ui:field="stepperModal"><br/>
+              &emsp;&lt;m:MaterialDialog ui:field="dialogStepper" dismissable="false" inDuration="500" outDuration="500"><br/>
+              &emsp;&lt;m:MaterialDialogContent><br/>
+              &emsp;&emsp;&lt;ma:stepper.MaterialStepper ui:field="stepperDialog"><br/>
               &emsp;&emsp;&emsp;&lt;!-- Step components here --><br/>
               &emsp;&emsp;&lt;/ma:stepper.MaterialStepper><br/>
-              &emsp;&lt;/m:MaterialModalContent><br/>
-              &lt;/m:MaterialModal><br/>
+              &emsp;&lt;/m:MaterialDialogContent><br/>
+              &lt;/m:MaterialDialog><br/>
             </demo:PrettyPre>
         </m:MaterialPanel>
     

@@ -37,6 +37,8 @@ import gwt.material.design.incubator.client.google.addresslookup.constants.Addre
 import gwt.material.design.incubator.client.google.addresslookup.js.options.AddressLookupOptions;
 import gwt.material.design.incubator.client.google.addresslookup.js.options.result.GeocoderAddressComponent;
 
+import java.util.logging.Logger;
+
 public class AddressLookupView extends ViewImpl implements AddressLookupPresenter.MyView {
     public interface Binder extends UiBinder<Widget, AddressLookupView> {
     }
@@ -60,6 +62,7 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
 
             @Override
             public void onSuccess(Void aVoid) {
+                //TODO: Auto detect if registered no need to load
                 addressLookup.load();
             }
         });

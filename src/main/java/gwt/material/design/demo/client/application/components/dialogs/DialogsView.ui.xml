@@ -72,165 +72,165 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Modals" description="Use a modal for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>
-      <!-- Default Modal -->
-      <m:MaterialModal ui:field="modal" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModal"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <m:MaterialButton text="Show Modal" ui:field="btnModal" waves="LIGHT"/>
+      <m:MaterialTitle title="Dialogs" description="Use a dialog for dialog boxes, confirmation messages, or other content that can be called up. You can set the type by adding, type='DEFAULT, FIXED_FOOTER, BOTTOM_SHEET'"/>
+      <!-- Default Dialog -->
+      <m:MaterialDialog ui:field="dialog" type="DEFAULT" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Default Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialog"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <m:MaterialButton text="Show Dialog" ui:field="btnDialog" waves="LIGHT"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialModal type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
-        &emsp;&lt;m:MaterialModalContent><br/>
-        &emsp;&emsp;&lt;m:MaterialTitle title="Default Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" /><br/>
-        &emsp;&lt;/m:MaterialModalContent><br/>
-        &emsp;&lt;m:MaterialModalFooter><br/>
-        &emsp;&emsp;&lt;m:MaterialButton text="Close Modal" type="FLAT"/><br/>
-        &emsp;&lt;/m:MaterialModalFooter><br/>
-        &lt;/m:MaterialModal><br/>  
+        &emsp;&lt;m:MaterialDialog type="DEFAULT" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&lt;m:MaterialDialogContent><br/>
+        &emsp;&emsp;&lt;m:MaterialTitle title="Default Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" /><br/>
+        &emsp;&lt;/m:MaterialDialogContent><br/>
+        &emsp;&lt;m:MaterialDialogFooter><br/>
+        &emsp;&emsp;&lt;m:MaterialButton text="Close Dialog" type="FLAT"/><br/>
+        &emsp;&lt;/m:MaterialDialogFooter><br/>
+        &lt;/m:MaterialDialog><br/>  
       </demo:PrettyPre>
       <demo:PrettyPre addStyleNames="lang-java">
-        &emsp;@UiField MaterialModal modal;<br/>
-        //Opening Modal<br/>
-        modal.open();<br/>
-        //Closing Modal<br/>
-        modal.close();<br/>
+        &emsp;@UiField MaterialDialog dialog;<br/>
+        //Opening Dialog<br/>
+        dialog.open();<br/>
+        //Closing Dialog<br/>
+        dialog.close();<br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Modal with Fixed Footer" />
-      <!-- Fixed Footer Modal -->
-      <m:MaterialModal ui:field="modalFixed" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Fixed Footer Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseFixedModal"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <m:MaterialButton text="Modal with Fix Footer" ui:field="btnModalFixFooter" waves="LIGHT"/>
+      <m:MaterialTitle title="Dialog with Fixed Footer" />
+      <!-- Fixed Footer Dialog -->
+      <m:MaterialDialog ui:field="dialogFixed" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Fixed Footer Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseFixedDialog"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <m:MaterialButton text="Dialog with Fix Footer" ui:field="btnDialogFixFooter" waves="LIGHT"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&lt;m:MaterialDialog type="FIXED_FOOTER" dismissable="false" inDuration="500" outDuration="500"><br/>
         &emsp;&emsp; &lt;-- Content Here --><br/>
-        &lt;/m:MaterialModal><br/>
+        &lt;/m:MaterialDialog><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Bottom Sheet Modal" />
-      <!-- Bottom Sheet Modal -->
-      <m:MaterialModal ui:field="modalBottomSheet" type="BOTTOM_SHEET" dismissible="false" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Bottom Sheet Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseBottomSheetModal"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <m:MaterialButton text="Modal Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
+      <m:MaterialTitle title="Bottom Sheet Dialog" />
+      <!-- Bottom Sheet Dialog -->
+      <m:MaterialDialog ui:field="dialogBottomSheet" type="BOTTOM_SHEET" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Bottom Sheet Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseBottomSheetDialog"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <m:MaterialButton text="Dialog Bottom Sheet Style" ui:field="btnMoadalBottomSheets" waves="LIGHT"/>
   
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialModal type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
+        &emsp;&lt;m:MaterialDialog type="BOTTOM_SHEET" dismissable="false" inDuration="500" outDuration="500"><br/>
         &emsp;&emsp; &lt;-- Content Here --><br/>
-        &lt;/m:MaterialModal><br/>
+        &lt;/m:MaterialDialog><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Auto Hide Modals" description="Just set the boolean parameter on the method showModal. If TRUE == you can click outside and the modal will be close."/>
-      <m:MaterialModal ui:field="modalClosable" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Closable Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalDismiss"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <m:MaterialButton text="Closable Modal" ui:field="btnClosable" waves="LIGHT"/>
+      <m:MaterialTitle title="Auto Hide Dialogs" description="Just set the boolean parameter on the method showDialog. If TRUE == you can click outside and the dialog will be close."/>
+      <m:MaterialDialog ui:field="dialogClosable" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Closable Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialogDismiss"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <m:MaterialButton text="Closable Dialog" ui:field="btnClosable" waves="LIGHT"/>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialModal type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
+        &emsp;&lt;m:MaterialDialog type="FIXED_FOOTER" dismissable="true" inDuration="500" outDuration="500"><br/>
         &emsp;&emsp; &lt;-- Content Here --><br/>
-        &lt;/m:MaterialModal><br/>
+        &lt;/m:MaterialDialog><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
       <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
-      <m:MaterialTitle title="FullScreen Modal" description="You can easily maximize / set to full screen your Modal by setting fullscreen='true' before opening the modal." />
-      <m:MaterialButton ui:field="openFullscreenModal" text="Open Modal in fullscreen" />
-      <m:MaterialModal ui:field="modalFullScreen" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Full Screen Modal" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
+      <m:MaterialTitle title="FullScreen Dialog" description="You can easily maximize / set to full screen your Dialog by setting fullscreen='true' before opening the dialog." />
+      <m:MaterialButton ui:field="openFullscreenDialog" text="Open Dialog in fullscreen" />
+      <m:MaterialDialog ui:field="dialogFullScreen" type="FIXED_FOOTER" dismissible="false" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Full Screen Dialog" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
           <m:MaterialButton text="Exit Full Screen" ui:field="turnOffFullscreen" />
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="closeFullscreenModal"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="closeFullscreenDialog"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
 
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;// Turn on Fullscreen Mode<br/>
-        modal.setFullscreen(true);<br/>
+        dialog.setFullscreen(true);<br/>
         // Turn off Fullscreen Mode<br/>
-        modal.setFullscreen(false);
+        dialog.setFullscreen(false);
       </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Modal : Events" description="We have provided an open / close events for modal component." />
-      <m:MaterialModal ui:field="modalEvents" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Modal with Events" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal" type="FLAT" ui:field="btnCloseModalEvents"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <m:MaterialButton text="Modal with Events" ui:field="btnEvents" waves="LIGHT"/>
+      <m:MaterialTitle title="Dialog : Events" description="We have provided an open / close events for dialog component." />
+      <m:MaterialDialog ui:field="dialogEvents" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="500">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Dialog with Events" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog" type="FLAT" ui:field="btnCloseDialogEvents"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <m:MaterialButton text="Dialog with Events" ui:field="btnEvents" waves="LIGHT"/>
       <demo:PrettyPre addStyleNames="lang-java">
-        &emsp;modalEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));<br/>
-        modalEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+        &emsp;dialogEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));<br/>
+        dialogEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
       </demo:PrettyPre>
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Modal : Multiple Instances" description="You can easily add multiple instances of modal. And we handle the z-index throught ModalManager for the calculation." />
-      <!-- Modal 1 -->
-      <m:MaterialModal ui:field="modal1" type="FIXED_FOOTER">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Modal 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Open Modal 2" type="FLAT" ui:field="btnOpenModal2"/>
-          <m:MaterialButton text="Close Modal 1" type="FLAT" ui:field="btnCloseModal1"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <!-- Modal 2 -->
-      <m:MaterialModal ui:field="modal2" type="FIXED_FOOTER">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Modal 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Open Modal 3" type="FLAT" ui:field="btnOpenModal3"/>
-          <m:MaterialButton text="Close Modal 2" type="FLAT" ui:field="btnCloseModal2"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
-      <!-- Modal 3 -->
-      <m:MaterialModal ui:field="modal3" type="FIXED_FOOTER">
-        <m:MaterialModalContent>
-          <m:MaterialTitle title="Modal 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
-        </m:MaterialModalContent>
-        <m:MaterialModalFooter>
-          <m:MaterialButton text="Close Modal 3" type="FLAT" ui:field="btnCloseModal3"/>
-        </m:MaterialModalFooter>
-      </m:MaterialModal>
+      <m:MaterialTitle title="Dialog : Multiple Instances" description="You can easily add multiple instances of dialog. And we handle the z-index throught DialogManager for the calculation." />
+      <!-- Dialog 1 -->
+      <m:MaterialDialog ui:field="dialog1" type="FIXED_FOOTER">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Dialog 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Open Dialog 2" type="FLAT" ui:field="btnOpenDialog2"/>
+          <m:MaterialButton text="Close Dialog 1" type="FLAT" ui:field="btnCloseDialog1"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <!-- Dialog 2 -->
+      <m:MaterialDialog ui:field="dialog2" type="FIXED_FOOTER">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Dialog 2" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Open Dialog 3" type="FLAT" ui:field="btnOpenDialog3"/>
+          <m:MaterialButton text="Close Dialog 2" type="FLAT" ui:field="btnCloseDialog2"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
+      <!-- Dialog 3 -->
+      <m:MaterialDialog ui:field="dialog3" type="FIXED_FOOTER">
+        <m:MaterialDialogContent>
+          <m:MaterialTitle title="Dialog 3" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" />
+        </m:MaterialDialogContent>
+        <m:MaterialDialogFooter>
+          <m:MaterialButton text="Close Dialog 3" type="FLAT" ui:field="btnCloseDialog3"/>
+        </m:MaterialDialogFooter>
+      </m:MaterialDialog>
 
-      <m:MaterialButton text="Open Modal 1" ui:field="btnOpenModal1" waves="LIGHT"/>
+      <m:MaterialButton text="Open Dialog 1" ui:field="btnOpenDialog1" waves="LIGHT"/>
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">

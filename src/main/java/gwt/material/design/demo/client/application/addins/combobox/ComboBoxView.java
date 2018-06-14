@@ -21,8 +21,6 @@ package gwt.material.design.demo.client.application.addins.combobox;
  */
 
 
-import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -32,7 +30,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.addins.client.combobox.js.LanguageOptions;
-import gwt.material.design.client.ui.MaterialModal;
+import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.client.ui.html.OptGroup;
 import gwt.material.design.demo.client.application.dto.DataHelper;
@@ -60,7 +58,7 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
     MaterialComboBox<State> comboValue;
 
     @UiField
-    MaterialModal modal;
+    MaterialDialog dialog;
 
     private int dynamicIndex = 1;
 
@@ -260,14 +258,14 @@ public class ComboBoxView extends ViewImpl implements ComboBoxPresenter.MyView {
         dynamicIndex ++;
     }
 
-    @UiHandler("btnOpenModal")
-    void onOpenModal(ClickEvent e) {
-        modal.open();
+    @UiHandler("btnOpenDialog")
+    void onOpenDialog(ClickEvent e) {
+        dialog.open();
     }
 
-    @UiHandler("btnCloseModal")
-    void onCloseModal(ClickEvent e) {
-        modal.close();
+    @UiHandler("btnCloseDialog")
+    void onCloseDialog(ClickEvent e) {
+        dialog.close();
     }
 
     @UiHandler("btnTagMultiGetValue")

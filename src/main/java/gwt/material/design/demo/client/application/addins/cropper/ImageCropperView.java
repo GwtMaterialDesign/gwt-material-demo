@@ -21,7 +21,6 @@ package gwt.material.design.demo.client.application.addins.cropper;
  */
 
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -35,8 +34,8 @@ import gwt.material.design.addins.client.cropper.constants.Shape;
 import gwt.material.design.addins.client.cropper.constants.Type;
 import gwt.material.design.addins.client.cropper.js.JsCropperDimension;
 import gwt.material.design.client.ui.MaterialCheckBox;
+import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialImage;
-import gwt.material.design.client.ui.MaterialModal;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
@@ -50,7 +49,7 @@ public class ImageCropperView extends ViewImpl implements ImageCropperPresenter.
     MaterialImageCropper cropper;
 
     @UiField
-    MaterialModal modal;
+    MaterialDialog dialog;
 
     @UiField
     MaterialImage croppedImage;
@@ -89,13 +88,13 @@ public class ImageCropperView extends ViewImpl implements ImageCropperPresenter.
         // Crop Handler
         cropper.addCropHandler(valueChangeEvent -> {
             croppedImage.setUrl(valueChangeEvent.getResult());
-            modal.open();
+            dialog.open();
         });
     }
 
     @UiHandler("close")
     void close(ClickEvent e) {
-        modal.close();
+        dialog.close();
     }
 
     @UiHandler("crop")
