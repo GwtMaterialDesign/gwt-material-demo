@@ -58,7 +58,7 @@ public class LanguageSelectorView extends ViewImpl implements LanguageSelectorPr
     @Inject
     LanguageSelectorView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
-        languageSelector.setLanguages(getLanguages());
+        /*languageSelector.setLanguages(getLanguages());*/
     }
 
     @UiHandler("languageSelector")

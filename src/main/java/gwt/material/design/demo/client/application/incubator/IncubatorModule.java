@@ -25,6 +25,7 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import gwt.material.design.demo.client.application.incubator.alert.AlertModule;
 import gwt.material.design.demo.client.application.incubator.async.AsyncModule;
 import gwt.material.design.demo.client.application.incubator.google.addresslookup.AddressLookupModule;
+import gwt.material.design.demo.client.application.incubator.infinitescroll.InfiniteScrollModule;
 import gwt.material.design.demo.client.application.incubator.language.LanguageSelectorModule;
 import gwt.material.design.demo.client.application.incubator.loadingstate.LoadingStateModule;
 import gwt.material.design.demo.client.application.incubator.progress.ProgressLineBarModule;
@@ -47,5 +48,6 @@ public class IncubatorModule extends AbstractPresenterModule {
         install(new TimerModule());
         install(new ToggleModule());
         install(new AddressLookupModule());
+        install(new InfiniteScrollModule());
     }
 }

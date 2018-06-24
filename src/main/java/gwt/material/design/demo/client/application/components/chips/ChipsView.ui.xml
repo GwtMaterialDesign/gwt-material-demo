@@ -42,19 +42,19 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
+      <m:MaterialTitle title="Outlined Chip" description="Provide a simple and outlined chip component."/>
       <m:MaterialRow>
-        <m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" />
+        <m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
       </m:MaterialRow>
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
+        &emsp;&lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" /><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -69,6 +69,23 @@
         &emsp;&lt;m:MaterialChip margin="8" text="Apple" /><br/>
         &lt;m:MaterialChip margin="8" text="Banana" /><br/>
         &lt;m:MaterialChip margin="8" text="Mango" /><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
+      <m:MaterialRow>
+        <m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+      </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   

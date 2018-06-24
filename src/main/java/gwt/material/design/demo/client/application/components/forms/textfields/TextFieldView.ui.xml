@@ -56,14 +56,14 @@
                 <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
                 <!-- TimePicker -->
                 <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
+                <!-- ComboBox -->
+                <ma:combobox.MaterialComboBox ui:field="combo4" fieldType="DEFAULT" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
                 <!-- ListBox -->
                 <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
                     <m:html.Option text="Option 1" />
                     <m:html.Option text="Option 2" />
                     <m:html.Option text="Option 3" />
                 </m:MaterialListBox>
-                <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo4" fieldType="DEFAULT" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
                 <!-- Autocomplete -->
                 <ma:autocomplete.MaterialAutoComplete ui:field="acDefault" display="NONE" fieldType="DEFAULT" label="Contacts" grid="s6"/>
                 <!-- TextArea -->

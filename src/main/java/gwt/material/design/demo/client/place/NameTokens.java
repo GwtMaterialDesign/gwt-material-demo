@@ -126,6 +126,7 @@ public class NameTokens {
     public static final String toggle = "toggle";
     public static final String walkthrough = "walkthrough";
     public static final String webpImage = "webp";
+    public static final String infiniteScroll = "infinite_scroll";
 
     public static String getAbout() {
         return about;
@@ -533,5 +534,9 @@ public class NameTokens {
 
     public static String getAddressLookup() {
         return addressLookup;
+    }
+
+    public static String getInfiniteScroll() {
+        return infiniteScroll;
     }
 }

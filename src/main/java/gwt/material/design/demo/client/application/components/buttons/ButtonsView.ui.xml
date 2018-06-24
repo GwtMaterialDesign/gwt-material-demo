@@ -45,6 +45,23 @@
         &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Outlined" description="Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app."/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Button" waves="DEFAULT"  textColor="BLACK"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Primary" border="1px solid #42a5f5" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" type="OUTLINED" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/><br/>
+        &lt;m:MaterialButton text="Primary" type="OUTLINED" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialButton text="Disabled" type="OUTLINED" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
+        &lt;m:MaterialButton text="Warn" type="OUTLINED" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/><br/>
+        &lt;m:MaterialButton text="Icon Color" type="OUTLINED" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle  title="Floating" description="The floating circular action button is meant for very important functions."/>
