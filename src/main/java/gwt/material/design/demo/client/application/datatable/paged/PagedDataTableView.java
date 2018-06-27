@@ -39,6 +39,7 @@ import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.ui.MaterialBadge;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.pager.MaterialDataPager;
+import gwt.material.design.client.ui.pager.actions.PageListBox;
 import gwt.material.design.client.ui.table.MaterialDataTable;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
@@ -81,6 +82,8 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         dataSource = new ListDataSource<>();
         dataSource.add(0, people);
 
+        /* Uncomment to make use of listbox page selection instead of integerbox */
+        /*pager.setPageSelection(new PageListBox());*/
         pager.setTable(table);
         pager.setDataSource(dataSource);
 

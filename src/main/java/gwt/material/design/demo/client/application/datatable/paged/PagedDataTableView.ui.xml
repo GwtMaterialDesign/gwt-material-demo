@@ -53,6 +53,8 @@
                 <demo:PrettyPre marginTop="40" addStyleNames="lang-java">
                     &emsp;// Declare your Pager <br/>
                     private MaterialDataPager pager; <br/>
+                    // Set the Page selection type on the data pager whether PageNumberBox (Default) or PageListBox
+                    pager.setPageSelection(new PageListBox());
                     // Set how many visible rows will contain the datatable. <br/>
                     table.setVisibleRange(1, 10); <br/>
                     // Pass your data table and your datasource ( List&lt;Person> ) <br/>
