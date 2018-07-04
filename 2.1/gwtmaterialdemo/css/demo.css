@@ -92,6 +92,9 @@ nav .button-collapse i {
     .panel {
         padding: 0px !important;
     }
+    pre.prettyprint {
+        width: calc(100vw - 80px);
+    }
 }
 @media only screen and (max-width: 992px) {
     header {
