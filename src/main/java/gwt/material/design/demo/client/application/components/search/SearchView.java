@@ -50,7 +50,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     MaterialSearch txtSearch;
 
     @UiField
-    MaterialWebpImage imgHero;
+    MaterialImage imgHero;
 
     @UiField
     MaterialLabel lblName, lblDescription;
@@ -88,7 +88,6 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
             Hero hero = (Hero)txtSearch.getSelectedObject();
             new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
             imgHero.setUrl(hero.getImageUrl());
-            imgHero.setFallbackExtension("png");
             lblName.setText(hero.getName());
             lblDescription.setText(hero.getDescription());
             MaterialToast.fireToast("Search Finish Event was fired");
