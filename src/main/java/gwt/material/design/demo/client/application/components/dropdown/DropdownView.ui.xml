@@ -108,7 +108,7 @@
       <m:MaterialRow addStyleNames="code">
         <m:MaterialTitle title="Dropdown inside NavBar" description="You can now easily integrate an icon or link type dropdown inside navbar."/>
         <m:MaterialNavBar width="100%">
-          <m:MaterialNavBrand text="GMD" position="LEFT"/>
+          <m:MaterialNavBrand paddingLeft="20" text="GMD" position="LEFT"/>
           <m:MaterialNavSection position="RIGHT" hideOn="NONE">
             <!--Activator -->
             <m:MaterialLink text="Dropdown" activates="dp-5" textColor="WHITE" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>

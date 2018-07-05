@@ -309,9 +309,10 @@ aside.gitter-chat-embed {
 
 /** Carousel **/
 #demo-carousel-fixed {
-    bottom: 20%;
+    bottom: 16%;
     position: fixed;
     text-align: center;
     left: calc(50% - 90px);
     z-index: 1;
+    z-index: 999;
 }

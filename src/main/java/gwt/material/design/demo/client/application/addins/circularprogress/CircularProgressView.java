@@ -38,7 +38,7 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
     }
 
     @UiField
-    MaterialCircularProgress circLabel, circLabel2, circLabel3, circContinuos, circStartAngle, circStartAngle2, circEvents, circValues;
+    MaterialCircularProgress circLabel, circLabel2, circLabel3, circContinuos, circStartAngle, circStartAngle2, circEvents, circValues, circResponsive;
 
     private int i = 1;
 
@@ -49,6 +49,7 @@ public class CircularProgressView extends ViewImpl implements CircularProgressPr
         buildCircularDynamic(circLabel);
         buildCircularDynamic(circLabel2);
         buildCircularDynamic(circLabel3);
+        buildCircularDynamic(circResponsive);
 
         circStartAngle.setStartAngle(Math.PI / 2);
         circStartAngle2.setStartAngle(Math.PI / 2);

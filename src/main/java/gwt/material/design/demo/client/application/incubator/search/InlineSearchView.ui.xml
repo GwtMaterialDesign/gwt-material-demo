@@ -32,8 +32,8 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Default Behaviour" />
             <m:MaterialNavBar>
-                <m:MaterialNavBrand text="App Title" paddingLeft="16" />
-                <m:MaterialNavSection>
+                <m:MaterialNavBrand text="App Title" hideOn="HIDE_ON_SMALL_DOWN" paddingLeft="16" />
+                <m:MaterialNavSection hideOn="NONE">
                     <incubator:search.InlineSearch ui:field="search" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 </m:MaterialNavSection>
             </m:MaterialNavBar>
@@ -51,8 +51,8 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Expandable Behaviour" />
             <m:MaterialNavBar>
-                <m:MaterialNavBrand text="App Title" paddingLeft="16" />
-                <m:MaterialNavSection float="RIGHT">
+                <m:MaterialNavBrand text="App Title" hideOn="HIDE_ON_SMALL_DOWN" paddingLeft="16" />
+                <m:MaterialNavSection float="RIGHT" hideOn="NONE">
                     <m:MaterialLink iconType="SEARCH" ui:field="openSearch"/>
                     <incubator:search.ExpandableInlineSearch ui:field="expandableInline" theme="LIGHT" width="50%" placeholder="Search" display="INLINE"/>
                 </m:MaterialNavSection>
