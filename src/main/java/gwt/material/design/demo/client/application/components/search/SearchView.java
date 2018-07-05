@@ -28,6 +28,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.SearchObject;
+import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;

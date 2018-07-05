@@ -28,7 +28,10 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialDialog;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -40,6 +43,8 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     MaterialDialog dialog, dialogFixed, dialogBottomSheet, dialogClosable, dialogEvents,
             dialog1, dialog2, dialog3, dialogFullScreen;
 
+    @UiField
+    MaterialButton turnOffFullscreen;
 
     @Inject
     DialogsView(Binder uiBinder) {
@@ -60,11 +65,13 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     @UiHandler("openFullscreenDialog")
     void onOpenFullScreenDialog(ClickEvent e) {
         dialogFullScreen.setFullscreen(true);
+        turnOffFullscreen.setVisible(true);
         dialogFullScreen.open();
     }
 
     @UiHandler("turnOffFullscreen")
     void turnOffFullScreen(ClickEvent e) {
+        turnOffFullscreen.setVisible(false);
         dialogFullScreen.setFullscreen(false);
     }
 

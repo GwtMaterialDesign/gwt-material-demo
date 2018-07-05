@@ -31,8 +31,8 @@
       <m:MaterialPanel addStyleNames="code">
           <m:MaterialTitle title="Super Heroes" description="Search icon must activate a search component inside the navbar. See below the guidelines on how to implement it."/>
           <!-- Navbar component that contains a search icon -->
-          <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" activates="sideBar" textColor="WHITE">
-            <m:MaterialNavBrand ui:field="navBrand" text="GWT Material"/>
+          <m:MaterialNavBar ui:field="navBar" paddingLeft="20" width="100%" textColor="WHITE">
+            <m:MaterialNavBrand ui:field="navBrand" text="GMD"/>
             <m:MaterialLink ui:field="btnSearch" iconType="SEARCH" iconColor="WHITE" float="RIGHT"/>
           </m:MaterialNavBar>
     

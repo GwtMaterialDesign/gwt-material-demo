@@ -173,7 +173,7 @@
       <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
       <m:MaterialRow>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px" />
             </m:MaterialCardImage>
@@ -190,7 +190,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
@@ -207,7 +207,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
@@ -224,7 +224,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
               <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
@@ -243,7 +243,7 @@
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
-        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE"><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true"><br/>
         &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardImage><br/>

@@ -86,9 +86,6 @@ nav .button-collapse i {
 
 /* Mobile down */
 @media only screen and (max-width: 600px) {
-    main .container, header .waterfall{
-        padding: 24px !important;
-    }
     .panel {
         padding: 0px !important;
     }
