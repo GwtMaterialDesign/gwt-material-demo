@@ -30,6 +30,8 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.base.MaterialWidget;
+import gwt.material.design.client.base.viewport.Resolution;
+import gwt.material.design.client.base.viewport.ViewPort;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.HideOn;
@@ -250,6 +252,13 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         // Add a row short press handler, called when a row is short pressed.
         table.addRowShortPressHandler(event -> {
             //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+        });
+
+        ViewPort.when(Resolution.ALL_MOBILE).then(param1 -> {
+            table.setHeight("60vh");
+        }, viewPort -> {
+            table.setHeight("100%");
+            return false;
         });
     }
 

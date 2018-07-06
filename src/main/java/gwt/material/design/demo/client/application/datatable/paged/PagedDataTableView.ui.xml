@@ -31,7 +31,7 @@
                 <m:MaterialButton text="Go to first page" ui:field="btnGotoFirstPage" marginRight="12"/>
                 <m:MaterialButton text="Go to last page" ui:field="btnGotoLastPage" />
                 <m:table.MaterialDataTable shadow="1" marginTop="20" ui:field="table"
-                                           height="100%"
+                                           height="calc(100vh - 131px)"
                                            useStickyHeader="true"
                                            useCategories="false"
                                            useRowExpansion="true"

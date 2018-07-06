@@ -40,7 +40,7 @@
         &lt;m:MaterialChip margin="8" text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Outlined Chip" description="Provide a simple and outlined chip component."/>
       <m:MaterialRow>
@@ -57,7 +57,7 @@
         &lt;m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>
       <m:MaterialRow>
@@ -88,7 +88,7 @@
         &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contact's name, sees the contact's addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
       <m:MaterialRow>
@@ -102,7 +102,7 @@
         &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
        <m:MaterialButton ui:field="closeChip" text="Close Chip" />
