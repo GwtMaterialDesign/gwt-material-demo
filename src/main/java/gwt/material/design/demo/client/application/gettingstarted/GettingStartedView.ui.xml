@@ -110,7 +110,6 @@
     <m:MaterialPanel addStyleNames="code">
       <m:MaterialTitle title="Wiki 2.1" description="Migration guide from 2.0 to 2.1" />
       <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-Mojo-GWT-Maven-Plugin-to-TBroyer" text="Mojo to TBroyer Migration" textColor="WHITE" />
-      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-addins/wiki/2.0-API-Changes" text="Addins 2.0 API Changes" textColor="WHITE" />
       <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/PWA-:-Service-Worker-Automation" text="PWA : Service Worker Generation" textColor="WHITE" />
     </m:MaterialPanel>
     
