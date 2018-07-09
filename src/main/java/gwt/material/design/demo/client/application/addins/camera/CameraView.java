@@ -32,6 +32,7 @@ import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.MaterialImage;
 import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.incubator.client.alert.Alert;
 
 import javax.inject.Inject;
 
@@ -50,7 +51,10 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
     MaterialRow imageCapturedPanel;
 
     @UiField
-    MaterialPanel notSupportedPanel;
+    MaterialRow cameraPanel;
+
+    @UiField
+    Alert browserNotSupported;
 
     @Inject
     CameraView(Binder uiBinder) {
@@ -58,8 +62,12 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
 
         camera.getVideo().setWidth("100%");
 
-        if (!MaterialCameraCapture.isSupported()) {
-            notSupportedPanel.setDisplay(Display.BLOCK);
+        if (MaterialCameraCapture.isSupported()) {
+            cameraPanel.setVisible(true);
+            browserNotSupported.close();
+        } else {
+            cameraPanel.setVisible(false);
+            browserNotSupported.open();
         }
     }
 
