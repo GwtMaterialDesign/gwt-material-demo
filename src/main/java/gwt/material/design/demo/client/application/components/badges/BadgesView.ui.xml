@@ -94,11 +94,11 @@
       <m:MaterialTitle title="Badges in NavBar"/>
       <m:MaterialNavBar width="100%">
         <m:MaterialNavSection hideOn="NONE" float="RIGHT">
-          <m:MaterialLink text="Link 1" />
-          <m:MaterialLink text="Link 2">
-            <m:MaterialBadge text="1 new" backgroundColor="RED"/>
+          <m:MaterialLink text="One" />
+          <m:MaterialLink text="Two" paddingLeft="0" paddingRight="0">
+            <m:MaterialBadge text="New" backgroundColor="RED"/>
           </m:MaterialLink>
-          <m:MaterialLink text="Link 3" />
+          <m:MaterialLink text="Three" />
         </m:MaterialNavSection>
       </m:MaterialNavBar>
       <demo:PrettyPre addStyleNames="lang-xml">

@@ -371,7 +371,7 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
-            <m:MaterialRow addStyleNames="code">
+            <m:MaterialRow>
                 <ma:carousel.MaterialCarousel ui:field="eventsCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
                     <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
