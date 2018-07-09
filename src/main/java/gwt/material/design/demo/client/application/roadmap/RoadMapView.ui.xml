@@ -41,7 +41,8 @@
                     <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Installable Manifest" margin="4"/>
                     <m:MaterialChip letter="S" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Service Worker" margin="4"/>
                     <m:MaterialChip letter="P" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Push Notifications" margin="4"/>
-                    <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Incubator Addins" margin="4"/>
+                    <m:MaterialChip letter="I" letterColor="WHITE" letterBackgroundColor="PURPLE" text="Incubator Widgets" margin="4"/>
+                    <m:MaterialChip letter="B" letterColor="WHITE" letterBackgroundColor="RED" text="Cross Browser Bug Fixes" margin="4"/>
                 </m:MaterialPanel>
             </m:MaterialCardAction>
         </m:MaterialCard>

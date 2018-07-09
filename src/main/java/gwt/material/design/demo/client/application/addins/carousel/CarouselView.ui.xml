@@ -371,13 +371,11 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
-            <m:MaterialRow>
-                <ma:carousel.MaterialCarousel ui:field="eventsCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
-                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
-                </ma:carousel.MaterialCarousel>
-            </m:MaterialRow>
+            <ma:carousel.MaterialCarousel ui:field="eventsCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+            </ma:carousel.MaterialCarousel>
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;carouselEvents.addAfterChangeHandler(e -> {<br/>
                 &emsp;MaterialToast.fireToast("AfterChangeEvent : " + e.getCurrentSlide() + " Current Slide");<br/>
