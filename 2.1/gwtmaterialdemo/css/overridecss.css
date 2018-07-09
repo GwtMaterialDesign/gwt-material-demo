@@ -835,6 +835,18 @@ input:-webkit-autofill {
     vertical-align: middle;
 }
 
+/**
+* ListBox - Fixed for Safari9+ Issue with Blinking Indicator on IOS Devices
+* Read More - https://stackoverflow.com/questions/38848742/material-select-blinking-on-ios
+**/
+input.select-dropdown {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 /** Loader */
 .loader-wrapper {
     width: 100%;
@@ -1494,5 +1506,26 @@ i[class*="waves-"].material-icons {
 
     ul.side-nav.fixed {
         left: 0 !important;
+    }
+}
+
+/**
+* Fix IOS Issue - Auto zooms when focusing on input element.
+* Read more - https://github.com/Dogfalo/materialize/issues/5008
+**/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input:not([type]),
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=url],
+    input[type=time],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=tel],
+    input[type=number],
+    input[type=search],
+    textarea.materialize-textarea {
+        font-size: 16px;
     }
 }
