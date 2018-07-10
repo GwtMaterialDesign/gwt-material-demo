@@ -57,7 +57,7 @@
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
             <m:MaterialTitle title="Disable Uploader" description="You can easily disable the file uploader by calling enable='false'" />
             <m:MaterialSwitch ui:field="switchEnable" onLabel="Enable" offLabel="Disable" />
-            <ma:fileuploader.MaterialFileUploader waves="DEFAULT" ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
+            <ma:fileuploader.MaterialFileUploader ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
                 <ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
             </ma:fileuploader.MaterialFileUploader>
 
