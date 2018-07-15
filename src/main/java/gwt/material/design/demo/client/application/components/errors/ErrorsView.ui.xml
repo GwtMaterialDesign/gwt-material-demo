@@ -30,8 +30,8 @@
     <m:MaterialRow addStyleNames="code">
     <m:MaterialTitle title="Usage" description="You can easily set any error or success messages on each  material widget by calling :" />
       <demo:PrettyPre addStyleNames="lang-java">
-        &emsp;txtBox.setError("Please provide your name");<br/>
-        txtBox.setSuccess("Your username is available");
+        &emsp;txtBox.setErrorText("Please provide your name");<br/>
+        txtBox.setSuccessText("Your username is available");
       </demo:PrettyPre>
     </m:MaterialRow>
   

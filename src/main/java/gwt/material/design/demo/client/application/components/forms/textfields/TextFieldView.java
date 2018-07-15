@@ -31,10 +31,10 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
-import gwt.material.design.client.base.HasError;
+import gwt.material.design.client.base.HasErrorText;
 import gwt.material.design.client.base.HasFieldTypes;
 import gwt.material.design.client.base.HasReadOnly;
-import gwt.material.design.client.base.MaterialWidget;
+import gwt.material.design.client.base.HasStatusText;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
@@ -172,30 +172,30 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
             switch (valueChangeEvent.getValue()) {
                 case ERROR:
                     for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasError) {
-                            ((HasError) w).setError(FieldState.ERROR.getMessage());
+                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                            ((HasStatusText) w).setErrorText(FieldState.ERROR.getMessage());
                         }
                     }
                     break;
                 case SUCCESS:
                     for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasError) {
-                            ((HasError) w).setSuccess(FieldState.SUCCESS.getMessage());
+                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                            ((HasStatusText) w).setSuccessText(FieldState.SUCCESS.getMessage());
                         }
                     }
                     break;
                 case HELPER:
                     for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasError) {
-                            ((HasError) w).setHelperText(FieldState.HELPER.getMessage());
+                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                            ((HasStatusText) w).setHelperText(FieldState.HELPER.getMessage());
                         }
                     }
                     break;
                 case DEFAULT:
                     for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasError) {
-                            ((HasError) w).clearErrorOrSuccess();
-                            ((HasError) w).setHelperText(null);
+                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                            ((HasStatusText) w).clearStatusText();
+                            ((HasStatusText) w).setHelperText(null);
                         }
                         if (w instanceof HasReadOnly) {
                             ((HasReadOnly) w).setReadOnly(false);

@@ -120,7 +120,7 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
 
     @UiHandler({"btnError", "btnError1", "btnError2"})
     void onError(ClickEvent e){
-        stepperError.setError("Alert Error");
+        stepperError.setErrorText("Alert Error");
     }
 
     @UiHandler({"btnSuccess", "btnSuccess1", "btnSuccess2"})

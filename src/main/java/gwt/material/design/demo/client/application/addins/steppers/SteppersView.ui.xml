@@ -254,7 +254,7 @@
         </m:MaterialPanel>
     
         <m:MaterialPanel addStyleNames="code">
-          <m:MaterialTitle title="Error on Steppers" description="You can specify a global stepper error by : setError('Error Message'); " />
+          <m:MaterialTitle title="Error on Steppers" description="You can specify a global stepper error by : setErrorText('Error Message'); " />
           <m:MaterialPanel height="500px" width="100%">
             <ma:stepper.MaterialStepper ui:field="stepperError" axis="HORIZONTAL" detectOrientation="true" shadow="1">
               <ma:stepper.MaterialStep step="1" title="Name of Step 1" description="Description of Step 1">
