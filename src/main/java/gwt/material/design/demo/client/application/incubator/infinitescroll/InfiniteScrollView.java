@@ -21,17 +21,26 @@ package gwt.material.design.demo.client.application.incubator.infinitescroll;
  */
 
 
-import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialCard;
+import gwt.material.design.client.ui.MaterialColumn;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
+import gwt.material.design.demo.client.application.datatable.table.Person;
+import gwt.material.design.demo.client.application.incubator.infinitescroll.service.FakeTestService;
+import gwt.material.design.demo.client.application.incubator.infinitescroll.service.TestDatasource;
+import gwt.material.design.demo.client.application.incubator.infinitescroll.service.TestServiceAsync;
 import gwt.material.design.incubator.client.infinitescroll.InfiniteScrollPanel;
+import gwt.material.design.incubator.client.infinitescroll.data.DataSource;
+import gwt.material.design.incubator.client.infinitescroll.data.LoadConfig;
 
 public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresenter.MyView {
     public interface Binder extends UiBinder<Widget, InfiniteScrollView> {
@@ -41,49 +50,44 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
     MaterialPanel panel;
 
     @UiField
-    InfiniteScrollPanel infiniteScrollPanel;
-    private int index;
+    InfiniteScrollPanel<Person> infiniteScrollPanel;
+
+    private TestServiceAsync personService = GWT.create(FakeTestService.class);
+    private DataSource<Person> personDataSource = new TestDatasource(personService);
 
     @Inject
     InfiniteScrollView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        infiniteScrollPanel.setLoadConfig(new LoadConfig<>(0, 10));
+        infiniteScrollPanel.setDataSource(personDataSource);
     }
 
     @Override
     protected void onAttach() {
         super.onAttach();
 
-        addBox(9);
-
-        infiniteScrollPanel.setCallback(() -> {
-            // Will change later to real server communication callback
-            Scheduler.get().scheduleFixedDelay(() -> {
-                addBox(6);
-                MaterialToast.fireToast("Loaded 3 more cards.");
-                return false;
-            }, 2000);
+        infiniteScrollPanel.addLoadHandler(event -> {
+            for (Person person : event.getData()) {
+                addPersonCard(person);
+            }
         });
     }
 
-    protected void addBox(int total) {
-        for (int i = 0; i < total; i++) {
-            index++;
+    protected void addPersonCard(Person person) {
+        MaterialColumn column = new MaterialColumn(12, 6, 4);
+        MaterialCard card = new MaterialCard();
+        card.setMargin(12);
+        card.setPadding(40);
 
-            MaterialColumn column = new MaterialColumn(12, 6, 4);
-            MaterialCard card = new MaterialCard();
-            card.setMargin(12);
-            card.setPadding(40);
+        MaterialLabel title = new MaterialLabel(person.getFirstName());
+        title.setFontWeight(Style.FontWeight.BOLD);
+        card.add(title);
+        card.add(new MaterialLabel("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "));
+        column.add(card);
 
-            MaterialLabel title = new MaterialLabel("Card " + index);
-            title.setFontWeight(Style.FontWeight.BOLD);
-            card.add(title);
-            card.add(new MaterialLabel("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "));
-            column.add(card);
+        new MaterialAnimation().transition(Transition.SLIDEINUP).duration(400).animate(column);
 
-            new MaterialAnimation().transition(Transition.SLIDEINUP).duration(400).animate(column);
-
-            panel.add(column);
-            infiniteScrollPanel.update();
-        }
+        panel.add(column);
     }
 }
