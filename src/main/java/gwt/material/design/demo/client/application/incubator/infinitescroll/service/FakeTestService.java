@@ -21,7 +21,6 @@ package gwt.material.design.demo.client.application.incubator.infinitescroll.ser
  */
 
 
-import com.google.gwt.user.client.Random;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import gwt.material.design.demo.client.application.datatable.table.People;
@@ -36,8 +35,8 @@ public class FakeTestService implements TestServiceAsync {
 
     static {
 
-        int index = 0;
-        for (int i = 0; i < 100; i++, index++) {
+        int index = 1;
+        for (int i = 1; i <= 1000; i++, index++) {
             data.add(new Person(i, "https://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + index, "Field " + i, "Field " + index, "No " + i, ""));
         }
     }
@@ -62,6 +61,6 @@ public class FakeTestService implements TestServiceAsync {
             public void run() {
                 async.onSuccess(people);
             }
-        }.schedule(Math.min(500, Random.nextInt(1000)));
+        }.schedule(3000);
     }
 }
