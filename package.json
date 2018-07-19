@@ -1,5 +1,5 @@
 {
-  "name": "GwtMaterialDemo",
+  "name": "GwtMaterialApp",
   "version": "0.0.1",
   "description": "Service worker generator",
   "main": "bin/sw-builder.js",

@@ -28,6 +28,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.base.MaterialWidget;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.demo.client.application.datatable.table.Person;
 import gwt.material.design.demo.client.application.incubator.infinitescroll.service.FakeTestService;
@@ -40,7 +41,7 @@ import gwt.material.design.incubator.client.infinitescroll.data.LoadConfig;
 public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresenter.MyView {
     public interface Binder extends UiBinder<Widget, InfiniteScrollView> {
     }
-    
+
     @UiField
     InfiniteScrollPanel<Person> infiniteScrollPanel;
 
@@ -51,39 +52,26 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
     InfiniteScrollView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        infiniteScrollPanel.setLoadConfig(new LoadConfig<>(0, 50));
+        infiniteScrollPanel.setLoadConfig(new LoadConfig<>(0, 10));
         infiniteScrollPanel.setDataSource(personDataSource);
-    }
-
-    @Override
-    protected void onAttach() {
-        super.onAttach();
-
-        infiniteScrollPanel.addLoadHandler(event -> {
-            for (Person person : event.getData()) {
-                addPersonCard(person);
-            }
-        });
-
+        infiniteScrollPanel.addLoadingHandler(event -> MaterialToast.fireToast("Loading Event fired"));
+        infiniteScrollPanel.addLoadHandler(event -> MaterialToast.fireToast("Loaded Event fired"));
         infiniteScrollPanel.addCompleteHandler(event -> MaterialToast.fireToast("All data are loaded"));
+        infiniteScrollPanel.setRenderer(model -> createColumn(model));
     }
 
-    protected void addPersonCard(Person person) {
+    protected MaterialWidget createColumn(Person person) {
         MaterialColumn column = new MaterialColumn(12, 12, 3);
         MaterialCard card = new MaterialCard();
         card.setMargin(12);
         card.setPadding(40);
 
-        MaterialImage image = new MaterialImage();
-        image.setUrl("https://pbs.twimg.com/profile_images/925576484122779648/ucVTUoPg_400x400.jpg");
-        card.add(image);
-
         MaterialLabel title = new MaterialLabel(person.getFirstName());
         title.setFontWeight(Style.FontWeight.BOLD);
         card.add(title);
         card.add(new MaterialLabel("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "));
-        column.add(card);
 
-        infiniteScrollPanel.add(column);
+        column.add(card);
+        return column;
     }
 }
