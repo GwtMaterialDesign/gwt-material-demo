@@ -80,8 +80,8 @@
       </m:MaterialRow>
   
       <m:MaterialRow addStyleNames="code">
-        <m:MaterialTitle title="Get Icons from Google Material Design" />
-        <g:Frame url="https://www.google.com/design/icons/#ic_3d_rotation" width="100%" height="700px" addStyleNames="{style.frame}"/>
+        <m:MaterialTitle title="Icon List" description="Get the specific name for your icon" />
+        <m:MaterialRow ui:field="iconsRow" />
       </m:MaterialRow>
     </g:HTMLPanel>
   </m:MaterialPanel>
