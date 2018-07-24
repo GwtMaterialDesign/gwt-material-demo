@@ -1,6 +1,6 @@
 var cacheName = 'cache_1532397218326';
 
-var filesToCache = [  
+var filesToCache = [     
 'gwtmaterialdemo/051C043B53F1E940C56D0A6827F45FA4.cache.js',
 
 'gwtmaterialdemo/3624E6F75EBA1F284418242104296650.cache.js',
@@ -550,6 +550,8 @@ var filesToCache = [
 'gwtmaterialdemo/js/sidecar.v1.min.js',
 
 'index.html',
+    
+'service-worker.js',    
 
 'launcher-icons/launcher1x.png',
 
