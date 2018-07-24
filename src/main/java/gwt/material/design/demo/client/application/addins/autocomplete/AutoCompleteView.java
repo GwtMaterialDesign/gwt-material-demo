@@ -24,8 +24,6 @@ package gwt.material.design.demo.client.application.addins.autocomplete;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.SelectionEvent;
 import com.google.gwt.event.logical.shared.SelectionHandler;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,7 +31,7 @@ import com.google.gwt.user.client.ui.SuggestOracle;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
-import gwt.material.design.client.ui.MaterialModal;
+import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
@@ -49,10 +47,10 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
     }
 
     @UiField
-    MaterialAutoComplete acList, acListType, acListLimit, acModal, acValue, acDynamic;
+    MaterialAutoComplete acList, acListType, acListLimit, acDialog, acValue, acDynamic;
 
     @UiField
-    MaterialModal modal;
+    MaterialDialog dialog;
 
     @Inject
     AutoCompleteView(Binder uiBinder) {
@@ -84,7 +82,7 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         });
         acListType.setSuggestions(oracle);
         acListLimit.setSuggestions(oracle);
-        acModal.setSuggestions(oracle);
+        acDialog.setSuggestions(oracle);
 
         acListType.addValueChangeHandler(event -> {
             MaterialToast.fireToast("Value : " + acListType.getItemBox().getText());
@@ -155,14 +153,14 @@ public class AutoCompleteView extends ViewImpl implements AutoCompletePresenter.
         return list;
     }
 
-    @UiHandler("btnOpenModal")
-    void onOpenModal(ClickEvent e) {
-        modal.open();
+    @UiHandler("btnOpenDialog")
+    void onOpenDialog(ClickEvent e) {
+        dialog.open();
     }
 
     @UiHandler("btnClose")
     void onClose(ClickEvent e) {
-        modal.close();
+        dialog.close();
     }
 
     @UiHandler("getTextValue")

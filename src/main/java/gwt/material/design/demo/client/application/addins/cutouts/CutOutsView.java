@@ -56,11 +56,11 @@ public class CutOutsView extends ViewImpl implements CutOutsPresenter.MyView {
         cutout.addOpenHandler(openEvent -> {
             MaterialToast.fireToast("Open Event Fired");
         });
+        cutout.setTarget(btnCutOut);
     }
 
     @UiHandler("btnCutOut")
     void onCutOut(ClickEvent e){
-        cutout.setTarget(btnCutOut);
         cutout.open();
     }
 

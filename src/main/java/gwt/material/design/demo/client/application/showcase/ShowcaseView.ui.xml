@@ -21,8 +21,10 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
-             xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
+             xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
   <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
   <ui:style>
@@ -36,7 +38,7 @@
       background: #fff;
     }
     .panel{
-      background: url("http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");
+      background: url("https://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");
       background-size: 100%;
       padding: 0px !important;
       padding-top: 40% !important;
@@ -67,7 +69,7 @@
   
     <m:MaterialRow addStyleNames="code">
       <m:MaterialSplashScreen ui:field="splash" backgroundColor="BLUE" textColor="WHITE" textAlign="CENTER">
-        <m:MaterialImage resource="{res.ic_splash}" width="300px"/>
+        <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ic_splash.webp" fallbackExtension="png" width="300px"/>
         <m:MaterialTitle title="gwt-material" description="Material Design Look and Feel for GWT Apps" />
       </m:MaterialSplashScreen>
       <m:MaterialTitle title="SplashScreen" />
@@ -95,37 +97,37 @@
   
       <m:MaterialPanel addStyleNames="{style.parallax_demo}" m:id="parallax_demo">
         <m:MaterialParallax height="300px">
-          <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
   
         <m:MaterialParallax height="300px">
-          <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
   
         <m:MaterialParallax height="300px">
-          <m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" />
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/io1.webp" fallbackExtension="jpg"/>
         </m:MaterialParallax>
   
         <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
           &lt;m:MaterialParallax height="300px"><br/>
-            &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+            &lt;m:MaterialImage url="https://i.imgur.com/CiPPh6h.jpg" /><br/>
           &lt;/m:MaterialParallax><br/><br/>
   
           &lt;m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "/><br/><br/>
   
           &lt;m:MaterialParallax height="300px"><br/>
-            &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+            &lt;m:MaterialImage url="https://i.imgur.com/CiPPh6h.jpg" /><br/>
           &lt;/m:MaterialParallax><br/><br/>
   
           &lt;m:MaterialTitle title="Sample" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           "/><br/><br/>
   
           &lt;m:MaterialParallax height="300px"><br/>
-            &lt;m:MaterialImage url="http://i.imgur.com/CiPPh6h.jpg" /><br/>
+            &lt;m:MaterialImage url="https://i.imgur.com/CiPPh6h.jpg" /><br/>
           &lt;/m:MaterialParallax><br/>
         </demo:PrettyPre>
       </m:MaterialPanel>
@@ -137,7 +139,7 @@
         <m:MaterialColumn grid="s12 m8 l6" offset="l4" >
           <m:MaterialPanel shadow="1" addStyleNames="{style.panel}">
             <m:MaterialPanel addStyleNames="{style.fieldPanel}">
-              <m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna-medium.webp" fallbackExtension="jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/>
               <m:MaterialTextBox type="EMAIL" placeholder="Email"/>
               <m:MaterialTextBox type="PASSWORD" placeholder="Password" />
               <m:MaterialButton ui:field="btnLogin" waves="LIGHT" text="Log In" width="100%"/>
@@ -154,7 +156,7 @@
   
       <demo:PrettyPre addStyleNames="lang-css z-depth-1">
         &emsp;.panel{<br/>
-        &emsp;&emsp;background: url("http://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");<br/>
+        &emsp;&emsp;background: url("https://2.bp.blogspot.com/-x4D3EPELYRU/VMHu52a4qUI/AAAAAAAAHek/EmnIgqTtu_U/s0/fon116%2B2160x1920.png");<br/>
         &emsp;&emsp;background-size: 100%;<br/>
         &emsp;&emsp;padding: 0px !important;<br/>
         &emsp;&emsp;padding-top: 40% !important;<br/>
@@ -180,7 +182,7 @@
         &emsp;&lt;m:MaterialColumn grid="s12 m8 l6" offset="l4" ><br/>
         &emsp;&emsp;&lt;m:MaterialPanel shadow="1" addStyleNames="{style.panel}"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialPanel addStyleNames="{style.fieldPanel}"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://i.imgur.com/SHPWRjb.jpg" type="CIRCLE" addStyleNames="{style.imgProfile} z-depth-1"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="EMAIL" placeholder="Email"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialTextBox type="PASSWORD" placeholder="Password" /><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialButton ui:field="btnLogin" waves="LIGHT" text="Log In" width="100%"/><br/>

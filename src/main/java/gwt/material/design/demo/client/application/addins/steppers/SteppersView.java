@@ -30,7 +30,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.stepper.MaterialStepper;
 import gwt.material.design.addins.client.stepper.events.CompleteEvent;
-import gwt.material.design.client.ui.MaterialModal;
+import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
@@ -41,11 +41,11 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     }
 
     @UiField
-    MaterialStepper stepper, stepperCard, stepperModal, stepperHori, stepperFeedback, stepperError, stepperEvent, stepperMobile;
+    MaterialStepper stepper, stepperCard, stepperDialog, stepperHori, stepperFeedback, stepperError, stepperEvent, stepperMobile;
 
 
     @UiField
-    MaterialModal modalStepper;
+    MaterialDialog dialogStepper;
 
     @Inject
     SteppersView(Binder uiBinder) {
@@ -97,30 +97,30 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
         reset(stepperCard);
     }
 
-    @UiHandler("btnModal")
-    void onOpenModal(ClickEvent e){
-        modalStepper.open();
+    @UiHandler("btnDialog")
+    void onOpenDialog(ClickEvent e){
+        dialogStepper.open();
     }
 
     @UiHandler({"btnContinue31", "btnContinue32", "btnContinue33"})
     void onNextStep2(ClickEvent e){
-        stepperModal.nextStep();
+        stepperDialog.nextStep();
     }
 
     @UiHandler({"btnPrev31", "btnPrev32", "btnPrev33"})
     void onPrevStep2(ClickEvent e){
-        stepperModal.prevStep();
+        stepperDialog.prevStep();
     }
 
-    @UiHandler("stepperModal")
+    @UiHandler("stepperDialog")
     void onFinish3(CompleteEvent e){
-        reset(stepperModal);
-        modalStepper.close();
+        reset(stepperDialog);
+        dialogStepper.close();
     }
 
     @UiHandler({"btnError", "btnError1", "btnError2"})
     void onError(ClickEvent e){
-        stepperError.setError("Alert Error");
+        stepperError.setErrorText("Alert Error");
     }
 
     @UiHandler({"btnSuccess", "btnSuccess1", "btnSuccess2"})

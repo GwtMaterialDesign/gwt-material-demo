@@ -21,12 +21,17 @@ package gwt.material.design.demo.client.application.addins.overlay;
  */
 
 
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.overlay.MaterialOverlay;
+import gwt.material.design.addins.client.overlay.MaterialOverlayTab;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialLabel;
+import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.ThemeManager;
 
@@ -41,8 +46,11 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
     MaterialOverlay overlay, overlayEvents, overlayParent, overlayChild, overlayChild2;
 
     @UiField
-    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents,
+    MaterialButton btnOpenOverlay, btnOpenOverlayEvents, btnCloseOverlay, btnCloseOverlayEvents, btnOverlayTab,
             btnCloseParent, btnOpenChild, btnOpenParent, btnCloseChild, btnOpenChild2, btnCloseChild2;
+
+    @UiField
+    MaterialPanel panel;
 
     @Inject
     OverlayView(Binder uiBinder) {
@@ -68,5 +76,41 @@ public class OverlayView extends ViewImpl implements OverlayPresenter.MyView {
         btnCloseChild.addClickHandler(clickEvent -> overlayChild.close());
         btnOpenChild2.addClickHandler(clickEvent -> overlayChild2.open(btnOpenChild2));
         btnCloseChild2.addClickHandler(clickEvent -> overlayChild2.close());
+
+        /**
+         * TODO Overlay Container minimize sample
+         */
+        MaterialOverlayTab overlayContainer = new MaterialOverlayTab();
+        panel.add(overlayContainer);
+        for (int i = 1; i <= 5; i++) {
+            MaterialOverlay overlay = new MaterialOverlay();
+            overlay.setBackgroundColor(Color.WHITE);
+            overlay.setPadding(20);
+
+            MaterialLabel lblLabel = new MaterialLabel("Some Description " + i);
+            lblLabel.setFontSize("1em");
+            overlay.add(lblLabel);
+
+            MaterialLabel lblTitle = new MaterialLabel("Overlay Title " + i);
+            lblTitle.setFontSize("2em");
+            lblTitle.setFontWeight(Style.FontWeight.BOLD);
+            overlay.add(lblTitle);
+
+            MaterialLabel lblNumber = new MaterialLabel(i + "");
+            lblNumber.addStyleName("number");
+            overlay.add(lblNumber);
+
+            // Set the tab overlay for minimize function
+            overlay.setOverlayTab(overlayContainer);
+            panel.add(overlay);
+
+            MaterialButton btnOpen = new MaterialButton("Open " + i);
+            btnOpen.setMargin(20);
+            btnOpen.addClickHandler(e -> {
+                overlay.open(btnOpen);
+            });
+            panel.add(btnOpen);
+            overlayContainer.setActivator(btnOverlayTab);
+        }
     }
 }

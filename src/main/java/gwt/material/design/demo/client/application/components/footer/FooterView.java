@@ -22,17 +22,28 @@ package gwt.material.design.demo.client.application.components.footer;
 
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.client.ui.MaterialFooter;
 
 import javax.inject.Inject;
 
 public class FooterView extends ViewImpl implements FooterPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, FooterView> {
     }
+
+    @UiField
+    MaterialFooter footer;
 
     @Inject
     FooterView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    public void resetFooter() {
+        footer.setMarginLeft(0);
     }
 }

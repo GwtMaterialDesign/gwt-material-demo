@@ -19,12 +19,14 @@
   -->
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-     xmlns:g="urn:import:com.google.gwt.user.client.ui"
-     xmlns:m="urn:import:gwt.material.design.client.ui"
-     xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
-     xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:showcase="urn:import:gwt.material.design.demo.client.application.showcase.pathanimator"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
-  <ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+  <ui:with field="res" type="gwt.material.design.demo.client.resources.MaterialResources"/>
 
   <ui:style>
     .rowCards{
@@ -90,14 +92,14 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialTitle title="Card Image" />
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample"/>
             </m:MaterialCardImage>
 
@@ -114,7 +116,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
               <m:MaterialCardTitle text="Sample" />
             </m:MaterialCardImage>
 
@@ -135,7 +137,7 @@
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
         &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/ac9bf2ac-bf1c-4dc0-b655-0e13bf523bc8/20150710-__.png"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample"/><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -150,7 +152,7 @@
         &emsp;&lt;m:MaterialColumn grid="l3"><br/>
         &emsp;&emsp;&lt;m:MaterialCard backgroundColor="WHITE"><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
+        &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/0a2a2331-daa8-46a1-86e1-3ad154d3c5db/open-uri20150804-3-rnmrsb"/><br/>
         &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialCardTitle text="Sample" /><br/>
         &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
         &emsp;&emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -165,15 +167,15 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <!-- Horizontal Card implementation -->
       <m:MaterialTitle title="Horizontal Type" description="This card is good for short contents and not too may actions. For best view you are required to set the column grid='l6 m6 s12'." />
       <m:MaterialRow>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -188,9 +190,9 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -205,9 +207,9 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -222,16 +224,16 @@
           </m:MaterialCard>
         </m:MaterialColumn>
         <m:MaterialColumn grid="l6 m6 s12">
-          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE">
+          <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
             </m:MaterialCardImage>
-      
+
             <m:MaterialCardContent textColor="BLACK">
               <m:MaterialLabel text="Title of your card" fontSize="1.5em" addStyleNames="truncate" />
               <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" addStyleNames="truncate"/>
             </m:MaterialCardContent>
-      
+
             <m:MaterialCardAction>
               <m:MaterialLink iconType="SHARE" textColor="BLACK" />
               <m:MaterialLink iconType="LOCATION_ON" textColor="RED" />
@@ -241,9 +243,9 @@
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
-        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE"><br/>
+        &emsp;&lt;m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true"><br/>
         &emsp;&emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
-        &emsp;&emsp;&emsp;&lt;m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
+        &emsp;&emsp;&emsp;&lt;m:MaterialImage url="https://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/><br/>
         &emsp;&emsp;&lt;/m:MaterialCardImage><br/>
 
         &emsp;&emsp;&lt;m:MaterialCardContent textColor="BLACK"><br/>
@@ -265,7 +267,7 @@
       <m:MaterialColumn grid="l6 m6 s12">
         <m:MaterialCard backgroundColor="WHITE" orientation="LANDSCAPE" detectOrientation="true">
           <m:MaterialCardImage waves="LIGHT">
-            <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" height="146px"/>
           </m:MaterialCardImage>
 
           <m:MaterialCardContent textColor="BLACK">
@@ -287,7 +289,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/b6992fb2-7bf4-401d-a233-e34a486b9337/gif.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/wind-mill.gif" />
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -309,7 +311,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/da7543d9-820f-4e52-bfaf-22256134478f/running_for_dribbble.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/shoes.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -331,7 +333,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/46a95311-6384-4cc3-882e-347894f8acb7/google_material_design_a_visual_language.gif"/>
+              <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/md.gif"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -351,7 +353,7 @@
         </m:MaterialColumn>
       </m:MaterialRow>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Complex Example" description="You can reorganize your card elements freely." />
       <m:MaterialRow>
@@ -359,7 +361,7 @@
           <m:MaterialCard>
             <m:MaterialCardContent>
               <m:MaterialRow marginBottom="0">
-                <m:MaterialImage url="https://lh3.googleusercontent.com/-Zu_vZFIl9Ms/AAAAAAAAAAI/AAAAAAAAALk/2pPyCa-IKHg/s60-p-rw-no/photo.jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
+                <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.webp" fallbackExtension="jpg" width="50" height="50" circle="true" float="LEFT" marginRight="20"/>
                 <m:MaterialLabel fontWeight="BOLD" text="Mark Kevin Baldemor" fontSize="1.2em" float="LEFT" marginTop="20"/>
                 <m:MaterialLabel text="2d"  textColor="GREY" float="RIGHT" marginTop="20" marginRight="20"/>
               </m:MaterialRow>
@@ -374,7 +376,7 @@
               </m:MaterialRow>
             </m:MaterialCardContent>
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/SgPPF0Bd5hkPRjb36VHPNay8nYGtprFwxSkbHprpZ65TitKXkVOVquPxPdlsoXKHCIdQ=w1366-h768-rw-no" />
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/boat.webp" fallbackExtension="png" />
             </m:MaterialCardImage>
             <m:MaterialCardAction padding="0">
               <m:MaterialRow margin="12">
@@ -386,7 +388,7 @@
               <!-- Collection items for comments -->
               <m:MaterialCollection>
                 <m:MaterialCollectionItem type="AVATAR">
-                  <m:MaterialImage url="http://materializecss.com/images/yuna.jpg" circle="true" width="40px" height="40px"/>
+                  <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/yuna.webp" fallbackExtension="jpg" circle="true" width="40px" height="40px"/>
                   <m:MaterialLabel text="Yuna" fontWeight="BOLD" />
                   <m:MaterialLabel text="I grew up in the island of the Philippines. The water is clear. Some are not sandy. Water is just the right temperature." />
                 </m:MaterialCollectionItem>
@@ -395,7 +397,7 @@
           </m:MaterialCard>
         </m:MaterialColumn>
       </m:MaterialRow>
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialRow><br/>
         &emsp;&lt;m:MaterialColumn grid="l6 m6 s12"><br/>
@@ -440,16 +442,16 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialRow>
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="INDIGO_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/v5qz9KgMteM2F00tvu9mV9N41Ln1b3rubQnhDmLuRsI=w640-h360-p-rw" />
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-1.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="http://lh3.googleusercontent.com/-mGTYed3Uh-E/AAAAAAAAAAI/AAAAAAAAHXA/GZnkarBLO-s/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="Android Development Patterns"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Android Developers" />
             </m:MaterialCardContent>
@@ -458,14 +460,14 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="RED_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/DMTdZh55gQ6JBQ4KULiBiiCo3WRf9XuBaHLNFXqTWPsS=w640-h360-p-rw" />
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-2.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-JOiqGeJfHXs/AAAAAAAAAAI/AAAAAAAAUgE/CAlteQBqWsM/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="King Leonidas and the 300 Spartans"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="John Trikeriotis" />
             </m:MaterialCardContent>
@@ -474,14 +476,14 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="TEAL_LIGHTEN_1">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/bZenq_jiiKus6UQfnH65Uic17EAfqBccYxvY0T2w_wZ4=w640-h360-p-rw" />
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-3.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-sRjeG8XQnxI/AAAAAAAAAAI/AAAAAAAB6Fw/naUHR3Tuyc4/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="RESEARCH"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Corina Marinescu" />
             </m:MaterialCardContent>
@@ -490,14 +492,14 @@
             </m:MaterialCardAction>
           </m:MaterialCard>
         </m:MaterialColumn>
-  
+
         <m:MaterialColumn grid="l3 m4 s12">
           <m:MaterialCard backgroundColor="BLACK">
             <m:MaterialCardImage>
-              <m:MaterialImage url="https://lh3.googleusercontent.com/CHlbnXIMkFaTM7er_fH-A0lXa1M4l4BkeK85544v9BoE=w640-h360-p-rw" />
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card-4.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
             <m:MaterialCardContent textColor="WHITE" height="120px">
-              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="//lh3.googleusercontent.com/-d6TaGsKjLdA/AAAAAAAAAAI/AAAAAAAAmtw/6-wPaVdToHY/s24-p-rw-no/photo.jpg" circle="true" width="32px" height="32px" />
+              <m:MaterialImage layoutPosition="ABSOLUTE" marginTop="-32" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/profile.jpg" circle="true" width="32px" height="32px" />
               <m:MaterialLabel fontSize="1.5em" text="A few of my Favorite Words"/>
               <m:MaterialLabel opacity="0.6" marginTop="4" text="Peter Noah Thomas" />
             </m:MaterialCardContent>
@@ -527,11 +529,11 @@
         &lt;/m:MaterialRow><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Card with FAB" description="You can easily attach FAB into your card by setting the layout position of your FAB."/>
       <showcase:PathAnimatorShowcase />
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
         &emsp;&lt;m:MaterialCard backgroundColor="WHITE" textColor="WHITE"><br/>
         &emsp;&lt;m:MaterialCardImage waves="LIGHT"><br/>
@@ -549,7 +551,7 @@
         &lt;/m:MaterialCard><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-    
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Grid Card Animation" />
       <demo:PrettyPre addStyleNames="lang-java">
@@ -567,11 +569,11 @@
         &lt;/m:MaterialRow ui:field="rowCards"><br/>
       </demo:PrettyPre>
       <m:MaterialButton ui:field="btnShow" text="Show Cards" backgroundColor="WHITE" textColor="BLACK"/>
-      <m:MaterialRow ui:field="rowCards" addStyleNames="{style.rowCards}">
+      <m:MaterialRow ui:field="rowCards" layoutPosition="RELATIVE" addStyleNames="{style.rowCards}">
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -593,7 +595,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -615,7 +617,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -637,7 +639,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -659,7 +661,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -681,7 +683,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -703,7 +705,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -725,7 +727,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -747,7 +749,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">
@@ -769,7 +771,7 @@
         <m:MaterialColumn grid="l3">
           <m:MaterialCard backgroundColor="WHITE">
             <m:MaterialCardImage waves="LIGHT">
-              <m:MaterialImage url="http://assets.materialup.com/uploads/1a30c800-ae76-4a17-8b00-c3b81da7bd24/fold_sm.png"/>
+              <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/card.webp" fallbackExtension="png"/>
             </m:MaterialCardImage>
 
             <m:MaterialCardContent textColor="BLACK">

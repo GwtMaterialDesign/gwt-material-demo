@@ -141,22 +141,22 @@
 
         <m:MaterialRow addStyleNames="code">
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
-            <m:MaterialTitle title="Inside Modal" description="We supported any Rich Editor to be embeded inside a modal" />
-            <m:MaterialButton ui:field="openModal" marginBottom="20" text="Open Modal" />
-            <m:MaterialModal ui:field="modal" type="FIXED_FOOTER">
-                <m:MaterialModalContent padding="0">
+            <m:MaterialTitle title="Inside Dialog" description="We supported any Rich Editor to be embeded inside a dialog" />
+            <m:MaterialButton ui:field="openDialog" marginBottom="20" text="Open Dialog" />
+            <m:MaterialDialog ui:field="dialog" type="FIXED_FOOTER">
+                <m:MaterialDialogContent padding="0">
                     <ma:richeditor.MaterialRichEditor padding="0" placeholder="Type everything about Material Design"/>
-                </m:MaterialModalContent>
-                <m:MaterialModalFooter textAlign="RIGHT">
-                    <m:MaterialButton ui:field="closeModal" type="FLAT" text="Close" />
-                </m:MaterialModalFooter>
-            </m:MaterialModal>
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter textAlign="RIGHT">
+                    <m:MaterialButton ui:field="closeDialog" type="FLAT" text="Close" />
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
             <demo:PrettyPre addStyleNames="code">
-                &emsp;&lt;m:MaterialModal padding="0" ui:field="modal"><br/>
-                &emsp;&lt;m:MaterialModalContent padding="0"><br/>
+                &emsp;&lt;m:MaterialDialog padding="0" ui:field="dialog"><br/>
+                &emsp;&lt;m:MaterialDialogContent padding="0"><br/>
                 &emsp;&emsp;&lt;ma:richeditor.MaterialRichEditor placeholder="Type everything about Material Design"/><br/>
-                &emsp;&lt;/m:MaterialModalContent><br/>
-                &lt;/m:MaterialModal><br/>
+                &emsp;&lt;/m:MaterialDialogContent><br/>
+                &lt;/m:MaterialDialog><br/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </g:HTMLPanel>

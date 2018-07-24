@@ -1,0 +1,162 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic Examples" />
+            <demo:ExternalLibrary text="jQuery-Mask-Plugin 1.14.10" link="https://github.com/Foliotek/Croppie" marginBottom="40"/>
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="Phone Number" placeholder="eg: 000-00-0000000" mask="000-00-0000000" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Phone with Odd" placeholder="eg: (00) 0000-0000" mask="(00) 0000-0000" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="US Phone Number" placeholder="eg: (000) 000-000" mask="(000) 000-000" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="CEP" placeholder="eg: 00000-000" mask="00000-000" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="CPF" placeholder="eg: 000.000.000-00" mask="000.000.000-00" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Money" placeholder="eg: 000,000,000,000,000.00" mask="000,000,000,000,000.00" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialRow><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Phone Number" placeholder="eg: 000-00-0000000" mask="000-00-0000000" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Phone with Odd" placeholder="eg: (00) 0000-0000" mask="(00) 0000-0000" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="US Phone Number" placeholder="eg: (000) 000-000" mask="(000) 000-000" grid="s12 m4 l4"/><br/>
+                &lt;/m:MaterialRow><br/>
+                &lt;m:MaterialRow><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="CEP" placeholder="eg: 00000-000" mask="00000-000" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="CPF" placeholder="eg: 000.000.000-00" mask="000.000.000-00" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Money" placeholder="eg: 000,000,000,000,000.00" mask="000,000,000,000,000.00" grid="s12 m4 l4"/><br/>
+                &lt;/m:MaterialRow><br/>
+                &lt;m:MaterialRow><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" grid="s12 m4 l4"/><br/>
+                &emsp;&lt;ma:inputmask.MaterialInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" grid="s12 m4 l4"/><br/>
+                &lt;/m:MaterialRow><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Reverse" description="The mask will be placed from the right to the left if reverse is true (Default : false)" />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" reverse="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" reverse="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" reverse="true" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:inputmask.MaterialInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" reverse="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" reverse="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" reverse="true" grid="s12 m4 l4"/><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Clear If not Match" description="The textfield will automatically clears whenever the value is not match with the mask provided. (Default : false)" />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" clearIfNotMatch="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" clearIfNotMatch="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" clearIfNotMatch="true" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:inputmask.MaterialInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" clearIfNotMatch="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" clearIfNotMatch="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" clearIfNotMatch="true" grid="s12 m4 l4"/><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Select on Focus" description="Set whether you want to set on focus on your mask for easy selection." />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" selectOnFocus="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" selectOnFocus="true" grid="s12 m4 l4"/>
+                <ma:inputmask.MaterialTextInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" selectOnFocus="true" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:inputmask.MaterialInputMask label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" selectOnFocus="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Percentage" placeholder="eg: 000000.00%" mask="000000.00%" selectOnFocus="true" grid="s12 m4 l4"/><br/>
+                &lt;ma:inputmask.MaterialInputMask label="Credit Card" placeholder="eg: 0000 0000 0000 0000" mask="0000 0000 0000 0000" selectOnFocus="true" grid="s12 m4 l4"/><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Types" description="We supported type safe Input Masks" />
+            <ma:inputmask.MaterialTextInputMask ui:field="maskString" placeholder="eg. A0A-1A1" mask="S0S-0S0" label="String" grid="s12"/>
+
+            <ma:inputmask.MaterialIntegerInputMask ui:field="maskInteger" mask="000-00-000" label="Integer" grid="s12"/>
+
+            <ma:inputmask.MaterialDoubleInputMask ui:field="maskDouble" mask="000-00-00000" label="Double" grid="s12"/>
+
+            <ma:inputmask.MaterialFloatInputMask ui:field="maskFloat" mask="000-00-0000" label="Float" grid="s12"/>
+
+            <ma:inputmask.MaterialLongInputMask ui:field="maskLong" mask="000-00-0000000" label="Long" grid="s12"/>
+
+            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="MM/dd/yyyy" autoValidate="true" label="Date" grid="s12"/>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Get Value" description="Gets the value of the field with the mask." />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask ui:field="maskValue" label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" reverse="true" grid="s12 m4 l4"/>
+                <m:MaterialColumn grid="s12">
+                    <m:MaterialButton ui:field="btnGetValue" text="Get Value" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-java">
+                inputMask.getValue();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Get Clean Value" description="Gets the value of the field without the mask." />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask ui:field="maskCleanValue" label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" reverse="true" grid="s12 m4 l4"/>
+                <m:MaterialColumn grid="s12">
+                    <m:MaterialButton ui:field="btnGetCleanValue" text="Get Clean Value" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-java">
+                inputMask.getCleanValue();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Unmask and Mask control" description="Programmatically controls the Input Mask main methods." />
+            <m:MaterialRow>
+                <ma:inputmask.MaterialTextInputMask ui:field="unmask" label="Ip Address" placeholder="eg: 000.000.000.000" mask="000.000.000.000" reverse="true" grid="s12 m4 l4"/>
+                <m:MaterialColumn grid="s12">
+                    <m:MaterialButton ui:field="btnUnmask" text="Unmask" backgroundColor="WHITE" textColor="BLACK" marginRight="12" />
+                    <m:MaterialButton ui:field="btnMask" text="mask" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;inputMask.mask("00.00"); <br/>
+                inputMask.unmask();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>

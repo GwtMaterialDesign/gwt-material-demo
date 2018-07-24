@@ -1,0 +1,144 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+>
+    <m:MaterialRow>
+        <m:MaterialColumn addStyleNames="s12">
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTitle scrollspy="datatable_usage" title="Usage"/>
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;-- UiBinder Import -->
+                    <br/>
+                    xmlns:m.table='urn:import:gwt.material.design.client.ui.table'
+                    <br/>
+                    &lt;!-- Sample Code -->
+                    <br/>
+                    &lt;m.table:MaterialDataTable ui:field="table"
+                    <br/>
+                    height="calc(100vh - 131px)"
+                    <br/>
+                    useCategories="true"
+                    <br/>
+                    useRowExpansion="true"
+                    <br/>
+                    selectionType="SINGLE"/>
+                </demo:PrettyPre>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE"
+                                 float="RIGHT" backgroundColor="AMBER_LIGHTEN_5"/>
+                <m:MaterialTitle title="Frozen Column"
+                                 description="Note: Frozen columns does not support useStickyHeader and side='RIGHT' at the moment. Stay tune for any updates on this features."/>
+                <m:MaterialRow>
+                    <m:MaterialColumn grid="s12 l3" marginTop="28">
+                        <m:MaterialCheckBox ui:field="cbCategories" type="FILLED" value="false" text="With Categories"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12 l3" marginTop="28">
+                        <m:MaterialCheckBox ui:field="cbRowExpansion" type="FILLED" value="false"
+                                            text="With Row Expansion"/>
+                    </m:MaterialColumn>
+                    <ma:combobox.MaterialComboBox grid="s12 l3" ui:field="listSelectionType" hideSearch="false"
+                                                  label="Selection Type"/>
+                </m:MaterialRow>
+
+                <m:MaterialRow>
+                    <m:MaterialColumn grid="s12 l3">
+                        <m:MaterialButton ui:field="getFirstRow" marginBottom="8" text="Get 1st Row"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12 l3">
+                        <m:MaterialButton ui:field="updateFirstRow" marginBottom="8" text="Update 1st Row"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12 l3">
+                        <m:MaterialButton ui:field="disabledFirstRow" marginBottom="8" text="Disable 1st Row"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+                <m:table.MaterialDataTable ui:field="table"
+                                           shadow="1"
+                                           rowHeight="60"
+                                           height="400px"
+                                           useStickyHeader="false"
+                                           useCategories="true"
+                                           useRowExpansion="false"
+                                           selectionType="SINGLE"/>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTitle title="Notice"
+                                 description="Some caveat you must do first before implementing the frozen column in the datatable"/>
+                <m:MaterialCollection>
+                    <m:MaterialCollectionItem>
+                        <m:MaterialLink iconType="RADIO_BUTTON_CHECKED" text="Set your useStickHeader to false"
+                                        display="BLOCK"/>
+                    </m:MaterialCollectionItem>
+                    <m:MaterialCollectionItem>
+                        <m:MaterialLink iconType="RADIO_BUTTON_CHECKED" text="RIGHT Frozen Column does not support yet"
+                                        display="INLINE_BLOCK"/>
+                    </m:MaterialCollectionItem>
+                </m:MaterialCollection>
+            </m:MaterialRow>
+
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTitle title="Frozen Properties"
+                                 description="The row cells that are made frozen will no longer follow the rules of the tables row. This means that all the cells positioning of content needs to be manually set up. Here is the configuration to your column."/>
+                <demo:PrettyPre addStyleNames="lang-java">
+                    &emsp;table.addColumn(new TextColumn&lt;Person>() {
+                    <br/>
+                    &emsp;@Override
+                    <br/>
+                    &emsp;public Comparator&lt;? super RowComponent&lt;Person>> sortComparator() {
+                    <br/>
+                    &emsp;&emsp;return (o1, o2) ->
+                    o1.getData().getFirstName().compareToIgnoreCase(o2.getData().getFirstName());
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp;@Override
+                    <br/>
+                    &emsp;public String getValue(Person object) {
+                    <br/>
+                    &emsp;&emsp;return object.getFirstName();
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    <br/>
+
+                    &emsp;@Override
+                    &emsp;public FrozenProperties frozenProperties() {
+                    <br/>
+                    &emsp;&emsp;FrozenProperties frozenProperties = new FrozenProperties("100px", "60px");
+                    <br/>
+                    &emsp;&emsp;return frozenProperties;
+                    <br/>
+                    &emsp;}
+                    <br/>
+                    }, "First Name");
+                </demo:PrettyPre>
+            </m:MaterialRow>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

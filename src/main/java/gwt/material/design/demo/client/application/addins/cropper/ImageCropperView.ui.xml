@@ -1,0 +1,81 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Usage" />
+            <demo:ExternalLibrary text="Croppie 2.5.0" link="https://github.com/Foliotek/Croppie" marginBottom="40"/>
+            <m:MaterialRow>
+                <ma:cropper.MaterialImageCropper url="https://i.imgur.com/CiPPh6h.jpg" ui:field="cropper" />
+            </m:MaterialRow>
+
+            <!-- ViewPort -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboViewPortWidth" label="ViewPort Width" grid="s12 m6 l6" />
+                <ma:combobox.MaterialComboBox ui:field="comboViewPortHeight" label="ViewPort Height" grid="s12 m6 l6" />
+            </m:MaterialRow>
+
+            <!-- Boundary -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboBoundaryWidth" label="Boundary Width" grid="s12 m6 l6" />
+                <ma:combobox.MaterialComboBox ui:field="comboBoundaryHeight" label="Boundary Height" grid="s12 m6 l6" />
+            </m:MaterialRow>
+
+            <!-- Boolean Options -->
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialCheckBox ui:field="enableZoom" type="FILLED" value="true" text="Enable Zoom" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableResize" type="FILLED" value="true" text="Resize" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableMouseWheelZoom" type="FILLED" value="true" text="Mouse Wheel Zoom" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialCheckBox ui:field="showZoomer" type="FILLED" value="true" text="Show Zoomer Slider" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enableOrientation" type="FILLED" value="true" text="Orientation" grid="s12 m4 l4"/>
+                <m:MaterialCheckBox ui:field="enforceBoundary" type="FILLED" value="true" text="Enforce Boundary" grid="s12 m4 l4"/>
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <ma:combobox.MaterialComboBox ui:field="comboShape" label="Shape" />
+            </m:MaterialRow>
+
+            <m:MaterialRow grid="s12 m6 l6" offset="m3 l3">
+                <m:MaterialColumn grid="s12 m6 l6">
+                    <m:MaterialButton text="Crop" ui:field="crop" width="100%"/>
+                </m:MaterialColumn>
+                <m:MaterialColumn grid="s12 m6 l6">
+                    <m:MaterialButton text="Rotate" ui:field="rotate" width="100%"/>
+                </m:MaterialColumn>
+            </m:MaterialRow>
+        </m:MaterialRow>
+
+        <m:MaterialDialog ui:field="dialog">
+            <m:MaterialDialogContent textAlign="CENTER">
+                <m:MaterialImage ui:field="croppedImage" />
+            </m:MaterialDialogContent>
+            <m:MaterialDialogFooter>
+                <m:MaterialButton ui:field="close" type="FLAT" text="Close" waves="DEFAULT" />
+            </m:MaterialDialogFooter>
+        </m:MaterialDialog>
+    </m:MaterialPanel>
+</ui:UiBinder>

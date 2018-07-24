@@ -1,0 +1,545 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+    
+    <m:MaterialPanel>
+        <!-- Single Item -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Single Item" description="By default carousel has only one item per navigation." />
+            <demo:ExternalLibrary text="SlickJs 1.6.0" link="https://github.com/kenwheeler/slick" marginBottom="40"/>
+            <ma:carousel.MaterialCarousel ui:field="singleItemCarousel" textAlign="CENTER">
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER"><br/>
+                &emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;!-- Other Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Multiple Items -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Multiple Item" description="By adding slidesToShow='3', you can easily set the number of items to show.On the other hand slidesToScroll='3', sets the number of slides to scroll."/>
+            <ma:carousel.MaterialCarousel ui:field="multipleItemCarousel" textAlign="CENTER" slidesToShow="3" slidesToScroll="3">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>        
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Variable Width -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Variable Width" description="Allow any child that has different width sizes."/>
+            <ma:carousel.MaterialCarousel ui:field="variableWidthCarousel" textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3">
+                <m:MaterialPanel width="125px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="200px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="175px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="150px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="300px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="225px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="225px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="150px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="300px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel width="250px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="250px" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" centerMode="true" variableWidth="true" slidesToShow="3"><br/>
+                &emsp;&lt;m:MaterialPanel width="125px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel width="200px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;m:MaterialPanel width="175px" margin="4" shadow="1" paddingTop="80" backgroundColor="WHITE" padding="20" height="200px"><br/>
+                &emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" /><br/>
+                &emsp;&lt;/m:MaterialPanel><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Adaptive Height-->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Adaptive Height" description="Enables adaptive height for single slide horizontal carousels."/>
+            <ma:carousel.MaterialCarousel ui:field="adaptiveHeightCarousel" textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" >
+                <m:MaterialPanel height="100px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="40">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="125px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="200px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="90">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="200px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="175px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="80">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="175px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="150px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="60">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="150px" />
+                </m:MaterialPanel>
+                <m:MaterialPanel height="300px" margin="4" shadow="1" backgroundColor="WHITE" padding="20" paddingTop="140">
+                    <m:MaterialLabel textColor="BLUE" fontSize="1em" fontWeight="BOLD" text="300px" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" infinite="true" speed="300" slidesToShow="1" adaptiveHeight="true" ><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Responsive Mode -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Responsive Options" description="You can set specific options on any screen sizes."/>
+            <ma:carousel.MaterialCarousel ui:field="carouselResponsiveCarousel" textAlign="CENTER">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;carouselResponsive.setSlidesToShow(5); <br/>
+                carouselResponsive.setSlidesToScroll(5); <br/><br/>
+
+                // Tablet Settings <br/>
+                JsCarouselOptions tabletSettings = new JsCarouselOptions(); <br/>
+                tabletSettings.slidesToShow = 2; <br/>
+                tabletSettings.slidesToScroll = 2; <br/>
+                carouselResponsive.setTabletSettings(tabletSettings); <br/><br/>
+
+                // Mobile Settings <br/>
+                JsCarouselOptions mobileSettings = new JsCarouselOptions(); <br/>
+                mobileSettings.slidesToShow = 1; <br/>
+                mobileSettings.slidesToScroll = 1; <br/>
+                carouselResponsive.setMobileSettings(mobileSettings);
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Auto play -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Autoplay" description="Enabled autoplay with Slides. The default autoplay speed is 3000 ms or 3 seconds."/>
+            <ma:carousel.MaterialCarousel ui:field="autoplayCarousel" textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre>
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" slidesToShow="3" slidesToScroll="3" autoplay="true" autoplaySpeed="2000" infinite="true"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Auto play -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Display control widgets" description="You can control the visibility of control navigations by showDots='false', showArrow='false'."/>
+            <ma:carousel.MaterialCarousel ui:field="displayControlCarousel" textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true">
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="4" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="5" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="6" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="7" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="8" />
+                </m:MaterialPanel>
+                <m:MaterialPanel margin="4" shadow="1" paddingTop="50" backgroundColor="WHITE" padding="20" height="200px">
+                    <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="9" />
+                </m:MaterialPanel>
+            </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel textAlign="CENTER" showDots="false" showArrows="false" slidesToShow="3" slidesToScroll="3" infinite="true"><br/>
+                &emsp;&lt;!-- Items here --><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Add / Remove -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Add / Remove Slide" description="We provided a dynamic way to add / remove slide items into the carousel." />
+            <m:MaterialRow>
+                <m:MaterialButton margin="4" text="Add Slide" ui:field="btnAdd" />
+                <m:MaterialButton margin="4" text="Remove Slide" ui:field="btnRemove" />
+                <ma:carousel.MaterialCarousel ui:field="dynamicCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+                </ma:carousel.MaterialCarousel>
+            </m:MaterialRow>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;btnAdd.addClickHandler(e -> { <br/>
+                &emsp;MaterialImage img = new MaterialImage("//i.imgur.com/8XlWy0H.png"); <br/>
+                &emsp;img.addClickHandler(e1 -> { <br/>
+                &emsp;&emsp;MaterialToast.fireToast("Clicked on Image"); <br/>
+                &emsp;}); <br/>
+                &emsp;carouselDynamic.add(img); <br/>
+                }); <br/><br/>
+
+                btnRemove.addClickHandler(e -> { <br/>
+                &emsp;carouselDynamic.remove(1); <br/>
+                }); <br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Custom Implementations -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Type Image" description="This Carousel type is good for image slider."/>
+            <ma:carousel.MaterialCarousel ui:field="imageTypeCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="code">
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" infinite="true"><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Fade -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Fade" description="Enable Fade Transition by calling fade='true'."/>
+            <ma:carousel.MaterialCarousel ui:field="fadeCarousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+            </ma:carousel.MaterialCarousel>
+            
+            <demo:PrettyPre addStyleNames="code">
+                &emsp;&lt;ma:carousel.MaterialCarousel type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500"><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/8XlWy0H.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/dQdwYhS.png" /><br/>
+                &emsp;&lt;m:MaterialImage url="//i.imgur.com/TTAG5CS.png" /><br/>
+                &lt;/ma:carousel.MaterialCarousel><br/>
+
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Events" description="We provided events on carousel to determine the updates on each navigation" />
+            <ma:carousel.MaterialCarousel ui:field="eventsCarousel" type="IMAGE" width="100%" textAlign="CENTER" infinite="true">
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+            </ma:carousel.MaterialCarousel>
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;carouselEvents.addAfterChangeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("AfterChangeEvent : " + e.getCurrentSlide() + " Current Slide");<br/>
+                });<br/><br/>
+
+                carouselEvents.addBeforeChangeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("BeforeChangeEvent : " + e.getCurrentSlide() + "Current Slide " + e.getNextSlide() + " Next Slide");<br/>
+                });<br/><br/>
+
+                carouselEvents.addInitHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("InitEvent");<br/>
+                });<br/><br/>
+
+                carouselEvents.addDestroyHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("DestroyEvent");<br/>
+                });<br/><br/>
+
+                carouselEvents.addSwipeHandler(e -> {<br/>
+                &emsp;MaterialToast.fireToast("SwipeEvent : " + e.getDirection() + " Direction");<br/>
+                });
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Type : Onboard" description="Good for initial walkthrough to define your app features." />
+            <m:MaterialButton text="Display OnBoard" ui:field="displayOnboard" waves="DEFAULT"/>
+            <ma:carousel.MaterialCarousel ui:field="onboardCarousel" visible="false" type="ONBOARD" layoutPosition="FIXED" depth="10000" edgeFriction="0">
+                <m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-1.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+                <m:MaterialRow textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-2.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+                <m:MaterialRow textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
+                    <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/onboard-3.webp" fallbackExtension="png" grid="s12 m6 l12"/>
+                    <m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                        <m:MaterialLabel fontSize="1.2em" text="Share with Anyone" />
+                        <m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" />
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+                <ma:carousel.MaterialCarouselFixedItem m:id="demo-carousel-fixed" textAlign="CENTER">
+                    <m:MaterialButton text="Hide Onboard" ui:field="hideOnboard" waves="DEFAULT"/>
+                </ma:carousel.MaterialCarouselFixedItem>
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="onboard" type="ONBOARD" layoutPosition="FIXED" edgeFriction="0">
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="CYAN">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/FrUsXh5.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="ORANGE_LIGHTEN_1">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/tW97qZR.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &emsp;&lt;m:MaterialRow textColor="WHITE" backgroundColor="GREEN_LIGHTEN_1">
+                &emsp;&emsp;&lt;m:MaterialImage url="//i.imgur.com/ZleLHGF.png" grid="s12 m6 l12" /><br/>
+                &emsp;&emsp;&lt;m:MaterialColumn grid="s12 m6 l12" marginTop="40">
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="1.2em" text="Share with Anyone" /><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel fontSize="0.8em" text="Give others access to any file or folder you choose" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialColumn>
+                &emsp;&lt;/m:MaterialRow>
+                &lt;/ma:carousel.MaterialCarousel>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Methods -->
+        <m:MaterialRow ui:field="container" addStyleNames="code">
+            <m:MaterialTitle title="Methods" description="We provided bunch of methods that help you customize the carousel."/>
+            <m:MaterialButton margin="4" ui:field="btnGetCurrentSlide" text="Get Current Slide Index" />
+            <m:MaterialButton margin="4" ui:field="btnNext" text="Next" />
+            <m:MaterialButton margin="4" ui:field="btnPrev" text="Previous" />
+            <m:MaterialButton margin="4" ui:field="btnGoTo" text="Go to 2nd slide" />
+            <m:MaterialButton margin="4" ui:field="btnPause" text="Pause" />
+            <m:MaterialButton margin="4" ui:field="btnPlay" text="Play" />
+            <ma:carousel.MaterialCarousel ui:field="methodsCarousel" type="IMAGE" width="100%" textAlign="CENTER" fade="true" infinite="true" speed="500">
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-1.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-2.webp" fallbackExtension="png"/>
+                <ma:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/slide-3.webp" fallbackExtension="png"/>
+            </ma:carousel.MaterialCarousel>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;carousel.goToSlide(1) // Navigates to a slide by index <br/>
+                carousel.next() // Navigates to the next slide <br/>
+                carousel.previous() // Navigates to the previous slide <br/>
+                carousel.pause() // Pauses autoplay <br/>
+                carousel.play() // Starts autoplay <br/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <!-- Tab Navigation -->
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Carousel with Tabs" description="You can easily synchronize the carousel and tabs for better navigation." />
+            <m:MaterialRow addStyleNames="code">
+                <m:MaterialTab ui:field="tab">
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 1" href="#tab1"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 2" href="#tab2"/>
+                    </m:MaterialTabItem>
+                    <m:MaterialTabItem>
+                        <m:MaterialLink textColor="WHITE" text="Tab 3" href="#tab3"/>
+                    </m:MaterialTabItem>
+                </m:MaterialTab>
+
+                <ma:carousel.MaterialCarousel ui:field="tabsCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true">
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" />
+                    </m:MaterialPanel>
+                    <m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px">
+                        <m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" />
+                    </m:MaterialPanel>
+                </ma:carousel.MaterialCarousel>
+            </m:MaterialRow>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &emsp;&lt;m:MaterialRow addStyleNames="code"><br/>
+                &emsp;&lt;m:MaterialTab ui:field="tab"><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 1" href="#tab1"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 2" href="#tab2"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&emsp;&lt;m:MaterialTabItem><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLink textColor="WHITE" text="Tab 3" href="#tab3"/><br/>
+                &emsp;&emsp;&lt;/m:MaterialTabItem><br/>
+                &emsp;&lt;/m:MaterialTab><br/><br/>
+
+                &emsp;&lt;ma:carousel.MaterialCarousel ui:field="tabCarousel" width="100%" showDots="false" showArrows="false" type="IMAGE" textAlign="CENTER" infinite="true"><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="1" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="2" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&emsp;&lt;m:MaterialPanel paddingTop="50" backgroundColor="GREY_LIGHTEN_2" padding="20" height="200px"><br/>
+                &emsp;&emsp;&emsp;&lt;m:MaterialLabel textColor="BLUE" fontSize="5em" fontWeight="LIGHTER" text="3" /><br/>
+                &emsp;&emsp;&lt;/m:MaterialPanel><br/>
+                &emsp;&lt;/ma:carousel.MaterialCarousel><br/>
+                &lt;/m:MaterialRow><br/>
+            </demo:PrettyPre>
+
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;tabCarousel.setTabNavigation(tab);
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>

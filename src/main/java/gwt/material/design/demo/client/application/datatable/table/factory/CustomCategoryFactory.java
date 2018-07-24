@@ -24,7 +24,6 @@ import gwt.material.design.client.data.DataView;
 import gwt.material.design.client.data.component.CategoryComponent;
 import gwt.material.design.client.data.component.CategoryComponent.OrphanCategoryComponent;
 import gwt.material.design.client.data.factory.CategoryComponentFactory;
-import gwt.material.design.demo.client.application.datatable.standard.StandardDataTableView;
 
 public class CustomCategoryFactory extends CategoryComponentFactory {
 
@@ -33,7 +32,7 @@ public class CustomCategoryFactory extends CategoryComponentFactory {
         CategoryComponent category = super.generate(dataView, categoryName);
 
         if(!(category instanceof OrphanCategoryComponent)) {
-            category = new StandardDataTableView.CustomCategoryComponent(categoryName);
+            category = new CustomCategoryComponent(dataView, categoryName);
         }
         return category;
     }

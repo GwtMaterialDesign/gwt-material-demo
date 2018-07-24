@@ -21,20 +21,18 @@ package gwt.material.design.demo.client.application.addins.richeditor;
  */
 
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.*;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.Focusable;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.richeditor.MaterialRichEditor;
 import gwt.material.design.addins.client.richeditor.base.constants.ToolbarButton;
 import gwt.material.design.addins.client.richeditor.events.PasteEvent;
-import gwt.material.design.client.ui.MaterialModal;
+import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialTextBox;
 import gwt.material.design.client.ui.MaterialToast;
 import gwt.material.design.demo.client.application.dto.DataHelper;
@@ -48,7 +46,7 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
     MaterialRichEditor richEditor, airmodeRichEditor, optionRichEditor, clearRichEditor, eventRichEditor;
 
     @UiField
-    MaterialModal modal;
+    MaterialDialog dialog;
 
     @UiField
     MaterialTextBox txtHTML;
@@ -67,14 +65,14 @@ public class RichEditorView extends ViewImpl implements RichEditorPresenter.MyVi
         clearRichEditor.setHTML("<h2>I Love </h2>");
     }
 
-    @UiHandler("closeModal")
-    void closeModal(ClickEvent e) {
-        modal.close();
+    @UiHandler("closeDialog")
+    void closeDialog(ClickEvent e) {
+        dialog.close();
     }
 
-    @UiHandler("openModal")
-    void openModal(ClickEvent e) {
-        modal.open();
+    @UiHandler("openDialog")
+    void openDialog(ClickEvent e) {
+        dialog.open();
     }
 
     @UiHandler("btnClear")

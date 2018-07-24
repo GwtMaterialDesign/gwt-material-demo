@@ -1,0 +1,84 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <demo:ExternalLibrary text="CountUpJs 1.9.0" link="https://github.com/inorganik/countUp.js" marginBottom="40"/>
+
+            <ma:countup.MaterialCountUp value="0.00" ui:field="countUp" startValue="50.01" endValue="99.99" decimals="2" fontSize="5em" fontWeight="LIGHTER"/>
+            <m:MaterialRow>
+                <m:MaterialDoubleBox ui:field="txtStart" label="Start Value" value="50.01" grid="s3" />
+                <m:MaterialDoubleBox ui:field="txtEnd" label="End Value" value="99.99" grid="s3" />
+                <m:MaterialIntegerBox ui:field="txtDecimals" label="Decimals" value="2" grid="s3"/>
+                <m:MaterialDoubleBox ui:field="txtDuration" label="Duration" value="2.5" grid="s3" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialTextBox ui:field="txtSeparator" label="Separator" value="," grid="s3" />
+                <m:MaterialTextBox ui:field="txtDecimal" label="Decimal" value="." grid="s3" />
+                <m:MaterialTextBox ui:field="txtPrefix" label="Prefix" value="$" grid="s3" />
+                <m:MaterialTextBox ui:field="txtSuffix" label="Suffix" value=" " grid="s3" />
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialCheckBox ui:field="cbCallback" type="FILLED" text="Toast on complete"/>
+            </m:MaterialRow>
+            <m:MaterialRow>
+                <m:MaterialButton ui:field="btnStart" text="Start Counting" marginRight="20" />
+                <m:MaterialButton ui:field="btnPauseResume" text="Pause / Resume" marginRight="20" />
+                <m:MaterialButton ui:field="btnReset" text="Reset" marginRight="20" />
+            </m:MaterialRow>
+
+            <demo:PrettyPre addStyleNames="lang-xml">
+                &lt;ma:countup.MaterialCountUp text="0.00" ui:field="countUp" startValue="50.01" endValue="99.99" decimals="2" fontSize="5em" fontWeight="LIGHTER"/>
+            </demo:PrettyPre>
+            <demo:PrettyPre addStyleNames="lang-java">
+                countUp.setStartValue(txtStart.getValue()); // The value you want to begin at (Default : 0) <br/>
+                countUp.setEndValue(txtEnd.getValue()); // The value you want to end at (Default : 0) <br/>
+                countUp.setDecimals(txtDecimals.getValue()); // Number of decimal places in number (Default : 0) <br/>
+                countUp.setDuration(txtDuration.getValue()); // Duration in seconds (Default : 2sec) <br/>
+                countUp.setDecimal(txtDecimal.getValue()); // Set the decimal symbol (Default ".") <br/>
+                countUp.setSeparator(txtSeparator.getValue()); // Adds separator to your numerical value (Default : ",") <br/>
+                countUp.setPrefix(txtPrefix.getValue()); // Set the prefix, good for currency values like $ (dollar sign) (Default : " ") <br/>
+                countUp.setSuffix(txtSuffix.getValue()); // Set the suffix value for your numbers <br/><br/>
+
+                if (cbCallback.getValue()) { <br/>
+                &emsp;// Set the callback function after the count up reach the end value. <br/>
+                &emsp;countUp.setCallback(() -> { <br/>
+                &emsp;&emsp;MaterialToast.fireToast("Complete"); <br/>
+                &emsp;}); <br/>
+                } else { <br/>
+                &emsp;countUp.setCallback(() -> {}); <br/>
+                } <br/><br/>
+
+                // Start the Count Up Animation <br/>
+                countUp.start(); <br/><br/>
+
+                // Pause or Resume the CountUp <br/>
+                countUp.pauseResume(); <br/><br/>
+
+                // Reset the CountUp <br/>
+                countUp.reset();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>

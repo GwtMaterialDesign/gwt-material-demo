@@ -22,7 +22,9 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
@@ -170,15 +172,15 @@
       <m:MaterialTitle title="Example Promotion Table" description="If we want 3 divs that are equal size, we define the divs with a width of 4-columns, 4+4+4 = 12, which nicely adds up to 12. Inside those divs, we can put our content. Take our front page content for example. We've modified it slightly for the sake of this example."/>
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m4">
-          <m:MaterialImage resource="{res.ic_metaphor}"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ic_metaphor.webp" fallbackExtension="png"/>
           <m:MaterialTitle title="Material is the metaphor" description="The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world."/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m4">
-          <m:MaterialImage resource="{res.ic_bold}"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ic_bold.webp" fallbackExtension="png"/>
           <m:MaterialTitle title="Bold, graphic, intentional" description="Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users."/>
         </m:MaterialColumn>
         <m:MaterialColumn grid="s12 m4">
-          <m:MaterialImage resource="{res.ic_motion}"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/ic_motion.webp" fallbackExtension="png"/>
           <m:MaterialTitle title="Motion provides meaning" description="Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations."/>
         </m:MaterialColumn>
       </m:MaterialRow>

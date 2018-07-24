@@ -28,7 +28,7 @@
   </ui:style>
 
   <g:HTMLPanel ui:field="panel">
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Raised" description="The raised button is a standard button that signify actions and seek to give depth to a mostly flat page."/>
       <m:MaterialButton margin="8" text="Button" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/>
@@ -43,6 +43,23 @@
         &lt;m:MaterialButton text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
         &lt;m:MaterialButton text="Warn" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/><br/>
         &lt;m:MaterialButton text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Outlined" description="Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app."/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Button" waves="DEFAULT"  textColor="BLACK"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Primary" border="1px solid #42a5f5" textColor="BLUE" iconType="POLYMER" iconPosition="LEFT"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Disabled" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Warn" border="1px solid #f44336" textColor="RED" iconType="POLYMER" iconPosition="RIGHT"/>
+      <m:MaterialButton margin="8" type="OUTLINED" text="Icon Color" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/>
+
+      <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
+        &emsp;&lt;m:MaterialButton text="Button" type="OUTLINED" waves="DEFAULT" backgroundColor="WHITE"  textColor="BLACK"/><br/>
+        &lt;m:MaterialButton text="Primary" type="OUTLINED" waves="LIGHT" textColor="WHITE" iconType="POLYMER" iconPosition="LEFT"/><br/>
+        &lt;m:MaterialButton text="Disabled" type="OUTLINED" waves="LIGHT" iconType="POLYMER" iconPosition="RIGHT" enabled="false"/><br/>
+        &lt;m:MaterialButton text="Warn" type="OUTLINED" waves="LIGHT" backgroundColor="RED" textColor="WHITE" iconType="POLYMER" iconPosition="RIGHT"/><br/>
+        &lt;m:MaterialButton text="Icon Color" type="OUTLINED" waves="RED" backgroundColor="WHITE" textColor="BLACK" iconType="POLYMER" iconPosition="RIGHT" iconColor="RED"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   
@@ -66,7 +83,7 @@
     </m:MaterialRow>
   
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or modals."/>
+      <m:MaterialTitle title="FLAT" description="Flat buttons are usually used within elements that already have depth like cards or dialog."/>
       <m:MaterialButton margin="8" text="Button" textColor="BLACK" type="FLAT" waves="DEFAULT" />
       <m:MaterialButton margin="8" text="Primary (No Waves)" textColor="BLUE" type="FLAT" />
       <m:MaterialButton margin="8" text="Disabled" type="FLAT" waves="DEFAULT"  enabled="false" />
@@ -140,12 +157,14 @@
         <m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
         <m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT" grid=" "/>
         <m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" grid=" "/>
+        <m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/>
       </m:MaterialRow>
   
       <demo:PrettyPre addStyleNames="lang-xml z-depth-1">
         &emsp;&lt;m:MaterialLink href="#normal" text="Normal Link" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
         &lt;m:MaterialLink href="#material" text="Link with Href" textColor="RED" iconType="POLYMER" iconPosition="LEFT"/><br/>
         &lt;m:MaterialLink href="#design" text="Link with Different Icon color" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED"/><br/>
+        &lt;m:MaterialLink href="#design" text="Disabled Link" textColor="BLACK" iconType="POLYMER" iconPosition="LEFT" iconColor="RED" enabled="false"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
   </g:HTMLPanel>

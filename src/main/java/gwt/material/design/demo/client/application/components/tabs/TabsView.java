@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.components.tabs;
  */
 
 
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -63,7 +64,6 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
 
         buildListTabIds();
 
-        tabSetIndex.setTabIndex(1);
         tabEvents.addSelectionHandler(selectionEvent -> MaterialToast.fireToast(selectionEvent.getSelectedItem() + " Selected Index"));
     }
 
@@ -82,6 +82,11 @@ public class TabsView extends ViewImpl implements TabsPresenter.MyView {
         index++;
         dynamicTabs.add(newTabItem(index));
         dynamicTabs.setTabIndex(index - 1);
+    }
+
+    @UiHandler("setTabIndex")
+    void setTabIndex(ClickEvent e) {
+        tabSetIndex.setTabIndex(1);
     }
 
     @Override

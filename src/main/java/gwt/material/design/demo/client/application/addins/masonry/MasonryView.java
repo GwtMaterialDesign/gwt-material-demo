@@ -43,8 +43,6 @@ public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
     @UiField
     MaterialMasonry dynamicMasonry;
 
-    int totalItems;
-
     @Inject
     MasonryView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
@@ -52,17 +50,16 @@ public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
     }
 
     private void buildDynamicMasonry() {
-        for(User user : DataHelper.getAllUsers()) {
+        for (User user : DataHelper.getAllUsers()) {
             dynamicMasonry.add(new UserCard(user, dynamicMasonry));
         }
-        totalItems = dynamicMasonry.getWidgetCount();
         dynamicMasonry.reload();
     }
 
     @UiHandler("btnAddItem")
     void onAddItem(ClickEvent e) {
-        totalItems++;
         dynamicMasonry.add(new UserCard(DataHelper.getAllUsers().get(0), dynamicMasonry));
+        MaterialToast.fireToast("Size: " + (dynamicMasonry.getChildrenList().size() - 1));
     }
 
     @UiHandler("btnClearAll")
@@ -78,8 +75,8 @@ public class MasonryView extends ViewImpl implements MasonryPresenter.MyView {
 
     @UiHandler("btnRemoveLast")
     void removeLast(ClickEvent e) {
-        totalItems--;
-        dynamicMasonry.remove(totalItems);
+        if (dynamicMasonry.getChildren().size() > 0) {
+            dynamicMasonry.remove(dynamicMasonry.getChildren().size() - 1);
+        }
     }
-
 }

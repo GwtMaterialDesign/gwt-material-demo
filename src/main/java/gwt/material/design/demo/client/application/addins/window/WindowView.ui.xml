@@ -108,7 +108,7 @@
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Open / Close Window" description="Just like modals, window dialog has programmatically functions for opening and closing the window"/>
+            <m:MaterialTitle title="Open / Close Window" description="Just like dialogs, window dialog has programmatically functions for opening and closing the window"/>
             <demo:PrettyPre addStyleNames="lang-java">
                 // Opening Window<br/>
                 window.open();<br/><br/>

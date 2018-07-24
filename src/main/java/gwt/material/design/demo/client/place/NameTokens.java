@@ -88,18 +88,45 @@ public class NameTokens {
     public static final String combobox = "combobox";
     public static final String standardDataTable = "standard_datatable";
     public static final String infiniteDataTable = "infinite_datatable";
+    public static final String frozenDataTable = "frozen_datatable";
     public static final String pagedDataTable = "paged_datatable";
     public static final String customDataTable = "custom_datatable";
     public static final String contextMenuDataTable = "context_menu_datatable";
     public static final String overlay = "overlay";
-    public static final String blueprint = "blueprint";
     public static final String emptystates = "emptystates";
+    public static final String carousel = "carousel";
+    public static final String circularProgress = "circularProgress";
+    public static final String countUp = "countUp";
+    public static final String liveStamp = "liveStamp";
+    public static final String inputMask = "inputMask";
+    public static final String blueprint = "blueprint";
+    public static final String installable = "installable";
+    public static final String serviceworker = "serviceworker";
+    public static final String notification = "notification";
+    public static final String pwagettingstarted = "pwagettingstarted";
+    public static final String imageCropper = "imageCropper";
+    public static final String signaturePad = "signaturePad";
     public static final String textfields = "textfields";
     public static final String listbox = "listbox";
     public static final String radiobutton = "radiobutton";
     public static final String checkbox = "checkbox";
     public static final String switches = "switches";
     public static final String range = "range";
+
+    // Incubator Widgets
+    public static final String addressLookup = "address_lookup";
+    public static final String alert = "alert";
+    public static final String async = "async";
+    public static final String languageSelector = "language_selector";
+    public static final String loadingState = "loading_state";
+    public static final String progressLineBar = "progress_line_bar";
+    public static final String recaptcha = "recaptcha";
+    public static final String inlineSearch = "inline_search";
+    public static final String timer = "timer";
+    public static final String toggle = "toggle";
+    public static final String walkthrough = "walkthrough";
+    public static final String webpImage = "webp";
+    public static final String infiniteScroll = "infinite_scroll";
 
     public static String getAbout() {
         return about;
@@ -365,6 +392,8 @@ public class NameTokens {
         return infiniteDataTable;
     }
 
+    public static String getFrozenDataTable() { return frozenDataTable; }
+
     public static String getPagedDataTable() {
         return pagedDataTable;
     }
@@ -381,12 +410,56 @@ public class NameTokens {
         return overlay;
     }
 
+    public static String getCarousel() {
+        return carousel;
+    }
+
+    public static String getCircularProgress() {
+        return circularProgress;
+    }
+
+    public static String getCountUp() {
+        return countUp;
+    }
+
+    public static String getLiveStamp() {
+        return liveStamp;
+    }
+
+    public static String getInputMask() {
+        return inputMask;
+    }
+
+    public static String getInstallable() {
+        return installable;
+    }
+
+    public static String getServiceworker() {
+        return serviceworker;
+    }
+
+    public static String getNotification() {
+        return notification;
+    }
+
+    public static String getPwagettingstarted() {
+        return pwagettingstarted;
+    }
+
     public static String getBlueprint() {
         return blueprint;
     }
 
     public static String getEmptyStates() {
         return emptystates;
+    }
+
+    public static String getImageCropper() {
+        return imageCropper;
+    }
+
+    public static String getSignaturePad() {
+        return signaturePad;
     }
 
     public static String getEmptystates() {
@@ -415,5 +488,55 @@ public class NameTokens {
 
     public static String getRange() {
         return range;
+    }
+
+    public static String getAlert() {
+        return alert;
+    }
+
+    public static String getAsync() {
+        return async;
+    }
+
+    public static String getLanguageSelector() {
+        return languageSelector;
+    }
+
+    public static String getLoadingState() {
+        return loadingState;
+    }
+
+    public static String getProgressLineBar() {
+        return progressLineBar;
+    }
+
+    public static String getRecaptcha() {
+        return recaptcha;
+    }
+
+    public static String getInlineSearch() {
+        return inlineSearch;
+    }
+
+    public static String getTimer() {
+        return timer;
+    }
+
+    public static String getToggle() {
+        return toggle;
+    }
+
+    public static String getWalkthrough() {
+        return walkthrough;
+    }
+
+    public static String getWebpImage() { return webpImage; }
+
+    public static String getAddressLookup() {
+        return addressLookup;
+    }
+
+    public static String getInfiniteScroll() {
+        return infiniteScroll;
     }
 }

@@ -1,0 +1,50 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:toggle="urn:import:gwt.material.design.incubator.client.toggle"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic Usage" />
+            <m:MaterialColumn grid="s12 m4 l4">
+                <toggle:GroupToggleButton ui:field="groupToggle" />
+            </m:MaterialColumn>
+
+            <m:MaterialRow marginTop="-8">
+                <demo:PrettyPre addStyleNames="lang-xml">
+                    &emsp;&lt;toggle:GroupToggleButton ui:field="groupToggle" />
+                </demo:PrettyPre>
+            </m:MaterialRow>
+
+            <m:MaterialTitle title="Getting the Active Button" />
+            <m:MaterialButton ui:field="getIndex" text="Get Index" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;// Will return the active index (Returns -1 if nothing is selected) <br/>
+                groupToggle.getActive();
+            </demo:PrettyPre>
+        </m:MaterialRow>
+    </m:MaterialPanel>
+</ui:UiBinder>

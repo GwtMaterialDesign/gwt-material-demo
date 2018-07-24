@@ -40,24 +40,24 @@
         &lt;m:MaterialChip margin="8" text="Mango" backgroundColor="GREEN" textColor="WHITE" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
+      <m:MaterialTitle title="Outlined Chip" description="Provide a simple and outlined chip component."/>
       <m:MaterialRow>
-        <m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" />
+        <m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
       </m:MaterialRow>
-      
+
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
+        &emsp;&lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" /><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" type="OUTLINED" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Static Chip" description="Static chips cannot be selected, removed or edited, and are not part of any model."/>
       <m:MaterialRow>
@@ -71,24 +71,41 @@
         &lt;m:MaterialChip margin="8" text="Mango" /><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Letter Chip" description="You can specify a letter as an avatar from Aa to Zz."/>
+      <m:MaterialRow>
+        <m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/>
+      </m:MaterialRow>
+
+      <demo:PrettyPre addStyleNames="lang-xml">
+        &emsp;&lt;m:MaterialChip margin="8" letter="A" letterColor="WHITE" letterBackgroundColor="RED" text="Apple" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="G" letterColor="PINK_ACCENT_1" letterBackgroundColor="PURPLE" text="Grapes" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="D" letterColor="WHITE" letterBackgroundColor="GREEN" text="Dalandan" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" letter="M" letterColor="ORANGE" letterBackgroundColor="YELLOW" text="Mango" iconType="CLOSE"/><br/>
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Contact Chips" description="Contact chips represent contact information that users have for people in a compact way. They are invoked and inserted into a text field (usually the To field) when the user starts typing a contact's name, sees the contact's addresses, and selects the correct one. Contact chips can be added directly to a text field from a menu of contacts. Contact chips efficiently confirm that the user will be sending their message to the correct person."/>
       <m:MaterialRow>
-        <m:MaterialChip margin="8" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/>
-        <m:MaterialChip margin="8" url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Marjorie Matias" iconType="CLOSE"/>
+        <m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/>
       </m:MaterialRow>
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip margin="8" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" url="http://lorempixel.com/50/50/people?1" text="Marjorie Matias" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" url="http://lorempixel.com/50/50/people?8" text="Zenaida Ringor" iconType="CLOSE"/><br/>
+        &emsp;&lt;m:MaterialChip url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Marjorie Matias" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip margin="8" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Zenaida Ringor" iconType="CLOSE"/><br/>
       </demo:PrettyPre>
     </m:MaterialRow>
-  
+
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Events" description="Adding events on chip is easy, you can get the secondary icon by calling getIcon() then addClickHandles etc."/>
-      <m:MaterialButton ui:field="closeChip" text="Close Chip" />
+       <m:MaterialButton ui:field="closeChip" text="Close Chip" />
       <demo:PrettyPre addStyleNames="lang-java">
         // Close the chip <br/>
         chip.close();
@@ -97,10 +114,10 @@
         <m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/>
         <m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" />
       </m:MaterialRow>
-  
+
       <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;m:MaterialChip margin="8" ui:field="chip" url="http://b.vimeocdn.com/ps/339/488/3394886_300.jpg" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
-        &lt;m:MaterialChip margin="8" ui:field="chipClick" text="Click Me" /><br/>
+        &emsp;&lt;m:MaterialChip ui:field="chip" url="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi9lfCkLutb7ugJlIjn84qWNoiICopC-Vyx7QQJRHF5E7GlqFG" text="Yunalis Mat Zara'ai" iconType="CLOSE"/><br/>
+        &lt;m:MaterialChip ui:field="chipClick" text="Click Me" /><br/>
       </demo:PrettyPre>
       <demo:PrettyPre addStyleNames="lang-java">
         &emsp;@UiField MaterialChip margin="8" chip;<br/><br/>

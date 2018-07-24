@@ -53,6 +53,6 @@ public class WindowPresenter extends Presenter<WindowPresenter.MyView, WindowPre
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Window", "Window is another kind of Modal but it has a header toolbar for maximizing and close the window. Also you can attached a tab component on its content.", "addins/window/WindowView", "", this);
+        SetPageTitleEvent.fire("Window", "Window is another kind of Dialog but it has a header toolbar for maximizing and close the window. Also you can attached a tab component on its content.", "addins/window/WindowView", "", this);
     }
 }

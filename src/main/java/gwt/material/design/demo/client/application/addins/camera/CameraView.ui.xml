@@ -22,7 +22,11 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:m="urn:import:gwt.material.design.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:in="urn:import:gwt.material.design.incubator.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
     <g:HTMLPanel>
     
         <m:MaterialRow addStyleNames="code">
@@ -40,7 +44,11 @@
         </m:MaterialRow>
     
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialRow marginBottom="0">
+            <m:MaterialPanel layoutPosition="RELATIVE" minHeight="50px" overflow="HIDDEN">
+                <in:alert.Alert ui:field="browserNotSupported" depth="1" text="Camera is not supported by your browser." type="ERROR"/>
+            </m:MaterialPanel>
+
+            <m:MaterialRow ui:field="cameraPanel" marginBottom="0">
                 <m:MaterialColumn grid="s12" height="100%" padding="0" shadow="1" layoutPosition="RELATIVE">
                     <ma:camera.MaterialCameraCapture ui:field="camera" width="100%" height="100%"/>
                     <m:MaterialRow marginBottom="0" backgroundColor="BLACK" padding="20" width="100%" layoutPosition="ABSOLUTE" bottom="0">

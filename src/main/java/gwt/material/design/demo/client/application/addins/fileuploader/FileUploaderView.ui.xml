@@ -23,6 +23,9 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:ma="urn:import:gwt.material.design.addins.client"
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
     <g:HTMLPanel>
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Usage" />
@@ -54,7 +57,7 @@
             <m:MaterialBadge text="FEATURE UPDATE" textColor="AMBER" shadow="1" layoutPosition="RELATIVE" float="RIGHT" backgroundColor="AMBER_LIGHTEN_5" />
             <m:MaterialTitle title="Disable Uploader" description="You can easily disable the file uploader by calling enable='false'" />
             <m:MaterialSwitch ui:field="switchEnable" onLabel="Enable" offLabel="Disable" />
-            <ma:fileuploader.MaterialFileUploader waves="DEFAULT" ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
+            <ma:fileuploader.MaterialFileUploader ui:field="uploaderEnable" url="/fileupload" method="POST" maxFileSize="20" shadow="1" enabled="false">
                 <ma:fileuploader.MaterialUploadLabel title="Drag Files to Upload" description="Some description here" />
             </ma:fileuploader.MaterialFileUploader>
 
@@ -80,13 +83,13 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Flexible Integration" description="MaterialFileUploader can be use on any widgets to control the upload process." />
-            <m:MaterialImage url="http://i.imgur.com/GrM6eIz.gif" />
+            <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/dnd-upload.gif" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;m:MaterialRow><br/>
                 &emsp;&lt;ma:fileuploader.MaterialFileUploader ui:field="cardUploader" acceptedFiles="image/*" grid="l4" url="/fileupload" preview="false" maxFileSize="20" shadow="0" clickable="cardUpload"><br/>
                 &emsp;&emsp;&lt;m:MaterialCard><br/>
                 &emsp;&emsp;&emsp;&lt;m:MaterialCardImage><br/>
-                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage ui:field="imgPreview" url="http://demo.geekslabs.com/materialize/v3.1/images/gallary/33.jpg" /><br/>
+                &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialImage ui:field="imgPreview" url="https://demo.geekslabs.com/materialize/v3.1/images/gallary/33.jpg" /><br/>
                 &emsp;&emsp;&emsp;&lt;/m:MaterialCardImage><br/>
                 &emsp;&emsp;&emsp;&lt;m:MaterialCardContent layoutPosition="RELATIVE"><br/>
                 &emsp;&emsp;&emsp;&emsp;&lt;m:MaterialLabel ui:field="lblName" text="Sample.png" fontSize="1.5em"/><br/>

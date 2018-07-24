@@ -32,7 +32,7 @@
   <g:HTMLPanel>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Introduction" description="We use flexbox to structure our html so that the footer is always on the bottom of the page."/>
-      <m:MaterialFooter addStyleNames="{style.customFooter}">
+      <m:MaterialFooter ui:field="footer" addStyleNames="{style.customFooter}">
         <m:MaterialRow>
           <m:MaterialColumn grid="s12 m6 l6">
             <m:MaterialTitle textColor="WHITE" title="Join The Discussion" description="We provide Gitter Chat rooms in order for GWT Developers discussed and collaborate about GWT Material Design and Phonegap Integration."/>

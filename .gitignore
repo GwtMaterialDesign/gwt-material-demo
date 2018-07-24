@@ -15,7 +15,6 @@ buildNumber.properties
 *.pydevproject
 .metadata
 .gradle
-bin/
 tmp/
 *.tmp
 *.bak
@@ -101,6 +100,6 @@ crashlytics-build.properties
 
 
 .idea/
-.idea/
-.idea/
-.idea/
+node_modules/
+node/
+/package-lock.json

@@ -30,14 +30,18 @@ import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.base.MaterialWidget;
-import gwt.material.design.client.constants.*;
+import gwt.material.design.client.base.viewport.Resolution;
+import gwt.material.design.client.base.viewport.ViewPort;
+import gwt.material.design.client.constants.Color;
+import gwt.material.design.client.constants.Display;
+import gwt.material.design.client.constants.HideOn;
+import gwt.material.design.client.constants.TextAlign;
 import gwt.material.design.client.data.ListDataSource;
 import gwt.material.design.client.data.component.RowComponent;
 import gwt.material.design.client.ui.MaterialBadge;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialIcon;
-import gwt.material.design.client.ui.MaterialTextBox;
+import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.pager.MaterialDataPager;
+import gwt.material.design.client.ui.pager.actions.PageListBox;
 import gwt.material.design.client.ui.table.MaterialDataTable;
 import gwt.material.design.client.ui.table.cell.TextColumn;
 import gwt.material.design.client.ui.table.cell.WidgetColumn;
@@ -73,13 +77,15 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         for(int k = 1; k <= 10; k++){
             // Generate 100 rows
             for(int i = 1; i <= 10; i++, rowIndex++){
-                people.add(new Person(i, "http://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
+                people.add(new Person(i, "https//joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + rowIndex, "Field " + i, "Field " + rowIndex, "No " + i,"Category " + k));
             }
         }
 
         dataSource = new ListDataSource<>();
         dataSource.add(0, people);
 
+        /* Uncomment to make use of listbox page selection instead of integerbox */
+        /*pager.setPageSelection(new PageListBox());*/
         pager.setTable(table);
         pager.setDataSource(dataSource);
 
@@ -145,7 +151,7 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
             }
         }, "Phone");
 
-        for(int i = 0; i < 8; i++) {
+        for (int i = 0; i < 20; i++) {
             final int index = i;
             table.addColumn(new TextColumn<Person>() {
                 @Override
@@ -181,38 +187,24 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         table.addRowExpandingHandler(event -> {
             JQueryElement section = event.getExpansion().getOverlay();
 
+            // Clear the content first.
+            MaterialWidget content = new MaterialWidget(
+                event.getExpansion().getContent().empty().asElement());
+
             // Fake Async Task
             // This is demonstrating a fake asynchronous call to load
             // the data inside the expansion element.
             new Timer() {
                 @Override
                 public void run() {
-                    // Clear the content first.
-                    JQueryElement element = event.getExpansion().getRow().find(".content").empty();
-                    // Assign the jquery element to a GMD Widget
-                    MaterialWidget content = new MaterialWidget(element);
+                    MaterialLabel title = new MaterialLabel("Expansion Row Panel");
+                    title.setFontSize("1.6em");
+                    title.setDisplay(Display.BLOCK);
+                    MaterialLabel description = new MaterialLabel("This content was made from asynchronous call");
 
-                    // Add new content.
-                    MaterialBadge badge = new MaterialBadge("This content", Color.WHITE, Color.BLUE);
-                    badge.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    badge.getElement().getStyle().setRight(0, Style.Unit.PX);
-                    badge.setFontSize(12, Style.Unit.PX);
-                    content.add(badge);
-
-                    MaterialButton btn = new MaterialButton("was made", ButtonType.RAISED,
-                            new MaterialIcon(IconType.FULLSCREEN));
-                    content.add(btn);
-
-                    MaterialTextBox textBox = new MaterialTextBox();
-                    textBox.setText(" from an asynchronous");
-                    textBox.setGwtDisplay(Style.Display.INLINE_TABLE);
-                    textBox.setWidth("200px");
-                    content.add(textBox);
-
-                    MaterialIcon icon = new MaterialIcon(IconType.CALL);
-                    icon.getElement().getStyle().setPosition(Style.Position.RELATIVE);
-                    icon.getElement().getStyle().setTop(12, Style.Unit.PX);
-                    content.add(icon);
+                    content.setPadding(20);
+                    content.add(title);
+                    content.add(description);
 
                     // Hide the expansion elements overlay section.
                     // The overlay is retrieved using EowExpand#getOverlay()
@@ -260,6 +252,13 @@ public class PagedDataTableView extends NavigatedView implements PagedDataTableP
         // Add a row short press handler, called when a row is short pressed.
         table.addRowShortPressHandler(event -> {
             //.log("Row Short Pressed: " + model.getId() + ", x:" + mouseEvent.getPageX() + ", y: " + mouseEvent.getPageY());
+        });
+
+        ViewPort.when(Resolution.ALL_MOBILE).then(param1 -> {
+            table.setHeight("60vh");
+        }, viewPort -> {
+            table.setHeight("100%");
+            return false;
         });
     }
 

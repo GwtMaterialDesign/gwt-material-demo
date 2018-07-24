@@ -30,7 +30,10 @@ import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
 import gwt.material.design.client.base.SearchObject;
 import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialHeader;
+import gwt.material.design.client.ui.MaterialNavBar;
+import gwt.material.design.client.ui.MaterialSearch;
+import gwt.material.design.client.ui.MaterialSideNavPush;
 import gwt.material.design.demo.client.ThemeManager;
 import gwt.material.design.demo.client.place.NameTokens;
 import gwt.material.design.themes.amber.ThemeAmber;
@@ -59,14 +62,18 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
     @UiField MaterialHeader header;
     @UiField MaterialNavBar navBar, navBarSearch;
-    @UiField
-    MaterialSideNavPush sideNav;
+    @UiField MaterialSideNavPush sideNav;
     @UiField MaterialSearch txtSearch;
     @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
 
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
 
         // search close event
         txtSearch.addCloseHandler(event -> {
@@ -93,6 +100,12 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
         // Getting Started
         listSearches.add(new SearchObject(IconType.CLOUD_DOWNLOAD, "Getting Started", "#" + NameTokens.gettingstarted));
+
+        // Components
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA Getting Started", "#" + NameTokens.pwagettingstarted));
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA Installable", "#" + NameTokens.installable));
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA Service Worker", "#" + NameTokens.serviceworker));
+        listSearches.add(new SearchObject(IconType.POLYMER, "PWA PushNotification", "#" + NameTokens.notification));
 
         // Components
         listSearches.add(new SearchObject(IconType.POLYMER, "Badges", "#" + NameTokens.badges));
@@ -130,6 +143,7 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.VIEW_LIST, "Standard DataTable", "#" + NameTokens.standardDataTable));
         listSearches.add(new SearchObject(IconType.VIEW_LIST, "Infinite DataTable", "#" + NameTokens.infiniteDataTable));
         listSearches.add(new SearchObject(IconType.VIEW_LIST, "Paged DataTable", "#" + NameTokens.pagedDataTable));
+        listSearches.add(new SearchObject(IconType.VIEW_LIST, "Frozen DataTable", "#" + NameTokens.frozenDataTable));
         listSearches.add(new SearchObject(IconType.VIEW_LIST, "Custom DataTable", "#" + NameTokens.customDataTable));
         listSearches.add(new SearchObject(IconType.VIEW_LIST, "Context Menu DataTable", "#" + NameTokens.contextMenuDataTable));
 
@@ -139,13 +153,19 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Bubble", "#" + NameTokens.bubble));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Breadcrumb", "#" + NameTokens.breadcrumbs));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Camera", "#" + NameTokens.camera));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Carousel", "#" + NameTokens.carousel));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Circular Progress", "#" + NameTokens.circularProgress));
         listSearches.add(new SearchObject(IconType.EXTENSION, "ComboBox", "#" + NameTokens.combobox));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Count Up", "#" + NameTokens.countUp));
         listSearches.add(new SearchObject(IconType.EXTENSION, "CutOut", "#" + NameTokens.cutouts));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Doc Viewer", "#" + NameTokens.docviewer));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Drag and Drop", "#" + NameTokens.dnd));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Empty States", "#" + NameTokens.emptystates));
         listSearches.add(new SearchObject(IconType.EXTENSION, "File Uploader", "#" + NameTokens.fileuploader));
         listSearches.add(new SearchObject(IconType.EXTENSION, "IconMorph", "#" + NameTokens.iconMorph));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Image Cropper", "#" + NameTokens.imageCropper));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Input Mask", "#" + NameTokens.inputMask));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Live Stamp", "#" + NameTokens.liveStamp));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Masonry", "#" + NameTokens.masonry));
         listSearches.add(new SearchObject(IconType.EXTENSION, "MenuBar", "#" + NameTokens.menubar));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Overlay", "#" + NameTokens.overlay));
@@ -154,13 +174,27 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
         listSearches.add(new SearchObject(IconType.EXTENSION, "Rich Editor", "#" + NameTokens.richeditor));
         listSearches.add(new SearchObject(IconType.EXTENSION, "ScrollFire", "#" + NameTokens.scrollfire));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Split Panel", "#" + NameTokens.splitpanel));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "Signature Pad", "#" + NameTokens.signaturePad));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Subheader", "#" + NameTokens.subheaders));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Steppers", "#" + NameTokens.steppers));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Swipeable", "#" + NameTokens.swipeable));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Time Picker", "#" + NameTokens.timepickers));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Tree View", "#" + NameTokens.tree));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Waterfall", "#" + NameTokens.waterfall));
+        listSearches.add(new SearchObject(IconType.EXTENSION, "WebP", "#" + NameTokens.webpImage));
         listSearches.add(new SearchObject(IconType.EXTENSION, "Window", "#" + NameTokens.window));
+
+        // Incubator
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Alert", "#" + NameTokens.alert));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Async", "#" + NameTokens.async));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Language", "#" + NameTokens.languageSelector));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "LoadingState", "#" + NameTokens.loadingState));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Progress Line Bar", "#" + NameTokens.progressLineBar));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "(Google) Recaptcha", "#" + NameTokens.recaptcha));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "(Google) AddressLookup", "#" + NameTokens.addressLookup));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Inline Search", "#" + NameTokens.inlineSearch));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Timer", "#" + NameTokens.timer));
+        listSearches.add(new SearchObject(IconType.ARCHIVE, "Toggle", "#" + NameTokens.toggle));
 
         // Style And Layout
         listSearches.add(new SearchObject(IconType.STYLE, "Colors", "#" + NameTokens.colors));

@@ -33,6 +33,7 @@ public class CustomRenderer<T> extends BaseRenderer<T> {
         td.setId("col0");
         MaterialCheckBox checkBox = new MaterialCheckBox(td.getElement());
         checkBox.setType(CheckBoxType.FILLED);
+        checkBox.addClickHandler(event -> event.getNativeEvent().preventDefault());
         return td;
     }
 }

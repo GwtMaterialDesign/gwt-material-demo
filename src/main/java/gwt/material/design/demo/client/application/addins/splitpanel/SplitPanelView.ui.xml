@@ -65,7 +65,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Styling" description="You can style the splitter bar easily." />
-            <ma:splitpanel.MaterialSplitPanel backgroundColor="BLUE" height="500px">
+            <ma:splitpanel.MaterialSplitPanel backgroundColor="BLUE" splitterLineColor="BLUE_DARKEN_2" height="500px">
                 <m:MaterialPanel backgroundColor="BLUE_LIGHTEN_2">
                     <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
@@ -231,17 +231,12 @@
                     <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
                         <m:MaterialTitle textAlign="CENTER" title="1"/>
                     </m:MaterialPanel>
-                    <ma:splitpanel.MaterialSplitPanel dock="RIGHT" barPosition="80" backgroundColor="BLACK">
-                        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
-                            <m:MaterialTitle textAlign="CENTER" title="2"/>
-                        </m:MaterialPanel>
-                        <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
-                            <m:MaterialTitle textAlign="CENTER" title="3"/>
-                        </m:MaterialPanel>
-                    </ma:splitpanel.MaterialSplitPanel>
+                    <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
+                        <m:MaterialTitle textAlign="CENTER" title="2"/>
+                    </m:MaterialPanel>
                 </ma:splitpanel.MaterialSplitPanel>
                 <m:MaterialPanel backgroundColor="GREY_LIGHTEN_2">
-                    <m:MaterialTitle textAlign="CENTER" title="4"/>
+                    <m:MaterialTitle textAlign="CENTER" title="3"/>
                 </m:MaterialPanel>
             </ma:splitpanel.MaterialSplitPanel>
             <demo:PrettyPre addStyleNames="lang-xml">

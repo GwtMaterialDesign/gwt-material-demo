@@ -20,8 +20,10 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
              xmlns:m="urn:import:gwt.material.design.client.ui"
-             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
 
   <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
 
@@ -30,7 +32,7 @@
       <m:MaterialPanel addStyleNames="code">
         <m:MaterialTitle title="Setup using Maven Archetype" description="Run this project into cmd / terminal, just follow the prompts. Then once you're done open your project on Eclipse / Intelij IDEA.Gwt-material-archetype provides a faster way to create a GMD Project. You can also watch at the very bottom of this page about the real time procedure."/>
         <demo:PrettyPre addStyleNames="lang-xml-1">
-          &emsp;mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.0.1
+          &emsp;mvn archetype:generate -DarchetypeGroupId=com.github.gwtmaterialdesign -DarchetypeArtifactId=gwt-material-archetype -DarchetypeVersion=2.1
         </demo:PrettyPre>
       </m:MaterialPanel>
       <m:MaterialPanel addStyleNames="code">
@@ -42,7 +44,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0.1&lt;/version><br/>
+          &emsp;&lt;version>2.1&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
         <m:MaterialRow>
@@ -52,7 +54,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-addins&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0.1&lt;/version><br/>
+          &emsp;&lt;version>2.1&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
         <m:MaterialRow>
@@ -62,7 +64,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-themes&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0.1&lt;/version><br/>
+          &emsp;&lt;version>2.1&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
   
@@ -73,7 +75,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-jquery&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0.1&lt;/version><br/>
+          &emsp;&lt;version>2.1&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
   
@@ -84,7 +86,7 @@
           &emsp;&lt;dependency><br/>
           &emsp;&lt;groupId>com.github.gwtmaterialdesign&lt;/groupId><br/>
           &emsp;&lt;artifactId>gwt-material-table&lt;/artifactId><br/>
-          &emsp;&lt;version>2.0.1&lt;/version><br/>
+          &emsp;&lt;version>2.1&lt;/version><br/>
           &lt;/dependency>
         </demo:PrettyPre>
       </m:MaterialPanel>
@@ -103,6 +105,12 @@
       <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/2.0---API-Changes" text="GMD 2.0 API Changes" textColor="WHITE" />
       <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-addins/wiki/2.0-API-Changes" text="Addins 2.0 API Changes" textColor="WHITE" />
       <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material-themes/wiki/2.0---API-Changes" text="Themes 2.0 API Changes" textColor="WHITE" />
+    </m:MaterialPanel>
+
+    <m:MaterialPanel addStyleNames="code">
+      <m:MaterialTitle title="Wiki 2.1" description="Migration guide from 2.0 to 2.1" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/Migrating-from-Mojo-GWT-Maven-Plugin-to-TBroyer" text="Mojo to TBroyer Migration" textColor="WHITE" />
+      <m:MaterialAnchorButton margin="4" target="_blank" href="https://github.com/GwtMaterialDesign/gwt-material/wiki/PWA-:-Service-Worker-Automation" text="PWA : Service Worker Generation" textColor="WHITE" />
     </m:MaterialPanel>
     
     <m:MaterialPanel addStyleNames="code">
@@ -232,7 +240,7 @@
       <m:MaterialRow>
         <m:MaterialColumn grid="s12 m6 l6">
           <m:MaterialTitle title="Starter Template"  description="You can copy and paste the UI Binder Code of this starter template into your app to know how GWT Material works with basic Nav Bar, Side Bar, Fixed Footer, and Container works."/>
-          <m:MaterialImage resource="{res.starter}"  type="MATERIALBOXED"/>
+          <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/starter.webp" fallbackExtension="png" type="MATERIALBOXED"/>
           <m:MaterialButton ui:field="btnDemoStarter" text="Demo" iconType="SEARCH" iconPosition="RIGHT"/>
           <m:MaterialButton ui:field="btnSourceStarter" text="Source" iconType="FILE_DOWNLOAD" iconPosition="RIGHT"/>
         </m:MaterialColumn>

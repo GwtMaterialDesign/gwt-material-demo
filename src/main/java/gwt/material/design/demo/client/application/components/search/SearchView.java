@@ -28,11 +28,13 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.client.base.SearchObject;
+import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.client.ui.animate.MaterialAnimation;
 import gwt.material.design.client.ui.animate.Transition;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
+import gwt.material.design.addins.client.webp.MaterialWebpImage;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -57,6 +59,7 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
     @Inject
     SearchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
         // Add Open Handler
         txtSearch.addOpenHandler(openEvent -> {
             navBar.setVisible(false);
@@ -78,12 +81,14 @@ public class SearchView extends ViewImpl implements SearchPresenter.MyView {
         }
         txtSearch.setListSearches(objects);
 
+        txtSearch.setSelectedObject(objects.get(3));
+
         // Add Finish Handler
         txtSearch.addSearchFinishHandler(event -> {
             // Get the selected search object
             Hero hero = (Hero)txtSearch.getSelectedObject();
             new MaterialAnimation().transition(Transition.ZOOMIN).animate(imgHero);
-            imgHero.setResource(hero.getResource());
+            imgHero.setUrl(hero.getImageUrl());
             lblName.setText(hero.getName());
             lblDescription.setText(hero.getDescription());
             MaterialToast.fireToast("Search Finish Event was fired");

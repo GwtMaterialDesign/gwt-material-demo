@@ -47,6 +47,6 @@ public class Application implements Bootstrapper {
 
     @Override
     public void onBootstrap() {
-        // Nothing for now
+
     }
 }

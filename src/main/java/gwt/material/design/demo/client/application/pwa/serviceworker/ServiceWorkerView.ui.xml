@@ -1,0 +1,61 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:incubator="urn:import:gwt.material.design.incubator.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui"
+             xmlns:client="urn:import:gwt.material.design.addins.client">
+
+  <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+  <m:MaterialPanel>
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Create your service-worker.js" description="Click the link below and download / copy the file and put it under your webapp directory." />
+      <m:MaterialRow>
+        <m:MaterialAnchorButton text="Link to File" href="https://gist.github.com/kevzlou7979/ad8eb8a779fc6faa0c7b4b3c9108c3c5" target="_blank" />
+      </m:MaterialRow>
+      <client:webp.MaterialWebpImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/service-worker.webp" fallbackExtension="png"/>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Link to GWT" description="Last Step is to link your service-worker.js into your GWT *App.xml file." />
+      <demo:PrettyPre addStyleNames="lang-java">
+        &emsp;&lt;set-configuration-property name="serviceWorker" value="service-worker.js" />
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Service Worker : Helper Method API" description="We build a built-in helper methods to access Service Worker API" />
+      <m:MaterialButton text="Get Scope" ui:field="btnGetScope" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().getServiceWorker().scriptURL
+      </demo:PrettyPre>
+      <m:MaterialButton text="Get State" ui:field="btnGetState" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().getServiceWorker().state
+      </demo:PrettyPre>
+      <m:MaterialButton text="Unregister Service Worker" ui:field="btnUnregister" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.getInstance().unRegisterServiceWorker();
+      </demo:PrettyPre>
+    </m:MaterialRow>
+  </m:MaterialPanel>
+</ui:UiBinder>

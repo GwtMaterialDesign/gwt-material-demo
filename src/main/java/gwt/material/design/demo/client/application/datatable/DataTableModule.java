@@ -24,6 +24,7 @@ package gwt.material.design.demo.client.application.datatable;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import gwt.material.design.demo.client.application.datatable.contextmenu.ContextMenuDataTableModule;
 import gwt.material.design.demo.client.application.datatable.custom.CustomDataTableModule;
+import gwt.material.design.demo.client.application.datatable.frozen.FrozenDataTableModule;
 import gwt.material.design.demo.client.application.datatable.infinite.InfiniteDataTableModule;
 import gwt.material.design.demo.client.application.datatable.paged.PagedDataTableModule;
 import gwt.material.design.demo.client.application.datatable.standard.StandardDataTableModule;
@@ -35,6 +36,7 @@ public class DataTableModule extends AbstractPresenterModule {
         install(new StandardDataTableModule());
         install(new PagedDataTableModule());
         install(new InfiniteDataTableModule());
+        install(new FrozenDataTableModule());
         install(new CustomDataTableModule());
         install(new ContextMenuDataTableModule());
     }

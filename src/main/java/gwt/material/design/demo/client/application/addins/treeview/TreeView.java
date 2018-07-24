@@ -101,12 +101,12 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
     }
 
     @UiHandler("btnAdd")
-    void onAddModal(ClickEvent e) {
+    void onAddDialog(ClickEvent e) {
         MaterialPathAnimator.animate(btnAdd.getElement(), addOverlay.getElement());
     }
 
     @UiHandler("btnDelete")
-    void onDeleteModal(ClickEvent e) {
+    void onDeleteDialog(ClickEvent e) {
         docTree.getSelectedItem().removeFromTree();
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
@@ -122,7 +122,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
     }
 
     @UiHandler("btnFinish")
-    void onFinishModal(ClickEvent e) {
+    void onFinishDialog(ClickEvent e) {
         MaterialTreeItem item = new MaterialTreeItem();
         item.setText(txtName.getText());
         item.setIconType(IconType.FOLDER);
@@ -132,7 +132,7 @@ public class TreeView extends ViewImpl implements TreeViewPresenter.MyView {
     }
 
     @UiHandler("btnCancel")
-    void onCancelModal(ClickEvent e) {
+    void onCancelDialog(ClickEvent e) {
         MaterialPathAnimator.reverseAnimate(btnAdd.getElement(), addOverlay.getElement());
     }
 }

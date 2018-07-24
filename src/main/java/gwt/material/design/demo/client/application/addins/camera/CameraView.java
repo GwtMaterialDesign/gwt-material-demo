@@ -28,8 +28,11 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.camera.MaterialCameraCapture;
+import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.MaterialImage;
+import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialRow;
+import gwt.material.design.incubator.client.alert.Alert;
 
 import javax.inject.Inject;
 
@@ -47,11 +50,25 @@ public class CameraView extends ViewImpl implements CameraPresenter.MyView {
     @UiField
     MaterialRow imageCapturedPanel;
 
+    @UiField
+    MaterialRow cameraPanel;
+
+    @UiField
+    Alert browserNotSupported;
+
     @Inject
     CameraView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
         camera.getVideo().setWidth("100%");
+
+        if (MaterialCameraCapture.isSupported()) {
+            cameraPanel.setVisible(true);
+            browserNotSupported.close();
+        } else {
+            cameraPanel.setVisible(false);
+            browserNotSupported.open();
+        }
     }
 
     @UiHandler("play")

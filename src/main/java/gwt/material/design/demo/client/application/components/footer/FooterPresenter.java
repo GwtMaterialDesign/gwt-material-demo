@@ -29,16 +29,21 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import gwt.material.design.demo.client.application.ApplicationPresenter;
+import gwt.material.design.demo.client.event.ContentPushEvent;
 import gwt.material.design.demo.client.event.SetPageTitleEvent;
 import gwt.material.design.demo.client.place.NameTokens;
 
-public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPresenter.MyProxy> {
+public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPresenter.MyProxy>
+        implements ContentPushEvent.ContentPushHandler{
+
     interface MyView extends View {
+        void resetFooter();
     }
 
     @NameToken(NameTokens.footer)
     @ProxyCodeSplit
     interface MyProxy extends ProxyPlace<FooterPresenter> {
+
     }
 
     @Inject
@@ -47,6 +52,7 @@ public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPre
         MyView view,
         MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+        addRegisteredHandler(ContentPushEvent.TYPE, this);
     }
 
     @Override
@@ -56,5 +62,10 @@ public class FooterPresenter extends Presenter<FooterPresenter.MyView, FooterPre
         SetPageTitleEvent.fire("Footer", "Footers are a great way to organize a lot of site navigation and " +
             "information at the end of a page. This is where the user will look once hes finished scrolling " +
             "through the current page or is looking for additional information about your website.", "components/footer/FooterView", "", this);
+    }
+
+    @Override
+    public void onContentPush(ContentPushEvent event) {
+        getView().resetFooter();
     }
 }

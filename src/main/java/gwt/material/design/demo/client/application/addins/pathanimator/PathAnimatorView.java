@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.addins.pathanimator;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -30,6 +31,7 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.overlay.MaterialOverlay;
 import gwt.material.design.addins.client.pathanimator.MaterialPathAnimator;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.ui.*;
 
 
@@ -38,7 +40,7 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     }
 
     @UiField
-    MaterialButton btnOptionSource, btnSource1, btnSource3;
+    MaterialButton btnOptionSource, btnSource1, btnSource3, toScrolledElement;
 
     @UiField
     MaterialCard card, panelTarget3, panelWithOptions;
@@ -50,11 +52,17 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
     MaterialIcon btnSource4;
 
     @UiField
-    MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2,
-        panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
+    MaterialRow scrolledTarget;
 
     @UiField
-    MaterialColumn col1, col2,  col3, col4, col5, col6, col7;
+    MaterialCheckBox withBackground, withBorder, withShadow;
+
+    @UiField
+    MaterialOverlay panelTarget1, panelTarget2, panelTarget4, panelTargetCol1, panelTargetCol2,
+            panelTargetCol3, panelTargetCol4, panelTargetCol5, panelTargetCol6, panelTargetCol7;
+
+    @UiField
+    MaterialColumn col1, col2, col3, col4, col5, col6, col7;
 
     @UiField
     MaterialIntegerBox txtDuration, txtTargetShowDuration, txtExtraTransitionDuration;
@@ -74,6 +82,13 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
         txtExtraTransitionDuration.setHelperText("Extra duration (in milliseconds) of targetElement to provide visual continuity between the animation and the rendering of the targetElement. Default is 1000ms");
     }
 
+    @UiHandler("toScrolledElement")
+    void toScrolledElement(ClickEvent e) {
+        animator.setSourceElement(toScrolledElement.getElement());
+        animator.setTargetElement(card.getElement());
+        animator.animate();
+    }
+
     @UiHandler("btnCloseWithOptions")
     void onCloseWithOptions(ClickEvent e) {
         animator.reverseAnimate();
@@ -87,6 +102,34 @@ public class PathAnimatorView extends ViewImpl implements PathAnimatorPresenter.
         animator.setTargetShowDuration(txtTargetShowDuration.getValue());
         animator.setExtraTransitionDuration(txtExtraTransitionDuration.getValue());
         animator.animate();
+
+    }
+
+    @UiHandler("withBackground")
+    void withBackground(ValueChangeEvent<Boolean> e) {
+        if (e.getValue()) {
+            animator.setBackgroundColor(Color.RED);
+        } else {
+            animator.setBackgroundColor(Color.WHITE);
+        }
+    }
+
+    @UiHandler("withBorder")
+    void withBorder(ValueChangeEvent<Boolean> e) {
+        if (e.getValue()) {
+            animator.setStyleProperty("border", "4px solid");
+        } else {
+            animator.clearStyleProperty("border");
+        }
+    }
+
+    @UiHandler("withShadow")
+    void withShadow(ValueChangeEvent<Boolean> e) {
+        if (e.getValue()) {
+            animator.setShadow(3);
+        } else {
+            animator.setShadow(0);
+        }
     }
 
     @UiHandler("btnSource1")

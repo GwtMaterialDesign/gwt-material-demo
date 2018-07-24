@@ -1,0 +1,117 @@
+<!--
+  #%L
+  GwtMaterial
+  %%
+  Copyright (C) 2015 - 2016 GwtMaterialDesign
+  %%
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  #L%
+  -->
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:m="urn:import:gwt.material.design.client.ui"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:m.html="urn:import:gwt.material.design.client.ui.html"
+             xmlns:ma="urn:import:gwt.material.design.addins.client"
+             xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
+
+    <ui:with field='res' type='gwt.material.design.demo.client.resources.MaterialResources' />
+
+    <g:HTMLPanel>
+        <m:MaterialRow addStyleNames="code row">
+            <m:MaterialTitle title="Demo" />
+            <demo:ExternalLibrary text="SignaturePad 2.3.0" link="https://github.com/szimek/signature_pad" marginBottom="40"/>
+
+            <!-- SIGNATURE PAD -->
+            <ma:signature.MaterialSignaturePad ui:field="signaturePad" dotSize="12" grid="s9" height="300px" penColor="black" border="1px solid #e9e9e9" />
+            <!-- EVENTS -->
+            <m:MaterialColumn ui:field="eventCol" grid="s3" backgroundColor="GREY_LIGHTEN_3" height="300px" overflow="AUTO" />
+            <!-- OPTIONS -->
+            <m:MaterialRow>
+                <!-- Colors -->
+                <m:MaterialColumn grid="s12 m3 l3">
+                    <m:MaterialLabel ui:field="colorSelected" text="Pen Color : BLUE" fontSize="0.8em" textColor="BLACK" />
+                    <m:MaterialRow ui:field="colorRow">
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="BLACK" />
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="RED" />
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="BLUE" />
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="PURPLE" />
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="GREEN" />
+                        <m:MaterialColumn grid="s2" height="40px" waves="DEFAULT" backgroundColor="AMBER" />
+                    </m:MaterialRow>
+                </m:MaterialColumn>
+
+                <m:MaterialColumn grid="s12 m3 l3">
+                    <ma:combobox.MaterialComboBox ui:field="comboDotSize" label="Dot Size" hideSearch="true" grid="s4"/>
+                    <ma:combobox.MaterialComboBox ui:field="comboMinWidth" label="Line Min Width" hideSearch="true" grid="s4"/>
+                    <ma:combobox.MaterialComboBox ui:field="comboMaxWidth" label="Line Max Width" hideSearch="true" grid="s4"/>
+                </m:MaterialColumn>
+
+                <m:MaterialColumn grid="s12 m3 l3">
+                    <ma:combobox.MaterialComboBox ui:field="comboThrottle" label="Throttle" hideSearch="true" grid="s4"/>
+                    <ma:combobox.MaterialComboBox ui:field="comboVelocity" label="Velocity (ms)" hideSearch="true" grid="s4"/>
+                </m:MaterialColumn>
+
+                <m:MaterialColumn grid="s12 m3 l3">
+                    <m:MaterialLabel text="Actions" fontSize="0.8em" textColor="GREY"/>
+                    <m:MaterialButton ui:field="clear" text="Clear" waves="DEFAULT" />
+                    <m:MaterialButton ui:field="png" text="Get Image Data" waves="DEFAULT" marginLeft="12" />
+                </m:MaterialColumn>
+            </m:MaterialRow>
+
+            <m:MaterialDialog ui:field="dataDialog" dismissible="true">
+                <m:MaterialDialogContent>
+                    <m:MaterialTitle title="Image Data" description="Below are the generated image for the Signature Pad." />
+                    <m:MaterialImage ui:field="imageData" width="100%" minWidth="200px" backgroundColor="GREY_LIGHTEN_3" />
+                </m:MaterialDialogContent>
+                <m:MaterialDialogFooter>
+                    <m:MaterialButton ui:field="closeDialog" type="FLAT" text="Close" />
+                </m:MaterialDialogFooter>
+            </m:MaterialDialog>
+
+            <demo:PrettyPre addStyleNames="code lang-xml">
+                &lt;ma:signature.MaterialSignaturePad ui:field="signaturePad" dotSize="12" grid="s9" height="300px" penColor="black" border="1px solid #e9e9e9" />
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <g:HTMLPanel addStyleNames="code">
+            <m:MaterialTitle title="Options"/>
+            <blockquote>
+                <p><b>dotSize</b> - Radius of a single dot.</p>
+                <p><b>minWidth</b> - Minimum width of a line. Defaults to 0.5.</p>
+                <p><b>maxWidth</b> - Maximum width of a line. Defaults to 2.5.</p>
+                <p><b>throttle</b> - Draw the next point at most once per every x milliseconds. Set it to 0 to turn off throttling. Defaults to 16.</p>
+                <p><b>penColor</b> - Color used to draw the lines. Defaults to black.</p>
+                <p><b>velocityFilterWeight</b> - Weight used to modify new velocity based on the previous velocity. Defaults to 0.7.</p>
+            </blockquote>
+        </g:HTMLPanel>
+
+        <g:HTMLPanel addStyleNames="code">
+            <m:MaterialTitle title="Events"/>
+            <blockquote>
+                <p><b>BeginSignatureEvent</b> - Fired once signature drawing was started.</p>
+                <p><b>EndSignatureEvent</b> - Fired once signature drawing was ended.</p>
+                <p><b>ClearSignatureEvent</b> - Fired once the canvas was cleared.</p>
+            </blockquote>
+        </g:HTMLPanel>
+
+        <g:HTMLPanel addStyleNames="code">
+            <m:MaterialTitle title="Methods"/>
+            <blockquote>
+                <p><b>clear()</b> - Fired once signature drawing was ended.</p>
+                <p><b>toDataUrl()</b> - Fired once signature drawing was ended.</p>
+                <p><b>isEmpty()</b> - Fired once the canvas was cleared.</p>
+            </blockquote>
+        </g:HTMLPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

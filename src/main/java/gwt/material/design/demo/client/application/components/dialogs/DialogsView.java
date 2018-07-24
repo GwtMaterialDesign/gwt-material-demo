@@ -28,7 +28,10 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialButton;
+import gwt.material.design.client.ui.MaterialDialog;
+import gwt.material.design.client.ui.MaterialLink;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -37,70 +40,74 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
     }
 
     @UiField
-    MaterialModal modal, modalFixed, modalBottomSheet, modalClosable, modalEvents,
-            modal1, modal2, modal3, modalFullScreen;
+    MaterialDialog dialog, dialogFixed, dialogBottomSheet, dialogClosable, dialogEvents,
+            dialog1, dialog2, dialog3, dialogFullScreen;
 
+    @UiField
+    MaterialButton turnOffFullscreen;
 
     @Inject
     DialogsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        modalEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
-        modalEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
+        dialogEvents.addOpenHandler(openEvent -> MaterialToast.fireToast("Opened"));
+        dialogEvents.addCloseHandler(closeEvent -> MaterialToast.fireToast("Closed"));
 
-        modal1.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 1 - Open"));
-        modal2.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 2 - Open"));
-        modal3.addOpenHandler(openEvent -> MaterialToast.fireToast("Modal 3 - Open"));
+        dialog1.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 1 - Open"));
+        dialog2.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 2 - Open"));
+        dialog3.addOpenHandler(openEvent -> MaterialToast.fireToast("Dialog 3 - Open"));
 
-        modal1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 1 - Closed"));
-        modal2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 2 - Closed"));
-        modal3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Modal 3 - Closed"));
+        dialog1.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 1 - Closed"));
+        dialog2.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 2 - Closed"));
+        dialog3.addCloseHandler(closeEvent -> MaterialToast.fireToast("Dialog 3 - Closed"));
     }
 
-    @UiHandler("openFullscreenModal")
-    void onOpenFullScreenModal(ClickEvent e) {
-        modalFullScreen.setFullscreen(true);
-        modalFullScreen.open();
+    @UiHandler("openFullscreenDialog")
+    void onOpenFullScreenDialog(ClickEvent e) {
+        dialogFullScreen.setFullscreen(true);
+        turnOffFullscreen.setVisible(true);
+        dialogFullScreen.open();
     }
 
     @UiHandler("turnOffFullscreen")
     void turnOffFullScreen(ClickEvent e) {
-        modalFullScreen.setFullscreen(false);
+        turnOffFullscreen.setVisible(false);
+        dialogFullScreen.setFullscreen(false);
     }
 
-    @UiHandler("closeFullscreenModal")
+    @UiHandler("closeFullscreenDialog")
     void closeFullScreen(ClickEvent e) {
-        modalFullScreen.close();
+        dialogFullScreen.close();
     }
 
-    @UiHandler("btnOpenModal1")
-    void onOpenModal1(ClickEvent e) {
-        modal1.open();
+    @UiHandler("btnOpenDialog1")
+    void onOpenDialog1(ClickEvent e) {
+        dialog1.open();
     }
 
-    @UiHandler("btnOpenModal2")
-    void onOpenModal2(ClickEvent e) {
-        modal2.open();
+    @UiHandler("btnOpenDialog2")
+    void onOpenDialog2(ClickEvent e) {
+        dialog2.open();
     }
 
-    @UiHandler("btnOpenModal3")
-    void onOpenModal3(ClickEvent e) {
-        modal3.open();
+    @UiHandler("btnOpenDialog3")
+    void onOpenDialog3(ClickEvent e) {
+        dialog3.open();
     }
 
-    @UiHandler("btnCloseModal1")
-    void onCloseModal1(ClickEvent e) {
-        modal1.close();
+    @UiHandler("btnCloseDialog1")
+    void onCloseDialog1(ClickEvent e) {
+        dialog1.close();
     }
 
-    @UiHandler("btnCloseModal2")
-    void onCloseModal2(ClickEvent e) {
-        modal2.close();
+    @UiHandler("btnCloseDialog2")
+    void onCloseDialog2(ClickEvent e) {
+        dialog2.close();
     }
 
-    @UiHandler("btnCloseModal3")
-    void onCloseModal3(ClickEvent e) {
-        modal3.close();
+    @UiHandler("btnCloseDialog3")
+    void onCloseDialog3(ClickEvent e) {
+        dialog3.close();
     }
 
     @UiHandler("btnToast")
@@ -132,53 +139,53 @@ public class DialogsView extends ViewImpl implements DialogsPresenter.MyView {
         MaterialToast.fireToast("I Love Material Design", "rounded");
     }
 
-    @UiHandler("btnModal")
-    void onModal(ClickEvent e) {
-        modal.open();
+    @UiHandler("btnDialog")
+    void onDialog(ClickEvent e) {
+        dialog.open();
     }
 
     @UiHandler("btnMoadalBottomSheets")
-    void onModalBottom(ClickEvent e) {
-       modalBottomSheet.open();
+    void onDialogBottom(ClickEvent e) {
+       dialogBottomSheet.open();
     }
 
-    @UiHandler("btnModalFixFooter")
-    void onModalFix(ClickEvent e) {
-        modalFixed.open();
+    @UiHandler("btnDialogFixFooter")
+    void onDialogFix(ClickEvent e) {
+        dialogFixed.open();
     }
 
     @UiHandler("btnClosable")
     void onClosable(ClickEvent e) {
-        modalClosable.open();
+        dialogClosable.open();
     }
 
     @UiHandler("btnEvents")
     void onEvents(ClickEvent e) {
-        modalEvents.open();
+        dialogEvents.open();
     }
 
-    @UiHandler("btnCloseModal")
-    void onCloseModal(ClickEvent e){
-        modal.close();
+    @UiHandler("btnCloseDialog")
+    void onCloseDialog(ClickEvent e){
+        dialog.close();
     }
 
-    @UiHandler("btnCloseModalEvents")
+    @UiHandler("btnCloseDialogEvents")
     void onCloseEvents(ClickEvent e) {
-        modalEvents.close();
+        dialogEvents.close();
     }
 
-    @UiHandler("btnCloseFixedModal")
-    void onCloseFixedModal(ClickEvent e) {
-        modalFixed.close();
+    @UiHandler("btnCloseFixedDialog")
+    void onCloseFixedDialog(ClickEvent e) {
+        dialogFixed.close();
     }
 
-    @UiHandler("btnCloseBottomSheetModal")
-    void onCloseBottomModal(ClickEvent e) {
-        modalBottomSheet.close();
+    @UiHandler("btnCloseBottomSheetDialog")
+    void onCloseBottomDialog(ClickEvent e) {
+        dialogBottomSheet.close();
     }
 
-    @UiHandler("btnCloseModalDismiss")
-    void onCloseModalDismiss(ClickEvent e) {
-        modalClosable.close();
+    @UiHandler("btnCloseDialogDismiss")
+    void onCloseDialogDismiss(ClickEvent e) {
+        dialogClosable.close();
     }
 }
