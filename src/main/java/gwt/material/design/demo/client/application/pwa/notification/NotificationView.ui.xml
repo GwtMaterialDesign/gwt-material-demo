@@ -25,7 +25,74 @@
              xmlns:demo="urn:import:gwt.material.design.demo.client.ui">
   <m:MaterialPanel>
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Under Construction" description="There is a new way to implement the Push Notification using Service Worker. Its on going, stay tune." />
+      <m:MaterialTitle title="isSupported()" description="Will check if the Notification API is supported"/>
+      <demo:PrettyPre addStyleNames="lang-java">
+        PwaManager.isPwaSupported()
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Request Permission" />
+      <m:MaterialButton ui:field="requestPermission" text="Request Permission" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        // Will return the following status (see next section) <br/>
+        Notification.getPermission();
+      </demo:PrettyPre>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Permission Status"/>
+      <g:HTMLPanel>
+        <blockquote>
+          <p><b>denied</b> - The user refuses to have notifications displayed. </p>
+          <p><b>granted</b> - The user accepts having notifications displayed. </p>
+          <p><b>default</b> - The user choice is unknown and therefore the browser will act as if the value were denied. </p>
+        </blockquote>
+      </g:HTMLPanel>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Show Notification" />
+      <m:MaterialButton ui:field="notify" text="Show Notification"/>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Notification Options" />
+      <g:HTMLPanel>
+        <blockquote>
+          <p><b>actions</b> - The actions array of the notification as specified in the options parameter of the constructor.</p>
+          <p><b>badge</b> - The URL of the image used to represent the notification when there is not enough space to display the notification itself.</p>
+          <p><b>body</b> - The body string of the notification as specified in the options parameter of the constructor.</p>
+          <p><b>data</b> - Returns a structured clone of the notification’s data.</p>
+          <p><b>dir</b> - The text direction of the notification as specified in the options parameter of the constructor.</p>
+          <p><b>lang</b> - The language code of the notification as specified in the options parameter of the constructor. </p>
+          <p><b>tag</b> - The ID of the notification (if any) as specified in the options parameter of the constructor. </p>
+          <p><b>icon</b> - The URL of the image used as an icon of the notification as specified in the options parameter of the constructor. </p>
+          <p><b>image</b> - The  URL of an image to be displayed as part of the notification, as specified in the options parameter of the constructor. </p>
+          <p><b>renotify</b> - Specifies whether the user should be notified after a new notification replaces an old one. </p>
+          <p><b>requireInteraction</b> - A Boolean indicating that a notification should remain active until the user clicks or dismisses it, rather than closing automatically. </p>
+          <p><b>silent</b> - Specifies whether the notification should be silent, i.e. no sounds or vibrations should be issued, regardless of the device settings. </p>
+          <p><b>timestamp</b> - Specifies the time at which a notification is created or applicable (past, present, or future). </p>
+          <p><b>title</b> - The title of the notification as specified in the first parameter of the constructor. </p>
+          <p><b>vibrate</b> - Specifies a vibration pattern for devices with vibration hardware to emit. </p>
+        </blockquote>
+      </g:HTMLPanel>
+    </m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialTitle title="Notification Handlers" />
+      <demo:PrettyPre addStyleNames="lang-java">
+        Notification notification = new Notification("GMD Says", options); <br/>
+        // Listen to any Notification events <br/>
+        // A handler for the click event. It is triggered each time the user clicks on the notification. <br/>
+        notification.setOnclick(param1 -> MaterialToast.fireToast("Clicked")); <br/>
+        // A handler for the close event. It is triggered when the user closes the notification. <br/>
+        notification.setOnclose(param1 -> MaterialToast.fireToast("Closed")); <br/>
+        // A handler for the error event. It is triggered each time the notification encounters an error. <br/>
+        notification.setOnerror(param1 -> MaterialToast.fireToast("Error")); <br/>
+        // A handler for the show event. It is triggered when the notification is displayed. <br/>
+        notification.setOnshow(param1 -> MaterialToast.fireToast("Shown")); <br/>
+      </demo:PrettyPre>
     </m:MaterialRow>
   </m:MaterialPanel>
 </ui:UiBinder>

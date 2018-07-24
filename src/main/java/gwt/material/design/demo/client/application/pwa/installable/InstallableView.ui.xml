@@ -64,13 +64,6 @@
     </m:MaterialRow>
 
     <m:MaterialRow addStyleNames="code">
-      <m:MaterialTitle title="Link to GWT" description="Last Step is to link your manifest.json into your GWT *App.xml file."/>
-      <demo:PrettyPre addStyleNames="lang-xml">
-        &emsp;&lt;set-configuration-property name="manifest" value="manifest.json" />
-      </demo:PrettyPre>
-    </m:MaterialRow>
-
-    <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Demo" description="Here's a sample screenshot how to enable Add to Homescreen into your mobile device" />
       <m:MaterialImage url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/add-to-homescreen.gif" />
     </m:MaterialRow>

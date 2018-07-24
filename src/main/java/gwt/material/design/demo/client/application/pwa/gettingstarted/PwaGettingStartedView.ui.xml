@@ -40,7 +40,7 @@
     <m:MaterialRow addStyleNames="code">
       <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pwa-reliable.webp" fallbackExtension="png" />
       <m:MaterialTitle grid="col m6 l6 s12" title="Reliable" description="When launched from the user’s home screen, service workers enable a Progressive Web App to load instantly, regardless of the network state.A service worker is like a client-side proxy, written in JavaScript and puts you in control of the cache and how to respond to resource requests. By pre-caching key resources you can eliminate the dependence on the network, ensuring an instant and reliable experience for your users." >
-        <m:MaterialLink text="SERVICE WORKER" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#serviceworker" target="_blank" />
+        <m:MaterialLink text="SERVICE WORKER" href="https://gwtmaterialdesign.github.io/gwt-material-demo/#serviceworker" target="_blank" />
       </m:MaterialTitle>
     </m:MaterialRow>
 
@@ -54,8 +54,8 @@
     <m:MaterialRow addStyleNames="code">
       <client:webp.MaterialWebpImage grid="col m6 l6 s12" url="https://gwtmaterialdesign.github.io/gwt-material-demo/images/pwa-engaging.webp" fallbackExtension="png" />
       <m:MaterialTitle grid="col m6 l6 s12" title="Engaging" description="Progressive Web Apps are installable and live on the users home screen, without the need for an app store. They offer an immersive full screen experience with help from a web app manifest file and can even re-engage users with web push notifications.The Web App Manifest allows you to control how your app appears and how it's launched. You can specify icons for the home screen and splash screen which is shown while the app is loading. Which page is loaded when the app is launched, screen orientation, even whether to show the browser chrome or not.">
-        <m:MaterialLink text="WEB APP MANIFEST" marginRight="40" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#installable" target="_blank" />
-        <m:MaterialLink text="WEB PUSH NOTIFICATIONS" href="https://gwtmaterialdesign.github.io/gwt-material-demo/pwa/#notification" target="_blank" />
+        <m:MaterialLink text="WEB APP MANIFEST" marginRight="40" href="https://gwtmaterialdesign.github.io/gwt-material-demo/#installable" target="_blank" />
+        <m:MaterialLink text="WEB PUSH NOTIFICATIONS" href="https://gwtmaterialdesign.github.io/gwt-material-demo/#notification" target="_blank" />
       </m:MaterialTitle>
     </m:MaterialRow>
 
