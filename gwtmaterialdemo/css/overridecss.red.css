@@ -1,3 +1,11 @@
+/** InputField - Outlined **/
+.input-field.outlined input:focus,
+.input-field.outlined textarea:focus,
+.input-field.outlined input.picker__input--active {
+    border: 2px solid #ef5350;
+    box-shadow: none;
+}
+
 /** Blockquote **/
 blockquote {
     border-left: 5px solid #ef5350 !important;
@@ -53,6 +61,13 @@ blockquote {
 
 .lolliclock-tick.active, .lolliclock-tick:hover {
     background-color: #e57373 !important;
+}
+
+/** TimePicker - Outlined **/
+.input-field.outlined.timepicker input:focus,
+.input-field.outlined.timepicker input.valid{
+    border: 2px solid #ef5350;
+    box-shadow: none;
 }
 
 /** File Uploader **/
@@ -133,8 +148,32 @@ button.waves-effect.waves-light.btn.disabled, button.waves-effect.waves-light.bt
     background: #c62828;
 }
 
+/** Carousel **/
+.slick-dots li {
+    background: rgba(244,67,54,.23);
+}
+
+.slick-dots li.slick-active {
+    background: #f44336;
+}
+
 /** ComboBox **/
 ul.select2-results__options[aria-multiselectable="true"] li.select2-results__option:not([role="group"])[aria-selected="true"]:after {
     border: 2px solid #f44336;
     background-color: #f44336;
+}
+
+.input-field.outlined.combobox .select2-container--open .select2-selection {
+    border: 2px solid #ef5350;
+    box-shadow: none;
+}
+
+/** Progress Line Bar **/
+.progress-line-bar .progress-item.active {
+    background: #f44336;
+}
+
+/** Group Toggle Button **/
+.group-toggle-button button.active {
+    background: #f44336;
 }
