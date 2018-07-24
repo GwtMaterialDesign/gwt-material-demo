@@ -55,7 +55,7 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
         infiniteScrollPanel.setLoadConfig(new LoadConfig<>(0, 10));
         infiniteScrollPanel.setDataSource(personDataSource);
         infiniteScrollPanel.addLoadingHandler(event -> MaterialToast.fireToast("Loading Event fired"));
-        infiniteScrollPanel.addLoadHandler(event -> MaterialToast.fireToast("Loaded Event fired"));
+        infiniteScrollPanel.addLoadedHandler(event -> MaterialToast.fireToast("Loaded Event fired"));
         infiniteScrollPanel.addCompleteHandler(event -> MaterialToast.fireToast("All data are loaded"));
         infiniteScrollPanel.setRenderer(model -> createColumn(model));
     }
