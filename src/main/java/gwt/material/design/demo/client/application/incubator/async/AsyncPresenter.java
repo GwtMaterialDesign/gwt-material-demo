@@ -50,6 +50,6 @@ public class AsyncPresenter extends Presenter<AsyncPresenter.MyView, AsyncPresen
     protected void onReveal() {
         super.onReveal();
 
-        SetPageTitleEvent.fire("Async Button", "We provided an asynchronous button to provide a delighful and user friendly loading mechanism in just one button.", "incubator/async/AsyncView", "", this);
+        SetPageTitleEvent.fire("Async Button", "We provided an asynchronous button to provide a delighful and user friendly loading mechanism in just one button.", "incubator/button/AsyncView", "", this);
     }
 }

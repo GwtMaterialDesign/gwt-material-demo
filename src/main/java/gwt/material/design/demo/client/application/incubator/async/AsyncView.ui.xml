@@ -29,8 +29,11 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic Usage"/>
             <m:MaterialSwitch ui:field="errorSuccess" value="true" onLabel="Success" offLabel="Failure" />
-            <m:MaterialPanel padding="20" backgroundColor="GREY_LIGHTEN_3">
-                <incubator:async.AsyncButton ui:field="async" text="This is an async button" />
+            <m:MaterialPanel padding="20">
+                <incubator:async.AsyncButton ui:field="button" text="This is an async button" margin="8"/>
+                <incubator:async.AsyncButton type="FLAT" ui:field="flatButton" text="This is an async button" margin="8" />
+                <incubator:async.AsyncButton enabled="false" ui:field="disableButton" text="This is an async button" margin="8" />
+                <incubator:async.AsyncButton type="OUTLINED" ui:field="outlinedButton" text="This is an async button" margin="8" />
             </m:MaterialPanel>
 
             <demo:PrettyPre addStyleNames="lang-xml">
@@ -47,6 +50,31 @@
                 // Will make your button to a ERROR State<br/>
                 async.error("Failed to load");<br/><br/>
             </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Basic Usage"/>
+            <m:MaterialPanel padding="20">
+                <incubator:async.AsyncButton ui:field="custom" text="Changing Password" margin="8"/>
+            </m:MaterialPanel>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="AsyncButton : Floating" />
+            <m:MaterialPanel padding="20">
+                <incubator:async.AsyncButton ui:field="floating" type="FLOATING" backgroundColor="WHITE" iconColor="GREY" iconType="LOCK" successIcon="LOCK_OPEN" errorIcon="ERROR" margin="8"/>
+                <incubator:async.AsyncButton ui:field="floating2" type="FLOATING" iconType="LOCK" size="MEDIUM" successIcon="LOCK_OPEN" errorIcon="ERROR" margin="8"/>
+                <incubator:async.AsyncButton ui:field="floating3" type="FLOATING" backgroundColor="RED" size="LARGE" iconType="LOCK" iconSize="LARGE" successIcon="LOCK_OPEN" errorIcon="ERROR" margin="8"/>
+            </m:MaterialPanel>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="AsyncIcons" />
+            <m:MaterialPanel padding="20">
+                <incubator:async.AsyncIcon ui:field="icon" iconType="LOCK" loadingIcon="GROUP_WORK" successIcon="LOCK_OPEN" errorIcon="ERROR" margin="8"/>
+                <incubator:async.AsyncIcon ui:field="iconMedium" iconType="LOCK" iconSize="MEDIUM" loadingIcon="FILTER_TILT_SHIFT" successIcon="LOCK_OPEN" errorIcon="ERROR" margin="8"/>
+                <incubator:async.AsyncIcon ui:field="iconLarge" iconType="LOCK" iconSize="LARGE" successIcon="GRADE" errorIcon="ERROR" margin="8"/>
+            </m:MaterialPanel>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>

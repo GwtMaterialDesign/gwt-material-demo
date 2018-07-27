@@ -232,6 +232,7 @@
 							<m:MaterialLink targetHistoryToken="{tokens.getLoadingState}" text="Loading State" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getProgressLineBar}" text="Progress Line Bar" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getRecaptcha}" text="Recaptcha" waves="DEFAULT"/>
+							<m:MaterialLink targetHistoryToken="{tokens.getInfiniteScroll}" text="Infinite Scroll" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getInlineSearch}" text="Inline Search" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getTimer}" text="Timer" waves="DEFAULT"/>
 							<m:MaterialLink targetHistoryToken="{tokens.getToggle}" text="Toggle" waves="DEFAULT"/>

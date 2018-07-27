@@ -36,7 +36,7 @@ public class FakeTestService implements TestServiceAsync {
     static {
 
         int index = 1;
-        for (int i = 1; i <= 1000; i++, index++) {
+        for (int i = 1; i <= 100; i++, index++) {
             data.add(new Person(i, "https://joashpereira.com/templates/material_one_pager/img/avatar1.png", "Field " + index, "Field " + i, "Field " + index, "No " + i, ""));
         }
     }
