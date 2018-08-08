@@ -77,7 +77,7 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
         recycleType.addItem(RecycleType.DETACH);
         recycleType.addItem(RecycleType.DISPLAY);
 
-        infiniteScrollAdvance.setLoadConfig(new LoadConfig<>(0, 20));
+        infiniteScrollAdvance.setLoadConfig(new LoadConfig<>(0, 10));
         infiniteScrollAdvance.setDataSource(personDataSource);
         infiniteScrollAdvance.addLoadingHandler(event -> currentEvent.setValue("Loading: Index[" + event.getStartIndex() + ", " + event.getLastIndex() + "]"));
         infiniteScrollAdvance.addLoadedHandler(event -> currentEvent.setValue("Loaded: " + event.getResult().getData().size() + " Items"));
@@ -89,7 +89,7 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
     }
 
     protected MaterialWidget createColumn(Person person) {
-        MaterialColumn column = new MaterialColumn(12, 4, 3);
+        MaterialColumn column = new MaterialColumn(12, 12, 12);
         MaterialCard card = new MaterialCard();
         card.setMargin(12);
         card.setPadding(40);
