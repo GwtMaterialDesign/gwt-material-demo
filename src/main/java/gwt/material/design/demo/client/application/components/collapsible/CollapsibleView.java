@@ -41,6 +41,9 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
     MaterialCollapsible colaps, expandable;
 
     @UiField
+    MaterialCollapsibleItem secondItem;
+
+    @UiField
     MaterialCollapsibleItem item;
 
     @Inject
@@ -72,6 +75,11 @@ public class CollapsibleView extends ViewImpl implements CollapsiblePresenter.My
             }
         }
         return "No text";
+    }
+
+    @UiHandler("expand")
+    void expand(ClickEvent e) {
+        secondItem.expand();
     }
 
     @UiHandler("setActive")

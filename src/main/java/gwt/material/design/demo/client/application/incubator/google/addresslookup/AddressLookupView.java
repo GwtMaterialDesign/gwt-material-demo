@@ -62,10 +62,12 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
 
             @Override
             public void onSuccess(Void aVoid) {
-                //TODO: Auto detect if registered no need to load
                 addressLookup.load();
+
             }
         });
+
+
 
         // Lookup Demo
         AddressLookupOptions option = AddressLookupOptions.create();
