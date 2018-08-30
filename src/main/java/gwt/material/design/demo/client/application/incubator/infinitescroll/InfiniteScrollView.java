@@ -23,8 +23,10 @@ package gwt.material.design.demo.client.application.incubator.infinitescroll;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.Style;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -34,16 +36,25 @@ import gwt.material.design.demo.client.application.datatable.table.Person;
 import gwt.material.design.demo.client.application.incubator.infinitescroll.service.FakeTestService;
 import gwt.material.design.demo.client.application.incubator.infinitescroll.service.TestDatasource;
 import gwt.material.design.demo.client.application.incubator.infinitescroll.service.TestServiceAsync;
+import gwt.material.design.incubator.client.infinitescroll.InfiniteScrollLoader;
 import gwt.material.design.incubator.client.infinitescroll.InfiniteScrollPanel;
 import gwt.material.design.incubator.client.infinitescroll.data.DataSource;
 import gwt.material.design.incubator.client.infinitescroll.data.LoadConfig;
+import gwt.material.design.incubator.client.infinitescroll.recycle.RecycleManager;
+import gwt.material.design.incubator.client.infinitescroll.recycle.RecycleType;
 
 public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresenter.MyView {
     public interface Binder extends UiBinder<Widget, InfiniteScrollView> {
     }
 
     @UiField
-    InfiniteScrollPanel<Person> infiniteScrollPanel;
+    InfiniteScrollPanel<Person> infiniteScrollAdvance, infiniteScrollBasic;
+
+    @UiField
+    MaterialTextBox currentEvent;
+
+    @UiField
+    MaterialListValueBox<RecycleType> recycleType;
 
     private TestServiceAsync personService = GWT.create(FakeTestService.class);
     private DataSource<Person> personDataSource = new TestDatasource(personService);
@@ -52,16 +63,33 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
     InfiniteScrollView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
 
-        infiniteScrollPanel.setLoadConfig(new LoadConfig<>(0, 10));
-        infiniteScrollPanel.setDataSource(personDataSource);
-        infiniteScrollPanel.addLoadingHandler(event -> MaterialToast.fireToast("Loading Event fired"));
-        infiniteScrollPanel.addLoadedHandler(event -> MaterialToast.fireToast("Loaded Event fired"));
-        infiniteScrollPanel.addCompleteHandler(event -> MaterialToast.fireToast("All data are loaded"));
-        infiniteScrollPanel.setRenderer(model -> createColumn(model));
+        setupBasic();
+        setupAdvance();
+    }
+
+    protected void setupBasic() {
+        infiniteScrollBasic.setLoadConfig(new LoadConfig<>(0, 20));
+        infiniteScrollBasic.setDataSource(personDataSource);
+        infiniteScrollBasic.setRenderer(model -> createColumn(model));
+    }
+
+    protected void setupAdvance() {
+        recycleType.addItem(RecycleType.DETACH);
+        recycleType.addItem(RecycleType.DISPLAY);
+
+        infiniteScrollAdvance.setLoadConfig(new LoadConfig<>(0, 10));
+        infiniteScrollAdvance.setDataSource(personDataSource);
+        infiniteScrollAdvance.addLoadingHandler(event -> currentEvent.setValue("Loading: Index[" + event.getStartIndex() + ", " + event.getLastIndex() + "]"));
+        infiniteScrollAdvance.addLoadedHandler(event -> currentEvent.setValue("Loaded: " + event.getResult().getData().size() + " Items"));
+        infiniteScrollAdvance.addCompleteHandler(event -> currentEvent.setValue("Complete Event fired: " + event.getTotal() + " Total Item(s)"));
+        infiniteScrollAdvance.addErrorHandler(event -> MaterialToast.fireToast("Error: " + event.getMessage()));
+        infiniteScrollAdvance.setRenderer(model -> createColumn(model));
+        infiniteScrollAdvance.setInfiniteScrollLoader(new InfiniteScrollLoader("Please wait while we are getting your data"));
+        infiniteScrollAdvance.setRecycleManager(new RecycleManager(RecycleType.DETACH));
     }
 
     protected MaterialWidget createColumn(Person person) {
-        MaterialColumn column = new MaterialColumn(12, 12, 3);
+        MaterialColumn column = new MaterialColumn(12, 12, 12);
         MaterialCard card = new MaterialCard();
         card.setMargin(12);
         card.setPadding(40);
@@ -73,5 +101,11 @@ public class InfiniteScrollView extends ViewImpl implements InfiniteScrollPresen
 
         column.add(card);
         return column;
+    }
+
+    @UiHandler("recycleType")
+    void recycleType(ValueChangeEvent<RecycleType> event) {
+        infiniteScrollAdvance.setRecycleManager(new RecycleManager(event.getValue()));
+        infiniteScrollAdvance.reload();
     }
 }

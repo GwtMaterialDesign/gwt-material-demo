@@ -28,7 +28,16 @@
 
     <m:MaterialPanel>
         <m:MaterialRow addStyleNames="code">
-            <incubator:infinitescroll.InfiniteScrollPanel backgroundColor="GREY_LIGHTEN_4" ui:field="infiniteScrollPanel" height="500px" overflow="AUTO" />
+            <m:MaterialTitle title="Basic Usage" description="Simple Infinite Scrolling to retrieve your data without any recycle mechanism"/>
+            <incubator:infinitescroll.InfiniteScrollPanel backgroundColor="GREY_LIGHTEN_4" grid="s12 m12 l6" ui:field="infiniteScrollBasic" height="500px" overflow="AUTO"/>
+        </m:MaterialRow>
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Advance Recycling" description="This demos the recycling method available on Infinite Scroll" />
+            <m:MaterialRow>
+                <m:MaterialListValueBox ui:field="recycleType" fieldType="OUTLINED" placeholder="Recycle Type" grid="s6 m4 l3"/>
+                <m:MaterialTextBox ui:field="currentEvent" readOnly="true" text="0" label="Event Fired" grid="s6 m4 l3"/>
+            </m:MaterialRow>
+            <incubator:infinitescroll.InfiniteScrollPanel backgroundColor="GREY_LIGHTEN_4" grid="s12 m12 l6" ui:field="infiniteScrollAdvance" height="500px" overflow="AUTO"/>
         </m:MaterialRow>
     </m:MaterialPanel>
 </ui:UiBinder>
