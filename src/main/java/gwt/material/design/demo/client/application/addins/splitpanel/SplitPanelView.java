@@ -22,8 +22,11 @@ package gwt.material.design.demo.client.application.addins.splitpanel;
 
 
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
+import gwt.material.design.addins.client.splitpanel.MaterialSplitPanel;
+import gwt.material.design.client.constants.Color;
 
 import javax.inject.Inject;
 
@@ -32,8 +35,18 @@ public class SplitPanelView extends ViewImpl implements SplitPanelPresenter.MyVi
     interface Binder extends UiBinder<Widget, SplitPanelView> {
     }
 
+    @UiField
+    MaterialSplitPanel splitter;
+
     @Inject
     SplitPanelView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        splitter.setSplitterLineColor(Color.AMBER);
     }
 }

@@ -76,19 +76,23 @@ public class AddressLookupView extends ViewImpl implements AddressLookupPresente
         addressLookup.setOptions(option);
         addressLookup.addPlaceChangedHandler(event -> {
             MaterialToast.fireToast("Place Changed event fired");
-            setComponent(streetAddress, addressLookup.getAddressComponent(AddressComponentType.STREET_ADDRESS));
-            setComponent(city, addressLookup.getAddressComponent(AddressComponentType.LOCALITY));
-            setComponent(state, addressLookup.getAddressComponent(AddressComponentType.ADMINISTRATIVE_AREA_LEVEL_1));
-            setComponent(country, addressLookup.getAddressComponent(AddressComponentType.COUNTRY));
-            setComponent(zipCode, addressLookup.getAddressComponent(AddressComponentType.POSTAL_CODE));
+            streetAddress.setValue(getAddressComponent(AddressComponentType.STREET_NUMBER) + " "
+                    + getAddressComponent(AddressComponentType.STREET_ADDRESS) + " "
+                    + getAddressComponent(AddressComponentType.ROUTE));
+            city.setValue(getAddressComponent(AddressComponentType.LOCALITY));
+            state.setValue(getAddressComponent(AddressComponentType.ADMINISTRATIVE_AREA_LEVEL_1));
+            country.setValue(getAddressComponent(AddressComponentType.COUNTRY));
+            zipCode.setValue(getAddressComponent(AddressComponentType.POSTAL_CODE));
         });
     }
 
-    protected void setComponent(MaterialTextBox textBox, GeocoderAddressComponent addressComponent) {
+    public String getAddressComponent(AddressComponentType type) {
+        GeocoderAddressComponent addressComponent = addressLookup.getAddressComponent(type);
         if (addressComponent != null) {
-            textBox.setText(addressComponent.getLongName());
-        } else {
-            textBox.setText("-");
+            if (addressComponent.getLongName() != null && !addressComponent.getLongName().isEmpty()) {
+                return addressComponent.getLongName();
+            }
         }
+        return "";
     }
 }

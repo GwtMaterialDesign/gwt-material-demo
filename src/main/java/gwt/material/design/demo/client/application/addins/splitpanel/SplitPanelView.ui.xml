@@ -43,7 +43,7 @@
     
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Introduction" description="Using MaterialSplitPanel you must require to wrap two columns inside for the splitting feature." />
-            <ma:splitpanel.MaterialSplitPanel height="500px">
+            <ma:splitpanel.MaterialSplitPanel ui:field="splitter" height="500px">
                 <m:MaterialPanel grid="l6 m6 s6" padding="0" backgroundColor="GREY_LIGHTEN_2">
                     <m:MaterialTitle textAlign="CENTER" title="Left Zone" description="Content must be added here"/>
                 </m:MaterialPanel>
