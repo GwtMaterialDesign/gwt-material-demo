@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gwt-material-demo</artifactId>
-    <packaging>war</packaging>
+    <packaging>gwt-app</packaging>
     <version>2.2-SNAPSHOT</version>
     <name>Gwt Material Demo</name>
     <description>Showcase for gwt-material</description>
