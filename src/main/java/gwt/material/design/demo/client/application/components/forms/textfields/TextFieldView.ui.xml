@@ -41,25 +41,28 @@
 
         <!-- Types -->
         <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Type : DEFAULT" description="Filled text fields carry more visual emphasis, making them stand out when surrounded by other content and components."/>
+            <m:MaterialTitle title="Field Types and States" description="We provided an easy design property for field types and states."/>
+
             <m:MaterialRow>
+                <m:MaterialListValueBox ui:field="fieldTypes" placeholder="Field Types" grid="s12 m4"/>
                 <m:MaterialListValueBox ui:field="defaultStates" placeholder="Field States" grid="s12 m4"/>
             </m:MaterialRow>
+
             <m:MaterialRow ui:field="defaultStatesRow">
                 <!-- TextBox -->
-                <m:MaterialTextBox fieldType="DEFAULT" label="TextBox" grid="s6" allowBlank="false" autoValidate="true"/>
+                <m:MaterialTextBox fieldType="DEFAULT" label="TextBox" grid="s6" required="true"/>
                 <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" allowBlank="false" autoValidate="true"/>
+                <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" required="true"/>
                 <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" allowBlank="false" autoValidate="true"/>
+                <ma:inputmask.MaterialTextInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true"/>
                 <!-- DatePicker -->
-                <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
+                <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" required="true"/>
                 <!-- TimePicker -->
-                <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
+                <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" required="true"/>
                 <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo4" fieldType="DEFAULT" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
+                <ma:combobox.MaterialComboBox ui:field="combo4"  fieldType="DEFAULT" label="ComboBox" grid="s6" required="true" />
                 <!-- ListBox -->
-                <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
+                <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" required="true">
                     <m:html.Option text="Option 1" />
                     <m:html.Option text="Option 2" />
                     <m:html.Option text="Option 3" />
@@ -67,113 +70,10 @@
                 <!-- Autocomplete -->
                 <ma:autocomplete.MaterialAutoComplete ui:field="acDefault" display="NONE" fieldType="DEFAULT" label="Contacts" grid="s6"/>
                 <!-- TextArea -->
-                <m:MaterialTextArea fieldType="DEFAULT" label="Field 6" grid="s6" allowBlank="false" autoValidate="true"/>
+                <m:MaterialTextArea fieldType="DEFAULT" label="Field 6" grid="s6" required="true"/>
             </m:MaterialRow>
             <m:MaterialRow>
                 <m:MaterialButton text="Validate" ui:field="validateDefault" />
-            </m:MaterialRow>
-        </m:MaterialRow>
-
-        <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Type : FILLED" description="Filled text fields carry more visual emphasis, making them stand out when surrounded by other content and components."/>
-            <m:MaterialRow>
-                <m:MaterialListValueBox ui:field="filledStates" placeholder="Field States" grid="s12 m4"/>
-            </m:MaterialRow>
-            <m:MaterialRow ui:field="filledStatesRow">
-                <!-- TextBox -->
-                <m:MaterialTextBox fieldType="FILLED" label="TextBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="FILLED" label="NumberBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="FILLED" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- DatePicker -->
-                <m:MaterialDatePicker fieldType="FILLED" placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- TimePicker -->
-                <ma:timepicker.MaterialTimePicker fieldType="FILLED" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- ListBox -->
-                <m:MaterialListBox fieldType="FILLED" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
-                    <m:html.Option text="Option 1" />
-                    <m:html.Option text="Option 2" />
-                    <m:html.Option text="Option 3" />
-                </m:MaterialListBox>
-                <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo3" fieldType="FILLED" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
-                <!-- Autocomplete -->
-                <ma:autocomplete.MaterialAutoComplete ui:field="acFilled" display="NONE" fieldType="FILLED" label="Contacts" grid="s6"/>
-                <!-- TextArea -->
-                <m:MaterialTextArea fieldType="FILLED" label="Field 6" grid="s6" allowBlank="false" autoValidate="true"/>
-            </m:MaterialRow>
-            <m:MaterialRow>
-                <m:MaterialButton text="Validate" ui:field="validateFilled" />
-            </m:MaterialRow>
-        </m:MaterialRow>
-
-        <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Type : OUTLINED" description="Outlined text fields have less visual emphasis than filled text fields, which helps simplify layout in places like forms, where many text fields are placed together."/>
-            <m:MaterialRow>
-                <m:MaterialListValueBox ui:field="outlinedStates" placeholder="Field States" grid="s12 m4"/>
-            </m:MaterialRow>
-            <m:MaterialRow ui:field="outlinedStatesRow">
-                <!-- TextBox -->
-                <m:MaterialTextBox fieldType="OUTLINED" label="TextBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="OUTLINED" label="NumberBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="OUTLINED" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- DatePicker -->
-                <m:MaterialDatePicker fieldType="OUTLINED"  placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- TimePicker -->
-                <ma:timepicker.MaterialTimePicker fieldType="OUTLINED" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- ListBox -->
-                <m:MaterialListBox fieldType="OUTLINED" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
-                    <m:html.Option text="Option 1" />
-                    <m:html.Option text="Option 2" />
-                    <m:html.Option text="Option 3" />
-                </m:MaterialListBox>
-                <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo2" fieldType="OUTLINED" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
-                <!-- Autocomplete -->
-                <ma:autocomplete.MaterialAutoComplete ui:field="acOutlined" display="NONE" fieldType="OUTLINED" label="Contacts" grid="s6"/>
-                <!-- TextArea -->
-                <m:MaterialTextArea fieldType="OUTLINED" label="Field 6" grid="s6" allowBlank="false" autoValidate="true"/>
-            </m:MaterialRow>
-            <m:MaterialRow>
-                <m:MaterialButton text="Validate" ui:field="validateOutlined" />
-            </m:MaterialRow>
-        </m:MaterialRow>
-
-        <m:MaterialRow addStyleNames="code">
-            <m:MaterialTitle title="Type : ALIGNED_LABEL" description="This type will align the label beside the textfield for better grid layout for your inputfields."/>
-            <m:MaterialRow>
-                <m:MaterialListValueBox ui:field="alignedLabelStates" placeholder="Field States" grid="s12 m4"/>
-            </m:MaterialRow>
-            <m:MaterialRow ui:field="alignedLabelStatesRow">
-                <!-- Define each guides to calculate the longest label to specify the layout -->
-                <!-- TextBox -->
-                <m:MaterialTextBox fieldType="ALIGNED_LABEL" label="TextBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="ALIGNED_LABEL" label="NumberBox" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="ALIGNED_LABEL" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- DatePicker -->
-                <m:MaterialDatePicker fieldType="ALIGNED_LABEL" placeholder="DatePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- TimePicker -->
-                <ma:timepicker.MaterialTimePicker fieldType="ALIGNED_LABEL" placeholder="TimePicker" grid="s6" allowBlank="false" autoValidate="true"/>
-                <!-- ListBox -->
-                <m:MaterialListBox fieldType="ALIGNED_LABEL" placeholder="Listbox" grid="s6" allowBlank="false" autoValidate="true">
-                    <m:html.Option text="Option 1" />
-                    <m:html.Option text="Option 2" />
-                    <m:html.Option text="Option 3" />
-                </m:MaterialListBox>
-                <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo" fieldType="ALIGNED_LABEL" label="ComboBox" grid="s6" allowBlank="false" autoValidate="true" />
-                <!-- Autocomplete -->
-                <ma:autocomplete.MaterialAutoComplete ui:field="acAlignedLabel" display="NONE" fieldType="ALIGNED_LABEL" label="Contacts" grid="s6"/>
-                <!-- TextArea -->
-                <m:MaterialTextArea fieldType="ALIGNED_LABEL" label="Field 6" grid="s6" allowBlank="false" autoValidate="true"/>
-            </m:MaterialRow>
-            <m:MaterialRow>
-                <m:MaterialButton text="Validate" ui:field="validateAlignedLabel" />
             </m:MaterialRow>
         </m:MaterialRow>
 

@@ -52,8 +52,33 @@
         <m:MaterialRow addStyleNames="code">
             <m:MaterialTitle title="Basic Usage" />
             <recaptcha:ReCaptcha ui:field="recaptcha" />
+            <m:MaterialButton text="Get Response" marginTop="12" ui:field="getResponse"/>
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;incubator:recaptcha.ReCaptcha ui:field="recaptcha"/>
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Getting Response" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;@UiHandler("getResponse") <br/>
+                void validate(ClickEvent e) { <br/>
+                &emsp;String response = recaptcha.getResponse(); <br/>
+                &emsp;if (response == null) { <br/>
+                &emsp;&emsp;MaterialToast.fireToast("Recaptcha is not validated"); <br/>
+                &emsp;} else { <br/>
+                &emsp;&emsp;MaterialToast.fireToast(recaptcha.getResponse()); <br/>
+                &emsp;} <br/>
+                }
+            </demo:PrettyPre>
+        </m:MaterialRow>
+
+        <m:MaterialRow addStyleNames="code">
+            <m:MaterialTitle title="Available Callbacks" />
+            <demo:PrettyPre addStyleNames="lang-java">
+                &emsp;recaptcha.setDataCallback(response -> MaterialToast.fireToast(response));<br/>
+                recaptcha.setErrorCallback(() -> MaterialToast.fireToast("There was an error on recaptch"));<br/>
+                recaptcha.setExpiredCallback(() -> MaterialToast.fireToast("Recaptcha is expired, please refresh the page"));<br/>
             </demo:PrettyPre>
         </m:MaterialRow>
     </m:MaterialPanel>

@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.components.forms.textfields;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.HasFocusHandlers;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -35,6 +36,8 @@ import gwt.material.design.client.base.HasErrorText;
 import gwt.material.design.client.base.HasFieldTypes;
 import gwt.material.design.client.base.HasReadOnly;
 import gwt.material.design.client.base.HasStatusText;
+import gwt.material.design.client.constants.FieldType;
+import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.ui.*;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.User;
 import gwt.material.design.demo.client.application.addins.autocomplete.base.UserOracle;
@@ -49,6 +52,7 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
 
     @UiField
     MaterialTextBox txtBoxValue, txtBoxAsNullValue;
+
     @UiField
     MaterialTextArea txtAreaAuto, txtAreaValue, txtAreaFocus;
 
@@ -65,16 +69,19 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     MaterialLongBox txtLongBox, txtLongRO, txtLongTRO, txtLongValue;
 
     @UiField
-    MaterialComboBox<String> combo, combo2, combo3, combo4;
+    MaterialComboBox<String> combo4;
 
     @UiField
-    MaterialListValueBox<FieldState>  defaultStates, filledStates, outlinedStates, alignedLabelStates;
+    MaterialListValueBox<FieldState>  defaultStates;
 
     @UiField
-    MaterialRow defaultStatesRow, filledStatesRow, outlinedStatesRow, alignedLabelStatesRow;
+    MaterialListValueBox<FieldType> fieldTypes;
 
     @UiField
-    MaterialAutoComplete acDefault, acFilled, acOutlined, acAlignedLabel;
+    MaterialRow defaultStatesRow;
+
+    @UiField
+    MaterialAutoComplete acDefault;
 
     @Inject
     TextFieldView(Binder uiBinder) {
@@ -140,60 +147,88 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                 "consequat velit vel molestie tempus. Donec et accumsan lacus, non sollicitudin quam. Morbi arcu lacus, " +
                 "blandit eu lacus nec, finibus tempus ligula.", true);
 
-        generateComboBox(combo);
-        generateComboBox(combo2);
-        generateComboBox(combo3);
+
         generateComboBox(combo4);
 
-        setupFieldStates(defaultStates, defaultStatesRow);
-        setupFieldStates(filledStates, filledStatesRow);
-        setupFieldStates(outlinedStates, outlinedStatesRow);
-        setupFieldStates(alignedLabelStates, alignedLabelStatesRow);
+        setupFieldStates();
+        setupFieldType();
 
         UserOracle oracle = new UserOracle();
         oracle.addContacts(getAllUsers());
         acDefault.setSuggestions(oracle);
-        acFilled.setSuggestions(oracle);
-        acOutlined.setSuggestions(oracle);
-        acAlignedLabel.setSuggestions(oracle);
     }
 
-    protected void setupFieldStates(MaterialListValueBox<FieldState> listValueBox, MaterialRow targetRow) {
-        listValueBox.addItem(FieldState.DEFAULT, "Default");
-        listValueBox.addItem(FieldState.ERROR, "Error");
-        listValueBox.addItem(FieldState.SUCCESS, "Success");
-        listValueBox.addItem(FieldState.HELPER, "Helper");
+    protected void setupFieldType() {
+        fieldTypes.addItem(FieldType.DEFAULT);
+        fieldTypes.addItem(FieldType.OUTLINED);
+        fieldTypes.addItem(FieldType.FILLED);
+        fieldTypes.addItem(FieldType.ALIGNED_LABEL);
+        fieldTypes.addValueChangeHandler(event -> {
+            for (Widget w : defaultStatesRow) {
+                if (w instanceof HasFieldTypes) {
+                    ((HasFieldTypes) w).setFieldType(event.getValue());
+                }
+            }
+        });
+    }
+
+    protected void setupFieldStates() {
+        defaultStates.addItem(FieldState.DEFAULT);
+        defaultStates.addItem(FieldState.ERROR);
+        defaultStates.addItem(FieldState.ERROR_HOVERABLE);
+        defaultStates.addItem(FieldState.SUCCESS);
+        defaultStates.addItem(FieldState.SUCCESS_HOVERABLE);
+        defaultStates.addItem(FieldState.HELPER);
         // TODO Fixed styles on the following states below
         /*listValueBox.addItem(FieldState.READ_ONLY, "ReadOnly");
         listValueBox.addItem(FieldState.TOGGLE_READ_ONLY, "Toggle Readonly");
         listValueBox.addItem(FieldState.DISABLED, "Disabled");*/
 
-        listValueBox.addValueChangeHandler(valueChangeEvent -> {
+        defaultStates.addValueChangeHandler(valueChangeEvent -> {
             switch (valueChangeEvent.getValue()) {
                 case ERROR:
-                    for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
+                            ((HasStatusText) w).setStatusDisplayType(StatusDisplayType.DEFAULT);
+                            ((HasStatusText) w).setErrorText(FieldState.ERROR.getMessage());
+                        }
+                    }
+                    break;
+                case ERROR_HOVERABLE:
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
+                            ((HasStatusText) w).setStatusDisplayType(StatusDisplayType.HOVERABLE);
                             ((HasStatusText) w).setErrorText(FieldState.ERROR.getMessage());
                         }
                     }
                     break;
                 case SUCCESS:
-                    for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
+                            ((HasStatusText) w).setStatusDisplayType(StatusDisplayType.DEFAULT);
+                            ((HasStatusText) w).setSuccessText(FieldState.SUCCESS.getMessage());
+                        }
+                    }
+                    break;
+                case SUCCESS_HOVERABLE:
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
+                            ((HasStatusText) w).setStatusDisplayType(StatusDisplayType.HOVERABLE);
                             ((HasStatusText) w).setSuccessText(FieldState.SUCCESS.getMessage());
                         }
                     }
                     break;
                 case HELPER:
-                    for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
                             ((HasStatusText) w).setHelperText(FieldState.HELPER.getMessage());
                         }
                     }
                     break;
                 case DEFAULT:
-                    for (Widget w : targetRow) {
-                        if (w instanceof HasFieldTypes && w instanceof HasErrorText) {
+                    for (Widget w : defaultStatesRow) {
+                        if (w instanceof HasFieldTypes && w instanceof HasStatusText) {
+                            ((HasStatusText) w).setStatusDisplayType(StatusDisplayType.DEFAULT);
                             ((HasStatusText) w).clearStatusText();
                             ((HasStatusText) w).setHelperText(null);
                         }
@@ -239,21 +274,6 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     @UiHandler("validateDefault")
     void validateDefault(ClickEvent e) {
         defaultStatesRow.validate();
-    }
-
-    @UiHandler("validateFilled")
-    void validateFilled(ClickEvent e) {
-        filledStatesRow.validate();
-    }
-
-    @UiHandler("validateOutlined")
-    void validateOutlined(ClickEvent e) {
-        outlinedStatesRow.validate();
-    }
-
-    @UiHandler("validateAlignedLabel")
-    void validateAlignedLabel(ClickEvent e) {
-        alignedLabelStatesRow.validate();
     }
 
     @UiHandler("txtBoxValue")

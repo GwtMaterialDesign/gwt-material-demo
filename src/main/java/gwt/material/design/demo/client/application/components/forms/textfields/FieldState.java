@@ -23,7 +23,9 @@ public enum  FieldState {
 
     DEFAULT(""),
     ERROR("This is an error"),
+    ERROR_HOVERABLE("This is an error"),
     SUCCESS("This is a success message"),
+    SUCCESS_HOVERABLE("This is a success message"),
     HELPER("Some helper message");
     /*READ_ONLY(""),
     DISABLED(""),
