@@ -24,6 +24,11 @@
              xmlns:m.html="urn:import:gwt.material.design.client.ui.html">
 
   <m:MaterialRow>
+
+    <m:MaterialRow addStyleNames="code">
+      <m:MaterialPanel ui:field="testPanel" />
+      <m:MaterialButton ui:field="getValue" text="Get Vallue" />
+    </m:MaterialRow>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="ListBox" description="Select allows user input through specified options."/>
       <m:MaterialListBox placeholder="ListBox" grid="s12" ui:field="lstOptions">

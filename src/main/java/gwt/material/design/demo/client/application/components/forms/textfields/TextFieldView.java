@@ -32,10 +32,7 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 import gwt.material.design.addins.client.autocomplete.MaterialAutoComplete;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
-import gwt.material.design.client.base.HasErrorText;
-import gwt.material.design.client.base.HasFieldTypes;
-import gwt.material.design.client.base.HasReadOnly;
-import gwt.material.design.client.base.HasStatusText;
+import gwt.material.design.client.base.*;
 import gwt.material.design.client.constants.FieldType;
 import gwt.material.design.client.constants.StatusDisplayType;
 import gwt.material.design.client.ui.*;
@@ -179,10 +176,8 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
         defaultStates.addItem(FieldState.SUCCESS);
         defaultStates.addItem(FieldState.SUCCESS_HOVERABLE);
         defaultStates.addItem(FieldState.HELPER);
-        // TODO Fixed styles on the following states below
-        /*listValueBox.addItem(FieldState.READ_ONLY, "ReadOnly");
-        listValueBox.addItem(FieldState.TOGGLE_READ_ONLY, "Toggle Readonly");
-        listValueBox.addItem(FieldState.DISABLED, "Disabled");*/
+        defaultStates.addItem(FieldState.READ_ONLY);
+        defaultStates.addItem(FieldState.DISABLED);
 
         defaultStates.addValueChangeHandler(valueChangeEvent -> {
             switch (valueChangeEvent.getValue()) {
@@ -240,27 +235,20 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
                         }
                     }
                     break;
-                /*case READ_ONLY:
-                    for (Widget w : targetRow) {
+                case READ_ONLY:
+                    for (Widget w : defaultStatesRow) {
                         if (w instanceof HasReadOnly) {
                             ((HasReadOnly) w).setReadOnly(true);
                         }
                     }
                     break;
-                case TOGGLE_READ_ONLY:
-                    for (Widget w : targetRow) {
-                        if (w instanceof HasReadOnly) {
-                            ((HasReadOnly) w).setToggleReadOnly(true);
-                        }
-                    }
-                    break;
                 case DISABLED:
-                    for (Widget w : targetRow) {
+                    for (Widget w : defaultStatesRow) {
                         if (w instanceof MaterialWidget) {
                             ((MaterialWidget) w).setEnabled(false);
                         }
                     }
-                    break;*/
+                    break;
             }
         });
     }
@@ -413,6 +401,15 @@ public class TextFieldView extends ViewImpl implements TextFieldPresenter.MyView
     void switchAsNullValue(ValueChangeEvent<Boolean> event) {
         txtBoxAsNullValue.clear();
         txtBoxAsNullValue.setReturnBlankAsNull(event.getValue());
+    }
+
+    @UiHandler("reset")
+    void reset(ClickEvent e) {
+        for (Widget w : defaultStatesRow) {
+            if (w instanceof AbstractValueWidget) {
+                ((AbstractValueWidget) w).reset();
+            }
+        }
     }
 
     public List<User> getAllUsers() {

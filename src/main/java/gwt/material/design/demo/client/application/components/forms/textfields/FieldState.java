@@ -26,10 +26,9 @@ public enum  FieldState {
     ERROR_HOVERABLE("This is an error"),
     SUCCESS("This is a success message"),
     SUCCESS_HOVERABLE("This is a success message"),
-    HELPER("Some helper message");
-    /*READ_ONLY(""),
-    DISABLED(""),
-    TOGGLE_READ_ONLY("");*/
+    HELPER("Some helper message"),
+    READ_ONLY(""),
+    DISABLED("");
 
 
     private String message;

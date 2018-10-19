@@ -22,6 +22,7 @@ package gwt.material.design.demo.client.application.addins.steppers;
 
 
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -50,6 +51,16 @@ public class SteppersView extends ViewImpl implements SteppersPresenter.MyView {
     @Inject
     SteppersView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("fixedStepWidth")
+    void equalStepWidth(ValueChangeEvent<Boolean> event) {
+        stepper.setFixedStepWidth(event.getValue());
+    }
+
+    @UiHandler("enableTransition")
+    void enableTransition(ValueChangeEvent<Boolean> event) {
+        stepper.setEnableTransition(event.getValue());
     }
 
     @UiHandler({"btnContinue1", "btnContinue2", "btnContinue3"})

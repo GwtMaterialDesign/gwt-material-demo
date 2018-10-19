@@ -115,7 +115,7 @@
 
             <ma:inputmask.MaterialLongInputMask ui:field="maskLong" mask="000-00-0000000" label="Long" grid="s12"/>
 
-            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="MM/dd/yyyy" autoValidate="true" label="Date" grid="s12"/>
+            <ma:inputmask.MaterialDateInputMask ui:field="maskDate" format="MM/dd/yyyy" validateOnBlur="true" label="Date" grid="s12"/>
         </m:MaterialRow>
 
         <m:MaterialRow addStyleNames="code">

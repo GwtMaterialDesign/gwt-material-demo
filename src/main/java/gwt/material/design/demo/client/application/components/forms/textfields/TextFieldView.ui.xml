@@ -50,19 +50,19 @@
 
             <m:MaterialRow ui:field="defaultStatesRow">
                 <!-- TextBox -->
-                <m:MaterialTextBox fieldType="DEFAULT" label="TextBox" grid="s6" required="true"/>
+                <m:MaterialTextBox fieldType="DEFAULT" label="TextBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- IntegerBox -->
-                <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" required="true"/>
+                <m:MaterialIntegerBox fieldType="DEFAULT" label="NumberBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- InputMask -->
-                <ma:inputmask.MaterialTextInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true"/>
+                <ma:inputmask.MaterialTextInputMask fieldType="DEFAULT" label="InputMask" placeholder="eg: 0000-0000-0000-0000" mask="0000-0000-0000-0000" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- DatePicker -->
-                <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" required="true"/>
+                <m:MaterialDatePicker fieldType="DEFAULT" placeholder="DatePicker" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- TimePicker -->
-                <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" required="true"/>
+                <ma:timepicker.MaterialTimePicker fieldType="DEFAULT" placeholder="TimePicker" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- ComboBox -->
-                <ma:combobox.MaterialComboBox ui:field="combo4"  fieldType="DEFAULT" label="ComboBox" grid="s6" required="true" />
+                <ma:combobox.MaterialComboBox ui:field="combo4"  fieldType="DEFAULT" label="ComboBox" grid="s6" required="true" clearOnKeyUp="true"/>
                 <!-- ListBox -->
-                <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" required="true">
+                <m:MaterialListBox fieldType="DEFAULT" placeholder="Listbox" grid="s6" required="true" clearOnKeyUp="true">
                     <m:html.Option text="Option 1" />
                     <m:html.Option text="Option 2" />
                     <m:html.Option text="Option 3" />
@@ -70,10 +70,11 @@
                 <!-- Autocomplete -->
                 <ma:autocomplete.MaterialAutoComplete ui:field="acDefault" display="NONE" fieldType="DEFAULT" label="Contacts" grid="s6"/>
                 <!-- TextArea -->
-                <m:MaterialTextArea fieldType="DEFAULT" label="Field 6" grid="s6" required="true"/>
+                <m:MaterialTextArea fieldType="DEFAULT" label="Field 6" grid="s6" required="true" clearOnKeyUp="true"/>
             </m:MaterialRow>
             <m:MaterialRow>
                 <m:MaterialButton text="Validate" ui:field="validateDefault" />
+                <m:MaterialButton text="Reset" ui:field="reset" marginLeft="12"/>
             </m:MaterialRow>
         </m:MaterialRow>
 

@@ -28,12 +28,12 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import gwt.material.design.addins.client.combobox.MaterialComboBox;
+import gwt.material.design.client.base.AbstractSideNav;
 import gwt.material.design.client.base.SearchObject;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.IconType;
-import gwt.material.design.client.ui.MaterialHeader;
-import gwt.material.design.client.ui.MaterialNavBar;
-import gwt.material.design.client.ui.MaterialSearch;
-import gwt.material.design.client.ui.MaterialSideNavPush;
+import gwt.material.design.client.constants.OverlayOption;
+import gwt.material.design.client.ui.*;
 import gwt.material.design.demo.client.ThemeManager;
 import gwt.material.design.demo.client.place.NameTokens;
 import gwt.material.design.themes.amber.ThemeAmber;
@@ -62,18 +62,27 @@ class MenuView extends ViewWithUiHandlers<MenuUiHandlers> implements MenuPresent
 
     @UiField MaterialHeader header;
     @UiField MaterialNavBar navBar, navBarSearch;
-    @UiField MaterialSideNavPush sideNav;
+    @UiField
+    AbstractSideNav sideNav;
     @UiField MaterialSearch txtSearch;
     @UiField MaterialComboBox<ThemeLoader.ThemeBundle> comboThemes;
 
     @Inject
     MenuView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+
+        OverlayOption option = OverlayOption.create();
+        option.setBackgroundColor(Color.RED);
+        sideNav.setOverlayOption(option);
     }
+
+
 
     @Override
     protected void onAttach() {
         super.onAttach();
+
+
 
         // search close event
         txtSearch.addCloseHandler(event -> {

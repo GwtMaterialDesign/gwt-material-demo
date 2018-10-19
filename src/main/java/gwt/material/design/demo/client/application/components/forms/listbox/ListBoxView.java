@@ -28,10 +28,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialListBox;
-import gwt.material.design.client.ui.MaterialListValueBox;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.html.Option;
 import gwt.material.design.demo.client.application.dto.DataHelper;
 import gwt.material.design.demo.client.application.dto.Hero;
 
@@ -48,6 +46,11 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
 
     @UiField
     MaterialButton allowBlankSetValue;
+
+    @UiField
+    MaterialPanel testPanel;
+
+    MaterialListBox listBox = new MaterialListBox();
 
     @Inject
     ListBoxView(Binder uiBinder) {
@@ -73,6 +76,45 @@ public class ListBoxView extends ViewImpl implements ListBoxPresenter.MyView {
         lstOptions.addValueChangeHandler(valueChangeEvent -> {
             MaterialToast.fireToast(valueChangeEvent.getValue());
         });
+
+        // given
+
+
+        // when / then
+        listBox.setValue(null);
+        listBox.setAllowBlank(true);
+        listBox.addItem("user1");
+        listBox.addItem("user2");
+        Option option = new Option("user3");
+        listBox.add(option);
+        testPanel.add(listBox);
+
+       /* listBox.setValue("");
+        assertEquals("", listBox.getValue());
+        assertEquals(0, listBox.getSelectedIndex());
+
+        listBox.setValue("user3");
+        assertEquals("user3", listBox.getValue());
+        assertEquals(3, listBox.getSelectedIndex());
+
+        listBox.setValue(null);
+        assertEquals("", listBox.getValue());
+        assertEquals(0, listBox.getSelectedIndex());
+
+        listBox.setValue("user4");
+        assertEquals(4, listBox.getSelectedIndex());
+
+        listBox.setAllowBlank(false);
+        assertEquals(3, listBox.getItemCount());
+        assertEquals("user1", listBox.getValue());
+        assertEquals(0, listBox.getSelectedIndex());*/
+    }
+
+    @UiHandler("getValue")
+    void getValue(ClickEvent e) {
+        listBox.setValue("user3");
+        MaterialToast.fireToast(listBox.getValue() + " VALUE");
+        MaterialToast.fireToast(listBox.getSelectedIndex() + " INDEX");
     }
 
     protected void buildListHeroes(MaterialListValueBox<Hero> listBox) {
