@@ -34,6 +34,9 @@
     <inherits name='com.gwtplatform.dispatch.Dispatch'/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 
+    <!-- Font Awesome Icons import -->
+    <inherits name="gwt.material.design.incubator.FontAwesomeResources" />
+
     <!--GWT Material-->
     <inherits name="gwt.material.design.GwtMaterialBasicWithJQuery"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
