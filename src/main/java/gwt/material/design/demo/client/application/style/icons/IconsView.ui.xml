@@ -96,17 +96,18 @@
 
         <m:MaterialTitle title="Step 2" description="Now you can call icon.setCustomIconType(String) to define the fontawesomeicon easily" />
         <demo:PrettyPre addStyleNames="lang-xml">
-          &emsp;&lt;m:MaterialIcon customIconType="fas fa-coffee" /><br/>
-          &lt;m:MaterialLink text="Pin" customIconType="fas fa-coffee" /><br/>
-          &lt;m:MaterialButton text="Viber" iconColor="INDIGO" customIconType="fas fa-viber" /><br/>
+          &emsp;&lt;m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY" marginRight="20"/><br/>
+          &lt;m:MaterialButton type="FLOATING" size="MEDIUM" iconColor="WHITE" backgroundColor="PURPLE" customIconType="fas fa-theater-masks" marginRight="20"/><br/>
+          &lt;m:MaterialButton text="Viber" size="MEDIUM" iconColor="WHITE" backgroundColor="INDIGO" customIconType="fab fa-viber" marginRight="20"/><br/>
+          &lt;m:MaterialLink text="CSV File" customIconType="fas fa-file-csv" display="BLOCK"/>
         </demo:PrettyPre>
 
         <m:MaterialTitle title="Plain Icons" />
         <m:MaterialRow backgroundColor="GREY_LIGHTEN_3" padding="20">
-          <m:MaterialIcon customIconType="fas fa-spider" iconSize="TINY" marginRight="20"/>
-          <m:MaterialIcon customIconType="fas fa-spider" iconSize="SMALL" marginRight="20"/>
-          <m:MaterialIcon customIconType="fas fa-spider" iconSize="MEDIUM" marginRight="20"/>
-          <m:MaterialIcon customIconType="fas fa-spider" iconSize="LARGE" marginRight="20"/>
+          <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="TINY" marginRight="20"/>
+          <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="SMALL" marginRight="20"/>
+          <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="MEDIUM" marginRight="20"/>
+          <m:MaterialIcon customIconType="fas fa-spider" iconColor="RED_DARKEN_2" iconSize="LARGE" marginRight="20"/>
         </m:MaterialRow>
 
         <m:MaterialTitle title="FAB" />
