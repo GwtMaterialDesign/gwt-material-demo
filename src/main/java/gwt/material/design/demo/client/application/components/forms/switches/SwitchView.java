@@ -21,6 +21,7 @@ package gwt.material.design.demo.client.application.components.forms.switches;
  */
 
 
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -28,7 +29,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
-import gwt.material.design.client.ui.*;
+import gwt.material.design.client.ui.MaterialSwitch;
+import gwt.material.design.client.ui.MaterialToast;
 
 import javax.inject.Inject;
 
@@ -38,9 +40,25 @@ public class SwitchView extends ViewImpl implements SwitchPresenter.MyView {
 
     @UiField MaterialSwitch switch1, switch2, switchSetValue;
 
+    @UiField
+    MaterialSwitch asyncSwitch;
+
     @Inject
     SwitchView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        super.onAttach();
+
+        asyncSwitch.setAsynchronous(true);
+        asyncSwitch.addLoadingHandler(event -> {
+            Scheduler.get().scheduleFixedDelay(() -> {
+                asyncSwitch.success();
+                return false;
+            }, 2000);
+        });
     }
 
     @UiHandler("switchEvent")

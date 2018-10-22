@@ -25,6 +25,7 @@
   <m:MaterialRow>
     <m:MaterialRow addStyleNames="code">
       <m:MaterialTitle title="Switches" />
+      <m:MaterialSwitch ui:field="asyncSwitch" />
       <m:MaterialSwitch ui:field="switch1" value="true" grid="l0"/>
       <m:MaterialSwitch ui:field="switch2" value="false" grid="l0"/>
       <m:MaterialSwitch enabled="false" value="true" grid="l0"/>
