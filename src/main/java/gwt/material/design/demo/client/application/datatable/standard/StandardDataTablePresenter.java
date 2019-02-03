@@ -52,7 +52,7 @@ public class StandardDataTablePresenter extends Presenter<StandardDataTablePrese
     @Override
     protected void onReveal() {
         super.onReveal();
-        SetPageTitleEvent.fire("Standard Data Table", "Data tables display sets of raw data. They usually appear in desktop enterprise products.", "datatable/StandardDataTableView", "https://material.io/guidelines/components/data-tables.html", this);
+        SetPageTitleEvent.fire("Standard Data Table", "Data tables display sets of raw data. They usually appear in desktop enterprise products.", "datatable/standard/StandardDataTableView", "https://material.io/guidelines/components/data-tables.html", this);
     }
 }
 
