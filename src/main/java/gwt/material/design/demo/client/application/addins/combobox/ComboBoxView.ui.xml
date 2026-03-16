@@ -28,7 +28,7 @@
             <demo:ExternalLibrary text="Select2 4.0.3" link="https://github.com/select2/select2" />
             <demo:PrettyPre addStyleNames="lang-xml">
                 &emsp;&lt;!-- Addin Import --><br/>
-                xmlns:ma="urn:import:gwt.material.design.addins.client"<br/><br/>
+                xmlns:combobox="urn:import:gwt.material.design.addins.client.combobox"<br/><br/>
                 &lt;!-- Addin Usage --><br/>
                 &emsp;&lt;combobox:MaterialComboBox><br/>
                 &emsp;&lt;m:html.Option value="1" text="Sample 1"/><br/>
